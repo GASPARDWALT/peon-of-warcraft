@@ -1,6 +1,6 @@
-# Peon of Warcraft — playable v0.1
+# Peon of Warcraft — playable v0.1.1
 
-[Download the playable ROM package](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.1/peon_of_warcraft_v0_1.zip) · [See real game captures](references/generated/v0_1_playable/README.md) · [Read the walkthrough and limitations](docs/V0_1_PLAYABLE.md)
+[Download the playable ROM package](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.1.1/peon_of_warcraft_v0_1_1.zip) · [See real game captures](references/generated/v0_1_playable/README.md) · [Read the walkthrough and limitations](docs/V0_1_PLAYABLE.md)
 
 This fork builds a first playable GBC prototype: Warcraft title, peon opening,
 Shaman selection, starter kit, The Den, first quest and one-slot saving.

@@ -1,65 +1,55 @@
-; v0.1 keeps the original SRAM layout and one genuine save slot.
+; Native CGB portal: 360 tiles across both VRAM banks, eight BG palettes.
 PeonTitleScreen:
 	call ClearBGPalettes
 	call ClearSprites
 	call ClearTilemap
-	call LoadFontsExtra
-	call LoadStandardFont
-	ld b, SCGB_DIPLOMA
-	call GetSGBLayout
-	call SetDefaultBGPAndOBP
-	hlcoord 0, 1
-	ld b, 15
-	ld c, 18
-	call Textbox
-	hlcoord 2, 2
-	ld de, .Title
-	call PlaceString
-	ld de, PeonTitleGateGFX
+	xor a
+	ldh [hBGMapMode], a
+	call DisableLCD
+	xor a
+	ldh [rVBK], a
+	ld de, PeonPortalTiles
 	ld hl, vTiles2
-	ld b, BANK(PeonTitleGateGFX)
-	ld c, 60
+	ld b, BANK(PeonPortalTiles)
+	ld c, 128
 	call Get2bpp
-	hlcoord 5, 4
-	ld a, 0
-	ld b, 6
-.gate_row
-	ld c, 10
-.gate_tile
-	ld [hli], a
-	inc a
-	dec c
-	jr nz, .gate_tile
-	ld de, 10
-	add hl, de
-	dec b
-	jr nz, .gate_row
-	hlcoord 5, 4, wAttrmap
-	ld b, 6
-.attr_row
-	ld c, 10
-.attr_tile
-	ld [hl], 0
-	inc hl
-	dec c
-	jr nz, .attr_tile
-	ld de, 10
-	add hl, de
-	dec b
-	jr nz, .attr_row
-	ld hl, .GatePalette
+	ld de, PeonPortalTiles + 128 * LEN_2BPP_TILE
+	ld hl, vTiles1
+	ld b, BANK(PeonPortalTiles)
+	ld c, 128
+	call Get2bpp
+	ld a, 1
+	ldh [rVBK], a
+	ld de, PeonPortalTiles + 256 * LEN_2BPP_TILE
+	ld hl, vTiles5
+	ld b, BANK(PeonPortalTiles)
+	ld c, 104
+	call Get2bpp
+	xor a
+	ldh [rVBK], a
+	ldh [hSCX], a
+	ldh [hSCY], a
+	ldh a, [rLCDC]
+	res B_LCDC_BLOCKS, a ; signed BG tile IDs address $8800-$97ff
+	ldh [rLCDC], a
+	call EnableLCD
+	ld hl, PeonPortalTilemap
+	ld de, wTilemap
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	call CopyBytes
+	ld hl, PeonPortalAttrmap
+	ld de, wAttrmap
+	ld bc, SCREEN_WIDTH * SCREEN_HEIGHT
+	call CopyBytes
+	ld hl, PeonPortalPalettes
 	ld de, wBGPals1
-	ld bc, 1 palettes
+	ld bc, 8 palettes
 	ld a, BANK(wBGPals1)
 	call FarCopyWRAM
-	hlcoord 2, 10
-	ld de, .Prompt
-	call PlaceString
-	hlcoord 2, 16
-	ld de, .Version
-	call PlaceString
-	call WaitBGMap
-	call UpdateTimePals
+	farcall ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+	call WaitBGMap2
 	ld de, MUSIC_TITLE
 	call PlayMusic
 .wait
@@ -69,14 +59,6 @@ PeonTitleScreen:
 	and START | A_BUTTON
 	jr z, .wait
 	ret
-.Title:
-	db "PEON OF WARCRAFT@"
-.Prompt:
-	db "CLICK START", "<NEXT>", "TO BECOME", "<NEXT>", "WARCHIEF@"
-.Version:
-	db "PLAYABLE v0.1@"
-.GatePalette:
-	RGB 31,25,15, 31,18,5, 15,9,5, 3,2,2
 
 PeonCharacterSelect:
 	xor a
@@ -405,5 +387,11 @@ PeonQuestMarker:
 
 PeonPreviewGFX:
 INCBIN "gfx/sprites/peon.2bpp", 0, 4 * LEN_2BPP_TILE
-PeonTitleGateGFX:
-INCBIN "gfx/title/peon_gate.2bpp"
+PeonPortalTiles:
+INCBIN "gfx/title/peon_portal/tiles.2bpp"
+PeonPortalTilemap:
+INCBIN "gfx/title/peon_portal/screen.tilemap"
+PeonPortalAttrmap:
+INCBIN "gfx/title/peon_portal/screen.attrmap"
+PeonPortalPalettes:
+INCBIN "gfx/title/peon_portal/palettes.bin"

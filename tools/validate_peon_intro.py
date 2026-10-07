@@ -12,6 +12,7 @@ import shutil
 import tempfile
 from pathlib import Path
 from pyboy import PyBoy
+from PIL import Image
 
 logging.disable(logging.CRITICAL)
 ROOT = Path(__file__).resolve().parents[1]
@@ -60,6 +61,13 @@ def main():
             raise AssertionError({name:read(name,2 if name in ('wEnemyMonHP','wBattleMonHP') else 1) for name in ('wBattleMode','wEnemyMonHP','wBattleMonHP','wBattleResult','wCurPlayerMove','wCurMoveNum','wMenuCursorY','wScriptMode')} | {'pc':hex(p.register_file.PC)})
 
         p.tick(240,True); capture('01_title')
+        expected=Image.open(ROOT/'references/generated/title_portal_gbc/title_portal_native_160x144.png').convert('RGB')
+        actual=p.screen.image.convert('RGB')
+        assert [tuple(c >> 3 for c in pixel) for pixel in actual.getdata()] == [tuple(c >> 3 for c in pixel) for pixel in expected.getdata()], 'Native title differs from compiled tile/palette reconstruction'
+        results['native_title_rgb555_matches']=True
+        title_out=ROOT/'references/generated/title_portal_gbc'
+        actual.save(title_out/'title_portal_in_rom_160x144.png')
+        actual.resize((960,864),resample=0).save(title_out/'title_portal_in_rom_6x.png')
         press('start'); capture('02_character_select')
         # Empty Continue must keep the selection screen visible.
         press('a'); assert read('wMapGroup')[0]==0
