@@ -71,7 +71,7 @@ def main():
         native.save(preview/(ident.lower()+'.png'))
         native.resize((640,576),Image.Resampling.NEAREST).save(preview/(ident.lower()+'_4x.png'))
         asm.extend([f'SECTION "Peon Zone Map {ident}", ROMX',f'PeonMap_{ident}:',f'INCBIN "gfx/peon_maps/{ident.lower()}.bin"',''])
-    (ROOT/'gfx/peon_zone_maps.asm').write_text('\n'.join(asm)+'\n')
+    (ROOT/'gfx/peon_zone_maps.asm').write_text('\n'.join(asm).rstrip()+'\n')
     print('Compiled eight native map/fog screens')
 
 if __name__=='__main__':main()

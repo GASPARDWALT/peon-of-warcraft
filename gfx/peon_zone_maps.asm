@@ -29,4 +29,3 @@ INCBIN "gfx/peon_maps/cavern.bin"
 SECTION "Peon Zone Map FOG", ROMX
 PeonMap_FOG:
 INCBIN "gfx/peon_maps/fog.bin"
-
