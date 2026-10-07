@@ -1,6 +1,6 @@
 MoveNames::
 	list_start MOVE_NAME_LENGTH - 1
-	li "POUND"
+	li "MACE STRIKE"
 	li "KARATE CHOP"
 	li "DOUBLESLAP"
 	li "COMET PUNCH"
@@ -83,7 +83,7 @@ MoveNames::
 	li "STRING SHOT"
 	li "DRAGON RAGE"
 	li "FIRE SPIN"
-	li "THUNDERSHOCK"
+	li "LIGHTN.BOLT"
 	li "THUNDERBOLT"
 	li "THUNDER WAVE"
 	li "THUNDER"

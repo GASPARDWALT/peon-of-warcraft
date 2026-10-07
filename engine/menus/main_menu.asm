@@ -24,6 +24,10 @@ MobileMenuGFX:
 INCBIN "gfx/mobile/mobile_menu.2bpp"
 
 MainMenu:
+	farcall PeonCharacterSelect
+	ret
+
+OriginalMainMenu:
 .loop
 	xor a
 	ld [wDisableTextAcceleration], a

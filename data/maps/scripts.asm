@@ -486,3 +486,8 @@ INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/Route10North.asm"
 
 ENDSECTION
+
+SECTION "Peon Map Scripts", ROMX
+INCLUDE "maps/PeonOpening.asm"
+INCLUDE "maps/GrommashHold.asm"
+INCLUDE "maps/TheDen.asm"

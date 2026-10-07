@@ -7,6 +7,10 @@ MACRO add_special
 ENDM
 
 SpecialsPointers::
+	add_special PeonClassSelect
+	add_special PeonInitializeShaman
+	add_special PeonEyeOpening
+	add_special PeonQuestMarker
 	add_special WarpToSpawnPoint
 
 ; Communications

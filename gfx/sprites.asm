@@ -110,3 +110,13 @@ SuicuneSpriteGFX::             INCBIN "gfx/sprites/suicune.2bpp"
 EnteiSpriteGFX::               INCBIN "gfx/sprites/entei.2bpp"
 RaikouSpriteGFX::              INCBIN "gfx/sprites/raikou.2bpp"
 StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp"
+
+SECTION "Peon NPC Sprites", ROMX
+PeonThrallGFX:: INCBIN "gfx/sprites/peon_thrall.2bpp"
+PeonKentoGFX:: INCBIN "gfx/sprites/peon_kento.2bpp"
+PeonWarriorGFX:: INCBIN "gfx/sprites/peon_warrior.2bpp"
+PeonWarlockGFX:: INCBIN "gfx/sprites/peon_warlock.2bpp"
+PeonHunterGFX:: INCBIN "gfx/sprites/peon_hunter.2bpp"
+PeonBoarGFX:: INCBIN "gfx/sprites/peon_boar.2bpp"
+PeonQuestMarkerGFX:: INCBIN "gfx/sprites/peon_quest_marker.2bpp"
+PeonSleepingGFX:: INCBIN "gfx/sprites/peon_sleeping.2bpp"

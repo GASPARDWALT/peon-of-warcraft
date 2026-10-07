@@ -2915,6 +2915,17 @@ ForcePickSwitchMonInBattle:
 LostBattle:
 	ld a, 1
 	ld [wBattleEnded], a
+	; The v0.1 Den sparring encounter has no opposing trainer portrait.
+	ld a, [wBattleType]
+	cp BATTLETYPE_CANLOSE
+	jr nz, .normal_loss
+	ld a, [wBattleMode]
+	cp 1
+	jr nz, .normal_loss
+	ld a, LOSE
+	ld [wBattleResult], a
+	ret
+.normal_loss
 
 	ld a, [wInBattleTowerBattle]
 	bit IN_BATTLE_TOWER_BATTLE_F, a

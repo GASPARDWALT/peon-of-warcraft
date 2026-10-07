@@ -355,7 +355,8 @@ WaterStoneDesc:
 	next "kinds of #MON.@"
 
 TeruSama2Desc:
-	db   "?@"
+	db   "A crude peon mace."
+	next "Starting gear.@"
 
 HPUpDesc:
 	db   "Raises the HP of"
@@ -434,7 +435,8 @@ DireHitDesc:
 	next "ratio. (1 BTL)@"
 
 TeruSama3Desc:
-	db   "?@"
+	db   "A wooden shield."
+	next "Starting gear.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"
@@ -453,7 +455,8 @@ XAttackDesc:
 	next "(1 BTL)@"
 
 TeruSama4Desc:
-	db   "?@"
+	db   "An apprentice's"
+	next "small belt totem.@"
 
 XDefendDesc:
 	db   "Raises DEFENSE."

@@ -43,3 +43,6 @@ Ces captures historiques viennent de Pokémon Crystal d'origine, avant le rempla
 ## Convention
 
 Enregistrer les futurs visuels générés dans `references/generated/`, avec des noms explicites. Conserver les références fournies par l'utilisateur dans les autres sous-dossiers de `references/`.
+# First playable v0.1
+
+[Open the actual ROM gallery](v0_1_playable/README.md) · [Download playable ZIP](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.1/peon_of_warcraft_v0_1.zip) · [Walkthrough and limits](../../docs/V0_1_PLAYABLE.md)

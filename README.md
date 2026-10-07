@@ -1,4 +1,13 @@
-# Pokémon Crystal [![Build Status][ci-badge]][ci]
+# Peon of Warcraft — playable v0.1
+
+[Download the playable ROM package](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.1/peon_of_warcraft_v0_1.zip) · [See real game captures](references/generated/v0_1_playable/README.md) · [Read the walkthrough and limitations](docs/V0_1_PLAYABLE.md)
+
+This fork builds a first playable GBC prototype: Warcraft title, peon opening,
+Shaman selection, starter kit, The Den, first quest and one-slot saving.
+The original upstream documentation below is retained for technical reference;
+its original-ROM checksums do not apply to this modified game.
+
+## Original Pokémon Crystal documentation [![Build Status][ci-badge]][ci]
 
 This is a disassembly of Pokémon Crystal.
 

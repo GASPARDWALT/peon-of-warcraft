@@ -5,6 +5,10 @@ MACRO scene_var
 ENDM
 
 MapScenes::
+	; Reuse a dormant scene byte: event flags govern all prototype scenes.
+	scene_var PEON_OPENING, wBattleTowerOutsideSceneID
+	scene_var GROMMASH_HOLD, wBattleTowerOutsideSceneID
+	scene_var THE_DEN, wBattleTowerOutsideSceneID
 	scene_var POKECENTER_2F,                               wPokecenter2FSceneID
 	scene_var TRADE_CENTER,                                wTradeCenterSceneID
 	scene_var COLOSSEUM,                                   wColosseumSceneID

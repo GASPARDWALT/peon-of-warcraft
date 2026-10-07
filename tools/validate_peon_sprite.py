@@ -4,7 +4,7 @@
 Run with a Python environment containing PyBoy and Pillow. All state files and
 battery saves belong to an isolated temporary copy of the ROM. Renderer checks
 force only the player-facing field, then normal D-pad movement is tested without
-that hook. Screenshots and results go to references/generated/peon_in_game/.
+that hook. Results go to references/generated/v0_1_sprite_validation/.
 """
 import hashlib
 import io
@@ -18,7 +18,7 @@ from pyboy import PyBoy
 
 logging.disable(logging.CRITICAL)
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / 'references/generated/peon_in_game'
+OUTPUT = ROOT / 'references/generated/v0_1_sprite_validation'
 
 
 def symbols():
@@ -59,13 +59,13 @@ def main():
             p.screen.image.save(str(OUTPUT / name))
 
         p.tick(1800, False)
-        press('start'); press('start'); press('a')
+        press('start'); press('down'); press('a')
         for _ in range(180):
             press('a', 90)
         p.tick(300, True)
-        assert read('wMapGroup', 2) == [24, 7], read('wMapGroup', 2)
+        assert read('wMapGroup', 2) == [26, 14], read('wMapGroup', 2)
         assert read('wPlayerPalette')[0] & 7 == 2
-        capture('peon_bedroom.png')
+        capture('peon_den.png')
 
         tile_base = read('wPlayerSpriteTile')[0]
         vram_bank = 0 if tile_base & 128 else 1
@@ -101,7 +101,8 @@ def main():
             expected = [tile_base + frame_tile + n for n in range(4)]
             oam = list(p.memory[oam_bank, oam_address:oam_address + 160])
             entries = [oam[n:n + 4] for n in range(0, 160, 4) if oam[n] != 160]
-            actual = [entry for entry in entries if entry[2] in expected]
+            actual = [entry for entry in entries if entry[2] in expected
+                      and bool(entry[3] & 8) == bool(vram_bank)]
             assert sorted(entry[2] for entry in actual) == expected, (facing, expected, entries)
             assert all(not (entry[3] & 0x20) for entry in actual), (facing, actual)
             assert all((entry[3] & 7) == 2 for entry in actual), (facing, actual)
@@ -135,13 +136,12 @@ def main():
         animation[0].save(OUTPUT / 'peon_walking.gif', save_all=True,
                           append_images=animation[1:], duration=67, loop=0)
 
-        # Walk right, then up to the stairs at (7, 0), without editing a map.
+        # The Den is the sole free-play map; scripted intro warps are tested by
+        # validate_peon_intro.py. Check ordinary NPC allocation in this map.
         baseline.seek(0); p.load_state(baseline)
-        p.button_press('right'); p.tick(64, True); p.button_release('right'); p.tick(60, True)
-        p.button_press('up'); p.tick(90, True); p.button_release('up'); p.tick(180, True)
-        capture('peon_map_transition.png')
-        assert read('wMapGroup', 2) != start[:2], read('wMapGroup', 4)
-        results['map_after_transition'] = read('wMapGroup', 4)
+        capture('peon_npc_allocation.png')
+        assert read('wMapGroup', 2) == [26, 14], read('wMapGroup', 4)
+        results['map_for_npc_allocation'] = read('wMapGroup', 4)
 
         # Other ordinary sprites retain their original graphics at their new
         # VRAM offsets. Variable icons resolve through the runtime table.
@@ -168,18 +168,18 @@ def main():
         assert checked_npcs, 'No ordinary NPC sprite checked after transition'
         results['npc_graphics_verified'] = checked_npcs
 
-        # Save at the verified bedroom baseline using the game's own menu.
+        # Save at the verified Den baseline using the game's own menu.
         baseline.seek(0); p.load_state(baseline)
         before = {name: read(name, length) for name, length in
                   [('wPlayerName', 11), ('wPlayerID', 2), ('wMoney', 3), ('wMapGroup', 4)]}
-        press('start'); press('down'); press('down'); press('a')
+        press('start'); press('down'); press('down'); press('down'); press('a')
         for _ in range(5): press('a', 180)
         p.stop(save=True)
         assert (Path(str(path) + '.ram')).stat().st_size == 32768
 
         p = PyBoy(str(path), window='null', sound_emulated=False, log_level='ERROR')
         p.set_emulation_speed(0)
-        p.tick(1800, True); press('start'); press('start')
+        p.tick(1800, True); press('start')
         capture('peon_continue_menu.png')
         for _ in range(5): press('a', 180)
         p.tick(180, True)

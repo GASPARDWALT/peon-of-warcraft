@@ -1047,3 +1047,11 @@ GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
 
 ENDSECTION
+
+SECTION "Peon Map Blocks", ROMX
+PeonOpening_Blocks:
+INCBIN "maps/PeonOpening.blk"
+GrommashHold_Blocks:
+INCBIN "maps/GrommashHold.blk"
+TheDen_Blocks:
+INCBIN "maps/TheDen.blk"

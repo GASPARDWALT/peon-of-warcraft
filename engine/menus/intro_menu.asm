@@ -63,8 +63,11 @@ NewGame:
 	ld [wDebugFlags], a
 	call ResetWRAM
 	call NewGame_ClearTilemapEtc
-	call PlayerProfileSetup
-	call OakSpeech
+	; v0.1: one orc character; preserve ResetWRAM's normal initialization.
+	ld hl, PeonDefaultName
+	ld de, wPlayerName
+	ld bc, NAME_LENGTH
+	call CopyBytes
 	call InitializeWorld
 
 	ld a, LANDMARK_NEW_BARK_TOWN
@@ -86,6 +89,9 @@ PlayerProfileSetup:
 	ld c, 0
 	farcall InitMobileProfile
 	ret
+
+PeonDefaultName:
+	db "PEON@@@@@@@"
 
 if DEF(_DEBUG)
 DebugRoom: ; unreferenced
@@ -304,7 +310,6 @@ InitializeNPCNames:
 .Mom:    db "MOM@"
 
 InitializeWorld:
-	call ShrinkPlayer
 	farcall SpawnPlayer
 	farcall _InitializeStartDay
 	ret
@@ -340,15 +345,7 @@ Continue:
 	jr c, .FailToLoad
 	farcall _LoadData
 	call LoadStandardMenuHeader
-	call DisplaySaveInfoOnContinue
-	ld a, $1
-	ldh [hBGMapMode], a
-	ld c, 20
-	call DelayFrames
-	call ConfirmContinue
-	jr nc, .Check1Pass
-	call CloseWindow
-	jr .FailToLoad
+	; Selection already confirmed in the Peon character screen.
 
 .Check1Pass:
 	call Continue_CheckRTC_RestartClock
@@ -962,13 +959,15 @@ Intro_PlacePlayerSprite:
 DEF NUM_TITLESCREENOPTIONS EQU const_value
 
 IntroSequence:
-	callfar SplashScreen
-	jr c, StartTitleScreen
-	farcall CrystalIntro
+	jp StartTitleScreen
 
 	; fallthrough
 
 StartTitleScreen:
+	farcall PeonTitleScreen
+	jp Intro_MainMenu
+
+PeonOriginalTitleScreen:
 	ldh a, [rWBK]
 	push af
 	ld a, BANK(wLYOverrides)

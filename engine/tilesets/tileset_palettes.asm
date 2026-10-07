@@ -1,5 +1,7 @@
 LoadSpecialMapPalette:
 	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon
 	cp TILESET_POKECOM_CENTER
 	jr z, .pokecom_2f
 	cp TILESET_BATTLE_TOWER_INSIDE
@@ -51,6 +53,25 @@ LoadSpecialMapPalette:
 .do_nothing
 	and a
 	ret
+
+.peon
+	ld a, BANK(wBGPals1)
+	ld de, wBGPals1
+	ld hl, PeonMapPalette
+	ld bc, 8 palettes
+	call FarCopyWRAM
+	scf
+	ret
+
+PeonMapPalette:
+	RGB 30,27,21, 23,20,15, 14,12,9, 4,3,2
+	RGB 30,23,13, 25,14,6, 18,8,3, 5,3,2
+	RGB 30,23,13, 18,23,9, 8,15,5, 3,6,2
+	RGB 30,27,21, 18,21,24, 9,13,18, 3,5,8
+	RGB 31,27,18, 28,21,11, 20,12,5, 7,4,2
+	RGB 30,24,16, 22,15,8, 12,8,4, 4,3,2
+	RGB 31,25,13, 26,10,5, 14,4,3, 4,2,2
+	RGB 31,31,31, 21,21,21, 10,10,10, 0,0,0
 
 LoadPokeComPalette:
 	ld a, BANK(wBGPals1)

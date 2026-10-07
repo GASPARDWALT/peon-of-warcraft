@@ -3,6 +3,14 @@ MACRO tilecoll
 	db COLL_\1, COLL_\2, COLL_\3, COLL_\4
 ENDM
 
+SECTION "Peon Tileset", ROMX
+TilesetPeonGFX::
+INCBIN "gfx/tilesets/peon.2bpp.lz"
+TilesetPeonMeta::
+INCBIN "data/tilesets/peon_metatiles.bin"
+TilesetPeonColl::
+INCLUDE "data/tilesets/peon_collision.asm"
+
 
 SECTION "Tileset Data 1", ROMX
 

@@ -248,6 +248,7 @@ TilesetRuinsOfAlphAnim:
 TilesetRadioTowerAnim:
 TilesetUndergroundAnim:
 TilesetBetaWordRoomAnim:
+TilesetPeonAnim:
 TilesetHoOhWordRoomAnim:
 TilesetKabutoWordRoomAnim:
 TilesetOmanyteWordRoomAnim:
