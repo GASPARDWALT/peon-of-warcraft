@@ -1067,3 +1067,7 @@ OrgrimmarGate_Blocks:
 INCBIN "maps/OrgrimmarGate.blk"
 BurningBladeCavern_Blocks:
 INCBIN "maps/BurningBladeCavern.blk"
+PeonTrollHut_Blocks:
+INCBIN "maps/PeonTrollHut.blk"
+PeonOrcHut_Blocks:
+INCBIN "maps/PeonOrcHut.blk"

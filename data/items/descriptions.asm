@@ -439,8 +439,8 @@ TeruSama3Desc:
 	next "Starting gear.@"
 
 FreshWaterDesc:
-	db   "Restores #MON"
-	next "HP by 50.@"
+	db   "Drink from BAGS:"
+	next "10 spell charges.@"
 
 SodaPopDesc:
 	db   "Restores #MON"
@@ -786,13 +786,16 @@ PassDesc:
 	next "MAGNET TRAIN.@"
 
 TeruSama9Desc:
-	db   "?@"
+	db   "Poor mace. Equip:"
+	next "Melee up 5 pct.@"
 
 TeruSama10Desc:
-	db   "?@"
+	db   "Common mace. Equip:"
+	next "Melee up 10 pct.@"
 
 TeruSama11Desc:
-	db   "?@"
+	db   "Uncommon. Equip:"
+	next "Melee up 20 pct.@"
 
 CharcoalDesc:
 	db   "Powers up fire-"
@@ -807,7 +810,8 @@ ScopeLensDesc:
 	next "hit ratio. (HOLD)@"
 
 TeruSama12Desc:
-	db   "?@"
+	db   "Rare mace. Equip:"
+	next "Nature up 30 pct.@"
 
 TeruSama13Desc:
 	db   "?@"

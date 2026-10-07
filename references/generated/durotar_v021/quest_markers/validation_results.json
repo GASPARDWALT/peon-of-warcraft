@@ -1,0 +1,136 @@
+{
+  "rom_sha256": "324b631d9f20299578f60024671e40028be744ae51d74a18d293324bb6f44737",
+  "emulator": "PyBoy 2.7.0",
+  "test_method": "Ordinary new-game buttons, then diagnostic quest/discovery flag injection",
+  "cases": [
+    {
+      "name": "den_offer",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_active",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_ready",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          108,
+          66,
+          1,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_done",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_fog",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_offer",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          74,
+          52,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_active",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          74,
+          52,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_ready",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [
+        [
+          74,
+          52,
+          1,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_done",
+      "diagnostic_flag_injection": true,
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "closed_to_world": true
+    }
+  ],
+  "ordinary_new_game_reached_den": true,
+  "limitations": [
+    "Availability/fog branches use diagnostic flag injection",
+    "Chromatic hardware is untested",
+    "Only the current two prototype atlas quests have POIs"
+  ]
+}

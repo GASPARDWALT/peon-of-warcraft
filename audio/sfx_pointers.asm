@@ -7,12 +7,12 @@ SFX:
 	dba Sfx_PokeballsPlacedOnTable
 	dba Sfx_Potion
 	dba Sfx_FullHeal
-	dba Sfx_Menu
+	dba PeonSfx_Menu
 	dba Sfx_ReadText
 	dba Sfx_ReadText2
 	dba Sfx_DexFanfare2049
 	dba Sfx_DexFanfare80109
-	dba Sfx_Poison
+	dba PeonSfx_Poison
 	dba Sfx_GotSafariBalls
 	dba Sfx_BootPc
 	dba Sfx_ShutDownPc
@@ -35,7 +35,7 @@ SFX:
 	dba Sfx_EnterDoor
 	dba Sfx_SwitchPokemon
 	dba Sfx_Tally
-	dba Sfx_Transaction
+	dba PeonSfx_Coins
 	dba Sfx_ExitBuilding
 	dba Sfx_Bump
 	dba Sfx_Save
@@ -50,7 +50,7 @@ SFX:
 	dba Sfx_Peck
 	dba Sfx_Kinesis
 	dba Sfx_Lick
-	dba Sfx_Pound
+	dba PeonSfx_MaceImpact
 	dba Sfx_MovePuzzlePiece
 	dba Sfx_CometPunch
 	dba Sfx_MegaPunch
@@ -67,7 +67,7 @@ SFX:
 	dba Sfx_Headbutt
 	dba Sfx_HornAttack
 	dba Sfx_Tackle
-	dba Sfx_PoisonSting
+	dba PeonSfx_PoisonSting
 	dba Sfx_Powder
 	dba Sfx_Doubleslap
 	dba Sfx_Bite
@@ -81,13 +81,13 @@ SFX:
 	dba Sfx_Thunder
 	dba Sfx_Supersonic
 	dba Sfx_Leer
-	dba Sfx_Ember
+	dba PeonSfx_Firebolt
 	dba Sfx_Bubblebeam
 	dba Sfx_HydroPump
 	dba Sfx_Surf
 	dba Sfx_Psybeam
 	dba Sfx_Charge
-	dba Sfx_Thundershock
+	dba PeonSfx_Lightning
 	dba Sfx_Psychic
 	dba Sfx_Screech
 	dba Sfx_BoneClub
@@ -99,7 +99,7 @@ SFX:
 	dba Sfx_Unknown5F
 	dba Sfx_Unknown60
 	dba Sfx_Unknown61
-	dba Sfx_SwitchPockets
+	dba PeonSfx_LeatherBag
 	dba Sfx_Unknown63
 	dba Sfx_Burn
 	dba Sfx_TitleScreenEntrance

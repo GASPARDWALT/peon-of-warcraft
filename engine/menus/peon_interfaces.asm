@@ -22,6 +22,15 @@ PeonZoneMap:
 	db "MAP NOT FOUND", "<LF>", "", "<LF>", "Finish Gornek's", "<LF>", "scorpid quest.", "<LF>", "", "<LF>", "A/B: BACK@"
 .owned:
 	ld a, [wMapNumber]
+	cp MAP_PEON_TROLL_HUT
+	jr nz, .orc_hut
+	ld a, 3 ; shared troll room belongs to Sen'jin Village
+	jr .store
+.orc_hut:
+	cp MAP_PEON_ORC_HUT
+	jr nz, .outdoor
+	ld a, [wBackupMapNumber] ; the shared hut retains its actual outdoor owner
+.outdoor:
 	sub 14
 	cp 7
 	jr c, .store
@@ -99,6 +108,7 @@ PeonZoneMap:
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
 	call WaitBGMap2
+	farcall PeonDrawAtlasQuests
 .input:
 	call DelayFrame
 	call JoyTextDelay
@@ -175,6 +185,7 @@ PeonInterfaceFrame:
 	ld b, 16
 	ld c, 18
 	call Textbox
+	farcall PeonApplyMenuSkin
 	ret
 
 PeonInterfaceWait:
@@ -186,6 +197,8 @@ PeonInterfaceWait:
 	ret
 
 PeonBags:
+	ld de, SFX_SWITCH_POCKETS
+	call PlaySFX
 	call PeonInterfaceFrame
 	ld hl, .Palette
 	ld de, wBGPals1
@@ -203,34 +216,34 @@ PeonBags:
 	ld b, BANK(PeonBagIcons)
 	ld c, 16
 	call Get2bpp
-	hlcoord 2, 5
+	hlcoord 1, 5
 	ld b, 3
 	ld c, 4
 	call Textbox
-	hlcoord 8, 5
+	hlcoord 7, 5
 	ld b, 3
 	ld c, 4
 	call Textbox
-	hlcoord 14, 5
+	hlcoord 13, 5
 	ld b, 3
 	ld c, 4
 	call Textbox
-	hlcoord 3, 6
+	hlcoord 2, 6
 	ld a, $40
 	call .Icon
-	hlcoord 9, 6
+	hlcoord 8, 6
 	ld a, $44
 	call .Icon
-	hlcoord 15, 6
+	hlcoord 14, 6
 	ld a, $48
 	call .Icon
-	hlcoord 2, 9
+	hlcoord 2, 8
 	ld de, .Mace
 	call PlaceString
-	hlcoord 8, 9
+	hlcoord 8, 8
 	ld de, .Shield
 	call PlaceString
-	hlcoord 14, 9
+	hlcoord 14, 8
 	ld de, .Totem
 	call PlaceString
 	hlcoord 2, 11
@@ -258,6 +271,7 @@ PeonBags:
 	hlcoord 8, 15
 	ld de, .Back
 	call PlaceString
+	farcall PeonRefreshMenuSkinAttributes
 	call WaitBGMap
 	call UpdateTimePals
 	call PeonInterfaceWait
@@ -330,6 +344,11 @@ PeonCharacterSheet:
 	call PlaceString
 	hlcoord 10, 9
 	ld de, wPartyMon1HP
+	ld a, [wBattleMode]
+	and a
+	jr z, .print_health
+	ld de, wBattleMonHP
+.print_health:
 	lb bc, 2, 3
 	call PrintNum
 	ld a, [wPartyMon1Item]
@@ -355,9 +374,9 @@ PeonCharacterSheet:
 .Class: db "SHAMAN@"
 .Level: db "LEVEL@"
 .HP: db "HEALTH@"
-.Spells: db "Lightning Bolt", "<LF>", "Mace Strike", "<LF>", "", "<LF>", "A/B: BACK@"
+.Spells: db "Lightning Bolt", "<LF>", "Mace Strike", "<LF>", "Mak'gora Proofs", "<LF>", "0 earned", "<LF>", "A/B: BACK@"
 .Palette:
-	RGB 31,31,31, 15,22,8, 18,11,6, 0,0,0
+	RGB 31,29,23, 15,22,8, 18,11,6, 0,0,0
 
 PeonBagIcons:
 INCBIN "gfx/pack/peon_icons.2bpp"
@@ -412,6 +431,10 @@ PeonInventory:
 	jr nz, .footer
 	ld a, 3
 .quality
+	push af
+	ld c, a
+	farcall PeonColorItemQualityFromC
+	pop af
 	ld e, a
 	ld d, 0
 	ld hl, .Qualities
@@ -478,7 +501,12 @@ PeonInventory:
 	jr .apply
 .drink
 ; Water restores spell charges in the prototype's PP-backed mana model.
+	ld a, [wBattleMode]
+	and a
 	ld a, [wPartyMon1PP + 1]
+	jr z, .current_pp
+	ld a, [wBattleMonPP + 1]
+.current_pp
 	and $3f
 	cp 30
 	jp nc, .input
@@ -488,6 +516,13 @@ PeonInventory:
 	ld a, 30
 .water_pp
 	ld [wPartyMon1PP + 1], a
+	ld b, a
+	ld a, [wBattleMode]
+	and a
+	jr z, .consume_water
+	ld a, b
+	ld [wBattleMonPP + 1], a
+.consume_water
 	ld a, FRESH_WATER
 	ld [wCurItem], a
 	ld a, 1
@@ -501,6 +536,13 @@ PeonInventory:
 	jp .draw
 .apply
 	ld [wPartyMon1Item], a
+	ld b, a
+	ld a, [wBattleMode]
+	and a
+	jr z, .equip_sound
+	ld a, b
+	ld [wBattleMonItem], a
+.equip_sound
 	ld de, SFX_TRANSACTION
 	call PlaySFX
 	jp .draw
@@ -510,7 +552,8 @@ PeonInventory:
 .Help: db "LEFT/RIGHT: ITEM", "<LF>", "A: EQUIP / USE", "<LF>", "B: BACK@"
 .Qualities:
 	dw .Gray, .White, .Green, .Blue
-.Gray: db "GRAY: MELEE UP 5@"
-.White: db "WHITE: MELEE UP 10@"
-.Green: db "GREEN: MELEE UP 20@"
-.Blue: db "BLUE: NATURE UP 30@"
+; $78 is the menu's native percent tile; '%' is a legacy breakable-space alias.
+.Gray: db "GRAY: MELEE 5", $78, "@"
+.White: db "WHITE: MELEE 10", $78, "@"
+.Green: db "GREEN: MELEE 20", $78, "@"
+.Blue: db "BLUE: NATURE 30", $78, "@"

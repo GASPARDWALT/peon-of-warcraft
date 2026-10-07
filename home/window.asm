@@ -14,6 +14,7 @@ ReanchorMap::
 	ret
 
 CloseText::
+	farcall PeonRestoreSpeakerPalette
 	ldh a, [hOAMUpdate]
 	push af
 	ld a, $1

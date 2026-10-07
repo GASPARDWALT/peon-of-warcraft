@@ -1,8 +1,10 @@
-# Peon of Warcraft — playable v0.2
+# Peon of Warcraft — playable v0.2.1
 
-[Download ROM](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2/peon_of_warcraft_v0_2.zip) · [See real captures and sprites](references/generated/durotar_v02/README.md) · [Download transparent PNGs + browser gallery](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2/peon_of_warcraft_v0_2_assets.zip) · [Walkthrough and limits](docs/V0_2_PLAYABLE.md)
+[Download playable ROM](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2.1/peon_of_warcraft_v0_2_1.zip) · [See actual ROM captures and PNGs](references/generated/durotar_v021/README.md) · [Download transparent assets + offline browser gallery](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2.1/peon_of_warcraft_v0_2_1_assets.zip) · [Walkthrough and limits](docs/V0_2_1_PLAYABLE.md)
 
-Playable Durotar prototype: peon naming by Kento, Shaman spells, two introductory quests, earned region map with fog, growing bags, weapon loot, Classic vendor pricing, cactus harvesting, cave imps and connected regions. One real save slot. Chromatic hardware remains untested.
+The Durotar prototype now has eighteen settlement NPCs, nine visitable building entrances, native troll/orc role sprites, thirteen speaker portraits, shaped roads/coast/cliffs and grouped canyon rocks, attack poses, poison effects and native four-channel title music plus Warcraft-inspired GBC sound effects. The Den adds a campfire, Lazy Peons and two passive yellow boars. Native humanoid silhouettes are larger, menus use parchment/red/gold and the earned atlas shows quest markers. Encounters draw the peon directly, skipping trainer/Poké Ball/send-out/nickname presentations. Kento asks your peon's name; the Shaman path, opening quests, cactus harvests, cave imps, growing bags and weapon loot remain playable. One real save slot. Actual Chromatic cartridge/RTC validation remains outstanding.
+
+[Design rules and Warcraft vocabulary](docs/PEON_DESIGN_RULES.md) · [Village NPC sources/services](docs/DUROTAR_VILLAGE_NPCS.md) · [Previous v0.2 release](releases/v0.2/README.md)
 
 ## Original Pokémon Crystal documentation [![Build Status][ci-badge]][ci]
 

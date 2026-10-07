@@ -1,0 +1,131 @@
+{
+  "native_glyph_size": [
+    8,
+    8
+  ],
+  "obj_vram_bank": 0,
+  "obj_vram_range": "$8000..$801f",
+  "obj_palette": 4,
+  "obj_palette_rgb555": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      22,
+      15,
+      7
+    ],
+    [
+      9,
+      5,
+      2
+    ],
+    [
+      31,
+      26,
+      3
+    ]
+  ],
+  "transparent_index": 0,
+  "glyphs": [
+    "quest_available",
+    "quest_complete"
+  ],
+  "2bpp_sha256": "ba98e6f02a0036bcbe0e6dcc454757820fc0944985bd251d64cb47d21c31ea6b",
+  "points": {
+    "DEN": {
+      "source_size": [
+        384,
+        320
+      ],
+      "thumbnail_size": [
+        120,
+        100
+      ],
+      "thumbnail_offset": [
+        20,
+        18
+      ],
+      "collision_coordinate": [
+        8,
+        15
+      ],
+      "source_cell_center": [
+        136,
+        248
+      ],
+      "atlas_center": [
+        62,
+        96
+      ],
+      "glyph_top_left": [
+        58,
+        92
+      ],
+      "oam_yx": [
+        108,
+        66
+      ],
+      "speaker": "Foreman"
+    },
+    "VALLEY": {
+      "source_size": [
+        512,
+        384
+      ],
+      "thumbnail_size": [
+        133,
+        100
+      ],
+      "thumbnail_offset": [
+        13,
+        18
+      ],
+      "collision_coordinate": [
+        8,
+        10
+      ],
+      "source_cell_center": [
+        136,
+        168
+      ],
+      "atlas_center": [
+        48,
+        62
+      ],
+      "glyph_top_left": [
+        44,
+        58
+      ],
+      "oam_yx": [
+        74,
+        52
+      ],
+      "speaker": "Galgar"
+    }
+  },
+  "states": {
+    "DEN": {
+      "hidden": [
+        "region undiscovered",
+        "EVENT_PEON_LAZY_DONE"
+      ],
+      "?": "EVENT_PEON_LAZY_AWAKE",
+      "!": "offered or active, peon asleep"
+    },
+    "VALLEY": {
+      "hidden": [
+        "region undiscovered",
+        "EVENT_PEON_CACTUS_DONE"
+      ],
+      "?": "all three EVENT_PEON_CACTUS_1/2/3 flags",
+      "!": "offered or active, apples remaining"
+    }
+  },
+  "limitations": [
+    "Two current prototype quests only; not every Classic quest",
+    "Quest locations remain hidden on undiscovered region pages"
+  ]
+}

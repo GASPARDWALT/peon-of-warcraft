@@ -8,8 +8,7 @@
     "warrior",
     "warlock",
     "boar",
-    "scorpid",
-    "imp"
+    "scorpid"
   ],
   "overworld_frame_size": [
     16,
@@ -27,5 +26,5 @@
   "alpha": "PNG exports contain only alpha 0 or 255; game uses transparent OBJ colour zero",
   "palette": "3 opaque colours per overworld sprite; four colours including background per battle sprite",
   "animation_note": "All NPCs export four directions; standard Crystal NPC renderer mirrors side direction. Peon equipment uses independent left/right frames.",
-  "battle_note": "Peon and imp have distinct casting poses; masters and beasts have idle/breathing cycles."
+  "battle_note": "Peon has a distinct casting pose; other characters have idle/breathing cycles, not full bespoke attacks."
 }

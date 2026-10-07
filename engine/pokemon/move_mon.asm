@@ -1772,10 +1772,19 @@ GivePoke::
 .party
 	farcall SetCaughtData
 .set_caught_data
+	; A Warcraft character has already answered Kento's NAME_PLAYER prompt.
+	; Its internal party adapter must never open a creature nickname screen.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon_no_nickname
 	farcall GiveANickname_YesNo
 	pop de
 	jr c, .skip_nickname
 	call InitNickname
+	jr .skip_nickname
+
+.peon_no_nickname
+	pop de
 
 .skip_nickname
 	pop bc

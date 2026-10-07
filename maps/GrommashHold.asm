@@ -18,12 +18,14 @@ GrommashHoldScene:
 
 GrommashHoldSequence:
 	special PeonEyeOpening
+	setlasttalked GROMMASHHOLD_THRALL
 	opentext
 	writetext PeonThrallText
 	promptbutton
 	closetext
 	special PeonClassSelect
 	turnobject PLAYER, LEFT
+	setlasttalked GROMMASHHOLD_KENTO
 	opentext
 	writetext PeonKentoText
 	promptbutton

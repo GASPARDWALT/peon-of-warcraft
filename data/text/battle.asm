@@ -320,8 +320,8 @@ BattleText_MonCantBeRecalled:
 	prompt
 
 BattleText_TheresNoPPLeftForThisMove:
-	text "There's no PP left"
-	line "for this move!"
+	text "No charges left"
+	line "for this attack!"
 	prompt
 
 BattleText_TheMoveIsDisabled:
@@ -552,13 +552,13 @@ IgnoredSleepingText:
 	prompt
 
 NoPPLeftText:
-	text "But no PP is left"
-	line "for the move!"
+	text "No charges remain"
+	line "for this attack!"
 	prompt
 
 HasNoPPLeftText:
 	text "<USER>"
-	line "has no PP left for"
+	line "has no charges for"
 	cont "@"
 	text_ram wStringBuffer2
 	text "!"

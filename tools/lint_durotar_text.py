@@ -3,7 +3,7 @@
 from pathlib import Path
 import re
 ROOT=Path(__file__).resolve().parents[1]
-NAMES=['PeonOpening','GrommashHold','TheDen','ValleyOfTrials','DurotarRoad','SenjinVillage','RazorHill','OrgrimmarGate','BurningBladeCavern']
+NAMES=['PeonOpening','GrommashHold','TheDen','ValleyOfTrials','DurotarRoad','SenjinVillage','RazorHill','OrgrimmarGate','BurningBladeCavern','PeonTrollHut','PeonOrcHut']
 count=0
 for name in NAMES:
     p=ROOT/'maps'/(name+'.asm')

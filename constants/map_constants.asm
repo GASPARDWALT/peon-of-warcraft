@@ -508,6 +508,8 @@ ENDM
 	map_const RAZOR_HILL,                                 12, 10 ; 18
 	map_const ORGRIMMAR_GATE,                             12, 10 ; 19
 	map_const BURNING_BLADE_CAVERN,                        10, 10 ; 20
+	map_const PEON_TROLL_HUT,                               6,  5 ; 21
+	map_const PEON_ORC_HUT,                                 6,  5 ; 22
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

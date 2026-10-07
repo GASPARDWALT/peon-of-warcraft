@@ -1975,6 +1975,7 @@ BattleCommand_MoveAnimNoSub:
 	ld [wBattleAnimParam], a
 
 .triplekick
+	farcall PeonAnimateEnemyAttack
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
 	ld e, a

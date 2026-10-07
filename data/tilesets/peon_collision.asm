@@ -1,17 +1,40 @@
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WALL, WALL, WALL, WALL
-	tilecoll WARP_PANEL, WARP_PANEL, WARP_PANEL, WARP_PANEL
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 00 bare_soil
+	tilecoll WALL, WALL, WALL, WALL ; 01 layered_escarpment
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 02 main_road
+	tilecoll WALL, WALL, WALL, WALL ; 03 cactus
+	tilecoll WALL, WALL, WALL, WARP_PANEL ; 04 hide_hut
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 05 hold_red_carpet
+	tilecoll WALL, WALL, WALL, WALL ; 06 horde_standard
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 07 sandstone_floor
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 08 sandy_clearance
+	tilecoll WALL, WALL, WALL, WALL ; 09 den_0
+	tilecoll WALL, WALL, WALL, WALL ; 0a den_1
+	tilecoll WALL, WALL, WALL, WARP_PANEL ; 0b den_2
+	tilecoll WALL, WALL, WALL, WALL ; 0c den_3
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0d dry_scrub
+	tilecoll WALL, WALL, WALL, WALL ; 0e sea
+	tilecoll WALL, WALL, WALL, WALL ; 0f cavern_mouth
+	tilecoll WARP_PANEL, WARP_PANEL, WARP_PANEL, WARP_PANEL ; 10 zone_transition
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 11 road_ns
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 12 road_ew
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 13 road_ne
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 14 road_nw
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 15 road_se
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 16 road_sw
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 17 road_nse
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 18 road_nsw
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 19 road_new
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 1a road_sew
+	tilecoll WALL, WALL, WALL, WALL ; 1b east_shore
+	tilecoll WALL, WALL, WALL, WALL ; 1c coastal_palm
+	tilecoll WALL, WALL, WALL, WARP_PANEL ; 1d troll_thatched_hut
+	tilecoll WALL, WALL, WALL, WALL ; 1e spiked_palisade
+	tilecoll WALL, WALL, WALL, WALL ; 1f watchtower
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 20 timber_boardwalk
+	tilecoll WALL, WALL, WALL, WALL ; 21 fortified_gate_wall
+	tilecoll WALL, WALL, WALL, WALL ; 22 fire_brazier
+	tilecoll WALL, WALL, WALL, WALL ; 23 wayfinding_sign
+	tilecoll WALL, WALL, WALL, WALL ; 24 burning_blade_skull
+	tilecoll WALL, WALL, WALL, WALL ; 25 desert_boulder
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 26 walkable_bare_soil
+	tilecoll WALL, WALL, WALL, WALL ; 27 campfire

@@ -1,0 +1,111 @@
+{
+  "rom_sha256": "324b631d9f20299578f60024671e40028be744ae51d74a18d293324bb6f44737",
+  "all_checks_passed": true,
+  "effects": [
+    {
+      "name": "mace_bonk",
+      "existing_id": "SFX_POUND",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 13,
+      "seconds_at_60fps": 0.21666666666666667,
+      "preview_gain": 1525.6779600485702,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "lightning_bolt",
+      "existing_id": "SFX_THUNDERSHOCK",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 33,
+      "seconds_at_60fps": 0.55,
+      "preview_gain": 1534.6428797476476,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "firebolt",
+      "existing_id": "SFX_EMBER",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 23,
+      "seconds_at_60fps": 0.38333333333333336,
+      "preview_gain": 2024.8273371552386,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "poison",
+      "existing_id": "SFX_POISON",
+      "native_voices_observed": [
+        8
+      ],
+      "terminated_frames": 17,
+      "seconds_at_60fps": 0.2833333333333333,
+      "preview_gain": 4353.155251473906,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "scorpid_sting",
+      "existing_id": "SFX_POISON_STING",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 10,
+      "seconds_at_60fps": 0.16666666666666666,
+      "preview_gain": 2082.0987216103013,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "coins",
+      "existing_id": "SFX_TRANSACTION",
+      "native_voices_observed": [
+        5,
+        6
+      ],
+      "terminated_frames": 13,
+      "seconds_at_60fps": 0.21666666666666667,
+      "preview_gain": 2131.6352231145747,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "menu",
+      "existing_id": "SFX_MENU",
+      "native_voices_observed": [
+        8
+      ],
+      "terminated_frames": 6,
+      "seconds_at_60fps": 0.1,
+      "preview_gain": 7798.539599325969,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "leather_bag",
+      "existing_id": "SFX_SWITCH_POCKETS",
+      "native_voices_observed": [
+        8
+      ],
+      "terminated_frames": 15,
+      "seconds_at_60fps": 0.25,
+      "preview_gain": 6954.712672840289,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    }
+  ],
+  "ordinary_buttons_opening_bonk_observed": true,
+  "preview_source": "Actual emulator APU; isolated diagnostic calls labeled separately",
+  "source_limitation": "Original synthesized imitations; Wowhead samples unavailable and not copied",
+  "physical_console_audio_unverified": true
+}

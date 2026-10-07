@@ -30,7 +30,10 @@
 *.zip binary
 *.lz.* binary diff=hex
 *.bin binary diff=hex
-*.blk binary diff=hex
+*.blk binary
+*.mid binary
+*.wav binary
+*.mp3 binary
 *.rle binary diff=hex
 *.attrmap binary diff=hex
 *.tilemap binary diff=hex

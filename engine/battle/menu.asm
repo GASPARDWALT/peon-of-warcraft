@@ -44,7 +44,7 @@ BattleMenuHeader:
 .Text:
 	db "FIGHT@"
 	db "SELF@"
-	db "PACK@"
+	db "BAGS@"
 	db "RUN@"
 
 SafariBattleMenuHeader:

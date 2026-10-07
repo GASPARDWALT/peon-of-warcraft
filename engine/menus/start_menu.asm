@@ -157,7 +157,7 @@ StartMenu::
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 8, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .MenuData
 	db 1 ; default selection
 
@@ -186,35 +186,35 @@ StartMenu::
 	dw StartMenu_Pokegear, .PokegearString, .PokegearDesc
 	dw StartMenu_Quit,     .QuitString,     .QuitDesc
 
-.PokedexString:  db "#DEX@"
+.PokedexString:  db "CHARACTER@"
 .PartyString:    db "CHARACTER@"
 .PackString:     db "BAGS@"
 .StatusString:   db "MAP@"
 .SaveString:     db "SAVE@"
 .OptionString:   db "OPTION@"
 .ExitString:     db "EXIT@"
-.PokegearString: db "<POKE>GEAR@"
+.PokegearString: db "ATLAS@"
 .QuitString:     db "QUIT@"
 
 .PokedexDesc:
-	db   "#MON"
-	next "database@"
+	db   "Character"
+	next "and gear@"
 
 .PartyDesc:
-	db   "Party <PKMN>"
-	next "status@"
+	db   "Character"
+	next "and gear@"
 
 .PackDesc:
 	db   "Contains"
 	next "items@"
 
 .PokegearDesc:
-	db   "Trainer's"
-	next "key device@"
+	db   "Durotar"
+	next "atlas@"
 
 .StatusDesc:
-	db   "Your own"
-	next "status@"
+	db   "Discovered"
+	next "regions@"
 
 .SaveDesc:
 	db   "Save your"

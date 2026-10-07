@@ -64,18 +64,18 @@ OverworldSprites:
 	overworld_sprite RocketSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite RocketGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite NurseSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
-	overworld_sprite LinkReceptionistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite ClerkSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonTrollGuardGFX, 12, WALKING_SPRITE, PAL_OW_TREE
+	overworld_sprite PeonTrollFisherGFX, 12, WALKING_SPRITE, PAL_OW_TREE
 	overworld_sprite PeonGornekGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite FishingGuruSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ScientistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite KimonoGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite SageSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite PeonTrollCasterGFX, 12, WALKING_SPRITE, PAL_OW_TREE
 	overworld_sprite UnusedGuySpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
-	overworld_sprite GentlemanSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite BlackBeltSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite PeonOrcVendorGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonOrcQuestgiverGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite ReceptionistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite OfficerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite PeonOrcGuardGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite CalSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite SlowpokeSpriteGFX, 4, STILL_SPRITE, PAL_OW_RED
 	overworld_sprite CaptainSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN

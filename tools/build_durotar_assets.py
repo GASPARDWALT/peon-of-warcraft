@@ -22,7 +22,7 @@ OBJ = [
     [(255,255,255),(206,156,90),(99,57,33),(8,8,8)],
     [(255,255,255),(181,123,57),(74,41,16),(255,214,24)],
     [(255,255,255),(222,41,24),(255,206,57),(8,8,8)],
-    [(255,255,255),(140,173,74),(74,107,41),(16,24,16)],
+    [(255,255,255),(239,222,181),(82,165,189),(16,33,57)],
     [(255,255,255),(181,156,115),(107,82,57),(41,33,24)],
 ]
 BG = [
@@ -77,6 +77,56 @@ def cell(source, row, col, rows, cols, size):
     canvas.paste(im,((size-im.width)//2,size-im.height))
     return canvas
 
+def humanoid_cell(source, row, col):
+    """Keep all humanoid facings at a consistent native standing height.
+
+    The old width-first fit flattened front/back figures holding wide gear.
+    A 15x15 target reserves the top row for a one-pixel walking bob; the complete
+    image, including each independently drawn mace/shield orientation, stays
+    inside the existing 16x16 OBJ footprint.
+    """
+    w,h=source.size
+    im=source.crop((round(col*w/4),round(row*h/9),round((col+1)*w/4),round((row+1)*h/9)))
+    bounds=im.getchannel('A').point(lambda a:255 if a>=180 else 0).getbbox()
+    assert bounds, (row,col)
+    im=im.crop(bounds).resize((15,15),Image.Resampling.LANCZOS)
+    canvas=Image.new('RGBA',(16,16))
+    canvas.paste(im,(0,1))
+    return canvas
+
+def humanoid_face(frame, name, direction):
+    """Preserve the small orc eye landmarks after the final three-color reduction."""
+    if name in ('kento','warlock') or direction=='up':return frame
+    pixels=np.array(frame)
+    candidates=[]
+    for y in range(2,8):
+        xs=np.flatnonzero(pixels[y,2:14]==2)+2
+        if len(xs)>=3:candidates.append((len(xs),-y,xs))
+    if not candidates:return frame
+    count,negative_y,xs=max(candidates,key=lambda v:(v[0],v[1]))
+    y=-negative_y;center=(int(xs[0])+int(xs[-1]))//2
+    if direction=='down':eye_x=(center-2,center+2)
+    elif direction=='left':eye_x=(int(xs[0])+1,)
+    else:eye_x=(int(xs[-1])-1,)
+    for x in eye_x:
+        if 0<=x<16 and pixels[y,x]==2:pixels[y,x]=3
+    out=Image.fromarray(pixels,'P');out.putpalette(frame.getpalette())
+    return out
+
+def humanoid_bob(frame, direction, phase):
+    if phase==0:return frame.copy()
+    out=Image.new('P',(16,16));out.putpalette(frame.getpalette())
+    assert not np.any(np.array(frame)[0]),'Idle humanoid needs one top row for bob'
+    # Head and torso rise together, with no dropped top pixels or sideways flip.
+    out.paste(frame.crop((0,1,16,12)),(0,0))
+    left=frame.crop((0,12,8,16));right=frame.crop((8,12,16,16))
+    out.paste(left,(0,11 if phase==1 else 12))
+    out.paste(right,(8,12 if phase==1 else 11))
+    # Stretch the planted upper leg by one row so the raised torso stays joined.
+    if phase==1:out.paste(right.crop((0,0,8,1)),(8,11))
+    else:out.paste(left.crop((0,0,8,1)),(0,11))
+    return out
+
 def bob(frame, direction, phase):
     if phase==0: return frame.copy()
     out=frame.copy()
@@ -103,16 +153,118 @@ def export_animation(name,frames,folder,labels):
         preview.append(canvas.resize((frame.width*6,frame.height*6),Image.Resampling.NEAREST).convert('RGB'))
     preview[0].save(dest/'preview.gif',save_all=True,append_images=preview[1:],duration=150,loop=0)
 
-def characters():
+def export_humanoid_polish(name, frames):
+    """Write true four-phase walking loops and a native before/after record."""
+    polish=ROOT/'references/generated/durotar_v021/size_polish'
+    dest=OUT/'overworld'/name
+    for i,direction in enumerate(DIRS):
+        walk=[rgba(frames[j]) for j in (i,i+4,i,i+8)]
+        walk[0].save(dest/f'walk_{direction}.png',save_all=True,
+                     append_images=walk[1:],duration=120,loop=0,disposal=1,blend=0)
+        preview=[]
+        for image in walk:
+            canvas=Image.new('RGBA',(16,16),(36,31,35,255));canvas.alpha_composite(image)
+            preview.append(canvas.resize((128,128),Image.Resampling.NEAREST).convert('RGB'))
+        preview[0].save(dest/f'walk_{direction}.gif',save_all=True,
+                        append_images=preview[1:],duration=120,loop=0)
+    if not (polish/'before'/name).exists():return
+    after=polish/'after'/name;after.mkdir(parents=True,exist_ok=True)
+    for phase in range(3):
+        for i,direction in enumerate(DIRS):
+            rgba(frames[phase*4+i]).save(after/f'{direction}_step_{phase}.png')
+
+def humanoid_polish_report():
+    polish=ROOT/'references/generated/durotar_v021/size_polish'
+    names=[n for n in NAMES[:7] if (polish/'before'/n).exists() and (polish/'after'/n).exists()]
+    if not names:return
+    comparison=Image.new('RGB',(1040,66+len(names)*146),(36,31,35))
+    draw=ImageDraw.Draw(comparison)
+    draw.text((12,10),'NATIVE 16x16 - BEFORE / AFTER  |  independent player gear orientations',(239,222,181))
+    for i,direction in enumerate(DIRS):
+        draw.text((143+i*220,33),direction.upper()+'     BEFORE / AFTER',(239,222,181))
+    result={'native_canvas':[16,16],'standing_target':[15,15],
+            'upper_body_walking_bob_pixels':1,'player_gear_independent_left_right':True,
+            'player_source_frames':12,'npc_source_frames':6,
+            'walking_order':['idle','step_a','idle','step_b'],
+            'npc_front_back_step_b':'Standard Crystal mirrored step A.',
+            'characters':{}}
+    for row,name in enumerate(names):
+        draw.text((12,85+row*146),name.upper(),(239,222,181))
+        result['characters'][name]={}
+        for phase in range(3):
+            for i,direction in enumerate(DIRS):
+                label=f'{direction}_step_{phase}.png'
+                before=Image.open(polish/'before'/name/label).convert('RGBA')
+                after=Image.open(polish/'after'/name/label).convert('RGBA')
+                bb=before.getchannel('A').getbbox();ab=after.getchannel('A').getbbox()
+                assert bb and ab and after.size==(16,16)
+                result['characters'][name][label]={
+                    'before_bbox':list(bb),'after_bbox':list(ab),
+                    'before_size':[bb[2]-bb[0],bb[3]-bb[1]],
+                    'after_size':[ab[2]-ab[0],ab[3]-ab[1]]}
+                if phase==0:
+                    for j,image in enumerate((before,after)):
+                        checker=Image.new('RGBA',(16,16),(58,51,43,255));d=ImageDraw.Draw(checker)
+                        for y in range(0,16,4):
+                            for x in range(0,16,4):
+                                if (x+y)//4%2:d.rectangle((x,y,x+3,y+3),fill=(75,66,55,255))
+                        checker.alpha_composite(image)
+                        enlarged=checker.resize((96,96),Image.Resampling.NEAREST)
+                        comparison.paste(enlarged,(140+i*220+j*106,65+row*146))
+                        box=bb if j==0 else ab
+                        draw.text((140+i*220+j*106,164+row*146),
+                                  f'{box[2]-box[0]}x{box[3]-box[1]}',(201,183,151))
+    comparison.save(polish/'native_before_after.png')
+    (polish/'bounding_boxes.json').write_text(json.dumps(result,indent=2)+'\n')
+    (polish/'README.md').write_text(
+        '# Native humanoid size and walking polish\n\n'
+        'The existing 16×16 sprite footprint is unchanged. The peon and six '
+        'original humanoid roles use more of that space, with a target of 15×15 '
+        'at rest and a one-pixel upper-body walking bob. Every exact opaque '
+        'bounding box is recorded in `bounding_boxes.json`; irregular silhouettes '
+        'can occupy less than the target.\n\n'
+        '![Before and after at native pixel scale](native_before_after.png)\n\n'
+        'The player retains twelve independent source frames and separately drawn '
+        'left/right equipment. NPCs retain the standard six-frame format and '
+        'Crystal’s existing reflection of right-facing and alternate front/back '
+        'walking poses. No new OAM size, palette, save field or collision was added.\n\n'
+        '**Actual four-phase player source loops:** idle → step A → idle → step B.\n\n'
+        + '\n'.join(f'**{direction}** — ![{direction}](../../durotar_v02/overworld/peon/walk_{direction}.gif)\n'
+                    for direction in DIRS)
+        + '\nEach humanoid folder in `durotar_v02/overworld/` also contains '
+        '`walk_down.png`, `walk_up.png`, `walk_left.png`, `walk_right.png` '
+        '(transparent APNG) and their GIF previews.\n\n'
+        'Regenerate only these assets with:\n\n'
+        '```python\nimport runpy\na = runpy.run_path("tools/build_durotar_assets.py")\n'
+        'a["characters"](only=a["NAMES"][:7], auxiliary=False)\n```\n')
+
+def characters(only=None, auxiliary=True):
+    """Build selected overworld roles without touching battle or terrain assets.
+
+    `characters(only=NAMES[:7], auxiliary=False)` refreshes the humanoid sprite
+    sheets, naming sprite and transparent overworld exports only.
+    """
     source=Image.open(OUT/'concept_overworld.png').convert('RGBA')
     frames_by_name={}
     pal_indices=[2,2,2,3,2,2,1,4,0]
+    selected=set(NAMES if only is None else only)
+    assert selected.issubset(NAMES),selected
     for row,name in enumerate(NAMES):
-        dirs=[indexed(cell(source,row,col,9,4,16),OBJ[pal_indices[row]]) for col in range(4)]
-        frames=[bob(frame,direction,phase) for phase in range(3) for direction,frame in zip(DIRS,dirs)]
+        if name not in selected:continue
+        humanoid=name in NAMES[:7]
+        dirs=[indexed(humanoid_cell(source,row,col) if humanoid else cell(source,row,col,9,4,16),OBJ[pal_indices[row]]) for col in range(4)]
+        if humanoid:dirs=[humanoid_face(frame,name,direction) for direction,frame in zip(DIRS,dirs)]
+        animate=humanoid_bob if humanoid else bob
+        frames=[animate(frame,direction,phase) for phase in range(3) for direction,frame in zip(DIRS,dirs)]
+        if humanoid and name!='peon':
+            # Export the standard six-frame NPC renderer's real reflected poses.
+            frames[3]=ImageOps.mirror(frames[2]);frames[7]=ImageOps.mirror(frames[6])
+            frames[8]=ImageOps.mirror(frames[4]);frames[9]=ImageOps.mirror(frames[5])
+            frames[10]=frames[6].copy();frames[11]=frames[7].copy()
         frames_by_name[name]=frames
         labels=[f'{direction}_step_{phase}' for phase in range(3) for direction in DIRS]
         export_animation(name,[rgba(f) for f in frames],'overworld',labels)
+        if humanoid:export_humanoid_polish(name,frames)
         # Crystal NPC layout: idle down/up/left, then step down/up/left.
         order=list(range(12)) if name=='peon' else [0,1,2,4,5,6]
         sheet=Image.new('P',(16,16*len(order))); sheet.putpalette(frames[0].getpalette())
@@ -126,6 +278,8 @@ def characters():
                 values=np.array(frames[j]);values=np.where(values==1,2,np.where(values==2,1,values)).astype('uint8')
                 naming.paste(Image.fromarray(values,'P'),(0,i*16))
             naming.save(ROOT/'gfx/sprites/peon_naming.png')
+    humanoid_polish_report()
+    if not auxiliary:return
     # Marker and sleeping pose have a single standard OBJ frame.
     mark=Image.new('P',(16,16));mark.putpalette([v for c in OBJ[4] for v in c]+[0]*756)
     d=ImageDraw.Draw(mark);d.rectangle((6,1,9,9),fill=3);d.rectangle((6,12,9,14),fill=3)

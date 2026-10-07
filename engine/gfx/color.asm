@@ -1202,8 +1202,16 @@ LoadMapPals:
 	ld a, [wMapNumber]
 	sub 14
 	cp 7
+	jr c, .region_palette
+	ld a, [wMapNumber]
+	sub 21
+	cp 2
 	jr nc, .base_palette
+	ld hl, PeonInteriorBGPalettes
+	jr .palette_offset
+.region_palette:
 	ld hl, PeonRegionBGPalettes
+.palette_offset:
 	ld bc, 8 palettes
 	call AddNTimes
 .base_palette
@@ -1368,3 +1376,6 @@ INCLUDE "gfx/beta_poker/beta_poker.pal"
 
 SlotMachinePals:
 INCLUDE "gfx/slots/slots.pal"
+
+PeonInteriorBGPalettes:
+INCLUDE "gfx/tilesets/peon_interiors.pal"

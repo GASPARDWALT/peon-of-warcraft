@@ -1,0 +1,596 @@
+{
+  "rom_sha256": "324b631d9f20299578f60024671e40028be744ae51d74a18d293324bb6f44737",
+  "emulator": "PyBoy 2.7",
+  "playable_method": "Fresh normal-button new game, walking, conversations, purchases, house warps and battery-save cold restart.",
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "building_entries": [
+    {
+      "origin_map": 14,
+      "door": [
+        17,
+        5
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 14,
+      "door": [
+        5,
+        7
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        5,
+        5
+      ],
+      "interior_map": 21,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        15,
+        5
+      ],
+      "interior_map": 21,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        17,
+        9
+      ],
+      "interior_map": 21,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        5,
+        5
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        17,
+        5
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        17,
+        13
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        5,
+        15
+      ],
+      "interior_map": 22,
+      "ordinary_buttons": true,
+      "returned_to_exact_origin": true
+    }
+  ],
+  "npcs": [
+    {
+      "npc": "DurotarRoadGuide",
+      "xy": [
+        8,
+        10
+      ],
+      "map": "DurotarRoad",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "DurotarRoadScout",
+      "xy": [
+        8,
+        18
+      ],
+      "map": "DurotarRoad",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "DurotarRoadPatrol",
+      "xy": [
+        16,
+        20
+      ],
+      "map": "DurotarRoad",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "SenjinVillageGuide",
+      "xy": [
+        8,
+        10
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_caster",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "SenjinVillageVornal",
+      "xy": [
+        6,
+        12
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_caster",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "SenjinVillageBomBay",
+      "xy": [
+        14,
+        10
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_caster",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "SenjinVillageKwaii",
+      "xy": [
+        16,
+        13
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_fisher",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true,
+      "purchase": {
+        "cost_copper": 25,
+        "spring_water_quantity": 5,
+        "passed": true
+      }
+    },
+    {
+      "npc": "SenjinVillageWatcher",
+      "xy": [
+        6,
+        16
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "SenjinVillageVelrin",
+      "xy": [
+        14,
+        16
+      ],
+      "map": "SenjinVillage",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "troll_fisher",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 6,
+        "cyan_skin": true
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "RazorHillGuide",
+      "xy": [
+        8,
+        10
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_questgiver",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "RazorHillGrosk",
+      "xy": [
+        6,
+        12
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_vendor",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "RazorHillJark",
+      "xy": [
+        16,
+        10
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_vendor",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true,
+      "purchase": {
+        "cost_copper": 25,
+        "spring_water_quantity": 5,
+        "passed": true
+      }
+    },
+    {
+      "npc": "RazorHillOrgnil",
+      "xy": [
+        8,
+        16
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_questgiver",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "RazorHillThotar",
+      "xy": [
+        16,
+        16
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_questgiver",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "RazorHillGrunt",
+      "xy": [
+        14,
+        8
+      ],
+      "map": "RazorHill",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "OrgrimmarGateGuide",
+      "xy": [
+        8,
+        10
+      ],
+      "map": "OrgrimmarGate",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "OrgrimmarGateWestGrunt",
+      "xy": [
+        10,
+        12
+      ],
+      "map": "OrgrimmarGate",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    },
+    {
+      "npc": "OrgrimmarGateEastGrunt",
+      "xy": [
+        14,
+        12
+      ],
+      "map": "OrgrimmarGate",
+      "ordinary_buttons": true,
+      "portrait": {
+        "role": "orc_guard",
+        "rgb555_matches": true,
+        "vram_matches": true,
+        "tile_attributes_match": true
+      },
+      "sprite": {
+        "graphics_match": true,
+        "palette_index": 2,
+        "cyan_skin": false
+      },
+      "closed_cleanly": true
+    }
+  ],
+  "new_game_reaches_den": true,
+  "inside_troll_hut_save_cold_restart": {
+    "before": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        128,
+        128,
+        128,
+        128,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        21
+      ],
+      "wXCoord": [
+        5
+      ],
+      "wYCoord": [
+        6
+      ],
+      "wBackupWarpNumber": [
+        2
+      ],
+      "wBackupMapGroup": [
+        26
+      ],
+      "wBackupMapNumber": [
+        17
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        11,
+        159
+      ]
+    },
+    "after": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        128,
+        128,
+        128,
+        128,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        21
+      ],
+      "wXCoord": [
+        5
+      ],
+      "wYCoord": [
+        6
+      ],
+      "wBackupWarpNumber": [
+        2
+      ],
+      "wBackupMapGroup": [
+        26
+      ],
+      "wBackupMapNumber": [
+        17
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        11,
+        159
+      ]
+    },
+    "passed": true
+  },
+  "npc_count": 18,
+  "building_count": 9,
+  "all_checks_passed": true,
+  "limitations": [
+    "Chromatic physical hardware not exercised.",
+    "These maps contain the current 18 village/road/gate NPCs, not every WoW Classic NPC."
+  ]
+}

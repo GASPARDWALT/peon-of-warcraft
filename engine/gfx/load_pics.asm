@@ -169,6 +169,7 @@ GetAnimatedEnemyFrontpic:
 	call Get2bpp
 	xor a
 	ldh [rVBK], a
+	farcall PeonLoadEnemyPoseOverflow
 	ret
 
 LoadFrontpicTiles:

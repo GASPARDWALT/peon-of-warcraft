@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Compile native region maps/fog to a CGB display without changing SRAM."""
+import argparse
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageOps
@@ -51,13 +52,21 @@ def compile_map(im,pals):
     return out,reconstruction
 
 def main():
+    global BG, REGION_BGS
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--source',type=Path,default=OUT)
+    parser.add_argument('--output',type=Path,default=OUT)
+    args=parser.parse_args()
+    if args.source.name=='world':
+        import build_durotar_world as world
+        BG, REGION_BGS=world.BG,world.REGION_BGS
     dest=ROOT/'gfx/peon_maps';dest.mkdir(parents=True,exist_ok=True)
-    preview=OUT/'zone_maps';preview.mkdir(parents=True,exist_ok=True)
+    preview=args.output/'zone_maps';preview.mkdir(parents=True,exist_ok=True)
     asm=[]
     for ident,name,title in SPECS:
         im=Image.new('RGB',(160,144),(123,74,41))
         if name:
-            miniature=ImageOps.contain(Image.open(OUT/'maps'/(name+'.png')).convert('RGB'),(156,100),Image.Resampling.NEAREST)
+            miniature=ImageOps.contain(Image.open(args.source/'maps'/(name+'.png')).convert('RGB'),(156,100),Image.Resampling.NEAREST)
             im.paste(miniature,((160-miniature.width)//2,16+(104-miniature.height)//2))
             pals=REGION_BGS[name]
         else:

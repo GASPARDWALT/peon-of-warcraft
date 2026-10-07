@@ -5,6 +5,11 @@
 	const THEDEN_KENTO
 	const THEDEN_SCORPID
 	const THEDEN_VENDOR
+	const THEDEN_FOREMAN
+	const THEDEN_LAZY_PEON
+	const THEDEN_LAZY_MARKER
+	const THEDEN_BOAR_WEST
+	const THEDEN_BOAR_SOUTH
 
 TheDen_MapScripts:
 	def_scene_scripts
@@ -17,6 +22,7 @@ TheDenDiscover:
 
 TheDenQuestScript:
 	faceplayer
+	setlasttalked THEDEN_QUESTGIVER
 	opentext
 	checkevent EVENT_PEON_QUEST_ACCEPTED
 	iftrue .Accepted
@@ -271,6 +277,8 @@ TheDen_MapEvents:
 	db 0, 0
 	def_warp_events
 	warp_event 20, 10, VALLEY_OF_TRIALS, 1
+	warp_event 17, 5, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
+	warp_event 5, 7, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	def_coord_events
 	coord_event 17, 15, -1, TheDenScorpidScript
 	coord_event 18, 14, -1, TheDenScorpidScript
@@ -285,6 +293,7 @@ TheDen_MapEvents:
 	coord_event 20, 16, -1, TheDenScorpidScript
 	coord_event 21, 15, -1, TheDenScorpidScript
 	def_bg_events
+	bg_event 12, 7, BGEVENT_READ, TheDenCampfireScript
 	def_object_events
 	object_event 10, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
 	object_event 10, 8, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, EVENT_PEON_QUEST_ACCEPTED
@@ -292,6 +301,11 @@ TheDen_MapEvents:
 	object_event 6, 12, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
 	object_event 19, 15, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheDenScorpidScript, EVENT_PEON_SCORPID_DEFEATED
 	object_event 14, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenDuoknaScript, -1
+	object_event 8, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, -1
+	object_event 5, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
+	object_event 8, 14, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
+	object_event 6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
+	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
 
 TheDenGearRewardText:
 	text "BARBED CLUB found!"
@@ -340,4 +354,169 @@ DuoknaPoorText:
 	done
 DuoknaFullText:
 	text "Your bag is full."
+	done
+
+TheDenForemanScript:
+	faceplayer
+	setlasttalked THEDEN_FOREMAN
+	opentext
+	checkevent EVENT_PEON_LAZY_DONE
+	iftrue .Thanks
+	checkevent EVENT_PEON_LAZY_ACCEPTED
+	iftrue .Progress
+	writetext TheDenForemanOfferText
+	yesorno
+	iffalse .Close
+	setevent EVENT_PEON_LAZY_ACCEPTED
+	writetext TheDenForemanAcceptedText
+	sjump .Wait
+.Progress:
+	checkevent EVENT_PEON_LAZY_AWAKE
+	iffalse .Reminder
+	setevent EVENT_PEON_LAZY_DONE
+	disappear THEDEN_LAZY_MARKER
+	givemoney YOUR_MONEY, 25
+	writetext TheDenForemanRewardText
+	sjump .Wait
+.Reminder:
+	writetext TheDenForemanReminderText
+	sjump .Wait
+.Thanks:
+	writetext TheDenForemanThanksText
+.Wait:
+	waitbutton
+.Close:
+	closetext
+	end
+
+TheDenLazyPeonScript:
+	faceplayer
+	opentext
+	checkevent EVENT_PEON_LAZY_AWAKE
+	iftrue .Awake
+	checkevent EVENT_PEON_LAZY_ACCEPTED
+	iftrue .Wake
+	writetext TheDenLazyAsleepText
+	sjump .Wait
+.Wake:
+	closetext
+	playsound SFX_POUND
+	showemote EMOTE_SHOCK, THEDEN_LAZY_PEON, 12
+	waitsfx
+	setevent EVENT_PEON_LAZY_AWAKE
+	opentext
+	writetext TheDenLazyWakeText
+	sjump .Wait
+.Awake:
+	writetext TheDenLazyWorkingText
+.Wait:
+	waitbutton
+	closetext
+	end
+
+TheDenNeutralBoarScript:
+	faceplayer
+	opentext
+	writetext TheDenNeutralBoarText
+	waitbutton
+	closetext
+	end
+
+TheDenForemanOfferText:
+	text "FOREMAN THAZZ'RIL"
+	para "<PLAYER>,"
+	line "this peon naps"
+	cont "while we build."
+	para "LAZY PEONS"
+	line "Wake him with"
+	cont "your crude mace."
+	para "Will you help?"
+	done
+
+TheDenForemanAcceptedText:
+	text "<PLAYER>,"
+	line "find the sleeper"
+	cont "beside the camp."
+	para "Give him a nudge,"
+	line "then report back."
+	done
+
+TheDenForemanReminderText:
+	text "<PLAYER>,"
+	line "our sleeper is"
+	cont "still dreaming."
+	para "Wake him with"
+	line "your crude mace."
+	done
+
+TheDenForemanRewardText:
+	text "Good work,"
+	line "<PLAYER>!"
+	para "LAZY PEONS done!"
+	line "25 copper earned."
+	done
+
+TheDenForemanThanksText:
+	text "<PLAYER>,"
+	line "the work goes on."
+	para "Keep your eyes"
+	line "open on the road."
+	done
+
+TheDenLazyAsleepText:
+	text "Zzz... More work?"
+	para "This peon is"
+	line "sound asleep."
+	para "The foreman may"
+	line "need your help."
+	done
+
+TheDenLazyWakeText:
+	text "Ow! Me awake!"
+	para "<PLAYER>,"
+	line "I get back to"
+	cont "work now!"
+	done
+
+TheDenLazyWorkingText:
+	text "Work, work!"
+	para "<PLAYER>,"
+	line "no more napping!"
+	done
+
+TheDenNeutralBoarText:
+	text "The boar snuffles."
+	para "<PLAYER>,"
+	line "it pays you"
+	cont "little attention."
+	para "YELLOW: neutral."
+	line "This boar will"
+	cont "not attack you."
+	done
+
+TheDenCampfireScript:
+	setlasttalked 0
+	opentext
+	writetext TheDenCampfireOfferText
+	yesorno
+	iffalse .Close
+	special HealParty
+	writetext TheDenCampfireRestedText
+	waitbutton
+.Close:
+	closetext
+	end
+
+TheDenCampfireOfferText:
+	text "The fire is warm."
+	para "<PLAYER>,"
+	line "rest by the fire?"
+	done
+
+TheDenCampfireRestedText:
+	text "Your health and"
+	line "spell charges are"
+	cont "restored."
+	para "You feel ready"
+	line "for more work."
 	done

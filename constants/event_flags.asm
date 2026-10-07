@@ -287,6 +287,9 @@
 	const EVENT_PEON_CACTUS_2
 	const EVENT_PEON_CACTUS_3
 	const EVENT_PEON_CACTUS_DONE
+	const EVENT_PEON_LAZY_ACCEPTED
+	const EVENT_PEON_LAZY_AWAKE
+	const EVENT_PEON_LAZY_DONE
 
 	const_next 600
 ; Kurt Apricorn events

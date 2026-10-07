@@ -1,0 +1,72 @@
+# Durotar settlement NPCs
+
+The settlement pass populates four existing maps with eighteen interactable NPCs:
+six in Sen'jin Village, six in Razor Hill, three on Durotar Road and three at
+Orgrimmar Gate. Existing warp coordinates, discovery flags and each map's
+first NPC position `(8,10)` are preserved. NPC approach tiles are reserved by
+the terrain generator; standing NPCs keep the main road open.
+
+## Sen'jin Village
+
+| NPC | Classic entry | Position | Implemented role |
+| --- | --- | --- | --- |
+| Master Gadrin | 3188 | 8,10 | Village welcome and north-road directions |
+| Master Vornal | 3304 | 6,12 | Shaman and cavern story hint |
+| Bom'bay | 10578 | 14,10 | Optional free health/spell-charge restoration |
+| K'waii | 3186 | 16,13 | Five Spring Waters for 25 copper |
+| Sen'jin Watcher | 3297 | 6,16 | Friendly/hostile creature guidance |
+| Vel'rin Fang | 3194 | 14,16 | Village/Echo Isles flavor dialogue |
+
+## Razor Hill
+
+| NPC | Classic entry | Position | Implemented role |
+| --- | --- | --- | --- |
+| Gar'Thok | 3139 | 8,10 | Main-route directions |
+| Innkeeper Grosk | 6928 | 6,12 | Optional free health/spell-charge restoration |
+| Jark | 3164 | 16,10 | Five Spring Waters for 25 copper |
+| Orgnil Soulscar | 3142 | 8,16 | Burning Blade cavern hint |
+| Thotar | 3171 | 16,16 | Hunter flavor and creature advice |
+| Razor Hill Grunt | 5953 | 14,8 | Rest/vendor directions |
+
+Lar Prowltusk (Classic entry 3140) guides the Durotar Road junction. A generic
+Horde scout and patrol explain the coast and supplies. Three generic grunts
+at Orgrimmar Gate explain that the city interior remains outside this build.
+
+## Sources and adaptation limits
+
+Names, roles and settlement spawn coordinates were checked against
+[CMaNGOS Classic DB](https://github.com/cmangos/classic-db/blob/master/Full_DB/ClassicDB_1_12_1_z2815.sql.gz),
+specifically `creature_template` and `creature`. K'waii and Jark both use
+`VendorTemplateId = 1100`; `npc_vendor_template` 1100 includes item 159,
+Refreshing Spring Water. Its verified base offer remains five waters for
+25 copper, as in the existing Duokna implementation.
+
+Dialogue is newly written in English and shortened for an eighteen-column
+Game Boy text box. It is not a verbatim export of WoW quest dialogue. The
+free-rest functions, these exact native-map positions and generic road/gate
+guards are prototype adaptations. No class training, full vendor stock,
+reputation discount, buyback, new quests, Echo Isles or Orgrimmar interior
+is claimed by this pass.
+
+Native art roles use reserved legacy sprite indices without inserting IDs:
+`SPRITE_LINK_RECEPTIONIST` is the troll guard, `SPRITE_CLERK` the troll
+villager/merchant and `SPRITE_SAGE` the troll caster, using `PAL_NPC_TREE`.
+`SPRITE_OFFICER`, `SPRITE_GENTLEMAN` and `SPRITE_BLACK_BELT` are the orc
+guard, merchant and questgiver roles, using `PAL_NPC_GREEN`. These identifiers
+are compatibility adapters; the rendered art is supplied by the village asset
+pass. Multiple named NPCs share a role sheet rather than each having an
+individual animation atlas.
+
+## Enterable settlement buildings
+
+Nine settlement doors share two compact, twelve-by-ten-tile interior layouts:
+`PeonTrollHut` for Darkspear huts and `PeonOrcHut` for Horde houses. Each
+contains one friendly attendant at `(6,4)` who can restore health and spell
+charges after a yes/no choice. These generic Darkspear Healer and Horde
+Attendant roles are prototype additions, not claimed as named Classic NPCs.
+
+The exit at `(5,7)` uses Crystal's existing backup-warp mechanism to return
+to the particular exterior door used to enter. Sharing a layout preserves
+distinct entrance/return locations without adding nine separate map scripts.
+Existing exterior village NPCs remain in place. The interiors implement rest;
+they do not introduce personal storage, additional quests or class training.

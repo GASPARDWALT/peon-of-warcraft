@@ -2190,6 +2190,7 @@ Script_reloadend:
 
 Script_opentext:
 	call OpenText
+	farcall PeonDrawSpeakerPortrait
 	ret
 
 Script_reanchormap:

@@ -1,0 +1,2026 @@
+{
+  "native_tiles": 192,
+  "tile_budget": 192,
+  "block_count": 40,
+  "source": "Native pixel-grid art; no rescaled conceptual map",
+  "bg_palettes": [
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        206,
+        123,
+        66
+      ],
+      [
+        140,
+        66,
+        41
+      ],
+      [
+        57,
+        33,
+        33
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        214,
+        148,
+        82
+      ],
+      [
+        173,
+        99,
+        49
+      ],
+      [
+        90,
+        57,
+        33
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        148,
+        173,
+        74
+      ],
+      [
+        82,
+        115,
+        49
+      ],
+      [
+        41,
+        66,
+        33
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        123,
+        198,
+        206
+      ],
+      [
+        66,
+        140,
+        165
+      ],
+      [
+        33,
+        82,
+        123
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        247,
+        197,
+        132
+      ],
+      [
+        222,
+        156,
+        82
+      ],
+      [
+        156,
+        90,
+        49
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        214,
+        165,
+        107
+      ],
+      [
+        132,
+        90,
+        57
+      ],
+      [
+        57,
+        41,
+        33
+      ]
+    ],
+    [
+      [
+        239,
+        181,
+        115
+      ],
+      [
+        189,
+        82,
+        57
+      ],
+      [
+        123,
+        49,
+        41
+      ],
+      [
+        49,
+        33,
+        33
+      ]
+    ],
+    [
+      [
+        255,
+        247,
+        214
+      ],
+      [
+        255,
+        247,
+        214
+      ],
+      [
+        123,
+        74,
+        41
+      ],
+      [
+        8,
+        8,
+        8
+      ]
+    ]
+  ],
+  "region_palettes": {
+    "TheDen": [
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          214,
+          148,
+          82
+        ],
+        [
+          173,
+          99,
+          49
+        ],
+        [
+          90,
+          57,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          181,
+          115
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "ValleyOfTrials": [
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          165,
+          82,
+          49
+        ],
+        [
+          90,
+          49,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          165,
+          99
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "DurotarRoad": [
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          214,
+          165,
+          90
+        ],
+        [
+          173,
+          115,
+          57
+        ],
+        [
+          99,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          239,
+          197,
+          132
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "SenjinVillage": [
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          222,
+          189,
+          123
+        ],
+        [
+          181,
+          148,
+          90
+        ],
+        [
+          99,
+          74,
+          41
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          247,
+          222,
+          165
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "RazorHill": [
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          198,
+          115,
+          66
+        ],
+        [
+          156,
+          82,
+          49
+        ],
+        [
+          90,
+          49,
+          33
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          231,
+          165,
+          107
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "OrgrimmarGate": [
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          206,
+          123,
+          66
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          57,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          189,
+          107,
+          57
+        ],
+        [
+          140,
+          66,
+          41
+        ],
+        [
+          82,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          247,
+          197,
+          132
+        ],
+        [
+          222,
+          156,
+          82
+        ],
+        [
+          156,
+          90,
+          49
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          214,
+          165,
+          107
+        ],
+        [
+          132,
+          90,
+          57
+        ],
+        [
+          57,
+          41,
+          33
+        ]
+      ],
+      [
+        [
+          222,
+          148,
+          90
+        ],
+        [
+          189,
+          82,
+          57
+        ],
+        [
+          123,
+          49,
+          41
+        ],
+        [
+          49,
+          33,
+          33
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ],
+    "BurningBladeCavern": [
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          90,
+          82,
+          107
+        ],
+        [
+          66,
+          57,
+          82
+        ],
+        [
+          33,
+          24,
+          41
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          99,
+          90,
+          107
+        ],
+        [
+          74,
+          66,
+          82
+        ],
+        [
+          41,
+          33,
+          49
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          82,
+          115,
+          49
+        ],
+        [
+          41,
+          66,
+          33
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          123,
+          198,
+          206
+        ],
+        [
+          66,
+          140,
+          165
+        ],
+        [
+          33,
+          82,
+          123
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          123,
+          115,
+          132
+        ],
+        [
+          90,
+          82,
+          107
+        ],
+        [
+          57,
+          49,
+          74
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          148,
+          123,
+          99
+        ],
+        [
+          99,
+          74,
+          57
+        ],
+        [
+          41,
+          33,
+          41
+        ]
+      ],
+      [
+        [
+          115,
+          107,
+          123
+        ],
+        [
+          206,
+          90,
+          49
+        ],
+        [
+          140,
+          49,
+          49
+        ],
+        [
+          41,
+          24,
+          41
+        ]
+      ],
+      [
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          255,
+          247,
+          214
+        ],
+        [
+          123,
+          74,
+          41
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ]
+    ]
+  },
+  "maps": {
+    "PeonOpening": {
+      "walkable_tiles": 88,
+      "objectives_connected": 4,
+      "boulder_blocks": 0,
+      "escarpment_blocks": 24,
+      "warps": [],
+      "native_pixel_size": [
+        256,
+        192
+      ]
+    },
+    "GrommashHold": {
+      "walkable_tiles": 88,
+      "objectives_connected": 5,
+      "boulder_blocks": 0,
+      "escarpment_blocks": 24,
+      "warps": [],
+      "native_pixel_size": [
+        256,
+        192
+      ]
+    },
+    "TheDen": {
+      "walkable_tiles": 224,
+      "objectives_connected": 13,
+      "boulder_blocks": 9,
+      "escarpment_blocks": 45,
+      "warps": [
+        [
+          20,
+          10
+        ]
+      ],
+      "native_pixel_size": [
+        384,
+        320
+      ]
+    },
+    "ValleyOfTrials": {
+      "walkable_tiles": 272,
+      "objectives_connected": 4,
+      "boulder_blocks": 16,
+      "escarpment_blocks": 88,
+      "warps": [
+        [
+          4,
+          12
+        ],
+        [
+          28,
+          12
+        ],
+        [
+          24,
+          4
+        ]
+      ],
+      "native_pixel_size": [
+        512,
+        384
+      ]
+    },
+    "DurotarRoad": {
+      "walkable_tiles": 296,
+      "objectives_connected": 6,
+      "boulder_blocks": 14,
+      "escarpment_blocks": 71,
+      "warps": [
+        [
+          4,
+          14
+        ],
+        [
+          12,
+          24
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "native_pixel_size": [
+        384,
+        448
+      ]
+    },
+    "SenjinVillage": {
+      "walkable_tiles": 220,
+      "objectives_connected": 7,
+      "boulder_blocks": 0,
+      "escarpment_blocks": 19,
+      "warps": [
+        [
+          10,
+          4
+        ]
+      ],
+      "native_pixel_size": [
+        384,
+        320
+      ]
+    },
+    "RazorHill": {
+      "walkable_tiles": 164,
+      "objectives_connected": 8,
+      "boulder_blocks": 2,
+      "escarpment_blocks": 44,
+      "warps": [
+        [
+          12,
+          16
+        ],
+        [
+          12,
+          4
+        ]
+      ],
+      "native_pixel_size": [
+        384,
+        320
+      ]
+    },
+    "OrgrimmarGate": {
+      "walkable_tiles": 168,
+      "objectives_connected": 4,
+      "boulder_blocks": 5,
+      "escarpment_blocks": 44,
+      "warps": [
+        [
+          12,
+          16
+        ]
+      ],
+      "native_pixel_size": [
+        384,
+        320
+      ]
+    },
+    "BurningBladeCavern": {
+      "walkable_tiles": 112,
+      "objectives_connected": 3,
+      "boulder_blocks": 2,
+      "escarpment_blocks": 65,
+      "warps": [
+        [
+          10,
+          16
+        ]
+      ],
+      "native_pixel_size": [
+        320,
+        320
+      ]
+    }
+  },
+  "hut_entrances": {
+    "PeonOpening": [],
+    "GrommashHold": [],
+    "TheDen": [
+      {
+        "block": 4,
+        "block_xy": [
+          8,
+          2
+        ],
+        "door_tile": [
+          17,
+          5
+        ]
+      }
+    ],
+    "ValleyOfTrials": [],
+    "DurotarRoad": [],
+    "SenjinVillage": [
+      {
+        "block": 29,
+        "block_xy": [
+          2,
+          2
+        ],
+        "door_tile": [
+          5,
+          5
+        ]
+      },
+      {
+        "block": 29,
+        "block_xy": [
+          7,
+          2
+        ],
+        "door_tile": [
+          15,
+          5
+        ]
+      },
+      {
+        "block": 29,
+        "block_xy": [
+          8,
+          4
+        ],
+        "door_tile": [
+          17,
+          9
+        ]
+      }
+    ],
+    "RazorHill": [
+      {
+        "block": 4,
+        "block_xy": [
+          2,
+          2
+        ],
+        "door_tile": [
+          5,
+          5
+        ]
+      },
+      {
+        "block": 4,
+        "block_xy": [
+          8,
+          2
+        ],
+        "door_tile": [
+          17,
+          5
+        ]
+      },
+      {
+        "block": 4,
+        "block_xy": [
+          8,
+          6
+        ],
+        "door_tile": [
+          17,
+          13
+        ]
+      },
+      {
+        "block": 4,
+        "block_xy": [
+          2,
+          7
+        ],
+        "door_tile": [
+          5,
+          15
+        ]
+      }
+    ],
+    "OrgrimmarGate": [],
+    "BurningBladeCavern": []
+  },
+  "campfire": {
+    "map": "TheDen",
+    "block_xy": [
+      6,
+      3
+    ],
+    "block_id": 39,
+    "interaction_tile": [
+      12,
+      7
+    ],
+    "approach_tile": [
+      12,
+      8
+    ],
+    "animation": "Static native fire; flames and crossed logs reuse existing tiles."
+  },
+  "transparent_exports": "Explicit geometry masks preserve index-zero ivory highlights.",
+  "blocks": [
+    {
+      "id": 0,
+      "name": "bare_soil",
+      "palette": 1,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 1,
+      "name": "layered_escarpment",
+      "palette": 0,
+      "collision": "WALL"
+    },
+    {
+      "id": 2,
+      "name": "main_road",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 3,
+      "name": "cactus",
+      "palette": 2,
+      "collision": "WALL"
+    },
+    {
+      "id": 4,
+      "name": "hide_hut",
+      "palette": 5,
+      "collision": "WALL"
+    },
+    {
+      "id": 5,
+      "name": "hold_red_carpet",
+      "palette": 6,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 6,
+      "name": "horde_standard",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 7,
+      "name": "sandstone_floor",
+      "palette": 5,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 8,
+      "name": "sandy_clearance",
+      "palette": 1,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 9,
+      "name": "den_0",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 10,
+      "name": "den_1",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 11,
+      "name": "den_2",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 12,
+      "name": "den_3",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 13,
+      "name": "dry_scrub",
+      "palette": 2,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 14,
+      "name": "sea",
+      "palette": 3,
+      "collision": "WALL"
+    },
+    {
+      "id": 15,
+      "name": "cavern_mouth",
+      "palette": 0,
+      "collision": "WALL"
+    },
+    {
+      "id": 16,
+      "name": "zone_transition",
+      "palette": 4,
+      "collision": "WARP_PANEL"
+    },
+    {
+      "id": 17,
+      "name": "road_ns",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 18,
+      "name": "road_ew",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 19,
+      "name": "road_ne",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 20,
+      "name": "road_nw",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 21,
+      "name": "road_se",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 22,
+      "name": "road_sw",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 23,
+      "name": "road_nse",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 24,
+      "name": "road_nsw",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 25,
+      "name": "road_new",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 26,
+      "name": "road_sew",
+      "palette": 4,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 27,
+      "name": "east_shore",
+      "palette": 3,
+      "collision": "WALL"
+    },
+    {
+      "id": 28,
+      "name": "coastal_palm",
+      "palette": 2,
+      "collision": "WALL"
+    },
+    {
+      "id": 29,
+      "name": "troll_thatched_hut",
+      "palette": 5,
+      "collision": "WALL"
+    },
+    {
+      "id": 30,
+      "name": "spiked_palisade",
+      "palette": 5,
+      "collision": "WALL"
+    },
+    {
+      "id": 31,
+      "name": "watchtower",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 32,
+      "name": "timber_boardwalk",
+      "palette": 5,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 33,
+      "name": "fortified_gate_wall",
+      "palette": 0,
+      "collision": "WALL"
+    },
+    {
+      "id": 34,
+      "name": "fire_brazier",
+      "palette": 6,
+      "collision": "WALL"
+    },
+    {
+      "id": 35,
+      "name": "wayfinding_sign",
+      "palette": 5,
+      "collision": "WALL"
+    },
+    {
+      "id": 36,
+      "name": "burning_blade_skull",
+      "palette": 5,
+      "collision": "WALL"
+    },
+    {
+      "id": 37,
+      "name": "desert_boulder",
+      "palette": 1,
+      "collision": "WALL"
+    },
+    {
+      "id": 38,
+      "name": "walkable_bare_soil",
+      "palette": 1,
+      "collision": "FLOOR"
+    },
+    {
+      "id": 39,
+      "name": "campfire",
+      "palette": 6,
+      "collision": "WALL"
+    }
+  ],
+  "limitations": [
+    "Map geography compressed to v0.2 dimensions.",
+    "Huts share two reusable interior layouts.",
+    "Echo Isles and Orgrimmar city remain outside these maps."
+  ],
+  "enterable_buildings": {
+    "TheDen": [
+      {
+        "xy": [
+          17,
+          5
+        ],
+        "target": "PEON_ORC_HUT"
+      },
+      {
+        "xy": [
+          5,
+          7
+        ],
+        "target": "PEON_ORC_HUT"
+      }
+    ],
+    "SenjinVillage": [
+      {
+        "xy": [
+          5,
+          5
+        ],
+        "target": "PEON_TROLL_HUT"
+      },
+      {
+        "xy": [
+          15,
+          5
+        ],
+        "target": "PEON_TROLL_HUT"
+      },
+      {
+        "xy": [
+          17,
+          9
+        ],
+        "target": "PEON_TROLL_HUT"
+      }
+    ],
+    "RazorHill": [
+      {
+        "xy": [
+          5,
+          5
+        ],
+        "target": "PEON_ORC_HUT"
+      },
+      {
+        "xy": [
+          17,
+          5
+        ],
+        "target": "PEON_ORC_HUT"
+      },
+      {
+        "xy": [
+          17,
+          13
+        ],
+        "target": "PEON_ORC_HUT"
+      },
+      {
+        "xy": [
+          5,
+          15
+        ],
+        "target": "PEON_ORC_HUT"
+      }
+    ]
+  }
+}

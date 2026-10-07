@@ -79,17 +79,30 @@ DoBattle:
 	ld a, [hl]
 	ld [wCurPartySpecies], a
 	ld [wTempBattleMonSpecies], a
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon_already_present
 	hlcoord 1, 5
 	ld a, 9
 	call SlideBattlePicOut
+.peon_already_present
 	call LoadTilemapToTempTilemap
 	call ResetBattleParticipants
 	call InitBattleMon
 	call ResetPlayerStatLevels
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon_begin_combat
 	call SendOutMonText
 	call NewBattleMonStatus
 	call BreakAttraction
 	call SendOutPlayerMon
+	jr .player_ready
+.peon_begin_combat
+	call NewBattleMonStatus
+	call BreakAttraction
+	call PeonStartPlayerCombat
+.player_ready
 	call EmptyBattleTextbox
 	call LoadTilemapToTempTilemap
 	call SetPlayerTurn
@@ -4036,6 +4049,9 @@ SwitchPlayerMon:
 	ret
 
 SendOutPlayerMon:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jp z, PeonStartPlayerCombat
 	ld hl, wBattleMonDVs
 	predef GetUnownLetter
 	hlcoord 1, 5
@@ -4087,6 +4103,34 @@ SendOutPlayerMon:
 .statused
 	call UpdatePlayerHUD
 	ld a, $1
+	ldh [hBGMapMode], a
+	ret
+
+; The peon fights himself: draw his native back silhouette directly, without
+; a trainer, ball, summon animation, creature cry, or "Go <creature>" message.
+PeonStartPlayerCombat:
+	call GetBattleMonBackpic
+	ld a, $31
+	ldh [hGraphicStartTile], a
+	hlcoord 2, 6
+	lb bc, 6, 6
+	predef PlaceGraphic
+	xor a
+	ld [wBattleMenuCursorPosition], a
+	ld [wCurMoveNum], a
+	ld [wTypeModifier], a
+	ld [wPlayerMoveStruct + MOVE_ANIM], a
+	ld [wLastPlayerCounterMove], a
+	ld [wLastEnemyCounterMove], a
+	ld [wLastPlayerMove], a
+	ld [wEnemyWrapCount], a
+	ld [wBattleAfterAnim], a
+	ld [wBattleAnimParam], a
+	call CheckAmuletCoin
+	call SetPlayerTurn
+	call FinishBattleAnim
+	call UpdatePlayerHUD
+	ld a, 1
 	ldh [hBGMapMode], a
 	ret
 
@@ -5058,6 +5102,13 @@ BattleMenu_Pack:
 	ret
 
 BattleMenu_PKMN:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original_party
+	call LoadStandardMenuHeader
+	farcall PeonCharacterSheet
+	jp BattleMenu_Pack.didnt_use_item
+.original_party:
 	call LoadStandardMenuHeader
 BattleMenuPKMN_ReturnFromStats:
 	call ExitMenu
@@ -8055,7 +8106,14 @@ BattleIntro:
 	ldh [hMapAnims], a
 	farcall PlayBattleMusic
 	farcall ShowLinkBattleParticipants
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon_transition
 	farcall FindFirstAliveMonAndStartBattle
+	jr .transition_ready
+.peon_transition
+	call PeonStartEncounterTransition
+.transition_ready
 	call DisableSpriteUpdates
 	farcall ClearBattleRAM
 	call InitEnemy
@@ -8083,6 +8141,28 @@ BattleIntro:
 	call z, UpdateEnemyHUD
 	ld a, $1
 	ldh [hBGMapMode], a
+	ret
+
+; A brief native fade replaces Crystal's trainer/ball transition for Durotar.
+; Battle state initialization remains in the shared path below BattleIntro.
+PeonStartEncounterTransition:
+	farcall FadeOutToWhite
+	xor a
+	ldh [hLCDCPointer], a
+	ldh [hLYOverrideStart], a
+	ldh [hLYOverrideEnd], a
+	ldh [hSCY], a
+	ldh [hSCX], a
+	farcall _LoadBattleFontsHPBar
+	ld a, 1
+	ldh [hBGMapMode], a
+	call ClearSprites
+	call ClearTilemap
+	xor a
+	ldh [hBGMapMode], a
+	ldh [hWY], a
+	ldh [rWY], a
+	ldh [hMapAnims], a
 	ret
 
 LoadTrainerOrWildMonPic:
@@ -8933,7 +9013,11 @@ InitBattleDisplay:
 	call WaitBGMap
 	xor a
 	ldh [hBGMapMode], a
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .native_present
 	farcall BattleIntroSlidingPics
+.native_present
 	ld a, $1
 	ldh [hBGMapMode], a
 	ld a, $31
@@ -8977,6 +9061,31 @@ InitBattleDisplay:
 	ret
 
 .InitBackPic:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original_backpic
+	xor a
+	ld [wCurPartyMon], a
+.find_native_player
+	call CheckIfCurPartyMonIsFitToFight
+	jr nz, .found_native_player
+	ld a, [wCurPartyMon]
+	inc a
+	ld hl, wPartyCount
+	cp [hl]
+	jr nc, .use_first_player
+	ld [wCurPartyMon], a
+	jr .find_native_player
+.use_first_player
+	xor a
+	ld [wCurPartyMon], a
+.found_native_player
+	ld a, [wCurPartyMon]
+	ld [wCurBattleMon], a
+	call InitBattleMon
+	call GetBattleMonBackpic
+	ret
+.original_backpic
 	call GetTrainerBackpic
 	call CopyBackpic
 	ret
@@ -9071,6 +9180,9 @@ CopyBackpic:
 	ret
 
 BattleStartMessage:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jp z, PeonEncounterStartMessage
 	ld a, [wBattleMode]
 	dec a
 	jr z, .wild
@@ -9151,3 +9263,32 @@ BattleStartMessage:
 	farcall Mobile_PrintOpponentBattleMessage
 
 	ret
+
+PeonEncounterStartMessage:
+	; The enemy's native poses can introduce the encounter without an old cry.
+	farcall CheckBattleScene
+	jr c, .message
+	ld a, [wCurPartySpecies]
+	push af
+	ld a, [wCurSpecies]
+	push af
+	ld a, [wEnemyMonSpecies]
+	ld [wCurPartySpecies], a
+	hlcoord 12, 0
+	ld d, 0
+	ld e, ANIM_MON_EGG1
+	predef AnimateFrontpic
+	pop af
+	ld [wCurSpecies], a
+	pop af
+	ld [wCurPartySpecies], a
+.message
+	ld hl, .EncounterText
+	jp BattleTextbox
+.EncounterText
+	text "You face"
+	line "@"
+	text_ram wEnemyMonNickname
+	text "!"
+	para "Prepare to fight."
+	prompt

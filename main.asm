@@ -700,3 +700,10 @@ SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
 ; If it is removed, also remove the "tools/stadium" command in the Makefile.
 
 	ds $220
+
+INCLUDE "engine/menus/peon_speaker_portraits.asm"
+INCLUDE "engine/menus/peon_menu_skin.asm"
+INCLUDE "engine/menus/peon_atlas_quests.asm"
+
+SECTION "Peon Enemy Poses", ROMX
+INCLUDE "engine/battle/peon_enemy_poses.asm"

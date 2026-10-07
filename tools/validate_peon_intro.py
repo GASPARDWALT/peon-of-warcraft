@@ -10,6 +10,7 @@ import json
 import logging
 import shutil
 import tempfile
+import re
 from pathlib import Path
 from pyboy import PyBoy
 from PIL import Image
@@ -17,7 +18,7 @@ from collections import deque
 
 logging.disable(logging.CRITICAL)
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v02/in_game'
+OUT = ROOT / 'references/generated/durotar_v021/in_game'
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
@@ -41,10 +42,11 @@ def main():
         shutil.copyfile(ROOT/'pokecrystal.gbc',rom)
         p=PyBoy(str(rom),window='null',sound_emulated=True,log_level='ERROR')
         p.set_emulation_speed(0)
-        observed={'class_entered':False,'move_menus':0,'naming_entered':False}
+        observed={'class_entered':False,'move_menus':0,'naming_entered':False,'character_sheets':0}
         p.hook_register(*symbols['PeonClassSelect'],lambda state:state.__setitem__('class_entered',True),observed)
         p.hook_register(*symbols['MoveSelectionScreen'],lambda state:state.__setitem__('move_menus',state['move_menus']+1),observed)
         p.hook_register(*symbols['PeonAskName'],lambda state:state.__setitem__('naming_entered',True),observed)
+        p.hook_register(*symbols['PeonCharacterSheet'],lambda state:state.__setitem__('character_sheets',state['character_sheets']+1),observed)
         def read(name,length=1):
             bank,address=symbols[name]
             return list(p.memory[bank,address:address+length])
@@ -53,16 +55,27 @@ def main():
         def event(name):
             index=flags[name]
             return bool(read('wEventFlags',index//8+1)[index//8]&(1<<(index%8)))
-        map_specs={14:('TheDen',12,10),15:('ValleyOfTrials',16,12),16:('DurotarRoad',12,14),17:('SenjinVillage',12,10),18:('RazorHill',12,10),19:('OrgrimmarGate',12,10),20:('BurningBladeCavern',10,10)}
+        map_specs={14:('TheDen',12,10),15:('ValleyOfTrials',16,12),16:('DurotarRoad',12,14),17:('SenjinVillage',12,10),18:('RazorHill',12,10),19:('OrgrimmarGate',12,10),20:('BurningBladeCavern',10,10),21:('PeonTrollHut',6,5),22:('PeonOrcHut',6,5)}
         def navigate(target,avoid_aggro=True):
             num=read('wMapNumber')[0];name,w,h=map_specs[num]
             grid=(ROOT/f'maps/{name}.blk').read_bytes()
             if tuple(read('wXCoord')+read('wYCoord'))==target:
                 walk('up',1)
             start=tuple(read('wXCoord')+read('wYCoord'))
-            blocked={1,3,4,6,9,10,11,12,14,15}
-            actors=({(8,10),(12,8)} if num==20 else {(8,10)}) if num!=14 else {(10,9),(10,8),(6,12),(19,15),(14,9)}
-            warps={14:{(20,10)},15:{(4,12),(28,12),(24,4)},16:{(4,14),(12,24),(12,4)},17:{(10,4)},18:{(12,16),(12,4)},19:{(12,16)},20:{(10,16)}}[num]
+            collision_rows=[]
+            for row in (ROOT/'data/tilesets/peon_collision.asm').read_text().splitlines():
+                if 'tilecoll' in row:collision_rows.append(row.split('tilecoll',1)[1].split(';')[0].replace(' ','').split(','))
+            actors=set()
+            for row in (ROOT/'maps'/f'{name}.asm').read_text().splitlines():
+                match=re.match(r'\s*object_event\s+(\d+),\s*(\d+),',row)
+                if match:actors.add((int(match[1]),int(match[2])))
+            def blocked_at(x,y):
+                block=grid[(y//2)*w+x//2]
+                return collision_rows[block][(y%2)*2+x%2]=='WALL'
+            warps=set()
+            for row in (ROOT/'maps'/f'{name}.asm').read_text().splitlines():
+                match=re.match(r'\s*warp_event\s+(\d+),\s*(\d+),',row)
+                if match:warps.add((int(match[1]),int(match[2])))
             queue=deque([(start,[])]);seen={start};found=None
             while queue:
                 (x,y),path=queue.popleft()
@@ -70,7 +83,7 @@ def main():
                 for key,dx,dy in [('left',-1,0),('right',1,0),('up',0,-1),('down',0,1)]:
                     pos=(x+dx,y+dy);xx,yy=pos
                     if not (0<=xx<w*2 and 0<=yy<h*2) or pos in seen or pos in actors:continue
-                    if grid[(yy//2)*w+xx//2] in blocked:continue
+                    if blocked_at(xx,yy):continue
                     if pos in warps and pos!=target:continue
                     if num==14 and avoid_aggro and not event('EVENT_PEON_SCORPID_DEFEATED') and abs(xx-19)+abs(yy-15)<=2:continue
                     seen.add(pos);queue.append((pos,path+[key]))
@@ -170,7 +183,6 @@ def main():
         p.save_state(sparring_state)
         press('a')
         advance_until(lambda:read('wBattleMode')[0]!=0)
-        capture('11_battle')
         # Choose the second move, Lightning Bolt, once the move menu appears.
         handled=0
         spells=[]
@@ -178,6 +190,16 @@ def main():
             if observed['move_menus']>handled:
                 handled=observed['move_menus']
                 p.tick(60,True)
+                if 'battle_self_returns_cleanly' not in results:
+                    sheets=observed['character_sheets']
+                    press('b',60);capture('11_battle')
+                    press('right',30);press('a',90)
+                    assert observed['character_sheets']==sheets+1, 'SELF did not open custom character sheet'
+                    capture('11a_battle_self')
+                    press('b',90);press('left',30);press('a',90)
+                    assert read('wBattleMode')[0]!=0 and read('wPartyCount')[0]==1
+                    results['battle_self_returns_cleanly']=True
+                    handled=observed['move_menus']
                 if read('wCurMoveNum')[0]==0: press('down',60)
                 capture('11_spell_selection')
                 if 'spell_animation_recorded' not in results:
@@ -222,10 +244,16 @@ def main():
         assert read('wNumKeyItems')[0]==5 and 90 in read('wKeyItems',5)
         results['second_quest_map_reward_passed']=True
         press('select');capture('20_zone_map_den')
-        expected=Image.open(ROOT/'references/generated/durotar_v02/zone_maps/den.png').convert('RGB')
-        assert [tuple(c>>3 for c in v) for v in p.screen.image.convert('RGB').getdata()]==[tuple(c>>3 for c in v) for v in expected.getdata()]
+        expected=Image.open(ROOT/'references/generated/durotar_v021/zone_maps/den.png').convert('RGB')
+        # The independent atlas validator verifies the quest OBJ glyph. Compare
+        # every remaining native background pixel here, including the frame.
+        actual=p.screen.image.convert('RGB')
+        for y in range(144):
+            for x in range(160):
+                if 58 <= x < 66 and 92 <= y < 100:continue
+                assert tuple(c>>3 for c in actual.getpixel((x,y)))==tuple(c>>3 for c in expected.getpixel((x,y))), (x,y)
         press('right');capture('21_zone_map_fog')
-        expected=Image.open(ROOT/'references/generated/durotar_v02/zone_maps/fog.png').convert('RGB')
+        expected=Image.open(ROOT/'references/generated/durotar_v021/zone_maps/fog.png').convert('RGB')
         assert [tuple(c>>3 for c in v) for v in p.screen.image.convert('RGB').getdata()]==[tuple(c>>3 for c in v) for v in expected.getdata()]
         press('b');results['zone_map_and_fog_render_passed']=True
         # Native menus must close cleanly and reload overworld graphics.
@@ -255,6 +283,7 @@ def main():
                 navigate((8,12));walk('up',1);p.tick(600,True)
                 assert read('wBattleMode')[0]!=0
                 capture('24c_red_imp_battle')
+                cave_state=io.BytesIO();p.save_state(cave_state)
                 handled=observed['move_menus']
                 for _ in range(120):
                     if observed['move_menus']>handled:
@@ -301,6 +330,27 @@ def main():
         results['save_cold_restart_passed']=True
         results['saved_state']=after
         assert read('wScriptMode')[0]==0
+        # Independent active-combat inventory diagnostic, after all normal tests.
+        # Seed empty charges/item only in an isolated emulator state; then use
+        # actual BAGS buttons to prove active and saved fields stay synchronized.
+        p.hook_register(*symbols['MoveSelectionScreen'],lambda state:state.__setitem__('move_menus',state['move_menus']+1),observed)
+        cave_state.seek(0);p.load_state(cave_state)
+        menus=observed['move_menus']
+        advance_until(lambda:observed['move_menus']>menus)
+        for field,value in [('wBattleMonPP',1),('wPartyMon1PP',1)]:
+            bank,address=symbols[field];p.memory[bank,address+1]=value
+        bank,address=symbols['wBattleMonItem'];p.memory[bank,address]=0
+        press('b',60);press('down',30);press('a',180);press('a',180)
+        press('a',180)
+        assert read('wBattleMonItem')[0]==137 and read('wPartyMon1Item')[0]==137
+        press('right',180);press('a',180)
+        capture('26_battle_bag_water')
+        assert read('wBattleMonPP',2)[1]==11 and read('wPartyMon1PP',2)[1]==11, {'battle_pp':read('wBattleMonPP',2),'party_pp':read('wPartyMon1PP',2),'cursor':read('wMenuCursorY'),'items':read('wItems',4),'pc':hex(p.register_file.PC)}
+        assert read('wItems',4)==[137,1,46,4],read('wItems',4)
+        press('b',90)
+        assert read('wBattleMode')[0]!=0
+        results['active_battle_bags_diagnostic_passed']=True
+        results['active_battle_bags_diagnostic_injections']=['active weapon cleared','Lightning charges set to one in battle and party fields']
         # Separate fault-injection check: lower HP to guarantee a friendly loss.
         # This is not used to pass the ordinary intro, quest, win or save tests.
         sparring_state.seek(0); p.load_state(sparring_state)
