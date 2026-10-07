@@ -1,5 +1,11 @@
 # Visuels générés — Peon of Warcraft
 
+## Nouveau : peon réellement intégré
+
+[Ouvrir les captures, la planche technique et l'animation du peon dans le jeu](peon_in_game/README.md).
+
+Le joueur à pied est maintenant remplacé dans la ROM. Les images ci-dessous restent les anciennes maquettes de direction artistique ; la capture de Crystal plus bas décrit l'état avant cette intégration.
+
 Cliquez sur les noms pour ouvrir les images dans GitHub. Les propositions sont des maquettes visuelles, pas des sprites ou écrans déjà intégrés dans la ROM.
 
 ## Peon chaman
@@ -24,9 +30,9 @@ Les mentions « 16 × 16 » et « ×8 » font partie de la présentation génér
 
 Si GitHub ne lit pas la vidéo directement, ouvrez son fichier puis utilisez le bouton de téléchargement du fichier brut.
 
-## État réel de la ROM
+## Captures de la base avant intégration du peon
 
-La ROM testée reste Pokémon Crystal d'origine. Les éléments Warcraft ci-dessus ne sont pas intégrés. Compilation et accès au menu vérifiés ; matériel Chromatic non testé.
+Ces captures historiques viennent de Pokémon Crystal d'origine, avant le remplacement du joueur. Pour l'état actuel, consulter la galerie `peon_in_game` en haut de cette page. Matériel Chromatic non testé.
 
 ![Écran titre actuel de Crystal](pokecrystal_title_capture.png)
 

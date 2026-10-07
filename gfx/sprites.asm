@@ -1,3 +1,7 @@
+SECTION "Peon Sprite", ROMX
+
+PeonSpriteGFX:: INCBIN "gfx/sprites/peon.2bpp"
+
 SECTION "Sprites 1", ROMX
 
 ChrisSpriteGFX::               INCBIN "gfx/sprites/chris.2bpp"

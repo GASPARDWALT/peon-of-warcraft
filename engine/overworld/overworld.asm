@@ -192,6 +192,13 @@ GetSprite:
 	; load the sprite type into l
 	ld l, [hl]
 	ld h, a
+	ld a, l
+	cp PEON_SPRITE
+	jr nz, .size_ready
+; The peon's 16 idle tiles exceed the one-byte size-in-bytes field.
+	ld c, 16
+.size_ready
+	ld a, h
 	ret
 
 GetMonSprite:
@@ -499,6 +506,8 @@ ArrangeUsedSprites:
 
 GetSpriteLength:
 ; Return the length of sprite type a in tiles.
+	cp PEON_SPRITE
+	jr z, .Peon
 
 	cp WALKING_SPRITE
 	jr z, .AnyDirection
@@ -516,6 +525,12 @@ GetSpriteLength:
 
 .OneDirection:
 	ld a, 4
+	ret
+
+.Peon:
+; Reserve 32 slots: 16 idle tiles and 32 walking tiles in the two VRAM
+; halves. The spare idle slots prevent walking data overlapping other sprites.
+	ld a, 32
 	ret
 
 GetUsedSprites:
@@ -593,6 +608,14 @@ endr
 	ld a, h
 	add HIGH(vTiles1 - vTiles0)
 	ld h, a
+	ldh a, [hUsedSpriteIndex]
+	cp SPRITE_CHRIS
+	jr z, .peon_steps
+	cp SPRITE_KRIS
+	jr nz, .copy_steps
+.peon_steps
+	ld c, 32
+.copy_steps
 	call .CopyToVram
 
 .done

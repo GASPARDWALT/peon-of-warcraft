@@ -2955,10 +2955,30 @@ InitSprites:
 	jp z, .done
 	cp NUM_FACINGS
 	jp nc, .done
+	ld e, a
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	ld hl, PeonFacings
+	cp SPRITE_CHRIS
+	jr z, .peon_facing
+	cp SPRITE_KRIS
+	jr z, .peon_facing
+	ld hl, Facings
+	jr .facing_table
+.peon_facing
+; Fishing/emotes and other non-walking facings keep the original renderer.
+	ld a, e
+	cp FACING_FISH_DOWN
+	jr c, .facing_table
+	ld hl, Facings
+.facing_table
+	push hl
+	ld a, e
 	ld l, a
 	ld h, 0
 	add hl, hl
-	ld bc, Facings
+	pop bc
 	add hl, bc
 	ld a, [hli]
 	ld h, [hl]
@@ -3036,3 +3056,5 @@ for n, 1, NUM_OBJECT_STRUCTS
 	dw wObject{d:n}Struct
 endr
 	assert_table_length NUM_OBJECT_STRUCTS
+
+INCLUDE "data/sprites/peon_facings.asm"

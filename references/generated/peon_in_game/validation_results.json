@@ -1,0 +1,192 @@
+{
+  "rom_sha256": "9892bb0a97150044c7b08acb19276bcde9f3db2386159c873b84bccad2a0c2a1",
+  "rom_bytes": 2097152,
+  "vram_graphics_match": true,
+  "vram_bank": 1,
+  "idle_tiles": 16,
+  "walking_tiles": 32,
+  "renderer_facings_verified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "mirrored_accessories": false,
+  "normal_movement": [
+    {
+      "direction": "left",
+      "start": [
+        24,
+        7,
+        3,
+        3
+      ],
+      "end": [
+        24,
+        7,
+        3,
+        1
+      ],
+      "facings": [
+        0,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "direction": "right",
+      "start": [
+        24,
+        7,
+        3,
+        3
+      ],
+      "end": [
+        24,
+        7,
+        3,
+        5
+      ],
+      "facings": [
+        0,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "direction": "up",
+      "start": [
+        24,
+        7,
+        3,
+        3
+      ],
+      "end": [
+        24,
+        7,
+        2,
+        3
+      ],
+      "facings": [
+        0,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "direction": "down",
+      "start": [
+        24,
+        7,
+        3,
+        3
+      ],
+      "end": [
+        24,
+        7,
+        5,
+        3
+      ],
+      "facings": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "map_after_transition": [
+    24,
+    6,
+    1,
+    9
+  ],
+  "npc_graphics_verified": [
+    12,
+    46
+  ],
+  "save_cold_restart_passed": true,
+  "player_state_before_save": {
+    "wPlayerName": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      80,
+      0,
+      0,
+      0
+    ],
+    "wPlayerID": [
+      74,
+      133
+    ],
+    "wMoney": [
+      0,
+      11,
+      184
+    ],
+    "wMapGroup": [
+      24,
+      7,
+      3,
+      3
+    ]
+  },
+  "player_state_after_restart": {
+    "wPlayerName": [
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      128,
+      80,
+      0,
+      0,
+      0
+    ],
+    "wPlayerID": [
+      74,
+      133
+    ],
+    "wMoney": [
+      0,
+      11,
+      184
+    ],
+    "wMapGroup": [
+      24,
+      7,
+      3,
+      3
+    ]
+  },
+  "emulator": "PyBoy 2.7.0",
+  "limitations": [
+    "Chromatic hardware untested",
+    "Bike, surf, fishing, portraits and menu icons retain Crystal artwork",
+    "Sound not emulated in this check"
+  ]
+}
