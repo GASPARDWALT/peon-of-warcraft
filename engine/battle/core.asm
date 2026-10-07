@@ -4701,10 +4701,6 @@ PrintPlayerHUD:
 	ld [wMonType], a
 	callfar GetGender
 	ld a, ' '
-	jr c, .got_gender_char
-	ld a, '♂'
-	jr nz, .got_gender_char
-	ld a, '♀'
 
 .got_gender_char
 	hlcoord 17, 8
@@ -4777,10 +4773,6 @@ DrawEnemyHUD:
 	ld [wMonType], a
 	callfar GetGender
 	ld a, ' '
-	jr c, .got_gender
-	ld a, '♂'
-	jr nz, .got_gender
-	ld a, '♀'
 
 .got_gender
 	hlcoord 9, 1
@@ -4985,11 +4977,8 @@ BattleMenu_Pack:
 	cp BATTLETYPE_CONTEST
 	jr z, .contest
 
-	farcall BattlePack
-	ld a, [wBattlePlayerAction]
-	and a ; BATTLEPLAYERACTION_USEMOVE?
-	jr z, .didnt_use_item
-	jr .got_item
+	farcall PeonBags
+	jr .didnt_use_item
 
 .tutorial
 	farcall TutorialPack

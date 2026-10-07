@@ -163,7 +163,7 @@ BattleText_EnemyMonFainted:
 	text "Enemy @"
 	text_ram wEnemyMonNickname
 	text_start
-	line "fainted!"
+	line "was defeated!"
 	prompt
 
 GotMoneyForWinningText:
@@ -208,7 +208,7 @@ UnusedRivalLossText: ; unreferenced
 BattleText_MonFainted:
 	text_ram wBattleMonNickname
 	text_start
-	line "fainted!"
+	line "was knocked out!"
 	prompt
 
 BattleText_UseNextMon:

@@ -515,6 +515,11 @@ INCLUDE "engine/movie/title.asm"
 SECTION "Peon Menus", ROMX
 INCLUDE "engine/menus/peon_prototype.asm"
 
+SECTION "Peon Interfaces", ROMX
+INCLUDE "engine/menus/peon_interfaces.asm"
+
+INCLUDE "gfx/peon_zone_maps.asm"
+
 
 SECTION "mobile45", ROMX
 

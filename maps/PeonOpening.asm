@@ -56,7 +56,8 @@ PeonShowMovement:
 PeonSleepingText:
 	text "VALLEY OF TRIALS"
 	para "A lazy orc PEON"
-	line "sleeps by a cactus."
+	line "sleeps by a"
+	cont "cactus."
 	para "Zzz... work later."
 	done
 PeonHunterText:

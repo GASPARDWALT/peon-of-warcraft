@@ -1055,3 +1055,15 @@ GrommashHold_Blocks:
 INCBIN "maps/GrommashHold.blk"
 TheDen_Blocks:
 INCBIN "maps/TheDen.blk"
+ValleyOfTrials_Blocks:
+INCBIN "maps/ValleyOfTrials.blk"
+DurotarRoad_Blocks:
+INCBIN "maps/DurotarRoad.blk"
+SenjinVillage_Blocks:
+INCBIN "maps/SenjinVillage.blk"
+RazorHill_Blocks:
+INCBIN "maps/RazorHill.blk"
+OrgrimmarGate_Blocks:
+INCBIN "maps/OrgrimmarGate.blk"
+BurningBladeCavern_Blocks:
+INCBIN "maps/BurningBladeCavern.blk"

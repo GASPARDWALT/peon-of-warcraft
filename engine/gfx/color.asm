@@ -1195,6 +1195,29 @@ INCLUDE "data/pokemon/palettes.asm"
 INCLUDE "data/trainers/palettes.asm"
 
 LoadMapPals:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .crystal
+	ld hl, PeonMapBGPalettes
+	ld a, [wMapNumber]
+	sub 14
+	cp 7
+	jr nc, .base_palette
+	ld hl, PeonRegionBGPalettes
+	ld bc, 8 palettes
+	call AddNTimes
+.base_palette
+	ld de, wBGPals1
+	ld bc, 8 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	ld hl, PeonMapOBJPalettes
+	ld de, wOBPals1
+	ld bc, 8 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	ret
+.crystal
 	farcall LoadSpecialMapPalette
 	jr c, .got_pals
 
@@ -1294,6 +1317,13 @@ endr
 	ret
 
 INCLUDE "data/maps/environment_colors.asm"
+
+PeonMapBGPalettes:
+INCLUDE "gfx/tilesets/peon_bg.pal"
+PeonMapOBJPalettes:
+INCLUDE "gfx/overworld/peon_obj.pal"
+PeonRegionBGPalettes:
+INCLUDE "gfx/tilesets/peon_regions.pal"
 
 PartyMenuBGMobilePalette:
 INCLUDE "gfx/stats/party_menu_bg_mobile.pal"

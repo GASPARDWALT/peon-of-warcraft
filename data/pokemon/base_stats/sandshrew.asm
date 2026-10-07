@@ -1,9 +1,9 @@
 	db SANDSHREW ; 027
 
-	db  50,  75,  85,  40,  20,  30
+	db  38,  32,  30,  18,  25,  25
 	;   hp  atk  def  spd  sat  sdf
 
-	db GROUND, GROUND ; type
+	db BUG, POISON ; scorpid affinity; Lightning Bolt can damage it
 	db 255 ; catch rate
 	db 93 ; base exp
 	db NO_ITEM, NO_ITEM ; items

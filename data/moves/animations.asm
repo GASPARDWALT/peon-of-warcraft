@@ -472,12 +472,8 @@ BattleAnim_SendOutMon:
 	anim_ret
 
 .Normal:
-	anim_1gfx BATTLE_ANIM_GFX_SMOKE
-	anim_sound 0, 0, SFX_BALL_POOF
-	anim_obj BATTLE_ANIM_OBJ_BALL_POOF, 44, 96, $0
-	anim_wait 4
 	anim_bgeffect BATTLE_BG_EFFECT_ENTER_MON, $0, BG_EFFECT_USER, $0
-	anim_wait 32
+	anim_wait 16
 	anim_ret
 
 BattleAnim_ReturnMon:
@@ -651,10 +647,10 @@ BattleAnim_Shake:
 	anim_ret
 
 BattleAnim_Pound:
-	anim_1gfx BATTLE_ANIM_GFX_HIT
+	anim_2gfx BATTLE_ANIM_GFX_HIT, BATTLE_ANIM_GFX_CUT
 	anim_sound 0, 1, SFX_POUND
-	anim_obj BATTLE_ANIM_OBJ_PALM, 136, 56, $0
-	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_CUT_DOWN_RIGHT, 136, 48, $0
+	anim_wait 8
 	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 136, 56, $0
 	anim_wait 16
 	anim_ret
@@ -1246,11 +1242,18 @@ BattleAnim_Thunderpunch:
 
 BattleAnim_Thundershock:
 	anim_2gfx BATTLE_ANIM_GFX_LIGHTNING, BATTLE_ANIM_GFX_EXPLOSION
+	anim_sound 0, 0, SFX_THUNDERSHOCK
+	anim_obj BATTLE_ANIM_OBJ_THUNDERSHOCK_BALL, 48, 88, $2
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_THUNDERSHOCK_BALL, 80, 72, $2
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_THUNDERSHOCK_BALL, 112, 56, $2
+	anim_wait 6
 	anim_obj BATTLE_ANIM_OBJ_THUNDERSHOCK_BALL, 136, 56, $2
-	anim_wait 16
+	anim_wait 8
 	anim_sound 0, 1, SFX_THUNDERSHOCK
 	anim_obj BATTLE_ANIM_OBJ_SPARKS_CIRCLE, 136, 56, $0
-	anim_wait 96
+	anim_wait 32
 	anim_ret
 
 BattleAnim_Thunderbolt:

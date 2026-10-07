@@ -11,6 +11,7 @@ SpecialsPointers::
 	add_special PeonInitializeShaman
 	add_special PeonEyeOpening
 	add_special PeonQuestMarker
+	add_special PeonAskName
 	add_special WarpToSpawnPoint
 
 ; Communications

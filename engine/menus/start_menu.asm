@@ -187,9 +187,9 @@ StartMenu::
 	dw StartMenu_Quit,     .QuitString,     .QuitDesc
 
 .PokedexString:  db "#DEX@"
-.PartyString:    db "SHAMAN@"
-.PackString:     db "PACK@"
-.StatusString:   db "<PLAYER>@"
+.PartyString:    db "CHARACTER@"
+.PackString:     db "BAGS@"
+.StatusString:   db "MAP@"
 .SaveString:     db "SAVE@"
 .OptionString:   db "OPTION@"
 .ExitString:     db "EXIT@"
@@ -453,7 +453,7 @@ StartMenu_Status:
 ; Player status.
 
 	call FadeToMenu
-	farcall TrainerCard
+	farcall PeonZoneMap
 	call CloseSubmenu
 	ld a, 0
 	ret
@@ -464,7 +464,7 @@ StartMenu_Pokedex:
 	jr z, .empty
 
 	call FadeToMenu
-	farcall Pokedex
+	farcall PeonCharacterSheet
 	call CloseSubmenu
 
 .empty
@@ -480,7 +480,9 @@ StartMenu_Pokegear:
 
 StartMenu_Pack:
 	call FadeToMenu
-	farcall Pack
+	farcall PeonBags
+	xor a
+	ld [wPackUsedItem], a
 	ld a, [wPackUsedItem]
 	and a
 	jr nz, .used_item
@@ -494,6 +496,13 @@ StartMenu_Pack:
 	ret
 
 StartMenu_Pokemon:
+	call FadeToMenu
+	farcall PeonCharacterSheet
+	call CloseSubmenu
+	xor a
+	ret
+
+PeonOriginalPartyMenu:
 	ld a, [wPartyCount]
 	and a
 	jr z, .return

@@ -27,7 +27,12 @@ GrommashHoldSequence:
 	opentext
 	writetext PeonKentoText
 	promptbutton
-	givepoke MACHOP, 1
+	closetext
+	special PeonAskName
+	opentext
+	writetext PeonNamedText
+	promptbutton
+	givepoke MACHOP, 2
 	special PeonInitializeShaman
 	giveitem ITEM_19
 	giveitem ITEM_2D
@@ -44,8 +49,10 @@ PeonThrallText:
 	text "GROMMASH HOLD"
 	para "Your eyes open..."
 	para "THRALL: This peon?"
-	line "He can barely work!"
-	para "Three masters await."
+	line "He can barely"
+	cont "work!"
+	para "Three masters"
+	line "await."
 	line "Choose a mentor."
 	para "KENTO BRANDENHOOF:"
 	line "Tauren Shaman."
@@ -60,9 +67,20 @@ PeonKentoText:
 	line "train this peon."
 	para "You are now my"
 	line "SHAMAN apprentice."
+	para "Tell me,"
+	line "apprentice:"
+	line "what is your name?"
+	done
+PeonNamedText:
+	text "<PLAYER>,"
+	line "walk with spirits."
+	para "Your training"
+	line "starts"
+	line "in Durotar."
 	done
 PeonKitText:
-	text "Received CRUDE MACE,"
+	text "Received CRUDE"
+	line "MACE,"
 	line "WOOD SHIELD and"
 	cont "APPRENTICE TOTEM!"
 	para "Learned"

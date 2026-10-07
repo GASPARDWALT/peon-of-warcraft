@@ -612,7 +612,8 @@ BluApricornDesc:
 	db   "A blue APRICORN.@"
 
 TeruSama6Desc:
-	db   "?@"
+	db   "SELECT: zone map."
+	next "Explore to reveal.@"
 
 AmuletCoinDesc:
 	db   "Doubles monetary"

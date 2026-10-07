@@ -306,10 +306,77 @@ PeonInitializeShaman:
 	ld [hli], a
 	ld [hl], a
 	ld hl, wPartyMonNicknames
-	ld de, .Nickname
+	ld de, wPlayerName
 	call CopyName2
 	ret
-.Nickname: db "PEON@"
+
+; The master asks for a name after class acceptance. No new SRAM field.
+PeonAskName:
+	ld b, NAME_PLAYER
+	ld de, wPlayerName
+	farcall _NamingScreen
+	ld hl, wPlayerName
+	ld de, .DefaultName
+	call InitName
+	ld hl, wPlayerName
+	ld de, wStringBuffer3
+	ld bc, NAME_LENGTH
+	call CopyBytes
+	ld hl, .Prefix
+	ld de, wPlayerName
+	ld bc, 5
+	call CopyBytes
+	ld hl, wStringBuffer3
+	ld b, 5
+.copy
+	ld a, [hli]
+	cp '@'
+	jr z, .finish
+	ld [de], a
+	inc de
+	dec b
+	jr nz, .copy
+.finish
+	ld a, '@'
+	ld [de], a
+	ret
+.Prefix: db "Péon "
+.DefaultName: db "GROM@"
+
+PeonJournal:
+	call ClearSprites
+	call ClearTilemap
+	call LoadStandardFont
+	ld b, SCGB_DIPLOMA
+	call GetSGBLayout
+	call SetDefaultBGPAndOBP
+	hlcoord 0, 0
+	ld b, 16
+	ld c, 18
+	call Textbox
+	hlcoord 2, 1
+	ld de, .Title
+	call PlaceString
+	hlcoord 2, 3
+	ld de, wPlayerName
+	call PlaceString
+	hlcoord 2, 5
+	ld de, .Details
+	call PlaceString
+	call WaitBGMap
+	call UpdateTimePals
+.wait
+	call DelayFrame
+	call JoyTextDelay
+	ldh a, [hJoyPressed]
+	and A_BUTTON | B_BUTTON
+	jr z, .wait
+	ret
+.Title: db "PEON JOURNAL@"
+.Details:
+	db "SHAMAN", "<LF>", "Mace / Shield", "<LF>", "Apprentice totem", "<LF>", "", "<LF>"
+	db "SPELL", "<LF>", "Lightning Bolt", "<LF>", "", "<LF>"
+	db "Durotar", "<LF>", "Valley of Trials", "<LF>", "", "<LF>", "A/B: BACK@"
 
 PeonEyeOpening:
 	ldh a, [rWBK]

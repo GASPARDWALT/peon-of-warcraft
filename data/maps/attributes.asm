@@ -717,3 +717,11 @@ ENDM
 	map_attributes PeonOpening, PEON_OPENING, $01
 	map_attributes GrommashHold, GROMMASH_HOLD, $01
 	map_attributes TheDen, THE_DEN, $01
+
+SECTION "Peon World Map Attributes", ROMX
+	map_attributes ValleyOfTrials, VALLEY_OF_TRIALS, $01
+	map_attributes DurotarRoad, DUROTAR_ROAD, $01
+	map_attributes SenjinVillage, SENJIN_VILLAGE, $01
+	map_attributes RazorHill, RAZOR_HILL, $01
+	map_attributes OrgrimmarGate, ORGRIMMAR_GATE, $01
+	map_attributes BurningBladeCavern, BURNING_BLADE_CAVERN, $01

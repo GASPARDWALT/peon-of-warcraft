@@ -117,11 +117,11 @@ _ExpPointsText::
 	prompt
 
 _GoMonText::
-	text "Go! @"
+	text "Ready, @"
 	text_end
 
 _DoItMonText::
-	text "Do it! @"
+	text "Fight, @"
 	text_end
 
 _GoForItMonText::

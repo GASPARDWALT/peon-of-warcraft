@@ -1,11 +1,8 @@
-# Peon of Warcraft — playable v0.1.1
+# Peon of Warcraft — playable v0.2
 
-[Download the playable ROM package](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.1.1/peon_of_warcraft_v0_1_1.zip) · [See real game captures](references/generated/v0_1_playable/README.md) · [Read the walkthrough and limitations](docs/V0_1_PLAYABLE.md)
+[Download ROM](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2/peon_of_warcraft_v0_2.zip) · [See real captures and sprites](references/generated/durotar_v02/README.md) · [Download transparent PNGs + browser gallery](https://github.com/GASPARDWALT/peon-of-warcraft/raw/refs/heads/main/releases/v0.2/peon_of_warcraft_v0_2_assets.zip) · [Walkthrough and limits](docs/V0_2_PLAYABLE.md)
 
-This fork builds a first playable GBC prototype: Warcraft title, peon opening,
-Shaman selection, starter kit, The Den, first quest and one-slot saving.
-The original upstream documentation below is retained for technical reference;
-its original-ROM checksums do not apply to this modified game.
+Playable Durotar prototype: peon naming by Kento, Shaman spells, two introductory quests, earned region map with fog, growing bags, weapon loot, Classic vendor pricing, cactus harvesting, cave imps and connected regions. One real save slot. Chromatic hardware remains untested.
 
 ## Original Pokémon Crystal documentation [![Build Status][ci-badge]][ci]
 

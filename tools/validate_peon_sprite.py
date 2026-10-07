@@ -18,7 +18,7 @@ from pyboy import PyBoy
 
 logging.disable(logging.CRITICAL)
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / 'references/generated/v0_1_sprite_validation'
+OUTPUT = ROOT / 'references/generated/durotar_v02/sprite_validation'
 
 
 def symbols():
@@ -192,7 +192,7 @@ def main():
         results['player_state_after_restart'] = after
         p.stop(save=False)
     results['emulator'] = 'PyBoy 2.7.0'
-    results['limitations'] = ['Chromatic hardware untested', 'Bike, surf, fishing, portraits and menu icons retain Crystal artwork', 'Sound not emulated in this check']
+    results['limitations'] = ['Chromatic hardware untested', 'Unreachable bike, surf and fishing presentations are not adapted', 'Sound not emulated in this check']
     (OUTPUT / 'validation_results.json').write_text(json.dumps(results, indent=2) + '\n')
     print(json.dumps(results, indent=2))
 

@@ -57,7 +57,20 @@ NamingScreen:
 	call WaitTop
 	call SetDefaultBGPAndOBP
 	call NamingScreen_InitNameEntry
+	ld a, [wNamingScreenType]
+	cp NAME_PLAYER
+	ret nz
+	ld hl, .PeonPalette
+	ld de, wOBPals1
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	farcall ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
 	ret
+.PeonPalette:
+	RGB 31,31,31, 15,22,8, 18,11,6, 0,0,0
 
 .GetNamingScreenSetup:
 	ld a, [wNamingScreenType]
@@ -121,7 +134,8 @@ NamingScreenJumptable:
 	db "NICKNAME?@"
 
 .Player:
-	farcall GetPlayerIcon
+	ld de, PeonNamingGFX
+	ld b, BANK(PeonNamingGFX)
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .PlayerNameString
@@ -230,7 +244,7 @@ NamingScreenJumptable:
 	jr .StoreParams
 
 .StoreSpriteIconParams:
-	ld a, PLAYER_NAME_LENGTH - 1
+	ld a, 5 ; leave room for "Péon " in the existing ten-character save field
 	hlcoord 5, 6
 	jr .StoreParams
 

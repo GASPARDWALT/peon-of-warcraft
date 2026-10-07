@@ -1,4 +1,8 @@
 BattleStart_TrainerHuds:
+	; A single Warcraft character has no six-creature ball indicator.
+	ret
+
+PeonUnusedTrainerHuds:
 	ld a, $e4
 	ldh [rOBP0], a
 	call LoadBallIconGFX

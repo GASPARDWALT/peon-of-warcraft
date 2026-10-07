@@ -502,6 +502,12 @@ ENDM
 	map_const PEON_OPENING,                                8,  6 ; 12
 	map_const GROMMASH_HOLD,                                8,  6 ; 13
 	map_const THE_DEN,                                    12, 10 ; 14
+	map_const VALLEY_OF_TRIALS,                           16, 12 ; 15
+	map_const DUROTAR_ROAD,                               12, 14 ; 16
+	map_const SENJIN_VILLAGE,                             12, 10 ; 17
+	map_const RAZOR_HILL,                                 12, 10 ; 18
+	map_const ORGRIMMAR_GATE,                             12, 10 ; 19
+	map_const BURNING_BLADE_CAVERN,                        10, 10 ; 20
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

@@ -51,7 +51,7 @@ MoveNames::
 	li "SONICBOOM"
 	li "DISABLE"
 	li "ACID"
-	li "EMBER"
+	li "FIREBOLT"
 	li "FLAMETHROWER"
 	li "MIST"
 	li "WATER GUN"

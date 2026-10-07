@@ -120,3 +120,8 @@ PeonHunterGFX:: INCBIN "gfx/sprites/peon_hunter.2bpp"
 PeonBoarGFX:: INCBIN "gfx/sprites/peon_boar.2bpp"
 PeonQuestMarkerGFX:: INCBIN "gfx/sprites/peon_quest_marker.2bpp"
 PeonSleepingGFX:: INCBIN "gfx/sprites/peon_sleeping.2bpp"
+PeonGornekGFX:: INCBIN "gfx/sprites/peon_gornek.2bpp"
+PeonScorpidGFX:: INCBIN "gfx/sprites/peon_scorpid.2bpp"
+PeonNamingGFX:: INCBIN "gfx/sprites/peon_naming.2bpp"
+
+PeonImpGFX:: INCBIN "gfx/sprites/peon_imp.2bpp"

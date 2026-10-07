@@ -43,7 +43,7 @@ BattleMenuHeader:
 
 .Text:
 	db "FIGHT@"
-	db "<PKMN>@"
+	db "SELF@"
 	db "PACK@"
 	db "RUN@"
 

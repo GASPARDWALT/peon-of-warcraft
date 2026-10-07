@@ -846,7 +846,7 @@ StartMenuScript:
 	sjump StartMenuCallback
 
 SelectMenuScript:
-	callasm SelectMenu
+	callasm PeonMapMenuEntry
 	sjump SelectMenuCallback
 
 StartMenuCallback:

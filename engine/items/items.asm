@@ -133,14 +133,14 @@ DoesHLEqualNumItems:
 	cp HIGH(wNumItems)
 	ret
 
-GetPocketCapacity:
+GetPocketCapacity::
 	ld c, MAX_ITEMS
 	ld a, e
 	cp LOW(wNumItems)
 	jr nz, .not_bag
 	ld a, d
 	cp HIGH(wNumItems)
-	ret z
+	jr z, .peon_bag
 
 .not_bag
 	ld c, MAX_PC_ITEMS
@@ -153,6 +153,31 @@ GetPocketCapacity:
 
 .not_pc
 	ld c, MAX_BALLS
+	ret
+
+.peon_bag
+; Keep the original 20-entry SRAM allocation. Extra capacity is unlocked,
+; never allocated by shifting the save structure.
+	push de
+	push hl
+	ld de, EVENT_PEON_LARGE_BAG
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ld c, 20
+	jr nz, .bag_done
+	ld de, EVENT_PEON_SMALL_BAG
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ld c, 12
+	jr nz, .bag_done
+	ld c, 6
+.bag_done
+	pop hl
+	pop de
 	ret
 
 PutItemInPocket:
