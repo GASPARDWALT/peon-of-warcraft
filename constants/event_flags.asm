@@ -326,6 +326,11 @@
 	; Cave approach: consume reserved bits without renumbering existing events.
 	const EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
 	const EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	; Deep polish: reserved saved bits only; later const_next 600 is unchanged.
+	const EVENT_PEON_FAMILIARS_ACCEPTED
+	const EVENT_PEON_FAMILIARS_DONE
+	const EVENT_PEON_SARKOTH_REPORT_DONE
+	const EVENT_PEON_GEAR_CLUB_GRANTED
 
 	const_next 600
 ; Kurt Apricorn events

@@ -92,7 +92,7 @@ TheDenQuestScript:
 	end
 .BothDone:
 	checkevent EVENT_PEON_MAP_RECEIVED
-	iftrue .Rewarded
+	iftrue .GearRewards
 	giveitem ITEM_5A
 	iffalse .NoSpace
 	setevent EVENT_PEON_MAP_RECEIVED
@@ -103,23 +103,57 @@ TheDenQuestScript:
 	callasm PeonRefreshQuestMarkers
 	writetext TheDenMapRewardText
 	waitbutton
+.GearRewards:
+	; Map/XP/copper are committed only once above. A full bag must leave
+	; each unclaimed gear component retryable, without duplicating the club.
 	checkevent EVENT_PEON_GEAR_REWARDED
 	iftrue .Rewarded
+	checkevent EVENT_PEON_GEAR_CLUB_GRANTED
+	iftrue .Pouch
+	; Upgrade a partially rewarded published save without a second club.
+	checkitem ITEM_89
+	iftrue .ClubRecorded
 	giveitem ITEM_89
-	iffalse .Rewarded
+	iffalse .GearFull
+.ClubRecorded:
+	setevent EVENT_PEON_GEAR_CLUB_GRANTED
+.Pouch:
+	checkevent EVENT_PEON_SMALL_BAG
+	iftrue .GearComplete
 	giveitem ITEM_64
-	iffalse .Rewarded
+	iffalse .GearFull
 	setevent EVENT_PEON_SMALL_BAG
+.GearComplete:
 	setevent EVENT_PEON_GEAR_REWARDED
 	writetext TheDenGearRewardText
 	waitbutton
+	sjump .Rewarded
+.GearFull:
+	writetext TheDenGearPendingText
+	waitbutton
+	sjump .Rewarded
 .NoSpace:
-	checkevent EVENT_PEON_MAP_RECEIVED
-	iftrue .Rewarded
 	writetext TheDenQuestBagFullText
 	waitbutton
 	sjump .Declined
 .Rewarded:
+	checkevent EVENT_PEON_SARKOTH_DONE
+	iffalse .FinishedAdvice
+	checkevent EVENT_PEON_SARKOTH_REPORT_DONE
+	iftrue .FinishedAdvice
+	; Hana'zua assigns this report at his turn-in. Gornek finishes his
+	; initial quest chain before accepting it, so only one quest is shown.
+	setevent EVENT_PEON_SARKOTH_REPORT_DONE
+	givemoney YOUR_MONEY, 50
+	callasm PeonGrantSarkothReportXP
+	callasm PeonQuestXPFeedback
+	waitbutton
+	callasm PeonRefreshQuestMarkers
+	writetext TheDenSarkothReportText
+	waitbutton
+	sjump .Declined
+.FinishedAdvice:
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenQuestFinishedText
 	waitbutton
 .Declined:
@@ -325,6 +359,24 @@ TheDenCuttingTurnedInText:
 	cont "100 copper."
 	done
 
+TheDenGearPendingText:
+	text "Your bags are full"
+	para "Unclaimed rewards"
+	line "are kept for you."
+	para "Make room, then"
+	line "talk to me again."
+	done
+
+TheDenSarkothReportText:
+	text "Hana'zua lives?"
+	line "That is good news!"
+	para "REPORT TO GORNEK"
+	line "Quest complete!"
+	para "50 copper earned."
+	para "<PLAYER>,"
+	line "Honor to the Horde"
+	done
+
 TheDenQuestBagFullText:
 	text "Make room in your"
 	line "bag, then return."
@@ -399,7 +451,7 @@ TheDen_MapEvents:
 	bg_event 12, 7, BGEVENT_READ, TheDenCampfireScript
 	def_object_events
 	object_event 10, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
-	object_event 10, 8, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, EVENT_PEON_MAP_RECEIVED
+	object_event 10, 8, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
 	object_event 18, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenBoarScript, EVENT_PEON_QUEST_DONE
 	object_event 6, 12, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
 	object_event 19, 15, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheDenScorpidScript, EVENT_PEON_SCORPID_DEFEATED

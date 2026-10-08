@@ -983,6 +983,12 @@ BattleCommand_DoTurn:
 	and 1 << SUBSTATUS_IN_LOOP | 1 << SUBSTATUS_RAMPAGE | 1 << SUBSTATUS_BIDE
 	ret nz
 
+	; Mace Strike is the Peon's reusable basic attack. The turn was already
+	; counted above, and disabled/status checks still execute normally.
+	push hl ; farcall loads its target into HL; retain the native PP pointer
+	farcall PeonMaceIsUnlimited
+	pop hl
+	ret c
 	call .consume_pp
 	ld a, b
 	and a

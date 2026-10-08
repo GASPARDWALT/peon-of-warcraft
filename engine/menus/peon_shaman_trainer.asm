@@ -3,6 +3,26 @@
 SECTION "Peon Shaman Trainer", ROMX
 
 PeonShamanTrainer::
+	; The menu is only valid for an initialized apprentice outside combat.
+	; Keep bad/old script callers from editing empty party slots or battle state.
+	ld a, [wBattleMode]
+	and a
+	ret nz
+	ld a, [wPartyCount]
+	and a
+	ret z
+	ld de, EVENT_PEON_SHAMAN
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ret z
+	call .NormalizeTrainingSlots
+	jr nc, .BasicsReady
+	ld hl, .MissingBasicsText
+	call MenuTextboxBackup
+	ret
+.BasicsReady:
 	call FadeToMenu
 	farcall PeonInterfaceFrame
 	xor a
@@ -54,6 +74,7 @@ PeonShamanTrainer::
 	jr z, .Input
 	dec a
 	ld [wMenuCursorY], a
+	call .MoveSound
 	jp .Draw
 .Down:
 	ld a, [wMenuCursorY]
@@ -61,6 +82,7 @@ PeonShamanTrainer::
 	jr z, .Input
 	inc a
 	ld [wMenuCursorY], a
+	call .MoveSound
 	jp .Draw
 .Select:
 	call .GetEntry
@@ -100,7 +122,7 @@ PeonShamanTrainer::
 	call PlaceString
 	call .DrawDescription
 	call .DrawPrice
-	hlcoord 2, 5
+	hlcoord 1, 5 ; eighteen-column confirmation stays inside both frame edges
 	ld de, .ConfirmText
 	call PlaceString
 	call WaitBGMap2
@@ -148,7 +170,7 @@ PeonShamanTrainer::
 	hlcoord 1, 8
 .SlotCursor:
 	ld [hl], '▶'
-	hlcoord 2, 11
+	hlcoord 1, 11
 	ld de, .SlotHelp
 	call PlaceString
 	call WaitBGMap2
@@ -165,6 +187,7 @@ PeonShamanTrainer::
 	ld a, [wMenuSelection]
 	xor 1 ; switch between training slots 2 and 3
 	ld [wMenuSelection], a
+	call .MoveSound
 	jp .SlotDraw
 .Equip:
 	ld a, [wMenuCursorX]
@@ -231,11 +254,90 @@ PeonShamanTrainer::
 	ld de, .Title
 	call PlaceString
 	pop de
-	hlcoord 2, 5
+	hlcoord 1, 5 ; eighteen-column messages must not overwrite column 19
 	call PlaceString
 	call WaitBGMap2
 	call .WaitAB
 	jp .Draw
+.MoveSound:
+	ld de, SFX_MENU
+	jp PlaySFX
+
+; Older builds permitted SELECT to reorder battle attacks. Canonicalize a
+; complete four-slot record before offering lessons, moving each paired raw
+; charge byte with its attack (including PP-Up bits). Validate BOTH basics
+; first: an incomplete imported loadout must not be partially rewritten.
+.NormalizeTrainingSlots:
+	ld hl, wPartyMon1Moves
+	ld b, NUM_MOVES
+	ld c, 0
+.CheckBasics:
+	ld a, [hli]
+	cp POUND ; Mace Strike
+	jr nz, .CheckBolt
+	set 0, c
+.CheckBolt:
+	cp THUNDERSHOCK ; Lightning Bolt
+	jr nz, .NextBasic
+	set 1, c
+.NextBasic:
+	dec b
+	jr nz, .CheckBasics
+	ld a, c
+	cp 3
+	scf
+	ret nz
+	ld a, POUND
+	ld e, 0
+	call .MoveToSlot
+	ld a, THUNDERSHOCK
+	ld e, 1
+	call .MoveToSlot
+	and a
+	ret
+
+; A = present move ID, E = its protected slot; swap move and paired charges.
+.MoveToSlot:
+	ld hl, wPartyMon1Moves
+	ld c, 0
+.FindMove:
+	cp [hl]
+	jr z, .MoveFound
+	inc hl
+	inc c
+	jr .FindMove
+.MoveFound:
+	ld a, c
+	cp e
+	ret z
+	ld d, 0
+	ld b, [hl]
+	push hl
+	ld hl, wPartyMon1Moves
+	add hl, de
+	ld a, [hl]
+	ld [hl], b
+	pop hl
+	ld [hl], a
+	ld hl, wPartyMon1PP
+	add hl, de
+	ld b, [hl]
+	push hl
+	ld e, c
+	ld hl, wPartyMon1PP
+	add hl, de
+	ld a, [hl]
+	ld [hl], b
+	pop hl
+	ld [hl], a
+	ret
+
+.MissingBasicsText:
+	text "Training paused."
+	para "I need to see your"
+	line "Mace Strike and"
+	cont "Lightning Bolt."
+	done
 .WaitAB:
 	call DelayFrame
 	call JoyTextDelay
@@ -299,7 +401,7 @@ PeonShamanTrainer::
 	ld a, [hli]
 	ld d, [hl]
 	ld e, a
-	hlcoord 2, 11
+	hlcoord 1, 11 ; the longest spell descriptions use all eighteen inner tiles
 	jp PlaceString
 .DrawLessons:
 	ld a, [wMenuCursorY]

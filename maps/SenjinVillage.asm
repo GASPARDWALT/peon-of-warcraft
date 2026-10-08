@@ -10,7 +10,13 @@ SenjinVillageDiscover:
 SenjinVillageGuideScript:
 	faceplayer
 	opentext
+	checkevent EVENT_PEON_MEDALLION_DONE
+	iftrue .BladeDefeated
 	writetext SenjinVillageGadrinText
+	sjump .Wait
+.BladeDefeated:
+	writetext SenjinVillageGadrinBladeText
+.Wait:
 	waitbutton
 	closetext
 	end
@@ -18,7 +24,18 @@ SenjinVillageGuideScript:
 SenjinVillageVornalScript:
 	faceplayer
 	opentext
+	checkevent EVENT_PEON_MEDALLION_DONE
+	iftrue .BladeDefeated
+	checkevent EVENT_PEON_MEDALLION_ACCEPTED
+	iftrue .CavernTask
 	writetext SenjinVillageVornalText
+	sjump .Wait
+.CavernTask:
+	writetext SenjinVillageVornalTaskText
+	sjump .Wait
+.BladeDefeated:
+	writetext SenjinVillageVornalThanksText
+.Wait:
 	waitbutton
 	closetext
 	end
@@ -50,6 +67,15 @@ SenjinVillageBomBayScript:
 SenjinVillageKwaiiScript:
 	faceplayer
 	opentext
+	writetext SenjinVillageKwaiiGreetingText
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Water
+	ifequal 2, .Potion
+	ifequal 3, .Bread
+	sjump .Close
+.Water:
 	writetext SenjinVillageKwaiiOfferText
 	yesorno
 	iffalse .Close
@@ -58,7 +84,35 @@ SenjinVillageKwaiiScript:
 	giveitem FRESH_WATER, 5
 	iffalse .Full
 	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
 	writetext SenjinVillageKwaiiBoughtText
+	sjump .Wait
+.Potion:
+	writetext SenjinVillageKwaiiPotionOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem POTION
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext SenjinVillageKwaiiPotionBoughtText
+	sjump .Wait
+.Bread:
+	writetext SenjinVillageKwaiiBreadOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem PEON_CAMP_BREAD, 5
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext SenjinVillageKwaiiBreadBoughtText
 	sjump .Wait
 .Poor:
 	writetext SenjinVillageKwaiiPoorText
@@ -70,6 +124,18 @@ SenjinVillageKwaiiScript:
 .Close:
 	closetext
 	end
+.MenuHeader:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 2, 17, 11
+	dw .MenuData
+	db 1 ; preserve water as the default for existing shop interactions
+.MenuData:
+	db STATICMENU_CURSOR
+	db 4
+	db "SPRING WATER@"
+	db "MINOR POTION@"
+	db "TOUGH BREAD@"
+	db "CANCEL@"
 
 SenjinVillageGadrinText:
 	text "MASTER GADRIN"
@@ -105,12 +171,42 @@ SenjinVillageBomBayOfferText:
 	cont "inn by the shore."
 	done
 
-SenjinVillageKwaiiOfferText:
+SenjinVillageKwaiiGreetingText:
 	text "K'WAII"
 	line "General Goods"
 	para "<PLAYER>,"
-	line "SPRING WATER x5"
-	cont "25 copper. Buy?"
+	line "supplies for the"
+	cont "road?"
+	done
+
+SenjinVillageKwaiiOfferText:
+	text "SPRING WATER x5"
+	line "25 copper. Buy?"
+	para "Restores ten"
+	line "Lightning charges."
+	done
+
+SenjinVillageKwaiiPotionOfferText:
+	text "MINOR POTION x1"
+	line "25 copper. Buy?"
+	para "Restores 20 HP."
+	done
+
+SenjinVillageKwaiiPotionBoughtText:
+	text "Potion packed."
+	line "Use BAGS to heal."
+	done
+
+SenjinVillageKwaiiBreadOfferText:
+	text "TOUGH BREAD x5"
+	line "25 copper. Buy?"
+	para "Restores 10 HP"
+	line "outside battle."
+	done
+
+SenjinVillageKwaiiBreadBoughtText:
+	text "Bread packed."
+	line "Eat after fights."
 	done
 
 SenjinVillageKwaiiBoughtText:
@@ -124,6 +220,36 @@ SenjinVillageKwaiiPoorText:
 
 SenjinVillageKwaiiFullText:
 	text "Your bag is full."
+	done
+
+SenjinVillageGadrinBladeText:
+	text "MASTER GADRIN"
+	para "<PLAYER>,"
+	line "the Valley is"
+	cont "safe by your hand."
+	para "Rest at Shul'kar's"
+	line "inn before taking"
+	cont "the northern road."
+	done
+
+SenjinVillageVornalTaskText:
+	text "MASTER VORNAL"
+	para "<PLAYER>,"
+	line "Zureetha awaits"
+	cont "the medallion."
+	para "Bring it back to"
+	line "the Den. A task is"
+	cont "not done yet."
+	done
+
+SenjinVillageVornalThanksText:
+	text "MASTER VORNAL"
+	para "<PLAYER>,"
+	line "the spirits heard"
+	cont "of your courage."
+	para "Kento can teach"
+	line "you new spells at"
+	cont "each even level."
 	done
 
 SenjinVillageVelrinText:

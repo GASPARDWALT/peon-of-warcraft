@@ -1,6 +1,7 @@
 ; Compact live overworld portrait and life gauge. This uses no persistent RAM,
 ; changes no palettes, and retains every visible world object's data and order.
-; The normal view uses eight objects; a crowded view uses a four-object version.
+; One fixed four-object panel is used in every world view. Its ink bounds are
+; (2,3)..(36,11), with an 8px face and a 24px live gauge: it never resizes.
 ; Extremely crowded views retain the actors and omit the HUD for that frame.
 ; OBJ bank 0 $8600..$86df is below the standard font at $8800 and above every
 ; supported Peon map's secondary standing-sprite allocation (checked by tests).
@@ -10,8 +11,7 @@ SECTION "Peon Player HUD", ROMX
 DEF PEON_HUD_TILE EQU $60
 DEF PEON_HUD_HEAD_TILE EQU PEON_HUD_TILE + 4
 DEF PEON_HUD_GAUGE_TILE EQU PEON_HUD_TILE + 5
-DEF PEON_HUD_FULL_OBJECTS EQU 8
-DEF PEON_HUD_SMALL_OBJECTS EQU 4
+DEF PEON_HUD_OBJECTS EQU 4
 
 PeonLoadPlayerHUDGFX::
 	push af
@@ -68,37 +68,14 @@ PeonDrawPlayerHUD::
 	; that are completely invisible, including hardware-hidden x=0 tiles.
 	; Actor structs, native sprite allocation and movement remain untouched.
 	call .CompactOffscreenObjects
-	; Keep every world object and respect the ten-object scanline limit.
-	call .TopWorldObjectCount
-	ld c, a
+	; A fixed panel retains its geometry as NPCs enter/leave the viewport.
+	; Keep every world object and test each of its eight scanlines separately.
 	ldh a, [hUsedSpriteIndex]
-	cp (OAM_COUNT - PEON_HUD_FULL_OBJECTS) * OBJ_SIZE + 1
-	jr nc, .compact
-	ld a, c
-	cp 5 ; full HUD has six objects on its busiest scanline
-	jr nc, .compact
-	ldh a, [hUsedSpriteIndex]
-	ld l, a
-	ld h, HIGH(wShadowOAM)
-	ld de, .PortraitObjects
-	ld b, 4 * OBJ_SIZE
-	call .CopyObjects
-	ld a, 32
-	call PeonHUDGetHPFill
-	ld d, a
-	ld e, 28 ; OAM x = 20px + 8px hardware origin
-	ld b, 4
-	call .GaugeObjects
-	ld a, PEON_HUD_FULL_OBJECTS
-	call .RaiseHUDPriority
-	jr .done
-.compact
-	ld a, c
-	cp 7 ; compact HUD has four objects on its busiest scanline
+	cp (OAM_COUNT - PEON_HUD_OBJECTS) * OBJ_SIZE + 1
 	jr nc, .done
+	call .HasHUDScanlineBudget
+	jr c, .done
 	ldh a, [hUsedSpriteIndex]
-	cp (OAM_COUNT - PEON_HUD_SMALL_OBJECTS) * OBJ_SIZE + 1
-	jr nc, .done
 	ld l, a
 	ld h, HIGH(wShadowOAM)
 	ld de, .SmallPortraitObject
@@ -110,7 +87,7 @@ PeonDrawPlayerHUD::
 	ld e, 20 ; OAM x = 12px + 8px hardware origin
 	ld b, 3
 	call .GaugeObjects
-	ld a, PEON_HUD_SMALL_OBJECTS
+	ld a, PEON_HUD_OBJECTS
 	call .RaiseHUDPriority
 .done
 	pop hl
@@ -162,40 +139,89 @@ PeonDrawPlayerHUD::
 	ldh [hUsedSpriteIndex], a
 	ret
 
-.TopWorldObjectCount:
-	; Conservative union of the HUD's upper scanlines, y2..10.
-	; World objects outside this union consume no gauge-row scanline slots.
+.HasHUDScanlineBudget:
+	; Carry = unsafe. Four HUD objects share y3..10, so at most six world
+	; objects may touch any individual row. A union count falsely rejected
+	; actors on disjoint rows and caused unnecessary size/visibility changes.
+	; Most views have no top-row actors. Accept that inexpensive union case
+	; immediately; only a genuinely crowded union needs eight exact passes.
 	ldh a, [hUsedSpriteIndex]
 	srl a
 	srl a
 	ld c, a
-	ld b, 0
+	ld d, 0
+	ld hl, wShadowOAM
+.union_count
+	ld a, c
+	and a
+	jr z, .union_done
+	ld a, [hl]
+	cp 12
+	jr c, .outside_union
+	cp 27
+	jr nc, .outside_union
+	inc d
+.outside_union
+	ld a, l
+	add OBJ_SIZE
+	ld l, a
+	dec c
+	jr .union_count
+.union_done
+	ld a, d
+	cp 7
+	jr nc, .exact_rows
+	and a
+	ret
+.exact_rows
+	ld b, 19 ; screen row 3 plus the hardware y-origin 16
+.scanline
+	ldh a, [hUsedSpriteIndex]
+	srl a
+	srl a
+	ld c, a
+	ld d, 0
 	ld hl, wShadowOAM
 .count
 	ld a, c
 	and a
-	jr z, .count_done
+	jr z, .next_scanline
 	ld a, [hl]
-	cp 11
-	jr c, .not_top
-	cp 27
-	jr nc, .not_top
-	inc b
-.not_top
-	ld de, OBJ_SIZE
-	add hl, de
+	cp b
+	jr z, .starts_on_row
+	jr nc, .not_on_row
+.starts_on_row
+	add 8
+	cp b
+	jr c, .not_on_row
+	jr z, .not_on_row
+	inc d
+	ld a, d
+	cp 7
+	jr nc, .unsafe
+.not_on_row
+	ld a, l
+	add OBJ_SIZE
+	ld l, a ; shadow OAM is page-aligned, no retained row exceeds 160 bytes
 	dec c
 	jr .count
-.count_done
+.next_scanline
+	inc b
 	ld a, b
+	cp 27
+	jr nz, .scanline
+	and a
+	ret
+.unsafe
+	scf
 	ret
 
 .RaiseHUDPriority:
 	; Rotate complete HUD objects in front of the complete world allocation.
 	; The world retains exactly the same objects and relative priority order.
-	; Stack-only scratch is at most32bytes, so no save/temporary RAM is needed.
+	; Stack-only scratch is 16 bytes, so no save/temporary RAM is needed.
 	; Save the HUD once and shift the world once, instead of rotating every
-	; object separately. The normal panel needs at most160 OAM byte writes.
+	; object separately. The fixed panel needs at most160 OAM byte writes.
 	sla a
 	ld b, a ; two-byte pairs in the HUD
 	sla a
@@ -287,14 +313,9 @@ PeonDrawPlayerHUD::
 	ldh [hUsedSpriteIndex], a
 	ret
 
-.PortraitObjects:
-	; Face at (2,2), a 16x16 native pixel icon, existing green OBJ palette2.
-	db 18, 10, PEON_HUD_TILE + 0, 2
-	db 18, 18, PEON_HUD_TILE + 1, 2
-	db 26, 10, PEON_HUD_TILE + 2, 2
-	db 26, 18, PEON_HUD_TILE + 3, 2
 .SmallPortraitObject:
-	db 18, 10, PEON_HUD_HEAD_TILE, 2
+	; Face and gauge share the same fixed 8px row band.
+	db 19, 10, PEON_HUD_HEAD_TILE, 2
 
 PeonHUDGetHPFill:
 	; A = gauge width, return floor(width*actualHP/maxHP), clamped to width.
@@ -306,28 +327,64 @@ PeonHUDGetHPFill:
 	ld d, [hl]
 	inc hl
 	ld e, [hl]
-	ld b, a
-	ld hl, 0
-.multiply
-	add hl, de
-	dec b
-	jr nz, .multiply
 	ld a, [wPartyMon1MaxHP]
 	ld b, a
 	ld a, [wPartyMon1MaxHP + 1]
 	ld c, a
 	or b
-	jr z, .zero
+	jp z, .zero
+	; Clamp before multiplying: imported or invalid HP above the maximum
+	; must not wrap the 16-bit product or the 8-bit quotient into a short bar.
+	ld a, d
+	cp b
+	jr c, .below_maximum
+	jp nz, .full
+	ld a, e
+	cp c
+	jp nc, .full
+.below_maximum
+	pop af
+	push af
+	ld b, a
+	ld c, 0 ; carry byte of the 24-bit product
+	ld hl, 0
+.multiply
+	add hl, de
+	jr nc, .product_no_carry
+	inc c
+.product_no_carry
+	dec b
+	jr nz, .multiply
+	ld a, c
+	push af
+	ld a, [wPartyMon1MaxHP]
+	ld b, a
+	ld a, [wPartyMon1MaxHP + 1]
+	ld c, a
+	pop af
+	ld e, a ; product = E:HL; clamping bounds its quotient below gauge width
 	ld d, 0
 .divide
+	ld a, e
+	and a
+	jr nz, .subtract_maximum
+	ld a, h
+	cp b
+	jr c, .quotient
+	jr nz, .subtract_maximum
+	ld a, l
+	cp c
+	jr c, .quotient
+.subtract_maximum
 	ld a, l
 	sub c
-	ld e, a
+	ld l, a
 	ld a, h
 	sbc b
-	jr c, .quotient
 	ld h, a
-	ld l, e
+	jr nc, .no_high_borrow
+	dec e
+.no_high_borrow
 	inc d
 	jr .divide
 .quotient
@@ -335,7 +392,21 @@ PeonHUDGetHPFill:
 	cp d
 	jr c, .return
 	ld a, d
+	and a
+	jr nz, .return
+	; An alive character must keep one red pixel even below 1/24 maximum HP.
+	; Otherwise the old floor division looked empty before actual defeat.
+	ld a, [wPartyMon1HP]
+	ld d, a
+	ld a, [wPartyMon1HP + 1]
+	or d
+	jr z, .return
+	ld a, 1
 .return
+	pop hl
+	ret
+.full
+	pop af
 	pop hl
 	ret
 .zero

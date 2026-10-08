@@ -75,3 +75,31 @@ Existing exterior village NPCs remain in place. Houses do not introduce
 personal storage, additional quests or class training. The three inns use
 `PeonOrcInn` or `PeonTrollInn` and separately implement explicit rest and
 Hearthstone binding; those functions are documented and tested by the inn pass.
+
+## Deep polish: preparation on the road
+
+K'waii and Jark now use the same four-row shop presentation as the Den:
+Spring Water, Minor Potion, Tough Bread, Cancel. Water remains the default.
+Five waters cost the verified 25 copper; one Minor Potion and five Tough Bread
+cost the retained prototype 25 copper. The added village stock is an adaptation,
+not a claim that these named Classic vendors sold every one of these items.
+Water restores ten Lightning Bolt charges, a potion restores twenty HP and
+bread restores ten HP outside battle. The offer text explains the actual effect.
+
+Each purchase first confirms, checks money and receives the entire quantity.
+Copper and the transaction sound follow only a successful receipt. Cancelling,
+insufficient money and a full bag leave the inventory and wallet unchanged.
+Adding to an existing stack remains possible when all six initial stack slots
+are occupied. The presentation does not add buyback, selling or new item IDs.
+
+Gadrin, Vornal and Orgnil react to the saved Burning Blade Medallion state;
+Vornal reminds an apprentice with an active quest to report to Zureetha, then
+acknowledges completion and points to Kento's even-level lessons. These short
+English lines are new writing. They do not activate hidden follow-up quests.
+The shared orc residence also identifies Razor Hill and directs its visitors to
+Grosk; its backup-warp exit remains tied to the actual entrance used.
+
+The current services validator is `tools/validate_peon_services_polish.py`.
+It writes fresh reports and native captures under
+`references/generated/deep_polish/services/`; published older reports are not
+updated in place. A passed report identifies the exact candidate ROM SHA.

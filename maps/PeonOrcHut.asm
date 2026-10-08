@@ -5,7 +5,13 @@ PeonOrcHut_MapScripts:
 PeonOrcHutAttendantScript:
 	faceplayer
 	opentext
+	readmem wBackupMapNumber
+	ifequal MAP_RAZOR_HILL, .RazorHill
 	writetext PeonOrcHutAttendantOfferText
+	sjump .Wait
+.RazorHill:
+	writetext PeonRazorHutAttendantOfferText
+.Wait:
 	waitbutton
 	closetext
 	end
@@ -17,6 +23,17 @@ PeonOrcHutAttendantOfferText:
 	cont "the dust outside."
 	para "For rest, visit"
 	line "the innkeeper."
+	done
+
+PeonRazorHutAttendantOfferText:
+	text "HORDE ATTENDANT"
+	para "<PLAYER>,"
+	line "patrols bring back"
+	cont "road dust."
+	para "Grosk's inn stands"
+	line "to the northeast."
+	para "Rest there before"
+	line "your next patrol."
 	done
 
 PeonOrcHut_MapEvents:

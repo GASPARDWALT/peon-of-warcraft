@@ -1,0 +1,456 @@
+{
+  "passed": true,
+  "baseline": "1435e70",
+  "runtime_capture": false,
+  "native_tiles": 192,
+  "tile_budget": 192,
+  "existing_block_ids_preserved": 42,
+  "appended_block_ids": {
+    "deadthorn_tree": 42,
+    "darkspear_bedroll": 43,
+    "darkspear_table": 44,
+    "woven_timber_floor": 45,
+    "darkspear_spirit_mask": 46
+  },
+  "map_ids_dimensions_warps_actors_unchanged": true,
+  "retired_tile_count": 16,
+  "max_pixel_changes_per_old_8x8_tile": 3,
+  "changed_old_tile_patterns": 16,
+  "old_tile_pixel_changes": 37,
+  "same_palette_only": true,
+  "all_soil_tile_patterns_protected": true,
+  "merges": [
+    {
+      "retired_index": 93,
+      "representative_index": 96
+    },
+    {
+      "retired_index": 86,
+      "representative_index": 87
+    },
+    {
+      "retired_index": 69,
+      "representative_index": 152
+    },
+    {
+      "retired_index": 74,
+      "representative_index": 65
+    },
+    {
+      "retired_index": 82,
+      "representative_index": 85
+    },
+    {
+      "retired_index": 142,
+      "representative_index": 25
+    },
+    {
+      "retired_index": 106,
+      "representative_index": 109
+    },
+    {
+      "retired_index": 141,
+      "representative_index": 22
+    },
+    {
+      "retired_index": 35,
+      "representative_index": 36
+    },
+    {
+      "retired_index": 123,
+      "representative_index": 124
+    },
+    {
+      "retired_index": 42,
+      "representative_index": 36
+    },
+    {
+      "retired_index": 43,
+      "representative_index": 36
+    },
+    {
+      "retired_index": 101,
+      "representative_index": 10
+    },
+    {
+      "retired_index": 100,
+      "representative_index": 10
+    },
+    {
+      "retired_index": 103,
+      "representative_index": 105
+    },
+    {
+      "retired_index": 9,
+      "representative_index": 8
+    }
+  ],
+  "per_old_tile_pixel_errors": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    0,
+    3,
+    0,
+    0,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    3,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tree_placements": {
+    "TheDen": [
+      [
+        1,
+        3
+      ],
+      [
+        9,
+        3
+      ]
+    ],
+    "ValleyOfTrials": [
+      [
+        5,
+        4
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        14,
+        3
+      ]
+    ],
+    "DurotarRoad": [
+      [
+        5,
+        3
+      ],
+      [
+        8,
+        5
+      ]
+    ],
+    "RazorHill": [
+      [
+        9,
+        5
+      ]
+    ],
+    "OrgrimmarGate": [
+      [
+        3,
+        7
+      ]
+    ]
+  },
+  "map_checks": {
+    "PeonOpening": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 0,
+      "actors_approachable": 2,
+      "background_events_approachable": 0,
+      "walkable_cells": 88,
+      "changed_blocks": 0,
+      "sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00"
+    },
+    "GrommashHold": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 0,
+      "actors_approachable": 4,
+      "background_events_approachable": 0,
+      "walkable_cells": 88,
+      "changed_blocks": 0,
+      "sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28"
+    },
+    "TheDen": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 3,
+      "actors_approachable": 15,
+      "background_events_approachable": 1,
+      "walkable_cells": 230,
+      "changed_blocks": 12,
+      "sha256": "46292d0404820595925694ecd3a571b76eed5f645485a184d30f225e65430770"
+    },
+    "ValleyOfTrials": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 3,
+      "actors_approachable": 9,
+      "background_events_approachable": 3,
+      "walkable_cells": 292,
+      "changed_blocks": 6,
+      "sha256": "e4c3af2f2a0f7a0efbfc987abfb76babb10e209bf2dab559b3929fb9d82388cb"
+    },
+    "DurotarRoad": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 3,
+      "actors_approachable": 8,
+      "background_events_approachable": 0,
+      "walkable_cells": 288,
+      "changed_blocks": 2,
+      "sha256": "545dca1cdda0ee267d35acc0681588385b41ae1e76caae72da97cf45f7371f30"
+    },
+    "SenjinVillage": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 4,
+      "actors_approachable": 6,
+      "background_events_approachable": 0,
+      "walkable_cells": 223,
+      "changed_blocks": 0,
+      "sha256": "472c7f06ede47866d743baabdac178698639f3bf114a12ab9bff98a81393c2d6"
+    },
+    "RazorHill": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 6,
+      "actors_approachable": 6,
+      "background_events_approachable": 0,
+      "walkable_cells": 176,
+      "changed_blocks": 1,
+      "sha256": "969e346f0a883e95537119d6018b5a7a372043a81f9e6fa14fe6e4949a135241"
+    },
+    "OrgrimmarGate": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 3,
+      "background_events_approachable": 0,
+      "walkable_cells": 168,
+      "changed_blocks": 1,
+      "sha256": "18cc930954aadbbda0891b8d32b73809c7aaf7733f2562c3930308f9a8e3a37b"
+    },
+    "BurningBladeCavern": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 5,
+      "background_events_approachable": 0,
+      "walkable_cells": 136,
+      "changed_blocks": 0,
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080"
+    },
+    "PeonTrollHut": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 1,
+      "background_events_approachable": 0,
+      "walkable_cells": 44,
+      "changed_blocks": 11,
+      "sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071"
+    },
+    "PeonOrcHut": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 1,
+      "background_events_approachable": 0,
+      "walkable_cells": 44,
+      "changed_blocks": 3,
+      "sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be"
+    },
+    "PeonOrcInn": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 1,
+      "background_events_approachable": 2,
+      "walkable_cells": 28,
+      "changed_blocks": 1,
+      "sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189"
+    },
+    "PeonTrollInn": {
+      "all_saved_cells_preserve_collision": true,
+      "connected_warps": 1,
+      "actors_approachable": 1,
+      "background_events_approachable": 2,
+      "walkable_cells": 28,
+      "changed_blocks": 11,
+      "sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c"
+    }
+  },
+  "byte_identical_playable_map_pairs": [],
+  "limitations": [
+    "The Den and Razor Hill still share one Orc Inn room ID.",
+    "Residences remain shared within each race; the exit returns to its originating door.",
+    "Seven fixed screen zones await the requested final path drawing.",
+    "The native tree palette is reduced from four opaque colours to three."
+  ]
+}

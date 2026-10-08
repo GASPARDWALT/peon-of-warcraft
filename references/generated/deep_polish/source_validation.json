@@ -1,0 +1,110 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "baseline_commit": "1435e70",
+  "all_checks_passed": true,
+  "preserved_inputs": [
+    "ram/wram.asm",
+    "ram/sram.asm",
+    "constants/map_constants.asm",
+    "constants/item_constants.asm",
+    "constants/music_constants.asm",
+    "constants/sfx_constants.asm",
+    "audio/sfx_pointers.asm"
+  ],
+  "all_existing_event_ids_preserved": true,
+  "new_reserved_event_flags": {
+    "EVENT_PEON_FAMILIARS_ACCEPTED": 314,
+    "EVENT_PEON_FAMILIARS_DONE": 315,
+    "EVENT_PEON_SARKOTH_REPORT_DONE": 316,
+    "EVENT_PEON_GEAR_CLUB_GRANTED": 317
+  },
+  "maps": {
+    "PeonOpening": {
+      "changed_blocks": 0,
+      "bytes": 48,
+      "movement_collision_preserved": true,
+      "sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00"
+    },
+    "GrommashHold": {
+      "changed_blocks": 0,
+      "bytes": 48,
+      "movement_collision_preserved": true,
+      "sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28"
+    },
+    "TheDen": {
+      "changed_blocks": 12,
+      "bytes": 120,
+      "movement_collision_preserved": true,
+      "sha256": "46292d0404820595925694ecd3a571b76eed5f645485a184d30f225e65430770"
+    },
+    "ValleyOfTrials": {
+      "changed_blocks": 6,
+      "bytes": 192,
+      "movement_collision_preserved": true,
+      "sha256": "e4c3af2f2a0f7a0efbfc987abfb76babb10e209bf2dab559b3929fb9d82388cb"
+    },
+    "DurotarRoad": {
+      "changed_blocks": 2,
+      "bytes": 168,
+      "movement_collision_preserved": true,
+      "sha256": "545dca1cdda0ee267d35acc0681588385b41ae1e76caae72da97cf45f7371f30"
+    },
+    "SenjinVillage": {
+      "changed_blocks": 0,
+      "bytes": 120,
+      "movement_collision_preserved": true,
+      "sha256": "472c7f06ede47866d743baabdac178698639f3bf114a12ab9bff98a81393c2d6"
+    },
+    "RazorHill": {
+      "changed_blocks": 1,
+      "bytes": 120,
+      "movement_collision_preserved": true,
+      "sha256": "969e346f0a883e95537119d6018b5a7a372043a81f9e6fa14fe6e4949a135241"
+    },
+    "OrgrimmarGate": {
+      "changed_blocks": 1,
+      "bytes": 120,
+      "movement_collision_preserved": true,
+      "sha256": "18cc930954aadbbda0891b8d32b73809c7aaf7733f2562c3930308f9a8e3a37b"
+    },
+    "BurningBladeCavern": {
+      "changed_blocks": 0,
+      "bytes": 100,
+      "movement_collision_preserved": true,
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080"
+    },
+    "PeonTrollHut": {
+      "changed_blocks": 11,
+      "bytes": 30,
+      "movement_collision_preserved": true,
+      "sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071"
+    },
+    "PeonOrcHut": {
+      "changed_blocks": 3,
+      "bytes": 30,
+      "movement_collision_preserved": true,
+      "sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be"
+    },
+    "PeonOrcInn": {
+      "changed_blocks": 1,
+      "bytes": 30,
+      "movement_collision_preserved": true,
+      "sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189"
+    },
+    "PeonTrollInn": {
+      "changed_blocks": 11,
+      "bytes": 30,
+      "movement_collision_preserved": true,
+      "sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c"
+    }
+  },
+  "hut_and_inn_duplicates_removed": true,
+  "map_ids_dimensions_coordinates_and_save_layout_preserved": true,
+  "native_header": {
+    "cgb_flag": 192,
+    "cartridge_type": 16,
+    "rom_size_code": 6,
+    "ram_size_code": 3
+  },
+  "physical_chromatic_tested": false
+}

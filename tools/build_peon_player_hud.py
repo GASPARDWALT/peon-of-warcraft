@@ -8,7 +8,7 @@ import numpy as np
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/valley_layout_update/hud'
+OUT = ROOT / 'references/generated/deep_polish/hud'
 GFX = ROOT / 'gfx/pack'
 PIXELS = {'.': 0, 'b': 1, 'g': 2, '#': 3}
 FACE = [
@@ -83,15 +83,18 @@ def main():
     rgba(head, PALETTE_FACE).save(OUT / 'peon_hud_small_head.png')
     gauges = np.concatenate(tiles[5:], axis=1)
     rgba(gauges, PALETTE_GAUGE).save(OUT / 'peon_hud_hp_tiles.png')
-    preview = Image.new('RGBA', (52,16))
-    preview.paste(rgba(face, PALETTE_FACE), (0,0))
-    preview.paste(rgba(np.concatenate([tiles[13]]*4, axis=1), PALETTE_GAUGE), (18,1))
-    preview.save(OUT / 'peon_hud_full_asset_preview.png')
-    preview.resize((416,128), Image.Resampling.NEAREST).save(OUT / 'peon_hud_full_asset_preview_8x.png')
+    preview = Image.new('RGBA', (34,8))
+    preview.paste(rgba(head, PALETTE_FACE), (0,0))
+    preview.paste(rgba(np.concatenate([tiles[13]]*3, axis=1), PALETTE_GAUGE), (10,0))
+    preview.save(OUT / 'peon_hud_fixed_asset_preview.png')
+    preview.resize((272,64), Image.Resampling.NEAREST).save(OUT / 'peon_hud_fixed_asset_preview_8x.png')
     report = {'native_binary':str((GFX/'peon_player_hud.2bpp').relative_to(ROOT)),
         'native_binary_sha256':hashlib.sha256(binary).hexdigest(), 'tiles':14, 'bytes':224,
         'native_vram_bank':0, 'native_vram_range':['0x8600','0x86df'],
-        'full_oam_objects':8, 'compact_oam_objects':4, 'life_source':'wPartyMon1HP / wPartyMon1MaxHP',
+        'fixed_oam_objects':4, 'panel_ink_bounds':[2,3,36,11], 'gauge_width_pixels':24,
+        'portrait_pixels':[8,8], 'resize_with_crowd':False,
+        'scanline_budget':'At most six existing world objects on each individual HUD row.',
+        'life_source':'wPartyMon1HP / wPartyMon1MaxHP', 'alive_minimum_fill_pixels':1,
         'save_layout_changed':False, 'mana_system_added':False,
         'palette_writes':False, 'portrait_palette':2, 'life_palette':0,
         'note':'Asset previews only; *_in_rom captures are actual emulator output.'}

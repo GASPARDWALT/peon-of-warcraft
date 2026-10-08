@@ -82,8 +82,15 @@ PeonDrawAtlasQuests::
 	cp 6
 	jr nz, .submit
 	call .YarrogObjective
+	call .FamiliarsObjectives
 	jr .submit
 .den:
+	call .GornekReportState
+	lb de, 9, 10 ; real Gornek Y/X; projection matches the current map
+	push af
+	call .Project
+	pop af
+	call .Append
 	call .ForemanState
 	lb de, PEON_ATLAS_DEN_OAM_Y, PEON_ATLAS_DEN_OAM_X
 	call .Append
@@ -102,6 +109,7 @@ PeonDrawAtlasQuests::
 	call .CactusObjectives
 	call .SarkothObjective
 	call .CaveEntranceObjective
+	call .FamiliarsObjectives
 .submit:
 	xor a
 	ldh [hOAMUpdate], a
@@ -318,13 +326,13 @@ PeonDrawAtlasQuests::
 .MedallionActive:
 	ld de, EVENT_PEON_MEDALLION_DONE
 	call .Flag
-	jr nz, .Inactive
+	jp nz, .Inactive
 	ld de, EVENT_PEON_MEDALLION_ACCEPTED
 	call .Flag
 	ret z
 	ld de, EVENT_PEON_YARROG_DEAD
 	call .Flag
-	jr nz, .Inactive
+	jp nz, .Inactive
 	ld a, 1
 	and a
 	ret
@@ -333,7 +341,17 @@ PeonDrawAtlasQuests::
 	ret
 .CaveEntranceObjective:
 	call .MedallionActive
+	jr nz, .ShowCaveEntrance
+	call .FamiliarsActive
 	ret z
+	; Show the doorway only while a familiar inside remains alive.
+	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	call .Flag
+	jr z, .ShowCaveEntrance
+	ld de, EVENT_PEON_CAVE_IMP_DEAD
+	call .Flag
+	ret nz
+.ShowCaveEntrance:
 	lb de, PEON_ATLAS_CAVE_ENTRANCE_WORLD_Y, PEON_ATLAS_CAVE_ENTRANCE_WORLD_X
 	jp .Objective
 .YarrogObjective:
@@ -341,50 +359,127 @@ PeonDrawAtlasQuests::
 	ret z
 	lb de, PEON_ATLAS_YARROG_WORLD_Y, PEON_ATLAS_YARROG_WORLD_X
 	jp .Objective
+.FamiliarsActive:
+	ld de, EVENT_PEON_FAMILIARS_DONE
+	call .Flag
+	jp nz, .Inactive
+	ld de, EVENT_PEON_MEDALLION_ACCEPTED
+	call .Flag
+	jp nz, .Inactive ; old saves retain their already accepted next quest
+	ld de, EVENT_PEON_MEDALLION_DONE
+	call .Flag
+	jp nz, .Inactive
+	ld de, EVENT_PEON_FAMILIARS_ACCEPTED
+	jp .Flag
+.FamiliarsObjectives:
+	call .FamiliarsActive
+	ret z
+	ld a, [wMenuCursorY]
+	cp 1
+	jr nz, .InsideFamiliars
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	call .Flag
+	jr nz, .SecondOutsideFamiliar
+	lb de, 6, 25
+	call .Objective
+.SecondOutsideFamiliar:
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	call .Flag
+	ret nz
+	lb de, 9, 27
+	jp .Objective
+.InsideFamiliars:
+	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	call .Flag
+	jr nz, .SecondInsideFamiliar
+	lb de, 8, 12
+	call .Objective
+.SecondInsideFamiliar:
+	ld de, EVENT_PEON_CAVE_IMP_DEAD
+	call .Flag
+	ret nz
+	lb de, 10, 8
+	jp .Objective
 ; State 0 offered, 1 active, 2 ready to turn in, 3 already completed.
+.GornekReportState:
+	ld de, EVENT_PEON_MAP_RECEIVED
+	call .Flag
+	jp z, .Hidden
+	ld de, EVENT_PEON_GEAR_REWARDED
+	call .Flag
+	jr z, .GornekReady ; retry optional gear when a pouch was full
+	ld de, EVENT_PEON_SARKOTH_DONE
+	call .Flag
+	jp z, .Hidden
+	ld de, EVENT_PEON_SARKOTH_REPORT_DONE
+	call .Flag
+	jp nz, .Hidden
+.GornekReady:
+	ld a, 2
+	ret
 .ForemanState:
 	ld de, EVENT_PEON_LAZY_DONE
 	call .Flag
-	jr nz, .Hidden
+	jp nz, .Hidden
 	ld de, EVENT_PEON_LAZY_ACCEPTED
 	call .Flag
-	jr z, .Offered
+	jp z, .Offered
 	ld de, EVENT_PEON_LAZY_AWAKE
 	call .Flag
-	jr .Progress
+	jp .Progress
 .CactusState:
 	ld de, EVENT_PEON_CACTUS_DONE
 	call .Flag
-	jr nz, .Hidden
+	jp nz, .Hidden
 	ld de, EVENT_PEON_CACTUS_ACCEPTED
 	call .Flag
-	jr z, .Offered
+	jp z, .Offered
 	ld de, EVENT_PEON_CACTUS_1
 	call .Flag
-	jr z, .Active
+	jp z, .Active
 	ld de, EVENT_PEON_CACTUS_2
 	call .Flag
-	jr z, .Active
+	jp z, .Active
 	ld de, EVENT_PEON_CACTUS_3
 	call .Flag
-	jr .Progress
+	jp .Progress
 .SarkothState:
 	ld de, EVENT_PEON_SARKOTH_DONE
 	call .Flag
-	jr nz, .Hidden
+	jp nz, .Hidden
 	ld de, EVENT_PEON_SARKOTH_ACCEPTED
 	call .Flag
-	jr z, .Offered
+	jp z, .Offered
 	ld de, EVENT_PEON_SARKOTH_DEAD
 	call .Flag
-	jr .Progress
+	jp .Progress
 .MedallionState:
 	ld de, EVENT_PEON_MEDALLION_DONE
 	call .Flag
-	jr nz, .Hidden
+	jp nz, .Hidden
 	ld de, EVENT_PEON_MEDALLION_ACCEPTED
 	call .Flag
-	jr z, .Offered
+	jr nz, .MedallionProgress
+	ld de, EVENT_PEON_FAMILIARS_DONE
+	call .Flag
+	jp nz, .Offered
+	ld de, EVENT_PEON_FAMILIARS_ACCEPTED
+	call .Flag
+	jp z, .Offered
+	; Four existing persistent kills are also counted when done earlier.
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	call .Flag
+	jp z, .Active
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	call .Flag
+	jp z, .Active
+	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	call .Flag
+	jp z, .Active
+	ld de, EVENT_PEON_CAVE_IMP_DEAD
+	call .Flag
+	jp .Progress
+.MedallionProgress:
 	ld de, EVENT_PEON_YARROG_DEAD
 	call .Flag
 .Progress:

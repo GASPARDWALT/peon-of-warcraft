@@ -285,6 +285,36 @@ endr
 	xor a
 	ld [wWhichIndexSet], a
 	call .FillMenuList
+	; Keep the apprentice menu the same size, even when an imported save has
+	; Crystal's Dex or Gear flags. Those flags must not add a second CHARACTER
+	; or a second map entry. Original link/contest menus retain their own list.
+	ld a, [wLinkMode]
+	and a
+	jr nz, .original_menu
+	ld hl, wStatusFlags2
+	bit STATUSFLAGS2_BUG_CONTEST_TIMER_F, [hl]
+	jr nz, .original_menu
+	ld a, [wEventFlags + EVENT_PEON_SHAMAN / 8]
+	bit EVENT_PEON_SHAMAN % 8, a
+	jr z, .original_menu
+	ld a, STARTMENUITEM_POKEMON
+	call .AppendMenuList
+	ld a, STARTMENUITEM_PACK
+	call .AppendMenuList
+	ld a, STARTMENUITEM_STATUS
+	call .AppendMenuList
+	ld a, STARTMENUITEM_SAVE
+	call .AppendMenuList
+	ld a, STARTMENUITEM_HEARTH
+	call .AppendMenuList
+	ld a, STARTMENUITEM_OPTION
+	call .AppendMenuList
+	ld a, STARTMENUITEM_EXIT
+	call .AppendMenuList
+	ld a, c
+	ld [wMenuItemsList], a
+	ret
+.original_menu
 
 	ld hl, wStatusFlags
 	bit STATUSFLAGS_POKEDEX_F, [hl]

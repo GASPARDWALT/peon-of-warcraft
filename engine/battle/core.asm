@@ -5505,7 +5505,7 @@ MoveSelectionScreen:
 	ld a, [wLinkMode]
 	and a
 	jr nz, .okay
-	ld b, PAD_DOWN | PAD_UP | PAD_A | PAD_B | PAD_SELECT
+	farcall PeonSetMoveMenuJoypad
 
 .okay
 	ld a, b
@@ -5804,6 +5804,8 @@ MoveInfoBox:
 	db "TYPE/@"
 
 .PrintPP:
+	farcall PeonPrintUnlimitedMacePP
+	ret c
 	hlcoord 5, 11
 	ld a, [wLinkMode] ; What's the point of this check?
 	cp LINK_MOBILE
@@ -5825,6 +5827,7 @@ MoveInfoBox:
 	ret
 
 CheckPlayerHasUsableMoves:
+	farcall PeonRestoreMaceCharge
 	ld a, STRUGGLE
 	ld [wCurPlayerMove], a
 	ld a, [wPlayerDisableCount]
@@ -8410,6 +8413,12 @@ ExitBattle:
 	and $f
 	ret nz
 	call CheckPayDay
+	; The apprentice's saved character/item adapters must not pass through
+	; Crystal evolution, Pokérus or held-berry conversion after a victory.
+	; Keep the original path available to every ordinary Crystal tileset.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ret z
 	xor a
 	ld [wForceEvolution], a
 	predef EvolveAfterBattle
@@ -8445,6 +8454,12 @@ CleanUpBattleRAM:
 	ld [hli], a
 	dec b
 	jr nz, .loop
+	; These four bytes reuse unsaved battle padding outside the range above.
+	; Clear on every exit (victory, flee, defeat), not just the next entrance.
+	ld [wPeonRockbiterCharge], a
+	ld [wPeonLightningShieldCharges], a
+	ld [wPeonEarthTotemActive], a
+	ld [wPeonPlayerPoseActive], a
 	call WaitSFX
 	ret
 

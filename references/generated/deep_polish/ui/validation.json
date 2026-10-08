@@ -1,0 +1,41 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "normal_phase": {
+    "ordinary_buttons_only": true,
+    "ram_edits": false,
+    "savestates_loaded": false,
+    "character": {
+      "frame": [
+        0,
+        0,
+        19,
+        17
+      ],
+      "native_vram_attributes_match": true,
+      "no_border_clipping": true
+    },
+    "fixed_start_entries": 7,
+    "fixed_start_bounds": [
+      6,
+      0,
+      19,
+      15
+    ],
+    "maximum_name_fits": true,
+    "actual_starter_totem_preserved_on_invalid_use": true,
+    "actual_actions_and_health_maximum_shown": true,
+    "return_to_world": true
+  },
+  "diagnostics": {
+    "isolated_ram_edits_and_private_state_restore": true,
+    "legacy_flags_keep_seven_entries_and_fixed_bounds": true,
+    "character_displays_current_four_action_names": true,
+    "six_items_scroll_without_font_reload": true,
+    "native_quantity_and_current_index_match_including_99_units": true,
+    "rarity_attribute_reset_and_equipped_indicator": true,
+    "full_health_and_charges_consume_nothing": true,
+    "successful_use_retains_stack_then_clamps_last_removed_stack": true,
+    "empty_inventory_safe_and_same_frame": true
+  },
+  "all_checks_passed": true
+}

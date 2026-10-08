@@ -1,0 +1,808 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "normal_route": [
+    {
+      "name": "normal_den_fixed_map",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_valley_fog",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "fog": true,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_familiars_two_live_targets_and_cave",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          0,
+          4
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ],
+        [
+          57,
+          123,
+          0,
+          4
+        ],
+        [
+          70,
+          131,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_1_DEAD"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    }
+  ],
+  "diagnostic_cases": [
+    {
+      "name": "diagnostic_first_familiar_target_removed",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          0,
+          4
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ],
+        [
+          70,
+          131,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_eleven_points_hardware_capacity",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ],
+        [
+          57,
+          123,
+          0,
+          4
+        ],
+        [
+          70,
+          131,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_1_DEAD"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_familiars_ready_yellow_question",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          4
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "ready"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_next_quest_available",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_legacy_medallion_remains_active",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_gornek_report_ready_on_den_page",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          76,
+          1,
+          4
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_report_marker_removed_after_turn_in",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    }
+  ],
+  "all_checks_passed": true
+}

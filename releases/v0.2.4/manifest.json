@@ -1,0 +1,42 @@
+{
+  "version": "0.2.4",
+  "rom_filename": "peon_of_warcraft_v0_2_4.gbc",
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "rom_bytes": 2097152,
+  "native_header": {
+    "cgb_only": true,
+    "mapper": "MBC3+RTC+RAM+battery",
+    "ram_bytes": 32768
+  },
+  "required_passed_reports_sha256": {
+    "source_validation.json": "7ee11747824d6a7f872a6c43303fea323ebd4b7dcd66d4195e7c55974ca99c9b",
+    "world_runtime/validation.json": "e014ab8ce25a934f1684fef1589b147d3968790480e29674c77d1334f6b6fd9c",
+    "hud/native_validation.json": "9a6ac5a02bfd0f32e3ca5fa1498d4188d345711734dd2fb69bceca3a1e1cdab8",
+    "ui/validation.json": "18bd7335479019aaee7e8b19bdfed32850a6e70b9fbffd14cab4326be210f16f",
+    "quests/normal_validation.json": "9379cf8bba33b6a59d98184da5fda00710063d67334faadeca15f703d40cc273",
+    "quests/diagnostic_validation.json": "1fb9e1c212393a4d07edb441b067bb9f8b9720539489dd2dfb494ce68815d218",
+    "services/source_validation.json": "e0d6e15993f48087df0f5aef4713e3623c8c5ea4c884f6996c249d77646a4d3b",
+    "services/vendors_validation.json": "7904672483da7f7a638fe38fac7e6273d26acc7fb7341b4bd563f02524c837cf",
+    "services/trainer_validation.json": "766df154ab755a7c7591b24f7a8f5ba925fc8b732a46557710b21bc1b647bc42",
+    "services/inns_validation.json": "2185276f67217cbb86c4bc2bbc04018884e44547987a5fe47b554371bbe09215",
+    "combat/lifecycle/candidate/validation.json": "4cb9ab4294d652c34aa6a8295e3bffaa744f0d12e2b4ab961231da551d5adea9",
+    "combat/unlimited_mace/validation.json": "adac5ecd5308893597c4ddeed6afaba3bfd9267ef39bb64113a8ec2c2e63d5c5",
+    "combat/retained/spell_validation/validation.json": "8a1fc6980554a2e0fb0538a0e0f788c5df1aff1f66ba21a7abaa123496edd9a8",
+    "combat/retained/battle_totems_validation/validation.json": "fd31feae1ab559fd75d6ff012e86e22af62386040b30d16093ba8d562a11e7f2",
+    "atlas/validation.json": "77c84eba9c55963f6f77058c46d2be865f5b4ba21f43105b519c62cfd56eed3f",
+    "audio/normal_validation.json": "6d94280eb4daae76d0566299c3626ce3a13ba76a769d5208272ca9868828ca73",
+    "save_upgrade/validation.json": "f545bb10d62d367093df2c01ba93fca86c1afdf9a2bd3912c1499ddea6bc3599"
+  },
+  "physical_chromatic_tested": false,
+  "gallery": "deep_polish/index.html",
+  "save_slots": 1,
+  "prepared_actions": 4,
+  "baseline_commit": "1435e70",
+  "archives_sha256": {
+    "peon_of_warcraft_v0_2_4.zip": "e93c704711fb7c25e5335f95c20b51fc64d7572ecd7fb9351fe05ebb8ca98610",
+    "peon_of_warcraft_v0_2_4_assets.zip": "aa39e6d631269473c056638456597b1bdc6e5fbe9af47c64841d9763c4f9e498"
+  },
+  "gallery_local_links_checked": true,
+  "actual_browser_opened": false,
+  "assets_files": 718
+}

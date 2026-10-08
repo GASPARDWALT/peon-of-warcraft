@@ -40,6 +40,102 @@ PeonCactusReadySound::
 	and a
 	ret
 
+; Four finite familiars already have stable dead-event bits. Kills before
+; acceptance count too; no new counter, respawn state or saved RAM is needed.
+PeonVileFamiliarsReady::
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	call .Flag
+	ret z
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	call .Flag
+	ret z
+	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	call .Flag
+	ret z
+	ld de, EVENT_PEON_CAVE_IMP_DEAD
+.Flag:
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ret
+
+PeonCountVileFamiliars::
+	push af
+	push bc
+	push de
+	push hl
+	xor a
+	ld [wStringBuffer3], a
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	call .AddIfDead
+	ld de, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	call .AddIfDead
+	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	call .AddIfDead
+	ld de, EVENT_PEON_CAVE_IMP_DEAD
+	call .AddIfDead
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.AddIfDead:
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ret z
+	ld hl, wStringBuffer3
+	inc [hl]
+	ret
+
+PeonVileFamiliarsComplete::
+	push bc
+	push de
+	push hl
+	call PeonVileFamiliarsReady
+	ld a, 0
+	jr z, .result
+	inc a
+.result:
+	ld [wScriptVar], a
+	pop hl
+	pop de
+	pop bc
+	ret
+
+; Called only after a newly won familiar encounter. The final kill plays
+; one ready cue, while encounters completed before acceptance remain quiet.
+PeonVileFamiliarsReadySound::
+	push af
+	push bc
+	push de
+	push hl
+	ld de, EVENT_PEON_FAMILIARS_ACCEPTED
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .done
+	ld de, EVENT_PEON_FAMILIARS_DONE
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .done
+	call PeonVileFamiliarsReady
+	jr z, .done
+	ld de, SFX_PEON_QUEST_READY
+	call WaitPlaySFX
+	call WaitSFX
+.done:
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+
 PeonQuestAvailableYellowGFX:: INCBIN "gfx/sprites/peon_quest_available_yellow.2bpp"
 PeonQuestActiveGrayGFX:: INCBIN "gfx/sprites/peon_quest_active_gray.2bpp"
 PeonQuestCompleteYellowGFX:: INCBIN "gfx/sprites/peon_quest_complete_yellow.2bpp"
@@ -109,12 +205,12 @@ PeonInitQuestMarkerSprites::
 	push hl
 	ld a, [wMapGroup]
 	cp GROUP_THE_DEN
-	jr nz, .done
+	jp nz, .done
 	ld a, [wMapNumber]
 	cp MAP_THE_DEN
 	jr z, .den
 	cp MAP_VALLEY_OF_TRIALS
-	jr nz, .done
+	jp nz, .done
 	call .Cactus
 	ld [wVariableSprites + 13], a
 	ld de, EVENT_PEON_SARKOTH_ACCEPTED
@@ -125,16 +221,17 @@ PeonInitQuestMarkerSprites::
 	call .Progress
 .sarkoth
 	ld [wVariableSprites + 14], a
-	ld de, EVENT_PEON_MEDALLION_ACCEPTED
-	call .Flag
-	ld a, SPRITE_ROCKET
-	jr z, .medallion
-	ld de, EVENT_PEON_YARROG_DEAD
-	call .Progress
-.medallion
+	call .Zureetha
 	ld [wVariableSprites + 15], a
-	jr .done
+	jp .done
 .den
+	ld de, EVENT_PEON_MAP_RECEIVED
+	call .Flag
+	jr z, .initial_gornek
+	; A completed Sarkoth quest assigns an immediate report to Gornek.
+	ld a, SPRITE_SCIENTIST
+	jr .gornek
+.initial_gornek
 	ld de, EVENT_PEON_CUTTING_TURNED_IN
 	call .Flag
 	jr nz, .sting
@@ -168,6 +265,30 @@ PeonInitQuestMarkerSprites::
 	pop bc
 	pop af
 	ret
+.Zureetha
+	ld de, EVENT_PEON_MEDALLION_ACCEPTED
+	call .Flag
+	jr nz, .medallion_progress
+	ld de, EVENT_PEON_MEDALLION_DONE
+	call .Flag
+	jr nz, .available
+	ld de, EVENT_PEON_FAMILIARS_DONE
+	call .Flag
+	jr nz, .available
+	ld de, EVENT_PEON_FAMILIARS_ACCEPTED
+	call .Flag
+	jr z, .available
+	call PeonVileFamiliarsReady
+	ld a, SPRITE_ROCKET_GIRL
+	ret z
+	ld a, SPRITE_SCIENTIST
+	ret
+.available
+	ld a, SPRITE_ROCKET
+	ret
+.medallion_progress
+	ld de, EVENT_PEON_YARROG_DEAD
+	jr .Progress
 .Cactus
 	ld de, EVENT_PEON_CACTUS_ACCEPTED
 	call .Flag
@@ -208,12 +329,12 @@ PeonRefreshQuestMarkers::
 	call PeonInitQuestMarkerSprites
 	ld a, [wMapGroup]
 	cp GROUP_THE_DEN
-	jr nz, .done
+	jp nz, .done
 	ld a, [wMapNumber]
 	cp MAP_THE_DEN
 	jr z, .den
 	cp MAP_VALLEY_OF_TRIALS
-	jr nz, .done
+	jp nz, .done
 	ld de, EVENT_PEON_CACTUS_DONE
 	ld a, 5
 	call .HideFinished
@@ -225,9 +346,37 @@ PeonRefreshQuestMarkers::
 	call .HideFinished
 	jr .reload
 .den
+	; This stable actor serves both Gornek's follow-up and unclaimed gear.
+	; It has no fixed hide-event: a completed report must not hide a pending
+	; pouch/club reward. Only the fully quiet states retire its map struct.
 	ld de, EVENT_PEON_MAP_RECEIVED
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .lazy_marker
+	ld de, EVENT_PEON_GEAR_REWARDED
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .lazy_marker
+	ld de, EVENT_PEON_SARKOTH_REPORT_DONE
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .hide_gornek
+	ld de, EVENT_PEON_SARKOTH_DONE
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .lazy_marker
+.hide_gornek
 	ld a, 2
-	call .HideFinished
+	call DeleteObjectStruct
+.lazy_marker
 	ld de, EVENT_PEON_LAZY_DONE
 	ld a, 9
 	call .HideFinished

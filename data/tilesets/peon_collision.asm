@@ -40,3 +40,8 @@
 	tilecoll WALL, WALL, WALL, WALL ; 27 campfire
 	tilecoll WALL, WALL, WALL, WALL ; 28 inn_bedroll
 	tilecoll WALL, WALL, WALL, WALL ; 29 inn_table
+	tilecoll WALL, WALL, WALL, WALL ; 2a deadthorn_tree
+	tilecoll WALL, WALL, WALL, WALL ; 2b darkspear_bedroll
+	tilecoll WALL, WALL, WALL, WALL ; 2c darkspear_table
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 2d woven_timber_floor
+	tilecoll WALL, WALL, WALL, WALL ; 2e darkspear_spirit_mask

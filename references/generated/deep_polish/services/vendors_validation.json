@@ -1,0 +1,36 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "status": "PASS",
+  "sections": {
+    "vendors": {
+      "ordinary_buttons_primary_routes": true,
+      "primary_routes_ram_edits": false,
+      "emulator_states_loaded": false,
+      "stock_prices": {
+        "water_5": 25,
+        "minor_potion_1": 25,
+        "bread_5": 25
+      },
+      "potions_and_village_bread_stock_are_prototype_adaptations": true,
+      "revisiting_master_never_duplicates_kit": true,
+      "shop_and_confirmation_cancellation_are_noops": true,
+      "kwaii_three_stock_success_ordinary_reward_money": true,
+      "existing_stack_purchase_preserves_stack_count": true,
+      "insufficient_funds_refusal_changes_nothing": true,
+      "jark_same_native_stock_and_safe_refusal": true,
+      "starter_items_preserved": true,
+      "status": "PASS",
+      "jark_bread_and_water_success_ordinary_starting_money": true,
+      "isolated_capacity_diagnostic": {
+        "ram_edits": [
+          "wNumItems",
+          "wItems"
+        ],
+        "user_save_opened": false,
+        "full_stack_capacity_refusal_changes_nothing": true,
+        "existing_stack_can_be_bought_in_full_pouch": true,
+        "money_from_ordinary_new_game": true
+      }
+    }
+  }
+}

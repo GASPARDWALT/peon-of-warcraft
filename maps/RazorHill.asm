@@ -18,7 +18,13 @@ RazorHillGuideScript:
 RazorHillOrgnilScript:
 	faceplayer
 	opentext
+	checkevent EVENT_PEON_MEDALLION_DONE
+	iftrue .BladeDefeated
 	writetext RazorHillOrgnilText
+	sjump .Wait
+.BladeDefeated:
+	writetext RazorHillOrgnilThanksText
+.Wait:
 	waitbutton
 	closetext
 	end
@@ -50,6 +56,15 @@ RazorHillGroskScript:
 RazorHillJarkScript:
 	faceplayer
 	opentext
+	writetext RazorHillJarkGreetingText
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Water
+	ifequal 2, .Potion
+	ifequal 3, .Bread
+	sjump .Close
+.Water:
 	writetext RazorHillJarkOfferText
 	yesorno
 	iffalse .Close
@@ -58,7 +73,35 @@ RazorHillJarkScript:
 	giveitem FRESH_WATER, 5
 	iffalse .Full
 	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
 	writetext RazorHillJarkBoughtText
+	sjump .Wait
+.Potion:
+	writetext RazorHillJarkPotionOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem POTION
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext RazorHillJarkPotionBoughtText
+	sjump .Wait
+.Bread:
+	writetext RazorHillJarkBreadOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem PEON_CAMP_BREAD, 5
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext RazorHillJarkBreadBoughtText
 	sjump .Wait
 .Poor:
 	writetext RazorHillJarkPoorText
@@ -70,6 +113,18 @@ RazorHillJarkScript:
 .Close:
 	closetext
 	end
+.MenuHeader:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 2, 17, 11
+	dw .MenuData
+	db 1 ; preserve water as the default for existing shop interactions
+.MenuData:
+	db STATICMENU_CURSOR
+	db 4
+	db "SPRING WATER@"
+	db "MINOR POTION@"
+	db "TOUGH BREAD@"
+	db "CANCEL@"
 
 RazorHillGarthokText:
 	text "GAR'THOK"
@@ -91,12 +146,42 @@ RazorHillGroskOfferText:
 	line "northeast inn."
 	done
 
-RazorHillJarkOfferText:
+RazorHillJarkGreetingText:
 	text "JARK"
 	line "General Goods"
 	para "<PLAYER>,"
-	line "SPRING WATER x5"
-	cont "25 copper. Buy?"
+	line "supplies for the"
+	cont "road?"
+	done
+
+RazorHillJarkOfferText:
+	text "SPRING WATER x5"
+	line "25 copper. Buy?"
+	para "Restores ten"
+	line "Lightning charges."
+	done
+
+RazorHillJarkPotionOfferText:
+	text "MINOR POTION x1"
+	line "25 copper. Buy?"
+	para "Restores 20 HP."
+	done
+
+RazorHillJarkPotionBoughtText:
+	text "Potion packed."
+	line "Use BAGS to heal."
+	done
+
+RazorHillJarkBreadOfferText:
+	text "TOUGH BREAD x5"
+	line "25 copper. Buy?"
+	para "Restores 10 HP"
+	line "outside battle."
+	done
+
+RazorHillJarkBreadBoughtText:
+	text "Bread packed."
+	line "Eat after fights."
 	done
 
 RazorHillJarkBoughtText:
@@ -110,6 +195,17 @@ RazorHillJarkPoorText:
 
 RazorHillJarkFullText:
 	text "Your bag is full."
+	done
+
+RazorHillOrgnilThanksText:
+	text "ORGNIL SOULSCAR"
+	para "<PLAYER>,"
+	line "Yarrog has fallen?"
+	para "Good. The Burning"
+	line "Blade hides more"
+	cont "than one cell."
+	para "Rest, train, and"
+	line "stay watchful."
 	done
 
 RazorHillOrgnilText:

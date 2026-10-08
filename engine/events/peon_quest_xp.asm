@@ -28,6 +28,14 @@ PeonGrantSarkothXP::
 	ld de, 50
 	jr PeonGrantQuestXP
 
+PeonGrantFamiliarsXP::
+	ld de, 40
+	jr PeonGrantQuestXP
+
+PeonGrantSarkothReportXP::
+	ld de, 25
+	jr PeonGrantQuestXP
+
 PeonGrantMedallionXP::
 	ld de, 100
 	; fall through

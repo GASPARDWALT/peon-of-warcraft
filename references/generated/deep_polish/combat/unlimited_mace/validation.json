@@ -1,0 +1,245 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "method": "Normal fresh character/Mace boar; declared temporary battle branches for exhausted/reordered mace and spell cost.",
+  "user_battery_saves_opened": false,
+  "cases": {
+    "normal_button_mace_boar": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "before_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "after_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "normal_enemy_defeated": true,
+      "totem_preserved": true
+    },
+    "exhausted_old_mace": {
+      "move": 1,
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 240,
+        "player_turns": 0
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 237,
+        "battle_hp": 237,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 232,
+        "player_turns": 1
+      },
+      "actual_native_moves": [
+        {
+          "turn": 0,
+          "player_action": 0,
+          "move": 1
+        },
+        {
+          "turn": 1,
+          "player_action": 0,
+          "move": 33
+        }
+      ],
+      "attack_panel_charge_cells": [
+        227,
+        227,
+        243,
+        227,
+        227
+      ],
+      "actual_select_press_keeps_moves_charges_cursor_and_swap_state": true,
+      "fixture": "All native player PP0; both HP240 to keep the diagnostic encounter alive."
+    },
+    "reordered_mace_ppup_bits": {
+      "move": 1,
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          0,
+          227,
+          0,
+          0
+        ],
+        "battle_pp": [
+          0,
+          227,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 240,
+        "player_turns": 0
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 237,
+        "battle_hp": 237,
+        "max_hp": 240,
+        "party_pp": [
+          0,
+          227,
+          0,
+          0
+        ],
+        "battle_pp": [
+          0,
+          227,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 234,
+        "player_turns": 1
+      },
+      "actual_native_moves": [
+        {
+          "turn": 0,
+          "player_action": 0,
+          "move": 1
+        },
+        {
+          "turn": 1,
+          "player_action": 0,
+          "move": 33
+        }
+      ],
+      "attack_panel_charge_cells": [
+        227,
+        227,
+        243,
+        227,
+        227
+      ],
+      "actual_select_press_keeps_moves_charges_cursor_and_swap_state": true,
+      "fixture": "Mace moved to slot2 with empty low PP bits and PP Up bits192; Bolt remains0."
+    },
+    "ordinary_bolt_charge": {
+      "move": 84,
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          7,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          7,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 240,
+        "player_turns": 0
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 237,
+        "battle_hp": 237,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          6,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          6,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 0,
+        "water": 0,
+        "enemy_hp": 235,
+        "player_turns": 1
+      },
+      "actual_native_moves": [
+        {
+          "turn": 0,
+          "player_action": 0,
+          "move": 84
+        },
+        {
+          "turn": 1,
+          "player_action": 0,
+          "move": 33
+        }
+      ],
+      "attack_panel_charge_cells": [
+        127,
+        253,
+        243,
+        249,
+        246
+      ],
+      "actual_select_press_keeps_moves_charges_cursor_and_swap_state": true
+    }
+  },
+  "all_checks_passed": true,
+  "exact_register_flag_restoration_calls": 7,
+  "basic_attack_retains_native_turn_cost": true,
+  "no_spell_charges_refilled": true
+}

@@ -1,0 +1,456 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "section": "normal",
+  "battles": [
+    {
+      "label": "normal_boar",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 1,
+      "level_after": 2,
+      "hp_after": [
+        0,
+        9
+      ],
+      "money_after": 50
+    },
+    {
+      "label": "normal_den_scorpid",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 1,
+      "level_after": 3,
+      "hp_after": [
+        0,
+        14
+      ],
+      "money_after": 150
+    },
+    {
+      "label": "normal_approach_familiar_one",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 4,
+      "hp_after": [
+        0,
+        14
+      ],
+      "money_after": 330
+    },
+    {
+      "label": "normal_approach_familiar_two",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 5,
+      "hp_after": [
+        0,
+        18
+      ],
+      "money_after": 360
+    },
+    {
+      "label": "normal_cave_familiar",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 5,
+      "hp_after": [
+        0,
+        21
+      ],
+      "money_after": 380
+    },
+    {
+      "label": "normal_cave_strong_familiar",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 5,
+      "hp_after": [
+        0,
+        21
+      ],
+      "money_after": 410
+    },
+    {
+      "label": "normal_sarkoth",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 6,
+      "hp_after": [
+        0,
+        24
+      ],
+      "money_after": 495
+    },
+    {
+      "label": "normal_felstalker",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 6,
+      "hp_after": [
+        0,
+        23
+      ],
+      "money_after": 670
+    },
+    {
+      "label": "normal_cultist",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 7,
+      "hp_after": [
+        0,
+        25
+      ],
+      "money_after": 695
+    },
+    {
+      "label": "normal_yarrog",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 7,
+      "hp_after": [
+        0,
+        18
+      ],
+      "money_after": 730
+    }
+  ],
+  "markers": {
+    "familiars_active": {
+      "resolved_native_sprite_id": 54,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 7,
+      "hardware_publication_waited_frames": 0
+    },
+    "familiars_ready": {
+      "resolved_native_sprite_id": 60,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 7,
+      "hardware_publication_waited_frames": 0
+    },
+    "medallion_available": {
+      "resolved_native_sprite_id": 53,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 7,
+      "hardware_publication_waited_frames": 0
+    },
+    "medallion_active": {
+      "resolved_native_sprite_id": 54,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 7,
+      "hardware_publication_waited_frames": 0
+    },
+    "gornek_report_ready": {
+      "resolved_native_sprite_id": 60,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 2,
+      "hardware_publication_waited_frames": 0
+    },
+    "medallion_ready": {
+      "resolved_native_sprite_id": 60,
+      "ordinary_progress": true,
+      "native_vram_matches": true,
+      "actual_hardware_oam_four_tiles": true,
+      "actual_opaque_rgb555_pixels_match": true,
+      "object_index": 7,
+      "hardware_publication_waited_frames": 0
+    }
+  },
+  "rewards": {
+    "familiars": {
+      "xp_delta": 40,
+      "copper_delta": 50,
+      "one_time_saved_flag": "EVENT_PEON_FAMILIARS_DONE"
+    },
+    "sarkoth": {
+      "xp_delta": 50,
+      "copper_delta": 100,
+      "one_time_saved_flag": "EVENT_PEON_SARKOTH_DONE"
+    },
+    "gornek_report": {
+      "xp_delta": 25,
+      "copper_delta": 50,
+      "one_time_saved_flag": "EVENT_PEON_SARKOTH_REPORT_DONE"
+    },
+    "medallion": {
+      "xp_delta": 100,
+      "copper_delta": 150,
+      "one_time_saved_flag": "EVENT_PEON_MEDALLION_DONE"
+    }
+  },
+  "diagnostic_cases": {},
+  "limitations": [
+    "Physical Chromatic not tested.",
+    "Four finite familiars replace the twelve-kill Classic objective; no respawn system added.",
+    "Prepared earlier post-medallion quests and Call of Earth are not implemented here."
+  ],
+  "initial_gear_once_and_idle_gornek_hidden": true,
+  "save_cold_restart": {
+    "passed": true,
+    "battery_bytes": 32768,
+    "before": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        12
+      ],
+      "wYCoord": [
+        9
+      ],
+      "wBackupWarpNumber": [
+        2
+      ],
+      "wBackupMapGroup": [
+        26
+      ],
+      "wBackupMapNumber": [
+        14
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        3,
+        112
+      ],
+      "events": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        224,
+        176,
+        0,
+        63,
+        60,
+        48,
+        1,
+        63,
+        0,
+        0
+      ],
+      "hp": [
+        0,
+        18
+      ],
+      "keys": [
+        25,
+        45,
+        50,
+        90,
+        100
+      ],
+      "items": [
+        148,
+        1,
+        137,
+        1,
+        18,
+        2,
+        142,
+        1
+      ]
+    },
+    "after": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        12
+      ],
+      "wYCoord": [
+        9
+      ],
+      "wBackupWarpNumber": [
+        2
+      ],
+      "wBackupMapGroup": [
+        26
+      ],
+      "wBackupMapNumber": [
+        14
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        3,
+        112
+      ],
+      "events": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        14,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        224,
+        176,
+        0,
+        63,
+        60,
+        48,
+        1,
+        63,
+        0,
+        0
+      ],
+      "hp": [
+        0,
+        18
+      ],
+      "keys": [
+        25,
+        45,
+        50,
+        90,
+        100
+      ],
+      "items": [
+        148,
+        1,
+        137,
+        1,
+        18,
+        2,
+        142,
+        1
+      ]
+    }
+  },
+  "retired_familiars_and_bosses_survive_cold_restart": true,
+  "normal_ram_edits": false,
+  "normal_savestates_loaded": false,
+  "normal_all_checks_passed": true,
+  "all_checks_passed": true
+}

@@ -1,11 +1,27 @@
 # Peon of Warcraft — playable Shaman chapter
 
+[Latest playable ROM — v0.2.4](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4.zip) · [Native captures, transparent art and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4_assets.zip) · [Installation, saves and limits](docs/V0_2_4_PLAYABLE.md)
+
+The current build adds four distinct Orc/Troll house and inn layouts, nine
+native dry trees, fixed menu frames and a fixed-size world face/health overlay.
+Mace Strike is unlimited; spell charges and trainer purchases are preserved.
+Vile Familiars and the Sarkoth report extend the quest chain, full-inventory
+rewards can be collected safely later, and vendors sell usable consumables.
+Continue refreshes updated terrain while retaining collected cacti. Native
+emulator routes, door returns, battery restarts and a previous-release save
+are verified against the packaged ROM hash. Physical Chromatic testing and
+the requested seven fixed Valley screens remain pending.
+
+![Actual v0.2.4 ROM: The Den and fixed-size player HUD](references/generated/deep_polish/hud/hud_den_vendor_camp_in_rom_4x.png)
+
+Earlier downloads remain available below.
+
 [Latest playable audio/level-up preview](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/warcraft-audio-preview/peon_of_warcraft_audio_preview.zip) · [New audio, transparent trees and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/warcraft-audio-preview/peon_of_warcraft_audio_preview_assets.zip) · [Preview changes and limits](docs/WARCRAFT_AUDIO_PREVIEW.md)
 
-The latest preview adds nineteen original native sound effects, golden level-up
+The preceding audio preview added nineteen original native sound effects, golden level-up
 particles and refined Durotar/cave/inn ambiences to the compatible Valley
-preview. Three transparent tree proposals are prepared separately; they are
-not yet map tiles. [Classic opening review](docs/ORC_LEVEL_1_6_REVIEW.md) documents
+preview. Its three transparent tree proposals were prepared separately;
+v0.2.4 now integrates the reduced native dry-tree variant. [Classic opening review](docs/ORC_LEVEL_1_6_REVIEW.md) documents
 the next quest recommendations. Earlier downloads remain available below.
 
 [Download playable ROM](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3.zip) · [Download assets + offline browser gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3_assets.zip) · [Download transparent PNGs](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3_transparent_png.zip) · [Walkthrough and limits](docs/V0_2_3_PLAYABLE.md)

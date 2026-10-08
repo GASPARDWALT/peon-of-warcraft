@@ -202,6 +202,31 @@ PeonInterfaceWait:
 	jr z, PeonInterfaceWait
 	ret
 
+; Redraw only the interior buffer. The fixed 20x18 frame, fonts and palette
+; stay resident while scrolling inventory, so short taps do not trigger a
+; font reload or a blank full-screen transition for every selected item.
+PeonInterfaceClearBody:
+	xor a
+	ldh [hBGMapMode], a
+	hlcoord 1, 3
+	lb bc, 14, 18
+	call ClearBox
+	hlcoord 1, 3, wAttrmap
+	ld b, 14
+.row
+	push bc
+	push hl
+	ld bc, 18
+	xor a
+	call ByteFill
+	pop hl
+	ld de, SCREEN_WIDTH
+	add hl, de
+	pop bc
+	dec b
+	jr nz, .row
+	ret
+
 PeonBags:
 	xor a
 	ld [wItemEffectSucceeded], a
@@ -368,6 +393,17 @@ PeonCharacterSheet:
 .print_health:
 	lb bc, 2, 3
 	call PrintNum
+	hlcoord 13, 9
+	ld [hl], '/'
+	hlcoord 14, 9
+	ld de, wPartyMon1MaxHP
+	ld a, [wBattleMode]
+	and a
+	jr z, .print_max_health
+	ld de, wBattleMonMaxHP
+.print_max_health
+	lb bc, 2, 3
+	call PrintNum
 	ld a, [wPartyMon1Item]
 	and a
 	jr z, .starter
@@ -385,16 +421,36 @@ PeonCharacterSheet:
 	call PlaceString
 .spells:
 	hlcoord 2, 12
-	ld de, .Spells
+	ld a, [wPartyMon1Moves]
+	call .DrawAction
+	hlcoord 2, 13
+	ld a, [wPartyMon1Moves + 1]
+	call .DrawAction
+	hlcoord 2, 14
+	ld a, [wPartyMon1Moves + 2]
+	call .DrawAction
+	hlcoord 2, 15
+	ld a, [wPartyMon1Moves + 3]
+	call .DrawAction
+	hlcoord 2, 16
+	ld de, .Back
 	call PlaceString
 	call WaitBGMap
 	call UpdateTimePals
 	jp PeonInterfaceWait
+.DrawAction
+	and a
+	ld de, .NoAction
+	jp z, PlaceString
+	ld [wNamedObjectIndex], a
+	call GetMoveName
+	jp PlaceString
 .Weapon: db "CRUDE MACE@"
 .Class: db "SHAMAN@"
 .Level: db "LEVEL@"
 .HP: db "HEALTH@"
-.Spells: db "Lightning Bolt", "<LF>", "Mace Strike", "<LF>", "Mak'gora Proofs", "<LF>", "0 earned", "<LF>", "A/B: BACK@"
+.NoAction: db "--@"
+.Back: db "A/B: BACK@"
 .Palette:
 	RGB 31,29,23, 15,22,8, 18,11,6, 0,0,0
 
@@ -408,12 +464,16 @@ INCBIN "gfx/pack/peon_portrait.2bpp"
 PeonInventory:
 	xor a
 	ld [wMenuCursorY], a
-.draw
 	call PeonInterfaceFrame
+.draw
+	call PeonInterfaceClearBody
 	hlcoord 2, 1
 	ld de, .Title
 	call PlaceString
 	hlcoord 2, 3
+	ld de, .Slots
+	call PlaceString
+	hlcoord 8, 3
 	ld de, wNumItems
 	lb bc, 1, 2
 	call PrintNum
@@ -421,7 +481,9 @@ PeonInventory:
 	farcall GetPocketCapacity
 	ld a, c
 	ld [wStringBuffer2], a
-	hlcoord 5, 3
+	hlcoord 10, 3
+	ld [hl], '/'
+	hlcoord 11, 3
 	ld de, wStringBuffer2
 	lb bc, 1, 2
 	call PrintNum
@@ -430,7 +492,26 @@ PeonInventory:
 	call PlaceString
 	ld a, [wNumItems]
 	and a
-	jr z, .empty
+	jr z, .item_number_done
+	ld a, [wMenuCursorY]
+	inc a
+	ld [wStringBuffer2], a
+	hlcoord 7, 5
+	ld de, wStringBuffer2
+	lb bc, 1, 2
+	call PrintNum
+	hlcoord 9, 5
+	ld [hl], '/'
+	hlcoord 10, 5
+	ld de, wNumItems
+	lb bc, 1, 2
+	call PrintNum
+.item_number_done
+	ld a, $ff ; no rarity ribbon unless the selected item is a weapon
+	ld [wStringBuffer4], a
+	ld a, [wNumItems]
+	and a
+	jp z, .empty
 	ld a, [wMenuCursorY]
 	add a
 	ld e, a
@@ -439,12 +520,28 @@ PeonInventory:
 	add hl, de
 	ld a, [hl]
 	ld [wNamedObjectIndex], a
+	inc hl
+	ld a, [hl]
+	ld [wStringBuffer2], a
 	call GetItemName
 	hlcoord 2, 7
 	call PlaceString
+	hlcoord 2, 8
+	ld de, .Quantity
+	call PlaceString
+	hlcoord 8, 8
+	ld de, wStringBuffer2
+	lb bc, 1, 2
+	call PrintNum
 	ld a, [wNamedObjectIndex]
 	cp PEON_CAMP_BREAD
-	jr z, .food_details
+	jp z, .food_details
+	cp POTION
+	jp z, .potion_details
+	cp FRESH_WATER
+	jp z, .water_details
+	cp PEON_EARTH_TOTEM
+	jp z, .totem_details
 	sub ITEM_87
 	cp 3
 	jr c, .quality
@@ -455,7 +552,7 @@ PeonInventory:
 	jr .quality
 .standard_quality
 	cp ITEM_8D
-	jr nz, .footer
+	jp nz, .passive_details
 	ld a, 3
 .quality
 	push af
@@ -464,7 +561,8 @@ PeonInventory:
 	jr nz, .quality_palette
 	ld c, 2 ; Spirit Mace has its own effect label but green item quality.
 .quality_palette
-	farcall PeonColorItemQualityFromC
+	ld a, c
+	ld [wStringBuffer4], a
 	pop af
 	ld e, a
 	ld d, 0
@@ -476,20 +574,76 @@ PeonInventory:
 	ld e, a
 	hlcoord 2, 9
 	call PlaceString
-	jr .footer
+	ld a, [wNamedObjectIndex]
+	ld b, a
+	ld a, [wPartyMon1Item]
+	cp b
+	jr nz, .weapon_help
+	hlcoord 11, 8
+	ld de, .Equipped
+	call PlaceString
+.weapon_help
+	ld de, .EquipHelp
+	jp .footer
 .food_details
 	hlcoord 2, 9
 	ld de, .Food
 	call PlaceString
+	ld de, .UseHelp
+	jp .footer
+.potion_details
+	hlcoord 2, 9
+	ld de, .Potion
+	call PlaceString
+	ld de, .UseHelp
+	jr .footer
+.water_details
+	hlcoord 2, 9
+	ld de, .Water
+	call PlaceString
+	ld de, .UseHelp
+	jr .footer
+.totem_details
+	hlcoord 2, 9
+	ld de, .Totem
+	call PlaceString
+	ld de, .TotemHelp
+	jr .footer
+.passive_details
+	ld a, [wNamedObjectIndex]
+	ld de, .QuestItem
+	cp PEON_SARKOTH_CLAW
+	jr z, .passive_description
+	cp PEON_BLADE_MEDALLION
+	jr z, .passive_description
+	ld de, .PassiveItem
+.passive_description
+	hlcoord 2, 9
+	call PlaceString
+	ld de, .PassiveHelp
 	jr .footer
 .empty
 	hlcoord 2, 7
 	ld de, .Empty
 	call PlaceString
+	ld de, .NoItemsHelp
 .footer
+	push de
 	hlcoord 2, 12
-	ld de, .Help
+	ld de, .BrowseHelp
 	call PlaceString
+	pop de
+	hlcoord 2, 13
+	call PlaceString
+	hlcoord 2, 16
+	ld de, .Back
+	call PlaceString
+	ld a, [wStringBuffer4]
+	cp $ff
+	jr z, .quality_done
+	ld c, a
+	farcall PeonColorItemQualityFromC
+.quality_done
 	; The skin/quality attributes are ready; apply this icon's four cells last.
 	ld a, [wNumItems]
 	and a
@@ -539,7 +693,7 @@ PeonInventory:
 	jr z, .input
 	ld a, [wNamedObjectIndex]
 	cp FRESH_WATER
-	jr z, .drink
+	jp z, .drink
 	cp PEON_EARTH_TOTEM
 	jr z, .totem
 	cp POTION
@@ -554,24 +708,39 @@ PeonInventory:
 	jr c, .input
 	cp ITEM_89 + 1
 	jr nc, .input
-	jr .apply
+	jp .apply
 .totem
 	farcall PeonTryPlaceEarthTotem
-	jp nc, .input
+	jr c, .totem_placed
+	ld de, .TotemAlreadySet
+	ld a, [wBattleMode]
+	and a
+	jp nz, .reason
+	ld de, .TotemBattleOnly
+	jp .reason
+.totem_placed
 	ld a, PEON_EARTH_TOTEM
 	ld [wCurItem], a
-	jr .used_battle_item
+	jp .used_battle_item
 .potion
 	farcall PeonTryUseMinorPotion
-	jp nc, .input
+	ld de, .NoHealing
+	jp nc, .reason
 	ld de, SFX_PEON_POTION
 	call WaitPlaySFX
 	call WaitSFX
 	ld a, POTION
-	jr .consume
+	jp .consume
 .bread
 	farcall PeonTryEatCampBread
-	jp nc, .input
+	jr c, .ate_bread
+	ld de, .NoFood
+	ld a, [wBattleMode]
+	and a
+	jp z, .reason
+	ld de, .FoodBattleOnly
+	jp .reason
+.ate_bread
 	ld de, SFX_PEON_FOOD
 	call WaitPlaySFX
 	call WaitSFX
@@ -580,7 +749,8 @@ PeonInventory:
 .drink
 ; Refill all learned spells; a full spellbook leaves the water in the bag.
 	farcall PeonRestoreSpellCharges
-	jp nc, .input
+	ld de, .FullCharges
+	jp nc, .reason
 	ld de, SFX_PEON_WATER
 	call WaitPlaySFX
 	call WaitSFX
@@ -597,7 +767,18 @@ PeonInventory:
 	ld a, [wBattleMode]
 	and a
 	jr nz, .used_battle_item
-	xor a
+	; Keep the same stack selected. If its final unit was removed, select the
+	; next stack at that index, or the preceding last stack when at the end.
+	ld a, [wNumItems]
+	and a
+	jr z, .clamp_cursor
+	ld b, a
+	ld a, [wMenuCursorY]
+	cp b
+	jp c, .draw
+	ld a, b
+	dec a
+.clamp_cursor
 	ld [wMenuCursorY], a
 	jp .draw
 .used_battle_item
@@ -618,11 +799,43 @@ PeonInventory:
 	ld de, SFX_TRANSACTION
 	call PlaySFX
 	jp .draw
+.reason
+	push de
+	xor a
+	ldh [hBGMapMode], a
+	hlcoord 2, 14
+	lb bc, 1, 17
+	call ClearBox
+	pop de
+	hlcoord 2, 14
+	call PlaceString
+	call WaitBGMap2
+	jp .input
 .Title: db "BAG INVENTORY@"
-.Label: db "ITEM / CAPACITY@"
+.Slots: db "SLOTS @"
+.Label: db "ITEM @"
+.Quantity: db "COUNT @"
+.Equipped: db "EQUIPPED@"
 .Empty: db "EMPTY@"
 .Food: db "RESTORES 10 HP", "<LF>", "OUTSIDE COMBAT@"
-.Help: db "LEFT/RIGHT: ITEM", "<LF>", "A: EQUIP / USE", "<LF>", "B: BACK@"
+.Potion: db "RESTORES 20 HP", "<LF>", "ONE BATTLE TURN@"
+.Water: db "TEN SPELL CHARGES", "<LF>", "ONE BATTLE TURN@"
+.Totem: db "ACT BEFORE TARGET", "<LF>", "REUSE; ONE TURN@"
+.QuestItem: db "QUEST PROOF", "<LF>", "KEEP FOR TURN-IN@"
+.PassiveItem: db "PASSIVE ITEM", "<LF>", "NO DIRECT USE@"
+.BrowseHelp: db "LEFT/RIGHT: ITEM@"
+.EquipHelp: db "A: EQUIP WEAPON@"
+.UseHelp: db "A: USE ITEM@"
+.TotemHelp: db "A: PLACE TOTEM@"
+.PassiveHelp: db "NO DIRECT ACTION@"
+.NoItemsHelp: db "NO ITEMS TO USE@"
+.Back: db "B: BACK@"
+.NoHealing: db "CANNOT HEAL NOW@"
+.NoFood: db "CANNOT EAT NOW@"
+.FoodBattleOnly: db "REST OUT OF FIGHT@"
+.FullCharges: db "CHARGES ARE FULL@"
+.TotemBattleOnly: db "ONLY IN COMBAT@"
+.TotemAlreadySet: db "TOTEM ALREADY SET@"
 .Qualities:
 	dw .Gray, .White, .Green, .Blue, .Spirit
 ; $78 is the menu's native percent tile; '%' is a legacy breakable-space alias.

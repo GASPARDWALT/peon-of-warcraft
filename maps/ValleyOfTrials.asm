@@ -153,10 +153,44 @@ ValleyZureethaScript:
 	faceplayer
 	setlasttalked VALLEY_ZUREETHA
 	opentext
+	; Published saves may already be on the medallion quest. Never insert a
+	; new prerequisite behind their saved progress or make dead imps respawn.
 	checkevent EVENT_PEON_MEDALLION_DONE
 	iftrue .Thanks
 	checkevent EVENT_PEON_MEDALLION_ACCEPTED
 	iftrue .Progress
+	checkevent EVENT_PEON_FAMILIARS_DONE
+	iftrue .MedallionOffer
+	checkevent EVENT_PEON_FAMILIARS_ACCEPTED
+	iftrue .FamiliarsProgress
+	writetext ZureethaFamiliarsOfferText
+	yesorno
+	iffalse .Close
+	setevent EVENT_PEON_FAMILIARS_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
+	callasm PeonRefreshValleyQuestMarkers
+	callasm PeonCountVileFamiliars
+	writetext ZureethaFamiliarsReminderText
+	sjump .Wait
+.FamiliarsProgress:
+	callasm PeonVileFamiliarsComplete
+	iffalse .FamiliarsReminder
+	setevent EVENT_PEON_FAMILIARS_DONE
+	givemoney YOUR_MONEY, 50
+	callasm PeonGrantFamiliarsXP
+	callasm PeonQuestXPFeedback
+	waitbutton
+	callasm PeonRefreshValleyQuestMarkers
+	writetext ZureethaFamiliarsRewardText
+	; End this conversation after the reward. The next conversation offers
+	; precisely one new quest, rather than silently accepting another.
+	sjump .Wait
+.FamiliarsReminder:
+	callasm PeonCountVileFamiliars
+	writetext ZureethaFamiliarsReminderText
+	sjump .Wait
+.MedallionOffer:
 	writetext ZureethaOfferText
 	yesorno
 	iffalse .Close
@@ -216,6 +250,7 @@ ValleyCaveApproachImp1Script:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	callasm PeonVileFamiliarsReadySound
 	disappear VALLEY_CAVE_APPROACH_IMP_1
 	givemoney YOUR_MONEY, 30
 	opentext
@@ -240,6 +275,7 @@ ValleyCaveApproachImp2Script:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	callasm PeonVileFamiliarsReadySound
 	disappear VALLEY_CAVE_APPROACH_IMP_2
 	givemoney YOUR_MONEY, 30
 	opentext
@@ -348,13 +384,51 @@ HanazuaRewardText:
 	line "<PLAYER>!"
 	para "100 copper and two"
 	line "HEALING POTIONS."
-	para "Save them for your"
-	line "next hard fight."
+	para "REPORT TO GORNEK"
+	line "Tell him I live."
+	para "He is at the Den."
 	done
 
 HanazuaThanksText:
 	text "Your courage has"
 	line "helped me recover."
+	para "Tell Gornek that"
+	line "I am still alive."
+	para "Find him at the"
+	line "Den campfire."
+	done
+
+ZureethaFamiliarsOfferText:
+	text "ZUREETHA FARGAZE"
+	para "VILE FAMILIARS"
+	para "Defeat four vile"
+	line "familiars near and"
+	cont "inside the cavern."
+	para "Earlier kills"
+	line "count as well."
+	para "Will you help?"
+	done
+
+ZureethaFamiliarsReminderText:
+	text "Familiars: @"
+	text_decimal wStringBuffer3, 1, 1
+	text "/4."
+	para "Two familiars lurk"
+	line "at the cave mouth."
+	para "Two more wait"
+	line "inside the cavern."
+	para "Defeat all four,"
+	line "then return to me."
+	done
+
+ZureethaFamiliarsRewardText:
+	text "Well done,"
+	line "<PLAYER>!"
+	para "VILE FAMILIARS"
+	line "Quest complete!"
+	para "50 copper earned."
+	para "Talk to me again"
+	line "about their leader"
 	done
 
 ZureethaOfferText:

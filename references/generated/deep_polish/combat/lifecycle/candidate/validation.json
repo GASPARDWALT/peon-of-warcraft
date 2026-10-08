@@ -1,0 +1,154 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "historical_baseline": false,
+  "method": "Fresh normal-button totem victory; independently labelled temporary flee/defeat/fallback fixtures.",
+  "user_battery_saves_opened": false,
+  "cases": {
+    "normal_button_totem_victory": {
+      "battle_result": 0,
+      "calls": {
+        "evolution": 0,
+        "pokerus_and_berries": 0,
+        "cleanup": 1
+      },
+      "cleanup_input_states": [
+        {
+          "wPeonRockbiterCharge": 7,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 1,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "cleanup_finished_states": [
+        {
+          "wPeonRockbiterCharge": 0,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 0,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "world_reused_union_bytes": {
+        "wPeonRockbiterCharge": 140,
+        "wPeonLightningShieldCharges": 4,
+        "wPeonEarthTotemActive": 3,
+        "wPeonPlayerPoseActive": 8
+      },
+      "map": 14,
+      "hp": 6,
+      "totem_quantity": 1,
+      "diagnostic_fixtures": []
+    },
+    "diagnostic_flee": {
+      "battle_result": 2,
+      "calls": {
+        "evolution": 0,
+        "pokerus_and_berries": 0,
+        "cleanup": 1
+      },
+      "cleanup_input_states": [
+        {
+          "wPeonRockbiterCharge": 1,
+          "wPeonLightningShieldCharges": 3,
+          "wPeonEarthTotemActive": 1,
+          "wPeonPlayerPoseActive": 1
+        }
+      ],
+      "cleanup_finished_states": [
+        {
+          "wPeonRockbiterCharge": 0,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 0,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "world_reused_union_bytes": {
+        "wPeonRockbiterCharge": 140,
+        "wPeonLightningShieldCharges": 1,
+        "wPeonEarthTotemActive": 3,
+        "wPeonPlayerPoseActive": 8
+      },
+      "map": 14,
+      "hp": 15,
+      "totem_quantity": 1,
+      "diagnostic_fixtures": [
+        "Four existing battle-only fields set 1/3/1/1 before native Run action."
+      ]
+    },
+    "diagnostic_defeat_recovery": {
+      "battle_result": 1,
+      "calls": {
+        "evolution": 0,
+        "pokerus_and_berries": 0,
+        "cleanup": 1
+      },
+      "cleanup_input_states": [
+        {
+          "wPeonRockbiterCharge": 1,
+          "wPeonLightningShieldCharges": 3,
+          "wPeonEarthTotemActive": 1,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "cleanup_finished_states": [
+        {
+          "wPeonRockbiterCharge": 0,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 0,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "world_reused_union_bytes": {
+        "wPeonRockbiterCharge": 35,
+        "wPeonLightningShieldCharges": 49,
+        "wPeonEarthTotemActive": 3,
+        "wPeonPlayerPoseActive": 5
+      },
+      "map": 23,
+      "hp": 1,
+      "totem_quantity": 1,
+      "diagnostic_fixtures": [
+        "Battle-only fields 1/3/1/1; player HP1; foe HP240/attack999/speed999/Tackle to reliably exercise native loss."
+      ]
+    },
+    "non_peon_original_fallback": {
+      "battle_result": 0,
+      "calls": {
+        "evolution": 1,
+        "pokerus_and_berries": 1,
+        "cleanup": 1
+      },
+      "cleanup_input_states": [
+        {
+          "wPeonRockbiterCharge": 7,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 0,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "cleanup_finished_states": [
+        {
+          "wPeonRockbiterCharge": 0,
+          "wPeonLightningShieldCharges": 0,
+          "wPeonEarthTotemActive": 0,
+          "wPeonPlayerPoseActive": 0
+        }
+      ],
+      "world_reused_union_bytes": {
+        "wPeonRockbiterCharge": 140,
+        "wPeonLightningShieldCharges": 4,
+        "wPeonEarthTotemActive": 3,
+        "wPeonPlayerPoseActive": 8
+      },
+      "map": 14,
+      "hp": 8,
+      "totem_quantity": 1,
+      "diagnostic_fixtures": [
+        "Only at post-battle entry, tileset temporarily1; restored at cleanup before returning to world."
+      ]
+    }
+  },
+  "all_checks_passed": true,
+  "normal_victory_mob_disappears": true,
+  "flee_and_defeat_do_not_retire_enemy": true,
+  "native_non_peon_fallback_preserved": true
+}

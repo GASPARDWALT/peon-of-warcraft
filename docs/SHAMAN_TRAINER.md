@@ -82,3 +82,30 @@ belong under `references/generated/durotar_v022/trainer_validation/`.
 Legacy Shaman saves receive the new reusable Earth Totem at Kento if it is
 missing. A full bag leaves the handoff retryable. An existing Totem skips the
 handoff, and the original mace, shield and belt totem are never given again.
+
+## Deep polish: stable panel and input
+
+The trainer keeps one twenty-by-eighteen tile outer frame for lesson browsing,
+confirmation, slot choice and refusal. Eighteen-character descriptions and
+messages start at column one, keeping both border columns intact; the previous
+column-two layout overwrote the right border with long lines. Cursor and slot
+changes have a short native interface click. Entry also requires an initialized
+Shaman, a nonempty character allocation and no active combat, so future or old
+script callers cannot write spells into an empty character or battle state.
+
+Prices, even-level unlocks, protected first two attacks, saved ownership and
+free preparation charge rules are unchanged. The new services validator observes
+actual tilemap borders throughout native trainer interactions, then checks all
+later lessons with explicitly labelled level/money/charge diagnostics. Those
+later diagnostics are not a claim of playing every level through ordinary quests.
+
+Older saves may contain attacks reordered with the former battle SELECT action.
+At trainer entry, present Mace Strike and Lightning Bolt are moved to slots one
+and two by swapping whole attack/charge pairs. All other attacks and raw charge
+bytes, including PP-Up bits, stay paired; money and health do not change. The
+already canonical loadout is untouched. Both basic attacks are checked before
+any swap. If either is missing, Kento displays "Training paused" and refuses
+training without partially rewriting that imported character. No move is
+invented and no save field is added. Current Peon battles disable SELECT reorder.
+The labelled import diagnostic verifies pair conservation, replacement only in
+training slots, unchanged canonical records and safe refusal of a missing Bolt.

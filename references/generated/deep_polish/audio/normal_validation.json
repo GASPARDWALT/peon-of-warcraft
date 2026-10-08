@@ -1,0 +1,8982 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "section": "normal",
+  "all_checks_passed": true,
+  "source": "Original GBC pulse/noise compositions; no external Warcraft samples auditioned or imported.",
+  "physical_chromatic_audio_unverified": true,
+  "ordinary_gameplay": {
+    "normal_buttons_only": true,
+    "ram_edits": false,
+    "emulator_savestates_loaded": false,
+    "cases": {
+      "quest_accept": true,
+      "totem_place": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 15,
+          "battle_hp": 15,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 11
+        },
+        "after": {
+          "active": 1,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 11
+        },
+        "enemy_move_count": 1,
+        "consumes_turn": true
+      },
+      "successful_potion": {
+        "before": {
+          "active": 1,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 11
+        },
+        "after": {
+          "active": 1,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 0,
+          "water": 0,
+          "enemy_hp": 11
+        },
+        "enemy_move_count": 1,
+        "consumes_turn": true
+      },
+      "no_false_ding_on_boar_without_level_gain": {
+        "before": 2,
+        "after": 2,
+        "ding_count": 0
+      },
+      "quest_level_gain_uses_one_ding_instead_of_stacked_fanfare": true,
+      "inn_rest": true,
+      "completed_quest_does_not_repeat_reward_audio_or_xp": true,
+      "actual_battle_level_gain": {
+        "before": 4,
+        "after": 5
+      },
+      "hearthstone_native_return": true,
+      "three_ambiences_selected_and_native_decoder_observed": [
+        103,
+        104,
+        106
+      ]
+    },
+    "initial_level": 2,
+    "normal_battery_restart": {
+      "passed": true,
+      "battery_bytes": 32768,
+      "before": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          12
+        ],
+        "wYCoord": [
+          9
+        ],
+        "wBackupWarpNumber": [
+          2
+        ],
+        "wBackupMapGroup": [
+          26
+        ],
+        "wBackupMapNumber": [
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          1,
+          189
+        ],
+        "events": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          224,
+          177,
+          224,
+          0,
+          0,
+          48,
+          7,
+          33,
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          20
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          90,
+          100
+        ],
+        "items": [
+          148,
+          1,
+          137,
+          1
+        ]
+      },
+      "after": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          12
+        ],
+        "wYCoord": [
+          9
+        ],
+        "wBackupWarpNumber": [
+          2
+        ],
+        "wBackupMapGroup": [
+          26
+        ],
+        "wBackupMapNumber": [
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          1,
+          189
+        ],
+        "events": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          224,
+          177,
+          224,
+          0,
+          0,
+          48,
+          7,
+          33,
+          0,
+          0
+        ],
+        "hp": [
+          0,
+          20
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          90,
+          100
+        ],
+        "items": [
+          148,
+          1,
+          137,
+          1
+        ]
+      }
+    },
+    "continue_does_not_falsely_ding_or_glow": true,
+    "sound_events": [
+      {
+        "name": "quest_accept",
+        "header": "PeonSfx_QuestAccept",
+        "sfx_id": 209,
+        "started_frame": 7259,
+        "battle_mode": 0,
+        "enemy_species": 0,
+        "player_level": 2,
+        "ended_frame": 7273,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_00_quest_accept.wav",
+        "seconds": 0.233625,
+        "actual_native_apu_peak_before_gain": 16,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2915.2693443262215,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "totem_place",
+        "header": "PeonSfx_TotemPlace",
+        "sfx_id": 215,
+        "started_frame": 9519,
+        "battle_mode": 1,
+        "enemy_species": 19,
+        "player_level": 2,
+        "ended_frame": 9538,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_01_totem_place.wav",
+        "seconds": 0.3170625,
+        "actual_native_apu_peak_before_gain": 20,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1980.8208098396776,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "potion",
+        "header": "PeonSfx_Potion",
+        "sfx_id": 213,
+        "started_frame": 10395,
+        "battle_mode": 1,
+        "enemy_species": 19,
+        "player_level": 2,
+        "ended_frame": 10411,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_02_potion.wav",
+        "seconds": 0.267,
+        "actual_native_apu_peak_before_gain": 10,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 4306.503294250363,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_ready",
+        "header": "PeonSfx_QuestReady",
+        "sfx_id": 210,
+        "started_frame": 13482,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 2,
+        "ended_frame": 13495,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5
+        ],
+        "wav": "normal_03_quest_ready.wav",
+        "seconds": 0.2169375,
+        "actual_native_apu_peak_before_gain": 13,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3310.0676626856184,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "level_up",
+        "header": "PeonSfx_LevelUp",
+        "sfx_id": 208,
+        "started_frame": 14614,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 14634,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "wav": "normal_04_level_up.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 19,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1744.2904973187792,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_accept",
+        "header": "PeonSfx_QuestAccept",
+        "sfx_id": 209,
+        "started_frame": 16063,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 16077,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_05_quest_accept.wav",
+        "seconds": 0.233625,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2182.591650331568,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "healing",
+        "header": "PeonSfx_Healing",
+        "sfx_id": 212,
+        "started_frame": 18253,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 18275,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_06_healing.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 12,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3066.71473143809,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_accept",
+        "header": "PeonSfx_QuestAccept",
+        "sfx_id": 209,
+        "started_frame": 21593,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 21607,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_07_quest_accept.wav",
+        "seconds": 0.233625,
+        "actual_native_apu_peak_before_gain": 13,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3492.13693084503,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_ready",
+        "header": "PeonSfx_QuestReady",
+        "sfx_id": 210,
+        "started_frame": 22524,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 22537,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5
+        ],
+        "wav": "normal_08_quest_ready.wav",
+        "seconds": 0.2169375,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2679.7669160493374,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_reward",
+        "header": "PeonSfx_QuestReward",
+        "sfx_id": 211,
+        "started_frame": 23392,
+        "battle_mode": 0,
+        "enemy_species": 19,
+        "player_level": 3,
+        "ended_frame": 23407,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "wav": "normal_09_quest_reward.wav",
+        "seconds": 0.2503125,
+        "actual_native_apu_peak_before_gain": 17,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2381.3804673287514,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "scorpid_rattle",
+        "header": "PeonSfx_ScorpidRattle",
+        "sfx_id": 219,
+        "started_frame": 26467,
+        "battle_mode": 1,
+        "enemy_species": 27,
+        "player_level": 3,
+        "ended_frame": 26482,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_10_scorpid_rattle.wav",
+        "seconds": 0.2503125,
+        "actual_native_apu_peak_before_gain": 14,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3445.9729378143343,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "quest_ready",
+        "header": "PeonSfx_QuestReady",
+        "sfx_id": 210,
+        "started_frame": 30414,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 3,
+        "ended_frame": 30427,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5
+        ],
+        "wav": "normal_11_quest_ready.wav",
+        "seconds": 0.2169375,
+        "actual_native_apu_peak_before_gain": 12,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3707.956048428121,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "level_up",
+        "header": "PeonSfx_LevelUp",
+        "sfx_id": 208,
+        "started_frame": 31654,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 4,
+        "ended_frame": 31675,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "wav": "normal_12_level_up.wav",
+        "seconds": 0.3504375,
+        "actual_native_apu_peak_before_gain": 17,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2362.452599265665,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "healing",
+        "header": "PeonSfx_Healing",
+        "sfx_id": 212,
+        "started_frame": 35833,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 4,
+        "ended_frame": 35855,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_13_healing.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 11,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3455.4151055709235,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "scorpid_rattle",
+        "header": "PeonSfx_ScorpidRattle",
+        "sfx_id": 219,
+        "started_frame": 39706,
+        "battle_mode": 1,
+        "enemy_species": 27,
+        "player_level": 4,
+        "ended_frame": 39721,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_14_scorpid_rattle.wav",
+        "seconds": 0.2503125,
+        "actual_native_apu_peak_before_gain": 16,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2766.065908044465,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "scorpid_rattle",
+        "header": "PeonSfx_ScorpidRattle",
+        "sfx_id": 219,
+        "started_frame": 43873,
+        "battle_mode": 1,
+        "enemy_species": 27,
+        "player_level": 4,
+        "ended_frame": 43888,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_15_scorpid_rattle.wav",
+        "seconds": 0.2503125,
+        "actual_native_apu_peak_before_gain": 16,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2762.4091636901094,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "level_up",
+        "header": "PeonSfx_LevelUp",
+        "sfx_id": 208,
+        "started_frame": 48122,
+        "battle_mode": 1,
+        "enemy_species": 27,
+        "player_level": 4,
+        "ended_frame": 48142,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "wav": "normal_16_level_up.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 17,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2462.693942089139,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "defeat",
+        "header": "PeonSfx_Defeat",
+        "sfx_id": 217,
+        "started_frame": 51209,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 51226,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5
+        ],
+        "wav": "normal_17_defeat.wav",
+        "seconds": 0.2836875,
+        "actual_native_apu_peak_before_gain": 19,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2143.890960004049,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "hearthstone",
+        "header": "PeonSfx_Hearthstone",
+        "sfx_id": 216,
+        "started_frame": 51265,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 51296,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_18_hearthstone.wav",
+        "seconds": 0.5173125,
+        "actual_native_apu_peak_before_gain": 16,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2599.5894605781205,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "healing",
+        "header": "PeonSfx_Healing",
+        "sfx_id": 212,
+        "started_frame": 51385,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 51407,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_19_healing.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2790.4672495503955,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "healing",
+        "header": "PeonSfx_Healing",
+        "sfx_id": 212,
+        "started_frame": 52133,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 52155,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_20_healing.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 14,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2625.3352062316435,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "hearthstone",
+        "header": "PeonSfx_Hearthstone",
+        "sfx_id": 216,
+        "started_frame": 54635,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 54666,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_21_hearthstone.wav",
+        "seconds": 0.5173125,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2717.514764683581,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "healing",
+        "header": "PeonSfx_Healing",
+        "sfx_id": 212,
+        "started_frame": 54755,
+        "battle_mode": 0,
+        "enemy_species": 27,
+        "player_level": 5,
+        "ended_frame": 54777,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_22_healing.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2794.1649489206516,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      },
+      {
+        "name": "imp_yelp",
+        "header": "PeonSfx_ImpYelp",
+        "sfx_id": 220,
+        "started_frame": 56936,
+        "battle_mode": 1,
+        "enemy_species": 74,
+        "player_level": 5,
+        "ended_frame": 56954,
+        "termination_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "wav": "normal_23_imp_yelp.wav",
+        "seconds": 0.300375,
+        "actual_native_apu_peak_before_gain": 16,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2647.135194680865,
+        "native_apu_capture": true,
+        "music_restored_audible_frames": 6
+      }
+    ],
+    "gold_level_up_events": [
+      {
+        "helper": "PeonWorldLevelUpFeedback",
+        "frame": 14614,
+        "level": 3,
+        "entry_sp": 49355,
+        "palette_before": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_before": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          136,
+          64,
+          12,
+          160,
+          144,
+          65,
+          12,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "gold_frames": [
+          {
+            "frame": 14616,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 0
+          },
+          {
+            "frame": 14617,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 14618,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 14619,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 14620,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 14621,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 14622,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 22
+          },
+          {
+            "frame": 14623,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 14624,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 14625,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 14626,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 14627,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 14628,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 13
+          },
+          {
+            "frame": 14629,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 14630,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 14631,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 14632,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 14633,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 14634,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 18
+          },
+          {
+            "frame": 14635,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 14636,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 14637,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 14638,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 14639,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 14640,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 18
+          },
+          {
+            "frame": 14641,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 14642,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 14643,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 14644,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 14645,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 14646,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 22
+          },
+          {
+            "frame": 14647,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 14648,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 14649,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 14650,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 14651,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          }
+        ],
+        "phase_entries": [
+          14615,
+          14621,
+          14627,
+          14633,
+          14639,
+          14645
+        ],
+        "explicit_restored_phase_observed": true,
+        "palette_at_restored_phase": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_at_restored_phase": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          136,
+          64,
+          12,
+          160,
+          144,
+          65,
+          12,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "return_frame": 14652,
+        "palette_after": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_after": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          136,
+          64,
+          12,
+          160,
+          144,
+          65,
+          12,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "six_native_pose_contact_sheet": "normal_PeonWorldLevelUpFeedback_level_3_six_gold_poses.png"
+      },
+      {
+        "helper": "PeonWorldLevelUpFeedback",
+        "frame": 31654,
+        "level": 4,
+        "entry_sp": 49355,
+        "palette_before": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_before": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          72,
+          6,
+          4,
+          160,
+          80,
+          7,
+          4,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "gold_frames": [
+          {
+            "frame": 31657,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 0
+          },
+          {
+            "frame": 31658,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 31659,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 31660,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 31661,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 31662,
+            "objects": [
+              [
+                84,
+                64,
+                110,
+                7
+              ],
+              [
+                84,
+                88,
+                110,
+                7
+              ],
+              [
+                77,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                81,
+                70,
+                111,
+                7
+              ],
+              [
+                81,
+                82,
+                111,
+                39
+              ],
+              [
+                87,
+                70,
+                111,
+                71
+              ],
+              [
+                87,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 46
+          },
+          {
+            "frame": 31663,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 22
+          },
+          {
+            "frame": 31664,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 31665,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 31666,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 31667,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 31668,
+            "objects": [
+              [
+                82,
+                62,
+                110,
+                7
+              ],
+              [
+                82,
+                90,
+                110,
+                7
+              ],
+              [
+                73,
+                76,
+                110,
+                7
+              ],
+              [
+                91,
+                76,
+                110,
+                7
+              ],
+              [
+                78,
+                69,
+                111,
+                7
+              ],
+              [
+                78,
+                83,
+                111,
+                39
+              ],
+              [
+                86,
+                69,
+                111,
+                71
+              ],
+              [
+                86,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 71
+          },
+          {
+            "frame": 31669,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 13
+          },
+          {
+            "frame": 31670,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 31671,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 31672,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 31673,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 31674,
+            "objects": [
+              [
+                80,
+                61,
+                110,
+                7
+              ],
+              [
+                80,
+                91,
+                110,
+                7
+              ],
+              [
+                70,
+                76,
+                110,
+                7
+              ],
+              [
+                90,
+                76,
+                110,
+                7
+              ],
+              [
+                75,
+                68,
+                111,
+                7
+              ],
+              [
+                75,
+                83,
+                111,
+                39
+              ],
+              [
+                85,
+                68,
+                111,
+                71
+              ],
+              [
+                85,
+                83,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 68
+          },
+          {
+            "frame": 31675,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 18
+          },
+          {
+            "frame": 31676,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 31677,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 31678,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 31679,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 31680,
+            "objects": [
+              [
+                78,
+                63,
+                110,
+                7
+              ],
+              [
+                78,
+                89,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                87,
+                76,
+                110,
+                7
+              ],
+              [
+                74,
+                69,
+                111,
+                7
+              ],
+              [
+                74,
+                82,
+                111,
+                39
+              ],
+              [
+                82,
+                69,
+                111,
+                71
+              ],
+              [
+                82,
+                82,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 55
+          },
+          {
+            "frame": 31681,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 18
+          },
+          {
+            "frame": 31682,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 31683,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 31684,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 31685,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 31686,
+            "objects": [
+              [
+                76,
+                65,
+                110,
+                7
+              ],
+              [
+                76,
+                87,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                83,
+                76,
+                110,
+                7
+              ],
+              [
+                73,
+                70,
+                111,
+                7
+              ],
+              [
+                73,
+                81,
+                111,
+                39
+              ],
+              [
+                79,
+                70,
+                111,
+                71
+              ],
+              [
+                79,
+                81,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 45
+          },
+          {
+            "frame": 31687,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 22
+          },
+          {
+            "frame": 31688,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 31689,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 31690,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 31691,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          },
+          {
+            "frame": 31692,
+            "objects": [
+              [
+                74,
+                67,
+                110,
+                7
+              ],
+              [
+                74,
+                85,
+                110,
+                7
+              ],
+              [
+                69,
+                76,
+                110,
+                7
+              ],
+              [
+                79,
+                76,
+                110,
+                7
+              ],
+              [
+                72,
+                71,
+                111,
+                7
+              ],
+              [
+                72,
+                80,
+                111,
+                39
+              ],
+              [
+                76,
+                71,
+                111,
+                71
+              ],
+              [
+                76,
+                80,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 43
+          }
+        ],
+        "phase_entries": [
+          31656,
+          31662,
+          31668,
+          31674,
+          31680,
+          31686
+        ],
+        "explicit_restored_phase_observed": true,
+        "palette_at_restored_phase": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_at_restored_phase": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          72,
+          6,
+          4,
+          160,
+          80,
+          7,
+          4,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "return_frame": 31693,
+        "palette_after": [
+          255,
+          127,
+          22,
+          17,
+          69,
+          8,
+          191,
+          12,
+          255,
+          127,
+          55,
+          30,
+          235,
+          64,
+          33,
+          4,
+          255,
+          127,
+          114,
+          25,
+          207,
+          34,
+          33,
+          4,
+          255,
+          127,
+          121,
+          46,
+          236,
+          16,
+          33,
+          4,
+          255,
+          127,
+          246,
+          29,
+          169,
+          8,
+          95,
+          15,
+          255,
+          127,
+          49,
+          70,
+          63,
+          31,
+          33,
+          4,
+          255,
+          127,
+          125,
+          91,
+          138,
+          94,
+          130,
+          28,
+          255,
+          127,
+          118,
+          58,
+          77,
+          29,
+          133,
+          12
+        ],
+        "oam_after": [
+          76,
+          72,
+          4,
+          10,
+          76,
+          80,
+          5,
+          10,
+          84,
+          72,
+          6,
+          10,
+          84,
+          80,
+          7,
+          10,
+          60,
+          72,
+          32,
+          10,
+          60,
+          80,
+          33,
+          10,
+          68,
+          72,
+          34,
+          10,
+          68,
+          80,
+          35,
+          10,
+          60,
+          136,
+          92,
+          10,
+          60,
+          144,
+          93,
+          10,
+          68,
+          136,
+          94,
+          10,
+          68,
+          144,
+          95,
+          10,
+          44,
+          72,
+          4,
+          4,
+          44,
+          80,
+          5,
+          4,
+          52,
+          72,
+          6,
+          4,
+          52,
+          80,
+          7,
+          4,
+          28,
+          48,
+          100,
+          42,
+          28,
+          40,
+          101,
+          42,
+          36,
+          48,
+          102,
+          42,
+          36,
+          40,
+          103,
+          42,
+          12,
+          48,
+          100,
+          42,
+          12,
+          40,
+          101,
+          42,
+          20,
+          48,
+          102,
+          42,
+          20,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          72,
+          6,
+          4,
+          160,
+          80,
+          7,
+          4,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          100,
+          42,
+          160,
+          40,
+          101,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42,
+          160,
+          48,
+          102,
+          42,
+          160,
+          40,
+          103,
+          42
+        ],
+        "six_native_pose_contact_sheet": "normal_PeonWorldLevelUpFeedback_level_4_six_gold_poses.png"
+      },
+      {
+        "helper": "PeonBattleLevelUpFeedback",
+        "frame": 48122,
+        "level": 5,
+        "entry_sp": 49335,
+        "palette_before": [
+          255,
+          127,
+          123,
+          21,
+          175,
+          12,
+          0,
+          0,
+          255,
+          127,
+          207,
+          34,
+          114,
+          25,
+          0,
+          0,
+          255,
+          127,
+          57,
+          103,
+          173,
+          53,
+          0,
+          0,
+          255,
+          127,
+          223,
+          51,
+          48,
+          127,
+          227,
+          56,
+          255,
+          127,
+          63,
+          31,
+          63,
+          9,
+          76,
+          0,
+          255,
+          127,
+          210,
+          39,
+          37,
+          34,
+          192,
+          12,
+          255,
+          127,
+          47,
+          127,
+          165,
+          105,
+          128,
+          48,
+          255,
+          127,
+          88,
+          30,
+          244,
+          13,
+          0,
+          0
+        ],
+        "oam_before": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "gold_frames": [
+          {
+            "frame": 48124,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 0
+          },
+          {
+            "frame": 48125,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48126,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48127,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48128,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48129,
+            "objects": [
+              [
+                92,
+                22,
+                110,
+                7
+              ],
+              [
+                92,
+                66,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                100,
+                44,
+                110,
+                7
+              ],
+              [
+                88,
+                33,
+                111,
+                7
+              ],
+              [
+                88,
+                55,
+                111,
+                39
+              ],
+              [
+                96,
+                33,
+                111,
+                71
+              ],
+              [
+                96,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48130,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 0
+          },
+          {
+            "frame": 48131,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48132,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48133,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48134,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48135,
+            "objects": [
+              [
+                88,
+                20,
+                110,
+                7
+              ],
+              [
+                88,
+                68,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                98,
+                44,
+                110,
+                7
+              ],
+              [
+                83,
+                32,
+                111,
+                7
+              ],
+              [
+                83,
+                56,
+                111,
+                39
+              ],
+              [
+                93,
+                32,
+                111,
+                71
+              ],
+              [
+                93,
+                56,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48136,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 0
+          },
+          {
+            "frame": 48137,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48138,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48139,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48140,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48141,
+            "objects": [
+              [
+                84,
+                21,
+                110,
+                7
+              ],
+              [
+                84,
+                67,
+                110,
+                7
+              ],
+              [
+                72,
+                44,
+                110,
+                7
+              ],
+              [
+                96,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                32,
+                111,
+                7
+              ],
+              [
+                78,
+                55,
+                111,
+                39
+              ],
+              [
+                90,
+                32,
+                111,
+                71
+              ],
+              [
+                90,
+                55,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48142,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 1
+          },
+          {
+            "frame": 48143,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48144,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48145,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48146,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48147,
+            "objects": [
+              [
+                80,
+                24,
+                110,
+                7
+              ],
+              [
+                80,
+                64,
+                110,
+                7
+              ],
+              [
+                70,
+                44,
+                110,
+                7
+              ],
+              [
+                90,
+                44,
+                110,
+                7
+              ],
+              [
+                75,
+                34,
+                111,
+                7
+              ],
+              [
+                75,
+                54,
+                111,
+                39
+              ],
+              [
+                85,
+                34,
+                111,
+                71
+              ],
+              [
+                85,
+                54,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48148,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 1
+          },
+          {
+            "frame": 48149,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48150,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48151,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48152,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48153,
+            "objects": [
+              [
+                76,
+                27,
+                110,
+                7
+              ],
+              [
+                76,
+                61,
+                110,
+                7
+              ],
+              [
+                68,
+                44,
+                110,
+                7
+              ],
+              [
+                84,
+                44,
+                110,
+                7
+              ],
+              [
+                72,
+                35,
+                111,
+                7
+              ],
+              [
+                72,
+                52,
+                111,
+                39
+              ],
+              [
+                80,
+                35,
+                111,
+                71
+              ],
+              [
+                80,
+                52,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 72
+          },
+          {
+            "frame": 48154,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 6
+          },
+          {
+            "frame": 48155,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 69
+          },
+          {
+            "frame": 48156,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 69
+          },
+          {
+            "frame": 48157,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 69
+          },
+          {
+            "frame": 48158,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 69
+          },
+          {
+            "frame": 48159,
+            "objects": [
+              [
+                72,
+                32,
+                110,
+                7
+              ],
+              [
+                72,
+                56,
+                110,
+                7
+              ],
+              [
+                66,
+                44,
+                110,
+                7
+              ],
+              [
+                78,
+                44,
+                110,
+                7
+              ],
+              [
+                69,
+                38,
+                111,
+                7
+              ],
+              [
+                69,
+                50,
+                111,
+                39
+              ],
+              [
+                75,
+                38,
+                111,
+                71
+              ],
+              [
+                75,
+                50,
+                111,
+                103
+              ]
+            ],
+            "actual_gold_rgb555_pixels_matching_native_glyphs": 69
+          }
+        ],
+        "phase_entries": [
+          48123,
+          48129,
+          48135,
+          48141,
+          48147,
+          48153
+        ],
+        "explicit_restored_phase_observed": true,
+        "palette_at_restored_phase": [
+          255,
+          127,
+          123,
+          21,
+          175,
+          12,
+          0,
+          0,
+          255,
+          127,
+          207,
+          34,
+          114,
+          25,
+          0,
+          0,
+          255,
+          127,
+          57,
+          103,
+          173,
+          53,
+          0,
+          0,
+          255,
+          127,
+          223,
+          51,
+          48,
+          127,
+          227,
+          56,
+          255,
+          127,
+          63,
+          31,
+          63,
+          9,
+          76,
+          0,
+          255,
+          127,
+          210,
+          39,
+          37,
+          34,
+          192,
+          12,
+          255,
+          127,
+          47,
+          127,
+          165,
+          105,
+          128,
+          48,
+          255,
+          127,
+          88,
+          30,
+          244,
+          13,
+          0,
+          0
+        ],
+        "oam_at_restored_phase": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "return_frame": 48160,
+        "palette_after": [
+          255,
+          127,
+          123,
+          21,
+          175,
+          12,
+          0,
+          0,
+          255,
+          127,
+          207,
+          34,
+          114,
+          25,
+          0,
+          0,
+          255,
+          127,
+          57,
+          103,
+          173,
+          53,
+          0,
+          0,
+          255,
+          127,
+          223,
+          51,
+          48,
+          127,
+          227,
+          56,
+          255,
+          127,
+          63,
+          31,
+          63,
+          9,
+          76,
+          0,
+          255,
+          127,
+          210,
+          39,
+          37,
+          34,
+          192,
+          12,
+          255,
+          127,
+          47,
+          127,
+          165,
+          105,
+          128,
+          48,
+          255,
+          127,
+          88,
+          30,
+          244,
+          13,
+          0,
+          0
+        ],
+        "oam_after": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "six_native_pose_contact_sheet": "normal_PeonBattleLevelUpFeedback_level_5_six_gold_poses.png"
+      }
+    ],
+    "actual_level_gains_each_play_one_ding": true,
+    "native_gold_hardware_oam_observed": true,
+    "native_gold_effects_rendered": 3,
+    "gold_visuals_skipped_in_crowded_world_or_scenes_off": 0,
+    "music_selections": [
+      {
+        "id": 103,
+        "map": 12,
+        "frame": 463
+      },
+      {
+        "id": 103,
+        "map": 12,
+        "frame": 463
+      },
+      {
+        "id": 103,
+        "map": 13,
+        "frame": 1622
+      },
+      {
+        "id": 103,
+        "map": 13,
+        "frame": 1622
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 5220
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 5220
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 13473
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 13473
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 17573
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 19631
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 30405
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 30405
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 35153
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 37211
+      },
+      {
+        "id": 103,
+        "map": 15,
+        "frame": 49760
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 51376
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 51376
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 53514
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 54746
+      },
+      {
+        "id": 106,
+        "map": 23,
+        "frame": 54746
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 55234
+      },
+      {
+        "id": 103,
+        "map": 15,
+        "frame": 59572
+      },
+      {
+        "id": 103,
+        "map": 15,
+        "frame": 59572
+      },
+      {
+        "id": 104,
+        "map": 20,
+        "frame": 60153
+      },
+      {
+        "id": 103,
+        "map": 15,
+        "frame": 60610
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 65578
+      },
+      {
+        "id": 103,
+        "map": 14,
+        "frame": 65578
+      }
+    ],
+    "observer_errors": [],
+    "coverage_limit": "Later spell/enemy cues have isolated native APU and source-routing checks; this button route covers the opening chapter only."
+  },
+  "production_rom_unchanged": true,
+  "published_evidence_unchanged": true,
+  "ordinary_native_poison_recoveries": [
+    {
+      "normal_buttons_only": true,
+      "native_poison_walk_defeat": true,
+      "bound_inn": 23,
+      "one_hp": true,
+      "status_cleared": true,
+      "gold_xp_home_binding_preserved": true,
+      "deliberate_innkeeper_rest_after_recovery": true
+    }
+  ]
+}

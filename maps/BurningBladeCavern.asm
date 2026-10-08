@@ -28,6 +28,7 @@ BurningBladeStrongImpScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_CAVE_STRONG_IMP_DEAD
+	callasm PeonVileFamiliarsReadySound
 	disappear CAVERN_STRONG_IMP
 	givemoney YOUR_MONEY, 30
 	opentext
@@ -52,6 +53,7 @@ BurningBladeCavernGuideScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_CAVE_IMP_DEAD
+	callasm PeonVileFamiliarsReadySound
 	disappear CAVERN_IMP
 	givemoney YOUR_MONEY, 20
 	opentext

@@ -1,0 +1,50 @@
+{
+  "rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "status": "PASS",
+  "sections": {
+    "source": {
+      "status": "PASS",
+      "report": "source_validation.json"
+    },
+    "vendors": {
+      "status": "PASS",
+      "report": "vendors_validation.json"
+    },
+    "trainer": {
+      "status": "PASS",
+      "report": "trainer_validation.json"
+    },
+    "inns": {
+      "status": "PASS",
+      "report": "inns_validation.json"
+    }
+  },
+  "ordinary_button_routes": [
+    "fresh_apprentice",
+    "three_vendor_stocks",
+    "shop_cancel_and_poor",
+    "normal_trainer_purchase_and_battery_restart",
+    "all_nine_doors",
+    "rest_on_actual_wounds_and_spent_lightning_charges",
+    "three_exclusive_homes",
+    "hearth_cancel_and_three_return_destinations",
+    "inside_inn_cold_battery_restart"
+  ],
+  "isolated_diagnostics": {
+    "trainer_later_levels": [
+      "wPartyMon1Level",
+      "wMoney",
+      "wPartyMon1PP"
+    ],
+    "full_stack_capacity": [
+      "wNumItems",
+      "wItems"
+    ],
+    "legacy_paired_loadout": [
+      "wPartyMon1Moves",
+      "wPartyMon1PP"
+    ]
+  },
+  "user_save_files_opened": false,
+  "physical_chromatic_tested": false
+}
