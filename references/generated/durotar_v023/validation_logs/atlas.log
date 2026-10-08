@@ -1,0 +1,322 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "emulator": "PyBoy 2.7.0",
+  "test_method": "Ordinary new-game buttons, then diagnostic quest/discovery flag injection",
+  "cases": [
+    {
+      "name": "den_offer",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "DEN": "offered"
+      },
+      "visible_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_active_gray",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "DEN": "active"
+      },
+      "visible_oam": [
+        [
+          108,
+          66,
+          1,
+          7
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_ready_yellow",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "DEN": "ready"
+      },
+      "visible_oam": [
+        [
+          108,
+          66,
+          1,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_done",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "DEN": "completed"
+      },
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "den_fog",
+      "diagnostic_flag_injection": true,
+      "quest_states": {},
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_fog",
+      "diagnostic_flag_injection": true,
+      "quest_states": {},
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_all_offered",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "offered",
+        "VALLEY_SARKOTH": "offered",
+        "VALLEY_MEDALLION": "offered"
+      },
+      "visible_oam": [
+        [
+          74,
+          52,
+          0,
+          4
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_all_active_gray",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "active",
+        "VALLEY_SARKOTH": "active",
+        "VALLEY_MEDALLION": "active"
+      },
+      "visible_oam": [
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_partial_cactus_gray",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "active",
+        "VALLEY_SARKOTH": "offered",
+        "VALLEY_MEDALLION": "offered"
+      },
+      "visible_oam": [
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_all_ready_yellow",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "ready",
+        "VALLEY_SARKOTH": "ready",
+        "VALLEY_MEDALLION": "ready"
+      },
+      "visible_oam": [
+        [
+          74,
+          52,
+          1,
+          4
+        ],
+        [
+          111,
+          61,
+          1,
+          4
+        ],
+        [
+          78,
+          44,
+          1,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_mixed_states",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "ready",
+        "VALLEY_SARKOTH": "active",
+        "VALLEY_MEDALLION": "offered"
+      },
+      "visible_oam": [
+        [
+          74,
+          52,
+          1,
+          4
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_one_done_two_ready",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "completed",
+        "VALLEY_SARKOTH": "ready",
+        "VALLEY_MEDALLION": "ready"
+      },
+      "visible_oam": [
+        [
+          111,
+          61,
+          1,
+          4
+        ],
+        [
+          78,
+          44,
+          1,
+          4
+        ]
+      ],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    },
+    {
+      "name": "valley_all_done",
+      "diagnostic_flag_injection": true,
+      "quest_states": {
+        "VALLEY": "completed",
+        "VALLEY_SARKOTH": "completed",
+        "VALLEY_MEDALLION": "completed"
+      },
+      "visible_oam": [],
+      "rgb555_matches": true,
+      "background_vram_unchanged": true,
+      "registers_vbk_oam_guard_preserved": true,
+      "world_obj_palette_restored": true,
+      "closed_to_world": true
+    }
+  ],
+  "ordinary_new_game_reached_den": true,
+  "limitations": [
+    "Availability/fog branches use diagnostic flag injection",
+    "Chromatic hardware is untested",
+    "Only four current prototype atlas quests have POIs"
+  ]
+}

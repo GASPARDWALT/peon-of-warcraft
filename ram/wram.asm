@@ -479,7 +479,7 @@ wPlayerSubstituteHP:: db
 wEnemySubstituteHP::  db
 
 wUnusedPlayerLockedMove:: db
-	ds 1
+wPeonPlayerPoseActive:: db ; transient battle padding; save offsets unchanged
 
 wCurPlayerMove:: db
 wCurEnemyMove::  db

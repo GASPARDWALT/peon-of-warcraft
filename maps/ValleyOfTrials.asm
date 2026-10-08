@@ -218,8 +218,7 @@ ValleySarkothScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 .Full:
 	opentext
 	writetext PeonQuestLootFullText

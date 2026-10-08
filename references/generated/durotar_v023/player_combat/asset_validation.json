@@ -1,0 +1,891 @@
+{
+  "scope": "v0.2.3 native player combat assets; no ROM build or engine integration test",
+  "rom_build_performed": false,
+  "runtime_animation_verified": false,
+  "excluded_non_native_concept": "peon_back_pose_concept_original.png",
+  "limitations": [
+    "This report verifies prepared assets, not installation or playback inside the ROM.",
+    "GIF and display sheet use an opaque presentation canvas; native PNG and APNG have binary transparency."
+  ],
+  "rom_sha256_at_audit_start": "59a3eb451a3505d88b78e944d013ef466b8371f4056b15156442386c8f3a99de",
+  "rgb555_palette": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      15,
+      22,
+      8
+    ],
+    [
+      18,
+      11,
+      6
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "legacy_png_index_to_runtime_index": {
+    "0": [
+      0
+    ],
+    "1": [
+      2
+    ],
+    "2": [
+      1
+    ],
+    "3": [
+      3
+    ]
+  },
+  "frames": [
+    {
+      "name": "idle",
+      "tile_bytes": 576,
+      "frame_offset": 0,
+      "png_sha256": "0643776acbd0dd89b008be678fdc9330af48c581e60f6aa3c1d43098e5e83a5e",
+      "binary_sha256": "2bb88d79fcae635f4673ed6fe115ee78bebdc532ef556bfecf8b0020aadc9024",
+      "public_png_sha256": "5399d3ee8461716fda2899fc67a1377dc7013fa8db6f3bbb25fbf6ef0f00baa1",
+      "changed_pixels_from_idle": 0,
+      "changed_silhouette_pixels": 0,
+      "changed_tiles_from_idle": 0,
+      "changed_left_arm_pixels": 0,
+      "changed_torso_pixels": 0,
+      "changed_pixels_row_41": 0,
+      "changed_foot_pixels_rows_42_through_47": 0,
+      "opaque_bbox_exclusive": [
+        1,
+        4,
+        47,
+        48
+      ],
+      "foot_baseline_y": 47,
+      "connected_component_count": 1,
+      "connected_component_sizes_4_neighbours": [
+        1303
+      ]
+    },
+    {
+      "name": "brace",
+      "tile_bytes": 576,
+      "frame_offset": 576,
+      "png_sha256": "8b385814f0b47ac918824936913ebc0c8b540d2f98bda07696634cac51009220",
+      "binary_sha256": "8c2d3d8ef64621c17eaecbc7839edd3e1b06d84899cbd374d3c3faa721da1db4",
+      "public_png_sha256": "91cab6fe57655072df22700d6a76d647c7f61ef77a2901c8d79b3e3a3a7128af",
+      "changed_pixels_from_idle": 590,
+      "changed_silhouette_pixels": 304,
+      "changed_tiles_from_idle": 27,
+      "changed_left_arm_pixels": 277,
+      "changed_torso_pixels": 187,
+      "changed_pixels_row_41": 0,
+      "changed_foot_pixels_rows_42_through_47": 0,
+      "opaque_bbox_exclusive": [
+        2,
+        1,
+        45,
+        48
+      ],
+      "foot_baseline_y": 47,
+      "connected_component_count": 1,
+      "connected_component_sizes_4_neighbours": [
+        1195
+      ]
+    },
+    {
+      "name": "swing",
+      "tile_bytes": 576,
+      "frame_offset": 1152,
+      "png_sha256": "c0e9b5e16f75bd5a21f498071b552c3eea49edea8c27cfe7eabb6ae43a2160b2",
+      "binary_sha256": "25e13ec2ad6922e75bd4e448447c17033124f5b2bdfb1c72537072675ad99ab3",
+      "public_png_sha256": "91ba60119e29e32fa54752ccc1516c00d36fa90964e4b7bbba9903a348855c05",
+      "changed_pixels_from_idle": 596,
+      "changed_silhouette_pixels": 354,
+      "changed_tiles_from_idle": 29,
+      "changed_left_arm_pixels": 300,
+      "changed_torso_pixels": 151,
+      "changed_pixels_row_41": 9,
+      "changed_foot_pixels_rows_42_through_47": 0,
+      "opaque_bbox_exclusive": [
+        0,
+        4,
+        45,
+        48
+      ],
+      "foot_baseline_y": 47,
+      "connected_component_count": 1,
+      "connected_component_sizes_4_neighbours": [
+        1151
+      ]
+    }
+  ],
+  "rgbgfx": {
+    "executable": "/workspace/toolchains/rgbds-1.0.4/rgbgfx",
+    "temporary_compilations_only": true
+  },
+  "assets": {
+    "source_png_sha256": "876ba18a36e539c0c82cfc8393c531cb71a844567875f903ebe69881afae4377",
+    "source_2bpp_sha256": "2bb88d79fcae635f4673ed6fe115ee78bebdc532ef556bfecf8b0020aadc9024",
+    "combined_2bpp_sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+    "combined_palette_sha256": "7abf96acd03f905a34b086a54ab11a015f75425f03e5b8a2c435148891971791",
+    "manifest_sha256": "6de3cfedebb4e29319d44a0e2b9cc9238c3d51356ce94871cadd0a439c30c706"
+  },
+  "foot_baseline_note": "Rows 42\u201347 and baseline y=47 are identical. Swing changes 9 pixels on row 41 where the shield lowers; these are outside the protected feet.",
+  "rom_sha256_at_audit_end": "59a3eb451a3505d88b78e944d013ef466b8371f4056b15156442386c8f3a99de",
+  "rom_file_unchanged_during_audit": true,
+  "checks": [
+    {
+      "check": "v0.2.2 legacy input preserved: gfx/pokemon/machop/back.png",
+      "passed": true,
+      "expected_sha256": "876ba18a36e539c0c82cfc8393c531cb71a844567875f903ebe69881afae4377",
+      "actual_sha256": "876ba18a36e539c0c82cfc8393c531cb71a844567875f903ebe69881afae4377"
+    },
+    {
+      "check": "v0.2.2 legacy input preserved: gfx/pokemon/machop/back.2bpp",
+      "passed": true,
+      "expected_sha256": "2bb88d79fcae635f4673ed6fe115ee78bebdc532ef556bfecf8b0020aadc9024",
+      "actual_sha256": "2bb88d79fcae635f4673ed6fe115ee78bebdc532ef556bfecf8b0020aadc9024"
+    },
+    {
+      "check": "v0.2.2 legacy input preserved: gfx/pokemon/machop/normal.gbcpal",
+      "passed": true,
+      "expected_sha256": "7abf96acd03f905a34b086a54ab11a015f75425f03e5b8a2c435148891971791",
+      "actual_sha256": "7abf96acd03f905a34b086a54ab11a015f75425f03e5b8a2c435148891971791"
+    },
+    {
+      "check": "v0.2.2 legacy input preserved: gfx/pokemon/machop/back.gbcpal",
+      "passed": true,
+      "expected_sha256": "7abf96acd03f905a34b086a54ab11a015f75425f03e5b8a2c435148891971791",
+      "actual_sha256": "7abf96acd03f905a34b086a54ab11a015f75425f03e5b8a2c435148891971791"
+    },
+    {
+      "check": "runtime palette retained exactly",
+      "passed": true
+    },
+    {
+      "check": "manifest palette",
+      "passed": true
+    },
+    {
+      "check": "manifest source",
+      "passed": true
+    },
+    {
+      "check": "manifest native binary",
+      "passed": true
+    },
+    {
+      "check": "manifest native layout",
+      "passed": true
+    },
+    {
+      "check": "packed three-frame length",
+      "passed": true,
+      "actual_bytes": 1728
+    },
+    {
+      "check": "legacy PNG has exact runtime RGB555 colours",
+      "passed": true
+    },
+    {
+      "check": "legacy PNG colours decode to old column-major tiles",
+      "passed": true
+    },
+    {
+      "check": "idle: native indexed PNG",
+      "passed": true,
+      "actual_mode": "P",
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "idle: DMG palette",
+      "passed": true
+    },
+    {
+      "check": "idle: native PNG indices 0..3",
+      "passed": true
+    },
+    {
+      "check": "idle: actual column-major decode",
+      "passed": true
+    },
+    {
+      "check": "idle: independent rgbgfx byte equality",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "flags": [
+        "--columns",
+        "--colors",
+        "dmg",
+        "-Weverything"
+      ]
+    },
+    {
+      "check": "idle: packed frame offset",
+      "passed": true
+    },
+    {
+      "check": "peon_back_idle_48x48.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "peon_back_idle_48x48.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_idle_48x48.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "idle: binary transparency",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "idle: three opaque RGB555 colours",
+      "passed": true,
+      "opaque_rgb888_colours": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          120,
+          176,
+          64
+        ],
+        [
+          144,
+          88,
+          48
+        ]
+      ]
+    },
+    {
+      "check": "peon_back_idle_8x.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        384,
+        384
+      ]
+    },
+    {
+      "check": "peon_back_idle_8x.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_idle_8x.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "idle: feet retain position and pixels",
+      "passed": true
+    },
+    {
+      "check": "idle: no detached opaque fragments",
+      "passed": true,
+      "connected_component_sizes_4_neighbours": [
+        1303
+      ]
+    },
+    {
+      "check": "idle byte-identical to existing player backpic",
+      "passed": true
+    },
+    {
+      "check": "idle: manifest metrics match actual pixels",
+      "passed": true
+    },
+    {
+      "check": "brace: native indexed PNG",
+      "passed": true,
+      "actual_mode": "P",
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "brace: DMG palette",
+      "passed": true
+    },
+    {
+      "check": "brace: native PNG indices 0..3",
+      "passed": true
+    },
+    {
+      "check": "brace: actual column-major decode",
+      "passed": true
+    },
+    {
+      "check": "brace: independent rgbgfx byte equality",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "flags": [
+        "--columns",
+        "--colors",
+        "dmg",
+        "-Weverything"
+      ]
+    },
+    {
+      "check": "brace: packed frame offset",
+      "passed": true
+    },
+    {
+      "check": "peon_back_brace_48x48.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "peon_back_brace_48x48.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_brace_48x48.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "brace: binary transparency",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "brace: three opaque RGB555 colours",
+      "passed": true,
+      "opaque_rgb888_colours": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          120,
+          176,
+          64
+        ],
+        [
+          144,
+          88,
+          48
+        ]
+      ]
+    },
+    {
+      "check": "peon_back_brace_8x.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        384,
+        384
+      ]
+    },
+    {
+      "check": "peon_back_brace_8x.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_brace_8x.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "brace: feet retain position and pixels",
+      "passed": true
+    },
+    {
+      "check": "brace: no detached opaque fragments",
+      "passed": true,
+      "connected_component_sizes_4_neighbours": [
+        1195
+      ]
+    },
+    {
+      "check": "brace: meaningful arm and torso pose",
+      "passed": true,
+      "thresholds": {
+        "changed_pixels": 128,
+        "silhouette": 16,
+        "tiles": 8,
+        "left_arm": 64,
+        "torso": 16
+      }
+    },
+    {
+      "check": "brace: manifest metrics match actual pixels",
+      "passed": true
+    },
+    {
+      "check": "swing: native indexed PNG",
+      "passed": true,
+      "actual_mode": "P",
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "swing: DMG palette",
+      "passed": true
+    },
+    {
+      "check": "swing: native PNG indices 0..3",
+      "passed": true
+    },
+    {
+      "check": "swing: actual column-major decode",
+      "passed": true
+    },
+    {
+      "check": "swing: independent rgbgfx byte equality",
+      "passed": true,
+      "returncode": 0,
+      "stderr": "",
+      "flags": [
+        "--columns",
+        "--colors",
+        "dmg",
+        "-Weverything"
+      ]
+    },
+    {
+      "check": "swing: packed frame offset",
+      "passed": true
+    },
+    {
+      "check": "peon_back_swing_48x48.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        48,
+        48
+      ]
+    },
+    {
+      "check": "peon_back_swing_48x48.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_swing_48x48.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "swing: binary transparency",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "swing: three opaque RGB555 colours",
+      "passed": true,
+      "opaque_rgb888_colours": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          120,
+          176,
+          64
+        ],
+        [
+          144,
+          88,
+          48
+        ]
+      ]
+    },
+    {
+      "check": "peon_back_swing_8x.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        384,
+        384
+      ]
+    },
+    {
+      "check": "peon_back_swing_8x.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_swing_8x.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "swing: feet retain position and pixels",
+      "passed": true
+    },
+    {
+      "check": "swing: no detached opaque fragments",
+      "passed": true,
+      "connected_component_sizes_4_neighbours": [
+        1151
+      ]
+    },
+    {
+      "check": "swing: meaningful arm and torso pose",
+      "passed": true,
+      "thresholds": {
+        "changed_pixels": 128,
+        "silhouette": 16,
+        "tiles": 8,
+        "left_arm": 64,
+        "torso": 16
+      }
+    },
+    {
+      "check": "swing: manifest metrics match actual pixels",
+      "passed": true
+    },
+    {
+      "check": "combined bytes equal separate binaries",
+      "passed": true
+    },
+    {
+      "check": "manifest idle preservation",
+      "passed": true
+    },
+    {
+      "check": "brace and swing are different poses",
+      "passed": true
+    },
+    {
+      "check": "peon_back_three_pose_sheet_144x48.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        144,
+        48
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_sheet_144x48.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_three_pose_sheet_144x48.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_sheet_8x.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        1152,
+        384
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_sheet_8x.png: RGBA",
+      "passed": true,
+      "actual_mode": "RGBA"
+    },
+    {
+      "check": "peon_back_three_pose_sheet_8x.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_sheet_display_8x.png: dimensions",
+      "passed": true,
+      "actual_size": [
+        1152,
+        384
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_sheet_display_8x.png: actual pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: five-frame loop",
+      "passed": true,
+      "actual_frames": 5,
+      "loop": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 0 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 0 timing",
+      "passed": true,
+      "duration_ms": 320.0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 0 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 1 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 1 timing",
+      "passed": true,
+      "duration_ms": 160.0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 1 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 2 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 2 timing",
+      "passed": true,
+      "duration_ms": 160.0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 2 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 3 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 3 timing",
+      "passed": true,
+      "duration_ms": 120.0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 3 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 4 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 4 timing",
+      "passed": true,
+      "duration_ms": 320.0
+    },
+    {
+      "check": "peon_back_three_pose_preview.apng: frame 4 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: five-frame loop",
+      "passed": true,
+      "actual_frames": 5,
+      "loop": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 0 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 0 timing",
+      "passed": true,
+      "duration_ms": 320.0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 0 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 1 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 1 timing",
+      "passed": true,
+      "duration_ms": 160.0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 1 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 2 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 2 timing",
+      "passed": true,
+      "duration_ms": 160.0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 2 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 3 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 3 timing",
+      "passed": true,
+      "duration_ms": 120.0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 3 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 4 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 4 timing",
+      "passed": true,
+      "duration_ms": 320.0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.apng: frame 4 binary alpha",
+      "passed": true,
+      "actual_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: five-frame loop",
+      "passed": true,
+      "actual_frames": 5,
+      "loop": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 0 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 0 timing",
+      "passed": true,
+      "duration_ms": 320
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 1 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 1 timing",
+      "passed": true,
+      "duration_ms": 160
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 2 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 2 timing",
+      "passed": true,
+      "duration_ms": 160
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 3 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 3 timing",
+      "passed": true,
+      "duration_ms": 120
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 4 pixels",
+      "passed": true,
+      "differing_pixels": 0
+    },
+    {
+      "check": "peon_back_three_pose_preview_8x.gif: frame 4 timing",
+      "passed": true,
+      "duration_ms": 320
+    },
+    {
+      "check": "legacy player files unchanged during audit",
+      "passed": true
+    }
+  ],
+  "all_checks_passed": true
+}

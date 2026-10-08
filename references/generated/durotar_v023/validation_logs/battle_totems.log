@@ -1,0 +1,17 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+fresh_character overworld {'active': 8, 'action': 0, 'party_hp': 14, 'battle_hp': 1, 'max_hp': 1, 'party_pp': [35, 30, 0, 0], 'battle_pp': [1, 2, 1, 2], 'totems': 1, 'potions': 0, 'water': 0, 'enemy_hp': 0}
+duokna_potion_choice merchant {'active': 7, 'action': 0, 'party_hp': 14, 'battle_hp': 11468, 'max_hp': 52524, 'party_pp': [35, 30, 0, 0], 'battle_pp': [5, 6, 5, 6], 'totems': 1, 'potions': 0, 'water': 0, 'enemy_hp': 0}
+duokna_water_choice merchant {'active': 7, 'action': 0, 'party_hp': 14, 'battle_hp': 11468, 'max_hp': 52524, 'party_pp': [35, 30, 0, 0], 'battle_pp': [5, 6, 5, 6], 'totems': 1, 'potions': 1, 'water': 0, 'enemy_hp': 0}
+gornek_quest overworld {'active': 153, 'action': 0, 'party_hp': 14, 'battle_hp': 478, 'max_hp': 57089, 'party_pp': [35, 30, 0, 0], 'battle_pp': [1, 2, 1, 2], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 0}
+normal_earth_totem_placed battle {'active': 1, 'action': 0, 'party_hp': 11, 'battle_hp': 11, 'max_hp': 14, 'party_pp': [35, 30, 0, 0], 'battle_pp': [35, 30, 0, 0], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 11}
+normal_totem_boar_battle battle {'active': 1, 'action': 0, 'party_hp': 11, 'battle_hp': 11, 'max_hp': 14, 'party_pp': [35, 30, 0, 0], 'battle_pp': [35, 30, 0, 0], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 11}
+normal_totem_boar_after battle {'active': 3, 'action': 0, 'party_hp': 3, 'battle_hp': 1, 'max_hp': 1, 'party_pp': [35, 27, 0, 0], 'battle_pp': [5, 6, 5, 6], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 0}
+quests_saved merchant {'active': 0, 'action': 0, 'party_hp': 3, 'battle_hp': 2570, 'max_hp': 33668, 'party_pp': [35, 27, 0, 0], 'battle_pp': [10, 13, 14, 10], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 0}
+quests_cold_restart merchant {'active': 0, 'action': 0, 'party_hp': 3, 'battle_hp': 2570, 'max_hp': 33668, 'party_pp': [35, 27, 0, 0], 'battle_pp': [10, 13, 14, 10], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 0}
+normal_next_encounter_totem_reset battle {'active': 0, 'action': 0, 'party_hp': 3, 'battle_hp': 3, 'max_hp': 14, 'party_pp': [35, 27, 0, 0], 'battle_pp': [35, 27, 0, 0], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 14}
+diagnostic_reuse_rejected battle {'active': 1, 'action': 0, 'party_hp': 237, 'battle_hp': 237, 'max_hp': 240, 'party_pp': [35, 30, 15, 10], 'battle_pp': [35, 30, 15, 10], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 240}
+diagnostic_totem_priority battle {'active': 1, 'action': 0, 'party_hp': 234, 'battle_hp': 234, 'max_hp': 240, 'party_pp': [34, 30, 15, 10], 'battle_pp': [34, 30, 15, 10], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 234}
+diagnostic_no_totem_control battle {'active': 0, 'action': 0, 'party_hp': 237, 'battle_hp': 237, 'max_hp': 240, 'party_pp': [34, 30, 15, 10], 'battle_pp': [34, 30, 15, 10], 'totems': 1, 'potions': 1, 'water': 5, 'enemy_hp': 234}
+diagnostic_potion_one_turn battle {'active': 0, 'action': 0, 'party_hp': 117, 'battle_hp': 117, 'max_hp': 240, 'party_pp': [35, 30, 15, 10], 'battle_pp': [35, 30, 15, 10], 'totems': 1, 'potions': 0, 'water': 5, 'enemy_hp': 240}
+diagnostic_water_one_turn battle {'active': 0, 'action': 0, 'party_hp': 237, 'battle_hp': 237, 'max_hp': 240, 'party_pp': [35, 14, 15, 10], 'battle_pp': [35, 14, 15, 10], 'totems': 1, 'potions': 1, 'water': 4, 'enemy_hp': 240}
+PASS: native Totem, merchant, consumable turn costs and battery persistence

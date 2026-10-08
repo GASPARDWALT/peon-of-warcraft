@@ -1,0 +1,462 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "growth_curve": "floor(5 * level^3 / 4)",
+  "quest_rewards": {
+    "Cutting": 15,
+    "Scorpid": 25,
+    "Lazy": 15,
+    "Cactus": 25,
+    "Sarkoth": 50,
+    "Medallion": 100
+  },
+  "normal_route_ram_edits": false,
+  "normal_route_states_loaded": false,
+  "normal_lazy_quest": {
+    "xp_before": 10,
+    "xp_after": 25,
+    "level": 2,
+    "reward_only_once": true,
+    "no_heal_or_move_change": true
+  },
+  "normal_battery_save": {
+    "before": {
+      "wPartyMon1Exp": [
+        0,
+        0,
+        25
+      ],
+      "wPartyMon1Level": [
+        2
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1PP": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "wPartyMon1Status": [
+        0
+      ],
+      "wPartyMon1HP": [
+        0,
+        15
+      ],
+      "wPartyMon1MaxHP": [
+        0,
+        15
+      ],
+      "wPartyMon1Attack": [
+        0,
+        7,
+        0,
+        7,
+        0,
+        6,
+        0,
+        7,
+        0,
+        7
+      ],
+      "wPartyMon1DVs": [
+        220,
+        208
+      ],
+      "wPartyMon1StatExp": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        150
+      ]
+    },
+    "after": {
+      "wPartyMon1Exp": [
+        0,
+        0,
+        25
+      ],
+      "wPartyMon1Level": [
+        2
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1PP": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "wPartyMon1Status": [
+        0
+      ],
+      "wPartyMon1HP": [
+        0,
+        15
+      ],
+      "wPartyMon1MaxHP": [
+        0,
+        15
+      ],
+      "wPartyMon1Attack": [
+        0,
+        7,
+        0,
+        7,
+        0,
+        6,
+        0,
+        7,
+        0,
+        7
+      ],
+      "wPartyMon1DVs": [
+        220,
+        208
+      ],
+      "wPartyMon1StatExp": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        150
+      ]
+    },
+    "passed": true
+  },
+  "isolated_diagnostics": {
+    "rom_override": "Temporary campfire script calls actual grant labels.",
+    "ram_edits": [
+      "level",
+      "experience",
+      "HP",
+      "status",
+      "moves",
+      "PP",
+      "species/level context"
+    ],
+    "emulator_states_loaded": true,
+    "cases": [
+      {
+        "case": "Cutting",
+        "xp_before": 10,
+        "xp_after": 25,
+        "level_before": 2,
+        "level_after": 2,
+        "hp_before": 12,
+        "hp_after": 12,
+        "max_hp_before": 15,
+        "max_hp_after": 15,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "Scorpid",
+        "xp_before": 10,
+        "xp_after": 35,
+        "level_before": 2,
+        "level_after": 3,
+        "hp_before": 12,
+        "hp_after": 14,
+        "max_hp_before": 15,
+        "max_hp_after": 17,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "Lazy",
+        "xp_before": 10,
+        "xp_after": 25,
+        "level_before": 2,
+        "level_after": 2,
+        "hp_before": 12,
+        "hp_after": 12,
+        "max_hp_before": 15,
+        "max_hp_after": 15,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "Cactus",
+        "xp_before": 10,
+        "xp_after": 35,
+        "level_before": 2,
+        "level_after": 3,
+        "hp_before": 12,
+        "hp_after": 14,
+        "max_hp_before": 15,
+        "max_hp_after": 17,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "Sarkoth",
+        "xp_before": 10,
+        "xp_after": 60,
+        "level_before": 2,
+        "level_after": 3,
+        "hp_before": 12,
+        "hp_after": 14,
+        "max_hp_before": 15,
+        "max_hp_after": 17,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "Medallion",
+        "xp_before": 10,
+        "xp_after": 110,
+        "level_before": 2,
+        "level_after": 4,
+        "hp_before": 12,
+        "hp_after": 17,
+        "max_hp_before": 15,
+        "max_hp_after": 20,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "old_medium_fast_save",
+        "xp_before": 8,
+        "xp_after": 25,
+        "level_before": 2,
+        "level_after": 2,
+        "hp_before": 12,
+        "hp_after": 12,
+        "max_hp_before": 15,
+        "max_hp_after": 15,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "higher_level_zero_award_migration",
+        "xp_before": 512,
+        "xp_after": 640,
+        "level_before": 8,
+        "level_after": 8,
+        "hp_before": 12,
+        "hp_after": 12,
+        "max_hp_before": 15,
+        "max_hp_after": 15,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "fainted_level_up",
+        "xp_before": 10,
+        "xp_after": 110,
+        "level_before": 2,
+        "level_after": 4,
+        "hp_before": 0,
+        "hp_after": 0,
+        "max_hp_before": 15,
+        "max_hp_after": 20,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "level_100_cap",
+        "xp_before": 1249995,
+        "xp_after": 1250000,
+        "level_before": 99,
+        "level_after": 100,
+        "hp_before": 12,
+        "hp_after": 267,
+        "max_hp_before": 15,
+        "max_hp_after": 270,
+        "status_moves_pp_and_equipment_preserved": true
+      },
+      {
+        "case": "24bit_overflow_cap",
+        "xp_before": 16777210,
+        "xp_after": 1250000,
+        "level_before": 2,
+        "level_after": 100,
+        "hp_before": 12,
+        "hp_after": 267,
+        "max_hp_before": 15,
+        "max_hp_after": 270,
+        "status_moves_pp_and_equipment_preserved": true
+      }
+    ],
+    "native_feedback_pages": [
+      "XP reward",
+      "level up",
+      "even-level Kento training hint"
+    ],
+    "six_quest_rewards_total": 230,
+    "six_quest_rewards_final_level": 5,
+    "old_medium_fast_save_continue_migration": {
+      "before": {
+        "wPartyMon1Exp": [
+          0,
+          0,
+          8
+        ],
+        "wPartyMon1Level": [
+          2
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1PP": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "wPartyMon1Status": [
+          0
+        ],
+        "wPartyMon1HP": [
+          0,
+          15
+        ],
+        "wPartyMon1MaxHP": [
+          0,
+          15
+        ],
+        "wPartyMon1Attack": [
+          0,
+          7,
+          0,
+          7,
+          0,
+          6,
+          0,
+          7,
+          0,
+          7
+        ],
+        "wPartyMon1DVs": [
+          220,
+          208
+        ],
+        "wPartyMon1StatExp": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          150
+        ]
+      },
+      "after": {
+        "wPartyMon1Exp": [
+          0,
+          0,
+          10
+        ],
+        "wPartyMon1Level": [
+          2
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1PP": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "wPartyMon1Status": [
+          0
+        ],
+        "wPartyMon1HP": [
+          0,
+          15
+        ],
+        "wPartyMon1MaxHP": [
+          0,
+          15
+        ],
+        "wPartyMon1Attack": [
+          0,
+          7,
+          0,
+          7,
+          0,
+          6,
+          0,
+          7,
+          0,
+          7
+        ],
+        "wPartyMon1DVs": [
+          220,
+          208
+        ],
+        "wPartyMon1StatExp": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          150
+        ]
+      },
+      "passed": true
+    }
+  },
+  "all_checks_passed": true,
+  "limitations": [
+    "Five other quest turn-ins are diagnosed through their real helper entry points, not played here.",
+    "No physical Chromatic or full level-2-to-100 progression test."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "native_tile_count": 16,
+  "frame_size": [
+    8,
+    8
+  ],
+  "frames_per_element": 4,
+  "binary_alpha": true,
+  "source": "Original hand-drawn pixel patterns in build_peon_spell_particles.py",
+  "warcraft_recordings_or_icons_imported": false,
+  "palettes_rgb555": {
+    "flame": [
+      [
+        31,
+        25,
+        7
+      ],
+      [
+        31,
+        9,
+        2
+      ],
+      [
+        12,
+        2,
+        0
+      ]
+    ],
+    "leaf": [
+      [
+        18,
+        30,
+        9
+      ],
+      [
+        5,
+        17,
+        8
+      ],
+      [
+        0,
+        6,
+        3
+      ]
+    ],
+    "arc": [
+      [
+        31,
+        30,
+        12
+      ],
+      [
+        16,
+        25,
+        31
+      ],
+      [
+        3,
+        7,
+        14
+      ]
+    ],
+    "wind": [
+      [
+        15,
+        25,
+        31
+      ],
+      [
+        5,
+        13,
+        26
+      ],
+      [
+        0,
+        4,
+        12
+      ]
+    ]
+  },
+  "timing": "Flame/leaf/wind 6 frames per phase; lightning/frost 4 frames per phase.",
+  "integrated_scripts": [
+    "Rockbiter",
+    "Earth Shock",
+    "Flame Shock",
+    "Healing Wave",
+    "Lightning Shield",
+    "Strength of Earth",
+    "Purge",
+    "Frost Shock",
+    "Flame Shock II",
+    "Windfury",
+    "Chain Lightning"
+  ],
+  "lightning_bolt": "Existing simple native arc, unchanged."
+}

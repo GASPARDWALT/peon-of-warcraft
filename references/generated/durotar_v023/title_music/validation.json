@@ -1,0 +1,38 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "native_four_channel_apu_capture": true,
+  "three_synchronized_phrase_entries_per_channel": true,
+  "loop_intervals_frames": [
+    [
+      1003,
+      1004
+    ],
+    [
+      1003,
+      1004
+    ],
+    [
+      1003,
+      1004
+    ],
+    [
+      1003,
+      1004
+    ]
+  ],
+  "hardware_channel_active_frames": [
+    2008,
+    2008,
+    1840,
+    2008
+  ],
+  "distinct_native_pitches_channels_1_to_3": [
+    10,
+    9,
+    2
+  ],
+  "start_reaches_character_select": true,
+  "preview": "peon_title_native_16s.wav",
+  "preview_gain_applied_to_apu_capture": 1192.4113530824616,
+  "limitation": "Arrangement of supplied rough MIDI; exact MP3 identity and physical audio not verified"
+}

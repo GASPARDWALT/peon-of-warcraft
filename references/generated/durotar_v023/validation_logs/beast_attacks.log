@@ -1,0 +1,114 @@
+UserWarning: Using SDL2 binaries from pysdl2-dll 2.32.10
+intro (10, 12)
+boar {'hook_calls': 1, 'frames': [0, 1, 2, 3, 255]}
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "enemy_attacks": {
+    "boar": {
+      "hook_calls": 2,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ]
+    },
+    "scorpid": {
+      "hook_calls": 3,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ]
+    },
+    "imp": {
+      "hook_calls": 1,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ]
+    }
+  },
+  "diagnostic_ram_changes": [
+    "both combatants HP/maxHP=240",
+    "enemy only move=Poison Sting (40), PP=35",
+    "clear diagnostic poison before returning to normal flow",
+    "enemy HP=1 to end diagnostic fight",
+    "isolated helper guard tests temporarily set substitute/minimized/scenesOFF; fields restored on helper exit"
+  ],
+  "intro_hooks": {
+    "GetTrainerBackpic": 0,
+    "GetTrainerPic": 0,
+    "CopyBackpic": 0,
+    "BattleIntroSlidingPics": 0,
+    "SendOutMonText": 0,
+    "SendOutPlayerMon": 0,
+    "InitEnemyTrainer": 0,
+    "StartTrainerBattle_LoadPokeBallGraphics": 0,
+    "GiveANickname_YesNo": 0,
+    "InitNickname": 0,
+    "PeonStartPlayerCombat": 6,
+    "PeonStartEncounterTransition": 3,
+    "PeonEncounterStartMessage": 6,
+    "PeonAskName": 1
+  },
+  "legacy_ball_effect_calls": 0,
+  "legacy_ball_sfx_calls": 0,
+  "native_encounter_legacy_cry_calls": 0,
+  "native_attack_pixel_matches": {
+    "boar": true,
+    "scorpid": true
+  },
+  "native_pose_pixel_matches": {
+    "boar": {
+      "idle": true,
+      "prepare": true,
+      "attack": true,
+      "return": true
+    },
+    "scorpid": {
+      "idle": true,
+      "prepare": true,
+      "attack": true,
+      "return": true
+    },
+    "imp": {
+      "idle": true,
+      "prepare": true,
+      "attack": true,
+      "return": true
+    }
+  },
+  "recorded": [
+    "boar",
+    "scorpid",
+    "imp"
+  ],
+  "original_poison": {
+    "hp_before_residual": 236,
+    "hp_after_residual": 206,
+    "applied": true
+  },
+  "poison_damage_1_8_max_hp": true,
+  "native_encounter_no_trainer_or_creature_naming": true,
+  "guard_diagnostics": {
+    "substitute": {
+      "native_frame_calls": 0,
+      "injected_field_restored": true
+    },
+    "minimized": {
+      "native_frame_calls": 0,
+      "injected_field_restored": true
+    },
+    "battle_scene_off": {
+      "native_frame_calls": 0,
+      "injected_field_restored": true
+    }
+  }
+}

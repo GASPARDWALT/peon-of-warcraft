@@ -1,0 +1,308 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "characters": {
+    "tiger": {
+      "compiled_animation_tiles": 90,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "raptor": {
+      "compiled_animation_tiles": 88,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "crawler": {
+      "compiled_animation_tiles": 100,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 2,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "harpy": {
+      "compiled_animation_tiles": 107,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 9,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "felstalker": {
+      "compiled_animation_tiles": 98,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "cultist": {
+      "compiled_animation_tiles": 81,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "yarrog": {
+      "compiled_animation_tiles": 92,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    },
+    "sarkoth": {
+      "compiled_animation_tiles": 91,
+      "pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "overflow_tiles": 0,
+      "native_size_verified": true,
+      "back_pixel_exact_rgb555": true,
+      "compiled_pics_found_in_rom": true
+    }
+  },
+  "diagnostic_ram_changes": [
+    "temporary boar encounter species replaced by each new enemy",
+    "both battle HP/maxHP increased to240; original move kits preserved"
+  ],
+  "emulator_attacks": {
+    "tiger": {
+      "species": 52,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        10,
+        44,
+        0,
+        0
+      ]
+    },
+    "raptor": {
+      "species": 158,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        10,
+        44,
+        0,
+        0
+      ]
+    },
+    "crawler": {
+      "species": 98,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        11,
+        33,
+        0,
+        0
+      ]
+    },
+    "harpy": {
+      "species": 21,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        10,
+        17,
+        0,
+        0
+      ]
+    },
+    "felstalker": {
+      "species": 23,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        44,
+        10,
+        0,
+        0
+      ]
+    },
+    "cultist": {
+      "species": 88,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        53,
+        33,
+        0,
+        0
+      ]
+    },
+    "yarrog": {
+      "species": 67,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        53,
+        163,
+        0,
+        0
+      ]
+    },
+    "sarkoth": {
+      "species": 99,
+      "actual_pose_commands": [
+        0,
+        1,
+        2,
+        3,
+        255
+      ],
+      "pixel_exact_rgb555_pose_matches": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "attack_hook_calls": 1,
+      "native_move_ids": [
+        40,
+        11,
+        0,
+        0
+      ]
+    }
+  },
+  "original_player_species_66": true
+}

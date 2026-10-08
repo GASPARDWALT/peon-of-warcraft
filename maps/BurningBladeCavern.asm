@@ -38,8 +38,7 @@ BurningBladeStrongImpScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 BurningBladeCavernGuideScript:
 	checkevent EVENT_PEON_CAVE_IMP_DEAD
@@ -63,8 +62,7 @@ BurningBladeCavernGuideScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 BurningBladeFelstalkerScript:
 	checkevent EVENT_PEON_CAVE_FELSTALKER_DEAD
@@ -88,8 +86,7 @@ BurningBladeFelstalkerScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 BurningBladeCultistScript:
 	checkevent EVENT_PEON_CAVE_CULTIST_DEAD
@@ -113,8 +110,7 @@ BurningBladeCultistScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 BurningBladeYarrogScript:
 	checkevent EVENT_PEON_YARROG_DEAD
@@ -140,8 +136,7 @@ BurningBladeYarrogScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 .Full:
 	opentext
 	writetext BurningBladeQuestLootFullText

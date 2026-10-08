@@ -1,6 +1,7 @@
 ; Battle animation command interpreter.
 
 PlayBattleAnim:
+	farcall PeonAnimatePlayerAttack
 	ldh a, [rWBK]
 	push af
 
@@ -11,6 +12,7 @@ PlayBattleAnim:
 
 	pop af
 	ldh [rWBK], a
+	farcall PeonRestorePlayerIdlePose
 	ret
 
 _PlayBattleAnim:

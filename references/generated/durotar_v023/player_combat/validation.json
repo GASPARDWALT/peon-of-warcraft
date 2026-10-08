@@ -1,0 +1,283 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "normal_route": {
+    "ram_edits": false,
+    "emulator_states_loaded": false,
+    "totem": {
+      "item_id": 148,
+      "actual_button_use": true,
+      "other_battle_graphics_preserved": true,
+      "hp_before_item": 14,
+      "hp_after_enemy_turn": 11,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "potion": {
+      "item_id": 18,
+      "actual_button_use": true,
+      "other_battle_graphics_preserved": true,
+      "hp_before_item": 11,
+      "hp_after_enemy_turn": 11,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "mace": {
+      "move_id": 1,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle",
+        "swing"
+      ],
+      "native_sequence": [
+        "brace",
+        "swing",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle",
+        "swing"
+      ],
+      "matched_native_frames": {
+        "idle": 587,
+        "brace": 8,
+        "swing": 110
+      },
+      "protected_helper_returns": 4,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "lightning_bolt": {
+      "move_id": 84,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 404,
+        "brace": 115,
+        "swing": 0
+      },
+      "protected_helper_returns": 2,
+      "normal_battle_returned_to_world": true
+    }
+  },
+  "diagnostics": {
+    "diagnostic_mace": {
+      "move_id": 1,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle",
+        "swing"
+      ],
+      "native_sequence": [
+        "brace",
+        "swing",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle",
+        "swing"
+      ],
+      "matched_native_frames": {
+        "idle": 567,
+        "brace": 8,
+        "swing": 113
+      },
+      "protected_helper_returns": 4,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_lightning": {
+      "move_id": 84,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 516,
+        "brace": 118,
+        "swing": 0
+      },
+      "protected_helper_returns": 4,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_flame_shock": {
+      "move_id": 52,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 878,
+        "brace": 141,
+        "swing": 0
+      },
+      "protected_helper_returns": 8,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_healing": {
+      "move_id": 105,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 842,
+        "brace": 48,
+        "swing": 0
+      },
+      "protected_helper_returns": 4,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_rockbiter": {
+      "move_id": 14,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 521,
+        "brace": 52,
+        "swing": 0
+      },
+      "protected_helper_returns": 2,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_lightning_shield": {
+      "move_id": 115,
+      "scenes_on": true,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "brace",
+        "idle"
+      ],
+      "native_sequence": [
+        "brace",
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "brace",
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 789,
+        "brace": 52,
+        "swing": 0
+      },
+      "protected_helper_returns": 6,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    },
+    "diagnostic_scenes_off": {
+      "move_id": 1,
+      "scenes_on": false,
+      "actual_button_cast": true,
+      "native_animation_id_not_substituted": true,
+      "native_poses": [
+        "idle"
+      ],
+      "native_sequence": [
+        "idle"
+      ],
+      "actual_rgb555_matched_poses": [
+        "idle"
+      ],
+      "matched_native_frames": {
+        "idle": 463,
+        "brace": 0,
+        "swing": 0
+      },
+      "protected_helper_returns": 4,
+      "idle_36_tiles_restored": true,
+      "idle_actual_rgb555_and_palette": true,
+      "back_tilemap_bank0_intact": true
+    }
+  },
+  "diagnostic_inputs": [
+    "gold enemy species67 at the normal encounter loader",
+    "HP/maxHP240",
+    "temporary move/PP selection",
+    "Healing Wave HP60",
+    "Earth Totem active1",
+    "existing battle-scenes option bit7",
+    "rewound isolated encounter state"
+  ],
+  "all_checks_passed": true
+}

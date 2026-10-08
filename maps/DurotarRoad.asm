@@ -76,8 +76,7 @@ DurotarScorpidPackScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 DurotarScorpidSecondText:
 	text "Another scorpid"
@@ -204,8 +203,7 @@ DurotarTigerScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 DurotarTigerLootText:
 	text "Tiger defeated!"
@@ -240,8 +238,7 @@ DurotarRaptorScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 DurotarRaptorLootText:
 	text "Raptor defeated!"
@@ -270,8 +267,7 @@ DurotarHarpyScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 DurotarHarpyLootText:
 	text "Harpy defeated!"
@@ -305,8 +301,7 @@ DurotarCrawlerScript:
 	end
 .Lost:
 	callasm PeonRecoverFromDefeat
-	warp THE_DEN, 10, 12
-	end
+	farsjump PeonHearthReturnScript
 
 DurotarCrawlerLootText:
 	text "Crawler defeated!"

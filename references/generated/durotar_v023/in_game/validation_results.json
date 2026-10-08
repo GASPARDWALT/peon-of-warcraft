@@ -1,0 +1,36 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "method": "Production ROM, ordinary new-game buttons; no RAM edits or save states.",
+  "native_title_rgb555_matches": true,
+  "new_game_reaches_den": true,
+  "other_classes_locked": true,
+  "master_asks_name": true,
+  "no_pokemon_nickname_screen": true,
+  "peon_prefix_and_chosen_name_persist": true,
+  "starting_kit": [
+    25,
+    45,
+    50
+  ],
+  "starting_moves": [
+    1,
+    84,
+    0,
+    0
+  ],
+  "reusable_earth_totem_received_once": true,
+  "starting_money_copper": 50,
+  "slow_curve_level2_exp": 10,
+  "map_locked_before_second_quest": true,
+  "intro_maps_seen": [
+    12,
+    13
+  ],
+  "native_hooks": {
+    "class": 1,
+    "name": 1,
+    "nickname": 0,
+    "initialize": 1
+  },
+  "all_checks_passed": true
+}

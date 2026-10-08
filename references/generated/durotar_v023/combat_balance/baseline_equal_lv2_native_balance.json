@@ -1,0 +1,8273 @@
+{
+  "stage": "baseline_equal_lv2",
+  "method": "Real ROM combat and menus; diagnostic encounter/level/RNG-seed fixtures, complete native party carried between world rewinds.",
+  "diagnostic_ram_changes": [
+    "starter level before native stats/XP generator; initial RNG state73/151",
+    "scripted boar encounter replaced by requested creature/level before native enemy generator",
+    "hRandomAdd/Sub seeded at each encounter; native hardware RNG and crit/status chances remain",
+    "world savestate rewound between fights while native party record is restored byte-for-byte"
+  ],
+  "excluded_from_comparison": [
+    "Walking poison attrition between distant encounters; no map travel in fixture",
+    "Later trainer spells, gear upgrades, Earth Totem and healing consumables; starter mace/bolt only"
+  ],
+  "enemy_level_policy": "match_current_native_player_level_each_fight",
+  "levels": [
+    2
+  ],
+  "seeds": [
+    17,
+    143,
+    221
+  ],
+  "chains": [
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              117,
+              140
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 6,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 3,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              4,
+              24
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 6,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 1,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              247,
+              11
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              28,
+              30,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 1,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 1,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              56,
+              80
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 6,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 3,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              117,
+              140
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 12,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              96,
+              119
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 5,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 42,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 6,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 5,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 42,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              135,
+              158
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              21,
+              0,
+              0
+            ],
+            "xp": 66,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 5,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              4,
+              24
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 12,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              247,
+              11
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 5,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 42,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 6,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 5,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 42,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              30,
+              50
+            ],
+            "stats": [
+              6,
+              7,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              9
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              22,
+              0,
+              0
+            ],
+            "xp": 66,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 10,
+              "player_hp": 5,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 4,
+              "player_hp": 5,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 1,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              56,
+              80
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 12,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 9,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              100,
+              123
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "xp": 26,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 4,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 4,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 17,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              117,
+              140
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              28,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 12,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 12,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 5,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 143,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 4,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              4,
+              24
+            ],
+            "stats": [
+              7,
+              7,
+              5,
+              7,
+              7
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 16,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 9,
+              "player_hp": 10,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 1,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "boar",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 221,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 19,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              56,
+              80
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              33,
+              0,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 42,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 33,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              114,
+              135
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 5,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              93,
+              114
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              26,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 16,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 2,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              1,
+              20
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 5,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              244,
+              7
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              26,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 14,
+            "max_hp": 14,
+            "status": 0,
+            "dvs": [
+              53,
+              75
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 6,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 6,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              97,
+              118
+            ],
+            "stats": [
+              7,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              27,
+              30,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 6,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 6,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 4,
+              "enemy_hp": 7,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 3,
+              "player_status": 8,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              114,
+              135
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 11,
+            "max_hp": 17,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 7,
+              "player_hp": 13,
+              "enemy_hp": 13,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 6,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 6,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 1,
+              "player_status": 8,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 11,
+            "max_hp": 17,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              93,
+              114
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 11,
+              "enemy_hp": 16,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 10,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 7,
+              "enemy_hp": 10,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 4,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 4,
+              "player_status": 8,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              132,
+              153
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              23,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 1,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 15,
+              "player_status": 8,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              1,
+              20
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 7,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              244,
+              7
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 8,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 15,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 4,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 11,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 11,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 8,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 8,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              27,
+              46
+            ],
+            "stats": [
+              6,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 4,
+            "hp": 9,
+            "max_hp": 20,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              9,
+              9,
+              8,
+              11,
+              10
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              22,
+              0,
+              0
+            ],
+            "xp": 114,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 11,
+              "player_hp": 8,
+              "enemy_hp": 16,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 8,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 6,
+              "enemy_hp": 5,
+              "player_status": 8,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 2,
+            "hp": 14,
+            "max_hp": 14,
+            "status": 0,
+            "dvs": [
+              53,
+              75
+            ],
+            "stats": [
+              6,
+              6,
+              5,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 13,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 11,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 13,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 36,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              97,
+              118
+            ],
+            "stats": [
+              7,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 8,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 13,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 11,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 11,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 8,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 8,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 75,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              72,
+              93
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 4,
+            "hp": 4,
+            "max_hp": 20,
+            "status": 8,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              9,
+              9,
+              8,
+              11,
+              10
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              21,
+              0,
+              0
+            ],
+            "xp": 114,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 8,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 8,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 6,
+              "enemy_hp": 9,
+              "player_status": 8,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 3,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 11,
+              "player_hp": 1,
+              "enemy_hp": 3,
+              "player_status": 8,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 17,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              114,
+              135
+            ],
+            "stats": [
+              8,
+              7,
+              7,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 5,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "xp": 63,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 3,
+              "player_hp": 12,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 9,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 6,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 143,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              1,
+              20
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 3,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 63,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 13,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 13,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 1,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    },
+    {
+      "enemy": "scorpid",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 221,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 27,
+            "level": 4,
+            "hp": 18,
+            "max_hp": 18,
+            "status": 0,
+            "dvs": [
+              53,
+              75
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              40,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              35,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 18,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 13,
+              "enemy_hp": 18,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 13,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 12,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 11,
+              "enemy_hp": 12,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 7,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 7,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 40,
+              "rolled_damage": 2,
+              "player_hp": 6,
+              "enemy_hp": 4,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 4,
+              "enemy_hp": 4,
+              "player_status": 8,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 3,
+              "enemy_hp": 1,
+              "player_status": 8,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              103,
+              119
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 4,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 10,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 2,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 4,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              82,
+              98
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              27,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 4,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 2,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              240,
+              253
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 6,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 5,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 11,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 9,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 6,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              208,
+              224
+            ],
+            "stats": [
+              7,
+              6,
+              7,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              29,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 6,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 6,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 3,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "mace",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              42,
+              58
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 5,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 13,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 3,
+              "player_hp": 11,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 11,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 8,
+              "enemy_hp": 6,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 8,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 5,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 2,
+              "player_hp": 5,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 7,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              30,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              86,
+              102
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              28,
+              30,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 4,
+              "player_hp": 7,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 7,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 1,
+              "rolled_damage": 5,
+              "player_hp": 5,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 5,
+              "enemy_hp": 2,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 17,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              103,
+              119
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 10,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 13,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 10,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 8,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 10,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              82,
+              98
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 3,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 10,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 5,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 5,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 3,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 3,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              121,
+              137
+            ],
+            "stats": [
+              6,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              22,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 2,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 3,
+              "enemy_hp": 16,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 3,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 1,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 1,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 143,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              240,
+              253
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 13,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              208,
+              224
+            ],
+            "stats": [
+              7,
+              6,
+              7,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 15,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 12,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 12,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              9,
+              23
+            ],
+            "stats": [
+              6,
+              7,
+              6,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              23,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 1,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 2,
+      "attack": "bolt",
+      "seed": 221,
+      "level_policy": "match_current_native_player_level_each_fight",
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 2,
+            "hp": 13,
+            "max_hp": 13,
+            "status": 0,
+            "dvs": [
+              42,
+              58
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              6,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 9,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 15,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 12,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 12,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 5,
+              "player_hp": 7,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 9,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 34,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              86,
+              102
+            ],
+            "stats": [
+              6,
+              6,
+              6,
+              7,
+              6
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 3,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 9,
+              "enemy_hp": 15,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 9,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 4,
+              "enemy_hp": 9,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 4,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 3,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        },
+        {
+          "before": {
+            "species": 66,
+            "level": 3,
+            "hp": 2,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 3,
+            "hp": 16,
+            "max_hp": 16,
+            "status": 0,
+            "dvs": [
+              61,
+              77
+            ],
+            "stats": [
+              6,
+              7,
+              6,
+              7,
+              7
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 1,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              23,
+              0,
+              0
+            ],
+            "xp": 70,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 1,
+          "native_damage_events": [
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 6,
+              "player_hp": 2,
+              "enemy_hp": 16,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 2,
+              "player_hp": 2,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 17,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              103,
+              119
+            ],
+            "stats": [
+              7,
+              7,
+              7,
+              8,
+              7
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              26,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 4,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 4,
+              "player_hp": 10,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 7,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 7,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 2,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 143,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              240,
+              253
+            ],
+            "stats": [
+              8,
+              7,
+              8,
+              8,
+              8
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 2,
+            "hp": 1,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              27,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "outcome": "defeat",
+          "player_chosen_turns": 4,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 14,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 11,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 2,
+              "enemy_hp": 8,
+              "player_status": 0,
+              "enemy_status": 0
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": true
+        }
+      ]
+    },
+    {
+      "enemy": "imp",
+      "starting_level": 2,
+      "enemy_level": 4,
+      "attack": "bolt",
+      "seed": 221,
+      "battles": [
+        {
+          "before": {
+            "species": 66,
+            "level": 2,
+            "hp": 15,
+            "max_hp": 15,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              7,
+              7,
+              6,
+              8,
+              7
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "xp": 10,
+            "held_item": 0
+          },
+          "enemy": {
+            "species": 74,
+            "level": 4,
+            "hp": 17,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              42,
+              58
+            ],
+            "stats": [
+              7,
+              7,
+              7,
+              8,
+              7
+            ],
+            "moves": [
+              10,
+              53,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              25,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "species": 66,
+            "level": 3,
+            "hp": 4,
+            "max_hp": 17,
+            "status": 0,
+            "dvs": [
+              26,
+              155
+            ],
+            "stats": [
+              8,
+              8,
+              7,
+              9,
+              8
+            ],
+            "moves": [
+              1,
+              84,
+              0,
+              0
+            ],
+            "pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "xp": 59,
+            "held_item": 0
+          },
+          "outcome": "win",
+          "player_chosen_turns": 6,
+          "native_damage_events": [
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 15,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 4,
+              "player_hp": 10,
+              "enemy_hp": 17,
+              "player_status": 0,
+              "enemy_status": 0
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 10,
+              "enemy_hp": 13,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 53,
+              "rolled_damage": 5,
+              "player_hp": 10,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 10,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 7,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "enemy",
+              "move": 10,
+              "rolled_damage": 3,
+              "player_hp": 5,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 4,
+              "player_status": 0,
+              "enemy_status": 64
+            },
+            {
+              "who": "player",
+              "move": 84,
+              "rolled_damage": 3,
+              "player_hp": 2,
+              "enemy_hp": 1,
+              "player_status": 0,
+              "enemy_status": 64
+            }
+          ],
+          "heal_party_calls": 0,
+          "native_defeat_recovery": false
+        }
+      ]
+    }
+  ],
+  "all_checks_passed": true,
+  "historical_rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "historical_reference": true,
+  "scope": "Pre-v0.2.3 historical baseline only; not validation of the current candidate ROM."
+}

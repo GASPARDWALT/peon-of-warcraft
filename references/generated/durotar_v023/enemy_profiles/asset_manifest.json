@@ -1,0 +1,77 @@
+{
+  "source_sha256": "f7aae7af0f6b55e1825ff5ff1224682f4f5faaf8dadfa255ca477e581e489fe9",
+  "native_dimensions": [
+    16,
+    24
+  ],
+  "native_tiles": 6,
+  "native_tile_ids": "$80..$85",
+  "native_vram": "bank 1 $8800..$885f",
+  "native_screen_tiles": {
+    "x": 10,
+    "y": 4,
+    "width": 2,
+    "height": 3
+  },
+  "bg_palette": 5,
+  "emblems": {
+    "gold": {
+      "native_palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          31,
+          25,
+          8
+        ],
+        [
+          20,
+          11,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "binary_sha256": "ed26690ba44743df9c0e754a49c9580552ea00a59376036dcd9ca1a094912d27",
+      "species_alias": "PEON_MOB_YARROG",
+      "rank_basis": "Explicit prototype boss/rank adaptation; not a verified Classic rank classification.",
+      "transparent_pixels": 198,
+      "opaque_pixels": 186
+    },
+    "silver": {
+      "native_palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          26,
+          28,
+          31
+        ],
+        [
+          13,
+          16,
+          20
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "binary_sha256": "1e01e63b8926e8a2c4d6dc6e0a7d968a75953951407b7484a4816051175972ee",
+      "species_alias": "PEON_MOB_SARKOTH",
+      "rank_basis": "Explicit prototype boss/rank adaptation; not a verified Classic rank classification.",
+      "transparent_pixels": 205,
+      "opaque_pixels": 179
+    }
+  }
+}

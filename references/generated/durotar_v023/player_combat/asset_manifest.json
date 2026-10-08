@@ -1,0 +1,60 @@
+{
+  "source": "gfx/pokemon/machop/back.png",
+  "source_sha256": "876ba18a36e539c0c82cfc8393c531cb71a844567875f903ebe69881afae4377",
+  "native_binary": "gfx/peon_player_battle/back_frames.2bpp",
+  "size": [
+    48,
+    48
+  ],
+  "frames": [
+    {
+      "name": "idle",
+      "changed_pixels_from_idle": 0,
+      "changed_silhouette_pixels": 0,
+      "tile_bytes": 576,
+      "frame_offset": 0
+    },
+    {
+      "name": "brace",
+      "changed_pixels_from_idle": 590,
+      "changed_silhouette_pixels": 304,
+      "tile_bytes": 576,
+      "frame_offset": 576
+    },
+    {
+      "name": "swing",
+      "changed_pixels_from_idle": 596,
+      "changed_silhouette_pixels": 354,
+      "tile_bytes": 576,
+      "frame_offset": 1152
+    }
+  ],
+  "bytes_per_frame": 576,
+  "tile_order": "column-major, tx outer then ty",
+  "total_bytes": 1728,
+  "rgb555_palette": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      15,
+      22,
+      8
+    ],
+    [
+      18,
+      11,
+      6
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "alpha": "binary transparent index0",
+  "idle_matches_current_backpic": true,
+  "notes": "Original authored arm/mace/torso poses; fixed leg baseline; no engine or balance changes."
+}

@@ -3992,6 +3992,7 @@ ResetPlayerStatLevels:
 	ld [wPeonRockbiterCharge], a
 	ld [wPeonLightningShieldCharges], a
 	ld [wPeonEarthTotemActive], a
+	ld [wPeonPlayerPoseActive], a
 	ld a, BASE_STAT_LEVEL
 	ld b, NUM_LEVEL_STATS
 	ld hl, wPlayerStatLevels

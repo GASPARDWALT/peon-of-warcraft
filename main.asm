@@ -719,3 +719,4 @@ INCLUDE "engine/battle/peon_enemy_profiles.asm"
 
 SECTION "Peon Enemy Poses", ROMX
 INCLUDE "engine/battle/peon_enemy_poses.asm"
+INCLUDE "engine/battle/peon_player_poses.asm"

@@ -1,6 +1,6 @@
 	db GEODUDE ; 074
 
-	db  38,  25,  25,  25,  35,  25
+	db  38,  25,  25,  25,  45,  25
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

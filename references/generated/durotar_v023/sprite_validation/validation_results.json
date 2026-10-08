@@ -1,0 +1,198 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "rom_bytes": 2097152,
+  "vram_graphics_match": true,
+  "vram_bank": 1,
+  "idle_tiles": 16,
+  "walking_tiles": 32,
+  "renderer_facings_verified": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "mirrored_accessories": false,
+  "normal_movement": [
+    {
+      "direction": "left",
+      "start": [
+        26,
+        14,
+        12,
+        10
+      ],
+      "end": [
+        26,
+        14,
+        12,
+        8
+      ],
+      "facings": [
+        0,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "direction": "right",
+      "start": [
+        26,
+        14,
+        12,
+        10
+      ],
+      "end": [
+        26,
+        14,
+        12,
+        12
+      ],
+      "facings": [
+        0,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "direction": "up",
+      "start": [
+        26,
+        14,
+        12,
+        10
+      ],
+      "end": [
+        26,
+        14,
+        10,
+        10
+      ],
+      "facings": [
+        0,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "direction": "down",
+      "start": [
+        26,
+        14,
+        12,
+        10
+      ],
+      "end": [
+        26,
+        14,
+        15,
+        10
+      ],
+      "facings": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "map_for_npc_allocation": [
+    26,
+    14,
+    12,
+    10
+  ],
+  "npc_graphics_verified": [
+    58,
+    65,
+    84,
+    9,
+    86,
+    53,
+    53
+  ],
+  "save_cold_restart_passed": true,
+  "player_state_before_save": {
+    "wPlayerName": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      128,
+      128,
+      128,
+      128,
+      80
+    ],
+    "wPlayerID": [
+      210,
+      126
+    ],
+    "wMoney": [
+      0,
+      0,
+      50
+    ],
+    "wMapGroup": [
+      26,
+      14,
+      12,
+      10
+    ]
+  },
+  "player_state_after_restart": {
+    "wPlayerName": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      128,
+      128,
+      128,
+      128,
+      80
+    ],
+    "wPlayerID": [
+      210,
+      126
+    ],
+    "wMoney": [
+      0,
+      0,
+      50
+    ],
+    "wMapGroup": [
+      26,
+      14,
+      12,
+      10
+    ]
+  },
+  "emulator": "PyBoy 2.7.0",
+  "limitations": [
+    "Chromatic hardware untested",
+    "Unreachable bike, surf and fishing presentations are not adapted",
+    "Sound not emulated in this check"
+  ]
+}

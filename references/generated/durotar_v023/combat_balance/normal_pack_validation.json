@@ -1,0 +1,163 @@
+{
+  "rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "normal_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "method": "Fresh character, Cutting Teeth, inn, Den scorpid, Gornek reward, inn, direct road pack. No farming, training, totem or potion.",
+  "all_checks_passed": true,
+  "boar": {
+    "outcome": 0,
+    "before": {
+      "level": 2,
+      "experience": 10,
+      "hp": 14,
+      "max_hp": 14,
+      "pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "status": 0,
+      "copper": 50
+    },
+    "after": {
+      "level": 2,
+      "experience": 18,
+      "hp": 8,
+      "max_hp": 14,
+      "pp": [
+        35,
+        27,
+        0,
+        0
+      ],
+      "status": 0,
+      "copper": 50
+    },
+    "battle_starts": [
+      {
+        "player_level": 2,
+        "enemy_level": 1,
+        "hp": 14,
+        "max_hp": 14,
+        "player_status": 0
+      }
+    ],
+    "native_enemy_loads": 1,
+    "heal_party_calls": 0,
+    "victory_flag": true
+  },
+  "den_scorpid": {
+    "outcome": 0,
+    "before": {
+      "level": 3,
+      "experience": 33,
+      "hp": 17,
+      "max_hp": 17,
+      "pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "status": 0,
+      "copper": 150
+    },
+    "after": {
+      "level": 3,
+      "experience": 59,
+      "hp": 11,
+      "max_hp": 17,
+      "pp": [
+        35,
+        27,
+        0,
+        0
+      ],
+      "status": 8,
+      "copper": 150
+    },
+    "battle_starts": [
+      {
+        "player_level": 3,
+        "enemy_level": 2,
+        "hp": 17,
+        "max_hp": 17,
+        "player_status": 0
+      }
+    ],
+    "native_enemy_loads": 1,
+    "heal_party_calls": 0,
+    "victory_flag": true
+  },
+  "before_road": {
+    "level": 4,
+    "experience": 84,
+    "hp": 19,
+    "max_hp": 19,
+    "pp": [
+      35,
+      30,
+      0,
+      0
+    ],
+    "status": 0,
+    "copper": 300
+  },
+  "pack": {
+    "outcome": 0,
+    "before": {
+      "level": 4,
+      "experience": 84,
+      "hp": 19,
+      "max_hp": 19,
+      "pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "status": 0,
+      "copper": 300
+    },
+    "after": {
+      "level": 5,
+      "experience": 190,
+      "hp": 14,
+      "max_hp": 22,
+      "pp": [
+        35,
+        25,
+        0,
+        0
+      ],
+      "status": 0,
+      "copper": 340
+    },
+    "battle_starts": [
+      {
+        "player_level": 4,
+        "enemy_level": 4,
+        "hp": 19,
+        "max_hp": 19,
+        "player_status": 0
+      },
+      {
+        "player_level": 4,
+        "enemy_level": 4,
+        "hp": 17,
+        "max_hp": 19,
+        "player_status": 0
+      }
+    ],
+    "native_enemy_loads": 2,
+    "heal_party_calls": 0,
+    "victory_flag": true
+  },
+  "two_equal_level_encounters_without_auto_heal": true,
+  "without_potion_won": true,
+  "max_hp_added_by_level_up": 3,
+  "hp_after_removing_level_up_gain": 11,
+  "fraction_of_starting_max_hp_remaining": 0.5789473684210527
+}

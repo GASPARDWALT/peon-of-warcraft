@@ -223,6 +223,9 @@ gfx/pokemon/girafarig/front.animated.tilemap: gfx/pokemon/girafarig/front.2bpp g
 
 ### Pokemon and trainer sprite rules
 
+gfx/peon_player_battle/back_frames.2bpp: tools/build_peon_player_combat.py gfx/pokemon/machop/back.png gfx/pokemon/machop/normal.gbcpal
+	python3 tools/build_peon_player_combat.py
+
 gfx/pokemon/%/back.2bpp: RGBGFXFLAGS += --columns
 gfx/pokemon/%/back.2bpp: gfx/pokemon/%/back.png gfx/pokemon/%/normal.gbcpal
 	$(RGBGFX) $(RGBGFXFLAGS) --colors gbc:$(word 2,$^) -o $@ $<
