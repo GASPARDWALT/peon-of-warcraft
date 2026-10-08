@@ -231,6 +231,10 @@ PeonDrawInventoryItemIconFromC::
 PeonInventoryItemIconLookup:
 '''
     lines = [preamble.rstrip()]
+    # The additional food icon has its own retained source/generator; never
+    # treat it as a nonexistent 33rd cell of the original 8x4 concept atlas.
+    lines += ['\tdb PEON_CAMP_BREAD',
+              '\tdw PeonItemIconCampBreadGFX, PeonItemIconCampBreadPalette']
     for entry in SPECS:
         if entry['item'] is None:
             continue
@@ -247,6 +251,12 @@ PeonInventoryItemIconLookup:
                   f'PeonItemIcon{name}Palette:',
                   f'\tINCLUDE "gfx/pack/peon_item_icons/{slug}.pal"',
                   f'\tassert @ - PeonItemIcon{name}Palette == 1 palettes', '']
+    lines += ['PeonItemIconCampBreadGFX:',
+              '\tINCBIN "gfx/pack/peon_food/bread.2bpp"',
+              '\tassert @ - PeonItemIconCampBreadGFX == 4 * LEN_2BPP_TILE',
+              'PeonItemIconCampBreadPalette:',
+              '\tINCLUDE "gfx/pack/peon_food/bread.pal"',
+              '\tassert @ - PeonItemIconCampBreadPalette == 1 palettes', '']
     (ROOT / 'engine/menus/peon_item_icons.asm').write_text('\n'.join(lines))
 
 

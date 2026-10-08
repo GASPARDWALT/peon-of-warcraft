@@ -1,8 +1,20 @@
 SECTION "Peon Healing Consumables", ROMX
 
+; Camp food is a rest supply, not another combat potion. Failed/full-health
+; use clears carry and leaves both the item and the battle turn untouched.
+PeonTryEatCampBread::
+	ld a, [wBattleMode]
+	and a
+	ret nz
+	ld a, 10
+	jr PeonTryRestoreHPFromA
+
 ; Carry = a living character actually regained HP. At full HP or zero HP the
 ; potion is left in the bag. Battle and party HP remain synchronized.
 PeonTryUseMinorPotion::
+	ld a, 20
+PeonTryRestoreHPFromA:
+	push af
 	ld hl, wPartyMon1HP
 	ld de, wPartyMon1MaxHP
 	ld a, [wBattleMode]
@@ -29,8 +41,10 @@ PeonTryUseMinorPotion::
 	cp l
 	jr nc, .unused
 .heal
+	pop af
+	ld d, a
 	ld a, c
-	add 20
+	add d
 	ld c, a
 	jr nc, .cap
 	inc b
@@ -61,6 +75,7 @@ PeonTryUseMinorPotion::
 	scf
 	ret
 .unused
+	pop af
 	and a
 	ret
 

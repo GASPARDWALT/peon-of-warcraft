@@ -1,0 +1,338 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "all_checks_passed": true,
+  "preview_source": "Actual native emulator APU; no sampled WoW audio.",
+  "source_limitation": "Original pulse/noise authoring; Wowhead recordings unavailable and not auditioned.",
+  "physical_console_audio_unverified": true,
+  "diagnostic_effects": [
+    {
+      "name": "lightning_bolt",
+      "existing_id": "SFX_THUNDERSHOCK",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 28,
+      "seconds_at_60fps": 0.4666666666666667,
+      "preview_gain": 2139.189866794567,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    },
+    {
+      "name": "boar_grunt",
+      "existing_id": "SFX_PEON_BOAR_GRUNT",
+      "native_voices_observed": [
+        5,
+        8
+      ],
+      "terminated_frames": 24,
+      "seconds_at_60fps": 0.4,
+      "preview_gain": 2419.089172572884,
+      "diagnostic_call_injection": true,
+      "music_resumes_after_effect": true
+    }
+  ],
+  "ordinary_combat": {
+    "normal_buttons_only": true,
+    "ram_edits": false,
+    "cpu_register_substitution": false,
+    "emulator_states_loaded": false,
+    "production_rom_modified": false,
+    "encounter_intros": [
+      {
+        "species": 19,
+        "frame": 7743
+      },
+      {
+        "species": 27,
+        "frame": 17864
+      }
+    ],
+    "boar_only_grunt_observed": true,
+    "non_boar_intro_did_not_play_grunt": true,
+    "actual_lightning_move_id": 84,
+    "battle_results": [
+      {
+        "label": "ordinary_boar_audio",
+        "outcome": 0,
+        "dead": true,
+        "no_auto_heal": true,
+        "encounter_loads_during_fight": 1,
+        "level_after": 2,
+        "hp_after": [
+          0,
+          7
+        ],
+        "money_after": 50
+      },
+      {
+        "label": "ordinary_scorpid_audio",
+        "outcome": 0,
+        "dead": true,
+        "no_auto_heal": true,
+        "encounter_loads_during_fight": 1,
+        "level_after": 3,
+        "hp_after": [
+          0,
+          16
+        ],
+        "money_after": 150
+      }
+    ],
+    "effects": [
+      {
+        "name": "boar_grunt",
+        "header": "PeonSfx_BoarGrunt",
+        "sfx_id": 207,
+        "started_frame": 7743,
+        "enemy_species": 19,
+        "player_move": 0,
+        "battle_mode": 1,
+        "ended_frame": 7768,
+        "observed_frames": 25,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 23,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1821.1285995465853,
+        "actual_apu_wav": "boar_grunt_ordinary_01.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 7774
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 8666,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 8695,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 23,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1745.1308153184457,
+        "actual_apu_wav": "lightning_bolt_ordinary_01.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 8729
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 8696,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 8725,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 16,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 2481.3993857657897,
+        "actual_apu_wav": "lightning_bolt_ordinary_02.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 8731
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 9624,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 9653,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 16,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 2490.187220031395,
+        "actual_apu_wav": "lightning_bolt_ordinary_03.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 9687
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 9654,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 9683,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 25,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1443.541138165911,
+        "actual_apu_wav": "lightning_bolt_ordinary_04.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 9689
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 10705,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 10734,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 21,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1842.2398776394612,
+        "actual_apu_wav": "lightning_bolt_ordinary_05.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 10768
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 10735,
+        "enemy_species": 19,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 10764,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 18,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 2137.642720514287,
+        "actual_apu_wav": "lightning_bolt_ordinary_06.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 10770
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 18713,
+        "enemy_species": 27,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 18742,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 24,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1492.4758027875555,
+        "actual_apu_wav": "lightning_bolt_ordinary_07.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 18776
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 18743,
+        "enemy_species": 27,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 18772,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 20,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 2111.1377991859417,
+        "actual_apu_wav": "lightning_bolt_ordinary_08.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 18778
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 19674,
+        "enemy_species": 27,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 19703,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 23,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 1734.1637826682806,
+        "actual_apu_wav": "lightning_bolt_ordinary_09.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 19737
+      },
+      {
+        "name": "lightning_bolt",
+        "header": "PeonSfx_Lightning",
+        "sfx_id": 86,
+        "started_frame": 19704,
+        "enemy_species": 27,
+        "player_move": 84,
+        "battle_mode": 1,
+        "ended_frame": 19733,
+        "observed_frames": 29,
+        "end_reason": "native_sfx_channels_stopped",
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "native_apu_peak_before_preview_gain": 18,
+        "native_apu_clipped_samples": 0,
+        "preview_gain": 2130.3889263745405,
+        "actual_apu_wav": "lightning_bolt_ordinary_10.wav",
+        "pure_music_apu_frames_observed": 6,
+        "music_resumes_after_effect": true,
+        "music_observed_frame": 19739
+      }
+    ]
+  }
+}

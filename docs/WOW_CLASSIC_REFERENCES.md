@@ -20,3 +20,17 @@ rare-drop probability and starter story are adaptations. They should not be
 presented as canonical Classic values. Duokna's single verified offer is used
 instead of inventing a complete merchant stock. Ordinary NPC dialogue is newly
 written around the verified quest names/objectives.
+
+## Valley camp preparation (2026-10-08)
+
+The retained CMaNGOS Classic SQL dump was checked again for Duokna's food:
+item 4540, **Tough Hunk of Bread**, quality 1, BuyCount 5, BuyPrice 25 copper,
+SellPrice 1 per unit. The `npc_vendor` record explicitly associates creature
+3158 (Duokna) with item 4540. The ROM short name is `TOUGH BREAD`, internally
+`PEON_CAMP_BREAD = ITEM_95`; existing item IDs are not shifted.
+
+The prototype purchase matches that five-for-25-copper offer. Its immediate
+capped 10-HP bag heal outside combat is an adaptation of Classic food
+regeneration, not a claim to reproduce spell 433's healing over time. Two
+additional camp merchant roles are generic prototype NPCs, not asserted
+Classic named vendors. Minor Potions retain the existing prototype price.

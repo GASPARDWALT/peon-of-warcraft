@@ -148,7 +148,7 @@ ItemNames::
 	li "LEFTOVERS"
 	li "BLADE MEDAL"
 	li "EARTH TOTEM"
-	li "TERU-SAMA"
+	li "TOUGH BREAD"
 	li "MYSTERYBERRY"
 	li "DRAGON SCALE"
 	li "BERSERK GENE"

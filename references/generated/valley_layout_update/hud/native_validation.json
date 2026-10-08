@@ -1,0 +1,1014 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "ordinary_button_route": {
+    "normal_spawn": {
+      "oam_objects": 4,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 24,
+      "filled_pixels": 24,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    },
+    "fresh_camp": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    },
+    "(10, 12)": {
+      "oam_objects": 4,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 24,
+      "filled_pixels": 24,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": false
+    },
+    "(8, 12)": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": false
+    },
+    "(4, 16)": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": false
+    },
+    "wounds": {
+      "oam_objects": 8,
+      "hp": 9,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 19,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    },
+    "inn_healed": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    },
+    "menu_return": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    },
+    "map_return": {
+      "oam_objects": 8,
+      "hp": 15,
+      "max_hp": 15,
+      "gauge_width": 32,
+      "filled_pixels": 32,
+      "native_vram_matches": true,
+      "actual_hardware_oam_and_live_hp_match": true,
+      "opaque_pixels_match_rgb555": true
+    }
+  },
+  "diagnostics": {
+    "normal_spawn_native_world_pixels": {
+      "explicit_emulator_guard_fixture": true,
+      "all_actual_pixels_outside_hud_identical": true,
+      "persistent_player_progress_identical": true,
+      "hud_rectangle_excluded": [
+        2,
+        2,
+        52,
+        18
+      ]
+    },
+    "capacity_full32": {
+      "slots": 32,
+      "entered": true,
+      "after_slots": 40,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "capacity_compact36": {
+      "slots": 36,
+      "entered": true,
+      "after_slots": 40,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "capacity_actor_priority38": {
+      "slots": 38,
+      "entered": true,
+      "after_slots": 38,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "zero_hp": {
+      "slots": 24,
+      "hp": 0,
+      "max_hp": 31,
+      "entered": true,
+      "after_slots": 32,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "one_hp": {
+      "slots": 24,
+      "hp": 1,
+      "max_hp": 31,
+      "entered": true,
+      "after_slots": 32,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "half_hp": {
+      "slots": 24,
+      "hp": 16,
+      "max_hp": 32,
+      "entered": true,
+      "after_slots": 32,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "zero_maximum": {
+      "slots": 24,
+      "hp": 0,
+      "max_hp": 0,
+      "entered": true,
+      "after_slots": 32,
+      "done": true,
+      "explicit_emulator_fixture": true
+    },
+    "clamped_hp": {
+      "slots": 24,
+      "hp": 40,
+      "max_hp": 32,
+      "entered": true,
+      "after_slots": 32,
+      "done": true,
+      "explicit_emulator_fixture": true
+    }
+  },
+  "all_checks_passed": true,
+  "save_layout_changed": false,
+  "mana_system_added": false,
+  "scope": "Native160x144life/portraitHUD; actual gameplay and explicit capacity/HP-bound diagnostics.",
+  "helper_register_and_palette_checks": 2874,
+  "sprite_allocation_and_reload_checks": 12,
+  "offscreen_compaction_cases": [
+    {
+      "map": 14,
+      "x": 4,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 4,
+      "y": 14,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 4,
+      "y": 14,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 4,
+      "y": 15,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 5,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 5,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 5,
+      "y": 14,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 6,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 6,
+      "y": 14,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 14,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 7,
+      "y": 14,
+      "world_objects_before": 36,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 8,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 8,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 8,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 8,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 6,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 8,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 8,
+      "world_objects_before": 32,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 9,
+      "world_objects_before": 32,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 9,
+      "world_objects_before": 32,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 9,
+      "world_objects_before": 40,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 11,
+      "world_objects_before": 40,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 11,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 11,
+      "world_objects_before": 40,
+      "visible_objects_retained": 38,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 38,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 9,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 31,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 11,
+      "world_objects_before": 40,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 11,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 12,
+      "world_objects_before": 40,
+      "visible_objects_retained": 38,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 10,
+      "y": 13,
+      "world_objects_before": 40,
+      "visible_objects_retained": 36,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 11,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 11,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 25,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 11,
+      "y": 7,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 11,
+      "y": 8,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 11,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 9,
+      "world_objects_before": 28,
+      "visible_objects_retained": 21,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 9,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 9,
+      "world_objects_before": 36,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 36,
+      "visible_objects_retained": 26,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 36,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 27,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 29,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 11,
+      "world_objects_before": 36,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 11,
+      "world_objects_before": 36,
+      "visible_objects_retained": 32,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 11,
+      "world_objects_before": 36,
+      "visible_objects_retained": 34,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 12,
+      "world_objects_before": 32,
+      "visible_objects_retained": 28,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 12,
+      "world_objects_before": 32,
+      "visible_objects_retained": 30,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 13,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 13,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 13,
+      "world_objects_before": 28,
+      "visible_objects_retained": 26,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 12,
+      "y": 13,
+      "world_objects_before": 32,
+      "visible_objects_retained": 24,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 8,
+      "world_objects_before": 24,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 8,
+      "world_objects_before": 24,
+      "visible_objects_retained": 20,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 8,
+      "world_objects_before": 28,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 9,
+      "world_objects_before": 28,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 22,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 23,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 16,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 13,
+      "world_objects_before": 32,
+      "visible_objects_retained": 16,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 13,
+      "world_objects_before": 32,
+      "visible_objects_retained": 20,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 13,
+      "y": 13,
+      "world_objects_before": 32,
+      "visible_objects_retained": 24,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 8,
+      "world_objects_before": 16,
+      "visible_objects_retained": 12,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 8,
+      "world_objects_before": 24,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 10,
+      "world_objects_before": 28,
+      "visible_objects_retained": 20,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 10,
+      "world_objects_before": 28,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 10,
+      "world_objects_before": 40,
+      "visible_objects_retained": 24,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 18,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 14,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 20,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 8,
+      "world_objects_before": 16,
+      "visible_objects_retained": 8,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 8,
+      "world_objects_before": 16,
+      "visible_objects_retained": 12,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 10,
+      "world_objects_before": 28,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 18,
+      "hud_objects": 4
+    },
+    {
+      "map": 14,
+      "x": 15,
+      "y": 13,
+      "world_objects_before": 24,
+      "visible_objects_retained": 20,
+      "hud_objects": 0
+    },
+    {
+      "map": 14,
+      "x": 16,
+      "y": 8,
+      "world_objects_before": 16,
+      "visible_objects_retained": 8,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 16,
+      "y": 10,
+      "world_objects_before": 20,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 16,
+      "y": 10,
+      "world_objects_before": 28,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    },
+    {
+      "map": 14,
+      "x": 17,
+      "y": 10,
+      "world_objects_before": 20,
+      "visible_objects_retained": 16,
+      "hud_objects": 8
+    }
+  ]
+}

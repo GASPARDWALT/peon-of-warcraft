@@ -20,7 +20,7 @@ BG = [
     [(239,181,115),(214,148,82),(173,99,49),(90,57,33)], # soil
     [(239,181,115),(148,173,74),(82,115,49),(41,66,33)], # desert plants
     [(239,181,115),(123,198,206),(66,140,165),(33,82,123)], # coast
-    [(239,181,115),(247,197,132),(222,156,82),(156,90,49)], # paths
+    [(239,181,115),(255,222,148),(230,165,99),(156,90,49)], # clear pale-earth paths
     [(239,181,115),(214,165,107),(132,90,57),(57,41,33)], # wood/hide
     [(239,181,115),(189,82,57),(123,49,41),(49,33,33)], # Horde roofs
     [(255,247,214),(255,247,214),(123,74,41),(8,8,8)], # Crystal font
@@ -39,9 +39,12 @@ for name, soil in [
     pals[1] = soil
     # Matching ground colour prevents seams between vegetation and bare soil.
     for p in (0,2,3,4,5,6): pals[p][0] = soil[0]
+    if name == 'SenjinVillage':
+        # Amber beaten earth remains readable against the village's pale sand.
+        pals[4] = [soil[0],(230,173,90),(189,123,57),(115,74,33)]
     if name == 'BurningBladeCavern':
         pals[0] = [(115,107,123),(90,82,107),(66,57,82),(33,24,41)]
-        pals[4] = [(115,107,123),(123,115,132),(90,82,107),(57,49,74)]
+        pals[4] = [(115,107,123),(148,140,165),(107,99,123),(57,49,74)]
         pals[5] = [(115,107,123),(148,123,99),(99,74,57),(41,33,41)]
         pals[6] = [(115,107,123),(206,90,49),(140,49,49),(41,24,41)]
     REGION_BGS[name] = pals
@@ -423,7 +426,12 @@ def build_map(name):
             if BLOCKS[data[y//2*w+x//2]]['collision']=='WALL':put(x//2,y//2,8)
     if name=='ValleyOfTrials':
         for x,y in CACTI:put(x//2,y//2,3)
-    if name=='TheDen':put(6,3,39)
+    if name=='TheDen':
+        put(6,3,39)
+        # Two camp merchants use the upper-left alcove. Its former boulder
+        # must not block their cells; this avoids overcrowding the center's
+        # limited native NPC/OAM budget without relocating old save actors.
+        put(4,3,8)
     for x,y in WARPS.get(name,[]):put(x//2,y//2,16)
     return [38 if block==0 else block for block in data]
 

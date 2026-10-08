@@ -1,0 +1,34 @@
+{
+  "baseline_commit": "aa2e27e",
+  "existing_event_ids_unchanged": 1389,
+  "new_reserved_event_ids": {
+    "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD": 312,
+    "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD": 313
+  },
+  "existing_den_actor_indices_and_coordinates_unchanged": 11,
+  "new_den_actor_count": 15,
+  "existing_valley_actor_indices_and_coordinates_unchanged": 7,
+  "new_valley_actor_count": 9,
+  "map_ids_and_save_layout_unchanged": true,
+  "unchanged_inputs": [
+    "constants/map_constants.asm",
+    "ram/wram.asm",
+    "ram/sram.asm",
+    "data/tilesets/peon_collision.asm",
+    "data/tilesets/peon_metatiles.bin",
+    "gfx/tilesets/peon_palette_map.bin"
+  ],
+  "only_collision_block_change": [
+    {
+      "map": "maps/TheDen.blk",
+      "offset": 40,
+      "before": 37,
+      "after": 8
+    }
+  ],
+  "existing_sound_effect_ids_unchanged": 207,
+  "new_sound_effect_ids": {
+    "SFX_PEON_BOAR_GRUNT": 207
+  },
+  "all_checks_passed": true
+}

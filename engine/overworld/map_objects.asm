@@ -2738,6 +2738,7 @@ _UpdateSprites::
 	ld a, 1
 	ldh [hOAMUpdate], a
 	call InitSprites
+	farcall PeonDrawPlayerHUD
 	call .fill
 	pop af
 	ldh [hOAMUpdate], a

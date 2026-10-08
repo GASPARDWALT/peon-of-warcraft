@@ -1,6 +1,15 @@
 SECTION "Peon Native Encounter Intro", ROMX
 
 PeonEncounterStartMessage:
+	; Boar adapter only: two original grunts, even with battle scenes disabled.
+	; Wait for an earlier effect because the appended ID has lower priority.
+	ld a, [wEnemyMonSpecies]
+	cp RATTATA
+	jr nz, .poses
+	ld de, SFX_PEON_BOAR_GRUNT
+	call WaitPlaySFX
+	call WaitSFX
+.poses
 	; The enemy's native poses can introduce the encounter without an old cry.
 	farcall CheckBattleScene
 	jr c, .message

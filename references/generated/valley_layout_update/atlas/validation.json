@@ -1,0 +1,5363 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "all_checks_passed": true,
+  "emulator": "PyBoy 2.7.0",
+  "normal_route_method": "Ordinary buttons only; real quest rewards, walking and warps; no RAM edits or emulator states loaded before the diagnostic section.",
+  "diagnostic_method": "Explicit isolated event/coordinate fixtures and emulator states after the normal route.",
+  "normal_route": [
+    {
+      "name": "normal_den_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_den_player_walked",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        12,
+        9
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          86,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_valley_undiscovered",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        12,
+        9
+      ],
+      "fog": true,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_lazy_sleeping_objective",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        8,
+        13
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          98,
+          66,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          1,
+          7
+        ],
+        [
+          112,
+          52,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_lazy_ready_objective_removed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        5,
+        17
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          118,
+          52,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          1,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "ready"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_lazy_completed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        8,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          112,
+          66,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_den_inn_exact_exterior_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_den_inn_indoor_walk_same_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        4,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_den_hut_exact_exterior_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          68,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cactus_three_objectives",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          52,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_other_page_no_false_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "DEN",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cactus_1_objective_removed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          61,
+          52,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cactus_2_objective_removed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        24,
+        9
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          70,
+          119,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cactus_3_objective_removed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        10,
+        17
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          103,
+          61,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          4
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cactus_complete_giver_removed",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          52,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          0,
+          4
+        ],
+        [
+          78,
+          44,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "offered"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_boss_and_cave_entrance_objectives",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cave_player_and_yarrog_objective",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ],
+        [
+          48,
+          106,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "YARROG"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cave_player_walked",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        15
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          86,
+          2,
+          6
+        ],
+        [
+          48,
+          106,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "YARROG"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_cave_return_red_imp_palettes_restored",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        24,
+        4
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          49,
+          119,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_road_actual_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "ROAD",
+      "current_map": [
+        26,
+        16
+      ],
+      "current_xy": [
+        4,
+        14
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          82,
+          57,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_senjin_actual_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        17
+      ],
+      "current_xy": [
+        10,
+        4
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          52,
+          76,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_senjin_room_1_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_senjin_room_2_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        24
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          102,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_senjin_room_3_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_razor_actual_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        18
+      ],
+      "current_xy": [
+        12,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_razor_room_1_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_razor_room_2_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_razor_room_3_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          98,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_razor_room_4_exact_door",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "exact exterior return door while inside linked room"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    },
+    {
+      "name": "normal_orgrimmar_actual_player",
+      "diagnostic_ram_edits_or_savestate": false,
+      "region": "ORGRIMMAR",
+      "current_map": [
+        26,
+        19
+      ],
+      "current_xy": [
+        12,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": true
+    }
+  ],
+  "diagnostic_cases": [
+    {
+      "name": "diagnostic_maximum_nine_native_points",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          74,
+          52,
+          1,
+          7
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          61,
+          48,
+          0,
+          4
+        ],
+        [
+          70,
+          115,
+          0,
+          4
+        ],
+        [
+          103,
+          56,
+          0,
+          4
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_bosses_dead_ready_givers",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          1,
+          4
+        ],
+        [
+          78,
+          44,
+          1,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "ready"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_all_valley_quests_completed",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          78,
+          40,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_fog_hides_player_and_active_objectives",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        11
+      ],
+      "fog": true,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_den_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        23,
+        19
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          142,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_den_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        24,
+        9
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_den_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        12,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "DEN",
+          "state": "offered"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_valley_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        31,
+        23
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          148,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_valley_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        32,
+        11
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_valley_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        5,
+        24
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 2,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_road_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ROAD",
+      "current_map": [
+        26,
+        16
+      ],
+      "current_xy": [
+        23,
+        27
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          125,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_road_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ROAD",
+      "current_map": [
+        26,
+        16
+      ],
+      "current_xy": [
+        24,
+        14
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_road_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ROAD",
+      "current_map": [
+        26,
+        16
+      ],
+      "current_xy": [
+        4,
+        28
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_senjin_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        17
+      ],
+      "current_xy": [
+        23,
+        19
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          142,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_senjin_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        17
+      ],
+      "current_xy": [
+        24,
+        4
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_senjin_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "SENJIN",
+      "current_map": [
+        26,
+        17
+      ],
+      "current_xy": [
+        10,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_razor_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        18
+      ],
+      "current_xy": [
+        23,
+        19
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          142,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_razor_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        18
+      ],
+      "current_xy": [
+        24,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_razor_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "RAZOR",
+      "current_map": [
+        26,
+        18
+      ],
+      "current_xy": [
+        12,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_orgrimmar_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ORGRIMMAR",
+      "current_map": [
+        26,
+        19
+      ],
+      "current_xy": [
+        23,
+        19
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          142,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_orgrimmar_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ORGRIMMAR",
+      "current_map": [
+        26,
+        19
+      ],
+      "current_xy": [
+        24,
+        16
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_orgrimmar_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "ORGRIMMAR",
+      "current_map": [
+        26,
+        19
+      ],
+      "current_xy": [
+        12,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_cavern_projection_boundary",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        19,
+        19
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          128,
+          132,
+          2,
+          6
+        ],
+        [
+          48,
+          106,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "YARROG"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_cavern_wXCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        20,
+        15
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          48,
+          106,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "objective",
+          "identity": "YARROG"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_cavern_wYCoord_out_of_bounds",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          48,
+          106,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "objective",
+          "identity": "YARROG"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_inn_unmatched_wBackupWarpNumber",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_inn_unmatched_wBackupMapGroup",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "DEN",
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "fog": false,
+      "hardware_oam": [],
+      "points": [],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 0,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_yarrog_dead_cave_objective_removed",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "CAVERN",
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        15
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          108,
+          86,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 1,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    },
+    {
+      "name": "diagnostic_player_priority_over_objective",
+      "diagnostic_ram_edits_or_savestate": true,
+      "region": "VALLEY",
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        16,
+        20
+      ],
+      "fog": false,
+      "hardware_oam": [
+        [
+          115,
+          86,
+          2,
+          6
+        ],
+        [
+          111,
+          61,
+          1,
+          7
+        ],
+        [
+          78,
+          44,
+          1,
+          7
+        ],
+        [
+          115,
+          86,
+          0,
+          4
+        ],
+        [
+          49,
+          119,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "meaning": "actual current map movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_SARKOTH",
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "VALLEY_MEDALLION",
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE"
+        }
+      ],
+      "pixel_exact_rgb555": true,
+      "background_vram_preserved": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "world_palette_and_location_restored": true,
+      "max_sprites_per_scanline": 3,
+      "world_font_terrain_npc_graphics_bg_attributes_restored": false
+    }
+  ],
+  "ordinary_map_reward_and_quests": {
+    "boar": {
+      "outcome": "victory",
+      "observed_native_enemies": [
+        {
+          "species": 19,
+          "level": 1
+        }
+      ],
+      "native_encounter_loads": 1,
+      "no_auto_heal": true,
+      "death_flag_set": true,
+      "copper_reward": null,
+      "before": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          18
+        ],
+        "wYCoord": [
+          13
+        ],
+        "wBackupWarpNumber": [
+          0
+        ],
+        "wBackupMapGroup": [
+          0
+        ],
+        "wBackupMapNumber": [
+          0
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          50
+        ],
+        "player_id": [
+          78,
+          122
+        ],
+        "level": [
+          2
+        ],
+        "experience": [
+          0,
+          0,
+          10
+        ],
+        "hp": [
+          0,
+          15
+        ],
+        "max_hp": [
+          0,
+          15
+        ],
+        "status": [
+          0
+        ],
+        "pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "event_flags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          255
+        ],
+        "items": [
+          148,
+          1,
+          255
+        ]
+      },
+      "after": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          18
+        ],
+        "wYCoord": [
+          13
+        ],
+        "wBackupWarpNumber": [
+          0
+        ],
+        "wBackupMapGroup": [
+          0
+        ],
+        "wBackupMapNumber": [
+          0
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          50
+        ],
+        "player_id": [
+          78,
+          122
+        ],
+        "level": [
+          2
+        ],
+        "experience": [
+          0,
+          0,
+          18
+        ],
+        "hp": [
+          0,
+          9
+        ],
+        "max_hp": [
+          0,
+          15
+        ],
+        "status": [
+          0
+        ],
+        "pp": [
+          35,
+          27,
+          0,
+          0
+        ],
+        "event_flags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          255
+        ],
+        "items": [
+          148,
+          1,
+          255
+        ]
+      }
+    },
+    "scorpid": {
+      "outcome": "victory",
+      "observed_native_enemies": [
+        {
+          "species": 27,
+          "level": 2
+        }
+      ],
+      "native_encounter_loads": 1,
+      "no_auto_heal": true,
+      "death_flag_set": true,
+      "copper_reward": null,
+      "before": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          17
+        ],
+        "wYCoord": [
+          15
+        ],
+        "wBackupWarpNumber": [
+          2
+        ],
+        "wBackupMapGroup": [
+          26
+        ],
+        "wBackupMapNumber": [
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          150
+        ],
+        "player_id": [
+          78,
+          122
+        ],
+        "level": [
+          3
+        ],
+        "experience": [
+          0,
+          0,
+          33
+        ],
+        "hp": [
+          0,
+          18
+        ],
+        "max_hp": [
+          0,
+          18
+        ],
+        "status": [
+          0
+        ],
+        "pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "event_flags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          48,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          255
+        ],
+        "items": [
+          148,
+          1,
+          255
+        ]
+      },
+      "after": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          17
+        ],
+        "wYCoord": [
+          15
+        ],
+        "wBackupWarpNumber": [
+          2
+        ],
+        "wBackupMapGroup": [
+          26
+        ],
+        "wBackupMapNumber": [
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          150
+        ],
+        "player_id": [
+          78,
+          122
+        ],
+        "level": [
+          3
+        ],
+        "experience": [
+          0,
+          0,
+          59
+        ],
+        "hp": [
+          0,
+          14
+        ],
+        "max_hp": [
+          0,
+          18
+        ],
+        "status": [
+          0
+        ],
+        "pp": [
+          35,
+          27,
+          0,
+          0
+        ],
+        "event_flags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          24,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          14,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          48,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "keys": [
+          25,
+          45,
+          50,
+          255
+        ],
+        "items": [
+          148,
+          1,
+          255
+        ]
+      }
+    },
+    "earned_map_with_normal_buttons": true,
+    "exterior_imps": [
+      {
+        "outcome": "victory",
+        "observed_native_enemies": [
+          {
+            "species": 74,
+            "level": 3
+          }
+        ],
+        "native_encounter_loads": 1,
+        "no_auto_heal": true,
+        "death_flag_set": true,
+        "copper_reward": 30,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            15
+          ],
+          "wXCoord": [
+            24
+          ],
+          "wYCoord": [
+            6
+          ],
+          "wBackupWarpNumber": [
+            3
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            194
+          ],
+          "player_id": [
+            78,
+            122
+          ],
+          "level": [
+            4
+          ],
+          "experience": [
+            0,
+            0,
+            124
+          ],
+          "hp": [
+            0,
+            20
+          ],
+          "max_hp": [
+            0,
+            20
+          ],
+          "status": [
+            0
+          ],
+          "pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "event_flags": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            224,
+            224,
+            255,
+            0,
+            20,
+            48,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            192,
+            79,
+            105,
+            57,
+            225,
+            16,
+            50,
+            25,
+            162,
+            29,
+            224,
+            239,
+            255,
+            255,
+            179,
+            106,
+            189,
+            30,
+            38,
+            0,
+            128,
+            68,
+            247,
+            204,
+            10,
+            0,
+            224,
+            11,
+            0,
+            48,
+            246,
+            225,
+            0,
+            32,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100,
+            120,
+            255
+          ],
+          "items": [
+            148,
+            1,
+            137,
+            1,
+            255
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            15
+          ],
+          "wXCoord": [
+            24
+          ],
+          "wYCoord": [
+            6
+          ],
+          "wBackupWarpNumber": [
+            3
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            224
+          ],
+          "player_id": [
+            78,
+            122
+          ],
+          "level": [
+            5
+          ],
+          "experience": [
+            0,
+            0,
+            160
+          ],
+          "hp": [
+            0,
+            18
+          ],
+          "max_hp": [
+            0,
+            23
+          ],
+          "status": [
+            0
+          ],
+          "pp": [
+            35,
+            27,
+            0,
+            0
+          ],
+          "event_flags": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            224,
+            224,
+            255,
+            0,
+            20,
+            48,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            192,
+            79,
+            105,
+            57,
+            225,
+            16,
+            50,
+            25,
+            162,
+            29,
+            224,
+            239,
+            255,
+            255,
+            179,
+            106,
+            189,
+            30,
+            38,
+            0,
+            128,
+            68,
+            247,
+            204,
+            10,
+            0,
+            224,
+            11,
+            0,
+            48,
+            246,
+            225,
+            0,
+            32,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100,
+            120,
+            255
+          ],
+          "items": [
+            148,
+            1,
+            137,
+            1,
+            255
+          ]
+        }
+      },
+      {
+        "outcome": "victory",
+        "observed_native_enemies": [
+          {
+            "species": 74,
+            "level": 3
+          }
+        ],
+        "native_encounter_loads": 1,
+        "no_auto_heal": true,
+        "death_flag_set": true,
+        "copper_reward": 30,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            15
+          ],
+          "wXCoord": [
+            26
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            224
+          ],
+          "player_id": [
+            78,
+            122
+          ],
+          "level": [
+            5
+          ],
+          "experience": [
+            0,
+            0,
+            160
+          ],
+          "hp": [
+            0,
+            23
+          ],
+          "max_hp": [
+            0,
+            23
+          ],
+          "status": [
+            0
+          ],
+          "pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "event_flags": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            224,
+            224,
+            255,
+            0,
+            20,
+            48,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            192,
+            79,
+            105,
+            57,
+            225,
+            16,
+            50,
+            25,
+            162,
+            29,
+            224,
+            239,
+            255,
+            255,
+            179,
+            106,
+            189,
+            30,
+            38,
+            0,
+            128,
+            68,
+            247,
+            204,
+            10,
+            0,
+            224,
+            11,
+            0,
+            48,
+            246,
+            225,
+            0,
+            32,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100,
+            120,
+            255
+          ],
+          "items": [
+            148,
+            1,
+            137,
+            1,
+            255
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            15
+          ],
+          "wXCoord": [
+            26
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            254
+          ],
+          "player_id": [
+            78,
+            122
+          ],
+          "level": [
+            5
+          ],
+          "experience": [
+            0,
+            0,
+            196
+          ],
+          "hp": [
+            0,
+            21
+          ],
+          "max_hp": [
+            0,
+            23
+          ],
+          "status": [
+            0
+          ],
+          "pp": [
+            35,
+            28,
+            0,
+            0
+          ],
+          "event_flags": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            224,
+            224,
+            255,
+            0,
+            20,
+            48,
+            1,
+            3,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            192,
+            79,
+            105,
+            57,
+            225,
+            16,
+            50,
+            25,
+            162,
+            29,
+            224,
+            239,
+            255,
+            255,
+            179,
+            106,
+            189,
+            30,
+            38,
+            0,
+            128,
+            68,
+            247,
+            204,
+            10,
+            0,
+            224,
+            11,
+            0,
+            48,
+            246,
+            225,
+            0,
+            32,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100,
+            120,
+            255
+          ],
+          "items": [
+            148,
+            1,
+            137,
+            1,
+            255
+          ]
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Uses the current compact map geography; requested seven-screen Valley layout is not implemented.",
+    "Linked room players are represented at their exact exterior return door, not their indoor walking coordinates.",
+    "Cave coordinates project onto the cave page; an active medallion also marks its actual Valley entrance.",
+    "8x8 markers may partially overlap at thumbnail scale; the green avatar has OAM priority.",
+    "Physical Chromatic has not been tested."
+  ],
+  "helper_returns_verified": 66,
+  "published_assets_untouched": true
+}

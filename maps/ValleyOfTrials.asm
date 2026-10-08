@@ -6,6 +6,9 @@
 	const VALLEY_GALGAR_MARKER
 	const VALLEY_HANAZUA_MARKER
 	const VALLEY_ZUREETHA_MARKER
+	; Append actors so the existing quest/marker object numbers remain stable.
+	const VALLEY_CAVE_APPROACH_IMP_1
+	const VALLEY_CAVE_APPROACH_IMP_2
 
 ValleyOfTrials_MapScripts:
 	def_scene_scripts
@@ -192,6 +195,62 @@ ValleyZureethaScript:
 .Close:
 	closetext
 	end
+
+; Red level-three familiars guard the approach, not the entrance warp itself.
+; Interaction and proximity share the same persistent retirement flag.
+ValleyCaveApproachImp1Script:
+	checkevent EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	iftrue .Done
+	faceplayer
+	loadwildmon GEODUDE, 3
+	loadmem wBattleType, BATTLETYPE_CANLOSE
+	startbattle
+	reloadmap
+	readmem wBattleResult
+	ifequal LOSE, .Lost
+	ifnotequal WIN, .Done
+	setevent EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	disappear VALLEY_CAVE_APPROACH_IMP_1
+	givemoney YOUR_MONEY, 30
+	opentext
+	writetext ValleyCaveApproachLootText
+	waitbutton
+	closetext
+.Done:
+	end
+.Lost:
+	callasm PeonRecoverFromDefeat
+	farsjump PeonHearthReturnScript
+
+ValleyCaveApproachImp2Script:
+	checkevent EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	iftrue .Done
+	faceplayer
+	loadwildmon GEODUDE, 3
+	loadmem wBattleType, BATTLETYPE_CANLOSE
+	startbattle
+	reloadmap
+	readmem wBattleResult
+	ifequal LOSE, .Lost
+	ifnotequal WIN, .Done
+	setevent EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	disappear VALLEY_CAVE_APPROACH_IMP_2
+	givemoney YOUR_MONEY, 30
+	opentext
+	writetext ValleyCaveApproachLootText
+	waitbutton
+	closetext
+.Done:
+	end
+.Lost:
+	callasm PeonRecoverFromDefeat
+	farsjump PeonHearthReturnScript
+
+ValleyCaveApproachLootText:
+	text "Vile familiar"
+	line "defeated!"
+	para "30 copper found."
+	done
 
 ValleySarkothScript:
 	checkevent EVENT_PEON_SARKOTH_DEAD
@@ -443,6 +502,10 @@ ValleyOfTrials_MapEvents:
 	coord_event 17, 20, -1, ValleySarkothScript
 	coord_event 16, 19, -1, ValleySarkothScript
 	coord_event 15, 20, -1, ValleySarkothScript
+	coord_event 24, 6, -1, ValleyCaveApproachImp1Script
+	coord_event 25, 7, -1, ValleyCaveApproachImp1Script
+	coord_event 26, 9, -1, ValleyCaveApproachImp2Script
+	coord_event 27, 8, -1, ValleyCaveApproachImp2Script
 	def_bg_events
 	bg_event 9, 17, BGEVENT_READ, PeonCactus3
 	bg_event 23, 9, BGEVENT_READ, PeonCactus2
@@ -455,3 +518,7 @@ ValleyOfTrials_MapEvents:
 	object_event 8, 9, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyOfTrialsGuideScript, EVENT_PEON_CACTUS_DONE
 	object_event 10, 18, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyHanazuaScript, EVENT_PEON_SARKOTH_DONE
 	object_event 6, 10, SPRITE_PEON_QUEST_3, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyZureethaScript, EVENT_PEON_MEDALLION_DONE
+	; OBJ6 is dedicated to red familiars on this quest-marker map. OBJ5 stays
+	; gray for active quests; the cave's existing palette allocation is unchanged.
+	object_event 25, 6, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp1Script, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	object_event 27, 9, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp2Script, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD

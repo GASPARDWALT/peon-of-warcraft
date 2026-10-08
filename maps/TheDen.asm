@@ -10,6 +10,10 @@
 	const THEDEN_LAZY_MARKER
 	const THEDEN_BOAR_WEST
 	const THEDEN_BOAR_SOUTH
+	const THEDEN_WARRIOR_MASTER
+	const THEDEN_WARLOCK_MASTER
+	const THEDEN_PROVISIONER
+	const THEDEN_COOK
 
 TheDen_MapScripts:
 	def_scene_scripts
@@ -388,12 +392,17 @@ TheDen_MapEvents:
 	object_event 18, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenBoarScript, EVENT_PEON_QUEST_DONE
 	object_event 6, 12, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
 	object_event 19, 15, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheDenScorpidScript, EVENT_PEON_SCORPID_DEFEATED
-	object_event 14, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenDuoknaScript, -1
+	object_event 14, 9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenDuoknaScript, -1
 	object_event 8, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, -1
 	object_event 5, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
 	object_event 8, 14, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
 	object_event 6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
 	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
+	; Append-only: saved actor indices 1-11 and all original positions stay stable.
+	object_event 3, 13, SPRITE_BRUNO, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenWarriorMasterScript, -1
+	object_event 3, 16, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheDenWarlockMasterScript, -1
+	object_event 8, 6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenProvisionerScript, -1
+	object_event 8, 7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenCookScript, -1
 
 TheDenGearRewardText:
 	text "BARBED CLUB found!"
@@ -406,13 +415,16 @@ TheDenGearRewardText:
 
 TheDenDuoknaScript:
 	faceplayer
+	setlasttalked THEDEN_VENDOR
 	opentext
 	writetext DuoknaGreetingText
+.Shop:
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
 	ifequal 1, .Water
 	ifequal 2, .Potion
+	ifequal 3, .Bread
 	sjump .Close
 .Water:
 	writetext DuoknaOfferText
@@ -436,6 +448,18 @@ TheDenDuoknaScript:
 	takemoney YOUR_MONEY, 25
 	writetext DuoknaPotionBoughtText
 	sjump .Wait
+.Bread:
+	writetext TheDenBreadOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	; Charge only after the full stack fits in the bag.
+	giveitem PEON_CAMP_BREAD, 5
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	writetext TheDenBreadBoughtText
+	sjump .Wait
 .Poor:
 	writetext DuoknaPoorText
 	sjump .Wait
@@ -448,24 +472,93 @@ TheDenDuoknaScript:
 	end
 .MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 2, 17, 9
+	menu_coords 0, 2, 17, 11
 	dw .MenuData
 	db 1 ; Water remains the default purchase.
 .MenuData:
 	db STATICMENU_CURSOR
-	db 3
+	db 4
 	db "SPRING WATER@"
 	db "MINOR POTION@"
+	db "TOUGH BREAD@"
 	db "CANCEL@"
+
+; The two unnamed camp roles share stock, not Duokna's identity.
+TheDenProvisionerScript:
+	faceplayer
+	setlasttalked THEDEN_PROVISIONER
+	opentext
+	writetext TheDenProvisionerText
+	sjump TheDenDuoknaScript.Shop
+
+TheDenCookScript:
+	faceplayer
+	setlasttalked THEDEN_COOK
+	opentext
+	writetext TheDenCookText
+	sjump TheDenDuoknaScript.Shop
+
+TheDenWarriorMasterScript:
+	faceplayer
+	setlasttalked THEDEN_WARRIOR_MASTER
+	opentext
+	writetext TheDenWarriorMasterText
+	waitbutton
+	closetext
+	end
+
+TheDenWarlockMasterScript:
+	faceplayer
+	setlasttalked THEDEN_WARLOCK_MASTER
+	opentext
+	writetext TheDenWarlockMasterText
+	waitbutton
+	closetext
+	end
+
+TheDenProvisionerText:
+	text "HORDE PROVISIONER"
+	para "<PLAYER>,"
+	line "pack supplies for"
+	cont "the road ahead."
+	done
+
+TheDenCookText:
+	text "CAMP COOK"
+	para "<PLAYER>,"
+	line "bread helps after"
+	cont "a hard day's work."
+	done
+
+TheDenWarriorMasterText:
+	text "MoCMoc Zogzog"
+	line "Warrior Master"
+	para "<PLAYER>,"
+	line "I train warriors."
+	para "You chose the"
+	line "Shaman's path."
+	para "Kento will guide"
+	line "your training."
+	done
+
+TheDenWarlockMasterText:
+	text "XASTHUR"
+	line "Warlock Master"
+	para "<PLAYER>,"
+	line "I teach warlocks."
+	para "Your totem marks"
+	line "a different path."
+	para "Return to Kento,"
+	line "Shaman apprentice."
+	done
+
 DuoknaGreetingText:
 	text "DUOKNA"
 	line "General Goods"
 	para "What do you need?"
 	done
 DuoknaOfferText:
-	text "DUOKNA"
-	line "General Goods"
-	para "SPRING WATER x5"
+	text "SPRING WATER x5"
 	line "25 copper. Buy?"
 	done
 DuoknaBoughtText:
@@ -480,6 +573,16 @@ DuoknaPotionOfferText:
 DuoknaPotionBoughtText:
 	text "Potion packed."
 	line "Safe travels!"
+	done
+TheDenBreadOfferText:
+	text "TOUGH BREAD x5"
+	line "25 copper. Buy?"
+	para "Restores 10 HP"
+	line "outside battle."
+	done
+TheDenBreadBoughtText:
+	text "Bread packed."
+	line "Eat after fights."
 	done
 DuoknaPoorText:
 	text "Not enough copper."

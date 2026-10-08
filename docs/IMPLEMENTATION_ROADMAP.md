@@ -31,3 +31,26 @@ This file describes the actual v0.2.3 scope and the remaining work. Large concep
 6. Validate real Chromatic SRAM/RTC and cartridge loading. Keep multiplayer/large parties outside this prototype phase.
 
 Each milestone must build, pass its relevant normal-input test, document save impact and include actual ROM captures. Use `PEON_DESIGN_RULES.md` for style, native dimensions, vocabulary and source-truth rules.
+
+## Valley visual preview after v0.2.3
+
+`releases/valley-preview/` contains the compatible playable preview and a separate
+art/audio gallery. See `VALLEY_PREVIEW_PLAYABLE.md` for controls and save transfer.
+
+- Native ochre cliffs, faceted boulders, Horde banners, palisades and brighter
+  paths; the existing scrolling regions remain in use.
+- Den provisioners, Tough Bread, locked Warrior/Warlock masters, a short guard
+  patrol and two persistent hostile cave guards.
+- Actual player portrait/life HUD with a compact crowded-view fallback; current
+  regional atlas player position and active quest objectives.
+- Original native boar and Lightning Bolt effects, with WAV previews. WoW sound
+  recordings were not available from the cloud and have not been auditioned.
+- Native-input emulator checks and a v0.2.3 battery-save upgrade, including
+  access to the new merchant alcove, pass on the packaged ROM.
+
+The next map milestone is the user's seven-screen Valley layout: preserve its
+mountain barriers, connect readable trails, place Hana'zua in zone 4 and Sarkoth
+in zone 5, and align the cave and fortified exit with zones 6 and 7. The exact
+drawn path reference is still pending. This geography and a combined Valley
+overview are not implemented in the preview. Mana and physical Chromatic tests
+also remain outstanding.

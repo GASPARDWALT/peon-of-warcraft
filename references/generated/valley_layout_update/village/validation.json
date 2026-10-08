@@ -1,0 +1,1391 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "method": "Fresh normal-button intro, refusals, purchases, quest reward, food, walking and battery restart.",
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "source_routes": {
+    "TheDen": {
+      "native_walkable_tiles_connected": 215,
+      "actors_approachable": 15,
+      "doors_and_exits_connected": 3
+    },
+    "ValleyOfTrials": {
+      "native_walkable_tiles_connected": 283,
+      "actors_approachable": 9,
+      "doors_and_exits_connected": 3
+    },
+    "DurotarRoad": {
+      "native_walkable_tiles_connected": 280,
+      "actors_approachable": 8,
+      "doors_and_exits_connected": 3
+    },
+    "SenjinVillage": {
+      "native_walkable_tiles_connected": 217,
+      "actors_approachable": 6,
+      "doors_and_exits_connected": 4
+    },
+    "RazorHill": {
+      "native_walkable_tiles_connected": 170,
+      "actors_approachable": 6,
+      "doors_and_exits_connected": 6
+    },
+    "OrgrimmarGate": {
+      "native_walkable_tiles_connected": 165,
+      "actors_approachable": 3,
+      "doors_and_exits_connected": 1
+    },
+    "BurningBladeCavern": {
+      "native_walkable_tiles_connected": 131,
+      "actors_approachable": 5,
+      "doors_and_exits_connected": 1
+    }
+  },
+  "capacity_guards": {
+    "Water": {
+      "capacity_success_before_charge": true,
+      "scope": "source audit"
+    },
+    "Potion": {
+      "capacity_success_before_charge": true,
+      "scope": "source audit"
+    },
+    "Bread": {
+      "capacity_success_before_charge": true,
+      "scope": "source audit"
+    }
+  },
+  "den_center_budget": {
+    "allocations": [
+      {
+        "sprite": 1,
+        "tile": 0,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 58,
+        "tile": 32,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 21,
+        "tile": 44,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 84,
+        "tile": 56,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 9,
+        "tile": 68,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 86,
+        "tile": 80,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 64,
+        "tile": 92,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 65,
+        "tile": 104,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 28,
+        "tile": 116,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 254,
+        "tile": 128,
+        "vram_bank": 0
+      },
+      {
+        "sprite": 253,
+        "tile": 132,
+        "vram_bank": 0
+      }
+    ],
+    "active_actor_structs": 11,
+    "on_screen_oam_entries": 40,
+    "player_walk_vram_matches": true,
+    "native_visible_oam_rejections": 0,
+    "native_fully_offscreen_oam_rejections": 20
+  },
+  "den_left_center_budget": {
+    "allocations": [
+      {
+        "sprite": 1,
+        "tile": 0,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 58,
+        "tile": 32,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 21,
+        "tile": 44,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 84,
+        "tile": 56,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 9,
+        "tile": 68,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 86,
+        "tile": 80,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 64,
+        "tile": 92,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 65,
+        "tile": 104,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 28,
+        "tile": 116,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 254,
+        "tile": 128,
+        "vram_bank": 0
+      },
+      {
+        "sprite": 253,
+        "tile": 132,
+        "vram_bank": 0
+      }
+    ],
+    "active_actor_structs": 13,
+    "on_screen_oam_entries": 40,
+    "player_walk_vram_matches": true,
+    "native_visible_oam_rejections": 0,
+    "native_fully_offscreen_oam_rejections": 60
+  },
+  "dense_camp_cold_restart": {
+    "passed": true,
+    "battery_bytes": 32768,
+    "before": {
+      "name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "party_count": [
+        1
+      ],
+      "party_species": [
+        66,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hero": [
+        66,
+        0,
+        1,
+        84,
+        0,
+        0,
+        78,
+        122,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        181,
+        171,
+        35,
+        30,
+        0,
+        0,
+        70,
+        0,
+        194,
+        1,
+        2,
+        0,
+        0,
+        0,
+        15,
+        0,
+        15,
+        0,
+        7,
+        0,
+        7,
+        0,
+        6,
+        0,
+        8,
+        0,
+        7
+      ],
+      "hero_name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "money": 50,
+      "items": [
+        148,
+        1
+      ],
+      "keys": [
+        25,
+        45,
+        50
+      ],
+      "peon_flags": {
+        "EVENT_PEON_BONK": true,
+        "EVENT_PEON_SHAMAN": true,
+        "EVENT_PEON_QUEST_ACCEPTED": false,
+        "EVENT_PEON_QUEST_DONE": false,
+        "EVENT_PEON_SCORPID_DEFEATED": false,
+        "EVENT_PEON_STING_ACCEPTED": false,
+        "EVENT_PEON_MAP_RECEIVED": false,
+        "EVENT_PEON_DISCOVERED_DEN": true,
+        "EVENT_PEON_DISCOVERED_VALLEY": false,
+        "EVENT_PEON_DISCOVERED_ROAD": false,
+        "EVENT_PEON_DISCOVERED_SENJIN": false,
+        "EVENT_PEON_DISCOVERED_RAZOR": false,
+        "EVENT_PEON_DISCOVERED_ORGRIMMAR": false,
+        "EVENT_PEON_DISCOVERED_CAVERN": false,
+        "EVENT_PEON_SMALL_BAG": false,
+        "EVENT_PEON_LARGE_BAG": false,
+        "EVENT_PEON_GEAR_REWARDED": false,
+        "EVENT_PEON_CACTUS_ACCEPTED": false,
+        "EVENT_PEON_CACTUS_1": false,
+        "EVENT_PEON_CACTUS_2": false,
+        "EVENT_PEON_CACTUS_3": false,
+        "EVENT_PEON_CACTUS_DONE": false,
+        "EVENT_PEON_LAZY_ACCEPTED": false,
+        "EVENT_PEON_LAZY_AWAKE": false,
+        "EVENT_PEON_LAZY_DONE": false,
+        "EVENT_PEON_CAVE_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_STRONG_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_FELSTALKER_DEAD": false,
+        "EVENT_PEON_CAVE_CULTIST_DEAD": false,
+        "EVENT_PEON_YARROG_DEAD": false,
+        "EVENT_PEON_SARKOTH_DEAD": false,
+        "EVENT_PEON_ROAD_TIGER_DEAD": false,
+        "EVENT_PEON_ROAD_RAPTOR_DEAD": false,
+        "EVENT_PEON_ROAD_HARPY_DEAD": false,
+        "EVENT_PEON_COAST_CRAWLER_DEAD": false,
+        "EVENT_PEON_MEDALLION_ACCEPTED": false,
+        "EVENT_PEON_MEDALLION_DONE": false,
+        "EVENT_PEON_SARKOTH_ACCEPTED": false,
+        "EVENT_PEON_SARKOTH_DONE": false,
+        "EVENT_PEON_ROCKBITER_BOUGHT": false,
+        "EVENT_PEON_EARTH_SHOCK_BOUGHT": false,
+        "EVENT_PEON_HEALING_WAVE_BOUGHT": false,
+        "EVENT_PEON_LIGHTNING_SHIELD_BOUGHT": false,
+        "EVENT_PEON_STRENGTH_TOTEM_BOUGHT": false,
+        "EVENT_PEON_PURGE_BOUGHT": false,
+        "EVENT_PEON_HEARTH_GRANTED": false,
+        "EVENT_PEON_HOME_DEN": false,
+        "EVENT_PEON_HOME_SENJIN": false,
+        "EVENT_PEON_HOME_RAZOR": false,
+        "EVENT_PEON_CUTTING_TURNED_IN": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_DEAD": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_FIRST": false,
+        "EVENT_PEON_FLAME_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FROST_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FIRE_SHOCK_BOUGHT": false,
+        "EVENT_PEON_WINDFURY_BOUGHT": false,
+        "EVENT_PEON_CHAIN_LIGHTNING_BOUGHT": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD": false
+      },
+      "map": 14,
+      "position": [
+        8,
+        12
+      ]
+    },
+    "after": {
+      "name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "party_count": [
+        1
+      ],
+      "party_species": [
+        66,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hero": [
+        66,
+        0,
+        1,
+        84,
+        0,
+        0,
+        78,
+        122,
+        0,
+        0,
+        10,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        181,
+        171,
+        35,
+        30,
+        0,
+        0,
+        70,
+        0,
+        194,
+        1,
+        2,
+        0,
+        0,
+        0,
+        15,
+        0,
+        15,
+        0,
+        7,
+        0,
+        7,
+        0,
+        6,
+        0,
+        8,
+        0,
+        7
+      ],
+      "hero_name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "money": 50,
+      "items": [
+        148,
+        1
+      ],
+      "keys": [
+        25,
+        45,
+        50
+      ],
+      "peon_flags": {
+        "EVENT_PEON_BONK": true,
+        "EVENT_PEON_SHAMAN": true,
+        "EVENT_PEON_QUEST_ACCEPTED": false,
+        "EVENT_PEON_QUEST_DONE": false,
+        "EVENT_PEON_SCORPID_DEFEATED": false,
+        "EVENT_PEON_STING_ACCEPTED": false,
+        "EVENT_PEON_MAP_RECEIVED": false,
+        "EVENT_PEON_DISCOVERED_DEN": true,
+        "EVENT_PEON_DISCOVERED_VALLEY": false,
+        "EVENT_PEON_DISCOVERED_ROAD": false,
+        "EVENT_PEON_DISCOVERED_SENJIN": false,
+        "EVENT_PEON_DISCOVERED_RAZOR": false,
+        "EVENT_PEON_DISCOVERED_ORGRIMMAR": false,
+        "EVENT_PEON_DISCOVERED_CAVERN": false,
+        "EVENT_PEON_SMALL_BAG": false,
+        "EVENT_PEON_LARGE_BAG": false,
+        "EVENT_PEON_GEAR_REWARDED": false,
+        "EVENT_PEON_CACTUS_ACCEPTED": false,
+        "EVENT_PEON_CACTUS_1": false,
+        "EVENT_PEON_CACTUS_2": false,
+        "EVENT_PEON_CACTUS_3": false,
+        "EVENT_PEON_CACTUS_DONE": false,
+        "EVENT_PEON_LAZY_ACCEPTED": false,
+        "EVENT_PEON_LAZY_AWAKE": false,
+        "EVENT_PEON_LAZY_DONE": false,
+        "EVENT_PEON_CAVE_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_STRONG_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_FELSTALKER_DEAD": false,
+        "EVENT_PEON_CAVE_CULTIST_DEAD": false,
+        "EVENT_PEON_YARROG_DEAD": false,
+        "EVENT_PEON_SARKOTH_DEAD": false,
+        "EVENT_PEON_ROAD_TIGER_DEAD": false,
+        "EVENT_PEON_ROAD_RAPTOR_DEAD": false,
+        "EVENT_PEON_ROAD_HARPY_DEAD": false,
+        "EVENT_PEON_COAST_CRAWLER_DEAD": false,
+        "EVENT_PEON_MEDALLION_ACCEPTED": false,
+        "EVENT_PEON_MEDALLION_DONE": false,
+        "EVENT_PEON_SARKOTH_ACCEPTED": false,
+        "EVENT_PEON_SARKOTH_DONE": false,
+        "EVENT_PEON_ROCKBITER_BOUGHT": false,
+        "EVENT_PEON_EARTH_SHOCK_BOUGHT": false,
+        "EVENT_PEON_HEALING_WAVE_BOUGHT": false,
+        "EVENT_PEON_LIGHTNING_SHIELD_BOUGHT": false,
+        "EVENT_PEON_STRENGTH_TOTEM_BOUGHT": false,
+        "EVENT_PEON_PURGE_BOUGHT": false,
+        "EVENT_PEON_HEARTH_GRANTED": false,
+        "EVENT_PEON_HOME_DEN": false,
+        "EVENT_PEON_HOME_SENJIN": false,
+        "EVENT_PEON_HOME_RAZOR": false,
+        "EVENT_PEON_CUTTING_TURNED_IN": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_DEAD": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_FIRST": false,
+        "EVENT_PEON_FLAME_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FROST_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FIRE_SHOCK_BOUGHT": false,
+        "EVENT_PEON_WINDFURY_BOUGHT": false,
+        "EVENT_PEON_CHAIN_LIGHTNING_BOUGHT": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD": false
+      },
+      "map": 14,
+      "position": [
+        8,
+        12
+      ]
+    }
+  },
+  "den_dense_continue_budget": {
+    "allocations": [
+      {
+        "sprite": 1,
+        "tile": 0,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 58,
+        "tile": 32,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 21,
+        "tile": 44,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 84,
+        "tile": 56,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 9,
+        "tile": 68,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 86,
+        "tile": 80,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 64,
+        "tile": 92,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 65,
+        "tile": 104,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 28,
+        "tile": 116,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 254,
+        "tile": 128,
+        "vram_bank": 0
+      },
+      {
+        "sprite": 253,
+        "tile": 132,
+        "vram_bank": 0
+      }
+    ],
+    "active_actor_structs": 13,
+    "on_screen_oam_entries": 40,
+    "player_walk_vram_matches": true,
+    "native_visible_oam_rejections": 0,
+    "native_fully_offscreen_oam_rejections": 60
+  },
+  "dense_continue_all_expected_actor_indices": [
+    1,
+    2,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15
+  ],
+  "warrior_refusal": {
+    "dialogue_only": true,
+    "state_unchanged": true,
+    "art": {
+      "map_actor": 12,
+      "sprite": "SPRITE_BRUNO",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": false
+    },
+    "portrait": {
+      "role": "warrior",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "warlock_refusal": {
+    "dialogue_only": true,
+    "state_unchanged": true,
+    "art": {
+      "map_actor": 13,
+      "sprite": "SPRITE_MORTY",
+      "palette": 1,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": false
+    },
+    "portrait": {
+      "role": "warlock",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "master_corner_budget": {
+    "allocations": [
+      {
+        "sprite": 1,
+        "tile": 0,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 58,
+        "tile": 32,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 21,
+        "tile": 44,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 84,
+        "tile": 56,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 9,
+        "tile": 68,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 86,
+        "tile": 80,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 64,
+        "tile": 92,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 65,
+        "tile": 104,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 28,
+        "tile": 116,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 254,
+        "tile": 128,
+        "vram_bank": 0
+      },
+      {
+        "sprite": 253,
+        "tile": 132,
+        "vram_bank": 0
+      }
+    ],
+    "active_actor_structs": 8,
+    "on_screen_oam_entries": 40,
+    "player_walk_vram_matches": true,
+    "native_visible_oam_rejections": 0,
+    "native_fully_offscreen_oam_rejections": 0
+  },
+  "merchant_alcove_budget": {
+    "allocations": [
+      {
+        "sprite": 1,
+        "tile": 0,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 58,
+        "tile": 32,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 21,
+        "tile": 44,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 84,
+        "tile": 56,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 9,
+        "tile": 68,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 86,
+        "tile": 80,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 64,
+        "tile": 92,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 65,
+        "tile": 104,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 28,
+        "tile": 116,
+        "vram_bank": 1
+      },
+      {
+        "sprite": 254,
+        "tile": 128,
+        "vram_bank": 0
+      },
+      {
+        "sprite": 253,
+        "tile": 132,
+        "vram_bank": 0
+      }
+    ],
+    "active_actor_structs": 6,
+    "on_screen_oam_entries": 32,
+    "player_walk_vram_matches": true,
+    "native_visible_oam_rejections": 0,
+    "native_fully_offscreen_oam_rejections": 0
+  },
+  "bread_purchase": {
+    "vendor_actor": 14,
+    "choice": 3,
+    "before": {
+      "copper": 50,
+      "bread": 0,
+      "potions": 0,
+      "water": 0
+    },
+    "after": {
+      "copper": 25,
+      "bread": 5,
+      "potions": 0,
+      "water": 0
+    },
+    "art": {
+      "map_actor": 14,
+      "sprite": "SPRITE_GENTLEMAN",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    },
+    "portrait": {
+      "role": "orc_vendor",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "potion_purchase": {
+    "vendor_actor": 15,
+    "choice": 2,
+    "before": {
+      "copper": 25,
+      "bread": 5,
+      "potions": 0,
+      "water": 0
+    },
+    "after": {
+      "copper": 0,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "art": {
+      "map_actor": 15,
+      "sprite": "SPRITE_GENTLEMAN",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    },
+    "portrait": {
+      "role": "orc_vendor",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "insufficient_funds": {
+    "vendor_actor": 6,
+    "choice": 1,
+    "before": {
+      "copper": 0,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "after": {
+      "copper": 0,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "art": {
+      "map_actor": 6,
+      "sprite": "SPRITE_GENTLEMAN",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    },
+    "portrait": {
+      "role": "orc_vendor",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "full_hp_food_not_wasted": {
+    "before": {
+      "hp": 15,
+      "max_hp": 15,
+      "quantity": 5,
+      "copper": 0
+    },
+    "after": {
+      "hp": 15,
+      "max_hp": 15,
+      "quantity": 5,
+      "copper": 0
+    },
+    "normal_buttons_only": true
+  },
+  "cancel_no_charge": {
+    "vendor_actor": 6,
+    "choice": 4,
+    "before": {
+      "copper": 100,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "after": {
+      "copper": 100,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "art": {
+      "map_actor": 6,
+      "sprite": "SPRITE_GENTLEMAN",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    },
+    "portrait": {
+      "role": "orc_vendor",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "water_default_purchase": {
+    "vendor_actor": 6,
+    "choice": 1,
+    "before": {
+      "copper": 100,
+      "bread": 5,
+      "potions": 1,
+      "water": 0
+    },
+    "after": {
+      "copper": 75,
+      "bread": 5,
+      "potions": 1,
+      "water": 5
+    },
+    "art": {
+      "map_actor": 6,
+      "sprite": "SPRITE_GENTLEMAN",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    },
+    "portrait": {
+      "role": "orc_vendor",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "battle_food_refused_without_turn": {
+    "before": {
+      "active": 0,
+      "action": 0,
+      "party_hp": 15,
+      "battle_hp": 15,
+      "max_hp": 15,
+      "party_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "battle_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "totems": 1,
+      "potions": 1,
+      "water": 5,
+      "enemy_hp": 11
+    },
+    "after": {
+      "active": 0,
+      "action": 0,
+      "party_hp": 15,
+      "battle_hp": 15,
+      "max_hp": 15,
+      "party_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "battle_pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "totems": 1,
+      "potions": 1,
+      "water": 5,
+      "enemy_hp": 11
+    },
+    "enemy_move_count": 0,
+    "consumes_turn": false
+  },
+  "natural_injury": {
+    "label": "boar_before_food",
+    "outcome": 0,
+    "dead": true,
+    "no_auto_heal": true,
+    "encounter_loads_during_fight": 0,
+    "level_after": 3,
+    "hp_after": [
+      0,
+      12
+    ],
+    "money_after": 75
+  },
+  "food_heals_wounded_hero": {
+    "before": {
+      "hp": 12,
+      "max_hp": 18,
+      "quantity": 5,
+      "copper": 75
+    },
+    "after": {
+      "hp": 18,
+      "max_hp": 18,
+      "quantity": 4,
+      "copper": 75
+    },
+    "normal_buttons_only": true
+  },
+  "guard_patrol": {
+    "observed_tiles": [
+      [
+        13,
+        8
+      ],
+      [
+        14,
+        8
+      ],
+      [
+        15,
+        8
+      ]
+    ],
+    "radius": 1,
+    "blocked_doors": false,
+    "north_south_and_inn_paths_walked": true,
+    "art": {
+      "map_actor": 6,
+      "sprite": "SPRITE_OFFICER",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": true
+    }
+  },
+  "cold_restart": {
+    "passed": true,
+    "battery_bytes": 32768,
+    "before": {
+      "name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "party_count": [
+        1
+      ],
+      "party_species": [
+        66,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hero": [
+        66,
+        0,
+        1,
+        84,
+        0,
+        0,
+        78,
+        122,
+        0,
+        0,
+        33,
+        0,
+        30,
+        0,
+        35,
+        0,
+        25,
+        0,
+        10,
+        0,
+        25,
+        181,
+        171,
+        32,
+        30,
+        0,
+        0,
+        80,
+        0,
+        194,
+        1,
+        3,
+        0,
+        0,
+        0,
+        18,
+        0,
+        18,
+        0,
+        8,
+        0,
+        8,
+        0,
+        7,
+        0,
+        9,
+        0,
+        8
+      ],
+      "hero_name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "money": 75,
+      "items": [
+        148,
+        1,
+        149,
+        4,
+        18,
+        1,
+        46,
+        5
+      ],
+      "keys": [
+        25,
+        45,
+        50
+      ],
+      "peon_flags": {
+        "EVENT_PEON_BONK": true,
+        "EVENT_PEON_SHAMAN": true,
+        "EVENT_PEON_QUEST_ACCEPTED": true,
+        "EVENT_PEON_QUEST_DONE": true,
+        "EVENT_PEON_SCORPID_DEFEATED": false,
+        "EVENT_PEON_STING_ACCEPTED": false,
+        "EVENT_PEON_MAP_RECEIVED": false,
+        "EVENT_PEON_DISCOVERED_DEN": true,
+        "EVENT_PEON_DISCOVERED_VALLEY": true,
+        "EVENT_PEON_DISCOVERED_ROAD": true,
+        "EVENT_PEON_DISCOVERED_SENJIN": false,
+        "EVENT_PEON_DISCOVERED_RAZOR": true,
+        "EVENT_PEON_DISCOVERED_ORGRIMMAR": true,
+        "EVENT_PEON_DISCOVERED_CAVERN": false,
+        "EVENT_PEON_SMALL_BAG": false,
+        "EVENT_PEON_LARGE_BAG": false,
+        "EVENT_PEON_GEAR_REWARDED": false,
+        "EVENT_PEON_CACTUS_ACCEPTED": false,
+        "EVENT_PEON_CACTUS_1": false,
+        "EVENT_PEON_CACTUS_2": false,
+        "EVENT_PEON_CACTUS_3": false,
+        "EVENT_PEON_CACTUS_DONE": false,
+        "EVENT_PEON_LAZY_ACCEPTED": true,
+        "EVENT_PEON_LAZY_AWAKE": true,
+        "EVENT_PEON_LAZY_DONE": true,
+        "EVENT_PEON_CAVE_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_STRONG_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_FELSTALKER_DEAD": false,
+        "EVENT_PEON_CAVE_CULTIST_DEAD": false,
+        "EVENT_PEON_YARROG_DEAD": false,
+        "EVENT_PEON_SARKOTH_DEAD": false,
+        "EVENT_PEON_ROAD_TIGER_DEAD": false,
+        "EVENT_PEON_ROAD_RAPTOR_DEAD": false,
+        "EVENT_PEON_ROAD_HARPY_DEAD": false,
+        "EVENT_PEON_COAST_CRAWLER_DEAD": false,
+        "EVENT_PEON_MEDALLION_ACCEPTED": false,
+        "EVENT_PEON_MEDALLION_DONE": false,
+        "EVENT_PEON_SARKOTH_ACCEPTED": false,
+        "EVENT_PEON_SARKOTH_DONE": false,
+        "EVENT_PEON_ROCKBITER_BOUGHT": false,
+        "EVENT_PEON_EARTH_SHOCK_BOUGHT": false,
+        "EVENT_PEON_HEALING_WAVE_BOUGHT": false,
+        "EVENT_PEON_LIGHTNING_SHIELD_BOUGHT": false,
+        "EVENT_PEON_STRENGTH_TOTEM_BOUGHT": false,
+        "EVENT_PEON_PURGE_BOUGHT": false,
+        "EVENT_PEON_HEARTH_GRANTED": false,
+        "EVENT_PEON_HOME_DEN": false,
+        "EVENT_PEON_HOME_SENJIN": false,
+        "EVENT_PEON_HOME_RAZOR": false,
+        "EVENT_PEON_CUTTING_TURNED_IN": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_DEAD": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_FIRST": false,
+        "EVENT_PEON_FLAME_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FROST_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FIRE_SHOCK_BOUGHT": false,
+        "EVENT_PEON_WINDFURY_BOUGHT": false,
+        "EVENT_PEON_CHAIN_LIGHTNING_BOUGHT": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD": false
+      },
+      "map": 14,
+      "position": [
+        12,
+        9
+      ]
+    },
+    "after": {
+      "name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "party_count": [
+        1
+      ],
+      "party_species": [
+        66,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hero": [
+        66,
+        0,
+        1,
+        84,
+        0,
+        0,
+        78,
+        122,
+        0,
+        0,
+        33,
+        0,
+        30,
+        0,
+        35,
+        0,
+        25,
+        0,
+        10,
+        0,
+        25,
+        181,
+        171,
+        32,
+        30,
+        0,
+        0,
+        80,
+        0,
+        194,
+        1,
+        3,
+        0,
+        0,
+        0,
+        18,
+        0,
+        18,
+        0,
+        8,
+        0,
+        8,
+        0,
+        7,
+        0,
+        9,
+        0,
+        8
+      ],
+      "hero_name": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "money": 75,
+      "items": [
+        148,
+        1,
+        149,
+        4,
+        18,
+        1,
+        46,
+        5
+      ],
+      "keys": [
+        25,
+        45,
+        50
+      ],
+      "peon_flags": {
+        "EVENT_PEON_BONK": true,
+        "EVENT_PEON_SHAMAN": true,
+        "EVENT_PEON_QUEST_ACCEPTED": true,
+        "EVENT_PEON_QUEST_DONE": true,
+        "EVENT_PEON_SCORPID_DEFEATED": false,
+        "EVENT_PEON_STING_ACCEPTED": false,
+        "EVENT_PEON_MAP_RECEIVED": false,
+        "EVENT_PEON_DISCOVERED_DEN": true,
+        "EVENT_PEON_DISCOVERED_VALLEY": true,
+        "EVENT_PEON_DISCOVERED_ROAD": true,
+        "EVENT_PEON_DISCOVERED_SENJIN": false,
+        "EVENT_PEON_DISCOVERED_RAZOR": true,
+        "EVENT_PEON_DISCOVERED_ORGRIMMAR": true,
+        "EVENT_PEON_DISCOVERED_CAVERN": false,
+        "EVENT_PEON_SMALL_BAG": false,
+        "EVENT_PEON_LARGE_BAG": false,
+        "EVENT_PEON_GEAR_REWARDED": false,
+        "EVENT_PEON_CACTUS_ACCEPTED": false,
+        "EVENT_PEON_CACTUS_1": false,
+        "EVENT_PEON_CACTUS_2": false,
+        "EVENT_PEON_CACTUS_3": false,
+        "EVENT_PEON_CACTUS_DONE": false,
+        "EVENT_PEON_LAZY_ACCEPTED": true,
+        "EVENT_PEON_LAZY_AWAKE": true,
+        "EVENT_PEON_LAZY_DONE": true,
+        "EVENT_PEON_CAVE_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_STRONG_IMP_DEAD": false,
+        "EVENT_PEON_CAVE_FELSTALKER_DEAD": false,
+        "EVENT_PEON_CAVE_CULTIST_DEAD": false,
+        "EVENT_PEON_YARROG_DEAD": false,
+        "EVENT_PEON_SARKOTH_DEAD": false,
+        "EVENT_PEON_ROAD_TIGER_DEAD": false,
+        "EVENT_PEON_ROAD_RAPTOR_DEAD": false,
+        "EVENT_PEON_ROAD_HARPY_DEAD": false,
+        "EVENT_PEON_COAST_CRAWLER_DEAD": false,
+        "EVENT_PEON_MEDALLION_ACCEPTED": false,
+        "EVENT_PEON_MEDALLION_DONE": false,
+        "EVENT_PEON_SARKOTH_ACCEPTED": false,
+        "EVENT_PEON_SARKOTH_DONE": false,
+        "EVENT_PEON_ROCKBITER_BOUGHT": false,
+        "EVENT_PEON_EARTH_SHOCK_BOUGHT": false,
+        "EVENT_PEON_HEALING_WAVE_BOUGHT": false,
+        "EVENT_PEON_LIGHTNING_SHIELD_BOUGHT": false,
+        "EVENT_PEON_STRENGTH_TOTEM_BOUGHT": false,
+        "EVENT_PEON_PURGE_BOUGHT": false,
+        "EVENT_PEON_HEARTH_GRANTED": false,
+        "EVENT_PEON_HOME_DEN": false,
+        "EVENT_PEON_HOME_SENJIN": false,
+        "EVENT_PEON_HOME_RAZOR": false,
+        "EVENT_PEON_CUTTING_TURNED_IN": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_DEAD": false,
+        "EVENT_PEON_ROAD_SCORPID_PACK_FIRST": false,
+        "EVENT_PEON_FLAME_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FROST_SHOCK_BOUGHT": false,
+        "EVENT_PEON_FIRE_SHOCK_BOUGHT": false,
+        "EVENT_PEON_WINDFURY_BOUGHT": false,
+        "EVENT_PEON_CHAIN_LIGHTNING_BOUGHT": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD": false,
+        "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD": false
+      },
+      "map": 14,
+      "position": [
+        12,
+        9
+      ]
+    }
+  },
+  "masters_still_locked_after_restart": {
+    "dialogue_only": true,
+    "state_unchanged": true,
+    "art": {
+      "map_actor": 12,
+      "sprite": "SPRITE_BRUNO",
+      "palette": 2,
+      "standing_graphics_match": true,
+      "walking_graphics_checked": false
+    },
+    "portrait": {
+      "role": "warrior",
+      "rgb555_matches": true,
+      "vram_matches": true,
+      "tile_attributes_match": true
+    }
+  },
+  "all_checks_passed": true
+}

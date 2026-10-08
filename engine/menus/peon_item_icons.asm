@@ -77,6 +77,8 @@ PeonDrawInventoryItemIconFromC::
 	ret
 
 PeonInventoryItemIconLookup:
+	db PEON_CAMP_BREAD
+	dw PeonItemIconCampBreadGFX, PeonItemIconCampBreadPalette
 	db POTION
 	dw PeonItemIconMinorHealingPotionGFX, PeonItemIconMinorHealingPotionPalette
 	db FRESH_WATER
@@ -336,3 +338,10 @@ PeonItemIconPurgeGFX:
 PeonItemIconPurgePalette:
 	INCLUDE "gfx/pack/peon_item_icons/purge.pal"
 	assert @ - PeonItemIconPurgePalette == 1 palettes
+
+PeonItemIconCampBreadGFX:
+	INCBIN "gfx/pack/peon_food/bread.2bpp"
+	assert @ - PeonItemIconCampBreadGFX == 4 * LEN_2BPP_TILE
+PeonItemIconCampBreadPalette:
+	INCLUDE "gfx/pack/peon_food/bread.pal"
+	assert @ - PeonItemIconCampBreadPalette == 1 palettes

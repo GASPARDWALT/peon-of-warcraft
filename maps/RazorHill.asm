@@ -163,4 +163,6 @@ RazorHill_MapEvents:
 	object_event 16, 10, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillJarkScript, -1
 	object_event 8, 16, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillOrgnilScript, -1
 	object_event 16, 16, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillThotarScript, -1
-	object_event 14, 8, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillGruntScript, -1
+	; A one-tile horizontal patrol stays clear of roads, doors and other NPCs.
+	; InitRadius adds a sentinel: prospective steps at +/-2 are rejected.
+	object_event 14, 8, SPRITE_OFFICER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillGruntScript, -1

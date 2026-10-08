@@ -1,0 +1,1391 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "source_rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+  "normal_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "all_checks_passed": true,
+  "scope": "Real published v0.2.3 battery to current Valley preview; no Chromatic hardware test.",
+  "source_build": {
+    "source_commit": "aa2e27e24d42c61d65dce6546d4900cb5400ce59",
+    "source_rom_sha256": "d34ec40ef60af1ec90a946162254b837517867175654b0c6e282260fb91c4aae",
+    "published_v023_reproduced_exactly": true,
+    "compiled_in_isolated_directory": true,
+    "root_make_or_clean_invoked": false,
+    "source_observers_use_rebuilt_old_symbols": true
+  },
+  "all_original_saved_event_indices_preserved": true,
+  "source_native_combat": {
+    "normal_buttons_only": true,
+    "actual_native_moves_chosen": [
+      1,
+      84
+    ],
+    "victory_death_flag": true,
+    "actual_wounds_and_spent_charges": true,
+    "before": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        18
+      ],
+      "wYCoord": [
+        13
+      ],
+      "wBackupWarpNumber": [
+        0
+      ],
+      "wBackupMapGroup": [
+        0
+      ],
+      "wBackupMapNumber": [
+        0
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        50
+      ],
+      "player_id": [
+        78,
+        122
+      ],
+      "level": [
+        2
+      ],
+      "experience": [
+        0,
+        0,
+        10
+      ],
+      "hp": [
+        0,
+        14
+      ],
+      "max_hp": [
+        0,
+        14
+      ],
+      "status": [
+        0
+      ],
+      "pp": [
+        35,
+        30,
+        0,
+        0
+      ],
+      "event_flags": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        144,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        192,
+        79,
+        105,
+        57,
+        225,
+        16,
+        50,
+        25,
+        162,
+        29,
+        224,
+        239,
+        255,
+        255,
+        179,
+        106,
+        189,
+        30,
+        38,
+        0,
+        128,
+        68,
+        247,
+        204,
+        10,
+        0,
+        224,
+        11,
+        0,
+        48,
+        246,
+        225,
+        0,
+        32,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        25,
+        45,
+        50,
+        255
+      ],
+      "items": [
+        148,
+        1,
+        255
+      ]
+    },
+    "after": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        18
+      ],
+      "wYCoord": [
+        13
+      ],
+      "wBackupWarpNumber": [
+        0
+      ],
+      "wBackupMapGroup": [
+        0
+      ],
+      "wBackupMapNumber": [
+        0
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        50
+      ],
+      "player_id": [
+        78,
+        122
+      ],
+      "level": [
+        2
+      ],
+      "experience": [
+        0,
+        0,
+        18
+      ],
+      "hp": [
+        0,
+        11
+      ],
+      "max_hp": [
+        0,
+        14
+      ],
+      "status": [
+        0
+      ],
+      "pp": [
+        34,
+        29,
+        0,
+        0
+      ],
+      "event_flags": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        144,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        192,
+        79,
+        105,
+        57,
+        225,
+        16,
+        50,
+        25,
+        162,
+        29,
+        224,
+        239,
+        255,
+        255,
+        179,
+        106,
+        189,
+        30,
+        38,
+        0,
+        128,
+        68,
+        247,
+        204,
+        10,
+        0,
+        224,
+        11,
+        0,
+        48,
+        246,
+        225,
+        0,
+        32,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        25,
+        45,
+        50,
+        255
+      ],
+      "items": [
+        148,
+        1,
+        255
+      ]
+    }
+  },
+  "real_source_battery_sha256": "d5d3a8fb19b4aa85d66b19148c8ee2eeea0ef6417b3206a8e49e1e4d4dbc2a1c",
+  "native_battery_bytes": 32768,
+  "continue_preservation": {
+    "all_256_event_bytes_unchanged": true,
+    "name_id_location_kit_keys_copper_xp_level_health_status_pp_preserved": true,
+    "boar_death_preserved_and_new_imp_flags_unset": true,
+    "state_before_and_after": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        12
+      ],
+      "wYCoord": [
+        9
+      ],
+      "wBackupWarpNumber": [
+        0
+      ],
+      "wBackupMapGroup": [
+        0
+      ],
+      "wBackupMapNumber": [
+        0
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        50
+      ],
+      "player_id": [
+        78,
+        122
+      ],
+      "level": [
+        2
+      ],
+      "experience": [
+        0,
+        0,
+        18
+      ],
+      "hp": [
+        0,
+        11
+      ],
+      "max_hp": [
+        0,
+        14
+      ],
+      "status": [
+        0
+      ],
+      "pp": [
+        34,
+        29,
+        0,
+        0
+      ],
+      "event_flags": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        24,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        64,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        16,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        144,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        192,
+        79,
+        105,
+        57,
+        225,
+        16,
+        50,
+        25,
+        162,
+        29,
+        224,
+        239,
+        255,
+        255,
+        179,
+        106,
+        189,
+        30,
+        38,
+        0,
+        128,
+        68,
+        247,
+        204,
+        10,
+        0,
+        224,
+        11,
+        0,
+        48,
+        246,
+        225,
+        0,
+        32,
+        128,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "keys": [
+        25,
+        45,
+        50,
+        255
+      ],
+      "items": [
+        148,
+        1,
+        255
+      ]
+    }
+  },
+  "deliberate_visual_changes": [
+    {
+      "actor_index": 6,
+      "role": "Duokna vendor",
+      "old_sprite": "SPRITE_FISHER",
+      "new_sprite": "SPRITE_GENTLEMAN",
+      "index_position_script_event_preserved": true
+    }
+  ],
+  "current_actor_reload": {
+    "all_fifteen_actors_reloaded_from_current_map": true,
+    "old_eleven_indices_and_coordinates_preserved": true,
+    "actor_scripts": [
+      {
+        "index": 1,
+        "script": "TheDenQuestScript",
+        "current_pointer": [
+          146,
+          77
+        ]
+      },
+      {
+        "index": 2,
+        "script": "TheDenQuestScript",
+        "current_pointer": [
+          146,
+          77
+        ]
+      },
+      {
+        "index": 3,
+        "script": "TheDenBoarScript",
+        "current_pointer": [
+          85,
+          78
+        ]
+      },
+      {
+        "index": 4,
+        "script": "TheDenKentoScript",
+        "current_pointer": [
+          164,
+          78
+        ]
+      },
+      {
+        "index": 5,
+        "script": "TheDenScorpidScript",
+        "current_pointer": [
+          65,
+          79
+        ]
+      },
+      {
+        "index": 6,
+        "script": "TheDenDuoknaScript",
+        "current_pointer": [
+          217,
+          85
+        ]
+      },
+      {
+        "index": 7,
+        "script": "TheDenForemanScript",
+        "current_pointer": [
+          75,
+          89
+        ]
+      },
+      {
+        "index": 8,
+        "script": "TheDenLazyPeonScript",
+        "current_pointer": [
+          158,
+          89
+        ]
+      },
+      {
+        "index": 9,
+        "script": "TheDenForemanScript",
+        "current_pointer": [
+          75,
+          89
+        ]
+      },
+      {
+        "index": 10,
+        "script": "TheDenNeutralBoarScript",
+        "current_pointer": [
+          207,
+          89
+        ]
+      },
+      {
+        "index": 11,
+        "script": "TheDenNeutralBoarScript",
+        "current_pointer": [
+          207,
+          89
+        ]
+      },
+      {
+        "index": 12,
+        "script": "TheDenWarriorMasterScript",
+        "current_pointer": [
+          174,
+          86
+        ]
+      },
+      {
+        "index": 13,
+        "script": "TheDenWarlockMasterScript",
+        "current_pointer": [
+          184,
+          86
+        ]
+      },
+      {
+        "index": 14,
+        "script": "TheDenProvisionerScript",
+        "current_pointer": [
+          154,
+          86
+        ]
+      },
+      {
+        "index": 15,
+        "script": "TheDenCookScript",
+        "current_pointer": [
+          164,
+          86
+        ]
+      }
+    ]
+  },
+  "old_saved_kento_script_pointer": [
+    164,
+    78
+  ],
+  "current_kento_script_pointer": [
+    164,
+    78
+  ],
+  "terrain_setup_checkpoints": [
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 37
+    },
+    {
+      "entry": "LoadContinueMapObjects",
+      "block_at_4_3": 37
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    },
+    {
+      "entry": "BufferScreen",
+      "block_at_4_3": 8
+    }
+  ],
+  "terrain_collision_after_continue": [
+    "FLOOR",
+    "FLOOR"
+  ],
+  "current_terrain_after_legacy_continue": {
+    "ordinary_walked_cells": [
+      [
+        9,
+        7
+      ],
+      [
+        9,
+        6
+      ]
+    ],
+    "live_padded_collision_cells": [
+      "FLOOR",
+      "FLOOR"
+    ],
+    "current_merchant_alcove_loaded_over_old_buffered_view": true,
+    "no_purchase_or_ram_edit": true
+  },
+  "warrior_master": {
+    "appended_actor_index": 12,
+    "ordinary_walk_and_dialogue": true,
+    "character_kit_copper_xp_health_charges_and_flags_unchanged": true
+  },
+  "warlock_master": {
+    "appended_actor_index": 13,
+    "ordinary_walk_and_dialogue": true,
+    "character_kit_copper_xp_health_charges_and_flags_unchanged": true
+  },
+  "kento": {
+    "existing_kento_reachable": true,
+    "native_trainer_opened_and_cancelled": true,
+    "preowned_earth_totem_not_duplicated": true,
+    "no_kit_charge_gold_xp_health_or_flag_change": true
+  },
+  "preview_battery_restart": {
+    "native_battery_bytes": 32768,
+    "native_battery_sha256": "b204808bda203c42fe112103e3fd297fd487746fb87f60ef9452931240f273e9",
+    "all_saved_state_preserved": true,
+    "current_actor_scripts_still_reloaded": true,
+    "preowned_earth_totem_quantity": 1
+  },
+  "published_artifacts_and_root_rom_preserved": true
+}

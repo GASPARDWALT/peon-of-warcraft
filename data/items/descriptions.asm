@@ -842,7 +842,8 @@ TeruSama16Desc:
 	next "You attack first.@"
 
 TeruSama17Desc:
-	db   "?@"
+	db   "Outside combat:"
+	next "Restores ten HP.@"
 
 MysteryBerryDesc:
 	db   "A self-restore"

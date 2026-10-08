@@ -443,6 +443,8 @@ PeonInventory:
 	hlcoord 2, 7
 	call PlaceString
 	ld a, [wNamedObjectIndex]
+	cp PEON_CAMP_BREAD
+	jr z, .food_details
 	sub ITEM_87
 	cp 3
 	jr c, .quality
@@ -473,6 +475,11 @@ PeonInventory:
 	ld d, [hl]
 	ld e, a
 	hlcoord 2, 9
+	call PlaceString
+	jr .footer
+.food_details
+	hlcoord 2, 9
+	ld de, .Food
 	call PlaceString
 	jr .footer
 .empty
@@ -533,6 +540,8 @@ PeonInventory:
 	jr z, .totem
 	cp POTION
 	jr z, .potion
+	cp PEON_CAMP_BREAD
+	jr z, .bread
 	cp PEON_SPIRIT_MACE
 	jr z, .apply
 	cp ITEM_8D
@@ -552,6 +561,11 @@ PeonInventory:
 	farcall PeonTryUseMinorPotion
 	jp nc, .input
 	ld a, POTION
+	jr .consume
+.bread
+	farcall PeonTryEatCampBread
+	jp nc, .input
+	ld a, PEON_CAMP_BREAD
 	jr .consume
 .drink
 ; Refill all learned spells; a full spellbook leaves the water in the bag.
@@ -594,6 +608,7 @@ PeonInventory:
 .Title: db "BAG INVENTORY@"
 .Label: db "ITEM / CAPACITY@"
 .Empty: db "EMPTY@"
+.Food: db "RESTORES 10 HP", "<LF>", "OUTSIDE COMBAT@"
 .Help: db "LEFT/RIGHT: ITEM", "<LF>", "A: EQUIP / USE", "<LF>", "B: BACK@"
 .Qualities:
 	dw .Gray, .White, .Green, .Blue, .Spirit

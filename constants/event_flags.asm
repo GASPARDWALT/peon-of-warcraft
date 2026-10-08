@@ -323,6 +323,9 @@
 	const EVENT_PEON_FIRE_SHOCK_BOUGHT
 	const EVENT_PEON_WINDFURY_BOUGHT
 	const EVENT_PEON_CHAIN_LIGHTNING_BOUGHT
+	; Cave approach: consume reserved bits without renumbering existing events.
+	const EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	const EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
 
 	const_next 600
 ; Kurt Apricorn events

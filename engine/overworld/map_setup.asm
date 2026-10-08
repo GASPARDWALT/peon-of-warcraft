@@ -88,7 +88,26 @@ LoadContinueMapObjects:
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	ret nz
+	call .RefreshMerchantAlcove
 	jp LoadMapObjects
+
+.RefreshMerchantAlcove:
+	; LoadConnectionBlockData restores the battery's thirty cached blocks over
+	; current terrain. Retire only the Den's former vendor-alcove boulder;
+	; preserve all other cached blocks and rebuild the screen buffer before
+	; current NPCs and graphics are initialized. No save flag/layout changes.
+	ld a, [wMapGroup]
+	cp GROUP_THE_DEN
+	ret nz
+	ld a, [wMapNumber]
+	cp MAP_THE_DEN
+	ret nz
+	ld a, [wMapWidth]
+	cp 12
+	ret nz
+	ld a, 8 ; sandy_clearance, all four movement cells FLOOR
+	ld [wOverworldMapBlocks + (3 + 3) * (12 + 6) + (4 + 3)], a
+	jp BufferScreen
 
 MapSetup_DummyFunction: ; unreferenced
 	ret

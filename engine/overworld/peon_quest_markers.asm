@@ -3,8 +3,8 @@
 ; SPRITE_SCIENTIST 60 = complete yellow ?. All are four-tile STILL_SPRITEs.
 ; Yellow uses existing OBJ palette4 (PAL_OW_PINK); gray uses palette5 color1.
 ; ROOT/map callbacks control state/visibility; these helpers store no save data.
-; Gray color is only applied in marker maps. The normal Peon map palette load
-; restores palette5 red for imp-cave creatures. Never recolor a red imp map.
+; Gray color is only applied in marker maps. Valley's exterior familiars use
+; spare palette6, leaving gray quest markers and the cave's palette5 intact.
 
 SECTION "Peon Quest Marker Graphics", ROMX
 
@@ -39,6 +39,20 @@ PeonApplyQuestMarkerGrayPalette::
 	ld bc, 2
 	ld a, BANK(wOBPals2)
 	call FarCopyWRAM
+	ld a, [wMapNumber]
+	cp MAP_VALLEY_OF_TRIALS
+	jr nz, .update
+	ld hl, .approach_imp
+	ld de, wOBPals1 palette PAL_OW_TREE
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	ld hl, .approach_imp
+	ld de, wOBPals2 palette PAL_OW_TREE
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals2)
+	call FarCopyWRAM
+.update:
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
 .done:
@@ -49,6 +63,8 @@ PeonApplyQuestMarkerGrayPalette::
 	ret
 .gray:
 	RGB 17, 17, 17
+.approach_imp:
+	RGB 31, 31, 31, 27, 05, 03, 31, 25, 07, 01, 01, 01
 
 ; Called by MAPCALLBACK_SPRITES before graphics are allocated. Variables FD/FE/
 ; FF always resolve to the same four-tile sprite type, so changing a quest state

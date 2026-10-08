@@ -1,0 +1,16 @@
+{
+  "rom_sha256": "2006a6f6e0988b54ac1eea385d31a1ee8e9cfa24296a580bc530d938d5b65a2a",
+  "rom_bytes": 2097152,
+  "native_header": {
+    "cgb_flag": 192,
+    "cartridge_type": 16,
+    "rom_size_code": 6,
+    "ram_size_code": 3
+  },
+  "header_checksum_valid": true,
+  "global_checksum_valid": true,
+  "all_checks_passed": true,
+  "source_contract_report": "source_compatibility.json",
+  "build_command": "sh tools/rebuild_peon_valley_preview.sh --build",
+  "chromatic_hardware_tested": false
+}

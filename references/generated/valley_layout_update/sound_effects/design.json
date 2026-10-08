@@ -1,0 +1,43 @@
+{
+  "effects": [
+    {
+      "name": "lightning_bolt",
+      "header": "PeonSfx_Lightning",
+      "existing_sfx_id": "SFX_THUNDERSHOCK",
+      "description": "Quiet rising charge, sharp broadband crack, descending electric hiss.",
+      "channels": [
+        5,
+        8
+      ],
+      "channel_frames": {
+        "5": 22,
+        "8": 27
+      },
+      "estimated_engine_frames": 27,
+      "estimated_seconds": 0.45,
+      "source": "Original newly authored native GBC pulse/noise synthesis."
+    },
+    {
+      "name": "boar_grunt",
+      "header": "PeonSfx_BoarGrunt",
+      "existing_sfx_id": "SFX_PEON_BOAR_GRUNT",
+      "description": "Two brief warm low-register grunts with a gravelly noise layer.",
+      "channels": [
+        5,
+        8
+      ],
+      "channel_frames": {
+        "5": 23,
+        "8": 23
+      },
+      "estimated_engine_frames": 23,
+      "estimated_seconds": 0.38333333333333336,
+      "source": "Original newly authored native GBC pulse/noise synthesis."
+    }
+  ],
+  "native_sfx_count": 208,
+  "existing_ids_shifted": false,
+  "reference_access": "Wowhead Classic request denied; no original audio auditioned or copied.",
+  "regeneration_order": "build_peon_sfx.py baseline, then build_peon_valley_sfx.py override.",
+  "native_effect_source_sha256": "859c501886743c6f2a638f23a27c143ec836609cf9b437e7a24fa1f529c5a66f"
+}

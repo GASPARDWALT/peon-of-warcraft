@@ -208,4 +208,6 @@
 	const SFX_TWO_PC_BEEPS                ; cc
 	const SFX_4_NOTE_DITTY                ; cd
 	const SFX_TWINKLE                     ; ce
+	const SFX_PEON_BOAR_GRUNT             ; cf — appended native encounter sound
+
 DEF NUM_SFX EQU const_value

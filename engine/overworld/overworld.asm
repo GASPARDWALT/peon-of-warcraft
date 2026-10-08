@@ -159,6 +159,7 @@ LoadMiscTiles:
 	ld c, EMOTE_BOULDER_DUST
 .outdoor
 	farcall LoadEmote
+	farcall PeonLoadPlayerHUDGFX
 	ret
 
 SafeGetSprite:

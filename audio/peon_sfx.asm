@@ -22,7 +22,8 @@ PeonSfx_MaceImpact_Ch8:
 	noise_note 4, 5, 1, 112
 	sound_ret
 
-; Lightning charge, crack and electric tail
+; Quiet rising charge, sharp broadband crack, descending electric hiss.
+; Original override: tools/build_peon_valley_sfx.py.
 PeonSfx_Lightning:
 	channel_count 2
 	channel 5, PeonSfx_Lightning_Ch5
@@ -31,23 +32,24 @@ PeonSfx_Lightning:
 PeonSfx_Lightning_Ch5:
 	duty_cycle 0
 	pitch_sweep 0, 8
-	square_note 2, 7, 1, 1792
-	square_note 3, 11, 1, 1900
-	square_note 1, 8, 1, 1100
-	square_note 3, 12, 1, 1970
-	square_note 2, 9, 1, 1720
-	square_note 3, 10, 1, 1930
-	square_note 4, 6, 1, 1870
-	square_note 6, 3, 1, 1540
+	square_note 2, 2, 2, 1100
+	square_note 2, 3, 2, 1480
+	square_note 1, 4, 1, 1750
+	square_note 1, 4, 1, 850
+	square_note 2, 2, 1, 1740
+	square_note 3, 1, 1, 1900
+	square_note 4, 0, 0, 0
 	sound_ret
 
 PeonSfx_Lightning_Ch8:
-	noise_note 3, 9, 1, 20
-	noise_note 2, 11, 1, 37
-	noise_note 3, 12, 1, 4
-	noise_note 4, 9, 1, 54
-	noise_note 5, 6, 1, 69
-	noise_note 7, 3, 1, 84
+	noise_note 2, 3, 3, 53
+	noise_note 2, 5, 2, 37
+	noise_note 1, 7, 1, 20
+	noise_note 1, 12, 1, 2
+	noise_note 2, 9, 1, 36
+	noise_note 3, 6, 2, 53
+	noise_note 4, 3, 1, 69
+	noise_note 4, 2, 1, 84
 	sound_ret
 
 ; Flame ignition, fiery rush and low impact
@@ -146,4 +148,33 @@ PeonSfx_LeatherBag_Ch8:
 	noise_note 3, 5, 2, 53
 	noise_note 2, 4, 1, 70
 	noise_note 3, 2, 1, 84
+	sound_ret
+
+; Two brief warm low-register grunts with a gravelly noise layer.
+; Original override: tools/build_peon_valley_sfx.py.
+PeonSfx_BoarGrunt:
+	channel_count 2
+	channel 5, PeonSfx_BoarGrunt_Ch5
+	channel 8, PeonSfx_BoarGrunt_Ch8
+
+PeonSfx_BoarGrunt_Ch5:
+	duty_cycle 2
+	pitch_sweep 0, 8
+	square_note 2, 8, 2, 1280
+	square_note 2, 9, 1, 940
+	square_note 3, 5, 1, 550
+	square_note 2, 0, 0, 0
+	square_note 2, 9, 1, 1100
+	square_note 3, 6, 1, 760
+	square_note 2, 3, 1, 450
+	sound_ret
+
+PeonSfx_BoarGrunt_Ch8:
+	noise_note 2, 4, 2, 53
+	noise_note 2, 6, 1, 83
+	noise_note 3, 3, 1, 100
+	noise_note 2, 0, 0, 0
+	noise_note 2, 5, 1, 69
+	noise_note 3, 4, 1, 84
+	noise_note 2, 2, 1, 101
 	sound_ret
