@@ -4,18 +4,18 @@ BattleAnimations::
 	dw BattleAnim_Dummy
 	dw BattleAnim_Pound
 	dw BattleAnim_KarateChop
-	dw BattleAnim_Doubleslap
+	dw BattleAnim_PeonWindfury
 	dw BattleAnim_CometPunch
 	dw BattleAnim_MegaPunch
 	dw BattleAnim_PayDay
 	dw BattleAnim_FirePunch
 	dw BattleAnim_IcePunch
-	dw BattleAnim_Thunderpunch
+	dw BattleAnim_PeonEarthShock
 	dw BattleAnim_Scratch
 	dw BattleAnim_Vicegrip
 	dw BattleAnim_Guillotine
 	dw BattleAnim_RazorWind
-	dw BattleAnim_SwordsDance
+	dw BattleAnim_PeonRockbiter
 	dw BattleAnim_Cut
 	dw BattleAnim_Gust
 	dw BattleAnim_WingAttack
@@ -53,13 +53,13 @@ BattleAnimations::
 	dw BattleAnim_Sonicboom
 	dw BattleAnim_Disable
 	dw BattleAnim_Acid
-	dw BattleAnim_Ember
+	dw BattleAnim_PeonFlameShock
 	dw BattleAnim_Flamethrower
 	dw BattleAnim_Mist
 	dw BattleAnim_WaterGun
 	dw BattleAnim_HydroPump
 	dw BattleAnim_Surf
-	dw BattleAnim_IceBeam
+	dw BattleAnim_PeonFrostShock
 	dw BattleAnim_Blizzard
 	dw BattleAnim_Psybeam
 	dw BattleAnim_Bubblebeam
@@ -88,7 +88,7 @@ BattleAnimations::
 	dw BattleAnim_Thundershock
 	dw BattleAnim_Thunderbolt
 	dw BattleAnim_ThunderWave
-	dw BattleAnim_Thunder
+	dw BattleAnim_PeonChainLightning
 	dw BattleAnim_RockThrow
 	dw BattleAnim_Earthquake
 	dw BattleAnim_Fissure
@@ -97,7 +97,7 @@ BattleAnimations::
 	dw BattleAnim_Confusion
 	dw BattleAnim_PsychicM
 	dw BattleAnim_Hypnosis
-	dw BattleAnim_Meditate
+	dw BattleAnim_PeonStrengthOfEarth
 	dw BattleAnim_Agility
 	dw BattleAnim_QuickAttack
 	dw BattleAnim_Rage
@@ -106,7 +106,7 @@ BattleAnimations::
 	dw BattleAnim_Mimic
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
-	dw BattleAnim_Recover
+	dw BattleAnim_PeonHealingWave
 	dw BattleAnim_Harden
 	dw BattleAnim_Minimize
 	dw BattleAnim_Smokescreen
@@ -115,8 +115,8 @@ BattleAnimations::
 	dw BattleAnim_DefenseCurl
 	dw BattleAnim_Barrier
 	dw BattleAnim_LightScreen
-	dw BattleAnim_Haze
-	dw BattleAnim_Reflect
+	dw BattleAnim_PeonPurge
+	dw BattleAnim_PeonLightningShield
 	dw BattleAnim_FocusEnergy
 	dw BattleAnim_Bide
 	dw BattleAnim_Metronome
@@ -127,7 +127,7 @@ BattleAnimations::
 	dw BattleAnim_Smog
 	dw BattleAnim_Sludge
 	dw BattleAnim_BoneClub
-	dw BattleAnim_FireBlast
+	dw BattleAnim_PeonFlameShockII
 	dw BattleAnim_Waterfall
 	dw BattleAnim_Clamp
 	dw BattleAnim_Swift

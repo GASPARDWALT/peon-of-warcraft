@@ -1,0 +1,546 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "emulator": "PyBoy 2.7.0",
+  "test_method": "Three ordinary source-ROM/new native-battery upgrades, Kento handoff/repeat and second battery restart; separate labelled full-pocket diagnostic",
+  "all_checks_passed": true,
+  "states": {
+    "v0.1.1": {
+      "source_rom_sha256": "2bc9b27b5d1b0a4d951c80f90ffd1a858aeb589afa96ce0d34dddd6fd80008a2",
+      "real_source_battery_sha256": "7f0c436a2220ed2b4e90715b75a4bbf642bf730409e88a8ca3f20751648c2eab",
+      "native_battery_size": 32768,
+      "ordinary_buttons_only": true,
+      "state_preserved": {
+        "wPlayerName": [
+          143,
+          132,
+          142,
+          141,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80,
+          80
+        ],
+        "wPlayerID": [
+          210,
+          126
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wPartyMon1Level": [
+          1
+        ],
+        "wPartyMon1HP": [
+          0,
+          12
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1PP": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          11,
+          184
+        ],
+        "wKeyItems": [
+          25,
+          45,
+          50
+        ],
+        "wNumItems": [
+          0
+        ],
+        "wItems": [
+          255
+        ]
+      },
+      "player_name_entered_on_source_rom": false,
+      "legacy_kento_totem_handoff": {
+        "ordinary_buttons_only": true,
+        "received_item_id": 148,
+        "quantity_after_handoff": 1,
+        "source_saved_kento_script_pointer": [
+          177,
+          123
+        ],
+        "current_kento_script_pointer_after_continue": [
+          164,
+          78
+        ],
+        "continue_reloads_current_map_objects": true,
+        "repeat_no_duplicate": true,
+        "other_kit_cash_xp_health_charges_unchanged": true,
+        "source_experience": [
+          0,
+          0,
+          1
+        ],
+        "normalized_experience_before_handoff": [
+          0,
+          0,
+          1
+        ],
+        "native_second_battery_sha256": "d41cc7df690c35d75873728b0f9e6f9a439fa0e87a6760095a3895a04261fb00",
+        "battery_restart_preserves_totem": true,
+        "state_after_handoff_restart": {
+          "wPlayerName": [
+            143,
+            132,
+            142,
+            141,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ],
+          "wPlayerID": [
+            210,
+            126
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            7
+          ],
+          "wYCoord": [
+            12
+          ],
+          "wPartyMon1Level": [
+            1
+          ],
+          "wPartyMon1HP": [
+            0,
+            12
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1PP": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            11,
+            184
+          ],
+          "wKeyItems": [
+            25,
+            45,
+            50
+          ],
+          "wNumItems": [
+            1
+          ],
+          "wItems": [
+            148,
+            1,
+            255
+          ]
+        }
+      },
+      "separate_full_bag_diagnostic": null
+    },
+    "v0.2": {
+      "source_rom_sha256": "21ce66cc89ae0222f23541e4bfa3ba9582a502f77ea0c19538d0023b9f7e60b8",
+      "real_source_battery_sha256": "dc2bbdbdddf536e7d2d94d5e417d54594356c46c96992b396f3832a354d805fd",
+      "native_battery_size": 32768,
+      "ordinary_buttons_only": true,
+      "state_preserved": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          128,
+          128,
+          128,
+          128,
+          80
+        ],
+        "wPlayerID": [
+          210,
+          126
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wPartyMon1Level": [
+          2
+        ],
+        "wPartyMon1HP": [
+          0,
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1PP": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          11,
+          184
+        ],
+        "wKeyItems": [
+          25,
+          45,
+          50
+        ],
+        "wNumItems": [
+          0
+        ],
+        "wItems": [
+          255
+        ]
+      },
+      "player_name_entered_on_source_rom": false,
+      "legacy_kento_totem_handoff": {
+        "ordinary_buttons_only": true,
+        "received_item_id": 148,
+        "quantity_after_handoff": 1,
+        "source_saved_kento_script_pointer": [
+          232,
+          115
+        ],
+        "current_kento_script_pointer_after_continue": [
+          164,
+          78
+        ],
+        "continue_reloads_current_map_objects": true,
+        "repeat_no_duplicate": true,
+        "other_kit_cash_xp_health_charges_unchanged": true,
+        "source_experience": [
+          0,
+          0,
+          8
+        ],
+        "normalized_experience_before_handoff": [
+          0,
+          0,
+          10
+        ],
+        "native_second_battery_sha256": "3e03ea852b39e608bf3964a44b0acf0c8b5433a01559ddc671cea54280347ca7",
+        "battery_restart_preserves_totem": true,
+        "state_after_handoff_restart": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            128,
+            128,
+            128,
+            128,
+            80
+          ],
+          "wPlayerID": [
+            210,
+            126
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            7
+          ],
+          "wYCoord": [
+            12
+          ],
+          "wPartyMon1Level": [
+            2
+          ],
+          "wPartyMon1HP": [
+            0,
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1PP": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            11,
+            184
+          ],
+          "wKeyItems": [
+            25,
+            45,
+            50
+          ],
+          "wNumItems": [
+            1
+          ],
+          "wItems": [
+            148,
+            1,
+            255
+          ]
+        }
+      },
+      "separate_full_bag_diagnostic": null
+    },
+    "v0.2.1": {
+      "source_rom_sha256": "324b631d9f20299578f60024671e40028be744ae51d74a18d293324bb6f44737",
+      "real_source_battery_sha256": "9a9585a8b5a86b0d27580615fffa62feff63e1f640e4d0aaa2292b0466f34231",
+      "native_battery_size": 32768,
+      "ordinary_buttons_only": true,
+      "state_preserved": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wPlayerID": [
+          210,
+          126
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wPartyMon1Level": [
+          2
+        ],
+        "wPartyMon1HP": [
+          0,
+          14
+        ],
+        "wPartyMon1Moves": [
+          1,
+          84,
+          0,
+          0
+        ],
+        "wPartyMon1PP": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "wPartyMon1Item": [
+          0
+        ],
+        "wMoney": [
+          0,
+          11,
+          184
+        ],
+        "wKeyItems": [
+          25,
+          45,
+          50
+        ],
+        "wNumItems": [
+          0
+        ],
+        "wItems": [
+          255
+        ]
+      },
+      "player_name_entered_on_source_rom": true,
+      "legacy_kento_totem_handoff": {
+        "ordinary_buttons_only": true,
+        "received_item_id": 148,
+        "quantity_after_handoff": 1,
+        "source_saved_kento_script_pointer": [
+          24,
+          99
+        ],
+        "current_kento_script_pointer_after_continue": [
+          164,
+          78
+        ],
+        "continue_reloads_current_map_objects": true,
+        "repeat_no_duplicate": true,
+        "other_kit_cash_xp_health_charges_unchanged": true,
+        "source_experience": [
+          0,
+          0,
+          8
+        ],
+        "normalized_experience_before_handoff": [
+          0,
+          0,
+          10
+        ],
+        "native_second_battery_sha256": "8d76a5d9e68100ec32d4b6c5fbe6a430d8e434877c9b52842571ff0b07dfad17",
+        "battery_restart_preserves_totem": true,
+        "state_after_handoff_restart": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wPlayerID": [
+            210,
+            126
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            7
+          ],
+          "wYCoord": [
+            12
+          ],
+          "wPartyMon1Level": [
+            2
+          ],
+          "wPartyMon1HP": [
+            0,
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1PP": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            11,
+            184
+          ],
+          "wKeyItems": [
+            25,
+            45,
+            50
+          ],
+          "wNumItems": [
+            1
+          ],
+          "wItems": [
+            148,
+            1,
+            255
+          ]
+        }
+      },
+      "separate_full_bag_diagnostic": {
+        "diagnostic_ram_edits": true,
+        "source_real_battery_sha256": "9a9585a8b5a86b0d27580615fffa62feff63e1f640e4d0aaa2292b0466f34231",
+        "edited_fields": [
+          "wNumItems",
+          "wItems"
+        ],
+        "native_capacity": 6,
+        "synthetic_normal_pocket_item_ids": [
+          3,
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "failed_without_item_or_kit_changes": true,
+        "original_inventory_restored_before_retry": true,
+        "ordinary_kento_retry_awards_one": true,
+        "repeat_after_retry_does_not_duplicate": true,
+        "no_user_save_changed": true
+      }
+    }
+  },
+  "scope": "Existing v0.1.1, v0.2 and v0.2.1 characters at The Den; other locations and Chromatic hardware not tested."
+}

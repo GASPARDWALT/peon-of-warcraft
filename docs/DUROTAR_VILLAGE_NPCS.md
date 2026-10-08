@@ -12,7 +12,7 @@ the terrain generator; standing NPCs keep the main road open.
 | --- | --- | --- | --- |
 | Master Gadrin | 3188 | 8,10 | Village welcome and north-road directions |
 | Master Vornal | 3304 | 6,12 | Shaman and cavern story hint |
-| Bom'bay | 10578 | 14,10 | Optional free health/spell-charge restoration |
+| Bom'bay | 10578 | 14,10 | Dialogue and directions to Shul'kar's inn |
 | K'waii | 3186 | 16,13 | Five Spring Waters for 25 copper |
 | Sen'jin Watcher | 3297 | 6,16 | Friendly/hostile creature guidance |
 | Vel'rin Fang | 3194 | 14,16 | Village/Echo Isles flavor dialogue |
@@ -22,7 +22,7 @@ the terrain generator; standing NPCs keep the main road open.
 | NPC | Classic entry | Position | Implemented role |
 | --- | --- | --- | --- |
 | Gar'Thok | 3139 | 8,10 | Main-route directions |
-| Innkeeper Grosk | 6928 | 6,12 | Optional free health/spell-charge restoration |
+| Innkeeper Grosk | 6928 | 6,12 | Directions to the enterable Razor Hill inn |
 | Jark | 3164 | 16,10 | Five Spring Waters for 25 copper |
 | Orgnil Soulscar | 3142 | 8,16 | Burning Blade cavern hint |
 | Thotar | 3171 | 16,16 | Hunter flavor and creature advice |
@@ -42,11 +42,12 @@ Refreshing Spring Water. Its verified base offer remains five waters for
 25 copper, as in the existing Duokna implementation.
 
 Dialogue is newly written in English and shortened for an eighteen-column
-Game Boy text box. It is not a verbatim export of WoW quest dialogue. The
-free-rest functions, these exact native-map positions and generic road/gate
-guards are prototype adaptations. No class training, full vendor stock,
-reputation discount, buyback, new quests, Echo Isles or Orgrimmar interior
-is claimed by this pass.
+Game Boy text box. It is not a verbatim export of WoW quest dialogue. These
+exact native-map positions and generic road/gate guards are prototype
+adaptations. Exterior NPCs no longer restore health or charges for free.
+This settlement pass does not add class training, full vendor stock,
+reputation discounts, buyback, new quests, the Echo Isles or the Orgrimmar
+interior.
 
 Native art roles use reserved legacy sprite indices without inserting IDs:
 `SPRITE_LINK_RECEPTIONIST` is the troll guard, `SPRITE_CLERK` the troll
@@ -59,14 +60,18 @@ individual animation atlas.
 
 ## Enterable settlement buildings
 
-Nine settlement doors share two compact, twelve-by-ten-tile interior layouts:
-`PeonTrollHut` for Darkspear huts and `PeonOrcHut` for Horde houses. Each
-contains one friendly attendant at `(6,4)` who can restore health and spell
-charges after a yes/no choice. These generic Darkspear Healer and Horde
-Attendant roles are prototype additions, not claimed as named Classic NPCs.
+Nine settlement doors are visitable: six houses and three inns across the Den,
+Sen'jin Village and Razor Hill. The houses share two compact,
+twelve-by-ten-tile layouts: `PeonTrollHut` for Darkspear huts and `PeonOrcHut`
+for Horde houses. Each contains one friendly resident at `(6,4)` who gives
+short flavor dialogue and points the player toward an inn. These generic
+Darkspear Resident and Horde Attendant roles are prototype additions, not
+claimed as named Classic NPCs. They do not heal the player.
 
 The exit at `(5,7)` uses Crystal's existing backup-warp mechanism to return
 to the particular exterior door used to enter. Sharing a layout preserves
 distinct entrance/return locations without adding nine separate map scripts.
-Existing exterior village NPCs remain in place. The interiors implement rest;
-they do not introduce personal storage, additional quests or class training.
+Existing exterior village NPCs remain in place. Houses do not introduce
+personal storage, additional quests or class training. The three inns use
+`PeonOrcInn` or `PeonTrollInn` and separately implement explicit rest and
+Hearthstone binding; those functions are documented and tested by the inn pass.

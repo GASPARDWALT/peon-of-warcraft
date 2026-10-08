@@ -1,0 +1,282 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "method": "Explicit full-pocket/dead-flag fixtures. Second-pack-member loss uses temporary HP=1, enemy native Swift, enemy Speed65535/player Speed1 and no active totem. Traversal, menus and retry battles use normal buttons in an isolated ROM; no result/CPU substitution.",
+  "ram_edits": true,
+  "diagnostic_only": true,
+  "emulator_states_loaded": false,
+  "cases": {
+    "equipment_full_bag_retry": {
+      "failed_without_reward": true,
+      "proof_recovered_then_consumed": true,
+      "successful_retry_copper": 150,
+      "successful_retry_xp": 100,
+      "reward_only_once": true
+    },
+    "consumable_full_bag_retry": {
+      "failed_without_reward": true,
+      "successful_retry_potions": 2,
+      "successful_retry_copper": 100,
+      "successful_retry_xp": 50,
+      "reward_only_once": true
+    },
+    "key_pocket_full_reward_retry": {
+      "failed_without_reward": true,
+      "successful_retry_copper": 50,
+      "successful_retry_xp": 25,
+      "bag_capacity_unlocked": true,
+      "reward_only_once": true
+    },
+    "pack_partial_defeat_persistence": {
+      "first_member_killed_by_normal_buttons": true,
+      "second_member_hp_fault_injected": true,
+      "second_member_native_swift_speed_fixture": true,
+      "second_loss_grants_no_copper": true,
+      "first_flag_survives_cold_battery_restart": true,
+      "retry_starts_only_one_surviving_member": true,
+      "final_copper_reward": 40,
+      "save_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            94
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            192,
+            65,
+            31,
+            48,
+            60,
+            48,
+            4,
+            0,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            1
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            120
+          ],
+          "items": [
+            148,
+            1,
+            142,
+            1,
+            18,
+            2
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            94
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            192,
+            65,
+            31,
+            48,
+            60,
+            48,
+            4,
+            0,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            1
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            120
+          ],
+          "items": [
+            148,
+            1,
+            142,
+            1,
+            18,
+            2
+          ]
+        }
+      }
+    }
+  },
+  "forced_pack_result": {
+    "label": "pack_second_member_forced_loss",
+    "outcome": 1,
+    "dead": false,
+    "no_auto_heal": true,
+    "encounter_loads_during_fight": 1,
+    "level_after": 5,
+    "hp_after": [
+      0,
+      1
+    ],
+    "money_after": 350,
+    "fixture": {
+      "loads": 2,
+      "second_hp_injected": true,
+      "native_swift_speed_fixture": true
+    }
+  },
+  "all_checks_passed": true
+}

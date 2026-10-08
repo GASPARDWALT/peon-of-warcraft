@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Verify native Warcraft menu chrome, portraits, rarity colours and cleanup.
 
-Character, bags and empty inventory use ordinary buttons after a new game.
-Four item-rarity cases substitute one inventory entry in an isolated emulator
+Character, bags and starter inventory use ordinary buttons after a new game.
+Five item-rarity cases substitute one inventory entry in an isolated emulator
 state, then open the inventory normally; these are explicitly diagnostic cases.
 The emulator reads a temporary ROM copy and never touches a user's save file.
 """
@@ -18,7 +18,7 @@ from PIL import Image
 from pyboy import PyBoy
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/"references/generated/durotar_v021/menu_skin"
+OUT=ROOT/"references/generated/durotar_v022/menu_skin"
 
 def main():
     logging.disable(logging.CRITICAL);OUT.mkdir(parents=True,exist_ok=True)
@@ -27,7 +27,7 @@ def main():
         fields=line.split()
         if len(fields)==2 and ":" in fields[0]:symbols[fields[1]]=tuple(int(n,16) for n in fields[0].split(":"))
     results={"rom_sha256":hashlib.sha256((ROOT/"pokecrystal.gbc").read_bytes()).hexdigest(),
-             "normal_flow":"Ordinary-button new game, naming, character sheet, bags and empty inventory.",
+             "normal_flow":"Ordinary-button new game, naming, character sheet, bags and the real starter Earth Totem inventory.",
              "restored_palette_scope":"Terrain BG palettes 0 through 6 and all eight OBJ palettes. BG7 is Crystal's independently restored text palette.",
              "rarity_method":"Diagnostic one-item inventory substitution in isolated emulator state; menus then opened with ordinary buttons."}
     with tempfile.TemporaryDirectory(prefix="peon-menu-") as temp:
@@ -112,7 +112,7 @@ def main():
         assert np.array_equal(actual,expected),"Character portrait does not match indexed native PNG"
         results["character_sheet"]["native_green_brown_portrait_matches"]=True
         close_to_world();results["character_sheet"]["world_graphics_palettes_restored"]=True
-        # Actual starter backpack and a real empty inventory before quest loot.
+        # Actual starter backpack contains its reusable Earth Totem.
         restore();press("start");press("down",30);press("a");capture("bags")
         results["bags"]=check_chrome("bags")
         attrs=read("wAttrmap",360)
@@ -126,12 +126,29 @@ def main():
                 assert tiles[y*20+x]==tiles[y*20+x+5]==0x7c,"Bag card vertical frame overwritten"
         results["bags"]["three_card_frames_and_labels_do_not_overlap"]=True
         assert palettes()[0]==[31,29,23],"Bag parchment body"
-        press("a");capture("empty_inventory")
-        results["empty_inventory"]=check_chrome("empty inventory")
-        close_to_world();results["empty_inventory"]["world_graphics_palettes_restored"]=True
+        press("a");capture("starter_inventory")
+        assert read("wNumItems")==[1] and read("wItems",3)==[0x94,1,0xff],"New Shaman must receive a real Earth Totem"
+        assert read("wNamedObjectIndex")==[0x94]
+        results["starter_inventory"]=check_chrome("starter inventory")
+        assert bytes(p.memory[0,0x9280:0x92c0])==(ROOT/"gfx/pack/peon_item_icons/earth_totem.2bpp").read_bytes(),"Starter Earth Totem icon uses wrong native tiles"
+        # Internal PNGs are grayscale RGBDS inputs; compare the colored public
+        # transparent native PNG to what the actual menu presents.
+        icon=np.array(Image.open(ROOT/"references/generated/durotar_v022/items/earth_totem_16.png").convert("RGBA"))
+        expected_icon=icon[:,:,:3]>>3
+        expected_icon[icon[:,:,3]==0]=np.array(palettes()[20],dtype="uint8")
+        assert np.array_equal(np.array(p.screen.image.convert("RGB").crop((128,24,144,40)))>>3,expected_icon),"Earth Totem icon RGB555 mismatch"
+        results["starter_inventory"]["actual_earth_totem_item_and_native_icon_match"]=True
+        close_to_world();results["starter_inventory"]["world_graphics_palettes_restored"]=True
         results["bags"]["world_graphics_palettes_restored"]=True
+        # Explicitly diagnostic empty-pocket rendering, separate from starter.
+        restore();bank,address=symbols["wNumItems"];p.memory[bank,address]=0
+        bank,address=symbols["wItems"];p.memory[bank,address]=0xff
+        press("start");press("down",30);press("a");press("a");capture("diagnostic_empty_inventory")
+        results["diagnostic_empty_inventory"]=check_chrome("empty inventory")
+        results["diagnostic_empty_inventory"]["inventory_count_substituted"]=True
+        close_to_world();results["diagnostic_empty_inventory"]["world_graphics_palettes_restored"]=True
         rarity_cases={"gray":(0x87,[19,19,19]),"white":(0x88,[31,31,31]),
-                      "green":(0x89,[3,31,0]),"blue":(0x8d,[0,14,27])}
+                      "green":(0x89,[3,31,0]),"blue":(0x8d,[0,14,27]),"spirit":(0x8e,[3,31,0])}
         results["diagnostic_rarity_cases"]={}
         for name,(item,ink) in rarity_cases.items():
             restore();bank,address=symbols["wNumItems"];p.memory[bank,address]=1
@@ -141,6 +158,9 @@ def main():
             attrs=read("wAttrmap",360)
             assert all(attrs[9*20+x]==2 for x in range(1,19)),f"{name}: quality ribbon attributes"
             assert palettes()[11]==ink,f"{name}: Classic RGB555 quality ink"
+            if name=="spirit":
+                expected_ribbon=[0x86,0x91,0x84,0x84,0x8d,0x9c,0x7f,0x8d,0x80,0x93,0x94,0x91,0x84,0x7f,0xf8,0xf6,0x78]
+                assert read("wTilemap",360)[182:199]==expected_ribbon,"Spirit Mace must show GREEN: NATURE 20%"
             pixels=np.array(p.screen.image.convert("RGB"))>>3
             assert int(np.all(pixels[72:80,8:152]==np.array(ink),axis=-1).sum())>12,f"{name}: quality text is not visible"
             columns=[x for x in range(1,19) if read("wTilemap",360)[9*20+x]==0x78]
@@ -152,10 +172,11 @@ def main():
             case.update({"classic_quality_rgb555_matches":True,"quality_text_visible":True,
                          "native_percent_glyph_rgb555_matches":True,"place_string_places_regular_percent_tile":True,
                          "world_graphics_palettes_restored":True,"inventory_entry_substituted":True})
+            if name=="spirit":case["nature_bonus_twenty_percent_ribbon_matches"]=True
             results["diagnostic_rarity_cases"][name]=case
         capture("world_after_menus");p.stop(save=False)
     results["all_checks_passed"]=True
     (OUT/"validation.json").write_text(json.dumps(results,indent=2)+"\n")
-    print("Native Character/Bags/Inventory chrome and four diagnostic Classic rarity colours passed; world fonts, NPC graphics and palettes restored.")
+    print("Native Character/Bags/Inventory chrome, starter Earth Totem icon and five diagnostic rarity/effect ribbons passed; world fonts, NPC graphics and palettes restored.")
 
 if __name__=="__main__":main()

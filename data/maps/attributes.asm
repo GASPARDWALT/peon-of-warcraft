@@ -728,3 +728,5 @@ SECTION "Peon World Map Attributes", ROMX
 	map_attributes BurningBladeCavern, BURNING_BLADE_CAVERN, $01
 	map_attributes PeonTrollHut, PEON_TROLL_HUT, $01
 	map_attributes PeonOrcHut, PEON_ORC_HUT, $01
+	map_attributes PeonOrcInn, PEON_ORC_INN, $01
+	map_attributes PeonTrollInn, PEON_TROLL_INN, $01

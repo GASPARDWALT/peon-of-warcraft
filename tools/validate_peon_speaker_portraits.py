@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check normal Gornek dialogue, then all thirteen native portrait variants.
+"""Check normal Gornek dialogue, then all fourteen native portrait variants.
 
 The first new-game and Gornek conversation use ordinary buttons only. Variant
 checks reload that settled Den state and substitute only the speaker metadata;
@@ -20,7 +20,7 @@ from PIL import Image
 from pyboy import PyBoy
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "references/generated/durotar_v021/speaker_portraits"
+OUT = ROOT / "references/generated/durotar_v022/speaker_portraits"
 ROLES = {
     "peon":"SPRITE_CHRIS", "gornek":"SPRITE_FISHER",
     "hunter":"SPRITE_YOUNGSTER", "kento":"SPRITE_ELDER",
@@ -29,6 +29,7 @@ ROLES = {
     "troll_fisher":"SPRITE_CLERK", "troll_caster":"SPRITE_SAGE",
     "orc_guard":"SPRITE_OFFICER", "orc_vendor":"SPRITE_GENTLEMAN",
     "orc_questgiver":"SPRITE_BLACK_BELT",
+    "innkeeper":"SPRITE_BLAINE",
 }
 
 def main():
@@ -54,6 +55,7 @@ def main():
         p.set_emulation_speed(0)
         def read(name,length=1):
             bank,address=symbols[name]
+            if address>=0xe000:return list(p.memory[address:address+length])
             return list(p.memory[bank,address:address+length])
         def press(key,frames=90):
             p.button(key,delay=8);p.tick(frames,True)
@@ -85,6 +87,9 @@ def main():
         draw_entry={"snapshot":None}
         p.hook_register(*symbols["PeonDrawSpeakerPortrait"],
                         lambda state:state.__setitem__("snapshot",snapshot()),draw_entry)
+        close_entry={"snapshot":None}
+        p.hook_register(*symbols["CloseText"],
+                        lambda state:state.__setitem__("snapshot",snapshot()),close_entry)
         def expected_face(role):
             image=Image.open(ROOT/"gfx/peon_portraits"/f"{role}.png")
             palette=[tuple(map(int,re.findall(r"\d+",line))) for line in
@@ -98,6 +103,7 @@ def main():
                 p.memory[bank,address]=sprites[ROLES[role]]
             before=snapshot()
             draw_entry["snapshot"]=None
+            close_entry["snapshot"]=None
             press("a",120)
             tilemap=read("wTilemap",360);attrmap=read("wAttrmap",360)
             tile_ids=[tilemap[y*20+x] for y in range(8,11) for x in range(1,4)]
@@ -122,7 +128,13 @@ def main():
                 if read("wScriptMode")==[0]:break
                 press("a")
             assert read("wScriptMode")==[0], f"{role}: conversation did not close"
-            assert snapshot()==before, f"{role}: CloseText damaged NPC, terrain or restored font VRAM"
+            after=snapshot()
+            assert close_entry["snapshot"] is not None,f"{role}: CloseText hook did not run"
+            # Accepting Gornek's quest legitimately replaces the quest-marker
+            # OBJ glyph. CloseText must preserve the current NPC graphics,
+            # while terrain and the restored overworld font match before.
+            expected=before|{"npc_standing_walking":close_entry["snapshot"]["npc_standing_walking"]}
+            assert after==expected, f"{role}: CloseText damaged current NPC, terrain or restored font VRAM"
             attrs_after=read("wAttrmap",360)
             assert any(attrs_after[y*20+x]!=15 for y in range(8,11) for x in range(1,4)), f"{role}: frame attributes were not restored"
             expected_text_palette=[]
@@ -138,8 +150,9 @@ def main():
         results["ordinary_button_gornek_dialogue"]=check("gornek",False)
         results["portrait_variants"]={role:check(role,True) for role in ROLES}
         p.screen.image.save(OUT/"after_close_text_in_rom.png")
+        results["all_checks_passed"]=True
         p.stop(save=False)
     (OUT/"emulator_validation.json").write_text(json.dumps(results,indent=2)+"\n")
-    print("Normal Gornek dialogue and 13 portrait variants passed: pixels, reserved BG tiles, palette restoration, terrain/NPC/font VRAM.")
+    print("Normal Gornek dialogue and 14 portrait variants passed: pixels, reserved BG tiles, palette restoration, terrain/NPC/font VRAM.")
 
 if __name__ == "__main__":main()

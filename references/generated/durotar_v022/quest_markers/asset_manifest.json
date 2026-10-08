@@ -1,0 +1,31 @@
+{
+  "dimensions": [
+    16,
+    16
+  ],
+  "sprite_type": "STILL_SPRITE",
+  "tiles_per_sprite": 4,
+  "states": {
+    "available_yellow": {
+      "native_path": "gfx/sprites/peon_quest_available_yellow.png",
+      "binary_bytes": 64,
+      "sprite_id": 53,
+      "object_palette": 4,
+      "palette_override": "Existing gold/brown OBJ palette4, unchanged."
+    },
+    "active_gray": {
+      "native_path": "gfx/sprites/peon_quest_active_gray.png",
+      "binary_bytes": 64,
+      "sprite_id": 54,
+      "object_palette": 5,
+      "palette_override": "BG-independent OBJ palette5 colour1 becomes neutral gray; restore red in imp cave."
+    },
+    "complete_yellow": {
+      "native_path": "gfx/sprites/peon_quest_complete_yellow.png",
+      "binary_bytes": 64,
+      "sprite_id": 60,
+      "object_palette": 4,
+      "palette_override": "Existing gold/brown OBJ palette4, unchanged."
+    }
+  }
+}

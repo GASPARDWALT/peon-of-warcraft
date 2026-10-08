@@ -17,7 +17,7 @@ import numpy as np
 from pyboy import PyBoy
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/title_music'
+OUT = ROOT / 'references/generated/durotar_v022/title_music'
 logging.disable(logging.CRITICAL)
 
 

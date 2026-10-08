@@ -1,124 +1,121 @@
 #!/usr/bin/env python3
-"""Build two native quest OBJ glyphs and atlas-coordinate evidence.
-
-The atlas thumbnails use the same ImageOps.contain geometry as
-build_durotar_maps.py. Collision coordinates are 16-pixel squares on 32-pixel
-metatile previews; every marker is centered on its quest giver's square.
-"""
+"""Build native quest glyphs and exact atlas-coordinate evidence for v0.2.2."""
 import hashlib
 import json
 from pathlib import Path
 from PIL import Image, ImageOps
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/quest_markers'
-GFX = ROOT / 'gfx/pack'
-WORLD = ROOT / 'references/generated/durotar_v021/world/maps'
-ATLAS = ROOT / 'references/generated/durotar_v021/zone_maps'
-
-GLYPHS = {
-    'quest_available': [
-        '00222200', '00233200', '00233200', '00233200',
-        '00233200', '00222200', '00233200', '00222200',
-    ],
-    'quest_complete': [
-        '02222200', '02333220', '02223320', '00023220',
-        '00232200', '00222000', '00232000', '00222000',
-    ],
+ROOT=Path(__file__).resolve().parents[1]
+OUT=ROOT/'references/generated/durotar_v022/quest_markers'
+GFX=ROOT/'gfx/pack'
+WORLD=ROOT/'references/generated/durotar_v022/world/maps'
+ATLAS=ROOT/'references/generated/durotar_v022/zone_maps'
+GLYPHS={
+ 'quest_available':['00222200','00233200','00233200','00233200','00233200','00222200','00233200','00222200'],
+ 'quest_complete':['02222200','02333220','02223320','00023220','00232200','00222000','00232000','00222000'],
 }
-# OBJ palette 4 from gfx/overworld/peon_obj.pal, expanded RGB555 to RGB888.
-RGB555 = ((31,31,31),(22,15,7),(9,5,2),(31,26,3))
-PALETTE = [tuple((c << 3) | (c >> 2) for c in colour) for colour in RGB555]
-POINTS = [('DEN','TheDen',8,15,'Foreman'),
-          ('VALLEY','ValleyOfTrials',8,10,'Galgar')]
+GOLD=((31,31,31),(22,15,7),(9,5,2),(31,26,3))
+GRAY=((31,31,31),(27,27,27),(5,5,5),(17,17,17))
+POINTS=[
+ ('DEN','DEN','TheDen',8,15,'Foreman','EVENT_PEON_LAZY_ACCEPTED',['EVENT_PEON_LAZY_AWAKE'],'EVENT_PEON_LAZY_DONE'),
+ ('VALLEY','VALLEY','ValleyOfTrials',8,10,'Galgar','EVENT_PEON_CACTUS_ACCEPTED',['EVENT_PEON_CACTUS_1','EVENT_PEON_CACTUS_2','EVENT_PEON_CACTUS_3'],'EVENT_PEON_CACTUS_DONE'),
+ ('VALLEY_SARKOTH','VALLEY','ValleyOfTrials',10,19,"Hana'zua",'EVENT_PEON_SARKOTH_ACCEPTED',['EVENT_PEON_SARKOTH_DEAD'],'EVENT_PEON_SARKOTH_DONE'),
+ ('VALLEY_MEDALLION','VALLEY','ValleyOfTrials',6,11,'Zureetha','EVENT_PEON_MEDALLION_ACCEPTED',['EVENT_PEON_YARROG_DEAD'],'EVENT_PEON_MEDALLION_DONE'),
+]
 
 
 def encode(tile):
-    data = bytearray()
+    data=bytearray()
     for row in tile:
-        data.extend((sum((int(v) & 1) << (7-x) for x,v in enumerate(row)),
-                     sum(((int(v) >> 1) & 1) << (7-x) for x,v in enumerate(row))))
+        data.extend((sum((int(v)&1)<<(7-x) for x,v in enumerate(row)),
+                     sum(((int(v)>>1)&1)<<(7-x) for x,v in enumerate(row))))
     return bytes(data)
 
 
-def geometry(name, x, y):
-    source = Image.open(WORLD / (name + '.png'))
-    thumb = ImageOps.contain(source, (156,100), Image.Resampling.NEAREST)
-    offset = ((160-thumb.width)//2, 16+(104-thumb.height)//2)
-    native = (x*16+8, y*16+8)
-    center = (round(offset[0]+native[0]*thumb.width/source.width),
-              round(offset[1]+native[1]*thumb.height/source.height))
-    top_left = (center[0]-4, center[1]-4)
-    return {'source_size':list(source.size), 'thumbnail_size':list(thumb.size),
-            'thumbnail_offset':list(offset), 'collision_coordinate':[x,y],
-            'source_cell_center':list(native), 'atlas_center':list(center),
-            'glyph_top_left':list(top_left),
-            'oam_yx':[top_left[1]+16,top_left[0]+8]}
+def geometry(name,x,y):
+    source=Image.open(WORLD/(name+'.png'))
+    thumb=ImageOps.contain(source,(156,100),Image.Resampling.NEAREST)
+    offset=((160-thumb.width)//2,16+(104-thumb.height)//2)
+    native=(x*16+8,y*16+8)
+    center=(round(offset[0]+native[0]*thumb.width/source.width),
+            round(offset[1]+native[1]*thumb.height/source.height))
+    top=(center[0]-4,center[1]-4)
+    return {'source_size':list(source.size),'thumbnail_size':list(thumb.size),
+            'thumbnail_offset':list(offset),'collision_coordinate':[x,y],
+            'source_cell_center':list(native),'atlas_center':list(center),
+            'glyph_top_left':list(top),'oam_yx':[top[1]+16,top[0]+8]}
 
 
 def main():
-    OUT.mkdir(parents=True,exist_ok=True)
-    GFX.mkdir(parents=True,exist_ok=True)
-    indexed = Image.new('P',(16,8),0)
+    OUT.mkdir(parents=True,exist_ok=True);GFX.mkdir(parents=True,exist_ok=True)
+    indexed=Image.new('P',(16,8),0)
     indexed.putpalette([255,255,255,170,170,170,85,85,85,0,0,0]+[0]*756)
-    binary = bytearray()
-    rgba = {}
-    for i,(name,pattern) in enumerate(GLYPHS.items()):
+    binary=bytearray()
+    for index,pattern in enumerate(GLYPHS.values()):
         binary.extend(encode(pattern))
-        image = Image.new('RGBA',(8,8),(0,0,0,0))
+        for y,row in enumerate(pattern):
+            for x,value in enumerate(row):indexed.putpixel((index*8+x,y),int(value))
+    indexed.save(GFX/'peon_quest_poi.png')
+    (GFX/'peon_quest_poi.2bpp').write_bytes(binary)
+    rgba={}
+    for name,pattern,palette in [('quest_available',GLYPHS['quest_available'],GOLD),
+                                 ('quest_active',GLYPHS['quest_complete'],GRAY),
+                                 ('quest_complete',GLYPHS['quest_complete'],GOLD)]:
+        colours=[tuple((c<<3)|(c>>2) for c in colour) for colour in palette]
+        image=Image.new('RGBA',(8,8),(0,0,0,0))
         for y,row in enumerate(pattern):
             for x,value in enumerate(row):
                 value=int(value)
-                indexed.putpixel((i*8+x,y),value)
-                if value:image.putpixel((x,y),(*PALETTE[value],255))
+                if value:image.putpixel((x,y),(*colours[value],255))
         image.save(OUT/(name+'.png'))
         image.resize((128,128),Image.Resampling.NEAREST).save(OUT/(name+'_16x.png'))
         rgba[name]=image
-    # The internal DMG-indexed compiler source is opaque grayscale. Public
-    # glyph PNGs above are transparent RGBA; index 0 is transparent in OBJ VRAM.
-    indexed.save(GFX/'peon_quest_poi.png')
-    (GFX/'peon_quest_poi.2bpp').write_bytes(binary)
-    assert len(binary)==32
     constants=['; Generated by tools/build_peon_atlas_quests.py.']
-    manifest={'native_glyph_size':[8,8], 'obj_vram_bank':0,
-              'obj_vram_range':'$8000..$801f','obj_palette':4,
-              'obj_palette_rgb555':[list(c) for c in RGB555],
-              'transparent_index':0, 'glyphs':list(GLYPHS),
-              '2bpp_sha256':hashlib.sha256(binary).hexdigest(), 'points':{}}
-    for ident,name,x,y,speaker in POINTS:
+    manifest={'native_glyph_size':[8,8],'native_glyph_count':2,
+              'obj_vram_bank':0,'obj_vram_range':'$8000..$801f',
+              'gold_obj_palette':4,'gray_obj_palette':7,
+              'gold_palette_rgb555':[list(c) for c in GOLD],
+              'gray_palette_rgb555':[list(c) for c in GRAY],
+              'transparent_index':0,'2bpp_sha256':hashlib.sha256(binary).hexdigest(),
+              'points':{},'state_styles':{'offered':{'glyph':'quest_available','tile':0,'palette':4},
+                                        'active':{'glyph':'quest_active','tile':1,'palette':7},
+                                        'ready':{'glyph':'quest_complete','tile':1,'palette':4}}}
+    for ident,region,name,x,y,speaker,accepted,ready,complete in POINTS:
         info=geometry(name,x,y)
-        info['speaker']=speaker
+        info.update({'region':region,'speaker':speaker,'accepted_flag':accepted,
+                     'ready_all_flags':ready,'complete_flag':complete})
         manifest['points'][ident]=info
         oy,ox=info['oam_yx']
         constants.extend([f'DEF PEON_ATLAS_{ident}_OAM_Y EQU {oy}',
                           f'DEF PEON_ATLAS_{ident}_OAM_X EQU {ox}'])
-        atlas=Image.open(ATLAS/(ident.lower()+'.png')).convert('RGBA')
+        atlas=Image.open(ATLAS/(region.lower()+'.png')).convert('RGBA')
         for glyph,image in rgba.items():
-            preview=atlas.copy()
-            preview.alpha_composite(image,tuple(info['glyph_top_left']))
+            preview=atlas.copy();preview.alpha_composite(image,tuple(info['glyph_top_left']))
             preview.convert('RGB').save(OUT/(ident.lower()+'_'+glyph+'.png'))
-            preview.resize((640,576),Image.Resampling.NEAREST).save(
-                OUT/(ident.lower()+'_'+glyph+'_4x.png'))
-    manifest['states']={
-        'DEN':{'hidden':['region undiscovered','EVENT_PEON_LAZY_DONE'],
-               '?':'EVENT_PEON_LAZY_AWAKE', '!':'offered or active, peon asleep'},
-        'VALLEY':{'hidden':['region undiscovered','EVENT_PEON_CACTUS_DONE'],
-                  '?':'all three EVENT_PEON_CACTUS_1/2/3 flags',
-                  '!':'offered or active, apples remaining'},
-    }
-    manifest['limitations']=['Two current prototype quests only; not every Classic quest',
-                             'Quest locations remain hidden on undiscovered region pages']
+    for region in ('DEN','VALLEY'):
+        for state,style in manifest['state_styles'].items():
+            preview=Image.open(ATLAS/(region.lower()+'.png')).convert('RGBA')
+            for point in manifest['points'].values():
+                if point['region']==region:preview.alpha_composite(rgba[style['glyph']],tuple(point['glyph_top_left']))
+            preview.convert('RGB').save(OUT/(region.lower()+'_all_'+state+'.png'))
+            preview.resize((640,576),Image.Resampling.NEAREST).save(OUT/(region.lower()+'_all_'+state+'_4x.png'))
+    manifest['visibility']='Completed quests and undiscovered region pages have no quest point.'
+    manifest['limitations']=['Four current prototype quests only, not every Classic quest',
+                            'Gray palette7 is temporary inside the atlas; normal map exit reloads OBJ palettes']
     (GFX/'peon_quest_poi_positions.asm').write_text('\n'.join(constants)+'\n')
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     (OUT/'README.md').write_text(
-        '# Native region quest points\n\n'
-        'Transparent 8×8 `!` and `?` glyphs use the existing gold OBJ palette. '
-        'The Den shows the Lazy Peons Foreman; Valley of Trials shows Galgar. '
-        'A completed quest removes its point. Undiscovered regions reveal no point.\n\n'
-        'These static previews are compiler reconstructions; emulator captures '
-        'and checks are reported separately by `validate_peon_atlas_quests.py`.\n'
-    )
-    print('Built two native glyphs and two exact atlas points; 32 bytes of OBJ graphics')
+        '# Native region quest points — v0.2.2\n\n'
+        'Four quest givers appear on discovered pages: The Den Foreman, '
+        "Galgar, Hana'zua and Zureetha. Yellow `!` means offered, gray `?` means "
+        'active, yellow `?` means ready to turn in. Completed points disappear.\n\n'
+        'Two transparent native 8×8 OBJ glyphs reuse palettes4 and7 for three '
+        'visible states, without changing the full-color BG atlas. Public glyph '
+        'PNGs are RGBA; the internal compiler PNG is opaque indexed grayscale.\n\n'
+        'Static previews are compiler reconstructions. Actual ROM captures '
+        'and explicitly labelled diagnostic availability/fog checks are saved '
+        'by `validate_peon_atlas_quests.py`.\n')
+    print('Built two native OBJ glyphs, three color states and four exact atlas points.')
 
 
 if __name__=='__main__':main()

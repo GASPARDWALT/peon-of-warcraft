@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'references/audio/peon_title_4ch_rough_guide.mid'
-OUT = ROOT / 'references/generated/durotar_v021/title_music'
+OUT = ROOT / 'references/generated/durotar_v022/title_music'
 PITCHES = ('C_', 'C#', 'D_', 'D#', 'E_', 'F_', 'F#', 'G_', 'G#', 'A_', 'A#', 'B_')
 
 

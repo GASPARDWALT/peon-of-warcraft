@@ -1,0 +1,242 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "emulator": "PyBoy 2.7.0",
+  "test_method": "Ordinary buttons only; no RAM edits or savestate shortcuts",
+  "doors": [
+    {
+      "origin_map": 14,
+      "door": [
+        5,
+        7
+      ],
+      "interior_map": 22,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 14,
+      "door": [
+        17,
+        5
+      ],
+      "interior_map": 23,
+      "round_trip": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        5,
+        5
+      ],
+      "interior_map": 21,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        17,
+        9
+      ],
+      "interior_map": 21,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 17,
+      "door": [
+        15,
+        5
+      ],
+      "interior_map": 24,
+      "round_trip": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        5,
+        5
+      ],
+      "interior_map": 22,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        17,
+        13
+      ],
+      "interior_map": 22,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        5,
+        15
+      ],
+      "interior_map": 22,
+      "round_trip": true,
+      "no_free_heal": true
+    },
+    {
+      "origin_map": 18,
+      "door": [
+        17,
+        5
+      ],
+      "interior_map": 23,
+      "round_trip": true
+    }
+  ],
+  "bindings": [
+    {
+      "home": "EVENT_PEON_HOME_DEN",
+      "exclusive": true,
+      "restored_hp": true,
+      "status_before": 0,
+      "status_zero_after_rest": true,
+      "hp_before": [
+        0,
+        11
+      ],
+      "hp_after": [
+        0,
+        17
+      ],
+      "prototype_rest_cost_copper": 0,
+      "money_unchanged": true
+    },
+    {
+      "home": "EVENT_PEON_HOME_SENJIN",
+      "exclusive": true,
+      "restored_hp": true,
+      "status_before": 0,
+      "status_zero_after_rest": true,
+      "hp_before": [
+        0,
+        17
+      ],
+      "hp_after": [
+        0,
+        17
+      ],
+      "prototype_rest_cost_copper": 0,
+      "money_unchanged": true
+    },
+    {
+      "home": "EVENT_PEON_HOME_RAZOR",
+      "exclusive": true,
+      "restored_hp": true,
+      "status_before": 0,
+      "status_zero_after_rest": true,
+      "hp_before": [
+        0,
+        17
+      ],
+      "hp_after": [
+        0,
+        17
+      ],
+      "prototype_rest_cost_copper": 0,
+      "money_unchanged": true
+    }
+  ],
+  "hearth_returns": [
+    {
+      "home": "DEN",
+      "interior": 23,
+      "backup_owner": 14
+    },
+    {
+      "home": "SENJIN",
+      "interior": 24,
+      "backup_owner": 17
+    },
+    {
+      "home": "RAZOR",
+      "interior": 23,
+      "backup_owner": 18
+    }
+  ],
+  "ordinary_new_game_reaches_den": true,
+  "unbound_hearth_does_not_travel": true,
+  "normal_quest_reward_copper": 100,
+  "actual_copper_available_for_rest_check": 150,
+  "combat_wounds_persist_without_free_heal": true,
+  "declined_rest_does_not_heal_or_bind": true,
+  "rest_restores_spent_charges": true,
+  "cancelled_hearth_preserves_location": true,
+  "declined_new_binding_preserves_previous_home": true,
+  "save_position_still_three_down": true,
+  "inside_inn_battery_restart": true,
+  "saved_backup_exit_owner_preserved": true,
+  "state_before_save": {
+    "wPlayerName": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      80
+    ],
+    "wMapGroup": [
+      26,
+      23
+    ],
+    "wXCoord": [
+      5
+    ],
+    "wYCoord": [
+      6
+    ],
+    "wBackupWarpNumber": [
+      4,
+      26,
+      18
+    ]
+  },
+  "state_after_restart": {
+    "wPlayerName": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      80
+    ],
+    "wMapGroup": [
+      26,
+      23
+    ],
+    "wXCoord": [
+      5
+    ],
+    "wYCoord": [
+      6
+    ],
+    "wBackupWarpNumber": [
+      4,
+      26,
+      18
+    ]
+  },
+  "limitations": [
+    "Inn rest is an instant prototype adaptation, not Classic regeneration timing",
+    "Hearthstone has no cooldown in this demo",
+    "Three homes share two native inn layouts",
+    "Chromatic hardware is untested"
+  ]
+}

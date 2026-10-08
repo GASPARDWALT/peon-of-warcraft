@@ -108,6 +108,8 @@ DoPoisonStep::
 
 .Script_MonFaintedToPoison:
 	callasm .PlayPoisonSFX
+	callasm .CheckPeonPoisonWhiteout
+	iftrue .peon_whiteout
 	opentext
 	callasm .CheckWhitedOut
 	iffalse .whiteout
@@ -116,6 +118,38 @@ DoPoisonStep::
 
 .whiteout
 	farsjump OverworldWhiteoutScript
+
+.peon_whiteout
+	opentext
+	writetext .PeonPoisonDefeatText
+	waitbutton
+	closetext
+	callasm PeonRecoverFromDefeat
+	farsjump PeonHearthReturnScript
+
+.CheckPeonPoisonWhiteout:
+; Keep Crystal's 1 HP loss every four steps. Only the apprentice's final
+; poisoned step uses native defeat recovery; unrelated maps/party members
+; retain the original faint and whiteout behavior.
+	xor a
+	ld [wScriptVar], a
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ret nz
+	ld a, [wPartyMon1HP]
+	ld hl, wPartyMon1HP + 1
+	or [hl]
+	ret nz
+	ld a, 1
+	ld [wScriptVar], a
+	ret
+
+.PeonPoisonDefeatText:
+	text "<PLAYER>,"
+	line "the venom won."
+	para "You awaken at"
+	line "your bound inn."
+	done
 
 .CheckWhitedOut:
 	xor a

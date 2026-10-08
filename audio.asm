@@ -7,6 +7,8 @@ INCLUDE "audio/music/nothing.asm"
 INCLUDE "audio/cry_pointers.asm"
 INCLUDE "audio/sfx_pointers.asm"
 
+INCLUDE "audio/peon_ambient_music.asm"
+
 
 SECTION "Songs 1", ROMX
 

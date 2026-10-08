@@ -453,6 +453,8 @@ EnemyTriesToFlee:
 	ret
 
 DetermineMoveOrder:
+	farcall PeonEarthTotemPriority
+	ret c
 	ld a, [wLinkMode]
 	and a
 	jr z, .use_move
@@ -629,7 +631,7 @@ ParsePlayerAction:
 .not_encored
 	ld a, [wBattlePlayerAction]
 	cp BATTLEPLAYERACTION_SWITCH
-	jr z, .reset_rage
+	jp z, .reset_rage
 	and a
 	jr nz, .reset_bide
 	ld a, [wPlayerSubStatus3]
@@ -643,6 +645,13 @@ ParsePlayerAction:
 	call MoveSelectionScreen
 	push af
 	call SafeLoadTempTilemapToTilemap
+	; MoveInfoBox changes CGB attributes as well as tile IDs. Restoring the
+	; cached tilemap alone left the Peon's lower half in the menu palette.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .move_colors_restored
+	call FinishBattleAnim
+.move_colors_restored
 	call UpdateBattleHuds
 	ld a, [wCurPlayerMove]
 	cp STRUGGLE
@@ -770,6 +779,14 @@ HandleEncore:
 	jp StdBattleTextbox
 
 TryEnemyFlee:
+	; Visible Warcraft actors must remain until defeated or the player runs.
+	; Their adapters may be on Crystal's randomly-fleeing species lists.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .legacy
+	xor a
+	ret
+.legacy
 	ld a, [wBattleMode]
 	dec a
 	jr nz, .Stay
@@ -2572,6 +2589,11 @@ PlayVictoryMusic:
 	call PlayMusic
 	call DelayFrame
 	ld de, MUSIC_WILD_VICTORY
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .check_mode
+	ld de, MUSIC_PEON_VICTORY
+.check_mode
 	ld a, [wBattleMode]
 	dec a
 	jr nz, .trainer_victory
@@ -3966,6 +3988,10 @@ GetEnemyMonDVs:
 	jp GetPartyLocation
 
 ResetPlayerStatLevels:
+	xor a
+	ld [wPeonRockbiterCharge], a
+	ld [wPeonLightningShieldCharges], a
+	ld [wPeonEarthTotemActive], a
 	ld a, BASE_STAT_LEVEL
 	ld b, NUM_LEVEL_STATS
 	ld hl, wPlayerStatLevels
@@ -4904,6 +4930,7 @@ DrawEnemyHUD:
 	hlcoord 2, 2
 	ld b, 0
 	call DrawBattleHPBar
+	farcall PeonDrawEnemyRankEmblem
 	ret
 
 UpdateEnemyHPPal:
@@ -4929,6 +4956,11 @@ BattleMenu:
 	xor a
 	ldh [hBGMapMode], a
 	call LoadTempTilemapToTilemap
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .menu_colors_restored
+	call FinishBattleAnim
+.menu_colors_restored
 
 	ld a, [wBattleType]
 	cp BATTLETYPE_DEBUG
@@ -5022,6 +5054,9 @@ BattleMenu_Pack:
 	jr z, .contest
 
 	farcall PeonBags
+	ld a, [wItemEffectSucceeded]
+	and a
+	jr nz, .got_item
 	jr .didnt_use_item
 
 .tutorial
@@ -7023,6 +7058,8 @@ FinishBattleAnim:
 	push hl
 	ld b, SCGB_BATTLE_COLORS
 	call GetSGBLayout
+	farcall PeonDrawEnemyRankEmblem
+	farcall PeonDrawBattleTotem
 	call SetDefaultBGPAndOBP
 	call DelayFrame
 	pop hl
@@ -9182,7 +9219,10 @@ CopyBackpic:
 BattleStartMessage:
 	ld a, [wMapTileset]
 	cp TILESET_PEON
-	jp z, PeonEncounterStartMessage
+	jr nz, .legacy
+	farcall PeonEncounterStartMessage
+	ret
+.legacy
 	ld a, [wBattleMode]
 	dec a
 	jr z, .wild
@@ -9263,32 +9303,3 @@ BattleStartMessage:
 	farcall Mobile_PrintOpponentBattleMessage
 
 	ret
-
-PeonEncounterStartMessage:
-	; The enemy's native poses can introduce the encounter without an old cry.
-	farcall CheckBattleScene
-	jr c, .message
-	ld a, [wCurPartySpecies]
-	push af
-	ld a, [wCurSpecies]
-	push af
-	ld a, [wEnemyMonSpecies]
-	ld [wCurPartySpecies], a
-	hlcoord 12, 0
-	ld d, 0
-	ld e, ANIM_MON_EGG1
-	predef AnimateFrontpic
-	pop af
-	ld [wCurSpecies], a
-	pop af
-	ld [wCurPartySpecies], a
-.message
-	ld hl, .EncounterText
-	jp BattleTextbox
-.EncounterText
-	text "You face"
-	line "@"
-	text_ram wEnemyMonNickname
-	text "!"
-	para "Prepare to fight."
-	prompt

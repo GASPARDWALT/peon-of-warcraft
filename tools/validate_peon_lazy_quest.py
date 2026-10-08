@@ -16,7 +16,7 @@ from PIL import Image
 from validate_peon_villages import Session, load_symbols
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/lazy_quest_validation'
+OUT = ROOT / 'references/generated/durotar_v022/lazy_quest_validation'
 
 
 def event_indices():
@@ -162,25 +162,25 @@ def main():
             interact((5, 17), 'up', 'lazy_peon_working_repeat', 8)
             assert observed['wake_impacts'] == 1, 'Worker wake impact repeated'
             interact((8, 16), 'up', 'foreman_reward', 7)
-            assert event('EVENT_PEON_LAZY_DONE') and s.money() == initial_money + 25
+            assert event('EVENT_PEON_LAZY_DONE') and s.money() == initial_money + 100
             assert s.read('wMap9ObjectStructID') == [255], 'Completed quest marker remains allocated'
             for _ in range(2):
                 interact((8, 16), 'up', 'foreman_thanks_repeat', 7)
-                assert s.money() == initial_money + 25, 'Quest reward repeated'
+                assert s.money() == initial_money + 100, 'Quest reward repeated'
             results['lazy_peons'] = {'accepted': True, 'one_worker_awakened': True,
-                                    'one_wake_impact': True, 'reward_copper': 25,
+                                    'one_wake_impact': True, 'reward_copper': 100,
                                     'reward_only_once': True, 'marker_hidden_after_done': True,
                                     'marker_uses_foreman_speaker': True}
             heals = observed['heal_calls']
             interact((12, 8), 'up', 'campfire_rest', 0)
-            assert observed['heal_calls'] == heals + 1
-            assert s.read('wPartyMon1HP', 2) == s.read('wPartyMon1MaxHP', 2)
+            assert observed['heal_calls'] == heals
+            # The fire is scenery in v0.2.2; it must not invoke free restoration.
             results['campfire'] = {'ordinary_prop_interaction': True,
-                                   'no_false_npc_speaker': True, 'native_heal_invoked': True}
+                                   'no_false_npc_speaker': True, 'no_free_restoration': True}
             results['save_cold_restart'] = s.save_cold_restart()
             assert all(event(name) for name in ('EVENT_PEON_LAZY_ACCEPTED',
                        'EVENT_PEON_LAZY_AWAKE', 'EVENT_PEON_LAZY_DONE'))
-            assert s.money() == initial_money + 25
+            assert s.money() == initial_money + 100
             assert s.read('wMap9ObjectStructID') == [255]
             results['all_checks_passed'] = True
             s.p.stop(save=False)

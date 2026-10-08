@@ -1205,8 +1205,12 @@ LoadMapPals:
 	jr c, .region_palette
 	ld a, [wMapNumber]
 	sub 21
-	cp 2
+	cp 4
 	jr nc, .base_palette
+	cp 2
+	jr c, .interior_palette
+	xor 3 ; 23 Orc Inn shares Orc Hut; 24 Troll Inn shares Troll Hut
+.interior_palette:
 	ld hl, PeonInteriorBGPalettes
 	jr .palette_offset
 .region_palette:
@@ -1224,6 +1228,7 @@ LoadMapPals:
 	ld bc, 8 palettes
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
+	farcall PeonApplyQuestMarkerGrayPalette
 	ret
 .crystal
 	farcall LoadSpecialMapPalette

@@ -510,6 +510,8 @@ ENDM
 	map_const BURNING_BLADE_CAVERN,                        10, 10 ; 20
 	map_const PEON_TROLL_HUT,                               6,  5 ; 21
 	map_const PEON_ORC_HUT,                                 6,  5 ; 22
+	map_const PEON_ORC_INN,                                 6,  5 ; 23
+	map_const PEON_TROLL_INN,                               6,  5 ; 24
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

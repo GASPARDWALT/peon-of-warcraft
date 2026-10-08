@@ -107,4 +107,11 @@ Music:
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby
 	dba Music_MobileCenter
+	dba Music_PeonDurotar
+	dba Music_PeonCave
+	dba Music_PeonBattle
+	dba Music_PeonInn
+	dba Music_PeonVictory
+	dba Music_PeonBarrens
+	dba Music_PeonOrgrimmar
 	assert_table_length NUM_MUSIC_SONGS

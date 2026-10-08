@@ -1,0 +1,111 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "normal_flow": "Ordinary-button new game, naming, character sheet, bags and the real starter Earth Totem inventory.",
+  "restored_palette_scope": "Terrain BG palettes 0 through 6 and all eight OBJ palettes. BG7 is Crystal's independently restored text palette.",
+  "rarity_method": "Diagnostic one-item inventory substitution in isolated emulator state; menus then opened with ordinary buttons.",
+  "character_sheet": {
+    "native_frame_glyphs_match": true,
+    "outer_frame_not_overwritten_by_text": true,
+    "actual_vram_attributes_match": true,
+    "header_frame_attributes_match": true,
+    "header_frame_palettes_match": true,
+    "native_green_brown_portrait_matches": true,
+    "world_graphics_palettes_restored": true
+  },
+  "bags": {
+    "native_frame_glyphs_match": true,
+    "outer_frame_not_overwritten_by_text": true,
+    "actual_vram_attributes_match": true,
+    "header_frame_attributes_match": true,
+    "header_frame_palettes_match": true,
+    "three_card_frames_and_labels_do_not_overlap": true,
+    "world_graphics_palettes_restored": true
+  },
+  "starter_inventory": {
+    "native_frame_glyphs_match": true,
+    "outer_frame_not_overwritten_by_text": true,
+    "actual_vram_attributes_match": true,
+    "header_frame_attributes_match": true,
+    "header_frame_palettes_match": true,
+    "actual_earth_totem_item_and_native_icon_match": true,
+    "world_graphics_palettes_restored": true
+  },
+  "diagnostic_empty_inventory": {
+    "native_frame_glyphs_match": true,
+    "outer_frame_not_overwritten_by_text": true,
+    "actual_vram_attributes_match": true,
+    "header_frame_attributes_match": true,
+    "header_frame_palettes_match": true,
+    "inventory_count_substituted": true,
+    "world_graphics_palettes_restored": true
+  },
+  "diagnostic_rarity_cases": {
+    "gray": {
+      "native_frame_glyphs_match": true,
+      "outer_frame_not_overwritten_by_text": true,
+      "actual_vram_attributes_match": true,
+      "header_frame_attributes_match": true,
+      "header_frame_palettes_match": true,
+      "classic_quality_rgb555_matches": true,
+      "quality_text_visible": true,
+      "native_percent_glyph_rgb555_matches": true,
+      "place_string_places_regular_percent_tile": true,
+      "world_graphics_palettes_restored": true,
+      "inventory_entry_substituted": true
+    },
+    "white": {
+      "native_frame_glyphs_match": true,
+      "outer_frame_not_overwritten_by_text": true,
+      "actual_vram_attributes_match": true,
+      "header_frame_attributes_match": true,
+      "header_frame_palettes_match": true,
+      "classic_quality_rgb555_matches": true,
+      "quality_text_visible": true,
+      "native_percent_glyph_rgb555_matches": true,
+      "place_string_places_regular_percent_tile": true,
+      "world_graphics_palettes_restored": true,
+      "inventory_entry_substituted": true
+    },
+    "green": {
+      "native_frame_glyphs_match": true,
+      "outer_frame_not_overwritten_by_text": true,
+      "actual_vram_attributes_match": true,
+      "header_frame_attributes_match": true,
+      "header_frame_palettes_match": true,
+      "classic_quality_rgb555_matches": true,
+      "quality_text_visible": true,
+      "native_percent_glyph_rgb555_matches": true,
+      "place_string_places_regular_percent_tile": true,
+      "world_graphics_palettes_restored": true,
+      "inventory_entry_substituted": true
+    },
+    "blue": {
+      "native_frame_glyphs_match": true,
+      "outer_frame_not_overwritten_by_text": true,
+      "actual_vram_attributes_match": true,
+      "header_frame_attributes_match": true,
+      "header_frame_palettes_match": true,
+      "classic_quality_rgb555_matches": true,
+      "quality_text_visible": true,
+      "native_percent_glyph_rgb555_matches": true,
+      "place_string_places_regular_percent_tile": true,
+      "world_graphics_palettes_restored": true,
+      "inventory_entry_substituted": true
+    },
+    "spirit": {
+      "native_frame_glyphs_match": true,
+      "outer_frame_not_overwritten_by_text": true,
+      "actual_vram_attributes_match": true,
+      "header_frame_attributes_match": true,
+      "header_frame_palettes_match": true,
+      "classic_quality_rgb555_matches": true,
+      "quality_text_visible": true,
+      "native_percent_glyph_rgb555_matches": true,
+      "place_string_places_regular_percent_tile": true,
+      "world_graphics_palettes_restored": true,
+      "inventory_entry_substituted": true,
+      "nature_bonus_twenty_percent_ribbon_matches": true
+    }
+  },
+  "all_checks_passed": true
+}

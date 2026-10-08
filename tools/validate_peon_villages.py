@@ -19,10 +19,10 @@ from PIL import Image
 from pyboy import PyBoy
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'references/generated/durotar_v021/village_validation'
+OUT=ROOT/'references/generated/durotar_v022/village_validation'
 MAPS={14:('TheDen',12,10),15:('ValleyOfTrials',16,12),16:('DurotarRoad',12,14),
       17:('SenjinVillage',12,10),18:('RazorHill',12,10),19:('OrgrimmarGate',12,10),
-      20:('BurningBladeCavern',10,10),21:('PeonTrollHut',6,5),22:('PeonOrcHut',6,5)}
+      20:('BurningBladeCavern',10,10),21:('PeonTrollHut',6,5),22:('PeonOrcHut',6,5),23:('PeonOrcInn',6,5),24:('PeonTrollInn',6,5)}
 ROLES={'SPRITE_SAGE':'troll_caster','SPRITE_CLERK':'troll_fisher',
        'SPRITE_LINK_RECEPTIONIST':'troll_guard','SPRITE_OFFICER':'orc_guard',
        'SPRITE_GENTLEMAN':'orc_vendor','SPRITE_BLACK_BELT':'orc_questgiver'}
@@ -53,11 +53,11 @@ def sprite_constants():
 def actors(name):
     out=[]
     for line in (ROOT/'maps'/f'{name}.asm').read_text().splitlines():
-        match=re.match(r'\s*object_event\s+(\d+),\s*(\d+),\s*(SPRITE_\w+),(.+)',line)
+        match=re.match(r'\s*object_event\s+(\d+),\s*(\d+),\s*((?:SPRITE_|PEON_SPRITE_)\w+),(.+)',line)
         if not match:continue
         fields=[s.strip() for s in line.strip().split(' ',1)[1].split(',')]
         out.append({'xy':(int(match[1]),int(match[2])),'sprite':match[3],
-                    'script':fields[-2],'palette':fields[8],'map_object_index':len(out)+1})
+                    'script':fields[-2],'palette':fields[8],'event':fields[-1],'map_object_index':len(out)+1})
     return out
 
 
@@ -69,6 +69,13 @@ def warp_tiles(name):
 class Session:
     def __init__(self,rom,sym):
         self.rom=rom;self.sym=sym;self.open()
+        self.flags={};index=0
+        for row in (ROOT/'constants/event_flags.asm').read_text().splitlines():
+            parts=row.split(';')[0].split()
+            if not parts:continue
+            if parts[0] in ('const_def','const_next'):index=int(parts[1]) if len(parts)>1 else 0
+            elif parts[0]=='const_skip':index+=int(parts[1]) if len(parts)>1 else 1
+            elif parts[0]=='const':self.flags[parts[1]]=index;index+=1
         self.collisions=[row.split('tilecoll',1)[1].split(';',1)[0].replace(' ','').split(',')
                          for row in (ROOT/'data/tilesets/peon_collision.asm').read_text().splitlines() if 'tilecoll' in row]
     def open(self):
@@ -76,7 +83,9 @@ class Session:
         self.p.set_emulation_speed(0)
     def read(self,name,length=1):
         if not length:return []
-        bank,address=self.sym[name];return list(self.p.memory[bank,address:address+length])
+        bank,address=self.sym[name]
+        return list(self.p.memory[address:address+length] if address>=0xe000
+                    else self.p.memory[bank,address:address+length])
     def position(self):return tuple(self.read('wXCoord')+self.read('wYCoord'))
     def map(self):return self.read('wMapNumber')[0]
     def press(self,key,frames=90):self.p.button(key,delay=8);self.p.tick(frames,True)
@@ -102,7 +111,19 @@ class Session:
         return self.collisions[block][(y%2)*2+x%2]
     def path(self,target):
         num=self.map();name,w,h=MAPS[num]
-        occupied={npc['xy'] for npc in actors(name)};warps=warp_tiles(name)
+        live=[]
+        for npc in actors(name):
+            if self.read('wObjectMasks',16)[npc['map_object_index']]:continue
+            flag=npc['event']
+            if flag!='-1':
+                i=self.flags[flag]
+                if self.read('wEventFlags',i//8+1)[i//8]&(1<<(i%8)):continue
+            live.append(npc)
+        occupied={npc['xy'] for npc in live};warps=warp_tiles(name)
+        live_scripts={npc['script'] for npc in live}
+        dangerous={tuple(map(int,m.groups()[:2])) for m in re.finditer(
+            r'^\s*coord_event\s+(\d+),\s*(\d+),\s*-1,\s*(\w+)',
+            (ROOT/'maps'/f'{name}.asm').read_text(),re.M) if m[3] in live_scripts}
         start=self.position();q=deque([(start,[])]);seen={start}
         while q:
             (x,y),path=q.popleft()
@@ -111,7 +132,7 @@ class Session:
                 pos=(x+dx,y+dy)
                 if pos in seen or pos in occupied or self.collision_at(*pos)=='WALL':continue
                 if pos in warps and pos!=target:continue
-                if num==14 and abs(pos[0]-19)+abs(pos[1]-15)<=2:continue
+                if pos in dangerous and pos!=target:continue
                 seen.add(pos);q.append((pos,path+[key]))
         raise AssertionError((name,'no path',start,target))
     def navigate(self,target,expected_map=None):
@@ -235,7 +256,7 @@ def talk_npc(s,npc,sprites):
 
 def test_houses(s,name,entries,results):
     for i,entry in enumerate(entries[name]):
-        origin=s.map();target=tuple(entry['xy']);destination=21 if entry['target']=='PEON_TROLL_HUT' else 22
+        origin=s.map();target=tuple(entry['xy']);destination={'PEON_TROLL_HUT':21,'PEON_ORC_HUT':22,'PEON_ORC_INN':23,'PEON_TROLL_INN':24}[entry['target']]
         s.navigate(target,expected_map=destination);s.capture(name+f'_house_{i+1}_inside')
         record={'origin_map':origin,'door':list(target),'interior_map':destination,'ordinary_buttons':True}
         if destination==21 and 'inside_troll_hut_save_cold_restart' not in results:
@@ -253,7 +274,7 @@ def main():
     results={'rom_sha256':hashlib.sha256((ROOT/'pokecrystal.gbc').read_bytes()).hexdigest(),
              'emulator':'PyBoy 2.7','playable_method':'Fresh normal-button new game, walking, conversations, purchases, house warps and battery-save cold restart.',
              'ram_edits':False,'emulator_states_loaded':False,'building_entries':[],'npcs':[]}
-    entries=json.loads((ROOT/'references/generated/durotar_v021/building_entries.json').read_text())
+    entries=json.loads((ROOT/'references/generated/durotar_v022/building_entries.json').read_text())
     s=None
     try:
         with tempfile.TemporaryDirectory(prefix='peon-villages-') as directory:
@@ -265,7 +286,8 @@ def main():
             s.capture('fresh_character_the_den');results['new_game_reaches_den']=True
             test_houses(s,'TheDen',entries,results)
             s.navigate((20,10),expected_map=15);s.navigate((28,12),expected_map=16)
-            for npc in actors('DurotarRoad'):results['npcs'].append(talk_npc(s,npc,sprites))
+            for npc in actors('DurotarRoad'):
+                if npc['sprite'] in ROLES:results['npcs'].append(talk_npc(s,npc,sprites))
             s.navigate((12,24),expected_map=17);s.capture('senjin_arrival')
             for npc in actors('SenjinVillage'):results['npcs'].append(talk_npc(s,npc,sprites))
             test_houses(s,'SenjinVillage',entries,results)

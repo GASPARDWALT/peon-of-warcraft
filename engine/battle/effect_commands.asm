@@ -1849,6 +1849,8 @@ BattleCommand_CheckHit:
 INCLUDE "data/battle/accuracy_multipliers.asm"
 
 BattleCommand_EffectChance:
+	farcall PeonGuaranteedSpellEffectChance
+	ret c
 	xor a
 	ld [wEffectFailed], a
 	call CheckSubstituteOpp
@@ -2106,6 +2108,7 @@ BattleCommand_FailureText:
 	jp EndMoveEffect
 
 BattleCommand_ApplyDamage:
+	farcall PeonConsumeRockbiterDamage
 	ld a, BATTLE_VARS_SUBSTATUS1_OPP
 	call GetBattleVar
 	bit SUBSTATUS_ENDURE, a
@@ -2146,6 +2149,7 @@ BattleCommand_ApplyDamage:
 	call DoPlayerDamage
 
 .done_damage
+	farcall PeonLightningShieldRetaliation
 	pop bc
 	ld a, b
 	and a
@@ -4106,6 +4110,8 @@ BattleCommand_EvasionUp:
 	jr BattleCommand_StatUp
 
 BattleCommand_AttackUp2:
+	farcall PeonTryRockbiterEffect
+	ret c
 	ld b, $10 | ATTACK
 	jr BattleCommand_StatUp
 
@@ -6001,6 +6007,8 @@ INCLUDE "engine/battle/move_effects/pay_day.asm"
 INCLUDE "engine/battle/move_effects/conversion.asm"
 
 BattleCommand_ResetStats:
+	farcall PeonTryPurgeEffect
+	ret c
 	ld a, BASE_STAT_LEVEL
 	ld hl, wPlayerStatLevels
 	call .Fill
@@ -6146,6 +6154,8 @@ ResetActorDisable:
 	ret
 
 BattleCommand_Screen:
+	farcall PeonTryLightningShieldEffect
+	ret c
 	ld hl, wPlayerScreens
 	ld bc, wPlayerLightScreenCount
 	ldh a, [hBattleTurn]

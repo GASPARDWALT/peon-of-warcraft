@@ -1,0 +1,99 @@
+{
+  "effects": [
+    {
+      "name": "mace_bonk",
+      "header": "PeonSfx_MaceImpact",
+      "existing_sfx_id": "SFX_POUND",
+      "description": "Wood-and-metal mace impact / BONK",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_engine_frames": 12,
+      "estimated_seconds": 0.2
+    },
+    {
+      "name": "lightning_bolt",
+      "header": "PeonSfx_Lightning",
+      "existing_sfx_id": "SFX_THUNDERSHOCK",
+      "description": "Lightning charge, crack and electric tail",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_engine_frames": 32,
+      "estimated_seconds": 0.5333333333333333
+    },
+    {
+      "name": "firebolt",
+      "header": "PeonSfx_Firebolt",
+      "existing_sfx_id": "SFX_EMBER",
+      "description": "Flame ignition, fiery rush and low impact",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_engine_frames": 22,
+      "estimated_seconds": 0.36666666666666664
+    },
+    {
+      "name": "poison",
+      "header": "PeonSfx_Poison",
+      "existing_sfx_id": "SFX_POISON",
+      "description": "Short bubbling toxic hiss",
+      "channels": [
+        8
+      ],
+      "estimated_engine_frames": 16,
+      "estimated_seconds": 0.26666666666666666
+    },
+    {
+      "name": "scorpid_sting",
+      "header": "PeonSfx_PoisonSting",
+      "existing_sfx_id": "SFX_POISON_STING",
+      "description": "Quick piercing sting with a dry click",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_engine_frames": 9,
+      "estimated_seconds": 0.15
+    },
+    {
+      "name": "coins",
+      "header": "PeonSfx_Coins",
+      "existing_sfx_id": "SFX_TRANSACTION",
+      "description": "Two small metal coin chimes",
+      "channels": [
+        5,
+        6
+      ],
+      "estimated_engine_frames": 12,
+      "estimated_seconds": 0.2
+    },
+    {
+      "name": "menu",
+      "header": "PeonSfx_Menu",
+      "existing_sfx_id": "SFX_MENU",
+      "description": "Quiet tactile menu click",
+      "channels": [
+        8
+      ],
+      "estimated_engine_frames": 5,
+      "estimated_seconds": 0.08333333333333333
+    },
+    {
+      "name": "leather_bag",
+      "header": "PeonSfx_LeatherBag",
+      "existing_sfx_id": "SFX_SWITCH_POCKETS",
+      "description": "Leather flap and soft strap rustle",
+      "channels": [
+        8
+      ],
+      "estimated_engine_frames": 14,
+      "estimated_seconds": 0.23333333333333334
+    }
+  ],
+  "source": "Original native synthesis inspired by Warcraft sound categories",
+  "reference_access": "Wowhead Classic sounds catalog denied by network proxy; no samples auditioned/copied"
+}

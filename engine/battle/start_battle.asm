@@ -57,6 +57,10 @@ PlayBattleMusic:
 	call PlayMusic
 	call DelayFrame
 	call MaxVolume
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ld de, MUSIC_PEON_BATTLE
+	jp z, .done
 
 	ld a, [wBattleType]
 	cp BATTLETYPE_SUICUNE

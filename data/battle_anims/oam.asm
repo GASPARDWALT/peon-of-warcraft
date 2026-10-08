@@ -223,6 +223,22 @@ BattleAnimOAMData:
 	battleanimoam $00,  6, .OAMData_d5 ; BATTLE_ANIM_OAMSET_D5
 	battleanimoam $00, 14, .OAMData_d6 ; BATTLE_ANIM_OAMSET_D6
 	battleanimoam $00, 12, .OAMData_d7 ; BATTLE_ANIM_OAMSET_D7
+	battleanimoam $00, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_00
+	battleanimoam $01, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_01
+	battleanimoam $02, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_02
+	battleanimoam $03, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_03
+	battleanimoam $04, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_04
+	battleanimoam $05, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_05
+	battleanimoam $06, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_06
+	battleanimoam $07, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_07
+	battleanimoam $08, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_08
+	battleanimoam $09, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_09
+	battleanimoam $0a, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0A
+	battleanimoam $0b, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0B
+	battleanimoam $0c, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0C
+	battleanimoam $0d, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0D
+	battleanimoam $0e, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0E
+	battleanimoam $0f, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0F
 	assert_table_length NUM_BATTLE_ANIM_OAMSETS
 
 .OAMData_11:

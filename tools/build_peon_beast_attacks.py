@@ -152,7 +152,7 @@ def validate_attacks():
     from collections import deque
     from pyboy import PyBoy
     logging.disable(logging.CRITICAL)
-    OUT=ROOT/'references/generated/durotar_v021/combat_assets/in_game'
+    OUT=ROOT/'references/generated/durotar_v022/combat_assets/in_game'
     OUT.mkdir(parents=True,exist_ok=True)
     symbols={}
     for row in (ROOT/'pokecrystal.sym').read_text().splitlines():

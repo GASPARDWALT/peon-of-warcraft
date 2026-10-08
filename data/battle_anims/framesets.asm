@@ -186,7 +186,36 @@ BattleAnimFrameData:
 	dw .Frameset_PlayerHead1Row      ; BATTLE_ANIM_FRAMESET_PLAYERHEAD_1ROW
 	dw .Frameset_EnemyFeet2Row       ; BATTLE_ANIM_FRAMESET_ENEMYFEET_2ROW
 	dw .Frameset_PlayerHead2Row      ; BATTLE_ANIM_FRAMESET_PLAYERHEAD_2ROW
+	dw .Frameset_PeonFire
+	dw .Frameset_PeonLeaf
+	dw .Frameset_PeonArc
+	dw .Frameset_PeonWind
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
+
+.Frameset_PeonFire:
+	oamframe BATTLE_ANIM_OAMSET_PEON_00, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_01, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_02, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_03, 6
+	oamdelete
+.Frameset_PeonLeaf:
+	oamframe BATTLE_ANIM_OAMSET_PEON_04, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_05, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_06, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_07, 6
+	oamdelete
+.Frameset_PeonArc:
+	oamframe BATTLE_ANIM_OAMSET_PEON_08, 4
+	oamframe BATTLE_ANIM_OAMSET_PEON_09, 4
+	oamframe BATTLE_ANIM_OAMSET_PEON_0A, 4
+	oamframe BATTLE_ANIM_OAMSET_PEON_0B, 4
+	oamdelete
+.Frameset_PeonWind:
+	oamframe BATTLE_ANIM_OAMSET_PEON_0C, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_0D, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_0E, 6
+	oamframe BATTLE_ANIM_OAMSET_PEON_0F, 6
+	oamdelete
 
 .Frameset_HitBig:
 	oamframe BATTLE_ANIM_OAMSET_00,  6

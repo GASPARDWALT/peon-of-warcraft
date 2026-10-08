@@ -15,9 +15,19 @@ TheDen_MapScripts:
 	def_scene_scripts
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, TheDenDiscover
+	callback MAPCALLBACK_OBJECTS, TheDenRefreshMarkers
+	callback MAPCALLBACK_SPRITES, TheDenQuestSpriteCallback
 
 TheDenDiscover:
 	setevent EVENT_PEON_DISCOVERED_DEN
+	endcallback
+
+TheDenQuestSpriteCallback:
+	callasm PeonInitQuestMarkerSprites
+	endcallback
+
+TheDenRefreshMarkers:
+	callasm PeonRefreshQuestMarkers
 	endcallback
 
 TheDenQuestScript:
@@ -30,7 +40,7 @@ TheDenQuestScript:
 	yesorno
 	iffalse .Declined
 	setevent EVENT_PEON_QUEST_ACCEPTED
-	disappear THEDEN_MARKER
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenQuestAcceptedText
 	waitbutton
 	closetext
@@ -43,12 +53,24 @@ TheDenQuestScript:
 	closetext
 	end
 .Finished:
+	checkevent EVENT_PEON_CUTTING_TURNED_IN
+	iftrue .NextQuest
+	setevent EVENT_PEON_CUTTING_TURNED_IN
+	givemoney YOUR_MONEY, 100
+	callasm PeonGrantCuttingXP
+	callasm PeonQuestXPFeedback
+	waitbutton
+	writetext TheDenCuttingTurnedInText
+	waitbutton
+	callasm PeonRefreshQuestMarkers
+.NextQuest:
 	checkevent EVENT_PEON_STING_ACCEPTED
 	iftrue .StingProgress
 	writetext TheDenStingOfferText
 	yesorno
 	iffalse .Declined
 	setevent EVENT_PEON_STING_ACCEPTED
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenStingAcceptedText
 	waitbutton
 	closetext
@@ -64,7 +86,13 @@ TheDenQuestScript:
 	checkevent EVENT_PEON_MAP_RECEIVED
 	iftrue .Rewarded
 	giveitem ITEM_5A
+	iffalse .NoSpace
 	setevent EVENT_PEON_MAP_RECEIVED
+	givemoney YOUR_MONEY, 150
+	callasm PeonGrantScorpidXP
+	callasm PeonQuestXPFeedback
+	waitbutton
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenMapRewardText
 	waitbutton
 	checkevent EVENT_PEON_GEAR_REWARDED
@@ -77,6 +105,12 @@ TheDenQuestScript:
 	setevent EVENT_PEON_GEAR_REWARDED
 	writetext TheDenGearRewardText
 	waitbutton
+.NoSpace:
+	checkevent EVENT_PEON_MAP_RECEIVED
+	iftrue .Rewarded
+	writetext TheDenQuestBagFullText
+	waitbutton
+	sjump .Declined
 .Rewarded:
 	writetext TheDenQuestFinishedText
 	waitbutton
@@ -98,20 +132,23 @@ TheDenBoarScript:
 	loadwildmon RATTATA, 1
 	loadmem wBattleType, BATTLETYPE_CANLOSE
 	startbattle
-	; A friendly training defeat returns here, rather than invoking whiteout.
-	special HealParty
+	; Preserve battle attrition; defeat recovery is handled separately.
 	reloadmap
 	readmem wBattleResult
-	ifnotequal 0, .Lost
+	ifequal LOSE, .Lost
+	ifnotequal WIN, .NoReward
 	setevent EVENT_PEON_QUEST_DONE
 	disappear THEDEN_BOAR
+	callasm PeonRefreshQuestMarkers
 	opentext
 	writetext TheDenVictoryText
 	waitbutton
 	closetext
 	end
 .Lost:
-	special HealParty
+	callasm PeonRecoverFromDefeat
+	farsjump PeonHearthReturnScript
+.NoReward:
 	end
 .NotYet:
 	writetext TheDenNotYetText
@@ -126,12 +163,46 @@ TheDenBoarScript:
 
 TheDenKentoScript:
 	faceplayer
+	setlasttalked THEDEN_KENTO
+	; Older saves have the belt totem but predate the usable battle totem.
+	; Inventory guards this non-consumable handoff without another save flag.
+	checkevent EVENT_PEON_SHAMAN
+	iffalse .Trainer
+	checkitem ITEM_94
+	iftrue .Trainer
+	giveitem ITEM_94
+	iffalse .BagFull
+	opentext
+	writetext TheDenKentoEarthTotemText
+	waitbutton
+	closetext
+	sjump .Trainer
+.BagFull:
+	opentext
+	writetext TheDenKentoTotemBagFullText
+	waitbutton
+	closetext
+.Trainer:
 	opentext
 	writetext TheDenKentoText
 	waitbutton
 	closetext
-	special HealParty
+	callasm PeonShamanTrainer
 	end
+
+TheDenKentoEarthTotemText:
+	text "<PLAYER>,"
+	line "take this Earth"
+	cont "Totem for battle."
+	para "Use it from BAGS."
+	done
+
+TheDenKentoTotemBagFullText:
+	text "<PLAYER>,"
+	line "Your bag is full."
+	para "Make room, then"
+	line "come back to me."
+	done
 
 ; Yellow mobs are interaction-only. Red mobs trigger on entering their radius.
 TheDenScorpidScript:
@@ -141,12 +212,13 @@ TheDenScorpidScript:
 	loadwildmon SANDSHREW, 2
 	loadmem wBattleType, BATTLETYPE_CANLOSE
 	startbattle
-	special HealParty
 	reloadmap
 	readmem wBattleResult
-	ifnotequal 0, .Lost
+	ifequal LOSE, .Lost
+	ifnotequal WIN, .NoReward
 	setevent EVENT_PEON_SCORPID_DEFEATED
 	disappear THEDEN_SCORPID
+	callasm PeonRefreshQuestMarkers
 	opentext
 	writetext TheDenScorpidVictoryText
 	waitbutton
@@ -154,7 +226,9 @@ TheDenScorpidScript:
 .Done:
 	end
 .Lost:
-	warp THE_DEN, 10, 12
+	callasm PeonRecoverFromDefeat
+	farsjump PeonHearthReturnScript
+.NoReward:
 	end
 
 TheDenQuestOfferText:
@@ -217,15 +291,28 @@ TheDenTameText:
 TheDenKentoText:
 	text "KENTO BRANDENHOOF:"
 	para "<PLAYER>,"
-	para "Let me restore"
-	line "your HP and"
-	cont "spells."
-	para "MACE, SHIELD,"
-	line "TOTEM"
-	line "are in your PACK."
-	para "START: open menu."
-	line "Save before"
-	cont "leaving."
+	line "the spirits await."
+	para "Train new spells"
+	line "at even levels."
+	para "Purchased spells"
+	line "can be prepared"
+	cont "again for free."
+	para "Two training slots"
+	line "keep your mace"
+	cont "and bolt ready."
+	done
+
+TheDenCuttingTurnedInText:
+	text "CUTTING TEETH"
+	line "Quest complete!"
+	para "<PLAYER>,"
+	line "you earned"
+	cont "100 copper."
+	done
+
+TheDenQuestBagFullText:
+	text "Make room in your"
+	line "bag, then return."
 	done
 
 TheDenStingOfferText:
@@ -265,6 +352,7 @@ TheDenMapRewardText:
 	para "Take this map."
 	line "You have earned"
 	cont "it."
+	para "150 copper earned."
 	para "Received DUROTAR"
 	line "MAP!"
 	para "SELECT: zone map."
@@ -277,7 +365,7 @@ TheDen_MapEvents:
 	db 0, 0
 	def_warp_events
 	warp_event 20, 10, VALLEY_OF_TRIALS, 1
-	warp_event 17, 5, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
+	warp_event 17, 5, PEON_ORC_INN, 1 ; PEON_HUT_DOOR
 	warp_event 5, 7, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	def_coord_events
 	coord_event 17, 15, -1, TheDenScorpidScript
@@ -296,14 +384,14 @@ TheDen_MapEvents:
 	bg_event 12, 7, BGEVENT_READ, TheDenCampfireScript
 	def_object_events
 	object_event 10, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
-	object_event 10, 8, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, EVENT_PEON_QUEST_ACCEPTED
+	object_event 10, 8, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, EVENT_PEON_MAP_RECEIVED
 	object_event 18, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenBoarScript, EVENT_PEON_QUEST_DONE
 	object_event 6, 12, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
 	object_event 19, 15, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheDenScorpidScript, EVENT_PEON_SCORPID_DEFEATED
 	object_event 14, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenDuoknaScript, -1
 	object_event 8, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, -1
 	object_event 5, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
-	object_event 8, 14, SPRITE_POKEDEX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
+	object_event 8, 14, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
 	object_event 6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
 	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
 
@@ -319,6 +407,14 @@ TheDenGearRewardText:
 TheDenDuoknaScript:
 	faceplayer
 	opentext
+	writetext DuoknaGreetingText
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .Water
+	ifequal 2, .Potion
+	sjump .Close
+.Water:
 	writetext DuoknaOfferText
 	yesorno
 	iffalse .Close
@@ -328,6 +424,17 @@ TheDenDuoknaScript:
 	iffalse .Full
 	takemoney YOUR_MONEY, 25
 	writetext DuoknaBoughtText
+	sjump .Wait
+.Potion:
+	writetext DuoknaPotionOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem POTION
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	writetext DuoknaPotionBoughtText
 	sjump .Wait
 .Poor:
 	writetext DuoknaPoorText
@@ -339,6 +446,22 @@ TheDenDuoknaScript:
 .Close:
 	closetext
 	end
+.MenuHeader:
+	db MENU_BACKUP_TILES
+	menu_coords 0, 2, 17, 9
+	dw .MenuData
+	db 1 ; Water remains the default purchase.
+.MenuData:
+	db STATICMENU_CURSOR
+	db 3
+	db "SPRING WATER@"
+	db "MINOR POTION@"
+	db "CANCEL@"
+DuoknaGreetingText:
+	text "DUOKNA"
+	line "General Goods"
+	para "What do you need?"
+	done
 DuoknaOfferText:
 	text "DUOKNA"
 	line "General Goods"
@@ -347,6 +470,15 @@ DuoknaOfferText:
 	done
 DuoknaBoughtText:
 	text "Water packed."
+	line "Safe travels!"
+	done
+DuoknaPotionOfferText:
+	text "MINOR POTION x1"
+	line "25 copper. Buy?"
+	para "Restores 20 HP."
+	done
+DuoknaPotionBoughtText:
+	text "Potion packed."
 	line "Safe travels!"
 	done
 DuoknaPoorText:
@@ -368,6 +500,7 @@ TheDenForemanScript:
 	yesorno
 	iffalse .Close
 	setevent EVENT_PEON_LAZY_ACCEPTED
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenForemanAcceptedText
 	sjump .Wait
 .Progress:
@@ -375,7 +508,11 @@ TheDenForemanScript:
 	iffalse .Reminder
 	setevent EVENT_PEON_LAZY_DONE
 	disappear THEDEN_LAZY_MARKER
-	givemoney YOUR_MONEY, 25
+	givemoney YOUR_MONEY, 100
+	callasm PeonGrantLazyXP
+	callasm PeonQuestXPFeedback
+	waitbutton
+	callasm PeonRefreshQuestMarkers
 	writetext TheDenForemanRewardText
 	sjump .Wait
 .Reminder:
@@ -404,6 +541,7 @@ TheDenLazyPeonScript:
 	showemote EMOTE_SHOCK, THEDEN_LAZY_PEON, 12
 	waitsfx
 	setevent EVENT_PEON_LAZY_AWAKE
+	callasm PeonRefreshQuestMarkers
 	opentext
 	writetext TheDenLazyWakeText
 	sjump .Wait
@@ -453,7 +591,7 @@ TheDenForemanRewardText:
 	text "Good work,"
 	line "<PLAYER>!"
 	para "LAZY PEONS done!"
-	line "25 copper earned."
+	line "100 copper earned."
 	done
 
 TheDenForemanThanksText:
@@ -498,25 +636,15 @@ TheDenCampfireScript:
 	setlasttalked 0
 	opentext
 	writetext TheDenCampfireOfferText
-	yesorno
-	iffalse .Close
-	special HealParty
-	writetext TheDenCampfireRestedText
 	waitbutton
-.Close:
 	closetext
 	end
 
 TheDenCampfireOfferText:
 	text "The fire is warm."
 	para "<PLAYER>,"
-	line "rest by the fire?"
-	done
-
-TheDenCampfireRestedText:
-	text "Your health and"
-	line "spell charges are"
-	cont "restored."
-	para "You feel ready"
-	line "for more work."
+	line "pause a moment."
+	para "For a proper rest,"
+	line "visit the inn in"
+	cont "the northeast hut."
 	done

@@ -1,0 +1,237 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "normal_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "neutral_yellow_boars": [
+    {
+      "actor": 10,
+      "position": [
+        6,
+        16
+      ],
+      "yellow_palette": true,
+      "no_proximity_aggro": true,
+      "interaction_flavor_only": true
+    },
+    {
+      "actor": 11,
+      "position": [
+        14,
+        16
+      ],
+      "yellow_palette": true,
+      "no_proximity_aggro": true,
+      "interaction_flavor_only": true
+    }
+  ],
+  "lazy_peons": {
+    "accepted": true,
+    "one_worker_awakened": true,
+    "one_wake_impact": true,
+    "reward_copper": 100,
+    "reward_only_once": true,
+    "marker_hidden_after_done": true,
+    "marker_uses_foreman_speaker": true
+  },
+  "campfire": {
+    "ordinary_prop_interaction": true,
+    "no_false_npc_speaker": true,
+    "no_free_restoration": true
+  },
+  "save_cold_restart": {
+    "before": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        128,
+        128,
+        128,
+        128,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        12
+      ],
+      "wYCoord": [
+        10
+      ],
+      "wBackupWarpNumber": [
+        0
+      ],
+      "wBackupMapGroup": [
+        0
+      ],
+      "wBackupMapNumber": [
+        0
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        150
+      ],
+      "wEventFlags": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        64,
+        0,
+        224,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wNumKeyItems": [
+        3
+      ]
+    },
+    "after": {
+      "wPlayerName": [
+        143,
+        234,
+        174,
+        173,
+        127,
+        128,
+        128,
+        128,
+        128,
+        128,
+        80
+      ],
+      "wMapGroup": [
+        26,
+        14
+      ],
+      "wXCoord": [
+        12
+      ],
+      "wYCoord": [
+        10
+      ],
+      "wBackupWarpNumber": [
+        0
+      ],
+      "wBackupMapGroup": [
+        0
+      ],
+      "wBackupMapNumber": [
+        0
+      ],
+      "wPartyMon1Moves": [
+        1,
+        84,
+        0,
+        0
+      ],
+      "wPartyMon1Item": [
+        0
+      ],
+      "wMoney": [
+        0,
+        0,
+        150
+      ],
+      "wEventFlags": [
+        0,
+        0,
+        64,
+        4,
+        32,
+        0,
+        64,
+        8,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8,
+        64,
+        0,
+        224,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "wNumKeyItems": [
+        3
+      ]
+    },
+    "passed": true
+  },
+  "all_checks_passed": true,
+  "limitations": [
+    "One worker instead of Classic five; mace replaces quest blackjack.",
+    "The two added neutral boars are flavor NPCs, not combat/loot targets.",
+    "Physical Chromatic play remains untested."
+  ]
+}

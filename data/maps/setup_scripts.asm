@@ -164,12 +164,13 @@ MapSetupScript_LinkReturn:
 MapSetupScript_Continue:
 	mapsetup DisableLCD
 	mapsetup InitSound
-	mapsetup LoadMapAttributes_SkipObjects
+	mapsetup LoadContinueMapAttributes
 	mapsetup GetMapScreenCoords
 	mapsetup HandleContinueMap
 	mapsetup LoadBlockData
 	mapsetup LoadConnectionBlockData
 	mapsetup BufferScreen
+	mapsetup LoadContinueMapObjects
 	mapsetup LoadMapGraphics
 	mapsetup LoadMapTimeOfDay
 	mapsetup EnableLCD

@@ -1,0 +1,299 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "method": "Real button casts and native ROM video; no MOVE_ANIM or CPU substitution.",
+  "ram_diagnostics": [
+    "boar encounter species67 to protect gold-rank reserve",
+    "combatants HP/maxHP240; test spellset/PP in temporary battle RAM",
+    "Healing Wave HP1; enemy positive-stat fixture for Purge",
+    "Earth Totem active fixture to protect its bank1 reserve"
+  ],
+  "cases": {
+    "rockbiter": {
+      "move_id": 14,
+      "script": "PeonRockbiter",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "rgb555_pixel_matched_particle_frames": 92,
+      "visible_palette_indices": [
+        5
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "earth_shock": {
+      "move_id": 9,
+      "script": "PeonEarthShock",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "rgb555_pixel_matched_particle_frames": 67,
+      "visible_palette_indices": [
+        3
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "flame_shock": {
+      "move_id": 52,
+      "script": "PeonFlameShock",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rgb555_pixel_matched_particle_frames": 260,
+      "visible_palette_indices": [
+        4
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "healing_wave": {
+      "move_id": 105,
+      "script": "PeonHealingWave",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "rgb555_pixel_matched_particle_frames": 312,
+      "visible_palette_indices": [
+        5
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "lightning_shield": {
+      "move_id": 115,
+      "script": "PeonLightningShield",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "rgb555_pixel_matched_particle_frames": 216,
+      "visible_palette_indices": [
+        3
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "strength_of_earth": {
+      "move_id": 96,
+      "script": "PeonStrengthOfEarth",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "rgb555_pixel_matched_particle_frames": 102,
+      "visible_palette_indices": [
+        5
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "purge": {
+      "move_id": 114,
+      "script": "PeonPurge",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        4,
+        5,
+        6,
+        7,
+        12,
+        13,
+        14,
+        15
+      ],
+      "rgb555_pixel_matched_particle_frames": 260,
+      "visible_palette_indices": [
+        5,
+        6
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "frost_shock": {
+      "move_id": 58,
+      "script": "PeonFrostShock",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "rgb555_pixel_matched_particle_frames": 180,
+      "visible_palette_indices": [
+        6
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "flame_shock_ii": {
+      "move_id": 126,
+      "script": "PeonFlameShockII",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rgb555_pixel_matched_particle_frames": 364,
+      "visible_palette_indices": [
+        4
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "windfury": {
+      "move_id": 3,
+      "script": "PeonWindfury",
+      "script_entries": 2,
+      "clean_terminations": 2,
+      "native_phase_indices": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "rgb555_pixel_matched_particle_frames": 208,
+      "visible_palette_indices": [
+        6
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "chain_lightning": {
+      "move_id": 87,
+      "script": "PeonChainLightning",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "rgb555_pixel_matched_particle_frames": 216,
+      "visible_palette_indices": [
+        3
+      ],
+      "native_tile_upload_verified": true,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    },
+    "lightning_bolt": {
+      "move_id": 84,
+      "script": "Thundershock",
+      "script_entries": 1,
+      "clean_terminations": 1,
+      "native_phase_indices": [],
+      "rgb555_pixel_matched_particle_frames": 0,
+      "visible_palette_indices": [],
+      "native_tile_upload_verified": false,
+      "real_button_cast": true,
+      "move_animation_not_substituted": true,
+      "no_graphics_corruption_after_cast_and_bags": true,
+      "entire_enemy_front_rgb555": true,
+      "player_back_rgb555": true,
+      "gold_rank_and_totem_rgb555": true,
+      "gold_rank_and_totem_restored": true
+    }
+  },
+  "all_checks_passed": true
+}

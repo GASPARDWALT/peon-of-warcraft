@@ -1,0 +1,39 @@
+{
+  "source_midi": "references/audio/peon_title_4ch_rough_guide.mid",
+  "source_sha256": "2648c1bdad68d6c003860946c7ba48c43e06bddf9b678c853751990b617da4a9",
+  "midi_ppq": 480,
+  "guide_bpm": 86.1000137760022,
+  "native_tempo": 223,
+  "approximate_loop_seconds": 16.725,
+  "description": "Native arrangement of rough MIDI guide, not exact MP3 playback",
+  "channels": [
+    {
+      "channel": 1,
+      "role": "CH1 Pulse - lead guide",
+      "guide_note_count": 24,
+      "phrase_note_count": 24,
+      "phrase_sixteenths": 96
+    },
+    {
+      "channel": 2,
+      "role": "CH2 Pulse - sparse support guide",
+      "guide_note_count": 22,
+      "phrase_note_count": 22,
+      "phrase_sixteenths": 96
+    },
+    {
+      "channel": 3,
+      "role": "CH3 Wave - bass guide",
+      "guide_note_count": 4,
+      "phrase_note_count": 4,
+      "phrase_sixteenths": 96
+    },
+    {
+      "channel": 4,
+      "role": "CH4 Noise - drum onset guide",
+      "guide_note_count": 74,
+      "phrase_note_count": 57,
+      "phrase_sixteenths": 96
+    }
+  ]
+}

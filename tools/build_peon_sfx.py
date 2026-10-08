@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/sound_effects'
+OUT = ROOT / 'references/generated/durotar_v022/sound_effects'
 
 # Each note is (raw engine duration, volume, envelope decay, hardware frequency).
 # The native SFX engine adds one frame to each raw duration at its default speed.

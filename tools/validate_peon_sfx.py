@@ -21,7 +21,7 @@ from pyboy import PyBoy
 from validate_peon_title_music import symbols
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/sound_effects'
+OUT = ROOT / 'references/generated/durotar_v022/sound_effects'
 logging.disable(logging.CRITICAL)
 
 

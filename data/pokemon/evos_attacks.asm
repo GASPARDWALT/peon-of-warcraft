@@ -281,16 +281,9 @@ RaticateEvosAttacks:
 	db 0 ; no more level-up moves
 
 SpearowEvosAttacks:
-	db EVOLVE_LEVEL, 20, FEAROW
-	db 0 ; no more evolutions
-	db 1, PECK
-	db 1, GROWL
-	db 7, LEER
-	db 13, FURY_ATTACK
-	db 25, PURSUIT
-	db 31, MIRROR_MOVE
-	db 37, DRILL_PECK
-	db 43, AGILITY
+	db 0 ; Durotar creature, no evolution
+	db 1, SCRATCH
+	db 1, WING_ATTACK
 	db 0 ; no more level-up moves
 
 FearowEvosAttacks:
@@ -308,16 +301,9 @@ FearowEvosAttacks:
 	db 0 ; no more level-up moves
 
 EkansEvosAttacks:
-	db EVOLVE_LEVEL, 22, ARBOK
-	db 0 ; no more evolutions
-	db 1, WRAP
-	db 1, LEER
-	db 9, POISON_STING
-	db 15, BITE
-	db 23, GLARE
-	db 29, SCREECH
-	db 37, ACID
-	db 43, HAZE
+	db 0 ; Durotar creature, no evolution
+	db 1, BITE
+	db 1, SCRATCH
 	db 0 ; no more level-up moves
 
 ArbokEvosAttacks:
@@ -667,16 +653,9 @@ DugtrioEvosAttacks:
 	db 0 ; no more level-up moves
 
 MeowthEvosAttacks:
-	db EVOLVE_LEVEL, 28, PERSIAN
-	db 0 ; no more evolutions
+	db 0 ; Durotar creature, no evolution
 	db 1, SCRATCH
-	db 1, GROWL
-	db 11, BITE
-	db 20, PAY_DAY
-	db 28, FAINT_ATTACK
-	db 35, SCREECH
-	db 41, FURY_SWIPES
-	db 46, SLASH
+	db 1, BITE
 	db 0 ; no more level-up moves
 
 PersianEvosAttacks:
@@ -855,19 +834,9 @@ MachopEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
-	db EVOLVE_TRADE, -1, MACHAMP
-	db 0 ; no more evolutions
-	db 1, LOW_KICK
-	db 1, LEER
-	db 1, FOCUS_ENERGY
-	db 8, FOCUS_ENERGY
-	db 15, KARATE_CHOP
-	db 19, SEISMIC_TOSS
-	db 25, FORESIGHT
-	db 34, VITAL_THROW
-	db 43, CROSS_CHOP
-	db 52, SCARY_FACE
-	db 61, SUBMISSION
+	db 0 ; Durotar creature, no evolution
+	db 1, FLAMETHROWER
+	db 1, SLASH
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
@@ -957,7 +926,7 @@ TentacruelEvosAttacks:
 GeodudeEvosAttacks:
 	db 0 ; no evolutions
 	db 1, SCRATCH
-	db 1, EMBER
+	db 1, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
@@ -1149,17 +1118,9 @@ DewgongEvosAttacks:
 	db 0 ; no more level-up moves
 
 GrimerEvosAttacks:
-	db EVOLVE_LEVEL, 38, MUK
-	db 0 ; no more evolutions
-	db 1, POISON_GAS
-	db 1, POUND
-	db 5, HARDEN
-	db 10, DISABLE
-	db 16, SLUDGE
-	db 23, MINIMIZE
-	db 31, SCREECH
-	db 40, ACID_ARMOR
-	db 50, SLUDGE_BOMB
+	db 0 ; Durotar creature, no evolution
+	db 1, FLAMETHROWER
+	db 1, TACKLE
 	db 0 ; no more level-up moves
 
 MukEvosAttacks:
@@ -1288,30 +1249,15 @@ HypnoEvosAttacks:
 	db 0 ; no more level-up moves
 
 KrabbyEvosAttacks:
-	db EVOLVE_LEVEL, 28, KINGLER
-	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 5, LEER
-	db 12, VICEGRIP
-	db 16, HARDEN
-	db 23, STOMP
-	db 27, GUILLOTINE
-	db 34, PROTECT
-	db 41, CRABHAMMER
+	db 0 ; Durotar creature, no evolution
+	db 1, VICEGRIP
+	db 1, TACKLE
 	db 0 ; no more level-up moves
 
 KinglerEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 1, LEER
+	db 0 ; Durotar creature, no evolution
+	db 1, POISON_STING
 	db 1, VICEGRIP
-	db 5, LEER
-	db 12, VICEGRIP
-	db 16, HARDEN
-	db 23, STOMP
-	db 27, GUILLOTINE
-	db 38, PROTECT
-	db 49, CRABHAMMER
 	db 0 ; no more level-up moves
 
 VoltorbEvosAttacks:
@@ -2114,17 +2060,9 @@ TyphlosionEvosAttacks:
 	db 0 ; no more level-up moves
 
 TotodileEvosAttacks:
-	db EVOLVE_LEVEL, 18, CROCONAW
-	db 0 ; no more evolutions
+	db 0 ; Durotar creature, no evolution
 	db 1, SCRATCH
-	db 1, LEER
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 20, BITE
-	db 27, SCARY_FACE
-	db 35, SLASH
-	db 43, SCREECH
-	db 52, HYDRO_PUMP
+	db 1, BITE
 	db 0 ; no more level-up moves
 
 CroconawEvosAttacks:

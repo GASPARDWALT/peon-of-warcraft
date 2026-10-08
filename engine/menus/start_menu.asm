@@ -9,6 +9,7 @@
 	const STARTMENUITEM_EXIT     ; 6
 	const STARTMENUITEM_POKEGEAR ; 7
 	const STARTMENUITEM_QUIT     ; 8
+	const STARTMENUITEM_HEARTH   ; 9, append to preserve all original indexes
 
 StartMenu::
 	call ClearWindowData
@@ -157,13 +158,13 @@ StartMenu::
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 8, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 6, 0, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .MenuData
 	db 1 ; default selection
 
 .ContestMenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 10, 2, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
+	menu_coords 6, 2, SCREEN_WIDTH - 1, SCREEN_HEIGHT - 1
 	dw .MenuData
 	db 1 ; default selection
 
@@ -185,6 +186,7 @@ StartMenu::
 	dw StartMenu_Exit,     .ExitString,     .ExitDesc
 	dw StartMenu_Pokegear, .PokegearString, .PokegearDesc
 	dw StartMenu_Quit,     .QuitString,     .QuitDesc
+	dw StartMenu_Hearth,   .HearthString,   .HearthDesc
 
 .PokedexString:  db "CHARACTER@"
 .PartyString:    db "CHARACTER@"
@@ -195,42 +197,37 @@ StartMenu::
 .ExitString:     db "EXIT@"
 .PokegearString: db "ATLAS@"
 .QuitString:     db "QUIT@"
+.HearthString:   db "HEARTHSTONE@"
 
 .PokedexDesc:
-	db   "Character"
-	next "and gear@"
+	db "Character and gear@"
 
 .PartyDesc:
-	db   "Character"
-	next "and gear@"
+	db "Character and gear@"
 
 .PackDesc:
-	db   "Contains"
-	next "items@"
+	db "Supplies and loot@"
 
 .PokegearDesc:
-	db   "Durotar"
-	next "atlas@"
+	db "Durotar atlas@"
 
 .StatusDesc:
-	db   "Discovered"
-	next "regions@"
+	db "Discovered regions@"
 
 .SaveDesc:
-	db   "Save your"
-	next "progress@"
+	db "Save your progress@"
 
 .OptionDesc:
-	db   "Change"
-	next "settings@"
+	db "Change settings@"
 
 .ExitDesc:
-	db   "Close this"
-	next "menu@"
+	db "Close this menu@"
 
 .QuitDesc:
-	db   "Quit and"
-	next "be judged.@"
+	db "Leave contest@"
+
+.HearthDesc:
+	db "Return to your inn@"
 
 .OpenMenu:
 	ld a, [wMenuSelection]
@@ -334,6 +331,8 @@ endr
 .write
 	call .AppendMenuList
 .no_save
+	ld a, STARTMENUITEM_HEARTH
+	call .AppendMenuList
 
 	ld a, STARTMENUITEM_OPTION
 	call .AppendMenuList
@@ -367,18 +366,18 @@ endr
 	call .IsMenuAccountOn
 	ret z
 	call ._DrawMenuAccount
-	decoord 0, 14
+	decoord 1, 16
 	jp .MenuDesc
 
 ._DrawMenuAccount:
 	call .IsMenuAccountOn
 	ret z
-	hlcoord 0, 13
-	lb bc, 5, 10
+	hlcoord 0, 15
+	lb bc, 3, 20
 	call ClearBox
-	hlcoord 0, 13
-	ld b, 3
-	ld c, 8
+	hlcoord 0, 15
+	ld b, 1
+	ld c, 18
 	jp TextboxPalette
 
 .IsMenuAccountOn:
@@ -447,6 +446,11 @@ StartMenu_Option:
 	call FadeToMenu
 	farcall Option
 	ld a, 6
+	ret
+
+StartMenu_Hearth:
+	farcall PeonHearthstoneMenu
+	ld a, c
 	ret
 
 StartMenu_Status:

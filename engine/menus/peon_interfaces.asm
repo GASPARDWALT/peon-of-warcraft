@@ -23,12 +23,18 @@ PeonZoneMap:
 .owned:
 	ld a, [wMapNumber]
 	cp MAP_PEON_TROLL_HUT
+	jr z, .troll_room
+	cp MAP_PEON_TROLL_INN
 	jr nz, .orc_hut
+.troll_room
 	ld a, 3 ; shared troll room belongs to Sen'jin Village
 	jr .store
 .orc_hut:
 	cp MAP_PEON_ORC_HUT
+	jr z, .orc_room
+	cp MAP_PEON_ORC_INN
 	jr nz, .outdoor
+.orc_room
 	ld a, [wBackupMapNumber] ; the shared hut retains its actual outdoor owner
 .outdoor:
 	sub 14
@@ -197,6 +203,8 @@ PeonInterfaceWait:
 	ret
 
 PeonBags:
+	xor a
+	ld [wItemEffectSucceeded], a
 	ld de, SFX_SWITCH_POCKETS
 	call PlaySFX
 	call PeonInterfaceFrame
@@ -272,6 +280,15 @@ PeonBags:
 	ld de, .Back
 	call PlaceString
 	farcall PeonRefreshMenuSkinAttributes
+	ld de, EVENT_PEON_HEARTH_GRANTED
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .no_hearth_icon
+	ld c, $fe
+	farcall PeonDrawInventoryItemIconFromC
+.no_hearth_icon
 	call WaitBGMap
 	call UpdateTimePals
 	call PeonInterfaceWait
@@ -356,6 +373,9 @@ PeonCharacterSheet:
 	jr z, .starter
 	ld [wNamedObjectIndex], a
 	call GetItemName
+	ld a, [wNamedObjectIndex]
+	ld c, a
+	farcall PeonDrawInventoryItemIconFromC
 	hlcoord 2, 11
 	call PlaceString
 	jr .spells
@@ -427,12 +447,21 @@ PeonInventory:
 	cp 3
 	jr c, .quality
 	ld a, [wNamedObjectIndex]
+	cp PEON_SPIRIT_MACE
+	jr nz, .standard_quality
+	ld a, 4
+	jr .quality
+.standard_quality
 	cp ITEM_8D
 	jr nz, .footer
 	ld a, 3
 .quality
 	push af
 	ld c, a
+	cp 4
+	jr nz, .quality_palette
+	ld c, 2 ; Spirit Mace has its own effect label but green item quality.
+.quality_palette
 	farcall PeonColorItemQualityFromC
 	pop af
 	ld e, a
@@ -454,6 +483,14 @@ PeonInventory:
 	hlcoord 2, 12
 	ld de, .Help
 	call PlaceString
+	; The skin/quality attributes are ready; apply this icon's four cells last.
+	ld a, [wNumItems]
+	and a
+	jr z, .no_item_icon
+	ld a, [wNamedObjectIndex]
+	ld c, a
+	farcall PeonDrawInventoryItemIconFromC
+.no_item_icon
 	call WaitBGMap
 	call UpdateTimePals
 .input
@@ -492,6 +529,12 @@ PeonInventory:
 	ld a, [wNamedObjectIndex]
 	cp FRESH_WATER
 	jr z, .drink
+	cp PEON_EARTH_TOTEM
+	jr z, .totem
+	cp POTION
+	jr z, .potion
+	cp PEON_SPIRIT_MACE
+	jr z, .apply
 	cp ITEM_8D
 	jr z, .apply
 	cp ITEM_87
@@ -499,31 +542,24 @@ PeonInventory:
 	cp ITEM_89 + 1
 	jr nc, .input
 	jr .apply
-.drink
-; Water restores spell charges in the prototype's PP-backed mana model.
-	ld a, [wBattleMode]
-	and a
-	ld a, [wPartyMon1PP + 1]
-	jr z, .current_pp
-	ld a, [wBattleMonPP + 1]
-.current_pp
-	and $3f
-	cp 30
+.totem
+	farcall PeonTryPlaceEarthTotem
 	jp nc, .input
-	add 10
-	cp 31
-	jr c, .water_pp
-	ld a, 30
-.water_pp
-	ld [wPartyMon1PP + 1], a
-	ld b, a
-	ld a, [wBattleMode]
-	and a
-	jr z, .consume_water
-	ld a, b
-	ld [wBattleMonPP + 1], a
+	ld a, PEON_EARTH_TOTEM
+	ld [wCurItem], a
+	jr .used_battle_item
+.potion
+	farcall PeonTryUseMinorPotion
+	jp nc, .input
+	ld a, POTION
+	jr .consume
+.drink
+; Refill all learned spells; a full spellbook leaves the water in the bag.
+	farcall PeonRestoreSpellCharges
+	jp nc, .input
 .consume_water
 	ld a, FRESH_WATER
+.consume
 	ld [wCurItem], a
 	ld a, 1
 	ld [wItemQuantityChange], a
@@ -531,9 +567,18 @@ PeonInventory:
 	ld [wCurItemQuantity], a
 	ld hl, wNumItems
 	call TossItem
+	ld a, [wBattleMode]
+	and a
+	jr nz, .used_battle_item
 	xor a
 	ld [wMenuCursorY], a
 	jp .draw
+.used_battle_item
+	ld a, 1
+	ld [wItemEffectSucceeded], a
+	ld a, BATTLEPLAYERACTION_USEITEM
+	ld [wBattlePlayerAction], a
+	ret
 .apply
 	ld [wPartyMon1Item], a
 	ld b, a
@@ -551,9 +596,10 @@ PeonInventory:
 .Empty: db "EMPTY@"
 .Help: db "LEFT/RIGHT: ITEM", "<LF>", "A: EQUIP / USE", "<LF>", "B: BACK@"
 .Qualities:
-	dw .Gray, .White, .Green, .Blue
+	dw .Gray, .White, .Green, .Blue, .Spirit
 ; $78 is the menu's native percent tile; '%' is a legacy breakable-space alias.
 .Gray: db "GRAY: MELEE 5", $78, "@"
 .White: db "WHITE: MELEE 10", $78, "@"
 .Green: db "GREEN: MELEE 20", $78, "@"
 .Blue: db "BLUE: NATURE 30", $78, "@"
+.Spirit: db "GREEN: NATURE 20", $78, "@"

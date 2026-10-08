@@ -43,12 +43,7 @@ RazorHillGroskScript:
 	faceplayer
 	opentext
 	writetext RazorHillGroskOfferText
-	yesorno
-	iffalse .Close
-	special HealParty
-	writetext RazorHillGroskRestedText
 	waitbutton
-.Close:
 	closetext
 	end
 
@@ -88,18 +83,12 @@ RazorHillGarthokText:
 	done
 
 RazorHillGroskOfferText:
-	text "INNKEEPER GROSK"
+	text "RAZOR HILL PEON"
 	para "<PLAYER>,"
-	line "you look weary."
-	para "Rest by the fire?"
-	done
-
-RazorHillGroskRestedText:
-	text "Your health and"
-	line "spell charges are"
-	cont "restored."
-	para "The Horde has a"
-	line "place for you."
+	line "I haul hides for"
+	cont "the innkeeper."
+	para "Grosk waits in the"
+	line "northeast inn."
 	done
 
 RazorHillJarkOfferText:
@@ -152,9 +141,9 @@ RazorHillGruntText:
 	para "<PLAYER>,"
 	line "keep this road"
 	cont "clear for patrols."
-	para "Grosk can mend"
-	line "your wounds. Jark"
-	cont "has fresh water."
+	para "Rest at Grosk's"
+	line "inn. Jark sells"
+	cont "fresh water."
 	done
 
 RazorHill_MapEvents:
@@ -163,7 +152,7 @@ RazorHill_MapEvents:
 	warp_event 12, 16, DUROTAR_ROAD, 3
 	warp_event 12, 4, ORGRIMMAR_GATE, 1
 	warp_event 5, 5, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
-	warp_event 17, 5, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
+	warp_event 17, 5, PEON_ORC_INN, 1 ; PEON_HUT_DOOR
 	warp_event 17, 13, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	warp_event 5, 15, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	def_coord_events

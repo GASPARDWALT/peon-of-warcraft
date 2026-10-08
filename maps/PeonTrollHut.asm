@@ -6,27 +6,17 @@ PeonTrollHutHealerScript:
 	faceplayer
 	opentext
 	writetext PeonTrollHutHealerOfferText
-	yesorno
-	iffalse .Close
-	special HealParty
-	writetext PeonTrollHutHealerRestedText
 	waitbutton
-.Close:
 	closetext
 	end
 
 PeonTrollHutHealerOfferText:
-	text "DARKSPEAR HEALER"
+	text "DARKSPEAR RESIDENT"
 	para "<PLAYER>,"
 	line "you are welcome"
 	cont "under our roof."
-	para "Rest your wounds?"
-	done
-
-PeonTrollHutHealerRestedText:
-	text "Your health and"
-	line "spell charges are"
-	cont "restored."
+	para "Shul'kar keeps"
+	line "a warm inn here."
 	para "The spirits walk"
 	line "with you, friend."
 	done

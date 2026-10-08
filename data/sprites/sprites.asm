@@ -18,10 +18,10 @@ OverworldSprites:
 	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BillSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite PeonKentoGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite JanineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite PeonSarkothGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite KurtSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite MomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite BlaineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite PeonInnkeeperGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite RedsMomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite DaisySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ElmSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -45,14 +45,14 @@ OverworldSprites:
 	overworld_sprite SabrinaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite CooltrainerMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite CooltrainerFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite BugCatcherSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite TwinSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite PeonTigerGFX, 12, WALKING_SPRITE, PAL_OW_PINK
+	overworld_sprite PeonRaptorGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite PeonHunterGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
-	overworld_sprite LassSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite TeacherSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite BeautySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite SuperNerdSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite RockerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonCrawlerGFX, 12, WALKING_SPRITE, PAL_OW_PINK
+	overworld_sprite PeonHarpyGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite PeonFelstalkerGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite PeonCultistGFX, 12, WALKING_SPRITE, PAL_OW_RED
+	overworld_sprite PeonYarrogGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite PokefanMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite PokefanFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GrampsSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -61,14 +61,14 @@ OverworldSprites:
 	overworld_sprite SwimmerGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite BigSnorlaxSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SurfingPikachuSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite RocketSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
-	overworld_sprite RocketGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite PeonQuestAvailableYellowGFX, 4, STILL_SPRITE, PAL_OW_PINK
+	overworld_sprite PeonQuestActiveGrayGFX, 4, STILL_SPRITE, PAL_OW_EMOTE
 	overworld_sprite NurseSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
 	overworld_sprite PeonTrollGuardGFX, 12, WALKING_SPRITE, PAL_OW_TREE
 	overworld_sprite PeonTrollFisherGFX, 12, WALKING_SPRITE, PAL_OW_TREE
 	overworld_sprite PeonGornekGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite FishingGuruSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
-	overworld_sprite ScientistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite PeonQuestCompleteYellowGFX, 4, STILL_SPRITE, PAL_OW_PINK
 	overworld_sprite KimonoGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite PeonTrollCasterGFX, 12, WALKING_SPRITE, PAL_OW_TREE
 	overworld_sprite UnusedGuySpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED

@@ -1071,3 +1071,7 @@ PeonTrollHut_Blocks:
 INCBIN "maps/PeonTrollHut.blk"
 PeonOrcHut_Blocks:
 INCBIN "maps/PeonOrcHut.blk"
+PeonOrcInn_Blocks:
+INCBIN "maps/PeonOrcInn.blk"
+PeonTrollInn_Blocks:
+INCBIN "maps/PeonTrollInn.blk"

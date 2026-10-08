@@ -18,7 +18,7 @@ from pyboy import PyBoy
 
 logging.disable(logging.CRITICAL)
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / 'references/generated/durotar_v021/sprite_validation'
+OUTPUT = ROOT / 'references/generated/durotar_v022/sprite_validation'
 
 
 def symbols():

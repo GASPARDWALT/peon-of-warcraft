@@ -17,6 +17,8 @@ GrommashHoldScene:
 	end
 
 GrommashHoldSequence:
+	checkevent EVENT_PEON_SHAMAN
+	iftrue GrommashHoldAlreadyTrained
 	special PeonEyeOpening
 	setlasttalked GROMMASHHOLD_THRALL
 	opentext
@@ -39,6 +41,7 @@ GrommashHoldSequence:
 	giveitem ITEM_19
 	giveitem ITEM_2D
 	giveitem ITEM_32
+	giveitem ITEM_94
 	writetext PeonKitText
 	promptbutton
 	setevent EVENT_PEON_SHAMAN
@@ -46,6 +49,23 @@ GrommashHoldSequence:
 	closetext
 	warp THE_DEN, 10, 12
 	end
+
+; The scene and direct NPC interactions share this one-time kit guard.
+GrommashHoldAlreadyTrained:
+	faceplayer
+	opentext
+	writetext GrommashHoldAlreadyTrainedText
+	waitbutton
+	closetext
+	end
+
+GrommashHoldAlreadyTrainedText:
+	text "<PLAYER>,"
+	line "your training"
+	cont "continues."
+	para "Kento awaits you"
+	line "at the Den."
+	done
 
 PeonThrallText:
 	text "GROMMASH HOLD"
@@ -85,6 +105,7 @@ PeonKitText:
 	line "MACE,"
 	line "WOOD SHIELD and"
 	cont "APPRENTICE TOTEM!"
+	para "Earth Totem ready."
 	para "Learned"
 	line "LIGHTNING BOLT!"
 	para "Go to THE DEN."

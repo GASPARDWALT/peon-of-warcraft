@@ -1,0 +1,940 @@
+{
+  "source_battle": "concept_battle_roster.png",
+  "source_overworld": "concept_overworld_roster.png",
+  "player_adapter_untouched": "MACHOP 66",
+  "alpha_values": [
+    0,
+    255
+  ],
+  "characters": {
+    "tiger": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 520,
+      "native_animation_tiles": 90,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          222,
+          140,
+          57
+        ],
+        [
+          82,
+          41,
+          24
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          123,
+          57
+        ],
+        [
+          74,
+          41,
+          16
+        ],
+        [
+          255,
+          214,
+          24
+        ]
+      ],
+      "obj_palette_number": 4,
+      "native_species": "meowth",
+      "species_number": 52,
+      "overworld_slot": "BugCatcher",
+      "move_kit": [
+        "SCRATCH",
+        "BITE"
+      ],
+      "stats": [
+        38,
+        34,
+        26,
+        40,
+        20,
+        23
+      ],
+      "types": [
+        "NORMAL",
+        "NORMAL"
+      ]
+    },
+    "raptor": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 435,
+      "native_animation_tiles": 88,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          222,
+          189,
+          115
+        ],
+        [
+          107,
+          123,
+          49
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "totodile",
+      "species_number": 158,
+      "overworld_slot": "Twin",
+      "move_kit": [
+        "SCRATCH",
+        "BITE"
+      ],
+      "stats": [
+        40,
+        37,
+        28,
+        43,
+        20,
+        25
+      ],
+      "types": [
+        "NORMAL",
+        "NORMAL"
+      ]
+    },
+    "crawler": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 604,
+      "native_animation_tiles": 100,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          222,
+          165,
+          90
+        ],
+        [
+          132,
+          74,
+          33
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          123,
+          57
+        ],
+        [
+          74,
+          41,
+          16
+        ],
+        [
+          255,
+          214,
+          24
+        ]
+      ],
+      "obj_palette_number": 4,
+      "native_species": "krabby",
+      "species_number": 98,
+      "overworld_slot": "Lass",
+      "move_kit": [
+        "VICEGRIP",
+        "TACKLE"
+      ],
+      "stats": [
+        39,
+        30,
+        40,
+        20,
+        18,
+        30
+      ],
+      "types": [
+        "NORMAL",
+        "NORMAL"
+      ]
+    },
+    "harpy": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 702,
+      "native_animation_tiles": 107,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          173,
+          123,
+          206
+        ],
+        [
+          82,
+          41,
+          123
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "spearow",
+      "species_number": 21,
+      "overworld_slot": "Teacher",
+      "move_kit": [
+        "SCRATCH",
+        "WING_ATTACK"
+      ],
+      "stats": [
+        38,
+        32,
+        24,
+        45,
+        30,
+        28
+      ],
+      "types": [
+        "FLYING",
+        "FLYING"
+      ]
+    },
+    "felstalker": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 549,
+      "native_animation_tiles": 98,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          148,
+          107,
+          173
+        ],
+        [
+          74,
+          41,
+          90
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "ekans",
+      "species_number": 23,
+      "overworld_slot": "Beauty",
+      "move_kit": [
+        "BITE",
+        "SCRATCH"
+      ],
+      "stats": [
+        42,
+        35,
+        29,
+        34,
+        28,
+        30
+      ],
+      "types": [
+        "DARK",
+        "DARK"
+      ]
+    },
+    "cultist": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 766,
+      "native_animation_tiles": 81,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          132,
+          173,
+          66
+        ],
+        [
+          99,
+          57,
+          123
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "grimer",
+      "species_number": 88,
+      "overworld_slot": "SuperNerd",
+      "move_kit": [
+        "FLAMETHROWER",
+        "TACKLE"
+      ],
+      "stats": [
+        38,
+        24,
+        24,
+        28,
+        40,
+        34
+      ],
+      "types": [
+        "FIRE",
+        "FIRE"
+      ]
+    },
+    "yarrog": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 813,
+      "native_animation_tiles": 92,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          148,
+          173,
+          74
+        ],
+        [
+          107,
+          66,
+          82
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "machoke",
+      "species_number": 67,
+      "overworld_slot": "Rocker",
+      "move_kit": [
+        "FLAMETHROWER",
+        "SLASH"
+      ],
+      "stats": [
+        55,
+        40,
+        34,
+        30,
+        43,
+        37
+      ],
+      "types": [
+        "DARK",
+        "DARK"
+      ]
+    },
+    "sarkoth": {
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "attack_frames": 4,
+      "attack_silhouette_changed_pixels": 531,
+      "native_animation_tiles": 91,
+      "fitted_longest_dimension": 54,
+      "palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          222,
+          115,
+          49
+        ],
+        [
+          115,
+          49,
+          24
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          181,
+          66,
+          33
+        ],
+        [
+          41,
+          16,
+          16
+        ],
+        [
+          255,
+          41,
+          24
+        ]
+      ],
+      "obj_palette_number": 0,
+      "native_species": "kingler",
+      "species_number": 99,
+      "overworld_slot": "Janine",
+      "move_kit": [
+        "POISON_STING",
+        "VICEGRIP"
+      ],
+      "stats": [
+        53,
+        38,
+        42,
+        26,
+        24,
+        30
+      ],
+      "types": [
+        "POISON",
+        "POISON"
+      ]
+    },
+    "innkeeper": {
+      "overworld_size": [
+        16,
+        16
+      ],
+      "native_frames": 6,
+      "export_frames": 12,
+      "obj_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          148,
+          90,
+          49
+        ],
+        [
+          123,
+          181,
+          66
+        ],
+        [
+          8,
+          8,
+          8
+        ]
+      ],
+      "obj_palette_number": 2
+    }
+  },
+  "decor_proposals": {
+    "gray_rocks": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          214,
+          206,
+          189
+        ],
+        [
+          115,
+          115,
+          115
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "ochre_rocks": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          247,
+          189,
+          99
+        ],
+        [
+          173,
+          99,
+          49
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "desert_pebbles": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          247,
+          189,
+          99
+        ],
+        [
+          173,
+          99,
+          49
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "cactus_fruit": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          140,
+          173,
+          66
+        ],
+        [
+          222,
+          74,
+          33
+        ],
+        [
+          41,
+          57,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "cactus_empty": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          140,
+          173,
+          66
+        ],
+        [
+          222,
+          206,
+          132
+        ],
+        [
+          41,
+          57,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "valley_doorway": {
+      "native_size": [
+        32,
+        32
+      ],
+      "opaque_colors": [
+        [
+          222,
+          173,
+          99
+        ],
+        [
+          148,
+          82,
+          41
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "campfire": {
+      "native_size": [
+        16,
+        16
+      ],
+      "opaque_colors": [
+        [
+          247,
+          206,
+          82
+        ],
+        [
+          222,
+          99,
+          33
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    },
+    "horde_banner": {
+      "native_size": [
+        16,
+        32
+      ],
+      "opaque_colors": [
+        [
+          222,
+          74,
+          33
+        ],
+        [
+          173,
+          115,
+          57
+        ],
+        [
+          41,
+          33,
+          24
+        ]
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "integrated_in_world": false
+    }
+  }
+}

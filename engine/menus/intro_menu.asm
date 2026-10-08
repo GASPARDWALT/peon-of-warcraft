@@ -344,6 +344,7 @@ Continue:
 	farcall TryLoadSaveFile
 	jr c, .FailToLoad
 	farcall _LoadData
+	farcall PeonNormalizeApprenticeXP
 	call LoadStandardMenuHeader
 	; Selection already confirmed in the Peon character screen.
 

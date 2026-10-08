@@ -276,8 +276,8 @@ KarateChopDescription:
 	next "cal hit ratio.@"
 
 DoubleslapDescription:
-	db   "Repeatedly slaps"
-	next "2-5 times.@"
+	db   "A flurry of strong"
+	next "physical strikes.@"
 
 CometPunchDescription:
 	db   "Repeatedly punches"
@@ -300,8 +300,8 @@ IcePunchDescription:
 	next "cause freezing.@"
 
 ThunderpunchDescription:
-	db   "An electric punch."
-	next "It may paralyze.@"
+	db   "Earth shock may"
+	next "interrupt the foe.@"
 
 ScratchDescription:
 	db   "Scratches with"
@@ -320,8 +320,8 @@ RazorWindDescription:
 	next "2nd turn: Attack@"
 
 SwordsDanceDescription:
-	db   "A dance that in-"
-	next "creases ATTACK.@"
+	db   "Empowers your next"
+	next "physical strike.@"
 
 CutDescription:
 	db   "Cuts using claws,"
@@ -472,12 +472,12 @@ AcidDescription:
 	next "lower DEFENSE.@"
 
 EmberDescription:
-	db   "An attack that may"
-	next "inflict a burn.@"
+	db   "Fire damage and"
+	next "a lasting burn.@"
 
 FlamethrowerDescription:
-	db   "An attack that may"
-	next "inflict a burn.@"
+	db   "A fiery projectile"
+	next "strikes the foe.@"
 
 MistDescription:
 	db   "Prevents stat"
@@ -496,8 +496,8 @@ SurfDescription:
 	next "type attack.@"
 
 IceBeamDescription:
-	db   "An attack that may"
-	next "freeze the foe.@"
+	db   "Frost damage also"
+	next "slows the target.@"
 
 BlizzardDescription:
 	db   "An attack that may"
@@ -612,8 +612,8 @@ ThunderWaveDescription:
 	next "cause paralysis.@"
 
 ThunderDescription:
-	db   "An attack that may"
-	next "cause paralysis.@"
+	db   "Heavy Nature damage"
+	next "strikes one target.@"
 
 RockThrowDescription:
 	db   "Drops rocks on the"
@@ -648,8 +648,8 @@ HypnosisDescription:
 	next "sleep.@"
 
 MeditateDescription:
-	db   "Raises the user's"
-	next "ATTACK.@"
+	db   "A small earth totem"
+	next "raises your attack.@"
 
 AgilityDescription:
 	db   "Sharply increases"
@@ -684,8 +684,8 @@ DoubleTeamDescription:
 	next "ness.@"
 
 RecoverDescription:
-	db   "Restores HP by 1/2"
-	next "the max HP.@"
+	db   "Healing spirits"
+	next "restore half HP.@"
 
 HardenDescription:
 	db   "Raises the user's"
@@ -720,12 +720,12 @@ LightScreenDescription:
 	next "a wall of light.@"
 
 HazeDescription:
-	db   "Eliminates all"
-	next "stat changes.@"
+	db   "Strips the foe of"
+	next "stat bonuses.@"
 
 ReflectDescription:
-	db   "Raises DEFENSE"
-	next "with a barrier.@"
+	db   "Lightning strikes"
+	next "a melee attacker.@"
 
 FocusEnergyDescription:
 	db   "Raises the criti-"
@@ -768,8 +768,8 @@ BoneClubDescription:
 	next "cause flinching.@"
 
 FireBlastDescription:
-	db   "An attack that"
-	next "may cause a burn.@"
+	db   "Strong fire damage"
+	next "and a lasting burn.@"
 
 WaterfallDescription:
 	db   "An aquatic charge"

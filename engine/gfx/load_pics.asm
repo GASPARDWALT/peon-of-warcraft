@@ -247,6 +247,14 @@ GetMonBackpic:
 
 FixPicBank:
 ; This is a thing for some reason.
+	push hl
+	push bc
+	ld c, a
+	farcall PeonFixEnemyPicBankFromC
+	ld a, c
+	pop bc
+	pop hl
+	ret c
 
 EXPORT DEF PICS_FIX EQU $36
 

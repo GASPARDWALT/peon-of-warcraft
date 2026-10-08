@@ -1,0 +1,38 @@
+{
+  "rom_sha256": "bbda42f538d2704a601fc05ef5b44c8ca332538a9422dd237e45f74b24c4dc96",
+  "method": "Ordinary-button intro and boar; gold/silver encounter-species diagnostic fixtures.",
+  "rank_basis": "Gold Yarrog / silver Sarkoth are explicit prototype rank adaptations.",
+  "cases": {
+    "ordinary_boar": {
+      "no_dragon": true,
+      "safe_empty_cells": true,
+      "diagnostic_species_substitution": false,
+      "bags_return_reloads_native_rank": true,
+      "battle_end_restores_player_idle_and_walking_cache": true
+    },
+    "yarrog_gold": {
+      "native_rgb555_matches": true,
+      "rank_tiles_and_actual_attributes_match": true,
+      "entire_enemy_idle_front_rgb555_matches": true,
+      "enemy_front_back_font_hud_oam_preserved": true,
+      "diagnostic_species_substitution": true,
+      "bags_return_reloads_native_rank": true,
+      "native_attack_restores_rank": true,
+      "species_change_clears_rank": true,
+      "battle_end_restores_player_idle_and_walking_cache": true
+    },
+    "sarkoth_silver": {
+      "native_rgb555_matches": true,
+      "rank_tiles_and_actual_attributes_match": true,
+      "entire_enemy_idle_front_rgb555_matches": true,
+      "enemy_front_back_font_hud_oam_preserved": true,
+      "diagnostic_species_substitution": true,
+      "bags_return_reloads_native_rank": true,
+      "native_attack_restores_rank": true,
+      "species_change_clears_rank": true,
+      "battle_end_restores_player_idle_and_walking_cache": true
+    }
+  },
+  "preserved_register_returns_checked": 116,
+  "all_checks_passed": true
+}

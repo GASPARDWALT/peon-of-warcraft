@@ -1,0 +1,90 @@
+{
+  "concept_source": "references/generated/durotar_v021/village_assets/concept_village_npcs.png",
+  "concept_sha256": "18008c738c9237ff616b526d4544fb3a5ef2521835b0d6acb47ec77062d30914",
+  "native_size": [
+    16,
+    16
+  ],
+  "npc_engine_frames": 6,
+  "npc_engine_sheet": [
+    16,
+    96
+  ],
+  "npc_engine_order": [
+    "down_idle",
+    "up_idle",
+    "left_idle",
+    "down_step",
+    "up_step",
+    "left_step"
+  ],
+  "right_facing": "Mirrored left by the standard Crystal NPC renderer.",
+  "troll_palette_index": 6,
+  "troll_palette_rgb555": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      29,
+      27,
+      22
+    ],
+    [
+      10,
+      20,
+      23
+    ],
+    [
+      2,
+      4,
+      7
+    ]
+  ],
+  "orc_palette_index": 2,
+  "characters": [
+    {
+      "name": "troll_guard",
+      "label": "PeonTrollGuardGFX",
+      "engine_png": "gfx/sprites/peon_troll_guard.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    },
+    {
+      "name": "troll_fisher",
+      "label": "PeonTrollFisherGFX",
+      "engine_png": "gfx/sprites/peon_troll_fisher.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    },
+    {
+      "name": "troll_caster",
+      "label": "PeonTrollCasterGFX",
+      "engine_png": "gfx/sprites/peon_troll_caster.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    },
+    {
+      "name": "orc_guard",
+      "label": "PeonOrcGuardGFX",
+      "engine_png": "gfx/sprites/peon_orc_guard.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    },
+    {
+      "name": "orc_vendor",
+      "label": "PeonOrcVendorGFX",
+      "engine_png": "gfx/sprites/peon_orc_vendor.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    },
+    {
+      "name": "orc_questgiver",
+      "label": "PeonOrcQuestgiverGFX",
+      "engine_png": "gfx/sprites/peon_orc_questgiver.png",
+      "opaque_colors": 3,
+      "public_frames": 12
+    }
+  ]
+}

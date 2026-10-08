@@ -1,0 +1,37 @@
+# Peon of Warcraft — v0.2.2
+
+Extract `peon_of_warcraft_v0_2_2.zip` and open `peon_of_warcraft_v0_2_2.gbc` in a Game Boy Color emulator. Use the D-pad to move, A to interact/confirm, B to cancel, Start for CHARACTER/BAGS/MAP/SAVE, and Select for the earned zone map. This is a playable Shaman prototype with **one real character/save slot**.
+
+## Suggested first playthrough
+
+Choose New Character and follow the sleeping peon, BONK and class-master opening. Choose Kento; he asks your name. You receive the mace, wooden shield, apprentice totem and Lightning Bolt, then arrive at The Den. Choose a short name; dialogue addresses you as Péon followed by that name.
+
+Talk to Gornek for Cutting Teeth and Sting. Yellow-outline creatures are neutral: approach and press A. Red-outline enemies attack on proximity. The second quest awards the map; undiscovered regions remain hidden. Foreman Thazz'ril's Lazy Peons quest provides another small reward. Quest markers show yellow `!`, gray `?` while incomplete, yellow `?` when ready, then disappear after completion.
+
+Follow the marked roads east into Valley of Trials. Galgar wants three clickable cacti; harvested plants disappear and stay harvested. Hana'zua sends you after Sarkoth; recover his claw, then return for potions, copper and XP. Zureetha asks for the Burning Blade Medallion: explore the cavern, defeat its imps, felstalker, cultist and Yarrog, then bring back the medallion for the green Spirit Mace, copper and XP. These Classic quests use reduced counts and original short English dialogue adapted to the prototype. Gold/silver enemy frames are prototype boss markers.
+
+Continue along Durotar Road to Sen'jin, Razor Hill and Orgrimmar Gate. Tiger and crawler encounters are neutral; raptors, harpies and cavern enemies are hostile. At level four a visible two-scorpid pack becomes available on the road. It consists of **two consecutive one-on-one fights**, with the first defeat retained if you lose the second. Defeated visible enemies stay gone across travel and battery saves. Ordinary enemies award small copper amounts; the quest boss reward is the meaningful equipment upgrade. There is no respawn loop in this build.
+
+Nine building doors work: six residences and three inns. At The Den, Sen'jin and Razor Hill you can deliberately rest, recover HP/status/spell charges, and bind your home. Rest currently costs zero copper as a prototype choice. HEARTHSTONE in the Start menu, after SAVE, returns to the bound inn. Residences and combat victories do not heal automatically. Defeat or collapse from overworld poison returns you to the bound inn, falling back to The Den when unbound, at one HP with harmful status cleared; recovery still requires deliberate rest or consumables. K'waii and Jark sell five Spring Waters for 25 copper.
+
+Visit the trainer to purchase level-gated Shaman abilities and prepare the two additional attack slots. The battle menu keeps **four attacks**; learned spells can be prepared again without paying twice. Spring Water replenishes charges in every prepared spell slot (slots one through three), capped by each native spell's maximum. The reusable Earth Totem is placed through **battle BAGS**, costs one turn, and gives the player priority while it remains placed for that encounter. It is separate from the four attack slots. The Spirit Mace adds a 20% Nature-damage bonus when equipped. Independent armor/shield calculations and a shared Warcraft mana pool remain future work.
+
+## Artwork and audio
+
+Extract `peon_of_warcraft_v0_2_2_assets.zip`, then open **durotar_v022/index.html** in Chrome or Edge. Keep all four sibling folders together: `durotar_v022`, `durotar_v021`, `durotar_v02`, `title_portal_gbc`. The gallery works offline and offers direct downloads of transparent native PNGs, directional animations, battle poses, portraits, buildings, decor, icons, maps and real emulator captures. Prepared Mage/Warrior gear, unused alternate decor and concept art are labeled separately; they do not imply functional routes or native integration. Retained older screenshots are explicitly historical.
+
+The ROM renders at 160×144. Outdoor graphics use 192 eight-by-eight tiles plus reused-tile furniture blocks. Native sprites use limited palettes and binary PNG transparency. Opaque terrain and screenshots retain their backgrounds. Seven original native chiptune themes cover Durotar, cavern, battles, inns, victories, the Barrens-inspired road and Orgrimmar Gate. The title follows the supplied musical guide; no MP3 or Warcraft recordings are streamed by the ROM.
+
+## Saves and validation
+
+Back up your emulator's battery save before switching versions. If saves are associated with the ROM basename, copy the old file to the new basename while retaining the emulator's extension (`.sav`, `.srm` or `.ram`). Keep the original copy. A fresh New Character run is the most useful way to review new quest pacing; an existing character may already have completed the relevant flags or defeated finite enemies. Existing characters can obtain the new reusable Earth Totem by talking to Kento. The handoff checks inventory and does not duplicate a totem already owned; free a bag slot and return if the bag is full.
+
+No persistent character structures or native four-move arrays were enlarged. New progress uses reserved event flags and existing item/held-item fields. Continue reloads current NPC scripts and visibility from saved progress. Wandering NPCs reset to their defined positions; your location, inventory, quest progress and bound inn remain saved. Upgrade checks cover v0.1.1, v0.2 and v0.2.1 characters saved at The Den, including Kento's handoff and a second battery restart; other old locations still need migration review. Reports distinguish ordinary-button routes and real battery cold restarts from isolated renderer/full-pocket/defeat diagnostics. The packager rejects a stale ROM hash, a failed report, invalid header/checksums or a missing required report. `validation_manifest.json` records the packaged ROM and report hashes.
+
+**Physical ModRetro Chromatic testing remains unperformed.** The ROM uses CGB mode, MBC3 with RTC and battery-backed 32 KiB SRAM. A cartridge able to load this ROM and support the required mapper/save features is needed; console boot, cartridge flashing, hardware SRAM/RTC and physical audio still need direct testing. Emulator checks establish software behavior, not a console certification.
+
+This slice ends at Orgrimmar Gate. Echo Isles, the whole Durotar world, complete Classic vendor stocks, professions, full equipment slots, all class routes, multiple real save slots and simultaneous group combat are not implemented. See the included quest design and attack-slot notes for current adaptations and future work.
+
+## Reproduce
+
+Use the repository's pinned RGBDS 1.0.4 and Python dependencies with PyBoy. Rebuild through `tools/rebuild_peon_v022.sh`, run the validation scripts listed by `tools/package_peon_v022.py`, regenerate the gallery, run `tools/validate_peon_v022_gallery.py`, then run the packager. The gallery QA script needs Playwright, Node and Chromium in the development environment; viewing the exported gallery requires only a browser. `python tools/package_peon_v022.py --check` checks prerequisites without creating archives. It must report every required runtime validation against the same current ROM hash before packaging.

@@ -38,3 +38,5 @@
 	tilecoll WALL, WALL, WALL, WALL ; 25 desert_boulder
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 26 walkable_bare_soil
 	tilecoll WALL, WALL, WALL, WALL ; 27 campfire
+	tilecoll WALL, WALL, WALL, WALL ; 28 inn_bedroll
+	tilecoll WALL, WALL, WALL, WALL ; 29 inn_table

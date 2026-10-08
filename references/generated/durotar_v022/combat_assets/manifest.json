@@ -1,0 +1,89 @@
+{
+  "source": "references/generated/durotar_v021/combat_assets/concept_beast_attacks.png",
+  "characters": {
+    "boar": {
+      "adapter": "rattata",
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "frames": 4,
+      "opaque_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          206,
+          156,
+          90
+        ],
+        [
+          115,
+          66,
+          33
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "attack_silhouette_changed_pixels": 437,
+      "native_animation_tiles": 109,
+      "animation_tiles_above_crystal_98_tile_upload": 11,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "actual_attack_hook": "PeonAnimateEnemyAttack"
+    },
+    "scorpid": {
+      "adapter": "sandshrew",
+      "front_size": [
+        56,
+        56
+      ],
+      "back_size": [
+        48,
+        48
+      ],
+      "frames": 4,
+      "opaque_palette": [
+        [
+          255,
+          255,
+          255
+        ],
+        [
+          222,
+          90,
+          41
+        ],
+        [
+          123,
+          41,
+          24
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "attack_silhouette_changed_pixels": 732,
+      "native_animation_tiles": 120,
+      "animation_tiles_above_crystal_98_tile_upload": 22,
+      "alpha_values": [
+        0,
+        255
+      ],
+      "actual_attack_hook": "PeonAnimateEnemyAttack"
+    }
+  }
+}

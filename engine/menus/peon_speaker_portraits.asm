@@ -166,6 +166,8 @@ PeonSpeakerPortraitTable:
 	dw PeonSpeakerPortraitOrcVendor, PeonSpeakerPaletteOrcVendor
 	db SPRITE_BLACK_BELT
 	dw PeonSpeakerPortraitOrcQuestgiver, PeonSpeakerPaletteOrcQuestgiver
+	db SPRITE_BLAINE
+	dw PeonSpeakerPortraitInnkeeper, PeonSpeakerPaletteInnkeeper
 	db -1
 
 PeonSpeakerPortraitPeon: INCBIN "gfx/peon_portraits/peon.2bpp"
@@ -181,6 +183,7 @@ PeonSpeakerPortraitTrollCaster: INCBIN "gfx/peon_portraits/troll_caster.2bpp"
 PeonSpeakerPortraitOrcGuard: INCBIN "gfx/peon_portraits/orc_guard.2bpp"
 PeonSpeakerPortraitOrcVendor: INCBIN "gfx/peon_portraits/orc_vendor.2bpp"
 PeonSpeakerPortraitOrcQuestgiver: INCBIN "gfx/peon_portraits/orc_questgiver.2bpp"
+PeonSpeakerPortraitInnkeeper: INCBIN "gfx/peon_portraits/innkeeper.2bpp"
 
 PeonSpeakerPalettePeon: INCLUDE "gfx/peon_portraits/peon.pal"
 PeonSpeakerPaletteGornek: INCLUDE "gfx/peon_portraits/gornek.pal"
@@ -195,3 +198,4 @@ PeonSpeakerPaletteTrollCaster: INCLUDE "gfx/peon_portraits/troll_caster.pal"
 PeonSpeakerPaletteOrcGuard: INCLUDE "gfx/peon_portraits/orc_guard.pal"
 PeonSpeakerPaletteOrcVendor: INCLUDE "gfx/peon_portraits/orc_vendor.pal"
 PeonSpeakerPaletteOrcQuestgiver: INCLUDE "gfx/peon_portraits/orc_questgiver.pal"
+PeonSpeakerPaletteInnkeeper: INCLUDE "gfx/peon_portraits/innkeeper.pal"

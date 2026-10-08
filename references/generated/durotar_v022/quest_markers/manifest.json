@@ -1,0 +1,247 @@
+{
+  "native_glyph_size": [
+    8,
+    8
+  ],
+  "native_glyph_count": 2,
+  "obj_vram_bank": 0,
+  "obj_vram_range": "$8000..$801f",
+  "gold_obj_palette": 4,
+  "gray_obj_palette": 7,
+  "gold_palette_rgb555": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      22,
+      15,
+      7
+    ],
+    [
+      9,
+      5,
+      2
+    ],
+    [
+      31,
+      26,
+      3
+    ]
+  ],
+  "gray_palette_rgb555": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      27,
+      27,
+      27
+    ],
+    [
+      5,
+      5,
+      5
+    ],
+    [
+      17,
+      17,
+      17
+    ]
+  ],
+  "transparent_index": 0,
+  "2bpp_sha256": "ba98e6f02a0036bcbe0e6dcc454757820fc0944985bd251d64cb47d21c31ea6b",
+  "points": {
+    "DEN": {
+      "source_size": [
+        384,
+        320
+      ],
+      "thumbnail_size": [
+        120,
+        100
+      ],
+      "thumbnail_offset": [
+        20,
+        18
+      ],
+      "collision_coordinate": [
+        8,
+        15
+      ],
+      "source_cell_center": [
+        136,
+        248
+      ],
+      "atlas_center": [
+        62,
+        96
+      ],
+      "glyph_top_left": [
+        58,
+        92
+      ],
+      "oam_yx": [
+        108,
+        66
+      ],
+      "region": "DEN",
+      "speaker": "Foreman",
+      "accepted_flag": "EVENT_PEON_LAZY_ACCEPTED",
+      "ready_all_flags": [
+        "EVENT_PEON_LAZY_AWAKE"
+      ],
+      "complete_flag": "EVENT_PEON_LAZY_DONE"
+    },
+    "VALLEY": {
+      "source_size": [
+        512,
+        384
+      ],
+      "thumbnail_size": [
+        133,
+        100
+      ],
+      "thumbnail_offset": [
+        13,
+        18
+      ],
+      "collision_coordinate": [
+        8,
+        10
+      ],
+      "source_cell_center": [
+        136,
+        168
+      ],
+      "atlas_center": [
+        48,
+        62
+      ],
+      "glyph_top_left": [
+        44,
+        58
+      ],
+      "oam_yx": [
+        74,
+        52
+      ],
+      "region": "VALLEY",
+      "speaker": "Galgar",
+      "accepted_flag": "EVENT_PEON_CACTUS_ACCEPTED",
+      "ready_all_flags": [
+        "EVENT_PEON_CACTUS_1",
+        "EVENT_PEON_CACTUS_2",
+        "EVENT_PEON_CACTUS_3"
+      ],
+      "complete_flag": "EVENT_PEON_CACTUS_DONE"
+    },
+    "VALLEY_SARKOTH": {
+      "source_size": [
+        512,
+        384
+      ],
+      "thumbnail_size": [
+        133,
+        100
+      ],
+      "thumbnail_offset": [
+        13,
+        18
+      ],
+      "collision_coordinate": [
+        10,
+        19
+      ],
+      "source_cell_center": [
+        168,
+        312
+      ],
+      "atlas_center": [
+        57,
+        99
+      ],
+      "glyph_top_left": [
+        53,
+        95
+      ],
+      "oam_yx": [
+        111,
+        61
+      ],
+      "region": "VALLEY",
+      "speaker": "Hana'zua",
+      "accepted_flag": "EVENT_PEON_SARKOTH_ACCEPTED",
+      "ready_all_flags": [
+        "EVENT_PEON_SARKOTH_DEAD"
+      ],
+      "complete_flag": "EVENT_PEON_SARKOTH_DONE"
+    },
+    "VALLEY_MEDALLION": {
+      "source_size": [
+        512,
+        384
+      ],
+      "thumbnail_size": [
+        133,
+        100
+      ],
+      "thumbnail_offset": [
+        13,
+        18
+      ],
+      "collision_coordinate": [
+        6,
+        11
+      ],
+      "source_cell_center": [
+        104,
+        184
+      ],
+      "atlas_center": [
+        40,
+        66
+      ],
+      "glyph_top_left": [
+        36,
+        62
+      ],
+      "oam_yx": [
+        78,
+        44
+      ],
+      "region": "VALLEY",
+      "speaker": "Zureetha",
+      "accepted_flag": "EVENT_PEON_MEDALLION_ACCEPTED",
+      "ready_all_flags": [
+        "EVENT_PEON_YARROG_DEAD"
+      ],
+      "complete_flag": "EVENT_PEON_MEDALLION_DONE"
+    }
+  },
+  "state_styles": {
+    "offered": {
+      "glyph": "quest_available",
+      "tile": 0,
+      "palette": 4
+    },
+    "active": {
+      "glyph": "quest_active",
+      "tile": 1,
+      "palette": 7
+    },
+    "ready": {
+      "glyph": "quest_complete",
+      "tile": 1,
+      "palette": 4
+    }
+  },
+  "visibility": "Completed quests and undiscovered region pages have no quest point.",
+  "limitations": [
+    "Four current prototype quests only, not every Classic quest",
+    "Gray palette7 is temporary inside the atlas; normal map exit reloads OBJ palettes"
+  ]
+}

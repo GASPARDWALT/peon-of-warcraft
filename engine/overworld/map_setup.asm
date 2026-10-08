@@ -82,6 +82,14 @@ LoadMapObjects:
 	farcall InitializeVisibleSprites
 	ret
 
+LoadContinueMapObjects:
+	; Rebuild Peon NPCs from the current events and saved quest/death flags.
+	; Do this before graphics are uploaded so the refreshed roster is used.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ret nz
+	jp LoadMapObjects
+
 MapSetup_DummyFunction: ; unreferenced
 	ret
 

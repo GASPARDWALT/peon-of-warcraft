@@ -12,7 +12,7 @@ import json
 from PIL import Image, ImageDraw
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'references/generated/durotar_v021/world'
+OUT = ROOT / 'references/generated/durotar_v022/world'
 
 # Native RGB555-compatible colours.  Palette zero matches soil at every edge.
 BG = [
@@ -58,12 +58,12 @@ OBJECTIVES = {
     'GrommashHold':[(8,3),(4,6),(8,5),(12,6),(8,8)],
     'TheDen':[(10,9),(10,8),(18,12),(19,15),(6,12),(14,9),(10,12),
               (8,15),(8,14),(5,16),(6,15),(14,15)],
-    'ValleyOfTrials':[(8,10)],
-    'DurotarRoad':[(8,10),(8,18),(16,20)],
+    'ValleyOfTrials':[(8,10),(10,19),(6,11),(16,20),(8,9),(10,18),(6,10)],
+    'DurotarRoad':[(8,10),(8,18),(16,20),(5,5),(18,8),(5,22),(18,23),(16,16)],
     'SenjinVillage':[(8,10),(6,12),(14,10),(16,13),(6,16),(14,16)],
     'RazorHill':[(8,10),(6,12),(16,10),(8,16),(16,16),(14,8)],
     'OrgrimmarGate':[(8,10),(10,12),(14,12)],
-    'BurningBladeCavern':[(8,10),(12,8)],
+    'BurningBladeCavern':[(8,10),(12,8),(5,6),(5,3),(14,3)],
 }
 CACTI = [(7,7),(23,9),(9,17)]
 BLOCKS = []
@@ -321,11 +321,17 @@ def build_map(name):
         line([(2,6),(5,6),(5,7),(9,7),(9,6),(14,6)])
         line([(9,6),(12,6),(12,2)])
         line([(5,6),(4,6),(4,5)])
+        # Hana'zua shelters beside the southern fork; Sarkoth's basin is
+        # deliberately visible beyond the cliff bend, off the through road.
+        line([(5,7),(5,9),(6,9),(6,10),(8,10)])
         put(12,1,15);put(11,1,1);put(13,1,1)
         put(3,3,3);put(11,4,3);put(4,8,3);put(13,8,3)
         for x,y in [(4,3),(8,4),(7,7),(12,7),(5,9),(3,9),(13,3)]:put(x,y,13)
         for x,y in [(7,4),(8,8),(3,9),(14,3)]:put(x,y,37)
         put(10,6,35)
+        # A small Horde rest camp and palisade make the eastern canyon mouth
+        # recognizable without sealing the saved exit or the cactus approaches.
+        put(7,5,39);put(9,10,6);put(13,5,6);put(13,7,30)
     elif name=='DurotarRoad':
         line([(2,7),(4,7),(4,6),(6,6),(6,2)])
         line([(6,6),(7,6),(7,9),(6,9),(6,12)])
@@ -335,6 +341,13 @@ def build_map(name):
         for x,y in [(3,3),(8,4),(2,8),(8,12)]:put(x,y,3)
         for x,y in [(3,2),(8,8),(4,11),(10,8)]:put(x,y,37)
         put(5,7,35);put(5,11,35)
+        # A small eastern coastal branch gives the yellow crawler a distinct
+        # habitat without turning the north/south route into a beach.
+        for y in range(1,h-1):put(11,y,14);put(10,y,27)
+        line([(7,9),(8,9),(8,11),(9,11)])
+        put(9,12,28);put(9,9,28)
+        put(7,2,39);put(5,2,6);put(8,2,6)
+        put(9,6,30);put(9,7,30)
     elif name=='SenjinVillage':
         # Sand-coloured hamlet with a western inlet and east-facing quay.
         for y in range(h):
@@ -354,14 +367,14 @@ def build_map(name):
         put(3,1,31);put(9,1,31);put(5,2,6)
         line([(6,2),(6,8)])
         line([(3,5),(8,5)]);line([(4,6),(4,8)])
-        put(6,1,2);put(5,8,0);put(7,8,0);put(7,2,34)
+        put(6,1,2);put(5,8,0);put(7,8,0);put(7,2,39)
     elif name=='OrgrimmarGate':
         for x in range(1,w-1):put(x,1,33);put(x,2,33)
         for y in (3,4):put(3,y,33);put(8,y,33)
         put(2,2,31);put(9,2,31);put(4,3,6);put(7,3,6)
         put(6,2,15) # Visible stone arch at the end of the north approach.
         line([(6,3),(6,8)]);line([(4,6),(7,6)])
-        put(4,4,34);put(7,4,34);put(2,7,3);put(9,7,3)
+        put(4,4,39);put(7,4,39);put(2,7,3);put(9,7,3)
     elif name=='BurningBladeCavern':
         # Two chambers linked by a clear two-tile-wide passage.
         data[:]=[1]*(w*h)
@@ -575,7 +588,7 @@ def main():
               'transparent_exports':'Explicit geometry masks preserve index-zero ivory highlights.',
               'blocks':[{'id':i,'name':b['name'],'palette':b['pal'],'collision':b['collision']} for i,b in enumerate(BLOCKS)],
               'limitations':['Map geography is compressed to the existing v0.2 map sizes.',
-                             'Buildings are outdoor scenery; no new interiors or Echo Isles traversal.',
+                             'Shared huts and inns are appended by build_peon_interiors.py; no Echo Isles traversal.',
                              'The Orgrimmar gate is a north landmark, not a new city map.']}
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     print(f'Compiled {len(tiles)}/192 tiles, {len(BLOCKS)} blocks and {len(maps)} connected maps.')

@@ -18,11 +18,13 @@ nor talking to them causes aggression.
 
 Accept the foreman's task, speak to the sleeper, then return to the foreman.
 The wake interaction plays the native BONK/mace effect and a surprise emote.
-It is not a battle. Completion gives twenty-five copper once and hides the
-marker. Further conversations cannot wake the worker again or repeat the reward.
+It is not a battle. Completion gives one hundred copper and fifteen XP once
+and hides the marker. The marker is a yellow ! before acceptance, a gray ?
+while the worker still sleeps, and a yellow ? when ready to return.
+Further conversations cannot wake the worker again or repeat the reward.
 
 A warm campfire at `(12,7)` is interactable from below `(12,8)`. It offers
-optional health and spell-charge restoration. It clears the dialogue speaker
+an inn hint, without free health or spell-charge restoration. It clears the dialogue speaker
 identity so scenery does not inherit a previously visited NPC's portrait.
 Clicking either quest marker attributes dialogue to its actual questgiver.
 
@@ -31,16 +33,16 @@ Clicking either quest marker attributes dialogue to its actual questgiver.
 [Questie v8.8.2 Classic quest 5441](https://github.com/Questie/Questie/blob/v8.8.2/Database/Classic/classicQuestDB.lua)
 is **Lazy Peons**, offered by Foreman Thazz'ril (11378). Classic requires waking
 five Lazy Peons using the Foreman's Blackjack (16114). This compact adaptation
-wakes one peon using the apprentice's starter mace and pays a custom twenty-five
+wakes one peon using the apprentice's starter mace and pays a custom one-hundred
 copper reward. The Den position, shortened English dialogue, exact reward and
-campfire rest are prototype additions, not verbatim Classic implementation.
+campfire inn hint are prototype additions, not verbatim Classic implementation.
 
 The three persistent flags occupy previously unused bits before `const_next 600`:
 `EVENT_PEON_LAZY_ACCEPTED` 277, `EVENT_PEON_LAZY_AWAKE` 278 and
 `EVENT_PEON_LAZY_DONE` 279. Existing event IDs and SRAM allocation are preserved.
 
 `tools/validate_peon_lazy_quest.py` uses a fresh normal-button new game, walking,
-NPC/marker conversations, wildlife proximity, campfire rest, one-time reward
+NPC/marker conversations, wildlife proximity, campfire interaction, one-time reward
 checks and battery-save cold restart. It does not edit RAM or load emulator
 states to pass the playable flow. Its report and captures are saved under
-`references/generated/durotar_v021/lazy_quest_validation/`.
+`references/generated/durotar_v022/lazy_quest_validation/`.

@@ -407,6 +407,7 @@ SECTION "bank32", ROMX
 
 INCLUDE "engine/battle_anims/bg_effects.asm"
 INCLUDE "data/moves/animations.asm"
+INCLUDE "data/moves/peon_spell_animations.asm"
 INCLUDE "engine/events/poisonstep_pals.asm"
 
 
@@ -704,6 +705,17 @@ SECTION "Stadium 2 Checksums", ROMX[$7DE0], BANK[$7F]
 INCLUDE "engine/menus/peon_speaker_portraits.asm"
 INCLUDE "engine/menus/peon_menu_skin.asm"
 INCLUDE "engine/menus/peon_atlas_quests.asm"
+INCLUDE "engine/menus/peon_shaman_trainer.asm"
+INCLUDE "engine/overworld/peon_quest_markers.asm"
+INCLUDE "engine/events/peon_recovery.asm"
+INCLUDE "engine/events/peon_quest_xp.asm"
+INCLUDE "engine/menus/peon_hearthstone.asm"
+INCLUDE "engine/menus/peon_item_icons.asm"
+INCLUDE "engine/menus/peon_consumables.asm"
+INCLUDE "engine/battle/peon_spell_effects.asm"
+INCLUDE "engine/battle/peon_battle_totems.asm"
+INCLUDE "engine/battle/peon_encounter_intro.asm"
+INCLUDE "engine/battle/peon_enemy_profiles.asm"
 
 SECTION "Peon Enemy Poses", ROMX
 INCLUDE "engine/battle/peon_enemy_poses.asm"

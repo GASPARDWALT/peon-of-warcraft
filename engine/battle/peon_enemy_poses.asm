@@ -23,12 +23,8 @@ PeonAnimateEnemyAttack::
 	and a
 	jr nz, .done
 	ld a, [wEnemyMonSpecies]
-	cp RATTATA
-	jr z, .animate
-	cp SANDSHREW
-	jr z, .animate
-	cp GEODUDE
-	jr nz, .done
+	call PeonEnemyHasAttackPoses
+	jr nc, .done
 
 .animate
 	farcall CheckBattleScene
@@ -71,6 +67,23 @@ PeonAnimateEnemyAttack::
 	pop af
 	ret
 
+PeonEnemyHasAttackPoses:
+	ld b, a
+	ld hl, .species
+.loop
+	ld a, [hli]
+	and a
+	ret z
+	cp b
+	jr nz, .loop
+	scf
+	ret
+.species
+	db RATTATA, SANDSHREW, GEODUDE
+	db PEON_MOB_TIGER, PEON_MOB_RAPTOR, PEON_MOB_CRAWLER
+	db PEON_MOB_HARPY, PEON_MOB_FELSTALKER, PEON_MOB_CULTIST
+	db PEON_MOB_YARROG, PEON_MOB_SARKOTH, 0
+
 ; Crystal normally uploads a second 7x7 block of animation tiles (98 total).
 ; These complete silhouettes use 109 / 120 tiles. Upload only their remaining
 ; tail into unused bank-1 BG tiles, still below tile128 and without touching
@@ -82,18 +95,29 @@ PeonLoadEnemyPoseOverflow::
 	push de
 	push hl
 	ld a, [wCurPartySpecies]
-	cp RATTATA
-	jr z, .boar
-	cp SANDSHREW
-	jr nz, .done
-	ld de, PeonScorpidOverflowTiles
-	ld b, BANK(PeonScorpidOverflowTiles)
-	ld c, (PeonScorpidOverflowTilesEnd - PeonScorpidOverflowTiles) / 16
-	jr .load
-.boar
-	ld de, PeonBoarOverflowTiles
-	ld b, BANK(PeonBoarOverflowTiles)
-	ld c, (PeonBoarOverflowTilesEnd - PeonBoarOverflowTiles) / 16
+	ld b, a
+	ld hl, PeonEnemyPoseOverflowTable
+.find
+	ld a, [hli]
+	and a
+	jr z, .done
+	cp b
+	jr z, .found
+	inc hl
+	inc hl
+	inc hl
+	inc hl
+	jr .find
+.found
+	ld a, [hli]
+	and a
+	jr z, .done
+	ld c, a
+	ld a, [hli]
+	ld b, a
+	ld a, [hli]
+	ld e, a
+	ld d, [hl]
 .load
 	ldh a, [rVBK]
 	push af
@@ -110,6 +134,24 @@ PeonLoadEnemyPoseOverflow::
 	pop af
 	ret
 
+MACRO peon_enemy_pose_overflow
+	db \1, (\2End - \2) / 16, BANK(\2)
+	dw \2
+ENDM
+
+PeonEnemyPoseOverflowTable:
+	peon_enemy_pose_overflow RATTATA, PeonBoarOverflowTiles
+	peon_enemy_pose_overflow SANDSHREW, PeonScorpidOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_TIGER, PeonTigerOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_RAPTOR, PeonRaptorOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_CRAWLER, PeonCrawlerOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_HARPY, PeonHarpyOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_FELSTALKER, PeonFelstalkerOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_CULTIST, PeonCultistOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_YARROG, PeonYarrogOverflowTiles
+	peon_enemy_pose_overflow PEON_MOB_SARKOTH, PeonSarkothOverflowTiles
+	db 0
+
 SECTION "Peon Beast Animation Overflow", ROMX
 PeonBoarOverflowTiles:
 	INCBIN "gfx/pokemon/rattata/front.animated.2bpp", 98 * 16
@@ -119,3 +161,5 @@ PeonScorpidOverflowTiles:
 	INCBIN "gfx/pokemon/sandshrew/front.animated.2bpp", 98 * 16
 PeonScorpidOverflowTilesEnd:
 	assert PeonScorpidOverflowTilesEnd - PeonScorpidOverflowTiles <= 30 * 16
+
+INCLUDE "gfx/peon_enemy_roster_overflow.asm"

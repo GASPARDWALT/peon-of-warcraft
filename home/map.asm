@@ -390,6 +390,20 @@ LoadMapAttributes_SkipObjects::
 	call ReadMapEvents
 	ret
 
+LoadContinueMapAttributes::
+	; Map objects contain ROM script addresses in the native battery save.
+	; A changed Peon build must reload those addresses, preserving player0.
+	call CopyMapPartialAndAttributes
+	call SwitchToMapScriptsBank
+	call ReadMapScripts
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ld a, TRUE
+	jr nz, .read_events
+	xor a ; current object events replace the old ROM's saved pointers
+.read_events
+	jp ReadMapEvents
+
 CopyMapPartialAndAttributes::
 	call CopyMapPartial
 	call SwitchToMapAttributesBank

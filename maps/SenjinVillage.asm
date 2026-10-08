@@ -43,12 +43,7 @@ SenjinVillageBomBayScript:
 	faceplayer
 	opentext
 	writetext SenjinVillageBomBayOfferText
-	yesorno
-	iffalse .Close
-	special HealParty
-	writetext SenjinVillageBomBayRestedText
 	waitbutton
-.Close:
 	closetext
 	end
 
@@ -103,15 +98,11 @@ SenjinVillageBomBayOfferText:
 	text "BOM'BAY"
 	line "Witch Doctor"
 	para "<PLAYER>,"
-	line "rest your wounds?"
-	done
-
-SenjinVillageBomBayRestedText:
-	text "Your health and"
-	line "spell charges are"
-	cont "restored."
-	para "Go with the"
-	line "spirits, friend."
+	line "a spirit cannot"
+	cont "mend every wound."
+	para "Use a potion, or"
+	line "rest at Shul'kar's"
+	cont "inn by the shore."
 	done
 
 SenjinVillageKwaiiOfferText:
@@ -162,7 +153,7 @@ SenjinVillage_MapEvents:
 	def_warp_events
 	warp_event 10, 4, DUROTAR_ROAD, 2
 	warp_event 5, 5, PEON_TROLL_HUT, 1 ; PEON_HUT_DOOR
-	warp_event 15, 5, PEON_TROLL_HUT, 1 ; PEON_HUT_DOOR
+	warp_event 15, 5, PEON_TROLL_INN, 1 ; PEON_HUT_DOOR
 	warp_event 17, 9, PEON_TROLL_HUT, 1 ; PEON_HUT_DOOR
 	def_coord_events
 	def_bg_events

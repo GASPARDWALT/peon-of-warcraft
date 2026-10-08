@@ -459,7 +459,7 @@ wPlayerSAtkLevel:: db
 wPlayerSDefLevel:: db
 wPlayerAccLevel::  db
 wPlayerEvaLevel::  db
-	ds 1
+wPeonRockbiterCharge:: ds 1 ; existing battle padding; no SRAM shift
 
 wEnemyStatLevels::
 wEnemyAtkLevel::  db
@@ -469,11 +469,11 @@ wEnemySAtkLevel:: db
 wEnemySDefLevel:: db
 wEnemyAccLevel::  db
 wEnemyEvaLevel::  db
-	ds 1
+wPeonLightningShieldCharges:: ds 1 ; existing battle padding
 
 wEnemyTurnsTaken::  db
 wPlayerTurnsTaken:: db
-	ds 1
+wPeonEarthTotemActive:: ds 1 ; existing battle padding, cleared each encounter
 
 wPlayerSubstituteHP:: db
 wEnemySubstituteHP::  db

@@ -6,29 +6,17 @@ PeonOrcHutAttendantScript:
 	faceplayer
 	opentext
 	writetext PeonOrcHutAttendantOfferText
-	yesorno
-	iffalse .Close
-	special HealParty
-	writetext PeonOrcHutAttendantRestedText
 	waitbutton
-.Close:
 	closetext
 	end
 
 PeonOrcHutAttendantOfferText:
 	text "HORDE ATTENDANT"
 	para "<PLAYER>,"
-	line "lay down your mace"
-	cont "and warm yourself."
-	para "Rest by the fire?"
-	done
-
-PeonOrcHutAttendantRestedText:
-	text "Your health and"
-	line "spell charges are"
-	cont "restored."
-	para "Now face the road"
-	line "with a clear mind."
+	line "these hides keep"
+	cont "the dust outside."
+	para "For rest, visit"
+	line "the innkeeper."
 	done
 
 PeonOrcHut_MapEvents:

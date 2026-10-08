@@ -814,7 +814,8 @@ TeruSama12Desc:
 	next "Nature up 30 pct.@"
 
 TeruSama13Desc:
-	db   "?@"
+	db   "Green shaman mace."
+	next "Nature bonus: 20.@"
 
 MetalCoatDesc:
 	db   "Powers up steel-"
@@ -825,17 +826,20 @@ DragonFangDesc:
 	next "type moves. (HOLD)@"
 
 TeruSama14Desc:
-	db   "?@"
+	db   "Sarkoth's claw."
+	next "Take to Hana'zua.@"
 
 LeftoversDesc:
 	db   "Restores HP during"
 	next "battle. (HOLD)@"
 
 TeruSama15Desc:
-	db   "?@"
+	db   "Yarrog's medallion."
+	next "Take to Zureetha.@"
 
 TeruSama16Desc:
-	db   "?@"
+	db   "Place in combat."
+	next "You attack first.@"
 
 TeruSama17Desc:
 	db   "?@"
