@@ -112,7 +112,8 @@ PeonHearthReturnScript::
 	refreshmap
 	special UpdateTimePals
 	closetext
-	playsound SFX_WARP_TO
+	playsound SFX_PEON_HEARTHSTONE
+	waitsfx
 	applymovement PLAYER, .Cast
 	checkevent EVENT_PEON_HOME_SENJIN
 	iftrue .Senjin
@@ -129,7 +130,7 @@ PeonHearthReturnScript::
 	warpmod 4, RAZOR_HILL
 	warpfacing DOWN, PEON_ORC_INN, 5, 6
 .Arrived:
-	playsound SFX_WARP_FROM
+	playsound SFX_PEON_HEALING
 	applymovement PLAYER, .Arrive
 	end
 .Cast:

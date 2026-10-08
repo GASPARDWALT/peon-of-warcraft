@@ -209,5 +209,26 @@
 	const SFX_4_NOTE_DITTY                ; cd
 	const SFX_TWINKLE                     ; ce
 	const SFX_PEON_BOAR_GRUNT             ; cf — appended native encounter sound
+; BEGIN PEON AUDIO EXPANSION
+	const SFX_PEON_LEVEL_UP                ; d0
+	const SFX_PEON_QUEST_ACCEPT            ; d1
+	const SFX_PEON_QUEST_READY             ; d2
+	const SFX_PEON_QUEST_REWARD            ; d3
+	const SFX_PEON_HEALING                 ; d4
+	const SFX_PEON_POTION                  ; d5
+	const SFX_PEON_FOOD                    ; d6
+	const SFX_PEON_TOTEM_PLACE             ; d7
+	const SFX_PEON_HEARTHSTONE             ; d8
+	const SFX_PEON_DEFEAT                  ; d9
+	const SFX_PEON_VICTORY                 ; da
+	const SFX_PEON_SCORPID_RATTLE          ; db
+	const SFX_PEON_IMP_YELP                ; dc
+	const SFX_PEON_WOLF_GROWL              ; dd
+	const SFX_PEON_WATER                   ; de
+	const SFX_PEON_FROST                   ; df
+	const SFX_PEON_EARTH                   ; e0
+	const SFX_PEON_PURGE                   ; e1
+	const SFX_PEON_NATURE                  ; e2
+; END PEON AUDIO EXPANSION
 
 DEF NUM_SFX EQU const_value

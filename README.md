@@ -1,4 +1,12 @@
-# Peon of Warcraft — playable v0.2.3
+# Peon of Warcraft — playable Shaman chapter
+
+[Latest playable audio/level-up preview](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/warcraft-audio-preview/peon_of_warcraft_audio_preview.zip) · [New audio, transparent trees and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/warcraft-audio-preview/peon_of_warcraft_audio_preview_assets.zip) · [Preview changes and limits](docs/WARCRAFT_AUDIO_PREVIEW.md)
+
+The latest preview adds nineteen original native sound effects, golden level-up
+particles and refined Durotar/cave/inn ambiences to the compatible Valley
+preview. Three transparent tree proposals are prepared separately; they are
+not yet map tiles. [Classic opening review](docs/ORC_LEVEL_1_6_REVIEW.md) documents
+the next quest recommendations. Earlier downloads remain available below.
 
 [Download playable ROM](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3.zip) · [Download assets + offline browser gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3_assets.zip) · [Download transparent PNGs](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.3/peon_of_warcraft_v0_2_3_transparent_png.zip) · [Walkthrough and limits](docs/V0_2_3_PLAYABLE.md)
 

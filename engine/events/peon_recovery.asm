@@ -4,6 +4,9 @@ SECTION "Peon Defeat Recovery", ROMX
 ; player. Leave one HP so the apprentice can walk to an inn after the respawn.
 ; Clear poison on this defeat recovery to avoid an immediate overworld faint.
 PeonRecoverFromDefeat::
+	ld de, SFX_PEON_DEFEAT
+	call WaitPlaySFX
+	call WaitSFX
 	xor a
 	ld [wPartyMon1Status], a
 	ld [wPartyMon1HP], a

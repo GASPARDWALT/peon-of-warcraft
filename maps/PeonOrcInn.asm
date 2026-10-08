@@ -15,7 +15,8 @@ PeonOrcInnkeeperScript:
 	yesorno
 	iffalse .Close
 	special HealParty
-	playsound SFX_HEAL_BELL
+	playsound SFX_PEON_HEALING
+	waitsfx
 	writetext PeonOrcInnRestedText
 	waitbutton
 	writetext PeonOrcInnBindText

@@ -12,8 +12,9 @@ PeonTryPlaceEarthTotem::
 	jr nz, .unused
 	ld a, 1
 	ld [wPeonEarthTotemActive], a
-	ld de, SFX_POUND
-	call PlaySFX
+	ld de, SFX_PEON_TOTEM_PLACE
+	call WaitPlaySFX
+	call WaitSFX
 	scf
 	ret
 .unused

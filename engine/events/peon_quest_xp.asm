@@ -176,6 +176,16 @@ PeonGrantQuestXP::
 PeonQuestXPFeedback::
 	ld a, [wScriptVar]
 	and a
+	jr z, .RewardSound
+	farcall PeonWorldLevelUpFeedback
+	jr .FeedbackText
+.RewardSound:
+	ld de, SFX_PEON_QUEST_REWARD
+	call WaitPlaySFX
+	call WaitSFX
+.FeedbackText:
+	ld a, [wScriptVar]
+	and a
 	ld hl, .ExperienceText
 	jr z, .Print
 	ld hl, .LevelText

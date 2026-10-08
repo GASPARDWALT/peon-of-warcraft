@@ -1,0 +1,725 @@
+{
+  "rom_sha256": "6f1fc01438a0b35c3facdd228af0734d2a517091581e56a790769a1685c68ca7",
+  "section": "sfx",
+  "all_checks_passed": true,
+  "source": "Original GBC pulse/noise compositions; no external Warcraft samples auditioned or imported.",
+  "physical_chromatic_audio_unverified": true,
+  "sound_effects": [
+    {
+      "isolated": {
+        "wav": "level_up.wav",
+        "seconds": 0.433875,
+        "actual_native_apu_peak_before_gain": 10,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3136.44578313253,
+        "native_apu_capture": true,
+        "name": "level_up",
+        "sfx_id": 208,
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "terminated_frames": 19,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "level_up_mixed.wav",
+        "seconds": 0.433875,
+        "actual_native_apu_peak_before_gain": 25,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1578.3507554391074,
+        "native_apu_capture": true,
+        "name": "level_up",
+        "sfx_id": 208,
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "terminated_frames": 19,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "quest_accept.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 7,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 4515.856236786469,
+        "native_apu_capture": true,
+        "name": "quest_accept",
+        "sfx_id": 209,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "quest_accept_mixed.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 20,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2052.614960806476,
+        "native_apu_capture": true,
+        "name": "quest_accept",
+        "sfx_id": 209,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "quest_ready.wav",
+        "seconds": 0.3170625,
+        "actual_native_apu_peak_before_gain": 5,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 5997.4666441479485,
+        "native_apu_capture": true,
+        "name": "quest_ready",
+        "sfx_id": 210,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 12,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "quest_ready_mixed.wav",
+        "seconds": 0.3170625,
+        "actual_native_apu_peak_before_gain": 26,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1469.106604794837,
+        "native_apu_capture": true,
+        "name": "quest_ready",
+        "sfx_id": 210,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 12,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "quest_reward.wav",
+        "seconds": 0.3504375,
+        "actual_native_apu_peak_before_gain": 9,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3378.001549186677,
+        "native_apu_capture": true,
+        "name": "quest_reward",
+        "sfx_id": 211,
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "terminated_frames": 14,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "quest_reward_mixed.wav",
+        "seconds": 0.3504375,
+        "actual_native_apu_peak_before_gain": 22,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1771.037719176202,
+        "native_apu_capture": true,
+        "name": "quest_reward",
+        "sfx_id": 211,
+        "native_voices_observed": [
+          5,
+          6
+        ],
+        "terminated_frames": 14,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "healing.wav",
+        "seconds": 0.46725,
+        "actual_native_apu_peak_before_gain": 7,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 4525.554178317143,
+        "native_apu_capture": true,
+        "name": "healing",
+        "sfx_id": 212,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 21,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "healing_mixed.wav",
+        "seconds": 0.46725,
+        "actual_native_apu_peak_before_gain": 20,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1869.0667523840136,
+        "native_apu_capture": true,
+        "name": "healing",
+        "sfx_id": 212,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 21,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "potion.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 9,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3515.335456430205,
+        "native_apu_capture": true,
+        "name": "potion",
+        "sfx_id": 213,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 15,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "potion_mixed.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 21,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1812.4901278693462,
+        "native_apu_capture": true,
+        "name": "potion",
+        "sfx_id": 213,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 15,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "food.wav",
+        "seconds": 0.4005,
+        "actual_native_apu_peak_before_gain": 4,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 7954.366779961578,
+        "native_apu_capture": true,
+        "name": "food",
+        "sfx_id": 214,
+        "native_voices_observed": [
+          8
+        ],
+        "terminated_frames": 17,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "food_mixed.wav",
+        "seconds": 0.4005,
+        "actual_native_apu_peak_before_gain": 28,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1545.581669131265,
+        "native_apu_capture": true,
+        "name": "food",
+        "sfx_id": 214,
+        "native_voices_observed": [
+          8
+        ],
+        "terminated_frames": 17,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "totem_place.wav",
+        "seconds": 0.4171875,
+        "actual_native_apu_peak_before_gain": 13,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2352.6005739892253,
+        "native_apu_capture": true,
+        "name": "totem_place",
+        "sfx_id": 215,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 18,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "totem_place_mixed.wav",
+        "seconds": 0.4171875,
+        "actual_native_apu_peak_before_gain": 25,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1483.2391594184498,
+        "native_apu_capture": true,
+        "name": "totem_place",
+        "sfx_id": 215,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 18,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "hearthstone.wav",
+        "seconds": 0.6174375,
+        "actual_native_apu_peak_before_gain": 8,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 4019.0823057624693,
+        "native_apu_capture": true,
+        "name": "hearthstone",
+        "sfx_id": 216,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 30,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "hearthstone_mixed.wav",
+        "seconds": 0.6174375,
+        "actual_native_apu_peak_before_gain": 19,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2085.785453421239,
+        "native_apu_capture": true,
+        "name": "hearthstone",
+        "sfx_id": 216,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 30,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "defeat.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 5,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 6519.273058160403,
+        "native_apu_capture": true,
+        "name": "defeat",
+        "sfx_id": 217,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "defeat_mixed.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 22,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1909.1474337147847,
+        "native_apu_capture": true,
+        "name": "defeat",
+        "sfx_id": 217,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "victory.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 5,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 6134.741103421866,
+        "native_apu_capture": true,
+        "name": "victory",
+        "sfx_id": 218,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "victory_mixed.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 26,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1468.8632813651234,
+        "native_apu_capture": true,
+        "name": "victory",
+        "sfx_id": 218,
+        "native_voices_observed": [
+          5
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "scorpid_rattle.wav",
+        "seconds": 0.3504375,
+        "actual_native_apu_peak_before_gain": 9,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3526.705553766782,
+        "native_apu_capture": true,
+        "name": "scorpid_rattle",
+        "sfx_id": 219,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 14,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "scorpid_rattle_mixed.wav",
+        "seconds": 0.3504375,
+        "actual_native_apu_peak_before_gain": 21,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1795.3411425674412,
+        "native_apu_capture": true,
+        "name": "scorpid_rattle",
+        "sfx_id": 219,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 14,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "imp_yelp.wav",
+        "seconds": 0.4005,
+        "actual_native_apu_peak_before_gain": 9,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3342.1003613605035,
+        "native_apu_capture": true,
+        "name": "imp_yelp",
+        "sfx_id": 220,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 17,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "imp_yelp_mixed.wav",
+        "seconds": 0.4005,
+        "actual_native_apu_peak_before_gain": 19,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2084.862944988206,
+        "native_apu_capture": true,
+        "name": "imp_yelp",
+        "sfx_id": 220,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 17,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "wolf_growl.wav",
+        "seconds": 0.500625,
+        "actual_native_apu_peak_before_gain": 14,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2417.774328126516,
+        "native_apu_capture": true,
+        "name": "wolf_growl",
+        "sfx_id": 221,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 23,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "wolf_growl_mixed.wav",
+        "seconds": 0.500625,
+        "actual_native_apu_peak_before_gain": 24,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1601.0812843106694,
+        "native_apu_capture": true,
+        "name": "wolf_growl",
+        "sfx_id": 221,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 23,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "water.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 5,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 6709.991284779582,
+        "native_apu_capture": true,
+        "name": "water",
+        "sfx_id": 222,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "water_mixed.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 18,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2245.6901055271132,
+        "native_apu_capture": true,
+        "name": "water",
+        "sfx_id": 222,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "frost.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 12,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2535.3333792059448,
+        "native_apu_capture": true,
+        "name": "frost",
+        "sfx_id": 223,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "frost_mixed.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 24,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1525.069254943931,
+        "native_apu_capture": true,
+        "name": "frost",
+        "sfx_id": 223,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "earth.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 15,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 2117.0074191538765,
+        "native_apu_capture": true,
+        "name": "earth",
+        "sfx_id": 224,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "earth_mixed.wav",
+        "seconds": 0.33375,
+        "actual_native_apu_peak_before_gain": 26,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1401.697436346137,
+        "native_apu_capture": true,
+        "name": "earth",
+        "sfx_id": 224,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 13,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "purge.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 9,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 3319.3953784675973,
+        "native_apu_capture": true,
+        "name": "purge",
+        "sfx_id": 225,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "purge_mixed.wav",
+        "seconds": 0.3838125,
+        "actual_native_apu_peak_before_gain": 22,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1674.6768129963054,
+        "native_apu_capture": true,
+        "name": "purge",
+        "sfx_id": 225,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 16,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    },
+    {
+      "isolated": {
+        "wav": "nature.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 7,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 4494.138863841298,
+        "native_apu_capture": true,
+        "name": "nature",
+        "sfx_id": 226,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 15,
+        "music_restored_audible_frames": 0,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      },
+      "mixed": {
+        "wav": "nature_mixed.wav",
+        "seconds": 0.367125,
+        "actual_native_apu_peak_before_gain": 20,
+        "native_clipped_samples_before_gain": 0,
+        "preview_gain_only": 1906.46492434663,
+        "native_apu_capture": true,
+        "name": "nature",
+        "sfx_id": 226,
+        "native_voices_observed": [
+          5,
+          8
+        ],
+        "terminated_frames": 15,
+        "music_restored_audible_frames": 120,
+        "diagnostic_temporary_title_CALL_fixture": true,
+        "production_rom_unmodified": true
+      }
+    }
+  ],
+  "production_rom_unchanged": true,
+  "published_evidence_unchanged": true
+}

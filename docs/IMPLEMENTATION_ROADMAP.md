@@ -54,3 +54,18 @@ in zone 5, and align the cave and fortified exit with zones 6 and 7. The exact
 drawn path reference is still pending. This geography and a combined Valley
 overview are not implemented in the preview. Mana and physical Chromatic tests
 also remain outstanding.
+
+## Audio and level-up preview
+
+`releases/warcraft-audio-preview/` extends the Valley preview with nineteen
+original native sound effects, a short golden level aura for quest/combat XP,
+and three refined four-channel ambiences. Existing event/map/item/save IDs stay
+unchanged. See `WARCRAFT_AUDIO_PREVIEW.md` for reachable hooks and limitations.
+
+Three transparent tree proposals are prepared in the new gallery; background
+tile allocation and placement are still separate map work. Verified Classic
+data suggests Vile Familiars, Sarkoth's report-to-Gornek follow-up, Thazz'ril's
+Pick and a compact Call of Earth ritual as the next progression work. These
+recommendations are recorded in `ORC_LEVEL_1_6_REVIEW.md`, not implemented by the
+audio preview. Unavailable recordings/videos are not claimed as auditioned or
+viewed references.

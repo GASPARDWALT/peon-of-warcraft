@@ -1,0 +1,392 @@
+{
+  "tracks": {
+    "Durotar": {
+      "native_music_id": 103,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 2112.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          2112,
+          2112
+        ],
+        [
+          2112,
+          2112
+        ],
+        [
+          2112,
+          2112
+        ],
+        [
+          2112,
+          2112
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        4225,
+        4225,
+        3681,
+        4225
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        5,
+        5,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "durotar_native.wav",
+      "seconds": 35.244,
+      "preview_gain_applied_to_native_waveform": 1360.495603873971,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 3383424,
+        "raw_minimum": 0,
+        "raw_maximum": 25,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "durotar_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Cave": {
+      "native_music_id": 104,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 2352.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          2352,
+          2352
+        ],
+        [
+          2352,
+          2352
+        ],
+        [
+          2352,
+          2352
+        ],
+        [
+          2352,
+          2352
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        4705,
+        4705,
+        3521,
+        4705
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        6,
+        4,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "cave_native.wav",
+      "seconds": 39.249,
+      "preview_gain_applied_to_native_waveform": 2060.734621856579,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 3767904,
+        "raw_minimum": 0,
+        "raw_maximum": 15,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "cave_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Battle": {
+      "native_music_id": 105,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 744.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          744,
+          744
+        ],
+        [
+          744,
+          744
+        ],
+        [
+          744,
+          744
+        ],
+        [
+          744,
+          744
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        1489,
+        1489,
+        1105,
+        1489
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        6,
+        5,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "battle_native.wav",
+      "seconds": 12.4155,
+      "preview_gain_applied_to_native_waveform": 1279.3155080213903,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 1191888,
+        "raw_minimum": 0,
+        "raw_maximum": 27,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "battle_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Inn": {
+      "native_music_id": 106,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 1476.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          1476,
+          1476
+        ],
+        [
+          1476,
+          1476
+        ],
+        [
+          1476,
+          1476
+        ],
+        [
+          1476,
+          1476
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        2953,
+        2953,
+        1969,
+        2953
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        6,
+        6,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "inn_native.wav",
+      "seconds": 24.63075,
+      "preview_gain_applied_to_native_waveform": 1435.2264627689556,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 2364552,
+        "raw_minimum": 0,
+        "raw_maximum": 23,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "inn_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Victory": {
+      "native_music_id": 107,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": false,
+      "expected_phrase_frames": 198.0,
+      "phrase_entries_per_channel": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "loop_intervals_frames": [],
+      "hardware_channel_active_frames": [
+        199,
+        199,
+        148,
+        199
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        4,
+        1,
+        1
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": true,
+      "wav": "victory_native.wav",
+      "seconds": 3.3208125,
+      "preview_gain_applied_to_native_waveform": 1577.8826359346713,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 318798,
+        "raw_minimum": 0,
+        "raw_maximum": 22,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "victory_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Barrens": {
+      "native_music_id": 108,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 1104.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          1104,
+          1104
+        ],
+        [
+          1104,
+          1104
+        ],
+        [
+          1104,
+          1104
+        ],
+        [
+          1104,
+          1104
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        2209,
+        2209,
+        1633,
+        2209
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        5,
+        5,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "barrens_native.wav",
+      "seconds": 18.423,
+      "preview_gain_applied_to_native_waveform": 1458.2788625024007,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 1768608,
+        "raw_minimum": 0,
+        "raw_maximum": 23,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "barrens_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    },
+    "Orgrimmar": {
+      "native_music_id": 109,
+      "native_four_channel_apu_capture": true,
+      "diagnostic_song_id_substitution_at_PlayMusic": true,
+      "looping": true,
+      "expected_phrase_frames": 936.0,
+      "phrase_entries_per_channel": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "loop_intervals_frames": [
+        [
+          936,
+          936
+        ],
+        [
+          936,
+          936
+        ],
+        [
+          936,
+          936
+        ],
+        [
+          936,
+          936
+        ]
+      ],
+      "hardware_channel_active_frames": [
+        1873,
+        1873,
+        1393,
+        1873
+      ],
+      "distinct_pitches_channels_1_to_3": [
+        6,
+        5,
+        5
+      ],
+      "all_channels_stop_after_nonlooping_fanfare": false,
+      "wav": "orgrimmar_native.wav",
+      "seconds": 15.6195,
+      "preview_gain_applied_to_native_waveform": 1479.964065099331,
+      "native_audio_metrics": {
+        "raw_dtype": "int8",
+        "raw_sample_count": 1499472,
+        "raw_minimum": 0,
+        "raw_maximum": 23,
+        "raw_mixer_limit_samples": 0,
+        "raw_mixer_limit_fraction": 0.0,
+        "measured_before_DC_removal_or_preview_normalization": true
+      },
+      "mp3": "orgrimmar_native.mp3",
+      "mp3_derived_from_native_apu_wav": true
+    }
+  },
+  "method": "Actual ROM APU capture through native PlayMusic API; isolated song ID diagnostic, not externally synthesized.",
+  "source_matches_refinement": true,
+  "no_imported_Warcraft_recording": true,
+  "title_music_not_selected_or_modified": true,
+  "rom_sha256": "6f1fc01438a0b35c3facdd228af0734d2a517091581e56a790769a1685c68ca7",
+  "all_checks_passed": true
+}

@@ -3,7 +3,7 @@
 ; signed bank1 BG tiles reserved for rank emblems and the placed Earth Totem.
 BattleAnim_PeonRockbiter:
 	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 0, SFX_STRENGTH
+	anim_sound 0, 0, SFX_PEON_EARTH
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 40, 100, $30
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 56, 100, $30
 	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 44, 84, $0
@@ -14,7 +14,7 @@ BattleAnim_PeonRockbiter:
 
 BattleAnim_PeonEarthShock:
 	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 1, SFX_STRENGTH
+	anim_sound 0, 1, SFX_PEON_EARTH
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 120, 68, $30
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 144, 68, $30
 	anim_obj BATTLE_ANIM_OBJ_PEON_ARC, 128, 48, $0
@@ -38,7 +38,7 @@ BattleAnim_PeonFlameShock:
 
 BattleAnim_PeonHealingWave:
 	anim_1gfx BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 0, SFX_FULL_HEAL
+	anim_sound 0, 0, SFX_PEON_HEALING
 	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 32, 100, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 64, 100, $0
 	anim_wait 12
@@ -65,7 +65,7 @@ BattleAnim_PeonLightningShield:
 
 BattleAnim_PeonStrengthOfEarth:
 	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 0, SFX_STRENGTH
+	anim_sound 0, 0, SFX_PEON_NATURE
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 32, 104, $30
 	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 64, 104, $30
 	anim_wait 8
@@ -77,7 +77,7 @@ BattleAnim_PeonStrengthOfEarth:
 
 BattleAnim_PeonPurge:
 	anim_1gfx BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 1, SFX_SHINE
+	anim_sound 0, 1, SFX_PEON_PURGE
 	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 116, 40, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 144, 40, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_WIND, 128, 52, $0
@@ -89,7 +89,7 @@ BattleAnim_PeonPurge:
 
 BattleAnim_PeonFrostShock:
 	anim_1gfx BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 1, SFX_SHINE
+	anim_sound 0, 1, SFX_PEON_FROST
 	anim_obj BATTLE_ANIM_OBJ_PEON_FROST, 120, 56, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_FROST, 136, 40, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_FROST, 144, 56, $0
@@ -109,7 +109,7 @@ BattleAnim_PeonFlameShockII:
 
 BattleAnim_PeonWindfury:
 	anim_2gfx BATTLE_ANIM_GFX_HIT, BATTLE_ANIM_GFX_PEON_NATURE
-	anim_sound 0, 1, SFX_RAZOR_WIND
+	anim_sound 0, 1, SFX_PEON_NATURE
 	anim_obj BATTLE_ANIM_OBJ_PEON_WIND, 116, 48, $0
 	anim_obj BATTLE_ANIM_OBJ_PEON_WIND, 136, 64, $0
 	anim_wait 8

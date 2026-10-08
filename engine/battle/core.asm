@@ -7622,10 +7622,17 @@ AnimateExpBar:
 	ld bc, MON_NAME_LENGTH
 	call CopyBytes
 	call TerminateExpBarSound
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .legacy_level_feedback
+	farcall PeonBattleLevelUpFeedback
+	jr .level_feedback_done
+.legacy_level_feedback:
 	ld de, SFX_HIT_END_OF_EXP_BAR
 	call PlaySFX
 	farcall AnimateEndOfExpBar
 	call WaitSFX
+.level_feedback_done:
 	ld hl, BattleText_StringBuffer1GrewToLevel
 	call StdBattleTextbox
 	pop de

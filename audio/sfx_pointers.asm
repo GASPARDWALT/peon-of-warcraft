@@ -210,4 +210,25 @@ SFX:
 	dba Sfx_4NoteDitty
 	dba Sfx_Twinkle
 	dba PeonSfx_BoarGrunt
+; BEGIN PEON AUDIO EXPANSION
+	dba PeonSfx_LevelUp
+	dba PeonSfx_QuestAccept
+	dba PeonSfx_QuestReady
+	dba PeonSfx_QuestReward
+	dba PeonSfx_Healing
+	dba PeonSfx_Potion
+	dba PeonSfx_Food
+	dba PeonSfx_TotemPlace
+	dba PeonSfx_Hearthstone
+	dba PeonSfx_Defeat
+	dba PeonSfx_Victory
+	dba PeonSfx_ScorpidRattle
+	dba PeonSfx_ImpYelp
+	dba PeonSfx_WolfGrowl
+	dba PeonSfx_Water
+	dba PeonSfx_Frost
+	dba PeonSfx_Earth
+	dba PeonSfx_Purge
+	dba PeonSfx_Nature
+; END PEON AUDIO EXPANSION
 	assert_table_length NUM_SFX

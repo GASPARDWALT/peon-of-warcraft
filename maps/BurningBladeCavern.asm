@@ -124,6 +124,11 @@ BurningBladeYarrogScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_YARROG_DEAD
+	checkevent EVENT_PEON_MEDALLION_ACCEPTED
+	iffalse .ReadyChecked
+	playsound SFX_PEON_QUEST_READY
+	waitsfx
+.ReadyChecked:
 	disappear CAVERN_YARROG
 	givemoney YOUR_MONEY, 35
 	giveitem PEON_BLADE_MEDALLION

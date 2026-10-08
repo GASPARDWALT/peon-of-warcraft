@@ -44,6 +44,8 @@ TheDenQuestScript:
 	yesorno
 	iffalse .Declined
 	setevent EVENT_PEON_QUEST_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshQuestMarkers
 	writetext TheDenQuestAcceptedText
 	waitbutton
@@ -74,6 +76,8 @@ TheDenQuestScript:
 	yesorno
 	iffalse .Declined
 	setevent EVENT_PEON_STING_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshQuestMarkers
 	writetext TheDenStingAcceptedText
 	waitbutton
@@ -142,6 +146,8 @@ TheDenBoarScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .NoReward
 	setevent EVENT_PEON_QUEST_DONE
+	playsound SFX_PEON_QUEST_READY
+	waitsfx
 	disappear THEDEN_BOAR
 	callasm PeonRefreshQuestMarkers
 	opentext
@@ -221,6 +227,11 @@ TheDenScorpidScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .NoReward
 	setevent EVENT_PEON_SCORPID_DEFEATED
+	checkevent EVENT_PEON_STING_ACCEPTED
+	iffalse .ReadyChecked
+	playsound SFX_PEON_QUEST_READY
+	waitsfx
+.ReadyChecked:
 	disappear THEDEN_SCORPID
 	callasm PeonRefreshQuestMarkers
 	opentext
@@ -603,6 +614,8 @@ TheDenForemanScript:
 	yesorno
 	iffalse .Close
 	setevent EVENT_PEON_LAZY_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshQuestMarkers
 	writetext TheDenForemanAcceptedText
 	sjump .Wait
@@ -644,6 +657,8 @@ TheDenLazyPeonScript:
 	showemote EMOTE_SHOCK, THEDEN_LAZY_PEON, 12
 	waitsfx
 	setevent EVENT_PEON_LAZY_AWAKE
+	playsound SFX_PEON_QUEST_READY
+	waitsfx
 	callasm PeonRefreshQuestMarkers
 	opentext
 	writetext TheDenLazyWakeText

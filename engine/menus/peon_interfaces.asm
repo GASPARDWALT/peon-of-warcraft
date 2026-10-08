@@ -517,6 +517,8 @@ PeonInventory:
 	jr z, .input
 	dec a
 	ld [wMenuCursorY], a
+	ld de, SFX_MENU
+	call PlaySFX
 	jp .draw
 .next
 	ld a, [wMenuCursorY]
@@ -528,6 +530,8 @@ PeonInventory:
 	jr c, .input
 	ld a, b
 	ld [wMenuCursorY], a
+	ld de, SFX_MENU
+	call PlaySFX
 	jp .draw
 .equip
 	ld a, [wNumItems]
@@ -543,9 +547,9 @@ PeonInventory:
 	cp PEON_CAMP_BREAD
 	jr z, .bread
 	cp PEON_SPIRIT_MACE
-	jr z, .apply
+	jp z, .apply
 	cp ITEM_8D
-	jr z, .apply
+	jp z, .apply
 	cp ITEM_87
 	jr c, .input
 	cp ITEM_89 + 1
@@ -560,17 +564,26 @@ PeonInventory:
 .potion
 	farcall PeonTryUseMinorPotion
 	jp nc, .input
+	ld de, SFX_PEON_POTION
+	call WaitPlaySFX
+	call WaitSFX
 	ld a, POTION
 	jr .consume
 .bread
 	farcall PeonTryEatCampBread
 	jp nc, .input
+	ld de, SFX_PEON_FOOD
+	call WaitPlaySFX
+	call WaitSFX
 	ld a, PEON_CAMP_BREAD
 	jr .consume
 .drink
 ; Refill all learned spells; a full spellbook leaves the water in the bag.
 	farcall PeonRestoreSpellCharges
 	jp nc, .input
+	ld de, SFX_PEON_WATER
+	call WaitPlaySFX
+	call WaitSFX
 .consume_water
 	ld a, FRESH_WATER
 .consume

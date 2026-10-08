@@ -57,6 +57,8 @@ ValleyOfTrialsGuideScript:
 	yesorno
 	iffalse .Close
 	setevent EVENT_PEON_CACTUS_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshValleyQuestMarkers
 	writetext GalgarReminderText
 	sjump .Wait
@@ -106,6 +108,8 @@ ValleyHanazuaScript:
 	yesorno
 	iffalse .Close
 	setevent EVENT_PEON_SARKOTH_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshValleyQuestMarkers
 	writetext HanazuaReminderText
 	sjump .Wait
@@ -157,6 +161,8 @@ ValleyZureethaScript:
 	yesorno
 	iffalse .Close
 	setevent EVENT_PEON_MEDALLION_ACCEPTED
+	playsound SFX_PEON_QUEST_ACCEPT
+	waitsfx
 	callasm PeonRefreshValleyQuestMarkers
 	writetext ZureethaReminderText
 	sjump .Wait
@@ -264,6 +270,11 @@ ValleySarkothScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_SARKOTH_DEAD
+	checkevent EVENT_PEON_SARKOTH_ACCEPTED
+	iffalse .ReadyChecked
+	playsound SFX_PEON_QUEST_READY
+	waitsfx
+.ReadyChecked:
 	disappear VALLEY_SARKOTH
 	givemoney YOUR_MONEY, 35
 	callasm PeonRefreshValleyQuestMarkers
@@ -426,6 +437,7 @@ PeonCactus1:
 	checkevent EVENT_PEON_CACTUS_1
 	iftrue .Empty
 	setevent EVENT_PEON_CACTUS_1
+	callasm PeonCactusReadySound
 	changeblock 6, 6, 38
 	callasm PeonRefreshValleyQuestMarkers
 	writetext CactusPickedText
@@ -450,6 +462,7 @@ PeonCactus2:
 	checkevent EVENT_PEON_CACTUS_2
 	iftrue .Empty
 	setevent EVENT_PEON_CACTUS_2
+	callasm PeonCactusReadySound
 	changeblock 22, 8, 38
 	callasm PeonRefreshValleyQuestMarkers
 	writetext CactusPickedText
@@ -474,6 +487,7 @@ PeonCactus3:
 	checkevent EVENT_PEON_CACTUS_3
 	iftrue .Empty
 	setevent EVENT_PEON_CACTUS_3
+	callasm PeonCactusReadySound
 	changeblock 8, 16, 38
 	callasm PeonRefreshValleyQuestMarkers
 	writetext CactusPickedText

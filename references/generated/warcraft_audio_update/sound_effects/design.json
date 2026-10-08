@@ -1,0 +1,366 @@
+{
+  "effects": [
+    {
+      "name": "level_up",
+      "header": "PeonSfx_LevelUp",
+      "existing_sfx_id": "SFX_PEON_LEVEL_UP",
+      "sfx_id": 208,
+      "sfx_id_hex": "$d0",
+      "description": "Small ascending bell with a quiet harmonic.",
+      "channels": [
+        5,
+        6
+      ],
+      "estimated_channel_frames": {
+        "5": 18,
+        "6": 18
+      },
+      "maximum_envelope_volume": 7,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "quest_accept",
+      "header": "PeonSfx_QuestAccept",
+      "existing_sfx_id": "SFX_PEON_QUEST_ACCEPT",
+      "sfx_id": 209,
+      "sfx_id_hex": "$d1",
+      "description": "Quiet parchment tap followed by a rising confirmation.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 12,
+        "8": 5
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "quest_ready",
+      "header": "PeonSfx_QuestReady",
+      "existing_sfx_id": "SFX_PEON_QUEST_READY",
+      "sfx_id": 210,
+      "sfx_id_hex": "$d2",
+      "description": "Two restrained bright notes announcing a completed objective.",
+      "channels": [
+        5
+      ],
+      "estimated_channel_frames": {
+        "5": 11
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "quest_reward",
+      "header": "PeonSfx_QuestReward",
+      "existing_sfx_id": "SFX_PEON_QUEST_REWARD",
+      "sfx_id": 211,
+      "sfx_id_hex": "$d3",
+      "description": "Warm resolved triad with a small metallic overtone.",
+      "channels": [
+        5,
+        6
+      ],
+      "estimated_channel_frames": {
+        "5": 13,
+        "6": 13
+      },
+      "maximum_envelope_volume": 6,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "healing",
+      "header": "PeonSfx_Healing",
+      "existing_sfx_id": "SFX_PEON_HEALING",
+      "sfx_id": 212,
+      "sfx_id_hex": "$d4",
+      "description": "Soft upward light with a gentle airy decay.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 20,
+        "8": 20
+      },
+      "maximum_envelope_volume": 4,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "potion",
+      "header": "PeonSfx_Potion",
+      "existing_sfx_id": "SFX_PEON_POTION",
+      "sfx_id": 213,
+      "sfx_id_hex": "$d5",
+      "description": "Bottle pop, two liquid bubbles and a short restoration note.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 14,
+        "8": 14
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "food",
+      "header": "PeonSfx_Food",
+      "existing_sfx_id": "SFX_PEON_FOOD",
+      "sfx_id": 214,
+      "sfx_id_hex": "$d6",
+      "description": "Two small dry bread crunches; no melodic fanfare.",
+      "channels": [
+        8
+      ],
+      "estimated_channel_frames": {
+        "8": 16
+      },
+      "maximum_envelope_volume": 4,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "totem_place",
+      "header": "PeonSfx_TotemPlace",
+      "existing_sfx_id": "SFX_PEON_TOTEM_PLACE",
+      "sfx_id": 215,
+      "sfx_id_hex": "$d7",
+      "description": "Wood touches ground, followed by a low shamanic resonance.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 17,
+        "8": 12
+      },
+      "maximum_envelope_volume": 7,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "hearthstone",
+      "header": "PeonSfx_Hearthstone",
+      "existing_sfx_id": "SFX_PEON_HEARTHSTONE",
+      "sfx_id": 216,
+      "sfx_id_hex": "$d8",
+      "description": "A rising then settling magical shimmer for the existing inn return.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 29,
+        "8": 29
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "defeat",
+      "header": "PeonSfx_Defeat",
+      "existing_sfx_id": "SFX_PEON_DEFEAT",
+      "sfx_id": 217,
+      "sfx_id_hex": "$d9",
+      "description": "Brief descending acknowledgement; no full battle music theme.",
+      "channels": [
+        5
+      ],
+      "estimated_channel_frames": {
+        "5": 15
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "victory",
+      "header": "PeonSfx_Victory",
+      "existing_sfx_id": "SFX_PEON_VICTORY",
+      "sfx_id": 218,
+      "sfx_id_hex": "$da",
+      "description": "Three compact upward notes after a won encounter.",
+      "channels": [
+        5
+      ],
+      "estimated_channel_frames": {
+        "5": 12
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "scorpid_rattle",
+      "header": "PeonSfx_ScorpidRattle",
+      "existing_sfx_id": "SFX_PEON_SCORPID_RATTLE",
+      "sfx_id": 219,
+      "sfx_id_hex": "$db",
+      "description": "Chitin clicks and a dry scraping hiss, distinct from Poison Sting.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 13,
+        "8": 13
+      },
+      "maximum_envelope_volume": 7,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "imp_yelp",
+      "header": "PeonSfx_ImpYelp",
+      "existing_sfx_id": "SFX_PEON_IMP_YELP",
+      "sfx_id": 220,
+      "sfx_id_hex": "$dc",
+      "description": "Thin, uneven upward squeal with a short raspy tail.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 16,
+        "8": 16
+      },
+      "maximum_envelope_volume": 6,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "wolf_growl",
+      "header": "PeonSfx_WolfGrowl",
+      "existing_sfx_id": "SFX_PEON_WOLF_GROWL",
+      "sfx_id": 221,
+      "sfx_id_hex": "$dd",
+      "description": "Longer throat growl rising into one low bark; no copied creature cry.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 22,
+        "8": 22
+      },
+      "maximum_envelope_volume": 8,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "water",
+      "header": "PeonSfx_Water",
+      "existing_sfx_id": "SFX_PEON_WATER",
+      "sfx_id": 222,
+      "sfx_id_hex": "$de",
+      "description": "Two liquid drops and a quiet flowing water tail.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 15,
+        "8": 15
+      },
+      "maximum_envelope_volume": 4,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "frost",
+      "header": "PeonSfx_Frost",
+      "existing_sfx_id": "SFX_PEON_FROST",
+      "sfx_id": 223,
+      "sfx_id_hex": "$df",
+      "description": "Brittle bright ice crack fading into a cold fine hiss.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 15,
+        "8": 15
+      },
+      "maximum_envelope_volume": 7,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "earth",
+      "header": "PeonSfx_Earth",
+      "existing_sfx_id": "SFX_PEON_EARTH",
+      "sfx_id": 224,
+      "sfx_id_hex": "$e0",
+      "description": "Low stone knock and coarse settling rubble.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 12,
+        "8": 12
+      },
+      "maximum_envelope_volume": 8,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "purge",
+      "header": "PeonSfx_Purge",
+      "existing_sfx_id": "SFX_PEON_PURGE",
+      "sfx_id": 225,
+      "sfx_id_hex": "$e1",
+      "description": "Quick stripping sweep with a clean magical release.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 15,
+        "8": 15
+      },
+      "maximum_envelope_volume": 5,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    },
+    {
+      "name": "nature",
+      "header": "PeonSfx_Nature",
+      "existing_sfx_id": "SFX_PEON_NATURE",
+      "sfx_id": 226,
+      "sfx_id_hex": "$e2",
+      "description": "Soft wooden resonance and a short leafy breeze.",
+      "channels": [
+        5,
+        8
+      ],
+      "estimated_channel_frames": {
+        "5": 14,
+        "8": 14
+      },
+      "maximum_envelope_volume": 4,
+      "source": "Original newly authored GBC pulse/noise synthesis.",
+      "runtime_integration_owned_by_root": true
+    }
+  ],
+  "new_effects": 19,
+  "native_sfx_count": 227,
+  "existing_sound_count_preserved": 208,
+  "existing_ids_shifted": false,
+  "existing_note_data_preserved": true,
+  "baseline_note_data_sha256": "859c501886743c6f2a638f23a27c143ec836609cf9b437e7a24fa1f529c5a66f",
+  "regeneration_order": "build_peon_sfx.py baseline, build_peon_valley_sfx.py override, build_peon_audio_expansion.py last.",
+  "reference_access": "Original WoW recording unavailable; not auditioned, copied or transcribed.",
+  "no_music_or_engine_code_written": true
+}

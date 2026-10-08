@@ -1,12 +1,38 @@
 SECTION "Peon Native Encounter Intro", ROMX
 
 PeonEncounterStartMessage:
-	; Boar adapter only: two original grunts, even with battle scenes disabled.
-	; Wait for an earlier effect because the appended ID has lower priority.
+	; Original family gestures also play with battle scenes disabled. No cry
+	; or external audio recording is used. Keep ordinary encounter rules.
 	ld a, [wEnemyMonSpecies]
 	cp RATTATA
+	jr z, .boar
+	cp SANDSHREW
+	jr z, .scorpid
+	cp PEON_MOB_SARKOTH
+	jr z, .scorpid
+	cp PEON_MOB_CRAWLER
+	jr z, .scorpid
+	cp GEODUDE
+	jr z, .imp
+	cp PEON_MOB_FELSTALKER
+	jr z, .growl
+	cp PEON_MOB_TIGER
+	jr z, .growl
+	cp PEON_MOB_RAPTOR
 	jr nz, .poses
+.growl
+	ld de, SFX_PEON_WOLF_GROWL
+	jr .sound
+.scorpid
+	ld de, SFX_PEON_SCORPID_RATTLE
+	jr .sound
+.imp
+	ld de, SFX_PEON_IMP_YELP
+	jr .sound
+.boar
 	ld de, SFX_PEON_BOAR_GRUNT
+.sound
+	; Wait for the previous effect: appended IDs have lower priority.
 	call WaitPlaySFX
 	call WaitSFX
 .poses

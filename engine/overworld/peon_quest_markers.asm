@@ -8,6 +8,38 @@
 
 SECTION "Peon Quest Marker Graphics", ROMX
 
+; Called only after harvesting a previously unpicked cactus. The three
+; existing flags make the ready cue happen once, on the final harvest.
+PeonCactusReadySound::
+	push af
+	push bc
+	push de
+	push hl
+	ld de, EVENT_PEON_CACTUS_1
+	call .Check
+	jr z, .done
+	ld de, EVENT_PEON_CACTUS_2
+	call .Check
+	jr z, .done
+	ld de, EVENT_PEON_CACTUS_3
+	call .Check
+	jr z, .done
+	ld de, SFX_PEON_QUEST_READY
+	call WaitPlaySFX
+	call WaitSFX
+.done
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.Check
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ret
+
 PeonQuestAvailableYellowGFX:: INCBIN "gfx/sprites/peon_quest_available_yellow.2bpp"
 PeonQuestActiveGrayGFX:: INCBIN "gfx/sprites/peon_quest_active_gray.2bpp"
 PeonQuestCompleteYellowGFX:: INCBIN "gfx/sprites/peon_quest_complete_yellow.2bpp"
