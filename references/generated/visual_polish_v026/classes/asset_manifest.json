@@ -1,0 +1,985 @@
+{
+  "style": "Humble green Orc apprentices; original native pixel grids, no concept resize or imported artwork.",
+  "classes": {
+    "shaman": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 137,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              0,
+              1,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 134,
+            "changed_pixels_from_idle": 115,
+            "opaque_bounds": [
+              0,
+              1,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 132,
+            "changed_pixels_from_idle": 68,
+            "opaque_bounds": [
+              0,
+              1,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 127,
+            "changed_pixels_from_idle": 122,
+            "opaque_bounds": [
+              0,
+              1,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 143,
+            "changed_pixels_from_idle": 80,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 137,
+            "changed_pixels_from_idle": 122,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 138,
+            "changed_pixels_from_idle": 97,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 130,
+            "changed_pixels_from_idle": 128,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 141,
+            "changed_pixels_from_idle": 81,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 141,
+            "changed_pixels_from_idle": 121,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 135,
+            "changed_pixels_from_idle": 101,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 134,
+            "changed_pixels_from_idle": 130,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes/shaman/overworld.bin",
+        "sha256": "8815123a338e95a28a38ed86e235be9838366e9102457d8557544a4c2b11e25b",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1743,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              1,
+              7,
+              55,
+              56
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1743,
+            "changed_pixels_from_idle": 723,
+            "opaque_bounds": [
+              1,
+              6,
+              55,
+              55
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1210,
+            "changed_pixels_from_idle": 1440,
+            "opaque_bounds": [
+              6,
+              1,
+              50,
+              56
+            ]
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes/shaman/front_frames.bin",
+        "sha256": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1347,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              1,
+              4,
+              47,
+              48
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1209,
+            "changed_pixels_from_idle": 590,
+            "opaque_bounds": [
+              2,
+              1,
+              45,
+              48
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1161,
+            "changed_pixels_from_idle": 596,
+            "opaque_bounds": [
+              0,
+              4,
+              45,
+              48
+            ]
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes/shaman/back_frames.bin",
+        "sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "warrior": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 176,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 172,
+            "changed_pixels_from_idle": 50,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 172,
+            "changed_pixels_from_idle": 68,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 172,
+            "changed_pixels_from_idle": 86,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 175,
+            "changed_pixels_from_idle": 8,
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 171,
+            "changed_pixels_from_idle": 57,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 172,
+            "changed_pixels_from_idle": 72,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 170,
+            "changed_pixels_from_idle": 85,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 175,
+            "changed_pixels_from_idle": 7,
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 171,
+            "changed_pixels_from_idle": 57,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 170,
+            "changed_pixels_from_idle": 69,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ]
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 172,
+            "changed_pixels_from_idle": 87,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ]
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes/warrior/overworld.bin",
+        "sha256": "0ee075e3acfa279e9390ed1b4d236808320a9ceb9d6e975842e57ab60c71816b",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1354,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              5,
+              4,
+              53,
+              54
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1418,
+            "changed_pixels_from_idle": 470,
+            "opaque_bounds": [
+              4,
+              3,
+              53,
+              54
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1324,
+            "changed_pixels_from_idle": 80,
+            "opaque_bounds": [
+              9,
+              4,
+              53,
+              54
+            ]
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes/warrior/front_frames.bin",
+        "sha256": "1c9dbcf1f71d12c10669d79c1c08177d3603187438c19a03d57e0d312ed1f129",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1194,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              3,
+              3,
+              48,
+              48
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1230,
+            "changed_pixels_from_idle": 403,
+            "opaque_bounds": [
+              4,
+              2,
+              48,
+              48
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1173,
+            "changed_pixels_from_idle": 129,
+            "opaque_bounds": [
+              4,
+              3,
+              48,
+              48
+            ]
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes/warrior/back_frames.bin",
+        "sha256": "38552b669044b53c5913f4e78358c5d26e3a27a3f29e0b040270b3b827174f65",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "warlock": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 162,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 162,
+            "changed_pixels_from_idle": 50,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 158,
+            "changed_pixels_from_idle": 23,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 158,
+            "changed_pixels_from_idle": 45,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 161,
+            "changed_pixels_from_idle": 7,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 161,
+            "changed_pixels_from_idle": 57,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 157,
+            "changed_pixels_from_idle": 29,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 157,
+            "changed_pixels_from_idle": 51,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 161,
+            "changed_pixels_from_idle": 7,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 161,
+            "changed_pixels_from_idle": 57,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 157,
+            "changed_pixels_from_idle": 29,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ]
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 157,
+            "changed_pixels_from_idle": 51,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ]
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes/warlock/overworld.bin",
+        "sha256": "6684bd6f388a4aeb942aeb33d0032f7000fb9d4cd3066e6ec79120aad9c1a42f",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1471,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              3,
+              2,
+              47,
+              54
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1530,
+            "changed_pixels_from_idle": 483,
+            "opaque_bounds": [
+              3,
+              1,
+              52,
+              54
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1491,
+            "changed_pixels_from_idle": 223,
+            "opaque_bounds": [
+              8,
+              2,
+              52,
+              54
+            ]
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes/warlock/front_frames.bin",
+        "sha256": "576602cb33109eba14dc321ca9c90bbe96b39b882a8801a07af69ed2681fb931",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1309,
+            "changed_pixels_from_idle": 0,
+            "opaque_bounds": [
+              3,
+              1,
+              48,
+              48
+            ]
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1345,
+            "changed_pixels_from_idle": 372,
+            "opaque_bounds": [
+              3,
+              0,
+              48,
+              48
+            ]
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1311,
+            "changed_pixels_from_idle": 199,
+            "opaque_bounds": [
+              8,
+              1,
+              48,
+              48
+            ]
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes/warlock/back_frames.bin",
+        "sha256": "cdd42b737538ffe563ca86b7152df49caf6b9c829510fbcd6a3015e28c23c979",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "runtime_validation_report": "references/generated/visual_polish_v026/classes/validation.json",
+  "dimensions_unchanged": true,
+  "shaman_world_and_rear_native_bytes_unchanged": true,
+  "native_source_review": {
+    "highlight_preview_class_from_menu_cursor": true,
+    "current_actor_class_from_existing_saved_flags": true,
+    "sprite_ids_unchanged": true,
+    "save_layout_unchanged": true,
+    "class_owned_ui_and_battle_uploads_use_vram_bank0": true,
+    "original_shaman_native_world_and_rear_preserved": true
+  }
+}

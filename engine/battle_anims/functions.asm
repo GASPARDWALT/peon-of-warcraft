@@ -94,6 +94,7 @@ DoBattleAnimFrame:
 	dw BattleAnimFunc_AncientPower
 	dw BattleAnimFunc_RockSmash
 	dw BattleAnimFunc_Cotton
+	dw BattleAnimFunc_PeonShallowProjectile
 	assert_table_length NUM_BATTLE_ANIM_FUNCS
 
 BattleAnimFunc_Null:
@@ -271,6 +272,11 @@ BattleAnimFunc_MoveFromUserToTargetAndDisappear:
 
 .done
 	call DeinitBattleAnimation
+	ret
+
+BattleAnimFunc_PeonShallowProjectile:
+; Keep the fixed animation/music bank within its original allocation.
+	farcall PeonStepShallowProjectile
 	ret
 
 BattleAnimFunc_PokeBall:

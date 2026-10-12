@@ -282,6 +282,7 @@ BattleAnimations::
 	dw BattleAnim_Wobble
 	dw BattleAnim_Shake
 	dw BattleAnim_HitConfusion
+	dw BattleAnim_PeonPetFireboltV026
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_Dummy:

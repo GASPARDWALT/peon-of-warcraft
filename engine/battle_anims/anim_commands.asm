@@ -1362,6 +1362,7 @@ BattleAnimAssignPals:
 	call DmgToCgbBGPals
 	lb de, %11100100, %11100100
 	call DmgToCgbObjPals
+	farcall PeonTintShadowBoltParticle
 	ret
 
 ClearBattleAnims::

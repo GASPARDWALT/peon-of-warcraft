@@ -419,6 +419,8 @@ INCLUDE "engine/battle_anims/core.asm"
 INCLUDE "engine/battle_anims/functions.asm"
 INCLUDE "engine/battle_anims/helpers.asm"
 
+INCLUDE "engine/battle_anims/peon_shallow_projectile.asm"
+
 
 SECTION "Pic Animations 1", ROMX
 
@@ -727,3 +729,6 @@ SECTION "Peon Enemy Poses", ROMX
 INCLUDE "engine/battle/peon_enemy_poses.asm"
 INCLUDE "engine/battle/peon_player_poses.asm"
 INCLUDE "engine/battle/peon_level_up.asm"
+
+INCLUDE "engine/menus/peon_class_graphics.asm"
+INCLUDE "engine/menus/peon_text_style.asm"

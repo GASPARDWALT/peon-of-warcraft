@@ -412,11 +412,8 @@ PeonCharacterSheet:
 	hlcoord 2, 1
 	ld de, wPlayerName
 	call PlaceString
-	ld de, PeonPortrait
-	ld hl, vTiles2 tile $40
-	ld b, BANK(PeonPortrait)
-	ld c, 49
-	call Get2bpp
+	ld c, 0
+	farcall PeonLoadClassProfileFrame
 	hlcoord 1, 3
 	ld a, $40
 	ld b, 7

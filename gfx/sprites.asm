@@ -127,6 +127,9 @@ PeonNamingGFX:: INCBIN "gfx/sprites/peon_naming.2bpp"
 PeonImpGFX:: INCBIN "gfx/sprites/peon_imp.2bpp"
 PeonMailboxGFX:: INCBIN "gfx/pack/peon_mailbox.2bpp"
 
+SECTION "Peon Friendly Imp v026", ROMX
+PeonFriendlyImpV026GFX:: INCBIN "gfx/peon_pets_v026/friendly_imp_world_v026.2bpp"
+
 INCLUDE "gfx/peon_village_sprites.asm"
 
 INCLUDE "gfx/peon_enemy_roster_sprites.asm"

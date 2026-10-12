@@ -160,12 +160,26 @@ BattleAnim_PeonRend:
 	anim_ret
 
 BattleAnim_PeonShadowBolt:
-	anim_2gfx BATTLE_ANIM_GFX_EGG, BATTLE_ANIM_GFX_SMOKE
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
 	anim_sound 6, 2, SFX_SLUDGE_BOMB
-	anim_obj BATTLE_ANIM_OBJ_SHADOW_BALL, 64, 92, $2
-	anim_wait 32
-	anim_obj BATTLE_ANIM_OBJ_BALL_POOF, 132, 56, $10
-	anim_wait 20
+	; The original egg-shaped ball becomes a pulsing, trailing shadow bolt.
+	; Launch from the actual raised staff head, keeping the tail above the HUD.
+	; Hardware coordinates give a physical head beside the staff at (32,52).
+	anim_obj BATTLE_ANIM_OBJ_PEON_SHADOW_BOLT_V026, 40, 68, $2
+	anim_wait 50
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL, 140, 62, $0
+	anim_wait 8
+	anim_ret
+
+BattleAnim_PeonPetFireboltV026:
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_EMBER
+	; One small fireball starts at the raised imp hand, never at the player.
+	; Hardware coordinates give a physical head beside the hand at (80,44).
+	anim_obj BATTLE_ANIM_OBJ_PEON_FIREBOLT_V026, 88, 60, $2
+	anim_wait 26
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL, 140, 56, $0
+	anim_wait 8
 	anim_ret
 
 BattleAnim_PeonDrainLife:

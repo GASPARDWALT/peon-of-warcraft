@@ -3,7 +3,7 @@ INCBIN "gfx/font/font_extra.2bpp"
 
 Font:
 ; Original fixed-cell drawing; byte codes, tile count and loader stay Crystal-compatible.
-INCBIN "gfx/font/peon_readable.1bpp"
+INCBIN "gfx/font/peon_regular_v026.1bpp"
 	assert @ - Font == 128 * TILE_1BPP_SIZE
 
 FontBattleExtra:

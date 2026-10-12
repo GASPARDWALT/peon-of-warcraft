@@ -61,6 +61,7 @@ PeonTitleScreen:
 	ret
 
 PeonCharacterSelect:
+	farcall PeonReadSavedClassPreview
 	xor a
 	ld [wMenuCursorY], a
 .draw
@@ -78,12 +79,8 @@ PeonCharacterSelect:
 	hlcoord 2, 1
 	ld de, .Heading
 	call PlaceString
-	; Technical overworld preview, using the existing four-colour sheet.
-	ld de, PeonPreviewGFX
-	ld hl, vTiles2 tile $60
-	ld b, BANK(PeonPreviewGFX)
-	ld c, 4
-	call Get2bpp
+	; The single saved apprentice retains the selected class silhouette.
+	farcall PeonLoadSavedClassWorldPreview
 	hlcoord 4, 7
 	ld [hl], $60
 	inc hl
@@ -92,8 +89,36 @@ PeonCharacterSelect:
 	ld [hl], $62
 	inc hl
 	ld [hl], $63
+	hlcoord 4, 7, wAttrmap
+	ld [hl], 5
+	inc hl
+	ld [hl], 5
+	hlcoord 4, 8, wAttrmap
+	ld [hl], 5
+	inc hl
+	ld [hl], 5
 	hlcoord 2, 4
+	ld a, [wMenuScrollPosition]
+	and a
+	jr z, .fresh_identity
+	ld de, wPlayerName ; stored name already includes its Peon prefix
+	call PeonPlaceBoldName
+	ld hl, .Roles
+	ld a, [wMenuCursorX]
+	add a
+	ld e, a
+	ld d, 0
+	add hl, de
+	ld a, [hli]
+	ld d, [hl]
+	ld e, a
+	jr .draw_role
+.fresh_identity
 	ld de, .Peon
+	call PlaceString
+	ld de, .Apprentice
+.draw_role
+	hlcoord 2, 5
 	call PlaceString
 	hlcoord 10, 6
 	ld de, .Continue
@@ -118,7 +143,7 @@ PeonCharacterSelect:
 	hlcoord 9, 9
 .place
 	ld [hl], '▶'
-	call WaitBGMap
+	call WaitBGMap2
 	call UpdateTimePals
 .input
 	call DelayFrame
@@ -165,7 +190,12 @@ PeonCharacterSelect:
 	farcall NewGame
 	jp .draw
 .Heading: db "CHARACTER SELECT@"
-.Peon: db "PEON", "<NEXT>", "APPRENTICE@"
+.Peon: db "PEON@"
+.Apprentice: db "APPRENTICE@"
+.Roles: dw .ShamanRole, .WarriorRole, .WarlockRole
+.ShamanRole: db "SHAMAN@"
+.WarriorRole: db "WARRIOR@"
+.WarlockRole: db "WARLOCK@"
 .Continue: db "CONTINUE@"
 .New: db "NEW", "<NEXT>", "CHARACTER@"
 .Empty: db "EMPTY@"
@@ -223,6 +253,29 @@ PeonClassSelect:
 	ld e, a
 	hlcoord 10, 4
 	call PlaceString
+	; Preview the highlighted class before its saved flag is selected.
+	ld a, [wMenuCursorY]
+	ld c, a
+	farcall PeonLoadClassWorldPreview
+	hlcoord 10, 12
+	ld [hl], $60
+	inc hl
+	ld [hl], $61
+	hlcoord 10, 13
+	ld [hl], $62
+	inc hl
+	ld [hl], $63
+	hlcoord 10, 12, wAttrmap
+	ld [hl], 5
+	inc hl
+	ld [hl], 5
+	hlcoord 10, 13, wAttrmap
+	ld [hl], 5
+	inc hl
+	ld [hl], 5
+	farcall ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
 	ld a, [wMenuCursorY]
 	add a
 	add a
@@ -239,7 +292,7 @@ PeonClassSelect:
 	hlcoord 1, 15
 	ld de, .Controls
 	call PlaceString
-	call WaitBGMap
+	call WaitBGMap2
 .input
 	call DelayFrame
 	call JoyTextDelay
@@ -293,9 +346,9 @@ PeonClassSelect:
 	jp .draw
 .Heading: db "CHOOSE YOUR MASTER@"
 .Names:
-	db "KENTO", "<LF>", "SHAMAN", "<LF>", "", "<LF>", "", "<LF>"
-	db "MoCMoc", "<LF>", "WARRIOR", "<LF>", "", "<LF>", "", "<LF>"
-	db "XASTHUR", "<LF>", "WARLOCK@"
+	db "<BOLD>KENTO<REGULAR>", "<LF>", "SHAMAN", "<LF>", "", "<LF>", "", "<LF>"
+	db "<BOLD>MoCMoc<REGULAR>", "<LF>", "WARRIOR", "<LF>", "", "<LF>", "", "<LF>"
+	db "<BOLD>XASTHUR<REGULAR>", "<LF>", "WARLOCK@"
 .Controls: db "UP/DOWN  A: ACCEPT@"
 .Descriptions: dw .Shaman, .Warrior, .Warlock
 .Shaman: db "SHAMAN", "<LF>", "ELEMENTS", "<LF>", "MACE", "<LF>", "SHIELD", "<LF>", "TOTEM", "<LF>", "LIGHTNING", "<LF>", "BOLT@"

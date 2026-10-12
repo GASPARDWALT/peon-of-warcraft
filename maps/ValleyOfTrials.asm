@@ -339,7 +339,7 @@ ValleySarkothScript:
 
 GalgarOfferText:
 	text "<PLAYER>,"
-	line "I am Galgar."
+	line "I am <BOLD>Galgar<REGULAR>."
 	para "CACTUS APPLE"
 	line "SURPRISE"
 	para "Pick three cactus"
@@ -367,18 +367,18 @@ GalgarThanksText:
 	done
 
 HanazuaOfferText:
-	text "HANA'ZUA"
+	text "<BOLD>HANA'ZUA<REGULAR>"
 	para "SARKOTH"
 	para "That scorpid hurt"
 	line "me badly."
-	para "Find Sarkoth in"
+	para "Find <BOLD>Sarkoth<REGULAR> in"
 	line "the south basin."
 	para "Bring me his claw."
 	line "Will you help?"
 	done
 
 HanazuaReminderText:
-	text "Sarkoth waits in"
+	text "<BOLD>Sarkoth<REGULAR> waits in"
 	line "the south basin."
 	para "His claw is proof"
 	line "of your victory."
@@ -389,7 +389,7 @@ HanazuaRewardText:
 	line "<PLAYER>!"
 	para "100 copper and two"
 	line "HEALING POTIONS."
-	para "REPORT TO GORNEK"
+	para "REPORT TO <BOLD>GORNEK<REGULAR>"
 	line "Tell him I live."
 	para "He is at the Den."
 	done
@@ -397,14 +397,14 @@ HanazuaRewardText:
 HanazuaThanksText:
 	text "Your courage has"
 	line "helped me recover."
-	para "Tell Gornek that"
+	para "Tell <BOLD>Gornek<REGULAR> that"
 	line "I am still alive."
 	para "Find him at the"
 	line "Den campfire."
 	done
 
 ZureethaFamiliarsOfferText:
-	text "ZUREETHA FARGAZE"
+	text "<BOLD>ZUREETHA FARGAZE<REGULAR>"
 	para "VILE FAMILIARS"
 	para "Defeat four vile"
 	line "familiars near and"
@@ -437,12 +437,12 @@ ZureethaFamiliarsRewardText:
 	done
 
 ZureethaOfferText:
-	text "ZUREETHA FARGAZE"
+	text "<BOLD>ZUREETHA FARGAZE<REGULAR>"
 	para "BURNING BLADE"
 	line "MEDALLION"
 	para "A dark coven lurks"
 	line "inside the cavern."
-	para "Defeat Yarrog and"
+	para "Defeat <BOLD>Yarrog<REGULAR> and"
 	line "bring his token."
 	para "Will you go?"
 	done
@@ -450,7 +450,7 @@ ZureethaOfferText:
 ZureethaReminderText:
 	text "The cavern lies"
 	line "north of the road."
-	para "Yarrog keeps the"
+	para "<BOLD>Yarrog<REGULAR> keeps the"
 	line "BLADE MEDALLION."
 	para "Enter prepared."
 	done
@@ -471,11 +471,11 @@ ZureethaThanksText:
 	done
 
 SarkothLootText:
-	text "Sarkoth defeated!"
+	text "<BOLD>Sarkoth<REGULAR> defeated!"
 	para "SARKOTH CLAW"
 	line "recovered."
 	para "Take this claw to"
-	line "Hana'zua."
+	line "<BOLD>Hana'zua<REGULAR>."
 	para "35 copper found."
 	done
 
@@ -505,7 +505,7 @@ CactusEmptyText:
 	done
 
 CactusQuestText:
-	text "Galgar may need"
+	text "<BOLD>Galgar<REGULAR> may need"
 	line "these apples."
 	done
 

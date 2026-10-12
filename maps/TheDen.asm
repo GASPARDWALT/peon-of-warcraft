@@ -248,7 +248,7 @@ TheDenKentoScript:
 	end
 
 TheDenKentoWrongClassText:
-	text "KENTO BRANDENHOOF"
+	text "<BOLD>KENTO BRANDENHOOF<REGULAR>"
 	para "The spirits call"
 	line "to shamans, peon."
 	para "Your master is"
@@ -304,7 +304,7 @@ TheDenScorpidScript:
 
 TheDenQuestOfferText:
 	text "<PLAYER>,"
-	line "I am Gornek."
+	line "I am <BOLD>Gornek<REGULAR>."
 	para "CUTTING TEETH"
 	para "Mottled boars roam"
 	line "east of the Den."
@@ -360,7 +360,7 @@ TheDenTameText:
 	cont "alone."
 	done
 TheDenKentoText:
-	text "KENTO BRANDENHOOF:"
+	text "<BOLD>KENTO BRANDENHOOF<REGULAR>:"
 	para "<PLAYER>,"
 	line "the spirits await."
 	para "Train new spells"
@@ -390,9 +390,9 @@ TheDenGearPendingText:
 	done
 
 TheDenSarkothReportText:
-	text "Hana'zua lives?"
+	text "<BOLD>Hana'zua<REGULAR> lives?"
 	line "That is good news!"
-	para "REPORT TO GORNEK"
+	para "REPORT TO <BOLD>GORNEK<REGULAR>"
 	line "Quest complete!"
 	para "50 copper earned."
 	para "<PLAYER>,"
@@ -433,7 +433,7 @@ TheDenScorpidVictoryText:
 	text "Scorpid defeated!"
 	para "Recovered its"
 	line "tail."
-	line "Return to Gornek."
+	line "Return to <BOLD>Gornek<REGULAR>."
 	done
 
 TheDenMapRewardText:
@@ -651,7 +651,7 @@ TheDenCookText:
 	done
 
 TheDenWarriorMasterText:
-	text "MoCMoc ZOGZOG"
+	text "<BOLD>MoCMoc ZOGZOG<REGULAR>"
 	line "Warrior Master"
 	para "<PLAYER>,"
 	line "I train warriors."
@@ -659,7 +659,7 @@ TheDenWarriorMasterText:
 	line "master's path."
 	done
 TheDenWarriorTrainingText:
-	text "MoCMoc ZOGZOG"
+	text "<BOLD>MoCMoc ZOGZOG<REGULAR>"
 	para "<PLAYER>,"
 	line "ready your weapon."
 	para "Strength alone"
@@ -667,7 +667,7 @@ TheDenWarriorTrainingText:
 	cont "Learn your skills."
 	done
 TheDenWarlockMasterText:
-	text "XASTHUR"
+	text "<BOLD>XASTHUR<REGULAR>"
 	line "Warlock Master"
 	para "<PLAYER>,"
 	line "I teach warlocks."
@@ -675,7 +675,7 @@ TheDenWarlockMasterText:
 	line "path, apprentice."
 	done
 TheDenWarlockTrainingText:
-	text "XASTHUR"
+	text "<BOLD>XASTHUR<REGULAR>"
 	para "<PLAYER>,"
 	line "master the shadow."
 	para "Drain life."
@@ -684,7 +684,7 @@ TheDenWarlockTrainingText:
 	done
 
 DuoknaGreetingText:
-	text "DUOKNA"
+	text "<BOLD>DUOKNA<REGULAR>"
 	line "General Goods"
 	para "What do you need?"
 	done
@@ -799,7 +799,7 @@ TheDenNeutralBoarScript:
 	end
 
 TheDenForemanOfferText:
-	text "FOREMAN THAZZ'RIL"
+	text "<BOLD>FOREMAN THAZZ'RIL<REGULAR>"
 	para "<PLAYER>,"
 	line "this peon naps"
 	cont "while we build."

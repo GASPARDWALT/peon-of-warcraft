@@ -6,6 +6,7 @@ import base64
 import hashlib
 import html
 import json
+import re
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,10 +29,21 @@ def require(value, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rom', type=Path, default=ROOT / 'pokecrystal.gbc')
+    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6'])
+    parser.add_argument('--expected-sha', help='Required for v0.2.6; exact tested native ROM hash.')
     parser.add_argument('--package', action='store_true', help='Require passing browser/core evidence for this exact HTML, then create the release ZIP.')
     args = parser.parse_args()
+    sha = args.expected_sha or SHA
+    require(re.fullmatch(r'[0-9a-f]{64}', sha), 'Expected SHA-256 must be 64 lowercase hex digits.')
+    require(args.version != '0.2.5' or sha == SHA, 'Published v0.2.5 ROM identity is fixed.')
+    require(args.version == '0.2.5' or args.expected_sha, 'Supply the tested v0.2.6 ROM hash.')
+    tag = args.version.replace('.', '_')
+    out = ROOT / ('releases/browser-player-v' + args.version)
+    evidence = ROOT / ('references/generated/browser_player_v' + args.version.replace('.', ''))
+    html_name = 'peon_of_warcraft_v' + tag + '_player.html'
+    zip_name = 'peon_of_warcraft_v' + tag + '_player.zip'
     rom = args.rom.read_bytes()
-    require(digest(rom) == SHA, 'Choose the tested unmodified Peon v0.2.5 ROM.')
+    require(digest(rom) == sha, 'Choose the exact tested Peon v' + args.version + ' ROM.')
     require(len(rom) == 2097152 and rom[0x143] == 0xc0
             and rom[0x147:0x14a] == bytes((0x10, 6, 3)), 'Unexpected ROM header.')
     vendor = ROOT / 'tools/browser_player_vendor'
@@ -44,20 +56,28 @@ def main():
     template = (ROOT / 'tools/browser_player/template.html').read_bytes()
     player = (ROOT / 'tools/browser_player/player.js').read_bytes()
     source = template.decode()
+    if args.version != '0.2.5':
+        source = source.replace('0.2.5', args.version)
+        # Native CSS shapes keep directional controls monochrome even when
+        # a browser's emoji font ignores a Unicode text-presentation selector.
+        source = source.replace('>◀<', '><span class="direction-left" aria-hidden="true"></span><')
+        source = source.replace('>▶<', '><span class="direction-right" aria-hidden="true"></span><')
+        source = source.replace('</style>', '.direction-left,.direction-right{display:inline-block;width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;vertical-align:middle}.direction-left{border-right:12px solid var(--ink)}.direction-right{border-left:12px solid var(--ink)}</style>')
+        player = player.replace(b'0.2.5', args.version.encode()).replace(b'v025', b'v026').replace(b'v0_2_5', ('v' + tag).encode())
     replacements = {
         'CORE_JS': core.decode().replace('</script', '<\\/script'),
         'PLAYER_JS': player.decode(), 'ROM_B64': base64.b64encode(rom).decode(),
-        'WASM_B64': base64.b64encode(wasm).decode(), 'ROM_SHA': SHA,
+        'WASM_B64': base64.b64encode(wasm).decode(), 'ROM_SHA': sha,
         'CORE_SHA': digest(wasm), 'LICENSE': html.escape((vendor / 'LICENSE').read_text()),
     }
     for key, value in replacements.items():
         source = source.replace('@@' + key + '@@', value)
     require('@@' not in source, 'Unexpanded template placeholder.')
-    OUT.mkdir(parents=True, exist_ok=True)
-    target = OUT / HTML_NAME
+    out.mkdir(parents=True, exist_ok=True)
+    target = out / html_name
     target.write_text(source)
     manifest = {
-        'rom_sha256': SHA, 'rom_unchanged': True,
+        'rom_sha256': sha, 'rom_unchanged': True, 'version': args.version,
         'player_sha256': digest(target.read_bytes()), 'player_bytes': target.stat().st_size,
         'template_sha256': digest(template), 'player_js_sha256': digest(player),
         'core': 'binjgb', 'core_upstream_revision': provenance['upstream_revision'],
@@ -70,10 +90,10 @@ def main():
     }
     proof_files = []
     if args.package:
-        browser = json.loads((EVIDENCE / 'validation.json').read_text())
+        browser = json.loads((evidence / 'validation.json').read_text())
         require(browser.get('passed') is True and browser.get('status') == 'PASS'
                 and browser.get('html_sha256') == manifest['player_sha256']
-                and browser.get('rom_sha256') == SHA, 'Run browser QA on this exact HTML before packaging.')
+                and browser.get('rom_sha256') == sha, 'Run browser QA on this exact HTML before packaging.')
         for field in ('normal_intro', 'native_game_save', 'visible_exports',
                       'browser_checkpoint_reload', 'native_battery_cold_continue', 'browser_audio',
                       'pause_resume', 'visible_keyboard', 'sound_preference', 'self_contained', 'responsive_ui'):
@@ -83,19 +103,19 @@ def main():
         require(not browser['self_contained']['external_http_requests']
                 and not browser['self_contained']['javascript_errors'], 'Browser errors or external runtime requests.')
         for name in ('validation.json', 'reset_lifecycle_validation.json'):
-            path = EVIDENCE / 'core' / name
+            path = evidence / 'core' / name
             proof = json.loads(path.read_text())
-            require(proof.get('passed') is True and proof.get('rom_sha256') == SHA, 'Missing core proof: ' + name)
+            require(proof.get('passed') is True and proof.get('rom_sha256') == sha, 'Missing core proof: ' + name)
             proof_files.append((path, 'validation/core_' + name))
         manifest.update(browser_qa_passed=True, external_runtime_requests=0,
-                        browser_validation_sha256=digest((EVIDENCE / 'validation.json').read_bytes()))
-        proof_files.append((EVIDENCE / 'validation.json', 'validation/browser_validation.json'))
-    elif (OUT / ZIP_NAME).exists():
+                        browser_validation_sha256=digest((evidence / 'validation.json').read_bytes()))
+        proof_files.append((evidence / 'validation.json', 'validation/browser_validation.json'))
+    elif (out / zip_name).exists():
         # A rebuilt HTML must never retain a stale apparently tested download.
-        (OUT / ZIP_NAME).unlink()
-        (OUT / 'SHA256SUMS.txt').unlink(missing_ok=True)
-    (OUT / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
-    (OUT / 'README.md').write_text('''# Peon of Warcraft v0.2.5 — Lecteur navigateur
+        (out / zip_name).unlink()
+        (out / 'SHA256SUMS.txt').unlink(missing_ok=True)
+    (out / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    readme = '''# Peon of Warcraft v0.2.5 — Lecteur navigateur
 
 Décompresse le ZIP, ouvre `peon_of_warcraft_v0_2_5_player.html` dans Chrome ou Edge, puis clique sur **Jouer**. La ROM, le moteur et le son sont intégrés dans ce seul fichier. Aucun téléchargement supplémentaire du lecteur n'est nécessaire.
 
@@ -110,18 +130,21 @@ Le parcours chaman, le premier combat, SAVE, la reprise de session, l'import d'u
 Le dépôt contient aussi une branche `gh-pages` prête à héberger ce lecteur. Son activation est décrite dans `docs/BROWSER_PLAYER_V025.md` sur GitHub. Une URL GitHub raw télécharge le HTML ; elle ne l'exécute pas comme une page de jeu.
 
 Moteur GBC binjgb sous licence MIT, ROM v0.2.5 inchangée. Ce lecteur indépendant ne simule pas le matériel FPGA Chromatic ni une cartouche DevDay et n'utilise pas le plugin ModRetro. Aucun matériel n'a été programmé.
-''')
+'''
+    if args.version != '0.2.5':
+        readme = readme.replace('0.2.5', args.version).replace('v0_2_5', 'v' + tag).replace('V025', 'V026')
+    (out / 'README.md').write_text(readme)
     if args.package:
-        files = [(target, target.name), (OUT / 'README.md', 'README.md'),
-                 (OUT / 'manifest.json', 'manifest.json'), (vendor / 'LICENSE', 'LICENSE')] + proof_files
-        with zipfile.ZipFile(OUT / ZIP_NAME, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        files = [(target, target.name), (out / 'README.md', 'README.md'),
+                 (out / 'manifest.json', 'manifest.json'), (vendor / 'LICENSE', 'LICENSE')] + proof_files
+        with zipfile.ZipFile(out / zip_name, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
             for path, name in files:
                 info = zipfile.ZipInfo(name, date_time=(2026, 10, 12, 0, 0, 0))
                 info.compress_type = zipfile.ZIP_DEFLATED
                 archive.writestr(info, path.read_bytes())
-        (OUT / 'SHA256SUMS.txt').write_text(''.join(
-            digest((OUT / name).read_bytes()) + '  ' + name + '\n'
-            for name in (HTML_NAME, ZIP_NAME)))
+        (out / 'SHA256SUMS.txt').write_text(''.join(
+            digest((out / name).read_bytes()) + '  ' + name + '\n'
+            for name in (html_name, zip_name)))
     print(json.dumps(manifest, indent=2))
 
 

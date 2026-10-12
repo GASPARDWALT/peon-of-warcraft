@@ -117,7 +117,7 @@ DurotarRoadPatrolScript:
 	end
 
 DurotarRoadLarText:
-	text "LAR PROWLTUSK"
+	text "<BOLD>LAR PROWLTUSK<REGULAR>"
 	para "<PLAYER>,"
 	line "I watch this road"
 	cont "for the Darkspear."

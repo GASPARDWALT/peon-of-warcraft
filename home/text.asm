@@ -1,5 +1,6 @@
 ClearBox::
 ; Fill a c*b box at hl with blank tiles.
+	call PeonClearBoxStyleHome
 	ld a, ' '
 	; fallthrough
 
@@ -144,6 +145,7 @@ PrintText::
 	; fallthrough
 
 BuenaPrintText::
+	call PeonBeginTextboxStyleHome
 	push hl
 	hlcoord TEXTBOX_INNERX, TEXTBOX_INNERY
 	lb bc, TEXTBOX_INNERH - 1, TEXTBOX_INNERW
@@ -164,7 +166,7 @@ SetUpTextbox::
 	pop hl
 	ret
 
-PlaceString::
+PeonPlaceStringBody:
 	push hl
 	; fallthrough
 
@@ -235,6 +237,8 @@ ENDM
 	dict '<PKMN>',    PlacePKMN
 	dict '<POKE>',    PlacePOKE
 	dict '<WBR>',     NextChar
+	dict '<BOLD>',    PeonBoldChar
+	dict '<REGULAR>', PeonRegularChar
 	dict '<BSP>',     ' '
 	dict '<DEXEND>',  PlaceDexEnd
 	dict '<TARGET>',  PlaceMoveTargetsName
@@ -284,6 +288,7 @@ ENDM
 	call Diacritic
 
 .place
+	call PeonStyledGlyphHome
 	ld [hli], a
 	call PrintLetterDelay
 	jp NextChar
@@ -606,6 +611,7 @@ TextScroll::
 	ld a, ' '
 	ld bc, TEXTBOX_INNERW
 	call ByteFill
+	farcall PeonScrollTextStyleAttributes
 	ld c, 5
 	call DelayFrames
 	ret
@@ -1057,3 +1063,86 @@ TextCommand_DAY::
 .Fri:    db "FRI@"
 .Satur:  db "SATUR@"
 .Day:    db "DAY@"
+
+; Explicitly use the proven interrupt-vector padding, leaving the original
+; near-full Home section and all save/RAM addresses intact.
+PUSHS
+SECTION "Peon Name Styling HOME", ROM0[$0063]
+PlaceString::
+	ld a, [wPeonTextStyle]
+	push af
+	; RAM name records preserve their original bytes; style exists only in
+	; rendered tile/attribute buffers, including inline <PLAYER> expansion.
+MACRO peon_auto_name
+	ld a, d
+	cp HIGH(\1)
+	jr nz, .not_name\@
+	ld a, e
+	cp LOW(\1)
+	jr z, .name
+.not_name\@:
+ENDM
+	peon_auto_name wPlayerName
+	peon_auto_name wBattleMonNickname
+	peon_auto_name wEnemyMonNickname
+	jr .place
+.name
+	ld a, 1
+	ld [wPeonTextStyle], a
+.place
+	call PeonPlaceStringBody
+	pop af
+	ld [wPeonTextStyle], a
+	ret
+
+PeonPlaceBoldName::
+	ld a, [wPeonTextStyle]
+	push af
+	ld a, 1
+	ld [wPeonTextStyle], a
+	call PeonPlaceStringBody
+	pop af
+	ld [wPeonTextStyle], a
+	ret
+
+PeonBoldChar:
+	ld a, 1
+	ld [wPeonTextStyle], a
+	jp NextChar
+
+PeonRegularChar:
+	xor a
+	ld [wPeonTextStyle], a
+	jp NextChar
+
+PeonStyledGlyphHome:
+	push bc
+	push de
+	push hl
+	ld c, a
+	ld d, h
+	ld e, l
+	farcall PeonPlaceStyledGlyph
+	ld a, c
+	pop hl
+	pop de
+	pop bc
+	ret
+
+PeonClearBoxStyleHome:
+	push hl
+	push de
+	ld d, h
+	ld e, l
+	farcall PeonClearTextStyleBox
+	pop de
+	pop hl
+	ret
+
+PeonBeginTextboxStyleHome:
+	push hl
+	farcall PeonBeginTextboxTextStyle
+	pop hl
+	ret
+	assert @ <= $0100, "Peon name-style HOME helpers exceed vector padding"
+POPS

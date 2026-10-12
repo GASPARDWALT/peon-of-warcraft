@@ -1,0 +1,91 @@
+{
+  "original_native_art": true,
+  "alpha": "binary",
+  "rgb555_expansion": "(v << 3) | (v >> 2)",
+  "records": [
+    {
+      "name": "combat_imp_v026",
+      "frame_size": [
+        16,
+        24
+      ],
+      "frames": 2,
+      "tile_bytes": 192,
+      "sha256": "6313fa078de1af1836d4e8765cd248acf59ffb87f851d9d7845ed6170ccfe3ed"
+    },
+    {
+      "name": "earth_totem_v026",
+      "frame_size": [
+        16,
+        24
+      ],
+      "frames": 1,
+      "tile_bytes": 96,
+      "sha256": "ea7cc73ea5210a3917b58ca9571a5122560ce173ca24dbf120a98f6c53692824"
+    },
+    {
+      "name": "friendly_imp_world_v026",
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 6,
+      "tile_bytes": 384,
+      "sha256": "6f8d3170e4b0340c3ca40152feaf275d9c26996dd47301bfc50b5cb454e06fcd"
+    },
+    {
+      "name": "firebolt_v026",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "tile_bytes": 64,
+      "sha256": "f98af1330dacfb7f33aa9361590699a4608eb35f02cb95221b150f63710ee45d"
+    },
+    {
+      "name": "shadow_bolt_v026",
+      "frame_size": [
+        16,
+        8
+      ],
+      "frames": 4,
+      "tile_bytes": 128,
+      "sha256": "8753120183360dae18be3f0a582686cd18782113914050513dde5a0070ebee17"
+    }
+  ],
+  "battle_visible_footprint": {
+    "columns": [
+      8,
+      9
+    ],
+    "rows": [
+      4,
+      5,
+      6
+    ]
+  },
+  "bank1_bg_tiles": {
+    "totem": [
+      "86",
+      "87",
+      "88",
+      "89",
+      "8a",
+      "8b"
+    ],
+    "imp": [
+      "8c",
+      "8d",
+      "8e",
+      "8f",
+      "90",
+      "91"
+    ]
+  },
+  "friendly_world_sprite_id": 104,
+  "hostile_world_imp_unchanged": true,
+  "new_animation_id": "116",
+  "particle_movement": "native 2 pixels/frame",
+  "protected": "player HUD begins column9 row7; elite emblem columns10/11 rows4..6"
+}

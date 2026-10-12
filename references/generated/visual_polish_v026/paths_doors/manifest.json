@@ -1,0 +1,640 @@
+{
+  "passed": true,
+  "baseline_commit": "d2806e2",
+  "review_only": false,
+  "native_inputs_written": true,
+  "native_sheet_slots": 192,
+  "native_patterns": 192,
+  "metatile_count": 47,
+  "all18_map_arrays_warps_events_actors_and_collision_rows_preserved": true,
+  "maps": {
+    "PeonOpening": {
+      "blocks": [
+        8,
+        6
+      ],
+      "sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "GrommashHold": {
+      "blocks": [
+        8,
+        6
+      ],
+      "sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "TheDen": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "86caac8cf076d6e0a02026a6f08f8259de79476d42dae5f593b8a446ba1a67cb",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "ValleyOfTrials": {
+      "blocks": [
+        16,
+        12
+      ],
+      "sha256": "4421782450917bbb3df6e7f8ce1f0ecacb29d69396ba2f60af91fcfa12974eec",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "DurotarRoad": {
+      "blocks": [
+        12,
+        14
+      ],
+      "sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "SenjinVillage": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "RazorHill": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "OrgrimmarGate": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "BurningBladeCavern": {
+      "blocks": [
+        10,
+        10
+      ],
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonTrollHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonOrcHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonOrcInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonTrollInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonValleyCrossroads": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "4b03ab4f227d194a534b85a6b661b51f9086c3fd3b2e46ea25d3b207db03a76a",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonHanazuaCamp": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "aa9685a7f7fb49ee5e6c08810485bebb5eeb528df94454b794ea17c866c2bfb0",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonSarkothBasin": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "39446182c64c045517eee118cf04379c9c348e12d4880490c4f8cff41d59ae4a",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonCaveApproach": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "f7564f051efa369bb4b7ad9fbee3cb0c70929c651ed43ce52d275629cbe42e45",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonValleyExit": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "b93c13b98975f8f342310b6cf00f1ac1d67a670e9c577275992c423138cab665",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "native_reconstructions_include_all18_maps": true
+  },
+  "pixel_changes_from_v025": [
+    {
+      "id": 0,
+      "name": "bare_soil",
+      "changed_pixels": 0
+    },
+    {
+      "id": 1,
+      "name": "layered_escarpment",
+      "changed_pixels": 0
+    },
+    {
+      "id": 2,
+      "name": "main_road",
+      "changed_pixels": 32
+    },
+    {
+      "id": 3,
+      "name": "cactus",
+      "changed_pixels": 0
+    },
+    {
+      "id": 4,
+      "name": "hide_hut",
+      "changed_pixels": 73
+    },
+    {
+      "id": 5,
+      "name": "hold_red_carpet",
+      "changed_pixels": 61
+    },
+    {
+      "id": 6,
+      "name": "horde_standard",
+      "changed_pixels": 61
+    },
+    {
+      "id": 7,
+      "name": "sandstone_floor",
+      "changed_pixels": 0
+    },
+    {
+      "id": 8,
+      "name": "sandy_clearance",
+      "changed_pixels": 0
+    },
+    {
+      "id": 9,
+      "name": "den_0",
+      "changed_pixels": 6
+    },
+    {
+      "id": 10,
+      "name": "den_1",
+      "changed_pixels": 13
+    },
+    {
+      "id": 11,
+      "name": "den_2",
+      "changed_pixels": 116
+    },
+    {
+      "id": 12,
+      "name": "den_3",
+      "changed_pixels": 6
+    },
+    {
+      "id": 13,
+      "name": "dry_scrub",
+      "changed_pixels": 0
+    },
+    {
+      "id": 14,
+      "name": "sea",
+      "changed_pixels": 0
+    },
+    {
+      "id": 15,
+      "name": "cavern_mouth",
+      "changed_pixels": 487
+    },
+    {
+      "id": 16,
+      "name": "zone_transition",
+      "changed_pixels": 92
+    },
+    {
+      "id": 17,
+      "name": "road_ns",
+      "changed_pixels": 16
+    },
+    {
+      "id": 18,
+      "name": "road_ew",
+      "changed_pixels": 24
+    },
+    {
+      "id": 19,
+      "name": "road_ne",
+      "changed_pixels": 18
+    },
+    {
+      "id": 20,
+      "name": "road_nw",
+      "changed_pixels": 18
+    },
+    {
+      "id": 21,
+      "name": "road_se",
+      "changed_pixels": 22
+    },
+    {
+      "id": 22,
+      "name": "road_sw",
+      "changed_pixels": 22
+    },
+    {
+      "id": 23,
+      "name": "road_nse",
+      "changed_pixels": 22
+    },
+    {
+      "id": 24,
+      "name": "road_nsw",
+      "changed_pixels": 22
+    },
+    {
+      "id": 25,
+      "name": "road_new",
+      "changed_pixels": 24
+    },
+    {
+      "id": 26,
+      "name": "road_sew",
+      "changed_pixels": 28
+    },
+    {
+      "id": 27,
+      "name": "east_shore",
+      "changed_pixels": 0
+    },
+    {
+      "id": 28,
+      "name": "coastal_palm",
+      "changed_pixels": 0
+    },
+    {
+      "id": 29,
+      "name": "troll_thatched_hut",
+      "changed_pixels": 73
+    },
+    {
+      "id": 30,
+      "name": "spiked_palisade",
+      "changed_pixels": 0
+    },
+    {
+      "id": 31,
+      "name": "watchtower",
+      "changed_pixels": 90
+    },
+    {
+      "id": 32,
+      "name": "timber_boardwalk",
+      "changed_pixels": 0
+    },
+    {
+      "id": 33,
+      "name": "fortified_gate_wall",
+      "changed_pixels": 0
+    },
+    {
+      "id": 34,
+      "name": "fire_brazier",
+      "changed_pixels": 0
+    },
+    {
+      "id": 35,
+      "name": "wayfinding_sign",
+      "changed_pixels": 0
+    },
+    {
+      "id": 36,
+      "name": "burning_blade_skull",
+      "changed_pixels": 0
+    },
+    {
+      "id": 37,
+      "name": "desert_boulder",
+      "changed_pixels": 0
+    },
+    {
+      "id": 38,
+      "name": "walkable_bare_soil",
+      "changed_pixels": 0
+    },
+    {
+      "id": 39,
+      "name": "campfire",
+      "changed_pixels": 0
+    },
+    {
+      "id": 40,
+      "name": "inn_bedroll",
+      "changed_pixels": 0
+    },
+    {
+      "id": 41,
+      "name": "inn_table",
+      "changed_pixels": 0
+    },
+    {
+      "id": 42,
+      "name": "deadthorn_tree",
+      "changed_pixels": 0
+    },
+    {
+      "id": 43,
+      "name": "darkspear_bedroll",
+      "changed_pixels": 0
+    },
+    {
+      "id": 44,
+      "name": "darkspear_table",
+      "changed_pixels": 0
+    },
+    {
+      "id": 45,
+      "name": "woven_timber_floor",
+      "changed_pixels": 0
+    },
+    {
+      "id": 46,
+      "name": "darkspear_spirit_mask",
+      "changed_pixels": 0
+    }
+  ],
+  "shade_variant_reduction": {
+    "applied": true,
+    "initial_patterns": 196,
+    "final_patterns": 192,
+    "protected_pattern_count": 61,
+    "palette_and_all_silhouettes_preserved": true,
+    "max_shade_pixels_changed_per8x8_pattern": 4,
+    "total_changed_shade_pixels": 9,
+    "merges": [
+      {
+        "source_pattern": 32,
+        "shared_pattern": 136,
+        "max_shade_pixel_changes": 1,
+        "total_shade_pixel_changes": 1
+      },
+      {
+        "source_pattern": 106,
+        "shared_pattern": 11,
+        "max_shade_pixel_changes": 1,
+        "total_shade_pixel_changes": 1
+      },
+      {
+        "source_pattern": 63,
+        "shared_pattern": 64,
+        "max_shade_pixel_changes": 3,
+        "total_shade_pixel_changes": 3
+      },
+      {
+        "source_pattern": 86,
+        "shared_pattern": 78,
+        "max_shade_pixel_changes": 4,
+        "total_shade_pixel_changes": 4
+      }
+    ],
+    "per_original_pattern_pixel_errors": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "horde_emblem_source": "tools/peon_horde_emblem_v026.py::horde_emblem_indices",
+  "huts_and_den_dark_door_panel": "actual BR 16x16 quadrant, with open east lip",
+  "cave_mouth": "right-hand x16..31 lane aligned over actual map28 warp(5,2)",
+  "threshold16": "flat stone step, four original WARP_PANEL quadrants retained",
+  "watchtower": "closed shutters; no fake foot door",
+  "animated_fire_tiles": [
+    0,
+    1
+  ],
+  "fire_frames_unchanged": true,
+  "pngs_are_compiler_reconstructions_not_runtime": true,
+  "geometry_changed": false,
+  "save_format_changed": false
+}

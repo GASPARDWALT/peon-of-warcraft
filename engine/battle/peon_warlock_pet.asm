@@ -66,16 +66,26 @@ PeonWarlockBattlePetEnabled::
 	and a
 	ret
 
-; Tiny authored 16x16 backview in the two clear columns ahead of the player.
-; Signed BG IDs88..8c, bank1 $8880..$88cf: distinct from elite80..85,
-; Shaman totem86..87, battle front/back/pose art and bank0 fonts/particles.
+; Larger native 16x24 backview, two columns ahead of the player. Both idle
+; and casting poses occupy exactly cols8..9/rows4..6, above the player HUD
+; and left of the elite emblem. Six signed bank1 tiles $8c..$91 are separate
+; from the six Shaman totem tiles $86..$8b and every actor/font region.
 PeonDrawWarlockBattlePet::
 	push af
 	push bc
 	push de
 	push hl
+	ld de, PeonPetBattleTiles
+	call .DrawPose
+.done:
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.DrawPose:
 	call PeonWarlockBattlePetEnabled
-	jr nc, .done
+	ret nc
 	ldh a, [hBGMapMode]
 	push af
 	xor a
@@ -84,9 +94,8 @@ PeonDrawWarlockBattlePet::
 	push af
 	ld a, 1
 	ldh [rVBK], a
-	ld de, PeonPetBattleTiles
-	ld hl, vTiles4 tile $08
-	lb bc, BANK(PeonPetBattleTiles), 5
+	ld hl, vTiles4 tile $0c
+	lb bc, BANK(PeonPetBattleTiles), 6
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
@@ -100,28 +109,42 @@ PeonDrawWarlockBattlePet::
 	ld bc, 1 palettes
 	ld a, BANK(wBGPals2)
 	call FarCopyWRAM
-	hlcoord 8, 5
-	ld [hl], $88
-	inc hl
-	ld [hl], $89
-	hlcoord 8, 6
-	ld [hl], $8a
-	inc hl
-	ld [hl], $8b
-	hlcoord 8, 5, wAttrmap
+	hlcoord 8, 4
+	ld a, $8c
+	ld b, 3
+.row:
+	ld [hli], a
+	inc a
+	ld [hli], a
+	inc a
+	ld de, SCREEN_WIDTH - 2
+	add hl, de
+	dec b
+	jr nz, .row
+	hlcoord 8, 4, wAttrmap
+	ld b, 3
+.attr_row:
 	ld [hl], $0e
 	inc hl
 	ld [hl], $0e
-	hlcoord 8, 6, wAttrmap
-	ld [hl], $0e
-	inc hl
-	ld [hl], $0e
+	ld de, SCREEN_WIDTH - 1
+	add hl, de
+	dec b
+	jr nz, .attr_row
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
 	call WaitBGMap2
 	pop af
 	ldh [hBGMapMode], a
-.done:
+	ret
+
+PeonDrawWarlockPetCastPose:
+	push af
+	push bc
+	push de
+	push hl
+	ld de, PeonPetBattleTiles + 6 tiles
+	call PeonDrawWarlockBattlePet.DrawPose
 	pop hl
 	pop de
 	pop bc
@@ -129,61 +152,101 @@ PeonDrawWarlockBattlePet::
 	ret
 
 PeonPetFirebolt:
-	ld de, SFX_EMBER
-	call PlaySFX
-	; Four short projectile frames. Save each impacted tile and attribute on
-	; the stack, then restore them: no permanent marks on a portrait/emblem.
-	ld de, .Path
-	ld b, 4
-.frame:
-	push bc
-	ld a, [de]
-	inc de
+	call PeonDrawWarlockPetCastPose
+	; Native battle particles move two pixels per frame rather than jumping
+	; whole BG cells. Back up the caller's animation and turn tokens only on
+	; the stack: this adds neither a saved field nor another combat action.
+	ldh a, [hBattleTurn]
+	push af
+	xor a
+	ldh [hBattleTurn], a
+	ld a, [wFXAnimID]
 	ld c, a
-	ld a, [de]
-	inc de
-	push de
+	ld a, [wFXAnimID + 1]
 	ld b, a
-	hlcoord 0, 0
-	ld de, SCREEN_WIDTH
+	push bc
+	ld a, [wBattleAnimParam]
+	ld c, a
+	ld a, [wBattleAfterAnim]
+	ld b, a
+	push bc
+	xor a
+	ld [wBattleAnimParam], a
+	ld [wBattleAfterAnim], a
+	ld a, LOW(ANIM_PEON_PET_FIREBOLT)
+	ld [wFXAnimID], a
+	ld a, HIGH(ANIM_PEON_PET_FIREBOLT)
+	ld [wFXAnimID + 1], a
+	predef PlayBattleAnim
+	pop bc
+	ld a, c
+	ld [wBattleAnimParam], a
+	ld a, b
+	ld [wBattleAfterAnim], a
+	pop bc
+	ld a, c
+	ld [wFXAnimID], a
+	ld a, b
+	ld [wFXAnimID + 1], a
+	pop af
+	ldh [hBattleTurn], a
+	farcall FinishBattleAnim
+	ret
+
+; Only the actual Shadow Bolt particle palette changes. wOBPals1 stays intact
+; so native BattleAnim_RevertPals restores the previous palette automatically.
+; Player/enemy portrait palettes and all BG/font palettes are untouched.
+PeonTintShadowBoltParticle::
+	push af
+	push bc
+	push de
+	push hl
+	; Animation objects live in WRAM5; map/class guards live in WRAM1.
+	; Preserve the interpreter's bank even when a guard rejects this effect.
+	ldh a, [rWBK]
+	push af
+	ld a, BANK(wEventFlags)
+	ldh [rWBK], a
+	ldh a, [hCGB]
 	and a
-	jr z, .row_done
-.row:
-	add hl, de
-	dec b
-	jr nz, .row
-.row_done:
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
-	push af
-	push hl
-	ld [hl], $8c
-	ld de, wAttrmap - wTilemap
-	add hl, de
-	ld a, [hl]
-	push af
-	push hl
-	ld [hl], $0e
-	call WaitBGMap2
-	ld c, 3
-	call DelayFrames
-	pop hl
+	jr z, .done
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .done
+	ld a, [wBattleMode]
+	and a
+	jr z, .done
+	ld a, [wFXAnimID + 1]
+	and a
+	jr nz, .done
+	ld a, [wFXAnimID]
+	cp SHADOW_BALL
+	jr z, .shadow
+	cp NIGHT_SHADE
+	jr nz, .done
+.shadow:
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .done
+	ld hl, .Palette
+	ld de, wOBPals2 palette PAL_BATTLE_OB_BLUE
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals2)
+	call FarCopyWRAM
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+.done:
 	pop af
-	ld [hl], a
+	ldh [rWBK], a
 	pop hl
-	pop af
-	ld [hl], a
-	call WaitBGMap2
 	pop de
 	pop bc
-	dec b
-	jr nz, .frame
+	pop af
 	ret
-.Path:
-	db 8, 5, 10, 4, 12, 3, 14, 3
+.Palette:
+	RGB 31,31,31, 26,13,31, 12,3,18, 3,1,5
 
 PeonPetBattleTiles:
-	INCBIN "gfx/pack/peon_warlock_pet_battle.2bpp"
+	INCBIN "gfx/peon_pets_v026/combat_imp_v026.2bpp"
 PeonPetBattlePalette:
 	RGB 31,31,31, 31,20,5, 26,5,4, 4,2,3

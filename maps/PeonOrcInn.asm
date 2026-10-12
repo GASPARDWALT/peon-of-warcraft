@@ -43,7 +43,7 @@ PeonDenInnWelcomeText:
 	done
 
 PeonGroskInnWelcomeText:
-	text "INNKEEPER GROSK"
+	text "<BOLD>INNKEEPER GROSK<REGULAR>"
 	para "<PLAYER>,"
 	line "the road can wait."
 	para "Rest by the fire?"

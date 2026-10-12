@@ -153,7 +153,7 @@ SenjinVillageKwaiiScript:
 	db "CANCEL@"
 
 SenjinVillageGadrinText:
-	text "MASTER GADRIN"
+	text "<BOLD>MASTER GADRIN<REGULAR>"
 	para "<PLAYER>,"
 	line "the Darkspear"
 	cont "welcome you."
@@ -165,7 +165,7 @@ SenjinVillageGadrinText:
 	done
 
 SenjinVillageVornalText:
-	text "MASTER VORNAL"
+	text "<BOLD>MASTER VORNAL<REGULAR>"
 	para "<PLAYER>,"
 	line "listen to the sea."
 	para "The Burning Blade"
@@ -176,7 +176,7 @@ SenjinVillageVornalText:
 	done
 
 SenjinVillageBomBayOfferText:
-	text "BOM'BAY"
+	text "<BOLD>BOM'BAY<REGULAR>"
 	line "Witch Doctor"
 	para "<PLAYER>,"
 	line "a spirit cannot"
@@ -187,7 +187,7 @@ SenjinVillageBomBayOfferText:
 	done
 
 SenjinVillageKwaiiGreetingText:
-	text "K'WAII"
+	text "<BOLD>K'WAII<REGULAR>"
 	line "General Goods"
 	para "<PLAYER>,"
 	line "supplies for the"
@@ -238,7 +238,7 @@ SenjinVillageKwaiiFullText:
 	done
 
 SenjinVillageGadrinBladeText:
-	text "MASTER GADRIN"
+	text "<BOLD>MASTER GADRIN<REGULAR>"
 	para "<PLAYER>,"
 	line "the Valley is"
 	cont "safe by your hand."
@@ -248,9 +248,9 @@ SenjinVillageGadrinBladeText:
 	done
 
 SenjinVillageVornalTaskText:
-	text "MASTER VORNAL"
+	text "<BOLD>MASTER VORNAL<REGULAR>"
 	para "<PLAYER>,"
-	line "Zureetha awaits"
+	line "<BOLD>Zureetha<REGULAR> awaits"
 	cont "the medallion."
 	para "Bring it back to"
 	line "the Den. A task is"
@@ -258,17 +258,17 @@ SenjinVillageVornalTaskText:
 	done
 
 SenjinVillageVornalThanksText:
-	text "MASTER VORNAL"
+	text "<BOLD>MASTER VORNAL<REGULAR>"
 	para "<PLAYER>,"
 	line "the spirits heard"
 	cont "of your courage."
-	para "Kento can teach"
+	para "<BOLD>Kento<REGULAR> can teach"
 	line "you new spells at"
 	cont "each even level."
 	done
 
 SenjinVillageVelrinText:
-	text "VEL'RIN FANG"
+	text "<BOLD>VEL'RIN FANG<REGULAR>"
 	para "<PLAYER>,"
 	line "there are always"
 	cont "hungry mouths."

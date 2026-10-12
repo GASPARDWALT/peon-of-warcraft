@@ -1,0 +1,668 @@
+{
+  "passed": true,
+  "frozen_geometry": {
+    "PeonOpening": {
+      "blocks": [
+        8,
+        6
+      ],
+      "sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "GrommashHold": {
+      "blocks": [
+        8,
+        6
+      ],
+      "sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "TheDen": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "86caac8cf076d6e0a02026a6f08f8259de79476d42dae5f593b8a446ba1a67cb",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "ValleyOfTrials": {
+      "blocks": [
+        16,
+        12
+      ],
+      "sha256": "4421782450917bbb3df6e7f8ce1f0ecacb29d69396ba2f60af91fcfa12974eec",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "DurotarRoad": {
+      "blocks": [
+        12,
+        14
+      ],
+      "sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "SenjinVillage": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "RazorHill": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "OrgrimmarGate": {
+      "blocks": [
+        12,
+        10
+      ],
+      "sha256": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "BurningBladeCavern": {
+      "blocks": [
+        10,
+        10
+      ],
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonTrollHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonOrcHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonOrcInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonTrollInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonValleyCrossroads": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "4b03ab4f227d194a534b85a6b661b51f9086c3fd3b2e46ea25d3b207db03a76a",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonHanazuaCamp": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "aa9685a7f7fb49ee5e6c08810485bebb5eeb528df94454b794ea17c866c2bfb0",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonSarkothBasin": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "39446182c64c045517eee118cf04379c9c348e12d4880490c4f8cff41d59ae4a",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonCaveApproach": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "f7564f051efa369bb4b7ad9fbee3cb0c70929c651ed43ce52d275629cbe42e45",
+      "warps_events_actors_exactly_preserved": true
+    },
+    "PeonValleyExit": {
+      "blocks": [
+        5,
+        5
+      ],
+      "sha256": "b93c13b98975f8f342310b6cf00f1ac1d67a670e9c577275992c423138cab665",
+      "warps_events_actors_exactly_preserved": true
+    }
+  },
+  "actual_warp_art_and_collision": [
+    {
+      "map": "TheDen",
+      "warp": 1,
+      "xy": [
+        20,
+        10
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "TheDen",
+      "warp": 2,
+      "xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "TheDen",
+      "warp": 3,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 11,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "TheDen",
+      "warp": 4,
+      "xy": [
+        0,
+        14
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp": 1,
+      "xy": [
+        4,
+        12
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp": 2,
+      "xy": [
+        28,
+        12
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp": 3,
+      "xy": [
+        16,
+        0
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "DurotarRoad",
+      "warp": 1,
+      "xy": [
+        4,
+        14
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "DurotarRoad",
+      "warp": 2,
+      "xy": [
+        12,
+        24
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "DurotarRoad",
+      "warp": 3,
+      "xy": [
+        12,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "SenjinVillage",
+      "warp": 1,
+      "xy": [
+        10,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "SenjinVillage",
+      "warp": 2,
+      "xy": [
+        5,
+        5
+      ],
+      "metatile": 29,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "SenjinVillage",
+      "warp": 3,
+      "xy": [
+        15,
+        5
+      ],
+      "metatile": 29,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "SenjinVillage",
+      "warp": 4,
+      "xy": [
+        17,
+        9
+      ],
+      "metatile": 29,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 1,
+      "xy": [
+        12,
+        16
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 2,
+      "xy": [
+        12,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 3,
+      "xy": [
+        5,
+        5
+      ],
+      "metatile": 4,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 4,
+      "xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 5,
+      "xy": [
+        17,
+        13
+      ],
+      "metatile": 4,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "RazorHill",
+      "warp": 6,
+      "xy": [
+        5,
+        15
+      ],
+      "metatile": 4,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "OrgrimmarGate",
+      "warp": 1,
+      "xy": [
+        12,
+        16
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "BurningBladeCavern",
+      "warp": 1,
+      "xy": [
+        10,
+        16
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonTrollHut",
+      "warp": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonOrcHut",
+      "warp": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonOrcInn",
+      "warp": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonTrollInn",
+      "warp": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp": 1,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp": 2,
+      "xy": [
+        5,
+        0
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp": 3,
+      "xy": [
+        0,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "warp": 1,
+      "xy": [
+        9,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "warp": 2,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "warp": 1,
+      "xy": [
+        5,
+        0
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "warp": 2,
+      "xy": [
+        9,
+        7
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonCaveApproach",
+      "warp": 1,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonCaveApproach",
+      "warp": 2,
+      "xy": [
+        5,
+        2
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonValleyExit",
+      "warp": 1,
+      "xy": [
+        0,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    },
+    {
+      "map": "PeonValleyExit",
+      "warp": 2,
+      "xy": [
+        9,
+        4
+      ],
+      "metatile": 16,
+      "native_collision": "WARP_PANEL",
+      "no_authored_actor_on_threshold": true
+    }
+  ],
+  "all_nine_drawn_building_doors_have_actual_enter_events": [
+    {
+      "map": "TheDen",
+      "door_xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "TheDen",
+      "door_xy": [
+        5,
+        7
+      ],
+      "metatile": 11,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "SenjinVillage",
+      "door_xy": [
+        5,
+        5
+      ],
+      "metatile": 29,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "SenjinVillage",
+      "door_xy": [
+        15,
+        5
+      ],
+      "metatile": 29,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "SenjinVillage",
+      "door_xy": [
+        17,
+        9
+      ],
+      "metatile": 29,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "RazorHill",
+      "door_xy": [
+        5,
+        5
+      ],
+      "metatile": 4,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "RazorHill",
+      "door_xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "RazorHill",
+      "door_xy": [
+        17,
+        13
+      ],
+      "metatile": 4,
+      "visible_opening_has_actual_enter_event": true
+    },
+    {
+      "map": "RazorHill",
+      "door_xy": [
+        5,
+        15
+      ],
+      "metatile": 4,
+      "visible_opening_has_actual_enter_event": true
+    }
+  ],
+  "native_patrol_portal_separation": [
+    {
+      "map": "TheDen",
+      "actor_xy": [
+        18,
+        12
+      ],
+      "sprite": "SPRITE_POKE_BALL",
+      "patrol_does_not_occupy_any_portal": true
+    },
+    {
+      "map": "RazorHill",
+      "actor_xy": [
+        14,
+        8
+      ],
+      "sprite": "SPRITE_OFFICER",
+      "patrol_does_not_occupy_any_portal": true
+    }
+  ],
+  "tower_closed_shutters_and_no_entrance": true,
+  "cave_mouth_right_lane_above_real_warp": true,
+  "native_metatiles_equal_compiled_new_art": true,
+  "all_road_collision_rows_unchanged": true,
+  "no_map_array_or_warp_change": true,
+  "building_doors_exact_passable_br_16x16": true,
+  "road_ends_outside_actual_portals_keep_published_closed_boundaries": true
+}

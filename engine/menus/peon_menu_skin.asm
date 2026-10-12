@@ -54,13 +54,54 @@ PeonRefreshMenuSkinAttributes::
 	ldh a, [hCGB]
 	and a
 	jr z, .done
-	call PeonMenuSkinAttributes
+	call PeonMenuSkinAttributesWithTextStyle
 	call PeonMenuSkinApplyPals
 .done:
 	pop hl
 	pop de
 	pop bc
 	pop af
+	ret
+
+; Redraw palette/box styling while preserving only the font-bank selection
+; in interior cells. Outer borders always use their original bank-zero tiles.
+PeonMenuSkinAttributesWithTextStyle:
+	hlcoord 0, 0, wAttrmap
+	ld d, 0
+.row
+	ld e, 0
+.cell
+	ld a, d
+	and a
+	jr z, .border
+	cp SCREEN_HEIGHT - 1
+	jr z, .border
+	ld a, e
+	and a
+	jr z, .border
+	cp SCREEN_WIDTH - 1
+	jr z, .border
+	ld a, [hl]
+	and $08
+	ld c, a
+	ld a, d
+	cp 3
+	ld a, c
+	jr nc, .write
+	or 1
+	jr .write
+.border
+	ld a, 3
+.write
+	ld [hli], a
+	inc e
+	ld a, e
+	cp SCREEN_WIDTH
+	jr c, .cell
+	inc d
+	ld a, d
+	cp SCREEN_HEIGHT
+	jr c, .row
 	ret
 
 PeonMenuSkinAttributes:

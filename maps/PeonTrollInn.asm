@@ -24,7 +24,7 @@ PeonTrollInnkeeperScript:
 	end
 
 PeonTrollInnWelcomeText:
-	text "INNKEEPER SHUL'KAR"
+	text "<BOLD>INNKEEPER SHUL'KAR<REGULAR>"
 	para "<PLAYER>,"
 	line "the sea is calm."
 	para "Rest by the fire?"

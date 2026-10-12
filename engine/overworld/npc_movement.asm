@@ -329,7 +329,7 @@ IsNPCAtCoord:
 	ld hl, OBJECT_SPRITE
 	add hl, bc
 	ld a, [hl]
-	cp SPRITE_MONSTER
+	cp SPRITE_PEON_FRIENDLY_IMP
 	jr nz, .ordinary_object
 	ld a, [wMapTileset]
 	cp TILESET_PEON

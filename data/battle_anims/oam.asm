@@ -239,7 +239,21 @@ BattleAnimOAMData:
 	battleanimoam $0d, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0D
 	battleanimoam $0e, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0E
 	battleanimoam $0f, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_0F
+	battleanimoam $00, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_FIREBOLT_0
+	battleanimoam $01, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_FIREBOLT_1
+	battleanimoam $02, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_FIREBOLT_2
+	battleanimoam $03, 1, .OAMData_0f ; BATTLE_ANIM_OAMSET_PEON_FIREBOLT_3
+	battleanimoam $04, 2, .OAMData_PeonShadowBoltV026
+	battleanimoam $06, 2, .OAMData_PeonShadowBoltV026
+	battleanimoam $08, 2, .OAMData_PeonShadowBoltV026
+	battleanimoam $0a, 2, .OAMData_PeonShadowBoltV026
 	assert_table_length NUM_BATTLE_ANIM_OAMSETS
+
+.OAMData_PeonShadowBoltV026:
+	; dbsprite takes x first. Center the bright head like the Firebolt,
+	; placing the tail one tile to its left, on the same physical scanlines.
+	dbsprite -2, -1, 4, 4, $00, $0
+	dbsprite -1, -1, 4, 4, $01, $0
 
 .OAMData_11:
 	dbsprite  -1,  -1, 4, 0, $00, $0

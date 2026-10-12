@@ -190,7 +190,22 @@ BattleAnimFrameData:
 	dw .Frameset_PeonLeaf
 	dw .Frameset_PeonArc
 	dw .Frameset_PeonWind
+	dw .Frameset_PeonFireboltV026
+	dw .Frameset_PeonShadowBoltV026
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
+
+.Frameset_PeonFireboltV026:
+	oamframe BATTLE_ANIM_OAMSET_PEON_FIREBOLT_0, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_FIREBOLT_1, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_FIREBOLT_2, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_FIREBOLT_3, 3
+	oamrestart
+.Frameset_PeonShadowBoltV026:
+	oamframe BATTLE_ANIM_OAMSET_PEON_SHADOW_BOLT_0, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_SHADOW_BOLT_1, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_SHADOW_BOLT_2, 3
+	oamframe BATTLE_ANIM_OAMSET_PEON_SHADOW_BOLT_3, 3
+	oamrestart
 
 .Frameset_PeonFire:
 	oamframe BATTLE_ANIM_OAMSET_PEON_00, 6

@@ -509,8 +509,8 @@ PeonClassTrainer::
 .NamesPointerReady
 	pop af
 	ret
-.WarriorTitle: db "MoCMoc - WARRIOR@"
-.WarlockTitle: db "XASTHUR - WARLOCK@"
+.WarriorTitle: db "<BOLD>MoCMoc<REGULAR> - WARRIOR@"
+.WarlockTitle: db "<BOLD>XASTHUR<REGULAR> - WARLOCK@"
 .LevelLabel: db "LEVEL:@"
 .WalletLabel: db "COPPER:@"
 .Controls: db "A: TRAIN  B: BACK@"

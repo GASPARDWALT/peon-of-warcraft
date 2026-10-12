@@ -181,10 +181,10 @@ BurningBladeCultistLootText:
 	done
 
 BurningBladeYarrogLootText:
-	text "Yarrog defeated!"
+	text "<BOLD>Yarrog<REGULAR> defeated!"
 	para "BLADE MEDALLION"
 	line "recovered."
-	para "Zureetha needs"
+	para "<BOLD>Zureetha<REGULAR> needs"
 	line "this proof."
 	para "35 copper found."
 	done

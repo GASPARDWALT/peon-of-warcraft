@@ -10,6 +10,8 @@
 	charmap "<LF>",      $22
 	charmap "<POKE>",    $24 ; "<PO><KE>"
 	charmap "<WBR>",     $25 ; word-break opportunity (usually skipped, or "<LF>" on the Town Map)
+	charmap "<BOLD>",    $26 ; zero-width Peon person-name style
+	charmap "<REGULAR>", $27 ; resume regular body text
 	charmap "<RED>",     $38 ; wRedsName
 	charmap "<GREEN>",   $39 ; wGreensName
 	charmap "<ENEMY>",   $3f

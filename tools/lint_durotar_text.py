@@ -14,7 +14,7 @@ for p in PATHS:
     for n,line in enumerate(p.read_text().splitlines(),1):
         m=re.match(r'\s*(text|line|cont|para) "(.*)"$',line)
         if m:
-            length=len(m[2].replace('<PLAYER>','Péon ABCDE'))
+            length=len(m[2].replace('<PLAYER>','Péon ABCDE').replace('<BOLD>','').replace('<REGULAR>',''))
             assert length<=18,(str(p),n,length,m[2])
             count+=1
 print(f'Passed: {count} dialogue rows fit 18 columns with the longest player name')

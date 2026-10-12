@@ -1,0 +1,127 @@
+{
+  "source_rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "rom_sha256": "fe80c80dee9ef2926c906e2ac18d36a2ce16dc1bd92291cf1dd54ebe58c523f5",
+  "emulator": "PyBoy 2.7.0",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "save_abi": {
+    "existing_wram0_wramx_sram_symbols_compared": 16012,
+    "all_existing_symbol_addresses_equal": true,
+    "removed_symbols": [],
+    "shifted_symbols": {},
+    "saved_enum_tables": {
+      "event_flags.asm": {
+        "numeric_directives_compared": 1467,
+        "unchanged": true
+      },
+      "item_constants.asm": {
+        "numeric_directives_compared": 197,
+        "unchanged": true
+      },
+      "move_constants.asm": {
+        "numeric_directives_compared": 253,
+        "unchanged": true
+      },
+      "pokemon_constants.asm": {
+        "numeric_directives_compared": 281,
+        "unchanged": true
+      },
+      "map_constants.asm": {
+        "numeric_directives_compared": 458,
+        "unchanged": true
+      }
+    }
+  },
+  "classes": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "shaman",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "53a994922ed74dfc4e311fd4288f003c61559c1dff55dd684f9c9cbd88fb36a7",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "warrior",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "5d9108ada88c56f4913d94147a689bf13cd848afdfe150751596c3b3412dcb43",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "warlock",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false,
+        "smaller_friendly_imp_graphics_match": true,
+        "runtime_follower_rebuilt_from_old_battery": true
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "717253948d365095d3955d41a7231fa46b4e1624f476d84db39f3320cfce8abc",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    }
+  },
+  "passed": true,
+  "limitations": [
+    "Three genuine v0.2.5 class characters saved at The Den after the first quest.",
+    "Other saved locations and physical Chromatic hardware were not exercised.",
+    "Sprite checks read native VRAM; no state is injected to pass compatibility."
+  ]
+}

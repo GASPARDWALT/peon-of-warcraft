@@ -43,7 +43,12 @@ PeonAnimatePlayerAttack::
 	jr z, .done
 	ld a, [wPlayerMoveStructType]
 	cp SPECIAL
-	jr nc, .done
+	jr c, .release_pose
+	; A Warlock releases the casting hand for damaging shadow/fire spells.
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .done
+.release_pose
 	ld a, 2
 	ld [wPeonPlayerPoseActive], a
 	call PeonLoadPlayerPose
@@ -115,20 +120,8 @@ PeonPlayerPoseVisible:
 ; A = frame0/1/2. Each frame is separately encoded in column-major order;
 ; a vertically encoded strip would interleave its tiles incorrectly.
 PeonLoadPlayerPose::
-	ld hl, PeonPlayerBackFrames
-	ld bc, 6 * 6 * TILE_SIZE
-	call AddNTimes
-	ld d, h
-	ld e, l
-	ldh a, [rVBK]
-	push af
-	xor a
-	ldh [rVBK], a
-	ld hl, vTiles2 tile $31
-	lb bc, BANK(PeonPlayerBackFrames), 6 * 6
-	call Get2bpp
-	pop af
-	ldh [rVBK], a
+	ld c, a
+	farcall PeonLoadClassPlayerBackPose
 	ret
 
 PeonPlayerBackFrames:

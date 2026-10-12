@@ -36,9 +36,9 @@ PeonEarthTotemPriority::
 	and a
 	ret
 
-; Eight pixels wide, in the clear column in front of the 48px player backpic.
-; Signed BG IDs$86/$87 live in bank1 $8860, outside the entire idle/animated
-; frontpic, backpic, fonts and bank0 battle-particle regions. Palette6 is free.
+; Native 16x24 carved Earth Totem, cols8..9 rows4..6 ahead of the player.
+; Signed BG IDs$86..$8b live in bank1 $8860..$88bf, before the imp region,
+; outside player/enemy portraits, fonts and bank0 spell-particle graphics.
 ; FinishBattleAnim reloads this after effects and bags restoration.
 PeonDrawBattleTotem::
 	; Warlock's persistent companion occupies the same clear front column,
@@ -54,6 +54,10 @@ PeonDrawBattleTotem::
 	ld a, [wBattleMode]
 	and a
 	jr z, .done
+	; The Warlock renders its companion in this mutually exclusive footprint.
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr nz, .done
 	ld a, [wPeonEarthTotemActive]
 	and a
 	jr z, .done
@@ -63,7 +67,7 @@ PeonDrawBattleTotem::
 	ldh [rVBK], a
 	ld de, .tiles
 	ld hl, vTiles4 tile $06
-	lb bc, BANK(.tiles), 2
+	lb bc, BANK(.tiles), 6
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
@@ -77,14 +81,28 @@ PeonDrawBattleTotem::
 	ld bc, 1 palettes
 	ld a, BANK(wBGPals2)
 	call FarCopyWRAM
-	hlcoord 8, 6
-	ld [hl], $86
-	hlcoord 8, 7
-	ld [hl], $87
-	hlcoord 8, 6, wAttrmap
+	hlcoord 8, 4
+	ld a, $86
+	ld b, 3
+.row:
+	ld [hli], a
+	inc a
+	ld [hli], a
+	inc a
+	ld de, SCREEN_WIDTH - 2
+	add hl, de
+	dec b
+	jr nz, .row
+	hlcoord 8, 4, wAttrmap
+	ld b, 3
+.attr_row:
 	ld [hl], $0e
-	hlcoord 8, 7, wAttrmap
+	inc hl
 	ld [hl], $0e
+	ld de, SCREEN_WIDTH - 1
+	add hl, de
+	dec b
+	jr nz, .attr_row
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
 	call WaitBGMap2
@@ -94,6 +112,6 @@ PeonDrawBattleTotem::
 	pop bc
 	pop af
 	ret
-.tiles: INCBIN "gfx/pack/peon_earth_totem_battle.2bpp"
+.tiles: INCBIN "gfx/peon_pets_v026/earth_totem_v026.2bpp"
 .palette:
 	RGB 31,31,31, 22,15,7, 8,17,6, 3,2,2

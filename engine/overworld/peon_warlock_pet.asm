@@ -38,7 +38,7 @@ PeonPrepareWarlockFollower::
 	ret
 .Template:
 	; Explicit bytes avoid increasing any preceding map's object-event count.
-	db -1, SPRITE_MONSTER, 4, 4, SPRITEMOVEDATA_FOLLOWING, 0, -1, -1
+	db -1, SPRITE_PEON_FRIENDLY_IMP, 4, 4, SPRITEMOVEDATA_FOLLOWING, 0, -1, -1
 	dn PAL_NPC_RED, OBJECTTYPE_3
 	db 0
 	dw 0, -1

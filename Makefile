@@ -234,6 +234,24 @@ gfx/pack/peon_item_icons/minor_healing_potion.2bpp gfx/pack/peon_item_icons/mino
 gfx/pack/peon_warlock_pet_battle.2bpp gfx/pack/peon_mailbox.2bpp &: tools/build_peon_pet_mail_assets.py
 	python3 tools/build_peon_pet_mail_assets.py
 
+# v0.2.6 art uses explicit native palette indexes and its own output folders.
+gfx/peon_pets_v026/combat_imp_v026.2bpp gfx/peon_pets_v026/earth_totem_v026.2bpp \
+gfx/peon_pets_v026/friendly_imp_world_v026.2bpp gfx/peon_pets_v026/firebolt_v026.2bpp \
+gfx/peon_pets_v026/shadow_bolt_v026.2bpp gfx/peon_pets_v026/spell_particles_v026.2bpp &: tools/build_peon_pet_spell_assets_v026.py
+	python3 tools/build_peon_pet_spell_assets_v026.py
+
+gfx/font/peon_regular_v026.1bpp gfx/font/peon_bold_v026.1bpp &: tools/build_peon_text_font_v026.py
+	python3 tools/build_peon_text_font_v026.py
+
+gfx/peon_classes/shaman/overworld.bin gfx/peon_classes/shaman/front_frames.bin \
+gfx/peon_classes/shaman/portrait_frames.bin gfx/peon_classes/shaman/back_frames.bin \
+gfx/peon_classes/warrior/overworld.bin gfx/peon_classes/warrior/front_frames.bin \
+gfx/peon_classes/warrior/portrait_frames.bin gfx/peon_classes/warrior/back_frames.bin \
+gfx/peon_classes/warlock/overworld.bin gfx/peon_classes/warlock/front_frames.bin \
+gfx/peon_classes/warlock/portrait_frames.bin gfx/peon_classes/warlock/back_frames.bin &: tools/build_peon_player_classes_v026.py \
+gfx/sprites/peon.png gfx/sprites/peon.2bpp gfx/pokemon/machop/front.png gfx/pack/peon_portrait.png gfx/peon_player_battle/back_frames.2bpp
+	python3 tools/build_peon_player_classes_v026.py
+
 gfx/pokemon/%/back.2bpp: RGBGFXFLAGS += --columns
 gfx/pokemon/%/back.2bpp: gfx/pokemon/%/back.png gfx/pokemon/%/normal.gbcpal
 	$(RGBGFX) $(RGBGFXFLAGS) --colors gbc:$(word 2,$^) -o $@ $<

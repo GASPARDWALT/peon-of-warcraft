@@ -106,21 +106,21 @@ GrommashHoldAlreadyTrainedText:
 PeonThrallText:
 	text "GROMMASH HOLD"
 	para "Your eyes open..."
-	para "THRALL: This peon?"
+	para "<BOLD>THRALL<REGULAR>: This peon?"
 	line "He can barely"
 	cont "work!"
 	para "Three masters"
 	line "await."
 	line "Choose a mentor."
-	para "KENTO BRANDENHOOF:"
+	para "<BOLD>KENTO BRANDENHOOF<REGULAR>:"
 	line "Tauren Shaman."
-	para "MoCMoc ZOGZOG:"
+	para "<BOLD>MoCMoc ZOGZOG<REGULAR>:"
 	line "Orc Warrior."
-	para "XASTHUR:"
+	para "<BOLD>XASTHUR<REGULAR>:"
 	line "Warlock Master."
 	done
 PeonKentoText:
-	text "KENTO BRANDENHOOF:"
+	text "<BOLD>KENTO BRANDENHOOF<REGULAR>:"
 	para "Warchief, let me"
 	line "train this peon."
 	para "You are now my"
@@ -150,7 +150,7 @@ PeonKitText:
 	done
 
 PeonWarriorText:
-	text "MoCMoc ZOGZOG:"
+	text "<BOLD>MoCMoc ZOGZOG<REGULAR>:"
 	para "Strong hands, peon"
 	line "You will learn to"
 	cont "serve the Horde."
@@ -160,7 +160,7 @@ PeonWarriorText:
 	line "what is your name?"
 	done
 PeonWarlockText:
-	text "XASTHUR:"
+	text "<BOLD>XASTHUR<REGULAR>:"
 	para "Power has a price."
 	line "Will you pay it?"
 	para "You are now my"

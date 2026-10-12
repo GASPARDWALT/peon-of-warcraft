@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exercise the exact v0.2.5 offline browser player, without editing game RAM.
+"""Exercise an exact Peon browser player, without editing game RAM.
 
 The normal gameplay route uses the browser's ordinary controller input and
 bounded frame advancement. Read-only native memory observations verify the
@@ -26,10 +26,14 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "references/generated/browser_player_v025"
+DEFAULT_OUT = OUT
 DEFAULT_HTML = ROOT / "releases/browser-player-v0.2.5/peon_of_warcraft_v0_2_5_player.html"
 DIRECTIONS = (("left", -1, 0), ("right", 1, 0), ("up", 0, -1), ("down", 0, 1))
 NAMES = {"start": "Enter", "select": "Shift", "a": "z", "b": "x",
          "up": "ArrowUp", "down": "ArrowDown", "left": "ArrowLeft", "right": "ArrowRight"}
+CLASSES = {"shaman": {"index": 0, "moves": [1, 84, 0, 0]},
+           "warrior": {"index": 1, "moves": [1, 2, 0, 0]},
+           "warlock": {"index": 2, "moves": [1, 247, 0, 0]}}
 AUDIO_OBSERVER = """(() => {
   const Base = window.AudioContext || window.webkitAudioContext;
   window.__peonAudioQA = {contexts: [], started: 0, sampleCount: 0, nonzeroCount: 0};
@@ -84,8 +88,13 @@ def event_flags():
 
 
 class BrowserSession:
-    def __init__(self, page, sym):
+    def __init__(self, page, sym, character_class="shaman"):
         self.page, self.sym = page, sym
+        self.character_class = character_class
+        self.class_spec = CLASSES[character_class]
+        move_names = re.findall(r'^\s*li\s+"([^"\n]+)"',
+                                (ROOT / "data/moves/names.asm").read_text(), re.M)
+        self.secondary_move_label = move_names[self.class_spec["moves"][1] - 1]
         self.flags = event_flags()
         self.char = {m[1]: int(m[2], 16) for m in re.finditer(
             r'charmap\s+"([^"\n]+)",\s+\$([0-9a-f]+)',
@@ -149,7 +158,7 @@ class BrowserSession:
         image.resize((640, 576), Image.Resampling.NEAREST).save(OUT / (slug + "_4x.png"))
         print(slug, "frames", self.frames, "map", self.map(), "xy", self.position(), flush=True)
 
-    def fresh_shaman(self):
+    def fresh_class(self):
         self.step(240)
         self.capture("browser_native_title")
         self.press("start")
@@ -162,6 +171,9 @@ class BrowserSession:
             if not selected and self.has_text("CHOOSE YOUR MASTER"):
                 self.step(60)
                 assert self.read("wMenuCursorY") == [0]
+                for _ in range(self.class_spec["index"]):
+                    self.press("down", 40)
+                assert self.read("wMenuCursorY") == [self.class_spec["index"]]
                 self.capture("browser_native_class_selection")
                 self.press("a")
                 selected = True
@@ -178,11 +190,17 @@ class BrowserSession:
             self.press("a")
         assert selected and named and self.overworld(), ("intro incomplete", selected, named, self.read_many((("wScriptMode", 1), ("wMapGroup", 2))))
         assert self.read("wPartyCount") == [1]
-        assert self.read("wPartyMon1Moves", 4) == [1, 84, 0, 0]
+        assert self.read("wPartyMon1Moves", 4) == self.class_spec["moves"]
         assert self.event("EVENT_PEON_SHAMAN")
-        assert not self.event("EVENT_PEON_WARRIOR") and not self.event("EVENT_PEON_WARLOCK")
+        assert self.event("EVENT_PEON_WARRIOR") == (self.character_class == "warrior")
+        assert self.event("EVENT_PEON_WARLOCK") == (self.character_class == "warlock")
         assert self.read("wPlayerName", 11) == [self.char[c] for c in "Péon ABCDE"] + [0x50]
-        self.capture("browser_shaman_at_the_den")
+        self.capture(f"browser_{self.character_class}_at_the_den")
+
+    def fresh_shaman(self):
+        """Compatibility alias for existing callers of the original route."""
+        assert self.character_class == "shaman"
+        self.fresh_class()
 
     def collision(self, x, y):
         if not (0 <= x < 24 and 0 <= y < 20):
@@ -273,7 +291,7 @@ class BrowserSession:
         for _ in range(180):
             if self.read("wBattleMode")[0]:
                 entered = True
-            if entered and self.has_text("LIGHTN.BOLT") and not captured:
+            if entered and self.has_text(self.secondary_move_label) and not captured:
                 self.capture("browser_first_boar_battle")
                 captured = True
             self.press("a", 120)
@@ -328,19 +346,43 @@ class BrowserSession:
 
 
 def main():
+    global OUT
     parser = argparse.ArgumentParser()
     parser.add_argument("--html", type=Path, default=DEFAULT_HTML)
     parser.add_argument("--rom", type=Path, default=ROOT / "pokecrystal.gbc")
     parser.add_argument("--symbols", type=Path, default=ROOT / "pokecrystal.sym")
     parser.add_argument("--expected-sha", required=True)
+    parser.add_argument("--expected-html-sha", help="Require an exact frozen HTML artifact as well as the ROM hash.")
+    parser.add_argument("--output", type=Path, default=DEFAULT_OUT,
+                        help="Evidence directory; use a new directory for each new player version.")
+    parser.add_argument("--version", help="Reported player version, otherwise inferred from the HTML filename.")
+    parser.add_argument("--class", dest="character_class", choices=tuple(CLASSES), default="shaman")
     parser.add_argument("--smoke-only", action="store_true")
     parser.add_argument("--url", help="Existing authorized test URL. Otherwise use an owned localhost HTTP server.")
     args = parser.parse_args()
-    OUT.mkdir(parents=True, exist_ok=True)
+    OUT = args.output.resolve()
+    # The unchanged default remains available for the original v0.2.5 tool,
+    # while testing another release requires an explicit separate output root.
+    if OUT == DEFAULT_OUT.resolve() and (args.html.resolve() != DEFAULT_HTML.resolve()
+                                        or (args.version and args.version.lstrip("v") != "0.2.5")
+                                        or args.character_class != "shaman"):
+        parser.error("Use --output with a new evidence directory for another player version; published v0.2.5 evidence must be preserved.")
+    legacy_manifest = DEFAULT_HTML.parent / "manifest.json"
+    if OUT == DEFAULT_OUT.resolve() and legacy_manifest.is_file():
+        legacy_rom_sha = json.loads(legacy_manifest.read_text())["rom_sha256"]
+        if args.expected_sha != legacy_rom_sha:
+            parser.error("Use --output with a new evidence directory for another ROM; published v0.2.5 evidence must be preserved.")
+    version_match = re.search(r"(?:^|_)v(\d+)_(\d+)_(\d+)(?:_|\.)", args.html.name)
+    version = args.version or (".".join(version_match.groups()) if version_match else None)
     assert args.html.is_file()
     assert hashlib.sha256(args.rom.read_bytes()).hexdigest() == args.expected_sha
-    report = {"rom_sha256": args.expected_sha, "html_sha256": hashlib.sha256(args.html.read_bytes()).hexdigest(),
-              "method": "Self-contained HTML served by an owned localhost HTTP server to managed Chromium, exact embedded v0.2.5 ROM, ordinary emulated controller buttons and bounded native frame advancement. UI keyboard/touch inputs checked separately in real browser time.",
+    html_sha = hashlib.sha256(args.html.read_bytes()).hexdigest()
+    if args.expected_html_sha:
+        assert html_sha == args.expected_html_sha, ("HTML changed before browser QA", args.expected_html_sha, html_sha)
+    OUT.mkdir(parents=True, exist_ok=True)
+    report = {"rom_sha256": args.expected_sha, "html_sha256": html_sha,
+              "player_version": version, "character_class": args.character_class,
+              "method": "Self-contained HTML served by an owned localhost HTTP server to managed Chromium, exact supplied embedded ROM, ordinary emulated controller buttons and bounded native frame advancement. UI keyboard/touch inputs checked separately in real browser time.",
               "native_ram_edits": False, "physical_chromatic_verified": False, "devday_flash_verified": False,
               "modretro_plugin_preview_used": False, "external_browser_launched_for_user": False,
               "in_app_browser_display_verified": False}
@@ -382,14 +424,14 @@ def main():
             page.locator("#play").click()
             page.wait_for_function("window.peonPlayer.readMemory(0xff40) >= 0", timeout=30000)
             page.evaluate("() => window.peonPlayer.pause()")
-            session = BrowserSession(page, symbols(args.symbols))
+            session = BrowserSession(page, symbols(args.symbols), args.character_class)
             assert page.evaluate("() => window.peonPlayer.sha256") == args.expected_sha
             if args.smoke_only:
                 session.step(240)
                 session.capture("browser_native_title")
             else:
-                session.fresh_shaman()
-                report["normal_intro"] = {"master_selected": "Shaman", "native_name": "Péon ABCDE", "map": "The Den", "passed": True}
+                session.fresh_class()
+                report["normal_intro"] = {"master_selected": args.character_class.title(), "native_name": "Péon ABCDE", "map": "The Den", "passed": True}
                 report["normal_battle"] = session.first_quest_and_battle()
                 before, battery = session.normal_save()
                 report["native_game_save"] = {"export_bytes": len(battery), "export_sha256": hashlib.sha256(battery).hexdigest(),
@@ -446,7 +488,7 @@ def main():
                 cold_page.evaluate("() => window.peonPlayer.pause()")
                 cold_page.evaluate("values => window.peonPlayer.importBattery(Uint8Array.from(values))", list(battery))
                 cold_page.evaluate("() => window.peonPlayer.pause()")
-                cold = BrowserSession(cold_page, session.sym)
+                cold = BrowserSession(cold_page, session.sym, args.character_class)
                 cold.continue_game()
                 after = cold.snapshot()
                 assert before == after, ("cold battery Continue record differs", before, after)
@@ -559,6 +601,11 @@ def main():
             mobile.close()
             context.close()
             browser.close()
+        # A parallel build must not turn these screenshots into evidence for
+        # a different cartridge or reader while the test is running.
+        assert hashlib.sha256(args.rom.read_bytes()).hexdigest() == args.expected_sha, "ROM changed during browser QA"
+        assert hashlib.sha256(args.html.read_bytes()).hexdigest() == html_sha, "HTML changed during browser QA"
+        report["frozen_inputs_unchanged_after_run"] = {"rom": True, "html": True, "passed": True}
         report["duration_seconds"] = round(time.monotonic() - started, 2)
         report["status"] = "PASS"
         report["passed"] = True

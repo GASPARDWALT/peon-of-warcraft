@@ -33,6 +33,13 @@ jobs:
         run: |
           rm -rf rgbds
 
+      - name: Prepare native art generators
+        if: ${{ github.repository_owner != 'pret' }}
+        run: |
+          python3 -m venv "$RUNNER_TEMP/peon-art-env"
+          "$RUNNER_TEMP/peon-art-env/bin/python" -m pip install -r tools/peon_visual_requirements.txt
+          echo "$RUNNER_TEMP/peon-art-env/bin" >> "$GITHUB_PATH"
+
       - name: Compare
         if: ${{ github.repository_owner == 'pret' }}
         run: |
@@ -95,6 +102,15 @@ jobs:
       - name: Remove rgbds
         run: |
           rm -rf rgbds
+
+      - name: Prepare native art generators
+        if: ${{ github.repository_owner != 'pret' }}
+        run: |
+          brew install make
+          python3 -m venv "$RUNNER_TEMP/peon-art-env"
+          "$RUNNER_TEMP/peon-art-env/bin/python" -m pip install -r tools/peon_visual_requirements.txt
+          echo "$RUNNER_TEMP/peon-art-env/bin" >> "$GITHUB_PATH"
+          echo "$(brew --prefix make)/libexec/gnubin" >> "$GITHUB_PATH"
 
       - name: Compare
         if: ${{ github.repository_owner == 'pret' }}

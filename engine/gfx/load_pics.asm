@@ -53,6 +53,8 @@ GetMonFrontpic:
 	ld [wCurSpecies], a
 	call IsAPokemon
 	ret c
+	farcall PeonTryLoadClassFrontpic
+	ret c
 	ldh a, [rWBK]
 	push af
 	call _GetFrontpic
@@ -194,6 +196,8 @@ LoadFrontpicTiles:
 	ret
 
 GetMonBackpic:
+	farcall PeonTryLoadClassBattleBackpic
+	ret c
 	ld a, [wCurPartySpecies]
 	call IsAPokemon
 	ret c

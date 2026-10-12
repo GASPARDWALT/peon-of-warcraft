@@ -456,7 +456,7 @@ PeonShamanTrainer::
 	lb bc, 3, 6
 	jp PrintNum
 
-.Title: db "KENTO - SHAMAN@"
+.Title: db "<BOLD>KENTO<REGULAR> - SHAMAN@"
 .LevelLabel: db "LEVEL:@"
 .WalletLabel: db "COPPER:@"
 .LessonNames:

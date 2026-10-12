@@ -1,0 +1,44 @@
+{
+  "version": "0.2.6",
+  "rom_sha256": "fe80c80dee9ef2926c906e2ac18d36a2ce16dc1bd92291cf1dd54ebe58c523f5",
+  "rom_bytes": 2097152,
+  "cgb_only": true,
+  "mapper": "MBC3 + RTC + RAM + battery",
+  "save_ram_bytes": 32768,
+  "passed_native_reports": [
+    {
+      "file": "classes/validation.json",
+      "sha256": "40e790db2d48d348d888b1261acdc2453c0a3acc13bea52d9f1870d34704d99b"
+    },
+    {
+      "file": "font/validation.json",
+      "sha256": "b4b43c2a2dcee74d11ac5122ed4dbf1f338ece487e090cad0298f1327b7802e1"
+    },
+    {
+      "file": "pets_spells/validation.json",
+      "sha256": "020c41a9471a1b26e4375148330f6522b5d72a8d4cafc69e7a93d4293f91e423"
+    },
+    {
+      "file": "paths_doors/validation.json",
+      "sha256": "89de039266acfe4b08aa8efbdd7af62d251b910e4f6e24bda8a627ca58425626"
+    },
+    {
+      "file": "save_upgrade/validation.json",
+      "sha256": "6720ba9430bbeeb92192f2818710e98380ce38faf639b17da9be64634a2f3294"
+    }
+  ],
+  "physical_chromatic_tested": false,
+  "modretro_plugin_used": false,
+  "save_slots": 1,
+  "actions": 4,
+  "downloads": {
+    "peon_of_warcraft_v0_2_6.zip": {
+      "bytes": 1134876,
+      "sha256": "20ab9b13bf349b941ed415bb3e4c59be95499b142a7929befa3cdbbcb0600861"
+    },
+    "peon_of_warcraft_v0_2_6_assets.zip": {
+      "bytes": 5659317,
+      "sha256": "8ccafe85ddad3aff87ce75de83d98a1e6fbbb18bcf627a5122695be4d142ab9a"
+    }
+  }
+}

@@ -1,0 +1,2183 @@
+{
+  "rom_sha256": "fe80c80dee9ef2926c906e2ac18d36a2ce16dc1bd92291cf1dd54ebe58c523f5",
+  "passed": true,
+  "user_battery_files_opened": false,
+  "source": {
+    "existing_ram_symbols_preserved": 16112,
+    "regular_and_bold_128_fixed_cells": true,
+    "bold_is_exact_one_pixel_horizontal_expansion": true,
+    "ambiguous_glyphs_distinct": true,
+    "fixed_runtime_wram_range": [
+      "$cfd8",
+      "$cff1"
+    ],
+    "font_cache_vram_ranges": {
+      "world": [
+        "bank1 $9690",
+        "bank1 $97ff"
+      ],
+      "battle": [
+        "bank1 $8920",
+        "bank1 $8a8f"
+      ]
+    }
+  },
+  "normal": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "saved_name_record_unchanged": true,
+      "normal_glyph_checks": [
+        {
+          "phase": "class_select_names_and_regular_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 62,
+            "bold": 18
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            140,
+            174,
+            130,
+            162,
+            151,
+            128,
+            146,
+            135,
+            148,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "character_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 65,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "bags_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 43,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_regular_item_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 104,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_after_item_change",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 101,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "map_locked_regular_font",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 45,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "partial_name_during_actual_typing",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 0,
+            "bold": 5
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_0",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 1,
+            "bold": 16
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_1",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 17,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_2",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 27,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_3",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 28,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_4",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 26,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_5",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 28,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_6",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 25,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133,
+            143,
+            234,
+            174,
+            173,
+            130
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_7",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 21,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_bold_actions_regular",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            129,
+            142,
+            128,
+            145,
+            143,
+            234,
+            174,
+            173,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_self_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 65,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_restored_after_self",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_font_after_native_spell_and_pet",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_font_after_bags_earth_totem",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 23,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "character_names_after_actual_atlas_restore",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 65,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "cold_battery_character_name_preview",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 6,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        }
+      ],
+      "native_victory": true,
+      "native_text_scroll_calls": 44,
+      "font_cache_checks_after_native_enemy_poses": 7,
+      "font_cache_checks_during_native_enemy_frames": 9,
+      "actual_native_enemy_frame_commands": [
+        1,
+        2,
+        3
+      ],
+      "atomic_hardware_glyph_attribute_pairs_observed": 2956,
+      "actual_partial_name_typing": {
+        "phase": "partial_name_during_actual_typing",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 0,
+          "bold": 5
+        },
+        "cached_source_codes": [
+          138,
+          132,
+          141,
+          147,
+          142
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      },
+      "actual_battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            44
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            96,
+            160,
+            0,
+            0,
+            0,
+            48,
+            1,
+            32,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            20
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100
+          ],
+          "items": [
+            148,
+            1,
+            63,
+            1,
+            18,
+            3,
+            137,
+            1
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            2
+          ],
+          "wBackupMapGroup": [
+            26
+          ],
+          "wBackupMapNumber": [
+            14
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            44
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            96,
+            160,
+            0,
+            0,
+            0,
+            48,
+            1,
+            32,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            20
+          ],
+          "keys": [
+            25,
+            45,
+            50,
+            90,
+            100
+          ],
+          "items": [
+            148,
+            1,
+            63,
+            1,
+            18,
+            3,
+            137,
+            1
+          ]
+        }
+      },
+      "actual_cold_saved_name_preview": {
+        "phase": "cold_battery_character_name_preview",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 6,
+          "bold": 9
+        },
+        "cached_source_codes": [
+          143,
+          234,
+          174,
+          173,
+          128,
+          129,
+          130,
+          131,
+          132
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      }
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "saved_name_record_unchanged": true,
+      "normal_glyph_checks": [
+        {
+          "phase": "class_select_names_and_regular_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 62,
+            "bold": 18
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            140,
+            174,
+            130,
+            162,
+            151,
+            128,
+            146,
+            135,
+            148,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "character_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 67,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "bags_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 40,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_regular_item_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 98,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_after_item_change",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 98,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "map_locked_regular_font",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 45,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "partial_name_during_actual_typing",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 0,
+            "bold": 5
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_0",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 0,
+            "bold": 16
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_1",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 29,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_2",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 25,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_bold_actions_regular",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            129,
+            142,
+            128,
+            145,
+            143,
+            234,
+            174,
+            173,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_self_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 67,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_restored_after_self",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "cold_battery_character_name_preview",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 7,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        }
+      ],
+      "native_victory": true,
+      "native_text_scroll_calls": 14,
+      "font_cache_checks_after_native_enemy_poses": 3,
+      "font_cache_checks_during_native_enemy_frames": 3,
+      "actual_native_enemy_frame_commands": [
+        1,
+        2,
+        3
+      ],
+      "atomic_hardware_glyph_attribute_pairs_observed": 1958,
+      "actual_partial_name_typing": {
+        "phase": "partial_name_during_actual_typing",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 0,
+          "bold": 5
+        },
+        "cached_source_codes": [
+          138,
+          132,
+          141,
+          147,
+          142
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      },
+      "actual_battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            50
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            12
+          ],
+          "keys": [
+            6,
+            45
+          ],
+          "items": [
+            18,
+            2
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            50
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            12
+          ],
+          "keys": [
+            6,
+            45
+          ],
+          "items": [
+            18,
+            2
+          ]
+        }
+      },
+      "actual_cold_saved_name_preview": {
+        "phase": "cold_battery_character_name_preview",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 7,
+          "bold": 9
+        },
+        "cached_source_codes": [
+          143,
+          234,
+          174,
+          173,
+          128,
+          129,
+          130,
+          131,
+          132
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      }
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "saved_name_record_unchanged": true,
+      "normal_glyph_checks": [
+        {
+          "phase": "class_select_names_and_regular_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 62,
+            "bold": 18
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            140,
+            174,
+            130,
+            162,
+            151,
+            128,
+            146,
+            135,
+            148,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "character_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 66,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "bags_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 39,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_regular_item_description",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 101,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "inventory_after_item_change",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 98,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "map_locked_regular_font",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 45,
+            "bold": 0
+          },
+          "cached_source_codes": [],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "partial_name_during_actual_typing",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 0,
+            "bold": 5
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_0",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 0,
+            "bold": 16
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_1",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 29,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "kento_dialogue_page_2",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 25,
+            "bold": 0
+          },
+          "cached_source_codes": [
+            138,
+            132,
+            141,
+            147,
+            142,
+            129,
+            145,
+            128,
+            131,
+            135,
+            133
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_bold_actions_regular",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            129,
+            142,
+            128,
+            145,
+            143,
+            234,
+            174,
+            173,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_self_regular_body_bold_player",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 66,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_names_restored_after_self",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "battle_font_after_native_spell_and_pet",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 24,
+            "bold": 13
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132,
+            142,
+            145
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x8920",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        },
+        {
+          "phase": "cold_battery_character_name_preview",
+          "native_rgb555_glyph_pixels_exact": true,
+          "cells": {
+            "regular": 7,
+            "bold": 9
+          },
+          "cached_source_codes": [
+            143,
+            234,
+            174,
+            173,
+            128,
+            129,
+            130,
+            131,
+            132
+          ],
+          "regular_font_full128_tiles_exact": true,
+          "bold_cache_bytes_exact": true,
+          "font_cache_address": "0x9690",
+          "hardware_font_bank_attributes_exact": true,
+          "overflow": 0
+        }
+      ],
+      "native_victory": true,
+      "native_text_scroll_calls": 12,
+      "font_cache_checks_after_native_enemy_poses": 3,
+      "font_cache_checks_during_native_enemy_frames": 3,
+      "actual_native_enemy_frame_commands": [
+        1,
+        2,
+        3
+      ],
+      "atomic_hardware_glyph_attribute_pairs_observed": 1979,
+      "actual_partial_name_typing": {
+        "phase": "partial_name_during_actual_typing",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 0,
+          "bold": 5
+        },
+        "cached_source_codes": [
+          138,
+          132,
+          141,
+          147,
+          142
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      },
+      "actual_battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            247,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            50
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            11
+          ],
+          "keys": [
+            56
+          ],
+          "items": [
+            63,
+            1,
+            18,
+            3
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            247,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            50
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            11
+          ],
+          "keys": [
+            56
+          ],
+          "items": [
+            63,
+            1,
+            18,
+            3
+          ]
+        }
+      },
+      "actual_cold_saved_name_preview": {
+        "phase": "cold_battery_character_name_preview",
+        "native_rgb555_glyph_pixels_exact": true,
+        "cells": {
+          "regular": 7,
+          "bold": 9
+        },
+        "cached_source_codes": [
+          143,
+          234,
+          174,
+          173,
+          128,
+          129,
+          130,
+          131,
+          132
+        ],
+        "regular_font_full128_tiles_exact": true,
+        "bold_cache_bytes_exact": true,
+        "font_cache_address": "0x9690",
+        "hardware_font_bank_attributes_exact": true,
+        "overflow": 0
+      }
+    }
+  },
+  "earned_atlas_font_restore": {
+    "ordinary_actual_second_quest": true,
+    "real_atlas_graphics_loaded_in_both_banks": true,
+    "native_font_full128_restored": true,
+    "all_actual_allocated_sprite_graphics_restored": true,
+    "190_static_terrain_tiles_and_both_banks_preserved": true,
+    "names_rebuilt_correctly_after_native_atlas_cache_eviction": true
+  },
+  "diagnostic_23_glyph_boundary": {
+    "phase": "diagnostic_23_unique_name_glyphs",
+    "native_rgb555_glyph_pixels_exact": true,
+    "cells": {
+      "regular": 7,
+      "bold": 23
+    },
+    "cached_source_codes": [
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150
+    ],
+    "regular_font_full128_tiles_exact": true,
+    "bold_cache_bytes_exact": true,
+    "font_cache_address": "0x9690",
+    "hardware_font_bank_attributes_exact": true,
+    "overflow": 0
+  },
+  "diagnostic_overflow": {
+    "fixture": "26 distinct bold letters in bounded private RAM text",
+    "overflow_falls_back_regular": true,
+    "existing_23_glyph_bytes_unchanged": true,
+    "native_rgb555_pixels_exact": {
+      "phase": "diagnostic_overflow_preserves_existing_name_pixels",
+      "native_rgb555_glyph_pixels_exact": true,
+      "cells": {
+        "regular": 7,
+        "bold": 23
+      },
+      "cached_source_codes": [
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150
+      ],
+      "regular_font_full128_tiles_exact": true,
+      "bold_cache_bytes_exact": true,
+      "font_cache_address": "0x9690",
+      "hardware_font_bank_attributes_exact": true,
+      "overflow": 1
+    }
+  },
+  "diagnostic_regular_over_bold_clearing": {
+    "phase": "diagnostic_regular_clears_old_bold_cells",
+    "native_rgb555_glyph_pixels_exact": true,
+    "cells": {
+      "regular": 26,
+      "bold": 0
+    },
+    "cached_source_codes": [],
+    "regular_font_full128_tiles_exact": true,
+    "bold_cache_bytes_exact": true,
+    "font_cache_address": "0x9690",
+    "hardware_font_bank_attributes_exact": true,
+    "overflow": 0
+  },
+  "diagnostic_method": "Temporary private RAM text/script buffers only, interpreted by native code. No CPU calls substituted, no user save files read."
+}

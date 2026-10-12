@@ -16,6 +16,7 @@ Get2bppOptionalHDMA: ; unreferenced
 	jp Get2bpp
 
 _LoadStandardFont::
+	farcall PeonResetTextStyle
 	ld de, Font
 	ld hl, vTiles1
 	lb bc, BANK(Font), 128 ; 'A' to '9'

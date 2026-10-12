@@ -1,6 +1,18 @@
 # Peon of Warcraft — Durotar prototype
 
-[Latest playable ROM — v0.2.5](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5.zip) · [Transparent PNGs, final-ROM captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5_assets.zip) · [Play, save transfer and limits](docs/V0_2_5_ENVIRONMENT.md)
+[Latest playable ROM — v0.2.6](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6.zip) · [Transparent PNGs, captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6_assets.zip) · [Changes, save transfer and verification](docs/V0_2_6_VISUAL_POLISH.md)
+
+[Browser player v0.2.6](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.6/peon_of_warcraft_v0_2_6_player.zip) · [Browser controls and web hosting](docs/BROWSER_PLAYER_V026.md)
+
+The visual pass adds distinct low-level Warrior/Warlock graphics, a smaller
+world imp, larger battle companions, animated Firebolt and purple Shadow Bolt,
+clearer native entrances and a revised Horde emblem. Normal text is light;
+person names alone use heavier glyphs. It fixes name/palette corruption while
+typing, scrolling, casting and returning from menus. All three class routes,
+doors, browser play and genuine v0.2.5 save upgrades are checked on the exact
+delivered ROM. Physical Chromatic/DevDay validation remains outstanding.
+
+[Previous ROM — v0.2.5](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5.zip) · [v0.2.5 art/gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5_assets.zip) · [v0.2.5 instructions](docs/V0_2_5_ENVIRONMENT.md)
 
 [Browser player download — same v0.2.5 ROM](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.5/peon_of_warcraft_v0_2_5_player.zip) · [Browser controls, save files and web hosting](docs/BROWSER_PLAYER_V025.md). The self-contained reader adds keyboard/touch controls, audio and save import/export; its native ROM is unchanged.
 

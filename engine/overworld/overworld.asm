@@ -196,8 +196,8 @@ GetSprite:
 	ld a, l
 	cp PEON_SPRITE
 	jr nz, .size_ready
-; The peon's 16 idle tiles exceed the one-byte size-in-bytes field.
-	ld c, 16
+; Resolve the existing player type from saved class flags on every load.
+	farcall PeonResolvePlayerWorldGraphics
 .size_ready
 	ld a, h
 	ret

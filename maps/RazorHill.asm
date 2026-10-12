@@ -142,7 +142,7 @@ RazorHillJarkScript:
 	db "CANCEL@"
 
 RazorHillGarthokText:
-	text "GAR'THOK"
+	text "<BOLD>GAR'THOK<REGULAR>"
 	para "<PLAYER>,"
 	line "Razor Hill guards"
 	cont "the Horde's road."
@@ -162,7 +162,7 @@ RazorHillGroskOfferText:
 	done
 
 RazorHillJarkGreetingText:
-	text "JARK"
+	text "<BOLD>JARK<REGULAR>"
 	line "General Goods"
 	para "<PLAYER>,"
 	line "supplies for the"
@@ -213,9 +213,9 @@ RazorHillJarkFullText:
 	done
 
 RazorHillOrgnilThanksText:
-	text "ORGNIL SOULSCAR"
+	text "<BOLD>ORGNIL SOULSCAR<REGULAR>"
 	para "<PLAYER>,"
-	line "Yarrog has fallen?"
+	line "<BOLD>Yarrog<REGULAR> has fallen?"
 	para "Good. The Burning"
 	line "Blade hides more"
 	cont "than one cell."
@@ -224,7 +224,7 @@ RazorHillOrgnilThanksText:
 	done
 
 RazorHillOrgnilText:
-	text "ORGNIL SOULSCAR"
+	text "<BOLD>ORGNIL SOULSCAR<REGULAR>"
 	para "<PLAYER>,"
 	line "the Burning Blade"
 	cont "lurks in Durotar."
@@ -236,14 +236,14 @@ RazorHillOrgnilText:
 	done
 
 RazorHillThotarText:
-	text "THOTAR"
+	text "<BOLD>THOTAR<REGULAR>"
 	line "Hunter Trainer"
 	para "<PLAYER>,"
 	line "study your prey."
 	para "A scorpid's sting"
 	line "is quicker than"
 	cont "a boar's charge."
-	para "Kento chose well."
+	para "<BOLD>Kento<REGULAR> chose well."
 	line "Bring him pride."
 	done
 
