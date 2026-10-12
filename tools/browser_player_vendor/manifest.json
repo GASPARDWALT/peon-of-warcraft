@@ -1,0 +1,49 @@
+{
+  "vendor": "binjgb",
+  "license": "MIT",
+  "upstream_repository": "https://github.com/binji/binjgb",
+  "retrieved_date": "2026-10-12",
+  "upstream_revision": "16621111ed0ee73bcc45c912a823bcebedcffc0f",
+  "files": [
+    {
+      "name": "binjgb.js",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.js",
+      "bytes": 13640,
+      "sha256": "a68e5854b5d68339a34c0aa0b6dbeacd615ed316657ee17b63dafa5e00561b09",
+      "modified": false
+    },
+    {
+      "name": "binjgb.wasm",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.wasm",
+      "bytes": 88269,
+      "sha256": "52c165069441a09180b4bd63464318aa7b861b1d36e0d05e8047b48619fd2f0b",
+      "modified": false
+    },
+    {
+      "name": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/LICENSE",
+      "bytes": 1053,
+      "sha256": "5a7b61a51a5efb789721b3480b502f324094911aeca46937956c561b52638009",
+      "modified": false
+    }
+  ],
+  "proof_rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "proof_report": "references/generated/browser_player_v025/core/validation.json",
+  "offline_instantiation": "Binjgb({wasmBinary: new Uint8Array(wasmBytes)}) avoids external WASM fetch.",
+  "rtc_model": "MBC3 RTC implemented; advances with emulated CPU ticks, pauses when emulator is stopped or closed. Raw battery excludes RTC; full checkpoints preserve it.",
+  "battery_bytes": 32768,
+  "native_full_checkpoint_bytes": 199608,
+  "physical_modretro_programming": false,
+  "native_rom_modified": false,
+  "source_tree_verified_matches_vendored_binary_hashes": true,
+  "ownership_contract": {
+    "rom": "emulator_new_simple transfers allocated ROM storage to Emulator; emulator_delete frees it. Never free the same ROM pointer again. Failed emulator_new also deletes its owned ROM.",
+    "file_data": "file_data_delete frees the pointed data and zeroes fields; free the heap FileData descriptor separately with _free(fd).",
+    "joypad": "joypad_new descriptor is released with joypad_delete."
+  },
+  "source_ownership_functions": {
+    "rom": "https://github.com/binji/binjgb/blob/16621111ed0ee73bcc45c912a823bcebedcffc0f/src/emulator.c#L5114",
+    "file_data": "https://github.com/binji/binjgb/blob/16621111ed0ee73bcc45c912a823bcebedcffc0f/src/common.c#L78",
+    "file_data_allocations": "https://github.com/binji/binjgb/blob/16621111ed0ee73bcc45c912a823bcebedcffc0f/src/emscripten/wrapper.c#L174"
+  }
+}

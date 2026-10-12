@@ -1,0 +1,108 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "html_sha256": "8251104f1a2ca824e078e45d5f4a718a47abdf40de94ec0f00f122c3f2c23dec",
+  "method": "Self-contained HTML served by an owned localhost HTTP server to managed Chromium, exact embedded v0.2.5 ROM, ordinary emulated controller buttons and bounded native frame advancement. UI keyboard/touch inputs checked separately in real browser time.",
+  "native_ram_edits": false,
+  "physical_chromatic_verified": false,
+  "devday_flash_verified": false,
+  "modretro_plugin_preview_used": false,
+  "external_browser_launched_for_user": false,
+  "in_app_browser_display_verified": false,
+  "test_origin": "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html",
+  "file_url_open_verified": false,
+  "managed_browser_file_url_limitation": "Managed Chromium denies file:// navigation (ERR_BLOCKED_BY_ADMINISTRATOR); policy explicitly permits HTTP(S). Tests use an allowed owned localhost origin.",
+  "normal_intro": {
+    "master_selected": "Shaman",
+    "native_name": "P\u00e9on ABCDE",
+    "map": "The Den",
+    "passed": true
+  },
+  "normal_battle": {
+    "native_battle_won": true,
+    "permanent_defeated_flag": true,
+    "battle_frame_captured": true,
+    "remaining_hp": 12
+  },
+  "native_game_save": {
+    "export_bytes": 32768,
+    "export_sha256": "5e1af5d668953823db0c1f84458f088794efe57e6ad0da2993de1d10bbe58563",
+    "native_game_menu_used": true,
+    "passed": true
+  },
+  "visible_exports": {
+    "battery_filename": "peon_of_warcraft_v0_2_5.sav",
+    "battery_byte_exact": true,
+    "session_filename": "peon_of_warcraft_v0_2_5_session.json",
+    "session_matches_exact_rom": true,
+    "passed": true
+  },
+  "browser_checkpoint_reload": {
+    "same_browser_context": true,
+    "session_snapshot_restored": true,
+    "complete_character_record_equal": true,
+    "passed": true
+  },
+  "normal_controller_frames": 13278,
+  "ordinary_button_input_count": 153,
+  "native_battery_cold_continue": {
+    "new_browser_context": true,
+    "browser_snapshot_loaded": false,
+    "complete_saved_record_equal": true,
+    "passed": true
+  },
+  "browser_audio": {
+    "started": 9,
+    "sample_count": 78336,
+    "nonzero_count": 47396,
+    "context_states": [
+      "running"
+    ],
+    "actual_native_samples": true,
+    "human_listening_verified": false,
+    "passed": true
+  },
+  "pause_resume": {
+    "paused_native_frames_unchanged": true,
+    "resume_native_frames_advance": true,
+    "passed": true
+  },
+  "visible_keyboard": {
+    "arrow_keydown": true,
+    "keyup_releases": true,
+    "blur_pauses_and_releases_all": true,
+    "passed": true
+  },
+  "sound_preference": {
+    "visible_toggle": true,
+    "mute_persists_across_reload": true,
+    "passed": true
+  },
+  "self_contained": {
+    "local_document_http_requests": [
+      "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html",
+      "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html",
+      "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html",
+      "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html",
+      "http://localhost:36011/peon_of_warcraft_v0_2_5_player.html"
+    ],
+    "external_http_requests": [],
+    "javascript_errors": [],
+    "embedded_rom_js_wasm": true,
+    "passed": true
+  },
+  "responsive_ui": {
+    "desktop_width": 1280,
+    "phone_width": 390,
+    "horizontal_overflow": false,
+    "phone_touch_start": true,
+    "native_character_menu_opened_by_touch": true,
+    "touch_release_not_sticky": true,
+    "touch_cancel_releases": true,
+    "expanded_license_no_overflow": true,
+    "narrow_phone_width": 320,
+    "passed": true
+  },
+  "duration_seconds": 19.02,
+  "status": "PASS",
+  "passed": true
+}

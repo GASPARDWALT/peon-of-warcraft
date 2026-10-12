@@ -2,6 +2,8 @@
 
 [Latest playable ROM — v0.2.5](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5.zip) · [Transparent PNGs, final-ROM captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5_assets.zip) · [Play, save transfer and limits](docs/V0_2_5_ENVIRONMENT.md)
 
+[Browser player download — same v0.2.5 ROM](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.5/peon_of_warcraft_v0_2_5_player.zip) · [Browser controls, save files and web hosting](docs/BROWSER_PLAYER_V025.md). The self-contained reader adds keyboard/touch controls, audio and save import/export; its native ROM is unchanged.
+
 The Valley now has seven connected areas following the annotated geography:
 Den east to the Valley, north to the crossroads, west to Hana'zua, south to
 Sarkoth, north to the cave approach, and east through the fortified exit.

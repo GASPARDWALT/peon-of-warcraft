@@ -1,0 +1,31 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "passed": true,
+  "before_rtc_registers": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "after_rtc_registers": [
+    3,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rtc_elapsed_seconds": 3,
+  "wait_seconds": 3,
+  "rtc_file_bytes": 10,
+  "battery_file_bytes": 32768,
+  "cold_new_emulator_instance": true,
+  "emulator_states_loaded": false,
+  "method": "Isolated mapper diagnostic: directMBC3 bank/latch writes only to read fiveRTCregisters; .ram/.rtc persisted normally, emulator stopped; second emulator opened after3real seconds without running CPU during wait.",
+  "limitations": [
+    "Directmapperbank/latchwrites are diagnostic observations, not ordinary game progression.",
+    "No physical cartridge was connected or programmed.",
+    "Only continuity/persistence tested; not halt, overflow, longterm accuracy or day-night gameplay."
+  ],
+  "private_test_directory": "/tmp/peon-v025-rtc-16l5sqrz"
+}

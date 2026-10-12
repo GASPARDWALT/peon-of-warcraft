@@ -1,0 +1,151 @@
+{
+  "passed": true,
+  "core": "binjgb",
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "rom_bytes": 2097152,
+  "core_accepts_actual_rom": true,
+  "rtc_registers_before": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "rtc_registers_after_3_emulated_seconds": [
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "cold_new_instance_initial_rtc": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "restored_full_state_rtc": [
+    2,
+    0,
+    0,
+    0,
+    0
+  ],
+  "restored_rtc_after_2_seconds": [
+    4,
+    0,
+    0,
+    0,
+    0
+  ],
+  "battery_export_bytes": 32768,
+  "full_state_export_bytes": 199608,
+  "frame_rgba_bytes": 92160,
+  "native_title_distinct_rgba_colors": 32,
+  "full_32768_byte_battery_import_export_equal": true,
+  "diagnostic_battery_pattern_sha256": "27aa29621558c2b5c417d54f214544e12ab8e6fd7f5928bea127192a68b6d337",
+  "four_native_sram_bank_checks": [
+    {
+      "bank": 0,
+      "offset": 0,
+      "value": 29
+    },
+    {
+      "bank": 0,
+      "offset": 73,
+      "value": 246
+    },
+    {
+      "bank": 0,
+      "offset": 8191,
+      "value": 105
+    },
+    {
+      "bank": 1,
+      "offset": 0,
+      "value": 125
+    },
+    {
+      "bank": 1,
+      "offset": 73,
+      "value": 86
+    },
+    {
+      "bank": 1,
+      "offset": 8191,
+      "value": 201
+    },
+    {
+      "bank": 2,
+      "offset": 0,
+      "value": 221
+    },
+    {
+      "bank": 2,
+      "offset": 73,
+      "value": 182
+    },
+    {
+      "bank": 2,
+      "offset": 8191,
+      "value": 41
+    },
+    {
+      "bank": 3,
+      "offset": 0,
+      "value": 61
+    },
+    {
+      "bank": 3,
+      "offset": 73,
+      "value": 22
+    },
+    {
+      "bank": 3,
+      "offset": 8191,
+      "value": 137
+    }
+  ],
+  "rtc_full_checkpoint_preserved": true,
+  "frame_nonzero_byte_count": 92160,
+  "method": "Diagnostic direct MBC register reads/writes, actual unmodified ROM execution in WASM core; no actual browser yet.",
+  "limitations": [
+    "RTC advances from emulated ticks, not wall clock while closed.",
+    "RTC is preserved in full emulator state, not raw 32768-byte SRAM export.",
+    "Diagnostic mapper observations and explicit32768-byte battery fixture only on private isolated instance; not ordinarygame save proof.",
+    "No hardware or user saves involved."
+  ],
+  "core_runtime": "WebAssembly instantiated in Node.js; this is core-level proof, not browser interface testing.",
+  "actual_browser_interface_tested": false,
+  "vendor_files": [
+    {
+      "name": "binjgb.js",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.js",
+      "bytes": 13640,
+      "sha256": "a68e5854b5d68339a34c0aa0b6dbeacd615ed316657ee17b63dafa5e00561b09",
+      "modified": false
+    },
+    {
+      "name": "binjgb.wasm",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.wasm",
+      "bytes": 88269,
+      "sha256": "52c165069441a09180b4bd63464318aa7b861b1d36e0d05e8047b48619fd2f0b",
+      "modified": false
+    },
+    {
+      "name": "LICENSE",
+      "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/LICENSE",
+      "bytes": 1053,
+      "sha256": "5a7b61a51a5efb789721b3480b502f324094911aeca46937956c561b52638009",
+      "modified": false
+    }
+  ],
+  "native_title_capture": "peon_v025_binjgb_title_native.png",
+  "native_title_nearest_4x_capture": "peon_v025_binjgb_title_4x.png",
+  "rom_unchanged": true,
+  "browser_storage_not_tested_here": true,
+  "checkpoint_and_battery_are_distinct": true,
+  "ownership_contract_validated": "Emulator alone owns ROM allocation; FileData data and descriptor freed separately.",
+  "reset_validation": "reset_lifecycle_validation.json"
+}
