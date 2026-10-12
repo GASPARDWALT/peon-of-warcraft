@@ -1,0 +1,98 @@
+{
+  "version": "0.2.5",
+  "rom_filename": "peon_of_warcraft_v0_2_5.gbc",
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "rom_bytes": 2097152,
+  "native_header": {
+    "cgb_only": true,
+    "mapper": "MBC3+RTC+RAM+battery",
+    "ram_bytes": 32768
+  },
+  "required_passed_native_reports_sha256": {
+    "source_validation.json": "c6de7f2b933fb03d0d495451b83b5bbd812b5a0c3a371a95c42fe78b8c978841",
+    "runtime/validation.json": "ce32225a49239113f0cf00403f24dbe09a20c53980cbba143a8c76ef9edbbad6",
+    "quests/normal_validation.json": "450851103c7dc4bb3a077358c3f9f30e98911274e6c420e919157706d62863ea",
+    "atlas_overview/runtime/validation.json": "c7968e239076954603dfc3556f9ec67e00bf302f3a8c14dcbae696692470e77f",
+    "ui/validation.json": "e427cf6200eef8b59a1150515cf52a6686e350ea0719bcac430af4e310d19620",
+    "save_upgrade/validation.json": "8f8fa4bc86412d17aa0ffde97ef2e211cae771a6a277982cd54178b970a5e67b",
+    "classes/routes_validation.json": "347bdcbf5529a7f4b815506b0c2da69d41b865119afcf9e9a106ea90a7039809",
+    "classes/trainer_gates_validation.json": "b10e264cc1dd8fc9cf2866d117b978e957dcfb4d5cc0abb6eadd2b28cfb1a11e",
+    "classes/spells/validation.json": "02738532b21dd1eb573b8e52130177049a30cd25296ddf0e18f4574fc60aa830",
+    "potions/source_validation.json": "7cedbcf88efcd2023164ae5a54d940f410e3183454cd0c2440dd6be7bb7713c2",
+    "potions/normal_validation.json": "065d5290374f7f3176605b47729e459e9298176974c178bf888b2c43e3ff8c4a",
+    "potions/diagnostic_validation.json": "6c4b7b6123817d5cba6926715451d486c1b105f0cf8958a554ce77a61998182d",
+    "potions/all_validation.json": "5e59d4a70aea331a877619cb6fe2028483b8b35e18a6dc32feaceaa46b0a88ed",
+    "loot/validation.json": "503bb8f74cb915b42a57058dc148e0225aad518cbfd39fa0820eecc4d45b8812",
+    "pet/validation.json": "0d6285208fe0c31fc0f35e6e92bee9df4bfba5ae70216767c7ad9e3de337e192",
+    "font/native_validation/validation.json": "5a66f73559f178649f10db0ab30b8b2c8c13b564dab082d0ed104532af76ec83"
+  },
+  "required_static_reports_sha256": {
+    "manifest.json": "e8f7ce919c09d3e90d5756eddf156164660c9fed379ae531db155cd0c2275c37",
+    "static_art_validation.json": "f1b530b649316fc520ae96f5a658494959acf9c88870b927504312f104c45a81",
+    "zone_layout/validation.json": "a1e1eca2ade03630a30b18fb13c732951d0c73d5a9342d9c25c2caef81065a45",
+    "zone_layout/metadata.json": "35f64cd0e986c33074c0b7f7227a129bd189c7511ce396338e96361a4a4993fe",
+    "fire_animation.json": "e847abd90d4e775200d6fa9296b854e950754f28b57e1a8af9211c9ad650df90",
+    "atlas_overview/geometry_manifest.json": "5e252e8e82dd5097ab2f1dc6346fe028024ab17c5e6a557f6bce602d929f3587",
+    "font/font_source_validation.json": "58d1e45dfd099f3f17f454af095154d4c66a785a182f2c94c7a41cc5d3406518",
+    "classes/spells_source_validation.json": "44f4149f1e5a6fa5363f2cb4036957260bb617026b154102bef9691dcbc7738c",
+    "classes/spell_manifest.json": "83f7127c3af6f662b62027485328d03a3967b6ef0e2ac46dda35d86a644ff77e",
+    "potions/assets/manifest.json": "91ceb92bfa7a8e36f4388b1805e050fd7bd3ad6dcdd3d6f506e5c671de6cc187",
+    "pet/assets/manifest.json": "df3bf24fcc575d2cf69fb6a865bd4feb57a4eb7ea0ffb76edd7eb2b6dfceb331"
+  },
+  "physical_chromatic_tested": false,
+  "gallery": "environment_v025/index.html",
+  "save_slots": 1,
+  "prepared_actions": 4,
+  "baseline_commit": "6d2a0be",
+  "historical_baseline_rom_sha256": "704022c22c441944d13e3ff65950a971e5c7ead614a1ff0e1bba476c340bea2d",
+  "seven_fixed_screens_implemented": false,
+  "seven_geographic_areas_implemented": true,
+  "native_sector_map_ids": [
+    14,
+    15,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "playable_classes": [
+    "Shaman",
+    "Warrior",
+    "Warlock"
+  ],
+  "real_mana_or_rage_pool": false,
+  "mana_is_prepared_spell_charges": true,
+  "warlock_imp": {
+    "world_follower": true,
+    "combat_damage_per_completed_round": 1,
+    "separate_health_or_commands": false
+  },
+  "mail_backend": false,
+  "mailbox_interactions": "local_empty_post",
+  "potion_drop_rate": "independent 1/6; prototype balance",
+  "native_standard_font": {
+    "glyph_count": 128,
+    "cell_size": [
+      8,
+      8
+    ]
+  },
+  "native_environment_metatiles": 47,
+  "native_background_slots": 192,
+  "animated_background_slots": 2,
+  "fire_phases": 3,
+  "normal_runtime_doors_checked": 9,
+  "normal_room_cold_restarts_checked": 4,
+  "original_transparent_art_directory": "environment_v025/props/",
+  "concept_is_native_rom_asset": false,
+  "archives_sha256": {
+    "peon_of_warcraft_v0_2_5.zip": "a78e333725e7f3ea1ff966e3c3ea72ffda7e674b5855eb70bdfae787f8c91b16",
+    "peon_of_warcraft_v0_2_5_assets.zip": "40e05eb5f6f2a19b15371120df7dc7b01054dfc4c0f86a3674e83da6b06637f1"
+  },
+  "gallery_local_links_checked": true,
+  "actual_browser_opened": false,
+  "gallery_cards": 109,
+  "assets_files": 1462,
+  "excluded_optional_stale_or_failed_reports": []
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "pure_palette_source": "tools/build_peon_environment_palettes.py",
+  "recomputed_native_patterns": 192,
+  "native_metatiles_match_recomputed_source": true,
+  "all192_tile_pixels_palette_bank_bits_match": true,
+  "fire_phase0_matches_reserved_native_tiles": true,
+  "fire_three_phases_match_drawing": true,
+  "native_inputs": {
+    "gfx/tilesets/peon.png": {
+      "size": 2849,
+      "sha256": "8eaf7fdbdaab0b33d61a2a8572c87a9c6af6f940acd1c454d6c2421cbaa93bca"
+    },
+    "gfx/tilesets/peon_palette_map.bin": {
+      "size": 128,
+      "sha256": "bac92394bc0f45254d8d7c0517841cff72ad086d157129bd464f0ae4bde9abe5"
+    },
+    "data/tilesets/peon_metatiles.bin": {
+      "size": 752,
+      "sha256": "99d627482f3bd5de2fdc739d2a2057b99e155dbfacc3ad2670fa1a47a2ed3e79"
+    },
+    "gfx/tilesets/peon_environment_fire.bin": {
+      "size": 96,
+      "sha256": "a8623b0ac352e1ba0817055b6ff1ff70d6cfef14aacb397fea3ecb80b3265962"
+    }
+  }
+}

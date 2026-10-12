@@ -226,6 +226,14 @@ gfx/pokemon/girafarig/front.animated.tilemap: gfx/pokemon/girafarig/front.2bpp g
 gfx/peon_player_battle/back_frames.2bpp: tools/build_peon_player_combat.py gfx/pokemon/machop/back.png gfx/pokemon/machop/normal.gbcpal
 	python3 tools/build_peon_player_combat.py
 
+# Preserve authored palette indexes when starting from a clean checkout.
+# Both native flasks are produced together, including their transparent PNGs.
+gfx/pack/peon_item_icons/minor_healing_potion.2bpp gfx/pack/peon_item_icons/minor_mana_potion.2bpp &: tools/build_peon_potion_assets.py
+	python3 tools/build_peon_potion_assets.py
+
+gfx/pack/peon_warlock_pet_battle.2bpp gfx/pack/peon_mailbox.2bpp &: tools/build_peon_pet_mail_assets.py
+	python3 tools/build_peon_pet_mail_assets.py
+
 gfx/pokemon/%/back.2bpp: RGBGFXFLAGS += --columns
 gfx/pokemon/%/back.2bpp: gfx/pokemon/%/back.png gfx/pokemon/%/normal.gbcpal
 	$(RGBGFX) $(RGBGFXFLAGS) --colors gbc:$(word 2,$^) -o $@ $<

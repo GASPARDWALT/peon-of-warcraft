@@ -1,0 +1,511 @@
+{
+  "baseline_commit": "6d2a0be",
+  "all_checks_passed": true,
+  "maps": {
+    "PeonOpening": {
+      "baseline_sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "current_sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 88,
+      "warp_count": 0,
+      "painted_path_block_count": 6,
+      "doors": []
+    },
+    "GrommashHold": {
+      "baseline_sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "current_sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 88,
+      "warp_count": 0,
+      "painted_path_block_count": 0,
+      "doors": []
+    },
+    "TheDen": {
+      "baseline_sha256": "46292d0404820595925694ecd3a571b76eed5f645485a184d30f225e65430770",
+      "current_sha256": "34c0b1f322324f03c7cd01f44f13a92ee9ea5ce117744ed984cf100cd5aa803a",
+      "changed_blocks": 20,
+      "added_path_blocks": [
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ]
+      ],
+      "retired_redundant_path_blocks": [
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 230,
+      "warp_count": 3,
+      "painted_path_block_count": 23,
+      "doors": [
+        {
+          "movement_xy": [
+            17,
+            5
+          ],
+          "block_id": 4,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              17,
+              6
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            5,
+            7
+          ],
+          "block_id": 11,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              5,
+              8
+            ]
+          ]
+        }
+      ]
+    },
+    "ValleyOfTrials": {
+      "baseline_sha256": "e4c3af2f2a0f7a0efbfc987abfb76babb10e209bf2dab559b3929fb9d82388cb",
+      "current_sha256": "4bf454e2e2e3cfc95f48fc361450f5ebf6a613da6989dabc93871055cdfcd8a9",
+      "changed_blocks": 20,
+      "added_path_blocks": [
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ]
+      ],
+      "retired_redundant_path_blocks": [
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          9,
+          7
+        ]
+      ],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 292,
+      "warp_count": 3,
+      "painted_path_block_count": 30,
+      "doors": []
+    },
+    "DurotarRoad": {
+      "baseline_sha256": "545dca1cdda0ee267d35acc0681588385b41ae1e76caae72da97cf45f7371f30",
+      "current_sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "changed_blocks": 5,
+      "added_path_blocks": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 288,
+      "warp_count": 3,
+      "painted_path_block_count": 25,
+      "doors": []
+    },
+    "SenjinVillage": {
+      "baseline_sha256": "472c7f06ede47866d743baabdac178698639f3bf114a12ab9bff98a81393c2d6",
+      "current_sha256": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+      "changed_blocks": 9,
+      "added_path_blocks": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 223,
+      "warp_count": 4,
+      "painted_path_block_count": 23,
+      "doors": [
+        {
+          "movement_xy": [
+            5,
+            5
+          ],
+          "block_id": 29,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            15,
+            5
+          ],
+          "block_id": 29,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              16,
+              5
+            ],
+            [
+              15,
+              6
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            17,
+            9
+          ],
+          "block_id": 29,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              17,
+              10
+            ]
+          ]
+        }
+      ]
+    },
+    "RazorHill": {
+      "baseline_sha256": "969e346f0a883e95537119d6018b5a7a372043a81f9e6fa14fe6e4949a135241",
+      "current_sha256": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+      "changed_blocks": 15,
+      "added_path_blocks": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 176,
+      "warp_count": 6,
+      "painted_path_block_count": 25,
+      "doors": [
+        {
+          "movement_xy": [
+            5,
+            5
+          ],
+          "block_id": 4,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            17,
+            5
+          ],
+          "block_id": 4,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              18,
+              5
+            ],
+            [
+              17,
+              6
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            17,
+            13
+          ],
+          "block_id": 4,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              18,
+              13
+            ],
+            [
+              17,
+              14
+            ]
+          ]
+        },
+        {
+          "movement_xy": [
+            5,
+            15
+          ],
+          "block_id": 4,
+          "local_open_quadrant": "bottom-right",
+          "reachable_approaches": [
+            [
+              6,
+              15
+            ]
+          ]
+        }
+      ]
+    },
+    "OrgrimmarGate": {
+      "baseline_sha256": "18cc930954aadbbda0891b8d32b73809c7aaf7733f2562c3930308f9a8e3a37b",
+      "current_sha256": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+      "changed_blocks": 1,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 168,
+      "warp_count": 1,
+      "painted_path_block_count": 9,
+      "doors": []
+    },
+    "BurningBladeCavern": {
+      "baseline_sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "current_sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 136,
+      "warp_count": 1,
+      "painted_path_block_count": 10,
+      "doors": []
+    },
+    "PeonTrollHut": {
+      "baseline_sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "current_sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 44,
+      "warp_count": 1,
+      "painted_path_block_count": 1,
+      "doors": []
+    },
+    "PeonOrcHut": {
+      "baseline_sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "current_sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 44,
+      "warp_count": 1,
+      "painted_path_block_count": 1,
+      "doors": []
+    },
+    "PeonOrcInn": {
+      "baseline_sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "current_sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 28,
+      "warp_count": 1,
+      "painted_path_block_count": 1,
+      "doors": []
+    },
+    "PeonTrollInn": {
+      "baseline_sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "current_sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "changed_blocks": 0,
+      "added_path_blocks": [],
+      "retired_redundant_path_blocks": [],
+      "old_movement_collisions_exactly_preserved": true,
+      "event_coordinates_arguments_and_actor_order_preserved": true,
+      "reachable_movement_cells": 28,
+      "warp_count": 1,
+      "painted_path_block_count": 1,
+      "doors": []
+    }
+  },
+  "total_changed_blocks": 70,
+  "total_added_path_blocks": 31,
+  "total_retired_redundant_path_blocks": 10,
+  "nine_real_hut_door_quadrants_preserved": true,
+  "thirteen_distinct_map_arrays_preserved": true,
+  "valley_cave_warp_movement_xy": [
+    24,
+    4
+  ],
+  "valley_exit_warp_movement_xy": [
+    28,
+    12
+  ],
+  "orgrimmar_fake_cave_removed": true,
+  "seven_fixed_screens_implemented": false,
+  "rendered_images_are_compiler_reconstructions": true
+}

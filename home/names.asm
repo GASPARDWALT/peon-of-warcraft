@@ -264,7 +264,12 @@ GetMoveName::
 	ld a, [wNamedObjectIndex] ; move id
 	ld [wCurSpecies], a
 
+	; Retain the Shaman's established name while other classes use their
+	; basic weapon, without adding or changing any saved move index.
+	farcall PeonGetBasicMeleeName
+	jr c, .named
 	call GetName
+.named
 	ld de, wStringBuffer1
 
 	pop hl

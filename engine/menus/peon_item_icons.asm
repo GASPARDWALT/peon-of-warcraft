@@ -76,11 +76,78 @@ PeonDrawInventoryItemIconFromC::
 	pop af
 	ret
 
+; Class weapon shown in the backpack's first equipment cell. Palette 6 keeps
+; it independent of the hearthstone/selected-item icon on palette 5. Call once
+; after refreshing menu-skin attributes; Shaman retains the original mace art.
+PeonLoadClassBagWeaponIcon::
+	push af
+	push bc
+	push de
+	push hl
+	ldh a, [rVBK]
+	push af
+	ldh a, [hCGB]
+	and a
+	jr z, .Done
+	ld de, EVENT_PEON_WARRIOR
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ld de, PeonItemIconWarriorAxeGFX
+	ld hl, PeonItemIconWarriorAxePalette
+	jr nz, .Load
+	ld de, EVENT_PEON_WARLOCK
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .Done
+	ld de, PeonItemIconMageStaffGFX
+	ld hl, PeonItemIconMageStaffPalette
+.Load
+	push hl
+	xor a
+	ldh [rVBK], a
+	ld hl, vTiles2 tile $40
+	lb bc, BANK(PeonItemIconWarriorAxeGFX), 4
+	call Get2bpp
+	pop hl
+	ld de, wBGPals1 palette 6
+	ld bc, 1 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	hlcoord 2, 6, wAttrmap
+	ld [hl], 6
+	inc hl
+	ld [hl], 6
+	hlcoord 2, 7, wAttrmap
+	ld [hl], 6
+	inc hl
+	ld [hl], 6
+	farcall ApplyPals
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+.Done
+	pop af
+	ldh [rVBK], a
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+
 PeonInventoryItemIconLookup:
 	db PEON_CAMP_BREAD
 	dw PeonItemIconCampBreadGFX, PeonItemIconCampBreadPalette
 	db POTION
 	dw PeonItemIconMinorHealingPotionGFX, PeonItemIconMinorHealingPotionPalette
+	db PEON_MINOR_MANA
+	dw PeonItemIconMinorManaPotionGFX, PeonItemIconMinorManaPotionPalette
+	db PEON_CRUDE_AXE
+	dw PeonItemIconWarriorAxeGFX, PeonItemIconWarriorAxePalette
+	db PEON_WORN_STAFF
+	dw PeonItemIconMageStaffGFX, PeonItemIconMageStaffPalette
 	db FRESH_WATER
 	dw PeonItemIconSpringWaterGFX, PeonItemIconSpringWaterPalette
 	db $fe
@@ -345,3 +412,10 @@ PeonItemIconCampBreadGFX:
 PeonItemIconCampBreadPalette:
 	INCLUDE "gfx/pack/peon_food/bread.pal"
 	assert @ - PeonItemIconCampBreadPalette == 1 palettes
+
+PeonItemIconMinorManaPotionGFX:
+	INCBIN "gfx/pack/peon_item_icons/minor_mana_potion.2bpp"
+	assert @ - PeonItemIconMinorManaPotionGFX == 4 * LEN_2BPP_TILE
+PeonItemIconMinorManaPotionPalette:
+	INCLUDE "gfx/pack/peon_item_icons/minor_mana_potion.pal"
+	assert @ - PeonItemIconMinorManaPotionPalette == 1 palettes

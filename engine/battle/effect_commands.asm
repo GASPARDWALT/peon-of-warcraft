@@ -3704,7 +3704,10 @@ BattleCommand_PoisonTarget:
 	call RefreshBattleHuds
 
 	ld hl, WasPoisonedText
-	call StdBattleTextbox
+	push hl ; farcall uses HL for its destination, not the original text
+	farcall PeonPrintClassPoisonText
+	pop hl
+	call nc, StdBattleTextbox
 
 	farcall UseHeldStatusHealingItem
 	ret
@@ -3773,7 +3776,10 @@ BattleCommand_Poison:
 
 	call .apply_poison
 	ld hl, WasPoisonedText
-	call StdBattleTextbox
+	push hl
+	farcall PeonPrintClassPoisonText
+	pop hl
+	call nc, StdBattleTextbox
 	jr .finished
 
 .toxic
@@ -3783,7 +3789,10 @@ BattleCommand_Poison:
 	call .apply_poison
 
 	ld hl, BadlyPoisonedText
-	call StdBattleTextbox
+	push hl
+	farcall PeonPrintClassPoisonText
+	pop hl
+	call nc, StdBattleTextbox
 
 .finished
 	farcall UseHeldStatusHealingItem
@@ -3815,6 +3824,14 @@ BattleCommand_Poison:
 	ret
 
 CheckIfTargetIsPoisonType:
+	push hl
+	farcall PeonClassDotKind
+	pop hl
+	jr nc, .native
+	ld a, 1
+	and a ; A class wound/curse is not chemical poison: report nonimmune.
+	ret
+.native
 	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a

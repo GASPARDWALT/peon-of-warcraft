@@ -1,18 +1,31 @@
-# Peon of Warcraft — playable Shaman chapter
+# Peon of Warcraft — Durotar prototype
 
-[Latest playable ROM — v0.2.4](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4.zip) · [Native captures, transparent art and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4_assets.zip) · [Installation, saves and limits](docs/V0_2_4_PLAYABLE.md)
+[Latest playable ROM — v0.2.5](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5.zip) · [Transparent PNGs, final-ROM captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.5/peon_of_warcraft_v0_2_5_assets.zip) · [Play, save transfer and limits](docs/V0_2_5_ENVIRONMENT.md)
 
-The current build adds four distinct Orc/Troll house and inn layouts, nine
-native dry trees, fixed menu frames and a fixed-size world face/health overlay.
-Mace Strike is unlimited; spell charges and trainer purchases are preserved.
-Vile Familiars and the Sarkoth report extend the quest chain, full-inventory
-rewards can be collected safely later, and vendors sell usable consumables.
-Continue refreshes updated terrain while retaining collected cacti. Native
-emulator routes, door returns, battery restarts and a previous-release save
-are verified against the packaged ROM hash. Physical Chromatic testing and
-the requested seven fixed Valley screens remain pending.
+The Valley now has seven connected areas following the annotated geography:
+Den east to the Valley, north to the crossroads, west to Hana'zua, south to
+Sarkoth, north to the cave approach, and east through the fortified exit.
+Old duplicate quest actors and the former cave entry are retired. All 47
+native decoration blocks are redrawn, building openings align with their
+real thresholds, fires animate and the fixed-cell font is easier to read.
+The earned atlas shows all seven sectors, discovery fog, the player and live
+quest objectives.
 
-![Actual v0.2.4 ROM: The Den and fixed-size player HUD](references/generated/deep_polish/hud/hud_den_vendor_camp_in_rom_4x.png)
+Shaman, Warrior and Warlock can start the chapter, learn their class skills
+and keep their kits/training through a battery restart. Healing/mana potions
+work in combat and vendors; finite enemies have a 1/6 potion-drop chance.
+A Warlock imp follows the player and adds a one-HP Firebolt after a completed
+combat round. Horde mailboxes are local empty-post interactions. Native
+routes, quests, doors, UI, font pixels, supplies, loot, pet behavior and an
+older-save upgrade are checked on the exact packaged ROM hash.
+
+The prototype retains four actions, spell charges rather than shared
+mana/rage, one real save and scrolling cameras. Full equipment progression,
+pet commands, mail services and physical Chromatic testing remain future work.
+
+![Actual v0.2.5 ROM: all seven Valley sectors discovered](references/generated/environment_v025/atlas_overview/runtime/normal_zone_7_all_seven_sectors_discovered_4x.png)
+
+[Previous v0.2.4 ROM](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4.zip) · [v0.2.4 art/gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.4/peon_of_warcraft_v0_2_4_assets.zip) · [v0.2.4 instructions](docs/V0_2_4_PLAYABLE.md)
 
 Earlier downloads remain available below.
 

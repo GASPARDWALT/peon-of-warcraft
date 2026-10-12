@@ -1,0 +1,3068 @@
+{
+  "all_checks_passed": true,
+  "baseline_commit": "6d2a0be",
+  "seven_geographic_areas_connected": true,
+  "five_compact_nodes_appended_after_map24": true,
+  "old_map_ids_and_dimensions_preserved": true,
+  "all_old_saved_walkable_cells_remain_walkable": true,
+  "all47_collision_rows_unchanged": true,
+  "duplicate_old_quest_npcs_and_hostile_triggers_retired": true,
+  "original_death_quest_and_reward_flags_retained": true,
+  "fixed_camera_not_implemented": true,
+  "maps": {
+    "PeonOpening": {
+      "map_id": 12,
+      "blocks": [
+        8,
+        6
+      ],
+      "movement_grid": [
+        16,
+        12
+      ],
+      "sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "baseline_sha256": "8894e7ad0062e75edb0d606fa93a403197644b22e2a8354b91903e50f1447b00",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 88,
+      "warps": [],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            8
+          ],
+          "sprite": "SPRITE_YOUNGSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonOpeningSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            8,
+            8
+          ],
+          "sprite": "SPRITE_RED",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonOpeningSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "GrommashHold": {
+      "map_id": 13,
+      "blocks": [
+        8,
+        6
+      ],
+      "movement_grid": [
+        16,
+        12
+      ],
+      "sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "baseline_sha256": "67d817dba2be448fe450c30516e6f4c8ce7140e07225a1425ce254b14cca6c28",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 88,
+      "warps": [],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            3
+          ],
+          "sprite": "SPRITE_OAK",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "GrommashHoldSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            4,
+            6
+          ],
+          "sprite": "SPRITE_ELDER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_BROWN",
+          "script": "GrommashHoldSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            8,
+            5
+          ],
+          "sprite": "SPRITE_BRUNO",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "GrommashHoldSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            12,
+            6
+          ],
+          "sprite": "SPRITE_MORTY",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_BLUE",
+          "script": "GrommashHoldSequence",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "TheDen": {
+      "map_id": 14,
+      "blocks": [
+        12,
+        10
+      ],
+      "movement_grid": [
+        24,
+        20
+      ],
+      "sha256": "86caac8cf076d6e0a02026a6f08f8259de79476d42dae5f593b8a446ba1a67cb",
+      "baseline_sha256": "46292d0404820595925694ecd3a571b76eed5f645485a184d30f225e65430770",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            8,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            2,
+            5
+          ],
+          "old_id": 19,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            3,
+            5
+          ],
+          "old_id": 18,
+          "new_id": 26
+        },
+        {
+          "block_xy": [
+            5,
+            5
+          ],
+          "old_id": 2,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            6,
+            5
+          ],
+          "old_id": 26,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            7,
+            5
+          ],
+          "old_id": 26,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "old_id": 26,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            2,
+            6
+          ],
+          "old_id": 38,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            3,
+            6
+          ],
+          "old_id": 38,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            4,
+            6
+          ],
+          "old_id": 23,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            5,
+            6
+          ],
+          "old_id": 25,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            6,
+            6
+          ],
+          "old_id": 25,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            7,
+            6
+          ],
+          "old_id": 25,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            8,
+            6
+          ],
+          "old_id": 25,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            9,
+            6
+          ],
+          "old_id": 24,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            0,
+            7
+          ],
+          "old_id": 1,
+          "new_id": 16
+        },
+        {
+          "block_xy": [
+            1,
+            7
+          ],
+          "old_id": 13,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            2,
+            7
+          ],
+          "old_id": 38,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            3,
+            7
+          ],
+          "old_id": 21,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            4,
+            7
+          ],
+          "old_id": 20,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            3,
+            8
+          ],
+          "old_id": 20,
+          "new_id": 38
+        }
+      ],
+      "opened_old_wall_quadrants": [
+        {
+          "block_xy": [
+            0,
+            7
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            0,
+            7
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            0,
+            7
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            0,
+            7
+          ],
+          "quadrant": 3
+        }
+      ],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 234,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            20,
+            10
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            17,
+            5
+          ],
+          "target_name": "PeonOrcInn",
+          "target_constant": "PEON_ORC_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            0,
+            14
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            9
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenQuestScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            10,
+            8
+          ],
+          "sprite": "SPRITE_PEON_QUEST_1",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "TheDenQuestScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            18,
+            12
+          ],
+          "sprite": "SPRITE_POKE_BALL",
+          "movement": "SPRITEMOVEDATA_WALK_LEFT_RIGHT",
+          "palette": "PAL_NPC_PINK",
+          "script": "TheDenBoarScript",
+          "event_flag": "EVENT_PEON_QUEST_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            6,
+            12
+          ],
+          "sprite": "SPRITE_ELDER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_BROWN",
+          "script": "TheDenKentoScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            19,
+            15
+          ],
+          "sprite": "SPRITE_PAPER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_RED",
+          "script": "TheDenScorpidScript",
+          "event_flag": "EVENT_PEON_SCORPID_DEFEATED",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            14,
+            9
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenDuoknaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            8,
+            15
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenForemanScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 8,
+          "xy": [
+            5,
+            16
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenLazyPeonScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 9,
+          "xy": [
+            8,
+            14
+          ],
+          "sprite": "SPRITE_PEON_QUEST_2",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "TheDenForemanScript",
+          "event_flag": "EVENT_PEON_LAZY_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 10,
+          "xy": [
+            6,
+            15
+          ],
+          "sprite": "SPRITE_POKE_BALL",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "TheDenNeutralBoarScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 11,
+          "xy": [
+            16,
+            6
+          ],
+          "sprite": "SPRITE_PEON_MAILBOX",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "PAL_NPC_BROWN",
+          "script": "TheDenMailboxScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 12,
+          "xy": [
+            3,
+            13
+          ],
+          "sprite": "SPRITE_BRUNO",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenWarriorMasterScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 13,
+          "xy": [
+            3,
+            16
+          ],
+          "sprite": "SPRITE_MORTY",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_BLUE",
+          "script": "TheDenWarlockMasterScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 14,
+          "xy": [
+            8,
+            6
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenProvisionerScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 15,
+          "xy": [
+            8,
+            7
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenCookScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": [
+        {
+          "xy": [
+            12,
+            7
+          ],
+          "arguments": "BGEVENT_READ, TheDenCampfireScript"
+        }
+      ]
+    },
+    "ValleyOfTrials": {
+      "map_id": 15,
+      "blocks": [
+        16,
+        12
+      ],
+      "movement_grid": [
+        32,
+        24
+      ],
+      "sha256": "4421782450917bbb3df6e7f8ce1f0ecacb29d69396ba2f60af91fcfa12974eec",
+      "baseline_sha256": "e4c3af2f2a0f7a0efbfc987abfb76babb10e209bf2dab559b3929fb9d82388cb",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            8,
+            0
+          ],
+          "old_id": 1,
+          "new_id": 16
+        },
+        {
+          "block_xy": [
+            8,
+            1
+          ],
+          "old_id": 1,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            12,
+            1
+          ],
+          "old_id": 15,
+          "new_id": 33
+        },
+        {
+          "block_xy": [
+            8,
+            2
+          ],
+          "old_id": 1,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            12,
+            2
+          ],
+          "old_id": 16,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            8,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            12,
+            3
+          ],
+          "old_id": 17,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            3,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 21
+        },
+        {
+          "block_xy": [
+            4,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 22
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "old_id": 37,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            12,
+            4
+          ],
+          "old_id": 17,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            3,
+            5
+          ],
+          "old_id": 38,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            4,
+            5
+          ],
+          "old_id": 2,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "old_id": 37,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            11,
+            5
+          ],
+          "old_id": 38,
+          "new_id": 21
+        },
+        {
+          "block_xy": [
+            12,
+            5
+          ],
+          "old_id": 17,
+          "new_id": 22
+        },
+        {
+          "block_xy": [
+            3,
+            6
+          ],
+          "old_id": 18,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            4,
+            6
+          ],
+          "old_id": 25,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            5,
+            6
+          ],
+          "old_id": 22,
+          "new_id": 26
+        },
+        {
+          "block_xy": [
+            6,
+            6
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            7,
+            6
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            8,
+            6
+          ],
+          "old_id": 38,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            9,
+            6
+          ],
+          "old_id": 21,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            11,
+            6
+          ],
+          "old_id": 18,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            4,
+            7
+          ],
+          "old_id": 38,
+          "new_id": 19
+        },
+        {
+          "block_xy": [
+            5,
+            7
+          ],
+          "old_id": 23,
+          "new_id": 20
+        },
+        {
+          "block_xy": [
+            6,
+            7
+          ],
+          "old_id": 18,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            7,
+            7
+          ],
+          "old_id": 18,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            8,
+            7
+          ],
+          "old_id": 18,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            9,
+            7
+          ],
+          "old_id": 20,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            5,
+            8
+          ],
+          "old_id": 17,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            5,
+            9
+          ],
+          "old_id": 19,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            6,
+            9
+          ],
+          "old_id": 22,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            6,
+            10
+          ],
+          "old_id": 19,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            7,
+            10
+          ],
+          "old_id": 18,
+          "new_id": 38
+        },
+        {
+          "block_xy": [
+            8,
+            10
+          ],
+          "old_id": 2,
+          "new_id": 38
+        }
+      ],
+      "opened_old_wall_quadrants": [
+        {
+          "block_xy": [
+            8,
+            0
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            8,
+            0
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            8,
+            0
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            8,
+            0
+          ],
+          "quadrant": 3
+        },
+        {
+          "block_xy": [
+            8,
+            1
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            8,
+            1
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            8,
+            1
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            8,
+            1
+          ],
+          "quadrant": 3
+        },
+        {
+          "block_xy": [
+            8,
+            2
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            8,
+            2
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            8,
+            2
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            8,
+            2
+          ],
+          "quadrant": 3
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            8,
+            4
+          ],
+          "quadrant": 3
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "quadrant": 0
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "quadrant": 1
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "quadrant": 2
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "quadrant": 3
+        }
+      ],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 320,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            12
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            28,
+            12
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            0
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "ValleyOfTrialsGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            10,
+            19
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "ValleyHanazuaScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 3,
+          "xy": [
+            6,
+            11
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "ValleyZureethaScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 4,
+          "xy": [
+            16,
+            20
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "ValleySarkothScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DEAD",
+          "masked_placeholder": true
+        },
+        {
+          "index": 5,
+          "xy": [
+            8,
+            9
+          ],
+          "sprite": "SPRITE_PEON_QUEST_1",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "ValleyOfTrialsGuideScript",
+          "event_flag": "EVENT_PEON_CACTUS_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            10,
+            18
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "ValleyHanazuaScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DONE",
+          "masked_placeholder": true
+        },
+        {
+          "index": 7,
+          "xy": [
+            6,
+            10
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "ValleyZureethaScript",
+          "event_flag": "EVENT_PEON_MEDALLION_DONE",
+          "masked_placeholder": true
+        },
+        {
+          "index": 8,
+          "xy": [
+            25,
+            6
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "ValleyCaveApproachImp1Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD",
+          "masked_placeholder": true
+        },
+        {
+          "index": 9,
+          "xy": [
+            27,
+            9
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "ValleyCaveApproachImp2Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD",
+          "masked_placeholder": true
+        }
+      ],
+      "bg_events": [
+        {
+          "xy": [
+            9,
+            17
+          ],
+          "arguments": "BGEVENT_READ, PeonCactus3"
+        },
+        {
+          "xy": [
+            23,
+            9
+          ],
+          "arguments": "BGEVENT_READ, PeonCactus2"
+        },
+        {
+          "xy": [
+            7,
+            7
+          ],
+          "arguments": "BGEVENT_READ, PeonCactus1"
+        }
+      ]
+    },
+    "DurotarRoad": {
+      "map_id": 16,
+      "blocks": [
+        12,
+        14
+      ],
+      "movement_grid": [
+        24,
+        28
+      ],
+      "sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "baseline_sha256": "545dca1cdda0ee267d35acc0681588385b41ae1e76caae72da97cf45f7371f30",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            4,
+            5
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            4,
+            6
+          ],
+          "old_id": 21,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            4,
+            9
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            5,
+            9
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            6,
+            9
+          ],
+          "old_id": 21,
+          "new_id": 26
+        }
+      ],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 288,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            14
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            12,
+            24
+          ],
+          "target_name": "SenjinVillage",
+          "target_constant": "SENJIN_VILLAGE",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            12,
+            4
+          ],
+          "target_name": "RazorHill",
+          "target_constant": "RAZOR_HILL",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_LINK_RECEPTIONIST",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "DurotarRoadGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            8,
+            18
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "DurotarRoadScoutScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            20
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "DurotarRoadPatrolScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            5
+          ],
+          "sprite": "PEON_SPRITE_TIGER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "DurotarTigerScript",
+          "event_flag": "EVENT_PEON_ROAD_TIGER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            18,
+            8
+          ],
+          "sprite": "PEON_SPRITE_RAPTOR",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarRaptorScript",
+          "event_flag": "EVENT_PEON_ROAD_RAPTOR_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            22
+          ],
+          "sprite": "PEON_SPRITE_HARPY",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarHarpyScript",
+          "event_flag": "EVENT_PEON_ROAD_HARPY_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            18,
+            23
+          ],
+          "sprite": "PEON_SPRITE_CRAWLER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "DurotarCrawlerScript",
+          "event_flag": "EVENT_PEON_COAST_CRAWLER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 8,
+          "xy": [
+            16,
+            16
+          ],
+          "sprite": "SPRITE_PAPER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarScorpidPackScript",
+          "event_flag": "EVENT_PEON_ROAD_SCORPID_PACK_DEAD",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "SenjinVillage": {
+      "map_id": 17,
+      "blocks": [
+        12,
+        10
+      ],
+      "movement_grid": [
+        24,
+        20
+      ],
+      "sha256": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+      "baseline_sha256": "472c7f06ede47866d743baabdac178698639f3bf114a12ab9bff98a81393c2d6",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            2,
+            3
+          ],
+          "old_id": 13,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            3,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            4,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            5,
+            3
+          ],
+          "old_id": 17,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            7,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            7,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            7,
+            5
+          ],
+          "old_id": 22,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            8,
+            5
+          ],
+          "old_id": 38,
+          "new_id": 22
+        },
+        {
+          "block_xy": [
+            8,
+            6
+          ],
+          "old_id": 2,
+          "new_id": 20
+        }
+      ],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 223,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            4
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            5
+          ],
+          "target_name": "PeonTrollHut",
+          "target_constant": "PEON_TROLL_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            15,
+            5
+          ],
+          "target_name": "PeonTrollInn",
+          "target_constant": "PEON_TROLL_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            17,
+            9
+          ],
+          "target_name": "PeonTrollHut",
+          "target_constant": "PEON_TROLL_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_SAGE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            6,
+            12
+          ],
+          "sprite": "SPRITE_SAGE",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageVornalScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            14,
+            10
+          ],
+          "sprite": "SPRITE_SAGE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageBomBayScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            16,
+            13
+          ],
+          "sprite": "SPRITE_CLERK",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageKwaiiScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            6,
+            16
+          ],
+          "sprite": "SPRITE_LINK_RECEPTIONIST",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageWatcherScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            14,
+            16
+          ],
+          "sprite": "SPRITE_CLERK",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "SenjinVillageVelrinScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            14,
+            6
+          ],
+          "sprite": "SPRITE_PEON_MAILBOX",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "PAL_NPC_BROWN",
+          "script": "SenjinVillageMailboxScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "RazorHill": {
+      "map_id": 18,
+      "blocks": [
+        12,
+        10
+      ],
+      "movement_grid": [
+        24,
+        20
+      ],
+      "sha256": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+      "baseline_sha256": "969e346f0a883e95537119d6018b5a7a372043a81f9e6fa14fe6e4949a135241",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            2,
+            3
+          ],
+          "old_id": 13,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            3,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 22
+        },
+        {
+          "block_xy": [
+            6,
+            3
+          ],
+          "old_id": 17,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            7,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 26
+        },
+        {
+          "block_xy": [
+            8,
+            3
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            3,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 17
+        },
+        {
+          "block_xy": [
+            6,
+            4
+          ],
+          "old_id": 17,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            7,
+            4
+          ],
+          "old_id": 38,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            3,
+            5
+          ],
+          "old_id": 2,
+          "new_id": 19
+        },
+        {
+          "block_xy": [
+            7,
+            5
+          ],
+          "old_id": 18,
+          "new_id": 25
+        },
+        {
+          "block_xy": [
+            3,
+            7
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            4,
+            7
+          ],
+          "old_id": 17,
+          "new_id": 24
+        },
+        {
+          "block_xy": [
+            6,
+            7
+          ],
+          "old_id": 17,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            7,
+            7
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            8,
+            7
+          ],
+          "old_id": 38,
+          "new_id": 2
+        }
+      ],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 176,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            12,
+            16
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 3,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            12,
+            4
+          ],
+          "target_name": "OrgrimmarGate",
+          "target_constant": "ORGRIMMAR_GATE",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            5
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            17,
+            5
+          ],
+          "target_name": "PeonOrcInn",
+          "target_constant": "PEON_ORC_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            17,
+            13
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            15
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            6,
+            12
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillGroskScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            10
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillJarkScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            8,
+            16
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillOrgnilScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            16,
+            16
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_UP",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillThotarScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            14,
+            8
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_WALK_LEFT_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "RazorHillGruntScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            16,
+            6
+          ],
+          "sprite": "SPRITE_PEON_MAILBOX",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "PAL_NPC_BROWN",
+          "script": "RazorHillMailboxScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "OrgrimmarGate": {
+      "map_id": 19,
+      "blocks": [
+        12,
+        10
+      ],
+      "movement_grid": [
+        24,
+        20
+      ],
+      "sha256": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+      "baseline_sha256": "18cc930954aadbbda0891b8d32b73809c7aaf7733f2562c3930308f9a8e3a37b",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            6,
+            2
+          ],
+          "old_id": 15,
+          "new_id": 33
+        }
+      ],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 168,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            12,
+            16
+          ],
+          "target_name": "RazorHill",
+          "target_constant": "RAZOR_HILL",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "OrgrimmarGateGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            10,
+            12
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "OrgrimmarGateWestGruntScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            14,
+            12
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "OrgrimmarGateEastGruntScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "BurningBladeCavern": {
+      "map_id": 20,
+      "blocks": [
+        10,
+        10
+      ],
+      "movement_grid": [
+        20,
+        20
+      ],
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "baseline_sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 136,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            16
+          ],
+          "target_name": "PeonCaveApproach",
+          "target_constant": "PEON_CAVE_APPROACH",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            12,
+            8
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeStrongImpScript",
+          "event_flag": "EVENT_PEON_CAVE_STRONG_IMP_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeCavernGuideScript",
+          "event_flag": "EVENT_PEON_CAVE_IMP_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            6
+          ],
+          "sprite": "PEON_SPRITE_FELSTALKER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeFelstalkerScript",
+          "event_flag": "EVENT_PEON_CAVE_FELSTALKER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            3
+          ],
+          "sprite": "PEON_SPRITE_CULTIST",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeCultistScript",
+          "event_flag": "EVENT_PEON_CAVE_CULTIST_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            14,
+            3
+          ],
+          "sprite": "PEON_SPRITE_YARROG",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeYarrogScript",
+          "event_flag": "EVENT_PEON_YARROG_DEAD",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonTrollHut": {
+      "map_id": 21,
+      "blocks": [
+        6,
+        5
+      ],
+      "movement_grid": [
+        12,
+        10
+      ],
+      "sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "baseline_sha256": "0007fe8ac8c80f8e803e11cd189c67b82f16a57fcbe3ed264fd1905992805071",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 44,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonTrollHut",
+          "target_constant": "PEON_TROLL_HUT",
+          "target_warp": -1,
+          "dynamic_room_return": true
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_SAGE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonTrollHutHealerScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonOrcHut": {
+      "map_id": 22,
+      "blocks": [
+        6,
+        5
+      ],
+      "movement_grid": [
+        12,
+        10
+      ],
+      "sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "baseline_sha256": "283fd048b583d3452763a99c7984cd3c33d8c6fe7cf56877305e0e41fe8e17be",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 44,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": -1,
+          "dynamic_room_return": true
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonOrcHutAttendantScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonOrcInn": {
+      "map_id": 23,
+      "blocks": [
+        6,
+        5
+      ],
+      "movement_grid": [
+        12,
+        10
+      ],
+      "sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "baseline_sha256": "0026984a6509e861ada8df96320e9ec4cdf3e61c05cd3d24f67a2d813df39189",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 28,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonOrcInn",
+          "target_constant": "PEON_ORC_INN",
+          "target_warp": -1,
+          "dynamic_room_return": true
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "PEON_SPRITE_INNKEEPER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonOrcInnkeeperScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": [
+        {
+          "xy": [
+            2,
+            3
+          ],
+          "arguments": "BGEVENT_READ, PeonOrcInnBedroll"
+        },
+        {
+          "xy": [
+            8,
+            4
+          ],
+          "arguments": "BGEVENT_READ, PeonOrcInnTable"
+        }
+      ]
+    },
+    "PeonTrollInn": {
+      "map_id": 24,
+      "blocks": [
+        6,
+        5
+      ],
+      "movement_grid": [
+        12,
+        10
+      ],
+      "sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "baseline_sha256": "aab06065cde3667d486ab2fbee23154af6daaee6fc4e0b736dd7e3412570c97c",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 28,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonTrollInn",
+          "target_constant": "PEON_TROLL_INN",
+          "target_warp": -1,
+          "dynamic_room_return": true
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_SAGE",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonTrollInnkeeperScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": [
+        {
+          "xy": [
+            2,
+            3
+          ],
+          "arguments": "BGEVENT_READ, PeonTrollInnBedroll"
+        },
+        {
+          "xy": [
+            8,
+            4
+          ],
+          "arguments": "BGEVENT_READ, PeonTrollInnTable"
+        }
+      ]
+    },
+    "PeonValleyCrossroads": {
+      "map_id": 25,
+      "blocks": [
+        5,
+        5
+      ],
+      "movement_grid": [
+        10,
+        10
+      ],
+      "sha256": "4b03ab4f227d194a534b85a6b661b51f9086c3fd3b2e46ea25d3b207db03a76a",
+      "baseline_sha256": null,
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 40,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 3,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonCaveApproach",
+          "target_constant": "PEON_CAVE_APPROACH",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 3,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_MORTY",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonCrossroadsZureethaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 5,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 7,
+          "xy": [
+            6,
+            3
+          ],
+          "sprite": "SPRITE_PEON_QUEST_3",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonCrossroadsZureethaScript",
+          "event_flag": "EVENT_PEON_MEDALLION_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 8,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 9,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonHanazuaCamp": {
+      "map_id": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "movement_grid": [
+        10,
+        10
+      ],
+      "sha256": "aa9685a7f7fb49ee5e6c08810485bebb5eeb528df94454b794ea17c866c2bfb0",
+      "baseline_sha256": null,
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 36,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 3,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            3,
+            4
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonCampHanazuaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 5,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 6,
+          "xy": [
+            3,
+            3
+          ],
+          "sprite": "SPRITE_PEON_QUEST_2",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonCampHanazuaScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 8,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 9,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonSarkothBasin": {
+      "map_id": 27,
+      "blocks": [
+        5,
+        5
+      ],
+      "movement_grid": [
+        10,
+        10
+      ],
+      "sha256": "39446182c64c045517eee118cf04379c9c348e12d4880490c4f8cff41d59ae4a",
+      "baseline_sha256": null,
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 32,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            7
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 4,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 4,
+          "xy": [
+            4,
+            4
+          ],
+          "sprite": "PEON_SPRITE_SARKOTH",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "PeonBasinSarkothScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 7,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 8,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 9,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonCaveApproach": {
+      "map_id": 28,
+      "blocks": [
+        5,
+        5
+      ],
+      "movement_grid": [
+        10,
+        10
+      ],
+      "sha256": "f7564f051efa369bb4b7ad9fbee3cb0c70929c651ed43ce52d275629cbe42e45",
+      "baseline_sha256": null,
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 28,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            2
+          ],
+          "target_name": "BurningBladeCavern",
+          "target_constant": "BURNING_BLADE_CAVERN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 5,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 7,
+          "xy": [
+            5,
+            7
+          ],
+          "sprite": "SPRITE_NONE",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonValleyPlaceholderScript",
+          "event_flag": "-1",
+          "masked_placeholder": true
+        },
+        {
+          "index": 8,
+          "xy": [
+            4,
+            5
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonApproachImp1Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 9,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonApproachImp2Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "PeonValleyExit": {
+      "map_id": 29,
+      "blocks": [
+        5,
+        5
+      ],
+      "movement_grid": [
+        10,
+        10
+      ],
+      "sha256": "b93c13b98975f8f342310b6cf00f1ac1d67a670e9c577275992c423138cab665",
+      "baseline_sha256": null,
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 32,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            6
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_UP",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonValleyExitGuardScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    }
+  }
+}

@@ -268,12 +268,12 @@ Move00Description:
 	db "?@"
 
 PoundDescription:
-	db   "Pounds with fore-"
-	next "legs or tail.@"
+	db   "A reusable basic"
+	next "melee strike.@"
 
 KarateChopDescription:
-	db   "Has a high criti-"
-	next "cal hit ratio.@"
+	db   "A simple weapon"
+	next "strike.@"
 
 DoubleslapDescription:
 	db   "A flurry of strong"
@@ -284,16 +284,16 @@ CometPunchDescription:
 	next "2-5 times.@"
 
 MegaPunchDescription:
-	db   "A powerful punch"
-	next "thrown very hard.@"
+	db   "A stronger weapon"
+	next "strike.@"
 
 PayDayDescription:
 	db   "Throws coins. Gets"
 	next "them back later.@"
 
 FirePunchDescription:
-	db   "A fiery punch. May"
-	next "cause a burn.@"
+	db   "Strong fire damage"
+	next "to one target.@"
 
 IcePunchDescription:
 	db   "An icy punch. May"
@@ -316,16 +316,16 @@ GuillotineDescription:
 	next "pincer attack.@"
 
 RazorWindDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+	db   "A wound that hurts"
+	next "more each turn.@"
 
 SwordsDanceDescription:
 	db   "Empowers your next"
 	next "physical strike.@"
 
 CutDescription:
-	db   "Cuts using claws,"
-	next "scythes, etc.@"
+	db   "Wounds the foe for"
+	next "ongoing damage.@"
 
 GustDescription:
 	db   "Whips up a strong"
@@ -364,8 +364,8 @@ DoubleKickDescription:
 	next "attack.@"
 
 MegaKickDescription:
-	db   "A powerful kicking"
-	next "attack.@"
+	db   "A powerful weapon"
+	next "finishing strike.@"
 
 JumpKickDescription:
 	db   "May miss, damaging"
@@ -376,8 +376,8 @@ RollingKickDescription:
 	next "kick.@"
 
 SandAttackDescription:
-	db   "Reduces accuracy"
-	next "by throwing sand.@"
+	db   "Fear lowers foe"
+	next "accuracy one step.@"
 
 HeadbuttDescription:
 	db   "An attack that may"
@@ -528,8 +528,8 @@ DrillPeckDescription:
 	next "ning-peck attack.@"
 
 SubmissionDescription:
-	db   "An attack that al-"
-	next "so hurts the user.@"
+	db   "A mighty weapon"
+	next "strike.@"
 
 LowKickDescription:
 	db   "An attack that may"
@@ -544,24 +544,24 @@ SeismicTossDescription:
 	next "equals damage HP.@"
 
 StrengthDescription:
-	db   "A powerful physi-"
-	next "cal attack.@"
+	db   "A heavy strike on"
+	next "one target.@"
 
 AbsorbDescription:
-	db   "Steals 1/2 of the"
-	next "damage inflicted.@"
+	db   "Heals for half the"
+	next "damage dealt.@"
 
 MegaDrainDescription:
-	db   "Steals 1/2 of the"
-	next "damage inflicted.@"
+	db   "Heals for half the"
+	next "damage dealt.@"
 
 LeechSeedDescription:
 	db   "Steals HP from the"
 	next "foe on every turn.@"
 
 GrowthDescription:
-	db   "Raises the SPCL."
-	next "ATK rating.@"
+	db   "Raises your attack"
+	next "by one stage.@"
 
 RazorLeafDescription:
 	db   "Has a high criti-"
@@ -572,8 +572,8 @@ SolarbeamDescription:
 	next "2nd turn: Attack@"
 
 PoisonpowderDescription:
-	db   "A move that may"
-	next "poison the foe.@"
+	db   "Curses the foe for"
+	next "ongoing damage.@"
 
 StunSporeDescription:
 	db   "A move that may"
@@ -588,16 +588,16 @@ PetalDanceDescription:
 	next "and confuses user.@"
 
 StringShotDescription:
-	db   "A move that lowers"
-	next "the foe's SPEED.@"
+	db   "Slows the foe by"
+	next "one speed stage.@"
 
 DragonRageDescription:
 	db   "Always inflicts"
 	next "40HP damage.@"
 
 FireSpinDescription:
-	db   "Traps foe in fire"
-	next "for 2-5 turns.@"
+	db   "Fire damage that"
+	next "burns the target.@"
 
 ThundershockDescription:
 	db   "An attack that may"
@@ -632,8 +632,8 @@ DigDescription:
 	next "2nd turn: Attack@"
 
 ToxicDescription:
-	db   "A poison move with"
-	next "increasing damage.@"
+	db   "A curse that hurts"
+	next "more each turn.@"
 
 ConfusionDescription:
 	db   "An attack that may"
@@ -668,16 +668,16 @@ TeleportDescription:
 	next "from battle.@"
 
 NightShadeDescription:
-	db   "The user's level"
-	next "equals damage HP.@"
+	db   "A stronger bolt of"
+	next "shadow damage.@"
 
 MimicDescription:
 	db   "Copies a move used"
 	next "by the foe.@"
 
 ScreechDescription:
-	db   "Sharply reduces"
-	next "the foe's DEFENSE.@"
+	db   "Lowers foe attack"
+	next "by two stages.@"
 
 DoubleTeamDescription:
 	db   "Heightens evasive-"
@@ -688,8 +688,8 @@ RecoverDescription:
 	next "restore half HP.@"
 
 HardenDescription:
-	db   "Raises the user's"
-	next "DEFENSE.@"
+	db   "Raises physical"
+	next "defense one stage.@"
 
 MinimizeDescription:
 	db   "Heightens evasive-"
@@ -712,8 +712,8 @@ DefenseCurlDescription:
 	next "user's DEFENSE.@"
 
 BarrierDescription:
-	db   "Sharply increases"
-	next "user's DEFENSE.@"
+	db   "Raises physical"
+	next "defense two steps.@"
 
 LightScreenDescription:
 	db   "Ups SPCL.DEF with"
@@ -756,8 +756,8 @@ LickDescription:
 	next "cause paralysis.@"
 
 SmogDescription:
-	db   "An attack that may"
-	next "poison the foe.@"
+	db   "Shadow damage that"
+	next "curses the target.@"
 
 SludgeDescription:
 	db   "An attack that may"
@@ -796,12 +796,12 @@ ConstrictDescription:
 	next "lower SPEED.@"
 
 AmnesiaDescription:
-	db   "Sharply raises the"
-	next "user's SPCL.DEF.@"
+	db   "Raises spell"
+	next "defense two steps.@"
 
 KinesisDescription:
-	db   "Reduces the foe's"
-	next "accuracy.@"
+	db   "Lowers foe attack"
+	next "by one stage.@"
 
 SoftboiledDescription:
 	db   "Restores HP by 1/2"
@@ -1252,8 +1252,8 @@ AncientpowerDescription:
 	next "raise all stats.@"
 
 ShadowBallDescription:
-	db   "An attack that may"
-	next "lower SPCL.DEF.@"
+	db   "A simple bolt of"
+	next "shadow damage.@"
 
 FutureSightDescription:
 	db   "An attack that"

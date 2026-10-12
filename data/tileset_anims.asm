@@ -248,7 +248,6 @@ TilesetRuinsOfAlphAnim:
 TilesetRadioTowerAnim:
 TilesetUndergroundAnim:
 TilesetBetaWordRoomAnim:
-TilesetPeonAnim:
 TilesetHoOhWordRoomAnim:
 TilesetKabutoWordRoomAnim:
 TilesetOmanyteWordRoomAnim:
@@ -257,4 +256,15 @@ TilesetAerodactylWordRoomAnim:
 	tileframe WaitTileAnimation
 	tileframe WaitTileAnimation
 	tileframe WaitTileAnimation
+	tileframe DoneTileAnimation
+
+TilesetPeonAnim:
+	; Two exclusive bank-0 flame tiles; no object slots or saved variables.
+	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $00
+	tileframe WaitTileAnimation
+	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $01
+	tileframe WaitTileAnimation
+	tileframe WaitTileAnimation
+	tileframe WaitTileAnimation
+	tileframe StandingTileFrame8
 	tileframe DoneTileAnimation

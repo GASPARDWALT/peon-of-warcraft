@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "checks": [
+    "251 move indices preserved",
+    "all13Shaman records/names unchanged",
+    "24class move names <=12tiles",
+    "24classdescriptions <=18tiles",
+    "no savedfield introduced",
+    "all6new animation scripts load each referenced object graphics family",
+    "custom GetMoveName path preserves BC/DE/HL",
+    "farcall status helper re-reads native status instead of using clobbered A",
+    "standard text HL saved/restored around all unhandled poison adapters"
+  ],
+  "class_move_records": 24,
+  "shaman_preserved_ids": [
+    1,
+    3,
+    9,
+    14,
+    52,
+    58,
+    84,
+    87,
+    96,
+    105,
+    114,
+    115,
+    126
+  ],
+  "compiled_runtime_validation_pending": true
+}

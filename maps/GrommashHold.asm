@@ -26,10 +26,27 @@ GrommashHoldSequence:
 	promptbutton
 	closetext
 	special PeonClassSelect
+	checkevent EVENT_PEON_WARRIOR
+	iftrue .WarriorMaster
+	checkevent EVENT_PEON_WARLOCK
+	iftrue .WarlockMaster
 	turnobject PLAYER, LEFT
 	setlasttalked GROMMASHHOLD_KENTO
 	opentext
 	writetext PeonKentoText
+	sjump .AskName
+.WarriorMaster:
+	turnobject PLAYER, UP
+	setlasttalked GROMMASHHOLD_WARRIOR
+	opentext
+	writetext PeonWarriorText
+	sjump .AskName
+.WarlockMaster:
+	turnobject PLAYER, RIGHT
+	setlasttalked GROMMASHHOLD_WARLOCK
+	opentext
+	writetext PeonWarlockText
+.AskName:
 	promptbutton
 	closetext
 	special PeonAskName
@@ -38,11 +55,30 @@ GrommashHoldSequence:
 	promptbutton
 	givepoke MACHOP, 2
 	special PeonInitializeShaman
+	checkevent EVENT_PEON_WARRIOR
+	iftrue .WarriorKit
+	checkevent EVENT_PEON_WARLOCK
+	iftrue .WarlockKit
 	giveitem ITEM_19
 	giveitem ITEM_2D
 	giveitem ITEM_32
 	giveitem ITEM_94
+	giveitem PEON_MINOR_MANA
 	writetext PeonKitText
+	sjump .Supplies
+.WarriorKit:
+	giveitem PEON_CRUDE_AXE
+	giveitem ITEM_2D
+	writetext PeonWarriorKitText
+	sjump .Supplies
+.WarlockKit:
+	giveitem PEON_WORN_STAFF
+	giveitem PEON_MINOR_MANA
+	writetext PeonWarlockKitText
+.Supplies:
+	promptbutton
+	giveitem POTION, 2
+	writetext PeonStartingSuppliesText
 	promptbutton
 	setevent EVENT_PEON_SHAMAN
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
@@ -63,7 +99,7 @@ GrommashHoldAlreadyTrainedText:
 	text "<PLAYER>,"
 	line "your training"
 	cont "continues."
-	para "Kento awaits you"
+	para "Your master waits"
 	line "at the Den."
 	done
 
@@ -95,7 +131,7 @@ PeonKentoText:
 	done
 PeonNamedText:
 	text "<PLAYER>,"
-	line "walk with spirits."
+	line "your path begins."
 	para "Your training"
 	line "starts"
 	line "in Durotar."
@@ -108,6 +144,49 @@ PeonKitText:
 	para "Earth Totem ready."
 	para "Learned"
 	line "LIGHTNING BOLT!"
+	para "Go to THE DEN."
+	line "Your first task"
+	cont "awaits you there."
+	done
+
+PeonWarriorText:
+	text "MoCMoc ZOGZOG:"
+	para "Strong hands, peon"
+	line "You will learn to"
+	cont "serve the Horde."
+	para "You are now my"
+	line "WARRIOR apprentice"
+	para "Tell me, peon:"
+	line "what is your name?"
+	done
+PeonWarlockText:
+	text "XASTHUR:"
+	para "Power has a price."
+	line "Will you pay it?"
+	para "You are now my"
+	line "WARLOCK apprentice"
+	para "Tell me, peon:"
+	line "what is your name?"
+	done
+PeonWarriorKitText:
+	text "Received CRUDE AXE"
+	line "and WOOD SHIELD!"
+	para "Learned"
+	line "WEAPON STRIKE!"
+	para "Learn HEROICSTRIKE"
+	line "at your master."
+	done
+PeonWarlockKitText:
+	text "Got a WORN STAFF"
+	line "and MANA POTION!"
+	para "Learned"
+	line "SHADOW BOLT!"
+	para "Train DRAIN LIFE"
+	line "at your master."
+	done
+PeonStartingSuppliesText:
+	text "Received two"
+	line "HEAL POTIONS!"
 	para "Go to THE DEN."
 	line "Your first task"
 	cont "awaits you there."

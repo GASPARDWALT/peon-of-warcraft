@@ -1,5 +1,17 @@
 # Valley of Trials: annotated layout contract
 
+## Latest geographic implementation
+
+The user's later directional clarification is sufficient to connect the
+areas now: `1 east 2`, `2 north 3`, `3 west 4`, `4 south 5`, `5 east 1`,
+`3 north 6`, and `2 east 7 east Durotar`. See
+[VALLEY_SEVEN_ZONE_LAYOUT_V025.md](VALLEY_SEVEN_ZONE_LAYOUT_V025.md) for the
+actual native graph, relocated NPCs and cave, save contract and verification.
+Five compact native maps append IDs25–29. The Den/old Valley dimensions stay
+stable, and fixed-screen camera migration is not claimed. The preparatory
+status and pending-drawing discussion below record the earlier milestone;
+they no longer mean this geographic work is blocked on another path drawing.
+
 The user's full annotated Valley map was received in chat on 2026-10-08.
 The image has seven green rectangles, numbered 1–7. The original annotated
 attachment is visible in the conversation; it has not been stored as a

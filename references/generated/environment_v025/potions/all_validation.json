@@ -1,0 +1,2314 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "section": "all",
+  "mana_resource": "five charges per prepared magical action; no shared mana pool",
+  "diagnostics_are_explicit_private_ram_fixtures": true,
+  "source": {
+    "item_ids_unchanged": true,
+    "native_records_fit": true,
+    "three_safe_mana_merchants": true,
+    "native_transparent_icons": true
+  },
+  "normal_routes": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "states_loaded": false,
+      "full_health_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "consumed": 0
+      },
+      "mana_purchase_25_copper": true,
+      "full_book_or_warrior_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 2
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 2
+        },
+        "consumed": 0
+      },
+      "ordinary_enemy": "The Den level-one tutorial boar",
+      "battle_mana_one_enemy_turn": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            29,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            29,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 6,
+          "mana_potions": 2
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 9,
+          "battle_hp": 9,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 6,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 1,
+        "enemy_move_count": 1,
+        "consumes_turn": true,
+        "native_return": {
+          "helper": "PeonTryUseMinorMana",
+          "before": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 12,
+            "battle_hp": 12,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              29,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              29,
+              0,
+              0
+            ],
+            "totems": 1,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 6,
+            "mana_potions": 2
+          },
+          "entry_sp": 49343,
+          "after": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 12,
+            "battle_hp": 12,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "totems": 1,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 6,
+            "mana_potions": 2
+          },
+          "carry": true
+        }
+      },
+      "battle_healing": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 9,
+          "battle_hp": 9,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 6,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 6,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 1,
+        "enemy_move_count": 1,
+        "consumes_turn": true,
+        "native_return": {
+          "helper": "PeonTryUseMinorPotion",
+          "before": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 9,
+            "battle_hp": 9,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "totems": 1,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 6,
+            "mana_potions": 1
+          },
+          "entry_sp": 49343,
+          "after": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 15,
+            "battle_hp": 15,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              30,
+              0,
+              0
+            ],
+            "totems": 1,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 6,
+            "mana_potions": 1
+          },
+          "carry": true
+        }
+      },
+      "battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            12
+          ],
+          "keys": [
+            25,
+            45,
+            50
+          ],
+          "items": [
+            148,
+            1,
+            63,
+            1,
+            18,
+            1
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            84,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            12
+          ],
+          "keys": [
+            25,
+            45,
+            50
+          ],
+          "items": [
+            148,
+            1,
+            63,
+            1,
+            18,
+            1
+          ]
+        }
+      }
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "states_loaded": false,
+      "full_health_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 0
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 0
+        },
+        "consumed": 0
+      },
+      "mana_purchase_25_copper": true,
+      "full_book_or_warrior_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "consumed": 0
+      },
+      "ordinary_enemy": "The Den armored level-two scorpid",
+      "warrior_mana_refused_no_turn": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 3,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 3,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 0,
+        "enemy_move_count": 0,
+        "consumes_turn": false
+      },
+      "battle_healing": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 3,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 13,
+          "battle_hp": 13,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 3,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 1,
+        "enemy_move_count": 1,
+        "consumes_turn": true,
+        "native_return": {
+          "helper": "PeonTryUseMinorPotion",
+          "before": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 12,
+            "battle_hp": 12,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 3,
+            "mana_potions": 1
+          },
+          "entry_sp": 49343,
+          "after": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 15,
+            "battle_hp": 15,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 3,
+            "mana_potions": 1
+          },
+          "carry": true
+        }
+      },
+      "battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            16
+          ],
+          "keys": [
+            6,
+            45
+          ],
+          "items": [
+            18,
+            1,
+            63,
+            1
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            2,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            4,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            16
+          ],
+          "keys": [
+            6,
+            45
+          ],
+          "items": [
+            18,
+            1,
+            63,
+            1
+          ]
+        }
+      }
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "states_loaded": false,
+      "full_health_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 1
+        },
+        "consumed": 0
+      },
+      "mana_purchase_25_copper": true,
+      "full_book_or_warrior_guard": {
+        "before": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 2
+        },
+        "after": {
+          "active": null,
+          "action": null,
+          "party_hp": 15,
+          "battle_hp": null,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": null,
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": null,
+          "mana_potions": 2
+        },
+        "consumed": 0
+      },
+      "ordinary_enemy": "The Den level-one tutorial boar",
+      "battle_mana_one_enemy_turn": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 12,
+          "battle_hp": 12,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            24,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            24,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 5,
+          "mana_potions": 2
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 9,
+          "battle_hp": 9,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 4,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 1,
+        "enemy_move_count": 1,
+        "consumes_turn": true,
+        "native_return": {
+          "helper": "PeonTryUseMinorMana",
+          "before": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 12,
+            "battle_hp": 12,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              24,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 5,
+            "mana_potions": 2
+          },
+          "entry_sp": 49343,
+          "after": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 12,
+            "battle_hp": 12,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 5,
+            "mana_potions": 2
+          },
+          "carry": true
+        }
+      },
+      "battle_healing": {
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 9,
+          "battle_hp": 9,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 4,
+          "mana_potions": 1
+        },
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 11,
+          "battle_hp": 11,
+          "max_hp": 15,
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "totems": 0,
+          "potions": 1,
+          "water": 0,
+          "enemy_hp": 3,
+          "mana_potions": 1
+        },
+        "native_enemy_turns": 1,
+        "enemy_move_count": 1,
+        "consumes_turn": true,
+        "native_return": {
+          "helper": "PeonTryUseMinorPotion",
+          "before": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 9,
+            "battle_hp": 9,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 4,
+            "mana_potions": 1
+          },
+          "entry_sp": 49343,
+          "after": {
+            "active": 0,
+            "action": 0,
+            "party_hp": 15,
+            "battle_hp": 15,
+            "max_hp": 15,
+            "party_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "battle_pp": [
+              35,
+              25,
+              0,
+              0
+            ],
+            "totems": 0,
+            "potions": 2,
+            "water": 0,
+            "enemy_hp": 4,
+            "mana_potions": 1
+          },
+          "carry": true
+        }
+      },
+      "battery_restart": {
+        "passed": true,
+        "battery_bytes": 32768,
+        "before": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            247,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            11
+          ],
+          "keys": [
+            56
+          ],
+          "items": [
+            63,
+            1,
+            18,
+            2
+          ]
+        },
+        "after": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wMapGroup": [
+            26,
+            14
+          ],
+          "wXCoord": [
+            12
+          ],
+          "wYCoord": [
+            9
+          ],
+          "wBackupWarpNumber": [
+            0
+          ],
+          "wBackupMapGroup": [
+            0
+          ],
+          "wBackupMapNumber": [
+            0
+          ],
+          "wPartyMon1Moves": [
+            1,
+            247,
+            0,
+            0
+          ],
+          "wPartyMon1Item": [
+            0
+          ],
+          "wMoney": [
+            0,
+            0,
+            25
+          ],
+          "events": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            128,
+            0,
+            0
+          ],
+          "hp": [
+            0,
+            11
+          ],
+          "keys": [
+            56
+          ],
+          "items": [
+            63,
+            1,
+            18,
+            2
+          ]
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "five_charge_restore": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          4,
+          14,
+          2
+        ],
+        "battle_pp": [
+          35,
+          4,
+          14,
+          2
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          9,
+          15,
+          7
+        ],
+        "battle_pp": [
+          35,
+          9,
+          15,
+          7
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 0
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorMana",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            4,
+            14,
+            2
+          ],
+          "battle_pp": [
+            35,
+            4,
+            14,
+            2
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            9,
+            15,
+            7
+          ],
+          "battle_pp": [
+            35,
+            9,
+            15,
+            7
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    },
+    "reordered_mace_excluded": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          4,
+          0,
+          14,
+          2
+        ],
+        "battle_pp": [
+          4,
+          0,
+          14,
+          2
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          9,
+          0,
+          15,
+          7
+        ],
+        "battle_pp": [
+          9,
+          0,
+          15,
+          7
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 0
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorMana",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            4,
+            0,
+            14,
+            2
+          ],
+          "battle_pp": [
+            4,
+            0,
+            14,
+            2
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            9,
+            0,
+            15,
+            7
+          ],
+          "battle_pp": [
+            9,
+            0,
+            15,
+            7
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    },
+    "pp_up_flags_and_maxima": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          192,
+          237,
+          147,
+          74
+        ],
+        "battle_pp": [
+          192,
+          237,
+          147,
+          74
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          192,
+          240,
+          149,
+          76
+        ],
+        "battle_pp": [
+          192,
+          240,
+          149,
+          76
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 0
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorMana",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            192,
+            237,
+            147,
+            74
+          ],
+          "battle_pp": [
+            192,
+            237,
+            147,
+            74
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            192,
+            240,
+            149,
+            76
+          ],
+          "battle_pp": [
+            192,
+            240,
+            149,
+            76
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    },
+    "empty_slots_excluded": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          0,
+          19,
+          27
+        ],
+        "battle_pp": [
+          35,
+          0,
+          19,
+          27
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          5,
+          19,
+          27
+        ],
+        "battle_pp": [
+          35,
+          5,
+          19,
+          27
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 0
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorMana",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            0,
+            19,
+            27
+          ],
+          "battle_pp": [
+            35,
+            0,
+            19,
+            27
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            5,
+            19,
+            27
+          ],
+          "battle_pp": [
+            35,
+            5,
+            19,
+            27
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    },
+    "zero_basic_remains_unlimited": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "battle_pp": [
+          0,
+          1,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          0,
+          6,
+          0,
+          0
+        ],
+        "battle_pp": [
+          0,
+          6,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 0
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorMana",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "battle_pp": [
+            0,
+            1,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 240,
+          "battle_hp": 240,
+          "max_hp": 240,
+          "party_pp": [
+            0,
+            6,
+            0,
+            0
+          ],
+          "battle_pp": [
+            0,
+            6,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    },
+    "warrior_exhausted_action_refused": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          0,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "native_enemy_turns": 0,
+      "enemy_move_count": 0,
+      "consumes_turn": false
+    },
+    "full_book_no_consumption_no_enemy_turn": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          15,
+          10
+        ],
+        "battle_pp": [
+          35,
+          30,
+          15,
+          10
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          15,
+          10
+        ],
+        "battle_pp": [
+          35,
+          30,
+          15,
+          10
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "native_enemy_turns": 0,
+      "enemy_move_count": 0,
+      "consumes_turn": false
+    },
+    "full_health_no_consumption_no_enemy_turn": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 240,
+        "battle_hp": 240,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "native_enemy_turns": 0,
+      "enemy_move_count": 0,
+      "consumes_turn": false
+    },
+    "health_exactly_20_before_enemy_action": {
+      "before": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 100,
+        "battle_hp": 100,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 2,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "after": {
+        "active": 0,
+        "action": 0,
+        "party_hp": 117,
+        "battle_hp": 117,
+        "max_hp": 240,
+        "party_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "battle_pp": [
+          35,
+          30,
+          0,
+          0
+        ],
+        "totems": 1,
+        "potions": 1,
+        "water": 0,
+        "enemy_hp": 240,
+        "mana_potions": 1
+      },
+      "native_enemy_turns": 1,
+      "enemy_move_count": 1,
+      "consumes_turn": true,
+      "native_return": {
+        "helper": "PeonTryUseMinorPotion",
+        "before": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 100,
+          "battle_hp": 100,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "entry_sp": 49343,
+        "after": {
+          "active": 0,
+          "action": 0,
+          "party_hp": 120,
+          "battle_hp": 120,
+          "max_hp": 240,
+          "party_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "battle_pp": [
+            35,
+            30,
+            0,
+            0
+          ],
+          "totems": 1,
+          "potions": 2,
+          "water": 0,
+          "enemy_hp": 240,
+          "mana_potions": 1
+        },
+        "carry": true
+      }
+    }
+  },
+  "all_checks_passed": true
+}

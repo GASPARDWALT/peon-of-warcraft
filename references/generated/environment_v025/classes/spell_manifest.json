@@ -1,0 +1,362 @@
+{
+  "KARATE_CHOP": {
+    "id": 2,
+    "name": "WEAPONSTRIKE",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 60,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 25,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonWeaponStrike",
+    "description": [
+      "A simple weapon",
+      "strike."
+    ]
+  },
+  "MEGA_PUNCH": {
+    "id": 5,
+    "name": "HEROICSTRIKE",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 75,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonHeroicStrike",
+    "description": [
+      "A stronger weapon",
+      "strike."
+    ]
+  },
+  "CUT": {
+    "id": 15,
+    "name": "REND",
+    "effect": "EFFECT_POISON",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonRend",
+    "description": [
+      "Wounds the foe for",
+      "ongoing damage."
+    ]
+  },
+  "HARDEN": {
+    "id": 106,
+    "name": "DEF STANCE",
+    "effect": "EFFECT_DEFENSE_UP",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_Harden",
+    "description": [
+      "Raises physical",
+      "defense one stage."
+    ]
+  },
+  "STRING_SHOT": {
+    "id": 81,
+    "name": "HAMSTRING",
+    "effect": "EFFECT_SPEED_DOWN",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonRend",
+    "description": [
+      "Slows the foe by",
+      "one speed stage."
+    ]
+  },
+  "GROWTH": {
+    "id": 74,
+    "name": "BATTLE SHOUT",
+    "effect": "EFFECT_ATTACK_UP",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_Growth",
+    "description": [
+      "Raises your attack",
+      "by one stage."
+    ]
+  },
+  "BARRIER": {
+    "id": 112,
+    "name": "SHIELD BLOCK",
+    "effect": "EFFECT_DEFENSE_UP_2",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_Barrier",
+    "description": [
+      "Raises physical",
+      "defense two steps."
+    ]
+  },
+  "SCREECH": {
+    "id": 103,
+    "name": "DEMORALIZE",
+    "effect": "EFFECT_ATTACK_DOWN_2",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_Screech",
+    "description": [
+      "Lowers foe attack",
+      "by two stages."
+    ]
+  },
+  "RAZOR_WIND": {
+    "id": 13,
+    "name": "REND II",
+    "effect": "EFFECT_TOXIC",
+    "power": 0,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonRend",
+    "description": [
+      "A wound that hurts",
+      "more each turn."
+    ]
+  },
+  "STRENGTH": {
+    "id": 70,
+    "name": "CLEAVE",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 75,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonHeroicStrike",
+    "description": [
+      "A heavy strike on",
+      "one target."
+    ]
+  },
+  "MEGA_KICK": {
+    "id": 25,
+    "name": "EXECUTE",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 90,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 5,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonHeroicStrike",
+    "description": [
+      "A powerful weapon",
+      "finishing strike."
+    ]
+  },
+  "SUBMISSION": {
+    "id": 66,
+    "name": "MORTALSTRIKE",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 100,
+    "type": "NORMAL",
+    "accuracy": 100,
+    "charges": 5,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonHeroicStrike",
+    "description": [
+      "A mighty weapon",
+      "strike."
+    ]
+  },
+  "SHADOW_BALL": {
+    "id": 247,
+    "name": "SHADOW BOLT",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 35,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 25,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonShadowBolt",
+    "description": [
+      "A simple bolt of",
+      "shadow damage."
+    ]
+  },
+  "ABSORB": {
+    "id": 71,
+    "name": "DRAIN LIFE",
+    "effect": "EFFECT_LEECH_HIT",
+    "power": 20,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonDrainLife",
+    "description": [
+      "Heals for half the",
+      "damage dealt."
+    ]
+  },
+  "POISONPOWDER": {
+    "id": 77,
+    "name": "CORRUPTION",
+    "effect": "EFFECT_POISON",
+    "power": 0,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonCurse",
+    "description": [
+      "Curses the foe for",
+      "ongoing damage."
+    ]
+  },
+  "SAND_ATTACK": {
+    "id": 28,
+    "name": "FEAR",
+    "effect": "EFFECT_ACCURACY_DOWN",
+    "power": 0,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonCurse",
+    "description": [
+      "Fear lowers foe",
+      "accuracy one step."
+    ]
+  },
+  "FIRE_SPIN": {
+    "id": 83,
+    "name": "IMMOLATE",
+    "effect": "EFFECT_BURN_HIT",
+    "power": 35,
+    "type": "FIRE",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 100,
+    "animation": "BattleAnim_PeonFlameShock",
+    "description": [
+      "Fire damage that",
+      "burns the target."
+    ]
+  },
+  "KINESIS": {
+    "id": 134,
+    "name": "CURSE WEAK",
+    "effect": "EFFECT_ATTACK_DOWN",
+    "power": 0,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonCurse",
+    "description": [
+      "Lowers foe attack",
+      "by one stage."
+    ]
+  },
+  "MEGA_DRAIN": {
+    "id": 72,
+    "name": "DRAINLIFE II",
+    "effect": "EFFECT_LEECH_HIT",
+    "power": 40,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonDrainLife",
+    "description": [
+      "Heals for half the",
+      "damage dealt."
+    ]
+  },
+  "NIGHT_SHADE": {
+    "id": 101,
+    "name": "SHADOW.BOLT2",
+    "effect": "EFFECT_NORMAL_HIT",
+    "power": 60,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 15,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonShadowBolt",
+    "description": [
+      "A stronger bolt of",
+      "shadow damage."
+    ]
+  },
+  "SMOG": {
+    "id": 123,
+    "name": "CORRUPTIONII",
+    "effect": "EFFECT_POISON_HIT",
+    "power": 45,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 100,
+    "animation": "BattleAnim_PeonCurse",
+    "description": [
+      "Shadow damage that",
+      "curses the target."
+    ]
+  },
+  "FIRE_PUNCH": {
+    "id": 7,
+    "name": "HELLFIRE",
+    "effect": "EFFECT_BURN_HIT",
+    "power": 70,
+    "type": "FIRE",
+    "accuracy": 100,
+    "charges": 5,
+    "secondary_chance": 100,
+    "animation": "BattleAnim_PeonFlameShockII",
+    "description": [
+      "Strong fire damage",
+      "to one target."
+    ]
+  },
+  "AMNESIA": {
+    "id": 133,
+    "name": "SHADOW WARD",
+    "effect": "EFFECT_SP_DEF_UP_2",
+    "power": 0,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_Barrier",
+    "description": [
+      "Raises spell",
+      "defense two steps."
+    ]
+  },
+  "TOXIC": {
+    "id": 92,
+    "name": "CURSE AGONY",
+    "effect": "EFFECT_TOXIC",
+    "power": 0,
+    "type": "DARK",
+    "accuracy": 100,
+    "charges": 10,
+    "secondary_chance": 0,
+    "animation": "BattleAnim_PeonCurse",
+    "description": [
+      "A curse that hurts",
+      "more each turn."
+    ]
+  }
+}

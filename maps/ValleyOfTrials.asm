@@ -19,7 +19,9 @@ ValleyOfTrials_MapScripts:
 	callback MAPCALLBACK_TILES, ValleyHarvestedCactiCallback
 
 ValleyOfTrialsDiscover:
+	callasm PeonMigrateValleyDiscovery
 	setevent EVENT_PEON_DISCOVERED_VALLEY
+	setevent EVENT_PEON_SECTOR_2
 	endcallback
 
 ValleyQuestSpriteCallback:
@@ -253,6 +255,7 @@ ValleyCaveApproachImp1Script:
 	callasm PeonVileFamiliarsReadySound
 	disappear VALLEY_CAVE_APPROACH_IMP_1
 	givemoney YOUR_MONEY, 30
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext ValleyCaveApproachLootText
 	waitbutton
@@ -278,6 +281,7 @@ ValleyCaveApproachImp2Script:
 	callasm PeonVileFamiliarsReadySound
 	disappear VALLEY_CAVE_APPROACH_IMP_2
 	givemoney YOUR_MONEY, 30
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext ValleyCaveApproachLootText
 	waitbutton
@@ -314,6 +318,7 @@ ValleySarkothScript:
 	disappear VALLEY_SARKOTH
 	givemoney YOUR_MONEY, 35
 	callasm PeonRefreshValleyQuestMarkers
+	farscall PeonRarePotionLootScript
 	giveitem PEON_SARKOTH_CLAW
 	iffalse .Full
 	opentext
@@ -583,30 +588,26 @@ ValleyOfTrials_MapEvents:
 	db 0, 0
 	def_warp_events
 	warp_event 4, 12, THE_DEN, 1
-	warp_event 28, 12, DUROTAR_ROAD, 1
-	warp_event 24, 4, BURNING_BLADE_CAVERN, 1
+	warp_event 28, 12, PEON_VALLEY_EXIT, 1
+	; Published warp index 3 now leads north to zone 3. The old cave cell is
+	; still walkable for a saved character, but it is no longer an entrance.
+	warp_event 16, 0, PEON_VALLEY_CROSSROADS, 1
 	def_coord_events
-	coord_event 16, 21, -1, ValleySarkothScript
-	coord_event 17, 20, -1, ValleySarkothScript
-	coord_event 16, 19, -1, ValleySarkothScript
-	coord_event 15, 20, -1, ValleySarkothScript
-	coord_event 24, 6, -1, ValleyCaveApproachImp1Script
-	coord_event 25, 7, -1, ValleyCaveApproachImp1Script
-	coord_event 26, 9, -1, ValleyCaveApproachImp2Script
-	coord_event 27, 8, -1, ValleyCaveApproachImp2Script
+	; Sarkoth and the familiars live only in their new geographic zones.
 	def_bg_events
 	bg_event 9, 17, BGEVENT_READ, PeonCactus3
 	bg_event 23, 9, BGEVENT_READ, PeonCactus2
 	bg_event 7, 7, BGEVENT_READ, PeonCactus1
 	def_object_events
 	object_event 8, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyOfTrialsGuideScript, -1
-	object_event 10, 19, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyHanazuaScript, -1
-	object_event 6, 11, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyZureethaScript, -1
-	object_event 16, 20, PEON_SPRITE_SARKOTH, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ValleySarkothScript, EVENT_PEON_SARKOTH_DEAD
+	; Mask obsolete locations with sprite zero, preserving old object slots.
+	object_event 10, 19, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyHanazuaScript, -1
+	object_event 6, 11, SPRITE_NONE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyZureethaScript, -1
+	object_event 16, 20, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ValleySarkothScript, EVENT_PEON_SARKOTH_DEAD
 	object_event 8, 9, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyOfTrialsGuideScript, EVENT_PEON_CACTUS_DONE
-	object_event 10, 18, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyHanazuaScript, EVENT_PEON_SARKOTH_DONE
-	object_event 6, 10, SPRITE_PEON_QUEST_3, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyZureethaScript, EVENT_PEON_MEDALLION_DONE
+	object_event 10, 18, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyHanazuaScript, EVENT_PEON_SARKOTH_DONE
+	object_event 6, 10, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyZureethaScript, EVENT_PEON_MEDALLION_DONE
 	; OBJ6 is dedicated to red familiars on this quest-marker map. OBJ5 stays
 	; gray for active quests; the cave's existing palette allocation is unchanged.
-	object_event 25, 6, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp1Script, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
-	object_event 27, 9, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp2Script, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	object_event 25, 6, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp1Script, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
+	object_event 27, 9, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp2Script, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD

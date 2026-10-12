@@ -131,3 +131,60 @@ BattleAnim_PeonChainLightning:
 	anim_obj BATTLE_ANIM_OBJ_PEON_ARC, 144, 56, $0
 	anim_wait 24
 	anim_ret
+
+; Short native class choreography shares existing indexed 2bpp particles.
+; No external audio, extra save state or signed BG rank/totem tiles are used.
+BattleAnim_PeonWeaponStrike:
+	anim_2gfx BATTLE_ANIM_GFX_CUT, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_CUT
+	anim_obj BATTLE_ANIM_OBJ_CUT_DOWN_RIGHT, 136, 48, $0
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 132, 56, $0
+	anim_wait 20
+	anim_ret
+
+BattleAnim_PeonHeroicStrike:
+	anim_call BattleAnim_PeonWeaponStrike
+	anim_sound 0, 1, SFX_POUND
+	anim_obj BATTLE_ANIM_OBJ_HIT_BIG_YFIX, 140, 48, $0
+	anim_wait 20
+	anim_ret
+
+BattleAnim_PeonRend:
+	anim_1gfx BATTLE_ANIM_GFX_CUT
+	anim_sound 0, 1, SFX_CUT
+	anim_obj BATTLE_ANIM_OBJ_CUT_LONG_DOWN_LEFT, 148, 40, $0
+	anim_wait 10
+	anim_obj BATTLE_ANIM_OBJ_CUT_DOWN_RIGHT, 128, 56, $0
+	anim_wait 20
+	anim_ret
+
+BattleAnim_PeonShadowBolt:
+	anim_2gfx BATTLE_ANIM_GFX_EGG, BATTLE_ANIM_GFX_SMOKE
+	anim_sound 6, 2, SFX_SLUDGE_BOMB
+	anim_obj BATTLE_ANIM_OBJ_SHADOW_BALL, 64, 92, $2
+	anim_wait 32
+	anim_obj BATTLE_ANIM_OBJ_BALL_POOF, 132, 56, $10
+	anim_wait 20
+	anim_ret
+
+BattleAnim_PeonDrainLife:
+	anim_1gfx BATTLE_ANIM_GFX_CHARGE
+	anim_obj BATTLE_ANIM_OBJ_ABSORB_CENTER, 44, 88, $0
+	anim_sound 6, 3, SFX_PEON_HEALING
+	anim_obj BATTLE_ANIM_OBJ_ABSORB, 128, 48, $2
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_ABSORB, 136, 64, $3
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_ABSORB, 136, 32, $4
+	anim_wait 24
+	anim_ret
+
+BattleAnim_PeonCurse:
+	anim_1gfx BATTLE_ANIM_GFX_HAZE
+	anim_sound 0, 1, SFX_SLUDGE_BOMB
+	anim_obj BATTLE_ANIM_OBJ_SMOKE, 120, 48, $20
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_SMOKE, 140, 56, $20
+	anim_wait 24
+	anim_ret

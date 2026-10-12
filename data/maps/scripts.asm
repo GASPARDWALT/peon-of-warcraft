@@ -497,7 +497,18 @@ INCLUDE "maps/SenjinVillage.asm"
 INCLUDE "maps/RazorHill.asm"
 INCLUDE "maps/OrgrimmarGate.asm"
 INCLUDE "maps/BurningBladeCavern.asm"
+; Room pointers already carry their script bank. Keep growing outdoor quests
+; below the 16 KiB bank limit without changing map/save identifiers.
+SECTION "Peon Interior Map Scripts", ROMX
 INCLUDE "maps/PeonTrollHut.asm"
 INCLUDE "maps/PeonOrcHut.asm"
 INCLUDE "maps/PeonOrcInn.asm"
 INCLUDE "maps/PeonTrollInn.asm"
+
+; Separate bank: nodes call the retained quest/battle scripts with farsjump.
+SECTION "Peon Valley Zone Scripts", ROMX
+INCLUDE "maps/PeonValleyCrossroads.asm"
+INCLUDE "maps/PeonHanazuaCamp.asm"
+INCLUDE "maps/PeonSarkothBasin.asm"
+INCLUDE "maps/PeonCaveApproach.asm"
+INCLUDE "maps/PeonValleyExit.asm"

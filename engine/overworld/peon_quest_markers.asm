@@ -155,7 +155,10 @@ PeonApplyQuestMarkerGrayPalette::
 	cp MAP_THE_DEN
 	jr z, .marker_map
 	cp MAP_VALLEY_OF_TRIALS
-	jr nz, .done
+	jr z, .marker_map
+	sub MAP_PEON_VALLEY_CROSSROADS
+	cp 5
+	jr nc, .done
 .marker_map
 	ld hl, .gray
 	ld de, wOBPals1 palette PAL_OW_EMOTE + 2
@@ -169,7 +172,10 @@ PeonApplyQuestMarkerGrayPalette::
 	call FarCopyWRAM
 	ld a, [wMapNumber]
 	cp MAP_VALLEY_OF_TRIALS
+	jr z, .imp_palette
+	cp MAP_PEON_CAVE_APPROACH
 	jr nz, .update
+.imp_palette
 	ld hl, .approach_imp
 	ld de, wOBPals1 palette PAL_OW_TREE
 	ld bc, 1 palettes
@@ -210,7 +216,11 @@ PeonInitQuestMarkerSprites::
 	cp MAP_THE_DEN
 	jr z, .den
 	cp MAP_VALLEY_OF_TRIALS
-	jp nz, .done
+	jr z, .valley
+	sub MAP_PEON_VALLEY_CROSSROADS
+	cp 5
+	jp nc, .done
+.valley
 	call .Cactus
 	ld [wVariableSprites + 13], a
 	ld de, EVENT_PEON_SARKOTH_ACCEPTED
@@ -334,7 +344,11 @@ PeonRefreshQuestMarkers::
 	cp MAP_THE_DEN
 	jr z, .den
 	cp MAP_VALLEY_OF_TRIALS
-	jp nz, .done
+	jr z, .valley
+	sub MAP_PEON_VALLEY_CROSSROADS
+	cp 5
+	jp nc, .done
+.valley
 	ld de, EVENT_PEON_CACTUS_DONE
 	ld a, 5
 	call .HideFinished

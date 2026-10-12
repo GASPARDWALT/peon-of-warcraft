@@ -79,13 +79,35 @@ PeonTryRestoreHPFromA:
 	and a
 	ret
 
-; The apprentice has independent spell charges rather than a shared mana
-; bar. Water restores up to ten charges in each learned spell slot, capped
-; to that spell's prototype maximum. A full spellbook consumes no water.
+
+; Spell charges remain the save-compatible mana substitute for caster classes.
+; Mana potions restore five charges and water restores ten per magical slot.
+; The physical POUND action is excluded by ID, including imported reordered
+; spellbooks. Preserve the two PP-Up bits and honor each move's actual max PP.
+; Warrior rejection/full book clears carry: no item and no battle turn spent.
+PeonTryUseMinorMana::
+	ld a, 5
+	jr PeonRestoreSpellChargesByAmount
+
 PeonRestoreSpellCharges::
+	ld a, 10
+PeonRestoreSpellChargesByAmount:
+	push af
+	ld de, EVENT_PEON_WARRIOR
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .caster
+	pop af
+	and a
+	ret
+.caster
+	pop af
+	ld [wStringBuffer2 + 1], a
 	xor a
 	ld [wStringBuffer2], a
-	ld b, 1 ; slot zero is the mace, not a spell
+	ld b, 0
 .slot
 	push bc
 	ld c, b
@@ -99,26 +121,19 @@ PeonRestoreSpellCharges::
 	add hl, bc
 	ld a, [hl]
 	and a
-	jr z, .next
-	ld d, 10
-	cp THUNDERSHOCK
-	jr nz, .earth_shock
-	ld d, 30
-	jr .pp
-.earth_shock
-	cp THUNDERPUNCH
-	jr z, .fifteen
-	cp EMBER
-	jr z, .fifteen
-	cp ICE_BEAM
-	jr z, .fifteen
-	cp THUNDER
-	jr nz, .pp
-	ld d, 5
-	jr .pp
-.fifteen
-	ld d, 15
-.pp
+	jp z, .next
+	cp POUND
+	jp z, .next
+	; Read native PP rather than hard-coding a Shaman-only list.
+	push bc
+	dec a
+	ld hl, Moves + MOVE_PP
+	ld bc, MOVE_LENGTH
+	call AddNTimes
+	ld a, BANK(Moves)
+	call GetFarByte
+	pop bc
+	ld d, a
 	ld hl, wPartyMon1PP
 	ld a, [wBattleMode]
 	and a
@@ -126,16 +141,53 @@ PeonRestoreSpellCharges::
 	ld hl, wBattleMonPP
 .pp_pointer
 	add hl, bc
+	push bc
 	ld a, [hl]
-	and $3f
-	cp d
-	jr nc, .next
-	add 10
-	cp d
-	jr c, .write
+	push af ; preserve raw PP-Up bits
+	and PP_UP_MASK
+	rlca
+	rlca
+	ld c, a ; PP-Up count 0..3
+	ld b, d ; native base max PP
 	ld a, d
-.write
+	cp 40
+	jr nz, .divide
+	ld d, 7 ; Crystal caps 40-base PP at 61, not overflowing into PP-Up bits
+	jr .max_loop
+.divide
+	ld d, 0
+.divide_loop
+	sub 5
+	jr c, .max_loop
+	inc d
+	jr .divide_loop
+.max_loop
+	ld a, c
+	and a
+	jr z, .maximum_ready
+	ld a, b
+	add d
+	ld b, a
+	dec c
+	jr .max_loop
+.maximum_ready
+	pop af
+	ld e, a
+	and PP_MASK
+	cp b
+	jr nc, .full_slot
 	ld d, a
+	ld a, [wStringBuffer2 + 1]
+	add d
+	cp b
+	jr nc, .capped
+	ld b, a
+.capped
+	ld a, e
+	and PP_UP_MASK
+	or b
+	ld d, a
+	pop bc
 	ld hl, wPartyMon1PP
 	add hl, bc
 	ld [hl], d
@@ -148,12 +200,15 @@ PeonRestoreSpellCharges::
 .used
 	ld a, 1
 	ld [wStringBuffer2], a
+	jr .next
+.full_slot
+	pop bc
 .next
 	pop bc
 	inc b
 	ld a, b
 	cp NUM_MOVES
-	jr c, .slot
+	jp c, .slot
 	ld a, [wStringBuffer2]
 	and a
 	ret z

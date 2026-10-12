@@ -1,0 +1,392 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "save_layout_unchanged": true,
+  "one_actor_four_actions_one_real_save": true,
+  "class_flags": {
+    "warrior": 318,
+    "warlock": 319
+  },
+  "status": "PASS",
+  "normal_routes": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "master_asks_actual_player_name": true,
+      "name_prefix": "P\u00e9on ABCDE",
+      "starting_kit": [
+        25,
+        45,
+        50
+      ],
+      "starting_moves": [
+        1,
+        84
+      ],
+      "starter_healing_potions": 2,
+      "starter_mana_potions": 1,
+      "other_two_masters_refuse_without_mutation": true,
+      "fixed_seven_entry_start_menu": true,
+      "class_character_sheet": true,
+      "native_basic_move_label": "MACE STRIKE",
+      "ordinary_level2_purchase": true,
+      "first_quest_xp_and_inn_healing": true,
+      "repeated_trainer_never_regrants_kit_or_charges": true,
+      "first_battle": {
+        "victory": true,
+        "player_actions": [
+          84,
+          14,
+          1
+        ],
+        "persistent_enemy_defeated": true,
+        "level2_lesson_cast_before_victory": true,
+        "level": 2,
+        "remaining_pp": [
+          35,
+          29,
+          9,
+          0
+        ]
+      },
+      "cold_restart": {
+        "battery_bytes": 32768,
+        "all_256_event_bytes_preserved": true,
+        "complete_record_equal": true,
+        "kit_initialized_once": true
+      },
+      "status": "PASS"
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "master_asks_actual_player_name": true,
+      "name_prefix": "P\u00e9on ABCDE",
+      "starting_kit": [
+        6,
+        45
+      ],
+      "starting_moves": [
+        1,
+        2
+      ],
+      "starter_healing_potions": 2,
+      "starter_mana_potions": 0,
+      "other_two_masters_refuse_without_mutation": true,
+      "fixed_seven_entry_start_menu": true,
+      "class_character_sheet": true,
+      "native_basic_move_label": "MELEE STRIKE",
+      "ordinary_level2_purchase": true,
+      "first_quest_xp_and_inn_healing": true,
+      "repeated_trainer_never_regrants_kit_or_charges": true,
+      "first_battle": {
+        "victory": true,
+        "player_actions": [
+          2
+        ],
+        "persistent_enemy_defeated": true,
+        "level2_lesson_cast_before_victory": false,
+        "level": 2,
+        "remaining_pp": [
+          35,
+          24,
+          15,
+          0
+        ]
+      },
+      "cold_restart": {
+        "battery_bytes": 32768,
+        "all_256_event_bytes_preserved": true,
+        "complete_record_equal": true,
+        "kit_initialized_once": true
+      },
+      "status": "PASS"
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "master_asks_actual_player_name": true,
+      "name_prefix": "P\u00e9on ABCDE",
+      "starting_kit": [
+        56
+      ],
+      "starting_moves": [
+        1,
+        247
+      ],
+      "starter_healing_potions": 2,
+      "starter_mana_potions": 1,
+      "other_two_masters_refuse_without_mutation": true,
+      "fixed_seven_entry_start_menu": true,
+      "class_character_sheet": true,
+      "native_basic_move_label": "MELEE STRIKE",
+      "ordinary_level2_purchase": true,
+      "first_quest_xp_and_inn_healing": true,
+      "repeated_trainer_never_regrants_kit_or_charges": true,
+      "first_battle": {
+        "victory": true,
+        "player_actions": [
+          247,
+          71,
+          1
+        ],
+        "persistent_enemy_defeated": true,
+        "level2_lesson_cast_before_victory": true,
+        "level": 2,
+        "remaining_pp": [
+          35,
+          24,
+          14,
+          0
+        ]
+      },
+      "cold_restart": {
+        "battery_bytes": 32768,
+        "all_256_event_bytes_preserved": true,
+        "complete_record_equal": true,
+        "kit_initialized_once": true
+      },
+      "status": "PASS"
+    }
+  },
+  "trainer_diagnostics": {
+    "warrior": {
+      "isolated_level_money_ram_edits": true,
+      "ordinary_buttons_execute_all_transactions": true,
+      "emulator_states_loaded": false,
+      "cases": [
+        {
+          "level": 2,
+          "move": 5,
+          "price_copper": 10,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 4,
+          "move": 15,
+          "price_copper": 50,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 6,
+          "move": 106,
+          "price_copper": 100,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 8,
+          "move": 81,
+          "price_copper": 100,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 10,
+          "move": 74,
+          "price_copper": 400,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 12,
+          "move": 112,
+          "price_copper": 720,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 14,
+          "move": 103,
+          "price_copper": 200,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 14,
+          "move": 13,
+          "price_copper": 200,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 16,
+          "move": 70,
+          "price_copper": 400,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 18,
+          "move": 25,
+          "price_copper": 600,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 20,
+          "move": 66,
+          "price_copper": 800,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        }
+      ],
+      "status": "PASS"
+    },
+    "warlock": {
+      "isolated_level_money_ram_edits": true,
+      "ordinary_buttons_execute_all_transactions": true,
+      "emulator_states_loaded": false,
+      "cases": [
+        {
+          "level": 2,
+          "move": 71,
+          "price_copper": 10,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 4,
+          "move": 77,
+          "price_copper": 50,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 6,
+          "move": 28,
+          "price_copper": 100,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 8,
+          "move": 83,
+          "price_copper": 100,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 10,
+          "move": 134,
+          "price_copper": 400,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 12,
+          "move": 72,
+          "price_copper": 720,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 14,
+          "move": 101,
+          "price_copper": 200,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 14,
+          "move": 123,
+          "price_copper": 200,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 16,
+          "move": 7,
+          "price_copper": 400,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 18,
+          "move": 133,
+          "price_copper": 600,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        },
+        {
+          "level": 20,
+          "move": 92,
+          "price_copper": 800,
+          "below_level_rejected": true,
+          "insufficient_money_rejected": true,
+          "cancel_noop": true,
+          "purchase_committed_once": true,
+          "basic_action_and_paired_pp_preserved": true
+        }
+      ],
+      "status": "PASS"
+    }
+  }
+}

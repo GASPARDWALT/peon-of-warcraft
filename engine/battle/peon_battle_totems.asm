@@ -41,6 +41,9 @@ PeonEarthTotemPriority::
 ; frontpic, backpic, fonts and bank0 battle-particle regions. Palette6 is free.
 ; FinishBattleAnim reloads this after effects and bags restoration.
 PeonDrawBattleTotem::
+	; Warlock's persistent companion occupies the same clear front column,
+	; but has distinct tiles. Class guards keep Shaman's placed totem intact.
+	farcall PeonDrawWarlockBattlePet
 	push af
 	push bc
 	push de

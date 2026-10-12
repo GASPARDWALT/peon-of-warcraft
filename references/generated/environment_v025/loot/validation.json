@@ -1,0 +1,3719 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "user_save_files_opened": false,
+  "drop_rate_is_prototype_design_choice_not_a_wow_loot_table": true,
+  "all_checks_passed": true,
+  "source_contract": {
+    "finite_enemy_roll_hooks": {
+      "TheDen.TheDenBoarScript": 1,
+      "TheDen.TheDenScorpidScript": 1,
+      "ValleyOfTrials.ValleyCaveApproachImp1Script": 1,
+      "ValleyOfTrials.ValleyCaveApproachImp2Script": 1,
+      "ValleyOfTrials.ValleySarkothScript": 1,
+      "BurningBladeCavern.BurningBladeStrongImpScript": 1,
+      "BurningBladeCavern.BurningBladeCavernGuideScript": 1,
+      "BurningBladeCavern.BurningBladeFelstalkerScript": 1,
+      "BurningBladeCavern.BurningBladeCultistScript": 1,
+      "BurningBladeCavern.BurningBladeYarrogScript": 1,
+      "DurotarRoad.DurotarScorpidPackScript": 2,
+      "DurotarRoad.DurotarTigerScript": 1,
+      "DurotarRoad.DurotarRaptorScript": 1,
+      "DurotarRoad.DurotarHarpyScript": 1,
+      "DurotarRoad.DurotarCrawlerScript": 1
+    },
+    "enemy_kills_covered": 16,
+    "exact_one_roll_per_saved_retirement": true,
+    "no_new_item_ids_event_flags_or_sram_fields": true
+  },
+  "normal": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "rng_fixtures": false,
+      "emulator_states_loaded": false,
+      "actual_victory_rolls": 1,
+      "victory": {
+        "before_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": false,
+        "warlock": false,
+        "result": 0,
+        "after_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 2,
+        "after_mana": 1,
+        "rng_bytes": [
+          189
+        ]
+      },
+      "revisit_grants_no_loot_and_starts_no_battle": true,
+      "coins_preserved": true
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "rng_fixtures": false,
+      "emulator_states_loaded": false,
+      "actual_victory_rolls": 1,
+      "victory": {
+        "before_inventory": [
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 0,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": true,
+        "warlock": false,
+        "result": 0,
+        "after_inventory": [
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 2,
+        "after_mana": 0,
+        "rng_bytes": [
+          165
+        ]
+      },
+      "revisit_grants_no_loot_and_starts_no_battle": true,
+      "coins_preserved": true
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "rng_fixtures": false,
+      "emulator_states_loaded": false,
+      "actual_victory_rolls": 1,
+      "victory": {
+        "before_inventory": [
+          2,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": false,
+        "warlock": true,
+        "result": 0,
+        "after_inventory": [
+          2,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 2,
+        "after_mana": 1,
+        "rng_bytes": [
+          3
+        ]
+      },
+      "revisit_grants_no_loot_and_starts_no_battle": true,
+      "coins_preserved": true
+    }
+  },
+  "diagnostic": {
+    "method": "Private queued native script, declared RNG bytes and RAM/state fixtures; no CPU opcode substitution.",
+    "exact_native_one_in_six": {
+      "accepted_uniform_bytes": 252,
+      "successful_bytes": 42,
+      "fraction": "42/252 = 1/6",
+      "rejected_tail_bytes": [
+        252,
+        253,
+        254,
+        255
+      ],
+      "all_256_native_rejection_division_results": [
+        {
+          "input": 0,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            0,
+            1
+          ]
+        },
+        {
+          "input": 1,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            1
+          ]
+        },
+        {
+          "input": 2,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            2
+          ]
+        },
+        {
+          "input": 3,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            3
+          ]
+        },
+        {
+          "input": 4,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            4
+          ]
+        },
+        {
+          "input": 5,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            5
+          ]
+        },
+        {
+          "input": 6,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            6,
+            1
+          ]
+        },
+        {
+          "input": 7,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            7
+          ]
+        },
+        {
+          "input": 8,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            8
+          ]
+        },
+        {
+          "input": 9,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            9
+          ]
+        },
+        {
+          "input": 10,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            10
+          ]
+        },
+        {
+          "input": 11,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            11
+          ]
+        },
+        {
+          "input": 12,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            12,
+            1
+          ]
+        },
+        {
+          "input": 13,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            13
+          ]
+        },
+        {
+          "input": 14,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            14
+          ]
+        },
+        {
+          "input": 15,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            15
+          ]
+        },
+        {
+          "input": 16,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            16
+          ]
+        },
+        {
+          "input": 17,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            17
+          ]
+        },
+        {
+          "input": 18,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            18,
+            1
+          ]
+        },
+        {
+          "input": 19,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            19
+          ]
+        },
+        {
+          "input": 20,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            20
+          ]
+        },
+        {
+          "input": 21,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            21
+          ]
+        },
+        {
+          "input": 22,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            22
+          ]
+        },
+        {
+          "input": 23,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            23
+          ]
+        },
+        {
+          "input": 24,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            24,
+            1
+          ]
+        },
+        {
+          "input": 25,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            25
+          ]
+        },
+        {
+          "input": 26,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            26
+          ]
+        },
+        {
+          "input": 27,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            27
+          ]
+        },
+        {
+          "input": 28,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            28
+          ]
+        },
+        {
+          "input": 29,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            29
+          ]
+        },
+        {
+          "input": 30,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            30,
+            1
+          ]
+        },
+        {
+          "input": 31,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            31
+          ]
+        },
+        {
+          "input": 32,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            32
+          ]
+        },
+        {
+          "input": 33,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            33
+          ]
+        },
+        {
+          "input": 34,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            34
+          ]
+        },
+        {
+          "input": 35,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            35
+          ]
+        },
+        {
+          "input": 36,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            36,
+            1
+          ]
+        },
+        {
+          "input": 37,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            37
+          ]
+        },
+        {
+          "input": 38,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            38
+          ]
+        },
+        {
+          "input": 39,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            39
+          ]
+        },
+        {
+          "input": 40,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            40
+          ]
+        },
+        {
+          "input": 41,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            41
+          ]
+        },
+        {
+          "input": 42,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            42,
+            1
+          ]
+        },
+        {
+          "input": 43,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            43
+          ]
+        },
+        {
+          "input": 44,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            44
+          ]
+        },
+        {
+          "input": 45,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            45
+          ]
+        },
+        {
+          "input": 46,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            46
+          ]
+        },
+        {
+          "input": 47,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            47
+          ]
+        },
+        {
+          "input": 48,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            48,
+            1
+          ]
+        },
+        {
+          "input": 49,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            49
+          ]
+        },
+        {
+          "input": 50,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            50
+          ]
+        },
+        {
+          "input": 51,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            51
+          ]
+        },
+        {
+          "input": 52,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            52
+          ]
+        },
+        {
+          "input": 53,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            53
+          ]
+        },
+        {
+          "input": 54,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            54,
+            1
+          ]
+        },
+        {
+          "input": 55,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            55
+          ]
+        },
+        {
+          "input": 56,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            56
+          ]
+        },
+        {
+          "input": 57,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            57
+          ]
+        },
+        {
+          "input": 58,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            58
+          ]
+        },
+        {
+          "input": 59,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            59
+          ]
+        },
+        {
+          "input": 60,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            60,
+            1
+          ]
+        },
+        {
+          "input": 61,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            61
+          ]
+        },
+        {
+          "input": 62,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            62
+          ]
+        },
+        {
+          "input": 63,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            63
+          ]
+        },
+        {
+          "input": 64,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            64
+          ]
+        },
+        {
+          "input": 65,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            65
+          ]
+        },
+        {
+          "input": 66,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            66,
+            1
+          ]
+        },
+        {
+          "input": 67,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            67
+          ]
+        },
+        {
+          "input": 68,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            68
+          ]
+        },
+        {
+          "input": 69,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            69
+          ]
+        },
+        {
+          "input": 70,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            70
+          ]
+        },
+        {
+          "input": 71,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            71
+          ]
+        },
+        {
+          "input": 72,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            72,
+            1
+          ]
+        },
+        {
+          "input": 73,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            73
+          ]
+        },
+        {
+          "input": 74,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            74
+          ]
+        },
+        {
+          "input": 75,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            75
+          ]
+        },
+        {
+          "input": 76,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            76
+          ]
+        },
+        {
+          "input": 77,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            77
+          ]
+        },
+        {
+          "input": 78,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            78,
+            1
+          ]
+        },
+        {
+          "input": 79,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            79
+          ]
+        },
+        {
+          "input": 80,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            80
+          ]
+        },
+        {
+          "input": 81,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            81
+          ]
+        },
+        {
+          "input": 82,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            82
+          ]
+        },
+        {
+          "input": 83,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            83
+          ]
+        },
+        {
+          "input": 84,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            84,
+            1
+          ]
+        },
+        {
+          "input": 85,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            85
+          ]
+        },
+        {
+          "input": 86,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            86
+          ]
+        },
+        {
+          "input": 87,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            87
+          ]
+        },
+        {
+          "input": 88,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            88
+          ]
+        },
+        {
+          "input": 89,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            89
+          ]
+        },
+        {
+          "input": 90,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            90,
+            1
+          ]
+        },
+        {
+          "input": 91,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            91
+          ]
+        },
+        {
+          "input": 92,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            92
+          ]
+        },
+        {
+          "input": 93,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            93
+          ]
+        },
+        {
+          "input": 94,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            94
+          ]
+        },
+        {
+          "input": 95,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            95
+          ]
+        },
+        {
+          "input": 96,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            96,
+            1
+          ]
+        },
+        {
+          "input": 97,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            97
+          ]
+        },
+        {
+          "input": 98,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            98
+          ]
+        },
+        {
+          "input": 99,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            99
+          ]
+        },
+        {
+          "input": 100,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            100
+          ]
+        },
+        {
+          "input": 101,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            101
+          ]
+        },
+        {
+          "input": 102,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            102,
+            1
+          ]
+        },
+        {
+          "input": 103,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            103
+          ]
+        },
+        {
+          "input": 104,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            104
+          ]
+        },
+        {
+          "input": 105,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            105
+          ]
+        },
+        {
+          "input": 106,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            106
+          ]
+        },
+        {
+          "input": 107,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            107
+          ]
+        },
+        {
+          "input": 108,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            108,
+            1
+          ]
+        },
+        {
+          "input": 109,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            109
+          ]
+        },
+        {
+          "input": 110,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            110
+          ]
+        },
+        {
+          "input": 111,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            111
+          ]
+        },
+        {
+          "input": 112,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            112
+          ]
+        },
+        {
+          "input": 113,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            113
+          ]
+        },
+        {
+          "input": 114,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            114,
+            1
+          ]
+        },
+        {
+          "input": 115,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            115
+          ]
+        },
+        {
+          "input": 116,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            116
+          ]
+        },
+        {
+          "input": 117,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            117
+          ]
+        },
+        {
+          "input": 118,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            118
+          ]
+        },
+        {
+          "input": 119,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            119
+          ]
+        },
+        {
+          "input": 120,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            120,
+            1
+          ]
+        },
+        {
+          "input": 121,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            121
+          ]
+        },
+        {
+          "input": 122,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            122
+          ]
+        },
+        {
+          "input": 123,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            123
+          ]
+        },
+        {
+          "input": 124,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            124
+          ]
+        },
+        {
+          "input": 125,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            125
+          ]
+        },
+        {
+          "input": 126,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            126,
+            1
+          ]
+        },
+        {
+          "input": 127,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            127
+          ]
+        },
+        {
+          "input": 128,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            128
+          ]
+        },
+        {
+          "input": 129,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            129
+          ]
+        },
+        {
+          "input": 130,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            130
+          ]
+        },
+        {
+          "input": 131,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            131
+          ]
+        },
+        {
+          "input": 132,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            132,
+            1
+          ]
+        },
+        {
+          "input": 133,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            133
+          ]
+        },
+        {
+          "input": 134,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            134
+          ]
+        },
+        {
+          "input": 135,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            135
+          ]
+        },
+        {
+          "input": 136,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            136
+          ]
+        },
+        {
+          "input": 137,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            137
+          ]
+        },
+        {
+          "input": 138,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            138,
+            1
+          ]
+        },
+        {
+          "input": 139,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            139
+          ]
+        },
+        {
+          "input": 140,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            140
+          ]
+        },
+        {
+          "input": 141,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            141
+          ]
+        },
+        {
+          "input": 142,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            142
+          ]
+        },
+        {
+          "input": 143,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            143
+          ]
+        },
+        {
+          "input": 144,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            144,
+            1
+          ]
+        },
+        {
+          "input": 145,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            145
+          ]
+        },
+        {
+          "input": 146,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            146
+          ]
+        },
+        {
+          "input": 147,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            147
+          ]
+        },
+        {
+          "input": 148,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            148
+          ]
+        },
+        {
+          "input": 149,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            149
+          ]
+        },
+        {
+          "input": 150,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            150,
+            1
+          ]
+        },
+        {
+          "input": 151,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            151
+          ]
+        },
+        {
+          "input": 152,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            152
+          ]
+        },
+        {
+          "input": 153,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            153
+          ]
+        },
+        {
+          "input": 154,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            154
+          ]
+        },
+        {
+          "input": 155,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            155
+          ]
+        },
+        {
+          "input": 156,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            156,
+            1
+          ]
+        },
+        {
+          "input": 157,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            157
+          ]
+        },
+        {
+          "input": 158,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            158
+          ]
+        },
+        {
+          "input": 159,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            159
+          ]
+        },
+        {
+          "input": 160,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            160
+          ]
+        },
+        {
+          "input": 161,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            161
+          ]
+        },
+        {
+          "input": 162,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            162,
+            1
+          ]
+        },
+        {
+          "input": 163,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            163
+          ]
+        },
+        {
+          "input": 164,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            164
+          ]
+        },
+        {
+          "input": 165,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            165
+          ]
+        },
+        {
+          "input": 166,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            166
+          ]
+        },
+        {
+          "input": 167,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            167
+          ]
+        },
+        {
+          "input": 168,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            168,
+            1
+          ]
+        },
+        {
+          "input": 169,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            169
+          ]
+        },
+        {
+          "input": 170,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            170
+          ]
+        },
+        {
+          "input": 171,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            171
+          ]
+        },
+        {
+          "input": 172,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            172
+          ]
+        },
+        {
+          "input": 173,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            173
+          ]
+        },
+        {
+          "input": 174,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            174,
+            1
+          ]
+        },
+        {
+          "input": 175,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            175
+          ]
+        },
+        {
+          "input": 176,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            176
+          ]
+        },
+        {
+          "input": 177,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            177
+          ]
+        },
+        {
+          "input": 178,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            178
+          ]
+        },
+        {
+          "input": 179,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            179
+          ]
+        },
+        {
+          "input": 180,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            180,
+            1
+          ]
+        },
+        {
+          "input": 181,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            181
+          ]
+        },
+        {
+          "input": 182,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            182
+          ]
+        },
+        {
+          "input": 183,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            183
+          ]
+        },
+        {
+          "input": 184,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            184
+          ]
+        },
+        {
+          "input": 185,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            185
+          ]
+        },
+        {
+          "input": 186,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            186,
+            1
+          ]
+        },
+        {
+          "input": 187,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            187
+          ]
+        },
+        {
+          "input": 188,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            188
+          ]
+        },
+        {
+          "input": 189,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            189
+          ]
+        },
+        {
+          "input": 190,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            190
+          ]
+        },
+        {
+          "input": 191,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            191
+          ]
+        },
+        {
+          "input": 192,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            192,
+            1
+          ]
+        },
+        {
+          "input": 193,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            193
+          ]
+        },
+        {
+          "input": 194,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            194
+          ]
+        },
+        {
+          "input": 195,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            195
+          ]
+        },
+        {
+          "input": 196,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            196
+          ]
+        },
+        {
+          "input": 197,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            197
+          ]
+        },
+        {
+          "input": 198,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            198,
+            1
+          ]
+        },
+        {
+          "input": 199,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            199
+          ]
+        },
+        {
+          "input": 200,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            200
+          ]
+        },
+        {
+          "input": 201,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            201
+          ]
+        },
+        {
+          "input": 202,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            202
+          ]
+        },
+        {
+          "input": 203,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            203
+          ]
+        },
+        {
+          "input": 204,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            204,
+            1
+          ]
+        },
+        {
+          "input": 205,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            205
+          ]
+        },
+        {
+          "input": 206,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            206
+          ]
+        },
+        {
+          "input": 207,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            207
+          ]
+        },
+        {
+          "input": 208,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            208
+          ]
+        },
+        {
+          "input": 209,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            209
+          ]
+        },
+        {
+          "input": 210,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            210,
+            1
+          ]
+        },
+        {
+          "input": 211,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            211
+          ]
+        },
+        {
+          "input": 212,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            212
+          ]
+        },
+        {
+          "input": 213,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            213
+          ]
+        },
+        {
+          "input": 214,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            214
+          ]
+        },
+        {
+          "input": 215,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            215
+          ]
+        },
+        {
+          "input": 216,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            216,
+            1
+          ]
+        },
+        {
+          "input": 217,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            217
+          ]
+        },
+        {
+          "input": 218,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            218
+          ]
+        },
+        {
+          "input": 219,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            219
+          ]
+        },
+        {
+          "input": 220,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            220
+          ]
+        },
+        {
+          "input": 221,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            221
+          ]
+        },
+        {
+          "input": 222,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            222,
+            1
+          ]
+        },
+        {
+          "input": 223,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            223
+          ]
+        },
+        {
+          "input": 224,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            224
+          ]
+        },
+        {
+          "input": 225,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            225
+          ]
+        },
+        {
+          "input": 226,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            226
+          ]
+        },
+        {
+          "input": 227,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            227
+          ]
+        },
+        {
+          "input": 228,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            228,
+            1
+          ]
+        },
+        {
+          "input": 229,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            229
+          ]
+        },
+        {
+          "input": 230,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            230
+          ]
+        },
+        {
+          "input": 231,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            231
+          ]
+        },
+        {
+          "input": 232,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            232
+          ]
+        },
+        {
+          "input": 233,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            233
+          ]
+        },
+        {
+          "input": 234,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            234,
+            1
+          ]
+        },
+        {
+          "input": 235,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            235
+          ]
+        },
+        {
+          "input": 236,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            236
+          ]
+        },
+        {
+          "input": 237,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            237
+          ]
+        },
+        {
+          "input": 238,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            238
+          ]
+        },
+        {
+          "input": 239,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            239
+          ]
+        },
+        {
+          "input": 240,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            240,
+            1
+          ]
+        },
+        {
+          "input": 241,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            241
+          ]
+        },
+        {
+          "input": 242,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            242
+          ]
+        },
+        {
+          "input": 243,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            243
+          ]
+        },
+        {
+          "input": 244,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            244
+          ]
+        },
+        {
+          "input": 245,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            245
+          ]
+        },
+        {
+          "input": 246,
+          "accepted": true,
+          "result": 1,
+          "rng_bytes": [
+            246,
+            1
+          ]
+        },
+        {
+          "input": 247,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            247
+          ]
+        },
+        {
+          "input": 248,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            248
+          ]
+        },
+        {
+          "input": 249,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            249
+          ]
+        },
+        {
+          "input": 250,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            250
+          ]
+        },
+        {
+          "input": 251,
+          "accepted": true,
+          "result": 0,
+          "rng_bytes": [
+            251
+          ]
+        },
+        {
+          "input": 252,
+          "accepted": false,
+          "result": 0,
+          "rng_bytes": [
+            252,
+            1
+          ]
+        },
+        {
+          "input": 253,
+          "accepted": false,
+          "result": 0,
+          "rng_bytes": [
+            253,
+            1
+          ]
+        },
+        {
+          "input": 254,
+          "accepted": false,
+          "result": 0,
+          "rng_bytes": [
+            254,
+            1
+          ]
+        },
+        {
+          "input": 255,
+          "accepted": false,
+          "result": 0,
+          "rng_bytes": [
+            255,
+            1
+          ]
+        }
+      ]
+    },
+    "caster_native_kind_distribution": {
+      "healing_bytes": 170,
+      "mana_bytes": 85,
+      "fraction_after_successful_drop": "2/3 healing, 1/3 mana",
+      "native_randomrange3_rejects_255": true
+    },
+    "warrior_healing_only": [
+      {
+        "before_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": true,
+        "warlock": false,
+        "result": 1,
+        "after_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          3,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 3,
+        "after_mana": 1,
+        "rng_bytes": [
+          0
+        ]
+      },
+      {
+        "before_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": true,
+        "warlock": false,
+        "result": 1,
+        "after_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          3,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 3,
+        "after_mana": 1,
+        "rng_bytes": [
+          0
+        ]
+      },
+      {
+        "before_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": true,
+        "warlock": false,
+        "result": 1,
+        "after_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          3,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 3,
+        "after_mana": 1,
+        "rng_bytes": [
+          0
+        ]
+      },
+      {
+        "before_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          2,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "before_heal": 2,
+        "before_mana": 1,
+        "battle_result": 0,
+        "battle_mode": 0,
+        "warrior": true,
+        "warlock": false,
+        "result": 1,
+        "after_inventory": [
+          3,
+          148,
+          1,
+          63,
+          1,
+          18,
+          3,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "after_heal": 3,
+        "after_mana": 1,
+        "rng_bytes": [
+          0
+        ]
+      }
+    ],
+    "shaman_successful_mana_receipt": {
+      "before_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 2,
+      "before_mana": 1,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 2,
+      "after_inventory": [
+        3,
+        148,
+        1,
+        63,
+        2,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 2,
+      "after_mana": 2,
+      "rng_bytes": [
+        0,
+        0
+      ]
+    },
+    "warlock_successful_mana_receipt": {
+      "before_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 2,
+      "before_mana": 1,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": true,
+      "result": 2,
+      "after_inventory": [
+        3,
+        148,
+        1,
+        63,
+        2,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 2,
+      "after_mana": 2,
+      "rng_bytes": [
+        0,
+        0
+      ]
+    },
+    "healing_feedback_rendered": true,
+    "full_bag_healing": {
+      "before_inventory": [
+        6,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        142,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 0,
+      "before_mana": 0,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        6,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        142,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 0,
+      "after_mana": 0,
+      "rng_bytes": [
+        0,
+        1
+      ]
+    },
+    "full_bag_mana": {
+      "before_inventory": [
+        6,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        142,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 0,
+      "before_mana": 0,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        6,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        142,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 0,
+      "after_mana": 0,
+      "rng_bytes": [
+        0,
+        0
+      ]
+    },
+    "quantity_99_cannot_overflow": {
+      "before_inventory": [
+        6,
+        18,
+        99,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 99,
+      "before_mana": 0,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        6,
+        18,
+        99,
+        46,
+        1,
+        148,
+        1,
+        137,
+        1,
+        149,
+        1,
+        150,
+        1,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 99,
+      "after_mana": 0,
+      "rng_bytes": [
+        0,
+        1
+      ]
+    },
+    "guard_loss": {
+      "before_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 2,
+      "before_mana": 1,
+      "battle_result": 1,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 2,
+      "after_mana": 1,
+      "rng_bytes": []
+    },
+    "guard_flee": {
+      "before_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 2,
+      "before_mana": 1,
+      "battle_result": 2,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 2,
+      "after_mana": 1,
+      "rng_bytes": []
+    },
+    "non_initialized_character_guard": {
+      "before_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "before_heal": 2,
+      "before_mana": 1,
+      "battle_result": 0,
+      "battle_mode": 0,
+      "warrior": false,
+      "warlock": false,
+      "result": 0,
+      "after_inventory": [
+        3,
+        148,
+        1,
+        63,
+        1,
+        18,
+        2,
+        255,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "after_heal": 2,
+      "after_mana": 1,
+      "rng_bytes": []
+    },
+    "actual_native_flee": {
+      "declared_temporary_hp_speed_fixture": true,
+      "native_outcome": 2,
+      "loot_helper_calls": 0,
+      "inventory_and_copper_unchanged": true,
+      "enemy_remains_alive": true
+    },
+    "actual_native_loss": {
+      "declared_temporary_hp_speed_fixture": true,
+      "native_outcome": 1,
+      "loot_helper_calls": 0,
+      "inventory_and_copper_unchanged": true,
+      "enemy_remains_alive": true
+    }
+  }
+}

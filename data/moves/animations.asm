@@ -3,20 +3,20 @@ BattleAnimations::
 	table_width 2
 	dw BattleAnim_Dummy
 	dw BattleAnim_Pound
-	dw BattleAnim_KarateChop
+	dw BattleAnim_PeonWeaponStrike
 	dw BattleAnim_PeonWindfury
 	dw BattleAnim_CometPunch
-	dw BattleAnim_MegaPunch
+	dw BattleAnim_PeonHeroicStrike
 	dw BattleAnim_PayDay
-	dw BattleAnim_FirePunch
+	dw BattleAnim_PeonFlameShockII
 	dw BattleAnim_IcePunch
 	dw BattleAnim_PeonEarthShock
 	dw BattleAnim_Scratch
 	dw BattleAnim_Vicegrip
 	dw BattleAnim_Guillotine
-	dw BattleAnim_RazorWind
+	dw BattleAnim_PeonRend
 	dw BattleAnim_PeonRockbiter
-	dw BattleAnim_Cut
+	dw BattleAnim_PeonRend
 	dw BattleAnim_Gust
 	dw BattleAnim_WingAttack
 	dw BattleAnim_Whirlwind
@@ -26,10 +26,10 @@ BattleAnimations::
 	dw BattleAnim_VineWhip
 	dw BattleAnim_Stomp
 	dw BattleAnim_DoubleKick
-	dw BattleAnim_MegaKick
+	dw BattleAnim_PeonHeroicStrike
 	dw BattleAnim_JumpKick
 	dw BattleAnim_RollingKick
-	dw BattleAnim_SandAttack
+	dw BattleAnim_PeonCurse
 	dw BattleAnim_Headbutt
 	dw BattleAnim_HornAttack
 	dw BattleAnim_FuryAttack
@@ -67,24 +67,24 @@ BattleAnimations::
 	dw BattleAnim_HyperBeam
 	dw BattleAnim_Peck
 	dw BattleAnim_DrillPeck
-	dw BattleAnim_Submission
+	dw BattleAnim_PeonHeroicStrike
 	dw BattleAnim_LowKick
 	dw BattleAnim_Counter
 	dw BattleAnim_SeismicToss
-	dw BattleAnim_Strength
-	dw BattleAnim_Absorb
-	dw BattleAnim_MegaDrain
+	dw BattleAnim_PeonHeroicStrike
+	dw BattleAnim_PeonDrainLife
+	dw BattleAnim_PeonDrainLife
 	dw BattleAnim_LeechSeed
 	dw BattleAnim_Growth
 	dw BattleAnim_RazorLeaf
 	dw BattleAnim_Solarbeam
-	dw BattleAnim_Poisonpowder
+	dw BattleAnim_PeonCurse
 	dw BattleAnim_StunSpore
 	dw BattleAnim_SleepPowder
 	dw BattleAnim_PetalDance
-	dw BattleAnim_StringShot
+	dw BattleAnim_PeonRend
 	dw BattleAnim_DragonRage
-	dw BattleAnim_FireSpin
+	dw BattleAnim_PeonFlameShock
 	dw BattleAnim_Thundershock
 	dw BattleAnim_Thunderbolt
 	dw BattleAnim_ThunderWave
@@ -93,7 +93,7 @@ BattleAnimations::
 	dw BattleAnim_Earthquake
 	dw BattleAnim_Fissure
 	dw BattleAnim_Dig
-	dw BattleAnim_Toxic
+	dw BattleAnim_PeonCurse
 	dw BattleAnim_Confusion
 	dw BattleAnim_PsychicM
 	dw BattleAnim_Hypnosis
@@ -102,7 +102,7 @@ BattleAnimations::
 	dw BattleAnim_QuickAttack
 	dw BattleAnim_Rage
 	dw BattleAnim_Teleport
-	dw BattleAnim_NightShade
+	dw BattleAnim_PeonShadowBolt
 	dw BattleAnim_Mimic
 	dw BattleAnim_Screech
 	dw BattleAnim_DoubleTeam
@@ -124,7 +124,7 @@ BattleAnimations::
 	dw BattleAnim_Selfdestruct
 	dw BattleAnim_EggBomb
 	dw BattleAnim_Lick
-	dw BattleAnim_Smog
+	dw BattleAnim_PeonCurse
 	dw BattleAnim_Sludge
 	dw BattleAnim_BoneClub
 	dw BattleAnim_PeonFlameShockII
@@ -134,8 +134,8 @@ BattleAnimations::
 	dw BattleAnim_SkullBash
 	dw BattleAnim_SpikeCannon
 	dw BattleAnim_Constrict
-	dw BattleAnim_Amnesia
-	dw BattleAnim_Kinesis
+	dw BattleAnim_Barrier
+	dw BattleAnim_PeonCurse
 	dw BattleAnim_Softboiled
 	dw BattleAnim_HiJumpKick
 	dw BattleAnim_Glare
@@ -248,7 +248,7 @@ BattleAnimations::
 	dw BattleAnim_PsychUp
 	dw BattleAnim_Extremespeed
 	dw BattleAnim_Ancientpower
-	dw BattleAnim_ShadowBall
+	dw BattleAnim_PeonShadowBolt
 	dw BattleAnim_FutureSight
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool

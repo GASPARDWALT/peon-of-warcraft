@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Compile native region maps/fog to a CGB display without changing SRAM."""
 import argparse
+import re
 from pathlib import Path
 import numpy as np
 from PIL import Image, ImageOps
@@ -56,10 +57,25 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--source',type=Path,default=OUT)
     parser.add_argument('--output',type=Path,default=OUT)
+    parser.add_argument('--native-palettes',action='store_true',
+                        help='Use the current RGB555 palette assembly, independent of historical art generators.')
     args=parser.parse_args()
     if args.source.name=='world':
         import build_durotar_world as world
         BG, REGION_BGS=world.BG,world.REGION_BGS
+    if args.native_palettes:
+        def load_palettes(path):
+            palettes=[]
+            for line in path.read_text().splitlines():
+                if 'RGB' not in line: continue
+                values=[int(v) for v in re.findall(r'\d+',line.split('RGB',1)[1].split(';')[0])]
+                assert len(values)==12 and all(0<=v<32 for v in values)
+                palettes.append([tuple((v<<3)|(v>>2) for v in values[i:i+3]) for i in range(0,12,3)])
+            return palettes
+        BG=load_palettes(ROOT/'gfx/tilesets/peon_bg.pal')
+        regions=load_palettes(ROOT/'gfx/tilesets/peon_regions.pal')
+        assert len(BG)==8 and len(regions)==56
+        REGION_BGS={name:regions[i*8:(i+1)*8] for i,(_,name,_) in enumerate(SPECS[:-1])}
     dest=ROOT/'gfx/peon_maps';dest.mkdir(parents=True,exist_ok=True)
     preview=args.output/'zone_maps';preview.mkdir(parents=True,exist_ok=True)
     asm=[]

@@ -23,6 +23,9 @@ DEF PEON_BLADE_MEDALLION EQU ITEM_93
 DEF PEON_SPIRIT_MACE EQU ITEM_8E
 DEF PEON_EARTH_TOTEM EQU ITEM_94
 DEF PEON_CAMP_BREAD EQU ITEM_95
+DEF PEON_MINOR_MANA EQU ETHER
+DEF PEON_CRUDE_AXE EQU TOWN_MAP
+DEF PEON_WORN_STAFF EQU POKE_FLUTE
 
 ; Three reserved variable sprites keep their VRAM allocation stable while
 ; each independent quest marker changes its appearance.

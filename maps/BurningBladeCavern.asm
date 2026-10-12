@@ -31,6 +31,7 @@ BurningBladeStrongImpScript:
 	callasm PeonVileFamiliarsReadySound
 	disappear CAVERN_STRONG_IMP
 	givemoney YOUR_MONEY, 30
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext BurningBladeStrongLootText
 	waitbutton
@@ -56,6 +57,7 @@ BurningBladeCavernGuideScript:
 	callasm PeonVileFamiliarsReadySound
 	disappear CAVERN_IMP
 	givemoney YOUR_MONEY, 20
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext BurningBladeLootText
 	waitbutton
@@ -80,6 +82,7 @@ BurningBladeFelstalkerScript:
 	setevent EVENT_PEON_CAVE_FELSTALKER_DEAD
 	disappear CAVERN_FELSTALKER
 	givemoney YOUR_MONEY, 25
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext BurningBladeFelstalkerLootText
 	waitbutton
@@ -104,6 +107,7 @@ BurningBladeCultistScript:
 	setevent EVENT_PEON_CAVE_CULTIST_DEAD
 	disappear CAVERN_CULTIST
 	givemoney YOUR_MONEY, 25
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext BurningBladeCultistLootText
 	waitbutton
@@ -133,6 +137,7 @@ BurningBladeYarrogScript:
 .ReadyChecked:
 	disappear CAVERN_YARROG
 	givemoney YOUR_MONEY, 35
+	farscall PeonRarePotionLootScript
 	giveitem PEON_BLADE_MEDALLION
 	iffalse .Full
 	opentext
@@ -187,7 +192,7 @@ BurningBladeYarrogLootText:
 BurningBladeCavern_MapEvents:
 	db 0, 0
 	def_warp_events
-	warp_event 10, 16, VALLEY_OF_TRIALS, 3
+	warp_event 10, 16, PEON_CAVE_APPROACH, 2
 	def_coord_events
 	coord_event 12, 9, -1, BurningBladeStrongImpScript
 	coord_event 13, 8, -1, BurningBladeStrongImpScript

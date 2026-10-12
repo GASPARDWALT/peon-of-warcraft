@@ -1075,3 +1075,13 @@ PeonOrcInn_Blocks:
 INCBIN "maps/PeonOrcInn.blk"
 PeonTrollInn_Blocks:
 INCBIN "maps/PeonTrollInn.blk"
+PeonValleyCrossroads_Blocks:
+INCBIN "maps/PeonValleyCrossroads.blk"
+PeonHanazuaCamp_Blocks:
+INCBIN "maps/PeonHanazuaCamp.blk"
+PeonSarkothBasin_Blocks:
+INCBIN "maps/PeonSarkothBasin.blk"
+PeonCaveApproach_Blocks:
+INCBIN "maps/PeonCaveApproach.blk"
+PeonValleyExit_Blocks:
+INCBIN "maps/PeonValleyExit.blk"

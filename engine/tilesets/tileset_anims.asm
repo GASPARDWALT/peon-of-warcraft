@@ -54,6 +54,37 @@ StandingTileFrame8:
 	ld [wTileAnimationTimer], a
 	ret
 
+AnimatePeonEnvironmentFire:
+	; WriteTile restores this stack pointer after copying sixteen bytes.
+	; The two dedicated targets are $9000/$9010, so E also supplies the
+	; left/right offset in each 32-byte phase. Nothing else uses these tiles.
+	ld hl, sp+0
+	ld b, h
+	ld c, l
+	ld a, [wTileAnimationTimer]
+	and %11
+	cp 3
+	jr c, .phase
+	ld a, 1 ; 0,1,2,1: a gentle ping-pong instead of a hard reset.
+.phase
+rept 5
+	add a
+endr
+	add e
+	add LOW(PeonEnvironmentFireFrames)
+	ld l, a
+	ld a, 0
+	adc HIGH(PeonEnvironmentFireFrames)
+	ld h, a
+	ld sp, hl
+	ld h, d
+	ld l, e
+	jp WriteTile
+
+PeonEnvironmentFireFrames:
+	INCBIN "gfx/tilesets/peon_environment_fire.bin"
+	assert @ - PeonEnvironmentFireFrames == 3 * 2 * TILE_SIZE
+
 ScrollTileRightLeft:
 ; Scroll right for 4 ticks, then left for 4 ticks.
 	ld a, [wTileAnimationTimer]

@@ -1,39 +1,70 @@
 # Peon of Warcraft implementation status
 
-This file describes the actual v0.2.4 scope and the remaining work. Large concept images and prepared PNG animations do not count as playable systems. See `V0_2_4_PLAYABLE.md` for the downloadable chapter, controls, save transfer and explicit prototype adaptations. The preview sections below are historical milestones, not the current feature boundary.
+This describes the actual v0.2.5 scope. Native ROM behavior and exact-hash
+validation determine completion; large concepts and prepared PNGs alone do
+not. See `V0_2_5_ENVIRONMENT.md` for play, saves and explicit prototype limits.
+The v0.2.4/earlier sections below are historical milestones.
 
 | Area | Current playable behavior | Remaining work |
 | --- | --- | --- |
-| Title/audio | Native portal artwork, supplied-guide arrangement, seven original four-channel ambient/battle themes, native effects and golden quest/combat level-up particles | Physical audio playtest; exact Warcraft recordings/MP3 are not streamed |
-| New character | Bonk/blackout/eye-opening, Thrall and masters, Kento asks name, apprentice kit | Expand cinematic staging and character selection presentation |
-| Classes | Shaman; eleven purchased lessons at even levels, two prepared spell slots after unlimited Mace Strike/charged Lightning Bolt; Kento safely normalizes older reordered move/charge pairs | Warrior/Warlock routes remain locked; higher lessons need a longer progression; four active actions remain the save boundary |
-| World | Seven explorable compact regions; road, coast, cliffs, two cave chambers, nine native deadthorn trees, clearer Den trails and stone Valley exit boundaries; thirteen retained playable terrain arrays are distinct | Seven fixed Valley screens and complete Valley overview need final path references and a camera/location migration; full Durotar, Echo Isles and Orgrimmar interior remain future work |
-| Villages | Nine doors, six residences and three inns; four distinct Orc/Troll room layouts; healing, binding, Hearthstone and originating-door returns | Room IDs remain shared within each race; full profession/vendor services and Hearthstone cooldown policy |
-| Dialogue | Fourteen role portraits, eighteen-column text, `Péon <name>`, checked opening and class locks | Individual portraits for every named NPC; more narrative reactions |
-| Quests | Existing six reduced-count quests plus four-familiar prerequisite and Sarkoth report to Gornek; quest XP/copper awarded once, cactus harvests, three-state markers and recoverable partial club/pouch rewards | Call of Earth, Thazz'ril's Pick, Sen'jin/Orgnil reports, journal, full Classic counts and respawn design |
-| Combat | Eleven enemy types/apprentice with three poses, twelve native spell animations, unlimited turn-cost melee, charged spells, bag totem/potions, persistent defeated actors and consecutive scorpids from level four; battle exits clear transient state and Peon victories skip legacy evolution/virus/berry processing | Longer progression, more encounters and human balance playtest; six actions need explicit save-safe design; the normal completed route reaches approximately level seven |
-| Artwork | Transparent native sprites with larger humanoid silhouettes, front/back sets, building/prop cutouts, Den campfire and animation previews | Replace shared silhouettes with individual character designs as needed |
-| Gear | One active weapon; green quest upgrades; existing rarity effects and 32 native item drawings; Mage/Warrior gear prepared separately | Independent armor/shield/totem slots and stat formulas; actual broader loot/catalog progression |
-| Bags/vendors | Six/twelve/twenty stacks; native icons; capped potion/water use costs a turn; food is outside combat; K'waii/Jark now offer potions/bread alongside water x5/25c; invalid use consumes nothing | Selling, buyback, full Classic stock and reputation prices; bread/potion prices are prototype balance |
-| Map | Select/Start after Sting; regional discovery fog, refreshed native thumbnails, player position and live quest objectives including familiars/cave/Gornek report | Complete Valley overview, per-tile exploration if desired, larger world atlas and more quest POIs |
-| Menus | Fixed seven-entry Shaman Start menu; fixed 20×18 Character/Bags/Inventory frames; actual prepared actions and HP maximum; quantities, selection, rarity and equipped status; browsing keeps fonts resident | More equipment icons and full vendor layouts; the character view does not imply functional armor or six actions |
-| World HUD | One fixed 34×8 face/life ink footprint, live health and no large/miniature switching; hides during other interfaces or exceptionally crowded frames | A larger permanent panel needs a background renderer; shared mana is unimplemented |
-| Mak'gora Proofs | No earned proofs or playable duel progression; the old zero placeholder no longer crowds Character | Duel encounters, persistence design, rewards and explicit removal of inherited badge dependencies |
-| Saves | One battery slot; four reserved event bits add quest/reward state without layout changes; current terrain refresh preserves harvested cactus state; previous-audio save upgrade and four room cold restarts verified | Multi-save design, migration outside tested locations and broader older-release upgrade coverage |
-| Chromatic | Native CGB/MBC3/timer/RAM/battery header, emulator validation | Actual supported-cartridge flashing, hardware SRAM and RTC validation |
+| Title/audio | Native portal title, seven four-channel themes, effects and golden level-up particles | Physical audio playtest; Warcraft recordings are not streamed |
+| New character | Bonk/blackout/eye-opening, Thrall and three masters; the chosen master asks a name; `Péon <name>` persists | Expanded cinematic and save/character selection presentation |
+| Classes | Shaman, Warrior and Warlock intros, kits, character sheets and class-specific trainers; eleven lessons per class through level 20; protected basics and two trained-action slots | Ordinary progression to higher lessons, separate class stat curves, proper mana/rage/cooldowns and distinct body sets |
+| World | Seven geographic Valley sectors connected in the requested directions; five native IDs25–29 append after the preserved original maps; eighteen terrain arrays distinct; Hana'zua/Zureetha/Sarkoth/imps moved and their old locations retired | Fixed camera screens, more geographic detail, full Durotar/Echo Isles and Orgrimmar interior |
+| Villages | Nine usable doors, six residences/three inns, four distinct Orc/Troll room layouts; healing/binding/Hearthstone and original-door returns | Room IDs remain shared within each race; professions and Hearthstone cooldown policy |
+| Dialogue/font | Role portraits, eighteen-column text and original readable 128-glyph 8×8 font; native glyph/VRAM/pixel verification; box geometry and name limit retained | Individual portraits for every named NPC and richer narrative reactions |
+| Quests | Finite starter chain, cactus harvests, four-familiar prerequisite, Sarkoth report, one-time XP/copper/items, three-state glyphs and full-pouch recovery | Call of Earth, Thazz'ril's Pick, Sen'jin/Orgnil reports, journal, full Classic counts and respawn policy |
+| Combat | Four actions, unlimited basic melee, charged class attacks, native status/drain/stage effects and animations, persistent enemy deaths and two successive road scorpids | More normal-play balance/progression; six actions require save-safe design; wound/curse/burn share one status and AoE is one-target |
+| Warlock pet | Friendly native imp follower indoors/outdoors/Continue; battle backview and1 HP Firebolt after a completed live round; native victory/XP/death handling | Pet health/mana, commands, summon costs, scaling, threat and equipment |
+| Artwork | All47 native environment blocks redrawn within192 tile slots; original transparent buildings/vegetation/props/potions/imp/mailbox/font; three-phase native fires | Further individualized actors and terrain variety within measured tile/OAM budgets |
+| Gear | Active weapon bonuses, quest upgrades, native rarity/icons and class starter mace/axe/staff records | Independent armor/shield/totem stats and complete loot/equipment progression |
+| Supplies/vendors | Six/twelve/twenty-stack bags;20 HP healing,5 charge mana,10 charge water, outside-combat bread; guarded purchases/refusals and one enemy turn for successful combat use | Shared mana/rage, full Classic stock/prices, selling/buyback and reputation |
+| Loot | Finite kills independently roll 1/6 for one potion; caster 2:1 heal/mana, Warrior heal only; dead/flee/loss/full-bag safeguards | Equipment loot tables, additional sensible consumables and ground/drop-recovery policy |
+| Map | Earned Select/Start atlas opens seven-sector Valley overview with sector fog, projected player and live targets; existing Den zoom/regional pages; building/cave projections and legacy discovery bridge | Per-cell fog, broader world atlas and additional quest points |
+| Menus/HUD | Fixed seven-entry menu and Character/Bags/Inventory frames across classes; live actions/HP/quantities/rarity; fixed 34×8 world face/life overlay | Fuller equipment/vendor screens and a larger persistent HUD; crowded scenes can briefly hide the current overlay |
+| Mail | Visible Horde mailboxes near Den/Sen'jin/Razor inns; local interaction leaves persistent state unchanged | Actual letters, attachments or network backend |
+| Mak'gora Proofs | Placeholder removed from Character; no earned proof/duel progression | Duels, rewards/persistence and removal of remaining badge/obedience dependencies |
+| Saves | One actual battery slot; earlier IDs/record sizes/event indices retained, new class/lesson/sector reserved bits, old floors remain walkable; current scenery/NPC/cactus refresh and v0.2.4 upgrade | Multi-save and broader older-release migration coverage |
+| Chromatic | Valid native CGB-only/MBC3+RTC+RAM+battery header and emulator validation | Supported-cartridge flashing, hardware SRAM/RTC and physical playtesting |
 
 ## Next implementation order
 
-1. Human-playtest v0.2.4 for route readability, combat attrition, quest pacing and native input timing; compare the packaged ROM with its emulator evidence.
-2. Complete the user's seven-screen Valley path reference, then design camera/saved-location migration before changing map IDs, dimensions or topology.
-3. Add a compact Call of Earth ritual and Thazz'ril's Pick with explicit prerequisites and finite encounter accounting; preserve existing owned totems and completed saves.
-4. Extend Report to Sen'jin/Report to Orgnil and add enough reachable progression for higher even-level lessons.
-5. Add individualized NPC portraits/sprites and additional regional vegetation using existing role art as explicit fallbacks.
-6. Design independent equipment/stat storage before armor, six actions or a complete Warcraft character sheet; plan any required migration first.
-7. Add a first Mak'gora challenge only after deciding proof rewards and removing unwanted badge/obedience dependencies.
-8. Validate actual Chromatic cartridge loading, SRAM and RTC. Keep multiplayer, other fully functional classes and large parties outside this slice.
+1. Human-playtest v0.2.5 in all three classes for paths, supplies, enemy attrition, quest pacing, text and companion readability.
+2. Add enough native quests/encounters to support later lessons without diagnostic level fixtures; Call of Earth and Thazz'ril's Pick are suitable next slices.
+3. Improve the existing seven geographic areas against the annotated decoration reference; plan a camera migration separately if literal fixed screens remain desired.
+4. Extend the Sen'jin/Orgnil reports and add individualized named-NPC art and regional details within native budgets.
+5. Design real resource/equipment storage before shared mana/rage, armor slots, six actions or pet stats; document save migration before implementation.
+6. Add a first Mak'gora challenge after deciding proof rewards and removing unwanted badge/obedience rules.
+7. Decide local mail semantics before letters/attachments; mailboxes currently only create atmosphere.
+8. Validate actual Chromatic loading, SRAM and RTC. Multiplayer and multiple simultaneous combat actors remain outside this prototype.
 
-Each milestone must build, pass its relevant normal-input test, document save impact and include actual ROM captures. Use `PEON_DESIGN_RULES.md` for style, native dimensions, vocabulary and source-truth rules.
+Each milestone must compile, pass appropriate ordinary-input checks, document
+save impact and include genuine ROM captures. `PEON_DESIGN_RULES.md` governs
+native dimensions, vocabulary and separation of concepts from implemented art.
+
+## v0.2.5 validation boundary
+
+The packager requires sixteen exact-ROM native reports: source, environment
+routes, retained quests, seven-sector atlas, UI, old-save upgrade, three class
+suites, four potion reports, loot, companion and font. Static reports verify
+all 47 native blocks/192 tiles, five appended maps/old-floor retention, binary
+transparent art, atlas projections and128 fixed-cell font glyphs. The release
+manifest records the exact SHA and checked report hashes.
+
+Ordinary controls cover three class selections, real names/kits/training,
+combat/rewards/inn recovery and cold saves; all nine geographic edges with
+reciprocal returns; nine building entrances, four room restarts, three cactus
+harvests and 512 fire frames; moved quest givers, live atlas points/fog, native
+text pixels, potions, finite loot and imp rounds. Higher-level lesson/spell,
+full-bag/RNG/exhausted-charge and pet-finisher cases use labelled private
+fixtures. They do not claim natural level 20 progression or hardware play.
+
+Build with `sh tools/rebuild_peon_v025.sh --build`; its `--validate` mode runs
+all required checks. Exact implementation boundaries are in
+`V0_2_5_ENVIRONMENT.md`, `VALLEY_SEVEN_ZONE_LAYOUT_V025.md`,
+`VALLEY_ATLAS_V025.md`, `PLAYABLE_CLASSES_V025.md`, `CLASS_SPELLS_V025.md`,
+`CLASS_POTIONS_V025.md`, `RARE_POTION_LOOT_V025.md`, `WARLOCK_PET_V025.md`
+and `READABLE_FONT_V025.md`.
 
 ## v0.2.4 completed validation
 

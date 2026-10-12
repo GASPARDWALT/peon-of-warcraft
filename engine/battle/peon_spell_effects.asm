@@ -116,6 +116,17 @@ PeonGuaranteedSpellEffectChance::
 	cp FIRE_BLAST
 	jr z, .guaranteed
 	cp ICE_BEAM
+	jr z, .guaranteed
+	; Warlock fire/curses retain target immunity and native status rules.
+	call PeonGetBattleClass
+	cp 2 ; Warlock
+	jp nz, PeonSpellUnhandled
+	ld a, [wCurPlayerMove]
+	cp FIRE_SPIN ; Immolate
+	jr z, .guaranteed
+	cp FIRE_PUNCH ; Hellfire
+	jr z, .guaranteed
+	cp SMOG ; Corruption II
 	jp nz, PeonSpellUnhandled
 .guaranteed
 	xor a
@@ -353,5 +364,212 @@ PeonFixEnemyPicBankFromC::
 	ld a, c
 	add PICS_FIX
 	ld c, a
+	scf
+	ret
+
+; 0 = Shaman/original route, 1 = Warrior, 2 = Warlock. Both appended
+; class bits live in existing event-array padding. Preserve caller registers.
+PeonGetBattleClass:
+	push bc
+	push de
+	push hl
+	ld de, EVENT_PEON_WARLOCK
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ld a, 2
+	jr nz, .done
+	ld de, EVENT_PEON_WARRIOR
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	ld a, 1
+	jr nz, .done
+	xor a
+.done
+	pop hl
+	pop de
+	pop bc
+	ret
+
+; Called after the native battle actor is initialized, before enemy AI.
+; No base-data or party record is rewritten. All three prototypes retain
+; the existing level/HP/stat curve; only their battle affinity differs.
+PeonApplyClassBattleAffinity::
+	push af
+	push bc
+	push de
+	push hl
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .done
+	ld a, [wBattleMonSpecies]
+	cp MACHOP
+	jr nz, .done
+	call PeonGetBattleClass
+	and a
+	jr z, .done
+	cp 2
+	ld a, NORMAL
+	jr nz, .set
+	ld a, DARK ; Gen II DARK is special, unlike its physical GHOST type.
+.set
+	ld [wBattleMonType1], a
+	ld [wBattleMonType2], a
+.done
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+
+; GetMoveName's caller expects a terminated fixed-width name in buffer 1.
+; Keep MACE STRIKE for old Shaman saves; Warriors and Warlocks have weapons.
+PeonGetBasicMeleeName::
+	ld a, [wNamedObjectIndex]
+	cp POUND
+	jp nz, PeonSpellUnhandled
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jp nz, PeonSpellUnhandled
+	call PeonGetBattleClass
+	and a
+	jp z, PeonSpellUnhandled
+	; GetName preserves BC; preserve that invariant on the custom path too.
+	push bc
+	push de
+	push hl
+	ld hl, .Name
+	ld de, wStringBuffer1
+	ld bc, .NameEnd - .Name
+	call CopyBytes
+	pop hl
+	pop de
+	pop bc
+	scf
+	ret
+.Name:
+	db "MELEE STRIKE@"
+.NameEnd:
+	assert .NameEnd - .Name <= MOVE_NAME_LENGTH
+
+; Native enemy status storage is reused as a single damage-over-time slot.
+; It is presented as a Warrior wound or Warlock curse, never as a second
+; independently stacking system. Burns and enemy poison on the player keep
+; the original logic and text. Read the actual current-user status here:
+; farcall necessarily loads its destination bank into A. DE out is the
+; chosen native animation. This replaces the equivalent core block.
+PeonShowResidualStatus::
+	push af
+	ld a, BATTLE_VARS_STATUS
+	call GetBattleVar
+	and 1 << BRN
+	jr nz, .burn
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .poison
+	ldh a, [hBattleTurn]
+	and a ; ResidualDamage is running for the enemy, not the player.
+	jr z, .poison
+	call PeonGetBattleClass
+	cp 1
+	jr z, .wound
+	cp 2
+	jr z, .curse
+.poison
+	ld hl, HurtByPoisonText
+	ld de, ANIM_PSN
+	jr .native
+.burn
+	ld hl, HurtByBurnText
+	ld de, ANIM_BRN
+.native
+	push de
+	call StdBattleTextbox
+	pop de
+	pop af
+	ret
+.wound
+	ld hl, .WoundText
+	ld de, CUT
+	jr .custom
+.curse
+	ld hl, .CurseText
+	ld de, POISONPOWDER
+.custom
+	push de
+	call BattleTextbox
+	pop de
+	pop af
+	ret
+.WoundText:
+	text "<USER>"
+	line "bleeds from wounds"
+	prompt
+.CurseText:
+	text "<USER>"
+	line "suffers the curse!"
+	prompt
+
+; Carry means custom target text was printed in this helper's ROM bank.
+; The caller saves its standard-text HL around farcall for unhandled cases.
+PeonPrintClassPoisonText::
+	call PeonClassDotKind
+	ret nc
+	cp 1
+	jr nz, .curse
+	ld hl, .WoundText
+	jr .print
+.curse
+	ld hl, .CurseText
+.print
+	call BattleTextbox
+	scf
+	ret
+.WoundText:
+	text "<TARGET>"
+	line "suffers a wound!"
+	prompt
+.CurseText:
+	text "<TARGET>"
+	line "has been cursed!"
+	prompt
+
+; Native poison-type immunity does not make a scorpid immune to a weapon
+; wound or a shadow curse. Actual poisons, including the scorpid's attack
+; against the player, retain Crystal's old immunity checks unchanged.
+; Carry means a recognized class wound/curse, A = 1 wound or 2 curse.
+PeonClassDotKind::
+	call PeonMaceApprenticeGuard
+	ret nc
+	ldh a, [hBattleTurn]
+	and a
+	jp nz, PeonSpellUnhandled
+	call PeonGetBattleClass
+	cp 1
+	jr z, .warrior
+	cp 2
+	jp nz, PeonSpellUnhandled
+	ld a, [wCurPlayerMove]
+	cp POISONPOWDER
+	jr z, .curse
+	cp SMOG
+	jr z, .curse
+	cp TOXIC
+	jp nz, PeonSpellUnhandled
+.curse
+	ld a, 2
+	scf
+	ret
+.warrior
+	ld a, [wCurPlayerMove]
+	cp CUT
+	jr z, .wound
+	cp RAZOR_WIND
+	jp nz, PeonSpellUnhandled
+.wound
+	ld a, 1
 	scf
 	ret

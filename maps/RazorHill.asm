@@ -63,6 +63,7 @@ RazorHillJarkScript:
 	ifequal 1, .Water
 	ifequal 2, .Potion
 	ifequal 3, .Bread
+	ifequal 4, .Mana
 	sjump .Close
 .Water:
 	writetext RazorHillJarkOfferText
@@ -103,6 +104,19 @@ RazorHillJarkScript:
 	waitsfx
 	writetext RazorHillJarkBreadBoughtText
 	sjump .Wait
+.Mana:
+	writetext RazorHillJarkManaOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem PEON_MINOR_MANA
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext RazorHillJarkManaBoughtText
+	sjump .Wait
 .Poor:
 	writetext RazorHillJarkPoorText
 	sjump .Wait
@@ -115,15 +129,16 @@ RazorHillJarkScript:
 	end
 .MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 2, 17, 11
+	menu_coords 0, 2, 17, 13
 	dw .MenuData
 	db 1 ; preserve water as the default for existing shop interactions
 .MenuData:
 	db STATICMENU_CURSOR
-	db 4
+	db 5
 	db "SPRING WATER@"
-	db "MINOR POTION@"
+	db "HEAL POTION@"
 	db "TOUGH BREAD@"
+	db "MANA POTION@"
 	db "CANCEL@"
 
 RazorHillGarthokText:
@@ -162,7 +177,7 @@ RazorHillJarkOfferText:
 	done
 
 RazorHillJarkPotionOfferText:
-	text "MINOR POTION x1"
+	text "HEAL POTION x1"
 	line "25 copper. Buy?"
 	para "Restores 20 HP."
 	done
@@ -262,3 +277,33 @@ RazorHill_MapEvents:
 	; A one-tile horizontal patrol stays clear of roads, doors and other NPCs.
 	; InitRadius adds a sentinel: prospective steps at +/-2 are rejected.
 	object_event 14, 8, SPRITE_OFFICER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RazorHillGruntScript, -1
+
+	object_event 16, 6, SPRITE_PEON_MAILBOX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RazorHillMailboxScript, -1
+
+RazorHillJarkManaOfferText:
+	text "MANA POTION x1"
+	line "25 copper. Buy?"
+	para "Five charges for"
+	line "each caster spell."
+	done
+RazorHillJarkManaBoughtText:
+	text "Mana packed."
+	line "Warriors use rage."
+	done
+
+RazorHillMailboxScript:
+	setlasttalked 0
+	opentext
+	writetext RazorHillMailboxText
+	waitbutton
+	closetext
+	end
+
+RazorHillMailboxText:
+	text "HORDE POST"
+	para "<PLAYER>,"
+	line "no mail for you"
+	cont "today."
+	para "Letters travel"
+	line "with the Horde."
+	done

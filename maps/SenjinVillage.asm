@@ -74,6 +74,7 @@ SenjinVillageKwaiiScript:
 	ifequal 1, .Water
 	ifequal 2, .Potion
 	ifequal 3, .Bread
+	ifequal 4, .Mana
 	sjump .Close
 .Water:
 	writetext SenjinVillageKwaiiOfferText
@@ -114,6 +115,19 @@ SenjinVillageKwaiiScript:
 	waitsfx
 	writetext SenjinVillageKwaiiBreadBoughtText
 	sjump .Wait
+.Mana:
+	writetext SenjinVillageKwaiiManaOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem PEON_MINOR_MANA
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext SenjinVillageKwaiiManaBoughtText
+	sjump .Wait
 .Poor:
 	writetext SenjinVillageKwaiiPoorText
 	sjump .Wait
@@ -126,15 +140,16 @@ SenjinVillageKwaiiScript:
 	end
 .MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 2, 17, 11
+	menu_coords 0, 2, 17, 13
 	dw .MenuData
 	db 1 ; preserve water as the default for existing shop interactions
 .MenuData:
 	db STATICMENU_CURSOR
-	db 4
+	db 5
 	db "SPRING WATER@"
-	db "MINOR POTION@"
+	db "HEAL POTION@"
 	db "TOUGH BREAD@"
+	db "MANA POTION@"
 	db "CANCEL@"
 
 SenjinVillageGadrinText:
@@ -187,7 +202,7 @@ SenjinVillageKwaiiOfferText:
 	done
 
 SenjinVillageKwaiiPotionOfferText:
-	text "MINOR POTION x1"
+	text "HEAL POTION x1"
 	line "25 copper. Buy?"
 	para "Restores 20 HP."
 	done
@@ -290,3 +305,33 @@ SenjinVillage_MapEvents:
 	object_event 16, 13, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, SenjinVillageKwaiiScript, -1
 	object_event 6, 16, SPRITE_LINK_RECEPTIONIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, SenjinVillageWatcherScript, -1
 	object_event 14, 16, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, SenjinVillageVelrinScript, -1
+
+	object_event 14, 6, SPRITE_PEON_MAILBOX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SenjinVillageMailboxScript, -1
+
+SenjinVillageKwaiiManaOfferText:
+	text "MANA POTION x1"
+	line "25 copper. Buy?"
+	para "Five charges for"
+	line "each caster spell."
+	done
+SenjinVillageKwaiiManaBoughtText:
+	text "Mana packed."
+	line "Warriors use rage."
+	done
+
+SenjinVillageMailboxScript:
+	setlasttalked 0
+	opentext
+	writetext SenjinVillageMailboxText
+	waitbutton
+	closetext
+	end
+
+SenjinVillageMailboxText:
+	text "HORDE POST"
+	para "<PLAYER>,"
+	line "no mail for you"
+	cont "today."
+	para "Letters travel"
+	line "with the Horde."
+	done

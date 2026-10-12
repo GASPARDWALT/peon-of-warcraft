@@ -76,7 +76,7 @@ ItemEffects:
 	dw NoEffect            ; SILVER_LEAF
 	dw SuperRodEffect      ; SUPER_ROD
 	dw RestorePPEffect     ; PP_UP
-	dw RestorePPEffect     ; ETHER
+	dw PeonMinorManaItemEffect ; ETHER
 	dw RestorePPEffect     ; MAX_ETHER
 	dw RestorePPEffect     ; ELIXER
 	dw NoEffect            ; RED_SCALE
@@ -2283,6 +2283,26 @@ UseRod:
 ItemfinderEffect:
 	farcall ItemFinder
 	ret
+
+PeonMinorManaItemEffect:
+	ld de, EVENT_PEON_SHAMAN
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jp z, RestorePPEffect ; leave non-Peon legacy paths available
+	farcall PeonTryUseMinorMana
+	jr nc, .NoCharges
+	ld hl, ItemUsedText
+	call PrintText
+	ld de, SFX_PEON_WATER
+	call WaitPlaySFX
+	call WaitSFX
+	jp UseDisposableItem
+.NoCharges
+	xor a
+	ld [wItemEffectSucceeded], a
+	jp WontHaveAnyEffectMessage
 
 RestorePPEffect:
 	ld a, [wCurItem]

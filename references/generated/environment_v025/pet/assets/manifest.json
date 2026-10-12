@@ -1,0 +1,53 @@
+{
+  "original_art": true,
+  "new_original_art": [
+    "imp backview",
+    "Horde mailbox",
+    "small Firebolt"
+  ],
+  "existing_world_sheet_export": "gfx/sprites/peon_imp.png; unchanged native pixel indices",
+  "public_png_palette_expansion": "(RGB5 << 3) | (RGB5 >> 2); native palette values",
+  "palette_sources": {
+    "imp_back": "PeonPetBattlePalette",
+    "world_imp": "PeonMapOBJPalettes slot0",
+    "mailbox": "PeonMapOBJPalettes slot3"
+  },
+  "native_dimensions": {
+    "imp_back": [
+      16,
+      16
+    ],
+    "mailbox": [
+      16,
+      16
+    ],
+    "firebolt": [
+      8,
+      8
+    ]
+  },
+  "alpha": "binary; GBC background tile index 0 is white, world OBJ index 0 is transparent",
+  "bank_1_battle_tiles": [
+    "88",
+    "89",
+    "8a",
+    "8b",
+    "8c"
+  ],
+  "battle_top_left_cell": [
+    8,
+    5
+  ],
+  "player_hud_clear_region_avoided": {
+    "top_left": [
+      9,
+      7
+    ],
+    "size": [
+      11,
+      5
+    ]
+  },
+  "native_world_imp": "existing three-direction PeonImpGFX walking sheet, red OBJ palette 0",
+  "mailbox_sprite_id": 103
+}

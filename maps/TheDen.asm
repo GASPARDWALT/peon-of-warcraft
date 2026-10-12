@@ -23,7 +23,9 @@ TheDen_MapScripts:
 	callback MAPCALLBACK_SPRITES, TheDenQuestSpriteCallback
 
 TheDenDiscover:
+	callasm PeonMigrateValleyDiscovery
 	setevent EVENT_PEON_DISCOVERED_DEN
+	setevent EVENT_PEON_SECTOR_1
 	endcallback
 
 TheDenQuestSpriteCallback:
@@ -184,6 +186,7 @@ TheDenBoarScript:
 	waitsfx
 	disappear THEDEN_BOAR
 	callasm PeonRefreshQuestMarkers
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext TheDenVictoryText
 	waitbutton
@@ -208,6 +211,10 @@ TheDenBoarScript:
 TheDenKentoScript:
 	faceplayer
 	setlasttalked THEDEN_KENTO
+	checkevent EVENT_PEON_WARRIOR
+	iftrue .WrongClass
+	checkevent EVENT_PEON_WARLOCK
+	iftrue .WrongClass
 	; Older saves have the belt totem but predate the usable battle totem.
 	; Inventory guards this non-consumable handoff without another save flag.
 	checkevent EVENT_PEON_SHAMAN
@@ -233,6 +240,20 @@ TheDenKentoScript:
 	closetext
 	callasm PeonShamanTrainer
 	end
+.WrongClass:
+	opentext
+	writetext TheDenKentoWrongClassText
+	waitbutton
+	closetext
+	end
+
+TheDenKentoWrongClassText:
+	text "KENTO BRANDENHOOF"
+	para "The spirits call"
+	line "to shamans, peon."
+	para "Your master is"
+	line "here at the Den."
+	done
 
 TheDenKentoEarthTotemText:
 	text "<PLAYER>,"
@@ -268,6 +289,7 @@ TheDenScorpidScript:
 .ReadyChecked:
 	disappear THEDEN_SCORPID
 	callasm PeonRefreshQuestMarkers
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext TheDenScorpidVictoryText
 	waitbutton
@@ -296,8 +318,8 @@ TheDenQuestAcceptedText:
 	cont "strength."
 	para "Find the boar"
 	line "east."
-	line "Try LIGHTNING"
-	cont "BOLT."
+	line "Use your trained"
+	cont "skills."
 	done
 TheDenQuestReminderText:
 	text "<PLAYER>,"
@@ -434,6 +456,7 @@ TheDen_MapEvents:
 	warp_event 20, 10, VALLEY_OF_TRIALS, 1
 	warp_event 17, 5, PEON_ORC_INN, 1 ; PEON_HUT_DOOR
 	warp_event 5, 7, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
+	warp_event 0, 14, PEON_SARKOTH_BASIN, 2 ; narrow western canyon, zone 5
 	def_coord_events
 	coord_event 17, 15, -1, TheDenScorpidScript
 	coord_event 18, 14, -1, TheDenScorpidScript
@@ -460,7 +483,8 @@ TheDen_MapEvents:
 	object_event 5, 16, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
 	object_event 8, 14, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
 	object_event 6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
-	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
+	; Optional neutral boar becomes Horde post; actor indices do not shift.
+	object_event 16, 6, SPRITE_PEON_MAILBOX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenMailboxScript, -1
 	; Append-only: saved actor indices 1-11 and all original positions stay stable.
 	object_event 3, 13, SPRITE_BRUNO, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenWarriorMasterScript, -1
 	object_event 3, 16, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheDenWarlockMasterScript, -1
@@ -488,6 +512,7 @@ TheDenDuoknaScript:
 	ifequal 1, .Water
 	ifequal 2, .Potion
 	ifequal 3, .Bread
+	ifequal 4, .Mana
 	sjump .Close
 .Water:
 	writetext DuoknaOfferText
@@ -523,6 +548,19 @@ TheDenDuoknaScript:
 	takemoney YOUR_MONEY, 25
 	writetext TheDenBreadBoughtText
 	sjump .Wait
+.Mana:
+	writetext DuoknaManaOfferText
+	yesorno
+	iffalse .Close
+	checkmoney YOUR_MONEY, 25
+	ifequal HAVE_LESS, .Poor
+	giveitem PEON_MINOR_MANA
+	iffalse .Full
+	takemoney YOUR_MONEY, 25
+	playsound SFX_TRANSACTION
+	waitsfx
+	writetext DuoknaManaBoughtText
+	sjump .Wait
 .Poor:
 	writetext DuoknaPoorText
 	sjump .Wait
@@ -535,15 +573,16 @@ TheDenDuoknaScript:
 	end
 .MenuHeader:
 	db MENU_BACKUP_TILES
-	menu_coords 0, 2, 17, 11
+	menu_coords 0, 2, 17, 13
 	dw .MenuData
 	db 1 ; Water remains the default purchase.
 .MenuData:
 	db STATICMENU_CURSOR
-	db 4
+	db 5
 	db "SPRING WATER@"
-	db "MINOR POTION@"
+	db "HEAL POTION@"
 	db "TOUGH BREAD@"
+	db "MANA POTION@"
 	db "CANCEL@"
 
 ; The two unnamed camp roles share stock, not Duokna's identity.
@@ -564,19 +603,37 @@ TheDenCookScript:
 TheDenWarriorMasterScript:
 	faceplayer
 	setlasttalked THEDEN_WARRIOR_MASTER
+	checkevent EVENT_PEON_WARRIOR
+	iftrue .Trainer
 	opentext
 	writetext TheDenWarriorMasterText
 	waitbutton
 	closetext
 	end
+.Trainer:
+	opentext
+	writetext TheDenWarriorTrainingText
+	waitbutton
+	closetext
+	callasm PeonClassTrainer
+	end
 
 TheDenWarlockMasterScript:
 	faceplayer
 	setlasttalked THEDEN_WARLOCK_MASTER
+	checkevent EVENT_PEON_WARLOCK
+	iftrue .Trainer
 	opentext
 	writetext TheDenWarlockMasterText
 	waitbutton
 	closetext
+	end
+.Trainer:
+	opentext
+	writetext TheDenWarlockTrainingText
+	waitbutton
+	closetext
+	callasm PeonClassTrainer
 	end
 
 TheDenProvisionerText:
@@ -594,25 +651,36 @@ TheDenCookText:
 	done
 
 TheDenWarriorMasterText:
-	text "MoCMoc Zogzog"
+	text "MoCMoc ZOGZOG"
 	line "Warrior Master"
 	para "<PLAYER>,"
 	line "I train warriors."
-	para "You chose the"
-	line "Shaman's path."
-	para "Kento will guide"
-	line "your training."
+	para "Follow your own"
+	line "master's path."
 	done
-
+TheDenWarriorTrainingText:
+	text "MoCMoc ZOGZOG"
+	para "<PLAYER>,"
+	line "ready your weapon."
+	para "Strength alone"
+	line "will not save you."
+	cont "Learn your skills."
+	done
 TheDenWarlockMasterText:
 	text "XASTHUR"
 	line "Warlock Master"
 	para "<PLAYER>,"
 	line "I teach warlocks."
-	para "Your totem marks"
-	line "a different path."
-	para "Return to Kento,"
-	line "Shaman apprentice."
+	para "You chose another"
+	line "path, apprentice."
+	done
+TheDenWarlockTrainingText:
+	text "XASTHUR"
+	para "<PLAYER>,"
+	line "master the shadow."
+	para "Drain life."
+	line "Lay curses."
+	cont "Make fear your own"
 	done
 
 DuoknaGreetingText:
@@ -629,7 +697,7 @@ DuoknaBoughtText:
 	line "Safe travels!"
 	done
 DuoknaPotionOfferText:
-	text "MINOR POTION x1"
+	text "HEAL POTION x1"
 	line "25 copper. Buy?"
 	para "Restores 20 HP."
 	done
@@ -817,4 +885,32 @@ TheDenCampfireOfferText:
 	para "For a proper rest,"
 	line "visit the inn in"
 	cont "the northeast hut."
+	done
+
+DuoknaManaOfferText:
+	text "MANA POTION x1"
+	line "25 copper. Buy?"
+	para "Five charges for"
+	line "each caster spell."
+	done
+DuoknaManaBoughtText:
+	text "Mana packed."
+	line "Warriors use rage."
+	done
+
+TheDenMailboxScript:
+	setlasttalked 0
+	opentext
+	writetext TheDenMailboxText
+	waitbutton
+	closetext
+	end
+
+TheDenMailboxText:
+	text "HORDE POST"
+	para "<PLAYER>,"
+	line "no mail for you"
+	cont "today."
+	para "Letters travel"
+	line "with the Horde."
 	done

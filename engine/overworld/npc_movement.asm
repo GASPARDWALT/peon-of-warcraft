@@ -318,6 +318,26 @@ IsNPCAtCoord:
 	ldh [hObjectStructIndex], a
 	call DoesObjectHaveASprite
 	jr z, .next
+	; The Warlock's runtime companion is scenery, not a blocking/talkable
+	; encounter. Narrow doors and harvested cacti remain accessible. Match
+	; both reserved map index and sprite, preserving ordinary NPC behavior.
+	ld hl, OBJECT_MAP_OBJECT_INDEX
+	add hl, bc
+	ld a, [hl]
+	cp 15
+	jr nz, .ordinary_object
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITE_MONSTER
+	jr nz, .ordinary_object
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .ordinary_object
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr nz, .next
+.ordinary_object:
 
 	ld hl, OBJECT_FLAGS1
 	add hl, bc

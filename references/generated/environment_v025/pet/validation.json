@@ -1,0 +1,416 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "status": "PASS",
+  "normal_ram_edits": false,
+  "user_battery_saves_opened": false,
+  "normal": {
+    "world_follow_and_four_door_zone_transitions": [
+      {
+        "map": 14,
+        "player": [
+          10,
+          12
+        ],
+        "pet": [
+          10,
+          13
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          12,
+          9
+        ],
+        "pet": [
+          12,
+          10
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          16,
+          9
+        ],
+        "pet": [
+          16,
+          8
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          16,
+          7
+        ],
+        "pet": [
+          16,
+          8
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          16,
+          8
+        ],
+        "pet": [
+          16,
+          7
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          12,
+          10
+        ],
+        "pet": [
+          12,
+          9
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          16,
+          7
+        ],
+        "pet": [
+          16,
+          8
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 23,
+        "player": [
+          5,
+          7
+        ],
+        "pet": [
+          5,
+          8
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          17,
+          5
+        ],
+        "pet": [
+          17,
+          6
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 15,
+        "player": [
+          4,
+          12
+        ],
+        "pet": [
+          4,
+          13
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      },
+      {
+        "map": 14,
+        "player": [
+          20,
+          10
+        ],
+        "pet": [
+          20,
+          11
+        ],
+        "native_object": 1,
+        "native_follow_queue_length": 0
+      }
+    ],
+    "mailbox_inspection_no_record_mutation": true,
+    "ordinary_player_can_walk_back_through_pet_tile": true,
+    "battle_backview": {
+      "native_bank1_vram_exact": true,
+      "native_backview_cells": [
+        136,
+        137,
+        138,
+        139
+      ]
+    },
+    "native_full_round_firebolts": [
+      {
+        "before": {
+          "enemy_hp": 5,
+          "player_hp": 12,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 1,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "4448de0e4033de243164b3d759b9e34387ff1f8a46f83dc1f0af18bd2418933b"
+        },
+        "after": {
+          "enemy_hp": 4,
+          "player_hp": 12,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 1,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "4448de0e4033de243164b3d759b9e34387ff1f8a46f83dc1f0af18bd2418933b"
+        }
+      },
+      {
+        "before": {
+          "enemy_hp": 1,
+          "player_hp": 9,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 2,
+          "enemy_turns": 2,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "d04d7d46d11078dfdd2ea5dbc0abea58adb144cb7c6030770a2211d136afb4ec"
+        },
+        "after": {
+          "enemy_hp": 0,
+          "player_hp": 9,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 2,
+          "enemy_turns": 2,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "d04d7d46d11078dfdd2ea5dbc0abea58adb144cb7c6030770a2211d136afb4ec"
+        }
+      },
+      {
+        "before": {
+          "enemy_hp": 8,
+          "player_hp": 13,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 1,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "588e87684f224cbf6684c433b0edb902c7050913db600ff75b8a46029c61ded0"
+        },
+        "after": {
+          "enemy_hp": 7,
+          "player_hp": 13,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 1,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "588e87684f224cbf6684c433b0edb902c7050913db600ff75b8a46029c61ded0"
+        }
+      },
+      {
+        "before": {
+          "enemy_hp": 4,
+          "player_hp": 10,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 2,
+          "enemy_turns": 2,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "e0a9961b6aaacc2e1db73c0f57a0bb4b9630bd2656128b38cb9f5ec9d5a9df15"
+        },
+        "after": {
+          "enemy_hp": 3,
+          "player_hp": 10,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 2,
+          "enemy_turns": 2,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "e0a9961b6aaacc2e1db73c0f57a0bb4b9630bd2656128b38cb9f5ec9d5a9df15"
+        }
+      }
+    ],
+    "pet_hits_fixed_1_no_extra_turn_no_charge_cost": true,
+    "cold_battery_continue": {
+      "battery_bytes": 32768,
+      "all_256_event_bytes_preserved": true,
+      "complete_record_equal": true,
+      "kit_initialized_once": true
+    },
+    "cold_battery_companion": {
+      "map": 14,
+      "player": [
+        12,
+        9
+      ],
+      "pet": [
+        12,
+        10
+      ],
+      "native_object": 1,
+      "native_follow_queue_length": 0
+    },
+    "other_classes_do_not_inherit_companion": {
+      "shaman": {
+        "ordinary_buttons_only": true,
+        "follower_absent": true,
+        "pet_actor_absent": true
+      },
+      "warrior": {
+        "ordinary_buttons_only": true,
+        "follower_absent": true,
+        "pet_actor_absent": true
+      }
+    }
+  },
+  "diagnostic": {
+    "hp1_potion_pet_kill": {
+      "fixture": "Private battle rewind; opponent HP1; player HP max-1.",
+      "native_potion_consumed": true,
+      "one_enemy_turn": true,
+      "native_victory_xp_and_quest_death_flag": true,
+      "pet_round": {
+        "before": {
+          "enemy_hp": 1,
+          "player_hp": 12,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 0,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "bbbd38e575f8aad6701f476c9c06437b6fcd317a6842e17d2c18e93b5e9d3557"
+        },
+        "after": {
+          "enemy_hp": 0,
+          "player_hp": 12,
+          "battle_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "party_pp": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "player_turns": 0,
+          "enemy_turns": 1,
+          "battle_turn": 1,
+          "background_tile_and_attribute_sha256": "bbbd38e575f8aad6701f476c9c06437b6fcd317a6842e17d2c18e93b5e9d3557"
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,13 @@
 PeonMapMenuEntry::
+	; SELECT bypasses the Start-menu exit that normally ends BG transfers.
+	; Restoring the caller's mode lets the VBlank tileset animator run again.
+	ldh a, [hBGMapMode]
+	push af
 	call FadeToMenu
 	call PeonZoneMap
 	call CloseSubmenu
+	pop af
+	ldh [hBGMapMode], a
 	ret
 
 PeonZoneMap:
@@ -37,6 +43,19 @@ PeonZoneMap:
 .orc_room
 	ld a, [wBackupMapNumber] ; the shared hut retains its actual outdoor owner
 .outdoor:
+	cp MAP_PEON_VALLEY_CROSSROADS
+	jr c, .legacy_area
+	cp MAP_PEON_VALLEY_EXIT + 1
+	jr c, .whole_valley
+.legacy_area:
+	cp MAP_THE_DEN
+	jr z, .whole_valley
+	cp MAP_VALLEY_OF_TRIALS
+	jr nz, .old_page
+.whole_valley:
+	ld a, 1
+	jr .store
+.old_page:
 	sub 14
 	cp 7
 	jr c, .store
@@ -110,6 +129,7 @@ PeonZoneMap:
 	call FarCopyBytes
 	pop af
 	ldh [rWBK], a
+	farcall PeonApplyValleyAtlasFog
 	farcall ApplyPals
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
@@ -140,6 +160,10 @@ PeonZoneMap:
 	xor a
 	jp .store
 .Data:
+	; The overview reveals individual sectors; it never needs a blanket page.
+	ld a, [wMenuCursorY]
+	cp 1
+	jr z, .known
 	ld a, [wMenuCursorY]
 	ld e, a
 	ld d, 0
@@ -264,20 +288,52 @@ PeonBags:
 	hlcoord 2, 6
 	ld a, $40
 	call .Icon
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr nz, .class_labels
 	hlcoord 8, 6
 	ld a, $44
 	call .Icon
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr nz, .class_labels
 	hlcoord 14, 6
 	ld a, $48
 	call .Icon
+.class_labels
 	hlcoord 2, 8
 	ld de, .Mace
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr z, .check_staff
+	ld de, .Axe
+	jr .weapon_label
+.check_staff
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .weapon_label
+	ld de, .Staff
+.weapon_label
 	call PlaceString
 	hlcoord 8, 8
 	ld de, .Shield
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .shield_label
+	ld de, .None
+.shield_label
 	call PlaceString
 	hlcoord 14, 8
 	ld de, .Totem
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr nz, .no_totem
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .totem_label
+.no_totem
+	ld de, .None
+.totem_label
 	call PlaceString
 	hlcoord 2, 11
 	ld b, 3
@@ -305,6 +361,7 @@ PeonBags:
 	ld de, .Back
 	call PlaceString
 	farcall PeonRefreshMenuSkinAttributes
+	farcall PeonLoadClassBagWeaponIcon
 	ld de, EVENT_PEON_HEARTH_GRANTED
 	ld b, CHECK_FLAG
 	call EventFlagAction
@@ -334,6 +391,9 @@ PeonBags:
 	ret
 .Title: db "LEATHER BACKPACK@"
 .Mace: db "MACE@"
+.Axe: db "AXE@"
+.Staff: db "STAF@"
+.None: db "--@"
 .Shield: db "SHLD@"
 .Totem: db "TOTM@"
 .Map: db "DUROTAR", "<LF>", "MAP@"
@@ -373,6 +433,17 @@ PeonCharacterSheet:
 	jr nz, .row
 	hlcoord 10, 3
 	ld de, .Class
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr z, .warlock_class
+	ld de, .Warrior
+	jr .class_label
+.warlock_class
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .class_label
+	ld de, .Warlock
+.class_label
 	call PlaceString
 	hlcoord 10, 5
 	ld de, .Level
@@ -418,6 +489,17 @@ PeonCharacterSheet:
 .starter:
 	hlcoord 2, 11
 	ld de, .Weapon
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr z, .staff_weapon
+	ld de, .AxeWeapon
+	jr .weapon_name
+.staff_weapon
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .weapon_name
+	ld de, .StaffWeapon
+.weapon_name
 	call PlaceString
 .spells:
 	hlcoord 2, 12
@@ -446,7 +528,11 @@ PeonCharacterSheet:
 	call GetMoveName
 	jp PlaceString
 .Weapon: db "CRUDE MACE@"
+.AxeWeapon: db "CRUDE AXE@"
+.StaffWeapon: db "WORN STAFF@"
 .Class: db "SHAMAN@"
+.Warrior: db "WARRIOR@"
+.Warlock: db "WARLOCK@"
 .Level: db "LEVEL@"
 .HP: db "HEALTH@"
 .NoAction: db "--@"
@@ -540,6 +626,8 @@ PeonInventory:
 	jp z, .potion_details
 	cp FRESH_WATER
 	jp z, .water_details
+	cp PEON_MINOR_MANA
+	jp z, .mana_details
 	cp PEON_EARTH_TOTEM
 	jp z, .totem_details
 	sub ITEM_87
@@ -594,6 +682,12 @@ PeonInventory:
 .potion_details
 	hlcoord 2, 9
 	ld de, .Potion
+	call PlaceString
+	ld de, .UseHelp
+	jr .footer
+.mana_details
+	hlcoord 2, 9
+	ld de, .Mana
 	call PlaceString
 	ld de, .UseHelp
 	jr .footer
@@ -694,6 +788,8 @@ PeonInventory:
 	ld a, [wNamedObjectIndex]
 	cp FRESH_WATER
 	jp z, .drink
+	cp PEON_MINOR_MANA
+	jp z, .mana
 	cp PEON_EARTH_TOTEM
 	jr z, .totem
 	cp POTION
@@ -745,6 +841,24 @@ PeonInventory:
 	call WaitPlaySFX
 	call WaitSFX
 	ld a, PEON_CAMP_BREAD
+	jr .consume
+.mana
+	farcall PeonTryUseMinorMana
+	jr c, .mana_used
+	ld de, EVENT_PEON_WARRIOR
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld de, .FullCharges
+	ld a, c
+	and a
+	jp z, .reason
+	ld de, .NoManaClass
+	jp .reason
+.mana_used
+	ld de, SFX_PEON_WATER
+	call WaitPlaySFX
+	call WaitSFX
+	ld a, PEON_MINOR_MANA
 	jr .consume
 .drink
 ; Refill all learned spells; a full spellbook leaves the water in the bag.
@@ -819,6 +933,7 @@ PeonInventory:
 .Empty: db "EMPTY@"
 .Food: db "RESTORES 10 HP", "<LF>", "OUTSIDE COMBAT@"
 .Potion: db "RESTORES 20 HP", "<LF>", "ONE BATTLE TURN@"
+.Mana: db "FIVE CHARGES EACH", "<LF>", "ONE BATTLE TURN@"
 .Water: db "TEN SPELL CHARGES", "<LF>", "ONE BATTLE TURN@"
 .Totem: db "ACT BEFORE TARGET", "<LF>", "REUSE; ONE TURN@"
 .QuestItem: db "QUEST PROOF", "<LF>", "KEEP FOR TURN-IN@"
@@ -833,6 +948,7 @@ PeonInventory:
 .NoHealing: db "CANNOT HEAL NOW@"
 .NoFood: db "CANNOT EAT NOW@"
 .FoodBattleOnly: db "REST OUT OF FIGHT@"
+.NoManaClass: db "WARRIORS USE RAGE@"
 .FullCharges: db "CHARGES ARE FULL@"
 .TotemBattleOnly: db "ONLY IN COMBAT@"
 .TotemAlreadySet: db "TOTEM ALREADY SET@"

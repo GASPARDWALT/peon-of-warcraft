@@ -1,0 +1,6128 @@
+{
+  "rom_sha256": "8b19628e4df259b96c4874b1220f238d7d166e6c05d136d7448c6ee9c77aaae8",
+  "all_checks_passed": true,
+  "normal_method": "Ordinary buttons only, real quests, movement, combat and door warps; no normal RAM edits or emulator states loaded.",
+  "diagnostic_method": "Explicit temporary event/coordinate fixtures and private emulator states, with unchanged native execution.",
+  "user_battery_saves_opened": false,
+  "normal_route": [
+    {
+      "name": "normal_earned_overview_only_den_revealed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          115,
+          67,
+          2,
+          6
+        ],
+        [
+          127,
+          55,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "offered"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_den_zoom_page_still_available",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "DEN",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ],
+        [
+          108,
+          66,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "offered"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_unknown_road_page_fog",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "ROAD",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        17,
+        5
+      ],
+      "whole_region_fog": true,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [],
+      "points": [],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 0,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_den_player_walked",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        12,
+        9
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          119,
+          61,
+          2,
+          6
+        ],
+        [
+          127,
+          55,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            12,
+            9
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "offered"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_lazy_gray_giver_and_sleeping_objective",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        9,
+        15
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          127,
+          57,
+          2,
+          6
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            9,
+            15
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 3,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_lazy_objective_removed_ready_giver",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        5,
+        17
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          129,
+          51,
+          2,
+          6
+        ],
+        [
+          127,
+          55,
+          1,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            5,
+            17
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "ready"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_lazy_giver_removed_after_turn_in",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        7,
+        15
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          127,
+          54,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            7,
+            15
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_14_door_1_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          115,
+          67,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 14,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_14_door_1_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          115,
+          67,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 14,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_14_door_2_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          117,
+          51,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 14,
+          "xy": [
+            5,
+            7
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_14_door_2_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          117,
+          51,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 14,
+          "xy": [
+            5,
+            7
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_2_revealed_by_rightward_travel",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        4,
+        12
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          120,
+          80,
+          2,
+          6
+        ],
+        [
+          118,
+          84,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            4,
+            12
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "offered"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_three_real_cactus_targets",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        7,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          118,
+          84,
+          2,
+          6
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            7,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 4,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cactus_1_map_target_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          116,
+          84,
+          2,
+          6
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            8,
+            7
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 3,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cactus_2_map_target_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        24,
+        9
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          118,
+          100,
+          2,
+          6
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            24,
+            9
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cactus_3_map_target_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        10,
+        17
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          126,
+          86,
+          2,
+          6
+        ],
+        [
+          118,
+          84,
+          1,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            10,
+            17
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "ready"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cactus_completed_marker_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        15
+      ],
+      "current_xy": [
+        8,
+        11
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          120,
+          84,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 15,
+          "xy": [
+            8,
+            11
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_3_revealed_by_northward_travel",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        25
+      ],
+      "current_xy": [
+        5,
+        9
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          99,
+          78,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 25,
+          "xy": [
+            5,
+            9
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "offered"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_familiar_targets_hidden_before_zone_6_discovery",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        25
+      ],
+      "current_xy": [
+        5,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          87,
+          78,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 25,
+          "xy": [
+            5,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_4_gray_hanazua_and_hidden_sarkoth_basin",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        26
+      ],
+      "current_xy": [
+        4,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          71,
+          34,
+          2,
+          6
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 26,
+          "xy": [
+            4,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_5_revealed_sarkoth_target",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        27
+      ],
+      "current_xy": [
+        5,
+        0
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          93,
+          30,
+          2,
+          6
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 27,
+          "xy": [
+            5,
+            0
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_sarkoth_dead_target_removed_ready_hanazua",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        27
+      ],
+      "current_xy": [
+        5,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          103,
+          30,
+          2,
+          6
+        ],
+        [
+          71,
+          31,
+          1,
+          4
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 27,
+          "xy": [
+            5,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_gornek_report_yellow_question_at_actual_den",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        26
+      ],
+      "current_xy": [
+        3,
+        5
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          73,
+          31,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 26,
+          "xy": [
+            3,
+            5
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_gornek_report_marker_removed_after_turn_in",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        10,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          121,
+          58,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            10,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_6_two_familiar_targets_and_cave_revealed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        28
+      ],
+      "current_xy": [
+        5,
+        9
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          51,
+          86,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ],
+        [
+          41,
+          82,
+          0,
+          4
+        ],
+        [
+          39,
+          89,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 28,
+          "xy": [
+            5,
+            9
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_1_DEAD",
+          "map_number": 28,
+          "xy": [
+            4,
+            5
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD",
+          "map_number": 28,
+          "xy": [
+            6,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 3,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_defeated_guard_1_map_target_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        28
+      ],
+      "current_xy": [
+        4,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          44,
+          82,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ],
+        [
+          39,
+          89,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 28,
+          "xy": [
+            4,
+            6
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD",
+          "map_number": 28,
+          "xy": [
+            6,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_defeated_guard_2_map_target_removed",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        28
+      ],
+      "current_xy": [
+        5,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          39,
+          86,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 28,
+          "xy": [
+            5,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cave_player_projection_and_two_inside_familiars",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "CAVERN",
+      "initial_page": 6,
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        16
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ],
+        [
+          72,
+          96,
+          0,
+          4
+        ],
+        [
+          82,
+          76,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 20,
+          "xy": [
+            10,
+            16
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_STRONG_IMP_DEAD",
+          "map_number": 20,
+          "xy": [
+            12,
+            8
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_IMP_DEAD",
+          "map_number": 20,
+          "xy": [
+            8,
+            10
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cave_actual_player_walked",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "CAVERN",
+      "initial_page": 6,
+      "current_map": [
+        26,
+        20
+      ],
+      "current_xy": [
+        10,
+        15
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          108,
+          86,
+          2,
+          6
+        ],
+        [
+          72,
+          96,
+          0,
+          4
+        ],
+        [
+          82,
+          76,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 20,
+          "xy": [
+            10,
+            15
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_STRONG_IMP_DEAD",
+          "map_number": 20,
+          "xy": [
+            12,
+            8
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_IMP_DEAD",
+          "map_number": 20,
+          "xy": [
+            8,
+            10
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_cave_return_to_real_zone_6_overview",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        28
+      ],
+      "current_xy": [
+        5,
+        2
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          34,
+          86,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 2,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_zone_7_all_seven_sectors_discovered",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        29
+      ],
+      "current_xy": [
+        0,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          119,
+          126,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 29,
+          "xy": [
+            0,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_road_actual_player_regional_page",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "ROAD",
+      "initial_page": 2,
+      "current_map": [
+        26,
+        16
+      ],
+      "current_xy": [
+        4,
+        14
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          82,
+          57,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 16,
+          "xy": [
+            4,
+            14
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_senjin_actual_player_regional_page",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        17
+      ],
+      "current_xy": [
+        10,
+        4
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          52,
+          76,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 17,
+          "xy": [
+            10,
+            4
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_1_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            5,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_1_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            5,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_2_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        24
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          102,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            15,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_2_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        24
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          102,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            15,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_3_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          78,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            17,
+            9
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_17_door_3_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "SENJIN",
+      "initial_page": 3,
+      "current_map": [
+        26,
+        21
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          78,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 17,
+          "xy": [
+            17,
+            9
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_razor_actual_player_regional_page",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        18
+      ],
+      "current_xy": [
+        12,
+        16
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 18,
+          "xy": [
+            12,
+            16
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_1_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            5,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_1_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            5,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_2_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_2_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        23
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          58,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            17,
+            5
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_3_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          98,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            17,
+            13
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_3_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          98,
+          112,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            17,
+            13
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_4_interior_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        7
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          108,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            5,
+            15
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_owner_18_door_4_indoor_walk_same_projection",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "RAZOR",
+      "initial_page": 4,
+      "current_map": [
+        26,
+        22
+      ],
+      "current_xy": [
+        5,
+        6
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          108,
+          52,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_EXTERIOR_DOOR",
+          "map_number": 18,
+          "xy": [
+            5,
+            15
+          ],
+          "meaning": "Exact exterior return door while inside linked room"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    },
+    {
+      "name": "normal_orgrimmar_actual_player_regional_page",
+      "diagnostic_ram_or_emulator_state": false,
+      "region": "ORGRIMMAR",
+      "initial_page": 5,
+      "current_map": [
+        26,
+        19
+      ],
+      "current_xy": [
+        12,
+        16
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          112,
+          86,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 19,
+          "xy": [
+            12,
+            16
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": true,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": {
+        "world_frames_observed": 128,
+        "native_fire_callback_calls": 32,
+        "both_native_tiles_show_all_three_phases": true,
+        "other_190_patterns_preserved_every_frame": true
+      }
+    }
+  ],
+  "diagnostic_cases": [
+    {
+      "name": "diagnostic_sector_1_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": false,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_2_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": false,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_3_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_4_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": false,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_5_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_6_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": false,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_sector_7_fog_hides_points",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_all_seven_sectors_hidden_no_false_player",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [],
+      "points": [],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 0,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_legacy_save_bridge_only_den_and_valley",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": true,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_legacy_bridge_second_open_idempotent",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_fourteen_visible_markers_native_scanline_budget",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ],
+        [
+          41,
+          82,
+          0,
+          4
+        ],
+        [
+          39,
+          89,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_1_DEAD",
+          "map_number": 28,
+          "xy": [
+            4,
+            5
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_APPROACH_IMP_2_DEAD",
+          "map_number": 28,
+          "xy": [
+            6,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_familiars_ready_yellow_question",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          4
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_next_medallion_offer_after_familiars",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          0,
+          4
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "offered"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_legacy_medallion_active_entrance_objective",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_medallion_ready_marker",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          87,
+          81,
+          1,
+          4
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_medallion_giver_removed",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        20,
+        10
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          121,
+          71,
+          2,
+          6
+        ],
+        [
+          119,
+          58,
+          1,
+          4
+        ],
+        [
+          127,
+          55,
+          1,
+          7
+        ],
+        [
+          118,
+          84,
+          1,
+          7
+        ],
+        [
+          71,
+          31,
+          1,
+          7
+        ],
+        [
+          128,
+          51,
+          0,
+          4
+        ],
+        [
+          116,
+          84,
+          0,
+          4
+        ],
+        [
+          118,
+          100,
+          0,
+          4
+        ],
+        [
+          126,
+          86,
+          0,
+          4
+        ],
+        [
+          103,
+          26,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "player",
+          "identity": "ACTUAL_MOVEMENT_CELL",
+          "map_number": 14,
+          "xy": [
+            20,
+            10
+          ],
+          "meaning": "Actual saved current map and movement cell"
+        },
+        {
+          "type": "questgiver",
+          "identity": "GORNEK_REPORT",
+          "map_number": 14,
+          "xy": [
+            10,
+            9
+          ],
+          "state": "ready"
+        },
+        {
+          "type": "questgiver",
+          "identity": "LAZY_PEONS",
+          "map_number": 14,
+          "xy": [
+            8,
+            15
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "CACTUS",
+          "map_number": 15,
+          "xy": [
+            8,
+            10
+          ],
+          "state": "active"
+        },
+        {
+          "type": "questgiver",
+          "identity": "SARKOTH",
+          "map_number": 26,
+          "xy": [
+            3,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "LAZY",
+          "map_number": 14,
+          "xy": [
+            5,
+            16
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS1",
+          "map_number": 15,
+          "xy": [
+            7,
+            7
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS2",
+          "map_number": 15,
+          "xy": [
+            23,
+            9
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "CACTUS3",
+          "map_number": 15,
+          "xy": [
+            9,
+            17
+          ]
+        },
+        {
+          "type": "objective",
+          "identity": "SARKOTH",
+          "map_number": 27,
+          "xy": [
+            4,
+            4
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 5,
+      "fire_after_close": null
+    },
+    {
+      "name": "diagnostic_out_of_bounds_player_not_drawn",
+      "diagnostic_ram_or_emulator_state": true,
+      "region": "VALLEY",
+      "initial_page": 1,
+      "current_map": [
+        26,
+        14
+      ],
+      "current_xy": [
+        255,
+        255
+      ],
+      "whole_region_fog": false,
+      "sector_discovery": {
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true
+      },
+      "hardware_oam": [
+        [
+          87,
+          81,
+          1,
+          7
+        ],
+        [
+          34,
+          86,
+          0,
+          4
+        ]
+      ],
+      "points": [
+        {
+          "type": "questgiver",
+          "identity": "FAMILIARS_MEDALLION",
+          "map_number": 25,
+          "xy": [
+            6,
+            4
+          ],
+          "state": "active"
+        },
+        {
+          "type": "objective",
+          "identity": "CAVE_ENTRANCE",
+          "map_number": 28,
+          "xy": [
+            5,
+            2
+          ]
+        }
+      ],
+      "native_rgb555_pixels_exact": true,
+      "cpu_banks_lcd_scroll_events_preserved": true,
+      "tilemap_attributes_and_background_patterns_exact": true,
+      "atlas_not_overwritten_during_32_idle_vblanks": true,
+      "world_palette_location_restored": true,
+      "native_font_hud_actor_graphics_190_static_tiles_restored": false,
+      "legacy_sector_bridge_applied": false,
+      "max_obj_tiles_per_scanline": 1,
+      "fire_after_close": null
+    }
+  ],
+  "ordinary_battles": [
+    {
+      "label": "normal_boar",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 1,
+      "level_after": 2,
+      "hp_after": [
+        0,
+        9
+      ],
+      "money_after": 50
+    },
+    {
+      "label": "normal_scorpid",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 1,
+      "level_after": 3,
+      "hp_after": [
+        0,
+        16
+      ],
+      "money_after": 150
+    },
+    {
+      "label": "normal_sarkoth_zone_5",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 5,
+      "hp_after": [
+        0,
+        12
+      ],
+      "money_after": 485
+    },
+    {
+      "label": "normal_zone_6_guard_1",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 6,
+      "hp_after": [
+        0,
+        24
+      ],
+      "money_after": 665
+    },
+    {
+      "label": "normal_zone_6_guard_2",
+      "outcome": 0,
+      "dead": true,
+      "no_auto_heal": true,
+      "encounter_loads_during_fight": 0,
+      "level_after": 6,
+      "hp_after": [
+        0,
+        24
+      ],
+      "money_after": 695
+    }
+  ],
+  "room_door_projections": [
+    {
+      "owner": 14,
+      "room": 23,
+      "warp": 2,
+      "xy": [
+        17,
+        5
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 14,
+      "room": 22,
+      "warp": 3,
+      "xy": [
+        5,
+        7
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 17,
+      "room": 21,
+      "warp": 2,
+      "xy": [
+        5,
+        5
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 17,
+      "room": 24,
+      "warp": 3,
+      "xy": [
+        15,
+        5
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 17,
+      "room": 21,
+      "warp": 4,
+      "xy": [
+        17,
+        9
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 18,
+      "room": 22,
+      "warp": 3,
+      "xy": [
+        5,
+        5
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 18,
+      "room": 23,
+      "warp": 4,
+      "xy": [
+        17,
+        5
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 18,
+      "room": 22,
+      "warp": 5,
+      "xy": [
+        17,
+        13
+      ],
+      "native_exact_return": true
+    },
+    {
+      "owner": 18,
+      "room": 22,
+      "warp": 6,
+      "xy": [
+        5,
+        15
+      ],
+      "native_exact_return": true
+    }
+  ],
+  "map_earned_after_actual_second_quest": true,
+  "ordinary_route_saved_fields": {
+    "wPlayerName": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      80
+    ],
+    "wMapGroup": [
+      26,
+      14
+    ],
+    "wXCoord": [
+      20
+    ],
+    "wYCoord": [
+      10
+    ],
+    "wBackupWarpNumber": [
+      6
+    ],
+    "wBackupMapGroup": [
+      26
+    ],
+    "wBackupMapNumber": [
+      18
+    ],
+    "wPartyMon1": [
+      66,
+      0,
+      1,
+      84,
+      0,
+      0,
+      78,
+      122,
+      0,
+      1,
+      63,
+      0,
+      197,
+      0,
+      165,
+      0,
+      147,
+      0,
+      104,
+      0,
+      164,
+      241,
+      189,
+      35,
+      30,
+      0,
+      0,
+      91,
+      0,
+      194,
+      1,
+      6,
+      0,
+      0,
+      0,
+      26,
+      0,
+      26,
+      0,
+      13,
+      0,
+      11,
+      0,
+      10,
+      0,
+      15,
+      0,
+      13
+    ],
+    "wPartyMon1Nickname": [
+      143,
+      234,
+      174,
+      173,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      80
+    ],
+    "wMoney": [
+      0,
+      2,
+      183
+    ],
+    "wEventFlags": [
+      0,
+      0,
+      64,
+      4,
+      32,
+      0,
+      64,
+      24,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      14,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      8,
+      224,
+      255,
+      255,
+      32,
+      48,
+      48,
+      1,
+      55,
+      0,
+      0,
+      192,
+      31,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      16,
+      128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      144,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      192,
+      79,
+      105,
+      57,
+      225,
+      16,
+      50,
+      25,
+      162,
+      29,
+      224,
+      239,
+      255,
+      255,
+      179,
+      106,
+      189,
+      30,
+      38,
+      0,
+      128,
+      68,
+      247,
+      204,
+      10,
+      0,
+      224,
+      11,
+      0,
+      48,
+      246,
+      225,
+      0,
+      32,
+      128,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "wNumItems": [
+      4
+    ],
+    "wItems": [
+      148,
+      1,
+      63,
+      1,
+      18,
+      5,
+      137,
+      1
+    ]
+  },
+  "native_overlay_return_checks": 73,
+  "no_animation_starvation_after_any_normal_atlas_close": true
+}

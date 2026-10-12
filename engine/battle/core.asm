@@ -233,7 +233,7 @@ BattleTurn:
 	and a
 	jr nz, .quit
 
-	call HandleBetweenTurnEffects
+	farcall PeonHandleBetweenTurnEffects
 	ld a, [wBattleEnded]
 	and a
 	jr nz, .quit
@@ -1045,17 +1045,9 @@ ResidualDamage:
 	and 1 << PSN | 1 << BRN
 	jr z, .did_psn_brn
 
-	ld hl, HurtByPoisonText
-	ld de, ANIM_PSN
-	and 1 << BRN
-	jr z, .got_anim
-	ld hl, HurtByBurnText
-	ld de, ANIM_BRN
-.got_anim
-
-	push de
-	call StdBattleTextbox
-	pop de
+	; The helper prints native poison/burn or Warcraft wound text and
+	; returns DE = residual animation for this user, in its own bank.
+	farcall PeonShowResidualStatus
 
 	xor a
 	ld [wBattleAfterAnim], a
@@ -3938,6 +3930,8 @@ InitBattleMon:
 	ld [wBattleMonType1], a
 	ld a, [wBaseType2]
 	ld [wBattleMonType2], a
+	; Battle-only affinity keeps the saved single-character record stable.
+	farcall PeonApplyClassBattleAffinity
 	ld hl, wPartyMonNicknames
 	ld a, [wCurBattleMon]
 	call SkipNames

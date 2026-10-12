@@ -1200,6 +1200,13 @@ LoadMapPals:
 	jr nz, .crystal
 	ld hl, PeonMapBGPalettes
 	ld a, [wMapNumber]
+	cp MAP_PEON_VALLEY_CROSSROADS
+	jr c, .existing_regions
+	cp MAP_PEON_VALLEY_EXIT + 1
+	jr nc, .existing_regions
+	ld a, 1 ; Every appended Valley sector shares the Valley RGB555 bank.
+	jr .region_palette
+.existing_regions
 	sub 14
 	cp 7
 	jr c, .region_palette

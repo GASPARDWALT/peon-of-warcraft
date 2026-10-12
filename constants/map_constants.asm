@@ -512,6 +512,12 @@ ENDM
 	map_const PEON_ORC_HUT,                                 6,  5 ; 22
 	map_const PEON_ORC_INN,                                 6,  5 ; 23
 	map_const PEON_TROLL_INN,                               6,  5 ; 24
+	; Append compact annotated Valley zones; published IDs 1-24 stay stable.
+	map_const PEON_VALLEY_CROSSROADS,                       5,  5 ; 25 zone 3
+	map_const PEON_HANAZUA_CAMP,                            5,  5 ; 26 zone 4
+	map_const PEON_SARKOTH_BASIN,                           5,  5 ; 27 zone 5
+	map_const PEON_CAVE_APPROACH,                           5,  5 ; 28 zone 6
+	map_const PEON_VALLEY_EXIT,                             5,  5 ; 29 zone 7
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

@@ -9,6 +9,7 @@ SECTION "Peon Atlas Quests", ROMX
 
 INCLUDE "gfx/pack/peon_quest_poi_positions.asm"
 INCLUDE "gfx/pack/peon_atlas_geometry.asm"
+INCLUDE "gfx/pack/peon_valley_overview_geometry.asm"
 
 PeonDrawAtlasQuests::
 	push af
@@ -24,6 +25,8 @@ PeonDrawAtlasQuests::
 	ld a, [wMenuCursorY]
 	cp 7
 	jp nc, .done
+	cp 1
+	jr z, .loaded_page ; the overview has independent sector fog
 	ld e, a
 	ld d, 0
 	ld hl, EVENT_PEON_DISCOVERED_DEN
@@ -32,6 +35,7 @@ PeonDrawAtlasQuests::
 	ld e, l
 	call .Flag
 	jp z, .done
+.loaded_page:
 	ldh a, [hOAMUpdate]
 	push af
 	ld a, 1
@@ -97,15 +101,27 @@ PeonDrawAtlasQuests::
 	call .SleepingObjective
 	jr .submit
 .valley:
+	call .GornekReportState
+	lb de, 9, 10
+	ld b, MAP_THE_DEN
+	call .GiverAtMap
+	call .ForemanState
+	lb de, 15, 8
+	ld b, MAP_THE_DEN
+	call .GiverAtMap
 	call .CactusState
-	lb de, PEON_ATLAS_VALLEY_OAM_Y, PEON_ATLAS_VALLEY_OAM_X
-	call .Append
+	lb de, 10, 8
+	ld b, MAP_VALLEY_OF_TRIALS
+	call .GiverAtMap
 	call .SarkothState
-	lb de, PEON_ATLAS_VALLEY_SARKOTH_OAM_Y, PEON_ATLAS_VALLEY_SARKOTH_OAM_X
-	call .Append
+	lb de, 4, 3
+	ld b, MAP_PEON_HANAZUA_CAMP
+	call .GiverAtMap
 	call .MedallionState
-	lb de, PEON_ATLAS_VALLEY_MEDALLION_OAM_Y, PEON_ATLAS_VALLEY_MEDALLION_OAM_X
-	call .Append
+	lb de, 4, 6
+	ld b, MAP_PEON_VALLEY_CROSSROADS
+	call .GiverAtMap
+	call .SleepingObjective
 	call .CactusObjectives
 	call .SarkothObjective
 	call .CaveEntranceObjective
@@ -134,9 +150,41 @@ PeonDrawAtlasQuests::
 ; Input DE = world Y/X, HL = next OAM entry. Projection uses generated
 ; center lookup tables with the exact current atlas thumbnail transform.
 .Project:
+	ld a, [wMenuCursorY]
+	add MAP_THE_DEN
+	ld b, a
+.ProjectForMap:
 	push hl
 	push de
 	ld a, [wMenuCursorY]
+	cp 1
+	jr nz, .regional
+	push bc
+	farcall PeonAtlasSectorFlagForMap
+	jr nc, .not_sector
+	call .Flag
+	pop bc
+	jr z, .unknown_sector
+	ld hl, PeonOverviewProjectionTable
+.find_sector
+	ld a, [hli]
+	and a
+	jr z, .unknown_sector
+	cp b
+	jr z, .projection_row
+	ld de, 6
+	add hl, de
+	jr .find_sector
+.not_sector
+	pop bc
+.unknown_sector
+	pop de
+	jp .Outside
+.regional
+	ld a, b
+	sub MAP_THE_DEN
+	cp 7
+	jr nc, .unknown_sector
 	ld c, a
 	add a
 	add c
@@ -145,6 +193,7 @@ PeonDrawAtlasQuests::
 	ld b, 0
 	ld hl, PeonAtlasProjectionTable
 	add hl, bc
+.projection_row
 	pop de
 	ld a, [hli]
 	ld b, a
@@ -195,36 +244,24 @@ PeonDrawAtlasQuests::
 	cp GROUP_THE_DEN
 	ret nz
 	ld a, [wMapNumber]
-	cp MAP_PEON_TROLL_HUT
-	jr nc, .RoomPlayer
-	sub MAP_THE_DEN
-	cp 7
-	ret nc
 	ld b, a
-	ld a, [wMenuCursorY]
-	cp b
-	ret nz
+	cp MAP_PEON_TROLL_HUT
+	jr c, .OutdoorPlayer
+	cp MAP_PEON_TROLL_INN + 1
+	jr c, .RoomPlayer
+.OutdoorPlayer
 	ld a, [wYCoord]
 	ld d, a
 	ld a, [wXCoord]
 	ld e, a
 	jr .PlayerAtPoint
 .RoomPlayer:
-	cp MAP_PEON_TROLL_INN + 1
-	ret nc
 	ld b, a ; room map
 	ld a, [wBackupMapGroup]
 	cp GROUP_THE_DEN
 	ret nz
 	ld a, [wBackupMapNumber]
 	ld c, a ; exterior owner
-	sub MAP_THE_DEN
-	cp 7
-	ret nc
-	ld d, a
-	ld a, [wMenuCursorY]
-	cp d
-	ret nz
 	ld a, [wBackupWarpNumber]
 	ld e, a
 	push hl
@@ -245,6 +282,7 @@ PeonDrawAtlasQuests::
 	inc hl
 	ld d, [hl]
 	pop hl
+	ld b, c
 	jr .PlayerAtPoint
 .SkipDoor4:
 	inc hl
@@ -258,7 +296,14 @@ PeonDrawAtlasQuests::
 	pop hl
 	ret
 .PlayerAtPoint:
-	call .Project
+	ld a, [wMenuCursorY]
+	cp 1
+	jr z, .PlayerProject
+	add MAP_THE_DEN
+	cp b
+	ret nz
+.PlayerProject
+	call .ProjectForMap
 	ret nc
 	ld [hl], d
 	inc hl
@@ -272,9 +317,22 @@ PeonDrawAtlasQuests::
 
 .Objective:
 	call .Project
+	jr .ObjectiveAppend
+.ObjectiveAtMap:
+	call .ProjectForMap
+.ObjectiveAppend:
 	ret nc
 	xor a ; ordinary yellow ! glyph
 	jp .Append
+.GiverAtMap:
+	push af
+	call .ProjectForMap
+	jr nc, .GiverHidden
+	pop af
+	jp .Append
+.GiverHidden
+	pop af
+	ret
 .SleepingObjective:
 	ld de, EVENT_PEON_LAZY_DONE
 	call .Flag
@@ -286,7 +344,8 @@ PeonDrawAtlasQuests::
 	call .Flag
 	ret nz
 	lb de, PEON_ATLAS_LAZY_WORLD_Y, PEON_ATLAS_LAZY_WORLD_X
-	jp .Objective
+	ld b, MAP_THE_DEN
+	jp .ObjectiveAtMap
 .CactusObjectives:
 	ld de, EVENT_PEON_CACTUS_DONE
 	call .Flag
@@ -322,7 +381,8 @@ PeonDrawAtlasQuests::
 	call .Flag
 	ret nz
 	lb de, PEON_ATLAS_SARKOTH_WORLD_Y, PEON_ATLAS_SARKOTH_WORLD_X
-	jp .Objective
+	ld b, MAP_PEON_SARKOTH_BASIN
+	jp .ObjectiveAtMap
 .MedallionActive:
 	ld de, EVENT_PEON_MEDALLION_DONE
 	call .Flag
@@ -353,7 +413,8 @@ PeonDrawAtlasQuests::
 	ret nz
 .ShowCaveEntrance:
 	lb de, PEON_ATLAS_CAVE_ENTRANCE_WORLD_Y, PEON_ATLAS_CAVE_ENTRANCE_WORLD_X
-	jp .Objective
+	ld b, MAP_PEON_CAVE_APPROACH
+	jp .ObjectiveAtMap
 .YarrogObjective:
 	call .MedallionActive
 	ret z
@@ -380,14 +441,16 @@ PeonDrawAtlasQuests::
 	ld de, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
 	call .Flag
 	jr nz, .SecondOutsideFamiliar
-	lb de, 6, 25
-	call .Objective
+	lb de, 5, 4
+	ld b, MAP_PEON_CAVE_APPROACH
+	call .ObjectiveAtMap
 .SecondOutsideFamiliar:
 	ld de, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
 	call .Flag
 	ret nz
-	lb de, 9, 27
-	jp .Objective
+	lb de, 4, 6
+	ld b, MAP_PEON_CAVE_APPROACH
+	jp .ObjectiveAtMap
 .InsideFamiliars:
 	ld de, EVENT_PEON_CAVE_STRONG_IMP_DEAD
 	call .Flag

@@ -280,7 +280,8 @@ PokeBallDesc:
 	next "ing #MON.@"
 
 TeruSama1Desc:
-	db   "?@"
+	db   "A rough axe for"
+	next "a new Warrior.@"
 
 BicycleDesc:
 	db   "A collapsible bike"
@@ -327,8 +328,8 @@ SuperPotionDesc:
 	next "HP by 50.@"
 
 PotionDesc:
-	db   "Restores #MON"
-	next "HP by 20.@"
+	db   "Restores 20 health."
+	next "All classes.@"
 
 EscapeRopeDesc:
 	db   "Use for escaping"
@@ -479,7 +480,8 @@ ItemfinderDesc:
 	next "items in the area.@"
 
 TeruSama5Desc:
-	db   "?@"
+	db   "A humble staff for"
+	next "a new Warlock.@"
 
 ExpShareDesc:
 	db   "Shares battle EXP."
@@ -506,8 +508,8 @@ PPUpDesc:
 	next "a selected move.@"
 
 EtherDesc:
-	db   "Restores PP of one"
-	next "move by 10.@"
+	db   "Five spell charges"
+	next "for each spell.@"
 
 MaxEtherDesc:
 	db   "Fully restores PP"

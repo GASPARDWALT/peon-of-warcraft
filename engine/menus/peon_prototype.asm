@@ -165,7 +165,7 @@ PeonCharacterSelect:
 	farcall NewGame
 	jp .draw
 .Heading: db "CHARACTER SELECT@"
-.Peon: db "PEON", "<NEXT>", "SHAMAN@"
+.Peon: db "PEON", "<NEXT>", "APPRENTICE@"
 .Continue: db "CONTINUE@"
 .New: db "NEW", "<NEXT>", "CHARACTER@"
 .Empty: db "EMPTY@"
@@ -176,7 +176,7 @@ PeonCharacterSelect:
 	done
 .OldSaveText:
 	text "This save is not"
-	line "a v0.1 SHAMAN."
+	line "a Peon character."
 	para "Choose NEW CHARACTER"
 	line "to start this build."
 	done
@@ -190,16 +190,18 @@ PeonClassSelect:
 	ldh a, [hJoyDown]
 	and A_BUTTON | START
 	jr nz, .release
-	xor a
-	ld [wMenuCursorY], a
-.draw
+	; Keep the font/palette resident while moving between mentors.
+	; Cursor changes redraw the fixed panel without repeating tile uploads.
 	call ClearSprites
-	call ClearTilemap
 	call LoadStandardFont
 	ld b, SCGB_DIPLOMA
 	call GetSGBLayout
 	call SetDefaultBGPAndOBP
 	call UpdateTimePals
+	xor a
+	ld [wMenuCursorY], a
+.draw
+	call ClearTilemap
 	hlcoord 0, 0
 	ld b, 16
 	ld c, 18
@@ -248,19 +250,31 @@ PeonClassSelect:
 	jr nz, .up
 	and A_BUTTON
 	jr z, .input
+	; The old SHAMAN bit remains the engine guard for every Peon class.
+	; Only these two appended bits distinguish newly created characters.
+	ld de, EVENT_PEON_WARRIOR
+	ld b, RESET_FLAG
+	call EventFlagAction
+	ld de, EVENT_PEON_WARLOCK
+	ld b, RESET_FLAG
+	call EventFlagAction
 	ld a, [wMenuCursorY]
-	and a
-	jr nz, .locked
+	cp 1
+	jr z, .warrior
+	cp 2
+	jr nz, .accepted
+	ld de, EVENT_PEON_WARLOCK
+	jr .set_class
+.warrior
+	ld de, EVENT_PEON_WARRIOR
+.set_class
+	ld b, SET_FLAG
+	call EventFlagAction
+.accepted
 	call ExitMenu
 	call UpdateSprites
 	call UpdateTimePals
 	ret
-.locked
-	hlcoord 10, 13
-	ld de, .Locked
-	call PlaceString
-	call WaitBGMap
-	jr .input
 .down
 	ld a, [wMenuCursorY]
 	inc a
@@ -283,17 +297,33 @@ PeonClassSelect:
 	db "MoCMoc", "<LF>", "WARRIOR", "<LF>", "", "<LF>", "", "<LF>"
 	db "XASTHUR", "<LF>", "WARLOCK@"
 .Controls: db "UP/DOWN  A: ACCEPT@"
-.Locked: db "v0.1 LOCK@"
 .Descriptions: dw .Shaman, .Warrior, .Warlock
 .Shaman: db "SHAMAN", "<LF>", "ELEMENTS", "<LF>", "MACE", "<LF>", "SHIELD", "<LF>", "TOTEM", "<LF>", "LIGHTNING", "<LF>", "BOLT@"
-.Warrior: db "WARRIOR", "<LF>", "HIGH HP", "<LF>", "PHYSICAL", "<LF>", "2H WEAPON", "<LF>", "COMING", "<LF>", "LATER@"
-.Warlock: db "WARLOCK", "<LF>", "SHADOW", "<LF>", "SPELLS", "<LF>", "STAFF", "<LF>", "COMING", "<LF>", "LATER@"
+.Warrior: db "WARRIOR", "<LF>", "MELEE", "<LF>", "AXE", "<LF>", "SHIELD", "<LF>", "HEROIC", "<LF>", "STRIKE", "<LF>", "REND@"
+.Warlock: db "WARLOCK", "<LF>", "SHADOW", "<LF>", "STAFF", "<LF>", "BOLT", "<LF>", "DRAIN", "<LF>", "CORRUPT", "<LF>", "FEAR@"
 
+; The historical special ID and hook stay stable for old callers.
+; New class selection changes only the initial actions, not party structure.
 PeonInitializeShaman:
+	ld b, THUNDERSHOCK
+	ld c, 30
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr z, .check_warlock
+	ld b, KARATE_CHOP
+	ld c, 25
+	jr .write_actions
+.check_warlock
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	jr z, .write_actions
+	ld b, SHADOW_BALL
+	ld c, 25
+.write_actions
 	ld hl, wPartyMon1Moves
 	ld [hl], POUND
 	inc hl
-	ld [hl], THUNDERSHOCK
+	ld [hl], b
 	inc hl
 	xor a
 	ld [hli], a
@@ -301,7 +331,7 @@ PeonInitializeShaman:
 	ld hl, wPartyMon1PP
 	ld [hl], 35
 	inc hl
-	ld [hl], 30
+	ld [hl], c
 	inc hl
 	ld [hli], a
 	ld [hl], a

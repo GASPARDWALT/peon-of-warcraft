@@ -53,6 +53,7 @@ DurotarScorpidPackScript:
 	ifequal LOSE, .Lost
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_ROAD_SCORPID_PACK_FIRST
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarScorpidSecondText
 	waitbutton
@@ -68,6 +69,7 @@ DurotarScorpidPackScript:
 	setevent EVENT_PEON_ROAD_SCORPID_PACK_DEAD
 	disappear ROAD_SCORPID_PACK
 	givemoney YOUR_MONEY, 40
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarScorpidPackLootText
 	waitbutton
@@ -149,7 +151,7 @@ DurotarRoadPatrolText:
 DurotarRoad_MapEvents:
 	db 0, 0
 	def_warp_events
-	warp_event 4, 14, VALLEY_OF_TRIALS, 2
+	warp_event 4, 14, PEON_VALLEY_EXIT, 2
 	warp_event 12, 24, SENJIN_VILLAGE, 1
 	warp_event 12, 4, RAZOR_HILL, 1
 	def_coord_events
@@ -195,6 +197,7 @@ DurotarTigerScript:
 	setevent EVENT_PEON_ROAD_TIGER_DEAD
 	disappear ROAD_TIGER
 	givemoney YOUR_MONEY, 20
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarTigerLootText
 	waitbutton
@@ -230,6 +233,7 @@ DurotarRaptorScript:
 	setevent EVENT_PEON_ROAD_RAPTOR_DEAD
 	disappear ROAD_RAPTOR
 	givemoney YOUR_MONEY, 25
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarRaptorLootText
 	waitbutton
@@ -259,6 +263,7 @@ DurotarHarpyScript:
 	setevent EVENT_PEON_ROAD_HARPY_DEAD
 	disappear ROAD_HARPY
 	givemoney YOUR_MONEY, 25
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarHarpyLootText
 	waitbutton
@@ -293,6 +298,7 @@ DurotarCrawlerScript:
 	setevent EVENT_PEON_COAST_CRAWLER_DEAD
 	disappear ROAD_CRAWLER
 	givemoney YOUR_MONEY, 20
+	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarCrawlerLootText
 	waitbutton

@@ -1,0 +1,1382 @@
+{
+  "schema_version": 1,
+  "map_group": 26,
+  "zones": [
+    {
+      "zone": 1,
+      "name": "TheDen",
+      "map_id": 14,
+      "map_group": 26,
+      "blocks": [
+        12,
+        10
+      ],
+      "discovery_callback_label": "TheDenDiscover",
+      "movement_grid": [
+        24,
+        20
+      ],
+      "annotated_reference_rect_px": [
+        150,
+        397,
+        297,
+        541
+      ],
+      "annotated_reference_rect_normalized": [
+        0.232558,
+        0.723133,
+        0.460465,
+        0.985428
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            20,
+            10
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            17,
+            5
+          ],
+          "target_name": "PeonOrcInn",
+          "target_constant": "PEON_ORC_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            0,
+            14
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            9
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenQuestScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            10,
+            8
+          ],
+          "sprite": "SPRITE_PEON_QUEST_1",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "TheDenQuestScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            18,
+            12
+          ],
+          "sprite": "SPRITE_POKE_BALL",
+          "movement": "SPRITEMOVEDATA_WALK_LEFT_RIGHT",
+          "palette": "PAL_NPC_PINK",
+          "script": "TheDenBoarScript",
+          "event_flag": "EVENT_PEON_QUEST_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            6,
+            12
+          ],
+          "sprite": "SPRITE_ELDER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_BROWN",
+          "script": "TheDenKentoScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            19,
+            15
+          ],
+          "sprite": "SPRITE_PAPER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_RED",
+          "script": "TheDenScorpidScript",
+          "event_flag": "EVENT_PEON_SCORPID_DEFEATED",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            14,
+            9
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenDuoknaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            8,
+            15
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenForemanScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 8,
+          "xy": [
+            5,
+            16
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenLazyPeonScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 9,
+          "xy": [
+            8,
+            14
+          ],
+          "sprite": "SPRITE_PEON_QUEST_2",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "TheDenForemanScript",
+          "event_flag": "EVENT_PEON_LAZY_DONE",
+          "masked_placeholder": false
+        },
+        {
+          "index": 10,
+          "xy": [
+            6,
+            15
+          ],
+          "sprite": "SPRITE_POKE_BALL",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "TheDenNeutralBoarScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 11,
+          "xy": [
+            16,
+            6
+          ],
+          "sprite": "SPRITE_PEON_MAILBOX",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "PAL_NPC_BROWN",
+          "script": "TheDenMailboxScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 12,
+          "xy": [
+            3,
+            13
+          ],
+          "sprite": "SPRITE_BRUNO",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenWarriorMasterScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 13,
+          "xy": [
+            3,
+            16
+          ],
+          "sprite": "SPRITE_MORTY",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_BLUE",
+          "script": "TheDenWarlockMasterScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 14,
+          "xy": [
+            8,
+            6
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenProvisionerScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 15,
+          "xy": [
+            8,
+            7
+          ],
+          "sprite": "SPRITE_GENTLEMAN",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "TheDenCookScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 2,
+      "name": "ValleyOfTrials",
+      "map_id": 15,
+      "map_group": 26,
+      "blocks": [
+        16,
+        12
+      ],
+      "discovery_callback_label": "ValleyOfTrialsDiscover",
+      "movement_grid": [
+        32,
+        24
+      ],
+      "annotated_reference_rect_px": [
+        303,
+        397,
+        449,
+        542
+      ],
+      "annotated_reference_rect_normalized": [
+        0.469767,
+        0.723133,
+        0.696124,
+        0.98725
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            12
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            28,
+            12
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            0
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_FISHER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_GREEN",
+          "script": "ValleyOfTrialsGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            8,
+            9
+          ],
+          "sprite": "SPRITE_PEON_QUEST_1",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "ValleyOfTrialsGuideScript",
+          "event_flag": "EVENT_PEON_CACTUS_DONE",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 3,
+      "name": "PeonValleyCrossroads",
+      "map_id": 25,
+      "map_group": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "discovery_callback_label": "PeonValleyCrossroadsDiscover",
+      "movement_grid": [
+        10,
+        10
+      ],
+      "annotated_reference_rect_px": [
+        207,
+        245,
+        352,
+        389
+      ],
+      "annotated_reference_rect_normalized": [
+        0.32093,
+        0.446266,
+        0.545736,
+        0.708561
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 3,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonCaveApproach",
+          "target_constant": "PEON_CAVE_APPROACH",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 3,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_MORTY",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonCrossroadsZureethaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            6,
+            3
+          ],
+          "sprite": "SPRITE_PEON_QUEST_3",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonCrossroadsZureethaScript",
+          "event_flag": "EVENT_PEON_MEDALLION_DONE",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 4,
+      "name": "PeonHanazuaCamp",
+      "map_id": 26,
+      "map_group": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "discovery_callback_label": "PeonHanazuaCampDiscover",
+      "movement_grid": [
+        10,
+        10
+      ],
+      "annotated_reference_rect_px": [
+        57,
+        178,
+        201,
+        322
+      ],
+      "annotated_reference_rect_normalized": [
+        0.088372,
+        0.324226,
+        0.311628,
+        0.586521
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 3,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 2,
+          "xy": [
+            3,
+            4
+          ],
+          "sprite": "SPRITE_BLACK_BELT",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonCampHanazuaScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            3,
+            3
+          ],
+          "sprite": "SPRITE_PEON_QUEST_2",
+          "movement": "SPRITEMOVEDATA_STILL",
+          "palette": "0",
+          "script": "PeonCampHanazuaScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DONE",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 5,
+      "name": "PeonSarkothBasin",
+      "map_id": 27,
+      "map_group": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "discovery_callback_label": "PeonSarkothBasinDiscover",
+      "movement_grid": [
+        10,
+        10
+      ],
+      "annotated_reference_rect_px": [
+        2,
+        336,
+        147,
+        480
+      ],
+      "annotated_reference_rect_normalized": [
+        0.003101,
+        0.612022,
+        0.227907,
+        0.874317
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            7
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 4,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 4,
+          "xy": [
+            4,
+            4
+          ],
+          "sprite": "PEON_SPRITE_SARKOTH",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "PeonBasinSarkothScript",
+          "event_flag": "EVENT_PEON_SARKOTH_DEAD",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 6,
+      "name": "PeonCaveApproach",
+      "map_id": 28,
+      "map_group": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "discovery_callback_label": "PeonCaveApproachDiscover",
+      "movement_grid": [
+        10,
+        10
+      ],
+      "annotated_reference_rect_px": [
+        262,
+        0,
+        405,
+        145
+      ],
+      "annotated_reference_rect_normalized": [
+        0.406202,
+        0.0,
+        0.627907,
+        0.264117
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            2
+          ],
+          "target_name": "BurningBladeCavern",
+          "target_constant": "BURNING_BLADE_CAVERN",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 8,
+          "xy": [
+            4,
+            5
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonApproachImp1Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 9,
+          "xy": [
+            6,
+            4
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_TREE",
+          "script": "PeonApproachImp2Script",
+          "event_flag": "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD",
+          "masked_placeholder": false
+        }
+      ]
+    },
+    {
+      "zone": 7,
+      "name": "PeonValleyExit",
+      "map_id": 29,
+      "map_group": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "discovery_callback_label": "PeonValleyExitDiscover",
+      "movement_grid": [
+        10,
+        10
+      ],
+      "annotated_reference_rect_px": [
+        480,
+        397,
+        625,
+        541
+      ],
+      "annotated_reference_rect_normalized": [
+        0.744186,
+        0.723133,
+        0.968992,
+        0.985428
+      ],
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "active_npcs": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            6
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_UP",
+          "palette": "PAL_NPC_GREEN",
+          "script": "PeonValleyExitGuardScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from_name": "TheDen",
+      "from_zone": 1,
+      "from_map_id": 14,
+      "source_warp": 1,
+      "source_xy": [
+        20,
+        10
+      ],
+      "direction": "RIGHT",
+      "to_name": "ValleyOfTrials",
+      "to_zone": 2,
+      "to_map_id": 15,
+      "target_warp": 1,
+      "target_xy": [
+        4,
+        12
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "ValleyOfTrials",
+      "from_zone": 2,
+      "from_map_id": 15,
+      "source_warp": 3,
+      "source_xy": [
+        16,
+        0
+      ],
+      "direction": "UP",
+      "to_name": "PeonValleyCrossroads",
+      "to_zone": 3,
+      "to_map_id": 25,
+      "target_warp": 1,
+      "target_xy": [
+        5,
+        9
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonValleyCrossroads",
+      "from_zone": 3,
+      "from_map_id": 25,
+      "source_warp": 3,
+      "source_xy": [
+        0,
+        4
+      ],
+      "direction": "LEFT",
+      "to_name": "PeonHanazuaCamp",
+      "to_zone": 4,
+      "to_map_id": 26,
+      "target_warp": 1,
+      "target_xy": [
+        9,
+        4
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonHanazuaCamp",
+      "from_zone": 4,
+      "from_map_id": 26,
+      "source_warp": 2,
+      "source_xy": [
+        5,
+        9
+      ],
+      "direction": "DOWN",
+      "to_name": "PeonSarkothBasin",
+      "to_zone": 5,
+      "to_map_id": 27,
+      "target_warp": 1,
+      "target_xy": [
+        5,
+        0
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonSarkothBasin",
+      "from_zone": 5,
+      "from_map_id": 27,
+      "source_warp": 2,
+      "source_xy": [
+        9,
+        7
+      ],
+      "direction": "RIGHT",
+      "to_name": "TheDen",
+      "to_zone": 1,
+      "to_map_id": 14,
+      "target_warp": 4,
+      "target_xy": [
+        0,
+        14
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonValleyCrossroads",
+      "from_zone": 3,
+      "from_map_id": 25,
+      "source_warp": 2,
+      "source_xy": [
+        5,
+        0
+      ],
+      "direction": "UP",
+      "to_name": "PeonCaveApproach",
+      "to_zone": 6,
+      "to_map_id": 28,
+      "target_warp": 1,
+      "target_xy": [
+        5,
+        9
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "ValleyOfTrials",
+      "from_zone": 2,
+      "from_map_id": 15,
+      "source_warp": 2,
+      "source_xy": [
+        28,
+        12
+      ],
+      "direction": "RIGHT",
+      "to_name": "PeonValleyExit",
+      "to_zone": 7,
+      "to_map_id": 29,
+      "target_warp": 1,
+      "target_xy": [
+        0,
+        4
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonValleyExit",
+      "from_zone": 7,
+      "from_map_id": 29,
+      "source_warp": 2,
+      "source_xy": [
+        9,
+        4
+      ],
+      "direction": "RIGHT",
+      "to_name": "DurotarRoad",
+      "to_zone": null,
+      "to_map_id": 16,
+      "target_warp": 1,
+      "target_xy": [
+        4,
+        14
+      ],
+      "reciprocal_return_verified_static": true
+    },
+    {
+      "from_name": "PeonCaveApproach",
+      "from_zone": 6,
+      "from_map_id": 28,
+      "source_warp": 2,
+      "source_xy": [
+        5,
+        2
+      ],
+      "direction": "UP",
+      "to_name": "BurningBladeCavern",
+      "to_zone": null,
+      "to_map_id": 20,
+      "target_warp": 1,
+      "target_xy": [
+        10,
+        16
+      ],
+      "reciprocal_return_verified_static": true
+    }
+  ],
+  "quest_landmarks": {
+    "Gornek": {
+      "zone": 1,
+      "map_id": 14,
+      "xy": [
+        10,
+        9
+      ]
+    },
+    "Galgar": {
+      "zone": 2,
+      "map_id": 15,
+      "xy": [
+        8,
+        10
+      ]
+    },
+    "CactusApples": {
+      "zone": 2,
+      "map_id": 15,
+      "coordinates": [
+        [
+          7,
+          7
+        ],
+        [
+          23,
+          9
+        ],
+        [
+          9,
+          17
+        ]
+      ],
+      "flags": [
+        "EVENT_PEON_CACTUS_1",
+        "EVENT_PEON_CACTUS_2",
+        "EVENT_PEON_CACTUS_3"
+      ]
+    },
+    "Zureetha": {
+      "zone": 3,
+      "map_id": 25,
+      "xy": [
+        6,
+        4
+      ],
+      "actor": 3,
+      "marker": 7,
+      "marker_xy": [
+        6,
+        3
+      ]
+    },
+    "Hanazua": {
+      "zone": 4,
+      "map_id": 26,
+      "xy": [
+        3,
+        4
+      ],
+      "actor": 2,
+      "marker": 6,
+      "marker_xy": [
+        3,
+        3
+      ]
+    },
+    "Sarkoth": {
+      "zone": 5,
+      "map_id": 27,
+      "xy": [
+        4,
+        4
+      ],
+      "actor": 4,
+      "death_flag": "EVENT_PEON_SARKOTH_DEAD"
+    },
+    "OutsideFamiliars": {
+      "zone": 6,
+      "map_id": 28,
+      "coordinates": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "actors": [
+        8,
+        9
+      ],
+      "death_flags": [
+        "EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD",
+        "EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD"
+      ]
+    },
+    "InsideFamiliars": {
+      "map_id": 20,
+      "coordinates": [
+        [
+          12,
+          8
+        ],
+        [
+          8,
+          10
+        ]
+      ],
+      "actors": [
+        1,
+        2
+      ],
+      "death_flags": [
+        "EVENT_PEON_CAVE_STRONG_IMP_DEAD",
+        "EVENT_PEON_CAVE_IMP_DEAD"
+      ]
+    },
+    "Yarrog": {
+      "map_id": 20,
+      "xy": [
+        14,
+        3
+      ],
+      "actor": 5,
+      "death_flag": "EVENT_PEON_YARROG_DEAD"
+    }
+  },
+  "additional_maps": {
+    "BurningBladeCavern": {
+      "map_id": 20,
+      "blocks": [
+        10,
+        10
+      ],
+      "movement_grid": [
+        20,
+        20
+      ],
+      "sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "baseline_sha256": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+      "changed_blocks": [],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 136,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            16
+          ],
+          "target_name": "PeonCaveApproach",
+          "target_constant": "PEON_CAVE_APPROACH",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            12,
+            8
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeStrongImpScript",
+          "event_flag": "EVENT_PEON_CAVE_STRONG_IMP_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_MONSTER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeCavernGuideScript",
+          "event_flag": "EVENT_PEON_CAVE_IMP_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            6
+          ],
+          "sprite": "PEON_SPRITE_FELSTALKER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeFelstalkerScript",
+          "event_flag": "EVENT_PEON_CAVE_FELSTALKER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            3
+          ],
+          "sprite": "PEON_SPRITE_CULTIST",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeCultistScript",
+          "event_flag": "EVENT_PEON_CAVE_CULTIST_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            14,
+            3
+          ],
+          "sprite": "PEON_SPRITE_YARROG",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "BurningBladeYarrogScript",
+          "event_flag": "EVENT_PEON_YARROG_DEAD",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    },
+    "DurotarRoad": {
+      "map_id": 16,
+      "blocks": [
+        12,
+        14
+      ],
+      "movement_grid": [
+        24,
+        28
+      ],
+      "sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "baseline_sha256": "545dca1cdda0ee267d35acc0681588385b41ae1e76caae72da97cf45f7371f30",
+      "changed_blocks": [
+        {
+          "block_xy": [
+            4,
+            5
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            4,
+            6
+          ],
+          "old_id": 21,
+          "new_id": 23
+        },
+        {
+          "block_xy": [
+            4,
+            9
+          ],
+          "old_id": 38,
+          "new_id": 2
+        },
+        {
+          "block_xy": [
+            5,
+            9
+          ],
+          "old_id": 38,
+          "new_id": 18
+        },
+        {
+          "block_xy": [
+            6,
+            9
+          ],
+          "old_id": 21,
+          "new_id": 26
+        }
+      ],
+      "opened_old_wall_quadrants": [],
+      "all_old_saved_walkable_cells_remain_walkable": true,
+      "reachable_movement_cells": 288,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            14
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 2,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            12,
+            24
+          ],
+          "target_name": "SenjinVillage",
+          "target_constant": "SENJIN_VILLAGE",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            12,
+            4
+          ],
+          "target_name": "RazorHill",
+          "target_constant": "RAZOR_HILL",
+          "target_warp": 1,
+          "dynamic_room_return": false
+        }
+      ],
+      "actors": [
+        {
+          "index": 1,
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_LINK_RECEPTIONIST",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_TREE",
+          "script": "DurotarRoadGuideScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            8,
+            18
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_RIGHT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "DurotarRoadScoutScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            20
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "movement": "SPRITEMOVEDATA_STANDING_LEFT",
+          "palette": "PAL_NPC_GREEN",
+          "script": "DurotarRoadPatrolScript",
+          "event_flag": "-1",
+          "masked_placeholder": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            5,
+            5
+          ],
+          "sprite": "PEON_SPRITE_TIGER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "DurotarTigerScript",
+          "event_flag": "EVENT_PEON_ROAD_TIGER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 5,
+          "xy": [
+            18,
+            8
+          ],
+          "sprite": "PEON_SPRITE_RAPTOR",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarRaptorScript",
+          "event_flag": "EVENT_PEON_ROAD_RAPTOR_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 6,
+          "xy": [
+            5,
+            22
+          ],
+          "sprite": "PEON_SPRITE_HARPY",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarHarpyScript",
+          "event_flag": "EVENT_PEON_ROAD_HARPY_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 7,
+          "xy": [
+            18,
+            23
+          ],
+          "sprite": "PEON_SPRITE_CRAWLER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_PINK",
+          "script": "DurotarCrawlerScript",
+          "event_flag": "EVENT_PEON_COAST_CRAWLER_DEAD",
+          "masked_placeholder": false
+        },
+        {
+          "index": 8,
+          "xy": [
+            16,
+            16
+          ],
+          "sprite": "SPRITE_PAPER",
+          "movement": "SPRITEMOVEDATA_STANDING_DOWN",
+          "palette": "PAL_NPC_RED",
+          "script": "DurotarScorpidPackScript",
+          "event_flag": "EVENT_PEON_ROAD_SCORPID_PACK_DEAD",
+          "masked_placeholder": false
+        }
+      ],
+      "bg_events": []
+    }
+  },
+  "reference_image_is_conversation_attachment_not_stored_repository_file": true,
+  "reference_measurements_are_approximate": true,
+  "old_cave_threshold_xy_now_walkable_without_warp": [
+    24,
+    4
+  ],
+  "new_cave_threshold": {
+    "map": 28,
+    "xy": [
+      5,
+      2
+    ]
+  },
+  "quest_and_death_flags_retained_without_migration": true,
+  "new_sector_discovery_flags_owned_by_root": [
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "research_date": "2026-10-12",
+  "timezone": "Europe/Zurich",
+  "description": "Actually fetched English WoWhead Classic spell pages; ROM levels, charges and most prices are explicit prototype adaptations. Fear in this ROM lowers accuracy; it does not force scripted encounter flight. No artwork/audio or full descriptions imported.",
+  "sources": [
+    {
+      "url": "https://www.wowhead.com/classic/spell=78/heroic-strike",
+      "wow_classic_spell_id": 78,
+      "http_status": 200,
+      "title": "Heroic Strike - Spell - Classic World of Warcraft",
+      "source_bytes": 63173,
+      "source_sha256": "996a40ee42b38f2ab2109af7c9e2faa3f058ccdd3fc3c6a7c409b3d0cccf88cb",
+      "own_factual_summary": "Warrior weapon strike, additional melee damage.",
+      "copied_art_or_audio": false
+    },
+    {
+      "url": "https://www.wowhead.com/classic/spell=772/rend",
+      "wow_classic_spell_id": 772,
+      "http_status": 200,
+      "title": "Rend - Spell - Classic World of Warcraft",
+      "source_bytes": 83570,
+      "source_sha256": "f117a953292ef24b2865c0cccdd46701792b4fc4da31ad5788799b245649d84b",
+      "own_factual_summary": "Warrior wound that inflicts damage over time.",
+      "copied_art_or_audio": false
+    },
+    {
+      "url": "https://www.wowhead.com/classic/spell=686/shadow-bolt",
+      "wow_classic_spell_id": 686,
+      "http_status": 200,
+      "title": "Shadow Bolt - Spell - Classic World of Warcraft",
+      "source_bytes": 70781,
+      "source_sha256": "ae59b867e9ae0fc4d9a0d8715d81552a94d5b8c718f7b116300ae3a2d0c06d46",
+      "own_factual_summary": "Warlock ranged Shadow damage.",
+      "copied_art_or_audio": false
+    },
+    {
+      "url": "https://www.wowhead.com/classic/spell=689/drain-life",
+      "wow_classic_spell_id": 689,
+      "http_status": 200,
+      "title": "Drain Life - Spell - Classic World of Warcraft",
+      "source_bytes": 91953,
+      "source_sha256": "4456a375cd4692976a636999d9e6f442ca62c8fad0edc8671f1aa03ace846f04",
+      "own_factual_summary": "Warlock channel drains health from a target.",
+      "copied_art_or_audio": false
+    },
+    {
+      "url": "https://www.wowhead.com/classic/spell=172/corruption",
+      "wow_classic_spell_id": 172,
+      "http_status": 200,
+      "title": "Corruption - Spell - Classic World of Warcraft",
+      "source_bytes": 71067,
+      "source_sha256": "c6a80b5832a893b8018c7a15863f84e347d8b1f03bea5ba3dd16725fcfe5ea13",
+      "own_factual_summary": "Warlock curse causes Shadow damage over time.",
+      "copied_art_or_audio": false
+    },
+    {
+      "url": "https://www.wowhead.com/classic/spell=5782/fear",
+      "wow_classic_spell_id": 5782,
+      "http_status": 200,
+      "title": "Fear - Spell - Classic World of Warcraft",
+      "source_bytes": 66899,
+      "source_sha256": "2552bafc7484e4e4e31dedc43200ea82af79ed85a9a61b7f38e010cbbf0baf91",
+      "own_factual_summary": "Warlock fear prevents normal attacks by causing flight in Classic.",
+      "copied_art_or_audio": false
+    }
+  ]
+}

@@ -730,3 +730,8 @@ SECTION "Peon World Map Attributes", ROMX
 	map_attributes PeonOrcHut, PEON_ORC_HUT, $01
 	map_attributes PeonOrcInn, PEON_ORC_INN, $01
 	map_attributes PeonTrollInn, PEON_TROLL_INN, $01
+	map_attributes PeonValleyCrossroads, PEON_VALLEY_CROSSROADS, $01
+	map_attributes PeonHanazuaCamp, PEON_HANAZUA_CAMP, $01
+	map_attributes PeonSarkothBasin, PEON_SARKOTH_BASIN, $01
+	map_attributes PeonCaveApproach, PEON_CAVE_APPROACH, $01
+	map_attributes PeonValleyExit, PEON_VALLEY_EXIT, $01

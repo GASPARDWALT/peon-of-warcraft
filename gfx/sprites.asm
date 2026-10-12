@@ -125,6 +125,7 @@ PeonScorpidGFX:: INCBIN "gfx/sprites/peon_scorpid.2bpp"
 PeonNamingGFX:: INCBIN "gfx/sprites/peon_naming.2bpp"
 
 PeonImpGFX:: INCBIN "gfx/sprites/peon_imp.2bpp"
+PeonMailboxGFX:: INCBIN "gfx/pack/peon_mailbox.2bpp"
 
 INCLUDE "gfx/peon_village_sprites.asm"
 
