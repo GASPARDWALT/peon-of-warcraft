@@ -1,0 +1,1063 @@
+{
+  "style": "Original humble green Orc apprentices, explicit native-grid pixel clusters.",
+  "classes": {
+    "shaman": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 144,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "12a07c627aeee562aec440006356e963f260035b49e01005cf8aecb239bda802"
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 145,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "7f11d4a61357ddc3a5078e612c9a0cb49cd2c1e3c8227c5b0c223e7e75bd7c78"
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 140,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "884e5c55477014ef88f3cdc0e65897fbdea20928e0e68de4d1d2b0d6cad28ea4"
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 141,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "9be5b4ebca5c142a657886ca9032ea843096f47b4105490fc2064a3ca828e5af"
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 137,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "a2f50fdae43bcb634111a25ef5d43202e38839d5a326c34e24f7198ed723bcf4"
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 138,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "8f085eb4bb9a90d213370073fc137497650c0639a715eaf3b363be6e69056dac"
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 131,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "b72b74e7a692985bac5004b71ef9c36a548119069be8f756d11d6292426f1618"
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "a67907645047269f14c9ee4f386405bc5d39035c7026f165d98704e5db04838a"
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 137,
+            "opaque_bounds": [
+              0,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "f7054aa5d39e1fbdc649624365569fc9ae76fa0b893ddbdb1d3e61293608dcc7"
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 138,
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "27b5ebf43d3c8da5d0950ed0201e1cb8be7a5bc1c97e8303a31cdbbcdf1d6468"
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 131,
+            "opaque_bounds": [
+              0,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "cf3fe7d23cff83346b4aef61a0cfae6abccc4e077ac11bae6c5cac8fd7e54895"
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "native_index_sha256": "4c8c6426d3f976df5331261c3b234d8c89eba997c8b39dc165ed1914b39a2b3b"
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes_v028/shaman/shaman_world_right_walk",
+        "sha256": "7fb0194ef471440044d5ab9ce54670aaf88d00b441c5d7f641d5d313daf9e39e",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1379,
+            "opaque_bounds": [
+              2,
+              3,
+              53,
+              54
+            ],
+            "native_index_sha256": "85b85d306fbe2f56a3d810b32749f2cebd0bb72531e727fe63476bfb3e1ccaa8"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1409,
+            "opaque_bounds": [
+              2,
+              2,
+              53,
+              54
+            ],
+            "native_index_sha256": "0e282f6ecc2cddc69e3ab6dbc00de5df2c0face2335259d56178d54c38359de8"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1364,
+            "opaque_bounds": [
+              4,
+              3,
+              53,
+              54
+            ],
+            "native_index_sha256": "f7b10e9475d08ed7547bf74b54d076dd886bbeaf5f8de747088055adfbe7fa75"
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes_v028/shaman/shaman_front_motion",
+        "sha256": "2e1ff744095be06816272920643df3a7d3cc2cf50c7d2f4a2f020645891a2955",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1252,
+            "opaque_bounds": [
+              1,
+              1,
+              48,
+              48
+            ],
+            "native_index_sha256": "fa688c52ba113ae99ebbf601aa63498b10f41fe4bccc53907634892ea83f87a4"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1285,
+            "opaque_bounds": [
+              1,
+              0,
+              48,
+              48
+            ],
+            "native_index_sha256": "ad930ecf7a7cf0dd2a179bdd437706af521a1ade4affdacbc1a6d05164ef2a84"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1233,
+            "opaque_bounds": [
+              1,
+              1,
+              48,
+              48
+            ],
+            "native_index_sha256": "2f90f6c08245dafcae185fbdda680c5c66a5abda0283d7928c8bace0f50141f4"
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes_v028/shaman/shaman_back_motion",
+        "sha256": "c13adeb48d3db37ed4a3c973a69db6abcd6c9af0935a2d00f91d5c08b9991277",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "warrior": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 134,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "bf3a32f3cd5ea8429ec00fc08fbe24b66a74ba797e01b03827f580ba6468f972"
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "41d35f46b39ab893ea55afca86698e508bb89ba7f2df076c2b84d2dec7bce9be"
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 131,
+            "opaque_bounds": [
+              1,
+              0,
+              12,
+              16
+            ],
+            "native_index_sha256": "0b398e4b5c241d3b45ea520b2e557ee20791ee443dedd9b5d8dd23f84abab50c"
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 131,
+            "opaque_bounds": [
+              4,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "e9a48faee50eaeae67f967608c22d9a7ca1f35e46d639ed53d16a164fab3a81f"
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 127,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "980184519129c11f366b539824970a84857f35730c4a39b2a51766d0a867f075"
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 125,
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "a5e4a8e9a3100513f3f009b61a07a60f9a3fa0e0be1b14f7105914e710d180ba"
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 122,
+            "opaque_bounds": [
+              1,
+              0,
+              12,
+              16
+            ],
+            "native_index_sha256": "9e63bca037fa4fc775a91a984607fcb28689a63dd0df9c2a85a68007184a9bed"
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 122,
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "fefef3dfe899a0d746176235f78b8815a3d069a9d410a36603cb91d9dd173c0b"
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 127,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "d8101ce22627476986c03390ac9427fdc45cbd45042f9a0ae0de23707aa71f43"
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 125,
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "1f8e94e870f8b4b1dcbe22e366873592ec4b3e56261b5f7d61a4a4bf54c3ae24"
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 122,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "af8928facdb7e1ab69957c30c6ed5c44ca914ba18ada36baf474849c3239732a"
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 122,
+            "opaque_bounds": [
+              4,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "1cfeac50dc35e571845946bb844e0949abe18992cb55a9fa51c2d2e18fa7efad"
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes_v028/warrior/warrior_world_right_walk",
+        "sha256": "4ca9f0944fd53e20a227cadb2f4878ab0d2d1befcf334b5814fefc5882802119",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1295,
+            "opaque_bounds": [
+              5,
+              3,
+              48,
+              54
+            ],
+            "native_index_sha256": "0384f6d0398c04eec385feffa170275cf25fb1fc4fe7f06788e11cb59c2c54c1"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1297,
+            "opaque_bounds": [
+              5,
+              2,
+              48,
+              54
+            ],
+            "native_index_sha256": "ec6762b101bb800015cf97faee40e3a99c7f3c9397734fa381cd731628e238b9"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1247,
+            "opaque_bounds": [
+              7,
+              3,
+              48,
+              54
+            ],
+            "native_index_sha256": "113737b49264f9b53d5a4f53411b51e163764caa75233d6305a2670d73b8da46"
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes_v028/warrior/warrior_front_motion",
+        "sha256": "11f39c7e2f45971f43dbbc0cd6e368547f48d71e7632b7dca91a6cd6ac04aa31",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1241,
+            "opaque_bounds": [
+              4,
+              1,
+              48,
+              48
+            ],
+            "native_index_sha256": "c211e72830a1a830aa64483725f1d910f1160d66b2d89206d379c25993007aac"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1262,
+            "opaque_bounds": [
+              4,
+              0,
+              48,
+              48
+            ],
+            "native_index_sha256": "70b3c1021147a41228edf6495f200327cb5abb2e4526b6b465e07cbfd7899bfc"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1212,
+            "opaque_bounds": [
+              4,
+              1,
+              48,
+              48
+            ],
+            "native_index_sha256": "0b5346ff8aff0933bf18b7190fd149da82992c35c2037059a829385c418aa20f"
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes_v028/warrior/warrior_back_motion",
+        "sha256": "2f1daf873d36c7e82e4d3733b2cc843882e8c8dc478c71e9f624910568ba81b6",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    "warlock": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_pixels": 139,
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "ff9c09f27ad30f15451c80b780bb8f7c00801b6d9b464efa6ca275f58559af09"
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_pixels": 139,
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "95e12f70d28efb25f4bfce749a850ee9b5aff2e3b063e1994692870dc5a77872"
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_pixels": 141,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "7a4ef0d88687ff96fc2d78427a5880b9e742f6914c2c18e453f1f3cbea213f12"
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_pixels": 141,
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "2b67f3a24cee094f5930c5bfa6129e8de6013671b1f7b216c7dfdb93c1f3597c"
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "660f0618c34caf8110d5738e95e2956f77c656b8ce263d1578ba67f3798d1bdc"
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "9427e9f9fc1ff3b4228520567efb300820a7ae92922f55702a2286ea34fea655"
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "a5f10007ff5ae18a7f0cb03ed2cce309154ccfdada3a281af8cdc0db8f747e5d"
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "4e3317020275d44ba2c4a8d3e4b11f87d50cb612dbe50d20a68441108eac41d3"
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "native_index_sha256": "b4fbb62f95ab61acee61109833354f878abaea14fb2b7b326a0a3423f4d63853"
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "281f06017b271fdbe365fb0f21fac9ed6ee00a72158a4ba08b921cac3d8e59ac"
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "native_index_sha256": "5350ded2c3d27d7d36687bc9058bd967ea520dff340f9830bae05bf6b97c6174"
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_pixels": 132,
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "native_index_sha256": "a86fe6f7c2c5d45ea4bc573d95cdcb96efad9edc674dd0f909390cd9db34d4a7"
+          }
+        ],
+        "binary_bytes": 768,
+        "binary": "gfx/peon_classes_v028/warlock/warlock_world_right_walk",
+        "sha256": "0eee21431cfcd58a0e3cca0ea868c6ccc65844e93a14db5e3a73cc695e9a582b",
+        "tile_order": "row-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1363,
+            "opaque_bounds": [
+              5,
+              2,
+              48,
+              54
+            ],
+            "native_index_sha256": "fa7b5a69980a903bd4cf2b13c242b118b410c67d9035ef9d8d02fdcbe8c84ed0"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1398,
+            "opaque_bounds": [
+              6,
+              1,
+              48,
+              54
+            ],
+            "native_index_sha256": "04ba11e130a195c313ddedddc067cafb6e2c74135455a6feda8b435486b86e0a"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1366,
+            "opaque_bounds": [
+              10,
+              2,
+              54,
+              54
+            ],
+            "native_index_sha256": "dacd61653bbe8f7c132f4568df0a917bc351b9b643d0d6f02fceac62628ade8f"
+          }
+        ],
+        "binary_bytes": 2352,
+        "binary": "gfx/peon_classes_v028/warlock/warlock_front_motion",
+        "sha256": "02a29b09a17d8e5b8cf4e1adef5a349e05bf5092dded33064d32ba2925b8ea74",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_pixels": 1170,
+            "opaque_bounds": [
+              4,
+              2,
+              48,
+              48
+            ],
+            "native_index_sha256": "d5986bc8777c3dab6332db3c6cbfea71604a469ce7bdf291d598f3d31d7abfaa"
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_pixels": 1214,
+            "opaque_bounds": [
+              5,
+              1,
+              48,
+              48
+            ],
+            "native_index_sha256": "502e8c784d245aedeb69b947eb6bb6aa485cf6ded0475f7c8fe338c7bc2c9161"
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_pixels": 1116,
+            "opaque_bounds": [
+              12,
+              2,
+              48,
+              48
+            ],
+            "native_index_sha256": "73f6fecef8215f09304efa4740e0f96cd9de1a92c8b7b1b353adbe4e73541b88"
+          }
+        ],
+        "binary_bytes": 1728,
+        "binary": "gfx/peon_classes_v028/warlock/warlock_back_motion",
+        "sha256": "b5d4d9792eab59ceb1910170e93441b9382f75ab21e1763c77eeebd5eb1a8d4f",
+        "tile_order": "column-major per frame",
+        "binary_alpha": true,
+        "game_palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "dimensions_unchanged": true,
+  "saved_ids_and_layout_unchanged": true,
+  "world_opaque_colors": 3,
+  "combat_palette_indices": 4,
+  "warlock_rear_wand_tips_local": {
+    "idle": [
+      6,
+      15
+    ],
+    "ready": [
+      7,
+      5
+    ],
+    "release": [
+      16,
+      4
+    ]
+  },
+  "source_preview_only": true,
+  "online_reference_sources": [
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowbolt.jpg",
+      "purpose": "Warlock silhouette/color mood reference only; no image copied into native sprites."
+    },
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/inv_staff_02.jpg",
+      "purpose": "Simple novice wooden caster implement reference only."
+    }
+  ],
+  "weapon_icons": {
+    "wand": {
+      "binary": "gfx/peon_classes_v028/item_icons/wand.2bpp",
+      "bytes": 64,
+      "tile_order": "row-major",
+      "palette_rgb555": [
+        [
+          31,
+          29,
+          23
+        ],
+        [
+          23,
+          16,
+          9
+        ],
+        [
+          13,
+          8,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "sha256": "b2e40a682affaf9a1df1bd261ac650eb9bcf2ed682f28c93fa665d478b411767",
+      "transparent_png": "references/generated/polish_v028/classes/item_icons/wand_16x16.png"
+    },
+    "axe": {
+      "binary": "gfx/peon_classes_v028/item_icons/axe.2bpp",
+      "bytes": 64,
+      "tile_order": "row-major",
+      "palette_rgb555": [
+        [
+          31,
+          29,
+          23
+        ],
+        [
+          23,
+          16,
+          9
+        ],
+        [
+          13,
+          8,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "sha256": "b51e11a1895ce9c548011e53b4ff2220c10b00e5b199c3a9a0c01409d7607b20",
+      "transparent_png": "references/generated/polish_v028/classes/item_icons/axe_16x16.png"
+    }
+  }
+}

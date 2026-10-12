@@ -119,6 +119,10 @@ PeonLoadEnemyPoseOverflow::
 	ld e, a
 	ld d, [hl]
 .load
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	ld a, 1
@@ -127,6 +131,8 @@ PeonLoadEnemyPoseOverflow::
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
 .done
 	pop hl
 	pop de

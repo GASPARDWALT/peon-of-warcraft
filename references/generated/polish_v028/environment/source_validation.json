@@ -1,0 +1,450 @@
+{
+  "passed": true,
+  "native_patterns": 192,
+  "metatile_count": 53,
+  "tile_sheet_metatiles_and_packed_palette_attributes_exact": true,
+  "old_47_collision_rows_byte_exact": true,
+  "new_wall_ids": [
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "new_interior_foot_door_id": 52,
+  "all_original_non_wall_room_cells_still_passable": true,
+  "all_npc_table_bed_and_exit_approaches_reachable": true,
+  "all_warp_coordinates_and_map_ids_dimensions_preserved": true,
+  "all_world_and_opening_palm_block_arrays_preserved": true,
+  "emblem_present_only_in_mounted_banner_block6": true,
+  "no_floor_crest": true,
+  "three_corner_bunks_per_inn": true,
+  "two_native_bowl_fire_basins_per_hut_and_inn": true,
+  "one_grommash_wall_fire_basin": true,
+  "round_room_geometry": {
+    "PeonOrcHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "old_walkable_cells": 44,
+      "walkable_cells": 48,
+      "reachable_cells": 48,
+      "old_saved_coordinates_remain_walkable": true,
+      "all_npc_cells_and_interaction_cells_reachable": true,
+      "warp_5_7_and_facing_approach_preserved": true,
+      "sha256": "2624961508241752a60af42826c5b91abde00d7a40af99d5f7f748cb2b474951"
+    },
+    "PeonTrollHut": {
+      "blocks": [
+        6,
+        5
+      ],
+      "old_walkable_cells": 44,
+      "walkable_cells": 48,
+      "reachable_cells": 48,
+      "old_saved_coordinates_remain_walkable": true,
+      "all_npc_cells_and_interaction_cells_reachable": true,
+      "warp_5_7_and_facing_approach_preserved": true,
+      "sha256": "0f7a944ac69f3ce760e5cdb51e8916316c59ef9745298980e1e20860bf7fe723"
+    },
+    "PeonOrcInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "old_walkable_cells": 28,
+      "walkable_cells": 28,
+      "reachable_cells": 28,
+      "old_saved_coordinates_remain_walkable": true,
+      "all_npc_cells_and_interaction_cells_reachable": true,
+      "warp_5_7_and_facing_approach_preserved": true,
+      "sha256": "4fe23879d46f7b2e0458e4184d22953f1e75220df9fb46e492fa6dc8b344f18a"
+    },
+    "PeonTrollInn": {
+      "blocks": [
+        6,
+        5
+      ],
+      "old_walkable_cells": 28,
+      "walkable_cells": 28,
+      "reachable_cells": 28,
+      "old_saved_coordinates_remain_walkable": true,
+      "all_npc_cells_and_interaction_cells_reachable": true,
+      "warp_5_7_and_facing_approach_preserved": true,
+      "sha256": "16193d10ecf83380166b4b771bb6c98dd328652dde55e1321a8c06961d36a5a1"
+    }
+  },
+  "actual_warp_collisions": [
+    {
+      "map": "TheDen",
+      "warp_index": 1,
+      "xy": [
+        20,
+        10
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "TheDen",
+      "warp_index": 2,
+      "xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "TheDen",
+      "warp_index": 3,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 11,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "TheDen",
+      "warp_index": 4,
+      "xy": [
+        0,
+        14
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp_index": 1,
+      "xy": [
+        4,
+        12
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp_index": 2,
+      "xy": [
+        28,
+        12
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "warp_index": 3,
+      "xy": [
+        16,
+        0
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "DurotarRoad",
+      "warp_index": 1,
+      "xy": [
+        4,
+        14
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "DurotarRoad",
+      "warp_index": 2,
+      "xy": [
+        12,
+        24
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "DurotarRoad",
+      "warp_index": 3,
+      "xy": [
+        12,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "SenjinVillage",
+      "warp_index": 1,
+      "xy": [
+        10,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "SenjinVillage",
+      "warp_index": 2,
+      "xy": [
+        5,
+        5
+      ],
+      "metatile": 29,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "SenjinVillage",
+      "warp_index": 3,
+      "xy": [
+        15,
+        5
+      ],
+      "metatile": 29,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "SenjinVillage",
+      "warp_index": 4,
+      "xy": [
+        17,
+        9
+      ],
+      "metatile": 29,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 1,
+      "xy": [
+        12,
+        16
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 2,
+      "xy": [
+        12,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 3,
+      "xy": [
+        5,
+        5
+      ],
+      "metatile": 4,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 4,
+      "xy": [
+        17,
+        5
+      ],
+      "metatile": 4,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 5,
+      "xy": [
+        17,
+        13
+      ],
+      "metatile": 4,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "RazorHill",
+      "warp_index": 6,
+      "xy": [
+        5,
+        15
+      ],
+      "metatile": 4,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "OrgrimmarGate",
+      "warp_index": 1,
+      "xy": [
+        12,
+        16
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "BurningBladeCavern",
+      "warp_index": 1,
+      "xy": [
+        10,
+        16
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonTrollHut",
+      "warp_index": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 52,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonOrcHut",
+      "warp_index": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 52,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonOrcInn",
+      "warp_index": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 52,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonTrollInn",
+      "warp_index": 1,
+      "xy": [
+        5,
+        7
+      ],
+      "metatile": 52,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp_index": 1,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp_index": 2,
+      "xy": [
+        5,
+        0
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "warp_index": 3,
+      "xy": [
+        0,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "warp_index": 1,
+      "xy": [
+        9,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "warp_index": 2,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "warp_index": 1,
+      "xy": [
+        5,
+        0
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "warp_index": 2,
+      "xy": [
+        9,
+        7
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonCaveApproach",
+      "warp_index": 1,
+      "xy": [
+        5,
+        9
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonCaveApproach",
+      "warp_index": 2,
+      "xy": [
+        5,
+        2
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonValleyExit",
+      "warp_index": 1,
+      "xy": [
+        0,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    },
+    {
+      "map": "PeonValleyExit",
+      "warp_index": 2,
+      "xy": [
+        9,
+        4
+      ],
+      "metatile": 16,
+      "actual_collision": "WARP_PANEL"
+    }
+  ]
+}

@@ -24,6 +24,13 @@ PeonLoadPlayerHUDGFX::
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jr nz, .done
+	; VBlank may update a map/attribute bank while Get2bpp is waiting for
+	; its native upload. Mask that update before selecting the HUD bank;
+	; leave interrupts enabled for Get2bpp, then restore VBK before mapmode.
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	xor a
@@ -34,6 +41,8 @@ PeonLoadPlayerHUDGFX::
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
 .done
 	pop hl
 	pop de

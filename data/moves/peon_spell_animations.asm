@@ -135,6 +135,7 @@ BattleAnim_PeonChainLightning:
 ; Short native class choreography shares existing indexed 2bpp particles.
 ; No external audio, extra save state or signed BG rank/totem tiles are used.
 BattleAnim_PeonWeaponStrike:
+	anim_if_param_equal $ff, BattleAnim_PeonShadowBolt
 	anim_2gfx BATTLE_ANIM_GFX_CUT, BATTLE_ANIM_GFX_HIT
 	anim_sound 0, 1, SFX_CUT
 	anim_obj BATTLE_ANIM_OBJ_CUT_DOWN_RIGHT, 136, 48, $0

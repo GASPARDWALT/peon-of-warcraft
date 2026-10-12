@@ -426,7 +426,7 @@ PeonApplyClassBattleAffinity::
 	ret
 
 ; GetMoveName's caller expects a terminated fixed-width name in buffer 1.
-; Keep MACE STRIKE for old Shaman saves; Warriors and Warlocks have weapons.
+; Preserve saved move IDs while presenting each class's actual weapon action.
 PeonGetBasicMeleeName::
 	ld a, [wNamedObjectIndex]
 	cp POUND
@@ -434,6 +434,8 @@ PeonGetBasicMeleeName::
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jp nz, PeonSpellUnhandled
+	; Move-selection names also run after the enemy's previous turn.
+	; hBattleTurn is not an ownership marker for the visible action menu.
 	call PeonGetBattleClass
 	and a
 	jp z, PeonSpellUnhandled
@@ -441,9 +443,16 @@ PeonGetBasicMeleeName::
 	push bc
 	push de
 	push hl
+	cp 2
+	jr z, .wand
 	ld hl, .Name
-	ld de, wStringBuffer1
 	ld bc, .NameEnd - .Name
+	jr .copy
+.wand
+	ld hl, .WandName
+	ld bc, .WandNameEnd - .WandName
+.copy
+	ld de, wStringBuffer1
 	call CopyBytes
 	pop hl
 	pop de
@@ -454,6 +463,10 @@ PeonGetBasicMeleeName::
 	db "MELEE STRIKE@"
 .NameEnd:
 	assert .NameEnd - .Name <= MOVE_NAME_LENGTH
+.WandName:
+	db "WAND STRIKE@"
+.WandNameEnd:
+	assert .WandNameEnd - .WandName <= MOVE_NAME_LENGTH
 
 ; Native enemy status storage is reused as a single damage-over-time slot.
 ; It is presented as a Warrior wound or Warlock curse, never as a second

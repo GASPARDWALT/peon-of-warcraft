@@ -112,6 +112,7 @@
 	const MUSIC_PEON_VICTORY
 	const MUSIC_PEON_BARRENS
 	const MUSIC_PEON_ORGRIMMAR
+	const MUSIC_PEON_WHATS_UP
 DEF NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for this value (see home/map.asm)

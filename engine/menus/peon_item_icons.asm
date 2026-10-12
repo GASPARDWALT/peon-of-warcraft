@@ -84,6 +84,10 @@ PeonLoadClassBagWeaponIcon::
 	push bc
 	push de
 	push hl
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	ldh a, [hCGB]
@@ -131,6 +135,8 @@ PeonLoadClassBagWeaponIcon::
 .Done
 	pop af
 	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
 	pop hl
 	pop de
 	pop bc
@@ -302,10 +308,10 @@ PeonItemIconMageClothRobePalette:
 	assert @ - PeonItemIconMageClothRobePalette == 1 palettes
 
 PeonItemIconMageStaffGFX:
-	INCBIN "gfx/pack/peon_item_icons/mage_staff.2bpp"
+	INCBIN "gfx/peon_classes_v028/item_icons/wand.2bpp"
 	assert @ - PeonItemIconMageStaffGFX == 4 * LEN_2BPP_TILE
 PeonItemIconMageStaffPalette:
-	INCLUDE "gfx/pack/peon_item_icons/mage_staff.pal"
+	INCLUDE "gfx/peon_classes_v028/item_icons/wand.pal"
 	assert @ - PeonItemIconMageStaffPalette == 1 palettes
 
 PeonItemIconMageWandGFX:
@@ -316,10 +322,10 @@ PeonItemIconMageWandPalette:
 	assert @ - PeonItemIconMageWandPalette == 1 palettes
 
 PeonItemIconWarriorAxeGFX:
-	INCBIN "gfx/pack/peon_item_icons/warrior_axe.2bpp"
+	INCBIN "gfx/peon_classes_v028/item_icons/axe.2bpp"
 	assert @ - PeonItemIconWarriorAxeGFX == 4 * LEN_2BPP_TILE
 PeonItemIconWarriorAxePalette:
-	INCLUDE "gfx/pack/peon_item_icons/warrior_axe.pal"
+	INCLUDE "gfx/peon_classes_v028/item_icons/axe.pal"
 	assert @ - PeonItemIconWarriorAxePalette == 1 palettes
 
 PeonItemIconWarriorSwordGFX:

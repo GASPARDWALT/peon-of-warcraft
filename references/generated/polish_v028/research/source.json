@@ -1,0 +1,76 @@
+{
+  "research_date": "2026-10-12",
+  "timezone": "Europe/Zurich",
+  "use": "Visual reference only; final native assets are hand-authored for the ROM. No audio or copyrighted melody retrieved.",
+  "sources": [
+    {
+      "url": "https://worldofwarcraft.blizzard.com/en-us/game/classes/warlock",
+      "description": "Official Blizzard Warlock class page: silhouette and cloth/staff reference.",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "source_bytes": 95158,
+      "sha256": "2b4254212143658c91f4cdcf0b2943c82e01bfbc60f429fa1d29b2b9feada1f2",
+      "stored_image": false
+    },
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/inv_misc_tournaments_symbol_orc.jpg",
+      "description": "Horde emblem reference for a legible hand-authored wall banner.",
+      "destination": "references/generated/polish_v028/research/horde_symbol_reference.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "source_bytes": 1655,
+      "sha256": "4ba4ff55003359717711ad79e64cadf1803e5674a780b16a224295317b51d1fe",
+      "stored_image": true
+    },
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_shadowbolt.jpg",
+      "description": "Shadow Bolt violet projectile silhouette and rim lighting reference.",
+      "destination": "references/generated/polish_v028/research/warlock_shadowbolt_reference.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "source_bytes": 1633,
+      "sha256": "8a5caa2bf7bd467bde70473a7c4e8efcbfadb9ca7342146dde1724aeb2cdbbc6",
+      "stored_image": true
+    },
+    {
+      "url": "https://blz-contentstack-images.akamaized.net/v3/assets/blt3452e3b114fab0cd/blt5966b0c7ee968577/5ee3e8c2a7c560086afc4009/PFZ6V66EDO9R1457037494021.png",
+      "description": "Official Blizzard Warlock class art directly linked from the fetched class page; silhouette reference only, not beginner equipment.",
+      "destination": "references/generated/polish_v028/research/blizzard_warlock_class_art.png",
+      "http_status": 403,
+      "error": "HTTP policy denied the official image host. No retry, alternate URL, direct connection, or mirror used.",
+      "status_source": "Observed proxy CONNECT tunnel refusal"
+    },
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/spell_fire_firebolt.jpg",
+      "description": "Classic Firebolt orange head and flame trail, reference only.",
+      "destination": "references/generated/polish_v028/research/imp_firebolt_reference.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "source_bytes": 1945,
+      "sha256": "2bef552637accc22397cbc81ee6d3f061b248716f07269c7f69c23d84a2e1860",
+      "stored_image": true
+    },
+    {
+      "url": "https://wow.zamimg.com/images/wow/icons/large/ability_rogue_ambush.jpg",
+      "description": "Classic Heroic Strike icon (WoW spell 78) for simple axe/weapon strike shape, reference only.",
+      "destination": "references/generated/polish_v028/research/warrior_heroic_strike_reference.jpg",
+      "http_status": 200,
+      "content_type": "image/jpeg",
+      "source_bytes": 2148,
+      "sha256": "18c9a79ff229489d8fda2e682acc6295ab1b082afa9e444585d45cf2ccca7383",
+      "stored_image": true
+    }
+  ],
+  "provided_project_references": [
+    {
+      "path": "references/zones/the_den/the_den_primary_reference.png",
+      "description": "User-provided WoW exterior screenshot already in the repository; actually viewed during research. Dark arched entrance, triangular hide roof, tusk supports, rope bands.",
+      "sha256": "7a430e0ee1b21c376bf53b1b6f6f5eeed67603beca4c63ab01066539ce96dc00"
+    },
+    {
+      "path": "references/characters/class_masters/class_masters_crystal_style_sheet_reference.png",
+      "description": "User-approved reference sheet actually viewed; use beginner reductions of class motifs, not heroic armor.",
+      "sha256": "bb6cfb444a0da09d239e776d548246d680f20627dfab72fa84ab85fd3b27a8df"
+    }
+  ]
+}

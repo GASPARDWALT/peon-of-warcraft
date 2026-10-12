@@ -55,7 +55,7 @@ ItemNames::
 	li "X SPECIAL"
 	li "COIN CASE"
 	li "ITEMFINDER"
-	li "WORN STAFF"
+	li "WORN WAND"
 	li "EXP.SHARE"
 	li "OLD ROD"
 	li "GOOD ROD"

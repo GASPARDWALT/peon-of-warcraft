@@ -230,8 +230,15 @@ PeonClassSelect:
 	call UpdateTimePals
 	xor a
 	ld [wMenuCursorY], a
-.draw
-	call ClearTilemap
+	; Build the fixed frame and mentor names once. Styled glyphs publish
+	; their attribute directly; repainting them under Textbox's temporary
+	; palette 7 would expose a few white name cells during the raster.
+	xor a
+	ldh [hBGMapMode], a
+	hlcoord 0, 0
+	ld a, ' '
+	ld bc, SCREEN_AREA
+	call ByteFill
 	hlcoord 0, 0
 	ld b, 16
 	ld c, 18
@@ -242,6 +249,23 @@ PeonClassSelect:
 	hlcoord 2, 4
 	ld de, .Names
 	call PlaceString
+	hlcoord 1, 15
+	ld de, .Controls
+	call PlaceString
+.draw
+	; Keep the existing panel and name glyphs on screen. Only the changing
+	; description, cursor and preview are replaced before map publication.
+	xor a
+	ldh [hBGMapMode], a
+	hlcoord 10, 4
+	lb bc, 7, 9
+	call ClearBox
+	hlcoord 1, 3
+	ld [hl], ' '
+	hlcoord 1, 7
+	ld [hl], ' '
+	hlcoord 1, 11
+	ld [hl], ' '
 	ld a, [wMenuCursorY]
 	add a
 	ld e, a
@@ -273,9 +297,6 @@ PeonClassSelect:
 	ld [hl], 5
 	inc hl
 	ld [hl], 5
-	farcall ApplyPals
-	ld a, TRUE
-	ldh [hCGBPalUpdate], a
 	ld a, [wMenuCursorY]
 	add a
 	add a
@@ -289,9 +310,11 @@ PeonClassSelect:
 	jr .move
 .cursor
 	ld [hl], '▶'
-	hlcoord 1, 15
-	ld de, .Controls
-	call PlaceString
+	; Tint only the class-selection page. The player's preview keeps its
+	; independent green/leather palette, and cached bold glyphs keep bank1.
+	ld a, [wMenuCursorY]
+	ld c, a
+	farcall PeonApplyClassSelectTintV028
 	call WaitBGMap2
 .input
 	call DelayFrame
@@ -352,8 +375,8 @@ PeonClassSelect:
 .Controls: db "UP/DOWN  A: ACCEPT@"
 .Descriptions: dw .Shaman, .Warrior, .Warlock
 .Shaman: db "SHAMAN", "<LF>", "ELEMENTS", "<LF>", "MACE", "<LF>", "SHIELD", "<LF>", "TOTEM", "<LF>", "LIGHTNING", "<LF>", "BOLT@"
-.Warrior: db "WARRIOR", "<LF>", "MELEE", "<LF>", "AXE", "<LF>", "SHIELD", "<LF>", "HEROIC", "<LF>", "STRIKE", "<LF>", "REND@"
-.Warlock: db "WARLOCK", "<LF>", "SHADOW", "<LF>", "STAFF", "<LF>", "BOLT", "<LF>", "DRAIN", "<LF>", "CORRUPT", "<LF>", "FEAR@"
+.Warrior: db "WARRIOR", "<LF>", "MELEE", "<LF>", "TWO HAND", "<LF>", "AXE", "<LF>", "HEROIC", "<LF>", "STRIKE", "<LF>", "REND@"
+.Warlock: db "WARLOCK", "<LF>", "SHADOW", "<LF>", "WAND", "<LF>", "BOLT", "<LF>", "DRAIN", "<LF>", "CORRUPT", "<LF>", "FEAR@"
 
 ; The historical special ID and hook stay stable for old callers.
 ; New class selection changes only the initial actions, not party structure.

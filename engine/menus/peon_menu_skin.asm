@@ -13,6 +13,12 @@ PeonApplyMenuSkin::
 	ldh a, [hCGB]
 	and a
 	jp z, .done
+	; Keep VBlank's map writer from selecting a different VRAM bank while
+	; the two native tile uploads are pending. Get2bpp still needs VBlank.
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	xor a
@@ -30,6 +36,8 @@ PeonApplyMenuSkin::
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
 	ld hl, PeonMenuPalettes
 	ld de, wBGPals1
 	ld bc, 4 palettes

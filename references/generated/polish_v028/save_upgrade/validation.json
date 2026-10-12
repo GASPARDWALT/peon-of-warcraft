@@ -1,0 +1,181 @@
+{
+  "source_rom_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+  "rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "emulator": "PyBoy 2.7.0",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "save_abi": {
+    "existing_wram0_wramx_sram_symbols_compared": 16016,
+    "all_existing_symbol_addresses_equal": true,
+    "removed_symbols": [],
+    "shifted_symbols": {},
+    "saved_enum_tables": {
+      "event_flags.asm": {
+        "numeric_directives_compared": 1467,
+        "unchanged": true
+      },
+      "item_constants.asm": {
+        "numeric_directives_compared": 197,
+        "unchanged": true
+      },
+      "move_constants.asm": {
+        "numeric_directives_compared": 253,
+        "unchanged": true
+      },
+      "pokemon_constants.asm": {
+        "numeric_directives_compared": 281,
+        "unchanged": true
+      },
+      "map_constants.asm": {
+        "numeric_directives_compared": 458,
+        "unchanged": true
+      }
+    },
+    "old_saved_room_floor_cells": {
+      "PeonOrcHut": {
+        "old_passable_cells_compared": 44,
+        "all_old_passable_cells_remain_passable": true
+      },
+      "PeonTrollHut": {
+        "old_passable_cells_compared": 44,
+        "all_old_passable_cells_remain_passable": true
+      },
+      "PeonOrcInn": {
+        "old_passable_cells_compared": 28,
+        "all_old_passable_cells_remain_passable": true
+      },
+      "PeonTrollInn": {
+        "old_passable_cells_compared": 28,
+        "all_old_passable_cells_remain_passable": true
+      }
+    }
+  },
+  "classes": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "saved_map_number": 14,
+      "saved_position": [
+        12,
+        9
+      ],
+      "ordinary_room_exit_after_upgrade": null,
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "shaman",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "a5c7b2b306ec25f4f1dd58926226dc1a63cec75527e1d19402c0feda183bcca2",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "saved_map_number": 23,
+      "saved_position": [
+        4,
+        5
+      ],
+      "ordinary_room_exit_after_upgrade": {
+        "saved_map": 23,
+        "saved_position": [
+          4,
+          5
+        ],
+        "walked_from_old_saved_floor_to_current_door": true,
+        "returned_to_the_den": true
+      },
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "warrior",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "0d331bf4664b18fec39e7f86d7f7f67f8b08e2dabadc6f14e0d2e857c7e480d2",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "complete_persistent_record_equal": true,
+      "all_256_event_bytes_preserved": true,
+      "class_flags_preserved": true,
+      "identity_party_hp_pp_moves_all_bags_money_and_location_preserved": true,
+      "saved_map_number": 22,
+      "saved_position": [
+        4,
+        5
+      ],
+      "ordinary_room_exit_after_upgrade": {
+        "saved_map": 22,
+        "saved_position": [
+          4,
+          5
+        ],
+        "walked_from_old_saved_floor_to_current_door": true,
+        "returned_to_the_den": true
+      },
+      "trainer_did_not_regrant_kit": true,
+      "new_class_visuals": {
+        "class": "warlock",
+        "idle_16_tiles_match": true,
+        "walking_32_tiles_match": true,
+        "native_world_dimensions": [
+          16,
+          16
+        ],
+        "ram_edits": false,
+        "smaller_friendly_imp_graphics_match": true,
+        "runtime_follower_rebuilt_from_old_battery": true
+      },
+      "native_save_then_second_cold_continue": {
+        "battery_bytes": 32768,
+        "battery_sha256": "db2e210504e87b3273693412b7579a313fee83fc6289dd13d6693bc355fd3d6c",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      },
+      "passed": true
+    }
+  },
+  "passed": true,
+  "symbols_sha256": "a39b3bb28f5634fa9f1ba93323de698287503033d78462c6cad8847afdad82ab",
+  "limitations": [
+    "Three genuine v0.2.7 class characters after the first quest: The Den, orc inn and orc hut.",
+    "The two troll interiors were checked for old floor compatibility but not cold-continued.",
+    "Other saved locations and physical Chromatic hardware were not exercised.",
+    "Sprite checks read native VRAM; no state is injected to pass compatibility."
+  ]
+}

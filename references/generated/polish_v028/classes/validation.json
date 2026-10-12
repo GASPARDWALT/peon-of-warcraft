@@ -1,0 +1,1476 @@
+{
+  "rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "passed": true,
+  "method": "Ordinary inputs only; read-only native VRAM/OAM/RGB555 and battery observation.",
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "user_battery_files_opened": false,
+  "classes": {
+    "shaman": {
+      "passed": true,
+      "highlighted_class_preview": {
+        "kind": "preview",
+        "frame": 0,
+        "target": 38400,
+        "font1_range": [
+          38544,
+          38912
+        ],
+        "cursor_y": 0,
+        "cursor_x": 0,
+        "bytes": 64,
+        "native_sha256": "f3c68a2a42780fcc82266ef23d29c9c0ff6f19735b9a7de97e1054390e0afc45",
+        "vram_bank": 0,
+        "saved_flags_unchanged": true,
+        "font_bank1_unchanged": true,
+        "protected_battle_regions_unchanged": false
+      },
+      "actual_preview_palette_and_framebuffer_checks": [
+        {
+          "label": "master_class_description",
+          "selected_class": "shaman",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              20,
+              25,
+              31
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        },
+        {
+          "label": "cold_saved_character_preview_before_continue",
+          "selected_class": "shaman",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              31,
+              29,
+              23
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        }
+      ],
+      "fresh_world_vram": {
+        "bank": 1,
+        "tile_base": 0,
+        "standing_16_tiles": true,
+        "walking_32_tiles": true
+      },
+      "world_movement": {
+        "ordinary_directional_taps": true,
+        "safe_square": [
+          4,
+          8
+        ],
+        "four_directions_three_native_poses_each": true,
+        "actual_hardware_OAM_and_RGB555_pixels": true,
+        "strict_16x16_four_tile_composite_geometry": true,
+        "mirrored_accessories": false,
+        "facings": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "character_profile": {
+        "bank0_native_49_tiles": true,
+        "row_major_tilemap": true,
+        "actual_RGB555_pixels": true,
+        "currently_displayed_frame": 0
+      },
+      "map_menu_and_room_door_class_reload": true,
+      "cold_save": {
+        "battery_bytes": 32768,
+        "saved_preview_before_continue_correct": true,
+        "saved_character_name": {
+          "name": "P\u00e9on ABCDE",
+          "native_bold_name_cells_correct": true,
+          "exact_stored_prefix_once": true,
+          "actual_RGB555_name_pixels_correct": true,
+          "checksum_verified_identity": true
+        },
+        "complete_record_and_all_256_event_bytes_preserved": true,
+        "world_class_graphics_reloaded": true
+      },
+      "actual_battle_casts": [
+        {
+          "label": "lightning_bolt",
+          "actual_move": 84,
+          "native_vram_poses": [
+            0,
+            1
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1
+          ],
+          "required_poses": [
+            0,
+            1
+          ],
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 180
+        },
+        {
+          "label": "physical_strike",
+          "actual_move": 1,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 180
+        }
+      ],
+      "all_native_back_uploads_protect_enemy_font_emblem_totem_pet_and_hud": true,
+      "back_helper_observations": [
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0a8f205ed69c07e2435f07f6e31b71838ac6670b984016dcacff288073a09db6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0a8f205ed69c07e2435f07f6e31b71838ac6670b984016dcacff288073a09db6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0a8f205ed69c07e2435f07f6e31b71838ac6670b984016dcacff288073a09db6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0a8f205ed69c07e2435f07f6e31b71838ac6670b984016dcacff288073a09db6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "83f4142eebf3ad8403fad72d05c71828a8970188dd58f3e3a90dafe65d0eca7c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0a8f205ed69c07e2435f07f6e31b71838ac6670b984016dcacff288073a09db6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "806bcb0e3b7940d3c5c120a6d7376ee085e4c839ececf29fa84aba47cae8e7df",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        }
+      ],
+      "native_upload_count": 27,
+      "read_only_hook_errors": [],
+      "native_asset_sha256": {
+        "overworld.bin": "7fb0194ef471440044d5ab9ce54670aaf88d00b441c5d7f641d5d313daf9e39e",
+        "back_frames.bin": "c13adeb48d3db37ed4a3c973a69db6abcd6c9af0935a2d00f91d5c08b9991277",
+        "portrait_frames.bin": "b0825a9ebd0ef513ae33b60648f649f8ee94c388e0e796b55f74af51d3a4974e"
+      }
+    },
+    "warrior": {
+      "passed": true,
+      "highlighted_class_preview": {
+        "kind": "preview",
+        "frame": 1,
+        "target": 38400,
+        "font1_range": [
+          38544,
+          38912
+        ],
+        "cursor_y": 1,
+        "cursor_x": 0,
+        "bytes": 64,
+        "native_sha256": "5168f8ce7e9371c046e51a46b1a1ac059cf6571ce2285920b3be7fa12f1393ab",
+        "vram_bank": 0,
+        "saved_flags_unchanged": true,
+        "font_bank1_unchanged": true,
+        "protected_battle_regions_unchanged": false
+      },
+      "actual_preview_palette_and_framebuffer_checks": [
+        {
+          "label": "master_class_description",
+          "selected_class": "warrior",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              31,
+              20,
+              18
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        },
+        {
+          "label": "cold_saved_character_preview_before_continue",
+          "selected_class": "warrior",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              31,
+              29,
+              23
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        }
+      ],
+      "fresh_world_vram": {
+        "bank": 1,
+        "tile_base": 0,
+        "standing_16_tiles": true,
+        "walking_32_tiles": true
+      },
+      "world_movement": {
+        "ordinary_directional_taps": true,
+        "safe_square": [
+          4,
+          8
+        ],
+        "four_directions_three_native_poses_each": true,
+        "actual_hardware_OAM_and_RGB555_pixels": true,
+        "strict_16x16_four_tile_composite_geometry": true,
+        "mirrored_accessories": false,
+        "facings": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "character_profile": {
+        "bank0_native_49_tiles": true,
+        "row_major_tilemap": true,
+        "actual_RGB555_pixels": true,
+        "currently_displayed_frame": 0
+      },
+      "map_menu_and_room_door_class_reload": true,
+      "cold_save": {
+        "battery_bytes": 32768,
+        "saved_preview_before_continue_correct": true,
+        "saved_character_name": {
+          "name": "P\u00e9on ABCDE",
+          "native_bold_name_cells_correct": true,
+          "exact_stored_prefix_once": true,
+          "actual_RGB555_name_pixels_correct": true,
+          "checksum_verified_identity": true
+        },
+        "complete_record_and_all_256_event_bytes_preserved": true,
+        "world_class_graphics_reloaded": true
+      },
+      "actual_battle_casts": [
+        {
+          "label": "physical_strike",
+          "actual_move": 1,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 180
+        }
+      ],
+      "all_native_back_uploads_protect_enemy_font_emblem_totem_pet_and_hud": true,
+      "back_helper_observations": [
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "0d6b9b533a9d8489feb8e67219c66ee0491319bb76ea7a30b54d9cc4bba780f7",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "0d6b9b533a9d8489feb8e67219c66ee0491319bb76ea7a30b54d9cc4bba780f7",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "7fb79e88168b9cc93520fd4a478193fd36bb91a53224759ef9d836efb8ce8e91",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "688d693ff78da3fb5a4ae9956876b58272f52fc15ae69f91c64c0293918887a6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0d6b9b533a9d8489feb8e67219c66ee0491319bb76ea7a30b54d9cc4bba780f7",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "7fb79e88168b9cc93520fd4a478193fd36bb91a53224759ef9d836efb8ce8e91",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "688d693ff78da3fb5a4ae9956876b58272f52fc15ae69f91c64c0293918887a6",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "0d6b9b533a9d8489feb8e67219c66ee0491319bb76ea7a30b54d9cc4bba780f7",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        }
+      ],
+      "native_upload_count": 14,
+      "read_only_hook_errors": [],
+      "native_asset_sha256": {
+        "overworld.bin": "4ca9f0944fd53e20a227cadb2f4878ab0d2d1befcf334b5814fefc5882802119",
+        "back_frames.bin": "2f1daf873d36c7e82e4d3733b2cc843882e8c8dc478c71e9f624910568ba81b6",
+        "portrait_frames.bin": "c8c2cb38722526aacc03f9f29adc1dbe121bc0140392ac6d91c2b1b62dbe955c"
+      }
+    },
+    "warlock": {
+      "passed": true,
+      "highlighted_class_preview": {
+        "kind": "preview",
+        "frame": 2,
+        "target": 38400,
+        "font1_range": [
+          38544,
+          38912
+        ],
+        "cursor_y": 2,
+        "cursor_x": 0,
+        "bytes": 64,
+        "native_sha256": "0a271499d74c6f1bbf6fbe8f1dc0e858edc473a15ed6ee41ca6e542955467ecb",
+        "vram_bank": 0,
+        "saved_flags_unchanged": true,
+        "font_bank1_unchanged": true,
+        "protected_battle_regions_unchanged": false
+      },
+      "actual_preview_palette_and_framebuffer_checks": [
+        {
+          "label": "master_class_description",
+          "selected_class": "warlock",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              26,
+              20,
+              31
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        },
+        {
+          "label": "cold_saved_character_preview_before_continue",
+          "selected_class": "warlock",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              31,
+              29,
+              23
+            ],
+            [
+              18,
+              11,
+              6
+            ],
+            [
+              15,
+              22,
+              8
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        }
+      ],
+      "fresh_world_vram": {
+        "bank": 1,
+        "tile_base": 0,
+        "standing_16_tiles": true,
+        "walking_32_tiles": true
+      },
+      "world_movement": {
+        "ordinary_directional_taps": true,
+        "safe_square": [
+          4,
+          8
+        ],
+        "four_directions_three_native_poses_each": true,
+        "actual_hardware_OAM_and_RGB555_pixels": true,
+        "strict_16x16_four_tile_composite_geometry": true,
+        "mirrored_accessories": false,
+        "facings": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "character_profile": {
+        "bank0_native_49_tiles": true,
+        "row_major_tilemap": true,
+        "actual_RGB555_pixels": true,
+        "currently_displayed_frame": 0
+      },
+      "map_menu_and_room_door_class_reload": true,
+      "cold_save": {
+        "battery_bytes": 32768,
+        "saved_preview_before_continue_correct": true,
+        "saved_character_name": {
+          "name": "P\u00e9on ABCDE",
+          "native_bold_name_cells_correct": true,
+          "exact_stored_prefix_once": true,
+          "actual_RGB555_name_pixels_correct": true,
+          "checksum_verified_identity": true
+        },
+        "complete_record_and_all_256_event_bytes_preserved": true,
+        "world_class_graphics_reloaded": true
+      },
+      "actual_battle_casts": [
+        {
+          "label": "shadow_bolt",
+          "actual_move": 247,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 180
+        },
+        {
+          "label": "wand_strike",
+          "actual_move": 1,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 180
+        }
+      ],
+      "all_native_back_uploads_protect_enemy_font_emblem_totem_pet_and_hud": true,
+      "back_helper_observations": [
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "ccfc19860ce8100b3158e879780ac882d097dd874c08f7282d7b58cdc9779c1c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "2fd30dbb1d1c21f2aea2731bb1c6ac06d2a38d0a8408806ea96f121ac17ba073",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "ccfc19860ce8100b3158e879780ac882d097dd874c08f7282d7b58cdc9779c1c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "2fd30dbb1d1c21f2aea2731bb1c6ac06d2a38d0a8408806ea96f121ac17ba073",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "ccfc19860ce8100b3158e879780ac882d097dd874c08f7282d7b58cdc9779c1c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "2fd30dbb1d1c21f2aea2731bb1c6ac06d2a38d0a8408806ea96f121ac17ba073",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "ccfc19860ce8100b3158e879780ac882d097dd874c08f7282d7b58cdc9779c1c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "2fd30dbb1d1c21f2aea2731bb1c6ac06d2a38d0a8408806ea96f121ac17ba073",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "ccfc19860ce8100b3158e879780ac882d097dd874c08f7282d7b58cdc9779c1c",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "2fd30dbb1d1c21f2aea2731bb1c6ac06d2a38d0a8408806ea96f121ac17ba073",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        }
+      ],
+      "native_upload_count": 26,
+      "read_only_hook_errors": [],
+      "native_asset_sha256": {
+        "overworld.bin": "0eee21431cfcd58a0e3cca0ea868c6ccc65844e93a14db5e3a73cc695e9a582b",
+        "back_frames.bin": "b5d4d9792eab59ceb1910170e93441b9382f75ab21e1763c77eeebd5eb1a8d4f",
+        "portrait_frames.bin": "b7629cc10f852d7841f84d93baf9c0a335c74d5ccbf2c8a314f408c402408c65"
+      }
+    }
+  }
+}

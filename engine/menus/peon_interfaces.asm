@@ -291,12 +291,12 @@ PeonBags:
 	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr nz, .class_labels
-	hlcoord 8, 6
-	ld a, $44
-	call .Icon
 	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
 	bit EVENT_PEON_WARRIOR % 8, a
 	jr nz, .class_labels
+	hlcoord 8, 6
+	ld a, $44
+	call .Icon
 	hlcoord 14, 6
 	ld a, $48
 	call .Icon
@@ -392,7 +392,7 @@ PeonBags:
 .Title: db "LEATHER BACKPACK@"
 .Mace: db "MACE@"
 .Axe: db "AXE@"
-.Staff: db "STAF@"
+.Staff: db "WAND@"
 .None: db "--@"
 .Shield: db "SHLD@"
 .Totem: db "TOTM@"
@@ -526,7 +526,7 @@ PeonCharacterSheet:
 	jp PlaceString
 .Weapon: db "CRUDE MACE@"
 .AxeWeapon: db "CRUDE AXE@"
-.StaffWeapon: db "WORN STAFF@"
+.StaffWeapon: db "WORN WAND@"
 .Class: db "SHAMAN@"
 .Warrior: db "WARRIOR@"
 .Warlock: db "WARLOCK@"

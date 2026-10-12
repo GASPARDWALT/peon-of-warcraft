@@ -28,9 +28,9 @@ PeonResolvePlayerWorldGraphics::
 	ld c, 16
 	ret
 .Pointers
-	dba PeonShamanWorldV026
-	dba PeonWarriorWorldV026
-	dba PeonWarlockWorldV026
+	dba PeonShamanWorldV028
+	dba PeonWarriorWorldV028
+	dba PeonWarlockWorldV028
 
 ; A class index; HL three dba records. Returns B bank and DE source.
 PeonClassGraphicPointer:
@@ -61,9 +61,9 @@ PeonLoadClassWorldPreview::
 	ld a, BANK(wBGPals1)
 	jp FarCopyWRAM
 .Pointers
-	dba PeonShamanWorldV026
-	dba PeonWarriorWorldV026
-	dba PeonWarlockWorldV026
+	dba PeonShamanWorldV028
+	dba PeonWarriorWorldV028
+	dba PeonWarlockWorldV028
 .Palette
 	RGB 31,29,23, 18,11,6, 15,22,8, 1,1,1
 
@@ -141,11 +141,11 @@ PeonLoadClassPlayerBackPose::
 	pop bc
 	ld hl, vTiles2 tile $31
 	ld c, 6 * 6
-	jp PeonClassGet2bppBank0
+	jp PeonClassGetBackPoseBank0
 .Pointers
-	dba PeonShamanBackV026
-	dba PeonWarriorBackV026
-	dba PeonWarlockBackV026
+	dba PeonShamanBackV028
+	dba PeonWarriorBackV028
+	dba PeonWarlockBackV028
 
 ; C frame0/1/2. Character-sheet portrait is row-major 7x7, BG bank0.
 PeonLoadClassProfileFrame::
@@ -167,9 +167,9 @@ PeonLoadClassProfileFrame::
 	ld c, 7 * 7
 	jp PeonClassGet2bppBank0
 .Pointers
-	dba PeonShamanProfileV026
-	dba PeonWarriorProfileV026
-	dba PeonWarlockProfileV026
+	dba PeonShamanProfileV028
+	dba PeonWarriorProfileV028
+	dba PeonWarlockProfileV028
 
 ; Only native player back requests are replaced; other species/picture callers
 ; keep the standard engine. DE is the requested picture target.
@@ -221,11 +221,17 @@ PeonTryLoadClassFrontpic::
 	and a
 	ret
 .Pointers
-	dba PeonShamanFrontV026
-	dba PeonWarriorFrontV026
-	dba PeonWarlockFrontV026
+	dba PeonShamanFrontV028
+	dba PeonWarriorFrontV028
+	dba PeonWarlockFrontV028
 
 PeonClassGet2bppBank0:
+	; Get2bpp uses native VBlank requests. Suspend map DMA before choosing
+	; its tile bank, then restore the bank before allowing map DMA again.
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	xor a
@@ -233,35 +239,56 @@ PeonClassGet2bppBank0:
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
+	ret
+
+; The visible rear actor must update as one frame, not several VBlank chunks.
+; The native battle helper uses Crystal's existing HBlank transfer scratch.
+; World/front/Character requests retain the ordinary Get2bpp path above.
+PeonClassGetBackPoseBank0:
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
+	ldh a, [rVBK]
+	push af
+	xor a
+	ldh [rVBK], a
+	farcall PeonCopyBattleBackPoseAtomic
+	pop af
+	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
 	ret
 
 ; Each class fits a separate floating bank. Frames are independently encoded.
-SECTION "Peon Shaman Apprentice Graphics v026", ROMX
-PeonShamanWorldV026:
-	INCBIN "gfx/peon_classes/shaman/overworld.bin"
-PeonShamanFrontV026:
-	INCBIN "gfx/peon_classes/shaman/front_frames.bin"
-PeonShamanProfileV026:
-	INCBIN "gfx/peon_classes/shaman/portrait_frames.bin"
-PeonShamanBackV026:
-	INCBIN "gfx/peon_classes/shaman/back_frames.bin"
+SECTION "Peon Shaman Apprentice Graphics v028", ROMX
+PeonShamanWorldV028:
+	INCBIN "gfx/peon_classes_v028/shaman/overworld.bin"
+PeonShamanFrontV028:
+	INCBIN "gfx/peon_classes_v028/shaman/front_frames.bin"
+PeonShamanProfileV028:
+	INCBIN "gfx/peon_classes_v028/shaman/portrait_frames.bin"
+PeonShamanBackV028:
+	INCBIN "gfx/peon_classes_v028/shaman/back_frames.bin"
 
-SECTION "Peon Warrior Apprentice Graphics v026", ROMX
-PeonWarriorWorldV026:
-	INCBIN "gfx/peon_classes/warrior/overworld.bin"
-PeonWarriorFrontV026:
-	INCBIN "gfx/peon_classes/warrior/front_frames.bin"
-PeonWarriorProfileV026:
-	INCBIN "gfx/peon_classes/warrior/portrait_frames.bin"
-PeonWarriorBackV026:
-	INCBIN "gfx/peon_classes/warrior/back_frames.bin"
+SECTION "Peon Warrior Apprentice Graphics v028", ROMX
+PeonWarriorWorldV028:
+	INCBIN "gfx/peon_classes_v028/warrior/overworld.bin"
+PeonWarriorFrontV028:
+	INCBIN "gfx/peon_classes_v028/warrior/front_frames.bin"
+PeonWarriorProfileV028:
+	INCBIN "gfx/peon_classes_v028/warrior/portrait_frames.bin"
+PeonWarriorBackV028:
+	INCBIN "gfx/peon_classes_v028/warrior/back_frames.bin"
 
-SECTION "Peon Warlock Apprentice Graphics v026", ROMX
-PeonWarlockWorldV026:
-	INCBIN "gfx/peon_classes/warlock/overworld.bin"
-PeonWarlockFrontV026:
-	INCBIN "gfx/peon_classes/warlock/front_frames.bin"
-PeonWarlockProfileV026:
-	INCBIN "gfx/peon_classes/warlock/portrait_frames.bin"
-PeonWarlockBackV026:
-	INCBIN "gfx/peon_classes/warlock/back_frames.bin"
+SECTION "Peon Warlock Apprentice Graphics v028", ROMX
+PeonWarlockWorldV028:
+	INCBIN "gfx/peon_classes_v028/warlock/overworld.bin"
+PeonWarlockFrontV028:
+	INCBIN "gfx/peon_classes_v028/warlock/front_frames.bin"
+PeonWarlockProfileV028:
+	INCBIN "gfx/peon_classes_v028/warlock/portrait_frames.bin"
+PeonWarlockBackV028:
+	INCBIN "gfx/peon_classes_v028/warlock/back_frames.bin"

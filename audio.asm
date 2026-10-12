@@ -169,3 +169,5 @@ INCLUDE "data/pokemon/cries.asm"
 INCLUDE "audio/cries.asm"
 
 INCLUDE "audio/peon_sfx.asm"
+
+INCLUDE "audio/music/peon_whats_up_v028.asm"

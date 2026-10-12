@@ -726,10 +726,10 @@ SECTION "Peon World Map Attributes", ROMX
 	map_attributes RazorHill, RAZOR_HILL, $01
 	map_attributes OrgrimmarGate, ORGRIMMAR_GATE, $01
 	map_attributes BurningBladeCavern, BURNING_BLADE_CAVERN, $01
-	map_attributes PeonTrollHut, PEON_TROLL_HUT, $01
-	map_attributes PeonOrcHut, PEON_ORC_HUT, $01
-	map_attributes PeonOrcInn, PEON_ORC_INN, $01
-	map_attributes PeonTrollInn, PEON_TROLL_INN, $01
+	map_attributes PeonTrollHut, PEON_TROLL_HUT, $33
+	map_attributes PeonOrcHut, PEON_ORC_HUT, $33
+	map_attributes PeonOrcInn, PEON_ORC_INN, $33
+	map_attributes PeonTrollInn, PEON_TROLL_INN, $33
 	map_attributes PeonValleyCrossroads, PEON_VALLEY_CROSSROADS, $01
 	map_attributes PeonHanazuaCamp, PEON_HANAZUA_CAMP, $01
 	map_attributes PeonSarkothBasin, PEON_SARKOTH_BASIN, $01

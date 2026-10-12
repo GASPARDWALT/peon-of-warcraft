@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "clean_build_rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "private_build_directory": "/tmp/peon_v028_clean_source_06",
+  "rgbds": "1.0.4",
+  "rom_bytes": 2097152,
+  "fresh_source_only_preparation_v05": {
+    "passed": true,
+    "rom_sha256": "d6fa10d23d29809d35a81164397afb6cd6cf73b007722eb8cf7e414df10e252e",
+    "rgbds": "1.0.4",
+    "native_rom_bytes": 2097152,
+    "method": "Independent private source-only tree with generated objects, compressed tiles, class binaries and native tile outputs removed. Full standard Make build produces byte-identical candidate05 ROM. This is a compilation/reproducibility check, not a gameplay claim.",
+    "working_repository_outputs_removed": false,
+    "protected_published_images_written": false,
+    "private_source_tree": "/tmp/peon_v028_clean_source_05",
+    "copied_source_files": 5204,
+    "source_inputs_only_tracked_binaries": [
+      "gfx/pack/peon_atlas_fog.2bpp",
+      "gfx/title/peon_portal/tiles.2bpp"
+    ],
+    "log_sha256": "f195b5ed05de3815764a4ecdf54e0626357bed2562aedfeea2b0bb5f298b54aa",
+    "shared_rom_unchanged": true
+  },
+  "rebuild_v06": {
+    "prebuilt_objects_retained": 0,
+    "source_changes": [
+      "engine/battle/peon_player_poses.asm",
+      "engine/menus/peon_class_graphics.asm",
+      "home/window.asm"
+    ],
+    "source_derived_v05_graphics_reused": true,
+    "all_native_objects_recompiled": true
+  },
+  "runtime_qa_claimed": false
+}

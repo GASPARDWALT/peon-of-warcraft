@@ -317,7 +317,7 @@ IsNPCAtCoord:
 .loop
 	ldh [hObjectStructIndex], a
 	call DoesObjectHaveASprite
-	jr z, .next
+	jp z, .next
 	; The Warlock's runtime companion is scenery, not a blocking/talkable
 	; encounter. Narrow doors and harvested cacti remain accessible. Match
 	; both reserved map index and sprite, preserving ordinary NPC behavior.
@@ -338,6 +338,19 @@ IsNPCAtCoord:
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr nz, .next
 .ordinary_object:
+	; Quest glyphs float above a real quest giver. They remain visible, but
+	; their map cells must never block movement or intercept A-button talks.
+	; Only the three reserved marker variables on Peon maps are decoration;
+	; ordinary NPCs and all other variable sprites keep native collisions.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .blocking_object
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITE_PEON_QUEST_1
+	jr nc, .next
+.blocking_object:
 
 	ld hl, OBJECT_FLAGS1
 	add hl, bc
@@ -396,7 +409,7 @@ IsNPCAtCoord:
 	ldh a, [hObjectStructIndex]
 	inc a
 	cp NUM_OBJECT_STRUCTS
-	jr nz, .loop
+	jp nz, .loop
 	and a
 	ret
 

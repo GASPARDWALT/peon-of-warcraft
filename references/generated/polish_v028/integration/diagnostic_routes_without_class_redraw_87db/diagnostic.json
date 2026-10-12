@@ -1,0 +1,3395 @@
+{
+  "purpose": "Run ordinary integration routes while known class-redraw issue is isolated; not a complete passing gate",
+  "passed": false,
+  "rom_sha256": "87dbcd9cd7d88132601d7c72bcec8c378faaa5a0498e4d291c09e82882f45b5d",
+  "cases": {
+    "shaman": {
+      "other_route_completed": false,
+      "error": "AssertionError(('character_warm_0_opening', 'Consecutive transition PPU differs from native snapshots', 6110, 6, {'frame': 6110, 'lcd_enabled': True, 'palette_publication_pending': 0, 'bg_map_mode': 0, 'vbk': 1, 'pixel_check': 'actual PPU vs adjacent native hardware snapshots', 'matched_rgb555_pixels': 23034, 'mismatched_pixels': 6, 'native_snapshot_combination': 'previous VRAM/previous palette', 'lcdc': 227, 'scroll': [0, 0], 'window_origin': [0, 144], 'window_visible': False, 'bank1_bg_pixels': 0}))",
+      "transitions": [
+        {
+          "label": "character_warm_0_opening",
+          "start_frame": 6059,
+          "frames": [
+            {
+              "frame": 6060,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "native publication boundary retained for review"
+            },
+            {
+              "frame": 6061,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6062,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6063,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6064,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6065,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6066,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6067,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6068,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6069,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6070,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6071,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6072,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6073,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6074,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6075,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6076,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6077,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6078,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6079,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6080,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6081,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6082,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6083,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6084,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6085,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6086,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6087,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6088,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6089,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6090,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6091,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6092,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6093,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6094,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 6095,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 640
+            },
+            {
+              "frame": 6096,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6097,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6098,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6099,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6100,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6101,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6102,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6103,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6104,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6105,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6106,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6107,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6108,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6109,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 6110,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23034,
+              "mismatched_pixels": 6,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ],
+          "end_frame": 6110,
+          "consecutive_frames_observed": 51
+        }
+      ]
+    },
+    "warrior": {
+      "other_route_completed": false,
+      "error": "AssertionError(('character_warm_0_opening', 'Consecutive transition PPU differs from native snapshots', 5880, 6, {'frame': 5880, 'lcd_enabled': True, 'palette_publication_pending': 0, 'bg_map_mode': 0, 'vbk': 1, 'pixel_check': 'actual PPU vs adjacent native hardware snapshots', 'matched_rgb555_pixels': 23034, 'mismatched_pixels': 6, 'native_snapshot_combination': 'previous VRAM/previous palette', 'lcdc': 227, 'scroll': [0, 0], 'window_origin': [0, 144], 'window_visible': False, 'bank1_bg_pixels': 0}))",
+      "transitions": [
+        {
+          "label": "character_warm_0_opening",
+          "start_frame": 5829,
+          "frames": [
+            {
+              "frame": 5830,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "native publication boundary retained for review"
+            },
+            {
+              "frame": 5831,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5832,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5833,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5834,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5835,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5836,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5837,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5838,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5839,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5840,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5841,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5842,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5843,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5844,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5845,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5846,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5847,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5848,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5849,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5850,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5851,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5852,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5853,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5854,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5855,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5856,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5857,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5858,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5859,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5860,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5861,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5862,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5863,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5864,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5865,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 640
+            },
+            {
+              "frame": 5866,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5867,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5868,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5869,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5870,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5871,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5872,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5873,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5874,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5875,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5876,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5877,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5878,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5879,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5880,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23034,
+              "mismatched_pixels": 6,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ],
+          "end_frame": 5880,
+          "consecutive_frames_observed": 51
+        }
+      ]
+    },
+    "warlock": {
+      "other_route_completed": false,
+      "error": "AssertionError(('character_warm_0_opening', 'Consecutive transition PPU differs from native snapshots', 5831, 6, {'frame': 5831, 'lcd_enabled': True, 'palette_publication_pending': 0, 'bg_map_mode': 0, 'vbk': 1, 'pixel_check': 'actual PPU vs adjacent native hardware snapshots', 'matched_rgb555_pixels': 23034, 'mismatched_pixels': 6, 'native_snapshot_combination': 'previous VRAM/previous palette', 'lcdc': 227, 'scroll': [0, 0], 'window_origin': [0, 144], 'window_visible': False, 'bank1_bg_pixels': 0}))",
+      "transitions": [
+        {
+          "label": "character_warm_0_opening",
+          "start_frame": 5779,
+          "frames": [
+            {
+              "frame": 5780,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "native publication boundary retained for review"
+            },
+            {
+              "frame": 5781,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5782,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5783,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5784,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5785,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5786,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5787,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5788,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5789,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5790,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5791,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5792,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5793,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 22824,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5794,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5795,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5796,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5797,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5798,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5799,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5800,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5801,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5802,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5803,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5804,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5805,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5806,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5807,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5808,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5809,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5810,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5811,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5812,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5813,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5814,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5815,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1152
+            },
+            {
+              "frame": 5816,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 640
+            },
+            {
+              "frame": 5817,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5818,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5819,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5820,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5821,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5822,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5823,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5824,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5825,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 2,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5826,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5827,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5828,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5829,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 1,
+              "vbk": 0,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5830,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "native_snapshot_combination": "current VRAM/current palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 5831,
+              "lcd_enabled": true,
+              "palette_publication_pending": 0,
+              "bg_map_mode": 0,
+              "vbk": 1,
+              "pixel_check": "actual PPU vs adjacent native hardware snapshots",
+              "matched_rgb555_pixels": 23034,
+              "mismatched_pixels": 6,
+              "native_snapshot_combination": "previous VRAM/previous palette",
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ],
+          "end_frame": 5831,
+          "consecutive_frames_observed": 52
+        }
+      ]
+    }
+  }
+}

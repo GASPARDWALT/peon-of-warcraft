@@ -119,6 +119,13 @@ LoadBattleAnimGFX:
 	ld l, a
 	pop de
 	push bc
+	; FarCall_de retains the tile-source HL; the farcall macro uses HL
+	; for its target and would lose the compressed packet pointer.
+	push de
+	ld de, PeonSelectWandParticleGraphics
+	ld a, BANK(PeonSelectWandParticleGraphics)
+	call FarCall_de
+	pop de
 	call DecompressRequest2bpp
 	pop bc
 	ret

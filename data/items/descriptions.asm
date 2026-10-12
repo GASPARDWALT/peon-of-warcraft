@@ -480,7 +480,7 @@ ItemfinderDesc:
 	next "items in the area.@"
 
 TeruSama5Desc:
-	db   "A humble staff for"
+	db   "A humble wand for"
 	next "a new Warlock.@"
 
 ExpShareDesc:

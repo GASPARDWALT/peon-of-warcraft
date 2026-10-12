@@ -1,0 +1,339 @@
+{
+  "source": "Original exact native pixel patterns; no proprietary game art copied.",
+  "runtime_size": "8x8 particles; horizontal16x8 bolts; 24x24 halos are reusable source art only.",
+  "rgb555_expansion": "(v << 3) | (v >> 2)",
+  "records": [
+    {
+      "name": "flame_particle",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          31,
+          25,
+          7
+        ],
+        [
+          31,
+          9,
+          2
+        ],
+        [
+          12,
+          2,
+          0
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "nature_particle",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          18,
+          30,
+          9
+        ],
+        [
+          5,
+          17,
+          8
+        ],
+        [
+          0,
+          6,
+          3
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "lightning_particle",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          31,
+          30,
+          12
+        ],
+        [
+          16,
+          25,
+          31
+        ],
+        [
+          3,
+          7,
+          14
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "frost_particle",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          15,
+          25,
+          31
+        ],
+        [
+          5,
+          13,
+          26
+        ],
+        [
+          0,
+          4,
+          12
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "imp_firebolt",
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          31,
+          25,
+          7
+        ],
+        [
+          31,
+          9,
+          2
+        ],
+        [
+          12,
+          2,
+          0
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "shadow_bolt",
+      "frame_size": [
+        16,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          26,
+          13,
+          31
+        ],
+        [
+          12,
+          3,
+          18
+        ],
+        [
+          3,
+          1,
+          5
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "wand_strike",
+      "frame_size": [
+        16,
+        8
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          25,
+          30,
+          31
+        ],
+        [
+          11,
+          18,
+          27
+        ],
+        [
+          3,
+          5,
+          12
+        ]
+      ],
+      "integrated_in_rom": true
+    },
+    {
+      "name": "healing_wave_halo",
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          18,
+          30,
+          9
+        ],
+        [
+          5,
+          17,
+          8
+        ],
+        [
+          0,
+          6,
+          3
+        ]
+      ],
+      "integrated_in_rom": false
+    },
+    {
+      "name": "lightning_shield_halo",
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          31,
+          30,
+          12
+        ],
+        [
+          16,
+          25,
+          31
+        ],
+        [
+          3,
+          7,
+          14
+        ]
+      ],
+      "integrated_in_rom": false
+    },
+    {
+      "name": "frost_shock_halo",
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          15,
+          25,
+          31
+        ],
+        [
+          5,
+          13,
+          26
+        ],
+        [
+          0,
+          4,
+          12
+        ]
+      ],
+      "integrated_in_rom": false
+    },
+    {
+      "name": "flame_shock_halo",
+      "frame_size": [
+        24,
+        24
+      ],
+      "frames": 4,
+      "binary_alpha": true,
+      "opaque_colours": 3,
+      "palette_rgb555": [
+        [
+          31,
+          25,
+          7
+        ],
+        [
+          31,
+          9,
+          2
+        ],
+        [
+          12,
+          2,
+          0
+        ]
+      ],
+      "integrated_in_rom": false
+    }
+  ],
+  "native_tiles": {
+    "nature": {
+      "tiles": 16,
+      "sha256": "0cc5c4570f81647acfbf9db5045bf6b179e1fa155057968363a6cbf5d1ddbb63"
+    },
+    "projectiles": {
+      "tiles": 12,
+      "sha256": "b672ef6367b4dd910b68c0238396423db502bc712f4497d3ba760132a5f2f6e3"
+    },
+    "wand_projectiles": {
+      "tiles": 12,
+      "sha256": "a2224e733dfdb860e5fd5be5f66f750ef63fa55f8c3afb49b1e3ba48e2e3229e"
+    }
+  },
+  "preserved_regions": [
+    "bank1 rank8800..885f",
+    "totem8860..88bf",
+    "imp88c0..891f",
+    "bold8920..8a8f",
+    "enemy-front-overflow9620..97ff"
+  ],
+  "new_saved_fields": 0,
+  "new_move_ids": 0,
+  "basic_wand_damage_or_turn_cost_changed": false
+}

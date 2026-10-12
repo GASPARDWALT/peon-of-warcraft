@@ -61,6 +61,12 @@ PeonDrawBattleTotem::
 	ld a, [wPeonEarthTotemActive]
 	and a
 	jr z, .done
+	; Get2bpp uses the VBlank uploader. Pause the automatic BG refresh
+	; before selecting bank1, then restore VBK before the caller's mode.
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
 	ldh a, [rVBK]
 	push af
 	ld a, 1
@@ -106,6 +112,8 @@ PeonDrawBattleTotem::
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
 	call WaitBGMap2
+	pop af
+	ldh [hBGMapMode], a
 .done
 	pop hl
 	pop de

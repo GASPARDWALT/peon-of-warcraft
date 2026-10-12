@@ -177,7 +177,7 @@ PeonWarriorKitText:
 	line "at your master."
 	done
 PeonWarlockKitText:
-	text "Got a WORN STAFF"
+	text "Got a WORN WAND"
 	line "and MANA POTION!"
 	para "Learned"
 	line "SHADOW BOLT!"

@@ -45,3 +45,9 @@
 	tilecoll WALL, WALL, WALL, WALL ; 2c darkspear_table
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 2d woven_timber_floor
 	tilecoll WALL, WALL, WALL, WALL ; 2e darkspear_spirit_mask
+	tilecoll WALL, WALL, WALL, WALL ; 2f round_hut_wall_nw
+	tilecoll WALL, WALL, WALL, WALL ; 30 round_hut_wall_ne
+	tilecoll WALL, WALL, WALL, WALL ; 31 round_hut_wall_sw
+	tilecoll WALL, WALL, WALL, WALL ; 32 round_hut_wall_se
+	tilecoll WALL, WALL, WALL, WALL ; 33 round_hut_wall
+	tilecoll WARP_PANEL, WARP_PANEL, WARP_PANEL, WARP_PANEL ; 34 round_hut_foot_door

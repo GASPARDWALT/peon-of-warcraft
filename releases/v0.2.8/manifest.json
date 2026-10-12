@@ -1,0 +1,57 @@
+{
+  "version": "0.2.8",
+  "rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "rom_bytes": 2097152,
+  "cgb_only": true,
+  "mapper": "MBC3 + RTC + RAM + battery",
+  "save_ram_bytes": 32768,
+  "passed_native_reports": [
+    {
+      "file": "classes/validation.json",
+      "sha256": "586cb150c167b27b4fc41a1e92f4b4af21f803bd915a02c48377f193cc143026"
+    },
+    {
+      "file": "combat/validation.json",
+      "sha256": "0ae37e1209dc110799db9c8d92f68f14ce6a7320975ba7ef438e8ac910a79c70"
+    },
+    {
+      "file": "environment/validation.json",
+      "sha256": "eb3c93cd3bd4ba2bf3d234c19d1820de78248fcdb755914b5856255c323c42b2"
+    },
+    {
+      "file": "ui_markers/validation.json",
+      "sha256": "404c1f0e02c3c990c245426b042b6a1f3d4901ae26021bd46338f6030f08fa46"
+    },
+    {
+      "file": "integration/validation.json",
+      "sha256": "3239c0e899a32534af28d9ae30f11c15246bd489e9dd604fb64845590d91a053"
+    },
+    {
+      "file": "save_upgrade/validation.json",
+      "sha256": "b730ce6446c8310e41b7df45d38da900bcfa4210a16cb96b698e0ec1ae64d87d"
+    },
+    {
+      "file": "music/validation.json",
+      "sha256": "33c5e0a39943c7b99695814b09374df674e951fc2fb86d90abf4240a2e59579f"
+    },
+    {
+      "file": "build/validation.json",
+      "sha256": "898943b4ea4a94a55864bf61138ab540a424e902c8e774021c4abcba2f55475f"
+    }
+  ],
+  "physical_chromatic_tested": false,
+  "modretro_plugin_used": false,
+  "modretro_pixel_art_skill_used": true,
+  "save_slots": 1,
+  "actions": 4,
+  "downloads": {
+    "peon_of_warcraft_v0_2_8.zip": {
+      "bytes": 1317442,
+      "sha256": "d862ec6e3548358135bd694b93038d50159c41091a8c1e10f62c94dfee4d0d4e"
+    },
+    "peon_of_warcraft_v0_2_8_assets.zip": {
+      "bytes": 13535719,
+      "sha256": "1944afd4882cb894fb588af93c3d975260cf70235819a1c20d4c12b213dfeef5"
+    }
+  }
+}

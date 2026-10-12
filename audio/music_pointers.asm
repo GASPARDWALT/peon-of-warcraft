@@ -114,4 +114,5 @@ Music:
 	dba Music_PeonVictory
 	dba Music_PeonBarrens
 	dba Music_PeonOrgrimmar
+	dba Music_PeonWhatsUpV028
 	assert_table_length NUM_MUSIC_SONGS

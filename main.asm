@@ -731,4 +731,5 @@ INCLUDE "engine/battle/peon_player_poses.asm"
 INCLUDE "engine/battle/peon_level_up.asm"
 
 INCLUDE "engine/menus/peon_class_graphics.asm"
+INCLUDE "engine/menus/peon_class_tints_v028.asm"
 INCLUDE "engine/menus/peon_text_style.asm"

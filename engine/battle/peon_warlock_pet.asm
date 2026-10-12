@@ -220,6 +220,8 @@ PeonTintShadowBoltParticle::
 	and a
 	jr nz, .done
 	ld a, [wFXAnimID]
+	cp POUND
+	jr z, .wand
 	cp SHADOW_BALL
 	jr z, .shadow
 	cp NIGHT_SHADE
@@ -229,6 +231,12 @@ PeonTintShadowBoltParticle::
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr z, .done
 	ld hl, .Palette
+	jr .tint
+.wand:
+	farcall PeonIsWarlockWandAnimation
+	jr nc, .done
+	ld hl, .WandPalette
+.tint:
 	ld de, wOBPals2 palette PAL_BATTLE_OB_BLUE
 	ld bc, 1 palettes
 	ld a, BANK(wOBPals2)
@@ -245,6 +253,8 @@ PeonTintShadowBoltParticle::
 	ret
 .Palette:
 	RGB 31,31,31, 26,13,31, 12,3,18, 3,1,5
+.WandPalette:
+	RGB 31,31,31, 25,30,31, 11,18,27, 3,5,12
 
 PeonPetBattleTiles:
 	INCBIN "gfx/peon_pets_v026/combat_imp_v026.2bpp"

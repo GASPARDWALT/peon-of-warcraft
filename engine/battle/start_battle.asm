@@ -51,6 +51,20 @@ PlayBattleMusic:
 	push de
 	push bc
 
+	; The shared Peon field theme continues through the battle transition.
+	; Fall back to the normal loader if a jingle or another track was active.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .start_music
+	ld a, [wMusicID + 1]
+	and a
+	jr nz, .start_music
+	ld a, [wMusicID]
+	cp MUSIC_PEON_WHATS_UP
+	jr nz, .start_music
+	call MaxVolume
+	jp .restore
+.start_music
 	xor a
 	ld [wMusicFade], a
 	ld de, MUSIC_NONE
@@ -59,7 +73,7 @@ PlayBattleMusic:
 	call MaxVolume
 	ld a, [wMapTileset]
 	cp TILESET_PEON
-	ld de, MUSIC_PEON_BATTLE
+	ld de, MUSIC_PEON_WHATS_UP
 	jp z, .done
 
 	ld a, [wBattleType]
@@ -147,6 +161,7 @@ PlayBattleMusic:
 .done
 	call PlayMusic
 
+.restore
 	pop bc
 	pop de
 	pop hl

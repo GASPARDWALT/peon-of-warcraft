@@ -7,8 +7,15 @@ PlayBattleAnim:
 
 	ld a, BANK(wActiveAnimObjects)
 	ldh [rWBK], a
+	; Reuse the saved basic-move ID with a class-specific ranged animation.
+	; The temporary dispatch token never survives this complete animation.
+	ld a, [wBattleAnimParam]
+	push af
+	farcall PeonPrepareWarlockWandAnimation
 
 	call _PlayBattleAnim
+	pop af
+	ld [wBattleAnimParam], a
 
 	pop af
 	ldh [rWBK], a

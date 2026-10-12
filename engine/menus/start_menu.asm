@@ -89,6 +89,14 @@ StartMenu::
 .ReturnEnd:
 	call ExitMenu
 .ReturnEnd2:
+	; Reanchor the Peon map while its full-screen palette is blank. HBlank
+	; map copies otherwise expose the old menu above the new world for a frame.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .close_text
+	call ClearPalettes
+	call DelayFrame
+.close_text
 	call CloseText
 	call UpdateTimePals
 	ret

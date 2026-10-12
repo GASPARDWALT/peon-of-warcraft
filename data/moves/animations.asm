@@ -2,7 +2,7 @@ BattleAnimations::
 ; entries correspond to constants/move_constants.asm
 	table_width 2
 	dw BattleAnim_Dummy
-	dw BattleAnim_Pound
+	dw BattleAnim_PeonWeaponStrike ; ID1: class guard selects Warlock wand
 	dw BattleAnim_PeonWeaponStrike
 	dw BattleAnim_PeonWindfury
 	dw BattleAnim_CometPunch
@@ -2086,9 +2086,10 @@ BattleAnim_Headbutt:
 	anim_ret
 
 BattleAnim_Tackle:
-; BUG: Tackle is missing part of its hit animation (see docs/bugs_and_glitches.md)
+	; One target row keeps the impact inside the hardware10OBJ/scanline cap.
+	; Crystal's two-row variant drops hit pixels (documented native bug).
 	anim_1gfx BATTLE_ANIM_GFX_HIT
-	anim_call BattleAnim_TargetObj_2Row
+	anim_call BattleAnim_TargetObj_1Row
 	anim_bgeffect BATTLE_BG_EFFECT_TACKLE, $0, BG_EFFECT_USER, $0
 	anim_wait 4
 	anim_sound 0, 1, SFX_TACKLE

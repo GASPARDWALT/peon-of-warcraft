@@ -14,7 +14,6 @@ ReanchorMap::
 	ret
 
 CloseText::
-	farcall PeonRestoreSpeakerPalette
 	ldh a, [hOAMUpdate]
 	push af
 	ld a, $1
@@ -26,6 +25,10 @@ CloseText::
 	ldh [hOAMUpdate], a
 	ld hl, wStateFlags
 	res TEXT_STATE_F, [hl]
+	; Restore the speaker's palette after the map copy has completed. ApplyPals
+	; also publishes the full palette set: doing it before HDMA exposes half
+	; of the old menu above the new map during a Peon full-screen return.
+	farcall PeonRestoreSpeakerPalette
 	ret
 
 .CloseText:

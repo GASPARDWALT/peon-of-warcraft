@@ -252,6 +252,19 @@ gfx/peon_classes/warlock/portrait_frames.bin gfx/peon_classes/warlock/back_frame
 gfx/sprites/peon.png gfx/sprites/peon.2bpp gfx/pokemon/machop/front.png gfx/pack/peon_portrait.png gfx/peon_player_battle/back_frames.2bpp
 	python3 tools/build_peon_player_classes_v026.py
 
+gfx/peon_classes_v028/shaman/overworld.bin gfx/peon_classes_v028/shaman/front_frames.bin \
+gfx/peon_classes_v028/shaman/portrait_frames.bin gfx/peon_classes_v028/shaman/back_frames.bin \
+gfx/peon_classes_v028/warrior/overworld.bin gfx/peon_classes_v028/warrior/front_frames.bin \
+gfx/peon_classes_v028/warrior/portrait_frames.bin gfx/peon_classes_v028/warrior/back_frames.bin \
+gfx/peon_classes_v028/warlock/overworld.bin gfx/peon_classes_v028/warlock/front_frames.bin \
+gfx/peon_classes_v028/warlock/portrait_frames.bin gfx/peon_classes_v028/warlock/back_frames.bin \
+gfx/peon_classes_v028/item_icons/wand.2bpp gfx/peon_classes_v028/item_icons/axe.2bpp &: tools/build_peon_player_classes_v028.py
+	python3 tools/build_peon_player_classes_v028.py
+
+gfx/peon_combat_v028/nature.2bpp gfx/peon_combat_v028/projectiles.2bpp \
+gfx/peon_combat_v028/wand_projectiles.2bpp &: tools/build_peon_combat_assets_v028.py
+	python3 tools/build_peon_combat_assets_v028.py
+
 gfx/pokemon/%/back.2bpp: RGBGFXFLAGS += --columns
 gfx/pokemon/%/back.2bpp: gfx/pokemon/%/back.png gfx/pokemon/%/normal.gbcpal
 	$(RGBGFX) $(RGBGFXFLAGS) --colors gbc:$(word 2,$^) -o $@ $<
