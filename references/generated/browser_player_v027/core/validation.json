@@ -1,0 +1,360 @@
+{
+  "passed": true,
+  "rom_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+  "rom_bytes": 2097152,
+  "header": {
+    "cgb_flag": "0xc0",
+    "cartridge_type": "0x10",
+    "mapper": "MBC3 + TIMER + RAM + BATTERY",
+    "rom_size_code": 6,
+    "rom_bytes": 2097152,
+    "rom_banks_16k": 128,
+    "sram_bytes": 32768,
+    "sram_banks_8k": 4,
+    "header_checksum_valid": true,
+    "global_checksum_valid": true
+  },
+  "core": "binjgb",
+  "core_runtime": "Pinned WebAssembly core instantiated in Node.js",
+  "vendor": {
+    "files": [
+      {
+        "name": "binjgb.js",
+        "bytes": 13640,
+        "sha256": "a68e5854b5d68339a34c0aa0b6dbeacd615ed316657ee17b63dafa5e00561b09",
+        "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.js"
+      },
+      {
+        "name": "binjgb.wasm",
+        "bytes": 88269,
+        "sha256": "52c165069441a09180b4bd63464318aa7b861b1d36e0d05e8047b48619fd2f0b",
+        "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/docs/binjgb.wasm"
+      },
+      {
+        "name": "LICENSE",
+        "bytes": 1053,
+        "sha256": "5a7b61a51a5efb789721b3480b502f324094911aeca46937956c561b52638009",
+        "source_url": "https://raw.githubusercontent.com/binji/binjgb/main/LICENSE"
+      }
+    ],
+    "license": "MIT",
+    "upstream_revision": "16621111ed0ee73bcc45c912a823bcebedcffc0f"
+  },
+  "core_wasm_sha256": "52c165069441a09180b4bd63464318aa7b861b1d36e0d05e8047b48619fd2f0b",
+  "core_js_sha256": "a68e5854b5d68339a34c0aa0b6dbeacd615ed316657ee17b63dafa5e00561b09",
+  "actual_browser_interface_tested": false,
+  "normal_gameplay_save_proof": false,
+  "physical_console_tested": false,
+  "native_rom_modified": false,
+  "rtc": {
+    "before_registers": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "after_three_emulated_seconds": [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "fresh_new_instance_registers": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "restored_full_checkpoint_registers": [
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "restored_after_two_emulated_seconds": [
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "full_checkpoint_preserved": true,
+    "observations_restore_original_cpu_and_mapper_state": true,
+    "method": "Diagnostic MBC3 enable/bank/latch writes, register reads, then restoration of original full state.",
+    "clock_model": "Emulated CPU ticks; pauses while emulator is stopped or closed.",
+    "real_wall_clock_shutdown_progress_tested": false
+  },
+  "sram": {
+    "native_battery_bytes": 32768,
+    "four_native_banks_checked": true,
+    "complete_diagnostic_import_export_equal": true,
+    "diagnostic_pattern_sha256": "27aa29621558c2b5c417d54f214544e12ab8e6fd7f5928bea127192a68b6d337",
+    "bank_checks": [
+      {
+        "bank": 0,
+        "offset": 0,
+        "value": 29
+      },
+      {
+        "bank": 0,
+        "offset": 73,
+        "value": 246
+      },
+      {
+        "bank": 0,
+        "offset": 8191,
+        "value": 105
+      },
+      {
+        "bank": 1,
+        "offset": 0,
+        "value": 125
+      },
+      {
+        "bank": 1,
+        "offset": 73,
+        "value": 86
+      },
+      {
+        "bank": 1,
+        "offset": 8191,
+        "value": 201
+      },
+      {
+        "bank": 2,
+        "offset": 0,
+        "value": 221
+      },
+      {
+        "bank": 2,
+        "offset": 73,
+        "value": 182
+      },
+      {
+        "bank": 2,
+        "offset": 8191,
+        "value": 41
+      },
+      {
+        "bank": 3,
+        "offset": 0,
+        "value": 61
+      },
+      {
+        "bank": 3,
+        "offset": 73,
+        "value": 22
+      },
+      {
+        "bank": 3,
+        "offset": 8191,
+        "value": 137
+      }
+    ],
+    "fixture_is_ordinary_game_save": false,
+    "raw_battery_contains_rtc": false
+  },
+  "checkpoint": {
+    "bytes": 199608,
+    "includes_sram_and_rtc": true,
+    "restore_action_distinct_from_ordinary_battery_continue": true
+  },
+  "reset_lifecycle": {
+    "cycles": 12,
+    "includes_joypad_and_battery_and_checkpoint_exports": true,
+    "emulator_alone_releases_owned_rom": true,
+    "filedata_buffer_and_descriptor_released_separately": true,
+    "all_live_rom_bytes_intact": true,
+    "all_startup_frames_identical": true,
+    "heap_size_stable": true,
+    "rows": [
+      {
+        "cycle": 0,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 1,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 2,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 3,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 4,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 5,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 6,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 7,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 8,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 9,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 10,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      },
+      {
+        "cycle": 11,
+        "rom_heap_sha256": "4a1fa7ff7e744cd8ca656e57491f21ef32b3ea515c0af784b5878802446a9a8a",
+        "fixed_bank_matches_supplied_rom": true,
+        "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+        "battery_bytes": 32768,
+        "full_checkpoint_bytes": 199608,
+        "allocation_pointers": [
+          86152,
+          2183312,
+          2723688
+        ],
+        "wasm_heap_bytes": 16908288
+      }
+    ]
+  },
+  "frame": {
+    "width": 160,
+    "height": 144,
+    "rgba_bytes": 92160,
+    "distinct_rgba_colors": 32,
+    "native_rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+    "native_capture": "browser_core_title_native.png",
+    "nearest_4x_capture": "browser_core_title_4x.png"
+  },
+  "limitations": [
+    "Mapper RTC observations and the 32 KiB SRAM import pattern are isolated diagnostics, not ordinary gameplay saves.",
+    "Normal browser game save/continue, DOM controls, browser storage and audio need the separate browser-player validation.",
+    "The chosen core advances RTC while emulating; it does not add real elapsed time while closed.",
+    "No physical console or cart was connected or programmed."
+  ]
+}

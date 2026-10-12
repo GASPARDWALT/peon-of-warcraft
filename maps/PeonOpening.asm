@@ -57,7 +57,7 @@ PeonSleepingText:
 	text "VALLEY OF TRIALS"
 	para "A lazy orc PEON"
 	line "sleeps by a"
-	cont "cactus."
+	cont "palm tree."
 	para "Zzz... work later."
 	done
 PeonHunterText:

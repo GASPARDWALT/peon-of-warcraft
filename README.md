@@ -1,6 +1,12 @@
 # Peon of Warcraft — Durotar prototype
 
-[Latest playable ROM — v0.2.6](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6.zip) · [Transparent PNGs, captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6_assets.zip) · [Changes, save transfer and verification](docs/V0_2_6_VISUAL_POLISH.md)
+[Latest ROM — v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.7/peon_of_warcraft_v0_2_7.zip) · [Browser player v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.7/peon_of_warcraft_v0_2_7_player.zip) · [Opening palm and verification](docs/V0_2_7_OPENING_PALM.md)
+
+The opening Peon now sleeps beside a palm. The hunter's approach, BONK,
+class choice and arrival at The Den pass for all three classes, as do browser
+play, native saves and cold Continue.
+
+[Previous ROM — v0.2.6](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6.zip) · [Transparent PNGs, captures and offline gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.6/peon_of_warcraft_v0_2_6_assets.zip) · [Changes, save transfer and verification](docs/V0_2_6_VISUAL_POLISH.md)
 
 [Browser player v0.2.6](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.6/peon_of_warcraft_v0_2_6_player.zip) · [Browser controls and web hosting](docs/BROWSER_PLAYER_V026.md)
 

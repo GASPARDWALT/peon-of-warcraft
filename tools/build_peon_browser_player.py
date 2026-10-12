@@ -29,7 +29,7 @@ def require(value, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rom', type=Path, default=ROOT / 'pokecrystal.gbc')
-    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6'])
+    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6', '0.2.7'])
     parser.add_argument('--expected-sha', help='Required for v0.2.6; exact tested native ROM hash.')
     parser.add_argument('--package', action='store_true', help='Require passing browser/core evidence for this exact HTML, then create the release ZIP.')
     args = parser.parse_args()
@@ -63,7 +63,7 @@ def main():
         source = source.replace('>◀<', '><span class="direction-left" aria-hidden="true"></span><')
         source = source.replace('>▶<', '><span class="direction-right" aria-hidden="true"></span><')
         source = source.replace('</style>', '.direction-left,.direction-right{display:inline-block;width:0;height:0;border-top:8px solid transparent;border-bottom:8px solid transparent;vertical-align:middle}.direction-left{border-right:12px solid var(--ink)}.direction-right{border-left:12px solid var(--ink)}</style>')
-        player = player.replace(b'0.2.5', args.version.encode()).replace(b'v025', b'v026').replace(b'v0_2_5', ('v' + tag).encode())
+        player = player.replace(b'0.2.5', args.version.encode()).replace(b'v025', ('v' + args.version.replace('.', '')).encode()).replace(b'v0_2_5', ('v' + tag).encode())
     replacements = {
         'CORE_JS': core.decode().replace('</script', '<\\/script'),
         'PLAYER_JS': player.decode(), 'ROM_B64': base64.b64encode(rom).decode(),
@@ -132,7 +132,7 @@ Le dépôt contient aussi une branche `gh-pages` prête à héberger ce lecteur.
 Moteur GBC binjgb sous licence MIT, ROM v0.2.5 inchangée. Ce lecteur indépendant ne simule pas le matériel FPGA Chromatic ni une cartouche DevDay et n'utilise pas le plugin ModRetro. Aucun matériel n'a été programmé.
 '''
     if args.version != '0.2.5':
-        readme = readme.replace('0.2.5', args.version).replace('v0_2_5', 'v' + tag).replace('V025', 'V026')
+        readme = readme.replace('0.2.5', args.version).replace('v0_2_5', 'v' + tag).replace('V025', 'V' + args.version.replace('.', ''))
     (out / 'README.md').write_text(readme)
     if args.package:
         files = [(target, target.name), (out / 'README.md', 'README.md'),
