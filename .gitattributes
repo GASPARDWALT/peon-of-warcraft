@@ -49,3 +49,6 @@
 *.1bpp binary diff=hex
 *.gbcpal binary
 *.dimensions binary
+
+# Preserve original environment-pack documents and manifests byte for byte.
+references/characters/peon_of_warcraft_environment_pack_v2_art_quality/** -text
