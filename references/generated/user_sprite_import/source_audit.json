@@ -1,0 +1,2257 @@
+{
+  "sourceArchive": "references/characters/peon_world_character_sheets_split.zip",
+  "sourceSHA256": "0aac67d4de4e49e0f13882be203dc4acda51fafe542570f97d1b1ba5d794e27a",
+  "extractedOriginalsByteExact": true,
+  "characterSets": 26,
+  "nativeSpriteCount": 156,
+  "exactDimensions": true,
+  "binaryAlpha": true,
+  "ROMIntegrated": false,
+  "generatedReplacementArt": false,
+  "missingPlayerSets": [
+    "base_peon",
+    "warrior_apprentice",
+    "warlock_apprentice"
+  ],
+  "blockingCropIssues": [
+    {
+      "file": "quest_peon/quest_peon_world_front.png",
+      "finding": "Only 10 visible pixels, one-pixel-wide fragment."
+    },
+    {
+      "file": "peon_worker/peon_worker_world_back.png",
+      "finding": "Only 16 visible pixels in the last row."
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_world_front.png",
+      "finding": "Only 19 visible pixels, two-pixel-wide fragment."
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_world_left.png",
+      "finding": "Only 24 visible pixels in the last two rows."
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_combat_front.png",
+      "finding": "A narrow shield fragment, not a complete apprentice."
+    },
+    {
+      "file": "quest_peon/quest_peon_combat_front.png",
+      "finding": "The source label Overworld is present instead of a character."
+    },
+    {
+      "file": "peon_worker/peon_worker_combat_front.png",
+      "finding": "The source label Overworld is present instead of a character."
+    },
+    {
+      "file": "camp_guard/camp_guard_combat_front.png",
+      "finding": "The source label Overworld is present instead of a character."
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_combat_front.png",
+      "finding": "An isolated axe, not a complete trainer."
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_combat_back.png",
+      "finding": "The source label Battle is included."
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_combat_back.png",
+      "finding": "The source label Battle is included."
+    },
+    {
+      "file": "senjin_chief/senjin_chief_combat_front.png",
+      "finding": "An isolated staff/weapon, not a complete chief."
+    }
+  ],
+  "hardwareLimits": {
+    "worldOpaqueColorsPerObjectTile": 3,
+    "combatBackgroundColorsPerTile": 4,
+    "sourceConversionRequired": true
+  },
+  "sprites": [
+    {
+      "file": "beast_handler/beast_handler_combat_back.png",
+      "sha256": "9674871c2300424a859cd3bea768f2c7012a51f7b28b46cc157ae6653d24961c",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1195,
+      "alphaBoundingBox": [
+        7,
+        0,
+        41,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 16
+    },
+    {
+      "file": "beast_handler/beast_handler_combat_front.png",
+      "sha256": "0ba438f1d3f1bde3949f44e13dd8a9a588439e049a1ca298d52be49424303508",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1600,
+      "alphaBoundingBox": [
+        8,
+        0,
+        47,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "beast_handler/beast_handler_world_back.png",
+      "sha256": "a67ff68cc453b201365365b07c5ea020308a2e05c1fa2ee23e73b0ee8c3ae218",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 115,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "beast_handler/beast_handler_world_front.png",
+      "sha256": "6a1b470f835df928a1982b166f44afe858802c6ac5708dec80fb7005eff45d6a",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 126,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "beast_handler/beast_handler_world_left.png",
+      "sha256": "7bc4c5a0dc1875c4f13719324402ff69d37d4447e26e342de7daf7d219a486b3",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 114,
+      "alphaBoundingBox": [
+        3,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "beast_handler/beast_handler_world_right.png",
+      "sha256": "69cf466775c52bcfc36aec344b4ba5332c6a423193703eef0dcfa65cbb8b99b2",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 117,
+      "alphaBoundingBox": [
+        3,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "boar/boar_combat_back.png",
+      "sha256": "bbc33a179d328fbe98bcb0f856fdf9cb91bf69f27fd197f4597c6d66fbb82de5",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1560,
+      "alphaBoundingBox": [
+        2,
+        0,
+        46,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "boar/boar_combat_front.png",
+      "sha256": "1b54f46188575e50e3359730db3083ed6c34fda1f83f7f3560f29fb3449d3cc3",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 2186,
+      "alphaBoundingBox": [
+        0,
+        3,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "boar/boar_world_back.png",
+      "sha256": "1fd1f0c956bdef35b15d277e0417f68083bdb92453128e14cbe89124b0223f24",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 125,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "boar/boar_world_front.png",
+      "sha256": "d6e5a00988af1bc557d16d5bb29a6a08278c97f53f35ced95050533b44bfdb66",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 130,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "boar/boar_world_left.png",
+      "sha256": "822ab485f6a404dcfb07e7c211e775f2021061b692edc031504cffe17cf82a75",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 122,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "boar/boar_world_right.png",
+      "sha256": "479f23fac84493c494c684de45620e9ed4710efb50f64c2af9f6f61c54c70977",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 122,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "camp_guard/camp_guard_combat_back.png",
+      "sha256": "9cd1b618903bfc0cfb2e9269562672ef493c7b323c5f6cb0e61f5d1d0aac9369",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1239,
+      "alphaBoundingBox": [
+        0,
+        11,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "camp_guard/camp_guard_combat_front.png",
+      "sha256": "844d6a4034f8f1ccbaedc2e04ba0befc7cbdd3e7b9a3e6c1d754d5d48ee7b06c",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 390,
+      "alphaBoundingBox": [
+        0,
+        45,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "camp_guard/camp_guard_world_back.png",
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 150,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "camp_guard/camp_guard_world_front.png",
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 150,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "camp_guard/camp_guard_world_left.png",
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 150,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "camp_guard/camp_guard_world_right.png",
+      "sha256": "ce9fa8dd2a9b44066d149fd91bfd883ef1431da59f9daef9fc68cceab31666da",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 150,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_combat_back.png",
+      "sha256": "92909586e573e1bfb08945339d8bfb6f867c1382fddcbf25844d82b14abddf57",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 939,
+      "alphaBoundingBox": [
+        0,
+        18,
+        47,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_combat_front.png",
+      "sha256": "8579fed72c3561aed7c19cab57376aeb002d3f19822df4e8d571a877c219a806",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1867,
+      "alphaBoundingBox": [
+        4,
+        0,
+        52,
+        55
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_world_back.png",
+      "sha256": "276be184f7c9e83e94ba37333240c2c4a9874f2f9fe6458947433a4805420209",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 152,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_world_front.png",
+      "sha256": "8eaf6ef725bb251ea8e73804dd675dce23a8ecaa8c42dbcbf4615bc6aab2b9a8",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 19,
+      "alphaBoundingBox": [
+        7,
+        0,
+        9,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 5
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_world_left.png",
+      "sha256": "ea900739a276afa4bfda8cce236e8bc4e49e382c0ec03b15ab9ec3ed1b9c1ef5",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 145,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "enemy_warlock/enemy_warlock_world_right.png",
+      "sha256": "1a6776377101bf0bd90bf48c6968f26bcfb625f285c192e7dadb3ee4c96edeec",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 142,
+      "alphaBoundingBox": [
+        3,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "felhunter/felhunter_combat_back.png",
+      "sha256": "59af1476a83453d67e8c83f9b7778cff7526498c74f966e4cecab571a6c80894",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1473,
+      "alphaBoundingBox": [
+        0,
+        1,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 16
+    },
+    {
+      "file": "felhunter/felhunter_combat_front.png",
+      "sha256": "4c8a7edfb6edb2ee2bc2f152f42e037b31a84907304855ba2bfa5c429b83ccfc",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1803,
+      "alphaBoundingBox": [
+        0,
+        11,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "felhunter/felhunter_world_back.png",
+      "sha256": "ef09e637fc78a3e9d5806ac5caf17daddf0d5ae130f43e9ee5f4f66ebb2fdfd0",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 134,
+      "alphaBoundingBox": [
+        2,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "felhunter/felhunter_world_front.png",
+      "sha256": "6fb25b262e3d724c7911caa5186b669dad62b09ecb25db4ef8db09ab9b8bf460",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 132,
+      "alphaBoundingBox": [
+        2,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "felhunter/felhunter_world_left.png",
+      "sha256": "851cef99ea3d755617b4b582b4bba6e46769644382ee713c54aa394be048ba55",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 141,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "felhunter/felhunter_world_right.png",
+      "sha256": "0a0c279f63d3302b736991edae88c5f624a8a84d5a2202570ea0db540c75f385",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 139,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "harpy/harpy_combat_back.png",
+      "sha256": "09815e77803eb93226d9e31592f1b506ffeadc91db14e35421a6f09855841ca4",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1405,
+      "alphaBoundingBox": [
+        0,
+        5,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "harpy/harpy_combat_front.png",
+      "sha256": "82b050f072b701bb3b5304f4449a1e1017630763bf6b22f562c040a7cf006796",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1514,
+      "alphaBoundingBox": [
+        0,
+        19,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "harpy/harpy_world_back.png",
+      "sha256": "2cc769465635252e0cca7ba40301cb5c77fd69ae1c870ec2f3e1cb7ca21ba052",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 158,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "harpy/harpy_world_front.png",
+      "sha256": "fa7ee8dd6799222010213c0b80f7ce95f7e26d7ad838a9362426bb3c24726d6b",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 187,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "harpy/harpy_world_left.png",
+      "sha256": "ad285ad1646cb5d140d62cdd9b55c856ff5059c577e7e22b78a1f31b422b460a",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 192,
+      "alphaBoundingBox": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "harpy/harpy_world_right.png",
+      "sha256": "bd6e1229c9f7d9ace8a0580bf9c86dfa3f1e253ecd01bd46e9b09f9971bb3c6c",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 192,
+      "alphaBoundingBox": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "imp/imp_combat_back.png",
+      "sha256": "8a0f776188b9d8bb16c8e9d2c927fb05d84bdd978a0ad65dfa9b44a9fed7982b",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1326,
+      "alphaBoundingBox": [
+        3,
+        0,
+        44,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "imp/imp_combat_front.png",
+      "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1735,
+      "alphaBoundingBox": [
+        0,
+        4,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "imp/imp_world_back.png",
+      "sha256": "0c90ae72807b28c95d9c334945c1b0799e1d25dd73b9f441424115d83444d57e",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 141,
+      "alphaBoundingBox": [
+        2,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "imp/imp_world_front.png",
+      "sha256": "33b1f1a09df561e6b3fe8af9bd8a89d9317c48289b3e558a29340117a95b2c14",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 138,
+      "alphaBoundingBox": [
+        2,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "imp/imp_world_left.png",
+      "sha256": "cca301d33752f5ad9bf48e5b92b0fd61f028e86ef096d1e168e5208c7c6cb60f",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 142,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "imp/imp_world_right.png",
+      "sha256": "41a26d1264a5dd2cee6cc51323e645ed0881635c684f13b86243ea0143ee63d7",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 142,
+      "alphaBoundingBox": [
+        2,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_guard/orc_guard_combat_back.png",
+      "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1107,
+      "alphaBoundingBox": [
+        7,
+        0,
+        40,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "orc_guard/orc_guard_combat_front.png",
+      "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1533,
+      "alphaBoundingBox": [
+        8,
+        1,
+        47,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "orc_guard/orc_guard_world_back.png",
+      "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 105,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_guard/orc_guard_world_front.png",
+      "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 98,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_guard/orc_guard_world_left.png",
+      "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 104,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_guard/orc_guard_world_right.png",
+      "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 103,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_merchant/orc_merchant_combat_back.png",
+      "sha256": "fb08c073df891ef3aff1bc3b694fab3be3eb91842221690bfceb98b4c06bb33b",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1194,
+      "alphaBoundingBox": [
+        6,
+        0,
+        41,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "orc_merchant/orc_merchant_combat_front.png",
+      "sha256": "7aaaa9a6ebef0147d7b9067501e37419ede356367a1d967745e2ccb8bea0f7f0",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1666,
+      "alphaBoundingBox": [
+        7,
+        0,
+        48,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "orc_merchant/orc_merchant_world_back.png",
+      "sha256": "cbc9345ba8e8c551e9df734054e6799efb9660f11b19f5752e720e974d4e1d73",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 99,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_merchant/orc_merchant_world_front.png",
+      "sha256": "1456c3b15dfd74ad03914a2f9e8df31596e425e5c936a276447bcf98b7a90683",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 102,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_merchant/orc_merchant_world_left.png",
+      "sha256": "a925f8e21631745102b3a7e4cdfa8809b8bac701c70e27b0e321468a741de854",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 104,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "orc_merchant/orc_merchant_world_right.png",
+      "sha256": "b8732c234091f518fb012b2440772b9a66794e2d02522d6e9493ec0778bb56a3",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 106,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "panther/panther_combat_back.png",
+      "sha256": "8b36f38532b9a47f6c2a3add2815ec71e1a765d16825fd1d709f85a95fc53543",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1271,
+      "alphaBoundingBox": [
+        1,
+        12,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "panther/panther_combat_front.png",
+      "sha256": "f0792b65b2b6a105ce3a8946401236d067fe3ef1a9dd9cc9164616d9ae8232a1",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1219,
+      "alphaBoundingBox": [
+        0,
+        22,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "panther/panther_world_back.png",
+      "sha256": "6ed89e95ed01d7bd64d33da78790d2b17e6ca1f63c8301bd393f910da5873870",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 160,
+      "alphaBoundingBox": [
+        0,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "panther/panther_world_front.png",
+      "sha256": "9253582e87637b3f1c137a7e656d9d64a060cd153e1d5829304021cf7f616499",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 179,
+      "alphaBoundingBox": [
+        1,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "panther/panther_world_left.png",
+      "sha256": "f17f4e694307fec1db23ec233dec0e509f4899a1a0b4149e722ca8b84d1fa215",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 178,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "panther/panther_world_right.png",
+      "sha256": "8c63e213b214cc22d1c1849d9ab6378ba6a5b7336f133fd0a39f91d6bfb64fff",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 178,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "peon_worker/peon_worker_combat_back.png",
+      "sha256": "817beec09aae4559a66a60a42675614d3cc4110f99260d4848b6f90493112ea8",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1077,
+      "alphaBoundingBox": [
+        0,
+        14,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "peon_worker/peon_worker_combat_front.png",
+      "sha256": "9ea8ec5e55ab1ee27dd0ca0afa5dad11c9a495dd38606bb3310ba08bfcd91267",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 394,
+      "alphaBoundingBox": [
+        0,
+        46,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 16
+    },
+    {
+      "file": "peon_worker/peon_worker_world_back.png",
+      "sha256": "593ddef7438c0c84ade0fff3898cf4ad3c84b3e011801185d232c680a4b435cf",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 16,
+      "alphaBoundingBox": [
+        0,
+        15,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 4
+    },
+    {
+      "file": "peon_worker/peon_worker_world_front.png",
+      "sha256": "7481374537d4bbfe5afa8a3127cc5efa4a0271b326dba1603470c23ca5a87441",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 138,
+      "alphaBoundingBox": [
+        2,
+        1,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "peon_worker/peon_worker_world_left.png",
+      "sha256": "630235fb8afcd2fe83883f324fb6595f0a6a546ff688bad941134af4341ffd5f",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 112,
+      "alphaBoundingBox": [
+        0,
+        6,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "peon_worker/peon_worker_world_right.png",
+      "sha256": "679706d8a56672e480c8abcd326a0fa341ac2643f8aa0c1bd009eb23eb5f3c66",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 75,
+      "alphaBoundingBox": [
+        5,
+        0,
+        11,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "quest_peon/quest_peon_combat_back.png",
+      "sha256": "29b9ef1d4798981c78e7995b91d2ea1f8c2d74e68b2e454c591fd398f46f7b9a",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1098,
+      "alphaBoundingBox": [
+        0,
+        13,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "quest_peon/quest_peon_combat_front.png",
+      "sha256": "3f8ed258fd3704cb4a17b117d99868138ea8fd79d961c99c2ee48cb4a01b8217",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 443,
+      "alphaBoundingBox": [
+        0,
+        46,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 16
+    },
+    {
+      "file": "quest_peon/quest_peon_world_back.png",
+      "sha256": "87329db2892287f4c3c844f72bd3ec4596a6bc3358358ec923a751adfcdc8395",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 149,
+      "alphaBoundingBox": [
+        0,
+        1,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "quest_peon/quest_peon_world_front.png",
+      "sha256": "06ce18d23b008c497c7e614011cec4ba1c14b6d227fb7dc924c76e6ed98a89ce",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 10,
+      "alphaBoundingBox": [
+        7,
+        0,
+        8,
+        13
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 3
+    },
+    {
+      "file": "quest_peon/quest_peon_world_left.png",
+      "sha256": "cf855b197ffb6d055491d03d317306c49b08f1fd8c677e9dbb4fe2c444ecaa94",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 24,
+      "alphaBoundingBox": [
+        0,
+        14,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "quest_peon/quest_peon_world_right.png",
+      "sha256": "7033be62dbd5030f9675f1a9cb30bf6efc2c06e57f3d49cf83fef2dd65ef0391",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 24,
+      "alphaBoundingBox": [
+        1,
+        14,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "raptor/raptor_combat_back.png",
+      "sha256": "403393ba364f46c544026da6b26e5a6877838c7df69753fd83c9ea96b6c93d9f",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1048,
+      "alphaBoundingBox": [
+        0,
+        6,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "raptor/raptor_combat_front.png",
+      "sha256": "cdf4c9f29d4872f915c63eec17921bd12e8f1cd89577959ea17a1266b46423ac",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1066,
+      "alphaBoundingBox": [
+        0,
+        18,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "raptor/raptor_world_back.png",
+      "sha256": "d18bee8c9d4f0a0bb964aeea1673ac650199123a254804a69be6bb3b169ec9ff",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 157,
+      "alphaBoundingBox": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "raptor/raptor_world_front.png",
+      "sha256": "563ada8898d61e8ffcc231991940ec098b5fe45497517f39578f350ea577b536",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 187,
+      "alphaBoundingBox": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "raptor/raptor_world_left.png",
+      "sha256": "91e1fa56c91d379cc575503d227715fdd00d8dbaf34b87e78fa7b586eb855f18",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 185,
+      "alphaBoundingBox": [
+        1,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "raptor/raptor_world_right.png",
+      "sha256": "3af5a371110906766a4932598dd3ee6b6fb6aa445bd15405a1f0d32022e0c989",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 185,
+      "alphaBoundingBox": [
+        1,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "sarkoth/sarkoth_combat_back.png",
+      "sha256": "65d44f1557d9bb2b6e9d7f988820f5004b1d980322e6f05802de392a9aecb13d",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 977,
+      "alphaBoundingBox": [
+        0,
+        16,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "sarkoth/sarkoth_combat_front.png",
+      "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1396,
+      "alphaBoundingBox": [
+        0,
+        11,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "sarkoth/sarkoth_world_back.png",
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 148,
+      "alphaBoundingBox": [
+        0,
+        5,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "sarkoth/sarkoth_world_front.png",
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 148,
+      "alphaBoundingBox": [
+        0,
+        5,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "sarkoth/sarkoth_world_left.png",
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 148,
+      "alphaBoundingBox": [
+        0,
+        5,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "sarkoth/sarkoth_world_right.png",
+      "sha256": "28d8210a52a5faaf31bb38f1bd6721bd0ad1d3b1dd95ab878276c290e3c5cff7",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 148,
+      "alphaBoundingBox": [
+        0,
+        5,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "scorpid/scorpid_combat_back.png",
+      "sha256": "8c89768e923f55317272af3645c397d7ee165bf7e35181afb6957bc211b30a28",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 824,
+      "alphaBoundingBox": [
+        0,
+        12,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "scorpid/scorpid_combat_front.png",
+      "sha256": "6d979c78e831ce8afa5efd889211f9694b98f79cfbcfc8d83018ebbae2dca621",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1524,
+      "alphaBoundingBox": [
+        0,
+        4,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "scorpid/scorpid_world_back.png",
+      "sha256": "41a2100e38c86bca9b3d3692c1cfc39ca0c442b0e138ca5554d094808d5491ac",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 127,
+      "alphaBoundingBox": [
+        3,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "scorpid/scorpid_world_front.png",
+      "sha256": "e7f57a1972ac2b75b634a2ea2bce8a3ce5b72c5e5db9970c80a96afd438d48a4",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 115,
+      "alphaBoundingBox": [
+        3,
+        1,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "scorpid/scorpid_world_left.png",
+      "sha256": "73bb6bcb46d61a7ee5a4790dc4762b50844f0872bdd00fc043d0469c217b538f",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 117,
+      "alphaBoundingBox": [
+        4,
+        1,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "scorpid/scorpid_world_right.png",
+      "sha256": "5da7221b06a243cfeaca8ced97e5012cdd131a1011b3bea088a4257da1912435",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 117,
+      "alphaBoundingBox": [
+        3,
+        1,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_chief/senjin_chief_combat_back.png",
+      "sha256": "7cd0a4b9f7c43bc830158485b6604f54c2dc13be6807181ace2388db9ca684fd",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 387,
+      "alphaBoundingBox": [
+        0,
+        35,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 10
+    },
+    {
+      "file": "senjin_chief/senjin_chief_combat_front.png",
+      "sha256": "ff989e9a2e39d1c0af671a1e4baa1fd83fbc532bb59402fb370b55286d56e105",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 599,
+      "alphaBoundingBox": [
+        19,
+        0,
+        37,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "senjin_chief/senjin_chief_world_back.png",
+      "sha256": "f726c81c2a2f07a33eb53280cb2f7209a8d0dcc3f923debfeb9b5f330b0c4d68",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 45,
+      "alphaBoundingBox": [
+        0,
+        11,
+        15,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 6
+    },
+    {
+      "file": "senjin_chief/senjin_chief_world_front.png",
+      "sha256": "55b724770fb74ec31896c37edce3253139f3f6ef72cbbd9146e6cf571770a53b",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 111,
+      "alphaBoundingBox": [
+        0,
+        6,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_chief/senjin_chief_world_left.png",
+      "sha256": "41d9527166ea9e0c3dcae98e11ede71398f636ab66c8fc871538f2f8c6e3f526",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 116,
+      "alphaBoundingBox": [
+        2,
+        0,
+        13,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_chief/senjin_chief_world_right.png",
+      "sha256": "cf5062967688fc3983232224842c735f0027b42831c113de4e2a2299002a1442",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 49,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_combat_back.png",
+      "sha256": "746bc065fe11c22115ef121439f96cc99241fd95d277416c18a93588ada26d27",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 868,
+      "alphaBoundingBox": [
+        10,
+        0,
+        37,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_combat_front.png",
+      "sha256": "c31bf4b98c5f1e06c1c04938c0b29105fbd8beb3c669e98a5a52046afb49091b",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1456,
+      "alphaBoundingBox": [
+        0,
+        11,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_world_back.png",
+      "sha256": "978782d2e4527fa596bd677dfe080414e48cd5d6ebed6112b92aa4b672461e36",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 59,
+      "alphaBoundingBox": [
+        0,
+        10,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_world_front.png",
+      "sha256": "5b3465e148305a25af00dfcc03f5b5cfd296d3fe22624db4e41d86343988fea1",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 126,
+      "alphaBoundingBox": [
+        0,
+        6,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_world_left.png",
+      "sha256": "8ce48ef6943792e72e32ac4822ca6a9a3b1edd5c6744b86eaedd52e73ccc46a5",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 41,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "senjin_troll_shaman/senjin_troll_shaman_world_right.png",
+      "sha256": "aa1d799cc3936ed71b0febc919c6e1d9f1e8179f8ff0f2d812cda7917e87d00c",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 56,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_combat_back.png",
+      "sha256": "1c4c1055d2cede317025adbdf6fe463799e8bf92d47cbb7bb01129af2fba4041",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1103,
+      "alphaBoundingBox": [
+        0,
+        14,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_combat_front.png",
+      "sha256": "15455d00e5939b7c49fd7320c74be81616ba3402c2041167378853a5976fd198",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 418,
+      "alphaBoundingBox": [
+        22,
+        0,
+        34,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_world_back.png",
+      "sha256": "dd299309f97a610303e1480008b075a31d2248db4c181dda2d7ef5b3982d8824",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 93,
+      "alphaBoundingBox": [
+        0,
+        7,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_world_front.png",
+      "sha256": "1378b5ab994dc753c0e5764ce18b2be86420444477cc463b82b9128eed266f25",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 117,
+      "alphaBoundingBox": [
+        0,
+        5,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_world_left.png",
+      "sha256": "39a98322defc9c5302a9aefc011a106df93c091d32c208906f613a7a9343b526",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 24,
+      "alphaBoundingBox": [
+        1,
+        14,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "shaman_apprentice/shaman_apprentice_world_right.png",
+      "sha256": "4fb3810e0f887766903190194f3f450fc0ea68bfc00e543316f9abd89875a8b9",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 48,
+      "alphaBoundingBox": [
+        6,
+        0,
+        10,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 6
+    },
+    {
+      "file": "shaman_master/shaman_master_combat_back.png",
+      "sha256": "febc232d02cfce86e52f6c253bc8cf7da52e6ff6390c40f85cb772f5942ca623",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1184,
+      "alphaBoundingBox": [
+        0,
+        15,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "shaman_master/shaman_master_combat_front.png",
+      "sha256": "c386d7aae14d239425e014dc6a8dff07a8a9f8cf687df370e603784a2324ec3f",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 2015,
+      "alphaBoundingBox": [
+        3,
+        0,
+        53,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "shaman_master/shaman_master_world_back.png",
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 173,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_master/shaman_master_world_front.png",
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 173,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_master/shaman_master_world_left.png",
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 173,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "shaman_master/shaman_master_world_right.png",
+      "sha256": "bb057702333fb8bd0f26a16b3ce5d6241f726faa8beef19b1988d53b233edc52",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 173,
+      "alphaBoundingBox": [
+        0,
+        2,
+        16,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "tiger/tiger_combat_back.png",
+      "sha256": "bc0ead76138c9f62a3babbfbf6eb4e9c7708753502c9d6d9b352d1dfe88d8d98",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1414,
+      "alphaBoundingBox": [
+        0,
+        3,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "tiger/tiger_combat_front.png",
+      "sha256": "12cf13e91c6b82c0b5636b218295e9dbef63bf7efb95e1e6733d6896baaa044c",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1486,
+      "alphaBoundingBox": [
+        0,
+        17,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "tiger/tiger_world_back.png",
+      "sha256": "4544d0294661f5bb19a360940faad6dc494165d7a2bf10c86ff4ff270cc17495",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 166,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "tiger/tiger_world_front.png",
+      "sha256": "12c26c2504c262f284bba6062bae304a534f520969fe0786ef2c0bc22d734643",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 187,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "tiger/tiger_world_left.png",
+      "sha256": "a904bdeb570cfb2f26f42e440c4667a8c7770a82579c02cf9484ce6eec1ac4d4",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 182,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "tiger/tiger_world_right.png",
+      "sha256": "140e1641232f3f93c86069c896a8300d5c4c0e2b161e0ff01563cfcf886d33e2",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 182,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_guard/troll_guard_combat_back.png",
+      "sha256": "db6b066def282be5c459c524e20d8c3cfe199063ba2f8281ceeb396c46faed05",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 866,
+      "alphaBoundingBox": [
+        11,
+        0,
+        37,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "troll_guard/troll_guard_combat_front.png",
+      "sha256": "7dda15bb5cfa05ac9e134e7d377129df3eb0704f1d52a62525725613b197d7e6",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1267,
+      "alphaBoundingBox": [
+        11,
+        0,
+        44,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "troll_guard/troll_guard_world_back.png",
+      "sha256": "1ab3ebebcd682fb35fbd3cced2fc9fc0a8135f035609e3dbd8236fdfb601bcd9",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 96,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_guard/troll_guard_world_front.png",
+      "sha256": "974d0d1798322daf96c437269a4131e88605a6e5e9ec7114c6d7e6527a6c8562",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 96,
+      "alphaBoundingBox": [
+        4,
+        0,
+        11,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_guard/troll_guard_world_left.png",
+      "sha256": "88d067fc757baa6f4a7b33167be41a8bc6cbdbfe18efb2a2a4886a514a0817d6",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 100,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_guard/troll_guard_world_right.png",
+      "sha256": "64fcd0e2d8250af775cb32c0b44ac91ba8075516359e0581394522b9f45e91b0",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 92,
+      "alphaBoundingBox": [
+        4,
+        0,
+        11,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_merchant/troll_merchant_combat_back.png",
+      "sha256": "4302876805d99a99cc0e80c49dba402d3546c046e3e4d54112a1146f3ab2f14a",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1159,
+      "alphaBoundingBox": [
+        9,
+        0,
+        39,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 16
+    },
+    {
+      "file": "troll_merchant/troll_merchant_combat_front.png",
+      "sha256": "b5a42f833467185e4c74c40ddc240ef1c8442d27e84c52e34b17ce6f51f0b593",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1401,
+      "alphaBoundingBox": [
+        9,
+        0,
+        46,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "troll_merchant/troll_merchant_world_back.png",
+      "sha256": "431685886410ba82dc072e0628156e5ec1edea76bc3469d576918d518058d534",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 105,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_merchant/troll_merchant_world_front.png",
+      "sha256": "f28e39de5d391ecb7c560285d2707918992d07dd2944dd690b614cd0e353cc47",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 96,
+      "alphaBoundingBox": [
+        4,
+        0,
+        11,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_merchant/troll_merchant_world_left.png",
+      "sha256": "34b047010a58b32aa4573d0a06e4c7300f65fccf7cf51dfddb01ee30e5118364",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 101,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_merchant/troll_merchant_world_right.png",
+      "sha256": "3080a5398747eab8311928c1c77e86d8f524da81e7d8cabc4090eca9d7591d63",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 113,
+      "alphaBoundingBox": [
+        3,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_shaman/troll_shaman_combat_back.png",
+      "sha256": "9a0ac3d7c41d466741bfc4c4e66dbfa0a04adc5f5c7dcd5be2387925e9b853e5",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 1547,
+      "alphaBoundingBox": [
+        2,
+        0,
+        47,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "troll_shaman/troll_shaman_combat_front.png",
+      "sha256": "e1639b8331d37a9c06c04057bf7cd8fa2e64c9b68c83fe8f126e6fdf4e2923a3",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1568,
+      "alphaBoundingBox": [
+        0,
+        13,
+        56,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "troll_shaman/troll_shaman_world_back.png",
+      "sha256": "1e91943ff65043cbeae89cd352457eb18ccb05000072eecf6d2245ac5f76017b",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 138,
+      "alphaBoundingBox": [
+        1,
+        1,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "troll_shaman/troll_shaman_world_front.png",
+      "sha256": "d86c10d0049b2293949008b5e6a9be8e7b4d0e37fcf8e5ce23767707cf3ef6c3",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 171,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_shaman/troll_shaman_world_left.png",
+      "sha256": "56b07c457c403999634577f6e8fe5c30e9f933dc4356dc0de2a8c2f36abd16bd",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 156,
+      "alphaBoundingBox": [
+        1,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_shaman/troll_shaman_world_right.png",
+      "sha256": "98d8b97d7cc12286f066fa61f6d7180b8bcf049a4d75741b06e58ed170241f70",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 156,
+      "alphaBoundingBox": [
+        1,
+        0,
+        14,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_villager/troll_villager_combat_back.png",
+      "sha256": "57c383ed3300c8628fa78417e1614dcbfb05867a1025af9d218b1cac1c555ca7",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 930,
+      "alphaBoundingBox": [
+        11,
+        0,
+        36,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "troll_villager/troll_villager_combat_front.png",
+      "sha256": "b3e61ad949fcf78b23cd6df2d3ceba84df2dc0687321860a84a1f048339d785f",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1256,
+      "alphaBoundingBox": [
+        13,
+        0,
+        43,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "troll_villager/troll_villager_world_back.png",
+      "sha256": "2d5b2740b3a80c48d83e9f1759c99d6ac2b1007b53fd3e4c476a78bc78f5e17b",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 100,
+      "alphaBoundingBox": [
+        4,
+        0,
+        11,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_villager/troll_villager_world_front.png",
+      "sha256": "85bb4214f9a4e0b690fe0a9ffd757b554d3dbd6849816fca5cfe1d64e6b78948",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 98,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_villager/troll_villager_world_left.png",
+      "sha256": "32e0ae88f97b04448bc748acdc37896e4fdd552b88058da7db9cbc397526cb1c",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 102,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "troll_villager/troll_villager_world_right.png",
+      "sha256": "1b2ede1834f91bf7bcd1fd92b78358251ac18d515c04ddd6fa48c942bd948d25",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 102,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_combat_back.png",
+      "sha256": "03659850d75b64cdfa6a8378883a5cc845c32aa3e8b5a3f9592cb3ffc10fc982",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 447,
+      "alphaBoundingBox": [
+        0,
+        32,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 11
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_combat_front.png",
+      "sha256": "4c538aea7d0e3b61cc3e8f6ddf89de83da795a6814a2655335f13b78db7d2e01",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1716,
+      "alphaBoundingBox": [
+        8,
+        0,
+        48,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 15
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_world_back.png",
+      "sha256": "22494cc49939f55b8db6bb0827f9e52be90820091d340f7f1c7ba7e9dc278bc6",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 46,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_world_front.png",
+      "sha256": "9889b03207a91fd4fb93fef064e20ddbdf4b074298118e20cc13d8e61c8be24a",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 53,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_world_left.png",
+      "sha256": "7c372cc67b4d4d02fd0d1eda4990490f637d247aa5cc0143b0a2960787e147b9",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 73,
+      "alphaBoundingBox": [
+        0,
+        9,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "veteran_questgiver/veteran_questgiver_world_right.png",
+      "sha256": "bb38b748a29d7c6af211ea90b10e291dc247e56088e75bf849a980235f04f102",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 42,
+      "alphaBoundingBox": [
+        0,
+        12,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_combat_back.png",
+      "sha256": "8885cfde38029647cd6e98d2f26dfb6275b65b897bd9b1c16b8befb7c5da0cda",
+      "width": 48,
+      "height": 48,
+      "visiblePixels": 390,
+      "alphaBoundingBox": [
+        0,
+        36,
+        48,
+        48
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 13
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_combat_front.png",
+      "sha256": "a527d356c0830e6ac05301dc79a588db3bd16acb9a324d7e16a7e3c8f23a41ab",
+      "width": 56,
+      "height": 56,
+      "visiblePixels": 1035,
+      "alphaBoundingBox": [
+        11,
+        0,
+        45,
+        56
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 14
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_world_back.png",
+      "sha256": "75e3ca65219a056f7a79639958029f96ab57c414b6f98f369d2e694e2104f171",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 56,
+      "alphaBoundingBox": [
+        0,
+        10,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_world_front.png",
+      "sha256": "bb1a96d90c38a24933d6bb26be709bc0a64877de6e85d928c775ae8f9eb94b20",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 59,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_world_left.png",
+      "sha256": "39f4c125229bf62678ea40d1a55a353a5d8d43ca87402f08494a043a0a8c0c2d",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 59,
+      "alphaBoundingBox": [
+        0,
+        11,
+        16,
+        16
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 8
+    },
+    {
+      "file": "warrior_trainer/warrior_trainer_world_right.png",
+      "sha256": "8be90f3e913547e0bd042dd87bee81e1bc4e68c8df6b68343d6789287fbafe24",
+      "width": 16,
+      "height": 16,
+      "visiblePixels": 46,
+      "alphaBoundingBox": [
+        0,
+        11,
+        15,
+        15
+      ],
+      "maxOpaqueRGB555ColorsPer8x8Tile": 7
+    }
+  ]
+}
