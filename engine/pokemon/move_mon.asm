@@ -188,6 +188,29 @@ endr
 .registerpokedex
 	ld a, [wCurPartySpecies]
 	ld [wTempSpecies], a
+	; Managed companions have no Dex UI. Adding the starter imp during a
+	; legacy Continue must not mutate the old saved seen/caught bitsets.
+	; Inline guard changes only AF, retaining the record pointers in HL/DE.
+	ld a, [wLinkMode]
+	and a
+	jr nz, .native_companion_dex
+	; Continue adds the legacy imp before loading the saved map tileset.
+	; The initialized-Peon event and hero species identify this save instead.
+	ld a, [wPartyMon1Species]
+	cp MACHOP
+	jr nz, .native_companion_dex
+	ld a, [wEventFlags + EVENT_PEON_SHAMAN / 8]
+	bit EVENT_PEON_SHAMAN % 8, a
+	jr z, .native_companion_dex
+	ld a, [wCurPartySpecies]
+	cp ONIX
+	jr z, .companion_dex_done
+	cp GEODUDE
+	jr z, .companion_dex_done
+	cp MACHAMP
+	jr z, .companion_dex_done
+.native_companion_dex
+	ld a, [wTempSpecies]
 	dec a
 	push de
 	call CheckCaughtMon
@@ -195,6 +218,7 @@ endr
 	dec a
 	call SetSeenAndCaughtMon
 	pop de
+.companion_dex_done
 
 	pop hl
 	push hl

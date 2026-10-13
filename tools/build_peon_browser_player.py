@@ -29,14 +29,14 @@ def require(value, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rom', type=Path, default=ROOT / 'pokecrystal.gbc')
-    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6', '0.2.7', '0.2.8'])
-    parser.add_argument('--expected-sha', help='Required for v0.2.6; exact tested native ROM hash.')
+    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6', '0.2.7', '0.2.8', '0.2.9'])
+    parser.add_argument('--expected-sha', help='Required for new releases; exact tested native ROM hash.')
     parser.add_argument('--package', action='store_true', help='Require passing browser/core evidence for this exact HTML, then create the release ZIP.')
     args = parser.parse_args()
     sha = args.expected_sha or SHA
     require(re.fullmatch(r'[0-9a-f]{64}', sha), 'Expected SHA-256 must be 64 lowercase hex digits.')
     require(args.version != '0.2.5' or sha == SHA, 'Published v0.2.5 ROM identity is fixed.')
-    require(args.version == '0.2.5' or args.expected_sha, 'Supply the tested v0.2.6 ROM hash.')
+    require(args.version == '0.2.5' or args.expected_sha, 'Supply the exact tested release ROM hash.')
     tag = args.version.replace('.', '_')
     out = ROOT / ('releases/browser-player-v' + args.version)
     evidence = ROOT / ('references/generated/browser_player_v' + args.version.replace('.', ''))

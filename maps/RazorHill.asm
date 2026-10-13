@@ -137,7 +137,7 @@ RazorHillJarkScript:
 	db 5
 	db "SPRING WATER@"
 	db "HEAL POTION@"
-	db "TOUGH BREAD@"
+	db "TOUGH JERKY@"
 	db "MANA POTION@"
 	db "CANCEL@"
 
@@ -188,14 +188,14 @@ RazorHillJarkPotionBoughtText:
 	done
 
 RazorHillJarkBreadOfferText:
-	text "TOUGH BREAD x5"
+	text "TOUGH JERKY x5"
 	line "25 copper. Buy?"
 	para "Restores 10 HP"
 	line "outside battle."
 	done
 
 RazorHillJarkBreadBoughtText:
-	text "Bread packed."
+	text "Jerky packed."
 	line "Eat after fights."
 	done
 
@@ -283,8 +283,8 @@ RazorHill_MapEvents:
 RazorHillJarkManaOfferText:
 	text "MANA POTION x1"
 	line "25 copper. Buy?"
-	para "Five charges for"
-	line "each caster spell."
+	para "Restores 40 mana."
+	line "One battle turn."
 	done
 RazorHillJarkManaBoughtText:
 	text "Mana packed."

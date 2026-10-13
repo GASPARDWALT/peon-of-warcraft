@@ -1,0 +1,16 @@
+{
+  "phase": "prepared_source_only",
+  "included_sources_modified": false,
+  "integrated_rom_tested": false,
+  "patch": "/tmp/peon_v029_companion_dex_hooks.patch",
+  "patch_sha256": "ec91e1bcbe31a2b1ce377713316ffe32af283f225b8fc8507d9ae25cc414e171",
+  "rgbasm_syntax_passed": true,
+  "git_apply_check_passed": true,
+  "only_af_clobbered_by_inline_guard": true,
+  "managed_species": [
+    "ONIX",
+    "GEODUDE",
+    "MACHAMP"
+  ],
+  "original_behavior_retained_for_link_and_non_peon": true
+}

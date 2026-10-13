@@ -21,6 +21,7 @@ PeonTrollInnkeeperScript:
 	waitbutton
 .Close:
 	closetext
+	callasm PeonRefreshLivingFollowerV029
 	end
 
 PeonTrollInnWelcomeText:
@@ -31,9 +32,10 @@ PeonTrollInnWelcomeText:
 	done
 
 PeonTrollInnRestedText:
-	text "Health, wounds and"
-	line "spell charges are"
-	cont "restored."
+	text "Health and mana"
+	line "restored."
+	para "Wounds are healed."
+	line "Rage is cleared."
 	done
 
 PeonTrollInnBindText:

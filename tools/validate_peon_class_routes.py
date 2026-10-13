@@ -94,7 +94,11 @@ class ClassSession(TrainerSession, QuestSession):
         assert self.event('EVENT_PEON_SHAMAN')
         assert self.event('EVENT_PEON_WARRIOR') == (self.class_index == 1)
         assert self.event('EVENT_PEON_WARLOCK') == (self.class_index == 2)
-        assert self.read('wPartyCount') == [1] and self.read('wPartyMon1Species') == [66]
+        expected_count = 2 if self.class_index == 2 and 'PeonInitializeTeamV029' in self.sym else 1
+        assert self.read('wPartyCount') == [expected_count] and self.read('wPartyMon1Species') == [66]
+        if expected_count == 2:
+            assert self.read('wPartyMon2Species') == [74]
+            assert self.read('wPartyMon2Moves', 4) == [10, 53, 0, 0]
         assert self.read('wPartyMon1Moves', 4) == list(BASICS[self.class_index]) + [0, 0]
         assert self.read('wPartyMon1PP', 4) == [35, 30 if self.class_index == 0 else 25, 0, 0]
         assert self.read('wKeyItems', self.read('wNumKeyItems')[0]) == list(KIT[self.class_index])

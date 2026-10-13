@@ -101,7 +101,14 @@ PeonPlayerPoseVisible:
 	jr z, .hidden
 	ld a, [wBattleMonSpecies]
 	cp MACHOP
+	jr z, .actor
+	cp ONIX
+	jr z, .actor
+	cp GEODUDE
+	jr z, .actor
+	cp MACHAMP
 	jr nz, .hidden
+.actor
 	ld a, [wPlayerMinimized]
 	and a
 	jr nz, .hidden
@@ -121,6 +128,12 @@ PeonPlayerPoseVisible:
 ; a vertically encoded strip would interleave its tiles incorrectly.
 PeonLoadPlayerPose::
 	ld c, a
+	ld a, [wBattleMonSpecies]
+	cp MACHOP
+	jr z, .hero
+	farcall PeonLoadActiveAllyBackPoseV029
+	ret
+.hero
 	farcall PeonLoadClassPlayerBackPose
 	ret
 
@@ -156,6 +169,9 @@ PeonPrepareWarlockWandAnimation::
 	ret
 
 PeonIsWarlockWandAnimation::
+	ld a, [wBattleMonSpecies]
+	cp MACHOP
+	jr nz, .no
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jr nz, .no
@@ -202,6 +218,14 @@ PeonSelectWandParticleGraphics::
 	push af
 	ld a, BANK(wEventFlags)
 	ldh [rWBK], a
+	push hl
+	farcall PeonIsKolkarArrowAnimationV029
+	pop hl
+	jr nc, .check_wand
+	ld hl, PeonArrowProjectileGraphicsV029
+	lb bc, BANK(PeonArrowProjectileGraphicsV029), 12
+	jr .restore_bank
+.check_wand
 	call PeonIsWarlockWandAnimation
 	jr nc, .restore_bank
 	ld hl, AnimObjPeonWandV028GFX

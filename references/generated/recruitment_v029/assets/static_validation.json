@@ -1,0 +1,207 @@
+{
+  "passed": true,
+  "source_only": true,
+  "runtime_integration_verified": false,
+  "native_class_enemy_frames_checked": 108,
+  "heads_checked": 12,
+  "public_transparent_pngs_checked": 288,
+  "all_frames_roundtrip_exact_indexed_png": true,
+  "rgb555_palettes_valid": true,
+  "jerky_three_opaque_colors_and_index0_alpha": true,
+  "npc_world_conversion_source_indices": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    6
+  ],
+  "native_pic_dictionary_report": "references/generated/recruitment_v029/native_inputs/validation.json",
+  "private_art_hooks_patch": "/tmp/peon_v029_art_hooks.patch",
+  "private_hooks_applied": false,
+  "sets": {
+    "earth_spirit": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    },
+    "demon_imp": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    },
+    "orc_grunt": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    },
+    "orc_warlock": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    },
+    "kolkar_archer": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    },
+    "kolkar_melee": {
+      "world": 12,
+      "front": 3,
+      "back": 3,
+      "heads": [
+        8,
+        16
+      ]
+    }
+  },
+  "source_hashes": {
+    "gfx/peon_recruits_v029/kolkar_melee/front_frames.png": "95ceadccf7577d55e70c42da93e899c42086323d32f356e8ab8cbdb7971c9b7b",
+    "gfx/peon_recruits_v029/kolkar_melee/back_frames.bin": "8ba4908d77ba64c5c55237d99d568ca2ee8fbc16be4861255aac521073eabe73",
+    "gfx/peon_recruits_v029/kolkar_melee/front.pal": "4c48cf1d198a225d7c62ca84c56f5f4bd22ab1225ea5ffaa1e3b668c76f41ad7",
+    "gfx/peon_recruits_v029/kolkar_melee/head_8x8.2bpp": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+    "gfx/peon_recruits_v029/kolkar_melee/portrait_frames.bin": "dab519fb0f919f68bc8036922317f1481ff720335f173cd678da87b75bc47b79",
+    "gfx/peon_recruits_v029/kolkar_melee/back_frames.png": "b9581161bf04fab11ed5ae105257a9a624c69b72e7b5494dd3b6847f96f4ed9b",
+    "gfx/peon_recruits_v029/kolkar_melee/back.pal": "4c48cf1d198a225d7c62ca84c56f5f4bd22ab1225ea5ffaa1e3b668c76f41ad7",
+    "gfx/peon_recruits_v029/kolkar_melee/world_frames.png": "dcf25fce15af0a776d77cf7ac45abca5a495970a553316906a736e1cb19b7702",
+    "gfx/peon_recruits_v029/kolkar_melee/world.pal": "7ee1f79023bc36dbafbb5223a5c2464bc2e001cc82530c8d640ccf1bafa74c42",
+    "gfx/peon_recruits_v029/kolkar_melee/overworld.bin": "f31a296241ce897e0a3a268dcfd7cc7eb7045d02d9ebd18b130c3b6c88ad9781",
+    "gfx/peon_recruits_v029/kolkar_melee/head_16x16.2bpp": "1e4a6ab36f3fe10934f359901d7c5c849a2da16df80f4aabb99a41338b2f3151",
+    "gfx/peon_recruits_v029/kolkar_melee/front_frames.bin": "b6269318d3a311c38b1636a4a032da470d8b6c63d6941c6d29c448ba093552ea",
+    "gfx/peon_recruits_v029/demon_imp/front_frames.png": "ec74761afb0e1769e75df89657212fe5d21f915d9602294158e3fcc37a7f7dbd",
+    "gfx/peon_recruits_v029/demon_imp/back_frames.bin": "e4ae93093f2ec0d274065d946cde1526866dd38aec0f34dce0e112a7983f9737",
+    "gfx/peon_recruits_v029/demon_imp/front.pal": "05324c1e79829d9cb12cf8e3bf9c67c33663fa8a8fdb5409969e9420559b9f7b",
+    "gfx/peon_recruits_v029/demon_imp/head_8x8.2bpp": "6817b7c38e89b3b64558763041f00ea4037ef6c31e44ce1f06aabed2e96b071f",
+    "gfx/peon_recruits_v029/demon_imp/portrait_frames.bin": "42d68c86a7e865b8ec626a669e4bd96a3f9b196180417a5c23414dcfc2615bd3",
+    "gfx/peon_recruits_v029/demon_imp/back_frames.png": "28f31046f02ee2bd5e570b3d23e9e2c871a338cc1304ef6149c1e9fff8df2ff1",
+    "gfx/peon_recruits_v029/demon_imp/back.pal": "05324c1e79829d9cb12cf8e3bf9c67c33663fa8a8fdb5409969e9420559b9f7b",
+    "gfx/peon_recruits_v029/demon_imp/world_frames.png": "cc2d98ca4d8b55d2d7704e20d005b8308d81805ee684865528993d9fb97c175b",
+    "gfx/peon_recruits_v029/demon_imp/world.pal": "bc5e342ec22dbb4ae93393564e0d32e7fe40176b6301bab59c328807da60917a",
+    "gfx/peon_recruits_v029/demon_imp/overworld.bin": "94f24514a93f4e787960e470f1132d24983519753f60e49aec6112cb93df9036",
+    "gfx/peon_recruits_v029/demon_imp/head_16x16.2bpp": "00a8912c2af8ce9ca2725fa7b539bfebf7f1f3a73da0e1fdc90741bba8cae7bc",
+    "gfx/peon_recruits_v029/demon_imp/front_frames.bin": "5110fb08a87163cf03764e7f35bc823edd8d71e0ac4bd5e27b548b3d9b11f05f",
+    "gfx/peon_recruits_v029/items/tough_jerky.2bpp": "39dedddf3cf43f612dee320b2e1b97f1f440c8040e6fce4ea5583c221c05c702",
+    "gfx/peon_recruits_v029/items/tough_jerky.png": "ab49875f9fc61b131f10141ad0f40fa41a551b50a895b1c9314d5ab0193fc5b5",
+    "gfx/peon_recruits_v029/items/tough_jerky.pal": "5e09dced16b2944aa90ed4ee4c1a3933f5cb85bba791bc3a2ffd20ee14e43012",
+    "gfx/peon_recruits_v029/orc_grunt/front_frames.png": "a373108127743b8fc8a56d7d8baadd47b39c2fab1cc92c721984d985bdcebeb0",
+    "gfx/peon_recruits_v029/orc_grunt/back_frames.bin": "ff5fc092fea4b0d7ad256d2ab0e3b8d844f99bdb172831c37b98ff561284c4c4",
+    "gfx/peon_recruits_v029/orc_grunt/front.pal": "33453ed5e6d005ed96091545bcec6e02e9ebd254304acb687939ee7e60cdcfb5",
+    "gfx/peon_recruits_v029/orc_grunt/head_8x8.2bpp": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+    "gfx/peon_recruits_v029/orc_grunt/portrait_frames.bin": "d2e5dd423a08ac8ad4cc47f099c18459ecbdd81c4b62d97be7a5db79e56bf332",
+    "gfx/peon_recruits_v029/orc_grunt/back_frames.png": "cdb3dfc7ba16f1d83ee5148c398d04d75fa999c1713ef75ebf5c32f6dbec0c02",
+    "gfx/peon_recruits_v029/orc_grunt/back.pal": "33453ed5e6d005ed96091545bcec6e02e9ebd254304acb687939ee7e60cdcfb5",
+    "gfx/peon_recruits_v029/orc_grunt/world_frames.png": "a66d063471415421ed35b730790d348e481a44a6d27b28b29fa8f34d7eece5c5",
+    "gfx/peon_recruits_v029/orc_grunt/world.pal": "811faa8307e0d3b1948e9f8655d2927f129b44e07ea3d80723003521448aedd9",
+    "gfx/peon_recruits_v029/orc_grunt/overworld.bin": "ce4da397ec3d7f0e982583313e288e7be5657c772119bd4aab0e80cf227e7a6a",
+    "gfx/peon_recruits_v029/orc_grunt/head_16x16.2bpp": "5901421aafee86247254f04b954e632f3652a1e79b600ab564f685e63fff22ac",
+    "gfx/peon_recruits_v029/orc_grunt/front_frames.bin": "540f3e2ea855b4188f1c23ff2397be3825a4ae74c5b8471c330b376875637359",
+    "gfx/peon_recruits_v029/earth_spirit/front_frames.png": "4bb277295437ca9639c7f21c6b2f890466d63d5d38280df2bf3f2b4da52d2ea0",
+    "gfx/peon_recruits_v029/earth_spirit/back_frames.bin": "b8dc915970952730a5cf7e7ca9cf23586cd45d6f236b167fad6eb0baddb7d9b4",
+    "gfx/peon_recruits_v029/earth_spirit/front.pal": "f2b128530fec5b7da5b58d0ad9522da01c77ca33164e194b35211734188cc092",
+    "gfx/peon_recruits_v029/earth_spirit/head_8x8.2bpp": "1f407002e145177bb239bc81755cbcc2e88e6e94314d0cb4ec3a1915b1dff478",
+    "gfx/peon_recruits_v029/earth_spirit/portrait_frames.bin": "6230833f7cf758e60b57d3c3335dcfc7ddbb8de7d9300c1967b5fd4dea9f4137",
+    "gfx/peon_recruits_v029/earth_spirit/back_frames.png": "293b7796b54a1831b545e9be346eff05edaf85475ae1448fa62f7718e41201ba",
+    "gfx/peon_recruits_v029/earth_spirit/back.pal": "f2b128530fec5b7da5b58d0ad9522da01c77ca33164e194b35211734188cc092",
+    "gfx/peon_recruits_v029/earth_spirit/world_frames.png": "d96807c0149c638e416d7cf09eb764954ef2fbc800c0a96a53939bc4b5a8f9a1",
+    "gfx/peon_recruits_v029/earth_spirit/world.pal": "15592779837302a65a937806b65d59c0bf6a592bf740bf20640641cf70e132da",
+    "gfx/peon_recruits_v029/earth_spirit/overworld.bin": "ea1eab5fcd0306a548ca3fe7b6085d735c6bb53c43e2e14fbc1e6d47450aaaf5",
+    "gfx/peon_recruits_v029/earth_spirit/head_16x16.2bpp": "ed7a21db48b63e62020824b76e1f4bade3e0ab011fb028cde98e3be66303bb26",
+    "gfx/peon_recruits_v029/earth_spirit/front_frames.bin": "9685e14c5727655817653b822f2d5f894c95bb01a777b4f64f35420ab4757f92",
+    "gfx/peon_recruits_v029/orc_warlock/front_frames.png": "d429d8299f6add23678f767b9de9890ff203eb6bfc4ef87e058b77db64371fde",
+    "gfx/peon_recruits_v029/orc_warlock/back_frames.bin": "b5d4d9792eab59ceb1910170e93441b9382f75ab21e1763c77eeebd5eb1a8d4f",
+    "gfx/peon_recruits_v029/orc_warlock/front.pal": "38abd8fc669970f0e853a5ee38b7031ae2c6de615afc7ff17730a3acdd503fe5",
+    "gfx/peon_recruits_v029/orc_warlock/head_8x8.2bpp": "7ef98fd46641c32ba11ee77b9bbf4cffb9652408c65b1cbde5c9705ef2404c96",
+    "gfx/peon_recruits_v029/orc_warlock/portrait_frames.bin": "03d01178c9e1961056442f9563ce10c1335fb2edc5a0ad890526c81c778687d1",
+    "gfx/peon_recruits_v029/orc_warlock/back_frames.png": "401380e4c9c4d32013a913e26bd2974fa1cd4e746cfcd9fc0116c4d2b6b219fe",
+    "gfx/peon_recruits_v029/orc_warlock/back.pal": "38abd8fc669970f0e853a5ee38b7031ae2c6de615afc7ff17730a3acdd503fe5",
+    "gfx/peon_recruits_v029/orc_warlock/world_frames.png": "b832729c6172c9aae7011f2c08fc3cab9d125846bcde1c83714688f8fb0e5436",
+    "gfx/peon_recruits_v029/orc_warlock/world.pal": "f41650ba6041a6610ad66d5ef989c66ce25dccc314337c527265de99430d9282",
+    "gfx/peon_recruits_v029/orc_warlock/overworld.bin": "0eee21431cfcd58a0e3cca0ea868c6ccc65844e93a14db5e3a73cc695e9a582b",
+    "gfx/peon_recruits_v029/orc_warlock/head_16x16.2bpp": "bbeb4d789441f33a11355bb2559458001517287178d4adf65145ad7dfa6fc183",
+    "gfx/peon_recruits_v029/orc_warlock/front_frames.bin": "1301ca62649fcd6acc5f57aad3ad8aa87fc107749a502a8939a9f2bf8198159e",
+    "gfx/peon_recruits_v029/item_icons/domination_skull.pal": "cc899a779e1fc0bdc8fa7a2d863dc0534ea6249638a01b6dab2819099381e43c",
+    "gfx/peon_recruits_v029/item_icons/elemental_relic.pal": "e5cddd489d84c81f4067ace7e25366e26526a4293334cd2ccc17a3d34b399441",
+    "gfx/peon_recruits_v029/item_icons/domination_skull.2bpp": "e9b5778d460f2cd53ed1dc1c6197e52ff01152764a14514596bcdc8d1e241bf6",
+    "gfx/peon_recruits_v029/item_icons/elemental_relic.png": "207d88dad902300af7b43875d0ca99822f56fdf3b5184cce4e4091f26d02d885",
+    "gfx/peon_recruits_v029/item_icons/rally_horn.2bpp": "942ff3bbe73523b28276392434e28de23df0c9e31028740ff08741b5c64a88ab",
+    "gfx/peon_recruits_v029/item_icons/domination_skull.png": "b0d0cb2209525b5c4a1444f08dd37d2748aaa160bae54695660cbe3cb908f849",
+    "gfx/peon_recruits_v029/item_icons/rally_horn.png": "5836afc71dc05ca1fb30d8bcb75c850ee47d8ee03cac102971a56e54e7d12990",
+    "gfx/peon_recruits_v029/item_icons/elemental_relic.2bpp": "cb11f58a1895fe3fb8f67e610ac490fbfd11c559295c68b356193391302f8752",
+    "gfx/peon_recruits_v029/item_icons/rally_horn.pal": "7022d62bb412965cdc39d2527f9b1d9a77c6b61577aed189e5e5f8387c474596",
+    "gfx/peon_recruits_v029/kolkar_archer/front_frames.png": "ee3e029dc79ddb08110422fda442cbcbe4c73cb0cf9e7d6078a0b51258964985",
+    "gfx/peon_recruits_v029/kolkar_archer/back_frames.bin": "d73478f6c212b9366521a39f9a64ba653378f850fe78f828b7e20867fbd0a5ef",
+    "gfx/peon_recruits_v029/kolkar_archer/front.pal": "4c48cf1d198a225d7c62ca84c56f5f4bd22ab1225ea5ffaa1e3b668c76f41ad7",
+    "gfx/peon_recruits_v029/kolkar_archer/head_8x8.2bpp": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+    "gfx/peon_recruits_v029/kolkar_archer/portrait_frames.bin": "11a64924855a9809eddbe121b9321580f2c26734dd556e94ffffacc13305b23a",
+    "gfx/peon_recruits_v029/kolkar_archer/back_frames.png": "147cdcc74a665b8824fb5d753edd0bf1bda7eeb9655d37f3129d6c8554b878f4",
+    "gfx/peon_recruits_v029/kolkar_archer/back.pal": "4c48cf1d198a225d7c62ca84c56f5f4bd22ab1225ea5ffaa1e3b668c76f41ad7",
+    "gfx/peon_recruits_v029/kolkar_archer/world_frames.png": "91c3c2f39c089cdfe23449ab52f9a47a41f29c0c1b11fcc2052863176b39f6d4",
+    "gfx/peon_recruits_v029/kolkar_archer/world.pal": "7ee1f79023bc36dbafbb5223a5c2464bc2e001cc82530c8d640ccf1bafa74c42",
+    "gfx/peon_recruits_v029/kolkar_archer/overworld.bin": "6be1e9d5a283fbb07b18a3e1e7bc3c06a77d0d7b7b8018556fbf1ec62e70f7ee",
+    "gfx/peon_recruits_v029/kolkar_archer/head_16x16.2bpp": "1e4a6ab36f3fe10934f359901d7c5c849a2da16df80f4aabb99a41338b2f3151",
+    "gfx/peon_recruits_v029/kolkar_archer/front_frames.bin": "0f13d11a4df894a546a05ced8a7fd00c8d0008fb12a57c4187a6999561d92e01"
+  },
+  "palette_middle_color_checks": {
+    "onix": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "ed1a9219",
+      "palette0_white_palette3_black": true
+    },
+    "geodude": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "fa0c6d08",
+      "palette0_white_palette3_black": true
+    },
+    "machamp": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "ac1a5015",
+      "palette0_white_palette3_black": true
+    },
+    "grimer": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "cd22c934",
+      "palette0_white_palette3_black": true
+    },
+    "ponyta": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "f621eb10",
+      "palette0_white_palette3_black": true
+    },
+    "rapidash": {
+      "normal_shiny_middle_color_bytes_exact": true,
+      "middle_bytes": "f621eb10",
+      "palette0_white_palette3_black": true
+    }
+  },
+  "pic_pointer_first_byte_bank_abi_static_audit": {
+    "passed": true,
+    "first_byte": "BANK(label)-PICS_FIX",
+    "PICS_FIX": 54,
+    "raw_decode": "(first_byte+PICS_FIX)&255",
+    "all_possible_2mib_rom_banks_modelled": 127,
+    "all_six_species_raw_guarded_in_private_patch": true,
+    "actual_linked_v029_banks_verified": false,
+    "reason": "Native hooks are unapplied; concrete linked banks require the future candidate build."
+  },
+  "private_art_hooks_patch_sha256": "4ca2574629307a2e375f079b15be8fb5ec82cce7529a6e2492932f0864ae8b79"
+}

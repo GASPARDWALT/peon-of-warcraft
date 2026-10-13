@@ -57,7 +57,8 @@ DoBattle:
 	jp z, .tutorial_debug
 	cp BATTLETYPE_TUTORIAL
 	jp z, .tutorial_debug
-	xor a
+	farcall PeonPreferredActorV029
+	ld a, c
 	ld [wCurPartyMon], a
 .loop2
 	call CheckIfCurPartyMonIsFitToFight
@@ -2054,6 +2055,8 @@ HandleEnemyMonFaint:
 	dec a
 	jr nz, .trainer
 
+	farcall PeonAdvanceWildPackV029
+	ret c ; another live opponent, same native wild encounter
 	ld a, 1
 	ld [wBattleEnded], a
 	ret
@@ -2094,6 +2097,9 @@ HandleEnemyMonFaint:
 	ld [wBattlePlayerAction], a
 	ret
 
+ ; The old foe has already fainted and awarded its own native XP.
+; Reset enemy-only state, then place the next authored wild portrait. No
+; trainer, party-ball HUD, SEND OUT animation, heal or resource refill.
 DoubleSwitch:
 	ldh a, [hSerialConnectionStatus]
 	cp USING_EXTERNAL_CLOCK
@@ -2124,6 +2130,7 @@ DoubleSwitch:
 	ret
 
 UpdateBattleStateAndExperienceAfterEnemyFaint:
+	farcall PeonRecordPackFaintV029
 	call UpdateBattleMonInParty
 	ld a, [wBattleMode]
 	dec a
@@ -2576,6 +2583,8 @@ AddBattleMoneyToAccount:
 	ret
 
 PlayVictoryMusic:
+	farcall PeonPackHasFollowingEnemyV029
+	ret c ; reserve the victory jingle for the complete pack
 	push de
 	ld de, MUSIC_NONE
 	call PlayMusic
@@ -2652,6 +2661,8 @@ HandlePlayerMonFaint:
 	ld a, [wBattleMode]
 	dec a
 	jr nz, .trainer
+	farcall PeonAdvanceWildPackV029
+	jr c, .notfainted ; force a living ally against the next live foe
 	ld a, $1
 	ld [wBattleEnded], a
 	ret
@@ -2674,6 +2685,18 @@ HandlePlayerMonFaint:
 	ld a, c
 	and a
 	ret nz
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .native_enemy_switch
+	ld a, [wBattleMode]
+	cp 1
+	jr nz, .native_enemy_switch
+	; Native C=0 here means the wild enemy is already fainted. Pack advance
+	; loads a living next enemy earlier; never consult empty OT party data.
+	ld a, 1
+	ld [wBattleEnded], a
+	ret
+.native_enemy_switch
 	ld a, BATTLEPLAYERACTION_USEITEM
 	ld [wBattlePlayerAction], a
 	call HandleEnemySwitch
@@ -2851,6 +2874,9 @@ IsMobileBattle:
 
 SetUpBattlePartyMenu:
 	call ClearBGPalettes
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ret z ; the native Peon TEAM panel loads its own graphics
 SetUpBattlePartyMenu_Loop: ; switch to fullscreen menu?
 	farcall LoadPartyMenuGFX
 	farcall InitPartyMenuWithCancel
@@ -2905,7 +2931,13 @@ SwitchMonAlreadyOut:
 
 ForcePickPartyMonInBattle:
 ; Can't back out.
-
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original
+	farcall PeonTeamForcedBattleV029
+	xor a
+	ret
+.original
 .pick
 	call PickPartyMonInBattle
 	ret nc
@@ -2918,6 +2950,14 @@ ForcePickPartyMonInBattle:
 	jr .pick
 
 PickSwitchMonInBattle:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original
+	farcall PeonTeamBattleV029
+	ret c
+	xor a
+	ret
+.original
 .pick
 	call PickPartyMonInBattle
 	ret c
@@ -2928,7 +2968,13 @@ PickSwitchMonInBattle:
 
 ForcePickSwitchMonInBattle:
 ; Can't back out.
-
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original
+	farcall PeonTeamForcedBattleV029
+	xor a
+	ret
+.original
 .pick
 	call ForcePickPartyMonInBattle
 	call CheckMobileBattleError
@@ -3636,26 +3682,7 @@ ShowSetEnemyMonAndSendOutAnimation:
 	ret
 
 NewEnemyMonStatus:
-	xor a
-	ld [wLastPlayerCounterMove], a
-	ld [wLastEnemyCounterMove], a
-	ld [wLastEnemyMove], a
-	ld hl, wEnemySubStatus1
-rept 4
-	ld [hli], a
-endr
-	ld [hl], a
-	ld [wEnemyDisableCount], a
-	ld [wEnemyFuryCutterCount], a
-	ld [wEnemyProtectCount], a
-	ld [wEnemyRageCounter], a
-	ld [wEnemyDisabledMove], a
-	ld [wEnemyMinimized], a
-	ld [wPlayerWrapCount], a
-	ld [wEnemyWrapCount], a
-	ld [wEnemyTurnsTaken], a
-	ld hl, wPlayerSubStatus5
-	res SUBSTATUS_CANT_RUN, [hl]
+	farcall PeonNewEnemyMonStatusV029
 	ret
 
 ResetEnemyStatLevels:
@@ -3985,7 +4012,7 @@ ResetPlayerStatLevels:
 	xor a
 	ld [wPeonRockbiterCharge], a
 	ld [wPeonLightningShieldCharges], a
-	ld [wPeonEarthTotemActive], a
+	; Earthbind is a battle-field entity: switching an ally does not remove it.
 	ld [wPeonPlayerPoseActive], a
 	ld a, BASE_STAT_LEVEL
 	ld b, NUM_LEVEL_STATS
@@ -5136,8 +5163,9 @@ BattleMenu_PKMN:
 	cp TILESET_PEON
 	jr nz, .original_party
 	call LoadStandardMenuHeader
-	farcall PeonCharacterSheet
-	jp BattleMenu_Pack.didnt_use_item
+	farcall PeonTeamBattleV029
+	jp c, BattleMenu_Pack.didnt_use_item
+	jp TryPlayerSwitch
 .original_party:
 	call LoadStandardMenuHeader
 BattleMenuPKMN_ReturnFromStats:
@@ -5145,6 +5173,12 @@ BattleMenuPKMN_ReturnFromStats:
 	call LoadStandardMenuHeader
 	call ClearBGPalettes
 BattleMenuPKMN_Loop:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original_loop
+	call ExitMenu
+	jp BattleMenu_PKMN
+.original_loop
 	call SetUpBattlePartyMenu_Loop
 	xor a
 	ld [wPartyMenuActionText], a
@@ -5411,6 +5445,13 @@ CheckAmuletCoin:
 	ret
 
 MoveSelectionScreen:
+	; The player action list can follow an enemy turn. Mark only native
+	; menu type 0 as player-owned; type 1 is the actual enemy move list.
+	ld a, [wMoveSelectionMenuType]
+	and a
+	jr nz, .turn_ready
+	call SetPlayerTurn
+.turn_ready
 	call IsMobileBattle
 	jr nz, .not_mobile
 	farcall Mobile_MoveSelectionScreen
@@ -5572,6 +5613,25 @@ MoveSelectionScreen:
 	pop af
 	ret nz
 
+	; Check the shared resource before locking an action or spending a turn.
+	ld hl, wBattleMonMoves
+	ld a, [wMenuCursorY]
+	ld c, a
+	ld b, 0
+	add hl, bc
+	ld a, [hl]
+	ld [wCurPlayerMove], a
+	push bc
+	farcall PeonCanAffordBattleMoveV029
+	ld a, b ; native farcall does not retain A; B is the public status
+	pop bc
+	jr c, .resource_pp_ok
+	and a
+	jr z, .native_pp_check
+	farcall PeonPrintNoResourceV029
+	call SafeLoadTempTilemapToTilemap
+	jp MoveSelectionScreen
+.native_pp_check
 	ld hl, wBattleMonPP
 	ld a, [wMenuCursorY]
 	ld c, a
@@ -5580,6 +5640,7 @@ MoveSelectionScreen:
 	ld a, [hl]
 	and PP_MASK
 	jr z, .no_pp_left
+.resource_pp_ok
 	ld a, [wPlayerDisableCount]
 	swap a
 	and $f
@@ -5722,105 +5783,22 @@ MoveSelectionScreen:
 	jp MoveSelectionScreen
 
 MoveInfoBox:
-	xor a
-	ldh [hBGMapMode], a
-
-	hlcoord 0, 8
-	ld b, 3
-	ld c, 9
-	call Textbox
-	call MobileTextBorder
-
-	ld a, [wPlayerDisableCount]
-	and a
-	jr z, .not_disabled
-
-	swap a
-	and $f
-	ld b, a
-	ld a, [wMenuCursorY]
-	cp b
-	jr nz, .not_disabled
-
-	hlcoord 1, 10
-	ld de, .Disabled
-	call PlaceString
-	jr .done
-
-.not_disabled
-	ld hl, wMenuCursorY
-	dec [hl]
-	call SetPlayerTurn
-	ld hl, wBattleMonMoves
-	ld a, [wMenuCursorY]
-	ld c, a
-	ld b, 0
-	add hl, bc
-	ld a, [hl]
-	ld [wCurPlayerMove], a
-
-	ld a, [wCurBattleMon]
-	ld [wCurPartyMon], a
-	ld a, WILDMON
-	ld [wMonType], a
-	callfar GetMaxPPOfMove
-
-	ld hl, wMenuCursorY
-	ld c, [hl]
-	inc [hl]
-	ld b, 0
-	ld hl, wBattleMonPP
-	add hl, bc
-	ld a, [hl]
-	and PP_MASK
-	ld [wStringBuffer1], a
-	call .PrintPP
-
-	hlcoord 1, 9
-	ld de, .Type
-	call PlaceString
-
-	hlcoord 7, 11
-	ld [hl], '/'
-
-	callfar UpdateMoveData
-	ld a, [wPlayerMoveStruct + MOVE_ANIM]
-	ld b, a
-	hlcoord 2, 10
-	predef PrintMoveType
-
-.done
-	ret
-
-.Disabled:
-	db "Disabled!@"
-.Type:
-	db "TYPE/@"
-
-.PrintPP:
-	farcall PeonPrintUnlimitedMacePP
-	ret c
-	hlcoord 5, 11
-	ld a, [wLinkMode] ; What's the point of this check?
-	cp LINK_MOBILE
-	jr c, .ok
-	hlcoord 5, 11
-.ok
-	push hl
-	ld de, wStringBuffer1
-	lb bc, 1, 2
-	call PrintNum
-	pop hl
-	inc hl
-	inc hl
-	ld [hl], '/'
-	inc hl
-	ld de, wNamedObjectIndex
-	lb bc, 1, 2
-	call PrintNum
+	farcall PeonMoveInfoBoxV029
 	ret
 
 CheckPlayerHasUsableMoves:
+	; Mana/rage actors ignore PP without rewriting the saved spellbook.
+	farcall PeonCheckResourceMovesUsableV029
+	ld a, b
+	and a
+	jr z, .native_usable_moves
+	ld a, c
+	and a
+	ret nz
+	ld a, STRUGGLE
+	ld [wCurPlayerMove], a
+	jr .force_struggle
+.native_usable_moves
 	farcall PeonRestoreMaceCharge
 	ld a, STRUGGLE
 	ld [wCurPlayerMove], a
@@ -6943,6 +6921,12 @@ _LoadBattleFontsHPBar:
 	ret
 
 _LoadHPBar:
+	; Custom Peon TEAM loads field-extra glyphs at $60..$6b. Native party
+	; menus leave those battle glyphs resident, so only Peon needs a full
+	; cache restore on voluntary, forced and offer-switch return paths.
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jp z, _LoadBattleFontsHPBar
 	callfar LoadHPBar
 	ret
 
@@ -7057,7 +7041,9 @@ FinishBattleAnim:
 	ld b, SCGB_BATTLE_COLORS
 	call GetSGBLayout
 	farcall PeonDrawEnemyRankEmblem
+	farcall PeonClearInactiveBattlePetV029
 	farcall PeonDrawBattleTotem
+	farcall PeonDrawBattlePartySidebarV029
 	call SetDefaultBGPAndOBP
 	call DelayFrame
 	pop hl
@@ -7128,7 +7114,16 @@ GiveExperiencePoints:
 	ld a, MON_POKERUS
 	call GetPartyParamLocation
 	ld a, [hl]
+	push af
+	farcall PeonResourceTagIsMetadataV029
+	jr nc, .real_pokerus
+	pop af
+	xor a ; cured-$80 resource tag must not double stat experience
+	jr .pokerus_test_done
+.real_pokerus
+	pop af
 	and a
+.pokerus_test_done
 	pop bc
 	pop hl
 	jr z, .stat_exp_awarded
@@ -8219,9 +8214,13 @@ LoadTrainerOrWildMonPic:
 	ret
 
 InitEnemy:
+	; Reset the field only on initial battle entry, never a pack replacement.
+	xor a
+	ld [wPeonEarthTotemActive], a
 	ld a, [wOtherTrainerClass]
 	and a
 	jp nz, InitEnemyTrainer ; trainer
+	farcall PeonPreparePackEnemyV029
 	jp InitEnemyWildmon ; wild
 
 BackUpBGMap2:

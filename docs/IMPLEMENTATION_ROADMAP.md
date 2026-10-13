@@ -1,5 +1,22 @@
 # Peon of Warcraft implementation status
 
+The current playable release is **v0.2.9**. Its exact-ROM manifest and native
+reports certify the delivered binary. Shared mana/rage, actual two-to-three
+member parties, class-specific reusable recruitment items, six additional
+animated roles and successive enemy packs are implemented. The seven-region
+layout now uses real partial-cliff collisions and 76 bounded Continue landing
+entries. See [current build scope](V0_2_9_PLAYABLE_BUILD.md),
+[stability validation](QA_STABILITY_V029.md), [resource storage](RESOURCE_STORAGE_V029.md)
+and [party/capture design](TEAM_RECRUITMENT_V029.md).
+
+Remaining major work includes independent hero stat curves and further ordinary
+balance tests near Sen'jin, a complete equipment system, wider Classic quest
+progression, larger world coverage and physical Chromatic/cartridge testing.
+The native battle still has one active fighter and four actions; true multi-save
+and simultaneous multi-actor combat are not implemented.
+
+## Historical v0.2.5 baseline
+
 This describes the actual v0.2.5 scope. Native ROM behavior and exact-hash
 validation determine completion; large concepts and prepared PNGs alone do
 not. See `V0_2_5_ENVIRONMENT.md` for play, saves and explicit prototype limits.

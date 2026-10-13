@@ -127,6 +127,7 @@ PeonDrawAtlasQuests::
 	call .CaveEntranceObjective
 	call .FamiliarsObjectives
 .submit:
+	call .RecruitmentObjective
 	xor a
 	ldh [hOAMUpdate], a
 	call DelayFrame
@@ -463,6 +464,63 @@ PeonDrawAtlasQuests::
 	ret nz
 	lb de, 10, 8
 	jp .Objective
+.RecruitmentObjective:
+	ld de, EVENT_PEON_RECRUIT_DONE_V029
+	call .Flag
+	ret nz
+	ld de, EVENT_PEON_RECRUIT_ACCEPTED_V029
+	call .Flag
+	ret z
+	ld de, EVENT_PEON_RECRUIT_CAPTURED_V029
+	call .Flag
+	jr nz, .RecruitmentTurnIn
+	; All three targets belong to the seven-sector Valley overview.
+	; ProjectForMap retains its ordinary discovery/fog check.
+	ld a, [wMenuCursorY]
+	cp 1
+	ret nz
+	ld de, EVENT_PEON_WARLOCK
+	call .Flag
+	jr nz, .RecruitmentDemon
+	ld de, EVENT_PEON_WARRIOR
+	call .Flag
+	jr nz, .RecruitmentGrunt
+	lb de, 5, 3 ; Earth Spirit world Y/X
+	ld b, MAP_PEON_VALLEY_CROSSROADS
+	jp .ObjectiveAtMap
+.RecruitmentGrunt:
+	lb de, 6, 3
+	ld b, MAP_PEON_HANAZUA_CAMP
+	jp .ObjectiveAtMap
+.RecruitmentDemon:
+	lb de, 7, 7
+	ld b, MAP_PEON_CAVE_APPROACH
+	jp .ObjectiveAtMap
+.RecruitmentTurnIn:
+	ld a, [wMenuCursorY]
+	cp 1
+	jr z, .RecruitmentMaster
+	and a
+	ret nz ; Den regional page or Valley overview only
+.RecruitmentMaster:
+	ld de, EVENT_PEON_WARLOCK
+	call .Flag
+	jr nz, .RecruitmentWarlockMaster
+	ld de, EVENT_PEON_WARRIOR
+	call .Flag
+	jr nz, .RecruitmentWarriorMaster
+	lb de, 12, 6
+	jr .RecruitmentMasterPoint
+.RecruitmentWarriorMaster:
+	lb de, 13, 3
+	jr .RecruitmentMasterPoint
+.RecruitmentWarlockMaster:
+	lb de, 16, 3
+.RecruitmentMasterPoint:
+	ld b, MAP_THE_DEN
+	ld a, 2 ; yellow turn-in question mark
+	jp .GiverAtMap
+
 ; State 0 offered, 1 active, 2 ready to turn in, 3 already completed.
 .GornekReportState:
 	ld de, EVENT_PEON_MAP_RECEIVED

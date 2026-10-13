@@ -1,0 +1,3152 @@
+{
+  "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "symbols_sha256": "87226ec5c81393762a3f7b2f6b11e43e68e0fc687b8cc3c0d22c3a74e25b2376",
+  "passed": true,
+  "status": "PASS",
+  "user_battery_files_opened": false,
+  "fixture": "Private native-saved level8/80HP custom-stat records and map placement; actual game scripts/menus thereafter.",
+  "ordinary_progression_claimed": false,
+  "cases": {
+    "kolkar_full": {
+      "native_members": [
+        [
+          77,
+          7
+        ],
+        [
+          78,
+          8
+        ]
+      ],
+      "player_state_unchanged_during_each_replacement": [
+        {
+          "species": 77,
+          "level": 7,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  100
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  100
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        },
+        {
+          "species": 78,
+          "level": 8,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  74
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  85
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  238
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 1
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  74
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  85
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  238
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 1
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        }
+      ],
+      "xp_once_per_member": 2,
+      "copper_once": 60,
+      "one_rare_loot_roll_only_after_complete_win": true,
+      "native_item_field_totem_persists_through_ally_switches_and_next_enemy": true,
+      "native_save_cold_continue_and_no_repeat_encounter_or_rewards": true,
+      "forbidden_trainer_or_ball_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      },
+      "consecutive_OAM_frames": 7265,
+      "peak_OBJ_per_scanline": 8,
+      "native_group_heads_and_HP_bars": [
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              138,
+              142,
+              139,
+              128,
+              145,
+              130,
+              135,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                135,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              138,
+              142,
+              139,
+              128,
+              145,
+              130,
+              135,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                135,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 1,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              138,
+              142,
+              139
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                135,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                132,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                14,
+                7,
+                135,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                146,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                147,
+                156
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 0,
+              "species": 66,
+              "hp": 76,
+              "max_hp": 80,
+              "four_segment_bar": 3
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              138,
+              142,
+              139
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                135,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 238,
+              "max_hp": 240,
+              "four_segment_bar": 3
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              138,
+              142,
+              139
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                136,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 238,
+              "max_hp": 240,
+              "four_segment_bar": 3
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        }
+      ],
+      "private_report_unlocked_three_member_sidebar_fixture": false
+    },
+    "cave_full": {
+      "native_members": [
+        [
+          88,
+          4
+        ],
+        [
+          74,
+          4
+        ]
+      ],
+      "player_state_unchanged_during_each_replacement": [
+        {
+          "species": 88,
+          "level": 4,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  100
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  100
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        },
+        {
+          "species": 74,
+          "level": 4,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  79
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  85
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  79
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  85
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  0
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        }
+      ],
+      "xp_once_per_member": 2,
+      "copper_once": 25,
+      "one_rare_loot_roll_only_after_complete_win": true,
+      "native_item_field_totem_persists_through_ally_switches_and_next_enemy": false,
+      "native_save_cold_continue_and_no_repeat_encounter_or_rewards": true,
+      "forbidden_trainer_or_ball_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      },
+      "consecutive_OAM_frames": 3560,
+      "peak_OBJ_per_scanline": 8,
+      "native_group_heads_and_HP_bars": [
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              142,
+              145,
+              130,
+              150,
+              128,
+              139,
+              138,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                150,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                139,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                142,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                138,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              142,
+              145,
+              130,
+              150,
+              128,
+              139,
+              138,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                150,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                139,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                142,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                138,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              142,
+              145,
+              130,
+              150,
+              128,
+              139,
+              138,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132,
+              140,
+              141,
+              136
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                131,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                132,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                140,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                142,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                141,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                136,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                140,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        }
+      ],
+      "private_report_unlocked_three_member_sidebar_fixture": false
+    },
+    "road_full": {
+      "native_members": [
+        [
+          27,
+          6
+        ],
+        [
+          27,
+          7
+        ],
+        [
+          158,
+          7
+        ]
+      ],
+      "player_state_unchanged_during_each_replacement": [
+        {
+          "species": 27,
+          "level": 6,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  102
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  80
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  102
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        },
+        {
+          "species": 27,
+          "level": 7,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  78
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  87
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  78
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  87
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        },
+        {
+          "species": 158,
+          "level": 7,
+          "party_before_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  78
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  72
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "party_after_enemy_init": {
+            "party": [
+              {
+                "species": 66,
+                "hp": [
+                  0,
+                  78
+                ],
+                "max_hp": [
+                  0,
+                  80
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  72
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  240
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              },
+              {
+                "species": 95,
+                "hp": [
+                  0,
+                  120
+                ],
+                "max_hp": [
+                  0,
+                  240
+                ],
+                "status": 0,
+                "resource": [
+                  0,
+                  2
+                ]
+              }
+            ],
+            "field_totem": 0
+          },
+          "native_wild_mode": true,
+          "no_intermediate_heal_or_refill": true
+        }
+      ],
+      "xp_once_per_member": 3,
+      "copper_once": 75,
+      "one_rare_loot_roll_only_after_complete_win": true,
+      "native_item_field_totem_persists_through_ally_switches_and_next_enemy": false,
+      "native_save_cold_continue_and_no_repeat_encounter_or_rewards": true,
+      "forbidden_trainer_or_ball_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      },
+      "consecutive_OAM_frames": 5037,
+      "peak_OBJ_per_scanline": 8,
+      "native_group_heads_and_HP_bars": [
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 13,
+            "cache_codes": [
+              146,
+              130,
+              142,
+              145,
+              143,
+              136,
+              131,
+              234,
+              174,
+              173,
+              128,
+              129,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                146,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                130,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                142,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                145,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                143,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                136,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                158
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            },
+            {
+              "party_index": 2,
+              "species": 95,
+              "hp": 120,
+              "max_hp": 240,
+              "four_segment_bar": 2
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 13,
+            "cache_codes": [
+              146,
+              130,
+              142,
+              145,
+              143,
+              136,
+              131,
+              234,
+              174,
+              173,
+              128,
+              129,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                146,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                130,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                142,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                145,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                143,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                136,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                158
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            },
+            {
+              "party_index": 2,
+              "species": 95,
+              "hp": 120,
+              "max_hp": 240,
+              "four_segment_bar": 2
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 13,
+            "cache_codes": [
+              146,
+              130,
+              142,
+              145,
+              143,
+              136,
+              131,
+              234,
+              174,
+              173,
+              128,
+              129,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                146,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                130,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                142,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                145,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                143,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                136,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                158
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            },
+            {
+              "party_index": 2,
+              "species": 95,
+              "hp": 120,
+              "max_hp": 240,
+              "four_segment_bar": 2
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              146,
+              130,
+              142,
+              145,
+              143,
+              136,
+              131,
+              234,
+              174,
+              173,
+              128,
+              129,
+              132,
+              147
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                145,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                128,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                143,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                147,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                142,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                158
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            },
+            {
+              "party_index": 2,
+              "species": 95,
+              "hp": 120,
+              "max_hp": 240,
+              "four_segment_bar": 2
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        }
+      ],
+      "private_report_unlocked_three_member_sidebar_fixture": true
+    },
+    "road_lowlevel_visibility": {
+      "private_native_saved_level2_then_level8": true,
+      "level2_native_callback_hides_internal_map_object8": true,
+      "level8_native_callback_restores_pack": true,
+      "transient_hide_preserves_saved_retirement_flags": true
+    },
+    "kolkar_partial_flee": {
+      "native_enemy_entries": [
+        [
+          77,
+          7
+        ],
+        [
+          78,
+          8
+        ],
+        [
+          78,
+          8
+        ]
+      ],
+      "first_member_retired_before_flee_and_cold_continue": true,
+      "cold_return_starts_only_surviving_member": true,
+      "xp_calls_total_two_not_three": 2,
+      "no_loot_or_copper_on_flee_one_reward_after_final_win": true,
+      "forbidden_trainer_or_ball_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      }
+    },
+    "kolkar_partial_loss": {
+      "fixture": "After the first real KO, only private caster HP=1 and harmless move replaced to force loss.",
+      "real_native_loss_and_hearth_recovery": true,
+      "first_member_retirement_survives_loss_native_save_cold_continue": true,
+      "remaining_enemy_only_no_repeated_xp_or_reward": true,
+      "forbidden_trainer_or_ball_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      }
+    },
+    "kolkar_mutual_faint": {
+      "fixture": "Private hero/first-target HP1 plus Selfdestruct120; native action and forced-switch controls.",
+      "next_live_enemy_loaded_before_forced_ally_choice": true,
+      "native_team_ally_switch_hero_slot_not_reordered": true,
+      "active_earth_spirit_species": 95,
+      "remaining_raider_species": 78,
+      "earth_ally_completes_native_WIN_without_trainer_transition": true,
+      "xp_calls_total_two_copper60_and_one_loot_roll_only_on_final_win": true,
+      "forbidden_empty_enemy_trainer_party_switch_calls": {
+        "InitEnemyTrainer": 0,
+        "WinTrainerBattle": 0,
+        "EnemySwitch": 0,
+        "EnemySwitch_SetMode": 0,
+        "ShowBattleTextEnemySentOut": 0,
+        "PokeBallEffect": 0
+      },
+      "consecutive_OAM_frames": 3083,
+      "peak_OBJ_per_scanline": 10,
+      "native_group_heads_and_HP_bars": [
+        {
+          "active_index": 0,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              138,
+              142,
+              139,
+              128,
+              145,
+              130,
+              135,
+              143,
+              234,
+              174,
+              173,
+              129,
+              131,
+              132
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                147
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                148
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                128,
+                149
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                145,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                130,
+                151
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                135,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                159
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 1,
+              "species": 95,
+              "hp": 240,
+              "max_hp": 240,
+              "four_segment_bar": 4
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        },
+        {
+          "active_index": 1,
+          "native_battle_font_packet_exact": true,
+          "live_bold_name_glyphs": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              138,
+              142,
+              139
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                142,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                139,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                138,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                136,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                132,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                14,
+                7,
+                135,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                146,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                147,
+                156
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          },
+          "displayed": [
+            {
+              "party_index": 0,
+              "species": 66,
+              "hp": 0,
+              "max_hp": 80,
+              "four_segment_bar": 0
+            }
+          ],
+          "real_bank1_packet_and_RGB555_pixels_exact": true,
+          "additional_OAM_objects": 0
+        }
+      ],
+      "private_report_unlocked_three_member_sidebar_fixture": true
+    }
+  }
+}

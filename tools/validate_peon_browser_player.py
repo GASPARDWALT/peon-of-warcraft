@@ -189,7 +189,11 @@ class BrowserSession:
                 named = True
             self.press("a")
         assert selected and named and self.overworld(), ("intro incomplete", selected, named, self.read_many((("wScriptMode", 1), ("wMapGroup", 2))))
-        assert self.read("wPartyCount") == [1]
+        expected_count = 2 if self.character_class == "warlock" and "PeonInitializeTeamV029" in self.sym else 1
+        assert self.read("wPartyCount") == [expected_count]
+        if expected_count == 2:
+            assert self.read("wPartyMon2Species") == [74]
+            assert self.read("wPartyMon2Moves", 4) == [10, 53, 0, 0]
         assert self.read("wPartyMon1Moves", 4) == self.class_spec["moves"]
         assert self.event("EVENT_PEON_SHAMAN")
         assert self.event("EVENT_PEON_WARRIOR") == (self.character_class == "warrior")

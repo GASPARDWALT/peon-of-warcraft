@@ -198,6 +198,8 @@ LoadFrontpicTiles:
 GetMonBackpic:
 	farcall PeonTryLoadClassBattleBackpic
 	ret c
+	farcall PeonTryLoadActiveAllyBackpicV029
+	ret c
 	ld a, [wCurPartySpecies]
 	call IsAPokemon
 	ret c

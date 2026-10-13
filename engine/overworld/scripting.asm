@@ -1139,6 +1139,10 @@ Script_loadtemptrainer:
 	ret
 
 Script_loadwildmon:
+	; Explicit pact scripts set this again after their loadwildmon command.
+	; Ordinary hostile encounters must never inherit a prior pact target.
+	xor a
+	ld [wPeonRecruitNodeObjectV029], a
 	ld a, (1 << 7)
 	ld [wBattleScriptFlags], a
 	call GetScriptByte
@@ -1200,6 +1204,7 @@ Script_reloadmapafterbattle:
 	jp Script_reloadmap
 
 Script_reloadmap:
+	farcall PeonRefreshLivingFollowerV029
 	xor a
 	ld [wBattleScriptFlags], a
 	ld a, MAPSETUP_RELOADMAP

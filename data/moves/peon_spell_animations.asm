@@ -24,6 +24,10 @@ BattleAnim_PeonEarthShock:
 	anim_ret
 
 BattleAnim_PeonFlameShock:
+	; Actual FX52 dispatch targets this class-authored animation entry.
+	; Tokens are issued only for an imp's id53, preserving Flame Shock.
+	anim_if_param_equal $fd, BattleAnim_PeonActiveImpFireboltV029
+	anim_if_param_equal $fb, BattleAnim_PeonEnemyImpFireboltV029
 	anim_1gfx BATTLE_ANIM_GFX_PEON_NATURE
 	anim_sound 0, 1, SFX_EMBER
 	anim_obj BATTLE_ANIM_OBJ_PEON_FIRE, 120, 64, $0
@@ -161,6 +165,7 @@ BattleAnim_PeonRend:
 	anim_ret
 
 BattleAnim_PeonShadowBolt:
+	anim_if_param_equal $fc, BattleAnim_PeonEnemyShadowBoltV029
 	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
 	anim_sound 6, 2, SFX_SLUDGE_BOMB
 	; The original egg-shaped ball becomes a pulsing, trailing shadow bolt.
@@ -202,4 +207,47 @@ BattleAnim_PeonCurse:
 	anim_wait 8
 	anim_obj BATTLE_ANIM_OBJ_SMOKE, 140, 56, $20
 	anim_wait 24
+	anim_ret
+
+; Four-phase two-tile bow projectile. Native enemy mirroring carries it from
+; the archer toward the player's body; all objects remain in ordinary FX VRAM.
+BattleAnim_PeonKolkarArrowV029:
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_PECK
+	anim_obj BATTLE_ANIM_OBJ_PEON_SHADOW_BOLT_V026, 64, 104, $2
+	anim_wait 50
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 128, 48, $0
+	anim_wait 8
+	anim_ret
+
+; A true active imp casts from its large rear silhouette, rather than from
+; the small passive helper footprint. One fireball uses the same four phases.
+BattleAnim_PeonActiveImpFireboltV029:
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj BATTLE_ANIM_OBJ_PEON_FIREBOLT_V026, 56, 80, $2
+	anim_wait 42
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 128, 48, $0
+	anim_wait 8
+	anim_ret
+
+; Enemy casters launch from their actual left hand/staff at screen x108,
+; y24..28. Native OAM_XFLIP reflects the four phases, and diagonal motion
+; travels two pixels left / one down per frame into the player's silhouette.
+BattleAnim_PeonEnemyShadowBoltV029:
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
+	anim_sound 6, 2, SFX_SLUDGE_BOMB
+	anim_obj BATTLE_ANIM_OBJ_PEON_SHADOW_BOLT_V026, 64, 100, $2
+	anim_wait 40
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 128, 48, $0
+	anim_wait 8
+	anim_ret
+
+BattleAnim_PeonEnemyImpFireboltV029:
+	anim_2gfx BATTLE_ANIM_GFX_PEON_PROJECTILES_V026, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 1, SFX_EMBER
+	anim_obj BATTLE_ANIM_OBJ_PEON_FIREBOLT_V026, 64, 100, $2
+	anim_wait 40
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 128, 48, $0
+	anim_wait 8
 	anim_ret

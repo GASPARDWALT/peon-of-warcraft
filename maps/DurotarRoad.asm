@@ -7,6 +7,7 @@
 	const ROAD_HARPY
 	const ROAD_CRAWLER
 	const ROAD_SCORPID_PACK
+	EXPORT ROAD_SCORPID_PACK
 
 DurotarRoad_MapScripts:
 	def_scene_scripts
@@ -24,6 +25,7 @@ DurotarRoadScorpidPackVisibility:
 	checkevent EVENT_PEON_ROAD_SCORPID_PACK_DEAD
 	iftrue .Hide
 	appear ROAD_SCORPID_PACK
+	callasm PeonHideRoadPackOnOccupiedSpawnV029
 	endcallback
 .Hide:
 	callasm DurotarRoadHideScorpidPack
@@ -32,34 +34,17 @@ DurotarRoadScorpidPackVisibility:
 ; Transient hide only: the script disappear command would set the linked
 ; DEAD event and permanently delete an unseen pack for a low-level character.
 DurotarRoadHideScorpidPack:
-	ld a, ROAD_SCORPID_PACK
+	ld a, ROAD_SCORPID_PACK - 1 ; raw map index, not script object ID
 	jp DeleteObjectStruct
 
-; A visible pack is two consecutive 1v1 fights, never a doubles battle.
-; FIRST remembers the first kill if the apprentice loses the second fight.
+ ; One native wild encounter, three successive foes. Partial killed members
+; are remembered by the battle helper; only the full WIN retires this object.
 DurotarScorpidPackScript:
 	checkevent EVENT_PEON_ROAD_SCORPID_PACK_DEAD
 	iftrue .Done
 	readmem wPartyMon1Level
 	ifless 4, .Done
-	faceplayer
-	checkevent EVENT_PEON_ROAD_SCORPID_PACK_FIRST
-	iftrue .Second
-	loadwildmon SANDSHREW, 4
-	loadmem wBattleType, BATTLETYPE_CANLOSE
-	startbattle
-	reloadmap
-	readmem wBattleResult
-	ifequal LOSE, .Lost
-	ifnotequal WIN, .Done
-	setevent EVENT_PEON_ROAD_SCORPID_PACK_FIRST
-	farscall PeonRarePotionLootScript
-	opentext
-	writetext DurotarScorpidSecondText
-	waitbutton
-	closetext
-.Second:
-	loadwildmon SANDSHREW, 4
+	loadwildmon SANDSHREW, 6
 	loadmem wBattleType, BATTLETYPE_CANLOSE
 	startbattle
 	reloadmap
@@ -68,7 +53,7 @@ DurotarScorpidPackScript:
 	ifnotequal WIN, .Done
 	setevent EVENT_PEON_ROAD_SCORPID_PACK_DEAD
 	disappear ROAD_SCORPID_PACK
-	givemoney YOUR_MONEY, 40
+	givemoney YOUR_MONEY, 75
 	farscall PeonRarePotionLootScript
 	opentext
 	writetext DurotarScorpidPackLootText
@@ -89,7 +74,7 @@ DurotarScorpidSecondText:
 DurotarScorpidPackLootText:
 	text "Scorpid pack"
 	line "defeated!"
-	para "40 copper found."
+	para "75 copper found."
 	done
 
 DurotarRoadGuideScript:
@@ -155,6 +140,10 @@ DurotarRoad_MapEvents:
 	warp_event 12, 24, SENJIN_VILLAGE, 1
 	warp_event 12, 4, RAZOR_HILL, 1
 	def_coord_events
+	coord_event 12, 23, -1, DurotarScorpidPackScript
+	coord_event 11, 24, -1, DurotarScorpidPackScript
+	coord_event 13, 24, -1, DurotarScorpidPackScript
+	coord_event 12, 25, -1, DurotarScorpidPackScript
 	coord_event 16, 17, -1, DurotarScorpidPackScript
 	coord_event 17, 16, -1, DurotarScorpidPackScript
 	coord_event 16, 15, -1, DurotarScorpidPackScript
@@ -176,7 +165,7 @@ DurotarRoad_MapEvents:
 	object_event 18, 8, PEON_SPRITE_RAPTOR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DurotarRaptorScript, EVENT_PEON_ROAD_RAPTOR_DEAD
 	object_event 5, 22, PEON_SPRITE_HARPY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DurotarHarpyScript, EVENT_PEON_ROAD_HARPY_DEAD
 	object_event 18, 23, PEON_SPRITE_CRAWLER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, DurotarCrawlerScript, EVENT_PEON_COAST_CRAWLER_DEAD
-	object_event 16, 16, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DurotarScorpidPackScript, EVENT_PEON_ROAD_SCORPID_PACK_DEAD
+	object_event 12, 22, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, DurotarScorpidPackScript, EVENT_PEON_ROAD_SCORPID_PACK_DEAD
 
 DurotarTigerScript:
 	checkevent EVENT_PEON_ROAD_TIGER_DEAD

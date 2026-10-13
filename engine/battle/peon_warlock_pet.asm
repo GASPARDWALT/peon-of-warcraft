@@ -60,7 +60,9 @@ PeonWarlockBattlePetEnabled::
 	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr z, .no
-	scf
+	push hl
+	farcall PeonImpMayAssistV029
+	pop hl
 	ret
 .no:
 	and a
@@ -220,6 +222,8 @@ PeonTintShadowBoltParticle::
 	and a
 	jr nz, .done
 	ld a, [wFXAnimID]
+	cp PECK
+	jr z, .arrow
 	cp POUND
 	jr z, .wand
 	cp SHADOW_BALL
@@ -227,10 +231,23 @@ PeonTintShadowBoltParticle::
 	cp NIGHT_SHADE
 	jr nz, .done
 .shadow:
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .player_shadow
+	ld a, [wEnemyMonSpecies]
+	cp PEON_MOB_CULTIST
+	jr z, .shadow_palette
+.player_shadow
 	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr z, .done
+ .shadow_palette
 	ld hl, .Palette
+	jr .tint
+.arrow:
+	farcall PeonIsKolkarArrowAnimationV029
+	jr nc, .done
+	ld hl, .ArrowPalette
 	jr .tint
 .wand:
 	farcall PeonIsWarlockWandAnimation
@@ -255,6 +272,8 @@ PeonTintShadowBoltParticle::
 	RGB 31,31,31, 26,13,31, 12,3,18, 3,1,5
 .WandPalette:
 	RGB 31,31,31, 25,30,31, 11,18,27, 3,5,12
+.ArrowPalette:
+	RGB 31,31,31, 25,21,14, 15,10,5, 2,2,2
 
 PeonPetBattleTiles:
 	INCBIN "gfx/peon_pets_v026/combat_imp_v026.2bpp"

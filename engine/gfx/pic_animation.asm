@@ -815,7 +815,9 @@ PokeAnim_PlaceGraphic:
 	ld l, a
 	ld b, 7
 	ld c, 7
-	call ClearBox
+	; This is picture storage, not styled text; retain animation bank attrs.
+	ld a, ' '
+	call FillBoxWithByte
 	ret
 
 PokeAnim_SetVBank1:

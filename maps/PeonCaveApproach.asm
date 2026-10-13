@@ -21,6 +21,10 @@ PeonApproachImp1Script:
 PeonApproachImp2Script:
 	farsjump ValleyCaveApproachImp2Script
 
+; Object scripts use this map event bank.
+PeonApproachNeutralImpScript:
+	farsjump PeonNeutralImpNodeV029
+
 PeonCaveApproach_MapEvents:
 	db 0, 0
 	def_warp_events
@@ -37,7 +41,7 @@ PeonCaveApproach_MapEvents:
 	coord_event 6, 5, -1, PeonApproachImp2Script
 	def_bg_events
 	def_object_events
-	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
+	object_event 7, 7, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PeonApproachNeutralImpScript, EVENT_PEON_RECRUIT_IMP1_DONE_V029
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1

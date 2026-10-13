@@ -23,6 +23,10 @@ PeonHanazuaCampMarkers:
 PeonCampHanazuaScript:
 	farsjump ValleyHanazuaScript
 
+; Object scripts use this map event bank.
+PeonCampGruntRecruitScript:
+	farsjump PeonOrcGruntNodeV029
+
 PeonHanazuaCamp_MapEvents:
 	db 0, 0
 	def_warp_events
@@ -31,7 +35,7 @@ PeonHanazuaCamp_MapEvents:
 	def_coord_events
 	def_bg_events
 	def_object_events
-	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
+	object_event 3, 6, PEON_SPRITE_ORC_GRUNT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PeonCampGruntRecruitScript, EVENT_PEON_RECRUIT_GRUNT1_DONE_V029
 	object_event 3, 4, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PeonCampHanazuaScript, -1
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1

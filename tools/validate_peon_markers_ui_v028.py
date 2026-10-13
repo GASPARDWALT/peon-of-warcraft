@@ -246,7 +246,12 @@ def main():
     parser.add_argument('--symbols',type=Path,default=ROOT/'pokecrystal.sym')
     parser.add_argument('--output',type=Path,default=OUT)
     args=parser.parse_args();OUT=args.output.resolve();OUT.mkdir(parents=True,exist_ok=True)
-    assert ROOT/'references/generated/polish_v028' in OUT.parents or OUT==ROOT/'references/generated/polish_v028'
+    allowed = (ROOT/'references/generated/polish_v028', ROOT/'references/generated/stability_v029')
+    assert any(OUT == base or base in OUT.parents for base in allowed), 'Use a versioned native evidence directory'
+    if allowed[0] in OUT.parents:
+        manifest = ROOT/'releases/v0.2.8/manifest.json'
+        if manifest.exists():
+            assert args.expected_rom_sha256 == json.loads(manifest.read_text())['rom_sha256'], 'Preserve published v028 evidence'
     logging.disable(logging.CRITICAL)
     assert digest(args.rom.read_bytes())==args.expected_rom_sha256
     report={'rom_sha256':args.expected_rom_sha256,'symbols_sha256':digest(args.symbols.read_bytes()),

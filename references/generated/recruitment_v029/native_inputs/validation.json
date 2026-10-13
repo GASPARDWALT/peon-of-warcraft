@@ -1,0 +1,595 @@
+{
+  "passed": true,
+  "source_inputs_only": true,
+  "runtime_integration_verified": false,
+  "species_bindings": {
+    "onix": {
+      "source_art": "earth_spirit",
+      "dictionary_tiles": 89,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "37d148c40164cb953dd14ecb063b403488f29d75398809087683054b1082c66c"
+        },
+        "back.2bpp.lz": {
+          "bytes": 275,
+          "sha256": "939f417dc9e13ee77fea96d5a884a45ee888d014280ec5cc739127d0f6755f68"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "b8dc915970952730a5cf7e7ca9cf23586cd45d6f236b167fad6eb0baddb7d9b4"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "6395e10a0f0b99a095b398bf5a0050b25241dc502fe488311d1e921610203231"
+        },
+        "frames.asm": {
+          "bytes": 321,
+          "sha256": "d34f628418cf8e6270efedaae4ba762b669e286413a067db5a14cd988d1e21b2"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "6230833f7cf758e60b57d3c3335dcfc7ddbb8de7d9300c1967b5fd4dea9f4137"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1424,
+          "sha256": "156823b69e3a5c45048676acb9237896baf00c19d65c70eea0900fa5f4caa299"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 518,
+          "sha256": "bd62e1e02817f128c18fba5d526ce899103820451a0adbebc0160aa829153a11"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "a01b42201065b38fbcb32656b717a27c87198158ee66eb74be483d869ab568cc"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "1f407002e145177bb239bc81755cbcc2e88e6e94314d0cb4ec3a1915b1dff478"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "f0a940cf163f108f68cbda23b5fda643f14fb98b9cbfafb23f0db676c0c427b5"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "f0a940cf163f108f68cbda23b5fda643f14fb98b9cbfafb23f0db676c0c427b5"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "485ae7bb7f2b826acc4ebe24ca5f2b8f8e4ffcff8a52845db87478d78ee9fcbd"
+        }
+      }
+    },
+    "geodude": {
+      "source_art": "demon_imp",
+      "dictionary_tiles": 77,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "eebde01f8204856c7f5a277c0b70ffe9b115cfe1d136a7fefb0a8b81ce337ec2"
+        },
+        "back.2bpp.lz": {
+          "bytes": 282,
+          "sha256": "eb37be5b7b3dcedaa7f2dc65db23060e1695d978356a992ab7dc60745936d441"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "e4ae93093f2ec0d274065d946cde1526866dd38aec0f34dce0e112a7983f9737"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "9e93a0285c8a7f8192c1048f3ab1ac76274bdc5d1bd506f98b01ecc37dcf89ae"
+        },
+        "frames.asm": {
+          "bytes": 235,
+          "sha256": "ca171eabd6629b0f1b92a33af9937a209cccedfb9736aea8702f42aae4a7b8a7"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "42d68c86a7e865b8ec626a669e4bd96a3f9b196180417a5c23414dcfc2615bd3"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1232,
+          "sha256": "b8d005594765a30054a3c6a8fa81a57b8cc362aaa02eee88a3154d092289e8ab"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 526,
+          "sha256": "4e911a971e7852da7badbcbd62300f05890745ee6269c33394b15f39ff1c7a61"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "ae89a60f7ef3b739277717eab51ac69f5ad4d5f8b0c546bf3164e6fb0f01dbf0"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "6817b7c38e89b3b64558763041f00ea4037ef6c31e44ce1f06aabed2e96b071f"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "3de73bda84567aa88d32df82e81b657daddbb14952954dafb52d6df81b6331a4"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "3de73bda84567aa88d32df82e81b657daddbb14952954dafb52d6df81b6331a4"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "6f432104ce9aeafd1a06ae535b9defde8a9c24318b135d81fa67cbd01df4e42d"
+        }
+      }
+    },
+    "machamp": {
+      "source_art": "orc_grunt",
+      "dictionary_tiles": 93,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "0929fcf4f8f60ad5ae459330e91101c56fa7c0d397a7d4eb9da9d6433d131aba"
+        },
+        "back.2bpp.lz": {
+          "bytes": 348,
+          "sha256": "487d8355705699bfb4a2c6063e384c339d5b897842f7e807cacfd9f7c345a743"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "ff5fc092fea4b0d7ad256d2ab0e3b8d844f99bdb172831c37b98ff561284c4c4"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "9e85bd8b46a45fc183f9ec4f7b505476c0e4f34e45401abd314bc03742d84751"
+        },
+        "frames.asm": {
+          "bytes": 336,
+          "sha256": "81b54d2e99f93b2861fb8d5abd959742fe2427dd775145ddb7b9c99e8d6c6e98"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "d2e5dd423a08ac8ad4cc47f099c18459ecbdd81c4b62d97be7a5db79e56bf332"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1488,
+          "sha256": "4521d8644b5ff1e3a581709fd02456e4fc8705717a7da537386fdd8f6c00274d"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 679,
+          "sha256": "385e95541cffca23b6853468a8f2bf88187426a521950235e2f0d158a450c668"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "c0b798d6c4a878d3de8d4e07fe9c9305ab2e2da2695f34de6f3d70dddcb24bf8"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "cb90a26ef359840d66ea93a46d4df9eff03bae8421c928f4039bafed69b47efa"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "cb90a26ef359840d66ea93a46d4df9eff03bae8421c928f4039bafed69b47efa"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "825a99c3deddd36c77dfef107678affdc24362ca3668fccb736aeeba3969d70b"
+        }
+      }
+    },
+    "grimer": {
+      "source_art": "orc_warlock",
+      "dictionary_tiles": 87,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "65bc884a8aa736090daf3867c6cf8951bdeee50fd33e773a6d54de455204a8e0"
+        },
+        "back.2bpp.lz": {
+          "bytes": 348,
+          "sha256": "cc33d69385af8dd4ad924572083819dfcd33b96f6e67572848b31ea77ae294bc"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "b5d4d9792eab59ceb1910170e93441b9382f75ab21e1763c77eeebd5eb1a8d4f"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "da45163595d9f975db45b0a086dbc9f030ca5e1b79bb95317dff4357a9a7ecdd"
+        },
+        "frames.asm": {
+          "bytes": 316,
+          "sha256": "e5136951bd9887158ee5bd76741ae344ca79046baea2ea24fd75e4425de0a624"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "03d01178c9e1961056442f9563ce10c1335fb2edc5a0ad890526c81c778687d1"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1392,
+          "sha256": "045fab5438f3bff14991a2121c794f2b537b53688919972682a70ea6fe2d9d75"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 646,
+          "sha256": "c2676df15e03a491a9aa04caca1734c1926c4b0451b5831a2b83b20c33a4fcde"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "e78d94ec88f4f2094f7668e438c1b191a65a8bca0821c2dd2e746f5ac3312d84"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "7ef98fd46641c32ba11ee77b9bbf4cffb9652408c65b1cbde5c9705ef2404c96"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "4ce4739306d9ad75aaebf8eede95aa1efac6619f769aa29bcd690537e7b21a12"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "4ce4739306d9ad75aaebf8eede95aa1efac6619f769aa29bcd690537e7b21a12"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "c11883afee5d23e559b6d788176607f4742b160a14d82549f00d83e102e469a5"
+        }
+      }
+    },
+    "ponyta": {
+      "source_art": "kolkar_archer",
+      "dictionary_tiles": 79,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "f460a53e8debafbbbd3431d90350e08ae8011cec257cde3dad89c9ca4cfc4177"
+        },
+        "back.2bpp.lz": {
+          "bytes": 314,
+          "sha256": "a3aa6b2e2ec3a81d22289e87f83e63c0f6281e1189f7c1ab5814cb0e67dc7ac8"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "d73478f6c212b9366521a39f9a64ba653378f850fe78f828b7e20867fbd0a5ef"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "4c029043c39812644a734ac5fdca6435e79941dff61b7e36721b8c8b971afbfb"
+        },
+        "frames.asm": {
+          "bytes": 243,
+          "sha256": "b4d38e5ed7b81a0fb8a288ea19f119768780f5a90977ea0bf0b06c36badb3edd"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "11a64924855a9809eddbe121b9321580f2c26734dd556e94ffffacc13305b23a"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1264,
+          "sha256": "ed9e2a155bc48364097b42b8145eea6055636701279e77e691ed736c0b4eb86d"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 540,
+          "sha256": "9773121aa0829d6a793ccd18462bc9c70914b8917015b43727143283f3fb9b5a"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "221f906a2578af05284a3a527f8c5f424e5663be19db87d6af46cab530722520"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "6f06bf89fc938ee4462129a4853de2fee28b7c8ddd69abd56d2b565a1a6f9193"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "6f06bf89fc938ee4462129a4853de2fee28b7c8ddd69abd56d2b565a1a6f9193"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "7ba43a84749d428dc1947c959eb248c6b8938969c39cfb486ff513cd1877f0f5"
+        }
+      }
+    },
+    "rapidash": {
+      "source_art": "kolkar_melee",
+      "dictionary_tiles": 82,
+      "overflow_tiles": 0,
+      "front_frames": 3,
+      "back_frames": 3,
+      "roundtrip_all_native_front_pixels": true,
+      "npc_world_frames": 6,
+      "npc_world_source_frame_indices": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "npc_world_order": [
+        "idle_down",
+        "idle_up",
+        "idle_left",
+        "walk_down",
+        "walk_up",
+        "walk_left"
+      ],
+      "npc_right_facing": "native ordinary horizontal mirror of Left",
+      "npc_world_roundtrip_source_indices": true,
+      "npc_world_all_6_frames_decode_exact_indexed_source_png": true,
+      "files": {
+        "anim.asm": {
+          "bytes": 61,
+          "sha256": "ec2f837b42905e68b7cdfbea5e296a822e15f4681ea3891973df669f1013e3ff"
+        },
+        "anim_idle.asm": {
+          "bytes": 48,
+          "sha256": "51e0ec134da74dd817118b2739c77133cde612926fb697b9404ee4f77583f728"
+        },
+        "back.2bpp": {
+          "bytes": 576,
+          "sha256": "828616af74174f033fdb74520d134b66f245aa851f3bc943d7e4b2760b9c0582"
+        },
+        "back.2bpp.lz": {
+          "bytes": 295,
+          "sha256": "3c211a8c8b83dedf3747e730d8fe2383da59609578a9baa4007a003cdf2d4061"
+        },
+        "back_frames.bin": {
+          "bytes": 1728,
+          "sha256": "8ba4908d77ba64c5c55237d99d568ca2ee8fbc16be4861255aac521073eabe73"
+        },
+        "bitmask.asm": {
+          "bytes": 204,
+          "sha256": "cdc50f0186f9f9eb3af9a6aa90db8a2276ebaddc32d39da299299db79aec78c6"
+        },
+        "frames.asm": {
+          "bytes": 293,
+          "sha256": "4454e7483f110604c6d8e9d1218f7f0e4d63d3ac7f3c02732bd6ca20810a91e5"
+        },
+        "front.2bpp": {
+          "bytes": 2352,
+          "sha256": "dab519fb0f919f68bc8036922317f1481ff720335f173cd678da87b75bc47b79"
+        },
+        "front.animated.2bpp": {
+          "bytes": 1312,
+          "sha256": "908bcde59a709eefa4cd1d3c5b674a16e6a810757f1b0f1158514ed8862fba36"
+        },
+        "front.animated.2bpp.lz": {
+          "bytes": 580,
+          "sha256": "abd1c1ca20ed320ace4a2eded062ca10407951e74178292b4ca7327136c235e9"
+        },
+        "front.animated.tilemap": {
+          "bytes": 147,
+          "sha256": "248f6e3981831c0150797373f4f0857fa644667e53cf4621cde9137d0faa820e"
+        },
+        "front.dimensions": {
+          "bytes": 1,
+          "sha256": "50e721e49c013f00c62cf59f2163542a9d8df02464efeb615d31051b0fddc326"
+        },
+        "head_8x8.2bpp": {
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b"
+        },
+        "normal.gbcpal": {
+          "bytes": 8,
+          "sha256": "6f06bf89fc938ee4462129a4853de2fee28b7c8ddd69abd56d2b565a1a6f9193"
+        },
+        "overflow.2bpp": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "shiny.gbcpal": {
+          "bytes": 8,
+          "sha256": "6f06bf89fc938ee4462129a4853de2fee28b7c8ddd69abd56d2b565a1a6f9193"
+        },
+        "world_npc.2bpp": {
+          "bytes": 384,
+          "sha256": "4249a6845846ab0ee2405309dd5e4dc624040e3a153e3b2579977eda0a1ec328"
+        }
+      }
+    }
+  }
+}

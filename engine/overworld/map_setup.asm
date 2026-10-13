@@ -78,8 +78,10 @@ SuspendMapAnims:
 LoadMapObjects:
 	ld a, MAPCALLBACK_OBJECTS
 	call RunMapCallback
+	farcall PeonEnsurePartyResourcesV029
 	farcall PeonPrepareWarlockFollower
 	farcall LoadObjectMasks
+	farcall PeonFinalizeRoadPackVisibilityV029
 	farcall PeonInitializeWarlockFollower
 	farcall InitializeVisibleSprites
 	farcall PeonStartWarlockFollower

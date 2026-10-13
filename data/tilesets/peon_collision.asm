@@ -51,3 +51,17 @@
 	tilecoll WALL, WALL, WALL, WALL ; 32 round_hut_wall_se
 	tilecoll WALL, WALL, WALL, WALL ; 33 round_hut_wall
 	tilecoll WARP_PANEL, WARP_PANEL, WARP_PANEL, WARP_PANEL ; 34 round_hut_foot_door
+	tilecoll WALL, FLOOR, FLOOR, FLOOR ; 35 geography_cliff_nw
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; 36 geography_cliff_ne
+	tilecoll WALL, WALL, FLOOR, FLOOR ; 37 geography_cliff_north
+	tilecoll FLOOR, FLOOR, WALL, FLOOR ; 38 geography_cliff_sw
+	tilecoll WALL, FLOOR, WALL, FLOOR ; 39 geography_cliff_west
+	tilecoll FLOOR, WALL, WALL, FLOOR ; 3a geography_cliff_ne_sw
+	tilecoll WALL, WALL, WALL, FLOOR ; 3b geography_cliff_nw_ne_sw
+	tilecoll FLOOR, FLOOR, FLOOR, WALL ; 3c geography_cliff_se
+	tilecoll WALL, FLOOR, FLOOR, WALL ; 3d geography_cliff_nw_se
+	tilecoll FLOOR, WALL, FLOOR, WALL ; 3e geography_cliff_east
+	tilecoll WALL, WALL, FLOOR, WALL ; 3f geography_cliff_nw_ne_se
+	tilecoll FLOOR, FLOOR, WALL, WALL ; 40 geography_cliff_south
+	tilecoll WALL, FLOOR, WALL, WALL ; 41 geography_cliff_nw_sw_se
+	tilecoll FLOOR, WALL, WALL, WALL ; 42 geography_cliff_ne_sw_se

@@ -1,0 +1,77 @@
+{
+  "phase": "prepared_source_only",
+  "integrated_rom_tested": false,
+  "patch_sha256": "1262ef86408b522324eb0867ce19d81b6be2fb6d4d300fa1200f06a3a568827a",
+  "independent_rgbasm_syntax_passed": true,
+  "git_apply_check_passed": true,
+  "initial_capacity": 2,
+  "progression_capacity": 3,
+  "capacity_event": "EVENT_PEON_SARKOTH_REPORT_DONE",
+  "native_physical_slots": 6,
+  "party_record_bytes": 48,
+  "transient_range": [
+    "CFF2",
+    "CFFA"
+  ],
+  "spawns": [
+    {
+      "map": "PeonValleyCrossroads",
+      "xy": [
+        3,
+        5
+      ],
+      "object": 1,
+      "species": "ONIX"
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "xy": [
+        3,
+        6
+      ],
+      "object": 1,
+      "species": "MACHAMP"
+    },
+    {
+      "map": "PeonCaveApproach",
+      "xy": [
+        7,
+        7
+      ],
+      "object": 1,
+      "species": "GEODUDE"
+    },
+    {
+      "map": "SenjinVillage",
+      "xy": [
+        11,
+        14
+      ],
+      "object": 8,
+      "species": "ONIX",
+      "level": 6
+    },
+    {
+      "map": "SenjinVillage",
+      "xy": [
+        12,
+        14
+      ],
+      "object": 9,
+      "species": "MACHAMP",
+      "level": 6
+    }
+  ],
+  "fixed_imp_retired_event": 590,
+  "harness_object_sha256": "388801e47a2fb667c7fa01beda603da27ad25f95f26aa1130ac35cb8c8970bd1",
+  "fixed_retirement_flags": {
+    "imp1": 590,
+    "earth2": 591,
+    "grunt2": 592
+  },
+  "included_sources_modified": false,
+  "team_module_sha256": "6ce39c220e5d05f3f5f40b68a5e148ac00720ed970cb2da45fe5e452e915baa6",
+  "recruitment_module_sha256": "319c773ff51d26b7028d2e9098bc2ffd0be2479c6243c6d17b72d57e63f95ffa",
+  "dialogue_literals_checked": 57,
+  "all_dialogue_lines_fit_18_cells": true
+}

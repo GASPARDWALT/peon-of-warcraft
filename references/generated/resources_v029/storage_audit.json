@@ -1,0 +1,514 @@
+{
+  "storage_offsets": {
+    "MON_POKERUS": 28,
+    "MON_CAUGHTDATA": 29,
+    "MON_LEVEL": 31,
+    "PARTYMON_STRUCT_LENGTH": 48
+  },
+  "resource_sentinel": 128,
+  "current_encoding": "big-endian unsigned16",
+  "derived_maximum": true,
+  "new_saved_bytes": 0,
+  "transient_range": "CFFB-CFFF",
+  "native_reference_count": 93,
+  "native_references": [
+    {
+      "path": "engine/battle/core.asm",
+      "line": 3916,
+      "code": "ld bc, MON_POKERUS - MON_DVS"
+    },
+    {
+      "path": "engine/battle/core.asm",
+      "line": 4009,
+      "code": "ld bc, MON_POKERUS - MON_DVS"
+    },
+    {
+      "path": "engine/battle/core.asm",
+      "line": 7128,
+      "code": "ld a, MON_POKERUS"
+    },
+    {
+      "path": "engine/debug/debug_room.asm",
+      "line": 1316,
+      "code": "paged_value wDebugRoomMonPokerusStatus, $00, $ff,         $00,            DebugRoom_BoxStructStrings.Pokerus,   NULL,                       TRUE"
+    },
+    {
+      "path": "engine/debug/debug_room.asm",
+      "line": 1317,
+      "code": "paged_value wDebugRoomMonCaughtData+0,  $00, $ff,         $00,            DebugRoom_BoxStructStrings.NoUse0,    NULL,                       FALSE"
+    },
+    {
+      "path": "engine/debug/debug_room.asm",
+      "line": 1318,
+      "code": "paged_value wDebugRoomMonCaughtData+1,  $00, $ff,         $00,            DebugRoom_BoxStructStrings.NoUse1,    NULL,                       FALSE"
+    },
+    {
+      "path": "engine/events/npc_trade.asm",
+      "line": 162,
+      "code": "farcall GetCaughtGender"
+    },
+    {
+      "path": "engine/events/npc_trade.asm",
+      "line": 164,
+      "code": "ld [wPlayerTrademonCaughtData], a"
+    },
+    {
+      "path": "engine/events/npc_trade.asm",
+      "line": 174,
+      "code": "ld [wOTTrademonCaughtData], a"
+    },
+    {
+      "path": "engine/events/npc_trade.asm",
+      "line": 197,
+      "code": "farcall SetGiftPartyMonCaughtData"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 34,
+      "code": "call ReadCaughtData"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 97,
+      "code": "ReadCaughtData:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 98,
+      "code": "ld a, MON_CAUGHTDATA"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 101,
+      "code": "ld [wSeerCaughtData], a"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 103,
+      "code": "ld [wSeerCaughtGender], a"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 125,
+      "code": "call GetCaughtLevel"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 128,
+      "code": "call GetCaughtTime"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 129,
+      "code": "call GetCaughtLocation"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 148,
+      "code": "GetCaughtLevel:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 150,
+      "code": "ld hl, wSeerCaughtLevelString"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 156,
+      "code": "ld a, [wSeerCaughtData]"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 164,
+      "code": "ld [wSeerCaughtLevel], a"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 165,
+      "code": "ld hl, wSeerCaughtLevelString"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 166,
+      "code": "ld de, wSeerCaughtLevel"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 172,
+      "code": "ld de, wSeerCaughtLevelString"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 181,
+      "code": "GetCaughtTime:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 182,
+      "code": "ld a, [wSeerCaughtData]"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 200,
+      "code": "call UnknownCaughtData"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 208,
+      "code": "UnknownCaughtData:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 217,
+      "code": "GetCaughtLocation:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 218,
+      "code": "ld a, [wSeerCaughtGender]"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 228,
+      "code": "ld de, wSeerCaughtLocation"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 235,
+      "code": "ld de, wSeerCaughtLocation"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 236,
+      "code": "jp UnknownCaughtData"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 261,
+      "code": "ld a, [wSeerCaughtGender]"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 334,
+      "code": "ld a, [wSeerCaughtLevel]"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 386,
+      "code": "GetCaughtGender:"
+    },
+    {
+      "path": "engine/events/poke_seer.asm",
+      "line": 387,
+      "code": "ld hl, MON_CAUGHTGENDER"
+    },
+    {
+      "path": "engine/events/shuckle.asm",
+      "line": 19,
+      "code": "farcall SetGiftPartyMonCaughtData"
+    },
+    {
+      "path": "engine/items/item_effects.asm",
+      "line": 558,
+      "code": "farcall SetCaughtData"
+    },
+    {
+      "path": "engine/items/item_effects.asm",
+      "line": 614,
+      "code": "farcall SetBoxMonCaughtData"
+    },
+    {
+      "path": "engine/link/link.asm",
+      "line": 1172,
+      "code": "ld [hli], a ; wOTPartyMon*PokerusStatus"
+    },
+    {
+      "path": "engine/link/link.asm",
+      "line": 1886,
+      "code": "farcall GetCaughtGender"
+    },
+    {
+      "path": "engine/link/link.asm",
+      "line": 1888,
+      "code": "ld [wPlayerTrademonCaughtData], a"
+    },
+    {
+      "path": "engine/link/link.asm",
+      "line": 1933,
+      "code": "farcall GetCaughtGender"
+    },
+    {
+      "path": "engine/link/link.asm",
+      "line": 1935,
+      "code": "ld [wOTTrademonCaughtData], a"
+    },
+    {
+      "path": "engine/movie/trade_animation.asm",
+      "line": 899,
+      "code": "ld a, [wPlayerTrademonCaughtData]"
+    },
+    {
+      "path": "engine/movie/trade_animation.asm",
+      "line": 917,
+      "code": "ld a, [wOTTrademonCaughtData]"
+    },
+    {
+      "path": "engine/pokemon/breeding.asm",
+      "line": 228,
+      "code": "farcall SetEggMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 72,
+      "code": "call SetCaughtData"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 75,
+      "code": "ld hl, wPartyMon1CaughtLocation"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 133,
+      "code": "call SetBoxMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 134,
+      "code": "ld a, BANK(sBoxMon1CaughtLocation)"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 136,
+      "code": "ld hl, sBoxMon1CaughtLocation"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 163,
+      "code": "SetCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 166,
+      "code": "ld hl, wPartyMon1CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 168,
+      "code": "SetBoxmonOrEggmonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 201,
+      "code": "SetBoxMonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 202,
+      "code": "ld a, BANK(sBoxMon1CaughtLevel)"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 204,
+      "code": "ld hl, sBoxMon1CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 205,
+      "code": "call SetBoxmonOrEggmonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 209,
+      "code": "SetGiftBoxMonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 211,
+      "code": "ld a, BANK(sBoxMon1CaughtLevel)"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 213,
+      "code": "ld hl, sBoxMon1CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 215,
+      "code": "call SetGiftMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 219,
+      "code": "SetGiftPartyMonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 222,
+      "code": "ld hl, wPartyMon1CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 226,
+      "code": "SetGiftMonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 235,
+      "code": "SetEggMonCaughtData:"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 237,
+      "code": "ld hl, wPartyMon1CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/caught_data.asm",
+      "line": 243,
+      "code": "call SetBoxmonOrEggmonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/level_up_happiness.asm",
+      "line": 3,
+      "code": "ld hl, wPartyMon1CaughtLocation"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 235,
+      "code": "; PokerusStatus"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 238,
+      "code": "; CaughtData/CaughtTime/CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 241,
+      "code": "; CaughtGender/CaughtLocation"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 298,
+      "code": "; PokerusStatus"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 301,
+      "code": "; CaughtData/CaughtTime/CaughtLevel"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 304,
+      "code": "; CaughtGender/CaughtLocation"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 1734,
+      "code": "farcall SetGiftPartyMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 1758,
+      "code": "farcall SetGiftBoxMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 1769,
+      "code": "farcall SetBoxMonCaughtData"
+    },
+    {
+      "path": "engine/pokemon/move_mon.asm",
+      "line": 1773,
+      "code": "farcall SetCaughtData"
+    },
+    {
+      "path": "engine/pokemon/stats_screen.asm",
+      "line": 594,
+      "code": "ld a, [wTempMonPokerusStatus]"
+    },
+    {
+      "path": "engine/pokemon/stats_screen.asm",
+      "line": 805,
+      "code": "ld a, [wTempMonCaughtGender]"
+    },
+    {
+      "path": "engine/events/battle_tower/battle_tower.asm",
+      "line": 111,
+      "code": "ld de, wBT_OTTempMon1CaughtGender"
+    },
+    {
+      "path": "engine/events/pokerus/apply_pokerus_tick.asm",
+      "line": 3,
+      "code": "ld hl, wPartyMon1PokerusStatus ; wPartyMon1 + MON_PKRS"
+    },
+    {
+      "path": "engine/events/pokerus/check_pokerus.asm",
+      "line": 10,
+      "code": "ld hl, wPartyMon1PokerusStatus"
+    },
+    {
+      "path": "engine/events/pokerus/pokerus.asm",
+      "line": 3,
+      "code": "ld hl, wPartyMon1PokerusStatus"
+    },
+    {
+      "path": "engine/events/pokerus/pokerus.asm",
+      "line": 38,
+      "code": "ld hl, wPartyMon1PokerusStatus"
+    },
+    {
+      "path": "data/text/common_3.asm",
+      "line": 303,
+      "code": "text_ram wSeerCaughtLocation"
+    },
+    {
+      "path": "data/text/common_3.asm",
+      "line": 314,
+      "code": "text_ram wSeerCaughtLevelString"
+    },
+    {
+      "path": "data/text/common_3.asm",
+      "line": 330,
+      "code": "text_ram wSeerCaughtLocation"
+    },
+    {
+      "path": "data/text/common_3.asm",
+      "line": 352,
+      "code": "text_ram wSeerCaughtLevelString"
+    }
+  ],
+  "required_guards": [
+    "GiveExperience: suppress Pokerus stat-exp multiplication for actor/tag80",
+    "LevelUpHappinessMod: do not interpret resource low byte as caught landmark"
+  ],
+  "already_safe": [
+    "InitBattleMon skips Pokerus/CaughtData",
+    "InitEnemyMon skips Pokerus/CaughtData",
+    "ApplyPokerusTick skips zero low nibble",
+    "_CheckPokerus checks only active low nibble",
+    "Peon victory path skips GivePokerusAndConvertBerries"
+  ],
+  "excluded_semantics": [
+    "capture time/level/landmark/OT caught gender for resource-tagged actors",
+    "original Pokemon stats-screen Pokerus immunity dot",
+    "link trades and original Pokemon Seer",
+    "daycare/breeding/PC workflows for managed actors",
+    "downgrade to v028 with tagged v029 save"
+  ],
+  "capture_order": "TryAddMonToParty -> SetCaughtData/SetGiftPartyMonCaughtData if any -> deterministic role name -> EnsureResourceForIndexV029",
+  "naming": "Nickname/OT fields separate; resource bytes untouched by deterministic role naming",
+  "byte_layout_compatibility_is_not_backward_semantic_compatibility": true,
+  "integration_status": "included in frozen v029 candidate07; absent from published v028",
+  "native_reference_scope": "source inventory captured during prepared-module audit; line numbers refer to that snapshot",
+  "native_resource_validation": {
+    "path": "references/generated/resources_v029/runtime/validation.json",
+    "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+    "symbols_sha256": "87226ec5c81393762a3f7b2f6b11e43e68e0fc687b8cc3c0d22c3a74e25b2376",
+    "passed": true,
+    "ordinary_classes": 3,
+    "actual_native_readout_checks": 12,
+    "actual_ppu_rgb555_pixels_checked": 10752,
+    "text_only_draw_guards": 45
+  }
+}

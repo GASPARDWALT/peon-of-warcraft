@@ -28,6 +28,10 @@ PeonCrossroadsZureethaScript:
 PeonValleyPlaceholderScript:
 	end
 
+; Object scripts use this map event bank.
+PeonCrossroadsEarthRecruitScript:
+	farsjump PeonEarthSpiritNodeV029
+
 PeonValleyCrossroads_MapEvents:
 	db 0, 0
 	def_warp_events
@@ -37,7 +41,7 @@ PeonValleyCrossroads_MapEvents:
 	def_coord_events
 	def_bg_events
 	def_object_events
-	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
+	object_event 3, 5, PEON_SPRITE_EARTH_SPIRIT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PeonCrossroadsEarthRecruitScript, EVENT_PEON_RECRUIT_EARTH1_DONE_V029
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1
 	object_event 6, 4, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PeonCrossroadsZureethaScript, -1
 	object_event 5, 7, SPRITE_NONE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, PeonValleyPlaceholderScript, -1

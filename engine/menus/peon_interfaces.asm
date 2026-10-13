@@ -449,6 +449,7 @@ PeonCharacterSheet:
 	ld de, wPartyMon1Level
 	lb bc, 1, 3
 	call PrintNum
+	farcall PeonDrawCharacterResourceV029
 	hlcoord 10, 8
 	ld de, .HP
 	call PlaceString
@@ -457,6 +458,9 @@ PeonCharacterSheet:
 	ld a, [wBattleMode]
 	and a
 	jr z, .print_health
+	ld a, [wCurBattleMon]
+	and a
+	jr nz, .print_health ; CHARACTER remains the hero while an ally fights
 	ld de, wBattleMonHP
 .print_health:
 	lb bc, 2, 3
@@ -468,6 +472,9 @@ PeonCharacterSheet:
 	ld a, [wBattleMode]
 	and a
 	jr z, .print_max_health
+	ld a, [wCurBattleMon]
+	and a
+	jr nz, .print_max_health
 	ld de, wBattleMonMaxHP
 .print_max_health
 	lb bc, 2, 3
@@ -516,7 +523,9 @@ PeonCharacterSheet:
 	call PlaceString
 	call WaitBGMap
 	call UpdateTimePals
-	jp PeonInterfaceWait
+	farcall PeonCharacterTeamInputV029
+	jp c, PeonCharacterSheet
+	ret
 .DrawAction
 	and a
 	ld de, .NoAction
@@ -533,7 +542,7 @@ PeonCharacterSheet:
 .Level: db "LEVEL@"
 .HP: db "HEALTH@"
 .NoAction: db "--@"
-.Back: db "A/B: BACK@"
+.Back: db "R:TEAM A/B:BACK@"
 .Palette:
 	RGB 31,29,23, 15,22,8, 18,11,6, 0,0,0
 
@@ -547,8 +556,12 @@ INCBIN "gfx/pack/peon_portrait.2bpp"
 PeonInventory:
 	xor a
 	ld [wMenuCursorY], a
+.redraw_frame
 	call PeonInterfaceFrame
 .draw
+	call .draw_body
+	jp .input
+.draw_body
 	call PeonInterfaceClearBody
 	hlcoord 2, 1
 	ld de, .Title
@@ -702,6 +715,16 @@ PeonInventory:
 	jr .footer
 .passive_details
 	ld a, [wNamedObjectIndex]
+	ld c, a
+	farcall PeonIsRecruitItemV029
+	jr nc, .passive_original
+	hlcoord 2, 9
+	ld de, .RecruitRelic
+	call PlaceString
+	ld de, .RecruitHelp
+	jp .footer
+.passive_original
+	ld a, [wNamedObjectIndex]
 	ld de, .QuestItem
 	cp PEON_SARKOTH_CLAW
 	jr z, .passive_description
@@ -745,6 +768,7 @@ PeonInventory:
 .no_item_icon
 	call WaitBGMap
 	call UpdateTimePals
+	ret
 .input
 	call DelayFrame
 	call JoyTextDelay
@@ -783,6 +807,10 @@ PeonInventory:
 	and a
 	jr z, .input
 	ld a, [wNamedObjectIndex]
+	ld c, a
+	farcall PeonIsRecruitItemV029
+	jp c, .recruit
+	ld a, [wNamedObjectIndex]
 	cp FRESH_WATER
 	jp z, .drink
 	cp PEON_MINOR_MANA
@@ -798,10 +826,17 @@ PeonInventory:
 	cp ITEM_8D
 	jp z, .apply
 	cp ITEM_87
-	jr c, .input
+	jp c, .input
 	cp ITEM_89 + 1
-	jr nc, .input
+	jp nc, .input
 	jp .apply
+.recruit
+	ld a, [wNamedObjectIndex]
+	ld c, a
+	farcall PeonTryRecruitV029
+	jp c, .used_battle_item
+	ld de, .RecruitDenied
+	jp .reason
 .totem
 	farcall PeonTryPlaceEarthTotem
 	jr c, .totem_placed
@@ -818,7 +853,7 @@ PeonInventory:
 .potion
 	farcall PeonTryUseMinorPotion
 	ld de, .NoHealing
-	jp nc, .reason
+	jp nc, .supply_refused
 	ld de, SFX_PEON_POTION
 	call WaitPlaySFX
 	call WaitSFX
@@ -830,7 +865,7 @@ PeonInventory:
 	ld de, .NoFood
 	ld a, [wBattleMode]
 	and a
-	jp z, .reason
+	jp z, .redraw_frame
 	ld de, .FoodBattleOnly
 	jp .reason
 .ate_bread
@@ -848,9 +883,9 @@ PeonInventory:
 	ld de, .FullCharges
 	ld a, c
 	and a
-	jp z, .reason
+	jp z, .supply_refused
 	ld de, .NoManaClass
-	jp .reason
+	jp .supply_refused
 .mana_used
 	ld de, SFX_PEON_WATER
 	call WaitPlaySFX
@@ -858,10 +893,14 @@ PeonInventory:
 	ld a, PEON_MINOR_MANA
 	jr .consume
 .drink
-; Refill all learned spells; a full spellbook leaves the water in the bag.
+	; Water is an outside-combat rest supply, never another combat potion.
+	ld a, [wBattleMode]
+	and a
+	ld de, .FoodBattleOnly
+	jp nz, .reason
 	farcall PeonRestoreSpellCharges
 	ld de, .FullCharges
-	jp nc, .reason
+	jp nc, .supply_refused
 	ld de, SFX_PEON_WATER
 	call WaitPlaySFX
 	call WaitSFX
@@ -886,12 +925,12 @@ PeonInventory:
 	ld b, a
 	ld a, [wMenuCursorY]
 	cp b
-	jp c, .draw
+	jp c, .redraw_frame
 	ld a, b
 	dec a
 .clamp_cursor
 	ld [wMenuCursorY], a
-	jp .draw
+	jp .redraw_frame
 .used_battle_item
 	ld a, 1
 	ld [wItemEffectSucceeded], a
@@ -904,12 +943,26 @@ PeonInventory:
 	ld a, [wBattleMode]
 	and a
 	jr z, .equip_sound
+	ld a, [wCurBattleMon]
+	and a
+	jr nz, .equip_sound
 	ld a, b
 	ld [wBattleMonItem], a
 .equip_sound
 	ld de, SFX_TRANSACTION
 	call PlaySFX
 	jp .draw
+.supply_refused
+	; TEAM target selection changed fonts/icons/palettes. Redraw the full
+	; parent inventory on every field refusal/cancel, then retain the reason
+	; inside its fixed message row. Keep the restored selected stack cursor.
+	ld a, [wBattleMode]
+	and a
+	jr nz, .reason
+	push de
+	call PeonInterfaceFrame
+	call .draw_body
+	pop de
 .reason
 	push de
 	xor a
@@ -930,8 +983,8 @@ PeonInventory:
 .Empty: db "EMPTY@"
 .Food: db "RESTORES 10 HP", "<LF>", "OUTSIDE COMBAT@"
 .Potion: db "RESTORES 20 HP", "<LF>", "ONE BATTLE TURN@"
-.Mana: db "FIVE CHARGES EACH", "<LF>", "ONE BATTLE TURN@"
-.Water: db "TEN SPELL CHARGES", "<LF>", "ONE BATTLE TURN@"
+.Mana: db "RESTORES 40 MANA", "<LF>", "ONE BATTLE TURN@"
+.Water: db "RESTORES 60 MANA", "<LF>", "OUTSIDE COMBAT@"
 .Totem: db "ACT BEFORE TARGET", "<LF>", "REUSE; ONE TURN@"
 .QuestItem: db "QUEST PROOF", "<LF>", "KEEP FOR TURN-IN@"
 .PassiveItem: db "PASSIVE ITEM", "<LF>", "NO DIRECT USE@"
@@ -942,11 +995,14 @@ PeonInventory:
 .PassiveHelp: db "NO DIRECT ACTION@"
 .NoItemsHelp: db "NO ITEMS TO USE@"
 .Back: db "B: BACK@"
+.RecruitRelic: db "CLASS RELIC@"
+.RecruitHelp: db "A: RECRUIT@"
+.RecruitDenied: db "RECRUIT NOT READY@"
 .NoHealing: db "CANNOT HEAL NOW@"
 .NoFood: db "CANNOT EAT NOW@"
 .FoodBattleOnly: db "REST OUT OF FIGHT@"
 .NoManaClass: db "WARRIORS USE RAGE@"
-.FullCharges: db "CHARGES ARE FULL@"
+.FullCharges: db "MANA ALREADY FULL@"
 .TotemBattleOnly: db "ONLY IN COMBAT@"
 .TotemAlreadySet: db "TOTEM ALREADY SET@"
 .Qualities:

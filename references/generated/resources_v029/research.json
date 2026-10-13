@@ -1,0 +1,493 @@
+{
+  "research_only": true,
+  "native_code_changed": false,
+  "date": "2026-10-12",
+  "target": "WoW Classic Era / vanilla-inspired Peon v0.2.9",
+  "first_rank_costs": [
+    {
+      "ability": "Lightning Bolt",
+      "rank": 1,
+      "level": 1,
+      "resource": "mana",
+      "cost": 15,
+      "cast_seconds": 1.5,
+      "source_id": "lightning_bolt",
+      "independent_wowhead_confirmation": false
+    },
+    {
+      "ability": "Shadow Bolt",
+      "rank": 1,
+      "level": 1,
+      "resource": "mana",
+      "cost": 25,
+      "cast_seconds": 1.7,
+      "source_id": "shadow_bolt",
+      "independent_wowhead_confirmation": false
+    },
+    {
+      "ability": "Heroic Strike",
+      "rank": 1,
+      "level": 1,
+      "resource": "rage",
+      "cost": 15,
+      "timing": "next melee swing",
+      "bonus_melee_damage": 11,
+      "source_id": "heroic_strike"
+    },
+    {
+      "ability": "Healing Wave",
+      "rank": 1,
+      "level": 1,
+      "resource": "mana",
+      "cost": 25,
+      "cast_seconds": 1.5,
+      "source_id": "healing_wave_classic",
+      "prototype_unlock_level": 6,
+      "prototype_unlock_is_custom": true
+    },
+    {
+      "ability": "Flame Shock",
+      "rank": 1,
+      "level": 10,
+      "resource": "mana",
+      "cost": 55,
+      "cast_seconds": 0,
+      "cooldown_seconds": 6,
+      "dot_damage": 28,
+      "dot_duration_seconds": 12,
+      "source_id": "flame_shock",
+      "prototype_unlock_level": 4,
+      "prototype_unlock_is_custom": true,
+      "pokemon_physical_damage_halving_not_classic_effect": true
+    }
+  ],
+  "resource_rules": {
+    "mana": "Shared current/max pool; Classic Spirit-based five-second rule after expenditure, free actions do not restart it",
+    "rage": "0..100; Classic white melee damage and damage received generate rage, out-of-combat decay; numeric vanilla conversion not independently verified",
+    "retail_rage_formula_rejected": true,
+    "water_food": "Out-of-combat seated restoration; movement/standing/damage interrupts; food HP, water mana",
+    "instant_rom_restoration_is_custom": true
+  },
+  "water_values": {
+    "older_Drink_table_mana": 151,
+    "duration_seconds": 18,
+    "base_price_copper_bundle": 25,
+    "source_id": "water_wiki",
+    "generic_modern_item_article_mana": 180,
+    "generic_modern_value_not_confirmed_classic": true
+  },
+  "meat_values": {
+    "name": "Tough Jerky",
+    "generic_modern_article_hp": 94,
+    "duration_seconds": 18,
+    "vanilla_amount_verified": false,
+    "do_not_assume_modern_tooltip_is_classic": true
+  },
+  "custom_features": {
+    "max_party_records": 3,
+    "hero_plus_recruits": 2,
+    "shaman_permanent_low_level_elemental": true,
+    "warlock_permanent_low_level_demon": true,
+    "warrior_voluntary_recruit": true,
+    "not_standard_classic_capture_system": true,
+    "warlock_passive_imp_should_not_add_fourth_controllable_actor": true,
+    "proposed_items": [
+      "EARTH PACT",
+      "BINDING SHARD",
+      "WAR OATH"
+    ],
+    "sequential_enemy_pack_is_custom": true,
+    "starting_warlock_imp_is_real_party_record_two": true,
+    "imp_consumes_one_recruit_place": true,
+    "passive_imp_assist_disabled_if_active_fainted_or_absent": true,
+    "early_party_cap": 2,
+    "third_slot_unlock": "Sarkoth report, not kill alone"
+  },
+  "classic_recruitment_reference": {
+    "enslave_demon_level": 30,
+    "mana": 300,
+    "reagent": "Soul Shard",
+    "maximum_seconds": 300,
+    "source_id": "enslave_demon",
+    "call_of_earth_awards_earth_totem_not_permanent_recruit": true,
+    "earth_elemental_totem_not_vanilla_ability": true
+  },
+  "sources": [
+    {
+      "id": "lightning_bolt",
+      "url": "https://warcraft.wiki.gg/wiki/Lightning_Bolt?oldid=6884544",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "d4ed62a36046fc2ad9014da3c42c5179d7d45fb05e848d9dcec626b0536517bd",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Classic\n\nLightning Bolt\n\n\n\nLightning Bolt (10 ranks)\nLevel 1 shaman ability\n30 yd range\n15 Mana\n1.5 sec  cast\nCasts a bolt of lightning at the target for 15 to 17 Nature damage.\nProperties\nClass\n\nShaman\nSchool\n\nNature\nCooldown\n\nNone/Global Cooldown\nOther information\nLevel learned\n\n1\nImprovements\n\n [Call of Thunder],  [Concussion],  [Convection],  [Lightning Mastery],  [Storm Reach]"
+    },
+    {
+      "id": "shadow_bolt",
+      "url": "https://warcraft.wiki.gg/wiki/Shadow_Bolt?oldid=6895723",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "0e483f5120e401ae2050c5e1058c016e3168e507246e78ea7daf3d83760f6698",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Classic\n\nShadow Bolt\n\n\n\nShadow Bolt (10 ranks)\nLevel 1 warlock ability\n30 yd range\n25 Mana\n1.7 sec  cast\nSends a shadowy bolt at the enemy, causing 13 to 18 Shadow damage.\nProperties\nClass\n\nWarlock\nSchool\n\nShadow\nCooldown\n\nNone/Global Cooldown\nOther information\nLevel learned\n\n1\nImprovements\n\n [Bane],  [Improved Shadow Bolt]"
+    },
+    {
+      "id": "heroic_strike",
+      "url": "https://warcraft.wiki.gg/wiki/Heroic_Strike?oldid=6652612",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "306897b927b9296948d838e0c14334275748ca79f4a5d4d4e85c933effda57ab",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Classic\n\nHeroic Strike\n\n\n\nHeroic Strike (9 ranks)\nLevel 1 warrior ability\nMelee range\n15 Rage\nNext melee\nRequires Melee Weapon\nA strong attack that increases melee damage by 11 and causes a high amount of threat.\nProperties\nClass\n\nWarrior\nSchool\n\nPhysical\nCooldown\n\nNone/Global Cooldown\nOther information\nLevel learned\n\n1\nImprovements\n\n [Improved Heroic Strike]"
+    },
+    {
+      "id": "healing_wave_classic",
+      "url": "https://warcraft.wiki.gg/wiki/Healing_Wave_(Classic)?oldid=6893433",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "979019bb655857cce7b1b148f04fdfdda442db481415e48b0621c7bef35a00e3",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Healing Wave\n\n\n\nHealing Wave (10 ranks)\nLevel 1 shaman ability\n40 yd range\n25 Mana\n1.5 sec  cast\nHeals a friendly target for 36 to 47.\nProperties\nClass\n\nShaman\nSchool\n\nNature\nCooldown\n\nNone/Global Cooldown\nOther information\nLevel learned\n\n1\nImprovements\n\n [Healing Way],  [Improved Healing Wave]\nPower over the elements is power over creation itself.[1]\n\nHealing Wave is a shaman healing spell."
+    },
+    {
+      "id": "flame_shock",
+      "url": "https://warcraft.wiki.gg/wiki/Flame_Shock?oldid=6893550",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "22a66d4027516c60ecd4da2d75c3a20e2d7525ea3671698b8f23c40a705e0287",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Classic\n\nFlame Shock\n\n\n\nFlame Shock (6 ranks)\nLevel 10 shaman ability\n20 yd range\n55 Mana\n6 sec cooldown\nInstant\nInstantly sears the target with fire, causing 25 Fire damage immediately and 28 Fire damage over 12 sec.\nProperties\nClass\n\nShaman\nSchool\n\nFire\nCooldown\n\n6 seconds\nOther information\nLevel learned\n\n10\nImprovements\n\n [Concussion],  [Convection],  [Reverberation]\nRelated debuff\n\n\n\n\n\n\nMagic\n\nFlame Shock\n\n7 Fire damage every 3 seconds.\n\n\nDuration: 12 seconds"
+    },
+    {
+      "id": "water_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Drink?oldid=6725680",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "d7ea5be005a99fc0350bb8981fadb68ce2cb0b78e53198fe31449c9e0e400ff1",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "Types of buyable drink\n\n3 Types of conjurable drink\n\n4 Types of alcohol\n\n5 Achievement\n\n6 Trivia\n\n7 Patch changes\n\n8 See also\n\n\n\n\nDrink items\n\nDrink items can be received as quest rewards, purchased from vendors, created with cooking*, found in containers such as Water Barrels and Milk Barrels, and conjured by mages. Mana restoring drink items are often referred to collectively as \"water\", which is not strictly accurate.\n\nOnly a few types of drink can be created with cooking:\n\n\n [Thistle Tea] - restores a rogue's energy rather than mana.\n\n [Goldthorn Tea] - a mana restoring drink.\n\n [Winter Veil Eggnog] an alcoholic beverage that grants food benefit - it restores health rather than mana.\n\nWinter Veil Eggnog counts as a drink toward the It's Happy Hour Somewhere achievement, not as a food toward the Tastes Like Chicken achievement.\n\n [Hot Apple Cider] - a mana restoring drink, with a \"well fed\" buff.\n\n [Captain Rumsey's Lager] - an alcoholic beverage that gives a fishing skill buff.\n\n [Kungaloosh] - an alcoholic mana restoring drink.\n\nAlcoholic drinks\n\nAlcoholic drinks (ale, beer, wine, mead, etc.) can be purchased from innkeepers, vendors and from events, received as quest rewards, or found as drops. A few can be made by cooking. These drinks do not restore mana, but instead cause your character to become tipsy. (Winter Veil Eggnog restores health.) Some also provide temporary stat buffs. As of patch 2.1, these buffs count as  [Well Fed] and do not stack with food buffs anymore.\n\n\nTypes of buyable drink\n\n\n\n\nName\n\nLevel Requirement\n\nMana Healed\n\nPrice1\n\n\n\n\n [Refreshing Spring Water]\n\n\n\n\n\n151 mana over 18 seconds\n\n\n25\n\n\n\n\n ["
+    },
+    {
+      "id": "food_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Food?oldid=6723270",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "09a195b614df9d563334c685d72676f55b830f8e95a343d63bbdd404f4518739",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\t  All You Can Eat from Hearthstone.\n\nFood is a type of consumable item that can be eaten, either by a player character or by a hunter pet. There are several types of food, and hundreds of different foods. Food is mainly consumed to restore health, although it may also be used to restore mana or grant buffs. Food may be bought, created by cooks, fished by fishers or conjured by mages, and is frequently found as loot.\n\n\nContents\n\n\n1 Background\n\n2 Use of food\n\n\n2.1 Eating\n\n2.2 Feeding your pet\n\n\n\n3 Types of food\n\n4 Sources of food\n\n5 Achievements\n\n6 Patch changes\n\n7 See also\n\n8 External links\n\n\n\n\nBackground\n\n\n\n\n\n\n\n\nThis article or section contains lore taken from the Warcraft strategy games or their expansions, but also possibly including lore from their manuals and official bonus maps.\n\n\n\n\n\nDuring the First, Second and Third Wars, getting enough food to feed their soldiers was a priority for the various participating commanders. Without an adequate supply of farms, new soldiers couldn't be deployed.\n\n\n This section concerns content related to Mists of Pandaria.\n\n [Kor'kron Meat] was a cornerstone of the conflict between Kor'kron loyalists and the Darkspear Rebellion.\n\n\nUse of food\n\nEating\n\nThe main use of food is for player characters to consume it, restoring health over a period of time. Some foods may also restore mana, and/or grant various temporary buffs if enough time is spent eating.\n\nCharacters consume food by 'using' it - right-clicking on it. This will cause the character to sit down to grant the player the 'eating' buff. This buff will restore health over a specified time period. Moving, standing up, or using abilities will remove the buff, ending the consumption of the food.\n\nCharacters can eat and drink at the same time (drinks are similar to food, but restore mana rather than health).\n\nSome foods (usually made by players that know Cooking) also provide the  [Well Fed] buff, which increases stats by a certain amount. In order to receive the buff, the character must eat the food for a certain duration.\n\nPlayers frequently use food to restore health and/or mana between encounters, especially if their class is unable to self-heal. Food is also used before encounters (especially in end-game raiding) to gain useful buffs. Eating is generally unnecessary at lower levels, as low level players and their pets recover health and mana quickly without eating.\n\n\nFeeding your pet\n\nHunters can use  [Feed Pet] to feed their pet an item from their bags, restoring its health. Using  [Beast Lore] will tell them what types of food the pet eats.\n\nWhile feeding a hunter pet and managing its Happiness was previously integral to playing the class, these systems were removed in Cataclysm.\n\nTreats\n\nHunter pets and battle pets can be fed treats as well. Items like  [Kibler's Bits] for hunter pets, and  [Happy Pet Snack] or  [Pet Treat] for battle pets.\n\n\nTypes of food\n  A table full of food.\n\nThere are six main types of food: bread, fish, fungi, meat, cheese, and fruit. It is not always clear which type of food a food item is. The food type is not explicitly stated in the item tooltip. The best indication is the item name and the graphic icon representing the item, then using common sense to figure out which food category a food item belongs to. If the item is vended, the type of vendor often explicitly states the food type, but this is not generally true for seasonal items. Beyond that, it boils down to trial and error.\n\nFor meat and fish, there is also a distinction between food that is ready to eat, which is a consumable, and food ingredients, using in cooking food, which are trade goods. Player characters can only eat consumable food, but hunter pets can often eat food ingredients. \n\nFood ingredients are merely trade items with little description. Consumable food will have a description of the food benefits in the item tooltip, clearly indicating consumable food status, and will appear in the consumables, food, and drink section when browsing the auction house. Food ingredients will appear in the trade goods, meat section when browsing the auction house. This includes eggs and fish ingredients. \n\nSome ingredient fish is consumable as food by a player character even though it is an ingredient, not a consumable. It will have a consumable style tooltip, will typically have the name Raw Fish-name, and will have less restorative power than its cooked counterpart.\n\nThere appears to be an additional category of untyped food. Some food ingredients appear to no longer satisfy pets when cooked into a consumable food item (whose type is not as clear). Various kinds of candy, frequently acquired during events, appear to work like this. \n\nThere are also edge-case items such as the  [Deviate Fish], that can be 'used' (presumably ingested) that are not food in any other way, acting more like a potion and provide an instantaneous effect.\n\n\nSourc"
+    },
+    {
+      "id": "rage_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Rage?oldid=6605467",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "eaf8affff76c9a9c6b1fe2e19f647f7eaf950fac9b0adfc64b9bac232e132b9c",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "Patch 4.0.1 (2010-10-12): Rage is being normalized so that its generation is no longer based on damage done by auto-attacks. Each auto-attack will provide a set amount of Rage, with off-hand weapons granting 50% of the Rage main-hand weapons do. Haste will allow Rage to generate more rapidly by increasing attack speed. In addition, while taking damage, the amount of Rage generated will now be based on the Warrior's health rather than the opponent's level. The essence of this change is to improve the scaling that occurs with Warrior gear. With Warriors balanced around the top tiers of items, we've found that the class tends to underperform more drastically than others in lower-quality items. These changes should correct that."
+    },
+    {
+      "id": "five_second_rule",
+      "url": "https://warcraft.wiki.gg/wiki/Five_second_rule?oldid=6190401",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "e3877749b6ce6ce4b1ce1e8e784aab27f810575d1986e252f6acbd115675c719",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "The five second rule was a mechanic which affected mana regeneration prior to patch 4.0.1. It prevented a character's mana from regenerating 5 seconds after casting a spell. This was an important concern for mana-using classes, especially healers. Prior to patch 1.4.0, mana regeneration also stopped while casting a spell; hence many in-game references to the five second rule would be use the phrase \"during casting\" instead of \"after casting.\"\n\nBecause the activation of the five second rule was dependent on mana expenditure, mana regeneration would continue if a character cast a \"free\" spell by the means of clearcasting. The same applied to any spell (i.e.  [Nature's Swiftness]) which cost 0 mana. This could be useful when trying to regenerate mana, but still being able cast one free spell without interrupting mana regeneration (for instance in case of an emergency.)\n\nThe old \"Mana per 5 seconds\" (MP5) stat was not affected by this mechanic, and always provided the stated amount of mana regeneration."
+    },
+    {
+      "id": "enslave_demon",
+      "url": "https://warcraft.wiki.gg/wiki/Subjugate_Demon?oldid=6513584",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "bb1816864de146ce6b4d7d5310fb9d670c6137b2723aeb35691df0355ea43479",
+      "scope": "Explicit Classic section",
+      "short_excerpt": "Classic\n\nSubjugate Demon\n\n\n\nSubjugate Demon (3 ranks)\nLevel 30 warlock ability\n30 yd range\n300 Mana\n3 sec  cast\nReagents: Soul Shard\nSubjugates the target demon, up to level 45, forcing it to do your bidding.  While subjugated, the time between the demon's attacks is increased by 40% and its casting speed is slowed by 30%.  Lasts up to 5 min.  If you repeatedly subjugate the same demon, it will become more difficult to control with each attempt.\nProperties\nClass\n\nWarlock\nSchool\n\nShadow\nCooldown\n\nNone/Global Cooldown\nOther information\nLevel learned\n\n30\nImprovements\n\n [Improved Subjugate Demon]\nRelated debuff\n\n\n\n\n\n\n\n\nSubjugate Demon\n\nEnslaved.\n\n\nDuration: 5 minutes"
+    },
+    {
+      "id": "earth_elemental",
+      "url": "https://warcraft.wiki.gg/wiki/Earth_Elemental_Totem?oldid=6728247",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "db4fe83f40f4f45a22102f0d46b3f4c0d265df1d5f6d82e3b2106c2bf3e12831",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\t\n\n\n\n\n\nThe subject of this article was removed in patch 7.0.3 but remains in Burning Crusade Classic Anniversary.\n\n\nEarth Elemental Totem\n\n\n\nEarth Elemental Totem\nLevel 66 shaman ability\n705 Mana\n20 min cooldown\nInstant\nTools: Earth Totem\nSummon an elemental totem that calls forth a greater earth elemental to protect the caster and <his/her> allies.  Lasts 2 min.\nProperties\nClass\n\nShaman\nSchool\n\nNature\nCooldown\n\n20 minutes\nOther information\nLevel learned\n\n66\nI have conscripted the very land to fight.[1]\n  In the TCG.\n\nEarth Elemental Totem is a shaman totem ability that summons a Greater Earth Elemental to aid the caster. The elemental will taunt nearby enemies with  [Angered Earth].\n\n\nContents\n\n\n1 Patch changes\n\n2 See also\n\n3 References\n\n4 Other versions\n\n\n4.1 Wrath Classic\n\n4.2 Cataclysm Classic\n\n4.3 MoP Classic\n\n\n\n5 External links\n\n\n\n\nPatch changes\n\n Patch 7.0.3 (2016-07-19): Removed. Replaced by  [Earth Elemental].   \n\n Patch 6.0.2 (2014-10-14): Deals 90% less Auto Attack damage but generates 1000% more threat.   \n\n Patch 5.4.0 (2013-09-10): Summoned Greater Earth Elemental will no longer taunt off players that are in a tanking specialization.   \n\n Patch 5.0.4 (2012-08-28): Duration reduced from 2 to 1 min. Cooldown reduced from 10 to 5 min.   \n\n Patch 4.0.6 (2011-02-08): The shared 2 minute elemental cooldown has been removed. Earth and Fire Elementals can now both be used at once. (undocumented)   \n\n Patch 4.0.1 (2010-10-12): Shaman are no longer required to carry around totems in their bags.   \n\n Patch 3.3.0 (2009-12-08): The cooldown for this totem has been reduced from 20 minutes to 10 minutes. Cannot be used in Arenas.   \n\n Patch 3.1.0 (2009-04-14): The summoned Earth Elemental should now have significantly more health and slightly more armor. Now scales up in power based on the shaman's spell power instead of attack power.   \n\n Patch 2.1.0 (2007-05-22): This pet will now come into the game with full health, including that gained from a percentage of its master's stamina.   \n\n Patch 2.0.3 (2007-01-09): The Greater Earth Elemental will now spawn in with full health.   \n\n Patch 2.0.1 (2006-12-05): Added.   \n\nSee also\n\nEarth Elemental Totem, TCG card\n\nReferences\n \n\n^ Through the Dark Portal, Earth Elemental Totem\n\n\n\nOther versions\n\n\nWrath Classic\n\nEarth Elemental Totem\n\n\n\nEarth Elemental Totem\nLevel 66 shaman ability\n24% of base mana\n10 min cooldown\nInstant\nTools: Earth Totem\nSummon an elemental totem that calls forth a greater earth elemental to protect the caster and <his/her> allies.  Lasts 2 min.\nProperties\nClass\n\nShaman\nSchool\n\nPhysical\nCooldown\n\n10 minutes\nOther information\nLevel learned\n\n66\n\nCataclysm Classic\n\nEarth Elemental Totem\n\n\n\nEarth Elemental Totem\nLevel 56 shaman ability\n24% of base mana\n10 min cooldown\nInstant\nTools: Earth Totem\nSummons an elemental totem that calls forth a Greater Earth Elemental to protect the caster and <his/her> allies.  Lasts 2 min.\nProperties\nClass\n\nShaman\nSchool\n\nPhysical\nCooldown\n\n10 minutes\nOther information\nLevel learned\n\n56\n\nMoP Classic\n\nEarth Elemental Totem\n\n\n\nEarth Elemental Totem\nLevel 58 shaman ability\n28.1% of base mana\n5 min cooldown\nInstant\nSummons an Earth Totem with 154755 health at the feet of the caster, calling forth a Greater Earth Elemental to protect the caster and <his/her> allies.  Lasts 1 min.\nProperties\nClass\n\nShaman\nSchool\n\nNature\nCooldown\n\n5 minutes\nOther information\nLevel learned\n\n58\nImprovements\n\n [Primal Elementalist]\n\nExternal links\n\n\nWowhead\n\nWoWDB\n\n\n\n\n\n\nWowhead\n\nWoWDB\n\n\n\n\n\n\nWowhead\n\nWoWDB\n\n\n\n\n\n\nWowhead\n\nWoWDB\n\n\n\n\n\n\n\n\nv\ne\nShaman totems\n\n\nEarth\n\n\n [Decoy Totem]\n\n [Earthbind Totem]\n\n [Earthgrab Totem]\n\n [Tremor Totem]\n\n\n\nFire\n\n\n [Totem of Wrath]\n\n\n\nWater\n\n\n [Healing Stream Totem]\n\n [Healing Tide Totem]\n\n [Poison Cleansing Totem]\n\n\n\nAir\n\n\n [Capacitor Totem]\n\n [Counterstrike Totem]\n\n [Grounding Totem]\n\n [Spirit Link Totem]\n\n [Static Field Totem]\n\n [Wind Rush Totem]\n\n\n\nOthers\n\n\n [Vesper Totem]\n\n\n\nRemoved\n\n\n [Ancestral Protection Totem]\n\n [Cleansing Totem]\n\n [Cloudburst Totem]\n\n [Disease Cleansing Totem]\n\n [Earth Elemental Totem]\n\n [Earthen Wall Totem]\n\nEarthquake Totem\n\n [Elemental Resistance Totem]\n\n [Fire Resistance Totem]\n\n [Frost Resistance Totem]\n\n [Grace of Air Totem]\n\n [Lightning Surge Totem]\n\n [Liquid Magma Totem]\n\n [Magma Totem]\n\n [Mana Spring Totem]\n\n [Mana Tide Totem]\n\n [Nature Resistance Totem]\n\n [Searing Totem]\n\n [Sentry Totem]\n\n [Skyfury Totem]\n\n [Stone Bulwark Totem]\n\n [Stoneskin Totem]\n\n [Stormlash Totem]\n\n [Totem of Tranquil Mind]\n\n [Tranquil Air Totem]\n\n [Voodoo Totem]\n\n [Windfury Totem]\n\n [Windwalk Totem]\n\n [Windwall Totem]\n\n\n\n\n\nv\ne\nPlayable classes\n\n\nClasses\n\n\n Death knight\n\n Demon hunter\n\n Druid\n\n Evoker\n\n Hunter\n\n Mage\n\n Monk\n\n Paladin\n\n Priest\n\n Rogue\n\n Shaman\n\n Warlock\n\n Warrior\n\n\n\nAbout shaman\n\n\nShaman category\n\nShaman races\n\nShaman quests\n\nShaman abilities (Classic ·  Forever)\n\nShaman trainers\n\nShaman sets\n\nShaman class"
+    },
+    {
+      "id": "shaman_abilities_classic",
+      "url": "https://warcraft.wiki.gg/wiki/Shaman_abilities_(Classic)?oldid=6901620",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "bcc6edbe4b75e36d7e310d1711032e4d1e5a9bdc6f61cbf95641339a61a1bd74",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\tFor shaman abilities and talents on retail servers, see Shaman abilities.\n\nShaman talents and abilities in the various Classic expansion versions.\n\n\nContents\n\n\n1 Abilities\n\n\n1.1 Classic\n\n1.2 Burning Crusade Classic\n\n1.3 Wrath of the Lich King Classic\n\n1.4 Cataclysm Classic\n\n1.5 Mists of Pandaria Classic\n\n\n\n2 Talents\n\n\n2.1 Classic\n\n2.2 Burning Crusade Classic\n\n2.3 Wrath of the Lich King Classic\n\n2.4 Cataclysm Classic\n\n2.5 Mists of Pandaria Classic\n\n\n\n3 Glyphs\n\n\n3.1 Wrath of the Lich King Classic\n\n3.2 Cataclysm Classic\n\n3.3 Mists of Pandaria Classic\n\n\n\n4 See also\n\n\n\n\nAbilities\n\nPrior to Cataclysm, there was no explicit choice of specialization. Abilities were divided up for organizational reasons, but could be freely learned by all characters at a class trainer.For Season of Discovery abilities, see Season of Discovery abilities and Rune system.\n\n\n Classic\n\n\n\n\n Elemental Combat\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Lightning Bolt]\n\n1\n\nDefault\n\n\n\n\n [Earth Shock]\n\n4\n\nTrainer\n\n\n\n\n [Earthbind Totem]\n\n6\n\nTrainer\n\n\n\n\n [Stoneclaw Totem]\n\n8\n\nTrainer\n\n\n\n\n [Flame Shock]\n\n10\n\nTrainer\n\n\n\n\n [Searing Totem]\n\n10\n\n  [13] Call of Fire\n\n\n\n\n [Fire Nova Totem]\n\n12\n\nTrainer\n\n\n\n\n [Purge]\n\n12\n\nTrainer\n\n\n\n\n [Frost Shock]\n\n20\n\nTrainer\n\n\n\n\n [Magma Totem]\n\n26\n\nTrainer\n\n\n\n\n [Chain Lightning]\n\n32\n\nTrainer\n\n\n\n\n Enhancement\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Rockbiter Weapon]\n\n1\n\nTrainer\n\n\n\n\n [Stoneskin Totem]\n\n4\n\nCall of Earth\n\n\n\n\n [Lightning Shield]\n\n8\n\nTrainer\n\n\n\n\n [Flametongue Weapon]\n\n10\n\nTrainer\n\n\n\n\n [Strength of Earth Totem]\n\n10\n\nTrainer\n\n\n\n\n [Frostbrand Weapon]\n\n20\n\nTrainer\n\n\n\n\n [Ghost Wolf]\n\n20\n\nTrainer\n\n\n\n\n [Water Breathing]\n\n22\n\nTrainer\n\n\n\n\n [Frost Resistance Totem]\n\n24\n\nTrainer\n\n\n\n\n [Far Sight]\n\n26\n\nTrainer\n\n\n\n\n [Fire Resistance Totem]\n\n28\n\nTrainer\n\n\n\n\n [Flametongue Totem]\n\n28\n\nTrainer\n\n\n\n\n [Water Walking]\n\n28\n\nTrainer\n\n\n\n\n [Astral Recall]\n\n30\n\nTrainer\n\n\n\n\n [Grounding Totem]\n\n30\n\nTrainer\n\n\n\n\n [Nature Resistance Totem]\n\n30\n\nTrainer\n\n\n\n\n [Windfury Weapon]\n\n30\n\nTrainer\n\n\n\n\n [Windfury Totem]\n\n32\n\nTrainer\n\n\n\n\n [Sentry Totem]\n\n34\n\nTrainer\n\n\n\n\n [Windwall Totem]\n\n36\n\nTrainer\n\n\n\n\n [Grace of Air Totem]\n\n42\n\nTrainer\n\n\n\n\n Restoration\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Healing Wave]\n\n1\n\nDefault\n\n\n\n\n [Ancestral Spirit]\n\n12\n\nTrainer\n\n\n\n\n [Cure Poison]\n\n16\n\nTrainer\n\n\n\n\n [Tremor Totem]\n\n18\n\nTrainer\n\n\n\n\n [Healing Stream Totem]\n\n20\n\n  [23] Call of Water\n\n\n\n\n [Lesser Healing Wave]\n\n20\n\nTrainer\n\n\n\n\n [Cure Disease]\n\n22\n\nTrainer\n\n\n\n\n [Poison Cleansing Totem]\n\n22\n\nTrainer\n\n\n\n\n [Mana Spring Totem]\n\n26\n\nTrainer\n\n\n\n\n [Reincarnation]\n\n30\n\nTrainer\n\n\n\n\n [Disease Cleansing Totem]\n\n38\n\nTrainer\n\n\n\n\n [Chain Heal]\n\n40\n\nTrainer\n\n\n\n\n [Tranquil Air Totem]\n\n50\n\nTrainer\n\n\n\n\nGeneral\n\n\n\nAbility\nLevel\nSource\n\n\n\n\nMail\n\n40\n\nTrainer\n\n\n\n Burning Crusade Classic\n\n\n\n\n Elemental Combat\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Lightning Bolt]\n\n1\n\nDefault\n\n\n\n\n [Earth Shock]\n\n4\n\nTrainer\n\n\n\n\n [Earthbind Totem]\n\n6\n\nTrainer\n\n\n\n\n [Stoneclaw Totem]\n\n8\n\nTrainer\n\n\n\n\n [Flame Shock]\n\n10\n\nTrainer\n\n\n\n\n [Searing Totem]\n\n10\n\n  [10] Call of Fire\n\n\n\n\n [Fire Nova Totem]\n\n12\n\nTrainer\n\n\n\n\n [Purge]\n\n12\n\nTrainer\n\n\n\n\n [Frost Shock]\n\n20\n\nTrainer\n\n\n\n\n [Magma Totem]\n\n26\n\nTrainer\n\n\n\n\n [Chain Lightning]\n\n32\n\nTrainer\n\n\n\n\n [Fire Elemental Totem]\n\n68\n\nTrainer\n\n\n\n\n Enhancement\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Rockbiter Weapon]\n\n1\n\nTrainer\n\n\n\n\n [Stoneskin Totem]\n\n4\n\nCall of Earth\n\n\n\n\n [Lightning Shield]\n\n8\n\nTrainer\n\n\n\n\n [Flametongue Weapon]\n\n10\n\nTrainer\n\n\n\n\n [Strength of Earth Totem]\n\n10\n\nTrainer\n\n\n\n\n [Frostbrand Weapon]\n\n20\n\nTrainer\n\n\n\n\n [Ghost Wolf]\n\n20\n\nTrainer\n\n\n\n\n [Water Breathing]\n\n22\n\nTrainer\n\n\n\n\n [Frost Resistance Totem]\n\n24\n\nTrainer\n\n\n\n\n [Far Sight]\n\n26\n\nTrainer\n\n\n\n\n [Fire Resistance Totem]\n\n28\n\nTrainer\n\n\n\n\n [Flametongue Totem]\n\n28\n\nTrainer\n\n\n\n\n [Water Walking]\n\n28\n\nTrainer\n\n\n\n\n [Astral Recall]\n\n30\n\nTrainer\n\n\n\n\n [Grounding Totem]\n\n30\n\nTrainer\n\n\n\n\n [Nature Resistance Totem]\n\n30\n\nTrainer\n\n\n\n\n [Windfury Weapon]\n\n30\n\nTrainer\n\n\n\n\n [Windfury Totem]\n\n32\n\nTrainer\n\n\n\n\n [Sentry Totem]\n\n34\n\nTrainer\n\n\n\n\n [Windwall Totem]\n\n36\n\nTrainer\n\n\n\n\n [Grace of Air Totem]\n\n42\n\nTrainer\n\n\n\n\n [Wrath of Air Totem]\n\n64\n\nTrainer\n\n\n\n\n [Earth Elemental Totem]\n\n66\n\nTrainer\n\n\n\n\n [Bloodlust]\n\n70\n\nTrainer\n\n\n\n\n [Heroism]\n\n70\n\nTrainer\n\n\n\n\n Restoration\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Healing Wave]\n\n1\n\nDefault\n\n\n\n\n [Ancestral Spirit]\n\n12\n\nTrainer\n\n\n\n\n [Cure Poison]\n\n16\n\nTrainer\n\n\n\n\n [Tremor Totem]\n\n18\n\nTrainer\n\n\n\n\n [Healing Stream Totem]\n\n20\n\nCall of Water\n\n\n\n\n [Lesser Healing Wave]\n\n20\n\nTrainer\n\n\n\n\n [Cure Disease]\n\n22\n\nTrainer\n\n\n\n\n [Poison Cleansing Totem]\n\n22\n\nTrainer\n\n\n\n\n [Mana Spring Totem]\n\n26\n\nTrainer\n\n\n\n\n [Reincarnation]\n\n30\n\nTrainer\n\n\n\n\n [Totemic Call]\n\n30\n\nTrainer\n\n\n\n\n [Disease Cleansing Totem]\n\n38\n\nTrainer\n\n\n\n\n [Chain Heal]\n\n40\n\nTrainer\n\n\n\n\n [Tranquil Air Totem]\n\n50\n\nTrainer\n\n\n\n\n [Water Shield]\n\n62\n\nTrainer\n\n\n\n\nGeneral\n\n\n\nAbility\nLevel\nSource\n\n\n\n\nMail\n\n40\n\nTrainer\n\n\n\n Wrath of the Lich King Classic\n\n\n\n\n Elemental Combat\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Lightning Bolt]\n\n1\n\nDefau"
+    },
+    {
+      "id": "warrior_abilities_classic",
+      "url": "https://warcraft.wiki.gg/wiki/Warrior_abilities_(Classic)?oldid=6652609",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "648e02005670672c0c89535566a3c8018236553d906f1147436660c122e4c1af",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\tFor warrior abilities and talents on retail servers, see Warrior abilities.\n\nWarrior talents and abilities in the various Classic expansion versions.\n\n\nContents\n\n\n1 Abilities\n\n\n1.1 Classic\n\n1.2 Burning Crusade Classic\n\n1.3 Wrath of the Lich King Classic\n\n1.4 Cataclysm Classic\n\n1.5 Mists of Pandaria Classic\n\n\n\n2 Talents\n\n\n2.1 Classic\n\n2.2 Burning Crusade Classic\n\n2.3 Wrath of the Lich King Classic\n\n2.4 Cataclysm Classic\n\n2.5 Mists of Pandaria Classic\n\n\n\n3 Glyphs\n\n\n3.1 Wrath of the Lich King Classic\n\n3.2 Cataclysm Classic\n\n3.3 Mists of Pandaria Classic\n\n\n\n4 See also\n\n\n\n\nAbilities\n\nPrior to Cataclysm, there was no explicit choice of specialization. Abilities were divided up for organizational reasons, but could be freely learned by all characters at a class trainer.For Season of Discovery abilities, see Season of Discovery abilities and Rune system.\n\n\n Classic\n\n\n\n\n Arms\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Stance]\n\n1\n\nDefault\n\n\n\n\n [Heroic Strike]\n\n1\n\nDefault\n\n\n\n\n [Charge]\n\n4\n\nTrainer\n\n\n\n\n [Rend]\n\n4\n\nTrainer\n\n\n\n\n [Thunder Clap]\n\n6\n\nTrainer\n\n\n\n\n [Hamstring]\n\n8\n\nTrainer\n\n\n\n\n [Overpower]\n\n12\n\nTrainer\n\n\n\n\n [Mocking Blow]\n\n16\n\nTrainer\n\n\n\n\n [Retaliation]\n\n20\n\nTrainer\n\n\n\n\n Fury\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Shout]\n\n1\n\nTrainer\n\n\n\n\n [Demoralizing Shout]\n\n14\n\nTrainer\n\n\n\n\n [Cleave]\n\n20\n\nTrainer\n\n\n\n\n [Intimidating Shout]\n\n22\n\nTrainer\n\n\n\n\n [Execute]\n\n24\n\nTrainer\n\n\n\n\n [Challenging Shout]\n\n26\n\nTrainer\n\n\n\n\n [Berserker Stance]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Intercept]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Slam]\n\n30\n\nTrainer\n\n\n\n\n [Berserker Rage]\n\n32\n\nTrainer\n\n\n\n\n [Whirlwind]\n\n36\n\nTrainer\n\n\n\n\n [Pummel]\n\n38\n\nTrainer\n\n\n\n\n [Recklessness]\n\n50\n\nTrainer\n\n\n\n\n Protection\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Bloodrage]\n\n10\n\nTrainer\n\n\n\n\n [Defensive Stance]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Sunder Armor]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Taunt]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Shield Bash]\n\n12\n\nTrainer\n\n\n\n\n [Revenge]\n\n14\n\nTrainer\n\n\n\n\n [Shield Block]\n\n16\n\nTrainer\n\n\n\n\n [Disarm]\n\n18\n\nTrainer\n\n\n\n\n [Shield Wall]\n\n28\n\nTrainer\n\n\n\n\nGeneral\n\n\n\nAbility\nLevel\nSource\n\n\n\n\nParry\n\n6\n\nTrainer\n\n\n\n\nDual Wield\n\n20\n\nTrainer\n\n\n\n\nPlate Mail\n\n40\n\nTrainer\n\n\n\n Burning Crusade Classic\n\n\n\n\n Arms\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Stance]\n\n1\n\nDefault\n\n\n\n\n [Heroic Strike]\n\n1\n\nDefault\n\n\n\n\n [Charge]\n\n4\n\nTrainer\n\n\n\n\n [Rend]\n\n4\n\nTrainer\n\n\n\n\n [Thunder Clap]\n\n6\n\nTrainer\n\n\n\n\n [Hamstring]\n\n8\n\nTrainer\n\n\n\n\n [Overpower]\n\n12\n\nTrainer\n\n\n\n\n [Mocking Blow]\n\n16\n\nTrainer\n\n\n\n\n [Retaliation]\n\n20\n\nTrainer\n\n\n\n\n Fury\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Shout]\n\n1\n\nTrainer\n\n\n\n\n [Demoralizing Shout]\n\n14\n\nTrainer\n\n\n\n\n [Cleave]\n\n20\n\nTrainer\n\n\n\n\n [Intimidating Shout]\n\n22\n\nTrainer\n\n\n\n\n [Execute]\n\n24\n\nTrainer\n\n\n\n\n [Challenging Shout]\n\n26\n\nTrainer\n\n\n\n\n [Berserker Stance]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Intercept]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Slam]\n\n30\n\nTrainer\n\n\n\n\n [Berserker Rage]\n\n32\n\nTrainer\n\n\n\n\n [Whirlwind]\n\n36\n\nTrainer\n\n\n\n\n [Pummel]\n\n38\n\nTrainer\n\n\n\n\n [Recklessness]\n\n50\n\nTrainer\n\n\n\n\n [Victory Rush]\n\n62\n\nTrainer\n\n\n\n\n [Commanding Shout]\n\n68\n\nTrainer\n\n\n\n\n Protection\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Bloodrage]\n\n10\n\nTrainer\n\n\n\n\n [Defensive Stance]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Sunder Armor]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Taunt]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Shield Bash]\n\n12\n\nTrainer\n\n\n\n\n [Revenge]\n\n14\n\nTrainer\n\n\n\n\n [Shield Block]\n\n16\n\nTrainer\n\n\n\n\n [Disarm]\n\n18\n\nTrainer\n\n\n\n\n [Stance Mastery]\n\n20\n\nTrainer\n\n\n\n\n [Shield Wall]\n\n28\n\nTrainer\n\n\n\n\n [Spell Reflection]\n\n64\n\nTrainer\n\n\n\n\n [Intervene]\n\n70\n\nTrainer\n\n\n\n\nGeneral\n\n\n\nAbility\nLevel\nSource\n\n\n\n\nParry\n\n6\n\nTrainer\n\n\n\n\nDual Wield\n\n20\n\nTrainer\n\n\n\n\nPlate Mail\n\n40\n\nTrainer\n\n\n\n Wrath of the Lich King Classic\n\n\n\n\n Arms\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Stance]\n\n1\n\nDefault\n\n\n\n\n [Heroic Strike]\n\n1\n\nDefault\n\n\n\n\n [Charge]\n\n4\n\nTrainer\n\n\n\n\n [Rend]\n\n4\n\nTrainer\n\n\n\n\n [Thunder Clap]\n\n6\n\nTrainer\n\n\n\n\n [Hamstring]\n\n8\n\nTrainer\n\n\n\n\n [Overpower]\n\n12\n\nTrainer\n\n\n\n\n [Mocking Blow]\n\n16\n\nTrainer\n\n\n\n\n [Retaliation]\n\n20\n\nTrainer\n\n\n\n\n [Shattering Throw]\n\n71\n\nTrainer\n\n\n\n\n [Heroic Throw]\n\n80\n\nTrainer\n\n\n\n\n Fury\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Battle Shout]\n\n1\n\nTrainer\n\n\n\n\n [Victory Rush]\n\n6\n\nTrainer\n\n\n\n\n [Demoralizing Shout]\n\n14\n\nTrainer\n\n\n\n\n [Cleave]\n\n20\n\nTrainer\n\n\n\n\n [Intimidating Shout]\n\n22\n\nTrainer\n\n\n\n\n [Execute]\n\n24\n\nTrainer\n\n\n\n\n [Challenging Shout]\n\n26\n\nTrainer\n\n\n\n\n [Berserker Stance]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Intercept]\n\n30\n\n  [30] The Affray\n\n\n\n\n [Slam]\n\n30\n\nTrainer\n\n\n\n\n [Berserker Rage]\n\n32\n\nTrainer\n\n\n\n\n [Whirlwind]\n\n36\n\nTrainer\n\n\n\n\n [Pummel]\n\n38\n\nTrainer\n\n\n\n\n [Recklessness]\n\n50\n\nTrainer\n\n\n\n\n [Commanding Shout]\n\n68\n\nTrainer\n\n\n\n\n [Enraged Regeneration]\n\n75\n\nTrainer\n\n\n\n\n Protection\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Bloodrage]\n\n10\n\nTrainer\n\n\n\n\n [Defensive Stance]\n\n10\n\n  [10] Bartleby's Mug  [10] Ulag the Cleaver\n\n\n\n\n [Sunder Armor]\n\n10\n\n  [10] Bartleby's Mug  [10]"
+    },
+    {
+      "id": "warlock_abilities_classic",
+      "url": "https://warcraft.wiki.gg/wiki/Warlock_abilities_(Classic)?oldid=6906017",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "c02a4b1d61110afcdc8882b1e84103d19d2a4f3d9de3d0668284aac4f46d2aee",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\tFor warlock abilities and talents on retail servers, see Warlock abilities.\n\nWarlock talents and abilities in the various Classic expansion versions.\n\n\nContents\n\n\n1 Abilities\n\n\n1.1 Classic\n\n\n1.1.1 Minion abilities\n\n\n\n1.2 Burning Crusade Classic\n\n\n1.2.1 Minion abilities\n\n\n\n1.3 Wrath of the Lich King Classic\n\n\n1.3.1 Minion abilities\n\n\n\n1.4 Cataclysm Classic\n\n\n1.4.1 Minion abilities\n\n\n\n1.5 Mists of Pandaria Classic\n\n\n1.5.1 Minion abilities\n\n\n\n\n\n2 Talents\n\n\n2.1 Classic\n\n2.2 Burning Crusade Classic\n\n2.3 Wrath of the Lich King Classic\n\n2.4 Cataclysm Classic\n\n2.5 Mists of Pandaria Classic\n\n\n\n3 Glyphs\n\n\n3.1 Wrath of the Lich King Classic\n\n3.2 Cataclysm Classic\n\n3.3 Mists of Pandaria Classic\n\n\n\n4 See also\n\n\n\n\nAbilities\n\nPrior to Cataclysm, there was no explicit choice of specialization. Abilities were divided up for organizational reasons, but could be freely learned by all characters at a class trainer.For Season of Discovery abilities, see Season of Discovery abilities and Rune system.\n\n\n Classic\n\n\n\n\n Affliction\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Corruption]\n\n4\n\nTrainer\n\n\n\n\n [Curse of Weakness]\n\n4\n\nTrainer\n\n\n\n\n [Life Tap]\n\n6\n\nTrainer\n\n\n\n\n [Curse of Agony]\n\n8\n\nTrainer\n\n\n\n\n [Fear]\n\n8\n\nTrainer\n\n\n\n\n [Drain Soul]\n\n10\n\nTrainer\n\n\n\n\n [Curse of Recklessness]\n\n14\n\nTrainer\n\n\n\n\n [Drain Life]\n\n14\n\nTrainer\n\n\n\n\n [Drain Mana]\n\n24\n\nTrainer\n\n\n\n\n [Curse of Tongues]\n\n26\n\nTrainer\n\n\n\n\n [Curse of the Elements]\n\n32\n\nTrainer\n\n\n\n\n [Howl of Terror]\n\n40\n\nTrainer\n\n\n\n\n [Death Coil]\n\n42\n\nTrainer\n\n\n\n\n [Curse of Shadow]\n\n44\n\nTrainer\n\n\n\n\n [Curse of Doom]\n\n60\n\nTrainer\n\n\n\n\n Demonology\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Demon Skin]\n\n1\n\nDefault\n\n\n\n\n [Summon Imp]\n\n1\n\nClass quest\n\n\n\n\n [Create Healthstone (Minor)]\n\n10\n\nTrainer\n\n\n\n\n [Summon Voidwalker]\n\n10\n\nThe Binding (Voidwalker)\n\n\n\n\n [Health Funnel]\n\n12\n\nTrainer\n\n\n\n\n [Unending Breath]\n\n16\n\nTrainer\n\n\n\n\n [Create Soulstone (Minor)]\n\n18\n\nTrainer\n\n\n\n\n [Demon Armor]\n\n20\n\nTrainer\n\n\n\n\n [Ritual of Summoning]\n\n20\n\nTrainer\n\n\n\n\n [Summon Incubus]\n\n20\n\nThe Binding (Incubus)\n\n\n\n\n [Summon Succubus]\n\n20\n\nThe Binding (Succubus)\n\n\n\n\n [Create Healthstone (Lesser)]\n\n22\n\nTrainer\n\n\n\n\n [Eye of Kilrogg]\n\n22\n\nTrainer\n\n\n\n\n [Sense Demons]\n\n24\n\nTrainer\n\n\n\n\n [Detect Lesser Invisibility]\n\n26\n\nTrainer\n\n\n\n\n [Banish]\n\n28\n\nTrainer\n\n\n\n\n [Create Firestone (Lesser)]\n\n28\n\nTrainer\n\n\n\n\n [Create Soulstone (Lesser)]\n\n30\n\nTrainer\n\n\n\n\n [Subjugate Demon]\n\n30\n\nTrainer\n\n\n\n\n [Summon Felhunter]\n\n30\n\n  [30] The Binding\n\n\n\n\n [Shadow Ward]\n\n32\n\nTrainer\n\n\n\n\n [Create Healthstone]\n\n34\n\nTrainer\n\n\n\n\n [Create Firestone]\n\n36\n\nTrainer\n\n\n\n\n [Create Spellstone]\n\n36\n\nTrainer\n\n\n\n\n [Detect Invisibility]\n\n38\n\nTrainer\n\n\n\n\n [Create Soulstone]\n\n40\n\nTrainer\n\n\n\n\n [Summon Felsteed]\n\n40\n\n  [40] Summon Felsteed\n\n\n\n\n [Create Firestone (Greater)]\n\n46\n\nTrainer\n\n\n\n\n [Create Healthstone (Greater)]\n\n46\n\nTrainer\n\n\n\n\n [Create Spellstone (Greater)]\n\n48\n\nTrainer\n\n\n\n\n [Create Soulstone (Greater)]\n\n50\n\nTrainer\n\n\n\n\n [Detect Greater Invisibility]\n\n50\n\nTrainer\n\n\n\n\n [Inferno]\n\n50\n\n  [55] Kroshius' Infernal Core [Grimoire of Inferno]\n\n\n\n\n [Create Firestone (Major)]\n\n56\n\nTrainer\n\n\n\n\n [Create Healthstone (Major)]\n\n58\n\nTrainer\n\n\n\n\n [Create Soulstone (Major)]\n\n60\n\nTrainer\n\n\n\n\n [Create Spellstone (Major)]\n\n60\n\nTrainer\n\n\n\n\n [Ritual of Doom]\n\n60\n\n  [60G] Suppression [Grimoire of Doom]\n\n\n\n\n [Summon Dreadsteed]\n\n60\n\n  [60D] Dreadsteed of Xoroth\n\n\n\n\n Destruction\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Immolate]\n\n1\n\nTrainer\n\n\n\n\n [Shadow Bolt]\n\n1\n\nDefault\n\n\n\n\n [Searing Pain]\n\n18\n\nTrainer\n\n\n\n\n [Rain of Fire]\n\n20\n\nTrainer\n\n\n\n\n [Hellfire]\n\n30\n\nTrainer\n\n\n\n\n [Soul Fire]\n\n48\n\nTrainer\n\n\nMinion abilities\n\n\n\n\n\nImp\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Firebolt]\n\n1\n\nDefault\n\n\n\n\n [Blood Pact]\n\n4\n\n [Grimoire of Blood Pact (Rank 1)]\n\n\n\n\n [Phase Shift]\n\n12\n\n [Grimoire of Phase Shift]\n\n\n\n\n [Fire Shield]\n\n14\n\n [Grimoire of Fire Shield (Rank 1)]\n\n\n\n\nVoidwalker\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Torment]\n\n10\n\nDefault\n\n\n\n\n [Sacrifice]\n\n16\n\n [Grimoire of Sacrifice (Rank 1)]\n\n\n\n\n [Consume Shadows]\n\n18\n\n [Grimoire of Consume Shadows (Rank 1)]\n\n\n\n\n [Suffering]\n\n24\n\n [Grimoire of Suffering (Rank 1)]\n\n\n\n\nSayaad\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Lash of Pain]\n\n20\n\nDefault\n\n\n\n\n [Soothing Kiss]\n\n22\n\n [Grimoire of Soothing Kiss (Rank 1)]\n\n\n\n\n [Seduction]\n\n26\n\n [Grimoire of Seduction]\n\n\n\n\n [Lesser Invisibility]\n\n32\n\n [Grimoire of Lesser Invisibility]\n\n\n\n\nFelhunter\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Devour Magic]\n\n30\n\nDefault\n\n\n\n\n [Tainted Blood]\n\n32\n\n [Grimoire of Tainted Blood (Rank 1)]\n\n\n\n\n [Spell Lock]\n\n36\n\n [Grimoire of Spell Lock (Rank 1)]\n\n\n\n\n [Paranoia]\n\n42\n\n [Grimoire of Paranoia]\n\n\n\n Burning Crusade Classic\n\n\n\n\n Affliction\n\n\n\nAbility\nLevel\nSource\n\n\n\n\n [Corruption]\n\n4\n\nTrainer\n\n\n\n\n [Curse of Weakness]\n\n4\n\nTrainer\n\n\n\n\n [Life Tap]\n\n6\n\nTrainer\n\n\n\n\n [Curse of Agony]\n\n8\n\nTrainer\n\n\n\n\n [Fear]\n\n8\n\nTrainer\n\n\n\n\n [Drain Soul]\n\n10\n\nTrainer\n\n\n\n\n [Curse of Recklessness]\n\n14\n\nTrainer\n\n\n\n\n [Drain Life]\n\n14\n\nTrainer\n\n\n\n\n [Drain Mana]\n\n24\n\nTrainer\n\n\n\n\n [Curse of Tongues]\n\n26\n\nTrainer\n\n\n\n\n [Curs"
+    },
+    {
+      "id": "refreshing_spring_water",
+      "url": "https://warcraft.wiki.gg/wiki/Refreshing_Spring_Water?oldid=6255866",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "da21e2404f048cda1472aabbe7c6907ad5aa3b273b63d0fd859cd035b219336d",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\t\nRefreshing Spring Water\nUse: Restores 180 mana over 18 sec.  Must remain seated while drinking.\nMax Stack: 20\n\nRefreshing Spring Water is the lowest-level drink item available.\n\n\nContents\n\n\n1 Source\n\n2 As an ingredient\n\n\n2.1 Cooking\n\n2.2 Engineering\n\n\n\n3 Patch changes\n\n4 External links\n\n\n\n\nSource\n\nMost races start with two Refreshing Spring Waters in their inventory. This item can also be purchased from vendors throughout the world, dropped by low-level mobs, found in Water Barrels in starting zones, or obtained as a reward from the following quests:\n\n\n [1-30] Bound for Kharanos\n\n [1-30] Completing the Delivery\n\n [1-30] Dolanaar Delivery\n\n [1-10] No Better Than the Zombies\n\n [1-10] Rest and Relaxation\n\n [1-30] Word from Azure Watch\n\n  [1-20] You Can't Take 'Em Alone\n\n The subject of this section has been removed from World of Warcraft but is present in Classic.\n\n [5] A Peon's Burden\n\n [5] A Rog"
+    },
+    {
+      "id": "tough_jerky",
+      "url": "https://warcraft.wiki.gg/wiki/Tough_Jerky?oldid=6419724",
+      "retrieved_date": "2026-10-12",
+      "http_status": 200,
+      "response_sha256": "8bef09320511af94fb8b4880dbb86aef03cac087f291635fb920a4797af6f8cd",
+      "scope": "Version scope stated in excerpt; generic pages must not be assumed Classic",
+      "short_excerpt": "From Warcraft Wiki\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\tJump to navigation\n\t\t\t\t\tJump to search\n\t\t\t\t\t\nTough Jerky\nUse: Restores 94 health over 18 sec.  Must remain seated while eating.\nMax Stack: 20\nSell Price: 1\n\nTough Jerky is preserved meat eaten by adventurers.\n\n\nSource\n\nThis item can be purchased from most food or meat vendors and is also a common drop from low level mobs. It is also a quest reward from the following quests:\n\n\n [8] Break a Few Eggs\n\n [5] Supplies to Tannok\n\nSee also\n\n [Imported Tough Jerky]\n\nExternal links\n\n\nWowhead\n\nWoWDB\n\n\n\n\n\n\n\n\n\nRetrieved from \"https://warcraft.wiki.gg/wiki/Tough_Jerky?oldid=6419724\"\n\t\t\t\t\tCategories: \nWorld of Warcraft common items\nFood items\nQuest rewards\n\t\t\t\t\n\t\t\t\n\t\t\t\n        \n        \n        \n        \n        \n            Report bad advertisement\n        \n\n\n\t\t\n\t\t\n        \n\n\n\t\n\n\n\tCookies help us deliver our services. By using our services, you agree to our use of cookies.More informationOK\n\n\n\n\n\t\n\t\n This page was last edited on 20 July 2025, at 14:09."
+    }
+  ],
+  "fetch_attempts": [
+    {
+      "id": "warrior_classic_icy",
+      "url": "https://www.icy-veins.com/wow-classic/warrior-dps-pve-rotation-cooldowns-abilities",
+      "status": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "food_types",
+      "url": "https://warcraft.wiki.gg/wiki/Food_types",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "five_second_rule",
+      "url": "https://warcraft.wiki.gg/wiki/Five_second_rule",
+      "status": 200,
+      "bytes": 39882
+    },
+    {
+      "id": "enslave_demon",
+      "url": "https://warcraft.wiki.gg/wiki/Enslave_Demon",
+      "status": 200,
+      "bytes": 92114
+    },
+    {
+      "id": "earth_elemental",
+      "url": "https://warcraft.wiki.gg/wiki/Earth_Elemental_Totem",
+      "status": 200,
+      "bytes": 103948
+    },
+    {
+      "id": "call_of_earth",
+      "url": "https://warcraft.wiki.gg/wiki/Call_of_Earth",
+      "status": 200,
+      "bytes": 50817
+    },
+    {
+      "id": "Lightning_Bolt_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Lightning_Bolt_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Shadow_Bolt_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Shadow_Bolt_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Heroic_Strike_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Heroic_Strike_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Healing_Wave_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Healing_Wave_(Classic)",
+      "status": 200,
+      "bytes": 80338
+    },
+    {
+      "id": "Flame_Shock_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Flame_Shock_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Rage_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Rage_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Refreshing_Spring_Water",
+      "url": "https://warcraft.wiki.gg/wiki/Refreshing_Spring_Water",
+      "status": 200,
+      "bytes": 82902
+    },
+    {
+      "id": "Tough_Jerky",
+      "url": "https://warcraft.wiki.gg/wiki/Tough_Jerky",
+      "status": 200,
+      "bytes": 40400
+    },
+    {
+      "id": "Drink_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Drink_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Food_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Food_(Classic)",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "lightning_bolt",
+      "url": "https://www.wowhead.com/classic/spell=403/lightning-bolt",
+      "status": 202,
+      "bytes": 0,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "shadow_bolt",
+      "url": "https://www.wowhead.com/classic/spell=686/shadow-bolt",
+      "status": 202,
+      "bytes": 0,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "heroic_strike",
+      "url": "https://www.wowhead.com/classic/spell=78/heroic-strike",
+      "status": 202,
+      "bytes": 0,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "healing_wave",
+      "url": "https://www.wowhead.com/classic/spell=331/healing-wave",
+      "status": 202,
+      "bytes": 0,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "flame_shock",
+      "url": "https://www.wowhead.com/classic/spell=8050/flame-shock",
+      "status": 202,
+      "bytes": 0,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "rage_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Rage",
+      "status": 200,
+      "bytes": 101962,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "food_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Food",
+      "status": 200,
+      "bytes": 65433,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "water_wiki",
+      "url": "https://warcraft.wiki.gg/wiki/Drink",
+      "status": 200,
+      "bytes": 101626,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    {
+      "id": "water_classicdb",
+      "url": "https://classicdb.ch/?item=159",
+      "status": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "jerky_classicdb",
+      "url": "https://classicdb.ch/?item=117",
+      "status": null,
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+    },
+    {
+      "id": "Lightning_Bolt",
+      "url": "https://warcraft.wiki.gg/wiki/Lightning_Bolt",
+      "status": 200,
+      "bytes": 139021
+    },
+    {
+      "id": "Shadow_Bolt",
+      "url": "https://warcraft.wiki.gg/wiki/Shadow_Bolt",
+      "status": 200,
+      "bytes": 129975
+    },
+    {
+      "id": "Heroic_Strike",
+      "url": "https://warcraft.wiki.gg/wiki/Heroic_Strike",
+      "status": 200,
+      "bytes": 89215
+    },
+    {
+      "id": "Flame_Shock",
+      "url": "https://warcraft.wiki.gg/wiki/Flame_Shock",
+      "status": 200,
+      "bytes": 123690
+    },
+    {
+      "id": "Rage_generation",
+      "url": "https://warcraft.wiki.gg/wiki/Rage_generation",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "Mana_regeneration",
+      "url": "https://warcraft.wiki.gg/wiki/Mana_regeneration",
+      "status": 200,
+      "bytes": 48398
+    },
+    {
+      "id": "Shaman_abilities_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Shaman_abilities_(Classic)",
+      "status": 200,
+      "bytes": 674671
+    },
+    {
+      "id": "Warrior_abilities_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Warrior_abilities_(Classic)",
+      "status": 200,
+      "bytes": 632198
+    },
+    {
+      "id": "Warlock_abilities_(Classic)",
+      "url": "https://warcraft.wiki.gg/wiki/Warlock_abilities_(Classic)",
+      "status": 200,
+      "bytes": 775799
+    }
+  ],
+  "access_limits": {
+    "wowhead_classic": "HTTP 202 empty body; not readable evidence",
+    "classicdb": "Proxy tunnel 403; no bypass",
+    "icy_veins": "Proxy tunnel 403; no bypass"
+  },
+  "not_claimed": [
+    "exact vanilla rage conversion formula",
+    "verified Classic Tough Jerky restoration amount",
+    "higher-rank cost tables",
+    "retail mana/rage behavior as Classic",
+    "implemented v0.2.9 resources or recruitment"
+  ]
+}

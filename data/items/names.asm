@@ -1,10 +1,10 @@
 ItemNames::
 	list_start ITEM_NAME_LENGTH - 1
 	li "MASTER BALL"
-	li "ULTRA BALL"
+	li "RALLY HORN"
 	li "BRIGHTPOWDER"
-	li "GREAT BALL"
-	li "# BALL"
+	li "DEMON SKULL"
+	li "EARTH RELIC"
 	li "CRUDE AXE"
 	li "BICYCLE"
 	li "MOON STONE"
@@ -148,7 +148,7 @@ ItemNames::
 	li "LEFTOVERS"
 	li "BLADE MEDAL"
 	li "EARTH TOTEM"
-	li "TOUGH BREAD"
+	li "TOUGH JERKY"
 	li "MYSTERYBERRY"
 	li "DRAGON SCALE"
 	li "BERSERK GENE"

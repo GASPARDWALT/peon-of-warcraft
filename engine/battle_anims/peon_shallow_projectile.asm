@@ -17,9 +17,26 @@ PeonStepShallowProjectile::
 	ld hl, BATTLEANIMSTRUCT_VAR1
 	add hl, bc
 	inc [hl]
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .native_lift
+	ld a, [wBattleAnimParam]
+	cp $fe ; Kolkar arrow
+	jr z, .move_y
+	cp $fc ; enemy Warlock shadow
+	jr z, .move_y
+	cp $fb ; enemy imp fire
+	jr z, .move_y
+.native_lift
+	; A large active imp starts below the portrait; rise every frame so
+	; its actual fireball clears the native player HUD before crossing it.
+	ld a, [wBattleAnimParam]
+	cp $fd
+	jr z, .move_y
 	ld a, [hl]
 	and 7
 	ret nz
+.move_y
 	ld hl, BATTLEANIMSTRUCT_YCOORD
 	add hl, bc
 	dec [hl]

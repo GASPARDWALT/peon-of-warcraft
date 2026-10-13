@@ -12,6 +12,7 @@ PlayBattleAnim:
 	ld a, [wBattleAnimParam]
 	push af
 	farcall PeonPrepareWarlockWandAnimation
+	farcall PeonPrepareKolkarArrowAnimationV029
 
 	call _PlayBattleAnim
 	pop af

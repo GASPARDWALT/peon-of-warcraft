@@ -149,8 +149,8 @@ INCBIN "gfx/pokemon/machop/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/machop/shiny.pal"
 INCBIN "gfx/pokemon/machoke/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/machoke/shiny.pal"
-INCBIN "gfx/pokemon/machamp/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/machamp/shiny.pal"
+INCBIN "gfx/peon_native_v029/machamp/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/machamp/shiny.gbcpal", middle_colors
 INCBIN "gfx/pokemon/bellsprout/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/bellsprout/shiny.pal"
 INCBIN "gfx/pokemon/weepinbell/normal.gbcpal", middle_colors
@@ -161,16 +161,16 @@ INCBIN "gfx/pokemon/tentacool/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/tentacool/shiny.pal"
 INCBIN "gfx/pokemon/tentacruel/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/tentacruel/shiny.pal"
-INCBIN "gfx/pokemon/geodude/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/geodude/shiny.pal"
+INCBIN "gfx/peon_native_v029/geodude/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/geodude/shiny.gbcpal", middle_colors
 INCBIN "gfx/pokemon/graveler/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/graveler/shiny.pal"
 INCBIN "gfx/pokemon/golem/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/golem/shiny.pal"
-INCBIN "gfx/pokemon/ponyta/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/ponyta/shiny.pal"
-INCBIN "gfx/pokemon/rapidash/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/rapidash/shiny.pal"
+INCBIN "gfx/peon_native_v029/ponyta/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/ponyta/shiny.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/rapidash/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/rapidash/shiny.gbcpal", middle_colors
 INCBIN "gfx/pokemon/slowpoke/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/slowpoke/shiny.pal"
 INCBIN "gfx/pokemon/slowbro/normal.gbcpal", middle_colors
@@ -189,8 +189,8 @@ INCBIN "gfx/pokemon/seel/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/seel/shiny.pal"
 INCBIN "gfx/pokemon/dewgong/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/dewgong/shiny.pal"
-INCBIN "gfx/pokemon/grimer/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/grimer/shiny.pal"
+INCBIN "gfx/peon_native_v029/grimer/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/grimer/shiny.gbcpal", middle_colors
 INCBIN "gfx/pokemon/muk/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/muk/shiny.pal"
 INCBIN "gfx/pokemon/shellder/normal.gbcpal", middle_colors
@@ -203,8 +203,8 @@ INCBIN "gfx/pokemon/haunter/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/haunter/shiny.pal"
 INCBIN "gfx/pokemon/gengar/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/gengar/shiny.pal"
-INCBIN "gfx/pokemon/onix/normal.gbcpal", middle_colors
-INCLUDE "gfx/pokemon/onix/shiny.pal"
+INCBIN "gfx/peon_native_v029/onix/normal.gbcpal", middle_colors
+INCBIN "gfx/peon_native_v029/onix/shiny.gbcpal", middle_colors
 INCBIN "gfx/pokemon/drowzee/normal.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/drowzee/shiny.pal"
 INCBIN "gfx/pokemon/hypno/normal.gbcpal", middle_colors

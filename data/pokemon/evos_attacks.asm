@@ -840,19 +840,10 @@ MachokeEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, LOW_KICK
-	db 1, LEER
-	db 1, FOCUS_ENERGY
-	db 8, FOCUS_ENERGY
-	db 15, KARATE_CHOP
-	db 19, SEISMIC_TOSS
-	db 25, FORESIGHT
-	db 34, VITAL_THROW
-	db 43, CROSS_CHOP
-	db 52, SCARY_FACE
-	db 61, SUBMISSION
-	db 0 ; no more level-up moves
+	db 0 ; no evolution for this Durotar role
+	db 1, POUND
+	db 1, KARATE_CHOP
+	db 0 ; companion curricula are explicit
 
 BellsproutEvosAttacks:
 	db EVOLVE_LEVEL, 21, WEEPINBELL
@@ -924,10 +915,10 @@ TentacruelEvosAttacks:
 	db 0 ; no more level-up moves
 
 GeodudeEvosAttacks:
-	db 0 ; no evolutions
+	db 0 ; no evolution for this Durotar role
 	db 1, SCRATCH
 	db 1, FLAMETHROWER
-	db 0 ; no more level-up moves
+	db 0 ; companion curricula are explicit
 
 GravelerEvosAttacks:
 	db EVOLVE_TRADE, -1, GOLEM
@@ -962,35 +953,16 @@ GolemEvosAttacks:
 	db 0 ; no more level-up moves
 
 PonytaEvosAttacks:
-	db EVOLVE_LEVEL, 40, RAPIDASH
-	db 0 ; no more evolutions
+	db 0 ; no evolution for this Durotar role
+	db 1, PECK
 	db 1, TACKLE
-	db 4, GROWL
-	db 8, TAIL_WHIP
-	db 13, EMBER
-	db 19, STOMP
-	db 26, FIRE_SPIN
-	db 34, TAKE_DOWN
-	db 43, AGILITY
-	db 53, FIRE_BLAST
-	db 0 ; no more level-up moves
+	db 0 ; companion curricula are explicit
 
 RapidashEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 1, TAIL_WHIP
-	db 1, EMBER
-	db 4, GROWL
-	db 8, TAIL_WHIP
-	db 13, EMBER
-	db 19, STOMP
-	db 26, FIRE_SPIN
-	db 34, TAKE_DOWN
-	db 40, FURY_ATTACK
-	db 47, AGILITY
-	db 61, FIRE_BLAST
-	db 0 ; no more level-up moves
+	db 0 ; no evolution for this Durotar role
+	db 1, KARATE_CHOP
+	db 1, POUND
+	db 0 ; companion curricula are explicit
 
 SlowpokeEvosAttacks:
 	db EVOLVE_LEVEL, 37, SLOWBRO
@@ -1118,10 +1090,10 @@ DewgongEvosAttacks:
 	db 0 ; no more level-up moves
 
 GrimerEvosAttacks:
-	db 0 ; Durotar creature, no evolution
+	db 0 ; no evolution for this Durotar role
+	db 1, SHADOW_BALL
 	db 1, FLAMETHROWER
-	db 1, TACKLE
-	db 0 ; no more level-up moves
+	db 0 ; companion curricula are explicit
 
 MukEvosAttacks:
 	db 0 ; no more evolutions
@@ -1205,17 +1177,10 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, STEELIX
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, SCREECH
-	db 10, BIND
-	db 14, ROCK_THROW
-	db 23, HARDEN
-	db 27, RAGE
-	db 36, SANDSTORM
-	db 40, SLAM
-	db 0 ; no more level-up moves
+	db 0 ; no evolution for this Durotar role
+	db 1, POUND
+	db 1, THUNDERSHOCK
+	db 0 ; companion curricula are explicit
 
 DrowzeeEvosAttacks:
 	db EVOLVE_LEVEL, 26, HYPNO

@@ -20,6 +20,7 @@ HealParty:
 	jr .loop
 
 .done
+	farcall PeonRefillPartyResourcesV029
 	ret
 
 HealPartyMon:

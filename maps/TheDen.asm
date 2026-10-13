@@ -234,6 +234,12 @@ TheDenKentoScript:
 	waitbutton
 	closetext
 .Trainer:
+	checkevent EVENT_PEON_CUTTING_TURNED_IN
+	iffalse .TrainingMenu
+	checkevent EVENT_PEON_RECRUIT_DONE_V029
+	iftrue .TrainingMenu
+	farscall PeonRecruitmentQuestV029
+.TrainingMenu:
 	opentext
 	writetext TheDenKentoText
 	waitbutton
@@ -581,7 +587,7 @@ TheDenDuoknaScript:
 	db 5
 	db "SPRING WATER@"
 	db "HEAL POTION@"
-	db "TOUGH BREAD@"
+	db "TOUGH JERKY@"
 	db "MANA POTION@"
 	db "CANCEL@"
 
@@ -611,6 +617,12 @@ TheDenWarriorMasterScript:
 	closetext
 	end
 .Trainer:
+	checkevent EVENT_PEON_CUTTING_TURNED_IN
+	iffalse .TrainingMenu
+	checkevent EVENT_PEON_RECRUIT_DONE_V029
+	iftrue .TrainingMenu
+	farscall PeonRecruitmentQuestV029
+.TrainingMenu:
 	opentext
 	writetext TheDenWarriorTrainingText
 	waitbutton
@@ -629,6 +641,12 @@ TheDenWarlockMasterScript:
 	closetext
 	end
 .Trainer:
+	checkevent EVENT_PEON_CUTTING_TURNED_IN
+	iffalse .TrainingMenu
+	checkevent EVENT_PEON_RECRUIT_DONE_V029
+	iftrue .TrainingMenu
+	farscall PeonRecruitmentQuestV029
+.TrainingMenu:
 	opentext
 	writetext TheDenWarlockTrainingText
 	waitbutton
@@ -646,7 +664,7 @@ TheDenProvisionerText:
 TheDenCookText:
 	text "CAMP COOK"
 	para "<PLAYER>,"
-	line "bread helps after"
+	line "meat helps after"
 	cont "a hard day's work."
 	done
 
@@ -706,13 +724,13 @@ DuoknaPotionBoughtText:
 	line "Safe travels!"
 	done
 TheDenBreadOfferText:
-	text "TOUGH BREAD x5"
+	text "TOUGH JERKY x5"
 	line "25 copper. Buy?"
 	para "Restores 10 HP"
 	line "outside battle."
 	done
 TheDenBreadBoughtText:
-	text "Bread packed."
+	text "Jerky packed."
 	line "Eat after fights."
 	done
 DuoknaPoorText:
@@ -890,8 +908,8 @@ TheDenCampfireOfferText:
 DuoknaManaOfferText:
 	text "MANA POTION x1"
 	line "25 copper. Buy?"
-	para "Five charges for"
-	line "each caster spell."
+	para "Restores 40 mana."
+	line "One battle turn."
 	done
 DuoknaManaBoughtText:
 	text "Mana packed."

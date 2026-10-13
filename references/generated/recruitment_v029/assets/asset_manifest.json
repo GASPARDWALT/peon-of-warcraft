@@ -1,0 +1,2324 @@
+{
+  "source_art_only": true,
+  "native_runtime_integration_verified": false,
+  "sprite_species_item_move_ids_assigned": false,
+  "saved_fields_modified": false,
+  "style": "Original humble Warcraft-inspired recruits, explicit native pixels and fixed RGB555 palettes.",
+  "recruits": {
+    "earth_spirit": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              15
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              15
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              2,
+              0,
+              14,
+              15
+            ],
+            "opaque_pixels": 137
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              15
+            ],
+            "opaque_pixels": 137
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 137
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 138
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 151
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              2,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 137
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 138
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/earth_spirit/overworld.bin",
+        "bytes": 768,
+        "sha256": "ea1eab5fcd0306a548ca3fe7b6085d735c6bb53c43e2e14fbc1e6d47450aaaf5",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            13,
+            23,
+            6
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              5,
+              4,
+              52,
+              54
+            ],
+            "opaque_pixels": 1265
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              7,
+              3,
+              53,
+              54
+            ],
+            "opaque_pixels": 1273
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              2,
+              4,
+              51,
+              54
+            ],
+            "opaque_pixels": 1265
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/earth_spirit/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "9685e14c5727655817653b822f2d5f894c95bb01a777b4f64f35420ab4757f92",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            13,
+            23,
+            6
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              6,
+              4,
+              48,
+              48
+            ],
+            "opaque_pixels": 1066
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              8,
+              3,
+              47,
+              48
+            ],
+            "opaque_pixels": 1065
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              3,
+              4,
+              46,
+              48
+            ],
+            "opaque_pixels": 1042
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/earth_spirit/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "b8dc915970952730a5cf7e7ca9cf23586cd45d6f236b167fad6eb0baddb7d9b4",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            13,
+            23,
+            6
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "1f407002e145177bb239bc81755cbcc2e88e6e94314d0cb4ec3a1915b1dff478",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              13,
+              23,
+              6
+            ],
+            [
+              18,
+              12,
+              6
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "ed7a21db48b63e62020824b76e1f4bade3e0ab011fb028cde98e3be66303bb26",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              13,
+              23,
+              6
+            ],
+            [
+              18,
+              12,
+              6
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "demon_imp": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              15
+            ],
+            "opaque_pixels": 111
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              15
+            ],
+            "opaque_pixels": 111
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              15
+            ],
+            "opaque_pixels": 99
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              15
+            ],
+            "opaque_pixels": 99
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 112
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 112
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 100
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 100
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 113
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 113
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 101
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 101
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/demon_imp/overworld.bin",
+        "bytes": 768,
+        "sha256": "94f24514a93f4e787960e470f1132d24983519753f60e49aec6112cb93df9036",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            7,
+            3
+          ],
+          [
+            31,
+            26,
+            14
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              15,
+              2,
+              52,
+              56
+            ],
+            "opaque_pixels": 872
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              12,
+              1,
+              52,
+              56
+            ],
+            "opaque_pixels": 900
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              14,
+              2,
+              52,
+              56
+            ],
+            "opaque_pixels": 897
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/demon_imp/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "5110fb08a87163cf03764e7f35bc823edd8d71e0ac4bd5e27b548b3d9b11f05f",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            7,
+            3
+          ],
+          [
+            13,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              16,
+              1,
+              48,
+              48
+            ],
+            "opaque_pixels": 774
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              13,
+              0,
+              48,
+              48
+            ],
+            "opaque_pixels": 785
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              15,
+              1,
+              48,
+              48
+            ],
+            "opaque_pixels": 803
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/demon_imp/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "e4ae93093f2ec0d274065d946cde1526866dd38aec0f34dce0e112a7983f9737",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            7,
+            3
+          ],
+          [
+            13,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "6817b7c38e89b3b64558763041f00ea4037ef6c31e44ce1f06aabed2e96b071f",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              26,
+              7,
+              3
+            ],
+            [
+              13,
+              3,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "00a8912c2af8ce9ca2725fa7b539bfebf7f1f3a73da0e1fdc90741bba8cae7bc",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              26,
+              7,
+              3
+            ],
+            [
+              13,
+              3,
+              2
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "orc_grunt": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              1,
+              1,
+              13,
+              16
+            ],
+            "opaque_pixels": 130
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              3,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              1,
+              1,
+              12,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              4,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              1,
+              1,
+              13,
+              16
+            ],
+            "opaque_pixels": 123
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              3,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 121
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              1,
+              1,
+              12,
+              16
+            ],
+            "opaque_pixels": 118
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              2,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 118
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              1,
+              1,
+              13,
+              16
+            ],
+            "opaque_pixels": 123
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              3,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 121
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              1,
+              1,
+              13,
+              16
+            ],
+            "opaque_pixels": 118
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              4,
+              1,
+              15,
+              16
+            ],
+            "opaque_pixels": 118
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_grunt/overworld.bin",
+        "bytes": 768,
+        "sha256": "ce4da397ec3d7f0e982583313e288e7be5657c772119bd4aab0e80cf227e7a6a",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            16,
+            10,
+            5
+          ],
+          [
+            12,
+            21,
+            6
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              5,
+              8,
+              48,
+              54
+            ],
+            "opaque_pixels": 1248
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              5,
+              5,
+              48,
+              54
+            ],
+            "opaque_pixels": 1250
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              7,
+              8,
+              48,
+              54
+            ],
+            "opaque_pixels": 1200
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_grunt/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "540f3e2ea855b4188f1c23ff2397be3825a4ae74c5b8471c330b376875637359",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            21,
+            6
+          ],
+          [
+            16,
+            10,
+            5
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              4,
+              3,
+              48,
+              48
+            ],
+            "opaque_pixels": 1229
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              4,
+              1,
+              48,
+              48
+            ],
+            "opaque_pixels": 1244
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              4,
+              3,
+              48,
+              48
+            ],
+            "opaque_pixels": 1200
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_grunt/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "ff5fc092fea4b0d7ad256d2ab0e3b8d844f99bdb172831c37b98ff561284c4c4",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            21,
+            6
+          ],
+          [
+            16,
+            10,
+            5
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              12,
+              21,
+              6
+            ],
+            [
+              16,
+              10,
+              5
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "5901421aafee86247254f04b954e632f3652a1e79b600ab564f685e63fff22ac",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              12,
+              21,
+              6
+            ],
+            [
+              16,
+              10,
+              5
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "enemies": {
+    "orc_warlock": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 139
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 139
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "opaque_pixels": 141
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 141
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              14,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              2,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              13,
+              16
+            ],
+            "opaque_pixels": 132
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              3,
+              0,
+              15,
+              16
+            ],
+            "opaque_pixels": 132
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_warlock/overworld.bin",
+        "bytes": 768,
+        "sha256": "0eee21431cfcd58a0e3cca0ea868c6ccc65844e93a14db5e3a73cc695e9a582b",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            9,
+            6,
+            13
+          ],
+          [
+            13,
+            22,
+            8
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              5,
+              2,
+              48,
+              54
+            ],
+            "opaque_pixels": 1363
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              6,
+              1,
+              48,
+              54
+            ],
+            "opaque_pixels": 1398
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              10,
+              2,
+              54,
+              54
+            ],
+            "opaque_pixels": 1366
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_warlock/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "1301ca62649fcd6acc5f57aad3ad8aa87fc107749a502a8939a9f2bf8198159e",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            13,
+            22,
+            8
+          ],
+          [
+            9,
+            6,
+            13
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              4,
+              2,
+              48,
+              48
+            ],
+            "opaque_pixels": 1170
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              5,
+              1,
+              48,
+              48
+            ],
+            "opaque_pixels": 1214
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              12,
+              2,
+              48,
+              48
+            ],
+            "opaque_pixels": 1116
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/orc_warlock/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "b5d4d9792eab59ceb1910170e93441b9382f75ab21e1763c77eeebd5eb1a8d4f",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            13,
+            22,
+            8
+          ],
+          [
+            9,
+            6,
+            13
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "7ef98fd46641c32ba11ee77b9bbf4cffb9652408c65b1cbde5c9705ef2404c96",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              13,
+              22,
+              8
+            ],
+            [
+              9,
+              6,
+              13
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "bbeb4d789441f33a11355bb2559458001517287178d4adf65145ad7dfa6fc183",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              13,
+              22,
+              8
+            ],
+            [
+              9,
+              6,
+              13
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "kolkar_archer": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 130
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 130
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 130
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 126
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 127
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_archer/overworld.bin",
+        "bytes": 768,
+        "sha256": "6be1e9d5a283fbb07b18a3e1e7bc3c06a77d0d7b7b8018556fbf1ec62e70f7ee",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              3,
+              4,
+              56,
+              55
+            ],
+            "opaque_pixels": 1119
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              3,
+              3,
+              56,
+              55
+            ],
+            "opaque_pixels": 1146
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              3,
+              4,
+              56,
+              55
+            ],
+            "opaque_pixels": 1113
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_archer/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "0f13d11a4df894a546a05ced8a7fd00c8d0008fb12a57c4187a6999561d92e01",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              0,
+              3,
+              47,
+              47
+            ],
+            "opaque_pixels": 977
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              0,
+              2,
+              47,
+              47
+            ],
+            "opaque_pixels": 997
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              0,
+              3,
+              47,
+              47
+            ],
+            "opaque_pixels": 973
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_archer/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "d73478f6c212b9366521a39f9a64ba653378f850fe78f828b7e20867fbd0a5ef",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              22,
+              15,
+              8
+            ],
+            [
+              11,
+              7,
+              4
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "1e4a6ab36f3fe10934f359901d7c5c849a2da16df80f4aabb99a41338b2f3151",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              22,
+              15,
+              8
+            ],
+            [
+              11,
+              7,
+              4
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    "kolkar_melee": {
+      "world": {
+        "size": [
+          16,
+          16
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "down_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 1,
+            "label": "up_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 2,
+            "label": "left_step_0",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 129
+          },
+          {
+            "frame": 3,
+            "label": "right_step_0",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 4,
+            "label": "down_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 5,
+            "label": "up_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 6,
+            "label": "left_step_1",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 127
+          },
+          {
+            "frame": 7,
+            "label": "right_step_1",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 125
+          },
+          {
+            "frame": 8,
+            "label": "down_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 9,
+            "label": "up_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 10,
+            "label": "left_step_2",
+            "opaque_bounds": [
+              1,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 128
+          },
+          {
+            "frame": 11,
+            "label": "right_step_2",
+            "opaque_bounds": [
+              2,
+              0,
+              16,
+              16
+            ],
+            "opaque_pixels": 126
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_melee/overworld.bin",
+        "bytes": 768,
+        "sha256": "f31a296241ce897e0a3a268dcfd7cc7eb7045d02d9ebd18b130c3b6c88ad9781",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "tile_order": "row-major"
+      },
+      "front": {
+        "size": [
+          56,
+          56
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              5,
+              4,
+              56,
+              55
+            ],
+            "opaque_pixels": 1032
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              7,
+              0,
+              56,
+              55
+            ],
+            "opaque_pixels": 1049
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              1,
+              4,
+              56,
+              55
+            ],
+            "opaque_pixels": 1019
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_melee/front_frames.bin",
+        "bytes": 2352,
+        "sha256": "b6269318d3a311c38b1636a4a032da470d8b6c63d6941c6d29c448ba093552ea",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "back": {
+        "size": [
+          48,
+          48
+        ],
+        "frames": [
+          {
+            "frame": 0,
+            "label": "idle",
+            "opaque_bounds": [
+              0,
+              3,
+              45,
+              47
+            ],
+            "opaque_pixels": 887
+          },
+          {
+            "frame": 1,
+            "label": "ready",
+            "opaque_bounds": [
+              0,
+              0,
+              43,
+              47
+            ],
+            "opaque_pixels": 905
+          },
+          {
+            "frame": 2,
+            "label": "release",
+            "opaque_bounds": [
+              0,
+              3,
+              47,
+              47
+            ],
+            "opaque_pixels": 880
+          }
+        ],
+        "binary": "gfx/peon_recruits_v029/kolkar_melee/back_frames.bin",
+        "bytes": 1728,
+        "sha256": "8ba4908d77ba64c5c55237d99d568ca2ee8fbc16be4861255aac521073eabe73",
+        "palette_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            8
+          ],
+          [
+            11,
+            7,
+            4
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "tile_order": "column-major per frame"
+      },
+      "heads": {
+        "8": {
+          "size": [
+            8,
+            8
+          ],
+          "bytes": 16,
+          "sha256": "85028d8ca81b40549d1171ab608e0ca41b6bfc5cfb5eeb2c269e4c3e7427a74b",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              22,
+              15,
+              8
+            ],
+            [
+              11,
+              7,
+              4
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "16": {
+          "size": [
+            16,
+            16
+          ],
+          "bytes": 64,
+          "sha256": "1e4a6ab36f3fe10934f359901d7c5c849a2da16df80f4aabb99a41338b2f3151",
+          "tile_order": "row-major",
+          "palette_rgb555": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              22,
+              15,
+              8
+            ],
+            [
+              11,
+              7,
+              4
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "item_icons": {
+    "domination_skull": {
+      "binary": "gfx/peon_recruits_v029/item_icons/domination_skull.2bpp",
+      "bytes": 64,
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          24,
+          22,
+          15
+        ],
+        [
+          24,
+          5,
+          3
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "sha256": "e9b5778d460f2cd53ed1dc1c6197e52ff01152764a14514596bcdc8d1e241bf6",
+      "tile_order": "row-major"
+    },
+    "rally_horn": {
+      "binary": "gfx/peon_recruits_v029/item_icons/rally_horn.2bpp",
+      "bytes": 64,
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          25,
+          23,
+          16
+        ],
+        [
+          17,
+          10,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "sha256": "942ff3bbe73523b28276392434e28de23df0c9e31028740ff08741b5c64a88ab",
+      "tile_order": "row-major"
+    },
+    "elemental_relic": {
+      "binary": "gfx/peon_recruits_v029/item_icons/elemental_relic.2bpp",
+      "bytes": 64,
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          15,
+          22,
+          8
+        ],
+        [
+          18,
+          11,
+          6
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "sha256": "cb11f58a1895fe3fb8f67e610ac490fbfd11c559295c68b356193391302f8752",
+      "tile_order": "row-major"
+    }
+  },
+  "items": {
+    "tough_jerky": {
+      "binary": "gfx/peon_recruits_v029/items/tough_jerky.2bpp",
+      "bytes": 64,
+      "tile_order": "row-major",
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          25,
+          17,
+          9
+        ],
+        [
+          14,
+          5,
+          3
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "three_opaque_indices_plus_transparent_zero": true,
+      "sha256": "39dedddf3cf43f612dee320b2e1b97f1f440c8040e6fce4ea5583c221c05c702"
+    }
+  }
+}

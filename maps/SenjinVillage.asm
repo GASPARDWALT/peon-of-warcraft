@@ -148,7 +148,7 @@ SenjinVillageKwaiiScript:
 	db 5
 	db "SPRING WATER@"
 	db "HEAL POTION@"
-	db "TOUGH BREAD@"
+	db "TOUGH JERKY@"
 	db "MANA POTION@"
 	db "CANCEL@"
 
@@ -213,14 +213,14 @@ SenjinVillageKwaiiPotionBoughtText:
 	done
 
 SenjinVillageKwaiiBreadOfferText:
-	text "TOUGH BREAD x5"
+	text "TOUGH JERKY x5"
 	line "25 copper. Buy?"
 	para "Restores 10 HP"
 	line "outside battle."
 	done
 
 SenjinVillageKwaiiBreadBoughtText:
-	text "Bread packed."
+	text "Jerky packed."
 	line "Eat after fights."
 	done
 
@@ -289,6 +289,14 @@ SenjinVillageWatcherText:
 	line "when you approach."
 	done
 
+; Object scripts use this map event bank.
+SenjinVillageEarthRecruitScript:
+	farsjump PeonSenjinEarthSpiritV029
+
+; Object scripts use this map event bank.
+SenjinVillageGruntRecruitScript:
+	farsjump PeonSenjinOrcGruntV029
+
 SenjinVillage_MapEvents:
 	db 0, 0
 	def_warp_events
@@ -307,12 +315,14 @@ SenjinVillage_MapEvents:
 	object_event 14, 16, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, SenjinVillageVelrinScript, -1
 
 	object_event 14, 6, SPRITE_PEON_MAILBOX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, SenjinVillageMailboxScript, -1
+	object_event 11, 14, PEON_SPRITE_EARTH_SPIRIT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, SenjinVillageEarthRecruitScript, EVENT_PEON_RECRUIT_EARTH2_DONE_V029
+	object_event 12, 14, PEON_SPRITE_ORC_GRUNT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, SenjinVillageGruntRecruitScript, EVENT_PEON_RECRUIT_GRUNT2_DONE_V029
 
 SenjinVillageKwaiiManaOfferText:
 	text "MANA POTION x1"
 	line "25 copper. Buy?"
-	para "Five charges for"
-	line "each caster spell."
+	para "Restores 40 mana."
+	line "One battle turn."
 	done
 SenjinVillageKwaiiManaBoughtText:
 	text "Mana packed."

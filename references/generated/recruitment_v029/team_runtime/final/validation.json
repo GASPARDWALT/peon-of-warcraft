@@ -1,0 +1,4059 @@
+{
+  "passed": true,
+  "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "symbols_sha256": "87226ec5c81393762a3f7b2f6b11e43e68e0fc687b8cc3c0d22c3a74e25b2376",
+  "ordinary_buttons_only": true,
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "classes": {
+    "shaman": {
+      "passed": true,
+      "ordinary_buttons_only": true,
+      "ram_writes": false,
+      "emulator_states_loaded": false,
+      "class_relic_given_once": true,
+      "ordinary_wrong_target_family_refusal_no_item_or_turn_cost": true,
+      "native_capture_probability_observations": [
+        {
+          "species": 95,
+          "level": 2,
+          "hp": 3,
+          "max_hp": 13,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 152,
+          "quantity_before": 1,
+          "party_count_before": 1,
+          "canonical_base_stats": [
+            42,
+            30,
+            35,
+            22,
+            38,
+            35
+          ],
+          "original_dvs": [
+            64,
+            73
+          ],
+          "original_held_item": 0,
+          "captured_hp_status_dvs_item_preserved_and_six_stats_recomputed": true,
+          "recruited_six_raw_stats": [
+            13,
+            6,
+            6,
+            6,
+            6,
+            6
+          ],
+          "joined": true,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        }
+      ],
+      "class_eligible_role_is_real_second_record": true,
+      "hero_record_kept_at_slot_zero": true,
+      "field_preferred_actor_one": true,
+      "real_companion_starts_and_switches_with_one_native_enemy_turn": true,
+      "class_quest_xp_and_copper_reward_once": true,
+      "genuine_recruited_party_cold_save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "a2c07a5a735b8ed5eb32a3a488c2556edb6aae38a2ce7fdf95060a2bbdabf538",
+        "native_save_and_separate_cold_continue": true,
+        "all_recruit_records_names_resources_hp_moves_events_bags_preserved": true
+      },
+      "forbidden_original_pokemon_flows": {
+        "nickname_prompt": 0,
+        "dex_entry": 0,
+        "ball_effect": 0
+      },
+      "actual_ppu_background_checks": [
+        {
+          "label": "actual_team_panel_40",
+          "consecutive_native_frames": [
+            {
+              "frame": 12550,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12551,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12552,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_105",
+          "consecutive_native_frames": [
+            {
+              "frame": 12704,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12705,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12706,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "wrong_family_relic_refusal_stable_inventory",
+          "consecutive_native_frames": [
+            {
+              "frame": 17504,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 17505,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 17506,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_139",
+          "consecutive_native_frames": [
+            {
+              "frame": 32146,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 32147,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 32148,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_230",
+          "consecutive_native_frames": [
+            {
+              "frame": 32330,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 32331,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 32332,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "preferred_companion_is_actual_starting_combatant",
+          "consecutive_native_frames": [
+            {
+              "frame": 36444,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 36445,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 36446,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            }
+          ]
+        },
+        {
+          "label": "native_battle_team_cancel_without_turn",
+          "consecutive_native_frames": [
+            {
+              "frame": 37018,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 37019,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 37020,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            }
+          ]
+        },
+        {
+          "label": "true_native_battle_switch_to_0",
+          "consecutive_native_frames": [
+            {
+              "frame": 37918,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 37919,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            },
+            {
+              "frame": 37920,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1216
+            }
+          ]
+        },
+        {
+          "label": "actual_recruited_party_cold_continue",
+          "consecutive_native_frames": [
+            {
+              "frame": 2132,
+              "matched_rgb555_pixels": 21903,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2133,
+              "matched_rgb555_pixels": 21903,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2134,
+              "matched_rgb555_pixels": 21903,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            }
+          ]
+        }
+      ],
+      "team_from_character_returns_cleanly": true,
+      "battle_font_and_actual_bold_glyphs": [
+        {
+          "label": "wrong_family_relic_refusal_return",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 15,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              142,
+              145,
+              134,
+              148,
+              141,
+              147
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                134,
+                157
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                148,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                141,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                147,
+                160
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_team_locked_refusal_and_cancel",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 18,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              142,
+              134,
+              148,
+              141
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                134,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                148,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                141,
+                163
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                132,
+                154
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                14,
+                7,
+                135,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                146,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                145,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                147,
+                156
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_voluntary_switch",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 18,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136,
+              142,
+              134,
+              148,
+              141
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                134,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                148,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                141,
+                163
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        }
+      ]
+    },
+    "warrior": {
+      "passed": true,
+      "ordinary_buttons_only": true,
+      "ram_writes": false,
+      "emulator_states_loaded": false,
+      "class_relic_given_once": true,
+      "ordinary_wrong_target_family_refusal_no_item_or_turn_cost": true,
+      "native_capture_probability_observations": [
+        {
+          "species": 68,
+          "level": 2,
+          "hp": 14,
+          "max_hp": 14,
+          "base_catch_rate": 150,
+          "status": 0,
+          "expected_native_threshold": 50,
+          "quantity_before": 1,
+          "party_count_before": 1,
+          "canonical_base_stats": [
+            55,
+            48,
+            40,
+            35,
+            20,
+            35
+          ],
+          "original_dvs": [
+            163,
+            252
+          ],
+          "original_held_item": 0,
+          "captured_hp_status_dvs_item_preserved_and_six_stats_recomputed": true,
+          "recruited_six_raw_stats": [
+            14,
+            7,
+            6,
+            7,
+            6,
+            6
+          ],
+          "joined": true,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        }
+      ],
+      "class_eligible_role_is_real_second_record": true,
+      "hero_record_kept_at_slot_zero": true,
+      "field_preferred_actor_one": true,
+      "real_companion_starts_and_switches_with_one_native_enemy_turn": true,
+      "class_quest_xp_and_copper_reward_once": true,
+      "genuine_recruited_party_cold_save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "1a5189d9c2b37ba46cac7ecdec53e3955365e88ea0073c5ad74c638dae841122",
+        "native_save_and_separate_cold_continue": true,
+        "all_recruit_records_names_resources_hp_moves_events_bags_preserved": true
+      },
+      "forbidden_original_pokemon_flows": {
+        "nickname_prompt": 0,
+        "dex_entry": 0,
+        "ball_effect": 0
+      },
+      "actual_ppu_background_checks": [
+        {
+          "label": "actual_team_panel_40",
+          "consecutive_native_frames": [
+            {
+              "frame": 11920,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 11921,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 11922,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_105",
+          "consecutive_native_frames": [
+            {
+              "frame": 12074,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12075,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 12076,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "wrong_family_relic_refusal_stable_inventory",
+          "consecutive_native_frames": [
+            {
+              "frame": 16008,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 16009,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 16010,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_138",
+          "consecutive_native_frames": [
+            {
+              "frame": 30624,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1088
+            },
+            {
+              "frame": 30625,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1088
+            },
+            {
+              "frame": 30626,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1088
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_229",
+          "consecutive_native_frames": [
+            {
+              "frame": 30808,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 30809,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 30810,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "preferred_companion_is_actual_starting_combatant",
+          "consecutive_native_frames": [
+            {
+              "frame": 33972,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 33973,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 33974,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            }
+          ]
+        },
+        {
+          "label": "native_battle_team_cancel_without_turn",
+          "consecutive_native_frames": [
+            {
+              "frame": 34546,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 34547,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            },
+            {
+              "frame": 34548,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1280
+            }
+          ]
+        },
+        {
+          "label": "true_native_battle_switch_to_0",
+          "consecutive_native_frames": [
+            {
+              "frame": 35446,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1344
+            },
+            {
+              "frame": 35447,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1344
+            },
+            {
+              "frame": 35448,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1344
+            }
+          ]
+        },
+        {
+          "label": "actual_recruited_party_cold_continue",
+          "consecutive_native_frames": [
+            {
+              "frame": 2132,
+              "matched_rgb555_pixels": 21913,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2133,
+              "matched_rgb555_pixels": 21913,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2134,
+              "matched_rgb555_pixels": 21913,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            }
+          ]
+        }
+      ],
+      "team_from_character_returns_cleanly": true,
+      "battle_font_and_actual_bold_glyphs": [
+        {
+          "label": "wrong_family_relic_refusal_return",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 14,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              145,
+              147,
+              135,
+              146,
+              136
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                132,
+                154
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                147,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                135,
+                157
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                146,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                143,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                136,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                145,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                147,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_team_locked_refusal_and_cancel",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 18,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              142,
+              145,
+              134,
+              148,
+              141,
+              147,
+              135,
+              146,
+              136
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                132,
+                154
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                147,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                135,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                146,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                143,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                136,
+                163
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                147,
+                160
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                142,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                145,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                14,
+                7,
+                134,
+                157
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                145,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                148,
+                158
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                141,
+                159
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                147,
+                160
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_voluntary_switch",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 18,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              142,
+              145,
+              134,
+              148,
+              141,
+              147,
+              135,
+              146,
+              136
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                132,
+                154
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                128,
+                150
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                147,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                135,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                146,
+                162
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                143,
+                146
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                136,
+                163
+              ],
+              [
+                "wEnemyMonNickname",
+                9,
+                0,
+                145,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                10,
+                0,
+                147,
+                160
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        }
+      ]
+    },
+    "warlock": {
+      "passed": true,
+      "ordinary_initial_cap_two_refusal": true,
+      "starting_imp_is_true_record_two": true,
+      "no_state_injection": true,
+      "class_relic_given_once": true,
+      "team_from_character_returns_cleanly": true,
+      "native_capacity_three_progression": true,
+      "third_imp_recruited_after_actual_sarkoth_report": true,
+      "preferred_real_imp_can_switch_to_hero_with_native_turn": true,
+      "class_quest_xp_and_copper_reward_once": true,
+      "genuine_recruited_party_cold_save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "176519b849b2f7cd1a3f9e0477d14e11d7ca5b29977d35255b89f5974bde2a16",
+        "native_save_and_separate_cold_continue": true,
+        "all_recruit_records_names_resources_hp_moves_events_bags_preserved": true
+      },
+      "genuine_progressed_senjin_battery": {
+        "battery_path": "/tmp/peon_v029_senjin_warlock.ram",
+        "battery_sha256": "78f40549cf387a950c1eb28ec2d9816edbfe0e02d00a1b27692767b4d60e586c",
+        "battery_bytes": 32768,
+        "ordinary_buttons_only": true,
+        "native_save_routine_observed": true,
+        "ram_edits": false,
+        "emulator_states_loaded": false,
+        "snapshot": {
+          "wPlayerName": [
+            143,
+            234,
+            174,
+            173,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            80
+          ],
+          "wPartyCount": [
+            3
+          ],
+          "wPartySpecies": [
+            66,
+            74,
+            74,
+            255,
+            0,
+            0,
+            0
+          ],
+          "wPartyMon1": [
+            66,
+            0,
+            1,
+            247,
+            71,
+            0,
+            78,
+            122,
+            0,
+            1,
+            1,
+            0,
+            121,
+            0,
+            115,
+            0,
+            97,
+            0,
+            54,
+            0,
+            74,
+            179,
+            217,
+            35,
+            25,
+            15,
+            0,
+            71,
+            128,
+            0,
+            135,
+            5,
+            0,
+            0,
+            0,
+            23,
+            0,
+            23,
+            0,
+            11,
+            0,
+            10,
+            0,
+            9,
+            0,
+            13,
+            0,
+            11,
+            74,
+            0,
+            10,
+            53,
+            0,
+            0,
+            78,
+            122,
+            0,
+            0,
+            57,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            19,
+            25,
+            35,
+            25,
+            0,
+            0,
+            71,
+            128,
+            0,
+            105,
+            3,
+            0,
+            0,
+            0,
+            16,
+            0,
+            16,
+            0,
+            6,
+            0,
+            6,
+            0,
+            6,
+            0,
+            8,
+            0,
+            7,
+            74,
+            0,
+            10,
+            53,
+            0,
+            0,
+            78,
+            122,
+            0,
+            0,
+            57,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            157,
+            251,
+            35,
+            25,
+            0,
+            0,
+            71,
+            128,
+            0,
+            105,
+            3,
+            0,
+            0,
+            0,
+            16,
+            0,
+            16,
+            0,
+            7,
+            0,
+            7,
+            0,
+            7,
+            0,
+            8,
+            0,
+            7,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "wEventFlags": [
+            0,
+            0,
+            64,
+            4,
+            32,
+            0,
+            64,
+            24,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            14,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8,
+            224,
+            163,
+            0,
+            32,
+            48,
+            80,
+            1,
+            176,
+            0,
+            8,
+            192,
+            255,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            64,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            16,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            144,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            192,
+            79,
+            105,
+            57,
+            225,
+            16,
+            50,
+            25,
+            162,
+            29,
+            224,
+            239,
+            255,
+            255,
+            179,
+            106,
+            189,
+            30,
+            38,
+            0,
+            128,
+            68,
+            247,
+            204,
+            10,
+            0,
+            224,
+            11,
+            0,
+            48,
+            246,
+            225,
+            0,
+            32,
+            128,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "wMoney": [
+            0,
+            1,
+            219
+          ],
+          "wMapGroup": [
+            26,
+            17
+          ],
+          "wXCoord": [
+            10
+          ],
+          "wYCoord": [
+            8
+          ]
+        },
+        "harder_packs_entered_and_fled_using_real_RUN": true,
+        "pack_victory_not_claimed": true
+      },
+      "native_capture_probability_observations": [
+        {
+          "species": 74,
+          "level": 3,
+          "hp": 16,
+          "max_hp": 16,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 60,
+          "quantity_before": 1,
+          "party_count_before": 2,
+          "canonical_base_stats": [
+            38,
+            25,
+            25,
+            25,
+            45,
+            25
+          ],
+          "original_dvs": [
+            157,
+            251
+          ],
+          "original_held_item": 0,
+          "joined": false,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        },
+        {
+          "species": 74,
+          "level": 3,
+          "hp": 15,
+          "max_hp": 16,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 67,
+          "quantity_before": 1,
+          "party_count_before": 2,
+          "canonical_base_stats": [
+            38,
+            25,
+            25,
+            25,
+            45,
+            25
+          ],
+          "original_dvs": [
+            157,
+            251
+          ],
+          "original_held_item": 0,
+          "joined": false,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        },
+        {
+          "species": 74,
+          "level": 3,
+          "hp": 14,
+          "max_hp": 16,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 75,
+          "quantity_before": 1,
+          "party_count_before": 2,
+          "canonical_base_stats": [
+            38,
+            25,
+            25,
+            25,
+            45,
+            25
+          ],
+          "original_dvs": [
+            157,
+            251
+          ],
+          "original_held_item": 0,
+          "joined": false,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        },
+        {
+          "species": 74,
+          "level": 3,
+          "hp": 13,
+          "max_hp": 16,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 82,
+          "quantity_before": 1,
+          "party_count_before": 2,
+          "canonical_base_stats": [
+            38,
+            25,
+            25,
+            25,
+            45,
+            25
+          ],
+          "original_dvs": [
+            157,
+            251
+          ],
+          "original_held_item": 0,
+          "joined": false,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        },
+        {
+          "species": 74,
+          "level": 3,
+          "hp": 12,
+          "max_hp": 16,
+          "base_catch_rate": 180,
+          "status": 0,
+          "expected_native_threshold": 90,
+          "quantity_before": 1,
+          "party_count_before": 2,
+          "canonical_base_stats": [
+            38,
+            25,
+            25,
+            25,
+            45,
+            25
+          ],
+          "original_dvs": [
+            157,
+            251
+          ],
+          "original_held_item": 0,
+          "captured_hp_status_dvs_item_preserved_and_six_stats_recomputed": true,
+          "recruited_six_raw_stats": [
+            16,
+            7,
+            7,
+            7,
+            8,
+            7
+          ],
+          "joined": true,
+          "original_native_roll_matches": true,
+          "reusable_relic_quantity_preserved": true
+        }
+      ],
+      "forbidden_original_pokemon_flows": {
+        "nickname_prompt": 0,
+        "dex_entry": 0,
+        "ball_effect": 0
+      },
+      "actual_ppu_background_checks": [
+        {
+          "label": "actual_team_panel_37",
+          "consecutive_native_frames": [
+            {
+              "frame": 12940,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 12941,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 12942,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_102",
+          "consecutive_native_frames": [
+            {
+              "frame": 13094,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 13095,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 13096,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "full_roster_relic_refusal_stable_inventory",
+          "consecutive_native_frames": [
+            {
+              "frame": 17816,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 17817,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            },
+            {
+              "frame": 17818,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 0
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_139",
+          "consecutive_native_frames": [
+            {
+              "frame": 43072,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 43073,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 43074,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_204",
+          "consecutive_native_frames": [
+            {
+              "frame": 43226,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 43227,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 43228,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_241",
+          "consecutive_native_frames": [
+            {
+              "frame": 45268,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 45269,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            },
+            {
+              "frame": 45270,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 768
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_306",
+          "consecutive_native_frames": [
+            {
+              "frame": 45422,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 45423,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 45424,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_342",
+          "consecutive_native_frames": [
+            {
+              "frame": 59702,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 59703,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 59704,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_433",
+          "consecutive_native_frames": [
+            {
+              "frame": 59886,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 59887,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 59888,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "preferred_companion_is_actual_starting_combatant",
+          "consecutive_native_frames": [
+            {
+              "frame": 63720,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 63721,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 63722,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            }
+          ]
+        },
+        {
+          "label": "native_battle_team_cancel_without_turn",
+          "consecutive_native_frames": [
+            {
+              "frame": 64092,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 64093,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 64094,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            }
+          ]
+        },
+        {
+          "label": "true_native_battle_switch_to_0",
+          "consecutive_native_frames": [
+            {
+              "frame": 65152,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1728
+            },
+            {
+              "frame": 65153,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1728
+            },
+            {
+              "frame": 65154,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 1728
+            }
+          ]
+        },
+        {
+          "label": "actual_recruited_party_cold_continue",
+          "consecutive_native_frames": [
+            {
+              "frame": 2132,
+              "matched_rgb555_pixels": 21952,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2133,
+              "matched_rgb555_pixels": 21952,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            },
+            {
+              "frame": 2134,
+              "matched_rgb555_pixels": 21952,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 5376
+            }
+          ]
+        },
+        {
+          "label": "actual_team_panel_525",
+          "consecutive_native_frames": [
+            {
+              "frame": 2594,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 2595,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            },
+            {
+              "frame": 2596,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 960
+            }
+          ]
+        },
+        {
+          "label": "character_returns_after_team_590",
+          "consecutive_native_frames": [
+            {
+              "frame": 2748,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 2749,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            },
+            {
+              "frame": 2750,
+              "matched_rgb555_pixels": 23040,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                0,
+                0
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 576
+            }
+          ]
+        },
+        {
+          "label": "actual_populated_senjin_after_progression",
+          "consecutive_native_frames": [
+            {
+              "frame": 17576,
+              "matched_rgb555_pixels": 22210,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                176,
+                48
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 4928
+            },
+            {
+              "frame": 17577,
+              "matched_rgb555_pixels": 22210,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                176,
+                48
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 4928
+            },
+            {
+              "frame": 17578,
+              "matched_rgb555_pixels": 22210,
+              "mismatched_pixels": 0,
+              "lcdc": 227,
+              "scroll": [
+                176,
+                48
+              ],
+              "window_origin": [
+                0,
+                144
+              ],
+              "window_visible": false,
+              "bank1_bg_pixels": 4928
+            }
+          ]
+        }
+      ],
+      "battle_font_and_actual_bold_glyphs": [
+        {
+          "label": "full_roster_relic_refusal_return",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 13,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              140,
+              142,
+              141,
+              136
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                131,
+                153
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                132,
+                154
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                140,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                142,
+                156
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                141,
+                157
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                136,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                140,
+                155
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_team_cancel",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              136,
+              140,
+              142,
+              145,
+              134,
+              148,
+              141,
+              147
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                157
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                134,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                145,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                148,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                141,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                147,
+                162
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                136,
+                155
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                140,
+                156
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                143,
+                146
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        },
+        {
+          "label": "ordinary_voluntary_switch",
+          "native_battle_font_packet_exact": true,
+          "bold_names": {
+            "assigned_glyphs": 17,
+            "cache_codes": [
+              143,
+              234,
+              174,
+              173,
+              128,
+              129,
+              130,
+              131,
+              132,
+              136,
+              140,
+              142,
+              145,
+              134,
+              148,
+              141,
+              147
+            ],
+            "visible_name_cells": [
+              [
+                "wEnemyMonNickname",
+                1,
+                0,
+                142,
+                157
+              ],
+              [
+                "wEnemyMonNickname",
+                2,
+                0,
+                145,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                3,
+                0,
+                130,
+                152
+              ],
+              [
+                "wEnemyMonNickname",
+                4,
+                0,
+                134,
+                159
+              ],
+              [
+                "wEnemyMonNickname",
+                5,
+                0,
+                145,
+                158
+              ],
+              [
+                "wEnemyMonNickname",
+                6,
+                0,
+                148,
+                160
+              ],
+              [
+                "wEnemyMonNickname",
+                7,
+                0,
+                141,
+                161
+              ],
+              [
+                "wEnemyMonNickname",
+                8,
+                0,
+                147,
+                162
+              ],
+              [
+                "wBattleMonNickname",
+                10,
+                7,
+                143,
+                146
+              ],
+              [
+                "wBattleMonNickname",
+                11,
+                7,
+                234,
+                147
+              ],
+              [
+                "wBattleMonNickname",
+                12,
+                7,
+                174,
+                148
+              ],
+              [
+                "wBattleMonNickname",
+                13,
+                7,
+                173,
+                149
+              ],
+              [
+                "wBattleMonNickname",
+                15,
+                7,
+                128,
+                150
+              ],
+              [
+                "wBattleMonNickname",
+                16,
+                7,
+                129,
+                151
+              ],
+              [
+                "wBattleMonNickname",
+                17,
+                7,
+                130,
+                152
+              ],
+              [
+                "wBattleMonNickname",
+                18,
+                7,
+                131,
+                153
+              ],
+              [
+                "wBattleMonNickname",
+                19,
+                7,
+                132,
+                154
+              ]
+            ],
+            "source_font_roundtrip_and_live_references_and_actual_rgb555_pixels_exact": true
+          }
+        }
+      ]
+    }
+  },
+  "fixed_reserved_recruitment_flags": {
+    "EVENT_PEON_RECRUIT_IMP1_DONE_V029": 590,
+    "EVENT_PEON_RECRUIT_EARTH2_DONE_V029": 591,
+    "EVENT_PEON_RECRUIT_GRUNT2_DONE_V029": 592
+  },
+  "requested_class_scope": "all_three",
+  "full_three_class_gate_passed": true,
+  "native_object_script_bank_gate": {
+    "resolved_object_script_pointers_compared": 1571,
+    "legal_fixed_ROM0_ObjectEvent_scripts": 58,
+    "other_resolved_16bit_map_script_pointers": {
+      "bg_event": 800,
+      "scene_script": 172,
+      "callback": 126,
+      "coord_event": 182
+    },
+    "cross_bank_object_scripts": 0,
+    "map_local_farsjump_wrappers_required": true
+  }
+}

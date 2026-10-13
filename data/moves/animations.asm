@@ -913,6 +913,8 @@ BattleAnim_DragonRage:
 	anim_ret
 
 BattleAnim_Flamethrower:
+	anim_if_param_equal $fd, BattleAnim_PeonActiveImpFireboltV029
+	anim_if_param_equal $fb, BattleAnim_PeonEnemyImpFireboltV029
 	anim_1gfx BATTLE_ANIM_GFX_FIRE
 	anim_sound 6, 2, SFX_EMBER
 	anim_obj BATTLE_ANIM_OBJ_FLAMETHROWER, 64, 92, $3
@@ -2487,6 +2489,7 @@ BattleAnim_Kinesis:
 	anim_ret
 
 BattleAnim_Peck:
+	anim_if_param_equal $fe, BattleAnim_PeonKolkarArrowV029
 	anim_1gfx BATTLE_ANIM_GFX_HIT
 	anim_sound 0, 1, SFX_PECK
 	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 128, 48, $0

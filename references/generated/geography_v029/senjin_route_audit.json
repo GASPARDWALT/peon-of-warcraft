@@ -1,0 +1,1026 @@
+{
+  "scope": "READ ONLY static source audit; proposals are not implemented or emulator-validated",
+  "native_files_modified": false,
+  "make_or_emulator_run": false,
+  "rom_sha256_observed_only": "acf059de6658c41c1c97714ec28826a69fcc11c89b0839007e5c8f7571706942",
+  "source_sha256": {
+    "maps/DurotarRoad.blk": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+    "maps/DurotarRoad.asm": "a8bd972fd40ebb6a6526e52fa0b43fb740eeba8d25639a0e11812e318e18b7e7",
+    "maps/SenjinVillage.blk": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+    "maps/SenjinVillage.asm": "dab369f7d4c8938f5b7c5a5beef0fe6e79d0a36891a181ce002de4aa954146cb",
+    "data/tilesets/peon_collision.asm": "5e07530eef594eb8b510df5a5c94d1fe9405d99ced31743c773eb8139a1155c1",
+    "constants/map_constants.asm": "50b2f174cfb3852e563a48f4a343b98b2598eaf3231054d61edc9fe0797a83e5",
+    "constants/event_flags.asm": "3bb9a3983ecef479c3546504b90d1afa5b5db689a29c6226dc1a9680cda82fbc",
+    "constants/peon_constants.asm": "4b9156a3e7dfa9d19a9aee300c9bb1ff20cf903967dad7e899e206246adbb82d",
+    "engine/events/peon_recovery.asm": "aa0283bda751a7a99e1f0e00a6edafb434eb7373796031f10985c55e2643eda6",
+    "engine/events/peon_loot.asm": "eb9637a7b00d525080c6809201d88857d8839899485027b579f3aec81ddeaab1"
+  },
+  "coordinates": "Zero-based 16x16-pixel walking cells; .blk cells are 32x32 metatiles.",
+  "method": "BFS on real four-quadrant collision table, with all fresh living actors occupied and live coordinate triggers forbidden; Dijkstra tracks each distinct hostile trigger script once for minimum encounter counts. Other warps are forbidden.",
+  "assumptions": [
+    "All five retirement flags clear; player level at least 4, so pack exists.",
+    "All recorded NPCs and creatures are stationary on these two maps.",
+    "This is graph reachability, not a claim that native runtime has been replayed here.",
+    "No class balance or battle outcome has been simulated."
+  ],
+  "current": {
+    "durotar_road": {
+      "walking_dimensions": [
+        24,
+        28
+      ],
+      "metatile_dimensions": [
+        12,
+        14
+      ],
+      "map_group": 26,
+      "map_number": 16,
+      "entry": [
+        4,
+        14
+      ],
+      "senjin_exit": [
+        12,
+        24
+      ],
+      "razor_hill_exit": [
+        12,
+        4
+      ],
+      "warps": [
+        {
+          "xy": [
+            4,
+            14
+          ],
+          "destination": "PEON_VALLEY_EXIT",
+          "number": 2
+        },
+        {
+          "xy": [
+            12,
+            24
+          ],
+          "destination": "SENJIN_VILLAGE",
+          "number": 1
+        },
+        {
+          "xy": [
+            12,
+            4
+          ],
+          "destination": "RAZOR_HILL",
+          "number": 1
+        }
+      ],
+      "living_actors": [
+        {
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_LINK_RECEPTIONIST",
+          "script": "DurotarRoadGuideScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            8,
+            18
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "script": "DurotarRoadScoutScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            16,
+            20
+          ],
+          "sprite": "SPRITE_OFFICER",
+          "script": "DurotarRoadPatrolScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            5,
+            5
+          ],
+          "sprite": "PEON_SPRITE_TIGER",
+          "script": "DurotarTigerScript",
+          "saved_event": "EVENT_PEON_ROAD_TIGER_DEAD"
+        },
+        {
+          "xy": [
+            18,
+            8
+          ],
+          "sprite": "PEON_SPRITE_RAPTOR",
+          "script": "DurotarRaptorScript",
+          "saved_event": "EVENT_PEON_ROAD_RAPTOR_DEAD"
+        },
+        {
+          "xy": [
+            5,
+            22
+          ],
+          "sprite": "PEON_SPRITE_HARPY",
+          "script": "DurotarHarpyScript",
+          "saved_event": "EVENT_PEON_ROAD_HARPY_DEAD"
+        },
+        {
+          "xy": [
+            18,
+            23
+          ],
+          "sprite": "PEON_SPRITE_CRAWLER",
+          "script": "DurotarCrawlerScript",
+          "saved_event": "EVENT_PEON_COAST_CRAWLER_DEAD"
+        },
+        {
+          "xy": [
+            16,
+            16
+          ],
+          "sprite": "SPRITE_PAPER",
+          "script": "DurotarScorpidPackScript",
+          "saved_event": "EVENT_PEON_ROAD_SCORPID_PACK_DEAD"
+        }
+      ],
+      "encounters": [
+        {
+          "actor": [
+            16,
+            16
+          ],
+          "name": "Scorpid pack",
+          "native_species": "SANDSHREW",
+          "species_id": 27,
+          "levels": [
+            4,
+            4
+          ],
+          "minimum_player_level": 4,
+          "hostile": true,
+          "triggers": [
+            [
+              16,
+              17
+            ],
+            [
+              17,
+              16
+            ],
+            [
+              16,
+              15
+            ],
+            [
+              15,
+              16
+            ]
+          ],
+          "progress_event": "EVENT_PEON_ROAD_SCORPID_PACK_FIRST",
+          "retirement_event": "EVENT_PEON_ROAD_SCORPID_PACK_DEAD",
+          "copper_on_complete": 40
+        },
+        {
+          "actor": [
+            18,
+            8
+          ],
+          "name": "Raptor",
+          "native_species": "TOTODILE / PEON_MOB_RAPTOR",
+          "species_id": 158,
+          "levels": [
+            3
+          ],
+          "hostile": true,
+          "triggers": [
+            [
+              18,
+              9
+            ],
+            [
+              19,
+              8
+            ],
+            [
+              18,
+              7
+            ],
+            [
+              17,
+              8
+            ]
+          ],
+          "retirement_event": "EVENT_PEON_ROAD_RAPTOR_DEAD",
+          "copper_on_complete": 25
+        },
+        {
+          "actor": [
+            5,
+            22
+          ],
+          "name": "Harpy",
+          "native_species": "SPEAROW / PEON_MOB_HARPY",
+          "species_id": 21,
+          "levels": [
+            3
+          ],
+          "hostile": true,
+          "triggers": [
+            [
+              5,
+              23
+            ],
+            [
+              6,
+              22
+            ],
+            [
+              5,
+              21
+            ],
+            [
+              4,
+              22
+            ]
+          ],
+          "retirement_event": "EVENT_PEON_ROAD_HARPY_DEAD",
+          "copper_on_complete": 25
+        },
+        {
+          "actor": [
+            5,
+            5
+          ],
+          "name": "Tiger",
+          "native_species": "MEOWTH / PEON_MOB_TIGER",
+          "species_id": 52,
+          "levels": [
+            3
+          ],
+          "hostile": false,
+          "triggers": [],
+          "requires_acceptance": true,
+          "retirement_event": "EVENT_PEON_ROAD_TIGER_DEAD",
+          "copper_on_complete": 20
+        },
+        {
+          "actor": [
+            18,
+            23
+          ],
+          "name": "Crawler",
+          "native_species": "KRABBY / PEON_MOB_CRAWLER",
+          "species_id": 98,
+          "levels": [
+            3
+          ],
+          "hostile": false,
+          "triggers": [],
+          "requires_acceptance": true,
+          "retirement_event": "EVENT_PEON_COAST_CRAWLER_DEAD",
+          "copper_on_complete": 20
+        }
+      ],
+      "safe_shortest_path": [
+        [
+          4,
+          14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          15
+        ],
+        [
+          9,
+          16
+        ],
+        [
+          10,
+          16
+        ],
+        [
+          11,
+          16
+        ],
+        [
+          12,
+          16
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          12,
+          19
+        ],
+        [
+          12,
+          20
+        ],
+        [
+          12,
+          21
+        ],
+        [
+          12,
+          22
+        ],
+        [
+          12,
+          23
+        ],
+        [
+          12,
+          24
+        ]
+      ],
+      "safe_shortest_steps": 18,
+      "safe_painted_road_path": [
+        [
+          4,
+          14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          14
+        ],
+        [
+          8,
+          14
+        ],
+        [
+          9,
+          14
+        ],
+        [
+          9,
+          13
+        ],
+        [
+          10,
+          13
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          12,
+          13
+        ],
+        [
+          13,
+          13
+        ],
+        [
+          14,
+          13
+        ],
+        [
+          14,
+          14
+        ],
+        [
+          14,
+          15
+        ],
+        [
+          14,
+          16
+        ],
+        [
+          14,
+          17
+        ],
+        [
+          14,
+          18
+        ],
+        [
+          14,
+          19
+        ],
+        [
+          13,
+          19
+        ],
+        [
+          13,
+          20
+        ],
+        [
+          13,
+          21
+        ],
+        [
+          13,
+          22
+        ],
+        [
+          13,
+          23
+        ],
+        [
+          13,
+          24
+        ],
+        [
+          12,
+          24
+        ]
+      ],
+      "safe_painted_road_steps": 24,
+      "minimum_forced_fights": 0,
+      "road_painted_route_forced_fights": 0,
+      "ascii": "               11111111112222\n     012345678901234567890123\n00   ########################\n01   ########################\n02   ##................######\n03   ##................######\n04   ####....####W.##########\n05   ####.N..####..##########\n06   ####..##..##==####..####\n07   ####..##..##==####!.####\n08   ####..##..##==...!N!####\n09   ####..##..##==....!.####\n10   ####....N.##==..##..####\n11   ####......##==..##..####\n12   ##......========########\n13   ##......========########\n14   ##..S*****##..==..######\n15   ##....===*##..==!.######\n16   ##..##...****.=!N!..####\n17   ##..##......*.==!...####\n18   ####....N.==*=====######\n19   ####......==*=====######\n20   ####..######*=..N=######\n21   ####.!######*=..==######\n22   ####!N!.####*=##==..####\n23   ####.!..####*=##==N.####\n24   ##..........G.####..####\n25   ##............####..####\n26   ########################\n27   ########################"
+    },
+    "senjin_village": {
+      "walking_dimensions": [
+        24,
+        20
+      ],
+      "metatile_dimensions": [
+        12,
+        10
+      ],
+      "map_group": 26,
+      "map_number": 17,
+      "arrival": [
+        10,
+        4
+      ],
+      "inn_door": [
+        15,
+        5
+      ],
+      "inn_door_path": [
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          6
+        ],
+        [
+          15,
+          5
+        ]
+      ],
+      "vendor_talk_cell": [
+        16,
+        12
+      ],
+      "vendor_talk_path": [
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          13,
+          5
+        ],
+        [
+          13,
+          6
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ],
+        [
+          15,
+          7
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          15,
+          9
+        ],
+        [
+          15,
+          10
+        ],
+        [
+          16,
+          10
+        ],
+        [
+          16,
+          11
+        ],
+        [
+          16,
+          12
+        ]
+      ],
+      "hostile_coordinate_triggers": 0,
+      "living_actors": [
+        {
+          "xy": [
+            8,
+            10
+          ],
+          "sprite": "SPRITE_SAGE",
+          "script": "SenjinVillageGuideScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            6,
+            12
+          ],
+          "sprite": "SPRITE_SAGE",
+          "script": "SenjinVillageVornalScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            14,
+            10
+          ],
+          "sprite": "SPRITE_SAGE",
+          "script": "SenjinVillageBomBayScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            16,
+            13
+          ],
+          "sprite": "SPRITE_CLERK",
+          "script": "SenjinVillageKwaiiScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            6,
+            16
+          ],
+          "sprite": "SPRITE_LINK_RECEPTIONIST",
+          "script": "SenjinVillageWatcherScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            14,
+            16
+          ],
+          "sprite": "SPRITE_CLERK",
+          "script": "SenjinVillageVelrinScript",
+          "saved_event": "-1"
+        },
+        {
+          "xy": [
+            14,
+            6
+          ],
+          "sprite": "SPRITE_PEON_MAILBOX",
+          "script": "SenjinVillageMailboxScript",
+          "saved_event": "-1"
+        }
+      ]
+    },
+    "saved_flags": {
+      "EVENT_PEON_ROAD_TIGER_DEAD": {
+        "value": 286,
+        "hex": "0x11e",
+        "byte": 35,
+        "mask": 64
+      },
+      "EVENT_PEON_ROAD_RAPTOR_DEAD": {
+        "value": 287,
+        "hex": "0x11f",
+        "byte": 35,
+        "mask": 128
+      },
+      "EVENT_PEON_ROAD_HARPY_DEAD": {
+        "value": 288,
+        "hex": "0x120",
+        "byte": 36,
+        "mask": 1
+      },
+      "EVENT_PEON_COAST_CRAWLER_DEAD": {
+        "value": 289,
+        "hex": "0x121",
+        "byte": 36,
+        "mask": 2
+      },
+      "EVENT_PEON_ROAD_SCORPID_PACK_DEAD": {
+        "value": 305,
+        "hex": "0x131",
+        "byte": 38,
+        "mask": 2
+      },
+      "EVENT_PEON_ROAD_SCORPID_PACK_FIRST": {
+        "value": 306,
+        "hex": "0x132",
+        "byte": 38,
+        "mask": 4
+      }
+    },
+    "pack_state_machine": [
+      {
+        "result": "lose/flee first",
+        "FIRST": false,
+        "DEAD": false,
+        "retry_fights": 2
+      },
+      {
+        "result": "win first, lose/flee second",
+        "FIRST": true,
+        "DEAD": false,
+        "retry_fights": 1
+      },
+      {
+        "result": "win second",
+        "FIRST": true,
+        "DEAD": true,
+        "retry_fights": 0
+      }
+    ],
+    "between_pack_battles": [
+      "No HealParty / HP reset / PP refill in pack script.",
+      "Native battle victory can still add legitimate level-up HP; this is not a heal hook.",
+      "Poison/status and consumed spell charges carry forward.",
+      "Rare-potion roll after each newly defeated member does not heal automatically."
+    ],
+    "loss_recovery": "One HP, status cleared, Hearthstone home warp; no loot or resurrection of retired enemies."
+  },
+  "proposals": {
+    "main_road_two_pack_trigger_only_diagnostic": {
+      "not_implemented": true,
+      "extra_triggers": [
+        {
+          "xy": [
+            12,
+            22
+          ],
+          "script": "DurotarScorpidPackScript"
+        },
+        {
+          "xy": [
+            13,
+            22
+          ],
+          "script": "DurotarScorpidPackScript"
+        }
+      ],
+      "painted_route_result": {
+        "wild_fights": 2,
+        "steps": 24,
+        "scripts": [
+          "DurotarScorpidPackScript"
+        ],
+        "path": [
+          [
+            4,
+            14
+          ],
+          [
+            5,
+            14
+          ],
+          [
+            6,
+            14
+          ],
+          [
+            7,
+            14
+          ],
+          [
+            8,
+            14
+          ],
+          [
+            8,
+            13
+          ],
+          [
+            9,
+            13
+          ],
+          [
+            10,
+            13
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            14,
+            17
+          ],
+          [
+            14,
+            18
+          ],
+          [
+            13,
+            18
+          ],
+          [
+            12,
+            18
+          ],
+          [
+            12,
+            19
+          ],
+          [
+            12,
+            20
+          ],
+          [
+            12,
+            21
+          ],
+          [
+            12,
+            22
+          ],
+          [
+            12,
+            23
+          ],
+          [
+            12,
+            24
+          ]
+        ]
+      },
+      "minimum_any_route_result": {
+        "wild_fights": 1,
+        "steps": 22,
+        "scripts": [
+          "DurotarHarpyScript"
+        ],
+        "path": [
+          [
+            4,
+            14
+          ],
+          [
+            4,
+            15
+          ],
+          [
+            5,
+            15
+          ],
+          [
+            6,
+            15
+          ],
+          [
+            6,
+            16
+          ],
+          [
+            6,
+            17
+          ],
+          [
+            6,
+            18
+          ],
+          [
+            5,
+            18
+          ],
+          [
+            4,
+            18
+          ],
+          [
+            4,
+            19
+          ],
+          [
+            4,
+            20
+          ],
+          [
+            4,
+            21
+          ],
+          [
+            4,
+            22
+          ],
+          [
+            4,
+            23
+          ],
+          [
+            4,
+            24
+          ],
+          [
+            5,
+            24
+          ],
+          [
+            6,
+            24
+          ],
+          [
+            7,
+            24
+          ],
+          [
+            8,
+            24
+          ],
+          [
+            9,
+            24
+          ],
+          [
+            10,
+            24
+          ],
+          [
+            11,
+            24
+          ],
+          [
+            12,
+            24
+          ]
+        ]
+      },
+      "warning": "The main road now forces two fights, but the western harpy route forces only one. This proposal does NOT force two fights on every possible route. Keeping actor at (16,16) while triggering at (12,22) would create an invisible-distance attack; it is a reachability diagnostic, not recommended final staging.",
+      "recommended_visual_staging": "Stage the pack visibly near (14,21) by the southern two-cell road corridor; protect cold saves occupying that cell by a transient callback hide until player moves. Keep all FLOOR collision cells FLOOR."
+    },
+    "minimum_change_third_fight": {
+      "not_implemented": true,
+      "species": "PEON_MOB_HARPY (existing ROAD_HARPY)",
+      "suggested_level": 4,
+      "suggested_player_gate": 6,
+      "saved_event": "EVENT_PEON_ROAD_HARPY_DEAD",
+      "sequence": "After the existing two pack wins and its completion rewards, check this old harpy-dead flag. If alive and player was eligible, start a third CANLOSE 1v1 using the same battle/reload/result pattern. Commit HARPY_DEAD and hide ROAD_HARPY only on a third victory.",
+      "failure_resume": "If the third is lost/fled, pack FIRST and DEAD remain true and HARPY_DEAD remains false. The existing harpy object and its own triggers are the retry location. Never clear pack DEAD to force a retry.",
+      "old_saves": "A save with pack DEAD or harpy DEAD keeps those enemies retired. Never reinterpret the pack DEAD flag as meaning a new three-scorpid pack is incomplete.",
+      "limitations": "This is a mixed two-scorpid plus harpy sequence, not a third scorpid or simultaneous multi-enemy battle. Set last-talked safely to the actual third actor; do not face a deleted pack object."
+    },
+    "true_three_scorpid_extension": {
+      "not_implemented": true,
+      "recommended_progress_bits": "Keep FIRST=306 and DEAD=305. Allocate explicit aliases into the unused 349..599 reserved region only after root checks availability; preserve all existing const values and NUM_EVENTS=2048.",
+      "needed_new_bits": [
+        "SECOND (second member permanently defeated)",
+        "TRIPLE_REQUIRED (fixed once before first member, e.g. player level >=6)"
+      ],
+      "why_two_bits": "SECOND persists failure on member three. TRIPLE_REQUIRED prevents the pack size changing mid-run after level-up, loss or cold save. Older FIRST-only partial saves default to the legacy two-member pack.",
+      "migration_rule": "Always check existing DEAD first and end with zero fights. Never respawn an old fully retired two-member pack merely because new SECOND/TRIPLE_REQUIRED bits are clear.",
+      "no_new_save_fields": true,
+      "progress_steps": [
+        "Initial eligible new pack: set TRIPLE_REQUIRED before fight 1.",
+        "Win 1: set FIRST, roll its loot once, carry HP/status/PP to fight 2.",
+        "Win 2 in triple mode: set SECOND, roll its loot once, carry HP/status/PP to fight 3.",
+        "Win 2 in legacy mode, or win 3 in triple mode: set DEAD, hide pack and award completion copper once.",
+        "Loss/flee leaves the committed progress bits intact; retry loads only the next living member."
+      ],
+      "difficulty": "Use fixed level 4 pair as initial milestone; level 6 triple may use 5/5/6 after per-class balance simulations. Do not globally increase scorpid stats to tune a single road pack."
+    },
+    "save_safe_path_art": {
+      "not_implemented": true,
+      "preserve": [
+        "Existing map group/number, dimensions, warp coordinates, actor identifiers, species/item/event IDs, SRAM size.",
+        "All currently walkable saved coordinate cells; road shape swaps may only replace FLOOR with FLOOR.",
+        "Senjin return warp (10,4), inn door (15,5), actual inn interior doorway (5,7)."
+      ],
+      "changes": [
+        "Show a pale continuous 2-cell route along the computed painted-road path.",
+        "Red/ocher mountain border is palette/art on existing impassable metatiles.",
+        "Use cliff/boulder silhouettes to frame actual exit, never paint a door on a wall or an unreachable lane.",
+        "If strict two-fight minimum on ALL alternatives is required, explicitly add an encounter on the western harpy branch or design a new save-migrated layout; do not silently seal its formerly walkable saved cells."
+      ]
+    },
+    "required_native_tests": [
+      "Actual fresh class routes and all three classes through the road and Senjin entrance.",
+      "Pack first loss, first flee, second loss/flee, eventual win; cold battery after each partial state.",
+      "Third-mode second/third loss/flee; exact enemy loads and zero HealParty between fights.",
+      "No repeated potion/copper rolls on revisit or skipped dead member.",
+      "All old DEAD/FIRST batteries skip dead enemies, with all old enum values unchanged.",
+      "Cold Continue on every moved actor candidate cell and route doorway; no player/actor overlap.",
+      "HP/status/PP at second/third start match native previous battle end plus legitimate level-up adjustments.",
+      "No quest-marker, pet, portraits, collision, route, font or UI regression."
+    ]
+  },
+  "static_checks_passed": true
+}

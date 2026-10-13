@@ -1,0 +1,1009 @@
+{
+  "passed": true,
+  "rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "native_rom_graphics_metatiles_palettes_collision_and_warps_decoded": true,
+  "native_tiled_background_reconstruction_not_runtime_screenshot": true,
+  "source_maps_and_rom_bytes_identical": true,
+  "maps": {
+    "TheDen": {
+      "map_id": 14,
+      "blocks": [
+        12,
+        10
+      ],
+      "pixels": [
+        384,
+        320
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 2.4,
+      "vertical_screens": 2.2222222222222223,
+      "block_bytes_sha256": "86caac8cf076d6e0a02026a6f08f8259de79476d42dae5f593b8a446ba1a67cb",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            20,
+            10
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            17,
+            5
+          ],
+          "target_name": "PeonOrcInn",
+          "target_constant": "PEON_ORC_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            5,
+            7
+          ],
+          "target_name": "PeonOrcHut",
+          "target_constant": "PEON_ORC_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            0,
+            14
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 25,
+      "native_coord_event_cells": [
+        {
+          "xy": [
+            17,
+            15
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            18,
+            14
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            18,
+            15
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            18,
+            16
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            19,
+            13
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            19,
+            14
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            19,
+            16
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            19,
+            17
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            20,
+            14
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            20,
+            15
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            20,
+            16
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        },
+        {
+          "xy": [
+            21,
+            15
+          ],
+          "arguments": "-1, TheDenScorpidScript"
+        }
+      ],
+      "coordinate_events_verified_from_rom": true
+    },
+    "ValleyOfTrials": {
+      "map_id": 15,
+      "blocks": [
+        16,
+        12
+      ],
+      "pixels": [
+        512,
+        384
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 3.2,
+      "vertical_screens": 2.6666666666666665,
+      "block_bytes_sha256": "4421782450917bbb3df6e7f8ce1f0ecacb29d69396ba2f60af91fcfa12974eec",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            12
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            28,
+            12
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            16,
+            0
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 27,
+      "native_coord_event_cells": [],
+      "coordinate_events_verified_from_rom": true
+    },
+    "PeonValleyCrossroads": {
+      "map_id": 25,
+      "blocks": [
+        5,
+        5
+      ],
+      "pixels": [
+        160,
+        160
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 1.0,
+      "vertical_screens": 1.1111111111111112,
+      "block_bytes_sha256": "4b03ab4f227d194a534b85a6b661b51f9086c3fd3b2e46ea25d3b207db03a76a",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 3,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonCaveApproach",
+          "target_constant": "PEON_CAVE_APPROACH",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 3,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 8,
+      "native_coord_event_cells": [],
+      "coordinate_events_verified_from_rom": true
+    },
+    "PeonHanazuaCamp": {
+      "map_id": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "pixels": [
+        160,
+        160
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 1.0,
+      "vertical_screens": 1.1111111111111112,
+      "block_bytes_sha256": "aa9685a7f7fb49ee5e6c08810485bebb5eeb528df94454b794ea17c866c2bfb0",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 3,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonSarkothBasin",
+          "target_constant": "PEON_SARKOTH_BASIN",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 6,
+      "native_coord_event_cells": [],
+      "coordinate_events_verified_from_rom": true
+    },
+    "PeonSarkothBasin": {
+      "map_id": 27,
+      "blocks": [
+        5,
+        5
+      ],
+      "pixels": [
+        160,
+        160
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 1.0,
+      "vertical_screens": 1.1111111111111112,
+      "block_bytes_sha256": "39446182c64c045517eee118cf04379c9c348e12d4880490c4f8cff41d59ae4a",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            0
+          ],
+          "target_name": "PeonHanazuaCamp",
+          "target_constant": "PEON_HANAZUA_CAMP",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            7
+          ],
+          "target_name": "TheDen",
+          "target_constant": "THE_DEN",
+          "target_warp": 4,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 6,
+      "native_coord_event_cells": [
+        {
+          "xy": [
+            4,
+            3
+          ],
+          "arguments": "-1, PeonBasinSarkothScript"
+        },
+        {
+          "xy": [
+            5,
+            4
+          ],
+          "arguments": "-1, PeonBasinSarkothScript"
+        },
+        {
+          "xy": [
+            4,
+            5
+          ],
+          "arguments": "-1, PeonBasinSarkothScript"
+        },
+        {
+          "xy": [
+            3,
+            4
+          ],
+          "arguments": "-1, PeonBasinSarkothScript"
+        }
+      ],
+      "coordinate_events_verified_from_rom": true
+    },
+    "PeonCaveApproach": {
+      "map_id": 28,
+      "blocks": [
+        5,
+        5
+      ],
+      "pixels": [
+        160,
+        160
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 1.0,
+      "vertical_screens": 1.1111111111111112,
+      "block_bytes_sha256": "f7564f051efa369bb4b7ad9fbee3cb0c70929c651ed43ce52d275629cbe42e45",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            5,
+            9
+          ],
+          "target_name": "PeonValleyCrossroads",
+          "target_constant": "PEON_VALLEY_CROSSROADS",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            2
+          ],
+          "target_name": "BurningBladeCavern",
+          "target_constant": "BURNING_BLADE_CAVERN",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 4,
+      "native_coord_event_cells": [
+        {
+          "xy": [
+            3,
+            5
+          ],
+          "arguments": "-1, PeonApproachImp1Script"
+        },
+        {
+          "xy": [
+            5,
+            5
+          ],
+          "arguments": "-1, PeonApproachImp1Script"
+        },
+        {
+          "xy": [
+            4,
+            4
+          ],
+          "arguments": "-1, PeonApproachImp1Script"
+        },
+        {
+          "xy": [
+            4,
+            6
+          ],
+          "arguments": "-1, PeonApproachImp1Script"
+        },
+        {
+          "xy": [
+            5,
+            4
+          ],
+          "arguments": "-1, PeonApproachImp2Script"
+        },
+        {
+          "xy": [
+            7,
+            4
+          ],
+          "arguments": "-1, PeonApproachImp2Script"
+        },
+        {
+          "xy": [
+            6,
+            3
+          ],
+          "arguments": "-1, PeonApproachImp2Script"
+        },
+        {
+          "xy": [
+            6,
+            5
+          ],
+          "arguments": "-1, PeonApproachImp2Script"
+        }
+      ],
+      "coordinate_events_verified_from_rom": true
+    },
+    "PeonValleyExit": {
+      "map_id": 29,
+      "blocks": [
+        5,
+        5
+      ],
+      "pixels": [
+        160,
+        160
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 1.0,
+      "vertical_screens": 1.1111111111111112,
+      "block_bytes_sha256": "b93c13b98975f8f342310b6cf00f1ac1d67a670e9c577275992c423138cab665",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            0,
+            4
+          ],
+          "target_name": "ValleyOfTrials",
+          "target_constant": "VALLEY_OF_TRIALS",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        },
+        {
+          "index": 2,
+          "xy": [
+            9,
+            4
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": true
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 5,
+      "native_coord_event_cells": [],
+      "coordinate_events_verified_from_rom": true
+    },
+    "DurotarRoad": {
+      "map_id": 16,
+      "blocks": [
+        12,
+        14
+      ],
+      "pixels": [
+        384,
+        448
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 2.4,
+      "vertical_screens": 3.111111111111111,
+      "block_bytes_sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            4,
+            14
+          ],
+          "target_name": "PeonValleyExit",
+          "target_constant": "PEON_VALLEY_EXIT",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            12,
+            24
+          ],
+          "target_name": "SenjinVillage",
+          "target_constant": "SENJIN_VILLAGE",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            12,
+            4
+          ],
+          "target_name": "RazorHill",
+          "target_constant": "RAZOR_HILL",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 25,
+      "native_coord_event_cells": [
+        {
+          "xy": [
+            16,
+            17
+          ],
+          "arguments": "-1, DurotarScorpidPackScript"
+        },
+        {
+          "xy": [
+            17,
+            16
+          ],
+          "arguments": "-1, DurotarScorpidPackScript"
+        },
+        {
+          "xy": [
+            16,
+            15
+          ],
+          "arguments": "-1, DurotarScorpidPackScript"
+        },
+        {
+          "xy": [
+            15,
+            16
+          ],
+          "arguments": "-1, DurotarScorpidPackScript"
+        },
+        {
+          "xy": [
+            18,
+            9
+          ],
+          "arguments": "-1, DurotarRaptorScript"
+        },
+        {
+          "xy": [
+            19,
+            8
+          ],
+          "arguments": "-1, DurotarRaptorScript"
+        },
+        {
+          "xy": [
+            18,
+            7
+          ],
+          "arguments": "-1, DurotarRaptorScript"
+        },
+        {
+          "xy": [
+            17,
+            8
+          ],
+          "arguments": "-1, DurotarRaptorScript"
+        },
+        {
+          "xy": [
+            5,
+            23
+          ],
+          "arguments": "-1, DurotarHarpyScript"
+        },
+        {
+          "xy": [
+            6,
+            22
+          ],
+          "arguments": "-1, DurotarHarpyScript"
+        },
+        {
+          "xy": [
+            5,
+            21
+          ],
+          "arguments": "-1, DurotarHarpyScript"
+        },
+        {
+          "xy": [
+            4,
+            22
+          ],
+          "arguments": "-1, DurotarHarpyScript"
+        }
+      ],
+      "coordinate_events_verified_from_rom": true
+    },
+    "SenjinVillage": {
+      "map_id": 17,
+      "blocks": [
+        12,
+        10
+      ],
+      "pixels": [
+        384,
+        320
+      ],
+      "gbc_viewport": [
+        160,
+        144
+      ],
+      "horizontal_screens": 2.4,
+      "vertical_screens": 2.2222222222222223,
+      "block_bytes_sha256": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+      "native_blocks_equal_current_source": true,
+      "warps": [
+        {
+          "index": 1,
+          "xy": [
+            10,
+            4
+          ],
+          "target_name": "DurotarRoad",
+          "target_constant": "DUROTAR_ROAD",
+          "target_warp": 2,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 2,
+          "xy": [
+            5,
+            5
+          ],
+          "target_name": "PeonTrollHut",
+          "target_constant": "PEON_TROLL_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 3,
+          "xy": [
+            15,
+            5
+          ],
+          "target_name": "PeonTrollInn",
+          "target_constant": "PEON_TROLL_INN",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        },
+        {
+          "index": 4,
+          "xy": [
+            17,
+            9
+          ],
+          "target_name": "PeonTrollHut",
+          "target_constant": "PEON_TROLL_HUT",
+          "target_warp": 1,
+          "dynamic_room_return": false,
+          "native_rom_event_bytes_verified": true,
+          "cell_is_actual_native_warp_panel": true,
+          "on_outer_map_edge": false
+        }
+      ],
+      "all_painted_road_blocks_connected": true,
+      "road_block_count": 23,
+      "native_coord_event_cells": [],
+      "coordinate_events_verified_from_rom": true
+    }
+  },
+  "target_edges": [
+    {
+      "from_zone": 1,
+      "to_zone": 2,
+      "from_map": "TheDen",
+      "to_map": "ValleyOfTrials",
+      "expected_direction": "RIGHT",
+      "from_xy": [
+        20,
+        10
+      ],
+      "to_xy": [
+        4,
+        12
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": false,
+      "destination_on_outer_map_edge": false
+    },
+    {
+      "from_zone": 2,
+      "to_zone": 3,
+      "from_map": "ValleyOfTrials",
+      "to_map": "PeonValleyCrossroads",
+      "expected_direction": "UP",
+      "from_xy": [
+        16,
+        0
+      ],
+      "to_xy": [
+        5,
+        9
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 3,
+      "to_zone": 4,
+      "from_map": "PeonValleyCrossroads",
+      "to_map": "PeonHanazuaCamp",
+      "expected_direction": "LEFT",
+      "from_xy": [
+        0,
+        4
+      ],
+      "to_xy": [
+        9,
+        4
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 4,
+      "to_zone": 5,
+      "from_map": "PeonHanazuaCamp",
+      "to_map": "PeonSarkothBasin",
+      "expected_direction": "DOWN",
+      "from_xy": [
+        5,
+        9
+      ],
+      "to_xy": [
+        5,
+        0
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 5,
+      "to_zone": 1,
+      "from_map": "PeonSarkothBasin",
+      "to_map": "TheDen",
+      "expected_direction": "RIGHT",
+      "from_xy": [
+        9,
+        7
+      ],
+      "to_xy": [
+        0,
+        14
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 3,
+      "to_zone": 6,
+      "from_map": "PeonValleyCrossroads",
+      "to_map": "PeonCaveApproach",
+      "expected_direction": "UP",
+      "from_xy": [
+        5,
+        0
+      ],
+      "to_xy": [
+        5,
+        9
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 2,
+      "to_zone": 7,
+      "from_map": "ValleyOfTrials",
+      "to_map": "PeonValleyExit",
+      "expected_direction": "RIGHT",
+      "from_xy": [
+        28,
+        12
+      ],
+      "to_xy": [
+        0,
+        4
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": false,
+      "destination_on_outer_map_edge": true
+    },
+    {
+      "from_zone": 7,
+      "to_zone": null,
+      "from_map": "PeonValleyExit",
+      "to_map": "DurotarRoad",
+      "expected_direction": "RIGHT",
+      "from_xy": [
+        9,
+        4
+      ],
+      "to_xy": [
+        4,
+        14
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": true,
+      "destination_on_outer_map_edge": false
+    },
+    {
+      "from_zone": 6,
+      "to_zone": null,
+      "from_map": "PeonCaveApproach",
+      "to_map": "BurningBladeCavern",
+      "expected_direction": "UP",
+      "from_xy": [
+        5,
+        2
+      ],
+      "to_xy": [
+        10,
+        16
+      ],
+      "reciprocal_warp_indices_correct": true,
+      "source_exit_on_outer_map_edge": false,
+      "destination_on_outer_map_edge": null
+    }
+  ],
+  "red_is_an_annotation_of_mountain_collision_not_a_requested_native_color": true,
+  "annotated_user_image_file_not_present": true,
+  "reference_geometry_source": "tools/build_peon_valley_zones_v025.py::REFERENCE_RECTS, measurements from user conversation",
+  "native_files_changed": false,
+  "ram_or_savestate_edits": false
+}

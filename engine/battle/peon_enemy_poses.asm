@@ -79,7 +79,7 @@ PeonEnemyHasAttackPoses:
 	scf
 	ret
 .species
-	db RATTATA, SANDSHREW, GEODUDE
+	db RATTATA, SANDSHREW, GEODUDE, ONIX, MACHAMP, PONYTA, RAPIDASH
 	db PEON_MOB_TIGER, PEON_MOB_RAPTOR, PEON_MOB_CRAWLER
 	db PEON_MOB_HARPY, PEON_MOB_FELSTALKER, PEON_MOB_CULTIST
 	db PEON_MOB_YARROG, PEON_MOB_SARKOTH, 0
@@ -153,7 +153,6 @@ PeonEnemyPoseOverflowTable:
 	peon_enemy_pose_overflow PEON_MOB_CRAWLER, PeonCrawlerOverflowTiles
 	peon_enemy_pose_overflow PEON_MOB_HARPY, PeonHarpyOverflowTiles
 	peon_enemy_pose_overflow PEON_MOB_FELSTALKER, PeonFelstalkerOverflowTiles
-	peon_enemy_pose_overflow PEON_MOB_CULTIST, PeonCultistOverflowTiles
 	peon_enemy_pose_overflow PEON_MOB_YARROG, PeonYarrogOverflowTiles
 	peon_enemy_pose_overflow PEON_MOB_SARKOTH, PeonSarkothOverflowTiles
 	db 0

@@ -1,0 +1,2205 @@
+{
+  "passed": true,
+  "baseline_ref": "e996663",
+  "preview_only": true,
+  "native_patterns_unchanged": 192,
+  "metatile_count_after_apply": 67,
+  "new_mixed_cliff_metatile_ids": {
+    "1": 53,
+    "2": 54,
+    "3": 55,
+    "4": 56,
+    "5": 57,
+    "6": 58,
+    "7": 59,
+    "8": 60,
+    "9": 61,
+    "10": 62,
+    "11": 63,
+    "12": 64,
+    "13": 65,
+    "14": 66
+  },
+  "zero_new_graphics_palette_or_sram_bytes": true,
+  "ids_dimensions_npcs_quests_portals_roads_preserved": true,
+  "continuelanding_guard_required_before_playable_release": true,
+  "changed_collision_cell_count": 68,
+  "maps": {
+    "TheDen": {
+      "map_id": 14,
+      "blocks": [
+        12,
+        10
+      ],
+      "old_blocks_sha256": "86caac8cf076d6e0a02026a6f08f8259de79476d42dae5f593b8a446ba1a67cb",
+      "proposed_blocks_sha256": "d581a53457a9f72d2d7faddc9b9d5f0895a47f982fa41b0c116a355b1e6ffc05",
+      "reachable_cells": 223,
+      "reachable_with_all_current_and_planned_bodies": 208,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            8,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            8,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            9,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            9,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            10,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            10,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            11,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            11,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            12,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            12,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            13,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            13,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            14,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            14,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            15,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            15,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            20,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            15,
+            3
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            21,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            21,
+            8
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            20,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            15,
+            3
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            21,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            21,
+            8
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            21,
+            13
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            21,
+            12
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            16,
+            16
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            16,
+            15
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            16,
+            17
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            15,
+            17
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 7,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "ValleyOfTrials": {
+      "map_id": 15,
+      "blocks": [
+        16,
+        12
+      ],
+      "old_blocks_sha256": "4421782450917bbb3df6e7f8ce1f0ecacb29d69396ba2f60af91fcfa12974eec",
+      "proposed_blocks_sha256": "d626b0a8ab4c25f1dab124cd188eb15c6c65ae7297b2277c86f15df8a4a9fdb2",
+      "reachable_cells": 287,
+      "reachable_with_all_current_and_planned_bodies": 286,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            2,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            8
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            8
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            8
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            5,
+            8
+          ],
+          "landing_manhattan_distance": 6,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            20,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            20,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            21,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            21,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            28,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            28,
+            4
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            29,
+            4
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            8
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            8
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            8
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            5,
+            8
+          ],
+          "landing_manhattan_distance": 5,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            28,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            28,
+            4
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            3
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            29,
+            4
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            8
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            8
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            8
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            5,
+            8
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            8
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            8
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            8
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            5,
+            8
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            28,
+            10
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            28,
+            11
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            10
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            28,
+            11
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            11
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            28,
+            11
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            28,
+            14
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            27,
+            13
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            14
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            27,
+            13
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            29,
+            15
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            27,
+            13
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            19
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            8,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            8,
+            19
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            9,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            9,
+            19
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            24,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            24,
+            17
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            25,
+            20
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            25,
+            17
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            19
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            3,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            4,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 3,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            19
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            8,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            8,
+            19
+          ],
+          "landing_manhattan_distance": 2,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            9,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            10,
+            21
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            24,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            24,
+            17
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            25,
+            21
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            25,
+            17
+          ],
+          "landing_manhattan_distance": 4,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 12,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "PeonValleyCrossroads": {
+      "map_id": 25,
+      "blocks": [
+        5,
+        5
+      ],
+      "old_blocks_sha256": "4b03ab4f227d194a534b85a6b661b51f9086c3fd3b2e46ea25d3b207db03a76a",
+      "proposed_blocks_sha256": "66c41890b7c3c9c9ac52b2aff490b5234d65a0b5b406922f8d076c547e142d52",
+      "reachable_cells": 39,
+      "reachable_with_all_current_and_planned_bodies": 37,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            2,
+            7
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            6
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 1,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "PeonHanazuaCamp": {
+      "map_id": 26,
+      "blocks": [
+        5,
+        5
+      ],
+      "old_blocks_sha256": "aa9685a7f7fb49ee5e6c08810485bebb5eeb528df94454b794ea17c866c2bfb0",
+      "proposed_blocks_sha256": "8c1a19bee84f4ee9b6a140e67a15e5e5fa4ab67d2e0da69cc829f573fc473c82",
+      "reachable_cells": 35,
+      "reachable_with_all_current_and_planned_bodies": 33,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            5,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            2
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 1,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "PeonSarkothBasin": {
+      "map_id": 27,
+      "blocks": [
+        5,
+        5
+      ],
+      "old_blocks_sha256": "39446182c64c045517eee118cf04379c9c348e12d4880490c4f8cff41d59ae4a",
+      "proposed_blocks_sha256": "60a0cf73b21b917a16c511dbc398becb5b371f0a6fb99e3c5da829f11b92d27e",
+      "reachable_cells": 29,
+      "reachable_with_all_current_and_planned_bodies": 28,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            7,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            6,
+            4
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            4
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            7,
+            5
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            6,
+            5
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 2,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "PeonCaveApproach": {
+      "map_id": 28,
+      "blocks": [
+        5,
+        5
+      ],
+      "old_blocks_sha256": "f7564f051efa369bb4b7ad9fbee3cb0c70929c651ed43ce52d275629cbe42e45",
+      "proposed_blocks_sha256": "a4ba909f4bd30e1816c0eac97fefd1249fe53f93f1c72461c82ae4d347f5934b",
+      "reachable_cells": 27,
+      "reachable_with_all_current_and_planned_bodies": 24,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            2,
+            4
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            3,
+            4
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 1,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    },
+    "PeonValleyExit": {
+      "map_id": 29,
+      "blocks": [
+        5,
+        5
+      ],
+      "old_blocks_sha256": "b93c13b98975f8f342310b6cf00f1ac1d67a670e9c577275992c423138cab665",
+      "proposed_blocks_sha256": "188fb36acdbba761844e47d325096935fd27c1134bf25f0fe2e048f60d99ed1f",
+      "reachable_cells": 29,
+      "reachable_with_all_current_and_planned_bodies": 26,
+      "all_portals_and_quest_npcs_have_actual_approaches": true,
+      "new_blocked_cells_requiring_continue_guard": [
+        {
+          "xy": [
+            4,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            4,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            5,
+            2
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            5,
+            3
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        },
+        {
+          "xy": [
+            2,
+            7
+          ],
+          "old_collision": "FLOOR",
+          "new_collision": "WALL",
+          "safeLandingSuggested": [
+            2,
+            6
+          ],
+          "landing_manhattan_distance": 1,
+          "landing_reachable_from_actual_portal": true,
+          "landing_is_floor_not_warp_actor_or_aggro": true
+        }
+      ],
+      "changed_block_count": 12,
+      "immutable_actor_event_warp_coordinates": true,
+      "all_new_walls_connected_to_actual_outer_mountain_rim": true,
+      "painted_roads_preserved": true
+    }
+  },
+  "requested_contours_and_filtered_cells": {
+    "TheDen": {
+      "requested_cells": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          20,
+          3
+        ],
+        [
+          20,
+          8
+        ],
+        [
+          20,
+          12
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          21,
+          8
+        ],
+        [
+          21,
+          9
+        ],
+        [
+          21,
+          12
+        ],
+        [
+          21,
+          13
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            20,
+            8
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            20,
+            12
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            21,
+            8
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            21,
+            9
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            21,
+            12
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          8,
+          2
+        ],
+        [
+          9,
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          17
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          20,
+          3
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          21,
+          3
+        ],
+        [
+          21,
+          13
+        ]
+      ]
+    },
+    "ValleyOfTrials": {
+      "requested_cells": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          6,
+          20
+        ],
+        [
+          6,
+          21
+        ],
+        [
+          7,
+          20
+        ],
+        [
+          7,
+          21
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          24,
+          21
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          25,
+          21
+        ],
+        [
+          26,
+          14
+        ],
+        [
+          27,
+          14
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          28,
+          3
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          28,
+          14
+        ],
+        [
+          29,
+          2
+        ],
+        [
+          29,
+          3
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          29,
+          11
+        ],
+        [
+          29,
+          14
+        ],
+        [
+          29,
+          15
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            6,
+            20
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            6,
+            21
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            7,
+            20
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            7,
+            21
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            26,
+            14
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        },
+        {
+          "xy": [
+            27,
+            14
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          20
+        ],
+        [
+          2,
+          21
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          20
+        ],
+        [
+          3,
+          21
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          21
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          20
+        ],
+        [
+          5,
+          21
+        ],
+        [
+          8,
+          20
+        ],
+        [
+          8,
+          21
+        ],
+        [
+          9,
+          20
+        ],
+        [
+          9,
+          21
+        ],
+        [
+          20,
+          2
+        ],
+        [
+          21,
+          2
+        ],
+        [
+          24,
+          20
+        ],
+        [
+          24,
+          21
+        ],
+        [
+          25,
+          20
+        ],
+        [
+          25,
+          21
+        ],
+        [
+          28,
+          2
+        ],
+        [
+          28,
+          3
+        ],
+        [
+          28,
+          10
+        ],
+        [
+          28,
+          14
+        ],
+        [
+          29,
+          2
+        ],
+        [
+          29,
+          3
+        ],
+        [
+          29,
+          10
+        ],
+        [
+          29,
+          11
+        ],
+        [
+          29,
+          14
+        ],
+        [
+          29,
+          15
+        ]
+      ]
+    },
+    "PeonValleyCrossroads": {
+      "requested_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            2,
+            6
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            3,
+            7
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            6,
+            2
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            7,
+            2
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          2,
+          7
+        ]
+      ]
+    },
+    "PeonHanazuaCamp": {
+      "requested_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            2,
+            7
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            4,
+            2
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            5,
+            3
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    "PeonSarkothBasin": {
+      "requested_cells": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            2,
+            6
+          ],
+          "reason": "Existing road, decorative silhouette, structure or wall preserved"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          2,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ]
+      ]
+    },
+    "PeonCaveApproach": {
+      "requested_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          7,
+          5
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            2,
+            5
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            7,
+            4
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            7,
+            5
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          2,
+          4
+        ]
+      ]
+    },
+    "PeonValleyExit": {
+      "requested_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "protected_or_existing_decor_cells_skipped": [
+        {
+          "xy": [
+            2,
+            6
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        },
+        {
+          "xy": [
+            3,
+            7
+          ],
+          "reason": "NPC/quest/portal/aggro/anticipated-spawn approach protected"
+        }
+      ],
+      "actual_new_wall_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    }
+  },
+  "planned_spawn_sites": [
+    {
+      "kind": "EarthSpirit",
+      "map": "PeonValleyCrossroads",
+      "xy": [
+        3,
+        5
+      ],
+      "species": "ONIX",
+      "level": 2,
+      "object_index": 1,
+      "behavior": "neutral recruitment source",
+      "cell_is_native_floor": true,
+      "approaches_reachable_with_all_other_bodies": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "map_authored_object_slots": 9,
+      "placeholder_slot_replacement_avoids_index_shift": true
+    },
+    {
+      "kind": "OrcGrunt",
+      "map": "PeonHanazuaCamp",
+      "xy": [
+        3,
+        6
+      ],
+      "species": "MACHAMP",
+      "level": 2,
+      "object_index": 1,
+      "behavior": "neutral recruitment source",
+      "cell_is_native_floor": true,
+      "approaches_reachable_with_all_other_bodies": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "map_authored_object_slots": 9,
+      "placeholder_slot_replacement_avoids_index_shift": true
+    },
+    {
+      "kind": "EarthSpiritFuture",
+      "map": "PeonCaveApproach",
+      "xy": [
+        7,
+        7
+      ],
+      "species": "ONIX",
+      "level": 2,
+      "object_index": null,
+      "behavior": "optional later recruitment node",
+      "cell_is_native_floor": true,
+      "approaches_reachable_with_all_other_bodies": [
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "map_authored_object_slots": 9,
+      "placeholder_slot_replacement_avoids_index_shift": false
+    },
+    {
+      "kind": "KolkarArcher",
+      "map": "PeonValleyExit",
+      "xy": [
+        3,
+        5
+      ],
+      "species": "PONYTA alias pending root integration",
+      "level": 7,
+      "object_index": 2,
+      "behavior": "hostile pack helper owned by combat agent",
+      "cell_is_native_floor": true,
+      "approaches_reachable_with_all_other_bodies": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "map_authored_object_slots": 1,
+      "placeholder_slot_replacement_avoids_index_shift": false
+    },
+    {
+      "kind": "KolkarRaider",
+      "map": "PeonValleyExit",
+      "xy": [
+        7,
+        5
+      ],
+      "species": "RAPIDASH alias pending root integration",
+      "level": 8,
+      "object_index": 3,
+      "behavior": "hostile pack helper owned by combat agent",
+      "cell_is_native_floor": true,
+      "approaches_reachable_with_all_other_bodies": [
+        [
+          6,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          7,
+          4
+        ]
+      ],
+      "map_authored_object_slots": 1,
+      "placeholder_slot_replacement_avoids_index_shift": false
+    }
+  ],
+  "patch": {
+    "path": "/tmp/peon_v029_geography_hooks.patch",
+    "sha256": "2fb6ef14a1d1f7af26e0cf3573335fe4da0fe8687049f9fdc22da713cd708c3b",
+    "bytes": 3710,
+    "git_binary_patch_apply_check_passed_in_temporary_fixture": true,
+    "patch_never_applied_to_live_checkout": true
+  },
+  "screenshots_are_uncompiled_proposal_views_not_runtime": true,
+  "native_files_written": false
+}

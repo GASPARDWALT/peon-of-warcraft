@@ -3,6 +3,11 @@ SECTION "Peon Healing Consumables", ROMX
 ; Camp food is a rest supply, not another combat potion. Failed/full-health
 ; use clears carry and leaves both the item and the battle turn untouched.
 PeonTryEatCampBread::
+	farcall PeonResourceModeEnabledV029
+	jr nc, .legacy
+	farcall PeonTryEatMeatV029
+	ret
+.legacy
 	ld a, [wBattleMode]
 	and a
 	ret nz
@@ -12,6 +17,11 @@ PeonTryEatCampBread::
 ; Carry = a living character actually regained HP. At full HP or zero HP the
 ; potion is left in the bag. Battle and party HP remain synchronized.
 PeonTryUseMinorPotion::
+	farcall PeonResourceModeEnabledV029
+	jr nc, .legacy
+	farcall PeonTryUseMinorHealingV029
+	ret
+.legacy
 	ld a, 20
 PeonTryRestoreHPFromA:
 	push af
@@ -86,10 +96,20 @@ PeonTryRestoreHPFromA:
 ; spellbooks. Preserve the two PP-Up bits and honor each move's actual max PP.
 ; Warrior rejection/full book clears carry: no item and no battle turn spent.
 PeonTryUseMinorMana::
+	farcall PeonResourceModeEnabledV029
+	jr nc, .legacy
+	farcall PeonTryUseMinorManaV029
+	ret
+.legacy
 	ld a, 5
 	jr PeonRestoreSpellChargesByAmount
 
 PeonRestoreSpellCharges::
+	farcall PeonResourceModeEnabledV029
+	jr nc, .legacy
+	farcall PeonTryDrinkWaterV029
+	ret
+.legacy
 	ld a, 10
 PeonRestoreSpellChargesByAmount:
 	push af

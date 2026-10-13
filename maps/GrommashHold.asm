@@ -82,6 +82,7 @@ GrommashHoldSequence:
 	promptbutton
 	setevent EVENT_PEON_SHAMAN
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
+	callasm PeonInitializeTeamV029
 	closetext
 	warp THE_DEN, 10, 12
 	end

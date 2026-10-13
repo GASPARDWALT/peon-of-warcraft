@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "native_files_modified": true,
+  "blocked_cell_identities_preserved": 68,
+  "complete_migration_rows_preserved": 76,
+  "entries": [
+    {
+      "map": "PeonValleyExit",
+      "map_id": 29,
+      "map_group": 26,
+      "xy": [
+        2,
+        7
+      ],
+      "previousSafeLandingSuggested": [
+        2,
+        6
+      ],
+      "safeLandingSuggested": [
+        2,
+        4
+      ],
+      "reason": "New Kolkar aggro occupies both exits from former landing (2,6); use safe western road instead.",
+      "native_floor_and_no_actor_warp_or_aggro": true,
+      "verified_escape_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "last_cell_is_actual_western_portal_to_valley": true,
+      "candidate02_native_failure_sha256": "1c002f17ad00f763241114c05f239c1dda7b361ae38caf8696080961ad586f82"
+    }
+  ]
+}

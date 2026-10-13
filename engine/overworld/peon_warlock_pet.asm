@@ -89,7 +89,9 @@ PeonWarlockFollowerEnabled:
 	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
 	bit EVENT_PEON_WARLOCK % 8, a
 	jr z, .no
-	scf
+	push hl
+	farcall PeonHasLivingImpV029
+	pop hl
 	ret
 .no:
 	and a

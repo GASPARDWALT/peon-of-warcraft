@@ -43,7 +43,7 @@ BattleMenuHeader:
 
 .Text:
 	db "FIGHT@"
-	db "SELF@"
+	db "TEAM@"
 	db "BAGS@"
 	db "RUN@"
 

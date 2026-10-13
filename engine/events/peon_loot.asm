@@ -83,6 +83,7 @@ PeonRarePotionLootScript::
 	waitbutton
 	closetext
 .Done:
+	farscall PeonRestSupplyLootScriptV029
 	end
 
 .HealingText:

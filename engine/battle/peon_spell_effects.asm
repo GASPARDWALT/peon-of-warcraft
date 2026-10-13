@@ -342,6 +342,16 @@ ENDR
 ; relocated species; otherwise keep C and let FixPicBank use its old table.
 PeonFixEnemyPicBankFromC::
 	ld a, [wCurPartySpecies]
+	cp ONIX
+	jr z, .native
+	cp GEODUDE
+	jr z, .native
+	cp MACHAMP
+	jr z, .native
+	cp PONYTA
+	jr z, .native
+	cp RAPIDASH
+	jr z, .native
 	cp PEON_MOB_TIGER
 	jr z, .native
 	cp PEON_MOB_RAPTOR
@@ -430,12 +440,31 @@ PeonApplyClassBattleAffinity::
 PeonGetBasicMeleeName::
 	ld a, [wNamedObjectIndex]
 	cp POUND
+	jr z, .basic
+	cp SCRATCH
 	jp nz, PeonSpellUnhandled
+.basic
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jp nz, PeonSpellUnhandled
-	; Move-selection names also run after the enemy's previous turn.
-	; hBattleTurn is not an ownership marker for the visible action menu.
+	; The active companion has its own action; the hero's class flag does
+	; not turn an imp's physical attack into a wand strike.
+	ld a, [wBattleMode]
+	and a
+	jr z, .hero_name
+	ldh a, [hBattleTurn]
+	and a
+	jp nz, PeonSpellUnhandled
+	ld a, [wBattleMonSpecies]
+	cp MACHOP
+	jr z, .hero_name
+	farcall PeonGetAllyBasicMoveNameV029
+	ret c
+	jp PeonSpellUnhandled
+.hero_name
+	ld a, [wNamedObjectIndex]
+	cp POUND
+	jp nz, PeonSpellUnhandled
 	call PeonGetBattleClass
 	and a
 	jp z, PeonSpellUnhandled

@@ -413,10 +413,10 @@ PeonItemIconPurgePalette:
 	assert @ - PeonItemIconPurgePalette == 1 palettes
 
 PeonItemIconCampBreadGFX:
-	INCBIN "gfx/pack/peon_food/bread.2bpp"
+	INCBIN "gfx/peon_recruits_v029/items/tough_jerky.2bpp"
 	assert @ - PeonItemIconCampBreadGFX == 4 * LEN_2BPP_TILE
 PeonItemIconCampBreadPalette:
-	INCLUDE "gfx/pack/peon_food/bread.pal"
+	INCLUDE "gfx/peon_recruits_v029/items/tough_jerky.pal"
 	assert @ - PeonItemIconCampBreadPalette == 1 palettes
 
 PeonItemIconMinorManaPotionGFX:

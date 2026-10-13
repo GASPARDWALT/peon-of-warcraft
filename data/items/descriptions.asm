@@ -264,20 +264,20 @@ MasterBallDesc:
 	next "never misses.@"
 
 UltraBallDesc:
-	db   "A BALL with a high"
-	next "rate of success.@"
+	db   "Recruit an orc"
+	next "warrior. Reusable.@"
 
 BrightpowderDesc:
 	db   "Lowers the foe's"
 	next "accuracy. (HOLD)@"
 
 GreatBallDesc:
-	db   "A BALL with a de-"
-	next "cent success rate.@"
+	db   "Bind a red demon."
+	next "Reusable relic.@"
 
 PokeBallDesc:
-	db   "An item for catch-"
-	next "ing #MON.@"
+	db   "Befriend an earth"
+	next "spirit. Reusable.@"
 
 TeruSama1Desc:
 	db   "A rough axe for"
@@ -440,8 +440,8 @@ TeruSama3Desc:
 	next "Starting gear.@"
 
 FreshWaterDesc:
-	db   "Drink from BAGS:"
-	next "10 spell charges.@"
+	db   "Restores 60 mana."
+	next "Outside combat.@"
 
 SodaPopDesc:
 	db   "Restores #MON"
@@ -508,8 +508,8 @@ PPUpDesc:
 	next "a selected move.@"
 
 EtherDesc:
-	db   "Five spell charges"
-	next "for each spell.@"
+	db   "Restores 40 mana."
+	next "Usable in combat.@"
 
 MaxEtherDesc:
 	db   "Fully restores PP"

@@ -983,6 +983,26 @@ BattleCommand_DoTurn:
 	and 1 << SUBSTATUS_IN_LOOP | 1 << SUBSTATUS_RAMPAGE | 1 << SUBSTATUS_BIDE
 	ret nz
 
+	; Status/charging/loop checks have passed. Only a real executed action
+	; spends the shared mana/rage pool, replacing PP for managed actors.
+	push hl
+	push de
+	push bc
+	farcall PeonSpendBattleResourceV029
+	ld a, b
+	pop bc
+	pop de
+	pop hl
+	jr nc, .native_pp
+	cp 2
+	ret nz
+	; Defensive failure cannot spend PP or inflate the player-turn counter.
+	; Ordinary shortage is refused earlier in MoveSelectionScreen.
+	ld hl, wPlayerTurnsTaken
+	dec [hl]
+	farcall PeonPrintNoResourceV029
+	jp EndMoveEffect
+.native_pp
 	; Mace Strike is the Peon's reusable basic attack. The turn was already
 	; counted above, and disabled/status checks still execute normally.
 	push hl ; farcall loads its target into HL; retain the native PP pointer
@@ -3428,6 +3448,7 @@ endc
 	ld [hl], a
 
 .no_underflow
+	farcall PeonGainBasicRageV029
 	ld hl, wEnemyMonMaxHP
 	ld a, [hli]
 	ld [wHPBuffer1 + 1], a
@@ -3493,6 +3514,7 @@ DoPlayerDamage:
 	ld [hl], a
 
 .no_underflow
+	farcall PeonGainDamageTakenRageV029
 	ld hl, wBattleMonMaxHP
 	ld a, [hli]
 	ld [wHPBuffer1 + 1], a

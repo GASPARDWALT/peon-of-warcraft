@@ -1,0 +1,86 @@
+{
+  "version": "0.2.9",
+  "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "rom_bytes": 2097152,
+  "cgb_only": true,
+  "mapper": "MBC3 + RTC + RAM + battery",
+  "save_ram_bytes": 32768,
+  "save_slots": 1,
+  "actions_per_actor": 4,
+  "initial_party_capacity": 2,
+  "unlocked_party_capacity": 3,
+  "simultaneous_active_actors": 1,
+  "physical_chromatic_tested": false,
+  "devday_flash_tested": false,
+  "modretro_plugin_used": false,
+  "modretro_pixel_art_skill_used": true,
+  "passed_native_reports": [
+    {
+      "file": "stability_v029/build/validation.json",
+      "sha256": "4c35fe18106262f1a7da20d8a6b4580505084f4a42962fede89919c0d3fde57b"
+    },
+    {
+      "file": "stability_v029/build/rebuild_helper_validation.json",
+      "sha256": "19f107d588ece6a530e398575e5bb04bf7a1ec7f767e1dbc5bd01e498c23e21e"
+    },
+    {
+      "file": "stability_v029/integration/validation.json",
+      "sha256": "590e70d71e8649dafa1a9624098f23ba6f8105ec42f9d611faa6e10a5d8998d6"
+    },
+    {
+      "file": "stability_v029/ui_markers/validation.json",
+      "sha256": "320b4f19ababea6b6cac110bb50b68013f5ca418fc1619025ec6c35fe8644c7c"
+    },
+    {
+      "file": "stability_v029/music/validation.json",
+      "sha256": "58e95a3ac7284d8923f656c6656942eb968c06a4bba29ceafb9f67adb1cd9ee6"
+    },
+    {
+      "file": "resources_v029/runtime/validation.json",
+      "sha256": "5e31f71b5381595b4ed20003174ad4d5bba52e03c25524db59b366533a2a2934"
+    },
+    {
+      "file": "geography_v029/continue_validation.json",
+      "sha256": "323afbb09d591d68c3d14fcaa9506f034f9788472834051ef51339adc9e550c4"
+    },
+    {
+      "file": "recruitment_v029/save_upgrade/validation.json",
+      "sha256": "3ac7c0bc41f519f26c9b82c89a241cc7ccfb04f17c50d54a5eecedc970564504"
+    },
+    {
+      "file": "recruitment_v029/team_runtime/validation.json",
+      "sha256": "75faaaefbd3e326ed246700cf47e251582fc35ad8868c53a6ca6b8a5b1332c4a"
+    },
+    {
+      "file": "recruitment_v029/pack_runtime/validation.json",
+      "sha256": "6d026f3fbaa4c63e38fc16660b26ee5cf1b923a2b6f4e95bea4d3741d987ebb3"
+    },
+    {
+      "file": "recruitment_v029/projectile_runtime/validation.json",
+      "sha256": "9f5770c42fa209550aa2056f5fc96c39feef82898d59f76a1f319f134efcb8e0"
+    },
+    {
+      "file": "recruitment_v029/runtime_art/validation.json",
+      "sha256": "c7357de8e9c07482649bc2c130d7c20ed51dc218b0086db78642c4b1909f4d2d"
+    },
+    {
+      "file": "recruitment_v029/runtime_art/populated_senjin_validation.json",
+      "sha256": "5a6be6c4b0d66eeaf77c274fce1dcb3beeebad0b75f745b1604af64746b12695"
+    }
+  ],
+  "browser_player_sha256": "791e479ce4a9e85441214feca333453ec3ccd67d8009f1664eeb1424699938ed",
+  "downloads": {
+    "peon_of_warcraft_v0_2_9.gbc": {
+      "bytes": 2097152,
+      "sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93"
+    },
+    "peon_of_warcraft_v0_2_9.zip": {
+      "bytes": 1342677,
+      "sha256": "e453c2b5cbb1b026e463e08e84ee9862f6482ffacaa46cefd97d236e9f953c3d"
+    },
+    "peon_of_warcraft_v0_2_9_assets.zip": {
+      "bytes": 9820079,
+      "sha256": "a2f78450ece3186262ef4cfa544598f9dcce3f21413ae9e5e984599b21ac4261"
+    }
+  }
+}

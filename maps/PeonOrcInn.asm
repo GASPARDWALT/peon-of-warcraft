@@ -33,6 +33,7 @@ PeonOrcInnkeeperScript:
 	waitbutton
 .Close:
 	closetext
+	callasm PeonRefreshLivingFollowerV029
 	end
 
 PeonDenInnWelcomeText:
@@ -50,9 +51,10 @@ PeonGroskInnWelcomeText:
 	done
 
 PeonOrcInnRestedText:
-	text "Health, wounds and"
-	line "spell charges are"
-	cont "restored."
+	text "Health and mana"
+	line "restored."
+	para "Wounds are healed."
+	line "Rage is cleared."
 	done
 
 PeonOrcInnBindText:
@@ -90,7 +92,7 @@ PeonOrcInnTable:
 	jumptext PeonOrcInnTableText
 PeonOrcInnTableText:
 	text "An oak table."
-	line "Warm bread waits"
+	line "Warm food waits"
 	cont "beside the embers."
 	done
 

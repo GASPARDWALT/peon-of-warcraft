@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "source_rom_sha256": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "symbols_sha256": "87226ec5c81393762a3f7b2f6b11e43e68e0fc687b8cc3c0d22c3a74e25b2376",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "user_batteries_opened": false,
+  "abi": {
+    "existing_saved_and_work_ram_symbols_compared": 16016,
+    "all_existing_addresses_equal": true,
+    "saved_numeric_ids": {
+      "event_flags.asm": {
+        "existing_named_constants_compared": 1426,
+        "all_old_ids_equal": true,
+        "new_constants": 13
+      },
+      "item_constants.asm": {
+        "existing_named_constants_compared": 196,
+        "all_old_ids_equal": true,
+        "new_constants": 0
+      },
+      "move_constants.asm": {
+        "existing_named_constants_compared": 252,
+        "all_old_ids_equal": true,
+        "new_constants": 0
+      },
+      "pokemon_constants.asm": {
+        "existing_named_constants_compared": 278,
+        "all_old_ids_equal": true,
+        "new_constants": 0
+      }
+    },
+    "map_group_and_number_order_equal": true,
+    "party_record_size": 48
+  },
+  "classes": {
+    "shaman": {
+      "passed": true,
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "migration": {
+        "allowed_changes": [
+          "hero MON_POKERUS=0x80 resource tag",
+          "hero MON_CAUGHTDATA=current BE16"
+        ],
+        "hero_current_resource_after_migration": 84,
+        "protected_hero_fields_equal": true,
+        "all_old_event_bits_equal": true,
+        "all_bag_pockets_money_identity_hp_pp_xp_moves_and_location_equal": true,
+        "unused_party_records_preserved_except_documented_imp": true
+      },
+      "character_team_cancel_preserves_records": true,
+      "second_native_save_and_cold_continue_exact_record_equal": true,
+      "save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "61c4ad26ae273908049abeb422dd1b2cc1a0a1c95f818adf412eaab884efcf11",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      }
+    },
+    "warrior": {
+      "passed": true,
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "migration": {
+        "allowed_changes": [
+          "hero MON_POKERUS=0x80 resource tag",
+          "hero MON_CAUGHTDATA=current BE16"
+        ],
+        "hero_current_resource_after_migration": 0,
+        "protected_hero_fields_equal": true,
+        "all_old_event_bits_equal": true,
+        "all_bag_pockets_money_identity_hp_pp_xp_moves_and_location_equal": true,
+        "unused_party_records_preserved_except_documented_imp": true
+      },
+      "character_team_cancel_preserves_records": true,
+      "second_native_save_and_cold_continue_exact_record_equal": true,
+      "save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "3a91f7cd8214774f6f3184ecd1a80bd1d3f3a6396540a3aa1850fc6f1eb1d02a",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      }
+    },
+    "warlock": {
+      "passed": true,
+      "ordinary_buttons_only": true,
+      "ram_edits": false,
+      "emulator_states_loaded": false,
+      "migration": {
+        "allowed_changes": [
+          "hero MON_POKERUS=0x80 resource tag",
+          "hero MON_CAUGHTDATA=current BE16",
+          "Warlock native second imp record/species/OT/name",
+          "Warlock new starter-imp flag"
+        ],
+        "hero_current_resource_after_migration": 105,
+        "protected_hero_fields_equal": true,
+        "all_old_event_bits_equal": true,
+        "all_bag_pockets_money_identity_hp_pp_xp_moves_and_location_equal": true,
+        "unused_party_records_preserved_except_documented_imp": true
+      },
+      "character_team_cancel_preserves_records": true,
+      "second_native_save_and_cold_continue_exact_record_equal": true,
+      "save": {
+        "battery_bytes": 32768,
+        "battery_sha256": "e541e18fa93e8b9b5518c4bbb3b580c4639b8f6148b87e03f14663b9f300835d",
+        "native_save_routine_observed": true,
+        "returned_from_save_menu": true
+      }
+    }
+  },
+  "limitations": [
+    "Three genuine native v028 class batteries, not every possible player save.",
+    "Blocked-wall location migration is separately validated by the geography suite.",
+    "Physical Chromatic and cartridge RTC are not exercised by PyBoy."
+  ]
+}

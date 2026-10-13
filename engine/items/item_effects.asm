@@ -210,6 +210,16 @@ ItemEffects:
 ; NoEffect would be appropriate, with the table then being NUM_ITEMS long.
 
 PokeBallEffect:
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .original
+	ld a, [wCurItem]
+	ld c, a
+	farcall PeonIsRecruitItemV029
+	jr nc, .original
+	farcall PeonTryRecruitV029
+	ret
+.original
 ; BUG: The Dude's catching tutorial may crash if his Poké Ball can't be used (see docs/bugs_and_glitches.md)
 	ld a, [wBattleMode]
 	dec a

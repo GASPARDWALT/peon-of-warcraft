@@ -353,7 +353,7 @@ PeonBattleTextStyleAttributes::
 	and a
 	jr nz, .player_name
 	ld a, c
-	cp 10
+	cp 11 ; enemy name starts at col1 and may use ten cells
 	jr c, .bold_cell
 	jr .bank_zero
 .player_name

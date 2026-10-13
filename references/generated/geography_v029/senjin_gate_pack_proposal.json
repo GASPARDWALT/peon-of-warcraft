@@ -1,0 +1,228 @@
+{
+  "passed": true,
+  "scope": "Read-only collision/graph proposal, not integrated ROM or combat validation",
+  "native_files_modified": false,
+  "source_rom_reference": "943d460f6f76e15dff5b0fc2b8b11b90ba4c2ae79d5e190ea9dd3870b4d68620",
+  "source_map_blocks_sha256": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+  "proposed_actor_xy": [
+    12,
+    22
+  ],
+  "old_actor_xy": [
+    16,
+    16
+  ],
+  "proposed_trigger_cells": [
+    [
+      11,
+      24
+    ],
+    [
+      12,
+      23
+    ],
+    [
+      12,
+      25
+    ],
+    [
+      13,
+      24
+    ]
+  ],
+  "all_actor_and_trigger_cells_actual_floor": true,
+  "no_actor_or_warp_overlap": true,
+  "senjin_warp": [
+    12,
+    24
+  ],
+  "all_four_warp_neighbors_share_pack_trigger": true,
+  "minimum_shared_pack_encounters_while_alive_and_enabled": 1,
+  "no_route_without_triggering_enabled_pack": true,
+  "route_with_pack_trigger": [
+    [
+      4,
+      14
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      9,
+      16
+    ],
+    [
+      10,
+      16
+    ],
+    [
+      11,
+      16
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      13,
+      17
+    ],
+    [
+      13,
+      18
+    ],
+    [
+      13,
+      19
+    ],
+    [
+      13,
+      20
+    ],
+    [
+      13,
+      21
+    ],
+    [
+      13,
+      22
+    ],
+    [
+      13,
+      23
+    ],
+    [
+      12,
+      23
+    ],
+    [
+      12,
+      24
+    ]
+  ],
+  "retired_pack_free_route": [
+    [
+      4,
+      14
+    ],
+    [
+      5,
+      14
+    ],
+    [
+      6,
+      14
+    ],
+    [
+      7,
+      14
+    ],
+    [
+      8,
+      14
+    ],
+    [
+      9,
+      14
+    ],
+    [
+      9,
+      15
+    ],
+    [
+      9,
+      16
+    ],
+    [
+      10,
+      16
+    ],
+    [
+      11,
+      16
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      12,
+      17
+    ],
+    [
+      12,
+      18
+    ],
+    [
+      12,
+      19
+    ],
+    [
+      12,
+      20
+    ],
+    [
+      12,
+      21
+    ],
+    [
+      12,
+      22
+    ],
+    [
+      12,
+      23
+    ],
+    [
+      12,
+      24
+    ]
+  ],
+  "ordinary_walks_emulated": false,
+  "native_pack_members_expected": [
+    {
+      "enemy": "scorpid",
+      "level": 6
+    },
+    {
+      "enemy": "scorpid",
+      "level": 7
+    },
+    {
+      "enemy": "raptor",
+      "level": 7
+    }
+  ],
+  "native_pack_balance_validated": false,
+  "conditions": [
+    "Pack trigger script must remain enabled for the current hero level.",
+    "All existing DEAD / partial flags must be respected.",
+    "Old Continue on new actor cell needs transient underfoot visibility handling.",
+    "Cold Continue on trigger cells must not silently start an attack."
+  ]
+}

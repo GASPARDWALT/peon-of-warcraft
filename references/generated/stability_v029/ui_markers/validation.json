@@ -1,0 +1,556 @@
+{
+  "rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "symbols_sha256": "87226ec5c81393762a3f7b2f6b11e43e68e0fc687b8cc3c0d22c3a74e25b2376",
+  "passed": true,
+  "normal_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "marker_crossings": [
+    {
+      "label": "gornek_available_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    },
+    {
+      "label": "gornek_gray_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    },
+    {
+      "label": "gornek_ready_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    },
+    {
+      "label": "lazy_available_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    },
+    {
+      "label": "galgar_available_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    },
+    {
+      "label": "galgar_ready_pass_through",
+      "entered_from": [
+        "down",
+        "right",
+        "left"
+      ],
+      "real_npc_south_cell_still_solid": true
+    }
+  ],
+  "ordinary_boar_victory": {
+    "label": "ordinary_boar",
+    "outcome": 0,
+    "dead": true,
+    "no_auto_heal": true,
+    "encounter_loads_during_fight": 1,
+    "level_after": 2,
+    "hp_after": [
+      0,
+      9
+    ],
+    "money_after": 50
+  },
+  "themes": [
+    {
+      "class": "shaman",
+      "body_rgb555": [
+        20,
+        25,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warrior",
+      "body_rgb555": [
+        31,
+        20,
+        18
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warlock",
+      "body_rgb555": [
+        26,
+        20,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "shaman",
+      "body_rgb555": [
+        20,
+        25,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warrior",
+      "body_rgb555": [
+        31,
+        20,
+        18
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warlock",
+      "body_rgb555": [
+        26,
+        20,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "shaman",
+      "body_rgb555": [
+        20,
+        25,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warrior",
+      "body_rgb555": [
+        31,
+        20,
+        18
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "warlock",
+      "body_rgb555": [
+        26,
+        20,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    },
+    {
+      "class": "shaman",
+      "body_rgb555": [
+        20,
+        25,
+        31
+      ],
+      "space_and_regular_glyph_paper_match": true,
+      "hardware_attributes_match": true,
+      "preview_vram_and_rgb555_match": true,
+      "green_skin_and_leather_preserved": true,
+      "name_bank1_preserved": true
+    }
+  ],
+  "native_transition_frames_without_blank_panel": 405,
+  "marker_checks": [
+    {
+      "label": "gornek_available",
+      "state": "available_yellow",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "gornek_active_gray",
+      "state": "active_gray",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "gornek_gray_after_character_menu",
+      "state": "active_gray",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "gornek_turn_in_yellow",
+      "state": "complete_yellow",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "lazy_available",
+      "state": "available_yellow",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "lazy_active_gray",
+      "state": "active_gray",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "lazy_turn_in_yellow",
+      "state": "complete_yellow",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "galgar_available",
+      "state": "available_yellow",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "galgar_active_gray",
+      "state": "active_gray",
+      "vram_and_oam_rgb555_match": true
+    },
+    {
+      "label": "galgar_turn_in_yellow",
+      "state": "complete_yellow",
+      "vram_and_oam_rgb555_match": true
+    }
+  ],
+  "native_talk_checks": [
+    {
+      "label": "gornek_accept_from_marker_cell",
+      "stand": [
+        10,
+        8
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "gornek_active_talk_down",
+      "stand": [
+        10,
+        8
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "gornek_active_talk_right",
+      "stand": [
+        9,
+        9
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "gornek_active_talk_left",
+      "stand": [
+        11,
+        9
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "gornek_active_talk_up",
+      "stand": [
+        10,
+        10
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "gornek_reward_from_marker_cell",
+      "stand": [
+        10,
+        8
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "foreman_accept_from_marker_cell",
+      "stand": [
+        8,
+        14
+      ],
+      "real_map_object": 7,
+      "native_facing_object": {
+        "sprite": 65,
+        "map_object": 7
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "wake_actual_sleeping_peon",
+      "stand": [
+        5,
+        17
+      ],
+      "real_map_object": 8,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 8
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "foreman_reward_from_marker_cell",
+      "stand": [
+        8,
+        14
+      ],
+      "real_map_object": 7,
+      "native_facing_object": {
+        "sprite": 65,
+        "map_object": 7
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "foreman_no_second_reward",
+      "stand": [
+        8,
+        14
+      ],
+      "real_map_object": 7,
+      "native_facing_object": {
+        "sprite": 65,
+        "map_object": 7
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "galgar_accept_from_marker_cell",
+      "stand": [
+        8,
+        9
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    },
+    {
+      "label": "galgar_reward_from_marker_cell",
+      "stand": [
+        8,
+        9
+      ],
+      "real_map_object": 1,
+      "native_facing_object": {
+        "sprite": 58,
+        "map_object": 1
+      },
+      "npc_collision_preserved": true
+    }
+  ],
+  "upload_preservation_checks": [
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonApplyMenuSkin",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 0
+    },
+    {
+      "label": "PeonLoadPlayerHUDGFX",
+      "registers_and_stack_preserved": true,
+      "vram_bank_restored": true,
+      "entry_mapmode": 1
+    }
+  ],
+  "single_lazy_reward_and_hidden_marker": true,
+  "real_three_cactus_pickups": true
+}

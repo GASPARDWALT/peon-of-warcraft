@@ -1,6 +1,19 @@
 # Peon of Warcraft — Durotar prototype
 
-[Latest ROM — v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.7/peon_of_warcraft_v0_2_7.zip) · [Browser player v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.7/peon_of_warcraft_v0_2_7_player.zip) · [Opening palm and verification](docs/V0_2_7_OPENING_PALM.md)
+[Latest ROM — v0.2.9](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9.gbc) · [ROM + verified reports](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9.zip) · [PNG, animations and gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9_assets.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.9/peon_of_warcraft_v0_2_9_player.zip)
+
+The current build adds real two-to-three-member parties, mana/rage, class
+recruitment and successive Kolkar/cave/Road packs. Six new character sets have
+three native combat poses; spell projectiles, TEAM font restoration, capture
+retirement and old-save collision migration are validated on the delivered ROM.
+The original save layout and four-action records remain. The three classes,
+ordinary recruits, cold saves, 63 older location saves, native graphics and
+self-contained browser controls pass. Hardware Chromatic/DevDay tests remain
+outstanding. See [current scope and save notes](docs/V0_2_9_PLAYABLE_BUILD.md),
+[stability evidence](docs/QA_STABILITY_V029.md) and
+[visual gallery](references/generated/stability_v029/index.html).
+
+[Previous ROM — v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.7/peon_of_warcraft_v0_2_7.zip) · [Browser player v0.2.7](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.7/peon_of_warcraft_v0_2_7_player.zip) · [Opening palm and verification](docs/V0_2_7_OPENING_PALM.md)
 
 The opening Peon now sleeps beside a palm. The hunter's approach, BONK,
 class choice and arrival at The Den pass for all three classes, as do browser

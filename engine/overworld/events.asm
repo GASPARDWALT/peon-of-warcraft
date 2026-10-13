@@ -882,6 +882,7 @@ CountStep:
 	inc [hl]
 	ld hl, wStepCount
 	inc [hl]
+	farcall PeonResourceWalkingStepV029 ; preserve native INC flags/registers
 	; Every 256 steps, increase the happiness of all your Pokemon.
 	jr nz, .skip_happiness
 

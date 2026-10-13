@@ -63,7 +63,7 @@ MoveNames::
 	li "BUBBLEBEAM"
 	li "AURORA BEAM"
 	li "HYPER BEAM"
-	li "PECK"
+	li "ARROW SHOT"
 	li "DRILL PECK"
 	li "MORTALSTRIKE"
 	li "LOW KICK"

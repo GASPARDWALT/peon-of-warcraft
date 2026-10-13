@@ -1,4 +1,12 @@
 LevelUpHappinessMod:
+	; Managed actors use caught-location storage for their resource. Never
+	; interpret its low byte as a landmark and grant a false home bonus.
+	farcall PeonResourceTagIsMetadataV029
+	jr nc, .native_caught_location
+	ld c, HAPPINESS_GAINLEVEL
+	callfar ChangeHappiness
+	ret
+.native_caught_location
 	ld a, [wCurPartyMon]
 	ld hl, wPartyMon1CaughtLocation
 	call GetPartyLocation
