@@ -2305,6 +2305,8 @@ LoadMapTileset::
 	ld a, BANK(Tilesets)
 	call FarCopyBytes
 
+	farcall PeonSelectUserEnvironmentV0211
+
 	pop bc
 	pop hl
 	ret

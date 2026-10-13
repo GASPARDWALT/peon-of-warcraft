@@ -67,6 +67,8 @@ GetAnimatedFrontpic:
 	ld [wCurSpecies], a
 	call IsAPokemon
 	ret c
+	farcall PeonTryLoadClassAnimatedFrontpic
+	ret c
 	ldh a, [rWBK]
 	push af
 	xor a

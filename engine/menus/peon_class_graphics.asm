@@ -1,5 +1,6 @@
 ; Class graphics are derived from the existing saved class flags.
-; No new sprite IDs, actor dimensions, VRAM bank1 allocations or save fields.
+; No new sprite IDs, actor dimensions or save fields. Source import v0211
+; preserves the existing picture tile budgets and uses regional BG palettes.
 SECTION "Peon Apprentice Graphics Loaders", ROMX
 
 PeonPlayerGraphicsClass::
@@ -18,11 +19,28 @@ PeonPlayerGraphicsClass::
 	ld a, 2
 	ret
 
+; Crystal ReturnFarCall preserves BC but overwrites A while restoring its
+; bank. Cross-bank users must receive this index in C; the local A API above
+; remains unchanged for established class loaders.
+PeonPlayerGraphicsClassToC::
+	call PeonPlayerGraphicsClass
+	ld c, a
+	ret
+
 ; Returned GetSprite contract: DE source, B/H bank, C idle tiles, L type.
 PeonResolvePlayerWorldGraphics::
+	ld a, [wEventFlags + EVENT_PEON_SHAMAN / 8]
+	bit EVENT_PEON_SHAMAN % 8, a
+	jr nz, .class
+	xor a
+	ld hl, .BasePointer
+	call PeonClassGraphicPointer
+	jr .resolved
+.class
 	call PeonPlayerGraphicsClass
 	ld hl, .Pointers
 	call PeonClassGraphicPointer
+.resolved
 	ld h, b
 	ld l, PEON_SPRITE
 	ld c, 16
@@ -31,6 +49,8 @@ PeonResolvePlayerWorldGraphics::
 	dba PeonShamanWorldV028
 	dba PeonWarriorWorldV028
 	dba PeonWarlockWorldV028
+.BasePointer
+	dba PeonBaseWorldV0211
 
 ; A class index; HL three dba records. Returns B bank and DE source.
 PeonClassGraphicPointer:
@@ -49,23 +69,44 @@ PeonClassGraphicPointer:
 
 ; C class0/1/2. Fixed four tiles in BG bank0, palette5.
 PeonLoadClassWorldPreview::
+	push bc
 	ld a, c
 	ld hl, .Pointers
 	call PeonClassGraphicPointer
 	ld hl, vTiles2 tile $60
 	ld c, 4
 	call PeonClassGet2bppBank0
-	ld hl, .Palette
+	pop bc
+	ld a, c
+	ld hl, .PalettePointers
+	call PeonClassGraphicPointer
+	ld h, d
+	ld l, e
 	ld de, wBGPals1 palette 5
 	ld bc, 1 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	; Keep transparent source pixels on the actual page paper. The class
+	; tint routine may subsequently change this same color0 independently.
+	ld hl, wBGPals1
+	ld de, wBGPals1 palette 5
+	ld bc, COLOR_SIZE
 	ld a, BANK(wBGPals1)
 	jp FarCopyWRAM
 .Pointers
 	dba PeonShamanWorldV028
 	dba PeonWarriorWorldV028
 	dba PeonWarlockWorldV028
-.Palette
-	RGB 31,29,23, 18,11,6, 15,22,8, 1,1,1
+.PalettePointers
+	dba .ShamanPalette
+	dba .WarriorPalette
+	dba .WarlockPalette
+.ShamanPalette
+	INCLUDE "gfx/user_battle_v0211/shaman/world_preview.pal"
+.WarriorPalette
+	INCLUDE "gfx/user_battle_v0211/warrior/world_preview.pal"
+.WarlockPalette
+	INCLUDE "gfx/user_battle_v0211/warlock/world_preview.pal"
 
 ; Read-only display metadata, once on entry. Continue remains the only full
 ; save loader; no save mirror/checksum or unrelated event is modified here.
@@ -141,7 +182,9 @@ PeonLoadClassPlayerBackPose::
 	pop bc
 	ld hl, vTiles2 tile $31
 	ld c, 6 * 6
-	jp PeonClassGetBackPoseBank0
+	call PeonClassGetBackPoseBank0
+	farcall PeonApplyPlayerBattleArtV0211
+	ret
 .Pointers
 	dba PeonShamanBackV028
 	dba PeonWarriorBackV028
@@ -208,6 +251,10 @@ PeonTryLoadClassFrontpic::
 	ld a, [wCurPartySpecies]
 	cp MACHOP
 	jr nz, .ordinary
+	; Preserve the authored front rather than reversing column order while
+	; leaving individual tile bits unchanged in native Stats requests.
+	xor a
+	ld [wBoxAlignment], a
 	call PeonPlayerGraphicsClass
 	push de
 	ld hl, .Pointers
@@ -219,6 +266,39 @@ PeonTryLoadClassFrontpic::
 	ret
 .ordinary
 	and a
+	ret
+.Pointers
+	dba PeonShamanFrontV028
+	dba PeonWarriorFrontV028
+	dba PeonWarlockFrontV028
+
+; Native front animation reads from bank1 even for frame0. Load the selected
+; class there too; its static native bindings never fetch legacy MACHOP tiles.
+PeonTryLoadClassAnimatedFrontpic::
+	push de
+	call PeonTryLoadClassFrontpic
+	pop de
+	ret nc
+	push de
+	call PeonPlayerGraphicsClass
+	ld hl, .Pointers
+	call PeonClassGraphicPointer
+	pop hl
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
+	ldh a, [rVBK]
+	push af
+	ld a, 1
+	ldh [rVBK], a
+	ld c, 7 * 7
+	call Get2bpp
+	pop af
+	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
+	scf
 	ret
 .Pointers
 	dba PeonShamanFrontV028
@@ -262,33 +342,36 @@ PeonClassGetBackPoseBank0:
 	ldh [hBGMapMode], a
 	ret
 
-; Each class fits a separate floating bank. Frames are independently encoded.
+; Each class fits a separate floating bank. New source-derived frames are
+; independently encoded; the established symbol names remain caller APIs.
 SECTION "Peon Shaman Apprentice Graphics v028", ROMX
+PeonBaseWorldV0211::
+	INCBIN "gfx/user_battle_v0211/base/overworld.bin"
 PeonShamanWorldV028:
-	INCBIN "gfx/peon_classes_v028/shaman/overworld.bin"
+	INCBIN "gfx/user_battle_v0211/shaman/overworld.bin"
 PeonShamanFrontV028:
-	INCBIN "gfx/peon_classes_v028/shaman/front_frames.bin"
+	INCBIN "gfx/user_battle_v0211/shaman/front/frames.2bpp"
 PeonShamanProfileV028:
-	INCBIN "gfx/peon_classes_v028/shaman/portrait_frames.bin"
+	INCBIN "gfx/user_battle_v0211/shaman/profile/frames.2bpp"
 PeonShamanBackV028:
-	INCBIN "gfx/peon_classes_v028/shaman/back_frames.bin"
+	INCBIN "gfx/user_battle_v0211/shaman/back/frames.2bpp"
 
 SECTION "Peon Warrior Apprentice Graphics v028", ROMX
 PeonWarriorWorldV028:
-	INCBIN "gfx/peon_classes_v028/warrior/overworld.bin"
+	INCBIN "gfx/user_battle_v0211/warrior/overworld.bin"
 PeonWarriorFrontV028:
-	INCBIN "gfx/peon_classes_v028/warrior/front_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warrior/front/frames.2bpp"
 PeonWarriorProfileV028:
-	INCBIN "gfx/peon_classes_v028/warrior/portrait_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warrior/profile/frames.2bpp"
 PeonWarriorBackV028:
-	INCBIN "gfx/peon_classes_v028/warrior/back_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warrior/back/frames.2bpp"
 
 SECTION "Peon Warlock Apprentice Graphics v028", ROMX
 PeonWarlockWorldV028:
-	INCBIN "gfx/peon_classes_v028/warlock/overworld.bin"
+	INCBIN "gfx/user_battle_v0211/warlock/overworld.bin"
 PeonWarlockFrontV028:
-	INCBIN "gfx/peon_classes_v028/warlock/front_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warlock/front/frames.2bpp"
 PeonWarlockProfileV028:
-	INCBIN "gfx/peon_classes_v028/warlock/portrait_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warlock/profile/frames.2bpp"
 PeonWarlockBackV028:
-	INCBIN "gfx/peon_classes_v028/warlock/back_frames.bin"
+	INCBIN "gfx/user_battle_v0211/warlock/back/frames.2bpp"

@@ -5,6 +5,7 @@
 - Import the user's supplied PNG sprites directly when the request is to implement them. Preserve the original files and record crop coordinates and source hashes.
 - Follow the stated layout: base Peon, Shaman, Warrior, Warlock; world front/back/left/right at 16×16, combat front at 56×56, combat back at 48×48.
 - Do not generate replacement art, reinterpret supplied sprites, or silently simplify their silhouettes, equipment or detail. Generated proposals are not a substitute for an authorized import.
+- On 2026-10-13 the user explicitly authorized developing missing or damaged PNGs from the supplied artwork, retaining its design logic. Complete those gaps in separate derived files; keep valid supplied sprites and all original files intact. Do not ask again for that authorization.
 - A visible conversation image is not proof of access to its original file. If its bytes are unavailable, identify that specific blocker immediately. Do not recreate it and claim it is an extraction.
 - Measure actual dimensions, alpha, recoverable pixel grid and per-tile colors from the original file. Keep source PNGs intact; put any necessary hardware conversion in separate derived files.
 

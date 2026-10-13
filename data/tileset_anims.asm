@@ -259,12 +259,12 @@ TilesetAerodactylWordRoomAnim:
 	tileframe DoneTileAnimation
 
 TilesetPeonAnim:
-	; Two exclusive bank-0 flame tiles; no object slots or saved variables.
+	; Four exclusive bank-0 brazier tiles; retain the eight-command cadence.
 	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $00
 	tileframe WaitTileAnimation
 	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $01
 	tileframe WaitTileAnimation
-	tileframe WaitTileAnimation
-	tileframe WaitTileAnimation
+	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $02
+	tileframe AnimatePeonEnvironmentFire, vTiles2 tile $03
 	tileframe StandingTileFrame8
 	tileframe DoneTileAnimation

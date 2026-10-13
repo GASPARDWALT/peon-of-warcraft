@@ -1,0 +1,2095 @@
+{
+  "source": "Actual user supplied PNG import; no source redraw or resizing.",
+  "source_manifest": {
+    "barrel_01_16x16.png": "058bc6c2fd1abcd4b8137c2fcba564864004210c20865fd73f6c8dd83aaca21c",
+    "bones_01_16x16.png": "498525bc43bb16de14df6ff33b3681e04306b9822469d24c29f3605d1c05fe89",
+    "brazier_frame_01_16x16.png": "df0849157f84ae81ddcac0f87a0ed83efbe77d4b4ac8a8d1433288b1025c8969",
+    "brazier_frame_02_16x16.png": "f8886b10994528a2767c44ec0b54277cf0f3f458a669c323303ce2ba008e4e70",
+    "brazier_frame_03_16x16.png": "51c9f2f1363c9fb4cc87fcab03266644182f83352c3390ee1e5f2f1e292473c5",
+    "cactus_round_01_32x32.png": "efbdf5310db700e139e178cfa51d6804db32399540533e343f81b99af1122932",
+    "cactus_tall_01_16x32.png": "c7da28f20c3dc7616eb24d163bb0b0500d536a57b9d7213ac218b903e5ef6a12",
+    "cave_entrance_01_64x64.png": "d7cc36759e6a23199f3265fbdae24bff2698b59a82c5ac117819ce15a0a65d76",
+    "cracked_earth_tile_32x32.png": "091bd97c31a1fd0badbabad77d32966fc4b4a01a2f1b5dfe7c666e395f299fe1",
+    "crate_01_16x16.png": "1eaa09c20a1ccc92ac70125dbbc3d65ed33d42b12a6d8b3ddb05a62844276136",
+    "dirt_path_tile_32x32.png": "d6cf14ba24128572e4301cc82722f754601daa26657f8fe5749ee45fee8919f6",
+    "horde_banner_01_16x32.png": "eef520dde6345d6e0a51b782f492917a35c61aa090bad4b5785d1a4547c32585",
+    "horde_banner_tall_01_16x48.png": "2dc4eb6887b897cd494a85d79d33d66e81e08cab823974cc2c6f28b3ba4018a2",
+    "large_rock_01_32x32.png": "16e36000a6c7e6042fbcb85e63e86884cab1809839134dac8156987650c044c7",
+    "orc_door_01_16x32.png": "f5141a10a8f87df14be693a7272c15fa1785d9131eafaefb75d8e6e291d315b4",
+    "orc_hut_small_01_64x64.png": "1fd77b8209f153544c20deaa25cdbf8c09dee5480bd66dda5573c287912740d1",
+    "orc_inn_01_96x80.png": "ad04b3fafb2032f2d760b19d58e3f8b5805f7cc33c1fa7731fccd00db8ab5769",
+    "palisade_post_01_32x32.png": "9a6881d9d490044a56c2cae7a7bf02da9adcf47e5fd48feee07d9f16165abb48",
+    "palisade_wall_01_32x32.png": "27508255dc8ef135c47d67d8ac82468e116beb6747d3d7fc41a9eb2179bda8c7",
+    "palm_tree_01_32x48.png": "d36b863ba62ceb04f1b7a3aa45354a0f2b2d357d48fdb05e00720a36992d69c8",
+    "preview_durotar_asset_pack_v1.png": "ed096b5da94f59ecdf6bc4f7f1fdc31a3f6532af654a91384fe0c5bdf8f808b3",
+    "sand_tile_32x32.png": "2025dd1e1ca25e168faf9ec94958f0aed967bc2932ac14c8e8516637f37b7801",
+    "skull_01_16x16.png": "70fd8d11a7202d19b57472043b2ba71a3dc60aa4509cec6d4515ffda97a89317",
+    "small_rock_01_16x16.png": "a8a0b3e68d0d1c4ebfe29f924f77351313f2319c862c6c98e38456d8fbd96bf1",
+    "small_rock_02_16x16.png": "2d84a41374bc5770e1d6cf3b3fc9a2bf0f008de84dcd351a73146d7ba3ef1522"
+  },
+  "baseline_sha256": {
+    "gfx/tilesets/peon.png": "b6aa291924f3434044d0e0a27ddce76953a11d9912605233365226813048e2c4",
+    "gfx/tilesets/peon_palette_map.bin": "eac825684e99e35b1c618d6ab902fdd29e7e6ed6daf1671841f7f5e7df61d04e",
+    "gfx/tilesets/peon_environment_fire.bin": "a8623b0ac352e1ba0817055b6ff1ff70d6cfef14aacb397fea3ecb80b3265962",
+    "data/tilesets/peon_metatiles.bin": "7110427704ccf12479fd69fa6e67d09f6480d861ed425e1e61b41c85b01fd43e",
+    "data/tilesets/peon_collision.asm": "627cac87b56a070890b64bb9f0639658566a4b5408d79ee7d118df384317f971",
+    "gfx/tilesets/peon_bg.pal": "62bbf6a831a0face2ccbbfcd2e55edfc4c95f000e806c7f1715ae5a3cbb1c1bc",
+    "gfx/tilesets/peon_regions.pal": "4b52b3744862a09bcd444b0aa1cb06b35a346c5f41e6ca55741dab2c4c129828",
+    "gfx/tilesets/peon_interiors.pal": "3884860300ee66480710f074dcb321a79265fb7d1a6d550c53434b09b3dbc626",
+    "maps/PeonOpening.blk": "35941b282c4aa57e996e83ff33871cd3a58bdd4cbce3ef5f6719dca8e5c981a3",
+    "maps/GrommashHold.blk": "210d684435f30eb1840988464616efd5811d71c87dcde792b6c8fcdd5b0e9ab5",
+    "maps/TheDen.blk": "d581a53457a9f72d2d7faddc9b9d5f0895a47f982fa41b0c116a355b1e6ffc05",
+    "maps/ValleyOfTrials.blk": "d626b0a8ab4c25f1dab124cd188eb15c6c65ae7297b2277c86f15df8a4a9fdb2",
+    "maps/DurotarRoad.blk": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+    "maps/SenjinVillage.blk": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+    "maps/RazorHill.blk": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+    "maps/OrgrimmarGate.blk": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+    "maps/BurningBladeCavern.blk": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+    "maps/PeonTrollHut.blk": "0f7a944ac69f3ce760e5cdb51e8916316c59ef9745298980e1e20860bf7fe723",
+    "maps/PeonOrcHut.blk": "2624961508241752a60af42826c5b91abde00d7a40af99d5f7f748cb2b474951",
+    "maps/PeonOrcInn.blk": "4fe23879d46f7b2e0458e4184d22953f1e75220df9fb46e492fa6dc8b344f18a",
+    "maps/PeonTrollInn.blk": "16193d10ecf83380166b4b771bb6c98dd328652dde55e1321a8c06961d36a5a1",
+    "maps/PeonValleyCrossroads.blk": "66c41890b7c3c9c9ac52b2aff490b5234d65a0b5b406922f8d076c547e142d52",
+    "maps/PeonHanazuaCamp.blk": "8c1a19bee84f4ee9b6a140e67a15e5e5fa4ab67d2e0da69cc829f573fc473c82",
+    "maps/PeonSarkothBasin.blk": "60a0cf73b21b917a16c511dbc398becb5b371f0a6fb99e3c5da829f11b92d27e",
+    "maps/PeonCaveApproach.blk": "a4ba909f4bd30e1816c0eac97fefd1249fe53f93f1c72461c82ae4d347f5934b",
+    "maps/PeonValleyExit.blk": "188fb36acdbba761844e47d325096935fd27c1134bf25f0fe2e048f60d99ed1f"
+  },
+  "native_patterns": 192,
+  "native_pattern_budget": 192,
+  "source_composition_blocks": 150,
+  "original_metatile_count": 67,
+  "native_metatile_count_per_map": {
+    "PeonOpening": 69,
+    "GrommashHold": 76,
+    "TheDen": 83,
+    "ValleyOfTrials": 67,
+    "DurotarRoad": 69,
+    "SenjinVillage": 89,
+    "RazorHill": 90,
+    "OrgrimmarGate": 79,
+    "BurningBladeCavern": 67,
+    "PeonTrollHut": 77,
+    "PeonOrcHut": 77,
+    "PeonOrcInn": 80,
+    "PeonTrollInn": 80,
+    "PeonValleyCrossroads": 67,
+    "PeonHanazuaCamp": 67,
+    "PeonSarkothBasin": 67,
+    "PeonCaveApproach": 67,
+    "PeonValleyExit": 67
+  },
+  "native_patterns_per_map": {
+    "PeonOpening": 66,
+    "GrommashHold": 165,
+    "TheDen": 184,
+    "ValleyOfTrials": 105,
+    "DurotarRoad": 114,
+    "SenjinVillage": 189,
+    "RazorHill": 190,
+    "OrgrimmarGate": 175,
+    "BurningBladeCavern": 55,
+    "PeonTrollHut": 157,
+    "PeonOrcHut": 157,
+    "PeonOrcInn": 192,
+    "PeonTrollInn": 192,
+    "PeonValleyCrossroads": 52,
+    "PeonHanazuaCamp": 57,
+    "PeonSarkothBasin": 57,
+    "PeonCaveApproach": 37,
+    "PeonValleyExit": 51
+  },
+  "source_architecture_pack_sha256": "27276d86f2d71c77aca899ba73947d6ec12b6ae3042a3d6c747d35779bbbffcb",
+  "source_architecture_manifest": {
+    "razor_hill_inn_interior_192x160.png": "3dafb5d6d1686a2d210b3bd93105ca39f3f12a5c1309d57203aef03204060f51",
+    "razor_hill_inn_interior_preview_4x.png": "efc88a75919350d5c3ad5de982048913d9ee7ecbcac5fe092ca67ba25b34f519",
+    "razor_hill_inn_exterior_preview_4x.png": "9ad4d418f8fe3a49dbcbd23d5508cdd03111cc36c8ac47da630576168c4c3d34",
+    "razor_hill_inn_exterior_96x80.png": "b9c11f8fac1500fb6890190a35a297dfda9e3bd2bde28c9b7e321f6ba6728597"
+  },
+  "source_imports": [
+    {
+      "source": "cracked_earth_tile_32x32.png",
+      "metatile_ids": [
+        0
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "sand_tile_32x32.png",
+      "metatile_ids": [
+        8,
+        38
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "cactus_round_01_32x32.png",
+      "metatile_ids": [
+        3
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "cactus_round_01_32x32.png",
+      "metatile_ids": [
+        42
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "cactus_tall_01_16x32.png",
+      "metatile_ids": [
+        13
+      ],
+      "source_rect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "native_position": [
+        8,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "horde_banner_01_16x32.png",
+      "metatile_ids": [
+        6
+      ],
+      "source_rect": [
+        0,
+        0,
+        16,
+        32
+      ],
+      "native_position": [
+        8,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "palisade_wall_01_32x32.png",
+      "metatile_ids": [
+        30
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "palisade_post_01_32x32.png",
+      "metatile_ids": [
+        33
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "skull_01_16x16.png",
+      "metatile_ids": [
+        36
+      ],
+      "source_rect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "native_position": [
+        8,
+        8
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "large_rock_01_32x32.png",
+      "metatile_ids": [
+        37
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "native_position": [
+        0,
+        0
+      ],
+      "full_native_source": true,
+      "native_scale": 1
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "PeonOpening",
+      "metatile_ids": [
+        68,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        128,
+        80
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        4,
+        3
+      ],
+      "upper_collision_preserved": [
+        "FLOOR",
+        "FLOOR",
+        "FLOOR",
+        "FLOOR"
+      ]
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "DurotarRoad",
+      "metatile_ids": [
+        69,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        288,
+        272
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        9,
+        9
+      ],
+      "upper_collision_preserved": [
+        "FLOOR",
+        "FLOOR",
+        "FLOOR",
+        "FLOOR"
+      ]
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        70,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        96,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        3,
+        1
+      ],
+      "upper_collision_preserved": [
+        "WALL",
+        "WALL",
+        "WALL",
+        "WALL"
+      ]
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        70,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        256,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        8,
+        1
+      ],
+      "upper_collision_preserved": [
+        "WALL",
+        "WALL",
+        "WALL",
+        "WALL"
+      ]
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        68,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        32,
+        80
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        1,
+        3
+      ],
+      "upper_collision_preserved": [
+        "FLOOR",
+        "FLOOR",
+        "FLOOR",
+        "FLOOR"
+      ]
+    },
+    {
+      "source": "palm_tree_01_32x48.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        68,
+        67
+      ],
+      "source_rect": [
+        0,
+        0,
+        32,
+        48
+      ],
+      "world_origin_pixels": [
+        32,
+        208
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "original_anchor_block": [
+        1,
+        7
+      ],
+      "upper_collision_preserved": [
+        "FLOOR",
+        "FLOOR",
+        "FLOOR",
+        "FLOOR"
+      ]
+    },
+    {
+      "source": "brazier_frame_01_16x16.png / 02 / 03",
+      "metatile_ids": [
+        34,
+        39
+      ],
+      "source_rect": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "native_position": [
+        8,
+        8
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "animated_tile_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "TheDen",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        1,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        232,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        17,
+        5
+      ],
+      "door_center": [
+        17,
+        5
+      ],
+      "destination_unchanged": "PEON_ORC_INN",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          15,
+          4
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "TheDen",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        55,
+        81,
+        74,
+        82,
+        83,
+        84,
+        78,
+        85,
+        86
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        40,
+        48
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        5,
+        7
+      ],
+      "door_center": [
+        5,
+        7
+      ],
+      "destination_unchanged": "PEON_ORC_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": []
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        1,
+        71,
+        87,
+        1,
+        88,
+        89,
+        90,
+        91,
+        92,
+        78,
+        93,
+        94
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        40,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        5,
+        5
+      ],
+      "door_center": [
+        5,
+        5
+      ],
+      "destination_unchanged": "PEON_TROLL_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        1,
+        71,
+        87,
+        1,
+        88,
+        89,
+        90,
+        91,
+        77,
+        78,
+        93,
+        95
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        200,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        15,
+        5
+      ],
+      "door_center": [
+        15,
+        5
+      ],
+      "destination_unchanged": "PEON_TROLL_INN",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          13,
+          4
+        ],
+        [
+          16,
+          4
+        ],
+        [
+          17,
+          4
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "SenjinVillage",
+      "metatile_ids": [
+        96,
+        97,
+        98,
+        14,
+        99,
+        89,
+        100,
+        101,
+        102,
+        78,
+        103,
+        104
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        232,
+        80
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        17,
+        9
+      ],
+      "door_center": [
+        17,
+        9
+      ],
+      "destination_unchanged": "PEON_TROLL_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          15,
+          8
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "RazorHill",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        1,
+        105,
+        74,
+        82,
+        106,
+        107,
+        78,
+        93,
+        94
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        40,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        5,
+        5
+      ],
+      "door_center": [
+        5,
+        5
+      ],
+      "destination_unchanged": "PEON_ORC_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "RazorHill",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        1,
+        105,
+        74,
+        82,
+        106,
+        108,
+        78,
+        93,
+        109
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        232,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        17,
+        5
+      ],
+      "door_center": [
+        17,
+        5
+      ],
+      "destination_unchanged": "PEON_ORC_INN",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          18,
+          4
+        ],
+        [
+          19,
+          4
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "RazorHill",
+      "metatile_ids": [
+        24,
+        110,
+        72,
+        30,
+        111,
+        112,
+        113,
+        106,
+        77,
+        78,
+        93,
+        109
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        232,
+        144
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        17,
+        13
+      ],
+      "door_center": [
+        17,
+        13
+      ],
+      "destination_unchanged": "PEON_ORC_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          15,
+          12
+        ],
+        [
+          18,
+          12
+        ],
+        [
+          19,
+          12
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "RazorHill",
+      "metatile_ids": [
+        30,
+        110,
+        114,
+        26,
+        105,
+        89,
+        115,
+        116,
+        107,
+        78,
+        117,
+        118
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        40,
+        176
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": [
+        5,
+        15
+      ],
+      "door_center": [
+        5,
+        15
+      ],
+      "destination_unchanged": "PEON_ORC_HUT",
+      "closed_guard_lodge": false,
+      "native_roof_priority": true,
+      "new_body_wall_cells": [
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          14
+        ]
+      ]
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "OrgrimmarGate",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        1,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        40,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": null,
+      "door_center": [
+        5,
+        5
+      ],
+      "destination_unchanged": "CLOSED_GUARD_LODGE",
+      "closed_guard_lodge": true,
+      "native_roof_priority": true,
+      "new_body_wall_cells": []
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png",
+      "map": "OrgrimmarGate",
+      "metatile_ids": [
+        1,
+        71,
+        72,
+        1,
+        119,
+        120,
+        121,
+        76,
+        123,
+        124,
+        125,
+        80
+      ],
+      "source_rect": [
+        0,
+        0,
+        96,
+        80
+      ],
+      "world_origin_pixels": [
+        264,
+        16
+      ],
+      "full_native_source": true,
+      "native_scale": 1,
+      "door_warp_unchanged": null,
+      "door_center": [
+        19,
+        5
+      ],
+      "destination_unchanged": "CLOSED_GUARD_LODGE",
+      "closed_guard_lodge": true,
+      "native_roof_priority": true,
+      "new_body_wall_cells": []
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+      "map": "PeonOrcHut",
+      "adaptation": "Source-derived modular room; full original is not a literal tilemap import.",
+      "module_crop_coordinates": {
+        "northwest": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "northeast": [
+          160,
+          0,
+          192,
+          32
+        ],
+        "southwest": [
+          0,
+          128,
+          32,
+          160
+        ],
+        "southeast": [
+          160,
+          128,
+          192,
+          160
+        ],
+        "north_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "west_wall": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "east_wall": [
+          160,
+          64,
+          192,
+          96
+        ],
+        "south_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "bed": [
+          80,
+          8,
+          112,
+          40
+        ],
+        "table": [
+          128,
+          96,
+          160,
+          128
+        ],
+        "hearth": [
+          80,
+          72,
+          112,
+          104
+        ],
+        "floor": [
+          104,
+          40,
+          120,
+          56
+        ],
+        "doorway": [
+          72,
+          128,
+          120,
+          160
+        ]
+      },
+      "native_scale": 1,
+      "full_native_source": false,
+      "native_room_size": [
+        192,
+        160
+      ],
+      "door_warp_unchanged": [
+        5,
+        7
+      ],
+      "floor_and_panels_reused": true
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+      "map": "PeonOrcInn",
+      "adaptation": "Source-derived modular room; full original is not a literal tilemap import.",
+      "module_crop_coordinates": {
+        "northwest": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "northeast": [
+          160,
+          0,
+          192,
+          32
+        ],
+        "southwest": [
+          0,
+          128,
+          32,
+          160
+        ],
+        "southeast": [
+          160,
+          128,
+          192,
+          160
+        ],
+        "north_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "west_wall": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "east_wall": [
+          160,
+          64,
+          192,
+          96
+        ],
+        "south_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "bed": [
+          80,
+          8,
+          112,
+          40
+        ],
+        "table": [
+          128,
+          96,
+          160,
+          128
+        ],
+        "hearth": [
+          80,
+          72,
+          112,
+          104
+        ],
+        "floor": [
+          104,
+          40,
+          120,
+          56
+        ],
+        "doorway": [
+          72,
+          128,
+          120,
+          160
+        ]
+      },
+      "native_scale": 1,
+      "full_native_source": false,
+      "native_room_size": [
+        192,
+        160
+      ],
+      "door_warp_unchanged": [
+        5,
+        7
+      ],
+      "floor_and_panels_reused": true
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+      "map": "PeonTrollHut",
+      "adaptation": "Source-derived modular room; full original is not a literal tilemap import.",
+      "module_crop_coordinates": {
+        "northwest": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "northeast": [
+          160,
+          0,
+          192,
+          32
+        ],
+        "southwest": [
+          0,
+          128,
+          32,
+          160
+        ],
+        "southeast": [
+          160,
+          128,
+          192,
+          160
+        ],
+        "north_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "west_wall": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "east_wall": [
+          160,
+          64,
+          192,
+          96
+        ],
+        "south_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "bed": [
+          80,
+          8,
+          112,
+          40
+        ],
+        "table": [
+          128,
+          96,
+          160,
+          128
+        ],
+        "hearth": [
+          80,
+          72,
+          112,
+          104
+        ],
+        "floor": [
+          104,
+          40,
+          120,
+          56
+        ],
+        "doorway": [
+          72,
+          128,
+          120,
+          160
+        ]
+      },
+      "native_scale": 1,
+      "full_native_source": false,
+      "native_room_size": [
+        192,
+        160
+      ],
+      "door_warp_unchanged": [
+        5,
+        7
+      ],
+      "floor_and_panels_reused": true
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+      "map": "PeonTrollInn",
+      "adaptation": "Source-derived modular room; full original is not a literal tilemap import.",
+      "module_crop_coordinates": {
+        "northwest": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "northeast": [
+          160,
+          0,
+          192,
+          32
+        ],
+        "southwest": [
+          0,
+          128,
+          32,
+          160
+        ],
+        "southeast": [
+          160,
+          128,
+          192,
+          160
+        ],
+        "north_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "west_wall": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "east_wall": [
+          160,
+          64,
+          192,
+          96
+        ],
+        "south_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "bed": [
+          80,
+          8,
+          112,
+          40
+        ],
+        "table": [
+          128,
+          96,
+          160,
+          128
+        ],
+        "hearth": [
+          80,
+          72,
+          112,
+          104
+        ],
+        "floor": [
+          104,
+          40,
+          120,
+          56
+        ],
+        "doorway": [
+          72,
+          128,
+          120,
+          160
+        ]
+      },
+      "native_scale": 1,
+      "full_native_source": false,
+      "native_room_size": [
+        192,
+        160
+      ],
+      "door_warp_unchanged": [
+        5,
+        7
+      ],
+      "floor_and_panels_reused": true
+    },
+    {
+      "source": "razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+      "map": "GrommashHold",
+      "adaptation": "Source-derived modular hall; copied structure/floor/hearth, original cinematic carpet and masters positions.",
+      "module_crop_coordinates": {
+        "northwest": [
+          0,
+          0,
+          32,
+          32
+        ],
+        "northeast": [
+          160,
+          0,
+          192,
+          32
+        ],
+        "southwest": [
+          0,
+          128,
+          32,
+          160
+        ],
+        "southeast": [
+          160,
+          128,
+          192,
+          160
+        ],
+        "north_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "west_wall": [
+          0,
+          64,
+          32,
+          96
+        ],
+        "east_wall": [
+          160,
+          64,
+          192,
+          96
+        ],
+        "south_wall": [
+          80,
+          0,
+          112,
+          32
+        ],
+        "bed": [
+          80,
+          8,
+          112,
+          40
+        ],
+        "table": [
+          128,
+          96,
+          160,
+          128
+        ],
+        "hearth": [
+          80,
+          72,
+          112,
+          104
+        ],
+        "floor": [
+          104,
+          40,
+          120,
+          56
+        ],
+        "doorway": [
+          72,
+          128,
+          120,
+          160
+        ]
+      },
+      "native_scale": 1,
+      "full_native_source": false,
+      "native_room_size": [
+        256,
+        192
+      ]
+    }
+  ],
+  "all_original_event_coordinates_unchanged": true,
+  "body_wall_changes": {
+    "TheDen": [
+      [
+        15,
+        4
+      ]
+    ],
+    "SenjinVillage": [
+      [
+        3,
+        4
+      ],
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        13,
+        4
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        17,
+        4
+      ],
+      [
+        15,
+        8
+      ]
+    ],
+    "RazorHill": [
+      [
+        6,
+        4
+      ],
+      [
+        7,
+        4
+      ],
+      [
+        18,
+        4
+      ],
+      [
+        19,
+        4
+      ],
+      [
+        15,
+        12
+      ],
+      [
+        18,
+        12
+      ],
+      [
+        19,
+        12
+      ],
+      [
+        6,
+        14
+      ],
+      [
+        7,
+        14
+      ]
+    ],
+    "OrgrimmarGate": []
+  },
+  "reachability": {
+    "PeonOpening": {
+      "seed": [
+        8,
+        8
+      ],
+      "reachable_cells": 83,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 2
+    },
+    "GrommashHold": {
+      "seed": [
+        8,
+        8
+      ],
+      "reachable_cells": 84,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 4
+    },
+    "TheDen": {
+      "seed": [
+        20,
+        10
+      ],
+      "reachable_cells": 207,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 13
+    },
+    "ValleyOfTrials": {
+      "seed": [
+        4,
+        12
+      ],
+      "reachable_cells": 286,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "DurotarRoad": {
+      "seed": [
+        4,
+        14
+      ],
+      "reachable_cells": 280,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 8
+    },
+    "SenjinVillage": {
+      "seed": [
+        10,
+        4
+      ],
+      "reachable_cells": 208,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 9
+    },
+    "RazorHill": {
+      "seed": [
+        12,
+        16
+      ],
+      "reachable_cells": 158,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 7
+    },
+    "OrgrimmarGate": {
+      "seed": [
+        12,
+        16
+      ],
+      "reachable_cells": 165,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 3
+    },
+    "BurningBladeCavern": {
+      "seed": [
+        10,
+        16
+      ],
+      "reachable_cells": 131,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 5
+    },
+    "PeonTrollHut": {
+      "seed": [
+        5,
+        7
+      ],
+      "reachable_cells": 47,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "PeonOrcHut": {
+      "seed": [
+        5,
+        7
+      ],
+      "reachable_cells": 47,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "PeonOrcInn": {
+      "seed": [
+        5,
+        7
+      ],
+      "reachable_cells": 27,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "PeonTrollInn": {
+      "seed": [
+        5,
+        7
+      ],
+      "reachable_cells": 27,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "PeonValleyCrossroads": {
+      "seed": [
+        5,
+        9
+      ],
+      "reachable_cells": 37,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 2
+    },
+    "PeonHanazuaCamp": {
+      "seed": [
+        9,
+        4
+      ],
+      "reachable_cells": 33,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 2
+    },
+    "PeonSarkothBasin": {
+      "seed": [
+        5,
+        0
+      ],
+      "reachable_cells": 28,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 1
+    },
+    "PeonCaveApproach": {
+      "seed": [
+        5,
+        9
+      ],
+      "reachable_cells": 24,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 3
+    },
+    "PeonValleyExit": {
+      "seed": [
+        0,
+        4
+      ],
+      "reachable_cells": 26,
+      "all_warps_reachable": true,
+      "all_npc_approaches_reachable": true,
+      "actor_count": 3
+    }
+  },
+  "continue_relocations": [
+    {
+      "map": "TheDen",
+      "old": [
+        15,
+        4
+      ],
+      "safe": [
+        15,
+        3
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        3,
+        4
+      ],
+      "safe": [
+        4,
+        6
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        6,
+        4
+      ],
+      "safe": [
+        6,
+        5
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        7,
+        4
+      ],
+      "safe": [
+        8,
+        4
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        13,
+        4
+      ],
+      "safe": [
+        13,
+        3
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        16,
+        4
+      ],
+      "safe": [
+        16,
+        5
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        17,
+        4
+      ],
+      "safe": [
+        17,
+        5
+      ]
+    },
+    {
+      "map": "SenjinVillage",
+      "old": [
+        15,
+        8
+      ],
+      "safe": [
+        15,
+        7
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        6,
+        4
+      ],
+      "safe": [
+        6,
+        5
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        7,
+        4
+      ],
+      "safe": [
+        8,
+        4
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        18,
+        4
+      ],
+      "safe": [
+        18,
+        5
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        19,
+        4
+      ],
+      "safe": [
+        19,
+        5
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        15,
+        12
+      ],
+      "safe": [
+        15,
+        11
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        18,
+        12
+      ],
+      "safe": [
+        18,
+        13
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        19,
+        12
+      ],
+      "safe": [
+        19,
+        13
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        6,
+        14
+      ],
+      "safe": [
+        6,
+        13
+      ]
+    },
+    {
+      "map": "RazorHill",
+      "old": [
+        7,
+        14
+      ],
+      "safe": [
+        7,
+        13
+      ]
+    }
+  ],
+  "every_other_movement_cell_collision_preserved": true,
+  "roof_priority_bitsets": true,
+  "palettes_unchanged": true,
+  "colors_per_background_tile": 4,
+  "fire_frames": 3,
+  "fire_patterns_per_frame": 4,
+  "runtime_capture": false,
+  "applied": true,
+  "unused_sources": [
+    "barrel_01_16x16.png",
+    "bones_01_16x16.png",
+    "cave_entrance_01_64x64.png",
+    "crate_01_16x16.png",
+    "dirt_path_tile_32x32.png",
+    "horde_banner_tall_01_16x48.png",
+    "orc_door_01_16x32.png",
+    "orc_hut_small_01_64x64.png",
+    "orc_inn_01_96x80.png",
+    "small_rock_01_16x16.png",
+    "small_rock_02_16x16.png"
+  ],
+  "native_outputs": {
+    "gfx/tilesets/peon_user_environment_v0211/PeonOpening.2bpp": "b7557256043165885b667a47c8cf4cf8a8f03729b94ed3d50cfba7d902833a38",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOpening_meta.bin": "8f80c40063c7a1a6264b866865fc4bc5063f8345bc2e3829d0cf638f367e8d6d",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOpening_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOpening_palmap.bin": "27fcf9d72b7710e05c259d6406c116df92fc82af50e6260e02a8b45f6f0df581",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOpening_coll.asm": "8e8c1ab89429c101caf8ecc217d2bd7ec47371fa012e4a7cddc896efc1a57f4a",
+    "gfx/tilesets/peon_user_environment_v0211/GrommashHold.2bpp": "c70243084c71aaad1379188fa1f753a0e076704a98c2b986aca24232c6062f7a",
+    "gfx/tilesets/peon_user_environment_v0211/GrommashHold_meta.bin": "c306d18f2db92c44ef5b9257f0bfbc3d71be46138b1b6d8e58d981e8270850f6",
+    "gfx/tilesets/peon_user_environment_v0211/GrommashHold_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/GrommashHold_palmap.bin": "08b9a01d35ddd899d929b6b77d9ea22774355eca57e277154048328ca3246595",
+    "gfx/tilesets/peon_user_environment_v0211/GrommashHold_coll.asm": "48b7784d78844ca632f9b450bb271b60ce79fd5f915949ee4736a8385f927651",
+    "gfx/tilesets/peon_user_environment_v0211/TheDen.2bpp": "d5a58c370ababf462680ddfd4ab3ac70f014c3e2d10744eee6e1f5534a856324",
+    "gfx/tilesets/peon_user_environment_v0211/TheDen_meta.bin": "d4a3eb53666c259ae4e8b7717a64d0a7b594c0be7a82c896ce1027b44a466c22",
+    "gfx/tilesets/peon_user_environment_v0211/TheDen_priority.bin": "59507409d58f324e606858decc3efd586b5b98a06d13cf8ccaebafaa72b3c007",
+    "gfx/tilesets/peon_user_environment_v0211/TheDen_palmap.bin": "6a708049887f9b254176fe1037e4f928a1ea8518b3e71f219c813eca09e1bcbf",
+    "gfx/tilesets/peon_user_environment_v0211/TheDen_coll.asm": "f25c447aeb861b01620e9b394759b67d8268bea6d9c6a4998a5c646494cca38d",
+    "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials.2bpp": "d1bdf3d7671827908bddbe45eb23b71c2ad3e6efa8ac8870bbf6007648f180cd",
+    "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_meta.bin": "6c9df4d484da9665bf4a61ef73a4010c2806fdbbbe7e21487eabdef2784d6708",
+    "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_palmap.bin": "3878024e56aae45e52f893d0cd0cb4408139ba80a382a3adff575624e8eb2594",
+    "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/DurotarRoad.2bpp": "bb9b88b48a7bca01c688c929cefbdf2163f909e9102403b5be41667bf6d2ff2b",
+    "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_meta.bin": "1f228b8ec232cc7d9f4e7ff61c6bf97e6efb99dda53f943c0ee76b4bc3a048fb",
+    "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_palmap.bin": "5c9682b7b89184ee4fb8ba265b9655b88eb99f866f2504a93da3b3c4aed010f6",
+    "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_coll.asm": "8e8c1ab89429c101caf8ecc217d2bd7ec47371fa012e4a7cddc896efc1a57f4a",
+    "gfx/tilesets/peon_user_environment_v0211/SenjinVillage.2bpp": "cef585acee7d1844ba42f817c4e3bf6cb4101c2b33dc7af1f7d0832f908617ca",
+    "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_meta.bin": "e4aed717079bcf5d26ded9e925e4e966b721950b7c6fc39b2637f7aad2ed22cc",
+    "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_priority.bin": "a71469137cf5b534852030d0848c84b44e098260c389e5f04a82c4b87f8eeaf9",
+    "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_palmap.bin": "b43e0a0de85761c5e477d03a15d26a3a3da152e1f1e70234213b6796f5cf31b1",
+    "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_coll.asm": "4268272c09b8f4ea4aca00071fdf5a15a28c9eaf639428d557cca46d08739e5a",
+    "gfx/tilesets/peon_user_environment_v0211/RazorHill.2bpp": "1bc06bfea0a7107868847321852067e270cd2eae8b1c668a83de2eb1858ab701",
+    "gfx/tilesets/peon_user_environment_v0211/RazorHill_meta.bin": "cd06f47b34bc440f48a7ce08ed54af91b23da85a450e6c4c9d9ffddc6232d4a3",
+    "gfx/tilesets/peon_user_environment_v0211/RazorHill_priority.bin": "eaca2fcfa6477928c4c3f6368e63c403bccfaf022d69bb1d540cf39e5ccd6bb0",
+    "gfx/tilesets/peon_user_environment_v0211/RazorHill_palmap.bin": "b487d20c5899d383b950dca9659df7968a4d437390ab3b8be6d26f5f7f4fa5e7",
+    "gfx/tilesets/peon_user_environment_v0211/RazorHill_coll.asm": "7a1e7b94d3a570ae726e5668a02d3e6f291b1e77959b6c82c18c9f01254c7372",
+    "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate.2bpp": "0d2f3834f92f9ae4e9e6d8406ab10ef40550882b5c6ec83102e9df3ff617c9ac",
+    "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_meta.bin": "4201cacd44836cc6b51bedf78519fa7e29385985cf60de4073fbc934e47e3bd8",
+    "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_priority.bin": "6ff658367a332e57a4583cd0f2f22a5eebd046308b9a0df9b2e1a3a0f006731c",
+    "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_palmap.bin": "881ed46714aa6a080b86b15613428217b9bd126030bba52f821c90c3a74fa316",
+    "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_coll.asm": "7f18938ad07191b8d208e9bed8e2ef33b145050743baa3b8b4fbf4b791fa656c",
+    "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern.2bpp": "3ca97e957dd8810f5d365c810b009381c23d3744dd5436b3df519ef1cecafa80",
+    "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_meta.bin": "293cd66a54af62af65b4eae5867d1704fc2142e4c3b780a7a05c10d4810ed6dc",
+    "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_palmap.bin": "f135706da576ce3b64c8946e4c5290bd531c21370241d57a0a51339baccd13a4",
+    "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut.2bpp": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_meta.bin": "4d499a02c6c9295985d9f525a5e35a0fb0bb727706d0f31e833d3250c480342b",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_palmap.bin": "1f435c1b2726ed345c94023780e40ff89a5337ab756c2f91e7c85408e9ecd012",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_coll.asm": "4f6998edc6abd74cbe843ce5267e8640bf5fa12f09794b4e2aaabf586d2e3a62",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut.2bpp": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_meta.bin": "4d499a02c6c9295985d9f525a5e35a0fb0bb727706d0f31e833d3250c480342b",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_palmap.bin": "1f435c1b2726ed345c94023780e40ff89a5337ab756c2f91e7c85408e9ecd012",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_coll.asm": "4f6998edc6abd74cbe843ce5267e8640bf5fa12f09794b4e2aaabf586d2e3a62",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn.2bpp": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_meta.bin": "9bbb62973e73b2dc76a0468a2738157fdd3fdbc3f4a410ecf62d331d794d10c2",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_palmap.bin": "e0a1bbcc24477af158df94868fdd5c8adfe68ec26b55be105a3d90361f907a08",
+    "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_coll.asm": "d022d94f9dcbfa7be6d1824c5104f300b761b7958594ee098eee45ef0a86012f",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn.2bpp": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_meta.bin": "9bbb62973e73b2dc76a0468a2738157fdd3fdbc3f4a410ecf62d331d794d10c2",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_palmap.bin": "e0a1bbcc24477af158df94868fdd5c8adfe68ec26b55be105a3d90361f907a08",
+    "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_coll.asm": "d022d94f9dcbfa7be6d1824c5104f300b761b7958594ee098eee45ef0a86012f",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads.2bpp": "70a26e9d0adfef90f972b7bb31e40828054143c5992061bd419c9de30583447c",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_meta.bin": "11f974aee29ab667f201521fad644d35d6b62612f468c195539c1a7a072856dd",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_palmap.bin": "a5fa580441ce767434578a8757d6d77ed5c7fb35c18d8d6e849157b680e41176",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp.2bpp": "6c77ffdbd802889256df02d2eda5bb9ef644b9630f15b398739dad926c1b9ecd",
+    "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_meta.bin": "e3ad72494d2c8d600bb58c5a20e34fc23b2f7ba3beb0093a71a78b63301ad882",
+    "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_palmap.bin": "4bdb45ace2f87ebcf68388676ac0e55b4513aa2b4f3ee49e657bd3dc95636e99",
+    "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin.2bpp": "5077cf80f643b45ebda64d448d7d0352eae2290a65fa88a59bd96b9def29fa3a",
+    "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_meta.bin": "65b670a05dc447b9d404aa7dc9afbd39f6ff4c9215fe9b34e2bf31eef088b773",
+    "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_palmap.bin": "d04752fda5092b215570fd4477c82bb4931c6a8071f2ea69f1d6175e10f7ce6a",
+    "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach.2bpp": "13391ef21d1646e47eadadce016c1aa8a09f8c065e231fd87bc63a3beeca1813",
+    "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_meta.bin": "4a41a099a84d72631c8a7eab4e77d628c544f18c1cee27d190cb1ca683639222",
+    "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_palmap.bin": "2f714a97b991d6d33e0917f02a9e720681a715b10c5f199659f4d634723e9713",
+    "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit.2bpp": "ad1554d3ec3cb8a426abd85d8ea967bb6441aa8bc0d217c74fdcbf167a79b617",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_meta.bin": "0caba2eaaa4dcd662b3ba40bb4110af22b51e94b29798b3cc6bbd3328ef84af9",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_palmap.bin": "cb769a3db1d79a3586674bda7f355657a183135d72580ef167824e763d878ed0",
+    "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_coll.asm": "66fb10caf0c08be4629718b4233805c75dd44cd2b544d408eeeac3ef78684913",
+    "data/maps/peon_user_environment_relocations_v0211.asm": "9506d66bfaf1c37360a2609782d074dcd199b7ba34f7661eb58171d1ad8c472f",
+    "gfx/tilesets/peon_environment_fire.bin": "d98cdf7473446e5e4ce61e386efd238190a7d0b0875d007cefd308c07cba2bb4",
+    "gfx/peon_user_environment_v0211.asm": "2d4f700da5d5d5b200ab7cfb56e7baad7ab734b82074bf7790b31af7e4bd52ce",
+    "gfx/peon_user_environment_palettes_v0211.asm": "dc665c65348439e349e0968217bd61d807f71b1475f0c75a8ebb0692e52c292c",
+    "data/tilesets/peon_user_environment_headers_v0211.asm": "aa52ab54363ad2d73b2722e0628888f6deda990261f006a81a33c092cc426c16",
+    "maps/PeonOpening.blk": "1aa5450e9f61c5a97d65cfd485c6bc92c301c7557bc2e771458940d59f794481",
+    "maps/GrommashHold.blk": "a4886cb4d5cb05799788468e00bced772458273ea244ba76d72ee3819c23f8a8",
+    "maps/TheDen.blk": "70681393a4c81e20ee527ba0eed72d421588e1f8d52b8a97af58cb26c274ab93",
+    "maps/DurotarRoad.blk": "e2bb029879845590652aff6bc936ec9562fdad4561386060539d2c54eec800be",
+    "maps/SenjinVillage.blk": "a490f0bab75d8022c135f828a180df1cc90678895a6feef6b20979030620fbb4",
+    "maps/RazorHill.blk": "41dac5a4ba894d0900bb807ba75dd5ad8aca3d92db283f1e1fdec60a33ef2800",
+    "maps/OrgrimmarGate.blk": "f5c1889539d852471f45ddeaf150542781a68b6a4179fd93bd3564bd7a74d94f",
+    "maps/PeonTrollHut.blk": "71a34ddf78eda8d144db79330a85bd6089fcff551a48dbc7c669038a78d5559a",
+    "maps/PeonOrcHut.blk": "71a34ddf78eda8d144db79330a85bd6089fcff551a48dbc7c669038a78d5559a",
+    "maps/PeonOrcInn.blk": "4736b62df8ea99413c3f2ad125026a82652b9ef6ff9b509017f3ffcffec7e71b",
+    "maps/PeonTrollInn.blk": "4736b62df8ea99413c3f2ad125026a82652b9ef6ff9b509017f3ffcffec7e71b"
+  },
+  "modified_maps": [
+    "PeonOpening",
+    "GrommashHold",
+    "TheDen",
+    "DurotarRoad",
+    "SenjinVillage",
+    "RazorHill",
+    "OrgrimmarGate",
+    "PeonTrollHut",
+    "PeonOrcHut",
+    "PeonOrcInn",
+    "PeonTrollInn"
+  ]
+}

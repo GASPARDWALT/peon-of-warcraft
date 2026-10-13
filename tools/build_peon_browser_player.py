@@ -29,7 +29,7 @@ def require(value, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--rom', type=Path, default=ROOT / 'pokecrystal.gbc')
-    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6', '0.2.7', '0.2.8', '0.2.9', '0.2.10'])
+    parser.add_argument('--version', default='0.2.5', choices=['0.2.5', '0.2.6', '0.2.7', '0.2.8', '0.2.9', '0.2.10', '0.2.11'])
     parser.add_argument('--expected-sha', help='Required for new releases; exact tested native ROM hash.')
     parser.add_argument('--package', action='store_true', help='Require passing browser/core evidence for this exact HTML, then create the release ZIP.')
     args = parser.parse_args()

@@ -1,0 +1,2220 @@
+{
+  "version": "v0.2.11",
+  "purpose": "User-authorized repairs of missing or damaged native NPC PNGs; originals remain intact.",
+  "originalsChanged": false,
+  "redrawnValidOriginals": false,
+  "ROMIntegrated": false,
+  "lockedIdentityNote": "Uploaded shaman_master is an Orc NPC; this pack does not replace or rename the locked Tauren master Kento Brandenhoof.",
+  "generatedImageAPIUsed": false,
+  "method": "Manual native whole-pixel composition, valid supplied body pixels, role-specific equipment and genuine rear anatomy.",
+  "spriteCount": 55,
+  "pass": true,
+  "dimensionsAndAlphaVerified": true,
+  "sprites": [
+    {
+      "role": "quest_peon",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "509655ea96a7c8f20a97c433204e9350a865aa76da86a4bdd251b69c8c1276e8",
+      "visiblePixels": 102,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_front.png",
+          "sha256": "1456c3b15dfd74ad03914a2f9e8df31596e425e5c936a276447bcf98b7a90683"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_front.png",
+          "sha256": "06ce18d23b008c497c7e614011cec4ba1c14b6d227fb7dc924c76e6ed98a89ce"
+        }
+      ]
+    },
+    {
+      "role": "quest_peon",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "8b2a76c44324185c1628de494f35a2cfdace9fcd37f9b29aee272ad0766bae2f",
+      "visiblePixels": 99,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_back.png",
+          "sha256": "cbc9345ba8e8c551e9df734054e6799efb9660f11b19f5752e720e974d4e1d73"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_back.png",
+          "sha256": "87329db2892287f4c3c844f72bd3ec4596a6bc3358358ec923a751adfcdc8395"
+        }
+      ]
+    },
+    {
+      "role": "quest_peon",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "ee1c1d7eff7ce041a18c01c06d864d7c102f343386a782dfe2e2353ff77946af",
+      "visiblePixels": 104,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_left.png",
+          "sha256": "a925f8e21631745102b3a7e4cdfa8809b8bac701c70e27b0e321468a741de854"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_left.png",
+          "sha256": "cf855b197ffb6d055491d03d317306c49b08f1fd8c677e9dbb4fe2c444ecaa94"
+        }
+      ]
+    },
+    {
+      "role": "quest_peon",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "0093100422ed7aaa08b4af7f1d8e0e4cf05240f6a8010407934c08389c478252",
+      "visiblePixels": 106,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_right.png",
+          "sha256": "b8732c234091f518fb012b2440772b9a66794e2d02522d6e9493ec0778bb56a3"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_right.png",
+          "sha256": "7033be62dbd5030f9675f1a9cb30bf6efc2c06e57f3d49cf83fef2dd65ef0391"
+        }
+      ]
+    },
+    {
+      "role": "peon_worker",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/peon_worker/peon_worker_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "a6bc3ee5d335c26e605e15d118ad8f34d9b58b4eaf90074d45aaa86ef724dcd2",
+      "visiblePixels": 124,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_back.png",
+          "sha256": "a67ff68cc453b201365365b07c5ea020308a2e05c1fa2ee23e73b0ee8c3ae218"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_back.png",
+          "sha256": "593ddef7438c0c84ade0fff3898cf4ad3c84b3e011801185d232c680a4b435cf"
+        }
+      ]
+    },
+    {
+      "role": "peon_worker",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/peon_worker/peon_worker_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "2831b418f1a77eb35585bf030d2c7ff4b151fe0ae5384942c48d23cf8583e263",
+      "visiblePixels": 123,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_left.png",
+          "sha256": "7bc4c5a0dc1875c4f13719324402ff69d37d4447e26e342de7daf7d219a486b3"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_left.png",
+          "sha256": "630235fb8afcd2fe83883f324fb6595f0a6a546ff688bad941134af4341ffd5f"
+        }
+      ]
+    },
+    {
+      "role": "peon_worker",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/peon_worker/peon_worker_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "16da7a5b1a6dea4429b47955f8d90e7dd50be584baf82f1da1606226bab8981f",
+      "visiblePixels": 127,
+      "alphaBoundingBox": [
+        3,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_right.png",
+          "sha256": "69cf466775c52bcfc36aec344b4ba5332c6a423193703eef0dcfa65cbb8b99b2"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_right.png",
+          "sha256": "679706d8a56672e480c8abcd326a0fa341ac2643f8aa0c1bd009eb23eb5f3c66"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "5c2759a7356ed313f6659303edeeff5974eb57d212234e174c628e00114d9c74",
+      "visiblePixels": 112,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_front.png",
+          "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_front.png",
+          "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "4c94f8ecf2d3e701cfc1b6c7369f1aadeb3e005106b12477259aaeb058b62b9d",
+      "visiblePixels": 119,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_back.png",
+          "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_back.png",
+          "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "ecfa669b1c8611fc08fa2bd858e9fd0df1da7c7578b3b08bf1b08a49c94930be",
+      "visiblePixels": 118,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_left.png",
+          "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_left.png",
+          "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "87080be93185c2c95df57a31b2e869f3546922e7e4efbad1257eaf747508dcec",
+      "visiblePixels": 116,
+      "alphaBoundingBox": [
+        4,
+        0,
+        14,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_right.png",
+          "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_right.png",
+          "sha256": "ce9fa8dd2a9b44066d149fd91bfd883ef1431da59f9daef9fc68cceab31666da"
+        }
+      ]
+    },
+    {
+      "role": "shaman_master",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/shaman_master/shaman_master_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "f5d1293986f09faf182622da637b72bb699777c293f6a686df72d0b10d33deb3",
+      "visiblePixels": 117,
+      "alphaBoundingBox": [
+        4,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_front.png",
+          "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_front.png",
+          "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5"
+        }
+      ]
+    },
+    {
+      "role": "shaman_master",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/shaman_master/shaman_master_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "2e1a06e20327858419048fce9ddb9ad0dd99de0a00ab9e2ca9b5a41d6e1d85e8",
+      "visiblePixels": 124,
+      "alphaBoundingBox": [
+        4,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_back.png",
+          "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_back.png",
+          "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5"
+        }
+      ]
+    },
+    {
+      "role": "shaman_master",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/shaman_master/shaman_master_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "9d0ba2a0bde5fc0b37d1e6c06a9a714aea2c53d6ca3b0cb5788f393e05102eaf",
+      "visiblePixels": 123,
+      "alphaBoundingBox": [
+        4,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_left.png",
+          "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_left.png",
+          "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5"
+        }
+      ]
+    },
+    {
+      "role": "shaman_master",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/shaman_master/shaman_master_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "70176f6bf6795bb116705e58e94f2d36c7f62031e4a79675821ecfcb11a2f7ad",
+      "visiblePixels": 122,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_right.png",
+          "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_right.png",
+          "sha256": "bb057702333fb8bd0f26a16b3ce5d6241f726faa8beef19b1988d53b233edc52"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "b0c8d32cc00c92f09911289493e611014739ff877aaba816fc5caac238809454",
+      "visiblePixels": 113,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_front.png",
+          "sha256": "974d0d1798322daf96c437269a4131e88605a6e5e9ec7114c6d7e6527a6c8562"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_front.png",
+          "sha256": "55b724770fb74ec31896c37edce3253139f3f6ef72cbbd9146e6cf571770a53b"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "6c38a6f6a22909ad27e843c843e597b4b0cb939ee0a9b58b75ea1610b4757ed2",
+      "visiblePixels": 115,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_back.png",
+          "sha256": "1ab3ebebcd682fb35fbd3cced2fc9fc0a8135f035609e3dbd8236fdfb601bcd9"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_back.png",
+          "sha256": "f726c81c2a2f07a33eb53280cb2f7209a8d0dcc3f923debfeb9b5f330b0c4d68"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "c1d062bea15cd4232e07c970356a4d82194fbc49187f7c28d9de4b6be326f06d",
+      "visiblePixels": 120,
+      "alphaBoundingBox": [
+        4,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_left.png",
+          "sha256": "88d067fc757baa6f4a7b33167be41a8bc6cbdbfe18efb2a2a4886a514a0817d6"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_left.png",
+          "sha256": "41d9527166ea9e0c3dcae98e11ede71398f636ab66c8fc871538f2f8c6e3f526"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "6a33db55f20ae28e9d016d7b053c7401e4c113c42a451ee555bec8b07613a21d",
+      "visiblePixels": 112,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_right.png",
+          "sha256": "64fcd0e2d8250af775cb32c0b44ac91ba8075516359e0581394522b9f45e91b0"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_right.png",
+          "sha256": "cf5062967688fc3983232224842c735f0027b42831c113de4e2a2299002a1442"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "f80858d98c173531eea9ef028e99e3eed9b05cf65549e86280d74e7aff34a840",
+      "visiblePixels": 183,
+      "alphaBoundingBox": [
+        0,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_front.png",
+          "sha256": "d86c10d0049b2293949008b5e6a9be8e7b4d0e37fcf8e5ce23767707cf3ef6c3"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_front.png",
+          "sha256": "5b3465e148305a25af00dfcc03f5b5cfd296d3fe22624db4e41d86343988fea1"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "ad900fd674c46743a8010973efa7748c0214450ff24beb4ef0bf7d855e35724e",
+      "visiblePixels": 155,
+      "alphaBoundingBox": [
+        1,
+        1,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_back.png",
+          "sha256": "1e91943ff65043cbeae89cd352457eb18ccb05000072eecf6d2245ac5f76017b"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_back.png",
+          "sha256": "978782d2e4527fa596bd677dfe080414e48cd5d6ebed6112b92aa4b672461e36"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "a2b16e3b883d680415e84cddf8fb9231ee9d6fe7165788a2d5cea007a2fe8d3e",
+      "visiblePixels": 171,
+      "alphaBoundingBox": [
+        1,
+        0,
+        15,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_left.png",
+          "sha256": "56b07c457c403999634577f6e8fe5c30e9f933dc4356dc0de2a8c2f36abd16bd"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_left.png",
+          "sha256": "8ce48ef6943792e72e32ac4822ca6a9a3b1edd5c6744b86eaedd52e73ccc46a5"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "565ac133496a0dcbaa02628bf4a731084ae072086e6613c91dfd18df3f53bbaa",
+      "visiblePixels": 164,
+      "alphaBoundingBox": [
+        1,
+        0,
+        14,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_right.png",
+          "sha256": "98d8b97d7cc12286f066fa61f6d7180b8bcf049a4d75741b06e58ed170241f70"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_right.png",
+          "sha256": "aa1d799cc3936ed71b0febc919c6e1d9f1e8179f8ff0f2d812cda7917e87d00c"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "38cc9ab48bec5d35826876ff3ac091fd019496e11dd211e1a62810d22d32f1c0",
+      "visiblePixels": 115,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_front.png",
+          "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_front.png",
+          "sha256": "bb1a96d90c38a24933d6bb26be709bc0a64877de6e85d928c775ae8f9eb94b20"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "c6c3e601eaa2eca14c3d86d258b43d26660f2e8de74a977367d2c9587956a025",
+      "visiblePixels": 122,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_back.png",
+          "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_back.png",
+          "sha256": "75e3ca65219a056f7a79639958029f96ab57c414b6f98f369d2e694e2104f171"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "2a6cabcb04cfbd5e3e7cfc67d8c2b077d5ed507f8b4a7d0e1012b57034916a72",
+      "visiblePixels": 121,
+      "alphaBoundingBox": [
+        1,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_left.png",
+          "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_left.png",
+          "sha256": "39f4c125229bf62678ea40d1a55a353a5d8d43ca87402f08494a043a0a8c0c2d"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "7e8c1da8903b6eb62bbb2728067978cae594c17c00698d2044df48e734d0c8bf",
+      "visiblePixels": 118,
+      "alphaBoundingBox": [
+        4,
+        0,
+        14,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_right.png",
+          "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_right.png",
+          "sha256": "8be90f3e913547e0bd042dd87bee81e1bc4e68c8df6b68343d6789287fbafe24"
+        }
+      ]
+    },
+    {
+      "role": "veteran_questgiver",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/veteran_questgiver/veteran_questgiver_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "14bdcbba6903f4a3724c3dd42f006340939c8af1b1d0af7ca227ba756600dada",
+      "visiblePixels": 101,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_front.png",
+          "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_front.png",
+          "sha256": "9889b03207a91fd4fb93fef064e20ddbdf4b074298118e20cc13d8e61c8be24a"
+        }
+      ]
+    },
+    {
+      "role": "veteran_questgiver",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/veteran_questgiver/veteran_questgiver_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "b6a75f1b6151f34bf8b8fc0e736d7ecb07d057ee25ec5273b10823506567631f",
+      "visiblePixels": 106,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_back.png",
+          "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_back.png",
+          "sha256": "22494cc49939f55b8db6bb0827f9e52be90820091d340f7f1c7ba7e9dc278bc6"
+        }
+      ]
+    },
+    {
+      "role": "veteran_questgiver",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/veteran_questgiver/veteran_questgiver_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "d1e40f95819fc55cc8e937d6dba590a054c060287a7afea67c573c7f88a6bba7",
+      "visiblePixels": 107,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_left.png",
+          "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_left.png",
+          "sha256": "7c372cc67b4d4d02fd0d1eda4990490f637d247aa5cc0143b0a2960787e147b9"
+        }
+      ]
+    },
+    {
+      "role": "veteran_questgiver",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/veteran_questgiver/veteran_questgiver_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "d67c67370d149b860ec39922dc4ecf473976c0a7dc28bf32ff31a21280d693ca",
+      "visiblePixels": 104,
+      "alphaBoundingBox": [
+        4,
+        0,
+        12,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Reconstruct complete native body and orientation from a valid supplied character family; remove clipped label/weapon/body fragments.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_right.png",
+          "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_right.png",
+          "sha256": "bb38b748a29d7c6af211ea90b10e291dc247e56088e75bf849a980235f04f102"
+        }
+      ]
+    },
+    {
+      "role": "enemy_warlock",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/enemy_warlock/enemy_warlock_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "2d124d1e4094a42cf440bd6388956f6e5d9e07f950566a9dda6c9b125208a365",
+      "visiblePixels": 145,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "opaqueColors": 8,
+      "binaryAlpha": true,
+      "reason": "Complete hooded front world pose from the provided hood silhouette; restore face, fel eyes and the full robe instead of a clipped column.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_left.png",
+          "sha256": "ea900739a276afa4bfda8cce236e8bc4e49e382c0ec03b15ab9ec3ed1b9c1ef5"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_front.png",
+          "sha256": "8579fed72c3561aed7c19cab57376aeb002d3f19822df4e8d571a877c219a806"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_front.png",
+          "sha256": "8eaf6ef725bb251ea8e73804dd675dce23a8ecaa8c42dbcbf4615bc6aab2b9a8"
+        }
+      ]
+    },
+    {
+      "role": "sarkoth",
+      "pose": "world_front",
+      "path": "references/generated/user_npc_completion_v0211/sarkoth/sarkoth_world_front.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "74168f41f26b124db1ea78f290382a1279ee6e0c5cc439e3e65316012d1f60cc",
+      "visiblePixels": 126,
+      "alphaBoundingBox": [
+        2,
+        1,
+        14,
+        16
+      ],
+      "opaqueColors": 7,
+      "binaryAlpha": true,
+      "reason": "The uploaded Sarkoth world PNGs are text-label fragments; native scorpion claws/tail are reconstructed from the valid supplied Scorpid family with Sarkoth purple and amber armor.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_front.png",
+          "sha256": "e7f57a1972ac2b75b634a2ea2bce8a3ce5b72c5e5db9970c80a96afd438d48a4"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png",
+          "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_front.png",
+          "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543"
+        }
+      ]
+    },
+    {
+      "role": "sarkoth",
+      "pose": "world_back",
+      "path": "references/generated/user_npc_completion_v0211/sarkoth/sarkoth_world_back.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "af837b3711b7bd051d67ffff259d4ea56d1c9bc8ccdee1bae40df2ac73a50387",
+      "visiblePixels": 139,
+      "alphaBoundingBox": [
+        2,
+        0,
+        14,
+        16
+      ],
+      "opaqueColors": 6,
+      "binaryAlpha": true,
+      "reason": "The uploaded Sarkoth world PNGs are text-label fragments; native scorpion claws/tail are reconstructed from the valid supplied Scorpid family with Sarkoth purple and amber armor.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_back.png",
+          "sha256": "41a2100e38c86bca9b3d3692c1cfc39ca0c442b0e138ca5554d094808d5491ac"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png",
+          "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_back.png",
+          "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543"
+        }
+      ]
+    },
+    {
+      "role": "sarkoth",
+      "pose": "world_left",
+      "path": "references/generated/user_npc_completion_v0211/sarkoth/sarkoth_world_left.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "9d38b967fd3aa451c1c184b52b37f4d1c61e68cbee840398d3d4b32267bb4189",
+      "visiblePixels": 129,
+      "alphaBoundingBox": [
+        2,
+        1,
+        14,
+        16
+      ],
+      "opaqueColors": 6,
+      "binaryAlpha": true,
+      "reason": "The uploaded Sarkoth world PNGs are text-label fragments; native scorpion claws/tail are reconstructed from the valid supplied Scorpid family with Sarkoth purple and amber armor.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_left.png",
+          "sha256": "73bb6bcb46d61a7ee5a4790dc4762b50844f0872bdd00fc043d0469c217b538f"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png",
+          "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_left.png",
+          "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543"
+        }
+      ]
+    },
+    {
+      "role": "sarkoth",
+      "pose": "world_right",
+      "path": "references/generated/user_npc_completion_v0211/sarkoth/sarkoth_world_right.png",
+      "width": 16,
+      "height": 16,
+      "sha256": "5de31e673ffbbad8833218d7609308e66999644546a9a73fe6f9fc13440fd7a9",
+      "visiblePixels": 128,
+      "alphaBoundingBox": [
+        2,
+        1,
+        14,
+        16
+      ],
+      "opaqueColors": 6,
+      "binaryAlpha": true,
+      "reason": "The uploaded Sarkoth world PNGs are text-label fragments; native scorpion claws/tail are reconstructed from the valid supplied Scorpid family with Sarkoth purple and amber armor.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_right.png",
+          "sha256": "5da7221b06a243cfeaca8ced97e5012cdd131a1011b3bea088a4257da1912435"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png",
+          "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_right.png",
+          "sha256": "28d8210a52a5faaf31bb38f1bd6721bd0ad1d3b1dd95ab878276c290e3c5cff7"
+        }
+      ]
+    },
+    {
+      "role": "quest_peon",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "03143b5fe8b4d0db0ec270867209f01f995e8f31e29621853f5d7e5228260bc8",
+      "visiblePixels": 1666,
+      "alphaBoundingBox": [
+        7,
+        0,
+        48,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_front.png",
+          "sha256": "7aaaa9a6ebef0147d7b9067501e37419ede356367a1d967745e2ccb8bea0f7f0"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_combat_front.png",
+          "sha256": "3f8ed258fd3704cb4a17b117d99868138ea8fd79d961c99c2ee48cb4a01b8217"
+        }
+      ]
+    },
+    {
+      "role": "peon_worker",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/peon_worker/peon_worker_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "8d9d8bdc7d3b2bda7b857d584725cc79f2eac1b9f451891e77a6a4b258d9d602",
+      "visiblePixels": 1707,
+      "alphaBoundingBox": [
+        3,
+        0,
+        47,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_front.png",
+          "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_combat_front.png",
+          "sha256": "9ea8ec5e55ab1ee27dd0ca0afa5dad11c9a495dd38606bb3310ba08bfcd91267"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "b73c43f1b44d21327bd2dd567af29f62f7144b4a9cd0c53df2843b11bf76fba4",
+      "visiblePixels": 1796,
+      "alphaBoundingBox": [
+        0,
+        1,
+        47,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_front.png",
+          "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_combat_front.png",
+          "sha256": "844d6a4034f8f1ccbaedc2e04ba0befc7cbdd3e7b9a3e6c1d754d5d48ee7b06c"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "046063833aed27f78990627dc74ce9d6d8b8d00b1404d9fc25e888bc757f1d31",
+      "visiblePixels": 1859,
+      "alphaBoundingBox": [
+        0,
+        1,
+        49,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_front.png",
+          "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_combat_front.png",
+          "sha256": "a527d356c0830e6ac05301dc79a588db3bd16acb9a324d7e16a7e3c8f23a41ab"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "2f8b44e5644af08fb58d3d8f9d60a2552a6fced5aed7026d31bfa851f5a69d25",
+      "visiblePixels": 1554,
+      "alphaBoundingBox": [
+        3,
+        0,
+        44,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_front.png",
+          "sha256": "b3e61ad949fcf78b23cd6df2d3ceba84df2dc0687321860a84a1f048339d785f"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_combat_front.png",
+          "sha256": "ff989e9a2e39d1c0af671a1e4baa1fd83fbc532bb59402fb370b55286d56e105"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "08630f4930c0f1084498a1bd48f9185ec40dc8299dbb2f3e867a321e228ea19c",
+      "visiblePixels": 1471,
+      "alphaBoundingBox": [
+        13,
+        0,
+        52,
+        56
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Rebuild a full 56x56 combat silhouette from valid supplied Orc/Troll body pixels and role equipment; replace text labels, isolated weapons or multiple clipped characters.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_front.png",
+          "sha256": "b3e61ad949fcf78b23cd6df2d3ceba84df2dc0687321860a84a1f048339d785f"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_combat_front.png",
+          "sha256": "c31bf4b98c5f1e06c1c04938c0b29105fbd8beb3c669e98a5a52046afb49091b"
+        }
+      ]
+    },
+    {
+      "role": "quest_peon",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/quest_peon/quest_peon_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "59f69e2a44ea791385ed809a918499e3450a1db4b95d64498d61c8d0234a627b",
+      "visiblePixels": 1238,
+      "alphaBoundingBox": [
+        6,
+        0,
+        41,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_back.png",
+          "sha256": "fb08c073df891ef3aff1bc3b694fab3be3eb91842221690bfceb98b4c06bb33b"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_combat_back.png",
+          "sha256": "29b9ef1d4798981c78e7995b91d2ea1f8c2d74e68b2e454c591fd398f46f7b9a"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_combat_front.png",
+          "sha256": "3f8ed258fd3704cb4a17b117d99868138ea8fd79d961c99c2ee48cb4a01b8217"
+        }
+      ]
+    },
+    {
+      "role": "peon_worker",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/peon_worker/peon_worker_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "3894080f4a4737a953417b6530f944d39a416ff57b99d4ed0ccf323a8e6da232",
+      "visiblePixels": 1222,
+      "alphaBoundingBox": [
+        7,
+        0,
+        47,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png",
+          "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_combat_back.png",
+          "sha256": "817beec09aae4559a66a60a42675614d3cc4110f99260d4848b6f90493112ea8"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_combat_front.png",
+          "sha256": "9ea8ec5e55ab1ee27dd0ca0afa5dad11c9a495dd38606bb3310ba08bfcd91267"
+        }
+      ]
+    },
+    {
+      "role": "camp_guard",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/camp_guard/camp_guard_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "f82f8c24dc0b02e864220da3cd1a882da90afdc1538eeb08f0c21381b39f634f",
+      "visiblePixels": 1333,
+      "alphaBoundingBox": [
+        7,
+        0,
+        47,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png",
+          "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_combat_back.png",
+          "sha256": "9cd1b618903bfc0cfb2e9269562672ef493c7b323c5f6cb0e61f5d1d0aac9369"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_combat_front.png",
+          "sha256": "844d6a4034f8f1ccbaedc2e04ba0befc7cbdd3e7b9a3e6c1d754d5d48ee7b06c"
+        }
+      ]
+    },
+    {
+      "role": "warrior_trainer",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/warrior_trainer/warrior_trainer_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "f82f8c24dc0b02e864220da3cd1a882da90afdc1538eeb08f0c21381b39f634f",
+      "visiblePixels": 1333,
+      "alphaBoundingBox": [
+        7,
+        0,
+        47,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png",
+          "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_combat_back.png",
+          "sha256": "8885cfde38029647cd6e98d2f26dfb6275b65b897bd9b1c16b8befb7c5da0cda"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_combat_front.png",
+          "sha256": "a527d356c0830e6ac05301dc79a588db3bd16acb9a324d7e16a7e3c8f23a41ab"
+        }
+      ]
+    },
+    {
+      "role": "veteran_questgiver",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/veteran_questgiver/veteran_questgiver_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "e56ef55ce159dd7a5f51960c2ff5b42439c4d0f38e360b55e02bafd11d1e7e8c",
+      "visiblePixels": 1173,
+      "alphaBoundingBox": [
+        7,
+        0,
+        40,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png",
+          "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_combat_back.png",
+          "sha256": "03659850d75b64cdfa6a8378883a5cc845c32aa3e8b5a3f9592cb3ffc10fc982"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_combat_front.png",
+          "sha256": "4c538aea7d0e3b61cc3e8f6ddf89de83da795a6814a2655335f13b78db7d2e01"
+        }
+      ]
+    },
+    {
+      "role": "shaman_master",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/shaman_master/shaman_master_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "e529e5f970f2fc2d0943f2156de105dc4b25bcd17bd7b80fac04a173047eef2a",
+      "visiblePixels": 1255,
+      "alphaBoundingBox": [
+        7,
+        0,
+        43,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png",
+          "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_combat_back.png",
+          "sha256": "febc232d02cfce86e52f6c253bc8cf7da52e6ff6390c40f85cb772f5942ca623"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_combat_front.png",
+          "sha256": "c386d7aae14d239425e014dc6a8dff07a8a9f8cf687df370e603784a2324ec3f"
+        }
+      ]
+    },
+    {
+      "role": "senjin_chief",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/senjin_chief/senjin_chief_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "f76e10b873fe8b567de1c27dd989717cb9890d63a9b1e60d481f43700957e41b",
+      "visiblePixels": 1134,
+      "alphaBoundingBox": [
+        11,
+        0,
+        44,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_back.png",
+          "sha256": "57c383ed3300c8628fa78417e1614dcbfb05867a1025af9d218b1cac1c555ca7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_combat_back.png",
+          "sha256": "7cd0a4b9f7c43bc830158485b6604f54c2dc13be6807181ace2388db9ca684fd"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_combat_front.png",
+          "sha256": "ff989e9a2e39d1c0af671a1e4baa1fd83fbc532bb59402fb370b55286d56e105"
+        }
+      ]
+    },
+    {
+      "role": "senjin_troll_shaman",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/senjin_troll_shaman/senjin_troll_shaman_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "bc55432f011e9d6d365936c71a789afa7e445d4a897b5c52951600bca489de40",
+      "visiblePixels": 1070,
+      "alphaBoundingBox": [
+        11,
+        0,
+        44,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Author complete 48x48 rear anatomy, hair crest, back and harness on supplied full-body silhouette; remove clipped text, duplicated frontal characters and false rear facial features.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_back.png",
+          "sha256": "57c383ed3300c8628fa78417e1614dcbfb05867a1025af9d218b1cac1c555ca7"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_combat_back.png",
+          "sha256": "746bc065fe11c22115ef121439f96cc99241fd95d277416c18a93588ada26d27"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_combat_front.png",
+          "sha256": "c31bf4b98c5f1e06c1c04938c0b29105fbd8beb3c669e98a5a52046afb49091b"
+        }
+      ]
+    },
+    {
+      "role": "imp",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "9c2228b88931e8cfd10d6b3a5e495c9460e307f5ba433219a53dc9f3c732609b",
+      "visiblePixels": 1345,
+      "alphaBoundingBox": [
+        4,
+        0,
+        45,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "The controllable Imp requires a genuine rear battle pose: native red winged silhouette, rear cranium/horns/ears, back spine and curled tail with no frontal face; extra poses keep the feet/canvas fixed.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_front.png",
+          "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_back.png",
+          "sha256": "8a0f776188b9d8bb16c8e9d2c927fb05d84bdd978a0ad65dfa9b44a9fed7982b"
+        }
+      ]
+    },
+    {
+      "role": "imp",
+      "pose": "combat_back_idle",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_idle.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "72c7de3145eaba41d55b1c598c2f34f663fb826f210cd6c0608f5b3b5bb01ce5",
+      "visiblePixels": 1359,
+      "alphaBoundingBox": [
+        4,
+        0,
+        45,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "The controllable Imp requires a genuine rear battle pose: native red winged silhouette, rear cranium/horns/ears, back spine and curled tail with no frontal face; extra poses keep the feet/canvas fixed.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_front.png",
+          "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_back.png",
+          "sha256": "8a0f776188b9d8bb16c8e9d2c927fb05d84bdd978a0ad65dfa9b44a9fed7982b"
+        }
+      ]
+    },
+    {
+      "role": "imp",
+      "pose": "combat_back_cast",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_cast.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "77e4855ef771615f502287e8cd698116fe47bd991b07fb730fede57d4f0c3628",
+      "visiblePixels": 1362,
+      "alphaBoundingBox": [
+        4,
+        0,
+        45,
+        48
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "The controllable Imp requires a genuine rear battle pose: native red winged silhouette, rear cranium/horns/ears, back spine and curled tail with no frontal face; extra poses keep the feet/canvas fixed.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_front.png",
+          "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_back.png",
+          "sha256": "8a0f776188b9d8bb16c8e9d2c927fb05d84bdd978a0ad65dfa9b44a9fed7982b"
+        }
+      ]
+    },
+    {
+      "role": "enemy_warlock",
+      "pose": "combat_front",
+      "path": "references/generated/user_npc_completion_v0211/enemy_warlock/enemy_warlock_combat_front.png",
+      "width": 56,
+      "height": 56,
+      "sha256": "a34768b597e0c055b2d5349820df52e9ebd504839d09d399f40e3e4a3871d1bf",
+      "visiblePixels": 1909,
+      "alphaBoundingBox": [
+        2,
+        0,
+        52,
+        55
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Correct switched pose labels and complete the truncated frontal source. Full native 56x56 supplied hood/robe/staff silhouette retains its hem; actual frontal green face, knife/hand and front clasps are transplanted on the native grid, with a joined robe fold. No resize or small floating face.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_back.png",
+          "sha256": "92909586e573e1bfb08945339d8bfb6f867c1382fddcbf25844d82b14abddf57"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_front.png",
+          "sha256": "8579fed72c3561aed7c19cab57376aeb002d3f19822df4e8d571a877c219a806"
+        }
+      ]
+    },
+    {
+      "role": "enemy_warlock",
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/enemy_warlock/enemy_warlock_combat_back.png",
+      "width": 48,
+      "height": 48,
+      "sha256": "5217f403fedade0698d0df4bcb091faa0f009a6e58d3dc7a47059835fb0ebd3b",
+      "visiblePixels": 1604,
+      "alphaBoundingBox": [
+        0,
+        0,
+        48,
+        47
+      ],
+      "opaqueColors": 16,
+      "binaryAlpha": true,
+      "reason": "Correct switched pose labels. Rear hood silhouette, collar, full robe hem and staff are retained from the supplied 56x56 rear. Eight mid-robe rows are joined on the native grid to fit 48x48, with repaired fold seam; no resize.",
+      "sourceParents": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_front.png",
+          "sha256": "8579fed72c3561aed7c19cab57376aeb002d3f19822df4e8d571a877c219a806"
+        },
+        {
+          "path": "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_back.png",
+          "sha256": "92909586e573e1bfb08945339d8bfb6f867c1382fddcbf25844d82b14abddf57"
+        }
+      ]
+    }
+  ],
+  "contactSheet": {
+    "path": "references/generated/user_npc_completion_v0211/completion_contact_sheet.png",
+    "preview4x": "references/generated/user_npc_completion_v0211/completion_contact_sheet_4x.png",
+    "rows": [
+      "quest_peon",
+      "peon_worker",
+      "camp_guard",
+      "shaman_master",
+      "senjin_chief",
+      "senjin_troll_shaman",
+      "warrior_trainer",
+      "veteran_questgiver",
+      "enemy_warlock",
+      "sarkoth",
+      "imp"
+    ],
+    "layout": [
+      {
+        "role": "quest_peon",
+        "pose": "world_front",
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "quest_peon",
+        "pose": "world_back",
+        "x": 22,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "quest_peon",
+        "pose": "world_left",
+        "x": 44,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "quest_peon",
+        "pose": "world_right",
+        "x": 66,
+        "y": 0,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "quest_peon",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 0,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "quest_peon",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 0,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "peon_worker",
+        "pose": "world_front",
+        "x": 0,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "peon_worker",
+        "pose": "world_back",
+        "x": 22,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "peon_worker",
+        "pose": "world_left",
+        "x": 44,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "peon_worker",
+        "pose": "world_right",
+        "x": 66,
+        "y": 64,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "peon_worker",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 64,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "peon_worker",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 64,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "world_front",
+        "x": 0,
+        "y": 128,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "world_back",
+        "x": 22,
+        "y": 128,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "world_left",
+        "x": 44,
+        "y": 128,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "world_right",
+        "x": 66,
+        "y": 128,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 128,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "camp_guard",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 128,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "shaman_master",
+        "pose": "world_front",
+        "x": 0,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "shaman_master",
+        "pose": "world_back",
+        "x": 22,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "shaman_master",
+        "pose": "world_left",
+        "x": 44,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "shaman_master",
+        "pose": "world_right",
+        "x": 66,
+        "y": 192,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "shaman_master",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 192,
+        "width": 56,
+        "height": 56,
+        "derived": false
+      },
+      {
+        "role": "shaman_master",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 192,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "world_front",
+        "x": 0,
+        "y": 256,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "world_back",
+        "x": 22,
+        "y": 256,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "world_left",
+        "x": 44,
+        "y": 256,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "world_right",
+        "x": 66,
+        "y": 256,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 256,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "senjin_chief",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 256,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "world_front",
+        "x": 0,
+        "y": 320,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "world_back",
+        "x": 22,
+        "y": 320,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "world_left",
+        "x": 44,
+        "y": 320,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "world_right",
+        "x": 66,
+        "y": 320,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 320,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "senjin_troll_shaman",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 320,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "world_front",
+        "x": 0,
+        "y": 384,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "world_back",
+        "x": 22,
+        "y": 384,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "world_left",
+        "x": 44,
+        "y": 384,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "world_right",
+        "x": 66,
+        "y": 384,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 384,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "warrior_trainer",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 384,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "world_front",
+        "x": 0,
+        "y": 448,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "world_back",
+        "x": 22,
+        "y": 448,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "world_left",
+        "x": 44,
+        "y": 448,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "world_right",
+        "x": 66,
+        "y": 448,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 448,
+        "width": 56,
+        "height": 56,
+        "derived": false
+      },
+      {
+        "role": "veteran_questgiver",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 448,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "world_front",
+        "x": 0,
+        "y": 512,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "world_back",
+        "x": 22,
+        "y": 512,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "world_left",
+        "x": 44,
+        "y": 512,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "world_right",
+        "x": 66,
+        "y": 512,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 512,
+        "width": 56,
+        "height": 56,
+        "derived": true
+      },
+      {
+        "role": "enemy_warlock",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 512,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      },
+      {
+        "role": "sarkoth",
+        "pose": "world_front",
+        "x": 0,
+        "y": 576,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "sarkoth",
+        "pose": "world_back",
+        "x": 22,
+        "y": 576,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "sarkoth",
+        "pose": "world_left",
+        "x": 44,
+        "y": 576,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "sarkoth",
+        "pose": "world_right",
+        "x": 66,
+        "y": 576,
+        "width": 16,
+        "height": 16,
+        "derived": true
+      },
+      {
+        "role": "sarkoth",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 576,
+        "width": 56,
+        "height": 56,
+        "derived": false
+      },
+      {
+        "role": "sarkoth",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 576,
+        "width": 48,
+        "height": 48,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "world_front",
+        "x": 0,
+        "y": 640,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "world_back",
+        "x": 22,
+        "y": 640,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "world_left",
+        "x": 44,
+        "y": 640,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "world_right",
+        "x": 66,
+        "y": 640,
+        "width": 16,
+        "height": 16,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "combat_front",
+        "x": 88,
+        "y": 640,
+        "width": 56,
+        "height": 56,
+        "derived": false
+      },
+      {
+        "role": "imp",
+        "pose": "combat_back",
+        "x": 150,
+        "y": 640,
+        "width": 48,
+        "height": 48,
+        "derived": true
+      }
+    ]
+  }
+}

@@ -1,6 +1,24 @@
 # Peon of Warcraft — Durotar prototype
 
-[Latest ROM — v0.2.10](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.10/peon_of_warcraft_v0_2_10.gbc) · [ROM and EXIT test reports](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.10/peon_of_warcraft_v0_2_10.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.10/peon_of_warcraft_v0_2_10_player.zip)
+[Latest ROM — v0.2.11](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.gbc) · [ROM and native validation](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.zip) · [PNG sources, completed sprites and real captures](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/references/generated/user_art_v0211_pack/peon_png_sources_and_completions_v0_2_11.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.11/peon_of_warcraft_v0_2_11_player.zip)
+
+The supplied character PNGs and Durotar scenery are now imported into the actual
+ROM. Missing player variants and damaged crops are completed separately, with
+original files preserved. World sprites are 16×16; combat fronts 56×56 and
+backs 48×48. All three player classes have distinct rear combat poses.
+
+The supplied Razor Hill inn model covers the nine enterable buildings and two
+closed guard lodges. Five room layouts reuse its native interior tiles. Roofs
+render in front of actors; body walls, existing door routes and old-save safe
+landings are checked. Compact resource/cost text keeps the entire combat sprite
+visible during move selection. Three native class routes, all nine doors,
+SAVE/EXIT/Continue, an actual old-save relocation and browser playback pass on
+the packaged ROM. Physical Chromatic/DevDay hardware remains untested.
+
+See [import details and reproducible build](docs/USER_ART_V0211.md) and
+[the source/actual-ROM gallery](references/generated/user_art_v0211_pack/index.html).
+
+[Previous ROM — v0.2.10](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.10/peon_of_warcraft_v0_2_10.gbc) · [ROM and EXIT test reports](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.10/peon_of_warcraft_v0_2_10.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.10/peon_of_warcraft_v0_2_10_player.zip)
 
 Selecting **EXIT** now returns to the Peon title screen. Release the confirmation
 button, then press **START** to open character selection and Continue from the
@@ -8,12 +26,6 @@ last native SAVE. B still closes the menu. Saved progress is preserved; EXIT
 does not create a new save. All three classes pass the native and browser
 return/reload checks, including a held confirmation button.
 See [the change and checks](docs/V0_2_10_EXIT_TO_TITLE.md).
-
-[New Peon PNGs and class-master proposals](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/references/generated/peon_sprite_redesign_v030/peon_sprite_redesign_v030_assets.zip)
-contains four Peon variants, each with four transparent 16×16 world poses,
-56×56 combat front and 48×48 rear, plus three 160×144 class-master selection
-proposals. Open the extracted `index.html` to inspect them. This art pack is
-separate from the ROM; palette mapping and game integration are pending.
 
 [Previous ROM — v0.2.9](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9.gbc) · [ROM + verified reports](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9.zip) · [v0.2.9 PNG, animations and gallery](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.9/peon_of_warcraft_v0_2_9_assets.zip) · [Browser player v0.2.9](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.9/peon_of_warcraft_v0_2_9_player.zip)
 

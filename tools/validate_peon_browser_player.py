@@ -99,9 +99,21 @@ class BrowserSession:
         self.char = {m[1]: int(m[2], 16) for m in re.finditer(
             r'charmap\s+"([^"\n]+)",\s+\$([0-9a-f]+)',
             (ROOT / "constants/charmap.asm").read_text())}
-        self.collisions = [row.split("tilecoll", 1)[1].split(";", 1)[0].replace(" ", "").split(",")
-                           for row in (ROOT / "data/tilesets/peon_collision.asm").read_text().splitlines()
-                           if "tilecoll" in row]
+        if "PeonSelectUserEnvironmentV0211" in self.sym:
+            # This route stays in The Den (map14). Its imported facade aliases
+            # use a map-local table whose IDs extend beyond the legacy67 rows.
+            collision_source = ROOT / "gfx/tilesets/peon_user_environment_v0211/TheDen_coll.asm"
+            self.collisions = [
+                [value.strip() for value in match.group(1).split(",")]
+                for match in re.finditer(r"^\s*peon_user_tilecoll\s+([^;\n]+)",
+                                         collision_source.read_text(), re.M)
+            ]
+            assert self.collisions and all(len(row) == 4 for row in self.collisions), \
+                ("invalid imported The Den collision table", str(collision_source))
+        else:
+            self.collisions = [row.split("tilecoll", 1)[1].split(";", 1)[0].replace(" ", "").split(",")
+                               for row in (ROOT / "data/tilesets/peon_collision.asm").read_text().splitlines()
+                               if "tilecoll" in row]
         self.frames = 0
         self.buttons = []
 

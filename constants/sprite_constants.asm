@@ -106,6 +106,7 @@
 	const SPRITE_STANDING_YOUNGSTER ; 66
 	const SPRITE_PEON_MAILBOX ; 67, append-only scenery actor
 	const SPRITE_PEON_FRIENDLY_IMP ; 68, smaller companion; hostile imp is unchanged
+	const SPRITE_PEON_WORKER ; 69, append-only independent supplied worker views
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

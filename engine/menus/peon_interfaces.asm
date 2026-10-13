@@ -523,6 +523,7 @@ PeonCharacterSheet:
 	call PlaceString
 	call WaitBGMap
 	call UpdateTimePals
+	farcall PeonApplyUserProfileArtV0211
 	farcall PeonCharacterTeamInputV029
 	jp c, PeonCharacterSheet
 	ret

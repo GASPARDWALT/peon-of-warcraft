@@ -116,6 +116,7 @@ _CGB_BattleColors:
 _CGB_FinishBattleScreenLayout:
 	call InitPartyMenuBGPal7
 	farcall PeonBattleTextStyleAttributes
+	farcall PeonApplyBattleUserArtV0211
 	ld hl, BattleObjectPals
 	ld de, wOBPals1 palette PAL_BATTLE_OB_GRAY
 	ld bc, 6 palettes
@@ -216,6 +217,7 @@ _CGB_StatsScreenHPPals:
 	ld a, $5 ; blue page palette
 	call FillBoxCGB
 
+	farcall PeonApplyUserStatsArtV0211
 	call ApplyAttrmap
 	call ApplyPals
 	ld a, TRUE

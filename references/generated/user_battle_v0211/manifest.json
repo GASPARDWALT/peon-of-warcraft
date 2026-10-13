@@ -1,0 +1,2149 @@
+{
+  "version": "v0.2.11",
+  "source_pngs_preserved": true,
+  "resized": false,
+  "scope": "Hardware conversion only; geometry/alpha intact, source materials fitted to regional RGB555 palettes.",
+  "battle_palette_reservations": {
+    "player": [
+      0,
+      6
+    ],
+    "enemy": [
+      1,
+      5
+    ],
+    "hp": [
+      2,
+      3
+    ],
+    "exp": 4,
+    "rank": 5,
+    "pet_totem": 6,
+    "font": 7
+  },
+  "enemy_static_canonical_note": "No invented enemy motion; native timing and spell/impact animations retained.",
+  "records": [
+    {
+      "name": "base/back",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/base/combat_back.png",
+          "sha256": "6428420e8bcb2c1d4096c24c2de56ecda74a698b68e6d532423252b24eed246b"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_back_idle_1.png",
+          "sha256": "3ef3659ddce595f5c0400c5137ab2e9342b2ed72dc664e9f3311f0089db8a005"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_back_idle_2.png",
+          "sha256": "a31715a6e1010c65241e9a5baf85c84279597b19c8e2e1da357f88ae9ab3a04a"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            24,
+            17,
+            9
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "d596f2a904a0f4c9dc0fc4dabd5014ec612251cfb6e661fe8b521091adc463f2",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "base/front",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/base/combat_front.png",
+          "sha256": "7e38cdbecb391f88475a271ccc746572da5e49b4bcc9f06545cb5c62a5e1de8c"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_front_idle_1.png",
+          "sha256": "1b65bd59dd140034ffde540a9eef0e28b90743a2de9195d82d941514b123a2fc"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_front_idle_2.png",
+          "sha256": "8e12445e8ffa12041ae5182b28ae50664211eb529f2589fc592cd65bb714c9df"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            24,
+            17,
+            9
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "9c192e3116320503f7e9e5aace0e97f91f65fbd50654d85ffbe6769f97d9a4ec",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "base/profile",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/base/combat_front.png",
+          "sha256": "7e38cdbecb391f88475a271ccc746572da5e49b4bcc9f06545cb5c62a5e1de8c"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_front_idle_1.png",
+          "sha256": "1b65bd59dd140034ffde540a9eef0e28b90743a2de9195d82d941514b123a2fc"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_front_idle_2.png",
+          "sha256": "8e12445e8ffa12041ae5182b28ae50664211eb529f2589fc592cd65bb714c9df"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            24,
+            26,
+            14
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            6,
+            3
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            24,
+            26,
+            14
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "4b43df0affb6b065f790631085411672b11a040933c7fbc972cc38168d44057c",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        29,
+        23
+      ]
+    },
+    {
+      "name": "shaman/back",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/shaman/combat_back.png",
+          "sha256": "df5a2476142cae4e272b761608a83f8238f2dcf5134475e7b29c271df4074535"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_back_idle_1.png",
+          "sha256": "209f6842c2bb5a0116f89d765c24c409748d4f4406cf38d5396cba78793590dc"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_back_idle_2.png",
+          "sha256": "a0ca7c4b205e725b949744e20dabfa2638fac804441ae3fa0a6cafc5afd44bee"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            15,
+            17,
+            18
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            7
+          ],
+          [
+            8,
+            17,
+            6
+          ],
+          [
+            3,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "3eac3300541d55eedfb0c9326753e9266c96e32c294b126cc9d288d6448c87ea",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "shaman/front",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/shaman/combat_front.png",
+          "sha256": "8464934338e995d7dd66838449161787553081147c5178133acb35a47b915042"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_front_idle_1.png",
+          "sha256": "9d06624b9f20f9e43ef94fa0c66c88c138c95b1daacc5c2d06ff4cec7d45b209"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_front_idle_2.png",
+          "sha256": "3ad87df56b307e74e1476807c12c1073a6d73dce5d4fe40366273926396f550e"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            15,
+            17,
+            18
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            15,
+            7
+          ],
+          [
+            8,
+            17,
+            6
+          ],
+          [
+            3,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "1c7b0f464c46452be4fb0da0520b950ecbb2bc5ca67e268d15318668083f8a9d",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "shaman/profile",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/shaman/combat_front.png",
+          "sha256": "8464934338e995d7dd66838449161787553081147c5178133acb35a47b915042"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_front_idle_1.png",
+          "sha256": "9d06624b9f20f9e43ef94fa0c66c88c138c95b1daacc5c2d06ff4cec7d45b209"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/shaman/combat_front_idle_2.png",
+          "sha256": "3ad87df56b307e74e1476807c12c1073a6d73dce5d4fe40366273926396f550e"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            24,
+            26,
+            14
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            6,
+            3
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            24,
+            26,
+            14
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "f8e23935d36084fb3eff08b3549a04310b43490676608d4469cdacd693f25afc",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        29,
+        23
+      ]
+    },
+    {
+      "name": "warrior/back",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warrior/combat_back.png",
+          "sha256": "bfeb5a3e534a656672598a4684fa06d539dd797ab14efb58c1ab29b6b4cca718"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_back_idle_1.png",
+          "sha256": "3d14d63eee7b3711ce50cd7789512d0024b8ee3282b2712e8873ebeb1de9bc80"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_back_idle_2.png",
+          "sha256": "199de040c48f8e4ec5645b6d26d844f5016988706db0871a39352b96874a8921"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            17,
+            18
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "a4b1e00f6a0055b1a86b8cd09c9ca7e69d72f4ff469140beb7b662047d9afe36",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "warrior/front",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warrior/combat_front.png",
+          "sha256": "3c4fc213bb26eeff0d6eafc15192c15a72065d751d863ccd23f6d52e5957aac4"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_front_idle_1.png",
+          "sha256": "6a56468d62767d0f7c8f6559bb62c893ffd898c40b31155f0fc4c8936b4eccd8"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_front_idle_2.png",
+          "sha256": "a9b5d6fd3e6fdd5b65a5d8fcdc70c51e9262f54dcfb30fb1751eab59a0985225"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            17,
+            18
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "d5d1b174dc317df1f40ebf9b4a1e951da4281d5a3c38028c8469ac1228d34d8a",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "warrior/profile",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warrior/combat_front.png",
+          "sha256": "3c4fc213bb26eeff0d6eafc15192c15a72065d751d863ccd23f6d52e5957aac4"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_front_idle_1.png",
+          "sha256": "6a56468d62767d0f7c8f6559bb62c893ffd898c40b31155f0fc4c8936b4eccd8"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warrior/combat_front_idle_2.png",
+          "sha256": "a9b5d6fd3e6fdd5b65a5d8fcdc70c51e9262f54dcfb30fb1751eab59a0985225"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            24,
+            24,
+            23
+          ],
+          [
+            15,
+            17,
+            18
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            24,
+            17,
+            9
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "bd0c6a93c8b2a1a9fea19afdbfb855d47dcc899f381c647676fbf7e9a3273f54",
+      "opaque_colors": 7,
+      "transparent_bg_paper_rgb555": [
+        31,
+        29,
+        23
+      ]
+    },
+    {
+      "name": "warlock/back",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warlock/combat_back.png",
+          "sha256": "0e9a87fdcc4d727cda1faab0333b9947cfa4fefd35e3cfd0069eab1842bdd564"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_back_idle_1.png",
+          "sha256": "e3ef7da9798dcff1a693485cd0e604d1fc757dfd04939488f22d3d9032317289"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_back_idle_2.png",
+          "sha256": "4632b2cbff8fd356e23ee76547c2fb545879864f014ca11eac8147fad4bbb919"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            16,
+            11,
+            17
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            20,
+            5
+          ],
+          [
+            26,
+            5,
+            4
+          ],
+          [
+            4,
+            2,
+            3
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "9c847e9b738d9ed4e29bd978fb2d51d2c5809942c21ef38f8389b4aa38ebea34",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "warlock/front",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warlock/combat_front.png",
+          "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_front_idle_1.png",
+          "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_front_idle_2.png",
+          "sha256": "027fb3d8e75253397daf9029670ab26e9289c0b888e7a0f1ab927f7420a243ed"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            16,
+            11,
+            17
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            20,
+            5
+          ],
+          [
+            26,
+            5,
+            4
+          ],
+          [
+            4,
+            2,
+            3
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "c999b357f8b3bc2fe642c2f60c0ed4f4a720206ce8a0c346cfc487441593e991",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "warlock/profile",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/warlock/combat_front.png",
+          "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_front_idle_1.png",
+          "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/warlock/combat_front_idle_2.png",
+          "sha256": "027fb3d8e75253397daf9029670ab26e9289c0b888e7a0f1ab927f7420a243ed"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            24,
+            17,
+            9
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            8,
+            5,
+            9
+          ],
+          [
+            16,
+            11,
+            17
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            19,
+            24,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            8,
+            5,
+            9
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "e27055f6234a893d05e2ba30454583e3f6eccf0df4fa49cbb5f9c4d2b67850be",
+      "opaque_colors": 7,
+      "transparent_bg_paper_rgb555": [
+        31,
+        29,
+        23
+      ]
+    },
+    {
+      "name": "enemies/rattata",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/boar/boar_combat_front.png",
+          "sha256": "1b54f46188575e50e3359730db3083ed6c34fda1f83f7f3560f29fb3449d3cc3"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            7,
+            4
+          ],
+          [
+            23,
+            17,
+            13
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            27,
+            23,
+            19
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "33aba764d686dd9541a5f0306f0d38352db9d5557fd23740e113a801742c472b",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/sandshrew",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/scorpid/scorpid_combat_front.png",
+          "sha256": "6d979c78e831ce8afa5efd889211f9694b98f79cfbcfc8d83018ebbae2dca621"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            9,
+            5,
+            6
+          ],
+          [
+            17,
+            13,
+            13
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            9,
+            5,
+            6
+          ],
+          [
+            14,
+            10,
+            9
+          ],
+          [
+            2,
+            0,
+            1
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "fd5b9155278a6036d5ac73d0a35424309cc472357b34ffe311dec03845310542",
+      "opaque_colors": 4,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/geodude",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/imp/imp_combat_front.png",
+          "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            16,
+            3,
+            2
+          ],
+          [
+            16,
+            13,
+            10
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            24,
+            21,
+            14
+          ],
+          [
+            22,
+            9,
+            5
+          ],
+          [
+            2,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "80a3570f1d25c56d346cb943b570cf287f981e7f284340806cc9f7e14f9d1c55",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/ekans",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/felhunter/felhunter_combat_front.png",
+          "sha256": "4c8a7edfb6edb2ee2bc2f152f42e037b31a84907304855ba2bfa5c429b83ccfc"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            14,
+            12,
+            14
+          ],
+          [
+            8,
+            5,
+            10
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            15,
+            13
+          ],
+          [
+            8,
+            7,
+            8
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "681097555924a8d5c051f10f600851264688c1a1802f3ad272bfbe80327b4329",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/meowth",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/tiger/tiger_combat_front.png",
+          "sha256": "12cf13e91c6b82c0b5636b218295e9dbef63bf7efb95e1e6733d6896baaa044c"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            17,
+            7,
+            1
+          ],
+          [
+            25,
+            18,
+            10
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            28,
+            16,
+            0
+          ],
+          [
+            17,
+            7,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "527025003110a9080acee446e28e12708ff6606d9cbf226f76c35ed304875af8",
+      "opaque_colors": 4,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/totodile",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/raptor/raptor_combat_front.png",
+          "sha256": "cdf4c9f29d4872f915c63eec17921bd12e8f1cd89577959ea17a1266b46423ac"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            20,
+            12
+          ],
+          [
+            14,
+            16,
+            8
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            4,
+            2
+          ],
+          [
+            18,
+            20,
+            12
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "5ac37ca401e4aa74ac3e9e44cb9b6139374b912f8ba39cf5e889d85cbfd95447",
+      "opaque_colors": 4,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/spearow",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/harpy/harpy_combat_front.png",
+          "sha256": "82b050f072b701bb3b5304f4449a1e1017630763bf6b22f562c040a7cf006796"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            16,
+            16
+          ],
+          [
+            9,
+            6,
+            9
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            27,
+            23,
+            21
+          ],
+          [
+            19,
+            4,
+            8
+          ],
+          [
+            2,
+            1,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "5d2299e25ec5d2fc25ce332838a351047aed21c0b11a4e22d7bebad99d8a3d38",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/kingler",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png",
+          "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            14,
+            11,
+            11
+          ],
+          [
+            20,
+            13,
+            12
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            28,
+            31
+          ],
+          [
+            13,
+            16,
+            20
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "2bcf077d8ef2f055f232cb60ddebb2f62541f1ae3e655413c8dfd4061e973ccb",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/grimer",
+      "sources": [
+        {
+          "path": "references/generated/user_npc_completion_v0211/enemy_warlock/enemy_warlock_combat_front.png",
+          "sha256": "a34768b597e0c055b2d5349820df52e9ebd504839d09d399f40e3e4a3871d1bf"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            11,
+            11,
+            9
+          ],
+          [
+            14,
+            11,
+            12
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            17,
+            14,
+            13
+          ],
+          [
+            10,
+            4,
+            9
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "b25442fc777657ef3b9e3476debba3e8230a0533a5d591f5280bf219a47c4039",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/machoke",
+      "sources": [
+        {
+          "path": "references/generated/user_npc_completion_v0211/enemy_warlock/enemy_warlock_combat_front.png",
+          "sha256": "a34768b597e0c055b2d5349820df52e9ebd504839d09d399f40e3e4a3871d1bf"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            11,
+            11,
+            9
+          ],
+          [
+            14,
+            11,
+            12
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            25,
+            8
+          ],
+          [
+            20,
+            11,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "a425840bd253278498f1328ab79089e662b13b453622bb9851696ac28510d7c2",
+      "opaque_colors": 6,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "enemies/machamp",
+      "sources": [
+        {
+          "path": "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_front.png",
+          "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303"
+        }
+      ],
+      "dimensions": [
+        56,
+        56
+      ],
+      "frames": 1,
+      "slots": [
+        1,
+        5
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            6,
+            5,
+            4
+          ],
+          [
+            14,
+            13,
+            11
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            6,
+            3
+          ],
+          [
+            14,
+            13,
+            11
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "3bf0788b343f62ff2730b5af71f552d61bf8090626cf94d6b8a9a15777ed6705",
+      "opaque_colors": 4,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "allies/imp",
+      "sources": [
+        {
+          "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back.png",
+          "sha256": "9c2228b88931e8cfd10d6b3a5e495c9460e307f5ba433219a53dc9f3c732609b"
+        },
+        {
+          "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_idle.png",
+          "sha256": "72c7de3145eaba41d55b1c598c2f34f663fb826f210cd6c0608f5b3b5bb01ce5"
+        },
+        {
+          "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_cast.png",
+          "sha256": "77e4855ef771615f502287e8cd698116fe47bd991b07fb730fede57d4f0c3628"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            4,
+            2
+          ],
+          [
+            15,
+            11,
+            9
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            4,
+            2
+          ],
+          [
+            13,
+            3,
+            2
+          ],
+          [
+            3,
+            0,
+            0
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "c55fed679a21e033231cb44d8ce2f1572e6e169f7617a84f2bdfecb8bda4a2f0",
+      "opaque_colors": 4,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "name": "allies/grunt",
+      "sources": [
+        {
+          "path": "references/generated/user_player_v0211/sprites/base/combat_back.png",
+          "sha256": "6428420e8bcb2c1d4096c24c2de56ecda74a698b68e6d532423252b24eed246b"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_back_idle_1.png",
+          "sha256": "3ef3659ddce595f5c0400c5137ab2e9342b2ed72dc664e9f3311f0089db8a005"
+        },
+        {
+          "path": "references/generated/user_player_v0211/animations/base/combat_back_idle_2.png",
+          "sha256": "a31715a6e1010c65241e9a5baf85c84279597b19c8e2e1da357f88ae9ab3a04a"
+        }
+      ],
+      "dimensions": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "slots": [
+        0,
+        6
+      ],
+      "palette_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            17,
+            5
+          ],
+          [
+            6,
+            10,
+            3
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            12,
+            6,
+            3
+          ],
+          [
+            18,
+            12,
+            6
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ]
+      ],
+      "pixel_geometry_and_alpha_unchanged": true,
+      "tile_family_map_stable_across_frames": true,
+      "packet_sha256": "51e0e9542dc50c89ebb7a5c9dfdd6ffbce692a38ccc3ec6d26f049a22e4e707f",
+      "opaque_colors": 5,
+      "transparent_bg_paper_rgb555": [
+        31,
+        31,
+        31
+      ]
+    }
+  ],
+  "passed": true
+}

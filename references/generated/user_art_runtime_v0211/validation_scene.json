@@ -1,0 +1,427 @@
+{
+  "rom_sha256": "ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10",
+  "symbols_sha256": "599aabaa24ece8bf7bde5e13f9fffd1846485fc49101ede22085c4cb71ee9a50",
+  "passed": true,
+  "method": "Ordinary inputs only; read-only actual native VRAM/OAM/RGB555 and battery observation against supplied/derived v0211 packets.",
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "user_battery_files_opened": false,
+  "classes": {},
+  "private_scene": {
+    "passed": true,
+    "private_native_save_continue": true,
+    "new_game_not_started": true,
+    "ram_writes": false,
+    "emulator_states_loaded": false,
+    "crowded_senjin_oam": {
+      "frames": 1360,
+      "maximum_visible_entries": 40,
+      "maximum_entries_on_one_scanline": 8,
+      "physical_scanline_counts_include_X_hidden_objects": true
+    },
+    "imported_senjin_npcs": [
+      {
+        "object": 1,
+        "role": "imp",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 7,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 7,
+        "vram_bank": 1
+      },
+      {
+        "object": 2,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 3,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 4,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 5,
+        "role": "troll_merchant",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 6,
+        "role": "troll_guard",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 10,
+        "role": "troll_merchant",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      }
+    ],
+    "actual_road_run": {
+      "native_run": true,
+      "no_experience_or_loot": true,
+      "no_encounter_retirement": true,
+      "ram_writes": false,
+      "emulator_states_loaded": false
+    },
+    "seven_real_building_door_round_trips": [
+      {
+        "door": [
+          5,
+          5
+        ],
+        "exterior_map": 17,
+        "interior_map": 21,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonTrollHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              29,
+              130,
+              114
+            ],
+            "wTilesetBlocksBank": [
+              29,
+              226,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              29,
+              178,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          15,
+          5
+        ],
+        "exterior_map": 17,
+        "interior_map": 24,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonTrollInn",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              23,
+              153,
+              112
+            ],
+            "wTilesetBlocksBank": [
+              23,
+              185,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              23,
+              185,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          17,
+          9
+        ],
+        "exterior_map": 17,
+        "interior_map": 21,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonTrollHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              29,
+              130,
+              114
+            ],
+            "wTilesetBlocksBank": [
+              29,
+              226,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              29,
+              178,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          5,
+          5
+        ],
+        "exterior_map": 18,
+        "interior_map": 22,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonOrcHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              24,
+              142,
+              114
+            ],
+            "wTilesetBlocksBank": [
+              24,
+              238,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              24,
+              190,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          17,
+          5
+        ],
+        "exterior_map": 18,
+        "interior_map": 23,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonOrcInn",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              80,
+              70,
+              111
+            ],
+            "wTilesetBlocksBank": [
+              80,
+              102,
+              120
+            ],
+            "wTilesetCollisionBank": [
+              80,
+              102,
+              125
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          17,
+          13
+        ],
+        "exterior_map": 18,
+        "interior_map": 22,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonOrcHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              24,
+              142,
+              114
+            ],
+            "wTilesetBlocksBank": [
+              24,
+              238,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              24,
+              190,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "door": [
+          5,
+          15
+        ],
+        "exterior_map": 18,
+        "interior_map": 22,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "map": "PeonOrcHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              24,
+              142,
+              114
+            ],
+            "wTilesetBlocksBank": [
+              24,
+              238,
+              121
+            ],
+            "wTilesetCollisionBank": [
+              24,
+              190,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ]
+        }
+      }
+    ],
+    "source_battery_sha256": "78f40549cf387a950c1eb28ec2d9816edbfe0e02d00a1b27692767b4d60e586c"
+  }
+}

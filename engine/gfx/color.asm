@@ -1236,6 +1236,14 @@ LoadMapPals:
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
 	farcall PeonApplyQuestMarkerGrayPalette
+	; Source-derived actors retain their families after the legacy marker
+	; helper's exterior-imp palette6 substitution. HUD0/quest4/gray5 remain
+	; explicitly protected by this complete native palette table.
+	ld hl, PeonUserWorldOBJPalettesV0211
+	ld de, wOBPals1
+	ld bc, 8 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
 	ret
 .crystal
 	farcall LoadSpecialMapPalette
@@ -1342,6 +1350,8 @@ PeonMapBGPalettes:
 INCLUDE "gfx/tilesets/peon_bg.pal"
 PeonMapOBJPalettes:
 INCLUDE "gfx/overworld/peon_obj.pal"
+PeonUserWorldOBJPalettesV0211:
+INCLUDE "gfx/user_world_v0211/world_obj.pal"
 PeonRegionBGPalettes:
 INCLUDE "gfx/tilesets/peon_regions.pal"
 

@@ -7,19 +7,19 @@ SECTION "Peon Onix Native Back v029", ROMX
 OnixBackpic: INCBIN "gfx/peon_native_v029/onix/back.2bpp.lz"
 
 SECTION "Peon Geodude Native Front v029", ROMX
-GeodudeFrontpic: INCBIN "gfx/peon_native_v029/geodude/front.animated.2bpp.lz"
+GeodudeFrontpic: INCBIN "gfx/user_battle_v0211/enemies/geodude/front.2bpp.lz"
 
 SECTION "Peon Geodude Native Back v029", ROMX
 GeodudeBackpic: INCBIN "gfx/peon_native_v029/geodude/back.2bpp.lz"
 
 SECTION "Peon Machamp Native Front v029", ROMX
-MachampFrontpic: INCBIN "gfx/peon_native_v029/machamp/front.animated.2bpp.lz"
+MachampFrontpic: INCBIN "gfx/user_battle_v0211/enemies/machamp/front.2bpp.lz"
 
 SECTION "Peon Machamp Native Back v029", ROMX
 MachampBackpic: INCBIN "gfx/peon_native_v029/machamp/back.2bpp.lz"
 
 SECTION "Peon Grimer Native Front v029", ROMX
-GrimerFrontpic: INCBIN "gfx/peon_native_v029/grimer/front.animated.2bpp.lz"
+GrimerFrontpic: INCBIN "gfx/user_battle_v0211/enemies/grimer/front.2bpp.lz"
 
 SECTION "Peon Grimer Native Back v029", ROMX
 GrimerBackpic: INCBIN "gfx/peon_native_v029/grimer/back.2bpp.lz"

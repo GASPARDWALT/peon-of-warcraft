@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "rom_sha256": "ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10",
+  "html_sha256": "43dd78967fd3428b0d0e9384b98e65840da75eedcbb86de54aa44dbef8514be6",
+  "method": "Fresh ordinary Shaman intro, quest and boar interaction, then normal Down input selects Lightning Bolt; read-only tilemap bytes compared to the exact encoded Latin labels. No RAM edits or state injection.",
+  "native_ram_edits": false,
+  "selected_move_id": 84,
+  "resource_lines": {
+    "row4_columns2_to7": "MP: 72",
+    "row5_columns2_to7": "C:15MP",
+    "actual_encoded_rows": [
+      [
+        140,
+        143,
+        156,
+        127,
+        253,
+        248
+      ],
+      [
+        130,
+        156,
+        247,
+        251,
+        140,
+        143
+      ]
+    ]
+  },
+  "current_mp": 72,
+  "selected_spell_cost": 15,
+  "captures": [
+    "browser_fight_full_back_compact_mp.png",
+    "browser_lightning_bolt_selected_cost.png"
+  ],
+  "frozen_inputs_unchanged": true,
+  "normal_controller_frames": 9135,
+  "button_inputs": 111
+}

@@ -1,13 +1,13 @@
 ; Flexible physical picture banks. FixPicBank uses raw banks for this roster.
 SECTION "Peon Durotar Enemy Frontpics", ROMX
 
-MeowthFrontpic: INCBIN "gfx/pokemon/meowth/front.animated.2bpp.lz"
-TotodileFrontpic: INCBIN "gfx/pokemon/totodile/front.animated.2bpp.lz"
+MeowthFrontpic: INCBIN "gfx/user_battle_v0211/enemies/meowth/front.2bpp.lz"
+TotodileFrontpic: INCBIN "gfx/user_battle_v0211/enemies/totodile/front.2bpp.lz"
 KrabbyFrontpic: INCBIN "gfx/pokemon/krabby/front.animated.2bpp.lz"
-SpearowFrontpic: INCBIN "gfx/pokemon/spearow/front.animated.2bpp.lz"
-EkansFrontpic: INCBIN "gfx/pokemon/ekans/front.animated.2bpp.lz"
-MachokeFrontpic: INCBIN "gfx/pokemon/machoke/front.animated.2bpp.lz"
-KinglerFrontpic: INCBIN "gfx/pokemon/kingler/front.animated.2bpp.lz"
+SpearowFrontpic: INCBIN "gfx/user_battle_v0211/enemies/spearow/front.2bpp.lz"
+EkansFrontpic: INCBIN "gfx/user_battle_v0211/enemies/ekans/front.2bpp.lz"
+MachokeFrontpic: INCBIN "gfx/user_battle_v0211/enemies/machoke/front.2bpp.lz"
+KinglerFrontpic: INCBIN "gfx/user_battle_v0211/enemies/kingler/front.2bpp.lz"
 
 SECTION "Peon Durotar Enemy Backpics", ROMX
 

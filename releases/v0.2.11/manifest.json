@@ -1,0 +1,55 @@
+{
+  "version": "0.2.11",
+  "rom_sha256": "ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10",
+  "rom_bytes": 2097152,
+  "cgb_only": true,
+  "mapper": "MBC3+RTC+RAM+battery",
+  "save_ram_bytes": 32768,
+  "physical_chromatic_tested": false,
+  "devday_flash_tested": false,
+  "save_layout_changed": false,
+  "new_sprite_art_integrated": true,
+  "source_archives": [
+    {
+      "file": "references/characters/peon_world_character_sheets_split.zip",
+      "sha256": "0aac67d4de4e49e0f13882be203dc4acda51fafe542570f97d1b1ba5d794e27a"
+    },
+    {
+      "file": "references/characters/durotar_asset_pack_v1.zip",
+      "sha256": "2d9bbe4609ffc83c99955ec1065efbf5885bf902e417e5d99c6b31ad77edc7bc"
+    },
+    {
+      "file": "references/characters/razor_hill_inn_gbc.zip",
+      "sha256": "27276d86f2d71c77aca899ba73947d6ec12b6ae3042a3d6c747d35779bbbffcb"
+    }
+  ],
+  "passed_reports": [
+    {
+      "file": "validation_migration.json",
+      "sha256": "8cfa826824afaac502a24f3283505daf92d5012417d846575a4af3801ee886cc"
+    },
+    {
+      "file": "validation_scene.json",
+      "sha256": "883f2b9d6d5951469412a26182b59a8f482afca0e045caab30ef4583a0054320"
+    },
+    {
+      "file": "validation_shaman.json",
+      "sha256": "73a0334a951fa198954c18e01fa9f970662181a7465686f096d3fbd26b94be3e"
+    },
+    {
+      "file": "validation_warlock.json",
+      "sha256": "044e6a5c7268b2aa752df29a1e600568c7ed4377f2fec9ab84f162c235ab29db"
+    },
+    {
+      "file": "validation_warrior.json",
+      "sha256": "446057332e68adcea7d4fec15538c55b812f367fa335cd15f94fe15170680528"
+    }
+  ],
+  "native_class_routes": [
+    "shaman",
+    "warlock",
+    "warrior"
+  ],
+  "conversion": "Original RGBA PNGs preserved. Separate native RGB555 and per-tile palette conversion.",
+  "interior": "Native modular composition from original Razor Hill interior tiles; full source image preserved."
+}

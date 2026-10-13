@@ -12,6 +12,7 @@ DEF NUM_SPRITEDATA_FIELDS EQU _RS
 	const WALKING_SPRITE  ; 1
 	const STANDING_SPRITE ; 2
 	const STILL_SPRITE    ; 3
+	const USER_WORLD_4DIR_SPRITE ; 4, supplied independent right view; static gait
 ; Sort ahead of normal sprites: GetSpriteVTile assumes the player is first.
 DEF PEON_SPRITE EQU 0 ; four idle facings and two independent walking steps
 

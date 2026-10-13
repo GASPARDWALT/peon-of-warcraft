@@ -1,0 +1,344 @@
+{
+  "passed": true,
+  "source_png_originals_byte_exact": true,
+  "movement_cells_verified": 5124,
+  "movement_cells_unchanged": 5107,
+  "documented_new_body_wall_cells": 17,
+  "safe_continue_relocation_entries": 17,
+  "native_map_packets": {
+    "PeonOpening": {
+      "patterns": 66,
+      "metatiles": 69,
+      "native_graphics_sha256": "b7557256043165885b667a47c8cf4cf8a8f03729b94ed3d50cfba7d902833a38",
+      "palette_map_sha256": "27fcf9d72b7710e05c259d6406c116df92fc82af50e6260e02a8b45f6f0df581",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          8,
+          8
+        ],
+        "reachable_cells": 83,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 2
+      }
+    },
+    "GrommashHold": {
+      "patterns": 165,
+      "metatiles": 76,
+      "native_graphics_sha256": "c70243084c71aaad1379188fa1f753a0e076704a98c2b986aca24232c6062f7a",
+      "palette_map_sha256": "08b9a01d35ddd899d929b6b77d9ea22774355eca57e277154048328ca3246595",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          8,
+          8
+        ],
+        "reachable_cells": 84,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 4
+      }
+    },
+    "TheDen": {
+      "patterns": 184,
+      "metatiles": 83,
+      "native_graphics_sha256": "d5a58c370ababf462680ddfd4ab3ac70f014c3e2d10744eee6e1f5534a856324",
+      "palette_map_sha256": "6a708049887f9b254176fe1037e4f928a1ea8518b3e71f219c813eca09e1bcbf",
+      "priority_bitset_sha256": "59507409d58f324e606858decc3efd586b5b98a06d13cf8ccaebafaa72b3c007",
+      "new_body_walls": 1,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          20,
+          10
+        ],
+        "reachable_cells": 207,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 13
+      }
+    },
+    "ValleyOfTrials": {
+      "patterns": 105,
+      "metatiles": 67,
+      "native_graphics_sha256": "d1bdf3d7671827908bddbe45eb23b71c2ad3e6efa8ac8870bbf6007648f180cd",
+      "palette_map_sha256": "3878024e56aae45e52f893d0cd0cb4408139ba80a382a3adff575624e8eb2594",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          4,
+          12
+        ],
+        "reachable_cells": 286,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "DurotarRoad": {
+      "patterns": 114,
+      "metatiles": 69,
+      "native_graphics_sha256": "bb9b88b48a7bca01c688c929cefbdf2163f909e9102403b5be41667bf6d2ff2b",
+      "palette_map_sha256": "5c9682b7b89184ee4fb8ba265b9655b88eb99f866f2504a93da3b3c4aed010f6",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          4,
+          14
+        ],
+        "reachable_cells": 280,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 8
+      }
+    },
+    "SenjinVillage": {
+      "patterns": 189,
+      "metatiles": 89,
+      "native_graphics_sha256": "cef585acee7d1844ba42f817c4e3bf6cb4101c2b33dc7af1f7d0832f908617ca",
+      "palette_map_sha256": "b43e0a0de85761c5e477d03a15d26a3a3da152e1f1e70234213b6796f5cf31b1",
+      "priority_bitset_sha256": "a71469137cf5b534852030d0848c84b44e098260c389e5f04a82c4b87f8eeaf9",
+      "new_body_walls": 7,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          10,
+          4
+        ],
+        "reachable_cells": 208,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 9
+      }
+    },
+    "RazorHill": {
+      "patterns": 190,
+      "metatiles": 90,
+      "native_graphics_sha256": "1bc06bfea0a7107868847321852067e270cd2eae8b1c668a83de2eb1858ab701",
+      "palette_map_sha256": "b487d20c5899d383b950dca9659df7968a4d437390ab3b8be6d26f5f7f4fa5e7",
+      "priority_bitset_sha256": "eaca2fcfa6477928c4c3f6368e63c403bccfaf022d69bb1d540cf39e5ccd6bb0",
+      "new_body_walls": 9,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          12,
+          16
+        ],
+        "reachable_cells": 158,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 7
+      }
+    },
+    "OrgrimmarGate": {
+      "patterns": 175,
+      "metatiles": 79,
+      "native_graphics_sha256": "0d2f3834f92f9ae4e9e6d8406ab10ef40550882b5c6ec83102e9df3ff617c9ac",
+      "palette_map_sha256": "881ed46714aa6a080b86b15613428217b9bd126030bba52f821c90c3a74fa316",
+      "priority_bitset_sha256": "6ff658367a332e57a4583cd0f2f22a5eebd046308b9a0df9b2e1a3a0f006731c",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          12,
+          16
+        ],
+        "reachable_cells": 165,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 3
+      }
+    },
+    "BurningBladeCavern": {
+      "patterns": 55,
+      "metatiles": 67,
+      "native_graphics_sha256": "3ca97e957dd8810f5d365c810b009381c23d3744dd5436b3df519ef1cecafa80",
+      "palette_map_sha256": "f135706da576ce3b64c8946e4c5290bd531c21370241d57a0a51339baccd13a4",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          10,
+          16
+        ],
+        "reachable_cells": 131,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 5
+      }
+    },
+    "PeonTrollHut": {
+      "patterns": 157,
+      "metatiles": 77,
+      "native_graphics_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+      "palette_map_sha256": "1f435c1b2726ed345c94023780e40ff89a5337ab756c2f91e7c85408e9ecd012",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          7
+        ],
+        "reachable_cells": 47,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "PeonOrcHut": {
+      "patterns": 157,
+      "metatiles": 77,
+      "native_graphics_sha256": "195fda1b4aaeabc35da9654310b32dd2d4d5f29961eb862746e2c9dec7ce12cd",
+      "palette_map_sha256": "1f435c1b2726ed345c94023780e40ff89a5337ab756c2f91e7c85408e9ecd012",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          7
+        ],
+        "reachable_cells": 47,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "PeonOrcInn": {
+      "patterns": 192,
+      "metatiles": 80,
+      "native_graphics_sha256": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+      "palette_map_sha256": "e0a1bbcc24477af158df94868fdd5c8adfe68ec26b55be105a3d90361f907a08",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          7
+        ],
+        "reachable_cells": 27,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "PeonTrollInn": {
+      "patterns": 192,
+      "metatiles": 80,
+      "native_graphics_sha256": "19cdb93b729384bbd1926046601f6c3f2f58c61bba8f961c2dfda650d1cb4f45",
+      "palette_map_sha256": "e0a1bbcc24477af158df94868fdd5c8adfe68ec26b55be105a3d90361f907a08",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          7
+        ],
+        "reachable_cells": 27,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "PeonValleyCrossroads": {
+      "patterns": 52,
+      "metatiles": 67,
+      "native_graphics_sha256": "70a26e9d0adfef90f972b7bb31e40828054143c5992061bd419c9de30583447c",
+      "palette_map_sha256": "a5fa580441ce767434578a8757d6d77ed5c7fb35c18d8d6e849157b680e41176",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          9
+        ],
+        "reachable_cells": 37,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 2
+      }
+    },
+    "PeonHanazuaCamp": {
+      "patterns": 57,
+      "metatiles": 67,
+      "native_graphics_sha256": "6c77ffdbd802889256df02d2eda5bb9ef644b9630f15b398739dad926c1b9ecd",
+      "palette_map_sha256": "4bdb45ace2f87ebcf68388676ac0e55b4513aa2b4f3ee49e657bd3dc95636e99",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          9,
+          4
+        ],
+        "reachable_cells": 33,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 2
+      }
+    },
+    "PeonSarkothBasin": {
+      "patterns": 57,
+      "metatiles": 67,
+      "native_graphics_sha256": "5077cf80f643b45ebda64d448d7d0352eae2290a65fa88a59bd96b9def29fa3a",
+      "palette_map_sha256": "d04752fda5092b215570fd4477c82bb4931c6a8071f2ea69f1d6175e10f7ce6a",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          0
+        ],
+        "reachable_cells": 28,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 1
+      }
+    },
+    "PeonCaveApproach": {
+      "patterns": 37,
+      "metatiles": 67,
+      "native_graphics_sha256": "13391ef21d1646e47eadadce016c1aa8a09f8c065e231fd87bc63a3beeca1813",
+      "palette_map_sha256": "2f714a97b991d6d33e0917f02a9e720681a715b10c5f199659f4d634723e9713",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          5,
+          9
+        ],
+        "reachable_cells": 24,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 3
+      }
+    },
+    "PeonValleyExit": {
+      "patterns": 51,
+      "metatiles": 67,
+      "native_graphics_sha256": "ad1554d3ec3cb8a426abd85d8ea967bb6441aa8bc0d217c74fdcbf167a79b617",
+      "palette_map_sha256": "cb769a3db1d79a3586674bda7f355657a183135d72580ef167824e763d878ed0",
+      "priority_bitset_sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "new_body_walls": 0,
+      "all_warps_and_npc_approaches_reachable": {
+        "seed": [
+          0,
+          4
+        ],
+        "reachable_cells": 26,
+        "all_warps_reachable": true,
+        "all_npc_approaches_reachable": true,
+        "actor_count": 3
+      }
+    }
+  },
+  "roof_priority_bitset_tiles": 242,
+  "roof_attribute_logic_palette_and_bank_preserved": true,
+  "font_and_fire_priority_bits_zero": true,
+  "enterable_full_exterior_instances": 9,
+  "closed_guard_full_exterior_instances": 2,
+  "full_palm_instances": 6,
+  "source_derived_modular_interiors": 5,
+  "fire_frames_bytes": 192,
+  "runtime_capture": false,
+  "checks": "Static source hashes/native allocation/every movement cell/new-wall safe landings/all-portals-services BFS/roof attribute mask. Actual ROM playtest reported separately."
+}

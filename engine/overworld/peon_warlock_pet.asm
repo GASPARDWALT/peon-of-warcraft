@@ -4,6 +4,7 @@
 SECTION "Peon Warlock World Companion", ROMX
 
 DEF PEON_PET_MAP_OBJECT EQU 15
+DEF PEON_PET_WORLD_PALETTE EQU PAL_OW_ROCK ; imported red/brown imp family7
 
 PeonPrepareWarlockFollower::
 	call PeonWarlockFollowerEnabled
@@ -39,7 +40,7 @@ PeonPrepareWarlockFollower::
 .Template:
 	; Explicit bytes avoid increasing any preceding map's object-event count.
 	db -1, SPRITE_PEON_FRIENDLY_IMP, 4, 4, SPRITEMOVEDATA_FOLLOWING, 0, -1, -1
-	dn PAL_NPC_RED, OBJECTTYPE_3
+	dn PAL_NPC_ROCK, OBJECTTYPE_3 ; explicit palette7 survives native actor copies
 	db 0
 	dw 0, -1
 	db 0, 0
@@ -58,6 +59,15 @@ PeonInitializeWarlockFollower::
 	ld a, PEON_PET_MAP_OBJECT
 	call CheckObjectVisibility
 	ret c
+	; BC is the native visible object after CheckObjectVisibility. Also set
+	; its live palette explicitly: the dynamic follower bypasses the map's
+	; ordinary actor setup, while palette0 belongs to the HUD gauge.
+	ld hl, OBJECT_PALETTE
+	add hl, bc
+	ld a, [hl]
+	and ~OAM_PALETTE
+	or PEON_PET_WORLD_PALETTE
+	ld [hl], a
 	ld hl, OBJECT_FLAGS1
 	add hl, bc
 	; IsNPCAtCoord excludes this exact companion, so it cannot block the

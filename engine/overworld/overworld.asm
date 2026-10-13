@@ -195,7 +195,12 @@ GetSprite:
 	ld h, a
 	ld a, l
 	cp PEON_SPRITE
+	jr z, .player_graphics
+	cp USER_WORLD_4DIR_SPRITE
 	jr nz, .size_ready
+	ld c, 16 ; four independently supplied16x16 facings; no class resolution
+	jr .size_ready
+.player_graphics
 ; Resolve the existing player type from saved class flags on every load.
 	farcall PeonResolvePlayerWorldGraphics
 .size_ready
@@ -507,6 +512,8 @@ ArrangeUsedSprites:
 
 GetSpriteLength:
 ; Return the length of sprite type a in tiles.
+	cp USER_WORLD_4DIR_SPRITE
+	jr z, .UserFourDirections
 	cp PEON_SPRITE
 	jr z, .Peon
 
@@ -532,6 +539,12 @@ GetSpriteLength:
 ; Reserve 32 slots: 16 idle tiles and 32 walking tiles in the two VRAM
 ; halves. The spare idle slots prevent walking data overlapping other sprites.
 	ld a, 32
+	ret
+
+.UserFourDirections:
+; Imported NPC sources contain no authored gait. All gait phases use these
+; sixteen canonical tiles, so larger allocations would waste scarce VRAM.
+	ld a, 16
 	ret
 
 GetUsedSprites:
@@ -572,7 +585,11 @@ GetUsedSprites:
 
 GetUsedSprite:
 	ldh a, [hUsedSpriteIndex]
-	call SafeGetSprite
+	; This routine immediately replaces HL with its VRAM destination. Keep
+	; GetSprite's returned L type; SafeGetSprite restores the caller's old HL.
+	call GetSprite
+	ld a, l
+	push af ; preserve source type through the standing upload
 	ldh a, [hUsedSpriteTile]
 	call .GetTileAddr
 	push hl
@@ -601,6 +618,10 @@ endr
 	jr nz, .done
 	bit SPRITES_SKIP_WALKING_GFX_F, a
 	jr nz, .done
+	pop af
+	push af
+	cp USER_WORLD_4DIR_SPRITE
+	jr z, .done ; supplied facings are also the complete native NPC gait
 
 	ldh a, [hUsedSpriteIndex]
 	call _DoesSpriteHaveFacings
@@ -620,6 +641,7 @@ endr
 	call .CopyToVram
 
 .done
+	pop af
 	ret
 
 .GetTileAddr:

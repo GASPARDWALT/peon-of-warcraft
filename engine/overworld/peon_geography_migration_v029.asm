@@ -52,6 +52,7 @@ PeonRelocateBlockedContinueV029::
 	add hl, de
 	jr .next
 .done
+	farcall PeonRelocateBlockedContinueUserEnvironmentV0211
 	pop af
 	ldh [rWBK], a
 	pop hl

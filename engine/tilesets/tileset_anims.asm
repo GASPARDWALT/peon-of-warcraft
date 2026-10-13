@@ -56,8 +56,8 @@ StandingTileFrame8:
 
 AnimatePeonEnvironmentFire:
 	; WriteTile restores this stack pointer after copying sixteen bytes.
-	; The two dedicated targets are $9000/$9010, so E also supplies the
-	; left/right offset in each 32-byte phase. Nothing else uses these tiles.
+	; Four dedicated 8x8 targets preserve the whole supplied 16x16 brazier.
+	; E supplies the tile offset in each 64-byte phase.
 	ld hl, sp+0
 	ld b, h
 	ld c, l
@@ -67,7 +67,7 @@ AnimatePeonEnvironmentFire:
 	jr c, .phase
 	ld a, 1 ; 0,1,2,1: a gentle ping-pong instead of a hard reset.
 .phase
-rept 5
+rept 6
 	add a
 endr
 	add e
@@ -83,7 +83,7 @@ endr
 
 PeonEnvironmentFireFrames:
 	INCBIN "gfx/tilesets/peon_environment_fire.bin"
-	assert @ - PeonEnvironmentFireFrames == 3 * 2 * TILE_SIZE
+	assert @ - PeonEnvironmentFireFrames == 3 * 4 * TILE_SIZE
 
 ScrollTileRightLeft:
 ; Scroll right for 4 ticks, then left for 4 ticks.

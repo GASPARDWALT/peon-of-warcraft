@@ -119,7 +119,7 @@ PeonWarlockGFX:: INCBIN "gfx/sprites/peon_warlock.2bpp"
 PeonHunterGFX:: INCBIN "gfx/sprites/peon_hunter.2bpp"
 PeonBoarGFX:: INCBIN "gfx/sprites/peon_boar.2bpp"
 PeonQuestMarkerGFX:: INCBIN "gfx/sprites/peon_quest_marker.2bpp"
-PeonSleepingGFX:: INCBIN "gfx/sprites/peon_sleeping.2bpp"
+PeonSleepingGFX:: INCBIN "gfx/user_world_v0211/base_sleeping.2bpp"
 PeonGornekGFX:: INCBIN "gfx/sprites/peon_gornek.2bpp"
 PeonScorpidGFX:: INCBIN "gfx/sprites/peon_scorpid.2bpp"
 PeonNamingGFX:: INCBIN "gfx/sprites/peon_naming.2bpp"
@@ -133,3 +133,5 @@ PeonFriendlyImpV026GFX:: INCBIN "gfx/peon_pets_v026/friendly_imp_world_v026.2bpp
 INCLUDE "gfx/peon_village_sprites.asm"
 
 INCLUDE "gfx/peon_enemy_roster_sprites.asm"
+
+INCLUDE "gfx/user_world_v0211/sprites.asm"

@@ -1,0 +1,709 @@
+{
+  "passed": true,
+  "source_originals_intact": true,
+  "source_hashes": {
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_front.png": "7aaaa9a6ebef0147d7b9067501e37419ede356367a1d967745e2ccb8bea0f7f0",
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_back.png": "fb08c073df891ef3aff1bc3b694fab3be3eb91842221690bfceb98b4c06bb33b"
+  },
+  "canonical_count": 24,
+  "animated_derivative_count": 48,
+  "rgba": "binary alpha 0 or 255; transparent RGB zero",
+  "maximum_visible_colours": 14,
+  "source_pixels_preserved_in_separate_files": true,
+  "front_edit_regions": {
+    "hood_and_crest": [
+      0,
+      0,
+      56,
+      15
+    ],
+    "tusk_sharpening": [
+      [
+        21,
+        20,
+        1,
+        4
+      ],
+      [
+        34,
+        20,
+        1,
+        4
+      ]
+    ],
+    "plain_leather_harness": [
+      [
+        19,
+        26,
+        19,
+        11
+      ],
+      [
+        26,
+        36,
+        5,
+        4
+      ]
+    ],
+    "shaman_equipment": {
+      "shoulder_totem": [
+        37,
+        19,
+        5,
+        10
+      ],
+      "shield": [
+        40,
+        33,
+        10,
+        13
+      ],
+      "mace": [
+        4,
+        30,
+        9,
+        12
+      ]
+    },
+    "warrior_equipment": {
+      "physical_left_pauldron": [
+        34,
+        26,
+        11,
+        7
+      ],
+      "physical_right_axe": [
+        0,
+        25,
+        14,
+        20
+      ]
+    },
+    "warlock": {
+      "robe_polygon": [
+        [
+          17,
+          27
+        ],
+        [
+          40,
+          27
+        ],
+        [
+          38,
+          38
+        ],
+        [
+          43,
+          51
+        ],
+        [
+          36,
+          53
+        ],
+        [
+          29,
+          50
+        ],
+        [
+          25,
+          53
+        ],
+        [
+          14,
+          51
+        ]
+      ],
+      "staff": [
+        3,
+        21,
+        9,
+        29
+      ],
+      "changed_eyes": [
+        [
+          24,
+          17
+        ],
+        [
+          25,
+          17
+        ],
+        [
+          33,
+          17
+        ],
+        [
+          34,
+          17
+        ]
+      ]
+    }
+  },
+  "native_assets": [
+    {
+      "file": "sprites/base/world_front.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "8238d3ca6f1cc7f71ae4999dac61db054f1bc03d6aef759127db27b94ae5c6e9"
+    },
+    {
+      "file": "animations/base/world_front_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "665b30d18cee4d663baea99bffc8332bf2365cf6b3f5e2e8234d0599fb8dcf90"
+    },
+    {
+      "file": "animations/base/world_front_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "210fe2295e6e1f9e10df7727ec22f840bea859558bfb085fd6c20d6588c3245a"
+    },
+    {
+      "file": "sprites/base/world_back.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 7,
+      "sha256": "0bac8dc4ada1f47620fd01cb2a6f9286953e54380a1cc5cd5b8a884dc9c49d69"
+    },
+    {
+      "file": "animations/base/world_back_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 7,
+      "sha256": "9fce876c826d0263b1d58730ae0cf5a52ae7c8c070146ff0ec81dfb977802d4e"
+    },
+    {
+      "file": "animations/base/world_back_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 7,
+      "sha256": "7d677ed51f85d0199f332e4145066d9519b54f2ea126fb2620089e95b9bee8b8"
+    },
+    {
+      "file": "sprites/base/world_left.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "738d9b795cc56bb061828a325fe0f58a46133b725bf2c71daf438e6e3f1b7560"
+    },
+    {
+      "file": "animations/base/world_left_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "07d6a6664f053c5e87b527f66b2443026aef0c2a90649491600b338a3377b997"
+    },
+    {
+      "file": "animations/base/world_left_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "c8820ad26dba0b4c87648242b04c873c2c3efff73feacc5e7d94f0fa80b4c200"
+    },
+    {
+      "file": "sprites/base/world_right.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "a7cd46bfecee188e235c6c6f7dc33e30a99940888a9b2717a33b7e72a4ff0b93"
+    },
+    {
+      "file": "animations/base/world_right_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "1a31913b73436b7665cf4b26b70e910e741b0e850e50c0639accd76ada60e00b"
+    },
+    {
+      "file": "animations/base/world_right_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "3a91ba66bdb01d8137b106ac5af2f5e5c5cc1e08549ae95c4f2307e9c5cba171"
+    },
+    {
+      "file": "sprites/base/combat_front.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 11,
+      "sha256": "7e38cdbecb391f88475a271ccc746572da5e49b4bcc9f06545cb5c62a5e1de8c"
+    },
+    {
+      "file": "animations/base/combat_front_idle_1.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 11,
+      "sha256": "1b65bd59dd140034ffde540a9eef0e28b90743a2de9195d82d941514b123a2fc"
+    },
+    {
+      "file": "animations/base/combat_front_idle_2.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 11,
+      "sha256": "8e12445e8ffa12041ae5182b28ae50664211eb529f2589fc592cd65bb714c9df"
+    },
+    {
+      "file": "sprites/base/combat_back.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 9,
+      "sha256": "6428420e8bcb2c1d4096c24c2de56ecda74a698b68e6d532423252b24eed246b"
+    },
+    {
+      "file": "animations/base/combat_back_idle_1.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 9,
+      "sha256": "3ef3659ddce595f5c0400c5137ab2e9342b2ed72dc664e9f3311f0089db8a005"
+    },
+    {
+      "file": "animations/base/combat_back_idle_2.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 9,
+      "sha256": "a31715a6e1010c65241e9a5baf85c84279597b19c8e2e1da357f88ae9ab3a04a"
+    },
+    {
+      "file": "sprites/shaman/world_front.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "4288147498685b5fa9b4bcfb259ea8a50bba0168ef65be4bcaebdae944025acb"
+    },
+    {
+      "file": "animations/shaman/world_front_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "5a2457c66d45ba6eba04f6ab2f9cda213b588f960f99ba879993835646dd87c4"
+    },
+    {
+      "file": "animations/shaman/world_front_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "9d26eb84c17694b63c0eae42579cdc2c5d5563491e7e6607f73a91782c320045"
+    },
+    {
+      "file": "sprites/shaman/world_back.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "a7d0a27093018da9277db898f5b0e4f7cd3a4709f45f4fccccae9ff3216490ec"
+    },
+    {
+      "file": "animations/shaman/world_back_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "264e087e5f3f590de417d861b2f322048c182dfd1404afe5ceb5cc576e118171"
+    },
+    {
+      "file": "animations/shaman/world_back_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "854e653de70656e963ad2c48dbdaa566df7028b8d2069f1c48b62bfe4afa0e1e"
+    },
+    {
+      "file": "sprites/shaman/world_left.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "f72046aa5ae9b703da3c00fc80e2c88967f26bb3fa56673479938923a217fe7c"
+    },
+    {
+      "file": "animations/shaman/world_left_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "f1d9a6b8626b111f416a5150abee8a1a43c662393a5d03e8703ea585b26bb5f1"
+    },
+    {
+      "file": "animations/shaman/world_left_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "a46a5bcfd1de6a8281ab5c0dbd5a1eabb8e82a233e691ebdb10d694226decea2"
+    },
+    {
+      "file": "sprites/shaman/world_right.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "61204a1fd6c63c662e71657b080d4718705eaaa37a84ef5b1947368d04786708"
+    },
+    {
+      "file": "animations/shaman/world_right_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "a54e9a331cef9ba9ece286eaa86b9c17ef4c41fd2639284908665bd163345ecd"
+    },
+    {
+      "file": "animations/shaman/world_right_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "6b8d96e34f755082d403e951d7513d850260d974e82cf6f6afab8037ed9a9634"
+    },
+    {
+      "file": "sprites/shaman/combat_front.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "8464934338e995d7dd66838449161787553081147c5178133acb35a47b915042"
+    },
+    {
+      "file": "animations/shaman/combat_front_idle_1.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "9d06624b9f20f9e43ef94fa0c66c88c138c95b1daacc5c2d06ff4cec7d45b209"
+    },
+    {
+      "file": "animations/shaman/combat_front_idle_2.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "3ad87df56b307e74e1476807c12c1073a6d73dce5d4fe40366273926396f550e"
+    },
+    {
+      "file": "sprites/shaman/combat_back.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 12,
+      "sha256": "df5a2476142cae4e272b761608a83f8238f2dcf5134475e7b29c271df4074535"
+    },
+    {
+      "file": "animations/shaman/combat_back_idle_1.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 12,
+      "sha256": "209f6842c2bb5a0116f89d765c24c409748d4f4406cf38d5396cba78793590dc"
+    },
+    {
+      "file": "animations/shaman/combat_back_idle_2.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 12,
+      "sha256": "a0ca7c4b205e725b949744e20dabfa2638fac804441ae3fa0a6cafc5afd44bee"
+    },
+    {
+      "file": "sprites/warrior/world_front.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "2fb03a6a486849c9a9b1b8c6af75e9b8858854825781661faa1c3127408ef9b9"
+    },
+    {
+      "file": "animations/warrior/world_front_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "2fb03c32a8f71d252c267b776008f2d7b2ca7dde3fb11650adb44f8862e0c163"
+    },
+    {
+      "file": "animations/warrior/world_front_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "4b3aa85b3cef4a06001424369cce69ccca700b0fde17ab91087c37b4071e01e8"
+    },
+    {
+      "file": "sprites/warrior/world_back.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "2cc58156f1c65f8358f893daf341f68027ea315da85b68821270ef1460fac526"
+    },
+    {
+      "file": "animations/warrior/world_back_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "1ddec0fe04e38ef6f0fa1a233e9003f856c3e4170433e0fba91b4d9055f50607"
+    },
+    {
+      "file": "animations/warrior/world_back_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "01f07c2595aa27aa0a495f0b5ad0b843160dce8c83148430d1093bac9a90c788"
+    },
+    {
+      "file": "sprites/warrior/world_left.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "593f9aad92cea6cc374342359b602e7797420ff1cc77e47ac66bd7612703131a"
+    },
+    {
+      "file": "animations/warrior/world_left_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "043ae25e3c26219264d6b208fe6b6a98a08157f302da6ba083cc48ca77f118eb"
+    },
+    {
+      "file": "animations/warrior/world_left_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "9e792603ea475e6103b0dab73fdb564624c1f125794fae6a5df5004eaf3da8bf"
+    },
+    {
+      "file": "sprites/warrior/world_right.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "5598c900dcaa9d0e0f3fd3655e9e23a45af9f8bf75e2cbaf2da7df343b4f700b"
+    },
+    {
+      "file": "animations/warrior/world_right_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "d7fffd0cf061fef4409a1ec1b3e1f0b95c51c2befe0f76cd0e5e60d953e17ec4"
+    },
+    {
+      "file": "animations/warrior/world_right_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "7f5c2700ab254bb66bfb058758d24b45029f9b0d33a161e5827527fb7406df70"
+    },
+    {
+      "file": "sprites/warrior/combat_front.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "3c4fc213bb26eeff0d6eafc15192c15a72065d751d863ccd23f6d52e5957aac4"
+    },
+    {
+      "file": "animations/warrior/combat_front_idle_1.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "6a56468d62767d0f7c8f6559bb62c893ffd898c40b31155f0fc4c8936b4eccd8"
+    },
+    {
+      "file": "animations/warrior/combat_front_idle_2.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "a9b5d6fd3e6fdd5b65a5d8fcdc70c51e9262f54dcfb30fb1751eab59a0985225"
+    },
+    {
+      "file": "sprites/warrior/combat_back.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "bfeb5a3e534a656672598a4684fa06d539dd797ab14efb58c1ab29b6b4cca718"
+    },
+    {
+      "file": "animations/warrior/combat_back_idle_1.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "3d14d63eee7b3711ce50cd7789512d0024b8ee3282b2712e8873ebeb1de9bc80"
+    },
+    {
+      "file": "animations/warrior/combat_back_idle_2.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "199de040c48f8e4ec5645b6d26d844f5016988706db0871a39352b96874a8921"
+    },
+    {
+      "file": "sprites/warlock/world_front.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "cf1705c5e44eb827aeaa05477a104a72f7bdf5db8824f5176c4beecb0478190a"
+    },
+    {
+      "file": "animations/warlock/world_front_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "c86e1c8f05ff1c3b0f7b2306f8dda1860e9c90192f4c8551cbbcc6800904378a"
+    },
+    {
+      "file": "animations/warlock/world_front_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "fddd5fc88ec7ddce90ba160ff4091d1239a7ecbbfdcb02062d0def1cb85cbe10"
+    },
+    {
+      "file": "sprites/warlock/world_back.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "bc320ecb9265c11bfcf51f45ea27c8fb69ad7897f932c8e3be1335ca519f25c7"
+    },
+    {
+      "file": "animations/warlock/world_back_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "9e9d055b914dd4ce015d4cfc2390019f0d0c6a330fc4dc3fda37644742c3ca49"
+    },
+    {
+      "file": "animations/warlock/world_back_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "cb3805d7fa1e0f45ea7191a4def1b776a102fdffec675f1b7a1a827c3419c6e0"
+    },
+    {
+      "file": "sprites/warlock/world_left.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 10,
+      "sha256": "2bf5e0c4ef9a5eba6acd7637154b5358f764abc75e9797183086a2feb3277c44"
+    },
+    {
+      "file": "animations/warlock/world_left_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "8b57780301efccc6c44bf036b650e962f055fb160a41f4789d30259304322243"
+    },
+    {
+      "file": "animations/warlock/world_left_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 11,
+      "sha256": "0d25b7fc66bce0ccda64022bc90a70d391c74276b97db144bcdb816fea89edaf"
+    },
+    {
+      "file": "sprites/warlock/world_right.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "97af1a6345d662c86f750208c69224f3de02879200158172b85ee4450be89970"
+    },
+    {
+      "file": "animations/warlock/world_right_step_1.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "bbd510dce20d07cceb37406d1a3b8b8bc40e73f5a6e3b0dfe6f8d3d108d4bd67"
+    },
+    {
+      "file": "animations/warlock/world_right_step_2.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 12,
+      "sha256": "eb0996f7475a6495fff26b228865fe0f053e7660fe048c0deddb54efb86baab4"
+    },
+    {
+      "file": "sprites/warlock/combat_front.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 14,
+      "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+    },
+    {
+      "file": "animations/warlock/combat_front_idle_1.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 14,
+      "sha256": "e3e73e5baac9c48330557b87258f95c41ffa20c3bf300c933c59fc4149adb687"
+    },
+    {
+      "file": "animations/warlock/combat_front_idle_2.png",
+      "width": 56,
+      "height": 56,
+      "opaque_colors": 13,
+      "sha256": "027fb3d8e75253397daf9029670ab26e9289c0b888e7a0f1ab927f7420a243ed"
+    },
+    {
+      "file": "sprites/warlock/combat_back.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "0e9a87fdcc4d727cda1faab0333b9947cfa4fefd35e3cfd0069eab1842bdd564"
+    },
+    {
+      "file": "animations/warlock/combat_back_idle_1.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "e3ef7da9798dcff1a693485cd0e604d1fc757dfd04939488f22d3d9032317289"
+    },
+    {
+      "file": "animations/warlock/combat_back_idle_2.png",
+      "width": 48,
+      "height": 48,
+      "opaque_colors": 11,
+      "sha256": "4632b2cbff8fd356e23ee76547c2fb545879864f014ca11eac8147fad4bbb919"
+    },
+    {
+      "file": "sprites/base/world_sleep.png",
+      "width": 16,
+      "height": 16,
+      "opaque_colors": 8,
+      "sha256": "a127269ca2e97182975a153783716577526dafdb4208aa77c80fee34808e9872"
+    }
+  ],
+  "opening_sleep_pose_count": 1,
+  "opening_sleep_pose": {
+    "file": "sprites/base/world_sleep.png",
+    "source_file": "sprites/base/world_front.png",
+    "source_sha256": "8238d3ca6f1cc7f71ae4999dac61db054f1bc03d6aef759127db27b94ae5c6e9",
+    "transform": "clockwise native rotation: destination (15-y,x)",
+    "closed_eye_pixels": [
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        7
+      ],
+      [
+        11,
+        9
+      ],
+      [
+        11,
+        10
+      ]
+    ],
+    "identity": "green Orc Peon, black crest, humble leather, unarmed"
+  },
+  "front_component_provenance_counts": {
+    "base": {
+      "same_supplied_pixel_position_and_material_index": 1378,
+      "new_or_changed_material_pixels": 231,
+      "new_pixels_outside_supplied_silhouette": 13,
+      "removed_supplied_pixels": 57
+    },
+    "shaman": {
+      "same_supplied_pixel_position_and_material_index": 1229,
+      "new_or_changed_material_pixels": 365,
+      "new_pixels_outside_supplied_silhouette": 51,
+      "removed_supplied_pixels": 72
+    },
+    "warrior": {
+      "same_supplied_pixel_position_and_material_index": 1279,
+      "new_or_changed_material_pixels": 330,
+      "new_pixels_outside_supplied_silhouette": 93,
+      "removed_supplied_pixels": 57
+    },
+    "warlock": {
+      "same_supplied_pixel_position_and_material_index": 844,
+      "new_or_changed_material_pixels": 761,
+      "new_pixels_outside_supplied_silhouette": 78,
+      "removed_supplied_pixels": 61
+    }
+  },
+  "front_provenance_note": "Material-index equivalence after the explicitly recorded palette map. These counts are not claims of identical source RGB, and a manually authored pixel that happens to match is conservatively counted as retained geometry."
+}

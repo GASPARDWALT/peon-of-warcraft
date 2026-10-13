@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "status": "PASS",
+  "rom_sha256": "ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10",
+  "expected_rom_sha256": "ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10",
+  "method": "Single isolated git checkout-index export of staged files only, with no .git or worktree build products; dedicated v0.2.11 importer/rebuild script. Full rebuilt ROM SHA-256 equals the exact native/browser-tested release.",
+  "index_listing_sha256": "93b500c2edc7b5fc78b8c706909c56b4314018454f50009f4044f533cacb7e09",
+  "staged_paths": 23758,
+  "root_index_unchanged": true,
+  "root_worktree_build_run": false,
+  "legacy_redraw_generators_run": false,
+  "source_inputs": "Preserved source ZIPs, extracted originals, approved derivative PNGs, baseline and frozen canonical legacy graphics from the index.",
+  "isolated_checkout": "/tmp/peon_v0211_index_rebuild_5_d2yce_",
+  "build_log": "/tmp/peon_v0211_index_rebuild_build.log",
+  "duration_seconds": 21.5
+}

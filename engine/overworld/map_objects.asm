@@ -2921,6 +2921,22 @@ InitSprites:
 	and OAM_PALETTE
 	or d
 	ld d, a
+	; Explicit map-event palettes belong to the old art. Supplied actors use
+	; their source-family palette while retaining all native priority flags.
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	call PeonUserWorldPaletteV0211
+	jr nc, .original_palette
+	push af
+	ld a, d
+	and ~OAM_PALETTE
+	ld d, a
+	pop af
+	and OAM_PALETTE
+	or d
+	ld d, a
+.original_palette
 	xor a
 	bit IN_GRASS_F, e
 	jr z, .not_in_grass
@@ -2965,6 +2981,16 @@ InitSprites:
 	jr z, .peon_facing
 	cp SPRITE_KRIS
 	jr z, .peon_facing
+	call PeonUserWorldPaletteV0211
+	jr nc, .ordinary_facing
+	ld a, e
+	cp FACING_FISH_DOWN
+	jr c, .user_facing
+	ld e, 0 ; no fishing/emote anatomy was supplied for these actors
+.user_facing
+	ld hl, PeonUserNPCFacingsV0211
+	jr .facing_table
+.ordinary_facing
 	ld hl, Facings
 	jr .facing_table
 .peon_facing
@@ -3059,3 +3085,60 @@ endr
 	assert_table_length NUM_OBJECT_STRUCTS
 
 INCLUDE "data/sprites/peon_facings.asm"
+
+; Input sprite ID A. Carry + A palette means a supplied four-direction NPC.
+; Lookup preserves object pointer, facing and OAM flags; no saved state.
+PeonUserWorldPaletteV0211:
+	push bc
+	push de
+	push hl
+	ld b, a
+	cp SPRITE_CHRIS
+	jr z, .player
+	cp SPRITE_KRIS
+	jr z, .player
+	ld hl, .Bindings
+.loop
+	ld a, [hli]
+	cp $ff
+	jr z, .absent
+	cp b
+	jr z, .found
+	inc hl
+	jr .loop
+.found
+	ld a, [hl]
+	scf
+	jr .done
+.absent
+	and a
+	jr .done
+.player
+	; The player keeps its independent authored gait. Only robe/skin colors
+	; differ for Warlock; its original palette2 remains every other class.
+	ld a, [wEventFlags + EVENT_PEON_WARLOCK / 8]
+	bit EVENT_PEON_WARLOCK % 8, a
+	ld a, 2
+	jr z, .player_palette
+	ld a, 1
+.player_palette
+	scf
+.done
+	pop hl
+	pop de
+	pop bc
+	ret
+.Bindings
+INCLUDE "gfx/user_world_v0211/palette_overrides.asm"
+
+; The provided NPC direction remains unchanged through all gait phases.
+; Independent right art replaces ordinary NPC horizontal mirroring.
+PeonUserNPCFacingsV0211:
+	dw .Down, .Down, .Down, .Down
+	dw .Up, .Up, .Up, .Up
+	dw .Left, .Left, .Left, .Left
+	dw .Right, .Right, .Right, .Right
+.Down: peon_facing $00
+.Up: peon_facing $04
+.Left: peon_facing $08
+.Right: peon_facing $0c

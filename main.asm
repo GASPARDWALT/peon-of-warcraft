@@ -731,6 +731,8 @@ INCLUDE "engine/battle/peon_player_poses.asm"
 INCLUDE "engine/battle/peon_level_up.asm"
 
 INCLUDE "engine/menus/peon_class_graphics.asm"
+INCLUDE "engine/gfx/peon_user_art_v0211.asm"
+INCLUDE "engine/tilesets/peon_user_environment_v0211.asm"
 INCLUDE "engine/menus/peon_class_tints_v028.asm"
 INCLUDE "engine/menus/peon_text_style.asm"
 INCLUDE "engine/overworld/peon_geography_migration_v029.asm"

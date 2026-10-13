@@ -750,8 +750,8 @@ INCBIN "gfx/pokemon/unown_r/back.2bpp.lz"
 
 SECTION "Pics 20", ROMX
 MachopFrontpic:      INCBIN "gfx/pokemon/machop/front.animated.2bpp.lz"
-RattataFrontpic:     INCBIN "gfx/pokemon/rattata/front.animated.2bpp.lz"
-SandshrewFrontpic:   INCBIN "gfx/pokemon/sandshrew/front.animated.2bpp.lz"
+RattataFrontpic:     INCBIN "gfx/user_battle_v0211/enemies/rattata/front.2bpp.lz"
+SandshrewFrontpic:   INCBIN "gfx/user_battle_v0211/enemies/sandshrew/front.2bpp.lz"
 
 SECTION "Pics 21", ROMX
 SandshrewBackpic:    INCBIN "gfx/pokemon/sandshrew/back.2bpp.lz"

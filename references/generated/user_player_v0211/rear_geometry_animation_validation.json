@@ -1,0 +1,71 @@
+{
+  "changed_files": [
+    "animations/base/combat_back_idle_1.png",
+    "animations/base/combat_back_idle_2.png",
+    "animations/shaman/combat_back_idle_1.png",
+    "animations/shaman/combat_back_idle_2.png",
+    "animations/warrior/combat_back_idle_1.png",
+    "animations/warrior/combat_back_idle_2.png",
+    "animations/warlock/combat_back_idle_1.png",
+    "animations/warlock/combat_back_idle_2.png"
+  ],
+  "rgba_binary": true,
+  "alpha_masks_all_distinct": {
+    "base": true,
+    "shaman": true,
+    "warrior": true,
+    "warlock": true
+  },
+  "native_pngs": [
+    {
+      "file": "sprites/base/combat_back.png",
+      "alpha_mask_sha256": "05ed351409c0ab5e011bc88e6ce57e6ecbcc13a311027365582fc4f7868bcf60"
+    },
+    {
+      "file": "animations/base/combat_back_idle_1.png",
+      "alpha_mask_sha256": "03866249a91cc9ddcbdba3e72e4f5e977f16cdf1e4c0036d05697c2aae57832d"
+    },
+    {
+      "file": "animations/base/combat_back_idle_2.png",
+      "alpha_mask_sha256": "f3ffc9252abdb5ef094297c63bdf76694eb2832b56aef6657123163c240da2b8"
+    },
+    {
+      "file": "sprites/shaman/combat_back.png",
+      "alpha_mask_sha256": "65e2b4469731aa0ceb764b6969fe495d4a0770cb6e3b4cbffe02d074cbd0d386"
+    },
+    {
+      "file": "animations/shaman/combat_back_idle_1.png",
+      "alpha_mask_sha256": "a372d09f436894a40ffb6793126098b3ae3645d53ca77a01208eee6820bfefac"
+    },
+    {
+      "file": "animations/shaman/combat_back_idle_2.png",
+      "alpha_mask_sha256": "00f7c1dc72fe5d4bd71c4014d758c58151227c6e58f651396d3af36baab595a0"
+    },
+    {
+      "file": "sprites/warrior/combat_back.png",
+      "alpha_mask_sha256": "bc8e510c06395b0cc3bc4197d20599537b819a83d2ad02f4b3ed7912d8f29233"
+    },
+    {
+      "file": "animations/warrior/combat_back_idle_1.png",
+      "alpha_mask_sha256": "cb7a06e9cedbe61af95a99590cb8275ecee2b4dd1093bdca6e6a28fd12cfc7bb"
+    },
+    {
+      "file": "animations/warrior/combat_back_idle_2.png",
+      "alpha_mask_sha256": "20cb1c01b3dc308e3261c324fc592d4303872e3f0828c400473532ec30d7fae0"
+    },
+    {
+      "file": "sprites/warlock/combat_back.png",
+      "alpha_mask_sha256": "8e3e69928962351091c3929eaf6feaf9caaba776e3d58a23484f1f3c546dbd2e"
+    },
+    {
+      "file": "animations/warlock/combat_back_idle_1.png",
+      "alpha_mask_sha256": "3f25c5994e779e2aec76d84fef2298d5a6d95c0d5fe12d501e2a92a9e5de31c5"
+    },
+    {
+      "file": "animations/warlock/combat_back_idle_2.png",
+      "alpha_mask_sha256": "6a915bd8d84c003d9b86d9319b64723fedbec0bc54635b274780117aa9ad3038"
+    }
+  ],
+  "pass": true,
+  "quantization_invariant": "Every pair has differing alpha pixels; GBC index0 transparent versus opaque index1/2/3 guarantees different 2bpp tile bytes regardless of palette fit."
+}

@@ -54,6 +54,7 @@ PeonLoadActiveAllyBackPoseV029::
 	ldh [rVBK], a
 	pop af
 	ldh [hBGMapMode], a
+	farcall PeonApplyPlayerBattleArtV0211
 	pop de
 	pop bc
 	scf
@@ -61,9 +62,9 @@ PeonLoadActiveAllyBackPoseV029::
 .earth
 	dba PeonEarthAllyBackFramesV029
 .imp
-	dba PeonImpAllyBackFramesV029
+	dba PeonUserImpAllyTilesV0211
 .grunt
-	dba PeonGruntAllyBackFramesV029
+	dba PeonUserGruntAllyTilesV0211
 
 ; Initial entrance and native party switch requests. Only a battle backpic
 ; destined for bank0$9310 is substituted, never a Character/menu portrait.

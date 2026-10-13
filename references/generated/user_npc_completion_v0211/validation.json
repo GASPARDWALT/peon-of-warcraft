@@ -1,0 +1,33 @@
+{
+  "pass": true,
+  "auditedOriginalPNGCount": 156,
+  "auditedOriginalsUnchanged": true,
+  "derivedPNGCount": 55,
+  "parentFilesVerifiedByteExact": 95,
+  "binaryAlpha": true,
+  "nativeGeometry": true,
+  "paletteMaximums": {
+    "world": 8,
+    "combat": 16
+  },
+  "originalsChanged": false,
+  "impRearPoses": [
+    {
+      "pose": "combat_back",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back.png",
+      "sha256": "9c2228b88931e8cfd10d6b3a5e495c9460e307f5ba433219a53dc9f3c732609b"
+    },
+    {
+      "pose": "combat_back_idle",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_idle.png",
+      "sha256": "72c7de3145eaba41d55b1c598c2f34f663fb826f210cd6c0608f5b3b5bb01ce5"
+    },
+    {
+      "pose": "combat_back_cast",
+      "path": "references/generated/user_npc_completion_v0211/imp/imp_combat_back_cast.png",
+      "sha256": "77e4855ef771615f502287e8cd698116fe47bd991b07fb730fede57d4f0c3628"
+    }
+  ],
+  "scope": "Source art only; no in-game or hardware claim.",
+  "visualReview": "Reviewed completed native sprites at integer 4x/8x. NPC/Imp rears contain rear skull/hair, backs and equipment rather than frontal facial features. Enemy Warlock semantic front/back labels corrected and frontal body completed from actual supplied native face and robe pixels."
+}

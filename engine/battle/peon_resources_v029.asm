@@ -786,6 +786,72 @@ PeonDrawBattleResourceV029::
 	ld e, l
 	jp PeonPrintResourceForIndexV029.body
 
+; v0211 compact battle choice display, cols2..7 rows4/5. Current resource
+; uses the existing999 cap. No current/max value, move cost, PP or saved
+; record is changed. Carry means a managed actor's display was handled.
+PeonDrawCompactMoveResourceV0211::
+	ld hl, .body
+	jp PeonResourceWRAM1CallV029
+.body
+	call PeonActivePlayerResourceV029
+	ret nc
+	hlcoord 2, 4
+	ld de, .mana
+	ld a, [wPeonResourceClassV029]
+	cp PEON_RESOURCE_WARRIOR_V029
+	jr nz, .label
+	ld de, .rage
+.label
+	call PlaceString
+	ld hl, wPartyMon1CaughtData
+	ld a, [wPeonResourceIndexV029]
+	call GetPartyLocation
+	ld d, h
+	ld e, l
+	hlcoord 5, 4
+	lb bc, 2, 3
+	call PrintNum
+	ld a, [wCurPlayerMove]
+	call PeonResourceMoveCostV029
+	ld [wPeonResourceCostV029], a
+	and a
+	jr nz, .paid
+	ld de, .free
+	ld a, [wPlayerMoveStruct + MOVE_TYPE]
+	cp SPECIAL
+	jr nc, .free_label
+	ld de, .physical
+.free_label
+	hlcoord 2, 5
+	call PlaceString
+	scf
+	ret
+.paid
+	hlcoord 2, 5
+	ld de, .cost
+	call PlaceString
+	hlcoord 4, 5
+	ld de, wPeonResourceCostV029
+	lb bc, 1, 2
+	call PrintNum
+	hlcoord 6, 5
+	ld de, .mp
+	ld a, [wPeonResourceClassV029]
+	cp PEON_RESOURCE_WARRIOR_V029
+	jr nz, .unit
+	ld de, .rg
+.unit
+	call PlaceString
+	scf
+	ret
+.mana: db "MP:@"
+.rage: db "RG:@"
+.cost: db "C:@"
+.mp: db "MP@"
+.rg: db "RG@"
+.physical: db "PHYS@"
+.free: db "FREE@"
+
 ; Managed actors keep their legacy PP bytes unchanged. This availability
 ; scan ignores PP but honors occupied moves, Disable and the shared pool.
 ; B=0 unmanaged; B=1 managed, C=1 if an affordable action exists, C=0
