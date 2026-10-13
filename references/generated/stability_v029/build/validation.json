@@ -20,8 +20,8 @@
     "gfx/pokemon/unown/bitmask.asm",
     "gfx/pokemon/unown/frames.asm"
   ],
-  "source_file_count": 5140,
-  "source_inventory_sha256": "d06ae979fd571431e19550af62eb506ad04226448bb8ff58277de06ce1ff59d8",
+  "source_file_count": 5141,
+  "source_inventory_sha256": "0f5a683f6fee198d7724a723929ca6b99bf9ad9893aa5dde342a5111c50711c6",
   "art_generator_sha256": {
     "tools/build_peon_browser_player.py": "e99b622c5c77734668d13dfd86650ddf8439c1cc9da5e2d7ad4a0b18f34a29e4",
     "tools/build_peon_v023_gallery.py": "a94a487dce82f8e85093e7e321ff68e6210fe34b06ba0294d5778a243b93b591",
@@ -79,6 +79,7 @@
   "all_final_art_generator_sources_match_frozen_snapshot": true,
   "all_snapshot_source_files_match_current_publication_tree": true,
   "publication_source_refresh_includes_final_ASM_EOF_and_documentation": true,
+  "browser_player_documentation_sha256": "bc163184fa2519b1b7220e4c26240c668753aeddb3236a8d2c7e4fc00ba2d342",
   "private_build_command": "make pokecrystal.gbc -j4 RGBDS=/workspace/toolchains/rgbds-1.0.4/",
   "toolchain": "RGBDS 1.0.4",
   "byte_identical_ROM_and_symbols": true,
