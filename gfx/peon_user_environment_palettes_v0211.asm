@@ -6,10 +6,12 @@ INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOpening_priority.bin"
 assert BANK(PeonUserEnvPeonOpeningPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvGrommashHoldPalMap::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/GrommashHold_palmap.bin"
+PeonReadableGrommashHoldPalMapV0212::
+INCBIN "gfx/readable_interiors_v0212/GrommashHold_palmap.bin"
 assert BANK(PeonUserEnvGrommashHoldPalMap) == BANK(_LoadOverworldAttrmapPals)
 PeonUserEnvGrommashHoldPriority::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/GrommashHold_priority.bin"
+PeonReadableGrommashHoldPriorityV0212::
+INCBIN "gfx/readable_interiors_v0212/GrommashHold_priority.bin"
 assert BANK(PeonUserEnvGrommashHoldPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvTheDenPalMap::
@@ -62,31 +64,39 @@ INCBIN "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_priority.bin
 assert BANK(PeonUserEnvBurningBladeCavernPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvPeonTrollHutPalMap::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_palmap.bin"
+PeonReadablePeonTrollHutPalMapV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonTrollHut_palmap.bin"
 assert BANK(PeonUserEnvPeonTrollHutPalMap) == BANK(_LoadOverworldAttrmapPals)
 PeonUserEnvPeonTrollHutPriority::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonTrollHut_priority.bin"
+PeonReadablePeonTrollHutPriorityV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonTrollHut_priority.bin"
 assert BANK(PeonUserEnvPeonTrollHutPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvPeonOrcHutPalMap::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_palmap.bin"
+PeonReadablePeonOrcHutPalMapV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonOrcHut_palmap.bin"
 assert BANK(PeonUserEnvPeonOrcHutPalMap) == BANK(_LoadOverworldAttrmapPals)
 PeonUserEnvPeonOrcHutPriority::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOrcHut_priority.bin"
+PeonReadablePeonOrcHutPriorityV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonOrcHut_priority.bin"
 assert BANK(PeonUserEnvPeonOrcHutPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvPeonOrcInnPalMap::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_palmap.bin"
+PeonReadablePeonOrcInnPalMapV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonOrcInn_palmap.bin"
 assert BANK(PeonUserEnvPeonOrcInnPalMap) == BANK(_LoadOverworldAttrmapPals)
 PeonUserEnvPeonOrcInnPriority::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOrcInn_priority.bin"
+PeonReadablePeonOrcInnPriorityV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonOrcInn_priority.bin"
 assert BANK(PeonUserEnvPeonOrcInnPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvPeonTrollInnPalMap::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_palmap.bin"
+PeonReadablePeonTrollInnPalMapV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonTrollInn_palmap.bin"
 assert BANK(PeonUserEnvPeonTrollInnPalMap) == BANK(_LoadOverworldAttrmapPals)
 PeonUserEnvPeonTrollInnPriority::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_priority.bin"
+PeonReadablePeonTrollInnPriorityV0212::
+INCBIN "gfx/readable_interiors_v0212/PeonTrollInn_priority.bin"
 assert BANK(PeonUserEnvPeonTrollInnPriority) == BANK(_LoadOverworldAttrmapPals)
 
 PeonUserEnvPeonValleyCrossroadsPalMap::

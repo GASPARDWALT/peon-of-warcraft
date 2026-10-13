@@ -31,6 +31,9 @@ DEF PEON_WORN_STAFF EQU POKE_FLUTE
 ; each independent quest marker changes its appearance.
 ; v029 reusable class quest relics: numbers preserved, ITEMS pocket.
 DEF PEON_EARTH_RELIC_V029 EQU POKE_BALL
+; The Shaman's control stone keeps the existing reusable capture item ID.
+DEF PEON_ELEMENTAL_CONTROL_STONE EQU PEON_EARTH_RELIC_V029
+DEF PEON_TELLURIC_STONE EQU ITEM_99
 DEF PEON_DEMON_SKULL_V029 EQU GREAT_BALL
 DEF PEON_RALLY_HORN_V029 EQU ULTRA_BALL
 

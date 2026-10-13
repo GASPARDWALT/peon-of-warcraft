@@ -251,4 +251,5 @@ def main():
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2,default=lambda x:int(x))+'\n')
     print(f'Imported {len(report)} native battle packets; original alpha/geometry intact.')
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    raise SystemExit('Legacy procedural hero import is retired. Use tools/import_peon_approved_players_v0212.py and tools/build_peon_art_repair_v0212.py instead. Encoder helpers remain importable.')

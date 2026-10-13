@@ -1,0 +1,529 @@
+{
+  "schema": "missing-earth-elemental-generated-raster-import-v0212",
+  "source_of_truth": "New missing-monster Image Generation master; supplied user character artwork retained",
+  "generated_missing_art": true,
+  "provided_by_user": false,
+  "source_master": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+  "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+  "style_reference_hashes": {
+    "references/characters/peon_world_character_sheets_split/boar/boar_sheet.png": "c841fb0112f8f164f664d178c1c158114f79074dcfd2b71b857c3d800c49d567",
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_sheet.png": "79389cbc156a8b8418862016cd995a9aca943022cbf0f3cc1ca4ce69c7f1e883",
+    "references/characters/peon_world_character_sheets_split/imp/imp_sheet.png": "d1aa8c7dcad21cb2484989efd732f0932047e9b6b37a32901adb285f5ea88e04",
+    "references/generated/peon_sprite_redesign_v030/originals/peon_shaman_totemic_design_reference.png": "740053366b7da897d7daef3744616e7eb060937f2f6ded06003ff31702fa6c27"
+  },
+  "source_originals_changed": false,
+  "native_grid_recovered": false,
+  "lossless_native_extraction": false,
+  "lossy_nearest_neighbor_conversion": true,
+  "manual_pixel_redraw": false,
+  "new_animation_anatomy": false,
+  "ROM_integration_verified": false,
+  "sprites": [
+    {
+      "pose": "world_front",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        21,
+        166,
+        312,
+        458
+      ],
+      "crop_dimensions": [
+        291,
+        292
+      ],
+      "native_dimensions": [
+        16,
+        16
+      ],
+      "fitted_dimensions": [
+        14,
+        14
+      ],
+      "centering_offset": [
+        1,
+        1
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 66263,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/world_front.png",
+      "native_sha256": "97afca088088e6b3978da1fbc7de0a921c3783eddf5c0df95ae42bf9df8c7ed4",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 134
+    },
+    {
+      "pose": "world_back",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        344,
+        166,
+        638,
+        458
+      ],
+      "crop_dimensions": [
+        294,
+        292
+      ],
+      "native_dimensions": [
+        16,
+        16
+      ],
+      "fitted_dimensions": [
+        14,
+        14
+      ],
+      "centering_offset": [
+        1,
+        1
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 67811,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/world_back.png",
+      "native_sha256": "c6c473c53370f69abc14dccfdb91f91df552f46411ed356b030f5dfd7fa4f178",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 138
+    },
+    {
+      "pose": "world_left",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        687,
+        166,
+        883,
+        468
+      ],
+      "crop_dimensions": [
+        196,
+        302
+      ],
+      "native_dimensions": [
+        16,
+        16
+      ],
+      "fitted_dimensions": [
+        9,
+        14
+      ],
+      "centering_offset": [
+        3,
+        1
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 47102,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/world_left.png",
+      "native_sha256": "ee9e2740d39414212d1f4190ff424e2b3368e6f63ddf1f0b6140d650f97a3ab5",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 87
+    },
+    {
+      "pose": "world_right",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        987,
+        166,
+        1185,
+        468
+      ],
+      "crop_dimensions": [
+        198,
+        302
+      ],
+      "native_dimensions": [
+        16,
+        16
+      ],
+      "fitted_dimensions": [
+        9,
+        14
+      ],
+      "centering_offset": [
+        3,
+        1
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 47464,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/world_right.png",
+      "native_sha256": "deff72318192f464e731edd6b177bff5c24b212b02ea3089e7941144385f34b7",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 88
+    },
+    {
+      "pose": "combat_front",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        21,
+        552,
+        729,
+        1201
+      ],
+      "crop_dimensions": [
+        708,
+        649
+      ],
+      "native_dimensions": [
+        56,
+        56
+      ],
+      "fitted_dimensions": [
+        54,
+        50
+      ],
+      "centering_offset": [
+        1,
+        3
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 322046,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/combat_front.png",
+      "native_sha256": "9c6e9189e4107be905f7d845a434348a2538c8f197056b21b13219198e8431ba",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 1700
+    },
+    {
+      "pose": "combat_back",
+      "source": "references/generated/earth_elemental_v0212/originals/earth_elemental_generated_master.png",
+      "source_sha256": "60cacf5d56cba374a0b059e482af3ff53ec8b18fc8ac9e88e4040fe647e5d304",
+      "source_canvas": [
+        1254,
+        1254
+      ],
+      "crop_bounds_exclusive": [
+        738,
+        574,
+        1232,
+        1206
+      ],
+      "crop_dimensions": [
+        494,
+        632
+      ],
+      "native_dimensions": [
+        48,
+        48
+      ],
+      "fitted_dimensions": [
+        36,
+        46
+      ],
+      "centering_offset": [
+        6,
+        1
+      ],
+      "minimum_transparent_border": 1,
+      "source_intermediate_alpha_pixels": 233846,
+      "alpha_conversion": "alpha >=128 becomes255; alpha <128 becomes0; transparent RGB0",
+      "resampling": "Pillow nearest-neighbor, no pixel drawing or dithering",
+      "native_grid_recovered": false,
+      "source_geometry_unchanged": false,
+      "native_path": "references/generated/earth_elemental_v0212/sprites/combat_back.png",
+      "native_sha256": "26b92236c9cdb4651c8ae7caa9fba96b435d6ff5d21890f6cb94ab633567f847",
+      "native_binary_alpha": true,
+      "native_visible_pixels": 1105
+    }
+  ],
+  "battle": [
+    {
+      "name": "enemy_front",
+      "native_dimensions": [
+        56,
+        56
+      ],
+      "slots": [
+        1,
+        5
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            15,
+            10,
+            6
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            29,
+            2
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ]
+      ],
+      "tile_order": "column-major",
+      "attribute_order": "row-major",
+      "static_pose_slots": 3,
+      "bytes_per_frame": 784,
+      "frames_path": "gfx/earth_elemental_v0212/enemy_front/frames.2bpp",
+      "native_packet_path": "gfx/earth_elemental_v0212/enemy_front/front.2bpp.lz",
+      "hardware_alpha_unchanged_from_native_png": true,
+      "opaque_colors_per_tile_maximum": 3,
+      "tile_count": 49,
+      "green_energy_tile_family_count": 8,
+      "frames_sha256": "e082629d4eace3019e3a38eff98c3b0237df567d3f447e0ef031a478110163f2"
+    },
+    {
+      "name": "ally_front",
+      "native_dimensions": [
+        56,
+        56
+      ],
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            15,
+            10,
+            6
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            29,
+            2
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ]
+      ],
+      "tile_order": "column-major",
+      "attribute_order": "row-major",
+      "static_pose_slots": 3,
+      "bytes_per_frame": 784,
+      "frames_path": "gfx/earth_elemental_v0212/ally_front/frames.2bpp",
+      "native_packet_path": "gfx/earth_elemental_v0212/ally_front/front.2bpp.lz",
+      "hardware_alpha_unchanged_from_native_png": true,
+      "opaque_colors_per_tile_maximum": 3,
+      "tile_count": 49,
+      "green_energy_tile_family_count": 8,
+      "frames_sha256": "e082629d4eace3019e3a38eff98c3b0237df567d3f447e0ef031a478110163f2"
+    },
+    {
+      "name": "ally_back",
+      "native_dimensions": [
+        48,
+        48
+      ],
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            15,
+            10,
+            6
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            22,
+            29,
+            2
+          ],
+          [
+            27,
+            21,
+            14
+          ],
+          [
+            3,
+            1,
+            3
+          ]
+        ]
+      ],
+      "tile_order": "column-major",
+      "attribute_order": "row-major",
+      "static_pose_slots": 3,
+      "bytes_per_frame": 576,
+      "frames_path": "gfx/earth_elemental_v0212/ally_back/frames.2bpp",
+      "native_packet_path": "gfx/earth_elemental_v0212/ally_back/back.2bpp.lz",
+      "hardware_alpha_unchanged_from_native_png": true,
+      "opaque_colors_per_tile_maximum": 3,
+      "tile_count": 36,
+      "green_energy_tile_family_count": 4,
+      "frames_sha256": "5c802aaa99287b064d4d412855daafa294caef0a1b70351a2386d95e6a355e8b"
+    }
+  ],
+  "world": {
+    "palette_rgb555": [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        18,
+        12,
+        6
+      ],
+      [
+        15,
+        17,
+        8
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    "opaque_OBJ_colors": 3,
+    "directions": [
+      "front",
+      "back",
+      "left",
+      "right"
+    ],
+    "phases": 3,
+    "phases_identical": true,
+    "bytes": 768,
+    "path": "gfx/earth_elemental_v0212/overworld.bin",
+    "global_OBJ_palette_index": 2,
+    "records": [
+      {
+        "direction": "front",
+        "native_alpha_preserved": true
+      },
+      {
+        "direction": "back",
+        "native_alpha_preserved": true
+      },
+      {
+        "direction": "left",
+        "native_alpha_preserved": true
+      },
+      {
+        "direction": "right",
+        "native_alpha_preserved": true
+      }
+    ]
+  }
+}

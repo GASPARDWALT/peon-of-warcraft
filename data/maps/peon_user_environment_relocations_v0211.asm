@@ -34,4 +34,5 @@ PeonUserEnvironmentBlockedCellsV0211:
 	db 6, 14, 6, 13
 	map_id RAZOR_HILL
 	db 7, 14, 7, 13
+INCLUDE "gfx/readable_interiors_v0212/continue_relocations.asm"
 	db $ff

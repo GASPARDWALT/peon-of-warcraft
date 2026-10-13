@@ -99,10 +99,10 @@ PeonOrcInnTableText:
 PeonOrcInn_MapEvents:
 	db 0, 0
 	def_warp_events
-	warp_event 5, 7, PEON_ORC_INN, -1
+	warp_event 5, 9, PEON_ORC_INN, -1
 	def_coord_events
 	def_bg_events
-	bg_event 2, 3, BGEVENT_READ, PeonOrcInnBedroll
-	bg_event 8, 4, BGEVENT_READ, PeonOrcInnTable
+	bg_event 2, 2, BGEVENT_READ, PeonOrcInnBedroll
+	bg_event 9, 4, BGEVENT_READ, PeonOrcInnTable
 	def_object_events
 	object_event 6, 4, PEON_SPRITE_INNKEEPER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, PeonOrcInnkeeperScript, -1

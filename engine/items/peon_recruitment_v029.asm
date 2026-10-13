@@ -1,5 +1,6 @@
 ; Reusable class relics use Crystal's base Poke Ball HP/catch-rate roll.
-; No ball sprite, Dex page, nickname prompt, box transfer or item consumption.
+; No ball sprite, Dex page, box transfer or item consumption. The earth-stone
+; quest owns its optional native nickname prompt after returning to the map.
 ; This module is deliberately not included until root's v028 checkpoint.
 SECTION "Peon Recruitment v029", ROMX
 
@@ -74,6 +75,7 @@ PeonTryRecruitV029::
 	call PeonInitializeRecruitActionsV029
 	pop bc
 	farcall PeonEnsureResourceForIndexV029
+	farcall PeonCommitEarthStoneCapture
 	ld a, [wEventFlags + EVENT_PEON_RECRUIT_ACCEPTED_V029 / 8]
 	bit EVENT_PEON_RECRUIT_ACCEPTED_V029 % 8, a
 	jr z, .joined
@@ -202,6 +204,27 @@ PeonTryRecruitV029::
 	ld a, [hli]
 	cp e
 	jr nz, .pact_loop
+	; The new second elemental is available only after the stone exchange.
+	; The first quest elemental is deliberately absent from .Pacts below.
+	ld a, b
+	cp MAP_PEON_VALLEY_CROSSROADS
+	jr nz, .known_pact
+	ld a, d
+	cp 10
+	jr nz, .known_pact
+	ld de, EVENT_PEON_EARTH_STONE_REPORTED
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr z, .not_pact
+	ld de, EVENT_PEON_EARTH_STONE_DONE
+	ld b, CHECK_FLAG
+	call EventFlagAction
+	ld a, c
+	and a
+	jr nz, .not_pact
+.known_pact
 	scf
 	ret
 .skip_pact_object
@@ -213,7 +236,7 @@ PeonTryRecruitV029::
 	and a
 	ret
 .Pacts
-	db MAP_PEON_VALLEY_CROSSROADS, 1, ONIX
+	db MAP_PEON_VALLEY_CROSSROADS, 10, ONIX
 	db MAP_PEON_HANAZUA_CAMP, 1, MACHAMP
 	db MAP_PEON_CAVE_APPROACH, 1, GEODUDE
 	db MAP_SENJIN_VILLAGE, 8, ONIX

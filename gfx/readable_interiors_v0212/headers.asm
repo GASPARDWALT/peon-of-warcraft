@@ -1,0 +1,15 @@
+; PeonOrcHut
+	dba PeonReadablePeonOrcHutGFXV0212, PeonReadablePeonOrcHutMetaV0212, PeonReadablePeonOrcHutCollV0212
+	dw TilesetHouseAnim, PeonReadablePeonOrcHutPriorityV0212, PeonReadablePeonOrcHutPalMapV0212
+; PeonOrcInn
+	dba PeonReadablePeonOrcInnGFXV0212, PeonReadablePeonOrcInnMetaV0212, PeonReadablePeonOrcInnCollV0212
+	dw TilesetHouseAnim, PeonReadablePeonOrcInnPriorityV0212, PeonReadablePeonOrcInnPalMapV0212
+; PeonTrollHut
+	dba PeonReadablePeonTrollHutGFXV0212, PeonReadablePeonTrollHutMetaV0212, PeonReadablePeonTrollHutCollV0212
+	dw TilesetHouseAnim, PeonReadablePeonTrollHutPriorityV0212, PeonReadablePeonTrollHutPalMapV0212
+; PeonTrollInn
+	dba PeonReadablePeonTrollInnGFXV0212, PeonReadablePeonTrollInnMetaV0212, PeonReadablePeonTrollInnCollV0212
+	dw TilesetHouseAnim, PeonReadablePeonTrollInnPriorityV0212, PeonReadablePeonTrollInnPalMapV0212
+; GrommashHold
+	dba PeonReadableGrommashHoldGFXV0212, PeonReadableGrommashHoldMetaV0212, PeonReadableGrommashHoldCollV0212
+	dw TilesetHouseAnim, PeonReadableGrommashHoldPriorityV0212, PeonReadableGrommashHoldPalMapV0212

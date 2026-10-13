@@ -72,10 +72,10 @@ PeonTrollInnTableText:
 PeonTrollInn_MapEvents:
 	db 0, 0
 	def_warp_events
-	warp_event 5, 7, PEON_TROLL_INN, -1
+	warp_event 5, 9, PEON_TROLL_INN, -1
 	def_coord_events
 	def_bg_events
-	bg_event 2, 3, BGEVENT_READ, PeonTrollInnBedroll
-	bg_event 8, 4, BGEVENT_READ, PeonTrollInnTable
+	bg_event 2, 2, BGEVENT_READ, PeonTrollInnBedroll
+	bg_event 9, 4, BGEVENT_READ, PeonTrollInnTable
 	def_object_events
 	object_event 6, 4, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, PeonTrollInnkeeperScript, -1

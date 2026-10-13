@@ -351,13 +351,13 @@ PeonClearInactiveBattlePetV029::
 	ret
 
 PeonEarthAllyBackFramesV029:
-	INCBIN "gfx/peon_native_v029/onix/back_frames.bin"
+	INCBIN "gfx/earth_elemental_v0212/ally_back/frames.2bpp"
 PeonImpAllyBackFramesV029:
 	INCBIN "gfx/peon_native_v029/geodude/back_frames.bin"
 PeonGruntAllyBackFramesV029:
 	INCBIN "gfx/peon_native_v029/machamp/back_frames.bin"
 PeonEarthAllyHeadV029:
-	INCBIN "gfx/peon_native_v029/onix/head_8x8.2bpp"
+	INCBIN "gfx/earth_elemental_v0212/head_8x8.2bpp"
 PeonImpAllyHeadV029:
 	INCBIN "gfx/peon_native_v029/geodude/head_8x8.2bpp"
 PeonGruntAllyHeadV029:

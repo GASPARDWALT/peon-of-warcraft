@@ -1,0 +1,1051 @@
+{
+  "rom_sha256": "d4adeb85438fb3362b80c7300397d47b67b5aa40350339f199fa5100d074c35e",
+  "symbols_sha256": "dba95b20fd21fd28e33379f5b83fe225b36154eaa1a5773dd9fe88d371270592",
+  "passed": true,
+  "method": "Ordinary inputs only; read-only actual native VRAM/OAM/RGB555 and battery observation against approved high-resolution raster conversions; no lossless native atlas recovery claimed.",
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "user_battery_files_opened": false,
+  "classes": {
+    "warlock": {
+      "passed": true,
+      "highlighted_class_preview": {
+        "kind": "preview",
+        "frame": 2,
+        "target": 38400,
+        "font1_range": [
+          38544,
+          38912
+        ],
+        "cursor_y": 2,
+        "cursor_x": 0,
+        "bytes": 64,
+        "native_sha256": "4fab6fea12bf56cc96ebdba3541c6f5150cfae0a21475d0ab5bc93b86565f008",
+        "vram_bank": 0,
+        "saved_flags_unchanged": true,
+        "font_bank1_unchanged": true,
+        "protected_battle_regions_unchanged": false
+      },
+      "actual_preview_palette_and_framebuffer_checks": [
+        {
+          "label": "master_class_description",
+          "selected_class": "warlock",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              26,
+              20,
+              31
+            ],
+            [
+              12,
+              17,
+              5
+            ],
+            [
+              16,
+              11,
+              17
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        },
+        {
+          "label": "cold_saved_character_preview_before_continue",
+          "selected_class": "warlock",
+          "native_bank0_4_tiles": true,
+          "actual_palette5": [
+            [
+              31,
+              31,
+              31
+            ],
+            [
+              12,
+              17,
+              5
+            ],
+            [
+              16,
+              11,
+              17
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "actual_RGB555_framebuffer_exact": true
+        }
+      ],
+      "fresh_world_vram": {
+        "bank": 1,
+        "tile_base": 0,
+        "standing_16_tiles": true,
+        "walking_32_tiles": true
+      },
+      "world_movement": {
+        "ordinary_directional_taps": true,
+        "safe_square": [
+          4,
+          8
+        ],
+        "four_directions_three_native_poses_each": true,
+        "actual_hardware_OAM_and_RGB555_pixels": true,
+        "strict_16x16_four_tile_composite_geometry": true,
+        "mirrored_accessories": false,
+        "facings": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "character_profile": {
+        "team_round_trip": {
+          "ordinary_CHARACTER_right_TEAM_cancel": true,
+          "icons": [
+            {
+              "row": 0,
+              "role": "warlock",
+              "species": 66,
+              "source_4_tiles_exact": true,
+              "bg_palette_slot": 4,
+              "world_palette_family": 1,
+              "paper_color0": [
+                31,
+                29,
+                23
+              ],
+              "actual_RGB555_icon_pixels_exact": true
+            },
+            {
+              "row": 1,
+              "role": "imp",
+              "species": 74,
+              "source_4_tiles_exact": true,
+              "bg_palette_slot": 5,
+              "world_palette_family": 7,
+              "paper_color0": [
+                31,
+                29,
+                23
+              ],
+              "actual_RGB555_icon_pixels_exact": true
+            }
+          ],
+          "profile_source_and_entire56x56_LCD_restored": true,
+          "persistent_record_unchanged": true
+        },
+        "bank0_native_49_tiles": true,
+        "row_major_tilemap": true,
+        "actual_RGB555_pixels": true,
+        "currently_displayed_frame": 0
+      },
+      "map_menu_and_room_door_class_reload": true,
+      "cold_save": {
+        "battery_bytes": 32768,
+        "saved_preview_before_continue_correct": true,
+        "saved_character_name": {
+          "name": "P\u00e9on ABCDE",
+          "native_bold_name_cells_correct": true,
+          "exact_stored_prefix_once": true,
+          "actual_RGB555_name_pixels_correct": true,
+          "checksum_verified_identity": true
+        },
+        "complete_record_and_all_256_event_bytes_preserved": true,
+        "world_class_graphics_reloaded": true
+      },
+      "actual_battle_casts": [
+        {
+          "label": "shadow_bolt",
+          "actual_move": 247,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "real_native_upload_phase_indices": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "distinct_source_packets": 1,
+          "one_static_approved_pose_no_invented_motion": true,
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 100
+        },
+        {
+          "label": "wand_strike",
+          "actual_move": 1,
+          "native_vram_poses": [
+            0,
+            1,
+            2
+          ],
+          "actual_RGB555_pixel_poses": [
+            0,
+            1,
+            2
+          ],
+          "real_native_upload_phase_indices": [
+            0,
+            1,
+            2
+          ],
+          "required_poses": [
+            0,
+            1,
+            2
+          ],
+          "distinct_source_packets": 1,
+          "one_static_approved_pose_no_invented_motion": true,
+          "ordinary_battle_inputs": true,
+          "native_frames_retained": 100
+        }
+      ],
+      "imported_world_npcs": [
+        {
+          "object": 1,
+          "role": "imp",
+          "four_direction_tiles_exact": true,
+          "actual_OAM_palette_index": 7,
+          "actual_OAM_entries_compared": 4,
+          "raw_legacy_actor_palette": 7,
+          "vram_bank": 0
+        },
+        {
+          "object": 2,
+          "role": "quest_peon",
+          "four_direction_tiles_exact": true,
+          "actual_OAM_palette_index": null,
+          "actual_OAM_entries_compared": 0,
+          "raw_legacy_actor_palette": 2,
+          "vram_bank": 0
+        },
+        {
+          "object": 4,
+          "role": "shaman_apprentice",
+          "four_direction_tiles_exact": true,
+          "actual_OAM_palette_index": 2,
+          "actual_OAM_entries_compared": 4,
+          "raw_legacy_actor_palette": 3,
+          "vram_bank": 1
+        },
+        {
+          "object": 5,
+          "role": "orc_merchant",
+          "four_direction_tiles_exact": true,
+          "actual_OAM_palette_index": 2,
+          "actual_OAM_entries_compared": 6,
+          "raw_legacy_actor_palette": 2,
+          "vram_bank": 1
+        },
+        {
+          "object": 10,
+          "role": "warrior_trainer",
+          "four_direction_tiles_exact": true,
+          "actual_OAM_palette_index": 2,
+          "actual_OAM_entries_compared": 14,
+          "raw_legacy_actor_palette": 2,
+          "vram_bank": 0
+        }
+      ],
+      "first_enemy_source_art": {
+        "species_packet": "rattata",
+        "source_tiles_exact": true,
+        "two_regional_palette_attributes_exact": true,
+        "actual_RGB555_pixels_exact": true
+      },
+      "battle_BAG_round_trip": {
+        "native_bags_and_inventory_opened": true,
+        "cancel_restores_entire48x48_back": true,
+        "no_turn_or_persistent_state_change": true,
+        "ordinary_controls_only": true
+      },
+      "world_oam_budget": {
+        "frames": 1563,
+        "maximum_visible_entries": 40,
+        "maximum_entries_on_one_scanline": 6,
+        "physical_scanline_counts_include_X_hidden_objects": true
+      },
+      "native_user_environment_packets": [
+        {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 22016,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": false
+          },
+          "map": "GrommashHold",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              89,
+              211,
+              105
+            ],
+            "wTilesetBlocksBank": [
+              89,
+              113,
+              114
+            ],
+            "wTilesetCollisionBank": [
+              89,
+              65,
+              120
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [],
+          "source_packet_sha256": "86c161f52489c3b55000e5319bc364e49dc1bfa445d3fcb7f20fdd5afb7f6b95",
+          "bank0_static_tiles_compared": 96,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            0
+          ],
+          "readable_v0212_interior": true,
+          "static_source_hearth": true,
+          "intro_base_player_source_tiles_exact": true,
+          "native_original_master_source_npcs": [
+            {
+              "object": 1,
+              "role": "veteran_questgiver",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 2,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 2,
+              "vram_bank": 1
+            },
+            {
+              "object": 2,
+              "role": "shaman_apprentice",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 2,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 3,
+              "vram_bank": 1
+            },
+            {
+              "object": 3,
+              "role": "warrior_trainer",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 2,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 2,
+              "vram_bank": 1
+            },
+            {
+              "object": 4,
+              "role": "enemy_warlock",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 1,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 1,
+              "vram_bank": 1
+            }
+          ]
+        },
+        {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 21696,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": true
+          },
+          "map": "TheDen",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              107,
+              150,
+              103
+            ],
+            "wTilesetBlocksBank": [
+              107,
+              198,
+              112
+            ],
+            "wTilesetCollisionBank": [
+              107,
+              246,
+              117
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "source_packet_sha256": "d5a58c370ababf462680ddfd4ab3ac70f014c3e2d10744eee6e1f5534a856324",
+          "bank0_static_tiles_compared": 92,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 41,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            160,
+            192
+          ],
+          "readable_v0212_interior": false,
+          "static_source_hearth": false
+        },
+        {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 22016,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": false
+          },
+          "map": "PeonOrcInn",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              65,
+              189,
+              109
+            ],
+            "wTilesetBlocksBank": [
+              65,
+              91,
+              118
+            ],
+            "wTilesetCollisionBank": [
+              65,
+              59,
+              124
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [],
+          "source_packet_sha256": "9bdb0fd48365cea022bd430520516aaf1cd9a7668b76c6a282e834f1a4f3e330",
+          "bank0_static_tiles_compared": 96,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            192
+          ],
+          "readable_v0212_interior": true,
+          "static_source_hearth": true,
+          "native_source_npcs": [
+            {
+              "object": 1,
+              "role": "imp",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 7,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 7,
+              "vram_bank": 1
+            },
+            {
+              "object": 2,
+              "role": "orc_merchant",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 2,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 2,
+              "vram_bank": 1
+            }
+          ]
+        }
+      ],
+      "den_hut_round_trip": {
+        "door": [
+          5,
+          7
+        ],
+        "exterior_map": 14,
+        "interior_map": 22,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 22016,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": false
+          },
+          "map": "PeonOrcHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              80,
+              70,
+              111
+            ],
+            "wTilesetBlocksBank": [
+              80,
+              228,
+              119
+            ],
+            "wTilesetCollisionBank": [
+              80,
+              196,
+              125
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [],
+          "source_packet_sha256": "9bdb0fd48365cea022bd430520516aaf1cd9a7668b76c6a282e834f1a4f3e330",
+          "bank0_static_tiles_compared": 96,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            192
+          ],
+          "readable_v0212_interior": true,
+          "static_source_hearth": true,
+          "native_source_npcs": [
+            {
+              "object": 1,
+              "role": "imp",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 7,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 7,
+              "vram_bank": 1
+            },
+            {
+              "object": 2,
+              "role": "orc_merchant",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 2,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 2,
+              "vram_bank": 1
+            }
+          ]
+        }
+      },
+      "save_exit_continue": {
+        "native_save": true,
+        "held_confirmation_release_guard": true,
+        "exit_returns_to_title": true,
+        "fresh_start_required": true,
+        "continue_full_saved_record_equal": true,
+        "exit_does_not_autosave": true,
+        "last_saved_map": [
+          26,
+          14
+        ],
+        "last_saved_x": [
+          12
+        ],
+        "last_saved_y": [
+          10
+        ]
+      },
+      "all_native_back_uploads_protect_enemy_font_emblem_totem_pet_and_hud": true,
+      "back_helper_observations": [
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 1,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 0,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 1,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 2,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        },
+        {
+          "kind": "back",
+          "frame": 0,
+          "target": 37648,
+          "font1_range": [
+            35104,
+            35472
+          ],
+          "cursor_y": 0,
+          "cursor_x": 1,
+          "bytes": 576,
+          "native_sha256": "8872e31860a71249bd3a7b022f22eadf33926f27621e30443bab7ac1165f6e7f",
+          "vram_bank": 0,
+          "saved_flags_unchanged": true,
+          "font_bank1_unchanged": true,
+          "protected_battle_regions_unchanged": true
+        }
+      ],
+      "native_upload_count": 32,
+      "read_only_hook_errors": [],
+      "native_asset_sha256": {
+        "overworld.bin": "32963ef3527cbd6c7174877cf6af1335885113d4750f5939f351f06fb7bf7cfc",
+        "back_frames.bin": "a3fc6aafbe00179cb47e68604f05ddc1c3813777e0d849e99a5830e33cd3b1a0",
+        "portrait_frames.bin": "5775a1d0321302e6336e03ad39b5b26b490c4b911031c7f98a9751ab341b8385"
+      },
+      "whole_back_visible_on_idle_and_FIGHT_selection": [
+        {
+          "label": "battle_back_before_BAG",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_back_restored_after_BAG",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_class_idle_0",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_fight_menu_default_0",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_fight_menu_selected_0",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_class_idle_1",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_fight_menu_default_1",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        },
+        {
+          "label": "battle_fight_menu_selected_1",
+          "all36_source_tiles_and_attributes_exact": true,
+          "entire48x48_LCD_pixels_exact_no_HUD_mask": true
+        }
+      ]
+    }
+  }
+}

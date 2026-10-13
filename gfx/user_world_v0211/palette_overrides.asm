@@ -1,7 +1,12 @@
 ; Sprite IDs and five actor palette families; HUD0 and quest4/5 are protected.
+	db SPRITE_OAK, 2
+	db SPRITE_ELDER, 2
+	db SPRITE_BRUNO, 2
+	db SPRITE_MORTY, 1
+	db SPRITE_BLAINE, 2
 	db SPRITE_JANINE, 7
 	db SPRITE_BUG_CATCHER, 3
-	db SPRITE_TWIN, 3
+	db SPRITE_TWIN, 2
 	db SPRITE_YOUNGSTER, 2
 	db SPRITE_TEACHER, 1
 	db SPRITE_BEAUTY, 1

@@ -84,7 +84,7 @@ PeonDrawAtlasQuests::
 	cp 1
 	jr z, .valley
 	cp 6
-	jr nz, .submit
+	jp nz, .submit
 	call .YarrogObjective
 	call .FamiliarsObjectives
 	jr .submit
@@ -121,6 +121,14 @@ PeonDrawAtlasQuests::
 	lb de, 4, 6
 	ld b, MAP_PEON_VALLEY_CROSSROADS
 	call .GiverAtMap
+	push hl
+	farcall PeonEarthStoneQuestState
+	pop hl
+	ld a, c
+	lb de, 11, 12
+	ld b, MAP_VALLEY_OF_TRIALS
+	call .GiverAtMap
+	call .EarthStoneObjective
 	call .SleepingObjective
 	call .CactusObjectives
 	call .SarkothObjective
@@ -334,6 +342,22 @@ PeonDrawAtlasQuests::
 .GiverHidden
 	pop af
 	ret
+.EarthStoneObjective:
+	push hl
+	farcall PeonEarthStoneObjectiveStage
+	pop hl
+	ld a, c
+	cp 2
+	jr z, .EarthStoneSecondObjective
+	cp 1
+	ret nz
+	lb de, 5, 3 ; first elemental in Zone 3, actual world Y/X
+	ld b, MAP_PEON_VALLEY_CROSSROADS
+	jp .ObjectiveAtMap
+.EarthStoneSecondObjective:
+	lb de, 6, 2 ; new elemental after exchanging the telluric stone
+	ld b, MAP_PEON_VALLEY_CROSSROADS
+	jp .ObjectiveAtMap
 .SleepingObjective:
 	ld de, EVENT_PEON_LAZY_DONE
 	call .Flag
@@ -485,7 +509,15 @@ PeonDrawAtlasQuests::
 	ld de, EVENT_PEON_WARRIOR
 	call .Flag
 	jr nz, .RecruitmentGrunt
-	lb de, 5, 3 ; Earth Spirit world Y/X
+	; The first elemental now guards quest proof and cannot be recruited.
+	; A Shaman's ordinary recruitment objective shares the new second node.
+	ld de, EVENT_PEON_EARTH_STONE_REPORTED
+	call .Flag
+	ret z
+	ld de, EVENT_PEON_EARTH_STONE_DONE
+	call .Flag
+	ret nz
+	lb de, 6, 2 ; second Earth Spirit world Y/X
 	ld b, MAP_PEON_VALLEY_CROSSROADS
 	jp .ObjectiveAtMap
 .RecruitmentGrunt:

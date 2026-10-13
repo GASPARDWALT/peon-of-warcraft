@@ -1,6 +1,10 @@
 #!/bin/sh
 # Convert the approved user PNG inputs; never redraw older artwork.
 set -eu
+if [ "${1:-}" != "--check" ] && [ "${1:-}" != "--help" ] && [ "${1:-}" != "-h" ]; then
+  printf '%s\n' 'Legacy art regeneration is retired. Use python3 tools/build_peon_art_repair_v0212.py.' >&2
+  exit 2
+fi
 cd "$(dirname "$0")/.."
 
 case "${1:-}" in

@@ -102,11 +102,11 @@ PeonLoadClassWorldPreview::
 	dba .WarriorPalette
 	dba .WarlockPalette
 .ShamanPalette
-	INCLUDE "gfx/user_battle_v0211/shaman/world_preview.pal"
+	INCLUDE "gfx/approved_player_v0212/shaman/world_preview.pal"
 .WarriorPalette
-	INCLUDE "gfx/user_battle_v0211/warrior/world_preview.pal"
+	INCLUDE "gfx/approved_player_v0212/warrior/world_preview.pal"
 .WarlockPalette
-	INCLUDE "gfx/user_battle_v0211/warlock/world_preview.pal"
+	INCLUDE "gfx/approved_player_v0212/warlock/world_preview.pal"
 
 ; Read-only display metadata, once on entry. Continue remains the only full
 ; save loader; no save mirror/checksum or unrelated event is modified here.
@@ -346,32 +346,32 @@ PeonClassGetBackPoseBank0:
 ; independently encoded; the established symbol names remain caller APIs.
 SECTION "Peon Shaman Apprentice Graphics v028", ROMX
 PeonBaseWorldV0211::
-	INCBIN "gfx/user_battle_v0211/base/overworld.bin"
+	INCBIN "gfx/approved_player_v0212/base/overworld.bin"
 PeonShamanWorldV028:
-	INCBIN "gfx/user_battle_v0211/shaman/overworld.bin"
+	INCBIN "gfx/approved_player_v0212/shaman/overworld.bin"
 PeonShamanFrontV028:
-	INCBIN "gfx/user_battle_v0211/shaman/front/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/shaman/front/frames.2bpp"
 PeonShamanProfileV028:
-	INCBIN "gfx/user_battle_v0211/shaman/profile/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/shaman/profile/frames.2bpp"
 PeonShamanBackV028:
-	INCBIN "gfx/user_battle_v0211/shaman/back/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/shaman/back/frames.2bpp"
 
 SECTION "Peon Warrior Apprentice Graphics v028", ROMX
 PeonWarriorWorldV028:
-	INCBIN "gfx/user_battle_v0211/warrior/overworld.bin"
+	INCBIN "gfx/approved_player_v0212/warrior/overworld.bin"
 PeonWarriorFrontV028:
-	INCBIN "gfx/user_battle_v0211/warrior/front/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warrior/front/frames.2bpp"
 PeonWarriorProfileV028:
-	INCBIN "gfx/user_battle_v0211/warrior/profile/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warrior/profile/frames.2bpp"
 PeonWarriorBackV028:
-	INCBIN "gfx/user_battle_v0211/warrior/back/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warrior/back/frames.2bpp"
 
 SECTION "Peon Warlock Apprentice Graphics v028", ROMX
 PeonWarlockWorldV028:
-	INCBIN "gfx/user_battle_v0211/warlock/overworld.bin"
+	INCBIN "gfx/approved_player_v0212/warlock/overworld.bin"
 PeonWarlockFrontV028:
-	INCBIN "gfx/user_battle_v0211/warlock/front/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warlock/front/frames.2bpp"
 PeonWarlockProfileV028:
-	INCBIN "gfx/user_battle_v0211/warlock/profile/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warlock/profile/frames.2bpp"
 PeonWarlockBackV028:
-	INCBIN "gfx/user_battle_v0211/warlock/back/frames.2bpp"
+	INCBIN "gfx/approved_player_v0212/warlock/back/frames.2bpp"

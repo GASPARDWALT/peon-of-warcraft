@@ -1,0 +1,64 @@
+{
+  "source_sha256": "3dafb5d6d1686a2d210b3bd93105ca39f3f12a5c1309d57203aef03204060f51",
+  "checks": "Source crop and color checks run locally; independent VRAM auditor decoded all five packets and checked paths/events/save migrations.",
+  "static_validation_passed": true,
+  "engine_binding_owned_by_root": true,
+  "rom_build_or_emulator_observation_in_this_subtask": false,
+  "rooms": [
+    {
+      "map": "PeonOrcHut",
+      "patterns": 175,
+      "budget": 192,
+      "max_colors_per_native_tile": 4,
+      "complete_furnishing_source_crops_exact": true,
+      "native_binary_decode_matches_png": true,
+      "all_npc_approaches_reachable": true,
+      "protected_save_and_hearth_landings_clear": true,
+      "continue_relocations": 16
+    },
+    {
+      "map": "PeonOrcInn",
+      "patterns": 175,
+      "budget": 192,
+      "max_colors_per_native_tile": 4,
+      "complete_furnishing_source_crops_exact": true,
+      "native_binary_decode_matches_png": true,
+      "all_npc_approaches_reachable": true,
+      "protected_save_and_hearth_landings_clear": true,
+      "continue_relocations": 9
+    },
+    {
+      "map": "PeonTrollHut",
+      "patterns": 175,
+      "budget": 192,
+      "max_colors_per_native_tile": 4,
+      "complete_furnishing_source_crops_exact": true,
+      "native_binary_decode_matches_png": true,
+      "all_npc_approaches_reachable": true,
+      "protected_save_and_hearth_landings_clear": true,
+      "continue_relocations": 16
+    },
+    {
+      "map": "PeonTrollInn",
+      "patterns": 175,
+      "budget": 192,
+      "max_colors_per_native_tile": 4,
+      "complete_furnishing_source_crops_exact": true,
+      "native_binary_decode_matches_png": true,
+      "all_npc_approaches_reachable": true,
+      "protected_save_and_hearth_landings_clear": true,
+      "continue_relocations": 9
+    },
+    {
+      "map": "GrommashHold",
+      "patterns": 175,
+      "budget": 192,
+      "max_colors_per_native_tile": 4,
+      "complete_furnishing_source_crops_exact": true,
+      "native_binary_decode_matches_png": true,
+      "all_npc_approaches_reachable": true,
+      "protected_save_and_hearth_landings_clear": false,
+      "continue_relocations": 11
+    }
+  ]
+}

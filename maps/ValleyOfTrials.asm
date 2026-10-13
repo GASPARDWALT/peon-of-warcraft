@@ -9,6 +9,8 @@
 	; Append actors so the existing quest/marker object numbers remain stable.
 	const VALLEY_CAVE_APPROACH_IMP_1
 	const VALLEY_CAVE_APPROACH_IMP_2
+	const VALLEY_EARTH_SAGE
+	const VALLEY_EARTH_SAGE_MARKER
 
 ValleyOfTrials_MapScripts:
 	def_scene_scripts
@@ -20,6 +22,7 @@ ValleyOfTrials_MapScripts:
 
 ValleyOfTrialsDiscover:
 	callasm PeonMigrateValleyDiscovery
+	callasm PeonMigrateEarthStoneQuest
 	setevent EVENT_PEON_DISCOVERED_VALLEY
 	setevent EVENT_PEON_SECTOR_2
 	endcallback
@@ -584,6 +587,9 @@ PeonCactus3:
 	closetext
 	end
 
+ValleyEarthSageScript:
+	farsjump PeonEarthStoneQuestGiverScript
+
 ValleyOfTrials_MapEvents:
 	db 0, 0
 	def_warp_events
@@ -611,3 +617,6 @@ ValleyOfTrials_MapEvents:
 	; gray for active quests; the cave's existing palette allocation is unchanged.
 	object_event 25, 6, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp1Script, EVENT_PEON_CAVE_APPROACH_IMP_1_DEAD
 	object_event 27, 9, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyCaveApproachImp2Script, EVENT_PEON_CAVE_APPROACH_IMP_2_DEAD
+	; Off the east/west road; all four adjacent cells retain FLOOR collision.
+	object_event 12, 11, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyEarthSageScript, -1
+	object_event 12, 10, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyEarthSageScript, EVENT_PEON_EARTH_STONE_DONE

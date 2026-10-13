@@ -276,8 +276,8 @@ GreatBallDesc:
 	next "Reusable relic.@"
 
 PokeBallDesc:
-	db   "Befriend an earth"
-	next "spirit. Reusable.@"
+	db   "Bind an elemental."
+	next "Reusable stone.@"
 
 TeruSama1Desc:
 	db   "A rough axe for"
@@ -860,7 +860,8 @@ BerserkGeneDesc:
 	next "causes confusion.@"
 
 TeruSama18Desc:
-	db   "?@"
+	db   "Telluric stone."
+	next "Return to Shaman.@"
 
 TeruSama19Desc:
 	db   "?@"

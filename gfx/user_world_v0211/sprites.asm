@@ -1,4 +1,29 @@
 ; User-derived native world imports; originals and previous assets remain intact.
+SECTION "User world SPRITE_OAK v0211", ROMX
+PeonUserThrallWorldV0212::
+	INCBIN "gfx/user_world_v0211/veteran_questgiver/overworld.bin"
+	assert @ - PeonUserThrallWorldV0212 == 48 * TILE_SIZE
+
+SECTION "User world SPRITE_ELDER v0211", ROMX
+PeonUserKentoWorldV0212::
+	INCBIN "gfx/user_world_v0211/shaman_apprentice/overworld.bin"
+	assert @ - PeonUserKentoWorldV0212 == 48 * TILE_SIZE
+
+SECTION "User world SPRITE_BRUNO v0211", ROMX
+PeonUserWarriorMasterWorldV0212::
+	INCBIN "gfx/user_world_v0211/warrior_trainer/overworld.bin"
+	assert @ - PeonUserWarriorMasterWorldV0212 == 48 * TILE_SIZE
+
+SECTION "User world SPRITE_MORTY v0211", ROMX
+PeonUserWarlockMasterWorldV0212::
+	INCBIN "gfx/user_world_v0211/enemy_warlock/overworld.bin"
+	assert @ - PeonUserWarlockMasterWorldV0212 == 48 * TILE_SIZE
+
+SECTION "User world SPRITE_BLAINE v0211", ROMX
+PeonUserInnkeeperWorldV0212::
+	INCBIN "gfx/user_world_v0211/orc_merchant/overworld.bin"
+	assert @ - PeonUserInnkeeperWorldV0212 == 48 * TILE_SIZE
+
 SECTION "User world SPRITE_JANINE v0211", ROMX
 PeonUserSarkothWorldV0211::
 	INCBIN "gfx/user_world_v0211/sarkoth/overworld.bin"
@@ -93,3 +118,8 @@ SECTION "User world SPRITE_PEON_WORKER v0211", ROMX
 PeonUserWorkerWorldV0211::
 	INCBIN "gfx/user_world_v0211/peon_worker/overworld.bin"
 	assert @ - PeonUserWorkerWorldV0211 == 48 * TILE_SIZE
+
+SECTION "User world Shaman Apprentice v0211", ROMX
+PeonUserShamanApprenticeWorldV0211::
+	INCBIN "gfx/user_world_v0211/shaman_apprentice/overworld.bin"
+	assert @ - PeonUserShamanApprenticeWorldV0211 == 48 * TILE_SIZE

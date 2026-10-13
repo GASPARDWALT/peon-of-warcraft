@@ -1,0 +1,286 @@
+{
+  "rom_sha256": "d4adeb85438fb3362b80c7300397d47b67b5aa40350339f199fa5100d074c35e",
+  "symbols_sha256": "dba95b20fd21fd28e33379f5b83fe225b36154eaa1a5773dd9fe88d371270592",
+  "passed": true,
+  "method": "Ordinary inputs only; read-only actual native VRAM/OAM/RGB555 and battery observation against approved high-resolution raster conversions; no lossless native atlas recovery claimed.",
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "user_battery_files_opened": false,
+  "classes": {},
+  "private_scene": {
+    "passed": true,
+    "private_native_save_continue": true,
+    "new_game_not_started": true,
+    "ram_writes": false,
+    "emulator_states_loaded": false,
+    "crowded_senjin_oam": {
+      "frames": 1362,
+      "maximum_visible_entries": 40,
+      "maximum_entries_on_one_scanline": 8,
+      "physical_scanline_counts_include_X_hidden_objects": true
+    },
+    "imported_senjin_npcs": [
+      {
+        "object": 1,
+        "role": "imp",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 7,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 7,
+        "vram_bank": 1
+      },
+      {
+        "object": 2,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 3,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 4,
+        "role": "troll_shaman",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 12,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 5,
+        "role": "troll_merchant",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 6,
+        "role": "troll_guard",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      },
+      {
+        "object": 10,
+        "role": "troll_merchant",
+        "four_direction_tiles_exact": true,
+        "actual_OAM_palette_index": 6,
+        "actual_OAM_entries_compared": 4,
+        "raw_legacy_actor_palette": 6,
+        "vram_bank": 1
+      }
+    ],
+    "character_and_TEAM": {
+      "team_round_trip": {
+        "ordinary_CHARACTER_right_TEAM_cancel": true,
+        "icons": [
+          {
+            "row": 0,
+            "role": "warlock",
+            "species": 66,
+            "source_4_tiles_exact": true,
+            "bg_palette_slot": 4,
+            "world_palette_family": 1,
+            "paper_color0": [
+              31,
+              29,
+              23
+            ],
+            "actual_RGB555_icon_pixels_exact": true
+          },
+          {
+            "row": 1,
+            "role": "imp",
+            "species": 74,
+            "source_4_tiles_exact": true,
+            "bg_palette_slot": 5,
+            "world_palette_family": 7,
+            "paper_color0": [
+              31,
+              29,
+              23
+            ],
+            "actual_RGB555_icon_pixels_exact": true
+          },
+          {
+            "row": 2,
+            "role": "imp",
+            "species": 74,
+            "source_4_tiles_exact": true,
+            "bg_palette_slot": 6,
+            "world_palette_family": 7,
+            "paper_color0": [
+              31,
+              29,
+              23
+            ],
+            "actual_RGB555_icon_pixels_exact": true
+          }
+        ],
+        "profile_source_and_entire56x56_LCD_restored": true,
+        "persistent_record_unchanged": true
+      },
+      "bank0_native_49_tiles": true,
+      "row_major_tilemap": true,
+      "actual_RGB555_pixels": true,
+      "currently_displayed_frame": 0
+    },
+    "two_troll_building_door_round_trips": [
+      {
+        "door": [
+          5,
+          5
+        ],
+        "exterior_map": 17,
+        "interior_map": 21,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 22016,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": false
+          },
+          "map": "PeonTrollHut",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              63,
+              188,
+              108
+            ],
+            "wTilesetBlocksBank": [
+              63,
+              90,
+              117
+            ],
+            "wTilesetCollisionBank": [
+              63,
+              58,
+              123
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [],
+          "source_packet_sha256": "9bdb0fd48365cea022bd430520516aaf1cd9a7668b76c6a282e834f1a4f3e330",
+          "bank0_static_tiles_compared": 96,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            192
+          ],
+          "readable_v0212_interior": true,
+          "static_source_hearth": true,
+          "native_source_npcs": [
+            {
+              "object": 1,
+              "role": "imp",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 7,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 7,
+              "vram_bank": 1
+            },
+            {
+              "object": 2,
+              "role": "troll_shaman",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 6,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 6,
+              "vram_bank": 1
+            }
+          ]
+        }
+      },
+      {
+        "door": [
+          15,
+          5
+        ],
+        "exterior_map": 17,
+        "interior_map": 24,
+        "ordinary_controls_only": true,
+        "returned_to_correct_exterior": true,
+        "native_interior_packet": {
+          "actual_LCD_background": {
+            "actual_RGB555_background_pixels_exact": true,
+            "visible_background_pixels_compared": 22016,
+            "hardware_OBJ_rectangles_and_window_excluded": true,
+            "animated_exterior_fire_excluded": false
+          },
+          "map": "PeonTrollInn",
+          "native_header_pointers_exact": {
+            "wTilesetBank": [
+              11,
+              233,
+              111
+            ],
+            "wTilesetBlocksBank": [
+              11,
+              135,
+              120
+            ],
+            "wTilesetCollisionBank": [
+              11,
+              103,
+              126
+            ]
+          },
+          "static_tiles_RGB555_indices_exact": true,
+          "dynamic_fire_tiles_excluded": [],
+          "source_packet_sha256": "9bdb0fd48365cea022bd430520516aaf1cd9a7668b76c6a282e834f1a4f3e330",
+          "bank0_static_tiles_compared": 96,
+          "bank1_static_tiles_compared": 96,
+          "all360_PPU_visible_roof_priority_bits_exact": true,
+          "roof_priority_cells": 0,
+          "actual_hardware_bg_map_base": 38912,
+          "scroll_xy": [
+            0,
+            192
+          ],
+          "readable_v0212_interior": true,
+          "static_source_hearth": true,
+          "native_source_npcs": [
+            {
+              "object": 1,
+              "role": "imp",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 7,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 7,
+              "vram_bank": 1
+            },
+            {
+              "object": 2,
+              "role": "troll_shaman",
+              "four_direction_tiles_exact": true,
+              "actual_OAM_palette_index": 6,
+              "actual_OAM_entries_compared": 4,
+              "raw_legacy_actor_palette": 6,
+              "vram_bank": 1
+            }
+          ]
+        }
+      }
+    ],
+    "source_battery_sha256": "78f40549cf387a950c1eb28ec2d9816edbfe0e02d00a1b27692767b4d60e586c"
+  }
+}

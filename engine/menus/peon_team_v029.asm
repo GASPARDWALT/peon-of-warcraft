@@ -576,15 +576,11 @@ PeonTeamDrawV029:
 	and a
 	ld de, wPlayerName
 	jr z, .name
-	call PeonTeamRecordV029
-	ld a, [hl]
-	ld de, .Earth
-	cp ONIX
-	jr z, .name
-	ld de, .Grunt
-	cp MACHAMP
-	jr z, .name
-	ld de, .Imp
+	; Native companion names include both automatic role defaults and the
+	; earth-stone quest's chosen nickname. Keep the hero's display name above.
+	ld hl, wPartyMonNicknames
+	call GetNickname
+	ld de, wStringBuffer1
 .name
 	pop hl
 	push hl
@@ -850,7 +846,10 @@ endr
 	ld hl, .ImpPalette
 	cp GEODUDE
 	jr z, .palette
-	ld hl, .HeroPalette
+	call PeonTeamHeroClassV029
+	ld hl, .HeroPalettes
+	ld bc, 1 palettes
+	call AddNTimes
 .palette
 	push hl
 	ld a, e
@@ -902,14 +901,13 @@ endr
 	dba PeonShamanWorldV028
 	dba PeonWarriorWorldV028
 	dba PeonWarlockWorldV028
-.EarthSource: dba PeonTeamEarthWorldV029
-.GruntSource: dba PeonTeamGruntWorldV029
-.ImpSource: dba PeonTeamImpWorldV029
-.HeroPalette: RGB 31,29,23, 18,11,6, 15,22,8, 1,1,1
-.EarthPalette: RGB 31,29,23, 18,12,6, 13,23,6, 1,1,1
-.GruntPalette: RGB 31,29,23, 16,10,5, 12,21,6, 1,1,1
-.ImpPalette: RGB 31,29,23, 26,7,3, 31,26,14, 1,1,1
-
-PeonTeamEarthWorldV029: INCBIN "gfx/peon_recruits_v029/earth_spirit/overworld.bin", 0, 4 tiles
-PeonTeamGruntWorldV029: INCBIN "gfx/peon_recruits_v029/orc_grunt/overworld.bin", 0, 4 tiles
-PeonTeamImpWorldV029: INCBIN "gfx/peon_recruits_v029/demon_imp/overworld.bin", 0, 4 tiles
+.EarthSource: dba PeonEarthElementalWorldV0212
+.GruntSource: dba PeonUserOrcGuardWorldV0211
+.ImpSource: dba PeonUserImpWorldV0211
+.HeroPalettes:
+	RGB 31,29,23, 18,12,6, 15,17,8, 2,1,1
+	RGB 31,29,23, 18,12,6, 15,17,8, 2,1,1
+	RGB 31,29,23, 12,17,5, 16,11,17, 1,1,1
+.EarthPalette: RGB 31,29,23, 18,12,6, 15,17,8, 2,1,1
+.GruntPalette: RGB 31,29,23, 18,12,6, 15,17,8, 2,1,1
+.ImpPalette: RGB 31,29,23, 18,9,6, 10,3,2, 2,1,1

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "checks": [
+    "enemy_front binary-frame decode equals native alpha, correct byte lengths/slots, \u22643 opaque colors per tile, three identical frames",
+    "ally_front binary-frame decode equals native alpha, correct byte lengths/slots, \u22643 opaque colors per tile, three identical frames",
+    "ally_back binary-frame decode equals native alpha, correct byte lengths/slots, \u22643 opaque colors per tile, three identical frames",
+    "world all4 directions decode equals native alpha, 768B, three identical direction blocks, \u22643 opaque colors",
+    "generated master and supplied style-reference SHA256 unchanged"
+  ],
+  "ROM_emulator_verified": false
+}

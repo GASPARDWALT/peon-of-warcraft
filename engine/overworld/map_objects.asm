@@ -3093,6 +3093,8 @@ PeonUserWorldPaletteV0211:
 	push de
 	push hl
 	ld b, a
+	cp SPRITE_POKEFAN_M
+	jr z, .earth
 	cp SPRITE_CHRIS
 	jr z, .player
 	cp SPRITE_KRIS
@@ -3122,6 +3124,10 @@ PeonUserWorldPaletteV0211:
 	jr z, .player_palette
 	ld a, 1
 .player_palette
+	scf
+	jr .done
+.earth
+	ld a, 2
 	scf
 .done
 	pop hl

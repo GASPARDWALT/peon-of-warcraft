@@ -3,8 +3,8 @@
 ; SPRITE_SCIENTIST 60 = complete yellow ?. All are four-tile STILL_SPRITEs.
 ; Yellow uses existing OBJ palette4 (PAL_OW_PINK); gray uses palette5 color1.
 ; ROOT/map callbacks control state/visibility; these helpers store no save data.
-; Gray color is only applied in marker maps. Valley's exterior familiars use
-; spare palette6, leaving gray quest markers and the cave's palette5 intact.
+; Gray color is only applied in marker maps. Cave-approach familiars use
+; palette6; Zone 2 keeps its supplied troll palette for the earth sage.
 
 SECTION "Peon Quest Marker Graphics", ROMX
 
@@ -171,8 +171,8 @@ PeonApplyQuestMarkerGrayPalette::
 	ld a, BANK(wOBPals2)
 	call FarCopyWRAM
 	ld a, [wMapNumber]
-	cp MAP_VALLEY_OF_TRIALS
-	jr z, .imp_palette
+	; Zone 2's old imp actors are masked. Keep canonical troll OBJ6 for
+	; its new earth sage; only the cave approach still needs this red override.
 	cp MAP_PEON_CAVE_APPROACH
 	jr nz, .update
 .imp_palette
@@ -233,6 +233,7 @@ PeonInitQuestMarkerSprites::
 	ld [wVariableSprites + 14], a
 	call .Zureetha
 	ld [wVariableSprites + 15], a
+	farcall PeonInitEarthStoneQuestMarker
 	jp .done
 .den
 	ld de, EVENT_PEON_MAP_RECEIVED
@@ -358,6 +359,7 @@ PeonRefreshQuestMarkers::
 	ld de, EVENT_PEON_MEDALLION_DONE
 	ld a, 7
 	call .HideFinished
+	farcall PeonHideEarthStoneQuestMarker
 	jr .reload
 .den
 	; This stable actor serves both Gornek's follow-up and unclaimed gear.

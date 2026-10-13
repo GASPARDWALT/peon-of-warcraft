@@ -23,6 +23,9 @@ PeonApplyPlayerBattleArtV0211::
 	ld a, [wBattleMonSpecies]
 	cp MACHOP
 	jr z, .hero
+	cp ONIX
+	ld hl, .earth
+	jr z, .selected
 	cp GEODUDE
 	ld hl, .imp
 	jr z, .selected
@@ -68,6 +71,8 @@ PeonApplyPlayerBattleArtV0211::
 	dba PeonUserWarlockBackPalsV0211
 .imp
 	dba PeonUserImpAllyPalsV0211
+.earth
+	dba PeonEarthElementalAllyBackPalsV0212
 .grunt
 	dba PeonUserGruntAllyPalsV0211
 
@@ -125,6 +130,8 @@ PeonApplyEnemyBattleArtV0211::
 	pop af
 	ret
 .enemies
+	db ONIX
+	dba PeonEarthElementalEnemyMetaV0212
 	db RATTATA
 	dba PeonUserRattataEnemyMetaV0211
 	db SANDSHREW

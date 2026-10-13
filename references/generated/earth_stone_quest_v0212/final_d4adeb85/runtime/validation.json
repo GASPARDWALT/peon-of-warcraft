@@ -1,0 +1,214 @@
+{
+  "rom_sha256": "d4adeb85438fb3362b80c7300397d47b67b5aa40350339f199fa5100d074c35e",
+  "sym_sha256": "dba95b20fd21fd28e33379f5b83fe225b36154eaa1a5773dd9fe88d371270592",
+  "status": "PASS",
+  "preliminary_logic_evidence": false,
+  "method": "Genuine fresh classes; native buttons, battles, capture RNG, naming and battery Continue.",
+  "RAM_writes": false,
+  "ROM_patches": false,
+  "CPU_substitutions": false,
+  "emulator_state_loads": false,
+  "user_saves_opened": false,
+  "classes": {
+    "shaman": {
+      "complete_chain": true,
+      "first_RUN_no_credit": true,
+      "native_capture_rolls": [
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 190,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 186,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 192,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 143,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 236,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 13,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 252,
+          "threshold": 82,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 14,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 120,
+          "threshold": 75,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 14,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 203,
+          "threshold": 75,
+          "joined": false,
+          "party_after": 1
+        },
+        {
+          "enemy_hp": 14,
+          "enemy_max_hp": 16,
+          "status": 0,
+          "catch_rate": 180,
+          "control_quantity": 1,
+          "party_before": 1,
+          "random_byte": 38,
+          "threshold": 75,
+          "joined": true,
+          "party_after": 2
+        }
+      ],
+      "native_second_encounter_retries": [
+        {
+          "battle_result": 1,
+          "quest_unchanged": true,
+          "control_stone_preserved": true
+        }
+      ],
+      "control_stone_reusable": true,
+      "renamed_to": "TERRA",
+      "TEAM_and_native_battle_HUD_show_chosen_name": true,
+      "canonical_TEAM_icons": [
+        {
+          "row": 0,
+          "species": 66,
+          "source": "gfx/approved_player_v0212/shaman/overworld.bin",
+          "four_native_VRAM_tiles_exact": true,
+          "tile_sha256": "16a8753b76bb4571b6bb899837202c5b319266d8a0d9f60d84a8838666d821c4",
+          "world_palette_family": 2,
+          "native_palette_hex": "bf5f92192f222204",
+          "opaque_world_colors_and_paper0_exact": true
+        },
+        {
+          "row": 1,
+          "species": 95,
+          "source": "gfx/earth_elemental_v0212/overworld.bin",
+          "four_native_VRAM_tiles_exact": true,
+          "tile_sha256": "1b335ee50e302b4eb9dd65549d360a8d44d471843fcc4391d9fff4a5b2d6a533",
+          "world_palette_family": 2,
+          "native_palette_hex": "bf5f92192f222204",
+          "opaque_world_colors_and_paper0_exact": true
+        }
+      ],
+      "cold_continue": {
+        "native_save_calls": 1,
+        "battery_bytes": 32768,
+        "full_persistent_record_equal": true,
+        "battery_sha256": "dfb1bb6d211dd43dfbd8539119fa4740afdf69a6c7d496eba84f549b6b956874"
+      }
+    },
+    "warrior": {
+      "refused_without_progress_or_items": true,
+      "quest_elementals_hidden": true,
+      "canonical_TEAM_icons": [
+        {
+          "row": 0,
+          "species": 66,
+          "source": "gfx/approved_player_v0212/warrior/overworld.bin",
+          "four_native_VRAM_tiles_exact": true,
+          "tile_sha256": "4bf80a25a6e914c865427257b568a15848134b701a571702f0c55fce5e0f7402",
+          "world_palette_family": 2,
+          "native_palette_hex": "bf5f92192f222204",
+          "opaque_world_colors_and_paper0_exact": true
+        }
+      ]
+    },
+    "warlock": {
+      "refused_without_progress_or_items": true,
+      "quest_elementals_hidden": true,
+      "canonical_TEAM_icons": [
+        {
+          "row": 0,
+          "species": 66,
+          "source": "gfx/approved_player_v0212/warlock/overworld.bin",
+          "four_native_VRAM_tiles_exact": true,
+          "tile_sha256": "4fab6fea12bf56cc96ebdba3541c6f5150cfae0a21475d0ab5bc93b86565f008",
+          "world_palette_family": 1,
+          "native_palette_hex": "bf5f2c1670452104",
+          "opaque_world_colors_and_paper0_exact": true
+        },
+        {
+          "row": 1,
+          "species": 74,
+          "source": "gfx/user_world_v0211/imp/overworld.bin",
+          "four_native_VRAM_tiles_exact": true,
+          "tile_sha256": "aa78991f35981676d5cb353e19d5884e3d54e0918287e7eba0fc5fda2ddbff34",
+          "world_palette_family": 7,
+          "native_palette_hex": "bf5f32196a082204",
+          "opaque_world_colors_and_paper0_exact": true
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Full-bag recovery reviewed in source; no artificial full inventory.",
+    "First-battle native loss not forced by fixtures.",
+    "First-elemental capture guard checked through native node0 and exact pact source; no preowned-stone inventory fixture."
+  ],
+  "all_checks_passed": true
+}

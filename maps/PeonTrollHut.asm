@@ -24,7 +24,7 @@ PeonTrollHutHealerOfferText:
 PeonTrollHut_MapEvents:
 	db 0, 0
 	def_warp_events
-	warp_event 5, 7, PEON_TROLL_HUT, -1
+	warp_event 5, 9, PEON_TROLL_HUT, -1
 	def_coord_events
 	def_bg_events
 	def_object_events

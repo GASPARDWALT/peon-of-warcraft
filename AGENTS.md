@@ -16,6 +16,8 @@
 - Preserve saves, previous releases, unrelated user changes and working gameplay.
 - Check every class, direction and affected battle pose so old graphics cannot reappear during movement, attacks or native menus.
 - Before running an asset builder, inspect whether it redraws or overwrites imported art. In particular, `tools/rebuild_peon_v028.sh` regenerates prior art and must not overwrite a user-sprite import.
+- Current safe build: `python3 tools/build_peon_art_repair_v0212.py`. It freezes historical generator targets and rejects an unexpected generator in the Make plan. Keep native generated packets versioned as build inputs.
+- `references/generated/user_player_v0211` and the native `peon_sprite_redesign_v030` packets contain procedural replacement art. They are historical artifacts, never current hero fallback sources. Approved large raster masters are a separate, explicitly lossy import; do not label them recovered user-native sprites.
 - Check GBC tile/palette allocation and OAM limits before changing the rendering path. Report real hardware constraints concretely; do not use them to justify an unrelated redesign.
 - Use bounded, relevant emulator checks and report what was actually observed. A successful build or gallery pixel check does not prove in-game visual quality.
 

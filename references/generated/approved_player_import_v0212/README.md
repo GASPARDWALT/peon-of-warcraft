@@ -1,0 +1,7 @@
+# Approved hero raster import — v0.2.12
+
+These 24 native PNGs are direct conversions of the four approved design masters in `references/generated/peon_sprite_redesign_v030/originals/`. The original source PNGs remain unchanged. The source rasters are not exact enlarged native pixel grids: every crop, original SHA256, alpha threshold, nearest-neighbor size and centering offset is recorded in `manifest.json`. Alpha >=128 becomes 255; lower alpha becomes 0. Whole source poses and equipment fit inside a one-pixel transparent border.
+
+No replacement anatomy, ASCII sprite rows, polygons, new equipment or attack poses are authored. Three engine frame slots repeat the single source pose. World directions are imported independently. The source native PNGs retain their sampled RGB colors. Separate GBC files reduce colors to the allocated per-tile palettes, so hardware previews show the actual remaining color loss. Warlock palette6 remains compatible with the legacy Imp. Other battle views may use all four BG6 colors only inside completely opaque 8×8 tiles when the complete actor fit improves; BG0 and every alpha-edge tile retain the white battlefield. Source alpha, rather than color index0, defines these previews and validation masks. Global world palettes are not modified here.
+
+Reproduce with `python tools/import_peon_approved_players_v0212.py`. This importer does not modify engine bindings or build a ROM. A future available user native atlas takes priority over this lossy raster conversion.

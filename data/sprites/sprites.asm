@@ -13,15 +13,15 @@ OverworldSprites:
 	overworld_sprite ChrisBikeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite GameboyKidSpriteGFX, 12, STANDING_SPRITE, PAL_OW_GREEN
 	overworld_sprite RivalSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite PeonThrallGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonUserThrallWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
 	overworld_sprite PeonSleepingGFX, 4, STILL_SPRITE, PAL_OW_GREEN
 	overworld_sprite BlueSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BillSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite PeonKentoGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+	overworld_sprite PeonUserKentoWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
 	overworld_sprite PeonUserSarkothWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 7
 	overworld_sprite KurtSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite MomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite PeonInnkeeperGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonUserInnkeeperWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
 	overworld_sprite RedsMomSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite DaisySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite ElmSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -29,14 +29,14 @@ OverworldSprites:
 	overworld_sprite FalknerSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite WhitneySpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BugsySpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
-	overworld_sprite PeonWarlockGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+	overworld_sprite PeonUserWarlockMasterWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 1
 	overworld_sprite ChuckSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite JasmineSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite PryceSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite ClairSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite BrockSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite KarenSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
-	overworld_sprite PeonWarriorGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonUserWarriorMasterWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
 	overworld_sprite MistySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite LanceSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
 	overworld_sprite SurgeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
@@ -53,7 +53,7 @@ OverworldSprites:
 	overworld_sprite PeonUserFelhunterWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 1
 	overworld_sprite PeonUserCultistWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 1
 	overworld_sprite PeonYarrogGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite PokefanMSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
+	overworld_sprite PeonEarthElementalWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
 	overworld_sprite PokefanFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite GrampsSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GrannySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN

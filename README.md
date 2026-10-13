@@ -1,11 +1,23 @@
 # Peon of Warcraft — Durotar prototype
 
-[Latest ROM — v0.2.11](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.gbc) · [ROM and native validation](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.zip) · [PNG sources, completed sprites and real captures](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/references/generated/user_art_v0211_pack/peon_png_sources_and_completions_v0_2_11.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.11/peon_of_warcraft_v0_2_11_player.zip)
+[ROM v0.2.12](releases/v0.2.12/peon_of_warcraft_v0_2_12.gbc) · [Téléchargement ZIP](releases/v0.2.12/peon_of_warcraft_v0_2_12.zip) · [Réparations graphiques, sources et quête tellurique](docs/ART_REPAIR_AND_EARTH_STONE_V0212.md)
 
-The supplied character PNGs and Durotar scenery are now imported into the actual
-ROM. Missing player variants and damaged crops are completed separately, with
-original files preserved. World sprites are 16×16; combat fronts 56×56 and
-backs 48×48. All three player classes have distinct rear combat poses.
+La v0.2.12 utilise les grandes planches de héros validées disponibles, les PNG
+canoniques pour les PNJ et des intérieurs dégagés. Elle ajoute le shaman
+mystérieux en zone 2 et la victoire, l'échange puis la capture et le renommage
+d'un élémentaire en zone 3. Les sources originales restent intactes ; le
+document précise les conversions avec perte et les vues sources endommagées.
+
+Safe native build: `python3 tools/build_peon_art_repair_v0212.py`.
+
+## v0.2.11 archive
+
+[Previous ROM — v0.2.11](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.gbc) · [ROM and native validation](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/v0.2.11/peon_of_warcraft_v0_2_11.zip) · [PNG sources, completed sprites and real captures](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/references/generated/user_art_v0211_pack/peon_png_sources_and_completions_v0_2_11.zip) · [Offline browser player](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/main/releases/browser-player-v0.2.11/peon_of_warcraft_v0_2_11_player.zip)
+
+This previous release introduced the character/scenery import paths and
+separate completions. Its procedural hero completions are superseded by the
+v0.2.12 approved raster imports. The previous release and its reports remain
+archived; they do not describe the current graphics.
 
 The supplied Razor Hill inn model covers the nine enterable buildings and two
 closed guard lodges. Five room layouts reuse its native interior tiles. Roofs
