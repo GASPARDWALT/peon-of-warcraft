@@ -946,6 +946,15 @@
       "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
     }
   ],
+  "compression_profile": {
+    "tool": "tools/lzcompress",
+    "flags": [
+      "--matching",
+      "--align",
+      "4"
+    ],
+    "matches": "gfx/lz.mk: --matching + gfx/tilesets/%.lz --align4"
+  },
   "path_visible_openings": {
     "NS": "straight_horizontal",
     "EW": "straight_vertical",
@@ -1045,21 +1054,21 @@
   },
   "native_output_sha256": {
     "gfx/tilesets/peon_environment_v2/Annex.2bpp": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
-    "gfx/tilesets/peon_environment_v2/Annex.2bpp.lz": "31f062bfd4587625271f350943f81b428462962d95ea75d690b4449d3be64c5c",
+    "gfx/tilesets/peon_environment_v2/Annex.2bpp.lz": "8b33334456c5bdccba464604c8a382493f1c0646e01a5b66e6ead74784c2587b",
     "gfx/tilesets/peon_environment_v2/Annex.png": "0290c05445d9984ea42abc91422f976f2ca5df2bbb5ce67aeb8619ec0e273412",
     "gfx/tilesets/peon_environment_v2/Annex_collision.asm": "66ee9b07a5b4062a707a8a75b80830cb6101d21608db51274a23ae13a8914064",
     "gfx/tilesets/peon_environment_v2/Annex_metatiles.bin": "f1e63202a2e368a29e2f782fdbb75fdfaf16f0c5cdca256d6268c5be1ce3e321",
     "gfx/tilesets/peon_environment_v2/Annex_palette_map.bin": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10",
     "gfx/tilesets/peon_environment_v2/Annex_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
     "gfx/tilesets/peon_environment_v2/Cave.2bpp": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
-    "gfx/tilesets/peon_environment_v2/Cave.2bpp.lz": "47da2344ad2e4e09aec2a5ded3b5b9d5eccd8a9db8d50480394f1e82859105b6",
+    "gfx/tilesets/peon_environment_v2/Cave.2bpp.lz": "40972d462d4e88e5d2d5229d6133a232df908bf1d738c2cef7b8160eb7fd5fd4",
     "gfx/tilesets/peon_environment_v2/Cave.png": "a7633f0f1f3647735103a871a799756ed3d411312e60e35f37666041bcc2dcbb",
     "gfx/tilesets/peon_environment_v2/Cave_collision.asm": "a1c13868824fa8a369bca2ab5a430ff5510147dc9b53bc69f3b3b2b32bde1609",
     "gfx/tilesets/peon_environment_v2/Cave_metatiles.bin": "768055e83904022b832abedcf1d9e4f990fca8de8ba93ce5129d7a078b893305",
     "gfx/tilesets/peon_environment_v2/Cave_palette_map.bin": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba",
     "gfx/tilesets/peon_environment_v2/Cave_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
     "gfx/tilesets/peon_environment_v2/Test.2bpp": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
-    "gfx/tilesets/peon_environment_v2/Test.2bpp.lz": "488e4771c64741edc49e50462d76cd885920029c0496a1c97727a1fbca37c37e",
+    "gfx/tilesets/peon_environment_v2/Test.2bpp.lz": "e259eec0ff805eec5ee58e73b72aeb9cb436b92315b1d7fdc836d806ce9f9076",
     "gfx/tilesets/peon_environment_v2/Test.png": "6a65fb1a500c47cb49afc9b287ca70521c69db77f9bb93b5b7ff8dc27f60a06f",
     "gfx/tilesets/peon_environment_v2/Test_collision.asm": "79a86666520363534de75c4689130b93a3aaba32195c8abecbbef2c4b0d30359",
     "gfx/tilesets/peon_environment_v2/Test_metatiles.bin": "37f8d2fb9a970d18bb84b266cd9c02637501567ef0bed29349bbbc9e20cfc007",

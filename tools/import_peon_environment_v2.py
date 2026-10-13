@@ -28,6 +28,9 @@ MAPS = [('PeonEnvironmentTest', 'Test', 30),
         ('PeonEnvironmentTestAnnex', 'Annex', 31),
         ('PeonEnvironmentTestCave', 'Cave', 32)]
 WIDTH, HEIGHT = 12, 10
+# Match gfx/lz.mk exactly. Optimal compression here would differ from a clean
+# native Make rebuild when PNG/2bpp timestamps cause recompression.
+LZ_FLAGS = ['--matching', '--align', '4']
 
 # Pure encoding/conversion helpers only: importing this module never executes
 # the previous importer, regenerates its maps, or changes its baseline.
@@ -304,7 +307,7 @@ def pack_map(m, frames, rgbgfx):
     subprocess.run([rgbgfx,'--colors','dmg','-o',str(binary),str(png)],check=True)
     expected=b''.join(encode(tile) for tile in tiles)
     assert binary.read_bytes()==expected, 'rgbgfx changed grayscale index ordering'
-    subprocess.run([str(ROOT/'tools/lzcompress'),'--',str(binary),str(NATIVE/f'{m.short}.2bpp.lz')],check=True)
+    subprocess.run([str(ROOT/'tools/lzcompress'),*LZ_FLAGS,'--',str(binary),str(NATIVE/f'{m.short}.2bpp.lz')],check=True)
     (NATIVE/f'{m.short}_metatiles.bin').write_bytes(meta)
     attributes=[7]*256
     for index,tile in enumerate(tiles):
@@ -426,6 +429,7 @@ def main():
               'scope':'Dedicated Durotar environment v2 test maps only; no real map, class or combat changes.',
               'source_geometry':'All supplied native pixel coordinates and complete source alpha canvases retained; no resampling.',
               'palettes':palette_fit,'existing_ui_palette_unchanged':True,'maps':results,'excluded':excluded,
+              'compression_profile':{'tool':'tools/lzcompress','flags':LZ_FLAGS,'matches':'gfx/lz.mk: --matching + gfx/tilesets/%.lz --align4'},
               'path_visible_openings':orientations,'static_walkability':static,'fire':contract['fire'],'joined_transition':joined_transition,
               'native_output_sha256':{str(path.relative_to(ROOT)):sha(path.read_bytes()) for path in sorted(NATIVE.glob('*')) if path.is_file()},
               'native_cave_kit':{'png':'gfx/tilesets/cave.png','png_sha256':sha((ROOT/'gfx/tilesets/cave.png').read_bytes()),
