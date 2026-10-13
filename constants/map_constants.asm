@@ -518,6 +518,11 @@ ENDM
 	map_const PEON_SARKOTH_BASIN,                           5,  5 ; 27 zone 5
 	map_const PEON_CAVE_APPROACH,                           5,  5 ; 28 zone 6
 	map_const PEON_VALLEY_EXIT,                             5,  5 ; 29 zone 7
+	; Isolated environment inspection maps; existing IDs1-29 stay stable.
+	map_const PEON_ENVIRONMENT_TEST,                       12, 10 ; 30
+	map_const PEON_ENVIRONMENT_TEST_ANNEX,                 12, 10 ; 31
+	map_const PEON_ENVIRONMENT_TEST_CAVE,                  12, 10 ; 32
+	DEF MAP_PEON_ENVIRONMENT_TEST_LAST EQU MAP_PEON_ENVIRONMENT_TEST_CAVE
 	endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 26

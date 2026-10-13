@@ -1,0 +1,1036 @@
+{
+  "source_archive": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality.zip",
+  "source_archive_sha256": "5a9b27fe4a8c20934654388058f635726e2e3f477c131b27efff687fc2c1bdc0",
+  "scope": "Dedicated Durotar environment v2 test maps only; no real map, class or combat changes.",
+  "source_geometry": "All supplied native pixel coordinates and complete source alpha canvases retained; no resampling.",
+  "palettes": [
+    {
+      "name": "earth_paths",
+      "rgb555": [
+        [
+          22,
+          14,
+          8
+        ],
+        [
+          21,
+          10,
+          5
+        ],
+        [
+          20,
+          8,
+          4
+        ],
+        [
+          14,
+          6,
+          4
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": null
+    },
+    {
+      "name": "red_earth_rock",
+      "rgb555": [
+        [
+          26,
+          12,
+          6
+        ],
+        [
+          24,
+          10,
+          4
+        ],
+        [
+          21,
+          9,
+          5
+        ],
+        [
+          12,
+          5,
+          3
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": null
+    },
+    {
+      "name": "wood_shadow",
+      "rgb555": [
+        [
+          18,
+          12,
+          9
+        ],
+        [
+          12,
+          6,
+          4
+        ],
+        [
+          7,
+          4,
+          3
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": null
+    },
+    {
+      "name": "desert_plants",
+      "rgb555": [
+        [
+          14,
+          12,
+          5
+        ],
+        [
+          8,
+          8,
+          3
+        ],
+        [
+          6,
+          4,
+          3
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": null
+    },
+    {
+      "name": "bone_stone",
+      "rgb555": [
+        [
+          21,
+          18,
+          14
+        ],
+        [
+          15,
+          12,
+          10
+        ],
+        [
+          12,
+          8,
+          5
+        ],
+        [
+          9,
+          7,
+          7
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": "bone"
+    },
+    {
+      "name": "horde_red",
+      "rgb555": [
+        [
+          20,
+          9,
+          6
+        ],
+        [
+          16,
+          6,
+          4
+        ],
+        [
+          9,
+          5,
+          4
+        ],
+        [
+          5,
+          2,
+          1
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": "red"
+    },
+    {
+      "name": "fire",
+      "rgb555": [
+        [
+          20,
+          10,
+          5
+        ],
+        [
+          20,
+          9,
+          4
+        ],
+        [
+          15,
+          6,
+          4
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "fit": "median-cut of actual opaque source pixels on RGB555 grid",
+      "source_filter": null
+    }
+  ],
+  "existing_ui_palette_unchanged": true,
+  "maps": [
+    {
+      "name": "PeonEnvironmentTest",
+      "number": 30,
+      "width_blocks": 12,
+      "height_blocks": 10,
+      "headerprefix": "PeonEnvV2Test",
+      "native_patterns": 181,
+      "loaded_patterns": 192,
+      "metatile_count": 16,
+      "gfx": "gfx/tilesets/peon_environment_v2/Test.2bpp",
+      "compressed_gfx": "gfx/tilesets/peon_environment_v2/Test.2bpp.lz",
+      "metatiles": "gfx/tilesets/peon_environment_v2/Test_metatiles.bin",
+      "collision": "gfx/tilesets/peon_environment_v2/Test_collision.asm",
+      "palmap": "gfx/tilesets/peon_environment_v2/Test_palette_map.bin",
+      "priority": "gfx/tilesets/peon_environment_v2/Test_priority.bin",
+      "palettes": "gfx/tilesets/peon_environment_v2/background.pal",
+      "map_blocks": "maps/PeonEnvironmentTest.blk",
+      "source_assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png",
+          "sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            2
+          ],
+          "role": "source ground underneath alpha props"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_straight_horizontal_32x32.png",
+          "sha256": "34a667262ecf0e4f06c06e0279ebb06eba9be407c1b5c242c7ff686c1f7ae55c",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            3
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_straight_vertical_32x32.png",
+          "sha256": "b3761cdfd0be824c218b62e3a642999c5de3ce161a5f3286b9c17c79fdedeae3",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            4
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_ne_32x32.png",
+          "sha256": "d1ccd7146a00d3983a1c4fd5042c990ac92aed53d4c058d450cf665d3df550f4",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            5
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_nw_32x32.png",
+          "sha256": "56bd64867d4ef4521e547c10f2ceec9281e61adbc3b1eaa2c7ede9e431b2049a",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            6
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_se_32x32.png",
+          "sha256": "d0055c7986a2c0f1dc80c67897905453344b76401b348ec2c152727c613c2b34",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            7
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_sw_32x32.png",
+          "sha256": "0e6f68d14f6854bd7c3857ce5bd19bd5cc8a3cfc88fda079c433246096f24eeb",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            8
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_crossroad_32x32.png",
+          "sha256": "f7fb9258ff8c0e983a1aa74fbd6a370e2b9273bf9fa60a8dbe1dcbecbfd1c1b9",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            9
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_01_32x32.png",
+          "sha256": "206f80bd59b375dbbf03777ada17ec81933ecf1755cfd6e1114ebc87300a13ee",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            10
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_cracked_01_32x32.png",
+          "sha256": "cd0e4eaa654ebefccef3f0546e512121daa3df848eff129832cd4f4680cfc2d6",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            11
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            6,
+            7,
+            28,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            128,
+            32
+          ],
+          "metatile_ids": [
+            12
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "dimensions": [
+            16,
+            32
+          ],
+          "alpha_bbox": [
+            4,
+            16,
+            14,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            200,
+            32
+          ],
+          "metatile_ids": [
+            13
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        }
+      ]
+    },
+    {
+      "name": "PeonEnvironmentTestAnnex",
+      "number": 31,
+      "width_blocks": 12,
+      "height_blocks": 10,
+      "headerprefix": "PeonEnvV2Annex",
+      "native_patterns": 186,
+      "loaded_patterns": 192,
+      "metatile_count": 29,
+      "gfx": "gfx/tilesets/peon_environment_v2/Annex.2bpp",
+      "compressed_gfx": "gfx/tilesets/peon_environment_v2/Annex.2bpp.lz",
+      "metatiles": "gfx/tilesets/peon_environment_v2/Annex_metatiles.bin",
+      "collision": "gfx/tilesets/peon_environment_v2/Annex_collision.asm",
+      "palmap": "gfx/tilesets/peon_environment_v2/Annex_palette_map.bin",
+      "priority": "gfx/tilesets/peon_environment_v2/Annex_priority.bin",
+      "palettes": "gfx/tilesets/peon_environment_v2/background.pal",
+      "map_blocks": "maps/PeonEnvironmentTestAnnex.blk",
+      "source_assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png",
+          "sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            2
+          ],
+          "role": "source ground underneath alpha props"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/orc_hut_durotar_01_64x64.png",
+          "sha256": "088fa216f1293ddeb1a1452e0caa51846d0a2bb0fe307f88e6e34f8ebcaedcb0",
+          "dimensions": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            2,
+            0,
+            64,
+            54
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            128,
+            64
+          ],
+          "metatile_ids": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cave_entrance_durotar_01_64x64.png",
+          "sha256": "186db943eda85c6e4c13e8a400a85b61c120345d74fadf5bb08259892e063b38",
+          "dimensions": [
+            64,
+            64
+          ],
+          "alpha_bbox": [
+            1,
+            0,
+            64,
+            64
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            256,
+            64
+          ],
+          "metatile_ids": [
+            7,
+            8,
+            9,
+            10
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            3,
+            0,
+            31,
+            25
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            96,
+            160
+          ],
+          "metatile_ids": [
+            13
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_gate_01_32x32.png",
+          "sha256": "5dead2b7c7bcd8a868f4b9d243faa0246575738298e0b45e1aecaa54f48cd181",
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            1,
+            0,
+            31,
+            25
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            160,
+            160
+          ],
+          "metatile_ids": [
+            14
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            0,
+            1,
+            25,
+            29
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            96,
+            192
+          ],
+          "metatile_ids": [
+            19
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "dimensions": [
+            16,
+            48
+          ],
+          "alpha_bbox": [
+            0,
+            32,
+            15,
+            48
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            40,
+            64
+          ],
+          "metatile_ids": [
+            20,
+            21
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/brazier_durotar_frame_01_16x16.png",
+          "sha256": "46b9cfe8331e9664db5304a284583d82ded3878df3fcb3d4ad43f74f5788599e",
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_bbox": [
+            0,
+            0,
+            14,
+            13
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            80,
+            208
+          ],
+          "metatile_ids": [
+            23
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/chest_shared_closed_16x16.png",
+          "sha256": "cb20a75f729c6792b2206bd17768358a77eddfb0bb4851cf7ea5366f20972e61",
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_bbox": [
+            3,
+            5,
+            14,
+            14
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            208,
+            208
+          ],
+          "metatile_ids": [
+            25
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_01_16x16.png",
+          "sha256": "1beb209da661dfd7c43479ba5188f8a0d48720f568da2521d5ab955e24832aec",
+          "dimensions": [
+            16,
+            16
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            176,
+            208
+          ],
+          "animated_physical_tile_ids": [
+            0,
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PeonEnvironmentTestCave",
+      "number": 32,
+      "width_blocks": 12,
+      "height_blocks": 10,
+      "headerprefix": "PeonEnvV2Cave",
+      "native_patterns": 171,
+      "loaded_patterns": 192,
+      "metatile_count": 20,
+      "gfx": "gfx/tilesets/peon_environment_v2/Cave.2bpp",
+      "compressed_gfx": "gfx/tilesets/peon_environment_v2/Cave.2bpp.lz",
+      "metatiles": "gfx/tilesets/peon_environment_v2/Cave_metatiles.bin",
+      "collision": "gfx/tilesets/peon_environment_v2/Cave_collision.asm",
+      "palmap": "gfx/tilesets/peon_environment_v2/Cave_palette_map.bin",
+      "priority": "gfx/tilesets/peon_environment_v2/Cave_priority.bin",
+      "palettes": "gfx/tilesets/peon_environment_v2/background.pal",
+      "map_blocks": "maps/PeonEnvironmentTestCave.blk",
+      "source_assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png",
+          "sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            2
+          ],
+          "role": "source ground underneath alpha props"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_bottom_32x32.png",
+          "sha256": "65b2ca36845b117cc896712a6e95497898ebc7f00c6d6bdb86644144d847c1d7",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            4
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_left_32x32.png",
+          "sha256": "3a7ee8aa61b5fa12d875735efcd7939b708a562c0ac7eb72ea31c3604382a2a7",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            5
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_right_32x32.png",
+          "sha256": "8a980a70edefc9e59eb9cab453b5bab885cdb9f1989569b0187aa66f2525a538",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            6
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_top_32x32.png",
+          "sha256": "a9f1ed38e5c87b1341a1657b5833f9d8e7b6ff0f90099f560897dccc39abc90b",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            7
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_bottom_32x32.png",
+          "sha256": "37f828625bd3a27c0457ca8b6c8aa4241994154ff30b7a10ddf7da669e45b4ed",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            8
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_left_32x32.png",
+          "sha256": "61757d197ed503f210ed73c264467f7f76db6105e2edcdffa76caa2ea65e98de",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            9
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_right_32x32.png",
+          "sha256": "e0b60f605b85ec8f6c8c5e3bf086d56aa39e1c0445a8d7e1635b3dcb039ed63b",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            10
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_top_32x32.png",
+          "sha256": "3e8a71544723a8e7d5a18fefaf9924d198b756d61962c12db31756a10b176641",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            11
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "dimensions": [
+            32,
+            32
+          ],
+          "alpha_bbox": [
+            2,
+            0,
+            32,
+            27
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            64,
+            192
+          ],
+          "metatile_ids": [
+            12
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png",
+          "sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_bbox": [
+            3,
+            5,
+            13,
+            13
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            304,
+            208
+          ],
+          "metatile_ids": [
+            13
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+          "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_bbox": [
+            1,
+            1,
+            14,
+            16
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            144,
+            208
+          ],
+          "metatile_ids": [
+            15
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/grass_durotar_dry_01_16x16.png",
+          "sha256": "42eb8d2d995ee8fa5daaf0b4a6b4ead83f394808d25c947b297dfdecf906ecf7",
+          "dimensions": [
+            16,
+            16
+          ],
+          "alpha_bbox": [
+            2,
+            3,
+            11,
+            16
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "placement_pixels": [
+            240,
+            208
+          ],
+          "metatile_ids": [
+            17
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_02_32x32.png",
+      "sha256": "b5241b07dadc3a16a70e1a0df3dbfb273b7125eb73da8380616fdec5f307c55b",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    },
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_03_32x32.png",
+      "sha256": "40e586dfc670c494d3a30837422206ad33cce32be7fee462326f87d82beeec67",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    },
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_04_32x32.png",
+      "sha256": "cdf1b6e5e5e3a3f045260876bb98cf7e37446ef881317b8701e73f1eea9dbd07",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    },
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_02_32x32.png",
+      "sha256": "4e1c766bef7cd225fc2011215f37c339dad26d127957b2598dcae7aa5e45b67a",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    },
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_03_32x32.png",
+      "sha256": "50e6ffe2dd441f90bfc37f790deb4e5a2cd3e5f81fcb528ab46f40cb5bc7e6eb",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    },
+    {
+      "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_04_32x32.png",
+      "sha256": "0fc22d9fb6c9b8c734d4f21af148135bcc04199f26acc588b46a3b8cb7debe8a",
+      "reason": "Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved."
+    }
+  ],
+  "path_visible_openings": {
+    "NS": "straight_horizontal",
+    "EW": "straight_vertical",
+    "SE": "corner_ne",
+    "SW": "corner_nw",
+    "NE": "corner_se",
+    "NW": "corner_sw",
+    "NESW": "crossroad"
+  },
+  "static_walkability": [
+    {
+      "map": "PeonEnvironmentTest",
+      "reachable_cells": 315,
+      "doors_reachable": true,
+      "interactions_reachable": true
+    },
+    {
+      "map": "PeonEnvironmentTestAnnex",
+      "reachable_cells": 262,
+      "doors_reachable": true,
+      "interactions_reachable": true
+    },
+    {
+      "map": "PeonEnvironmentTestCave",
+      "reachable_cells": 314,
+      "doors_reachable": true,
+      "interactions_reachable": true
+    }
+  ],
+  "fire": {
+    "map": "PeonEnvironmentTestAnnex",
+    "physical_tile_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "vram_bank": 0,
+    "vram_address": "0x9000",
+    "framebytes": 64,
+    "frames": 3,
+    "period_engine_ticks": 8,
+    "path": "gfx/tilesets/peon_environment_v2/fire_frames.bin",
+    "sha256": "7282c45c06d1a9dece532b35f061b0f71a2a6c826114e4a8af22daf483d4f690",
+    "palette": 6,
+    "alpha_background": "Copied native CAVE stone-floor module; no flame pixels redrawn.",
+    "sources": [
+      {
+        "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_01_16x16.png",
+        "sha256": "1beb209da661dfd7c43479ba5188f8a0d48720f568da2521d5ab955e24832aec"
+      },
+      {
+        "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_02_16x16.png",
+        "sha256": "71043a162eeaf82f322b7e5a460d572467e88a9576fac6133db198ebee7341a7"
+      },
+      {
+        "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_01_16x16.png",
+        "sha256": "1beb209da661dfd7c43479ba5188f8a0d48720f568da2521d5ab955e24832aec"
+      }
+    ]
+  },
+  "native_output_sha256": {
+    "gfx/tilesets/peon_environment_v2/Annex.2bpp": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+    "gfx/tilesets/peon_environment_v2/Annex.2bpp.lz": "31f062bfd4587625271f350943f81b428462962d95ea75d690b4449d3be64c5c",
+    "gfx/tilesets/peon_environment_v2/Annex.png": "0290c05445d9984ea42abc91422f976f2ca5df2bbb5ce67aeb8619ec0e273412",
+    "gfx/tilesets/peon_environment_v2/Annex_collision.asm": "66ee9b07a5b4062a707a8a75b80830cb6101d21608db51274a23ae13a8914064",
+    "gfx/tilesets/peon_environment_v2/Annex_metatiles.bin": "f1e63202a2e368a29e2f782fdbb75fdfaf16f0c5cdca256d6268c5be1ce3e321",
+    "gfx/tilesets/peon_environment_v2/Annex_palette_map.bin": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10",
+    "gfx/tilesets/peon_environment_v2/Annex_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_environment_v2/Cave.2bpp": "11958d9de18ff12806a0a0d133327a4fe95a68b6bc020a33749b5adcc62cb569",
+    "gfx/tilesets/peon_environment_v2/Cave.2bpp.lz": "a3376ccdeb65afa103ac7d3f3c272d33e7708d19e0d08f3891576e99d48851a0",
+    "gfx/tilesets/peon_environment_v2/Cave.png": "78ef7db39f604158ee627d21ddbefedbb07c411cdd35b30df47006de39910b60",
+    "gfx/tilesets/peon_environment_v2/Cave_collision.asm": "21e6900da0f6fb0b6de6e6dece65f3be35904e604c5f4f5152eb97c4e2d0a9f5",
+    "gfx/tilesets/peon_environment_v2/Cave_metatiles.bin": "218b1cc9db07727c915fd0895d86875454c38f64c626ab1cc671c044cbca247f",
+    "gfx/tilesets/peon_environment_v2/Cave_palette_map.bin": "1c3239dd20534695b6a47519e72c5a5d78e71607461f591e60b46e1d162ae069",
+    "gfx/tilesets/peon_environment_v2/Cave_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_environment_v2/Test.2bpp": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
+    "gfx/tilesets/peon_environment_v2/Test.2bpp.lz": "488e4771c64741edc49e50462d76cd885920029c0496a1c97727a1fbca37c37e",
+    "gfx/tilesets/peon_environment_v2/Test.png": "6a65fb1a500c47cb49afc9b287ca70521c69db77f9bb93b5b7ff8dc27f60a06f",
+    "gfx/tilesets/peon_environment_v2/Test_collision.asm": "79a86666520363534de75c4689130b93a3aaba32195c8abecbbef2c4b0d30359",
+    "gfx/tilesets/peon_environment_v2/Test_metatiles.bin": "37f8d2fb9a970d18bb84b266cd9c02637501567ef0bed29349bbbc9e20cfc007",
+    "gfx/tilesets/peon_environment_v2/Test_palette_map.bin": "c4961f72e915f416caa19ad824bc8a72c9fd775c6511a4359dcc5b9419429bf7",
+    "gfx/tilesets/peon_environment_v2/Test_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_environment_v2/background.pal": "eb8d0194b1133b4f6ad87b094ac5744e90d5330a5c870d6dece5b0ef1db50b09",
+    "gfx/tilesets/peon_environment_v2/fire_frames.bin": "7282c45c06d1a9dece532b35f061b0f71a2a6c826114e4a8af22daf483d4f690"
+  },
+  "native_cave_kit": {
+    "png": "gfx/tilesets/cave.png",
+    "png_sha256": "62cfddef2094a16f5003bc2ad0587ef96650cb033c97684c31e1a90656a8c570",
+    "metatile_source": "data/tilesets/cave_metatiles.bin",
+    "blocks": [
+      1,
+      2
+    ],
+    "color_conversion": "native copied indexed patterns using fitted wood/stone palette2"
+  },
+  "limitations": [
+    "Cave and hut lead to a shared inspection room, not new quest or combat content.",
+    "The supplied banner/cactus keep their original transparent padding and visibly short opaque region.",
+    "Static previews show compiler output; actual ROM capture and walking are a separate required check."
+  ]
+}

@@ -69,6 +69,23 @@ NewGame:
 	ld bc, NAME_LENGTH
 	call CopyBytes
 	call InitializeWorld
+	IF DEF(PEON_ENVIRONMENT_TEST)
+	; The isolated environment ROM starts with the existing native Peon,
+	; without running the opening scene, choosing a class, or adding a kit.
+	ld a, MACHOP
+	ld [wCurPartySpecies], a
+	ld [wTempSpecies], a
+	ld a, 2
+	ld [wCurPartyLevel], a
+	xor a ; PARTYMON
+	ld [wMonType], a
+	predef TryAddMonToParty
+	farcall PeonInitializeShaman
+	ld de, EVENT_PEON_SHAMAN
+	ld b, SET_FLAG
+	call EventFlagAction
+	farcall PeonInitializeTeamV029
+	ENDC
 
 	ld a, LANDMARK_NEW_BARK_TOWN
 	ld [wPrevLandmark], a

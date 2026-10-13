@@ -1,0 +1,17 @@
+; Isolated source-art test collisions, no original map changed.
+	peon_env_v2_tilecoll WALL, WALL, WALL, WALL ; 00
+	peon_env_v2_tilecoll WALL, WALL, WALL, WALL ; 01
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 02
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 03
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 04
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 05
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 06
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 07
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 08
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 09
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0a
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0b
+	peon_env_v2_tilecoll WALL, WALL, WALL, WALL ; 0c
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0d
+	peon_env_v2_tilecoll FLOOR, FLOOR, WALL, FLOOR ; 0e
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, WARP_CARPET_RIGHT ; 0f

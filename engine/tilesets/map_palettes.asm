@@ -37,6 +37,7 @@ _LoadOverworldAttrmapPals::
 .next
 	pop hl
 	call PeonApplyUserEnvironmentTilePriorityV0211
+	call PeonEnvironmentV2TileAttribute
 	ld [de], a
 	res B_OAM_BANK1 + 4, [hl]
 	inc hl
@@ -82,6 +83,7 @@ _ScrollBGMapPalettes::
 .next
 	pop hl
 	call PeonApplyUserEnvironmentTilePriorityV0211
+	call PeonEnvironmentV2TileAttribute
 	ld [de], a
 	res B_OAM_BANK1 + 4, [hl]
 	inc hl

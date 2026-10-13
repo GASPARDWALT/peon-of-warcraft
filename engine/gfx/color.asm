@@ -1230,6 +1230,8 @@ LoadMapPals:
 	ld bc, 8 palettes
 	ld a, BANK(wBGPals1)
 	call FarCopyWRAM
+	; The isolated test owns seven BG slots; slot7 remains the standard font.
+	farcall PeonLoadEnvironmentV2Palettes
 	ld hl, PeonMapOBJPalettes
 	ld de, wOBPals1
 	ld bc, 8 palettes

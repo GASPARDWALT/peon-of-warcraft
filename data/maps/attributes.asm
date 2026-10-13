@@ -735,3 +735,8 @@ SECTION "Peon World Map Attributes", ROMX
 	map_attributes PeonSarkothBasin, PEON_SARKOTH_BASIN, $01
 	map_attributes PeonCaveApproach, PEON_CAVE_APPROACH, $01
 	map_attributes PeonValleyExit, PEON_VALLEY_EXIT, $01
+
+SECTION "Peon Environment Test Attributes", ROMX
+	map_attributes PeonEnvironmentTest, PEON_ENVIRONMENT_TEST, $01
+	map_attributes PeonEnvironmentTestAnnex, PEON_ENVIRONMENT_TEST_ANNEX, $01
+	map_attributes PeonEnvironmentTestCave, PEON_ENVIRONMENT_TEST_CAVE, $01

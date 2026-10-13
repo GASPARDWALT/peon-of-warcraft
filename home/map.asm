@@ -2306,6 +2306,7 @@ LoadMapTileset::
 	call FarCopyBytes
 
 	farcall PeonSelectUserEnvironmentV0211
+	farcall PeonSelectEnvironmentV2
 
 	pop bc
 	pop hl

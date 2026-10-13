@@ -4,6 +4,7 @@ roms := \
 	pokecrystal_au.gbc \
 	pokecrystal_debug.gbc \
 	pokecrystal11_debug.gbc
+roms += pokecrystal_environment_test.gbc
 patches := pokecrystal11.patch
 
 rom_obj := \
@@ -31,6 +32,7 @@ pokecrystal_au_obj      := $(rom_obj:.o=_au.o)
 pokecrystal_debug_obj   := $(rom_obj:.o=_debug.o)
 pokecrystal11_debug_obj := $(rom_obj:.o=11_debug.o)
 pokecrystal11_vc_obj    := $(rom_obj:.o=11_vc.o)
+pokecrystal_environment_test_obj := $(rom_obj:.o=_environment_test.o)
 
 
 ### Build tools
@@ -132,6 +134,7 @@ $(pokecrystal_au_obj):      RGBASMFLAGS += -D _CRYSTAL11 -D _CRYSTAL_AU
 $(pokecrystal_debug_obj):   RGBASMFLAGS += -D _DEBUG
 $(pokecrystal11_debug_obj): RGBASMFLAGS += -D _CRYSTAL11 -D _DEBUG
 $(pokecrystal11_vc_obj):    RGBASMFLAGS += -D _CRYSTAL11 -D _CRYSTAL11_VC
+$(pokecrystal_environment_test_obj): RGBASMFLAGS += -D PEON_ENVIRONMENT_TEST
 
 %.patch: %_vc.gbc %.gbc vc/%.patch.template
 # Ignore the checksums added by tools/stadium at the end of the ROM
@@ -162,6 +165,7 @@ $(foreach obj, $(pokecrystal_au_obj), $(eval $(call DEP,$(obj),$(obj:_au.o=.asm)
 $(foreach obj, $(pokecrystal_debug_obj), $(eval $(call DEP,$(obj),$(obj:_debug.o=.asm))))
 $(foreach obj, $(pokecrystal11_debug_obj), $(eval $(call DEP,$(obj),$(obj:11_debug.o=.asm))))
 $(foreach obj, $(pokecrystal11_vc_obj), $(eval $(call DEP,$(obj),$(obj:11_vc.o=.asm))))
+$(foreach obj, $(pokecrystal_environment_test_obj), $(eval $(call DEP,$(obj),$(obj:_environment_test.o=.asm))))
 
 endif
 
@@ -173,6 +177,7 @@ pokecrystal_au.gbc:      RGBFIXFLAGS += -i BYTU -n 0
 pokecrystal_debug.gbc:   RGBFIXFLAGS += -i BYTE -n 0
 pokecrystal11_debug.gbc: RGBFIXFLAGS += -i BYTE -n 1
 pokecrystal11_vc.gbc:    RGBFIXFLAGS += -i BYTE -n 1
+pokecrystal_environment_test.gbc: RGBFIXFLAGS += -i BYTE -n 0
 
 %.gbc: $$(%_obj) layout.link
 	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -n $*.sym -m $*.map -o $@ $(filter %.o,$^)

@@ -82,7 +82,11 @@ endr
 	jp WriteTile
 
 PeonEnvironmentFireFrames:
+	if DEF(PEON_ENVIRONMENT_TEST)
+	INCBIN "gfx/tilesets/peon_environment_v2/fire_frames.bin"
+	else
 	INCBIN "gfx/tilesets/peon_environment_fire.bin"
+	endc
 	assert @ - PeonEnvironmentFireFrames == 3 * 4 * TILE_SIZE
 
 ScrollTileRightLeft:

@@ -8,7 +8,11 @@ SpawnPoints:
 ; entries correspond to SPAWN_* constants
 	table_width 4
 
+	IF DEF(PEON_ENVIRONMENT_TEST)
+	spawn PEON_ENVIRONMENT_TEST,     12, 17
+	ELSE
 	spawn PEON_OPENING,               8,  8
+	ENDC
 	spawn VIRIDIAN_POKECENTER_1F,      5,  3
 
 	spawn PALLET_TOWN,                 5,  6

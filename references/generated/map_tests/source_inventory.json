@@ -1,0 +1,5051 @@
+{
+  "schema": "peon.environment.source_inventory.v1",
+  "status": "PASS",
+  "scope": "Source inventory only; other biomes are catalogued, not imported or tested.",
+  "canonical_commit": "64bfb4cbf75ca83b05f34401c520a099a5e25f54",
+  "canonical_commit_subject": "Add_Map_environment_pack_v2_art_quality",
+  "archive": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality.zip",
+  "archive_sha256": "5a9b27fe4a8c20934654388058f635726e2e3f477c131b27efff687fc2c1bdc0",
+  "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality",
+  "source_bytes_preserved": true,
+  "total_files": 182,
+  "native_asset_count": 166,
+  "preview_or_source_atlas_count": 11,
+  "document_or_manifest_count": 5,
+  "biome_counts": {
+    "durotar_valley": 37,
+    "echo_isles": 44,
+    "razor_hill": 34,
+    "senjin_village": 35,
+    "shared_interactables": 16
+  },
+  "source_kind_counts": {
+    "derived": 70,
+    "ground": 34,
+    "prop": 62
+  },
+  "category_counts": {
+    "banners": 2,
+    "beach_props": 2,
+    "beast_pens": 1,
+    "boats_and_nets": 2,
+    "bones": 1,
+    "bridges": 1,
+    "buildings": 4,
+    "camp_furniture": 3,
+    "cargo_containers": 3,
+    "cave_entrances": 1,
+    "chests": 2,
+    "fires": 7,
+    "ground": 25,
+    "herbs": 2,
+    "ore_nodes": 2,
+    "palisades": 10,
+    "paths": 25,
+    "quest_and_resource_items": 2,
+    "rocks": 3,
+    "ruins": 1,
+    "shorelines": 16,
+    "totems": 4,
+    "transitions": 24,
+    "vegetation": 11,
+    "watch_posts": 1,
+    "water": 8,
+    "weapon_racks": 2,
+    "wood_floors": 1
+  },
+  "categories_by_biome": {
+    "durotar_valley": {
+      "banners": 1,
+      "bones": 1,
+      "buildings": 1,
+      "cave_entrances": 1,
+      "fires": 1,
+      "ground": 9,
+      "palisades": 3,
+      "paths": 7,
+      "rocks": 2,
+      "transitions": 8,
+      "vegetation": 3
+    },
+    "echo_isles": {
+      "bridges": 1,
+      "ground": 6,
+      "paths": 6,
+      "rocks": 1,
+      "ruins": 1,
+      "shorelines": 8,
+      "totems": 1,
+      "transitions": 12,
+      "vegetation": 4,
+      "water": 4
+    },
+    "razor_hill": {
+      "banners": 1,
+      "beast_pens": 1,
+      "buildings": 2,
+      "cargo_containers": 3,
+      "fires": 1,
+      "ground": 5,
+      "palisades": 7,
+      "paths": 6,
+      "totems": 1,
+      "transitions": 4,
+      "watch_posts": 1,
+      "weapon_racks": 1,
+      "wood_floors": 1
+    },
+    "senjin_village": {
+      "beach_props": 2,
+      "boats_and_nets": 2,
+      "buildings": 1,
+      "fires": 1,
+      "ground": 5,
+      "paths": 6,
+      "shorelines": 8,
+      "totems": 2,
+      "vegetation": 4,
+      "water": 4
+    },
+    "shared_interactables": {
+      "camp_furniture": 3,
+      "chests": 2,
+      "fires": 4,
+      "herbs": 2,
+      "ore_nodes": 2,
+      "quest_and_resource_items": 2,
+      "weapon_racks": 1
+    }
+  },
+  "native_dimensions_multiples_of_8": true,
+  "native_alpha_binary": true,
+  "source_tiles_exceeding_4_rgb555_colors": [
+    "echo_isles/water_echo_deep_frame_02_32x32.png",
+    "echo_isles/water_echo_shallow_frame_02_32x32.png",
+    "senjin_village/water_senjin_deep_frame_02_32x32.png",
+    "senjin_village/water_senjin_shallow_frame_02_32x32.png"
+  ],
+  "durotar_exact_rgba_duplicate_groups": [],
+  "issues": {
+    "path_filename_orientation_swapped": [
+      "durotar_valley/path_durotar_straight_horizontal_32x32.png",
+      "durotar_valley/path_durotar_straight_vertical_32x32.png",
+      "razor_hill/path_razorhill_straight_horizontal_32x32.png",
+      "razor_hill/path_razorhill_straight_vertical_32x32.png"
+    ],
+    "native_canvas_padding_to_review": {
+      "durotar_valley/banner_horde_durotar_01_16x48.png": {
+        "dimensions": [
+          16,
+          48
+        ],
+        "opaque_bbox": [
+          0,
+          32,
+          15,
+          48
+        ]
+      },
+      "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+        "dimensions": [
+          16,
+          32
+        ],
+        "opaque_bbox": [
+          4,
+          16,
+          14,
+          32
+        ]
+      },
+      "razor_hill/banner_horde_razorhill_01_16x48.png": {
+        "dimensions": [
+          16,
+          48
+        ],
+        "opaque_bbox": [
+          6,
+          30,
+          14,
+          45
+        ]
+      }
+    },
+    "water_frame_02_palette_conversion": [
+      "echo_isles/water_echo_deep_frame_02_32x32.png",
+      "echo_isles/water_echo_shallow_frame_02_32x32.png",
+      "senjin_village/water_senjin_deep_frame_02_32x32.png",
+      "senjin_village/water_senjin_shallow_frame_02_32x32.png"
+    ],
+    "budget_deferrals_are_not_source_duplicates": "No Durotar assets have identical full RGBA pixels; any deferred terrain variants remain distinct source art."
+  },
+  "native_import_status": "Pending separate importer and exact-ROM runtime evidence.",
+  "records": [
+    {
+      "file": "README.md",
+      "bytes": 709,
+      "sha256": "1f9233d5ba180a35e15f7697c22dd10df79e6ae4bd647f86dc8367c8c2945abd",
+      "role": "document_or_manifest"
+    },
+    {
+      "file": "docs/CODEX_IMPORT_AND_IMPLEMENT_MAPS.md",
+      "bytes": 4132,
+      "sha256": "ecad8bd20fd3d69120daf0768bc06df3b476cd61d25f1b34028089ceacac0985",
+      "role": "document_or_manifest"
+    },
+    {
+      "file": "docs/VISUAL_RESEARCH.md",
+      "bytes": 571,
+      "sha256": "f464ed9db0ee1e36d8156f3df859e09fb955b7923bcb5e35f1f92e6facb8927c",
+      "role": "document_or_manifest"
+    },
+    {
+      "file": "durotar_valley/banner_horde_durotar_01_16x48.png",
+      "bytes": 427,
+      "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "banners",
+      "dimensions": [
+        16,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        32,
+        15,
+        48
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "ef7a5f0ff71c231cce41027cf27dab518721dfcaa6885acd5ab0a610d2630063"
+    },
+    {
+      "file": "durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+      "bytes": 474,
+      "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "bones",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        1,
+        14,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "9f1b362096344b814778be54685fe8ac09c937b4ca6edbbaa05cd259577f7169"
+    },
+    {
+      "file": "durotar_valley/brazier_durotar_frame_01_16x16.png",
+      "bytes": 443,
+      "sha256": "46b9cfe8331e9664db5304a284583d82ded3878df3fcb3d4ad43f74f5788599e",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        0,
+        14,
+        13
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "3814c1dec2f8f8bca6d0324471b28cddc06df2c59ec942da12e90867a277329a"
+    },
+    {
+      "file": "durotar_valley/cactus_durotar_round_01_32x32.png",
+      "bytes": 955,
+      "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        6,
+        7,
+        28,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "afb5fe37f1292feac893f9211d67c20e14489a36ee3dd1baf95d475a9e18da6d"
+    },
+    {
+      "file": "durotar_valley/cactus_durotar_tall_01_16x32.png",
+      "bytes": 396,
+      "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        16,
+        14,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "2360dab4ad69e7fbc0117c38e35fa14fa19a97e57df14033fd8e0316399c4479"
+    },
+    {
+      "file": "durotar_valley/cave_entrance_durotar_01_64x64.png",
+      "bytes": 4191,
+      "sha256": "186db943eda85c6e4c13e8a400a85b61c120345d74fadf5bb08259892e063b38",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "cave_entrances",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        0,
+        64,
+        64
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "1b5d174cf18b726d2f555906b2140d7d5b88dbda21200a70524793ea9740dc42"
+    },
+    {
+      "file": "durotar_valley/grass_durotar_dry_01_16x16.png",
+      "bytes": 279,
+      "sha256": "42eb8d2d995ee8fa5daaf0b4a6b4ead83f394808d25c947b297dfdecf906ecf7",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        3,
+        11,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "9bc61706f01f133cdc87b91362bd9f78935a06085030fcb81c3f60503f7fafff"
+    },
+    {
+      "file": "durotar_valley/ground_durotar_cracked_01_32x32.png",
+      "bytes": 1585,
+      "sha256": "cd0e4eaa654ebefccef3f0546e512121daa3df848eff129832cd4f4680cfc2d6",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f179284050f191bcb05a222dc6708ab8e4e307c74fc2c978b631b5ce07c7a82a"
+    },
+    {
+      "file": "durotar_valley/ground_durotar_dirt_01_32x32.png",
+      "bytes": 1511,
+      "sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "24e813925aa83e34c9515155f4d434316d7b9e279ca7a29333c45ca3f18959c9"
+    },
+    {
+      "file": "durotar_valley/ground_durotar_dirt_02_32x32.png",
+      "bytes": 1525,
+      "sha256": "b5241b07dadc3a16a70e1a0df3dbfb273b7125eb73da8380616fdec5f307c55b",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "810d9f8b235b3a90b810233c454038ed175b1243fa6f2da44e3009201b48e37e"
+    },
+    {
+      "file": "durotar_valley/ground_durotar_dirt_03_32x32.png",
+      "bytes": 1514,
+      "sha256": "40e586dfc670c494d3a30837422206ad33cce32be7fee462326f87d82beeec67",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "c4f61121f08eb4586ff6cbf1a15a69bf0a2fc269f89c2c8019a01a785f1365de"
+    },
+    {
+      "file": "durotar_valley/ground_durotar_dirt_04_32x32.png",
+      "bytes": 1521,
+      "sha256": "cdf1b6e5e5e3a3f045260876bb98cf7e37446ef881317b8701e73f1eea9dbd07",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "4fb37a5b0728f273064981f13dfb918992c76729b6639e41e95fdd4cbe0f55c0"
+    },
+    {
+      "file": "durotar_valley/ground_valley_redsand_01_32x32.png",
+      "bytes": 1288,
+      "sha256": "206f80bd59b375dbbf03777ada17ec81933ecf1755cfd6e1114ebc87300a13ee",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f5cbba554b85c131f65a35c0520844be388582a9cde0ef4829037704504fda1a"
+    },
+    {
+      "file": "durotar_valley/ground_valley_redsand_02_32x32.png",
+      "bytes": 1190,
+      "sha256": "4e1c766bef7cd225fc2011215f37c339dad26d127957b2598dcae7aa5e45b67a",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "d7c13ed66057f25b997b866db3b6fec9cdc2f54433e57015202ea94ddf1e223d"
+    },
+    {
+      "file": "durotar_valley/ground_valley_redsand_03_32x32.png",
+      "bytes": 1195,
+      "sha256": "50e6ffe2dd441f90bfc37f790deb4e5a2cd3e5f81fcb528ab46f40cb5bc7e6eb",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "e0e765c600f38e1ffbe9d2b34d94c8a87525c6ab7b7531ea9fa83ba245c49329"
+    },
+    {
+      "file": "durotar_valley/ground_valley_redsand_04_32x32.png",
+      "bytes": 1270,
+      "sha256": "0fc22d9fb6c9b8c734d4f21af148135bcc04199f26acc588b46a3b8cb7debe8a",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "c4d71e1d801b78f0b2b4e7dfc55b241d19a3c54ec5907f7c757dbb17d4090d12"
+    },
+    {
+      "file": "durotar_valley/orc_hut_durotar_01_64x64.png",
+      "bytes": 4154,
+      "sha256": "088fa216f1293ddeb1a1452e0caa51846d0a2bb0fe307f88e6e34f8ebcaedcb0",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "buildings",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        0,
+        64,
+        54
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "a5b9f44de93b6b6b91f936b9d92cc56d9b9ba923cd973edbfab1672164c4db6f"
+    },
+    {
+      "file": "durotar_valley/palisade_durotar_gate_01_32x32.png",
+      "bytes": 1327,
+      "sha256": "5dead2b7c7bcd8a868f4b9d243faa0246575738298e0b45e1aecaa54f48cd181",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        0,
+        31,
+        25
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "0b5dc2929446907a5a705e89aca81decd5b874c76a9778806726a0a86bd14935"
+    },
+    {
+      "file": "durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+      "bytes": 1310,
+      "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        0,
+        31,
+        25
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "387545c1ff6e94bbe560c4867a8b7737a1b2591ce290a3a791c73fb9d4431571"
+    },
+    {
+      "file": "durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+      "bytes": 1314,
+      "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        1,
+        25,
+        29
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "850e421124a2afa1bd9752482b20969f42094915f51b3dac0a7a38ccc0da50c8"
+    },
+    {
+      "file": "durotar_valley/path_durotar_corner_ne_32x32.png",
+      "bytes": 1171,
+      "sha256": "d1ccd7146a00d3983a1c4fd5042c990ac92aed53d4c058d450cf665d3df550f4",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "d8d6f587624b9fb860f8c1d876fc2ef30a3487443062b46d016b610ae5a493f1"
+    },
+    {
+      "file": "durotar_valley/path_durotar_corner_nw_32x32.png",
+      "bytes": 1175,
+      "sha256": "56bd64867d4ef4521e547c10f2ceec9281e61adbc3b1eaa2c7ede9e431b2049a",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "856d23f5139418f170b5ed5e5209417b4c628005a2bf515c09b871b9464db99c"
+    },
+    {
+      "file": "durotar_valley/path_durotar_corner_se_32x32.png",
+      "bytes": 1205,
+      "sha256": "d0055c7986a2c0f1dc80c67897905453344b76401b348ec2c152727c613c2b34",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "55471b56ce38d1e0b6cd4cc13524c9f0df665b8b86ca105a9d98e0d9662670bd"
+    },
+    {
+      "file": "durotar_valley/path_durotar_corner_sw_32x32.png",
+      "bytes": 1171,
+      "sha256": "0e6f68d14f6854bd7c3857ce5bd19bd5cc8a3cfc88fda079c433246096f24eeb",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "c83252589c1d2e0814ff253a5fb626f7beea792ca2e43fdba239fb907c131e4d"
+    },
+    {
+      "file": "durotar_valley/path_durotar_crossroad_32x32.png",
+      "bytes": 1286,
+      "sha256": "f7fb9258ff8c0e983a1aa74fbd6a370e2b9273bf9fa60a8dbe1dcbecbfd1c1b9",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "e1022a1006a7d2108c63b0b97f4199489e0afedff6f4111998de2c55e193047b"
+    },
+    {
+      "file": "durotar_valley/path_durotar_straight_horizontal_32x32.png",
+      "bytes": 1287,
+      "sha256": "34a667262ecf0e4f06c06e0279ebb06eba9be407c1b5c242c7ff686c1f7ae55c",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "2a9bf9dd2b81c124cf2f8885d4f8b8167aca929622356ff0741bf54ec5a3affe"
+    },
+    {
+      "file": "durotar_valley/path_durotar_straight_vertical_32x32.png",
+      "bytes": 1306,
+      "sha256": "b3761cdfd0be824c218b62e3a642999c5de3ce161a5f3286b9c17c79fdedeae3",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "bdd4805c6f8ca49e9d8f9c1723bac49e13a70346fadbac414b409f4c65a0d518"
+    },
+    {
+      "file": "durotar_valley/rock_durotar_large_01_32x32.png",
+      "bytes": 1280,
+      "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "rocks",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        0,
+        32,
+        27
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "1dbe62dfbd8b1ebca0b1052176d01a4ab6bc319c36fc8fca28b2292cb9f843a5"
+    },
+    {
+      "file": "durotar_valley/rock_durotar_small_01_16x16.png",
+      "bytes": 248,
+      "sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "prop",
+      "category": "rocks",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        5,
+        13,
+        13
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "9dcb4934dac10d73144095032aa1ae1bf2d0080618d7f28c548c9444647eacc0"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_redsand_bottom_32x32.png",
+      "bytes": 1273,
+      "sha256": "65b2ca36845b117cc896712a6e95497898ebc7f00c6d6bdb86644144d847c1d7",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "e7831b033a85f87da0126ccc2dc5d12decea617f746c40245a2d3dae19ccea94"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_redsand_left_32x32.png",
+      "bytes": 1200,
+      "sha256": "3a7ee8aa61b5fa12d875735efcd7939b708a562c0ac7eb72ea31c3604382a2a7",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "bdac73e514f3eeef42b5c407bd3f1dc47c7af199c4c4ca04685ccfe3a0a42821"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_redsand_right_32x32.png",
+      "bytes": 1203,
+      "sha256": "8a980a70edefc9e59eb9cab453b5bab885cdb9f1989569b0187aa66f2525a538",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "0a001d9906fa87e92a6e214319fe950631fc5eac2ffcbc47b012c0235074c983"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_redsand_top_32x32.png",
+      "bytes": 1265,
+      "sha256": "a9f1ed38e5c87b1341a1657b5833f9d8e7b6ff0f90099f560897dccc39abc90b",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "e142d76d8b119b6d757d58760b70ca7a7aa141c27e8e1705931df6e09401230f"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_rock_bottom_32x32.png",
+      "bytes": 1347,
+      "sha256": "37f828625bd3a27c0457ca8b6c8aa4241994154ff30b7a10ddf7da669e45b4ed",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "39830f104f67bddd59867bf0640e6c5e7529c49c466c8f64761c67f850c6e507"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_rock_left_32x32.png",
+      "bytes": 1338,
+      "sha256": "61757d197ed503f210ed73c264467f7f76db6105e2edcdffa76caa2ea65e98de",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "656f31c5237ce5e7a1fbc4070b5939ccd91f19ab92300ff5626db69df4641c07"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_rock_right_32x32.png",
+      "bytes": 1401,
+      "sha256": "e0b60f605b85ec8f6c8c5e3bf086d56aa39e1c0445a8d7e1635b3dcb039ed63b",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "dde3d707f5e618b7d872cc7b8b7b0664e5ea7215ae8c4cf57184df6190f4f3bb"
+    },
+    {
+      "file": "durotar_valley/transition_durotar_dirt_rock_top_32x32.png",
+      "bytes": 1406,
+      "sha256": "3e8a71544723a8e7d5a18fefaf9924d198b756d61962c12db31756a10b176641",
+      "role": "native_asset",
+      "biome": "durotar_valley",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "0a9b7e11ab431c9ca0b4aac5c33c895da1ea6164bb6dcf8f5341325fab84656b"
+    },
+    {
+      "file": "echo_isles/bridge_echo_rope_tusk_01_64x32.png",
+      "bytes": 1847,
+      "sha256": "07410789a6e3e6c77dc3103fec70c7138ef9a6390545bf25197a93963a78acc6",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "bridges",
+      "dimensions": [
+        64,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        15,
+        0,
+        49,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "e0ae75dbb63293c7b4f97d7b32529da58fb5295b08e822dad06fc62f64faba50"
+    },
+    {
+      "file": "echo_isles/fern_echo_01_16x16.png",
+      "bytes": 516,
+      "sha256": "89c30a750ce78b738c809863c1ca484f1952c12a108c540bb6b4edff62bc6b3d",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        1,
+        16,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "5933d50b457e20dd56ee5eb21c4f17e1455bc78e1a2cdb85c2454e467cbdb6ae"
+    },
+    {
+      "file": "echo_isles/ground_echo_darkearth_01_32x32.png",
+      "bytes": 1623,
+      "sha256": "d54b2c5dc5bb8d28b51519c5976424b3c116c9e997ad9de19e939af5f7294cb6",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "b44668ff63341e428124c0080550b28363f4d394f2a6cacfe64337c06a872777"
+    },
+    {
+      "file": "echo_isles/ground_echo_grass_01_32x32.png",
+      "bytes": 1433,
+      "sha256": "c7ff2132c387dea85cbae700d0db11e4f1723b9d8bbcf752465f0d231ea5d062",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "9a4a4f8e6b82c7989a82d0e93808dcf2d0345796a4157404228ebd3d3c1e07fe"
+    },
+    {
+      "file": "echo_isles/ground_echo_grass_02_32x32.png",
+      "bytes": 1443,
+      "sha256": "a92614f58b9cf7e782687e46a489bbb127d5a73e7a11eb26ef8b8f188c5821d0",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "75b84844516c296c70b144926d69e99f8dcb44664bc32efb62eb7fef0c5b6985"
+    },
+    {
+      "file": "echo_isles/ground_echo_grass_03_32x32.png",
+      "bytes": 1423,
+      "sha256": "16a6cc7ef7e03ac3c6b78fb002382f792752516d164b14cf90ac260088bbcfac",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "b2564589cade1cfa3bb1956fe51b41909d865c85ee7ddee136677c1f2e2281af"
+    },
+    {
+      "file": "echo_isles/ground_echo_grass_04_32x32.png",
+      "bytes": 1397,
+      "sha256": "64b044a99f3a87745e77fbe8eb8a90babeb7f39e930c0d35b73de14005da2d55",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "2adf0fa7b877557a5e4dcb60d0d4b6b351727ff519f190e4b0ab0597f274d609"
+    },
+    {
+      "file": "echo_isles/ground_echo_sand_01_32x32.png",
+      "bytes": 1495,
+      "sha256": "9e37fa3942ca27b62ce68146f495701227b4b0ae1a7f28fcfa8517c60a23cccc",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "3760177bf237ba7f203c7a37c9cd379ea9728961d35e01ec8acf0c49994135ad"
+    },
+    {
+      "file": "echo_isles/palm_echo_01_32x48.png",
+      "bytes": 1263,
+      "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        32,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        16,
+        29,
+        43
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "53b3f87c2212a2f1015c5db7ff817c7d9cb390eca5fcbcc63a72f14c3123496a"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_corner_ne_32x32.png",
+      "bytes": 1236,
+      "sha256": "1b8974d285ef7433931bc16bbb1f0f27712d502af82ab0fac622aa2dad1fffed",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "945db021147ce5478fa128576c9c0e52f57f019fa80299e0fa4fcdbb75c09e1f"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_corner_nw_32x32.png",
+      "bytes": 1175,
+      "sha256": "989d91a65facbaa9da0b2b8c9eaf6f5a61ef4bc7a86419d5404cf4735a4b2a2a",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "ae46d92795f8e3d6cbb587991af5050641acf7ecd20e45bf170aaa0684758252"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_corner_se_32x32.png",
+      "bytes": 1292,
+      "sha256": "1a48ff97cf5de9b9d636e624fd553a475850a91fd5c581267b42d47ddf22f72a",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "1174048132934d372409f504054b32dbe3957d646212a8b4cc93706fdf63d1b3"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_corner_sw_32x32.png",
+      "bytes": 1249,
+      "sha256": "7489b5b48c5bdf07965954cc388e094fe4d8083340444fecc4d1f2cb23222148",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "8d3f4800b58b7b43dfb112c53a32239bb477175df357e39aa4ec43da8a5a97a6"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_straight_horizontal_32x32.png",
+      "bytes": 1525,
+      "sha256": "4ba1b21a7bf122c6c3f6e3347cb87b95754fec99fb23cf883d8cabbce11ad278",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "bf65bfe08bd0e615a3bac60dff9a308daa5faad2fae80d3700385109e137d596"
+    },
+    {
+      "file": "echo_isles/path_echo_jungle_straight_vertical_32x32.png",
+      "bytes": 1480,
+      "sha256": "bfe56b78dad4c74c270f5b1256717ba2fa56c41c779a376470c45eae1b528265",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "29888a155042a4910ad0194e258f28021afaa56d197a80cc5ce749a61493b2e9"
+    },
+    {
+      "file": "echo_isles/rock_echo_mossy_01_32x32.png",
+      "bytes": 1014,
+      "sha256": "249428bfad3f1a9150420a54245e0fec497f8d55fbf97c8f757410a864816e46",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "rocks",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        7,
+        30,
+        29
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "e284ec0365b6c45398fe7e24cb62da3f093fb5658b91a6c823d7c8c32814a1af"
+    },
+    {
+      "file": "echo_isles/ruin_pillar_echo_01_32x48.png",
+      "bytes": 1398,
+      "sha256": "d4ef757936a31e09bcdf9468422eb5062887dfe64ce065d903b96667a0f61798",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "ruins",
+      "dimensions": [
+        32,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        18,
+        32,
+        45
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "569ba28a66385faff2c5ca82c41ca37c8a01df20ab7c76be5f3c2587f67adae9"
+    },
+    {
+      "file": "echo_isles/shore_echo_rocky_bottom_32x32.png",
+      "bytes": 1264,
+      "sha256": "f3dc3126712097fb61fd4b6b7fe70bc1392a537222841acb0ce65fabd247f6f0",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "af6f958d8a95b82c92570f9d937956520a095837193f83bcf05910d46521fcba"
+    },
+    {
+      "file": "echo_isles/shore_echo_rocky_left_32x32.png",
+      "bytes": 1259,
+      "sha256": "2814d81b9d0e509075ab2fa71d60bdf4dac384ea23d0055228ed77280419b2a7",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "93b77260363321ea1f5c931df8968fef0f32e00bc94c2729d89d7d703a8b58b2"
+    },
+    {
+      "file": "echo_isles/shore_echo_rocky_right_32x32.png",
+      "bytes": 1242,
+      "sha256": "0c1afab6a11c55139bc5cb39bbf8953c3367001790c0a43e4a5ce28b18f772bd",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "bec7a307715f17ffaa7caf18499ed00d5fa3caed1903e0eeb4d30c3cea18571f"
+    },
+    {
+      "file": "echo_isles/shore_echo_rocky_top_32x32.png",
+      "bytes": 1248,
+      "sha256": "018655a55c08018f9f8d262ce1d6b0b45e32841eb8a1977308a13db4517a75bc",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "c8c49e323dc3cd6df066a4454e39ccc4d85f56aa762a7355e0997b03f6ecaf34"
+    },
+    {
+      "file": "echo_isles/shore_echo_sandy_bottom_32x32.png",
+      "bytes": 1262,
+      "sha256": "b77f52841adc63eb98aacd58441955c2e12f5ab60ffdba77832af1b9ff85a109",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "248705fb5d5ee672c580a27ee56480fafc97554c8fbdff267ca497b5b3613cd9"
+    },
+    {
+      "file": "echo_isles/shore_echo_sandy_left_32x32.png",
+      "bytes": 1253,
+      "sha256": "ac47f5089129b4abcaabe109d6cb3ee98b2a5bad3c0c533be5f37f3ea1c2f9c8",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "a22fa20d9ea315fc6ff254224f49cd4ff4a07b0d2e6bccc2afc6489ad3861dd7"
+    },
+    {
+      "file": "echo_isles/shore_echo_sandy_right_32x32.png",
+      "bytes": 1192,
+      "sha256": "f6923ff7e6caafcd7546185e4e620c36b86d03f315924587d4b9b4583d724b88",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "1feeb8bf4ca8b9d5a6b57afc64601c220944f616dde65c1d301354b422d07c7e"
+    },
+    {
+      "file": "echo_isles/shore_echo_sandy_top_32x32.png",
+      "bytes": 1253,
+      "sha256": "8de8c5c3cf88a30363182cd61af40bff287ba16681980d85edf9aea6401858a5",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "b55a40e9aab5ffa0b3ea8b0ad0337729f9eabaed1dde79033e16ce1414cddb3b"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_darkearth_bottom_32x32.png",
+      "bytes": 1528,
+      "sha256": "5674d31268c54cd1dc1027951fd97b4fb1cf519821a47e9dd2bc986ce0b465be",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "7691116d597b086c18b05ed38b8e74cb8d81dad83064d926b69856326c6949f1"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_darkearth_left_32x32.png",
+      "bytes": 1489,
+      "sha256": "40e18581dd439bb312e48788335ae3488eeacb49c0aa76b1b6c5c0782462e5d6",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "d4089f69c18578577c7775a01fa68cbd18175baf7b3dd42dd13406e606ae82d7"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_darkearth_right_32x32.png",
+      "bytes": 1491,
+      "sha256": "e652495a5f8e611ab9fdbda05340e62401bae5de5f89842f5f4b53e7e92eb016",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "73c1d497e02921d44f22ea5cdb7ef1e6b4979195c30239d6852ee7e305f0c7f8"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_darkearth_top_32x32.png",
+      "bytes": 1523,
+      "sha256": "6ac96b5eacc4f013e9b6d98a37af4df45c9e4ca399d7868e38b59a2d9ccb2e85",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "73c7deb6fb87de1427afb49c01b1768d110311ca24e7dbf315ea12f85db4500f"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_sand_bottom_32x32.png",
+      "bytes": 1454,
+      "sha256": "fa653b583fa4439e319b9efe888bacbaed9afee1915d37491cd1df09a1c56f43",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "a3d033b3153e589428862bdcf6d530112124bc24674f0ae8cc70189c6db9599f"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_sand_left_32x32.png",
+      "bytes": 1450,
+      "sha256": "184242e957dcfbc3cf38a2f6bb3b9388bcd32aba5d5ffb1ae272dade1442e25d",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "a7cb74e5a849502ac7702f22680197f248b5b719d7c4e8aaeef6926b692b18e0"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_sand_right_32x32.png",
+      "bytes": 1475,
+      "sha256": "1fbc7e25995443f0e260923c90817437d9f55aac7c7ffa987062ca51bd05221f",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "dc3c57578391bb6c419135dfbcffe7b929ccfbf87cdae81758fadcb8f9f86906"
+    },
+    {
+      "file": "echo_isles/transition_echo_grass_sand_top_32x32.png",
+      "bytes": 1475,
+      "sha256": "c182935a442e572453bd5dc4c05594941b1dcca07691a3901182fdda7699ea22",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "b7d04535741fe1c1cb5bed9ea1732e640c218e2d202938ac2a58ac31639adaba"
+    },
+    {
+      "file": "echo_isles/transition_echo_sand_water_bottom_32x32.png",
+      "bytes": 1580,
+      "sha256": "4a1aaffd05bcaadb9aca1e7b774bf27a9f2a1d061cdc61e8fe9e7c9be9472b7b",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "6549d32d31c0605107a426730670e9dccca0e64bfdd29f92b92607ce4c406eb3"
+    },
+    {
+      "file": "echo_isles/transition_echo_sand_water_left_32x32.png",
+      "bytes": 1438,
+      "sha256": "d427874943adb0872bd18e4985eca83596824c81307bd9c2fe601d7e66d337af",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f9d2e2a4c914bafced0ed059b1d59889b1700a6cafa98bfb52bda98301576a8e"
+    },
+    {
+      "file": "echo_isles/transition_echo_sand_water_right_32x32.png",
+      "bytes": 1493,
+      "sha256": "e7ba232d908c269b0998e7695289b8bb5a28da90d165b79e61a4416353eea1cf",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "28d5ccd247ae47c91d3b4cb97faf272cd9e3e8fc5850c7e81ebd1da0b150e510"
+    },
+    {
+      "file": "echo_isles/transition_echo_sand_water_top_32x32.png",
+      "bytes": 1471,
+      "sha256": "0fe9952f6ae23c12729074287813c955aee833acbd58cf2047a225473214a7c3",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "c5b2328c2b17ac12e2766d1c55530d4a29ec9e9ab244c9ef6ad63033779c24ab"
+    },
+    {
+      "file": "echo_isles/tree_echo_jungle_01_48x64.png",
+      "bytes": 3048,
+      "sha256": "685c29642ae9ac68f9eab2e2712b1baecc3c4246da99bd331a3f1891a2169e23",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        48,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        16,
+        47,
+        64
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "67aefdb17568775d66f7ac75db1b52e0c17f637d30324289d0e4194a67cab560"
+    },
+    {
+      "file": "echo_isles/troll_totem_echo_01_16x32.png",
+      "bytes": 422,
+      "sha256": "35d336ccb0d73572ca9b851374e51cb26d24d86f448bda8e9f9214c95b9e41a9",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "totems",
+      "dimensions": [
+        16,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        18,
+        16,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "83e87b66915659b2a0f7852bbbc579781cf6aa8066100d04dfc58b5809944f16"
+    },
+    {
+      "file": "echo_isles/vine_echo_01_16x16.png",
+      "bytes": 510,
+      "sha256": "2012023ab2663324f33281ef7cf71880ec5e4926ce954a80db1fda518d390db7",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        0,
+        14,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "b494f0eaa48d3130ebb0d6e15785986007c7bfaddb6afe6a0a1e2709fe721783"
+    },
+    {
+      "file": "echo_isles/water_echo_deep_frame_01_32x32.png",
+      "bytes": 1421,
+      "sha256": "53094bbc093689b90d7fee8860791835ebec29d98095800cd45d5a6346a2e519",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f0188200bfcc529926de2a32e806bb7ca5a68de9cb8cbfd16e8fc41885ffbfe9"
+    },
+    {
+      "file": "echo_isles/water_echo_deep_frame_02_32x32.png",
+      "bytes": 1422,
+      "sha256": "bba2bf35aa164f474494a7d2b200a8531971d1c60b8d84642e65bcf8693ecfc7",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 8,
+      "max_visible_rgb555_colors_per_8x8": 8,
+      "rgba_pixels_sha256": "33fd1cf367f59bad2de83abe72dea855f29cf80a925eab57d742fe385ce3c6cb"
+    },
+    {
+      "file": "echo_isles/water_echo_shallow_frame_01_32x32.png",
+      "bytes": 1541,
+      "sha256": "4cfceaa397c2780825e8efcce06633c507ffd8992595a4cb627643e678c53fdd",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "ground",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f8aca6f6561980248a395a23db1fdf09520c46a5ff3339731bc9bc55e64ab711"
+    },
+    {
+      "file": "echo_isles/water_echo_shallow_frame_02_32x32.png",
+      "bytes": 1535,
+      "sha256": "b107468fbd76bcb1d9af2589f61fab096f41e867346633b4aa85d902b37f6f7c",
+      "role": "native_asset",
+      "biome": "echo_isles",
+      "source_kind": "derived",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 8,
+      "max_visible_rgb555_colors_per_8x8": 8,
+      "rgba_pixels_sha256": "673090aefba39ac63052d7cb1f3c5be9c7f244bc7582f1302f1789db961f7369"
+    },
+    {
+      "file": "manifest.csv",
+      "bytes": 12939,
+      "sha256": "94981fe20d9375e3e290a5758677c3d5005fedf918ad7619bb074e8b20214363",
+      "role": "document_or_manifest"
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 26520,
+      "sha256": "6c913814048e28e81c037e6754457d982bed4d214e34b82dee2cb3b6c7e43a86",
+      "role": "document_or_manifest"
+    },
+    {
+      "file": "previews/preview_all_environment_assets_v2.png",
+      "bytes": 316598,
+      "sha256": "9e7dcee6471aef6da4f8e1fd8579c0d1e2f30a126916b35d516cc0be5c536f5a",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        3840
+      ]
+    },
+    {
+      "file": "previews/preview_durotar_valley.png",
+      "bytes": 71602,
+      "sha256": "f1670211fde5c62860ff195edaf0f67f14716d42e4b8f8df43604f3f64339109",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        896
+      ]
+    },
+    {
+      "file": "previews/preview_echo_isles.png",
+      "bytes": 92384,
+      "sha256": "ecfdf937ac3ea3cfaa6bf426600c1d619f10cbb360aaf3c516c491907ff7d4ba",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        1024
+      ]
+    },
+    {
+      "file": "previews/preview_razor_hill.png",
+      "bytes": 71343,
+      "sha256": "3a63843acfba788ffd402af7e1cf288c5bba17320732c31a70dc3e2606466b91",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "previews/preview_senjin_village.png",
+      "bytes": 62911,
+      "sha256": "b249906140db7224b1999408feb9f3eb73e24756913543802766df70dfb912d5",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        768
+      ]
+    },
+    {
+      "file": "previews/preview_shared_interactables.png",
+      "bytes": 18720,
+      "sha256": "b7fd749bee49641a17a66cee0276fc7d19211ea5222281ad6b9c62ceb0a55844",
+      "role": "preview_or_source_atlas",
+      "folder": "previews",
+      "dimensions": [
+        768,
+        384
+      ]
+    },
+    {
+      "file": "razor_hill/banner_horde_razorhill_01_16x48.png",
+      "bytes": 427,
+      "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "banners",
+      "dimensions": [
+        16,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        6,
+        30,
+        14,
+        45
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "f7ce5bc292ebdd5926de03c11798a7ad9beeef347c225fdeee481a1e688a267d"
+    },
+    {
+      "file": "razor_hill/barrel_razorhill_reinforced_01_16x16.png",
+      "bytes": 333,
+      "sha256": "a5e9f075a79a53b69963435985e44b8b75e069b4b61b94970967498b03af5008",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "cargo_containers",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        0,
+        13,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "fa55b5e7c1f95c12c9b2b57637ae9b4a6b298ab80fbac6e80bd6edfddb57cf0f"
+    },
+    {
+      "file": "razor_hill/beast_pen_razorhill_01_64x48.png",
+      "bytes": 3003,
+      "sha256": "ab8bb865d735b736bb75bf53cedf7d1df59df31e50cd717c2a5b1fe3d0347a82",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "beast_pens",
+      "dimensions": [
+        64,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        6,
+        0,
+        57,
+        41
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "4d742e27b2c9b47d73aeb114a5920fe959a15644f19d5fff5d81d6c380f8707c"
+    },
+    {
+      "file": "razor_hill/brazier_razorhill_frame_01_16x16.png",
+      "bytes": 405,
+      "sha256": "1bc6b1d1c8f7ff35a048975ea811d7629cff4e4045ef8f6663489441d17c0ee9",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        1,
+        13,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "3a9a7cab5e5397c217139d7facf71ddf8995d83758f987bdebd62545a7c595f0"
+    },
+    {
+      "file": "razor_hill/crates_razorhill_stack_01_32x32.png",
+      "bytes": 1195,
+      "sha256": "cc2f57783d03febbc34e7bf887087e04ea5758a0b85c55c39b3fdf3f6a984bf5",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "cargo_containers",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        1,
+        29,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "5cbb0dde25d771d3fbd4d7c2c2d64f25102ecd2194dc7fd808d5d94a68240f69"
+    },
+    {
+      "file": "razor_hill/floor_razorhill_planks_01_32x32.png",
+      "bytes": 1137,
+      "sha256": "a5804a52decff61b5bb39e15f3e53849ff2898fb4bc5534f94fbc1f52c9c712d",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "wood_floors",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "4299bf54615299024baeced76f48653584d6d2085ad7788351b265c3b76e91a1"
+    },
+    {
+      "file": "razor_hill/ground_razorhill_compact_dirt_01_32x32.png",
+      "bytes": 1572,
+      "sha256": "69bbf1f230116f798f2e998316fc9e2163e043692390376372d0834b500716ff",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "fbd75f1955b22d708483370a1a467bb3c800e845919f05ab4bea1971043e4e8c"
+    },
+    {
+      "file": "razor_hill/ground_razorhill_compact_dirt_02_32x32.png",
+      "bytes": 1537,
+      "sha256": "6e74927113f3d2d8c7c86e35ae49f8dbb8343d3240ab1dc8439c548bf2c81916",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "d3f0da6461f4c2ff2dc6e4bc9e2c1f63722027c439e10181df8d5c0291f7a093"
+    },
+    {
+      "file": "razor_hill/ground_razorhill_compact_dirt_03_32x32.png",
+      "bytes": 1559,
+      "sha256": "9e80d908373f17a318357deb6a047ba16933265af0270f45292d43651771d8f3",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "1a5d46025e3f2fb5529c29f1e9228c035d0d1318212e1229ef9dcafc3e0e8499"
+    },
+    {
+      "file": "razor_hill/ground_razorhill_compact_dirt_04_32x32.png",
+      "bytes": 1545,
+      "sha256": "52c534454f5311fd4cebed5c089795fe03e3cd5cf1d4aff4afcf896bd6f17bf1",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "9a510ad71c122bfb508684c7eed3727633df5442f9f1db91f886296695abe753"
+    },
+    {
+      "file": "razor_hill/ground_razorhill_courtyard_01_32x32.png",
+      "bytes": 1335,
+      "sha256": "1348fe250550e165e017f1f0453b61b272f93dd344a21cfc3a0da9b411526ab2",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "fbc8248e7893f24e269cd5cbc29b3a01f003333d9bff9896887a6379999a1a80"
+    },
+    {
+      "file": "razor_hill/orc_hut_razorhill_01_64x64.png",
+      "bytes": 3781,
+      "sha256": "3d1a2a0265e26c0d7745ad394e0f56abc5d1306cee36e71fe44d729112459632",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "buildings",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        0,
+        62,
+        48
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "fb81757c678b355ff57644f4aabb9859fc16934bddf3ab585b6eae4dca3aa9a9"
+    },
+    {
+      "file": "razor_hill/orc_inn_razorhill_01_96x80.png",
+      "bytes": 9110,
+      "sha256": "e2d2f0cf21bb53254d3f74623c84023de4e5acda9c4c30621b69f2f37e7b548a",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "buildings",
+      "dimensions": [
+        96,
+        80
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        0,
+        93,
+        72
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "e044c34225b88c9fb88f908ac9783e3071ad412cc72904c32026e11dbe9635e9"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_corner_ne_01_32x32.png",
+      "bytes": 1225,
+      "sha256": "763573eb6b65a5f1303ac72ff04a99ada5b7dc9f25629bfab7ee463347bef6c8",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        0,
+        29,
+        27
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "3669f1e6b93abefb5e50b628e1f1b8a4c84239c92e3d791ff0e978a635ffecbb"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_corner_nw_01_32x32.png",
+      "bytes": 1181,
+      "sha256": "432d6afb02dfc62c215f2a11654f206166a5ea221cf616ca10d562d24ac57703",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        5,
+        3,
+        32,
+        29
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "76c01d4aff9d42e8a880a93ad2f7bdd9bc14bde0efb2bd7768f6046c95d4751b"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_corner_se_01_32x32.png",
+      "bytes": 1240,
+      "sha256": "e3cf3b5a1e2f68131934c6f04085b019b21d61bc73488c7287fc8baeda25e961",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        3,
+        27,
+        29
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "576d38c4851b1030ebc5afad4c1466ecc71b6c1e0f4bd8089ef39ba0ac5b5e5b"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_corner_sw_01_32x32.png",
+      "bytes": 1167,
+      "sha256": "4a44b342646e9e0369d44feb6796c0418628f7096a830f08ab26ac52470a8954",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        5,
+        29,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "ff4e3449dad42d90354430faed64a81bbd20c7210682e25222550169c7121e20"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_gate_01_32x32.png",
+      "bytes": 1198,
+      "sha256": "c8cdecd6cafa6ee4dcab3cc5684772a36b8c5a0a4da8602a594396a539ae9e9a",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        0,
+        31,
+        25
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "942179b84226c8c81274fc201b2f4b15fd9c57c2d0940a62e82ed2453dadcb8e"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+      "bytes": 1229,
+      "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        3,
+        31,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "0689021b326b0a9b33d16cadf7b8f1621fb0d47cf067db899f1168756820f6c1"
+    },
+    {
+      "file": "razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+      "bytes": 1249,
+      "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "palisades",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        1,
+        32,
+        30
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "052cf2fb6e6a712538e9135f56bff30fec635517c403406430b84c110a354002"
+    },
+    {
+      "file": "razor_hill/path_razorhill_corner_ne_32x32.png",
+      "bytes": 1298,
+      "sha256": "6b738280d4bfc21546b3bb9e4dda0c07f18bd3c6a8343db9210c9a9cb056df8f",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "41b1e3fc2854991a9c8e6f37a27a703b727e33b0a88990ac2832671adc5fd324"
+    },
+    {
+      "file": "razor_hill/path_razorhill_corner_nw_32x32.png",
+      "bytes": 1321,
+      "sha256": "6bfe26f60561e528faf60d3c9e3b65f604b593d1b5df5be5fce662a72c81ce81",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "a06e745d976fa707ed10404c9fe4a9dd6253432abc259977d54f3d648b698070"
+    },
+    {
+      "file": "razor_hill/path_razorhill_corner_se_32x32.png",
+      "bytes": 1318,
+      "sha256": "ff94871b64465eed1792733b55c04f7813aa32fc17d2a06b37671b802d6216ea",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "710ab1c7886a171c56332026688afff44e3dfaf7fd03e2f6bcab9404f893e9dc"
+    },
+    {
+      "file": "razor_hill/path_razorhill_corner_sw_32x32.png",
+      "bytes": 1324,
+      "sha256": "36c5afae0e10e8c8be13fc6aed6a58c6e0cfde786e07d5e9b62918feddb0c21d",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "4408308987e0d2a504c69175b8c89ff05eaa328d582dcb4de792e8a69b48596e"
+    },
+    {
+      "file": "razor_hill/path_razorhill_straight_horizontal_32x32.png",
+      "bytes": 1196,
+      "sha256": "ecba0314f2b341d6b8eea136e13ef20cf09e9ea0e5930f0aaee2b4b8fbbd27c1",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "9220402b4ed5f6e8a4eec1ba5e344760afd94ce3bf24685a2b4470eeb2eb2812"
+    },
+    {
+      "file": "razor_hill/path_razorhill_straight_vertical_32x32.png",
+      "bytes": 1188,
+      "sha256": "3df6a65cfd78182e428524973a272f893fb287585e5eeac0dafcb8453e90525d",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "dc453c04b8d4add9b3a3b9caebf49f7b15e7f846b0aa4337c43cf20892731537"
+    },
+    {
+      "file": "razor_hill/sack_razorhill_cargo_01_16x16.png",
+      "bytes": 379,
+      "sha256": "440ad723cc8b666fff826b9ae5167d02142cf5003b837004860a1608207ee819",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "cargo_containers",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        0,
+        14,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "1d5fa1f04e79721bb6aa121c8e8c9e874ca490e47bb9e810c13ec0b1b47dd205"
+    },
+    {
+      "file": "razor_hill/training_totem_razorhill_01_32x32.png",
+      "bytes": 1227,
+      "sha256": "2c3a1dfcbd6bd899742201630d1abc0192f05e97796e16942f71d9b85d9cd6cb",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "totems",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        0,
+        29,
+        25
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "9d37a545ff324b27ffe6ba0a73ccdb2dd5768b977311101e12449f41848bc984"
+    },
+    {
+      "file": "razor_hill/transition_razorhill_dirt_planks_bottom_32x32.png",
+      "bytes": 1211,
+      "sha256": "b93b9b4a94f3019b9edf73d81518a191021731c2533403acd7f63d1f48ff6461",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "0f502207f75c2be0bc28aa1e10ff28058aa2bbbc5153db226526bfab13011511"
+    },
+    {
+      "file": "razor_hill/transition_razorhill_dirt_planks_left_32x32.png",
+      "bytes": 1138,
+      "sha256": "9092e61d6f8e0076348882d455e7b123eaae9773d279caeffe0b3d0e99151185",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "de330a4859f1952f4215415212ccce1e5db9102bd3c036e560d88521d32f8f36"
+    },
+    {
+      "file": "razor_hill/transition_razorhill_dirt_planks_right_32x32.png",
+      "bytes": 1112,
+      "sha256": "8f996f91db7e0a18512221718596cb0e849c47b19fed3d0bf9ed024553f22b35",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "derived",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "4f27dba701976999f1a70c9129096bdcf5423a80aa61df1d8bb8c7aeeca34a05"
+    },
+    {
+      "file": "razor_hill/transition_razorhill_dirt_planks_top_32x32.png",
+      "bytes": 1204,
+      "sha256": "87d3df2c8ca1119f49c6a8c80cd4902c95aad3c2125c1c15b56634b2d44d7e49",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "ground",
+      "category": "transitions",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f72f102aec1c4dbed712daa591c131d44539ebefddf542c5739d662b9065cb7c"
+    },
+    {
+      "file": "razor_hill/watch_post_razorhill_01_32x48.png",
+      "bytes": 1408,
+      "sha256": "55da5da302d6b9b515a43a502088664e3a0f64bd78b32cb5cc5153a279e71980",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "watch_posts",
+      "dimensions": [
+        32,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        14,
+        30,
+        48
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "4298ca242ba701b688b8a45ae81526a2098952d2b358409bf6d49ec278d67e82"
+    },
+    {
+      "file": "razor_hill/weapon_rack_razorhill_01_32x32.png",
+      "bytes": 1098,
+      "sha256": "ed050d01f7c202f97144b2793b396568024054dcd6a8d1df083e96ecc3f84e10",
+      "role": "native_asset",
+      "biome": "razor_hill",
+      "source_kind": "prop",
+      "category": "weapon_racks",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        4,
+        0,
+        27,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "91c65b500adda48607632abfe2915b00efef2901e32f6113174a390e13b73357"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_corner_ne_32x32.png",
+      "bytes": 1416,
+      "sha256": "3f65b4d87d81ff02615f7487aa17a1a2928410a17bd512d898aef988769d578a",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "2cbd155aed739aaeb114d82f17ea30714da5806d482b102fca163676c9cf8664"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_corner_nw_32x32.png",
+      "bytes": 1430,
+      "sha256": "b1065d73112a31e59fce5e51b38d933adb6000f3638c59ef914e7d97f6d0e8b7",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "bcfc2db5cf1a1998e8223d19276b089b0ed5d8ef6893c9174e0737c9633855b4"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_corner_se_32x32.png",
+      "bytes": 1406,
+      "sha256": "41444126a080570580e1371104ee7ed3df933965d78fa3bd6eaaf25efcbd3785",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "559c65ed8c35db00e7eefd4c7f03786417297cbe4694aeeb963e395e065975b3"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_corner_sw_32x32.png",
+      "bytes": 1447,
+      "sha256": "e16d06c6a955c53762b6316bb90ce7f6dfc40ba6b8f664d5fb3554a0688e6bab",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "2a43dac9ae8a7580aaad76ecc166509394e7662e43b27616770a29498ed6356e"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_straight_horizontal_32x32.png",
+      "bytes": 1325,
+      "sha256": "a03801338761a8225f5284a3cc657941d83270604a368171081570522e38592f",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "8c9ed007919e81802ace4253b94a7c988aaaeaa0a0e6802d116dd23bf82248d3"
+    },
+    {
+      "file": "senjin_village/boardwalk_senjin_straight_vertical_32x32.png",
+      "bytes": 1266,
+      "sha256": "5d7a11d7bdec17555c3633ca841b099a2a92e3eb6c469bdb411b7dfdd5a741b4",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "paths",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "7bd6625f0ef2e65d4f0af4ebb2d2af5e369136e8d5d94678641a90018d2c3b94"
+    },
+    {
+      "file": "senjin_village/bush_senjin_tropical_01_16x16.png",
+      "bytes": 397,
+      "sha256": "cb446ebefbe5d098036a06713056aa97b4bc664df15eda903509283495b74d5c",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        4,
+        14,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "68e1d9d6dc88a1af052d2260562f39217da27e0e8fec598d717de73ea3517474"
+    },
+    {
+      "file": "senjin_village/campfire_senjin_frame_01_16x16.png",
+      "bytes": 425,
+      "sha256": "a53d7af1063f001c0c52851bf6b633ce30201eafa0d40affc8457f575fa3461b",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        2,
+        14,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "af5cef0e5faec3b1cd2138d9489f3059696aab6a28fc7a317ccd84358c9844df"
+    },
+    {
+      "file": "senjin_village/canoe_senjin_01_32x32.png",
+      "bytes": 975,
+      "sha256": "ca30818f86e97e2c3bd569c191dfb12598c9bc9835184a2890f1c76ba807f22b",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "boats_and_nets",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        6,
+        29,
+        28
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "c23e396a6e9f47d4678a33907cebc5ef9691059c5efba2be48b8411272854850"
+    },
+    {
+      "file": "senjin_village/driftwood_senjin_01_16x16.png",
+      "bytes": 376,
+      "sha256": "3dc977cde9b7dab4b51166baf531d538c158c440577ab2e2c12691486f8392a4",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "beach_props",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        2,
+        15,
+        13
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "1b186b90591146444d051c35fc6814c0d7215d71c40ec6a2deb8935ca8319db2"
+    },
+    {
+      "file": "senjin_village/fishing_net_senjin_01_16x16.png",
+      "bytes": 442,
+      "sha256": "59455840b5eb8d6351810d39990067ca4c37219d0111dd7d2e23d3e841bae32b",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "boats_and_nets",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        0,
+        2,
+        15,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "78fcb60ab673e9c6e51bf8bb2080eb3a727214b7d310e099ce786f73d5797a41"
+    },
+    {
+      "file": "senjin_village/ground_senjin_beach_sand_01_32x32.png",
+      "bytes": 1235,
+      "sha256": "d150859b3fc0619d1328f3f9b6a5c50a73d60d12eaebf026ee586d1f28af7f51",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "26d25a6c91cd5cefcc7a6bcbbcd91770eafa63a43ea6cbe7aa1514b42611d3c6"
+    },
+    {
+      "file": "senjin_village/ground_senjin_beach_sand_02_32x32.png",
+      "bytes": 1257,
+      "sha256": "6829ff820ad51e6013c0dd5687769f2721e8e828295e835821d8818f161eac07",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "f758e035b1875e4573a12f150cb98715746fb68841e68d52df1134e0693afffe"
+    },
+    {
+      "file": "senjin_village/ground_senjin_beach_sand_03_32x32.png",
+      "bytes": 1257,
+      "sha256": "f81145dd8a96eca4a056c34bf6f00f9b1cf93549ac1f7abc69e6230f5ec983bf",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "5067af46c5bdb7c097f60364be457fd77f0e5b7d71797eb47a0501c74e8e22b4"
+    },
+    {
+      "file": "senjin_village/ground_senjin_beach_sand_04_32x32.png",
+      "bytes": 1227,
+      "sha256": "612c8a2a5c335fbb3797993e9ddb4b027a6692fcf480f0722f2e3065ddc2cf30",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "165532926b9ef8619b2a7b8bdabae1445f026110a900e9f82f485b42bdce2cb2"
+    },
+    {
+      "file": "senjin_village/ground_senjin_packed_sand_01_32x32.png",
+      "bytes": 1337,
+      "sha256": "316dba873a2d0742ccca2ca166a28de70c703064dcabfe1bd60ff01105bb8bb2",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "ground",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "781cef9c35f8ab48f83579884259ba608c0e741fa026b4c71e9e56002ec57c0d"
+    },
+    {
+      "file": "senjin_village/palm_senjin_large_01_48x64.png",
+      "bytes": 3020,
+      "sha256": "af59e5764ce153fe3ac87b0226ed6b0aaffe9cf0292dc8ed1cc7b9bea47dbc9b",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        48,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        16,
+        46,
+        62
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "c5d926dcfe758ad880cd5b5abbae80ab5cd6b2b50be2a687edfda8d801bde287"
+    },
+    {
+      "file": "senjin_village/palm_senjin_small_01_32x48.png",
+      "bytes": 1324,
+      "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        32,
+        48
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        16,
+        29,
+        47
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "17c7aff2189f5a5ff832475bdc335422f5d8884d31030c1c75f95dc8fddb1223"
+    },
+    {
+      "file": "senjin_village/reeds_senjin_01_16x16.png",
+      "bytes": 471,
+      "sha256": "a9e50c2632d48cdf367f132e1c7369e84f16e2b989a845a6327be7c629135e05",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "vegetation",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        2,
+        13,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "28a329d40da2c5a2900035a21bfc3bb9fb609dcdbc20becbeb7d3ebe5f34d950"
+    },
+    {
+      "file": "senjin_village/shells_senjin_01_16x16.png",
+      "bytes": 392,
+      "sha256": "b727257693cf30df7878333cb4c8bdeffa5c01fcc18def0b7ff02c5a0ddc5ec7",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "beach_props",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        3,
+        14,
+        12
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "239d664b3651945a38f1b1e31b566337eac58d035814022c0b035132d5583c28"
+    },
+    {
+      "file": "senjin_village/shore_senjin_corner_ne_32x32.png",
+      "bytes": 1322,
+      "sha256": "c7c630a5b561e56458459d8e0f653cdc9b7db0c2fb15534fdabc6dc5f0c6be7c",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "dd8f543897e2376adde64cc5bb22fdfaf0430b4ba156af7e15103f2726d676fe"
+    },
+    {
+      "file": "senjin_village/shore_senjin_corner_nw_32x32.png",
+      "bytes": 1262,
+      "sha256": "8493d41b94121b98e800af8b0fd7b2747d804917be8e55d7f911105b5e430bde",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "1e2c02cedb890b130612fd7ff10339b06c3a4109a0a6245d9a44db83a9eb28ca"
+    },
+    {
+      "file": "senjin_village/shore_senjin_corner_se_32x32.png",
+      "bytes": 1235,
+      "sha256": "229bdc46b6826effa03aa047629282c11050513906a03e46e92f28898d23b7b2",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "008cd6729d8cbb133c0ea24d1f71055975cff866ac734bad8b3a906144089699"
+    },
+    {
+      "file": "senjin_village/shore_senjin_corner_sw_32x32.png",
+      "bytes": 1340,
+      "sha256": "9f52138f749b8ef5608f8ee7b4f32e7ac61042653900b4fa6fcf0e6474a3c59c",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "9fcc8f2ab9134c0e3218cfcca5dcc59b8f5b3b04000679cdd66feb88b2ee6683"
+    },
+    {
+      "file": "senjin_village/shore_senjin_sand_water_bottom_32x32.png",
+      "bytes": 1251,
+      "sha256": "e4d06f5100d9e7f99780532671260fb82f9294c67c8e34239d3b3a8546321cd1",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "e0bb033df133c866b9130f16a801fe2b7ee03834961c7f864ef73ea25ba8e4e9"
+    },
+    {
+      "file": "senjin_village/shore_senjin_sand_water_left_32x32.png",
+      "bytes": 1239,
+      "sha256": "9ce7201eed78d19de75a734caff292979e5f40d6b9db41f42ee74b52562f26d4",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "3d632d431358c6f63c3602be9823391a05d2d8e01eb5e6bf38213f6a408c0086"
+    },
+    {
+      "file": "senjin_village/shore_senjin_sand_water_right_32x32.png",
+      "bytes": 1235,
+      "sha256": "0625681e56fdce6323e655084cfed7601b78c80878835f4ce0c7c33cfaea66c5",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "9ac02302946442014d1463ca2c60b20274fce0c169d189eefe5f4a2c086a9547"
+    },
+    {
+      "file": "senjin_village/shore_senjin_sand_water_top_32x32.png",
+      "bytes": 1254,
+      "sha256": "967a1a52c08d071507fb0d3dcf886b9e4f498bd8a3fb02a3783c10b7eb12e1a5",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "shorelines",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "652d7369a74f512003ad543c0f8ed2b0f517ba12c03626bdc4f5fb9fbe5a50bf"
+    },
+    {
+      "file": "senjin_village/tiki_post_senjin_01_16x32.png",
+      "bytes": 397,
+      "sha256": "170ee44b608e2a2cfd3541c0b29498231f8b4d7c5def89f57942547b31df2b01",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "totems",
+      "dimensions": [
+        16,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        14,
+        12,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "a8b412342901547dc8f673986d1f64f50fbde1824d2a0788540506561eeeafa4"
+    },
+    {
+      "file": "senjin_village/troll_hut_senjin_01_64x64.png",
+      "bytes": 4369,
+      "sha256": "5f5b16086f5e2c9c15de9ca74250e0bbbe8a6d6573cd79e0efe5426cd4d87f78",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "buildings",
+      "dimensions": [
+        64,
+        64
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        6,
+        0,
+        63,
+        55
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "ddf121083b85180bc271252053f7919d907c640e26811be59de7ed074ae080f8"
+    },
+    {
+      "file": "senjin_village/troll_totem_senjin_01_16x32.png",
+      "bytes": 467,
+      "sha256": "563a67356d33d58a1f4acad0d31f31891c89ef63e68d36559f4fa2db4d4472eb",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "prop",
+      "category": "totems",
+      "dimensions": [
+        16,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        17,
+        16,
+        30
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "525b018f929f7fea230ea4ab5c8222592df76cb855969a2420562ac3d8bfdb41"
+    },
+    {
+      "file": "senjin_village/water_senjin_deep_frame_01_32x32.png",
+      "bytes": 1118,
+      "sha256": "66a4643092873a85a61e44db79fa8ff57ee5dd27db5f5e240631efcc5a648809",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "abbaa56a5f5d5f2742e6c20e127df166d35a2faa019fa29acd24b250f9092c6d"
+    },
+    {
+      "file": "senjin_village/water_senjin_deep_frame_02_32x32.png",
+      "bytes": 1110,
+      "sha256": "b065b848cd455f673664df29cec0a1168b4b00feda89824149f915f7907954e7",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 8,
+      "max_visible_rgb555_colors_per_8x8": 8,
+      "rgba_pixels_sha256": "bcb0a07689bc23849670358a3a0c4b0ce0283aafff893f42eb3f94b02c29736c"
+    },
+    {
+      "file": "senjin_village/water_senjin_shallow_frame_01_32x32.png",
+      "bytes": 1244,
+      "sha256": "26822fff1d1a6edbdf9542b4aa2b8805ecb46621ac5ed98c3d1b06388e0e7b83",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "ground",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 4,
+      "max_visible_rgb555_colors_per_8x8": 4,
+      "rgba_pixels_sha256": "6de63d5af2b65f8d3f046451e6b6c813a157c9424744de9883e2d40f09a33d6f"
+    },
+    {
+      "file": "senjin_village/water_senjin_shallow_frame_02_32x32.png",
+      "bytes": 1245,
+      "sha256": "5449550e187143f7dde2f17b9f64e168f941b04cbc2ebc7d131fdbd6b3ef8bea",
+      "role": "native_asset",
+      "biome": "senjin_village",
+      "source_kind": "derived",
+      "category": "water",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": true,
+      "opaque_bbox": [
+        0,
+        0,
+        32,
+        32
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 8,
+      "max_visible_rgb555_colors_per_8x8": 8,
+      "rgba_pixels_sha256": "4207e54adf58a7f5cde43a22472f8d73965ca45e9695ef0e8c1a7345a6fc4dd7"
+    },
+    {
+      "file": "shared_interactables/bedroll_shared_01_32x32.png",
+      "bytes": 1018,
+      "sha256": "8260251db0f94e0edcc8419ab98e6e7d5d8a0a731e9f61775d621f6282a41275",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "camp_furniture",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        3,
+        31,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "1f31112cce82363c3c51ad71a7d3392b03ce7147f492d369b85242ef32c4f39d"
+    },
+    {
+      "file": "shared_interactables/brazier_shared_frame_01_16x16.png",
+      "bytes": 352,
+      "sha256": "1273de9fbdfe3b06da0d489faf91dc51f6585a885529671fc33d47797cf18579",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        0,
+        13,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "a8f5c12f6d7949b007599442d8331f76a4e817c74de87baa82181cafeb9938b5"
+    },
+    {
+      "file": "shared_interactables/brazier_shared_frame_02_16x16.png",
+      "bytes": 330,
+      "sha256": "6035f07c2113e0bfeadac0c6f8f24b348a1271ee583667eb229634d0afcf6e3b",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        1,
+        13,
+        15
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "50dc7b9ff355169c1c82ead00e650b3c57784257f4ba3743bc16fe760c6f91da"
+    },
+    {
+      "file": "shared_interactables/campfire_shared_frame_01_16x16.png",
+      "bytes": 360,
+      "sha256": "1beb209da661dfd7c43479ba5188f8a0d48720f568da2521d5ab955e24832aec",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        0,
+        15,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "4a940de9f587071457deea31c4e9d9911c8f15548f55639e65baf2a690c551a5"
+    },
+    {
+      "file": "shared_interactables/campfire_shared_frame_02_16x16.png",
+      "bytes": 325,
+      "sha256": "71043a162eeaf82f322b7e5a460d572467e88a9576fac6133db198ebee7341a7",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "fires",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        1,
+        1,
+        14,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "ddd6bc794bba926aa796ab34178bc7319f2560eded50b29497a73eefb84c3419"
+    },
+    {
+      "file": "shared_interactables/chest_shared_closed_16x16.png",
+      "bytes": 297,
+      "sha256": "cb20a75f729c6792b2206bd17768358a77eddfb0bb4851cf7ea5366f20972e61",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "chests",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        5,
+        14,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "6afe69ecb0c250b9f5968fa0afdce1c5ca57eb900b540f790954a36a997dfe33"
+    },
+    {
+      "file": "shared_interactables/chest_shared_open_16x16.png",
+      "bytes": 262,
+      "sha256": "494b27de758a5b9bcb7942c7abeed3c1beebed881aa79277e1c4aae320902919",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "chests",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        2,
+        13,
+        15
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "6afc3c2f6c6fd6d355f5ae86063925cd9ea8db768ca3418adad8e5a10c9d3f43"
+    },
+    {
+      "file": "shared_interactables/herb_shared_peacebloom_16x16.png",
+      "bytes": 379,
+      "sha256": "ecc9b34ebafafb18ebe554ca992288382bc12158f9bd4687040bdb6556b648d1",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "herbs",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        2,
+        13,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "702a55579e0b71bb6260efa2956b3e9f5822afd35f62a26312065b806045ed6e"
+    },
+    {
+      "file": "shared_interactables/herb_shared_silverleaf_16x16.png",
+      "bytes": 333,
+      "sha256": "a47dc99fb37b981a650f1c567dda4ee29dc4e77e66ddcecde0148a272b1dbaa3",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "herbs",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        1,
+        13,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "b42e600a59b2cee17fc521b4a63eafdf4b346bb497e236e5a2226a5bcb7c4ac5"
+    },
+    {
+      "file": "shared_interactables/ore_shared_copper_vein_32x32.png",
+      "bytes": 1070,
+      "sha256": "4d10638974902287fee5c477457af376d926bed3bf5d5b3163c33de2e22d0ec9",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "ore_nodes",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        6,
+        29,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "707f29840d781c8916e2db4d4337a9a7a7bf246792b3686593a6a71836e85bba"
+    },
+    {
+      "file": "shared_interactables/ore_shared_silver_vein_32x32.png",
+      "bytes": 1138,
+      "sha256": "a1d2c49e8cc23fa8d91c6c4c4b79fe5b3803656502fbfb5fc6a6992eca3abcdb",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "ore_nodes",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        4,
+        31,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "b894ebc185446404fabae6d9c6ac660be01d347044b9fd0b0fdbd20dc1efe933"
+    },
+    {
+      "file": "shared_interactables/quest_shared_supply_bag_16x16.png",
+      "bytes": 307,
+      "sha256": "a4edfca22ff53f31d69f636fb200e513120e363d15914d11ef1dbab9b460ab68",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "quest_and_resource_items",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        2,
+        14,
+        16
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "c456c4224da2459b0e2844b55b34a3d97dabb8fd44a31ddea1b2c2e6b26e2fb2"
+    },
+    {
+      "file": "shared_interactables/resource_shared_cactus_apple_16x16.png",
+      "bytes": 398,
+      "sha256": "9a70283dd90dc3c58425e1d5eb5f0d7155297effba66b729626661b7916a87c8",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "quest_and_resource_items",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        2,
+        13,
+        14
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "01284d753d6374f299242d481182aadf0af0839459245cc6af9d1f523bdd7895"
+    },
+    {
+      "file": "shared_interactables/stool_shared_wood_01_16x16.png",
+      "bytes": 288,
+      "sha256": "7af2a5e4a0c94c26ad2fd094cad44773780da576bcb3dab4c85a2431a5da47bb",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "camp_furniture",
+      "dimensions": [
+        16,
+        16
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        4,
+        12,
+        13
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "ab8063e6a3c525df651b8fbf8a890536bbe8f3c52690c727b5fd8f9146ee8ea8"
+    },
+    {
+      "file": "shared_interactables/table_shared_camp_01_32x32.png",
+      "bytes": 1166,
+      "sha256": "feebbccc98360bdaff7e11df086ba8bd7ea2abc3e12d2a46441e0e7ec216305d",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "camp_furniture",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        2,
+        3,
+        32,
+        26
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "bb90fe2d68225e9b78e3243b4fe03838edd07cf07f43f4c9fdc04bc4ecb926e3"
+    },
+    {
+      "file": "shared_interactables/weapon_rack_shared_01_32x32.png",
+      "bytes": 1297,
+      "sha256": "0cfd11ec849b95b598ca7121365991655a8cd866c12ba0f3906b19f56d2ae71f",
+      "role": "native_asset",
+      "biome": "shared_interactables",
+      "source_kind": "prop",
+      "category": "weapon_racks",
+      "dimensions": [
+        32,
+        32
+      ],
+      "alpha_values": [
+        0,
+        255
+      ],
+      "alpha_binary": true,
+      "opaque": false,
+      "opaque_bbox": [
+        3,
+        0,
+        29,
+        31
+      ],
+      "dimensions_multiples_of_8": true,
+      "max_visible_rgb_colors_per_8x8": 3,
+      "max_visible_rgb555_colors_per_8x8": 3,
+      "rgba_pixels_sha256": "0569bd0f061f0305284018d6c69650c03f594a470ae587ab2e917107ef2aefac"
+    },
+    {
+      "file": "source_atlases/a_clean_graphic_sprite_sheet_tileset_image_on_a.png",
+      "bytes": 1792199,
+      "sha256": "f81cf60ebe817ec2b9ab853d7effa300cbfc36d200161eaec3b48f15f02dff27",
+      "role": "preview_or_source_atlas",
+      "folder": "source_atlases",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "file": "source_atlases/a_clean_high_resolution_pixel_art_sprite_atlas_on.png",
+      "bytes": 2175618,
+      "sha256": "1e00277add31f21e04fae1dc1005b0735474151c176a699821598e567a5d8b08",
+      "role": "preview_or_source_atlas",
+      "folder": "source_atlases",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "file": "source_atlases/a_clean_sprite_sheet_game_asset_sheet_on_a_trans.png",
+      "bytes": 1815117,
+      "sha256": "209ccde7c958cc902c545fad8fdb5f0f92694dd3a533ab1f3e23334a9eaaca3f",
+      "role": "preview_or_source_atlas",
+      "folder": "source_atlases",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "file": "source_atlases/a_clean_transparent_background_sprite_sheet_tile.png",
+      "bytes": 1858095,
+      "sha256": "a105958ea85805269887d4849b3820d63a0a2b546744fa1042cf670c24afd82a",
+      "role": "preview_or_source_atlas",
+      "folder": "source_atlases",
+      "dimensions": [
+        1122,
+        1402
+      ]
+    },
+    {
+      "file": "source_atlases/a_clean_white_transparent_checkered_background_spr.png",
+      "bytes": 1242652,
+      "sha256": "a6d43e1093c805b715dfa399b278c7822b82b94ae712e544e1bfb1620a3b50c1",
+      "role": "preview_or_source_atlas",
+      "folder": "source_atlases",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}

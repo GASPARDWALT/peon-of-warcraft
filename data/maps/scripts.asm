@@ -512,3 +512,8 @@ INCLUDE "maps/PeonHanazuaCamp.asm"
 INCLUDE "maps/PeonSarkothBasin.asm"
 INCLUDE "maps/PeonCaveApproach.asm"
 INCLUDE "maps/PeonValleyExit.asm"
+
+SECTION "Peon Environment Test Scripts", ROMX
+INCLUDE "maps/PeonEnvironmentTest.asm"
+INCLUDE "maps/PeonEnvironmentTestAnnex.asm"
+INCLUDE "maps/PeonEnvironmentTestCave.asm"

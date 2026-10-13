@@ -1085,3 +1085,11 @@ PeonCaveApproach_Blocks:
 INCBIN "maps/PeonCaveApproach.blk"
 PeonValleyExit_Blocks:
 INCBIN "maps/PeonValleyExit.blk"
+
+SECTION "Peon Environment Test Blocks", ROMX
+PeonEnvironmentTest_Blocks:
+INCBIN "maps/PeonEnvironmentTest.blk"
+PeonEnvironmentTestAnnex_Blocks:
+INCBIN "maps/PeonEnvironmentTestAnnex.blk"
+PeonEnvironmentTestCave_Blocks:
+INCBIN "maps/PeonEnvironmentTestCave.blk"
