@@ -259,6 +259,13 @@ def build_maps(palettes, frames):
         for x in range(1,WIDTH-1): c.put(x,y,cave_floor_id)
     transitions = sorted(f.name for f in DUROTAR.glob('transition_*.png'))
     for i,name in enumerate(transitions): c.put(2+(i%4)*2,2+(i//4)*2,c.floor_asset(name))
+    # A playable, joined three-block sample, rather than an isolated transition
+    # patch: literal dirt -> literal transition -> literal red sand. Among the
+    # four supplied variants, "left" has the lowest horizontal edge error for
+    # this direction. Its canonical beige edge still differs from dirt01; do
+    # not redraw it or silently claim the source textures are seamless.
+    c.put(3,2,2)
+    c.put(5,2,c.floor_asset('ground_valley_redsand_01_32x32.png'))
     c.stamp('rock_durotar_large_01_32x32.png',2,6,collision='WALL')
     c.stamp('rock_durotar_small_01_16x16.png',9,6,(16,16))
     c.cell(19,13,'WALL')
@@ -401,9 +408,14 @@ def main():
     excluded=[{'source':str(p.relative_to(ROOT)),'sha256':sha(p.read_bytes()),
                'reason':'Alternate ground texture variant excluded from this first-pass native tile budget; canonical original preserved.'}
               for p in sorted(DUROTAR.glob('*.png')) if p.name not in included]
+    joined_transition={'map':maps[2].name,'blocks':[[3,2],[4,2],[5,2]],
+                       'source_order':['ground_durotar_dirt_01_32x32.png','transition_durotar_dirt_redsand_left_32x32.png','ground_valley_redsand_01_32x32.png'],
+                       'walk_start':[6,5],'walk_end':[11,5],'view_waypoint':[9,6],
+                       'native_scale':1,'edge_continuity':'Source transition was selected by minimum RGB555 horizontal edge error. Canonical tile edges/colors are not pixel-seamless; all source geometry remains unchanged.'}
+    assert all((x,5) in reachable(maps[2],[6,17]) for x in range(6,12)), 'Joined soil strip must be walkable'
     contract={'maps':results,'spawn':{'map':maps[0].name,'xy':[12,17]},'group':26,
               'route_waypoints':{maps[0].name:[[12,17],[11,17],[21,9]],maps[1].name:[[2,9],[10,8],[18,8],[13,14],[11,14]],maps[2].name:[[6,17],[4,14],[18,17]]},
-              'obstacles':obstacles,'transitions':transitions,'interactions':interactions,
+              'obstacles':obstacles,'transitions':transitions,'interactions':interactions,'joined_transition':joined_transition,
               'fire':{'map':maps[1].name,'physical_tile_ids':[0,1,2,3],'vram_bank':0,'vram_address':'0x9000',
                       'framebytes':64,'frames':3,'period_engine_ticks':8,'path':str((NATIVE/'fire_frames.bin').relative_to(ROOT)),
                       'sha256':sha(fire),'palette':6,'alpha_background':'Copied native CAVE stone-floor module; no flame pixels redrawn.',
@@ -414,7 +426,7 @@ def main():
               'scope':'Dedicated Durotar environment v2 test maps only; no real map, class or combat changes.',
               'source_geometry':'All supplied native pixel coordinates and complete source alpha canvases retained; no resampling.',
               'palettes':palette_fit,'existing_ui_palette_unchanged':True,'maps':results,'excluded':excluded,
-              'path_visible_openings':orientations,'static_walkability':static,'fire':contract['fire'],
+              'path_visible_openings':orientations,'static_walkability':static,'fire':contract['fire'],'joined_transition':joined_transition,
               'native_output_sha256':{str(path.relative_to(ROOT)):sha(path.read_bytes()) for path in sorted(NATIVE.glob('*')) if path.is_file()},
               'native_cave_kit':{'png':'gfx/tilesets/cave.png','png_sha256':sha((ROOT/'gfx/tilesets/cave.png').read_bytes()),
                                  'metatile_source':'data/tilesets/cave_metatiles.bin','blocks':[1,2],'color_conversion':'native copied indexed patterns using fitted wood/stone palette2'},

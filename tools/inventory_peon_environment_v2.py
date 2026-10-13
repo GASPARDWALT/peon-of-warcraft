@@ -135,7 +135,7 @@ def main():
             "water_frame_02_palette_conversion": notes["water_frame_02_requires_palette_conversion"],
             "budget_deferrals_are_not_source_duplicates": "No Durotar assets have identical full RGBA pixels; any deferred terrain variants remain distinct source art.",
         },
-        "native_import_status": "Pending separate importer and exact-ROM runtime evidence.",
+        "native_import_status": "Not asserted by this source inventory; see import_manifest.json and runtime/validation.json for native import and exact-ROM evidence.",
         "records": records,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)

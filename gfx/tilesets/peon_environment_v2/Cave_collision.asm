@@ -11,11 +11,12 @@
 	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 09
 	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0a
 	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0b
-	peon_env_v2_tilecoll WALL, WALL, WALL, WALL ; 0c
-	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0d
-	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, WALL ; 0e
-	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0f
-	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, WALL ; 10
-	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 11
-	peon_env_v2_tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, FLOOR ; 12
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0c
+	peon_env_v2_tilecoll WALL, WALL, WALL, WALL ; 0d
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 0e
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, WALL ; 0f
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 10
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, WALL ; 11
+	peon_env_v2_tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 12
 	peon_env_v2_tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, FLOOR ; 13
+	peon_env_v2_tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, FLOOR ; 14

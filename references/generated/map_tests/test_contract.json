@@ -467,9 +467,9 @@
       "width_blocks": 12,
       "height_blocks": 10,
       "headerprefix": "PeonEnvV2Cave",
-      "native_patterns": 171,
+      "native_patterns": 187,
       "loaded_patterns": 192,
-      "metatile_count": 20,
+      "metatile_count": 21,
       "gfx": "gfx/tilesets/peon_environment_v2/Cave.2bpp",
       "compressed_gfx": "gfx/tilesets/peon_environment_v2/Cave.2bpp.lz",
       "metatiles": "gfx/tilesets/peon_environment_v2/Cave_metatiles.bin",
@@ -606,6 +606,20 @@
           "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
         },
         {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_01_32x32.png",
+          "sha256": "206f80bd59b375dbbf03777ada17ec81933ecf1755cfd6e1114ebc87300a13ee",
+          "dimensions": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_canvas_preserved": true,
+          "metatile_ids": [
+            12
+          ],
+          "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
+        },
+        {
           "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
           "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
           "dimensions": [
@@ -625,7 +639,7 @@
             192
           ],
           "metatile_ids": [
-            12
+            13
           ],
           "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
         },
@@ -649,7 +663,7 @@
             208
           ],
           "metatile_ids": [
-            13
+            14
           ],
           "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
         },
@@ -673,7 +687,7 @@
             208
           ],
           "metatile_ids": [
-            15
+            16
           ],
           "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
         },
@@ -697,7 +711,7 @@
             208
           ],
           "metatile_ids": [
-            17
+            18
           ],
           "color_conversion": "7 fitted map palettes, one palette per 8\u00d78 tile"
         }
@@ -915,6 +929,42 @@
       "kind": "chest"
     }
   ],
+  "joined_transition": {
+    "map": "PeonEnvironmentTestCave",
+    "blocks": [
+      [
+        3,
+        2
+      ],
+      [
+        4,
+        2
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "source_order": [
+      "ground_durotar_dirt_01_32x32.png",
+      "transition_durotar_dirt_redsand_left_32x32.png",
+      "ground_valley_redsand_01_32x32.png"
+    ],
+    "walk_start": [
+      6,
+      5
+    ],
+    "walk_end": [
+      11,
+      5
+    ],
+    "view_waypoint": [
+      9,
+      6
+    ],
+    "native_scale": 1,
+    "edge_continuity": "Source transition was selected by minimum RGB555 horizontal edge error. Canonical tile edges/colors are not pixel-seamless; all source geometry remains unchanged."
+  },
   "fire": {
     "map": "PeonEnvironmentTestAnnex",
     "physical_tile_ids": [
