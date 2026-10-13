@@ -721,6 +721,10 @@ INCLUDE "engine/menus/peon_item_icons.asm"
 INCLUDE "engine/menus/peon_consumables.asm"
 INCLUDE "engine/battle/peon_spell_effects.asm"
 INCLUDE "engine/battle/peon_battle_totems.asm"
+INCLUDE "engine/battle_anims/peon_spell_pack_v1.asm"
+IF DEF(PEON_SPELL_TEST)
+INCLUDE "engine/battle/peon_spell_test_fixture.asm"
+ENDC
 INCLUDE "engine/battle/peon_warlock_pet.asm"
 INCLUDE "engine/battle/peon_encounter_intro.asm"
 INCLUDE "engine/battle/peon_enemy_profiles.asm"

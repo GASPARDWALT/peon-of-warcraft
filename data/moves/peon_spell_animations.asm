@@ -2,25 +2,34 @@
 ; This include shares the BattleAnimations pointer bank. Effects never write
 ; signed bank1 BG tiles reserved for rank emblems and the placed Earth Totem.
 BattleAnim_PeonRockbiter:
-	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_PEON_NATURE
+	anim_1gfx BATTLE_ANIM_GFX_PEON_V1_ROCKBITER
 	anim_sound 0, 0, SFX_PEON_EARTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 40, 100, $30
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 56, 100, $30
-	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 44, 84, $0
-	anim_wait 28
-	anim_obj BATTLE_ANIM_OBJ_PEON_LEAF, 56, 80, $0
+	anim_obj BATTLE_ANIM_OBJ_PEON_V1_ROCKBITER, 0, 0, PEON_SPELL_V1_ROCKBITER
 	anim_wait 28
 	anim_ret
 
 BattleAnim_PeonEarthShock:
-	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_PEON_NATURE
+	anim_1gfx BATTLE_ANIM_GFX_PEON_V1_EARTH_SHOCK
 	anim_sound 0, 1, SFX_PEON_EARTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 120, 68, $30
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 144, 68, $30
-	anim_obj BATTLE_ANIM_OBJ_PEON_ARC, 128, 48, $0
-	anim_wait 12
-	anim_obj BATTLE_ANIM_OBJ_PEON_ARC, 140, 56, $0
-	anim_wait 32
+	anim_obj BATTLE_ANIM_OBJ_PEON_V1_EARTH_SHOCK, 0, 0, PEON_SPELL_V1_EARTH_SHOCK
+	anim_wait 28
+	anim_ret
+
+BattleAnim_PeonLightningV1:
+	anim_1gfx BATTLE_ANIM_GFX_PEON_V1_LIGHTNING
+	anim_sound 0, 0, SFX_THUNDERSHOCK
+	anim_obj BATTLE_ANIM_OBJ_PEON_V1_LIGHTNING, 0, 0, PEON_SPELL_V1_LIGHTNING
+	anim_wait 49
+	anim_sound 0, 1, SFX_THUNDERSHOCK
+	anim_obj BATTLE_ANIM_OBJ_PEON_V1_LIGHTNING_IMPACT, 0, 0, PEON_SPELL_V1_LIGHTNING_IMPACT
+	anim_wait 20
+	anim_ret
+
+BattleAnim_PeonEarthTotemV1:
+	anim_1gfx BATTLE_ANIM_GFX_PEON_V1_EARTH_TOTEM
+	anim_sound 0, 0, SFX_PEON_TOTEM_PLACE
+	anim_obj BATTLE_ANIM_OBJ_PEON_V1_EARTH_TOTEM, 0, 0, PEON_SPELL_V1_EARTH_TOTEM
+	anim_wait 28
 	anim_ret
 
 BattleAnim_PeonFlameShock:

@@ -247,6 +247,16 @@ BattleAnimOAMData:
 	battleanimoam $06, 2, .OAMData_PeonShadowBoltV026
 	battleanimoam $08, 2, .OAMData_PeonShadowBoltV026
 	battleanimoam $0a, 2, .OAMData_PeonShadowBoltV026
+	; Row bodies share the floating imported-effect renderer bank.
+	battleanimoam $00, PeonSpellV1LightningPlayerOAMCount, PeonSpellV1LightningPlayerOAM
+	battleanimoam $00, PeonSpellV1LightningEnemyOAMCount, PeonSpellV1LightningEnemyOAM
+	battleanimoam $00, PeonSpellV1LightningImpactOAMCount, PeonSpellV1LightningImpactOAM
+	battleanimoam $00, PeonSpellV1RockbiterPlayerOAMCount, PeonSpellV1RockbiterPlayerOAM
+	battleanimoam $00, PeonSpellV1RockbiterEnemyOAMCount, PeonSpellV1RockbiterEnemyOAM
+	battleanimoam $00, PeonSpellV1EarthShockPlayerOAMCount, PeonSpellV1EarthShockPlayerOAM
+	battleanimoam $00, PeonSpellV1EarthShockEnemyOAMCount, PeonSpellV1EarthShockEnemyOAM
+	battleanimoam $00, PeonSpellV1EarthTotemPlayerOAMCount, PeonSpellV1EarthTotemPlayerOAM
+	battleanimoam $00, PeonSpellV1EarthTotemEnemyOAMCount, PeonSpellV1EarthTotemEnemyOAM
 	assert_table_length NUM_BATTLE_ANIM_OAMSETS
 
 .OAMData_PeonShadowBoltV026:

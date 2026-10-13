@@ -1,0 +1,572 @@
+{
+  "passed": true,
+  "rom_sha256": "1221b9c6f4194444ced6a00573d2a5d837314ee070ab0ddf553bbbd149cf885f",
+  "symbols_sha256": "995ecd93c1f19ab507a41a44d277af95f6f64f692107a7f60248150cfc52c9c0",
+  "header": {
+    "rom_bytes": 2097152,
+    "cgb_flag": 192,
+    "mbc3_rtc_ram_battery_header": true,
+    "declared_ram_bytes": 32768,
+    "checksums_valid": true,
+    "physical_cartridge_tested": false,
+    "rtc_clock_and_battery_persistence_tested": false
+  },
+  "ordinary_inputs_only": true,
+  "RAM_writes": false,
+  "emulator_states_loaded": false,
+  "user_batteries_opened": false,
+  "fixture_prepared_by_native_ROM_not_emulator": true,
+  "cases": [
+    {
+      "case": 1,
+      "ability": "lightning_bolt",
+      "caster": "player",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 19,
+        "enemy_hp": 191,
+        "mana": 129,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/lightning_bolt_player_back_16x32.png",
+          "source_sha256": "957724cc7a4ae2f1209c074e8b7333ca0735e741cb2e49dc13b981868e9ea2ee",
+          "orientation": "player_back",
+          "canvas": [
+            16,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 45,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 103,
+          "matching_source_LCD_observations": 54,
+          "distinct_actual_OAM_anchor_positions": 49
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/lightning_bolt_explosion_32x32.png",
+          "source_sha256": "f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8",
+          "orientation": "target",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 201,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 210,
+          "matching_source_LCD_observations": 209,
+          "distinct_actual_OAM_anchor_positions": 1
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 1304,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    },
+    {
+      "case": 2,
+      "ability": "rockbiter",
+      "caster": "player",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 20,
+        "enemy_hp": 200,
+        "mana": 119,
+        "rockbiter_charge": 1,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rockbiter_player_back_32x32.png",
+          "source_sha256": "cfbca19fe320b128b7b4ce8483f9737de3b194939954a6a7b90c4b6d07e06ac2",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 341,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 239,
+          "matching_source_LCD_observations": 235,
+          "distinct_actual_OAM_anchor_positions": 4
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 2204,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected.",
+      "next_real_physical_strike_consumed_charge": true
+    },
+    {
+      "case": 3,
+      "ability": "earth_shock",
+      "caster": "player",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 20,
+        "enemy_hp": 189,
+        "mana": 114,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_shock_player_back_32x32.png",
+          "source_sha256": "0415f7d4c20154b9ee7b8859b4ddcfba9d6f28ed1b727b277f53e69de67e9af0",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 353,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 116,
+          "matching_source_LCD_observations": 46,
+          "distinct_actual_OAM_anchor_positions": 3
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 1337,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    },
+    {
+      "case": 4,
+      "ability": "earth_totem",
+      "caster": "player",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 29,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 1,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 1
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_totem_player_back_32x32.png",
+          "source_sha256": "0d6f45b79b77928f81b0f07c7a148d6328c63772c9c841ec517d02d39d7d3d1b",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 313,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 219,
+          "matching_source_LCD_observations": 210,
+          "distinct_actual_OAM_anchor_positions": 9
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 3327,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected.",
+      "persistent_after_placement": {
+        "bank1_16_tiles_exact": true,
+        "13_sparse_source_OAM_entries_exact": true,
+        "OBJ_palettes4_5_6_exact": true,
+        "visible_source_LCD_pixels_exact": 306,
+        "background_foreground_occludes_layer_by_native_priority": true,
+        "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+        "transparent_BG_paper_can_show_priority_totem": true
+      },
+      "persistent_after_imported_lightning": {
+        "bank1_16_tiles_exact": true,
+        "13_sparse_source_OAM_entries_exact": true,
+        "OBJ_palettes4_5_6_exact": true,
+        "visible_source_LCD_pixels_exact": 306,
+        "background_foreground_occludes_layer_by_native_priority": true,
+        "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+        "transparent_BG_paper_can_show_priority_totem": true
+      },
+      "persistent_after_stock_physical": {
+        "bank1_16_tiles_exact": true,
+        "13_sparse_source_OAM_entries_exact": true,
+        "OBJ_palettes4_5_6_exact": true,
+        "visible_source_LCD_pixels_exact": 306,
+        "background_foreground_occludes_layer_by_native_priority": true,
+        "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+        "transparent_BG_paper_can_show_priority_totem": true
+      },
+      "persistent_after_bags_return": {
+        "bank1_16_tiles_exact": true,
+        "13_sparse_source_OAM_entries_exact": true,
+        "OBJ_palettes4_5_6_exact": true,
+        "visible_source_LCD_pixels_exact": 306,
+        "background_foreground_occludes_layer_by_native_priority": true,
+        "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+        "transparent_BG_paper_can_show_priority_totem": true
+      }
+    },
+    {
+      "case": 5,
+      "ability": "lightning_bolt",
+      "caster": "enemy",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 30,
+        "enemy_hp": 194,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/lightning_bolt_enemy_front_16x32.png",
+          "source_sha256": "af3a6c43453d35ef832a0238d15eb79610d2a61d57816a45cd0ce1deb2bc8107",
+          "orientation": "enemy_front",
+          "canvas": [
+            16,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 45,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 103,
+          "matching_source_LCD_observations": 54,
+          "distinct_actual_OAM_anchor_positions": 49
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/lightning_bolt_explosion_32x32.png",
+          "source_sha256": "f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8",
+          "orientation": "target",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 201,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 210,
+          "matching_source_LCD_observations": 209,
+          "distinct_actual_OAM_anchor_positions": 1
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 1343,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    },
+    {
+      "case": 6,
+      "ability": "rockbiter",
+      "caster": "enemy",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 31,
+        "enemy_hp": 194,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 9,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rockbiter_enemy_front_32x32.png",
+          "source_sha256": "47a424b4f6585ce53d7c09923ad2083c52fb39ffbd172436356d3c897b2207a3",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 341,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 239,
+          "matching_source_LCD_observations": 235,
+          "distinct_actual_OAM_anchor_positions": 4
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 1219,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    },
+    {
+      "case": 7,
+      "ability": "earth_shock",
+      "caster": "enemy",
+      "enemy_totem_visual_preview_only": false,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 30,
+        "enemy_hp": 194,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 2
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_shock_enemy_front_32x32.png",
+          "source_sha256": "1c4df849c80e0a2fe2140e6696b83302685d236c2e53d30e7a7423a51d0e7616",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 353,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 116,
+          "matching_source_LCD_observations": 46,
+          "distinct_actual_OAM_anchor_positions": 3
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 1303,
+      "max_active_OAM_entries": 16,
+      "max_entries_per_scanline_including_X_hidden": 7,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    },
+    {
+      "case": 8,
+      "ability": "earth_totem",
+      "caster": "enemy",
+      "enemy_totem_visual_preview_only": true,
+      "before": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "after": {
+        "player_hp": 31,
+        "enemy_hp": 200,
+        "mana": 144,
+        "rockbiter_charge": 0,
+        "lightning_shield_charges": 0,
+        "earth_totem_active": 0,
+        "enemy_attack_stage": 7,
+        "totem_count": 1,
+        "native_used_move_count": 0
+      },
+      "source_rendering": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_totem_enemy_front_32x32.png",
+          "source_sha256": "95786d97738c9a3d6f4fcd0670bc3ab615c860a1dfcea980d7f45be21bef10e7",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "VRAM_exact": true,
+          "palette_exact": true,
+          "matched_LCD_pixels": 313,
+          "source_alpha_canvas_exact": true,
+          "matching_native_OAM_observations": 219,
+          "matching_source_LCD_observations": 210,
+          "distinct_actual_OAM_anchor_positions": 9
+        }
+      ],
+      "actor_and_font_VRAM_restored": true,
+      "native_BG_palettes_restored": true,
+      "bold_font_cache": {
+        "current_native_bold_cache_matches_font": true,
+        "current_glyph_count": 9,
+        "cache_rebuilt_by_native_menus_is_not_treated_as_corruption": true
+      },
+      "actor_rank_sidebar_LCD_foreground_pixels_exact": 2476,
+      "transparent_BG_paper_can_show_priority_totem": true,
+      "OAM_frames_observed": 507,
+      "max_active_OAM_entries": 13,
+      "max_entries_per_scanline_including_X_hidden": 4,
+      "level_glow_observed": false,
+      "level_glow_reason": "Native sparring grants no EXP; no level fixture injected."
+    }
+  ],
+  "other_three_spell_icons": "Prepared converted assets; no live UI binding claimed.",
+  "enemy_totem_item_mechanic": "Not implemented; case8 validates its explicitly labelled native visual preview."
+}

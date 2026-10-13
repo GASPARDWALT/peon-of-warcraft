@@ -1,0 +1,32 @@
+{
+  "phase": "shaman",
+  "canonical_commit": "270a9ef45a38ab8e761da25224121cd3af0032f7",
+  "canonical_zip_sha256": "924f64d56c2ddb6497dc24db4bc110908ac074d7de197c4a071a759ffe0a8ae0",
+  "roms": [
+    {
+      "kind": "normal_game",
+      "file": "peon_spell_effects_v1_shaman.gbc",
+      "sha256": "c6d1a104335541fae9a5de09da8965263ef1cd08f2bf4fe3913f112b9ff744ac",
+      "bytes": 2097152
+    },
+    {
+      "kind": "isolated_native_fixture",
+      "file": "peon_spell_effects_v1_shaman_test.gbc",
+      "sha256": "1221b9c6f4194444ced6a00573d2a5d837314ee070ab0ddf553bbbd149cf885f",
+      "bytes": 2097152
+    }
+  ],
+  "source_import_manifest": "../../references/generated/spell_tests/import_manifest.json",
+  "runtime_validation": "../../references/generated/spell_tests/runtime/validation.json",
+  "normal_class_compatibility": "../../references/generated/spell_tests/compatibility/validation.json",
+  "fresh_build_proof": "../../references/generated/spell_tests/fresh_rebuild.json",
+  "cgb_only": true,
+  "mbc3_rtc_ram_battery_header": true,
+  "physical_modretro_programmed": false,
+  "save_layout_changed": false,
+  "native_eight_scenario_test": "passed",
+  "normal_three_class_compatibility": "passed",
+  "tracked_files_only_rebuild": "byte-identical",
+  "maximum_observed_OAM_entries": 16,
+  "maximum_observed_entries_per_scanline": 7
+}

@@ -75,7 +75,11 @@ NewGame:
 	ld a, MACHOP
 	ld [wCurPartySpecies], a
 	ld [wTempSpecies], a
+	IF DEF(PEON_SPELL_TEST)
+	ld a, 8
+	ELSE
 	ld a, 2
+	ENDC
 	ld [wCurPartyLevel], a
 	xor a ; PARTYMON
 	ld [wMonType], a
@@ -85,6 +89,9 @@ NewGame:
 	ld b, SET_FLAG
 	call EventFlagAction
 	farcall PeonInitializeTeamV029
+	IF DEF(PEON_SPELL_TEST)
+	farcall PeonSpellTestPrepareParty
+	ENDC
 	ENDC
 
 	ld a, LANDMARK_NEW_BARK_TOWN

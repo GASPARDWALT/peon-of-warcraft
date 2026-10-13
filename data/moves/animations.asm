@@ -85,7 +85,7 @@ BattleAnimations::
 	dw BattleAnim_PeonRend
 	dw BattleAnim_DragonRage
 	dw BattleAnim_PeonFlameShock
-	dw BattleAnim_Thundershock
+	dw BattleAnim_PeonLightningV1
 	dw BattleAnim_Thunderbolt
 	dw BattleAnim_ThunderWave
 	dw BattleAnim_PeonChainLightning
@@ -283,6 +283,7 @@ BattleAnimations::
 	dw BattleAnim_Shake
 	dw BattleAnim_HitConfusion
 	dw BattleAnim_PeonPetFireboltV026
+	dw BattleAnim_PeonEarthTotemV1
 	assert_table_length NUM_BATTLE_ANIMS + 1
 
 BattleAnim_Dummy:

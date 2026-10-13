@@ -1,7 +1,7 @@
 ; Battle animation command interpreter.
 
 PlayBattleAnim:
-	farcall PeonAnimatePlayerAttack
+	farcall PeonPrepareBattleAnimV1
 	ldh a, [rWBK]
 	push af
 
@@ -20,7 +20,7 @@ PlayBattleAnim:
 
 	pop af
 	ldh [rWBK], a
-	farcall PeonRestorePlayerIdlePose
+	farcall PeonFinishBattleAnimV1
 	ret
 
 _PlayBattleAnim:
@@ -1371,6 +1371,7 @@ BattleAnimAssignPals:
 	lb de, %11100100, %11100100
 	call DmgToCgbObjPals
 	farcall PeonTintShadowBoltParticle
+	farcall PeonLoadSpellV1Palettes
 	ret
 
 ClearBattleAnims::

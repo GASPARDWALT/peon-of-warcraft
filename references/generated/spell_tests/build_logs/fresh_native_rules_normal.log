@@ -1,0 +1,32 @@
+
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_totem_icon.2bpp gfx/peon_spell_pack_v1/earth_totem_icon.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp gfx/peon_spell_pack_v1/lightning_bolt_tiles.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/lightning_bolt_icon.2bpp gfx/peon_spell_pack_v1/lightning_bolt_icon.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/rockbiter_tiles.2bpp gfx/peon_spell_pack_v1/rockbiter_tiles.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/rockbiter_icon.2bpp gfx/peon_spell_pack_v1/rockbiter_icon.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_shock_tiles.2bpp gfx/peon_spell_pack_v1/earth_shock_tiles.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_shock_icon.2bpp gfx/peon_spell_pack_v1/earth_shock_icon.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_totem_tiles.2bpp gfx/peon_spell_pack_v1/earth_totem_tiles.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_totem_bg.2bpp gfx/peon_spell_pack_v1/earth_totem_bg.png
+/workspace/toolchains/rgbds-1.0.4/rgbgfx -Weverything --colors dmg -o gfx/peon_spell_pack_v1/earth_totem_persistent.2bpp gfx/peon_spell_pack_v1/earth_totem_persistent.png
+tools/lzcompress --matching --align 4 -- gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/peon_spell_pack_v1/rockbiter_tiles.2bpp gfx/peon_spell_pack_v1/rockbiter_tiles.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/peon_spell_pack_v1/earth_shock_tiles.2bpp gfx/peon_spell_pack_v1/earth_shock_tiles.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/peon_spell_pack_v1/earth_totem_tiles.2bpp gfx/peon_spell_pack_v1/earth_totem_tiles.2bpp.lz
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o main.o main.asm
+/workspace/toolchains/rgbds-1.0.4/rgblink -Weverything -Wtruncation=1 -l layout.link -n pokecrystal.sym -m pokecrystal.map -o pokecrystal.gbc audio.o home.o main.o ram.o data/text/common.o data/maps/map_data.o data/pokemon/dex_entries.o data/pokemon/egg_moves.o data/pokemon/evos_attacks.o engine/movie/credits.o engine/overworld/events.o gfx/misc.o gfx/pics.o gfx/sprites.o gfx/tilesets.o lib/mobile/main.o lib/mobile/mail.o
+/workspace/toolchains/rgbds-1.0.4/rgbfix -Weverything -Cjv -t PEON_WAR -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3 -p 0 -i BYTE -n 0 pokecrystal.gbc
+tools/stadium pokecrystal.gbc
+{
+  "target": "pokecrystal.gbc",
+  "sha256": "3527e7908a8eb3f4151be18282c98ba2a0220bc3990813f46a5346bf344ad441",
+  "bytes": 2097152,
+  "cgb_only": true,
+  "mbc3_rtc_ram_battery": true,
+  "ram_bytes": 32768,
+  "physical_modretro_tested": false,
+  "historical_generator_outputs_frozen": 207,
+  "phase": "shaman",
+  "fixture": false,
+  "build": "passed"
+}

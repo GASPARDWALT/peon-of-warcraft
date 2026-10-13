@@ -1,4 +1,5 @@
-; Isolated environment inspection area. No quests, combat or new save flags.
+; Isolated environment inspection area. Spell sparring exists only in its
+; explicitly selected test ROM and reuses this guide, terrain and map ID.
 	object_const_def
 	const PEON_ENVIRONMENT_TEST_GUIDE
 
@@ -8,11 +9,23 @@ PeonEnvironmentTest_MapScripts:
 
 PeonEnvironmentTestGuideScript:
 	faceplayer
+	IF DEF(PEON_SPELL_TEST)
+	callasm PeonSpellTestChooseScenario
+	iffalse .Done
+	loadwildmon MACHAMP, 10
+	loadmem wBattleType, BATTLETYPE_CANLOSE
+	startbattle
+	reloadmap
+	callasm PeonSpellTestEndScenario
+.Done:
+	end
+	ELSE
 	opentext
 	writetext PeonEnvironmentTestGuideText
 	waitbutton
 	closetext
 	end
+	ENDC
 
 PeonEnvironmentTestGuideText:
 	text "A quiet camp."

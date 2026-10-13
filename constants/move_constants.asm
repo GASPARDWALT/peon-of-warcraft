@@ -290,4 +290,5 @@ DEF BATTLE_AFTERANIMS EQU const_value
 	const ANIM_SHAKE             ; 114
 	const ANIM_HIT_CONFUSION     ; 115
 	const ANIM_PEON_PET_FIREBOLT ; 116, appended visual-only companion animation
+	const ANIM_PEON_EARTH_TOTEM_V1 ; 117, visual-only item placement
 DEF NUM_BATTLE_ANIMS EQU const_value - 1

@@ -1,0 +1,772 @@
+[
+  {
+    "file": "icons/lightning_bolt_icon_16x16.png",
+    "spell": "lightning_bolt",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/lightning_bolt_player_back_16x32.png",
+    "spell": "lightning_bolt",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/lightning_bolt_enemy_front_16x32.png",
+    "spell": "lightning_bolt",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "impacts/lightning_bolt_explosion_32x32.png",
+    "spell": "lightning_bolt",
+    "role": "explosion",
+    "orientation": "target",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "icons/rockbiter_icon_16x16.png",
+    "spell": "rockbiter",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/rockbiter_player_back_32x32.png",
+    "spell": "rockbiter",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/rockbiter_enemy_front_32x32.png",
+    "spell": "rockbiter",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/earth_shock_icon_16x16.png",
+    "spell": "earth_shock",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/earth_shock_player_back_32x32.png",
+    "spell": "earth_shock",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/earth_shock_enemy_front_32x32.png",
+    "spell": "earth_shock",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/earth_totem_icon_16x16.png",
+    "spell": "earth_totem",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/earth_totem_player_back_32x32.png",
+    "spell": "earth_totem",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/earth_totem_enemy_front_32x32.png",
+    "spell": "earth_totem",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/shadow_bolt_icon_16x16.png",
+    "spell": "shadow_bolt",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/shadow_bolt_player_back_16x16.png",
+    "spell": "shadow_bolt",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/shadow_bolt_enemy_front_16x16.png",
+    "spell": "shadow_bolt",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "impacts/shadow_bolt_explosion_32x32.png",
+    "spell": "shadow_bolt",
+    "role": "explosion",
+    "orientation": "target",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "icons/immolation_icon_16x16.png",
+    "spell": "immolation",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/immolation_player_back_32x32.png",
+    "spell": "immolation",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/immolation_enemy_front_32x32.png",
+    "spell": "immolation",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/wand_shot_icon_16x16.png",
+    "spell": "wand_shot",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/wand_shot_player_back_16x16.png",
+    "spell": "wand_shot",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/wand_shot_enemy_front_16x16.png",
+    "spell": "wand_shot",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "impacts/wand_shot_impact_16x16.png",
+    "spell": "wand_shot",
+    "role": "impact",
+    "orientation": "target",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "icons/demon_armor_icon_16x16.png",
+    "spell": "demon_armor",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/demon_armor_player_back_32x32.png",
+    "spell": "demon_armor",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/demon_armor_enemy_front_32x32.png",
+    "spell": "demon_armor",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/fireball_icon_16x16.png",
+    "spell": "fireball",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/fireball_player_back_16x16.png",
+    "spell": "fireball",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/fireball_enemy_front_16x16.png",
+    "spell": "fireball",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "impacts/fireball_explosion_32x32.png",
+    "spell": "fireball",
+    "role": "explosion",
+    "orientation": "target",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "icons/silence_icon_16x16.png",
+    "spell": "silence",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/silence_player_back_32x32.png",
+    "spell": "silence",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/silence_enemy_front_32x32.png",
+    "spell": "silence",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/poison_icon_16x16.png",
+    "spell": "poison",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/poison_player_back_16x16.png",
+    "spell": "poison",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/poison_enemy_front_16x16.png",
+    "spell": "poison",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "impacts/poison_impact_16x16.png",
+    "spell": "poison",
+    "role": "impact",
+    "orientation": "target",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "icons/bite_icon_16x16.png",
+    "spell": "bite",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/bite_player_back_16x16.png",
+    "spell": "bite",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/bite_enemy_front_16x16.png",
+    "spell": "bite",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/dodge_icon_16x16.png",
+    "spell": "dodge",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/dodge_player_back_32x32.png",
+    "spell": "dodge",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/dodge_enemy_front_32x32.png",
+    "spell": "dodge",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/charge_icon_16x16.png",
+    "spell": "charge",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/charge_player_back_32x32.png",
+    "spell": "charge",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/charge_enemy_front_32x32.png",
+    "spell": "charge",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/quick_attack_icon_16x16.png",
+    "spell": "quick_attack",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/quick_attack_player_back_32x32.png",
+    "spell": "quick_attack",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/quick_attack_enemy_front_32x32.png",
+    "spell": "quick_attack",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/rallying_cry_icon_16x16.png",
+    "spell": "rallying_cry",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/rallying_cry_player_back_32x32.png",
+    "spell": "rallying_cry",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/rallying_cry_enemy_front_32x32.png",
+    "spell": "rallying_cry",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/tail_swipe_icon_16x16.png",
+    "spell": "tail_swipe",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/tail_swipe_player_back_32x32.png",
+    "spell": "tail_swipe",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/tail_swipe_enemy_front_32x32.png",
+    "spell": "tail_swipe",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "icons/war_cry_icon_16x16.png",
+    "spell": "war_cry",
+    "role": "icon",
+    "orientation": "neutral",
+    "width": 16,
+    "height": 16,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "player_back/war_cry_player_back_32x32.png",
+    "spell": "war_cry",
+    "role": "cast_effect",
+    "orientation": "player_back",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "enemy_front/war_cry_enemy_front_32x32.png",
+    "spell": "war_cry",
+    "role": "cast_effect",
+    "orientation": "enemy_front",
+    "width": 32,
+    "height": 32,
+    "transparent": true,
+    "note": "Player version is viewed from the back; enemy version is viewed from the front."
+  },
+  {
+    "file": "spell_sheets/lightning_bolt_all_assets.png",
+    "spell": "lightning_bolt",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 160,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/rockbiter_all_assets.png",
+    "spell": "rockbiter",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/earth_shock_all_assets.png",
+    "spell": "earth_shock",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/earth_totem_all_assets.png",
+    "spell": "earth_totem",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/shadow_bolt_all_assets.png",
+    "spell": "shadow_bolt",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 160,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/immolation_all_assets.png",
+    "spell": "immolation",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/wand_shot_all_assets.png",
+    "spell": "wand_shot",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 160,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/demon_armor_all_assets.png",
+    "spell": "demon_armor",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/fireball_all_assets.png",
+    "spell": "fireball",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 160,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/silence_all_assets.png",
+    "spell": "silence",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/poison_all_assets.png",
+    "spell": "poison",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 160,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/bite_all_assets.png",
+    "spell": "bite",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/dodge_all_assets.png",
+    "spell": "dodge",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/charge_all_assets.png",
+    "spell": "charge",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/quick_attack_all_assets.png",
+    "spell": "quick_attack",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/rallying_cry_all_assets.png",
+    "spell": "rallying_cry",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/tail_swipe_all_assets.png",
+    "spell": "tail_swipe",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  },
+  {
+    "file": "spell_sheets/war_cry_all_assets.png",
+    "spell": "war_cry",
+    "role": "combined_sheet",
+    "orientation": "mixed",
+    "width": 120,
+    "height": 40,
+    "transparent": true,
+    "note": ""
+  }
+]

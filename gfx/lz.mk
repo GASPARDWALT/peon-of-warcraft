@@ -4,6 +4,9 @@
 
 gfx/battle_anims/%.lz: LZFLAGS += --odd-alternate --align 4
 
+# Imported individual spell PNGs use the same native reproducible profile.
+gfx/peon_spell_pack_v1/%.2bpp.lz: LZFLAGS += --align 4
+
 gfx/battle/dude.2bpp.lz: LZFLAGS += --align 4
 
 gfx/diploma/diploma.2bpp.lz: LZFLAGS += --prefer-alternate --align 1

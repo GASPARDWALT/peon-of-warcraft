@@ -192,7 +192,45 @@ BattleAnimFrameData:
 	dw .Frameset_PeonWind
 	dw .Frameset_PeonFireboltV026
 	dw .Frameset_PeonShadowBoltV026
+	dw .Frameset_PeonV1LightningPlayer
+	dw .Frameset_PeonV1LightningEnemy
+	dw .Frameset_PeonV1LightningImpact
+	dw .Frameset_PeonV1RockbiterPlayer
+	dw .Frameset_PeonV1RockbiterEnemy
+	dw .Frameset_PeonV1EarthShockPlayer
+	dw .Frameset_PeonV1EarthShockEnemy
+	dw .Frameset_PeonV1EarthTotemPlayer
+	dw .Frameset_PeonV1EarthTotemEnemy
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
+
+.Frameset_PeonV1LightningPlayer:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_LIGHTNING_PLAYER, 63
+	oamdelete
+.Frameset_PeonV1LightningEnemy:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_LIGHTNING_ENEMY, 63
+	oamdelete
+.Frameset_PeonV1LightningImpact:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_LIGHTNING_IMPACT, 63
+	oamdelete
+.Frameset_PeonV1RockbiterPlayer:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_ROCKBITER_PLAYER, 63
+	oamdelete
+.Frameset_PeonV1RockbiterEnemy:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_ROCKBITER_ENEMY, 63
+	oamdelete
+.Frameset_PeonV1EarthShockPlayer:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_EARTH_SHOCK_PLAYER, 63
+	oamdelete
+.Frameset_PeonV1EarthShockEnemy:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_EARTH_SHOCK_ENEMY, 63
+	oamdelete
+.Frameset_PeonV1EarthTotemPlayer:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_EARTH_TOTEM_PLAYER, 63
+	oamdelete
+.Frameset_PeonV1EarthTotemEnemy:
+	oamframe BATTLE_ANIM_OAMSET_PEON_V1_EARTH_TOTEM_ENEMY, 63
+	oamdelete
+
 
 .Frameset_PeonFireboltV026:
 	oamframe BATTLE_ANIM_OAMSET_PEON_FIREBOLT_0, 3

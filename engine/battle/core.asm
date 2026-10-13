@@ -124,6 +124,9 @@ DoBattle:
 	call SpikesDamage
 
 .not_linked_2
+IF DEF(PEON_SPELL_TEST)
+	farcall PeonSpellTestEnemyTotemPreview
+ENDC
 	jp BattleTurn
 
 .tutorial_debug
@@ -3687,7 +3690,8 @@ NewEnemyMonStatus:
 
 ResetEnemyStatLevels:
 	ld a, BASE_STAT_LEVEL
-	ld b, NUM_LEVEL_STATS
+	; Seven stages only: the old ABILITY padding holds transient Peon state.
+	ld b, ABILITY
 	ld hl, wEnemyStatLevels
 .loop
 	ld [hli], a
@@ -4015,7 +4019,8 @@ ResetPlayerStatLevels:
 	; Earthbind is a battle-field entity: switching an ally does not remove it.
 	ld [wPeonPlayerPoseActive], a
 	ld a, BASE_STAT_LEVEL
-	ld b, NUM_LEVEL_STATS
+	; Seven stages only: the old ABILITY padding holds transient Peon state.
+	ld b, ABILITY
 	ld hl, wPlayerStatLevels
 .loop
 	ld [hli], a
@@ -4952,7 +4957,7 @@ DrawEnemyHUD:
 	hlcoord 2, 2
 	ld b, 0
 	call DrawBattleHPBar
-	farcall PeonDrawEnemyRankEmblem
+	farcall PeonDrawEnemyRankAndTotemV1
 	ret
 
 UpdateEnemyHPPal:
@@ -5143,7 +5148,7 @@ BattleMenu_Pack:
 	call WaitBGMap
 	call LoadTilemapToTempTilemap
 	call ClearWindowData
-	call FinishBattleAnim
+	farcall PeonFinishItemAndPlaceTotemV1
 	and a
 	ret
 
@@ -7042,9 +7047,9 @@ FinishBattleAnim:
 	call GetSGBLayout
 	farcall PeonDrawEnemyRankEmblem
 	farcall PeonClearInactiveBattlePetV029
-	farcall PeonDrawBattleTotem
 	farcall PeonDrawBattlePartySidebarV029
 	call SetDefaultBGPAndOBP
+	farcall PeonDrawBattleTotem
 	call DelayFrame
 	pop hl
 	pop de
@@ -7617,7 +7622,7 @@ AnimateExpBar:
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jr nz, .legacy_level_feedback
-	farcall PeonBattleLevelUpFeedback
+	farcall PeonBattleLevelUpWithTotemV1
 	jr .level_feedback_done
 .legacy_level_feedback:
 	ld de, SFX_HIT_END_OF_EXP_BAR
@@ -8305,7 +8310,11 @@ InitEnemyWildmon:
 	ld a, WILD_BATTLE
 	ld [wBattleMode], a
 	farcall StubbedTrainerRankings_WildBattles
+IF DEF(PEON_SPELL_TEST)
+	farcall PeonSpellTestLoadAndConfigureEnemy
+ELSE
 	call LoadEnemyMon
+ENDC
 	ld hl, wEnemyMonMoves
 	ld de, wWildMonMoves
 	ld bc, NUM_MOVES

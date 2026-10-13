@@ -95,6 +95,7 @@ DoBattleAnimFrame:
 	dw BattleAnimFunc_RockSmash
 	dw BattleAnimFunc_Cotton
 	dw BattleAnimFunc_PeonShallowProjectile
+	dw BattleAnimFunc_PeonSpellV1
 	assert_table_length NUM_BATTLE_ANIM_FUNCS
 
 BattleAnimFunc_Null:
@@ -272,6 +273,10 @@ BattleAnimFunc_MoveFromUserToTargetAndDisappear:
 
 .done
 	call DeinitBattleAnimation
+	ret
+
+BattleAnimFunc_PeonSpellV1:
+	farcall PeonStepSpellV1
 	ret
 
 BattleAnimFunc_PeonShallowProjectile:

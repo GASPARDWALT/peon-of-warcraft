@@ -51,4 +51,8 @@ AnimObjGFX:
 	anim_obj_gfx  1, NULL
 	anim_obj_gfx 16, AnimObjPeonNatureGFX
 	anim_obj_gfx 12, AnimObjPeonProjectilesV026GFX
+	anim_obj_gfx PeonSpellV1LightningGFXTileCount, PeonSpellV1LightningGFX
+	anim_obj_gfx PeonSpellV1RockbiterGFXTileCount, PeonSpellV1RockbiterGFX
+	anim_obj_gfx PeonSpellV1EarthShockGFXTileCount, PeonSpellV1EarthShockGFX
+	anim_obj_gfx PeonSpellV1EarthTotemGFXTileCount, PeonSpellV1EarthTotemGFX
 	assert_table_length NUM_BATTLE_ANIM_GFX + 1

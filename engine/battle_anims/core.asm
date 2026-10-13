@@ -104,6 +104,17 @@ BattleAnimOAMUpdate:
 	ld a, [hli] ; oam data pointer
 	ld h, [hl]
 	ld l, a
+	ld a, [wBattleAnimTempPalette]
+	bit PEON_SPELL_V1_PALETTE_F, a
+	jr z, .legacy_oam
+	; HL is a row pointer into the imported renderer's own ROM bank.
+	ld de, PeonRenderSpellV1OAM
+	ld a, BANK(PeonRenderSpellV1OAM)
+	call FarCall_de
+	pop bc
+	ret c
+	jp .done
+.legacy_oam
 	ld a, [wBattleAnimOAMPointerLo]
 	ld e, a
 	ld d, HIGH(wShadowOAM)

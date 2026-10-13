@@ -1,0 +1,4226 @@
+{
+  "source_pack": "references/characters/peon_of_warcraft_spell_effects_pack_v1",
+  "canonical_source_file_count": 103,
+  "all_source_hashes_unchanged": true,
+  "canonical_source_sha256": {
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/README.md": "d567d07109d684a800c0f9ad5e0b13f9ec8aee451d98b6a3c6bead97523078ec",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/manifest.json": "e802614234bbabf99f3046fa28c82c2206230dffd5857416bfdd22d93fbd0ed9",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/manifest.csv": "d1dc01e2462be6b4192a32a6dec91bcfc5fa229a342deb852b4cd459c39665b1",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/docs/CODEX_IMPORT_AND_IMPLEMENT_SPELL_EFFECTS.md": "b722c93a6bf4746e9b4404a2cdfa376befcb3e544ffd6fa88d29c09791470619",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/poison_enemy_front_16x16.png": "2e4ee220962a75f2075182e93d5d7ea1b5bde53f46574f0ab480e79df3810b65",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/dodge_enemy_front_32x32.png": "8dde16da861743a55a10692b42f935da4acca3fe931fcb0a510bb0b4f910038e",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/silence_enemy_front_32x32.png": "741ca53496cbabedf4b2700a0ab19495f500138bf27397d7d3ba59133bbcf29f",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/immolation_enemy_front_32x32.png": "cb0fe710a8485a9f5cfb2f98271a2088aeb73ef14ffe44d84e5ea1a82d32caa5",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/demon_armor_enemy_front_32x32.png": "cc9f6d8e1c96578473bb439187228357c6ee0d8f5cf43cf3e901f5b7791d9d51",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/shadow_bolt_enemy_front_16x16.png": "3e0ba2185572ca30cb377e163f732f54b1cdcf96ce3831e089ad2eb1a5336379",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/bite_enemy_front_16x16.png": "2c5b8f37c344163ae01743c9116c7e5efa073e8ebe51ecea191c50d450e7ea2d",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/charge_enemy_front_32x32.png": "d2306dc9753fee4d2de04432dfb5424de0c8b99474557894aafa51cf8cb82ea1",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rallying_cry_enemy_front_32x32.png": "fa4e2c5342934ccf5c1c14d757fb33e8f6a4fc6d37779b1360bd94feb5bb7e89",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/fireball_enemy_front_16x16.png": "895f156f3f010f28d5f48a4649b43ea9c5a73e44a1ea7388c27577cdcb1b9ab2",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_shock_enemy_front_32x32.png": "1c4df849c80e0a2fe2140e6696b83302685d236c2e53d30e7a7423a51d0e7616",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_totem_enemy_front_32x32.png": "95786d97738c9a3d6f4fcd0670bc3ab615c860a1dfcea980d7f45be21bef10e7",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/tail_swipe_enemy_front_32x32.png": "3153bb68efdd3f740d529d73a8ca1bf95263262c6ecc9d23b0b1dc71c93f4486",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rockbiter_enemy_front_32x32.png": "47a424b4f6585ce53d7c09923ad2083c52fb39ffbd172436356d3c897b2207a3",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/quick_attack_enemy_front_32x32.png": "b507a98a2dba8ccff0fa41d9601fde8770421007457f7f468dec8facdb5531d8",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/wand_shot_enemy_front_16x16.png": "8e01a65ddcf82276d05b89befcba28b927082907a552c2becaa176c28d01bddf",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/lightning_bolt_enemy_front_16x32.png": "af3a6c43453d35ef832a0238d15eb79610d2a61d57816a45cd0ce1deb2bc8107",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/war_cry_enemy_front_32x32.png": "bae29ffaa22722ae2b5d5335e0cb7ca0c4d72f527258d7509c1654daf1060469",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/quick_attack_all_assets.png": "f9c0dac4e9c4990ff72519e8943d44df2cee6a1a54126ae742a270f38a83f731",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/fireball_all_assets.png": "eae35ad95a611ff99a77e52850bc7ffbd3a07a26cc22f010d701d05d2f2267d7",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/dodge_all_assets.png": "3b236b13d4815768a0db74fc13a2624a1c8a0556b15d8015fd35d5f2994640ab",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/tail_swipe_all_assets.png": "2e4a83b2d9be34cba1c853ccea0f6d0fd49949f0408fe2a742b174f3ff004542",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/wand_shot_all_assets.png": "92052bfb2b8bc1d8da50f5b4f12d4356aacea2a838f22ed0d11c59d24aa90a92",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/poison_all_assets.png": "09e929616e18a16785bfb78f0016fbfdf4a2c3aa9f6e69db934b3bf0e1b9a8d2",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/charge_all_assets.png": "7a5143620cec876bf23ed094fdf18053585a0d8902543694e17cf6ae792ebc34",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/shadow_bolt_all_assets.png": "71358e38e711532956ccb0a44f7250060e4d4b1b1304a36f3d809f5778725fd7",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/war_cry_all_assets.png": "eeac2df848e8ac1e47bad2d4cf11700ff5b8ed6d9fa96539c508188f1ed48afc",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/silence_all_assets.png": "ea36333526127f337200ca2e7846f77b84e3b3038000dea217d463265d668629",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/rallying_cry_all_assets.png": "45adb96a71a020d87c1fe9056d310936add55c0e6eff01382a0cadc2546e3e0b",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/bite_all_assets.png": "ae412fce76dbe433501bcfd1b786bbfc2bdc2f0ae67bc84c4d598d66d94b9aa4",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/lightning_bolt_all_assets.png": "c183113faf39a16a5af848b11f8bba51786c4d0baa1982f073733a941dd0bf8e",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/earth_shock_all_assets.png": "66e11abfd11fdc718a0ff8decfb1dc8bb9b305d620cbe4ff39ffbe781007d6b5",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/earth_totem_all_assets.png": "9e56c30c78025cec2c7be60d89a805e9ae5ae08d2f728cb96ff4650af328004f",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/immolation_all_assets.png": "a69a085487b07e7f877c850d287d06b62a01f179f7790d542b863c575cc4de2b",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/rockbiter_all_assets.png": "aaa90d4f78d271d9e31b7c68674d9904ed5c87ee1a019c6eafb37be9e374e2ee",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/demon_armor_all_assets.png": "9b0c0a943a31fa4b8ffaf663f3ecb4c0588575f16b79bbf6230dc9b60d5c6983",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/fireball_source_crop.png": "183cbab4b3b707771e65cb36d136ec1468537bc75939d79631e90cfa6ef63ec2",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_pixel_art_sprite_sheet_on_a_transparent_ba.png": "6a0a660c67933f22c33ff6555739943fcb2d07ea74890f68ae41e1bafbb316aa",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/immolation_source_crop.png": "5389d060ce19c3799300d217c5ab43fb7ee72ee64ec69d14fb4aa9d3029d4729",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_high_resolution_pixel_art_sprite_sheet_st.png": "8e6fdbd07961ccae3c05d044d9c5d73c002f33ad9cc3d35f70ad3e2d01d76e7f",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/dodge_source_crop.png": "1ff22d1e677fa3746cf18e8cf064074126cc9b2f939f920f0042a1dcabfa9d9b",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/silence_source_crop.png": "32e2dd486593bd9c0eac666b15fe8a3e2ce937a44848be0a354e6e8e034aaa3b",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/wand_shot_source_crop.png": "3490e39b3dbc087ca5e6c215caaf32463eec0832a9f052a85385b2c8b90c9572",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/rockbiter_source_crop.png": "63f7c910ad809000b5be74d835188d7e6a91305a0b9fba2bbc57ce821e732fe1",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/earth_totem_source_crop.png": "14a33dda8f456e0a267f8125e64c8991210f3b509e3555176c0bca813e0c07ae",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/war_cry_source_crop.png": "9766c6d0ef7e331ee0e8249f4b76d5f519651b7827465d5e3b97ef09f0be276d",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/demon_armor_source_crop.png": "17708fa18f165c287d2f84c3dc26313b997425280b9873a40b3cb253b8ded03c",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/lightning_bolt_source_crop.png": "5dee796f1437c4b26e7572b564ee38009c9223837a906400f018ff5d3c1b425c",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_transparent_background_sprite_sheet_pixe.png": "5d3df6277255c87ac7ea7c6ce628c61cd1eb5efe4603f1850c3b1b3f1bad083e",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/bite_source_crop.png": "6081fe03599b7124048be72035ee8c34b9b8f53924da821d83fd31d1e5ca82c8",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/poison_source_crop.png": "7491b8a0b1cefa98525162098bb676cd7d4a4420d95260873f89cc284b770bbc",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/quick_attack_source_crop.png": "8f3dd82690d49fdb52b7104bc8d12ec2f6eb4aa76e939e973919eeb53269568f",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/tail_swipe_source_crop.png": "d35728d0397cbbdd3928ce4fdf6b3cf616c1db77bf7b70be0e7f09a508efd742",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/charge_source_crop.png": "0639c877a9ee18b794b24061d7649691ddd3f598da21133b8e60ec78f69ef933",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/rallying_cry_source_crop.png": "92bd3dbdc6f9747c045411217859d192f4356e7cb2b400293e4185ebb53f2fed",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/shadow_bolt_source_crop.png": "6eaca40cce58e25438dab98d98e14568c1024c6283864a4ba39835df3a28e277",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/earth_shock_source_crop.png": "d5425655b157513c74142a3ab17d643c754f32b9b8eb54d22cadba35a01f92b3",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/previews/preview_all_spell_effects.png": "a10a2d7315fdec5d260d100a5235fd495aa89977f30527a191834d1bbb54b786",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/demon_armor_icon_16x16.png": "c568ca026b8ba17f782bcddee39064dc88e1dbf7038f024e6f93ae05148ce40e",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/poison_icon_16x16.png": "c8ba35f38e61e963c9193f15dacdb4b9ff175f117448b2e6090ac5ffb0131415",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/wand_shot_icon_16x16.png": "cc1dba3fca0775b79eb2dff63195ef83aa6abcf496bc92818d0cd22017f3247e",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/quick_attack_icon_16x16.png": "9f30459eb4a93ba2cb5398f681f0506e1954baf52914ba77dfbc3d9e9c4faf39",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/tail_swipe_icon_16x16.png": "813b5d3f83d7878a1b5754e07956e4a6752bca26b6fdf40a0ee7729762a0a3de",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/lightning_bolt_icon_16x16.png": "6c7a9c48bf9c3a8288c3c3877c0db1a185836241e67031dff1e9ab839f9131a5",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_totem_icon_16x16.png": "38c4e9147967a207979b83dfc73885e6745d80935f3b56bfcfc0ea99daaedc25",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/rockbiter_icon_16x16.png": "136e258b03aa66b0dc1786b87b308ef6921e11a7abcfe868db385e9903398025",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/shadow_bolt_icon_16x16.png": "30037a36d96b2d0b7e29f96378089719d39898a24a5e13f2f2b20588fd1b35d1",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/dodge_icon_16x16.png": "1ea961183e50967a46632308917f9a88b78988245ab0bb458978a5cb60c863ca",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/war_cry_icon_16x16.png": "80615f37f9f43ebbc2bb3c1fc75041306241c99d93ac25f4d44ba01df44e75ff",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/bite_icon_16x16.png": "fd9dc86d8c5c09b765598f0f5a70c89ce9a0a1c6e870371a462fe73edaa752a4",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_shock_icon_16x16.png": "8b2c52df4ca3de180519982f8f337375116222013089914c3288bb991ccd6700",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/rallying_cry_icon_16x16.png": "fd9a05fd88c736f6b4122b18800629904c61cbd54392338314dcb672f4b08874",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/immolation_icon_16x16.png": "9e510f373fe7d46febd1b6f7b3a2baf894f4b721c28593a2c41885634947ca0c",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/fireball_icon_16x16.png": "3f992ad83decb136570632329026c7e32182d6f63fa64fe47feacf1f3205a344",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/charge_icon_16x16.png": "2a2f81d08831322491becd1f88e0cdc931e6dab898a799635c5660b621f97e87",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/silence_icon_16x16.png": "5e39aaf12fe7eff053ef015e3075b247995c779fdfac698e85f6b8b4a3d89991",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/immolation_player_back_32x32.png": "47eee84c5819dc1fc179c33207d64c45e353338660b2e60764c1542bc83fe2a9",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/quick_attack_player_back_32x32.png": "7b0b2a092b502e628dedb79b79aa3a833956b92ec5c48f9e64bd2b075951cd80",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/wand_shot_player_back_16x16.png": "5c3fd12317208303088b56adbf966e4cc6517764d444e82bd75ac46782d8d5ae",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/poison_player_back_16x16.png": "925a588fdfd3fa040c6b7f39d91ef119bda3d2ad7715a0ec8d0083cf1ab19697",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rallying_cry_player_back_32x32.png": "9276b6925291e2be4b0f0824b46557b411adc203d812935061a8c4e5f7134778",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/fireball_player_back_16x16.png": "8b67e4d8a7bdf6bb311aabcc172cf3724a774226676dcd0e4a0ef025e0a171fe",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_shock_player_back_32x32.png": "0415f7d4c20154b9ee7b8859b4ddcfba9d6f28ed1b727b277f53e69de67e9af0",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/war_cry_player_back_32x32.png": "56d644b637806b0cb410c43bcf9de2ec3921784e1c84453ec08646dff104efce",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rockbiter_player_back_32x32.png": "cfbca19fe320b128b7b4ce8483f9737de3b194939954a6a7b90c4b6d07e06ac2",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/bite_player_back_16x16.png": "a1928b2d559829697a8c59a0364375e358a207bd3c705ed9985e3aacc993901a",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/shadow_bolt_player_back_16x16.png": "06e6c7593af8869528542d91bb4de66a8cbad1e4c56f200ba615364e9656e1cc",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/tail_swipe_player_back_32x32.png": "d91e7cf9b033f9a8df456a1ee90a47c2657fdb9f3d8f92590f7e515c520d4fd9",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/charge_player_back_32x32.png": "e0d6b729383dde3956b695a1012da2e1a587a1d3e9d6ac548aefe78a86ab6685",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_totem_player_back_32x32.png": "0d6f45b79b77928f81b0f07c7a148d6328c63772c9c841ec517d02d39d7d3d1b",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/lightning_bolt_player_back_16x32.png": "957724cc7a4ae2f1209c074e8b7333ca0735e741cb2e49dc13b981868e9ea2ee",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/dodge_player_back_32x32.png": "1c46bdcc28c26b0ff01eca04da91ce211856021b7b500f4a2ee65f2c29ba56e7",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/silence_player_back_32x32.png": "8a95912803240b48f808510fd676984f726ccf0bcaa7f1fd2f968031e70cf4c6",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/demon_armor_player_back_32x32.png": "a8137ea99afe72316bebcb256c7e09308a7e4fae4ae0b2bcd57af56dad79fc49",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/lightning_bolt_explosion_32x32.png": "f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/poison_impact_16x16.png": "c18ba02173f4f6143809be81c9b5a5391f27868a5a39681564c8dd1577703da9",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/fireball_explosion_32x32.png": "4f83bf43c6fed41e64d2b69844b3cd0522cb6d5d7f71f168146b2d33d4ab862c",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/shadow_bolt_explosion_32x32.png": "a90095c4d478cc6053b9edabb9aca1813773b2982d1803475675edf79b9ad0fc",
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/wand_shot_impact_16x16.png": "cba96625d041e887938da2654f62e2881f4dc586fcc4e60961ea90887e6858e7"
+  },
+  "source_inventory": "references/characters/peon_of_warcraft_spell_effects_pack_v1/manifest.csv",
+  "generated_by": "tools/import_peon_spell_pack_v1.py",
+  "source_selection": "Individual icons/player_back/enemy_front/impacts only; no spell_sheets",
+  "asm_include": "gfx/peon_spell_pack_v1.asm",
+  "asm_sha256": "966069f9c89abbf82753046b7a08db0ba8851e0ef68067ced0bc0d7924d5e22d",
+  "section_contract": "Include inside same Peon Spell Effects v1 ROMX section as renderer; no SECTION switch",
+  "rgbgfx": "/workspace/toolchains/rgbds-1.0.4/rgbgfx",
+  "rgbgfx_flags": [
+    "--colors",
+    "dmg",
+    "-Weverything"
+  ],
+  "lzcompress": "tools/lzcompress",
+  "lz_flags": [
+    "--matching",
+    "--align",
+    "4"
+  ],
+  "obj_packet_tile_budget": 78,
+  "obj_palette_slots": [
+    4,
+    5,
+    6
+  ],
+  "obj_oam_maximum_active_source_entries": 14,
+  "source_frame_count_per_asset": 1,
+  "motion_frames": "Native battle-engine timing and placement; no invented raster frames",
+  "packets": [
+    {
+      "png": "gfx/peon_spell_pack_v1/lightning_bolt_tiles.png",
+      "png_sha256": "ed1983f15bc4e24ed745c56506af93f4246b5f3dfd388fef14b4e968f7ce213c",
+      "2bpp": "gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp",
+      "2bpp_sha256": "ced264632b8c79804107aa709fa2eb22e35ffa953aee26b1ddcc439fd5cfa16d",
+      "2bpp_bytes": 240,
+      "tiles": 15,
+      "rgbgfx_verified_against_expected_indexes": true,
+      "lz": "gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp.lz",
+      "lz_sha256": "bf76313e2eed6ab08f879445fb15676f43ffdb72e25f4cfa54e0c54c88578805",
+      "lz_bytes": 224,
+      "lz_flags": [
+        "--matching",
+        "--align",
+        "4"
+      ],
+      "lz_roundtrip_verified": true,
+      "ability": "lightning_bolt",
+      "gfx_label": "PeonSpellV1LightningGFX",
+      "palette_label": "PeonSpellV1LightningOBPalettes",
+      "obj_palette_slots": [
+        4,
+        5,
+        6
+      ],
+      "obj_palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            2,
+            24,
+            31
+          ],
+          [
+            0,
+            10,
+            23
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            1,
+            19,
+            29
+          ],
+          [
+            0,
+            9,
+            21
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            0,
+            13,
+            27
+          ],
+          [
+            0,
+            9,
+            22
+          ],
+          [
+            0,
+            7,
+            18
+          ]
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 20,
+        "evaluated_source_color_triples": 1140,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 10701,
+        "palette_count": 3,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/lightning_bolt_obj.gbcpal",
+      "palette_sha256": "61f8ee4070910551751a2e2b7c74ec37d8d738d7e57b048e243f4f4c8cfe5450",
+      "assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/lightning_bolt_player_back_16x32.png",
+          "source_sha256": "957724cc7a4ae2f1209c074e8b7333ca0735e741cb2e49dc13b981868e9ea2ee",
+          "role": "cast_effect",
+          "orientation": "player_back",
+          "canvas": [
+            16,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "7c1eb521d08e9be4d2717ef500b94c74a1037e76fee8dc9f0f5a3f862fd72a14",
+          "native_alpha_sha256": "7c1eb521d08e9be4d2717ef500b94c74a1037e76fee8dc9f0f5a3f862fd72a14",
+          "source_alpha_bbox": [
+            5,
+            10,
+            11,
+            23
+          ],
+          "source_opaque_rgb555_colors": 9,
+          "source_max_opaque_colors_per_8x8": 8,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1LightningPlayerOAM",
+          "oam_count": 4,
+          "oam_max_per_8px_row": 2,
+          "native_index_png": "gfx/peon_spell_pack_v1/lightning_bolt_player_back.png",
+          "native_index_sha256": "3c729d8c954d20d09f7f0d65dd3869f24fc6a54c97cdf307904bdd0afd1c71f1",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/lightning_bolt_player_back_native.png",
+          "native_palette_slots": [
+            4,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 400,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 0,
+              "packet_byte_offset": 0,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 8,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 1,
+              "packet_byte_offset": 16,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 674,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 2,
+              "packet_byte_offset": 32,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 671,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 3,
+              "packet_byte_offset": 48,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 45,
+            "exact_rgb555_pixels": 9,
+            "changed_rgb555_pixels": 36,
+            "total_weighted_squared_rgb555_error": 1753,
+            "mean_weighted_squared_rgb555_error": 38.955556,
+            "max_weighted_squared_rgb555_error": 80,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/lightning_bolt_enemy_front_16x32.png",
+          "source_sha256": "af3a6c43453d35ef832a0238d15eb79610d2a61d57816a45cd0ce1deb2bc8107",
+          "role": "cast_effect",
+          "orientation": "enemy_front",
+          "canvas": [
+            16,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "a9351ca541f580c9c769ef636f9a4555f24f891608d1187505f64c0f0b8cb272",
+          "native_alpha_sha256": "a9351ca541f580c9c769ef636f9a4555f24f891608d1187505f64c0f0b8cb272",
+          "source_alpha_bbox": [
+            5,
+            9,
+            11,
+            22
+          ],
+          "source_opaque_rgb555_colors": 9,
+          "source_max_opaque_colors_per_8x8": 8,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1LightningEnemyOAM",
+          "oam_count": 4,
+          "oam_max_per_8px_row": 2,
+          "native_index_png": "gfx/peon_spell_pack_v1/lightning_bolt_enemy_front.png",
+          "native_index_sha256": "3ff4b9c9e02bb772e411dfd62407189a4475f3b911c89ace99380f3a71b2dce5",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/lightning_bolt_enemy_front_native.png",
+          "native_palette_slots": [
+            4,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 716,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 4,
+              "packet_byte_offset": 64,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 713,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 5,
+              "packet_byte_offset": 80,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 367,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 6,
+              "packet_byte_offset": 96,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 11,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 7,
+              "packet_byte_offset": 112,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 45,
+            "exact_rgb555_pixels": 8,
+            "changed_rgb555_pixels": 37,
+            "total_weighted_squared_rgb555_error": 1807,
+            "mean_weighted_squared_rgb555_error": 40.155556,
+            "max_weighted_squared_rgb555_error": 98,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/lightning_bolt_explosion_32x32.png",
+          "source_sha256": "f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8",
+          "role": "explosion",
+          "orientation": "target",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "f83a5c734daaeeaebed7e8abacd3072b6d5c98438862e6425c802db9bdb69ecd",
+          "native_alpha_sha256": "f83a5c734daaeeaebed7e8abacd3072b6d5c98438862e6425c802db9bdb69ecd",
+          "source_alpha_bbox": [
+            9,
+            2,
+            24,
+            31
+          ],
+          "source_opaque_rgb555_colors": 13,
+          "source_max_opaque_colors_per_8x8": 12,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1LightningImpactOAM",
+          "oam_count": 7,
+          "oam_max_per_8px_row": 2,
+          "native_index_png": "gfx/peon_spell_pack_v1/lightning_bolt_target.png",
+          "native_index_sha256": "316348cc2b72db57535213b6b424eeaabc1c74ecc63a4584996687b301e4c80d",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/lightning_bolt_target_native.png",
+          "native_palette_slots": [
+            4,
+            5
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 472,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 8,
+              "packet_byte_offset": 128,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 1001,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 9,
+              "packet_byte_offset": 144,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 10,
+              "weighted_squared_rgb555_error": 1010,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 10,
+              "packet_byte_offset": 160,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 1010,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 11,
+              "packet_byte_offset": 176,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 10,
+              "weighted_squared_rgb555_error": 982,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 12,
+              "packet_byte_offset": 192,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 10,
+              "weighted_squared_rgb555_error": 1150,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 13,
+              "packet_byte_offset": 208,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 1516,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 14,
+              "packet_byte_offset": 224,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 201,
+            "exact_rgb555_pixels": 81,
+            "changed_rgb555_pixels": 120,
+            "total_weighted_squared_rgb555_error": 7141,
+            "mean_weighted_squared_rgb555_error": 35.527363,
+            "max_weighted_squared_rgb555_error": 203,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        }
+      ]
+    },
+    {
+      "png": "gfx/peon_spell_pack_v1/rockbiter_tiles.png",
+      "png_sha256": "dcff17945b38715e1bdf565a963d6fb5949d413e8950df4282e75ec2313d2622",
+      "2bpp": "gfx/peon_spell_pack_v1/rockbiter_tiles.2bpp",
+      "2bpp_sha256": "c46923bd7c43e87a50a7772f1bf525a3563c78ce130751f8cf631c4b1a626686",
+      "2bpp_bytes": 448,
+      "tiles": 28,
+      "rgbgfx_verified_against_expected_indexes": true,
+      "lz": "gfx/peon_spell_pack_v1/rockbiter_tiles.2bpp.lz",
+      "lz_sha256": "1a444dabd8860381961f3ceba3e77782aeee2ca6468fc46c836a7e6c63499377",
+      "lz_bytes": 224,
+      "lz_flags": [
+        "--matching",
+        "--align",
+        "4"
+      ],
+      "lz_roundtrip_verified": true,
+      "ability": "rockbiter",
+      "gfx_label": "PeonSpellV1RockbiterGFX",
+      "palette_label": "PeonSpellV1RockbiterOBPalettes",
+      "obj_palette_slots": [
+        4,
+        5,
+        6
+      ],
+      "obj_palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            27,
+            16
+          ],
+          [
+            19,
+            10,
+            4
+          ],
+          [
+            8,
+            4,
+            3
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            28,
+            21,
+            11
+          ],
+          [
+            20,
+            13,
+            5
+          ],
+          [
+            8,
+            4,
+            3
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            19,
+            10,
+            4
+          ],
+          [
+            12,
+            7,
+            4
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 12,
+        "evaluated_source_color_triples": 220,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 34328,
+        "palette_count": 3,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/rockbiter_obj.gbcpal",
+      "palette_sha256": "d1601e634dbca80fca49f5361a690cb791c9e296d8e0b86e8132ca290bea34fd",
+      "assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rockbiter_player_back_32x32.png",
+          "source_sha256": "cfbca19fe320b128b7b4ce8483f9737de3b194939954a6a7b90c4b6d07e06ac2",
+          "role": "cast_effect",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "2bc7e1071b37d2a68c956004c8a92d797c1b2bef424488dc87d330bfa91cc9fb",
+          "native_alpha_sha256": "2bc7e1071b37d2a68c956004c8a92d797c1b2bef424488dc87d330bfa91cc9fb",
+          "source_alpha_bbox": [
+            5,
+            5,
+            26,
+            30
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 12,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1RockbiterPlayerOAM",
+          "oam_count": 14,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/rockbiter_player_back.png",
+          "native_index_sha256": "53b5a856f0e987aed767162e18e0c54cbd753302f5fcdaa5d985b37a4c063086",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/rockbiter_player_back_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 769,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 0,
+              "packet_byte_offset": 0,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 338,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 1,
+              "packet_byte_offset": 16,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 169,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 2,
+              "packet_byte_offset": 32,
+              "oam_pixel_offset": [
+                -16,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3005,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 3,
+              "packet_byte_offset": 48,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3684,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 4,
+              "packet_byte_offset": 64,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 284,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": 5,
+              "packet_byte_offset": 80,
+              "oam_pixel_offset": [
+                8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 139,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 6,
+              "packet_byte_offset": 96,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3304,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 7,
+              "packet_byte_offset": 112,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 2957,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 8,
+              "packet_byte_offset": 128,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 532,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 9,
+              "packet_byte_offset": 144,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 236,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 10,
+              "packet_byte_offset": 160,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 1470,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 11,
+              "packet_byte_offset": 176,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 7,
+              "weighted_squared_rgb555_error": 277,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 12,
+              "packet_byte_offset": 192,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 1,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 13,
+              "packet_byte_offset": 208,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 4
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 341,
+            "exact_rgb555_pixels": 115,
+            "changed_rgb555_pixels": 226,
+            "total_weighted_squared_rgb555_error": 17164,
+            "mean_weighted_squared_rgb555_error": 50.334311,
+            "max_weighted_squared_rgb555_error": 194,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rockbiter_enemy_front_32x32.png",
+          "source_sha256": "47a424b4f6585ce53d7c09923ad2083c52fb39ffbd172436356d3c897b2207a3",
+          "role": "cast_effect",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "64a553b7f0232cf751c94552b02d04673b534373c8fe09440271b87245406953",
+          "native_alpha_sha256": "64a553b7f0232cf751c94552b02d04673b534373c8fe09440271b87245406953",
+          "source_alpha_bbox": [
+            6,
+            5,
+            27,
+            30
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 12,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1RockbiterEnemyOAM",
+          "oam_count": 14,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/rockbiter_enemy_front.png",
+          "native_index_sha256": "00b701ea6655db4507611e8967803016e47162409d5f88e1cbfc535bec342a73",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/rockbiter_enemy_front_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 338,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 14,
+              "packet_byte_offset": 224,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 769,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 15,
+              "packet_byte_offset": 240,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 284,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 16,
+              "packet_byte_offset": 256,
+              "oam_pixel_offset": [
+                -16,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3684,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 17,
+              "packet_byte_offset": 272,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3005,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 18,
+              "packet_byte_offset": 288,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 169,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": 19,
+              "packet_byte_offset": 304,
+              "oam_pixel_offset": [
+                8,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 532,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 20,
+              "packet_byte_offset": 320,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 2957,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 21,
+              "packet_byte_offset": 336,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3304,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 22,
+              "packet_byte_offset": 352,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 139,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 23,
+              "packet_byte_offset": 368,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 1,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 24,
+              "packet_byte_offset": 384,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 7,
+              "weighted_squared_rgb555_error": 277,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 25,
+              "packet_byte_offset": 400,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 1470,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 26,
+              "packet_byte_offset": 416,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 236,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 27,
+              "packet_byte_offset": 432,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 4
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 341,
+            "exact_rgb555_pixels": 115,
+            "changed_rgb555_pixels": 226,
+            "total_weighted_squared_rgb555_error": 17164,
+            "mean_weighted_squared_rgb555_error": 50.334311,
+            "max_weighted_squared_rgb555_error": 194,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        }
+      ]
+    },
+    {
+      "png": "gfx/peon_spell_pack_v1/earth_shock_tiles.png",
+      "png_sha256": "58bb25094bd84341299ab6325192d0c41ff39e73a1f82fd1e97cb2b7ba334bf1",
+      "2bpp": "gfx/peon_spell_pack_v1/earth_shock_tiles.2bpp",
+      "2bpp_sha256": "ecdc4f323aa99dc4d80fb8c51b18afee5a11e2e14254aaaffb0ddbf8be83d709",
+      "2bpp_bytes": 448,
+      "tiles": 28,
+      "rgbgfx_verified_against_expected_indexes": true,
+      "lz": "gfx/peon_spell_pack_v1/earth_shock_tiles.2bpp.lz",
+      "lz_sha256": "138f436ef10d2fbe9d1135ab367a85d3761fc8fe3a7c882a4aae26af6b9e84b8",
+      "lz_bytes": 240,
+      "lz_flags": [
+        "--matching",
+        "--align",
+        "4"
+      ],
+      "lz_roundtrip_verified": true,
+      "ability": "earth_shock",
+      "gfx_label": "PeonSpellV1EarthShockGFX",
+      "palette_label": "PeonSpellV1EarthShockOBPalettes",
+      "obj_palette_slots": [
+        4,
+        5,
+        6
+      ],
+      "obj_palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            31,
+            30,
+            25
+          ],
+          [
+            30,
+            24,
+            12
+          ],
+          [
+            20,
+            13,
+            5
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            30,
+            24,
+            12
+          ],
+          [
+            20,
+            13,
+            5
+          ],
+          [
+            8,
+            5,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            20,
+            13,
+            5
+          ],
+          [
+            10,
+            6,
+            3
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 12,
+        "evaluated_source_color_triples": 220,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 42348,
+        "palette_count": 3,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/earth_shock_obj.gbcpal",
+      "palette_sha256": "6f3b4ea8406db65c3cbb09ca61d8ead9b9f76e40f9dcd1b4b590a20f50959c13",
+      "assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_shock_player_back_32x32.png",
+          "source_sha256": "0415f7d4c20154b9ee7b8859b4ddcfba9d6f28ed1b727b277f53e69de67e9af0",
+          "role": "cast_effect",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "6064cbba36908650cddda6a49fe9d22e4159d177849d57f1ce3f64fd8a3395c7",
+          "native_alpha_sha256": "6064cbba36908650cddda6a49fe9d22e4159d177849d57f1ce3f64fd8a3395c7",
+          "source_alpha_bbox": [
+            3,
+            4,
+            29,
+            31
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 11,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1EarthShockPlayerOAM",
+          "oam_count": 14,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/earth_shock_player_back.png",
+          "native_index_sha256": "44bc8213186c478c7166748c89e151c9b521b429b4e18d3ed2524b845f8210e0",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/earth_shock_player_back_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 2,
+              "weighted_squared_rgb555_error": 47,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 0,
+              "packet_byte_offset": 0,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 47,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 1,
+              "packet_byte_offset": 16,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 287,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 2,
+              "packet_byte_offset": 32,
+              "oam_pixel_offset": [
+                -16,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2002,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 3,
+              "packet_byte_offset": 48,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 1151,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 4,
+              "packet_byte_offset": 64,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 154,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": 5,
+              "packet_byte_offset": 80,
+              "oam_pixel_offset": [
+                8,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 338,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 6,
+              "packet_byte_offset": 96,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 4830,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 7,
+              "packet_byte_offset": 112,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 5060,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 8,
+              "packet_byte_offset": 128,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 122,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 9,
+              "packet_byte_offset": 144,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 327,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 10,
+              "packet_byte_offset": 160,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 3453,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 11,
+              "packet_byte_offset": 176,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 10,
+              "weighted_squared_rgb555_error": 2853,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 12,
+              "packet_byte_offset": 192,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 503,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 13,
+              "packet_byte_offset": 208,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 6
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 353,
+            "exact_rgb555_pixels": 128,
+            "changed_rgb555_pixels": 225,
+            "total_weighted_squared_rgb555_error": 21174,
+            "mean_weighted_squared_rgb555_error": 59.983003,
+            "max_weighted_squared_rgb555_error": 448,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_shock_enemy_front_32x32.png",
+          "source_sha256": "1c4df849c80e0a2fe2140e6696b83302685d236c2e53d30e7a7423a51d0e7616",
+          "role": "cast_effect",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "7b182a075bea8334cf97ba627c4aea6fcd4c3f81ec089ac1cc0bbb2069a2aad5",
+          "native_alpha_sha256": "7b182a075bea8334cf97ba627c4aea6fcd4c3f81ec089ac1cc0bbb2069a2aad5",
+          "source_alpha_bbox": [
+            3,
+            4,
+            29,
+            31
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 11,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1EarthShockEnemyOAM",
+          "oam_count": 14,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/earth_shock_enemy_front.png",
+          "native_index_sha256": "f256b1f151507b5ac51b004e9c46605c74bf7f901d903bae7cf88be4bea0f9e6",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/earth_shock_enemy_front_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 47,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 14,
+              "packet_byte_offset": 224,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 2,
+              "weighted_squared_rgb555_error": 47,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 15,
+              "packet_byte_offset": 240,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 5,
+              "weighted_squared_rgb555_error": 154,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 16,
+              "packet_byte_offset": 256,
+              "oam_pixel_offset": [
+                -16,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 1151,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 17,
+              "packet_byte_offset": 272,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2002,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 18,
+              "packet_byte_offset": 288,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 287,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": 19,
+              "packet_byte_offset": 304,
+              "oam_pixel_offset": [
+                8,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 6,
+              "weighted_squared_rgb555_error": 122,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 20,
+              "packet_byte_offset": 320,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 5060,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 21,
+              "packet_byte_offset": 336,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 4830,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 22,
+              "packet_byte_offset": 352,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 338,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 23,
+              "packet_byte_offset": 368,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 503,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 24,
+              "packet_byte_offset": 384,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 10,
+              "weighted_squared_rgb555_error": 2853,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 25,
+              "packet_byte_offset": 400,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 3453,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 26,
+              "packet_byte_offset": 416,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 327,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 27,
+              "packet_byte_offset": 432,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 6
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 353,
+            "exact_rgb555_pixels": 128,
+            "changed_rgb555_pixels": 225,
+            "total_weighted_squared_rgb555_error": 21174,
+            "mean_weighted_squared_rgb555_error": 59.983003,
+            "max_weighted_squared_rgb555_error": 448,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        }
+      ]
+    },
+    {
+      "png": "gfx/peon_spell_pack_v1/earth_totem_tiles.png",
+      "png_sha256": "fb1497f3cb9c1ddf009ea33d0404cb97583a26533629cf6cf8f6f70ecf3d5fc1",
+      "2bpp": "gfx/peon_spell_pack_v1/earth_totem_tiles.2bpp",
+      "2bpp_sha256": "d72ac20021f5f9d17bed2ae4398ec829641b9bcf5d1172d3bd48a844061da4bd",
+      "2bpp_bytes": 416,
+      "tiles": 26,
+      "rgbgfx_verified_against_expected_indexes": true,
+      "lz": "gfx/peon_spell_pack_v1/earth_totem_tiles.2bpp.lz",
+      "lz_sha256": "e6a5af88ae05aa8ed137620910741b6ef8f9a2d777cad02849baa73f8bd46295",
+      "lz_bytes": 192,
+      "lz_flags": [
+        "--matching",
+        "--align",
+        "4"
+      ],
+      "lz_roundtrip_verified": true,
+      "ability": "earth_totem",
+      "gfx_label": "PeonSpellV1EarthTotemGFX",
+      "palette_label": "PeonSpellV1EarthTotemOBPalettes",
+      "obj_palette_slots": [
+        4,
+        5,
+        6
+      ],
+      "obj_palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            18,
+            9
+          ],
+          [
+            16,
+            11,
+            6
+          ],
+          [
+            6,
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            26,
+            18,
+            9
+          ],
+          [
+            13,
+            8,
+            4
+          ],
+          [
+            3,
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            21,
+            14,
+            7
+          ],
+          [
+            13,
+            8,
+            4
+          ],
+          [
+            6,
+            3,
+            2
+          ]
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 12,
+        "evaluated_source_color_triples": 220,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 26986,
+        "palette_count": 3,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/earth_totem_obj.gbcpal",
+      "palette_sha256": "8890e09b3de0c5375229e0b5e44182e761577ff2a76fc2824724498e55585a97",
+      "assets": [
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_totem_player_back_32x32.png",
+          "source_sha256": "0d6f45b79b77928f81b0f07c7a148d6328c63772c9c841ec517d02d39d7d3d1b",
+          "role": "cast_effect",
+          "orientation": "player_back",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "7336c8d894aa5cc65d6d94c33d49d8d67d2a13fb77c3740e39de65b0602f59fc",
+          "native_alpha_sha256": "7336c8d894aa5cc65d6d94c33d49d8d67d2a13fb77c3740e39de65b0602f59fc",
+          "source_alpha_bbox": [
+            6,
+            1,
+            25,
+            28
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 12,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1EarthTotemPlayerOAM",
+          "oam_count": 13,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/earth_totem_player_back.png",
+          "native_index_sha256": "ed23d9266831026bbf818caac2b57e65aeb31ee80c11bd39904db4b48739484e",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/earth_totem_player_back_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 812,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 0,
+              "packet_byte_offset": 0,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 7,
+              "weighted_squared_rgb555_error": 176,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 1,
+              "packet_byte_offset": 16,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 3,
+              "weighted_squared_rgb555_error": 172,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": 2,
+              "packet_byte_offset": 32,
+              "oam_pixel_offset": [
+                -16,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2354,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 3,
+              "packet_byte_offset": 48,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2073,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 4,
+              "packet_byte_offset": 64,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 66,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 5,
+              "packet_byte_offset": 80,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3006,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 6,
+              "packet_byte_offset": 96,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2713,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 7,
+              "packet_byte_offset": 112,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 116,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 8,
+              "packet_byte_offset": 128,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 2,
+              "weighted_squared_rgb555_error": 54,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 9,
+              "packet_byte_offset": 144,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 1045,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 10,
+              "packet_byte_offset": 160,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 884,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 11,
+              "packet_byte_offset": 176,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 1,
+              "weighted_squared_rgb555_error": 22,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 12,
+              "packet_byte_offset": 192,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 6
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 313,
+            "exact_rgb555_pixels": 114,
+            "changed_rgb555_pixels": 199,
+            "total_weighted_squared_rgb555_error": 13493,
+            "mean_weighted_squared_rgb555_error": 43.108626,
+            "max_weighted_squared_rgb555_error": 560,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_totem_enemy_front_32x32.png",
+          "source_sha256": "95786d97738c9a3d6f4fcd0670bc3ab615c860a1dfcea980d7f45be21bef10e7",
+          "role": "cast_effect",
+          "orientation": "enemy_front",
+          "canvas": [
+            32,
+            32
+          ],
+          "source_crop": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "source_alpha_values": [
+            0,
+            255
+          ],
+          "source_alpha_sha256": "fa16ec3f86c9e10e040d3341086e2fffa33a579961485e57f27d2a931b15b7a3",
+          "native_alpha_sha256": "fa16ec3f86c9e10e040d3341086e2fffa33a579961485e57f27d2a931b15b7a3",
+          "source_alpha_bbox": [
+            7,
+            1,
+            26,
+            28
+          ],
+          "source_opaque_rgb555_colors": 12,
+          "source_max_opaque_colors_per_8x8": 12,
+          "static_source_frames": 1,
+          "oam_label": "PeonSpellV1EarthTotemEnemyOAM",
+          "oam_count": 13,
+          "oam_max_per_8px_row": 4,
+          "native_index_png": "gfx/peon_spell_pack_v1/earth_totem_enemy_front.png",
+          "native_index_sha256": "8437b5d8f0451f4b0c59f3cada0acc5eba4f9ae177d0a2383c559000d4e8de5c",
+          "static_native_preview": "references/generated/spell_tests/staticpreviews/earth_totem_enemy_front_native.png",
+          "native_palette_slots": [
+            4,
+            5,
+            6
+          ],
+          "tile_offset_records": [
+            {
+              "x": 0,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                0,
+                8,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 0,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 7,
+              "weighted_squared_rgb555_error": 176,
+              "source_box": [
+                8,
+                0,
+                16,
+                8
+              ],
+              "tile_index": 13,
+              "packet_byte_offset": 208,
+              "oam_pixel_offset": [
+                -8,
+                -16
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 0,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 812,
+              "source_box": [
+                16,
+                0,
+                24,
+                8
+              ],
+              "tile_index": 14,
+              "packet_byte_offset": 224,
+              "oam_pixel_offset": [
+                0,
+                -16
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 0,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                24,
+                0,
+                32,
+                8
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 0,
+              "y": 8,
+              "palette": 0,
+              "nonempty": false,
+              "source_opaque_rgb555_colors": 0,
+              "weighted_squared_rgb555_error": 0,
+              "source_box": [
+                0,
+                8,
+                8,
+                16
+              ],
+              "tile_index": null,
+              "omitted_from_oam": true
+            },
+            {
+              "x": 8,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2073,
+              "source_box": [
+                8,
+                8,
+                16,
+                16
+              ],
+              "tile_index": 15,
+              "packet_byte_offset": 240,
+              "oam_pixel_offset": [
+                -8,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 16,
+              "y": 8,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2354,
+              "source_box": [
+                16,
+                8,
+                24,
+                16
+              ],
+              "tile_index": 16,
+              "packet_byte_offset": 256,
+              "oam_pixel_offset": [
+                0,
+                -8
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 8,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 3,
+              "weighted_squared_rgb555_error": 172,
+              "source_box": [
+                24,
+                8,
+                32,
+                16
+              ],
+              "tile_index": 17,
+              "packet_byte_offset": 272,
+              "oam_pixel_offset": [
+                8,
+                -8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 116,
+              "source_box": [
+                0,
+                16,
+                8,
+                24
+              ],
+              "tile_index": 18,
+              "packet_byte_offset": 288,
+              "oam_pixel_offset": [
+                -16,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 8,
+              "y": 16,
+              "palette": 0,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 11,
+              "weighted_squared_rgb555_error": 2713,
+              "source_box": [
+                8,
+                16,
+                16,
+                24
+              ],
+              "tile_index": 19,
+              "packet_byte_offset": 304,
+              "oam_pixel_offset": [
+                -8,
+                0
+              ],
+              "oam_palette_slot": 4
+            },
+            {
+              "x": 16,
+              "y": 16,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 12,
+              "weighted_squared_rgb555_error": 3006,
+              "source_box": [
+                16,
+                16,
+                24,
+                24
+              ],
+              "tile_index": 20,
+              "packet_byte_offset": 320,
+              "oam_pixel_offset": [
+                0,
+                0
+              ],
+              "oam_palette_slot": 5
+            },
+            {
+              "x": 24,
+              "y": 16,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 4,
+              "weighted_squared_rgb555_error": 66,
+              "source_box": [
+                24,
+                16,
+                32,
+                24
+              ],
+              "tile_index": 21,
+              "packet_byte_offset": 336,
+              "oam_pixel_offset": [
+                8,
+                0
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 0,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 1,
+              "weighted_squared_rgb555_error": 22,
+              "source_box": [
+                0,
+                24,
+                8,
+                32
+              ],
+              "tile_index": 22,
+              "packet_byte_offset": 352,
+              "oam_pixel_offset": [
+                -16,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 8,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 8,
+              "weighted_squared_rgb555_error": 884,
+              "source_box": [
+                8,
+                24,
+                16,
+                32
+              ],
+              "tile_index": 23,
+              "packet_byte_offset": 368,
+              "oam_pixel_offset": [
+                -8,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 16,
+              "y": 24,
+              "palette": 2,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 9,
+              "weighted_squared_rgb555_error": 1045,
+              "source_box": [
+                16,
+                24,
+                24,
+                32
+              ],
+              "tile_index": 24,
+              "packet_byte_offset": 384,
+              "oam_pixel_offset": [
+                0,
+                8
+              ],
+              "oam_palette_slot": 6
+            },
+            {
+              "x": 24,
+              "y": 24,
+              "palette": 1,
+              "nonempty": true,
+              "source_opaque_rgb555_colors": 2,
+              "weighted_squared_rgb555_error": 54,
+              "source_box": [
+                24,
+                24,
+                32,
+                32
+              ],
+              "tile_index": 25,
+              "packet_byte_offset": 400,
+              "oam_pixel_offset": [
+                8,
+                8
+              ],
+              "oam_palette_slot": 5
+            }
+          ],
+          "conversion": {
+            "opaque_pixels": 313,
+            "exact_rgb555_pixels": 114,
+            "changed_rgb555_pixels": 199,
+            "total_weighted_squared_rgb555_error": 13493,
+            "mean_weighted_squared_rgb555_error": 43.108626,
+            "max_weighted_squared_rgb555_error": 560,
+            "native_scale": 1,
+            "dithered": false,
+            "resampled": false,
+            "alpha_preserved": true,
+            "full_canvas_preserved": true,
+            "opaque_pixels_always_nonzero_index": true
+          }
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "ability": "lightning_bolt",
+      "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/lightning_bolt_icon_16x16.png",
+      "source_sha256": "6c7a9c48bf9c3a8288c3c3877c0db1a185836241e67031dff1e9ab839f9131a5",
+      "canvas": [
+        16,
+        16
+      ],
+      "source_crop": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "source_alpha_values": [
+        0,
+        255
+      ],
+      "source_opaque_rgb555_colors": 8,
+      "source_max_opaque_colors_per_8x8": 8,
+      "source_alpha_sha256": "e00929c58b8c0c302180353a5ca242602bce909f789065f44557a79ea0f69d6f",
+      "native_alpha_sha256": "e00929c58b8c0c302180353a5ca242602bce909f789065f44557a79ea0f69d6f",
+      "gfx_label": "PeonSpellV1LightningIconGFX",
+      "palette_label": "PeonSpellV1LightningIconPalette",
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          5,
+          27,
+          31
+        ],
+        [
+          1,
+          12,
+          23
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 8,
+        "evaluated_source_color_triples": 56,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 2008,
+        "palette_count": 1,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/lightning_bolt_icon.gbcpal",
+      "palette_sha256": "5f75c96c1fb0bfe11d5d436a61bb039292762f026d405f8b8b95f59084d6ad27",
+      "conversion": {
+        "opaque_pixels": 45,
+        "exact_rgb555_pixels": 17,
+        "changed_rgb555_pixels": 28,
+        "total_weighted_squared_rgb555_error": 2008,
+        "mean_weighted_squared_rgb555_error": 44.622222,
+        "max_weighted_squared_rgb555_error": 127,
+        "native_scale": 1,
+        "dithered": false,
+        "resampled": false,
+        "alpha_preserved": true,
+        "full_canvas_preserved": true,
+        "opaque_pixels_always_nonzero_index": true
+      },
+      "png": "gfx/peon_spell_pack_v1/lightning_bolt_icon.png",
+      "png_sha256": "bda6086fdd018ccc091dc6199dd7b8c2eb473d1556e9b4125739e811afb2042d",
+      "2bpp": "gfx/peon_spell_pack_v1/lightning_bolt_icon.2bpp",
+      "2bpp_sha256": "3d1a25703172155058a5bf61b6c515fcb05309651a2f253bb801d6663aa9fa3e",
+      "2bpp_bytes": 64,
+      "tiles": 4,
+      "rgbgfx_verified_against_expected_indexes": true
+    },
+    {
+      "ability": "rockbiter",
+      "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/rockbiter_icon_16x16.png",
+      "source_sha256": "136e258b03aa66b0dc1786b87b308ef6921e11a7abcfe868db385e9903398025",
+      "canvas": [
+        16,
+        16
+      ],
+      "source_crop": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "source_alpha_values": [
+        0,
+        255
+      ],
+      "source_opaque_rgb555_colors": 10,
+      "source_max_opaque_colors_per_8x8": 9,
+      "source_alpha_sha256": "60ec124ffc6504a08fb30a8fdd5b532090a96b9d3c857dbf2e6addaf8fac0791",
+      "native_alpha_sha256": "60ec124ffc6504a08fb30a8fdd5b532090a96b9d3c857dbf2e6addaf8fac0791",
+      "gfx_label": "PeonSpellV1RockbiterIconGFX",
+      "palette_label": "PeonSpellV1RockbiterIconPalette",
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          31,
+          26,
+          15
+        ],
+        [
+          19,
+          11,
+          4
+        ],
+        [
+          7,
+          3,
+          2
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 10,
+        "evaluated_source_color_triples": 120,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 3916,
+        "palette_count": 1,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/rockbiter_icon.gbcpal",
+      "palette_sha256": "4c3a850607a7cd86c688970c35c600c5c00af2325ff48035899968bc4f3926ae",
+      "conversion": {
+        "opaque_pixels": 81,
+        "exact_rgb555_pixels": 27,
+        "changed_rgb555_pixels": 54,
+        "total_weighted_squared_rgb555_error": 3916,
+        "mean_weighted_squared_rgb555_error": 48.345679,
+        "max_weighted_squared_rgb555_error": 139,
+        "native_scale": 1,
+        "dithered": false,
+        "resampled": false,
+        "alpha_preserved": true,
+        "full_canvas_preserved": true,
+        "opaque_pixels_always_nonzero_index": true
+      },
+      "png": "gfx/peon_spell_pack_v1/rockbiter_icon.png",
+      "png_sha256": "049b727ef30e4c2f5b27adbe1be49da3f75c90022333192a82037cb8d28641c3",
+      "2bpp": "gfx/peon_spell_pack_v1/rockbiter_icon.2bpp",
+      "2bpp_sha256": "5d15fe618ca454466839b89a5251f1826eff657fa3b98306344e9fd0e7c8fb4c",
+      "2bpp_bytes": 64,
+      "tiles": 4,
+      "rgbgfx_verified_against_expected_indexes": true
+    },
+    {
+      "ability": "earth_shock",
+      "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_shock_icon_16x16.png",
+      "source_sha256": "8b2c52df4ca3de180519982f8f337375116222013089914c3288bb991ccd6700",
+      "canvas": [
+        16,
+        16
+      ],
+      "source_crop": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "source_alpha_values": [
+        0,
+        255
+      ],
+      "source_opaque_rgb555_colors": 9,
+      "source_max_opaque_colors_per_8x8": 9,
+      "source_alpha_sha256": "10ef206bcf68a9c374f8893411a30a917164aae4bab0d6ebedfd77652bcd4bc2",
+      "native_alpha_sha256": "10ef206bcf68a9c374f8893411a30a917164aae4bab0d6ebedfd77652bcd4bc2",
+      "gfx_label": "PeonSpellV1EarthShockIconGFX",
+      "palette_label": "PeonSpellV1EarthShockIconPalette",
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          28,
+          19,
+          8
+        ],
+        [
+          15,
+          9,
+          4
+        ],
+        [
+          7,
+          4,
+          2
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 9,
+        "evaluated_source_color_triples": 84,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 3754,
+        "palette_count": 1,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/earth_shock_icon.gbcpal",
+      "palette_sha256": "331ea602fe5e9e25c1d35469f908cf9c65ba5de4e3d77f628d5853fbb1961740",
+      "conversion": {
+        "opaque_pixels": 77,
+        "exact_rgb555_pixels": 28,
+        "changed_rgb555_pixels": 49,
+        "total_weighted_squared_rgb555_error": 3754,
+        "mean_weighted_squared_rgb555_error": 48.753247,
+        "max_weighted_squared_rgb555_error": 214,
+        "native_scale": 1,
+        "dithered": false,
+        "resampled": false,
+        "alpha_preserved": true,
+        "full_canvas_preserved": true,
+        "opaque_pixels_always_nonzero_index": true
+      },
+      "png": "gfx/peon_spell_pack_v1/earth_shock_icon.png",
+      "png_sha256": "54cd5ff6899d73ee6d2444fff3fc2efae9b2d0b12e5086ed9ee44a63f0085668",
+      "2bpp": "gfx/peon_spell_pack_v1/earth_shock_icon.2bpp",
+      "2bpp_sha256": "59f9057481e5605e843f7cd7fd8886890a3026022f1b270f22f2824c8ea11915",
+      "2bpp_bytes": 64,
+      "tiles": 4,
+      "rgbgfx_verified_against_expected_indexes": true
+    },
+    {
+      "ability": "earth_totem",
+      "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_totem_icon_16x16.png",
+      "source_sha256": "38c4e9147967a207979b83dfc73885e6745d80935f3b56bfcfc0ea99daaedc25",
+      "canvas": [
+        16,
+        16
+      ],
+      "source_crop": [
+        0,
+        0,
+        16,
+        16
+      ],
+      "source_alpha_values": [
+        0,
+        255
+      ],
+      "source_opaque_rgb555_colors": 9,
+      "source_max_opaque_colors_per_8x8": 9,
+      "source_alpha_sha256": "d87353d2bb8fc23c91d50db2ad00a4f479653be509cf8e1b51226277adf3dd5a",
+      "native_alpha_sha256": "d87353d2bb8fc23c91d50db2ad00a4f479653be509cf8e1b51226277adf3dd5a",
+      "gfx_label": "PeonSpellV1EarthTotemIconGFX",
+      "palette_label": "PeonSpellV1EarthTotemIconPalette",
+      "palette_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          25,
+          17,
+          8
+        ],
+        [
+          14,
+          8,
+          4
+        ],
+        [
+          4,
+          2,
+          1
+        ]
+      ],
+      "palette_fit": {
+        "source_rgb555_colors": 9,
+        "evaluated_source_color_triples": 84,
+        "fit": "16-start coordinate descent over real RGB555 source-color triples",
+        "distance_weights_rgb": [
+          2,
+          3,
+          2
+        ],
+        "total_weighted_squared_rgb555_error": 3868,
+        "palette_count": 1,
+        "opaque_colors_per_palette": 3,
+        "palette_colors_are_real_source_colors": true
+      },
+      "palette_file": "gfx/peon_spell_pack_v1/earth_totem_icon.gbcpal",
+      "palette_sha256": "ded60147565838e932b5ef230fd4c28bd4c82cad0bd04bd0d1f9a48b9fc30603",
+      "conversion": {
+        "opaque_pixels": 70,
+        "exact_rgb555_pixels": 34,
+        "changed_rgb555_pixels": 36,
+        "total_weighted_squared_rgb555_error": 3868,
+        "mean_weighted_squared_rgb555_error": 55.257143,
+        "max_weighted_squared_rgb555_error": 277,
+        "native_scale": 1,
+        "dithered": false,
+        "resampled": false,
+        "alpha_preserved": true,
+        "full_canvas_preserved": true,
+        "opaque_pixels_always_nonzero_index": true
+      },
+      "png": "gfx/peon_spell_pack_v1/earth_totem_icon.png",
+      "png_sha256": "232fc747e853c0b6cf7fa31418072e6c0aab0672abb405379791e9a03f33c3f8",
+      "2bpp": "gfx/peon_spell_pack_v1/earth_totem_icon.2bpp",
+      "2bpp_sha256": "c22d57da1e48da7e8ac4bf914795097853fc2ad5b04db1a21f959d71145b689a",
+      "2bpp_bytes": 64,
+      "tiles": 4,
+      "rgbgfx_verified_against_expected_indexes": true
+    }
+  ],
+  "orientation_pairs": [
+    {
+      "ability": "lightning_bolt",
+      "separate_source_hashes_and_oam_rows": true,
+      "exact_horizontal_rgba_mirrors": false,
+      "exact_vertical_rgba_mirrors": false,
+      "exact_vertical_alpha_mirrors": true
+    },
+    {
+      "ability": "rockbiter",
+      "separate_source_hashes_and_oam_rows": true,
+      "exact_horizontal_rgba_mirrors": true,
+      "exact_vertical_rgba_mirrors": false,
+      "exact_vertical_alpha_mirrors": false
+    },
+    {
+      "ability": "earth_shock",
+      "separate_source_hashes_and_oam_rows": true,
+      "exact_horizontal_rgba_mirrors": true,
+      "exact_vertical_rgba_mirrors": false,
+      "exact_vertical_alpha_mirrors": false
+    },
+    {
+      "ability": "earth_totem",
+      "separate_source_hashes_and_oam_rows": true,
+      "exact_horizontal_rgba_mirrors": true,
+      "exact_vertical_rgba_mirrors": false,
+      "exact_vertical_alpha_mirrors": false
+    }
+  ],
+  "persistent_earth_totem": {
+    "source": "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_totem_player_back_32x32.png",
+    "source_sha256": "0d6f45b79b77928f81b0f07c7a148d6328c63772c9c841ec517d02d39d7d3d1b",
+    "source_crop": [
+      0,
+      0,
+      32,
+      32
+    ],
+    "canvas": [
+      32,
+      32
+    ],
+    "gfx_label": "PeonSpellV1EarthTotemPersistentGFX",
+    "palette_label": "PeonSpellV1EarthTotemOBPalettes",
+    "obj_palettes_rgb555": [
+      [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          26,
+          18,
+          9
+        ],
+        [
+          16,
+          11,
+          6
+        ],
+        [
+          6,
+          3,
+          2
+        ]
+      ],
+      [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          26,
+          18,
+          9
+        ],
+        [
+          13,
+          8,
+          4
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          21,
+          14,
+          7
+        ],
+        [
+          13,
+          8,
+          4
+        ],
+        [
+          6,
+          3,
+          2
+        ]
+      ]
+    ],
+    "persistent_rendering": "Sparse OBJ behind BG; no BG canvas writes",
+    "persistent_obj_palette_slots": [
+      4,
+      5,
+      6
+    ],
+    "bg_palette_is_not_written_by_import": true,
+    "source_alpha_sha256": "7336c8d894aa5cc65d6d94c33d49d8d67d2a13fb77c3740e39de65b0602f59fc",
+    "transparent_pixels_to_index0": true,
+    "opaque_mask_preserved_as_nonzero_indexes": true,
+    "native_tile_indexes_row_major": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "intended_vram_bank": 1,
+    "intended_obj_tile_ids": [
+      "$ad",
+      "$bc"
+    ],
+    "oam_label": "PeonSpellV1EarthTotemPersistentOAM",
+    "oam_count": 13,
+    "oam_attributes": "OAM_PRIO | OAM_BANK1 | per-tile4/5/6",
+    "oam_tile_offsets": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "oam_obj_palette_slots": [
+      5,
+      4,
+      6,
+      5,
+      5,
+      6,
+      5,
+      4,
+      4,
+      5,
+      6,
+      6,
+      6
+    ],
+    "conversion": {
+      "opaque_pixels": 313,
+      "exact_rgb555_pixels": 114,
+      "changed_rgb555_pixels": 199,
+      "total_weighted_squared_rgb555_error": 13493,
+      "mean_weighted_squared_rgb555_error": 43.108626,
+      "max_weighted_squared_rgb555_error": 560,
+      "native_scale": 1,
+      "dithered": false,
+      "resampled": false,
+      "alpha_preserved": true,
+      "full_canvas_preserved": true,
+      "opaque_pixels_always_nonzero_index": true
+    },
+    "png": "gfx/peon_spell_pack_v1/earth_totem_persistent.png",
+    "png_sha256": "ed23d9266831026bbf818caac2b57e65aeb31ee80c11bd39904db4b48739484e",
+    "2bpp": "gfx/peon_spell_pack_v1/earth_totem_persistent.2bpp",
+    "2bpp_sha256": "32a61140de961f530136797c6f1b9d55fa85989a51a2d4ea50d43e24fcad1586",
+    "2bpp_bytes": 256,
+    "tiles": 16,
+    "rgbgfx_verified_against_expected_indexes": true
+  },
+  "unused_fixed_bg6_derivative": {
+    "gfx_label": "PeonSpellV1EarthTotemBGTiles",
+    "fixed_existing_bg_palette_slot": 6,
+    "fixed_existing_bg_palette_rgb555": [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        22,
+        15,
+        7
+      ],
+      [
+        8,
+        17,
+        6
+      ],
+      [
+        3,
+        2,
+        2
+      ]
+    ],
+    "runtime_use": false,
+    "conversion": {
+      "opaque_pixels": 313,
+      "exact_rgb555_pixels": 0,
+      "changed_rgb555_pixels": 313,
+      "total_weighted_squared_rgb555_error": 38721,
+      "mean_weighted_squared_rgb555_error": 123.709265,
+      "max_weighted_squared_rgb555_error": 469,
+      "native_scale": 1,
+      "dithered": false,
+      "resampled": false,
+      "alpha_preserved": true,
+      "full_canvas_preserved": true,
+      "opaque_pixels_always_nonzero_index": true
+    },
+    "png": "gfx/peon_spell_pack_v1/earth_totem_bg.png",
+    "png_sha256": "6ef8417422b2db40faa45fb6acf88cfc75adce7ff8d49701157325c899581a30",
+    "2bpp": "gfx/peon_spell_pack_v1/earth_totem_bg.2bpp",
+    "2bpp_sha256": "eb8f105559b7edb1d610e04760cd78c85cf395ba1f281b0216461f9b1fadfa3d",
+    "2bpp_bytes": 256,
+    "tiles": 16,
+    "rgbgfx_verified_against_expected_indexes": true
+  }
+}

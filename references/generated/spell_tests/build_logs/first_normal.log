@@ -1,0 +1,34 @@
+
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o audio.o audio.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o home.o home.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o main.o main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o ram.o ram.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/text/common.o data/text/common.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/maps/map_data.o data/maps/map_data.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/dex_entries.o data/pokemon/dex_entries.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/egg_moves.o data/pokemon/egg_moves.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/evos_attacks.o data/pokemon/evos_attacks.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o engine/movie/credits.o engine/movie/credits.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o engine/overworld/events.o engine/overworld/events.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/misc.o gfx/misc.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/pics.o gfx/pics.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/sprites.o gfx/sprites.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/tilesets.o gfx/tilesets.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o lib/mobile/main.o lib/mobile/main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o lib/mobile/mail.o lib/mobile/mail.asm
+/workspace/toolchains/rgbds-1.0.4/rgblink -Weverything -Wtruncation=1 -l layout.link -n pokecrystal.sym -m pokecrystal.map -o pokecrystal.gbc audio.o home.o main.o ram.o data/text/common.o data/maps/map_data.o data/pokemon/dex_entries.o data/pokemon/egg_moves.o data/pokemon/evos_attacks.o engine/movie/credits.o engine/overworld/events.o gfx/misc.o gfx/pics.o gfx/sprites.o gfx/tilesets.o lib/mobile/main.o lib/mobile/mail.o
+/workspace/toolchains/rgbds-1.0.4/rgbfix -Weverything -Cjv -t PEON_WAR -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3 -p 0 -i BYTE -n 0 pokecrystal.gbc
+tools/stadium pokecrystal.gbc
+{
+  "target": "pokecrystal.gbc",
+  "sha256": "5633718df5911c4a04e9dcce1cbfad56bb9404443e9eb998fecf66c2bf3c47d3",
+  "bytes": 2097152,
+  "cgb_only": true,
+  "mbc3_rtc_ram_battery": true,
+  "ram_bytes": 32768,
+  "physical_modretro_tested": false,
+  "historical_generator_outputs_frozen": 207,
+  "phase": "shaman",
+  "fixture": false,
+  "build": "passed"
+}

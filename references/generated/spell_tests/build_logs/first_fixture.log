@@ -1,0 +1,34 @@
+
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o audio_spell_test.o audio.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o home_spell_test.o home.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o main_spell_test.o main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o ram_spell_test.o ram.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o data/text/common_spell_test.o data/text/common.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o data/maps/map_data_spell_test.o data/maps/map_data.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o data/pokemon/dex_entries_spell_test.o data/pokemon/dex_entries.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o data/pokemon/egg_moves_spell_test.o data/pokemon/egg_moves.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o data/pokemon/evos_attacks_spell_test.o data/pokemon/evos_attacks.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o engine/movie/credits_spell_test.o engine/movie/credits.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o engine/overworld/events_spell_test.o engine/overworld/events.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o gfx/misc_spell_test.o gfx/misc.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o gfx/pics_spell_test.o gfx/pics.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o gfx/sprites_spell_test.o gfx/sprites.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o gfx/tilesets_spell_test.o gfx/tilesets.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o lib/mobile/main_spell_test.o lib/mobile/main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -D PEON_SPELL_TEST -o lib/mobile/mail_spell_test.o lib/mobile/mail.asm
+/workspace/toolchains/rgbds-1.0.4/rgblink -Weverything -Wtruncation=1 -l layout.link -n pokecrystal_spell_test.sym -m pokecrystal_spell_test.map -o pokecrystal_spell_test.gbc audio_spell_test.o home_spell_test.o main_spell_test.o ram_spell_test.o data/text/common_spell_test.o data/maps/map_data_spell_test.o data/pokemon/dex_entries_spell_test.o data/pokemon/egg_moves_spell_test.o data/pokemon/evos_attacks_spell_test.o engine/movie/credits_spell_test.o engine/overworld/events_spell_test.o gfx/misc_spell_test.o gfx/pics_spell_test.o gfx/sprites_spell_test.o gfx/tilesets_spell_test.o lib/mobile/main_spell_test.o lib/mobile/mail_spell_test.o
+/workspace/toolchains/rgbds-1.0.4/rgbfix -Weverything -Cjv -t PEON_WAR -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3 -p 0 -i BYTE -n 0 pokecrystal_spell_test.gbc
+tools/stadium pokecrystal_spell_test.gbc
+{
+  "target": "pokecrystal_spell_test.gbc",
+  "sha256": "753c6ac4d1de39bfcb40910a5f132c83277fb7b046f2547a8af793036ea39ec2",
+  "bytes": 2097152,
+  "cgb_only": true,
+  "mbc3_rtc_ram_battery": true,
+  "ram_bytes": 32768,
+  "physical_modretro_tested": false,
+  "historical_generator_outputs_frozen": 207,
+  "phase": "shaman",
+  "fixture": true,
+  "build": "passed"
+}

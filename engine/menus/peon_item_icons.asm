@@ -357,10 +357,10 @@ PeonItemIconRoughBootsPalette:
 	assert @ - PeonItemIconRoughBootsPalette == 1 palettes
 
 PeonItemIconEarthTotemGFX:
-	INCBIN "gfx/pack/peon_item_icons/earth_totem.2bpp"
+	INCBIN "gfx/peon_spell_pack_v1/earth_totem_icon.2bpp"
 	assert @ - PeonItemIconEarthTotemGFX == 4 * LEN_2BPP_TILE
 PeonItemIconEarthTotemPalette:
-	INCLUDE "gfx/pack/peon_item_icons/earth_totem.pal"
+	INCBIN "gfx/peon_spell_pack_v1/earth_totem_icon.gbcpal"
 	assert @ - PeonItemIconEarthTotemPalette == 1 palettes
 
 PeonItemIconLightningTotemGFX:
