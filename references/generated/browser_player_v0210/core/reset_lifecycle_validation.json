@@ -1,0 +1,186 @@
+{
+  "passed": true,
+  "rom_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+  "core_wasm_sha256": "52c165069441a09180b4bd63464318aa7b861b1d36e0d05e8047b48619fd2f0b",
+  "core_js_sha256": "a68e5854b5d68339a34c0aa0b6dbeacd615ed316657ee17b63dafa5e00561b09",
+  "method": "Twelve complete native lifecycles including joypad, SRAM import, actual ROM execution, SRAM/checkpoint export and correct allocation cleanup.",
+  "actual_browser_interface_tested": false,
+  "normal_gameplay_save_proof": false,
+  "cycles": 12,
+  "includes_joypad_and_battery_and_checkpoint_exports": true,
+  "emulator_alone_releases_owned_rom": true,
+  "filedata_buffer_and_descriptor_released_separately": true,
+  "all_live_rom_bytes_intact": true,
+  "all_startup_frames_identical": true,
+  "heap_size_stable": true,
+  "rows": [
+    {
+      "cycle": 0,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 1,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 2,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 3,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 4,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 5,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 6,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 7,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 8,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 9,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 10,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    },
+    {
+      "cycle": 11,
+      "rom_heap_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+      "fixed_bank_matches_supplied_rom": true,
+      "rgba_sha256": "f266560ad3a90526efa9f93baf8f72ed7b22704935ec36d9cc72d0093f8466a4",
+      "battery_bytes": 32768,
+      "full_checkpoint_bytes": 199608,
+      "allocation_pointers": [
+        86152,
+        2183312,
+        2723688
+      ],
+      "wasm_heap_bytes": 16908288
+    }
+  ]
+}

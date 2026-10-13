@@ -1,0 +1,285 @@
+{
+  "rom_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+  "html_sha256": "d71835c5de14e8f345e538c720a1957a14049620b637d4d65f79ca56c86a8fa7",
+  "player_version": "0.2.10",
+  "character_class": "shaman",
+  "method": "Self-contained HTML served by an owned localhost HTTP server to managed Chromium, exact supplied embedded ROM, ordinary emulated controller buttons and bounded native frame advancement. UI keyboard/touch inputs checked separately in real browser time.",
+  "native_ram_edits": false,
+  "physical_chromatic_verified": false,
+  "devday_flash_verified": false,
+  "modretro_plugin_preview_used": false,
+  "external_browser_launched_for_user": false,
+  "in_app_browser_display_verified": false,
+  "test_origin": "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+  "file_url_open_verified": false,
+  "managed_browser_file_url_limitation": "Managed Chromium denies file:// navigation (ERR_BLOCKED_BY_ADMINISTRATOR); policy explicitly permits HTTP(S). Tests use an allowed owned localhost origin.",
+  "normal_intro": {
+    "master_selected": "Shaman",
+    "native_name": "P\u00e9on ABCDE",
+    "map": "The Den",
+    "passed": true
+  },
+  "normal_battle": {
+    "native_battle_won": true,
+    "permanent_defeated_flag": true,
+    "battle_frame_captured": true,
+    "remaining_hp": 9
+  },
+  "native_game_save": {
+    "export_bytes": 32768,
+    "export_sha256": "e5292a63ac96c76e47c52eedb25cd0f3bb981b13b91366a79e3d205a56ad76ba",
+    "native_game_menu_used": true,
+    "passed": true
+  },
+  "visible_exports": {
+    "battery_filename": "peon_of_warcraft_v0_2_10.sav",
+    "battery_byte_exact": true,
+    "session_filename": "peon_of_warcraft_v0_2_10_session.json",
+    "session_matches_exact_rom": true,
+    "passed": true
+  },
+  "native_exit_return_to_title": {
+    "native_exit_menu_selected_by_ordinary_buttons": true,
+    "exact_native_title_framebuffer_returned": true,
+    "unsaved_location_not_auto_saved": true,
+    "native_persistent_sram_byte_identical_across_exit": true,
+    "sram_scratch_exception": {
+      "bank": 0,
+      "start": "0xa000",
+      "end_exclusive": "0xa600",
+      "declared_use": "Native Crystal temporary graphics/menu buffer; Init clears its first 32 bytes.",
+      "observations": [
+        {
+          "stage": "before_exit",
+          "changed_byte_count": 0,
+          "changed_flat_sram_offsets": []
+        },
+        {
+          "stage": "after_exit_native_title",
+          "changed_byte_count": 22,
+          "changed_flat_sram_offsets": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "stage": "after_title_checkpoint_reload",
+          "changed_byte_count": 22,
+          "changed_flat_sram_offsets": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "stage": "after_exit_continue",
+          "changed_byte_count": 22,
+          "changed_flat_sram_offsets": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "stage": "after_held_exit_confirmation",
+          "changed_byte_count": 22,
+          "changed_flat_sram_offsets": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        },
+        {
+          "stage": "after_held_exit_continue",
+          "changed_byte_count": 22,
+          "changed_flat_sram_offsets": [
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        }
+      ]
+    },
+    "title_checkpoint_reload_preserved": true,
+    "start_opens_native_character_select": true,
+    "continue_restores_saved_character_record": true,
+    "held_exit_confirmation_frames": 240,
+    "held_exit_confirmation_does_not_skip_title": true,
+    "browser_reset_api_used": false,
+    "native_ram_edits": false,
+    "saved_battery_bytes": 32768,
+    "saved_battery_sha256": "e5292a63ac96c76e47c52eedb25cd0f3bb981b13b91366a79e3d205a56ad76ba",
+    "passed": true
+  },
+  "browser_checkpoint_reload": {
+    "same_browser_context": true,
+    "session_snapshot_restored": true,
+    "complete_character_record_equal": true,
+    "passed": true
+  },
+  "normal_controller_frames": 16831,
+  "ordinary_button_input_count": 190,
+  "native_battery_cold_continue": {
+    "new_browser_context": true,
+    "browser_snapshot_loaded": false,
+    "complete_saved_record_equal": true,
+    "passed": true
+  },
+  "browser_audio": {
+    "started": 10,
+    "sample_count": 87040,
+    "nonzero_count": 70862,
+    "context_states": [
+      "running"
+    ],
+    "actual_native_samples": true,
+    "human_listening_verified": false,
+    "passed": true
+  },
+  "pause_resume": {
+    "paused_native_frames_unchanged": true,
+    "resume_native_frames_advance": true,
+    "passed": true
+  },
+  "visible_keyboard": {
+    "arrow_keydown": true,
+    "keyup_releases": true,
+    "blur_pauses_and_releases_all": true,
+    "passed": true
+  },
+  "sound_preference": {
+    "visible_toggle": true,
+    "mute_persists_across_reload": true,
+    "passed": true
+  },
+  "self_contained": {
+    "local_document_http_requests": [
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html",
+      "http://localhost:39527/peon_of_warcraft_v0_2_10_player.html"
+    ],
+    "external_http_requests": [],
+    "javascript_errors": [],
+    "embedded_rom_js_wasm": true,
+    "passed": true
+  },
+  "responsive_ui": {
+    "desktop_width": 1280,
+    "phone_width": 390,
+    "horizontal_overflow": false,
+    "phone_touch_start": true,
+    "native_character_menu_opened_by_touch": true,
+    "touch_release_not_sticky": true,
+    "touch_cancel_releases": true,
+    "expanded_license_no_overflow": true,
+    "narrow_phone_width": 320,
+    "passed": true
+  },
+  "frozen_inputs_unchanged_after_run": {
+    "rom": true,
+    "html": true,
+    "passed": true
+  },
+  "duration_seconds": 36.78,
+  "status": "PASS",
+  "passed": true
+}

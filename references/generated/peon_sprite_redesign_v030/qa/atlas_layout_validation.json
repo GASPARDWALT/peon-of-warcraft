@@ -1,0 +1,301 @@
+{
+  "pass": true,
+  "scope": "Read-only final native atlas and reordered gallery check; no ROM integration claim.",
+  "atlas": {
+    "width": 208,
+    "height": 236,
+    "order": [
+      "base",
+      "shaman",
+      "warrior",
+      "warlock"
+    ],
+    "nativePNGsCompared": 24,
+    "pixelComparisons": 25856,
+    "binaryAlpha": true,
+    "transparentPixels": 35305,
+    "opaquePixels": 13783,
+    "emptySlotsTransparent": true,
+    "sha256": "9d2a48cdf851ca55929fb75184a1856b9a2df738289fa9beb5d0bef6184cb76c",
+    "layoutSha256": "ff5b798c7159081f773783eb0352c5f7e1b27d2ebc11a27428c69e87f73dd8af",
+    "placements": [
+      {
+        "source": "sprites/base/world_front.png",
+        "x": 0,
+        "y": 20,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "3418bdc5fb53a2d539423ac01dacb819fe71f0302504680fca3f3c1067a709b6",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/base/world_back.png",
+        "x": 20,
+        "y": 20,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "3e862ed2d893a144009015e5154e9d6774cde15bca9928acfa4494e506b01c37",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/base/world_left.png",
+        "x": 40,
+        "y": 20,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "c44d7894180de78013f6f43365841b4f94f3be747ad54b845a74f1a1228acded",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/base/world_right.png",
+        "x": 60,
+        "y": 20,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "83f8138532a22d50ded0ab09f8acdda9939174de674ea94536cb3e24398ed408",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/base/combat_front.png",
+        "x": 92,
+        "y": 0,
+        "width": 56,
+        "height": 56,
+        "sourceSha256": "79c582446abb3a0bba8ab6bf549a8b5cd8713815da6cf4d48ff1bea2076e3b14",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/base/combat_back.png",
+        "x": 160,
+        "y": 4,
+        "width": 48,
+        "height": 48,
+        "sourceSha256": "cbbd5041bdf4e0ffdc3730243ffe433682ff4ed35adb44955b8a93a4dcdb14c3",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/world_front.png",
+        "x": 0,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "031327d345cdbf1c002ade6a8b9c80f263cbadb5c86e45b1729fde501f967c49",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/world_back.png",
+        "x": 20,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "bc7466177e2ee42f59c4ff2d17806b2651532f31258aa1a6ed6b010c82e913fa",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/world_left.png",
+        "x": 40,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "5137ae377735e09e51470e82b62295ab962a9bb25cc6cd5fdc03bdb83e780bbd",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/world_right.png",
+        "x": 60,
+        "y": 80,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "79c6a7300b418e96f18b986e26f619a0ac867427291574ee9f1131d07a6c48bd",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/combat_front.png",
+        "x": 92,
+        "y": 60,
+        "width": 56,
+        "height": 56,
+        "sourceSha256": "9e0b59a245ae3421b4d6fa3af92f90bd61f0f62b287dee54b8459488691e8d83",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/shaman/combat_back.png",
+        "x": 160,
+        "y": 64,
+        "width": 48,
+        "height": 48,
+        "sourceSha256": "04ebd2cfed91470758c8791bdddfd7af0651c9d4177967d9e710d4a9e71c78c4",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/world_front.png",
+        "x": 0,
+        "y": 140,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "31053f16e8d5c0d6bf96c38963484a8a9ef0b086a6f0a52b2a6e3f6e4926f16d",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/world_back.png",
+        "x": 20,
+        "y": 140,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "8b23b789257a97dadc77e612c9df94e52dd03be83eb0dcf5789fb3365ffbbe99",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/world_left.png",
+        "x": 40,
+        "y": 140,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "7dc958b81b89727626f74a35c428a01b18dd1e22ea178b023ca601f79366a071",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/world_right.png",
+        "x": 60,
+        "y": 140,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "34ff7e8b159d26866864241f9e817e8ecb8fdcc381feaab45541486b3a1b0761",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/combat_front.png",
+        "x": 92,
+        "y": 120,
+        "width": 56,
+        "height": 56,
+        "sourceSha256": "2fe1307c9bae00d899897f624c0ab410323fe587b22e73c5be9223790efd732e",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warrior/combat_back.png",
+        "x": 160,
+        "y": 124,
+        "width": 48,
+        "height": 48,
+        "sourceSha256": "1990fa49943b0c729a9d03976e43de594836438dd6dab388c0cbed10f5270400",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/world_front.png",
+        "x": 0,
+        "y": 200,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "ba0169c29d065736345608af1378d4d0175bb77094ea1adff904db32f44b8b10",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/world_back.png",
+        "x": 20,
+        "y": 200,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "80bf0854afddfbff74d9a9a21bd3085e97e551f2b1c037e49f838cc0ffe7a904",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/world_left.png",
+        "x": 40,
+        "y": 200,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "7041ca7e814c4928b0852afd9a47c8acf6be770740c26b7018e0b70e85fc9c8e",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/world_right.png",
+        "x": 60,
+        "y": 200,
+        "width": 16,
+        "height": 16,
+        "sourceSha256": "1dee5720779ca25d4d7cc1268ce37e6b7f5fb10f00a53d6eed793010469dcf72",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/combat_front.png",
+        "x": 92,
+        "y": 180,
+        "width": 56,
+        "height": 56,
+        "sourceSha256": "4833b0d3efa7b20f206de5312efaa7695a489e46d03e8cd98a29eb7f0a3a5f22",
+        "allRGBAEqual": true
+      },
+      {
+        "source": "sprites/warlock/combat_back.png",
+        "x": 160,
+        "y": 184,
+        "width": 48,
+        "height": 48,
+        "sourceSha256": "2b061194b8ee44ea9392b2d281a1491d0f27fa5f0584b62a286f18be60baef92",
+        "allRGBAEqual": true
+      }
+    ]
+  },
+  "previews": [
+    {
+      "file": "peon_four_classes_sheet_4x.png",
+      "width": 832,
+      "height": 944,
+      "scale": 4,
+      "everyRGBARepeatedExactly": true,
+      "sha256": "4310a844188e5fdfbce35d83eaa4fa3e3357e56d810b2139be38e2714bd85ffb"
+    },
+    {
+      "file": "peon_four_classes_sheet_8x.png",
+      "width": 1664,
+      "height": 1888,
+      "scale": 8,
+      "everyRGBARepeatedExactly": true,
+      "sha256": "38ba91335d7454bbc77c000686dcd7c1bbd76ab83af17ff2d2263a98c7e0abec"
+    }
+  ],
+  "browser": {
+    "desktop": {
+      "allImagesLoaded": 56,
+      "nativeImagesLoaded": 24,
+      "sectionOrder": [
+        "atlas",
+        "base",
+        "shaman",
+        "warrior",
+        "warlock",
+        "selection",
+        "references"
+      ],
+      "atlasIntrinsicDimensions": [
+        832,
+        944
+      ],
+      "localLinksHTTP200": 33,
+      "horizontalOverflow": false
+    },
+    "mobile": {
+      "allImagesLoaded": 56,
+      "nativeImagesLoaded": 24,
+      "sectionOrder": [
+        "atlas",
+        "base",
+        "shaman",
+        "warrior",
+        "warlock",
+        "selection",
+        "references"
+      ],
+      "atlasIntrinsicDimensions": [
+        832,
+        944
+      ],
+      "localLinksHTTP200": 33,
+      "horizontalOverflow": false
+    },
+    "httpFailures": 0,
+    "javascriptErrors": 0
+  },
+  "errors": []
+}

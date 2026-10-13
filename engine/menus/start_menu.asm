@@ -229,7 +229,7 @@ StartMenu::
 	db "Change settings@"
 
 .ExitDesc:
-	db "Close this menu@"
+	db "Return to title@"
 
 .QuitDesc:
 	db "Leave contest@"
@@ -440,10 +440,16 @@ endr
 	ret
 
 StartMenu_Exit:
-; Exit the menu.
-
-	ld a, 1
-	ret
+; Restart the presentation without writing a save. B still closes this menu.
+; Require release so the confirmation cannot also dismiss the title after Reset
+; clears the old input history. Held browser touch/keyboard input behaves alike.
+.release
+	call DelayFrame
+	call GetJoypad
+	ldh a, [hJoyDown]
+	and A_BUTTON | START
+	jr nz, .release
+	jp Reset
 
 StartMenu_Quit:
 ; Retire from the bug catching contest.

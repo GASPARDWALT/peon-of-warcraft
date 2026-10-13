@@ -1,0 +1,47 @@
+{
+  "version": "0.2.10",
+  "base_rom_sha256": "4530c718bf299ec9e1c8de8c52895906a81024345bd60717cd5c99dbd30b8a93",
+  "rom_sha256": "0e2d747636788211b9a046df698ef9fecdafd1166e0514381815fd88ed22bb66",
+  "rom_bytes": 2097152,
+  "cgb_only": true,
+  "mapper": "MBC3+RTC+RAM+battery",
+  "save_ram_bytes": 32768,
+  "exit_returns_to_title": true,
+  "requires_confirmation_release": true,
+  "b_closes_menu": true,
+  "exit_autosaves": false,
+  "new_sprite_art_integrated": false,
+  "save_layout_changed": false,
+  "physical_chromatic_tested": false,
+  "devday_flash_tested": false,
+  "native_source_changed": [
+    "engine/menus/start_menu.asm"
+  ],
+  "passed_reports": [
+    {
+      "file": "exit_title_v0210/validation.json",
+      "sha256": "fa2f1ed6b09dece23c5df62d93dcf50cf831d3c908cb4d397b83384f5fb0f44e"
+    },
+    {
+      "file": "browser_player_v0210/validation.json",
+      "sha256": "fd865c23bdbe4d24207fe8607c1fc54074c6666640bebbe468c19689b7e5a846"
+    },
+    {
+      "file": "browser_player_v0210/warrior/validation.json",
+      "sha256": "888aa8fc71de849f4f653002dbc55fcf8b424f970a048c40d28106dd38533f6f"
+    },
+    {
+      "file": "browser_player_v0210/warlock/validation.json",
+      "sha256": "2cd5655d3ea8fc79486fb30352e443943a65d6e13215befc89ca35935fbf610e"
+    },
+    {
+      "file": "browser_player_v0210/core/validation.json",
+      "sha256": "fdfc9cb770beb1863030705c230ea28744f6cea424f11a927c3a8ebe5a24bdee"
+    },
+    {
+      "file": "browser_player_v0210/core/reset_lifecycle_validation.json",
+      "sha256": "680019f693104a297388a20766ebba8cb49ba20981fc3d912fc6bc931a9e82a6"
+    }
+  ],
+  "browser_player_sha256": "d71835c5de14e8f345e538c720a1957a14049620b637d4d65f79ca56c86a8fa7"
+}

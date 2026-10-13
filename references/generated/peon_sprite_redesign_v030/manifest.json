@@ -1,0 +1,2774 @@
+{
+  "schema": "peon-independent-sprite-art-v1",
+  "title": "Péon — nouvelle direction artistique",
+  "status": "Art source indépendant : aucune modification de la ROM",
+  "nativeIntegration": false,
+  "expectedNativeCount": 24,
+  "nativeCount": 24,
+  "complete": true,
+  "missing": [],
+  "validation": {
+    "exactDimensions": true,
+    "binaryNativeAlpha": true,
+    "previews": "nearest-neighbor integer repetition",
+    "paletteReduction": "none"
+  },
+  "characters": [
+    {
+      "id": "base",
+      "name": "Péon — base",
+      "description": "Peau verte, crête noire et habits modestes ; silhouette commune aux trois apprentis.",
+      "entries": [
+        {
+          "character": "base",
+          "pose": "world_front",
+          "title": "Monde — face",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/base/world_front.png",
+          "preview": "previews/base/world_front_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 120,
+          "opaquePixels": 120,
+          "transparentPixels": 136,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 13,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 43
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 26
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#dfac6bff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "3418bdc5fb53a2d539423ac01dacb819fe71f0302504680fca3f3c1067a709b6",
+          "bytes": 405
+        },
+        {
+          "character": "base",
+          "pose": "world_back",
+          "title": "Monde — dos",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/base/world_back.png",
+          "preview": "previews/base/world_back_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 120,
+          "opaquePixels": 120,
+          "transparentPixels": 136,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 9,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 46
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "3e862ed2d893a144009015e5154e9d6774cde15bca9928acfa4494e506b01c37",
+          "bytes": 387
+        },
+        {
+          "character": "base",
+          "pose": "world_left",
+          "title": "Monde — gauche",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/base/world_left.png",
+          "preview": "previews/base/world_left_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 110,
+          "opaquePixels": 110,
+          "transparentPixels": 146,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 12,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 42
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 19
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "c44d7894180de78013f6f43365841b4f94f3be747ad54b845a74f1a1228acded",
+          "bytes": 380
+        },
+        {
+          "character": "base",
+          "pose": "world_right",
+          "title": "Monde — droite",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/base/world_right.png",
+          "preview": "previews/base/world_right_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 113,
+          "opaquePixels": 113,
+          "transparentPixels": 143,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 12,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 44
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 20
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "83f8138532a22d50ded0ab09f8acdda9939174de674ea94536cb3e24398ed408",
+          "bytes": 386
+        },
+        {
+          "character": "base",
+          "pose": "combat_front",
+          "title": "Combat — face",
+          "width": 56,
+          "height": 56,
+          "file": "sprites/base/combat_front.png",
+          "preview": "previews/base/combat_front_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1478,
+          "opaquePixels": 1478,
+          "transparentPixels": 1658,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 23,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 444
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 223
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 129
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 122
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 81
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 64
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 63
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 62
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 35
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 34
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 20
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#d4be87ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#fff6d7ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#f5e2b4ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#564b36ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#353c40ff",
+              "pixels": 2
+            }
+          ],
+          "sha256": "79c582446abb3a0bba8ab6bf549a8b5cd8713815da6cf4d48ff1bea2076e3b14",
+          "bytes": 3576
+        },
+        {
+          "character": "base",
+          "pose": "combat_back",
+          "title": "Combat — dos",
+          "width": 48,
+          "height": 48,
+          "file": "sprites/base/combat_back.png",
+          "preview": "previews/base/combat_back_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1196,
+          "opaquePixels": 1196,
+          "transparentPixels": 1108,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 18,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 392
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 170
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 118
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 79
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 54
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 48
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 27
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 24
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 16
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "cbbd5041bdf4e0ffdc3730243ffe433682ff4ed35adb44955b8a93a4dcdb14c3",
+          "bytes": 2804
+        }
+      ]
+    },
+    {
+      "id": "shaman",
+      "name": "Péon — apprenti shaman",
+      "description": "Habits de cuir simples, bouclier de bois, masse rudimentaire et petit totem porté dans le dos.",
+      "entries": [
+        {
+          "character": "shaman",
+          "pose": "world_front",
+          "title": "Monde — face",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/shaman/world_front.png",
+          "preview": "previews/shaman/world_front_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 147,
+          "opaquePixels": 147,
+          "transparentPixels": 109,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 16,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 47
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 22
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 16
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#644223ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#dfac6bff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "031327d345cdbf1c002ade6a8b9c80f263cbadb5c86e45b1729fde501f967c49",
+          "bytes": 495
+        },
+        {
+          "character": "shaman",
+          "pose": "world_back",
+          "title": "Monde — dos",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/shaman/world_back.png",
+          "preview": "previews/shaman/world_back_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 138,
+          "opaquePixels": 138,
+          "transparentPixels": 118,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 15,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 43
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 17
+            },
+            {
+              "rgba": "#f0bb5aff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#644223ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#bc802cff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#7f4f22ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "bc7466177e2ee42f59c4ff2d17806b2651532f31258aa1a6ed6b010c82e913fa",
+          "bytes": 472
+        },
+        {
+          "character": "shaman",
+          "pose": "world_left",
+          "title": "Monde — gauche",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/shaman/world_left.png",
+          "preview": "previews/shaman/world_left_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 136,
+          "opaquePixels": 136,
+          "transparentPixels": 120,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 18,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 42
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#644223ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#f0bb5aff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#bc802cff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#7f4f22ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "5137ae377735e09e51470e82b62295ab962a9bb25cc6cd5fdc03bdb83e780bbd",
+          "bytes": 478
+        },
+        {
+          "character": "shaman",
+          "pose": "world_right",
+          "title": "Monde — droite",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/shaman/world_right.png",
+          "preview": "previews/shaman/world_right_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 137,
+          "opaquePixels": 137,
+          "transparentPixels": 119,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 17,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 49
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 20
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#f0bb5aff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#bc802cff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#7f4f22ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "79c6a7300b418e96f18b986e26f619a0ac867427291574ee9f1131d07a6c48bd",
+          "bytes": 466
+        },
+        {
+          "character": "shaman",
+          "pose": "combat_front",
+          "title": "Combat — face",
+          "width": 56,
+          "height": 56,
+          "file": "sprites/shaman/combat_front.png",
+          "preview": "previews/shaman/combat_front_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1672,
+          "opaquePixels": 1672,
+          "transparentPixels": 1464,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 23,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 588
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 156
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 154
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 110
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 93
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 87
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 76
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 59
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 56
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 49
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 48
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 38
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 35
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 26
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#f5e2b4ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#d4be87ff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#fff6d7ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#353c40ff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#564b36ff",
+              "pixels": 2
+            }
+          ],
+          "sha256": "9e0b59a245ae3421b4d6fa3af92f90bd61f0f62b287dee54b8459488691e8d83",
+          "bytes": 4027
+        },
+        {
+          "character": "shaman",
+          "pose": "combat_back",
+          "title": "Combat — dos",
+          "width": 48,
+          "height": 48,
+          "file": "sprites/shaman/combat_back.png",
+          "preview": "previews/shaman/combat_back_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1329,
+          "opaquePixels": 1329,
+          "transparentPixels": 975,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 24,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 478
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 177
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 69
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 68
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 67
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 57
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 47
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 44
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 37
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 34
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 30
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#e5b463ff",
+              "pixels": 21
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#fff6d7ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#d4be87ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#978469ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#564b36ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#353c40ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "04ebd2cfed91470758c8791bdddfd7af0651c9d4177967d9e710d4a9e71c78c4",
+          "bytes": 3205
+        }
+      ]
+    },
+    {
+      "id": "warrior",
+      "name": "Péon — apprenti guerrier",
+      "description": "Habits modestes, une épaulière en mailles sur une seule épaule et une grande hache.",
+      "entries": [
+        {
+          "character": "warrior",
+          "pose": "world_front",
+          "title": "Monde — face",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warrior/world_front.png",
+          "preview": "previews/warrior/world_front_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 140,
+          "opaquePixels": 140,
+          "transparentPixels": 116,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 15,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 46
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 22
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 19
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#dfac6bff",
+              "pixels": 2
+            }
+          ],
+          "sha256": "31053f16e8d5c0d6bf96c38963484a8a9ef0b086a6f0a52b2a6e3f6e4926f16d",
+          "bytes": 466
+        },
+        {
+          "character": "warrior",
+          "pose": "world_back",
+          "title": "Monde — dos",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warrior/world_back.png",
+          "preview": "previews/warrior/world_back_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 138,
+          "opaquePixels": 138,
+          "transparentPixels": 118,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 12,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 50
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 23
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "8b23b789257a97dadc77e612c9df94e52dd03be83eb0dcf5789fb3365ffbbe99",
+          "bytes": 454
+        },
+        {
+          "character": "warrior",
+          "pose": "world_left",
+          "title": "Monde — gauche",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warrior/world_left.png",
+          "preview": "previews/warrior/world_left_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 125,
+          "opaquePixels": 125,
+          "transparentPixels": 131,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 14,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 47
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 19
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "7dc958b81b89727626f74a35c428a01b18dd1e22ea178b023ca601f79366a071",
+          "bytes": 422
+        },
+        {
+          "character": "warrior",
+          "pose": "world_right",
+          "title": "Monde — droite",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warrior/world_right.png",
+          "preview": "previews/warrior/world_right_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 130,
+          "opaquePixels": 130,
+          "transparentPixels": 126,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 15,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 47
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 19
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#8c9394ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#583321ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#f0ecd0ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#bdc5bdff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#d9c099ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "34ff7e8b159d26866864241f9e817e8ecb8fdcc381feaab45541486b3a1b0761",
+          "bytes": 441
+        },
+        {
+          "character": "warrior",
+          "pose": "combat_front",
+          "title": "Combat — face",
+          "width": 56,
+          "height": 56,
+          "file": "sprites/warrior/combat_front.png",
+          "preview": "previews/warrior/combat_front_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1635,
+          "opaquePixels": 1635,
+          "transparentPixels": 1501,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 23,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 495
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 185
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 103
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 99
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 98
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 82
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 78
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 74
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 66
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 61
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 35
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 30
+            },
+            {
+              "rgba": "#353c40ff",
+              "pixels": 27
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 23
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#d4be87ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#fff6d7ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#f5e2b4ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#564b36ff",
+              "pixels": 2
+            }
+          ],
+          "sha256": "2fe1307c9bae00d899897f624c0ab410323fe587b22e73c5be9223790efd732e",
+          "bytes": 4041
+        },
+        {
+          "character": "warrior",
+          "pose": "combat_back",
+          "title": "Combat — dos",
+          "width": 48,
+          "height": 48,
+          "file": "sprites/warrior/combat_back.png",
+          "preview": "previews/warrior/combat_back_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1323,
+          "opaquePixels": 1323,
+          "transparentPixels": 981,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 19,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 437
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 162
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 112
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 87
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 85
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 70
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 66
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 58
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 56
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 48
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 30
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 22
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 19
+            },
+            {
+              "rgba": "#353c40ff",
+              "pixels": 18
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "1990fa49943b0c729a9d03976e43de594836438dd6dab388c0cbed10f5270400",
+          "bytes": 3206
+        }
+      ]
+    },
+    {
+      "id": "warlock",
+      "name": "Péon — apprenti démoniste",
+      "description": "Robe mauve déchirée, bâton de bois et yeux transformés ; visage et crête du péon conservés.",
+      "entries": [
+        {
+          "character": "warlock",
+          "pose": "world_front",
+          "title": "Monde — face",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warlock/world_front.png",
+          "preview": "previews/warlock/world_front_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 137,
+          "opaquePixels": 137,
+          "transparentPixels": 119,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 14,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 46
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 21
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#794d75ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#a06a96ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#55364fff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#dce998ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "ba0169c29d065736345608af1378d4d0175bb77094ea1adff904db32f44b8b10",
+          "bytes": 468
+        },
+        {
+          "character": "warlock",
+          "pose": "world_back",
+          "title": "Monde — dos",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warlock/world_back.png",
+          "preview": "previews/warlock/world_back_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 141,
+          "opaquePixels": 141,
+          "transparentPixels": 115,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 11,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 52
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 20
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#a06a96ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#55364fff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#794d75ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "80bf0854afddfbff74d9a9a21bd3085e97e551f2b1c037e49f838cc0ffe7a904",
+          "bytes": 468
+        },
+        {
+          "character": "warlock",
+          "pose": "world_left",
+          "title": "Monde — gauche",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warlock/world_left.png",
+          "preview": "previews/warlock/world_left_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 126,
+          "opaquePixels": 126,
+          "transparentPixels": 130,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 14,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 43
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 16
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 15
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 12
+            },
+            {
+              "rgba": "#794d75ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#a06a96ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#55364fff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#dce998ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "7041ca7e814c4928b0852afd9a47c8acf6be770740c26b7018e0b70e85fc9c8e",
+          "bytes": 445
+        },
+        {
+          "character": "warlock",
+          "pose": "world_right",
+          "title": "Monde — droite",
+          "width": 16,
+          "height": 16,
+          "file": "sprites/warlock/world_right.png",
+          "preview": "previews/warlock/world_right_8x.png",
+          "previewScale": 8,
+          "nonTransparentPixels": 130,
+          "opaquePixels": 130,
+          "transparentPixels": 126,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 14,
+          "mostUsedColors": [
+            {
+              "rgba": "#101512ff",
+              "pixels": 45
+            },
+            {
+              "rgba": "#618c3cff",
+              "pixels": 18
+            },
+            {
+              "rgba": "#8ab449ff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#89522dff",
+              "pixels": 14
+            },
+            {
+              "rgba": "#a06a96ff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#794d75ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#ba7a3eff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#34343aff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#080e0cff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#3c622fff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#dce998ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#fff0c6ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#ebeee4ff",
+              "pixels": 1
+            },
+            {
+              "rgba": "#55364fff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "1dee5720779ca25d4d7cc1268ce37e6b7f5fb10f00a53d6eed793010469dcf72",
+          "bytes": 457
+        },
+        {
+          "character": "warlock",
+          "pose": "combat_front",
+          "title": "Combat — face",
+          "width": 56,
+          "height": 56,
+          "file": "sprites/warlock/combat_front.png",
+          "preview": "previews/warlock/combat_front_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1720,
+          "opaquePixels": 1720,
+          "transparentPixels": 1416,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 29,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 568
+            },
+            {
+              "rgba": "#705078ff",
+              "pixels": 177
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 171
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 102
+            },
+            {
+              "rgba": "#956698ff",
+              "pixels": 98
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 71
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 70
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 69
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 67
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 64
+            },
+            {
+              "rgba": "#513b59ff",
+              "pixels": 60
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 38
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 35
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 24
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 17
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 13
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#b989b8ff",
+              "pixels": 11
+            },
+            {
+              "rgba": "#d4be87ff",
+              "pixels": 8
+            },
+            {
+              "rgba": "#564b36ff",
+              "pixels": 7
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#fff6d7ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#f5e2b4ff",
+              "pixels": 6
+            },
+            {
+              "rgba": "#eef1e7ff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 5
+            },
+            {
+              "rgba": "#362b3cff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#dadd70ff",
+              "pixels": 3
+            },
+            {
+              "rgba": "#f3efacff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#626a71ff",
+              "pixels": 2
+            }
+          ],
+          "sha256": "4833b0d3efa7b20f206de5312efaa7695a489e46d03e8cd98a29eb7f0a3a5f22",
+          "bytes": 4217
+        },
+        {
+          "character": "warlock",
+          "pose": "combat_back",
+          "title": "Combat — dos",
+          "width": 48,
+          "height": 48,
+          "file": "sprites/warlock/combat_back.png",
+          "preview": "previews/warlock/combat_back_4x.png",
+          "previewScale": 4,
+          "nonTransparentPixels": 1342,
+          "opaquePixels": 1342,
+          "transparentPixels": 962,
+          "intermediateAlphaPixels": 0,
+          "minimumNonzeroAlpha": 255,
+          "maximumAlpha": 255,
+          "nonTransparentColors": 20,
+          "mostUsedColors": [
+            {
+              "rgba": "#101410ff",
+              "pixels": 436
+            },
+            {
+              "rgba": "#705078ff",
+              "pixels": 183
+            },
+            {
+              "rgba": "#65964bff",
+              "pixels": 111
+            },
+            {
+              "rgba": "#956698ff",
+              "pixels": 109
+            },
+            {
+              "rgba": "#513b59ff",
+              "pixels": 81
+            },
+            {
+              "rgba": "#805024ff",
+              "pixels": 73
+            },
+            {
+              "rgba": "#88b35aff",
+              "pixels": 52
+            },
+            {
+              "rgba": "#457343ff",
+              "pixels": 49
+            },
+            {
+              "rgba": "#5a351dff",
+              "pixels": 49
+            },
+            {
+              "rgba": "#191b1bff",
+              "pixels": 48
+            },
+            {
+              "rgba": "#a96f32ff",
+              "pixels": 37
+            },
+            {
+              "rgba": "#3a2418ff",
+              "pixels": 29
+            },
+            {
+              "rgba": "#2c2e31ff",
+              "pixels": 25
+            },
+            {
+              "rgba": "#294b32ff",
+              "pixels": 24
+            },
+            {
+              "rgba": "#afd478ff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#b989b8ff",
+              "pixels": 10
+            },
+            {
+              "rgba": "#414247ff",
+              "pixels": 9
+            },
+            {
+              "rgba": "#ca9149ff",
+              "pixels": 4
+            },
+            {
+              "rgba": "#949da4ff",
+              "pixels": 2
+            },
+            {
+              "rgba": "#c7d0d3ff",
+              "pixels": 1
+            }
+          ],
+          "sha256": "2b061194b8ee44ea9392b2d281a1491d0f27fa5f0584b62a286f18be60baef92",
+          "bytes": 3230
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "file": "originals/archive/peon_shaman_initial_rectangular_totem_reference.png",
+      "bytes": 1902876,
+      "sha256": "e17105f777e9f2ea674c4398cc9418d5b30ff0bd502654922e7e3e30b5270db7",
+      "width": 1536,
+      "height": 1024,
+      "intermediateAlphaPixels": 698985,
+      "kind": "preserved-earlier-design-reference"
+    },
+    {
+      "file": "originals/peon_base_design_reference.png",
+      "bytes": 1617008,
+      "sha256": "ab2dde71d2a12778be265e55169eb9a1692a627a8771abcc7c7aa4b2da475ab1",
+      "width": 1536,
+      "height": 1024,
+      "intermediateAlphaPixels": 680403,
+      "kind": "unchanged-design-reference"
+    },
+    {
+      "file": "originals/peon_shaman_totemic_design_reference.png",
+      "bytes": 2100082,
+      "sha256": "740053366b7da897d7daef3744616e7eb060937f2f6ded06003ff31702fa6c27",
+      "width": 1536,
+      "height": 1024,
+      "intermediateAlphaPixels": 772476,
+      "kind": "unchanged-design-reference"
+    },
+    {
+      "file": "originals/peon_warlock_design_reference.png",
+      "bytes": 1867021,
+      "sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "width": 1536,
+      "height": 1024,
+      "intermediateAlphaPixels": 674766,
+      "kind": "unchanged-design-reference"
+    },
+    {
+      "file": "originals/peon_warrior_design_reference.png",
+      "bytes": 1803841,
+      "sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "width": 1536,
+      "height": 1024,
+      "intermediateAlphaPixels": 725518,
+      "kind": "unchanged-design-reference"
+    }
+  ],
+  "supplementary": [
+    {
+      "file": "combat_contact_sheet.png",
+      "bytes": 27606,
+      "sha256": "cd7c878b4626ef4d71dd708c645166e4b1c3fb114cf979ca2fc9c08557e8e76a",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "combat_contact_sheet_8x.png",
+      "bytes": 1519915,
+      "sha256": "e4bd4f0d3931e245148a01d6c1c8d17b7b7699a4bc27327f49d064345e6cc5b2",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "combat_contact_sheet_checker.png",
+      "bytes": 31107,
+      "sha256": "9c16e31d5973b14a4fa58e8045aaa973e1d3a6fff66f1a4aa479c9d2f4eca676",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "combat_contact_sheet_checker_8x.png",
+      "bytes": 3184459,
+      "sha256": "5bb7f7ab7105c518efa90aed1e24f60db5dcac84c7341956e1733adaa2008878",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "peon_four_classes_native_sheet.png",
+      "bytes": 35061,
+      "sha256": "9d2a48cdf851ca55929fb75184a1856b9a2df738289fa9beb5d0bef6184cb76c",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "peon_four_classes_sheet_4x.png",
+      "bytes": 489540,
+      "sha256": "4310a844188e5fdfbce35d83eaa4fa3e3357e56d810b2139be38e2714bd85ffb",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "peon_four_classes_sheet_8x.png",
+      "bytes": 1871934,
+      "sha256": "38ba91335d7454bbc77c000686dcd7c1bbd76ab83af17ff2d2263a98c7e0abec",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "world_contact_sheet.png",
+      "bytes": 6452,
+      "sha256": "518446ea4a8f30b4eee8b1d250541875b105a585183b5e560a18d582346bc2a0",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "world_contact_sheet_8x.png",
+      "bytes": 269387,
+      "sha256": "d6945bb2337b6dc777612681106680fa514195d5ba7c75b8b5f9c2790597ada3",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "world_contact_sheet_checker.png",
+      "bytes": 8156,
+      "sha256": "8d3812a24876714db0b52366279cdd308d4370691140197d30596f6e6e299a05",
+      "kind": "art-contact-sheet-or-preview"
+    },
+    {
+      "file": "world_contact_sheet_checker_8x.png",
+      "bytes": 1169153,
+      "sha256": "73d8e5f519e2c3e3685a675d4fce48468c82c3717d7592831eb7bf3ccf68536d",
+      "kind": "art-contact-sheet-or-preview"
+    }
+  ],
+  "classMasterSelection": {
+    "integratedInROM": false,
+    "states": [
+      {
+        "id": "kento",
+        "name": "Kento Brandenhoof",
+        "file": "selection/class_master_kento_160x144.png",
+        "width": 160,
+        "height": 144,
+        "nonTransparentPixels": 23040,
+        "opaquePixels": 23040,
+        "transparentPixels": 0,
+        "intermediateAlphaPixels": 0,
+        "minimumNonzeroAlpha": 255,
+        "maximumAlpha": 255,
+        "nonTransparentColors": 26,
+        "mostUsedColors": [
+          {
+            "rgba": "#080810ff",
+            "pixels": 7460
+          },
+          {
+            "rgba": "#211919ff",
+            "pixels": 4116
+          },
+          {
+            "rgba": "#100810ff",
+            "pixels": 2060
+          },
+          {
+            "rgba": "#4a2921ff",
+            "pixels": 1832
+          },
+          {
+            "rgba": "#b57b3aff",
+            "pixels": 1051
+          },
+          {
+            "rgba": "#f7e6bdff",
+            "pixels": 912
+          },
+          {
+            "rgba": "#7b4229ff",
+            "pixels": 857
+          },
+          {
+            "rgba": "#312119ff",
+            "pixels": 732
+          },
+          {
+            "rgba": "#efbd73ff",
+            "pixels": 619
+          },
+          {
+            "rgba": "#5a3a21ff",
+            "pixels": 519
+          },
+          {
+            "rgba": "#b5ad8cff",
+            "pixels": 517
+          },
+          {
+            "rgba": "#21314aff",
+            "pixels": 371
+          },
+          {
+            "rgba": "#292931ff",
+            "pixels": 337
+          },
+          {
+            "rgba": "#5aade6ff",
+            "pixels": 292
+          },
+          {
+            "rgba": "#4a2129ff",
+            "pixels": 231
+          },
+          {
+            "rgba": "#d6b57bff",
+            "pixels": 173
+          },
+          {
+            "rgba": "#8c633aff",
+            "pixels": 157
+          },
+          {
+            "rgba": "#84293aff",
+            "pixels": 141
+          },
+          {
+            "rgba": "#b58452ff",
+            "pixels": 134
+          },
+          {
+            "rgba": "#7b7b8cff",
+            "pixels": 120
+          },
+          {
+            "rgba": "#f7e6b5ff",
+            "pixels": 120
+          },
+          {
+            "rgba": "#3a5a7bff",
+            "pixels": 115
+          },
+          {
+            "rgba": "#424a52ff",
+            "pixels": 82
+          },
+          {
+            "rgba": "#6b9ca5ff",
+            "pixels": 46
+          },
+          {
+            "rgba": "#bd4242ff",
+            "pixels": 36
+          },
+          {
+            "rgba": "#bdc5ceff",
+            "pixels": 10
+          }
+        ],
+        "sha256": "e9ea81fa8383d557a8a01d54595e1e6adb0447c04bd7fe050972b6aa2158000a",
+        "bytes": 12270
+      },
+      {
+        "id": "zogzog",
+        "name": "MoCMoc Zogzog",
+        "file": "selection/class_master_zogzog_160x144.png",
+        "width": 160,
+        "height": 144,
+        "nonTransparentPixels": 23040,
+        "opaquePixels": 23040,
+        "transparentPixels": 0,
+        "intermediateAlphaPixels": 0,
+        "minimumNonzeroAlpha": 255,
+        "maximumAlpha": 255,
+        "nonTransparentColors": 25,
+        "mostUsedColors": [
+          {
+            "rgba": "#080810ff",
+            "pixels": 7494
+          },
+          {
+            "rgba": "#211919ff",
+            "pixels": 4158
+          },
+          {
+            "rgba": "#100810ff",
+            "pixels": 2040
+          },
+          {
+            "rgba": "#4a2921ff",
+            "pixels": 1796
+          },
+          {
+            "rgba": "#b57b3aff",
+            "pixels": 1016
+          },
+          {
+            "rgba": "#f7e6bdff",
+            "pixels": 948
+          },
+          {
+            "rgba": "#292931ff",
+            "pixels": 875
+          },
+          {
+            "rgba": "#7b4229ff",
+            "pixels": 857
+          },
+          {
+            "rgba": "#efbd73ff",
+            "pixels": 620
+          },
+          {
+            "rgba": "#424a52ff",
+            "pixels": 613
+          },
+          {
+            "rgba": "#312119ff",
+            "pixels": 446
+          },
+          {
+            "rgba": "#b5ad8cff",
+            "pixels": 422
+          },
+          {
+            "rgba": "#7b7b8cff",
+            "pixels": 317
+          },
+          {
+            "rgba": "#ef634aff",
+            "pixels": 249
+          },
+          {
+            "rgba": "#5a3a21ff",
+            "pixels": 227
+          },
+          {
+            "rgba": "#84a54aff",
+            "pixels": 211
+          },
+          {
+            "rgba": "#293a29ff",
+            "pixels": 183
+          },
+          {
+            "rgba": "#4a733aff",
+            "pixels": 175
+          },
+          {
+            "rgba": "#4a2129ff",
+            "pixels": 119
+          },
+          {
+            "rgba": "#84293aff",
+            "pixels": 98
+          },
+          {
+            "rgba": "#bdc5ceff",
+            "pixels": 90
+          },
+          {
+            "rgba": "#bd4242ff",
+            "pixels": 31
+          },
+          {
+            "rgba": "#b5ce6bff",
+            "pixels": 21
+          },
+          {
+            "rgba": "#f7e6b5ff",
+            "pixels": 18
+          },
+          {
+            "rgba": "#8c633aff",
+            "pixels": 16
+          }
+        ],
+        "sha256": "1000c95999efb9d9f4f4d2fe08c082c245ebef95ed1bac38f7e25440f4fe40b0",
+        "bytes": 12100
+      },
+      {
+        "id": "xasthur",
+        "name": "Xasthur",
+        "file": "selection/class_master_xasthur_160x144.png",
+        "width": 160,
+        "height": 144,
+        "nonTransparentPixels": 23040,
+        "opaquePixels": 23040,
+        "transparentPixels": 0,
+        "intermediateAlphaPixels": 0,
+        "minimumNonzeroAlpha": 255,
+        "maximumAlpha": 255,
+        "nonTransparentColors": 28,
+        "mostUsedColors": [
+          {
+            "rgba": "#080810ff",
+            "pixels": 7529
+          },
+          {
+            "rgba": "#211919ff",
+            "pixels": 4374
+          },
+          {
+            "rgba": "#100810ff",
+            "pixels": 1946
+          },
+          {
+            "rgba": "#4a2921ff",
+            "pixels": 1805
+          },
+          {
+            "rgba": "#b57b3aff",
+            "pixels": 1191
+          },
+          {
+            "rgba": "#f7e6bdff",
+            "pixels": 888
+          },
+          {
+            "rgba": "#7b4229ff",
+            "pixels": 857
+          },
+          {
+            "rgba": "#efbd73ff",
+            "pixels": 671
+          },
+          {
+            "rgba": "#5a3a6bff",
+            "pixels": 636
+          },
+          {
+            "rgba": "#312142ff",
+            "pixels": 630
+          },
+          {
+            "rgba": "#312119ff",
+            "pixels": 437
+          },
+          {
+            "rgba": "#b5ad8cff",
+            "pixels": 328
+          },
+          {
+            "rgba": "#ad84d6ff",
+            "pixels": 326
+          },
+          {
+            "rgba": "#292931ff",
+            "pixels": 257
+          },
+          {
+            "rgba": "#5a3a21ff",
+            "pixels": 257
+          },
+          {
+            "rgba": "#8c5a9cff",
+            "pixels": 228
+          },
+          {
+            "rgba": "#3a4a4aff",
+            "pixels": 141
+          },
+          {
+            "rgba": "#638473ff",
+            "pixels": 107
+          },
+          {
+            "rgba": "#424a52ff",
+            "pixels": 80
+          },
+          {
+            "rgba": "#a5b59cff",
+            "pixels": 80
+          },
+          {
+            "rgba": "#7b7b8cff",
+            "pixels": 74
+          },
+          {
+            "rgba": "#d6b57bff",
+            "pixels": 68
+          },
+          {
+            "rgba": "#f7e6b5ff",
+            "pixels": 39
+          },
+          {
+            "rgba": "#b584bdff",
+            "pixels": 37
+          },
+          {
+            "rgba": "#b58452ff",
+            "pixels": 28
+          },
+          {
+            "rgba": "#84a54aff",
+            "pixels": 13
+          },
+          {
+            "rgba": "#ced6b5ff",
+            "pixels": 12
+          },
+          {
+            "rgba": "#b5ce6bff",
+            "pixels": 1
+          }
+        ],
+        "sha256": "f9c5f06560db52d069d4bb760968959c6166bb683a9df297afb91a032131630b",
+        "bytes": 12046
+      }
+    ],
+    "files": [
+      {
+        "file": "selection/README.md",
+        "bytes": 1552,
+        "sha256": "646340fb6573aced887433ed8ed4412ac163f32b627e91f0bb5aaca7bf1dfe80",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/build_selection.js",
+        "bytes": 31781,
+        "sha256": "f9c45453c9cfc630935f241b2a94ece1ff9b2a8c4bdaa8d43431da66776db4d5",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_icon_shaman_12x14.png",
+        "bytes": 235,
+        "sha256": "5a93d424c6f6fd63ee67be953df622c0d446d43c3888e104d1db4d0f024f7392",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_icon_warlock_12x14.png",
+        "bytes": 235,
+        "sha256": "24da59f6904893db55790858388ca2ac224d86ffb42c66951d396438326c4082",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_icon_warrior_12x14.png",
+        "bytes": 251,
+        "sha256": "89f62cc8c4ea49489140fa051657bbd422a1ee1ba87de18d4abfb30cd4dd68a1",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_kento_160x144.png",
+        "bytes": 12270,
+        "sha256": "e9ea81fa8383d557a8a01d54595e1e6adb0447c04bd7fe050972b6aa2158000a",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_kento_preview_6x.png",
+        "bytes": 21283,
+        "sha256": "acdad8c4a9b20befc697ef3ecd229693bc5141db47041d64975b20cc6841b1f0",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_selection_contact_sheet.png",
+        "bytes": 35096,
+        "sha256": "62c3469e2a91e19a85dc14d65c34c152da091348c284a401e9638ac27a76f320",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_selection_contact_sheet_4x.png",
+        "bytes": 49679,
+        "sha256": "0476ff4995407ccd27548c316625e5545c6c039e699d22da787c0abaae250667",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_xasthur_160x144.png",
+        "bytes": 12046,
+        "sha256": "f9c5f06560db52d069d4bb760968959c6166bb683a9df297afb91a032131630b",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_xasthur_preview_6x.png",
+        "bytes": 21180,
+        "sha256": "9b1e5840d2bca23f21edf147473b0b8814b51e5e681a1a977130905d5959138d",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_zogzog_160x144.png",
+        "bytes": 12100,
+        "sha256": "1000c95999efb9d9f4f4d2fe08c082c245ebef95ed1bac38f7e25440f4fe40b0",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/class_master_zogzog_preview_6x.png",
+        "bytes": 21115,
+        "sha256": "301e6e7a76d2d8444b4d49a3cdc91b96f239294455217e58d243f21ab939397c",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/index.html",
+        "bytes": 2226,
+        "sha256": "77cb0d822b5174a0b5a7461e0f7b606cb116208e211f4d157099ae6f55093953",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/manifest.json",
+        "bytes": 6067,
+        "sha256": "ac14d8068523a1f04670a18ad549576fbf96ce6269faae32a0466a932b3efa74",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_kento_portrait_64x68.png",
+        "bytes": 3453,
+        "sha256": "3cda83e0b4bb98272ee1f3ed274d8b092e791166b9e93e3a3205fc23babf5d3f",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_kento_portrait_preview_6x.png",
+        "bytes": 5913,
+        "sha256": "5817d6d5eb7e84ca45745ae26370a1286f167e38eee2a4709c8a68109b5298e2",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_xasthur_portrait_64x68.png",
+        "bytes": 3540,
+        "sha256": "99fdca7ee482fa323e11e0bb8700d48fcbbb292e031fb4ca46f63216082c5c26",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_xasthur_portrait_preview_6x.png",
+        "bytes": 6031,
+        "sha256": "6f03149570893cacde841d9f0f18f9e2b37583255923301c9de461fc37c6c33a",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_zogzog_portrait_64x68.png",
+        "bytes": 3271,
+        "sha256": "360ac75d785407a2a7befd2e4e92f6b7bde6057b3db0ff71b5d14cd9e2d4e1bb",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/master_zogzog_portrait_preview_6x.png",
+        "bytes": 5707,
+        "sha256": "40ad1468c1da51876a8dbabcbbe911bbb64dbf33f9aaecae5bb9e6840ed87f75",
+        "kind": "class-master-selection-proposal"
+      },
+      {
+        "file": "selection/visual_review.json",
+        "bytes": 994,
+        "sha256": "ba3cefac907294c7ead2e44d3085ced78540971d5966785b3e87b446040a3733",
+        "kind": "class-master-selection-proposal"
+      }
+    ]
+  }
+}

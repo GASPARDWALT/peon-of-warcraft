@@ -348,6 +348,115 @@ class BrowserSession:
             print("cold Continue text", ["".join(reverse.get(code, "·") for code in tiles[y * 20:(y + 1) * 20]) for y in range(18)], flush=True)
             raise AssertionError("native Continue did not return to Den")
 
+    def exit_to_title(self, saved_record, saved_battery):
+        """Use the actual native EXIT menu, without a reset API or RAM edits."""
+        baseline_title = Image.open(OUT / "browser_native_title.png").convert("RGBA").tobytes()
+        scratch_bank, scratch_start = self.sym["sScratch"]
+        mail_bank, scratch_end = self.sym["sPartyMail"]
+        assert scratch_bank == mail_bank == 0 and (scratch_start, scratch_end) == (0xa000, 0xa600)
+        scratch_changes = []
+
+        def require_preserved_save(stage):
+            actual = bytes(self.page.evaluate("() => Array.from(window.peonPlayer.exportBattery())"))
+            assert len(actual) == len(saved_battery) == 32768
+            changes = [i for i, (old, new) in enumerate(zip(saved_battery, actual)) if old != new]
+            outside_scratch = [i for i in changes if not scratch_start - 0xa000 <= i < scratch_end - 0xa000]
+            assert not outside_scratch, ("native EXIT altered persistent SRAM outside the declared graphics/menu scratch buffer", stage, outside_scratch)
+            scratch_changes.append({"stage": stage, "changed_byte_count": len(changes),
+                                    "changed_flat_sram_offsets": changes})
+        # Move after Save, so Continue must restore the saved location rather
+        # than silently auto-save the current unsaved character position.
+        self.navigate((13, 9))
+        unsaved_record = self.snapshot()
+        assert unsaved_record != saved_record, "EXIT test needs an unsaved location change"
+        assert self.position() != (saved_record["wXCoord"][0], saved_record["wYCoord"][0])
+        self.press("start")
+        for _ in range(12):
+            if self.read("wMenuCursorPosition") == [1]:
+                break
+            self.press("up", 30)
+        assert self.read("wMenuCursorPosition") == [1], "could not normalize native menu cursor"
+        for _ in range(6):
+            self.press("down", 30)
+        assert self.read("wMenuCursorPosition") == [7], "EXIT must be the seventh native Peon menu row"
+        assert self.has_text("Return to title"), "native EXIT description is missing"
+        self.capture("browser_native_exit_selected")
+        require_preserved_save("before_exit")
+        self.press("a", 240)
+        self.capture("browser_exit_returned_native_title")
+        title = Image.open(OUT / "browser_exit_returned_native_title.png").convert("RGBA").tobytes()
+        assert title == baseline_title, "EXIT did not return to the exact native title framebuffer"
+        require_preserved_save("after_exit_native_title")
+        # Browser pause/checkpoint must preserve the title, rather than reopen
+        # an old gameplay checkpoint or lose the actual cartridge battery.
+        self.page.evaluate("() => window.peonPlayer.checkpoint()")
+        self.page.reload(wait_until="load")
+        self.page.wait_for_function("window.peonPlayer.status === 'ready'")
+        assert self.page.locator("#play").inner_text() == "Reprendre ma session"
+        self.page.locator("#play").click()
+        self.page.wait_for_function("window.peonPlayer.status === 'running'")
+        self.page.evaluate("() => window.peonPlayer.pause()")
+        self.step(3)
+        self.capture("browser_exit_title_checkpoint_reload")
+        title = Image.open(OUT / "browser_exit_title_checkpoint_reload.png").convert("RGBA").tobytes()
+        assert title == baseline_title, "title checkpoint reloaded a different native screen"
+        require_preserved_save("after_title_checkpoint_reload")
+        self.press("start")
+        assert self.has_text("CHARACTER SELECT"), "START did not reopen native character selection after EXIT"
+        self.capture("browser_exit_start_character_select")
+        for _ in range(20):
+            if self.overworld():
+                break
+            self.press("a", 180)
+        self.step(180)
+        assert self.overworld(), "Continue after EXIT did not return to The Den"
+        assert self.snapshot() == saved_record, "Continue after EXIT did not restore the saved character record"
+        require_preserved_save("after_exit_continue")
+        self.capture("browser_exit_continue_saved_location")
+        # A long confirmation press must not survive native Reset and skip
+        # the portal immediately. This checks the release guard through real
+        # joypad input, rather than calling the browser's restart API.
+        self.navigate((13, 9))
+        self.press("start")
+        for _ in range(12):
+            if self.read("wMenuCursorPosition") == [1]:
+                break
+            self.press("up", 30)
+        assert self.read("wMenuCursorPosition") == [1]
+        for _ in range(6):
+            self.press("down", 30)
+        assert self.read("wMenuCursorPosition") == [7]
+        self.press("a", 480, held=240)
+        self.capture("browser_exit_held_a_returns_native_title")
+        title = Image.open(OUT / "browser_exit_held_a_returns_native_title.png").convert("RGBA").tobytes()
+        assert title == baseline_title, "held EXIT confirmation skipped the native title"
+        require_preserved_save("after_held_exit_confirmation")
+        self.press("start")
+        assert self.has_text("CHARACTER SELECT")
+        for _ in range(20):
+            if self.overworld():
+                break
+            self.press("a", 180)
+        self.step(180)
+        assert self.overworld() and self.snapshot() == saved_record
+        require_preserved_save("after_held_exit_continue")
+        return {"native_exit_menu_selected_by_ordinary_buttons": True,
+                "exact_native_title_framebuffer_returned": True,
+                "unsaved_location_not_auto_saved": True,
+                "native_persistent_sram_byte_identical_across_exit": True,
+                "sram_scratch_exception": {"bank": scratch_bank, "start": hex(scratch_start),
+                                           "end_exclusive": hex(scratch_end),
+                                           "declared_use": "Native Crystal temporary graphics/menu buffer; Init clears its first 32 bytes.",
+                                           "observations": scratch_changes},
+                "title_checkpoint_reload_preserved": True,
+                "start_opens_native_character_select": True,
+                "continue_restores_saved_character_record": True,
+                "held_exit_confirmation_frames": 240,
+                "held_exit_confirmation_does_not_skip_title": True,
+                "browser_reset_api_used": False, "native_ram_edits": False,
+                "saved_battery_bytes": len(saved_battery),
+                "saved_battery_sha256": hashlib.sha256(saved_battery).hexdigest(), "passed": True}
+
 
 def main():
     global OUT
@@ -362,6 +471,8 @@ def main():
     parser.add_argument("--version", help="Reported player version, otherwise inferred from the HTML filename.")
     parser.add_argument("--class", dest="character_class", choices=tuple(CLASSES), default="shaman")
     parser.add_argument("--smoke-only", action="store_true")
+    parser.add_argument("--check-exit", action="store_true",
+                        help="Verify native EXIT returns to title and keeps the existing battery save.")
     parser.add_argument("--url", help="Existing authorized test URL. Otherwise use an owned localhost HTTP server.")
     args = parser.parse_args()
     OUT = args.output.resolve()
@@ -460,6 +571,8 @@ def main():
                     report["visible_exports"] = {"battery_filename": download.suggested_filename,
                                                   "battery_byte_exact": True, "session_filename": session_download.suggested_filename,
                                                   "session_matches_exact_rom": True, "passed": True}
+                if args.check_exit:
+                    report["native_exit_return_to_title"] = session.exit_to_title(before, battery)
                 # Save snapshots are tested separately from genuine battery
                 # Continue. No arbitrary emulator checkpoint is imported.
                 page.evaluate("() => window.peonPlayer.checkpoint()")

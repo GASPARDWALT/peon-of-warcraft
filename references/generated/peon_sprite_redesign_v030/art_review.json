@@ -1,0 +1,44 @@
+{
+  "scope": "Four Peon variants, six poses each; three class-master selection screen proposals.",
+  "reviewedBy": "Codex",
+  "approvedGeneratedDesignsByUser": true,
+  "nativeArtApprovedByUser": false,
+  "nativeIntegration": false,
+  "dimensions": {
+    "world": [
+      16,
+      16
+    ],
+    "combatFront": [
+      56,
+      56
+    ],
+    "combatBack": [
+      48,
+      48
+    ],
+    "selection": [
+      160,
+      144
+    ]
+  },
+  "palette": "Full-color source art; no automatic reduction. Native engine palette integration remains separate.",
+  "visualChecks": [
+    "CommongreenPeonidentity, blackcrest andtusks",
+    "Shamanleather/woodshield/mace and hornedwoodface-wingedtotem",
+    "Warlocktornpurplerobe, woodenstaff, changedeyes",
+    "Warriorsinglephysicalleftmailshoulder andironaxe",
+    "Trueindependentworlddirections andseparateboots",
+    "Front/rear equipmentanatomicalsideconsistency corrected",
+    "Richermodelledskin/materialpixelclusters reviewed ininteger enlargedviews",
+    "Three distinctclassmasters andblue/red/purple accents",
+    "ReadableEnglish masterlabels/descriptions andA/Bcommands"
+  ],
+  "verification": {
+    "unchangedOtherSpritesAfterWarriorMailCorrection": 23,
+    "binaryAlphaRequired": true,
+    "archiveCRCRequired": true,
+    "previewSourceIdentity": "Nearest-neighbor whole-pixel repetition"
+  },
+  "preservation": "This art pack modifies no old published artwork or ROM graphics. The separate v0.2.10 EXIT behavior fix changes only the menu action/description; these sprites and UI proposals remain unintegrated."
+}

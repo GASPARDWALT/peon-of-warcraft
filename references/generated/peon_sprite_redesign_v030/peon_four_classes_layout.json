@@ -1,0 +1,266 @@
+{
+  "width": 208,
+  "height": 236,
+  "order": [
+    "base",
+    "shaman",
+    "warrior",
+    "warlock"
+  ],
+  "labels": [
+    "Péon — base",
+    "Péon — apprenti shaman",
+    "Péon — apprenti guerrier",
+    "Péon — apprenti démoniste"
+  ],
+  "worldColumns": [
+    "front",
+    "back",
+    "left",
+    "right"
+  ],
+  "nativePixelsPreserved": true,
+  "binaryAlpha": true,
+  "placements": [
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "world_front",
+      "x": 0,
+      "y": 20,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/base/world_front.png"
+    },
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "world_back",
+      "x": 20,
+      "y": 20,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/base/world_back.png"
+    },
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "world_left",
+      "x": 40,
+      "y": 20,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/base/world_left.png"
+    },
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "world_right",
+      "x": 60,
+      "y": 20,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/base/world_right.png"
+    },
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "combat_front",
+      "x": 92,
+      "y": 0,
+      "width": 56,
+      "height": 56,
+      "source": "sprites/base/combat_front.png"
+    },
+    {
+      "row": 1,
+      "character": "base",
+      "pose": "combat_back",
+      "x": 160,
+      "y": 4,
+      "width": 48,
+      "height": 48,
+      "source": "sprites/base/combat_back.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "world_front",
+      "x": 0,
+      "y": 80,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/shaman/world_front.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "world_back",
+      "x": 20,
+      "y": 80,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/shaman/world_back.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "world_left",
+      "x": 40,
+      "y": 80,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/shaman/world_left.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "world_right",
+      "x": 60,
+      "y": 80,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/shaman/world_right.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "combat_front",
+      "x": 92,
+      "y": 60,
+      "width": 56,
+      "height": 56,
+      "source": "sprites/shaman/combat_front.png"
+    },
+    {
+      "row": 2,
+      "character": "shaman",
+      "pose": "combat_back",
+      "x": 160,
+      "y": 64,
+      "width": 48,
+      "height": 48,
+      "source": "sprites/shaman/combat_back.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "world_front",
+      "x": 0,
+      "y": 140,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warrior/world_front.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "world_back",
+      "x": 20,
+      "y": 140,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warrior/world_back.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "world_left",
+      "x": 40,
+      "y": 140,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warrior/world_left.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "world_right",
+      "x": 60,
+      "y": 140,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warrior/world_right.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "combat_front",
+      "x": 92,
+      "y": 120,
+      "width": 56,
+      "height": 56,
+      "source": "sprites/warrior/combat_front.png"
+    },
+    {
+      "row": 3,
+      "character": "warrior",
+      "pose": "combat_back",
+      "x": 160,
+      "y": 124,
+      "width": 48,
+      "height": 48,
+      "source": "sprites/warrior/combat_back.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "world_front",
+      "x": 0,
+      "y": 200,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warlock/world_front.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "world_back",
+      "x": 20,
+      "y": 200,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warlock/world_back.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "world_left",
+      "x": 40,
+      "y": 200,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warlock/world_left.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "world_right",
+      "x": 60,
+      "y": 200,
+      "width": 16,
+      "height": 16,
+      "source": "sprites/warlock/world_right.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "combat_front",
+      "x": 92,
+      "y": 180,
+      "width": 56,
+      "height": 56,
+      "source": "sprites/warlock/combat_front.png"
+    },
+    {
+      "row": 4,
+      "character": "warlock",
+      "pose": "combat_back",
+      "x": 160,
+      "y": 184,
+      "width": 48,
+      "height": 48,
+      "source": "sprites/warlock/combat_back.png"
+    }
+  ]
+}
