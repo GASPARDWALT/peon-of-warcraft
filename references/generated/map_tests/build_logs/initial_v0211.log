@@ -1,0 +1,229 @@
+Preserved inputs verified: 3 ZIPs, 73 player PNGs, 55 repaired NPC PNGs.
+{
+  "roles": 26,
+  "bindings": 19,
+  "palette_rgb555": [
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        22,
+        8,
+        4
+      ],
+      [
+        5,
+        2,
+        2
+      ],
+      [
+        31,
+        5,
+        3
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        12,
+        17,
+        5
+      ],
+      [
+        16,
+        11,
+        17
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        18,
+        12,
+        6
+      ],
+      [
+        15,
+        17,
+        8
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        25,
+        19,
+        11
+      ],
+      [
+        12,
+        7,
+        4
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        22,
+        15,
+        7
+      ],
+      [
+        9,
+        5,
+        2
+      ],
+      [
+        31,
+        26,
+        3
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        17,
+        17,
+        17
+      ],
+      [
+        31,
+        25,
+        7
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        20,
+        19,
+        17
+      ],
+      [
+        12,
+        17,
+        19
+      ],
+      [
+        2,
+        2,
+        3
+      ]
+    ],
+    [
+      [
+        31,
+        31,
+        31
+      ],
+      [
+        18,
+        9,
+        6
+      ],
+      [
+        10,
+        3,
+        2
+      ],
+      [
+        2,
+        1,
+        1
+      ]
+    ]
+  ],
+  "geometry_and_alpha_preserved": true
+}
+Imported 25 native battle packets; original alpha/geometry intact.
+{"max_patterns": 192, "per_map": {"PeonOpening": 66, "GrommashHold": 165, "TheDen": 184, "ValleyOfTrials": 105, "DurotarRoad": 114, "SenjinVillage": 189, "RazorHill": 190, "OrgrimmarGate": 175, "BurningBladeCavern": 55, "PeonTrollHut": 157, "PeonOrcHut": 157, "PeonOrcInn": 192, "PeonTrollInn": 192, "PeonValleyCrossroads": 52, "PeonHanazuaCamp": 57, "PeonSarkothBasin": 57, "PeonCaveApproach": 37, "PeonValleyExit": 51}, "blocks": 150, "applied": true, "modified_maps": ["PeonOpening", "GrommashHold", "TheDen", "DurotarRoad", "SenjinVillage", "RazorHill", "OrgrimmarGate", "PeonTrollHut", "PeonOrcHut", "PeonOrcInn", "PeonTrollInn"]}
+Legacy artwork generators disabled (207 preserved outputs).
+
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o audio.o audio.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o home.o home.asm
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonOpening.2bpp gfx/tilesets/peon_user_environment_v0211/PeonOpening.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/GrommashHold.2bpp gfx/tilesets/peon_user_environment_v0211/GrommashHold.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/TheDen.2bpp gfx/tilesets/peon_user_environment_v0211/TheDen.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials.2bpp gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/DurotarRoad.2bpp gfx/tilesets/peon_user_environment_v0211/DurotarRoad.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/SenjinVillage.2bpp gfx/tilesets/peon_user_environment_v0211/SenjinVillage.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/RazorHill.2bpp gfx/tilesets/peon_user_environment_v0211/RazorHill.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate.2bpp gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern.2bpp gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonTrollHut.2bpp gfx/tilesets/peon_user_environment_v0211/PeonTrollHut.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonOrcHut.2bpp gfx/tilesets/peon_user_environment_v0211/PeonOrcHut.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonOrcInn.2bpp gfx/tilesets/peon_user_environment_v0211/PeonOrcInn.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonTrollInn.2bpp gfx/tilesets/peon_user_environment_v0211/PeonTrollInn.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads.2bpp gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp.2bpp gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin.2bpp gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach.2bpp gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach.2bpp.lz
+tools/lzcompress --matching --align 4 -- gfx/tilesets/peon_user_environment_v0211/PeonValleyExit.2bpp gfx/tilesets/peon_user_environment_v0211/PeonValleyExit.2bpp.lz
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o ram.o ram.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/text/common.o data/text/common.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/maps/map_data.o data/maps/map_data.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/dex_entries.o data/pokemon/dex_entries.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/egg_moves.o data/pokemon/egg_moves.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o data/pokemon/evos_attacks.o data/pokemon/evos_attacks.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o engine/movie/credits.o engine/movie/credits.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o engine/overworld/events.o engine/overworld/events.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/misc.o gfx/misc.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/pics.o gfx/pics.asm
+/workspace/toolchains/rgbds-1.0.4/rgbgfx --colors dmg -Weverything -o gfx/user_world_v0211/base_sleeping.2bpp gfx/user_world_v0211/base_sleeping.png
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/tilesets.o gfx/tilesets.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o lib/mobile/main.o lib/mobile/main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o lib/mobile/mail.o lib/mobile/mail.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o main.o main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm  -o gfx/sprites.o gfx/sprites.asm
+/workspace/toolchains/rgbds-1.0.4/rgblink -Weverything -Wtruncation=1 -l layout.link -n pokecrystal.sym -m pokecrystal.map -o pokecrystal.gbc audio.o home.o main.o ram.o data/text/common.o data/maps/map_data.o data/pokemon/dex_entries.o data/pokemon/egg_moves.o data/pokemon/evos_attacks.o engine/movie/credits.o engine/overworld/events.o gfx/misc.o gfx/pics.o gfx/sprites.o gfx/tilesets.o lib/mobile/main.o lib/mobile/mail.o
+/workspace/toolchains/rgbds-1.0.4/rgbfix -Weverything -Cjv -t PEON_WAR -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3 -p 0 -i BYTE -n 0 pokecrystal.gbc
+tools/stadium pokecrystal.gbc
+Built ROM SHA-256: ae084fd2c5fb9d38b949c4dae0f26e25b4c819406d05874f1054bd9bd4c75b10
+Build complete. Emulator QA on this exact ROM is required before publishing.

@@ -1,0 +1,1089 @@
+{
+  "passed": true,
+  "rom_sha256": "7cd599fc9c19ac6f8e3f579051aa60b8036dc60069f07b357d7be419cf107425",
+  "symbols_sha256": "edf8ce8fa35266977c63912e4cae0d24ccf62f69babc7752764840540e602eee",
+  "contract_sha256": "efe92daae483afd42de4eb4f33c835406c26fed5c8f3df848ce4ed0c8ded9773",
+  "header": {
+    "rom_bytes": 2097152,
+    "cgb_flag": 192,
+    "mbc3_rtc_ram_battery_header": true,
+    "declared_ram_bytes": 32768,
+    "checksums_valid": true,
+    "physical_cartridge_tested": false,
+    "rtc_clock_and_battery_persistence_tested": false
+  },
+  "ordinary_buttons_only": true,
+  "ram_writes": false,
+  "emulator_states_loaded": false,
+  "user_battery_files_opened": false,
+  "scope": "Dedicated environment prototype only; no classes/combat/full-save suite.",
+  "start": {
+    "map": "PeonEnvironmentTest",
+    "source_gfx_sha256": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
+    "static_native_tiles_exact": 188,
+    "source_rgb555_palettes_exact": true,
+    "native_loaded_map_blocks_exact": 120,
+    "source_environment_palette_indices_compared": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "interface_palette7_current_RGB555": [
+      [
+        31,
+        30,
+        26
+      ],
+      [
+        31,
+        30,
+        26
+      ],
+      [
+        15,
+        9,
+        5
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "source_metatile_and_palmap_ROM_tables_exact": true,
+    "actual_hardware_bg_map_base": 38912,
+    "scroll_xy": [
+      0,
+      0
+    ],
+    "visible_native_tile_attributes_exact": 360,
+    "static_LCD_RGB555_pixels_exact": 22272,
+    "object_and_window_overlay_pixels_excluded": 768,
+    "source_packed_palmap_sha256": "c4961f72e915f416caa19ad824bc8a72c9fd775c6511a4359dcc5b9419429bf7"
+  },
+  "actions": [
+    {
+      "type": "interact",
+      "label": "inspection_npc",
+      "native_dialogue_opened_and_closed": true,
+      "item": null,
+      "quantity_before": null,
+      "quantity_after": null
+    },
+    {
+      "type": "blocked",
+      "kind": "cactus",
+      "from": [
+        8,
+        4
+      ],
+      "direction": "up",
+      "coordinate_unchanged": true
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTest",
+      "source_gfx_sha256": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          8,
+          19,
+          28
+        ],
+        [
+          5,
+          5,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        240,
+        80
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "c4961f72e915f416caa19ad824bc8a72c9fd775c6511a4359dcc5b9419429bf7"
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTest",
+      "source_gfx_sha256": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          8,
+          19,
+          28
+        ],
+        [
+          5,
+          5,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        16,
+        176
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22464,
+      "object_and_window_overlay_pixels_excluded": 576,
+      "source_packed_palmap_sha256": "c4961f72e915f416caa19ad824bc8a72c9fd775c6511a4359dcc5b9419429bf7"
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        0
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10",
+      "from_map": 30,
+      "to_map": 31,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        2,
+        9
+      ],
+      "settled_xy": [
+        2,
+        9
+      ]
+    },
+    {
+      "type": "blocked",
+      "kind": "hut_wall",
+      "from": [
+        8,
+        8
+      ],
+      "direction": "up",
+      "coordinate_unchanged": true
+    },
+    {
+      "type": "blocked",
+      "kind": "palisade_wall",
+      "from": [
+        8,
+        12
+      ],
+      "direction": "up",
+      "coordinate_unchanged": true
+    },
+    {
+      "type": "blocked",
+      "kind": "campfire",
+      "from": [
+        11,
+        14
+      ],
+      "direction": "up",
+      "coordinate_unchanged": true
+    },
+    {
+      "type": "interact",
+      "label": "chest",
+      "native_dialogue_opened_and_closed": true,
+      "item": 18,
+      "quantity_before": 0,
+      "quantity_after": 1
+    },
+    {
+      "type": "interact",
+      "label": "chest_second_inspection",
+      "native_dialogue_opened_and_closed": true,
+      "item": 18,
+      "quantity_before": 1,
+      "quantity_after": 1
+    },
+    {
+      "type": "fire",
+      "source_phase_slots": 3,
+      "distinct_native_vram_states_observed": 2,
+      "distinct_actual_LCD_source_states_observed": 2,
+      "source_exact_LCD_fire_pixels": [
+        192,
+        192
+      ],
+      "incremental_native_tile_upload_frames": 150,
+      "source_phase_equivalence_groups": [
+        [
+          0,
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "source_fire_packet_sha256": "7282c45c06d1a9dece532b35f061b0f71a2a6c826114e4a8af22daf483d4f690",
+      "observed_frames": 240,
+      "native_bank": 0,
+      "native_address": 36864
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          8,
+          19,
+          28
+        ],
+        [
+          5,
+          5,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        240,
+        128
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10"
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          8,
+          19,
+          28
+        ],
+        [
+          5,
+          5,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        208,
+        160
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10"
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        0
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba",
+      "from_map": 31,
+      "to_map": 32,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        6,
+        17
+      ],
+      "settled_xy": [
+        6,
+        17
+      ]
+    },
+    {
+      "type": "blocked",
+      "kind": "rock",
+      "from": [
+        4,
+        14
+      ],
+      "direction": "up",
+      "coordinate_unchanged": true
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        96,
+        144
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba"
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        64
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba"
+    },
+    {
+      "type": "joined_transition",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        80,
+        64
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba",
+      "actual_button_walk_coordinates": [
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ]
+      ],
+      "source_block_boundaries_crossed": [
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          5
+        ]
+      ],
+      "source_blocks": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "source_order": [
+        "ground_durotar_dirt_01_32x32.png",
+        "transition_durotar_dirt_redsand_left_32x32.png",
+        "ground_valley_redsand_01_32x32.png"
+      ]
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        48,
+        80
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba"
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        16
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10",
+      "from_map": 32,
+      "to_map": 31,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        10,
+        7
+      ],
+      "settled_xy": [
+        10,
+        8
+      ]
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        160,
+        240
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10"
+    },
+    {
+      "type": "walk",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        128,
+        16
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10"
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTestCave",
+      "source_gfx_sha256": "c3f931d1ebdab05435a524f3b8b9d2b8040b5a7bb0a54b8e08b330959366eedd",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        0
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "eb620fd1a59a0a06fe78790034cba4b7b2c92f7f5a13dd59f535d92dc9c367ba",
+      "from_map": 31,
+      "to_map": 32,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        18,
+        17
+      ],
+      "settled_xy": [
+        18,
+        17
+      ]
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTestAnnex",
+      "source_gfx_sha256": "e176cddd59adccca0a28a165601131b765a2ac33aa04e5ffbed776538a454e01",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        16
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "6d55d5acec3c459aeb2fb24f093eea892e0f013904ab11a589fea48b7dabfd10",
+      "from_map": 32,
+      "to_map": 31,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        18,
+        7
+      ],
+      "settled_xy": [
+        18,
+        8
+      ]
+    },
+    {
+      "type": "warp",
+      "map": "PeonEnvironmentTest",
+      "source_gfx_sha256": "62e7e40c2b1510a12ffed93b40005edba59228862b4a6de5c2b4b8575f1b3fd6",
+      "static_native_tiles_exact": 188,
+      "source_rgb555_palettes_exact": true,
+      "native_loaded_map_blocks_exact": 120,
+      "source_environment_palette_indices_compared": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "interface_palette7_current_RGB555": [
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          31,
+          30,
+          26
+        ],
+        [
+          15,
+          9,
+          5
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "source_metatile_and_palmap_ROM_tables_exact": true,
+      "actual_hardware_bg_map_base": 38912,
+      "scroll_xy": [
+        0,
+        0
+      ],
+      "visible_native_tile_attributes_exact": 360,
+      "static_LCD_RGB555_pixels_exact": 22528,
+      "object_and_window_overlay_pixels_excluded": 512,
+      "source_packed_palmap_sha256": "c4961f72e915f416caa19ad824bc8a72c9fd775c6511a4359dcc5b9419429bf7",
+      "from_map": 31,
+      "to_map": 30,
+      "ordinary_warp": true,
+      "native_event_landing_xy": [
+        21,
+        9
+      ],
+      "settled_xy": [
+        21,
+        9
+      ]
+    }
+  ],
+  "frames": 15180,
+  "native_new_game_calls": 1,
+  "trace": [
+    {
+      "frame": 112,
+      "phase": "title"
+    },
+    {
+      "frame": 336,
+      "phase": "select"
+    },
+    {
+      "frame": 519,
+      "phase": "world"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+
+/workspace/toolchains/rgbds-1.0.4/rgbasm -o rgbdscheck.o rgbdscheck.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o audio_environment_test.o audio.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o home_environment_test.o home.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o main_environment_test.o main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o ram_environment_test.o ram.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o data/text/common_environment_test.o data/text/common.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o data/maps/map_data_environment_test.o data/maps/map_data.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o data/pokemon/dex_entries_environment_test.o data/pokemon/dex_entries.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o data/pokemon/egg_moves_environment_test.o data/pokemon/egg_moves.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o data/pokemon/evos_attacks_environment_test.o data/pokemon/evos_attacks.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o engine/movie/credits_environment_test.o engine/movie/credits.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o engine/overworld/events_environment_test.o engine/overworld/events.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o gfx/misc_environment_test.o gfx/misc.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o gfx/pics_environment_test.o gfx/pics.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o gfx/sprites_environment_test.o gfx/sprites.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o gfx/tilesets_environment_test.o gfx/tilesets.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o lib/mobile/main_environment_test.o lib/mobile/main.asm
+/workspace/toolchains/rgbds-1.0.4/rgbasm -Weverything -Wtruncation=1 -Q8 -P includes.asm -D PEON_ENVIRONMENT_TEST -o lib/mobile/mail_environment_test.o lib/mobile/mail.asm
+/workspace/toolchains/rgbds-1.0.4/rgblink -Weverything -Wtruncation=1 -l layout.link -n pokecrystal_environment_test.sym -m pokecrystal_environment_test.map -o pokecrystal_environment_test.gbc audio_environment_test.o home_environment_test.o main_environment_test.o ram_environment_test.o data/text/common_environment_test.o data/maps/map_data_environment_test.o data/pokemon/dex_entries_environment_test.o data/pokemon/egg_moves_environment_test.o data/pokemon/evos_attacks_environment_test.o engine/movie/credits_environment_test.o engine/overworld/events_environment_test.o gfx/misc_environment_test.o gfx/pics_environment_test.o gfx/sprites_environment_test.o gfx/tilesets_environment_test.o lib/mobile/main_environment_test.o lib/mobile/mail_environment_test.o
+/workspace/toolchains/rgbds-1.0.4/rgbfix -Weverything -Cjv -t PEON_WAR -k 01 -l 0x33 -m MBC3+TIMER+RAM+BATTERY -r 3 -p 0 -i BYTE -n 0 pokecrystal_environment_test.gbc
+tools/stadium pokecrystal_environment_test.gbc
+{
+  "target": "pokecrystal_environment_test.gbc",
+  "sha256": "7cd599fc9c19ac6f8e3f579051aa60b8036dc60069f07b357d7be419cf107425",
+  "bytes": 2097152,
+  "cgb_only": true,
+  "mbc3_rtc_ram_battery": true,
+  "ram_bytes": 32768,
+  "physical_modretro_tested": false,
+  "historical_generator_outputs_frozen": 207,
+  "build": "passed"
+}
