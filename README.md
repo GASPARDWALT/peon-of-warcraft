@@ -1,5 +1,21 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.13](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.13/releases/v0.2.13/peon_of_warcraft_v0_2_13.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.13/releases/v0.2.13/peon_of_warcraft_v0_2_13.zip) · [Sources, changements et limites](docs/V0213_NATIVE_ART_AND_ROSTER.md)
+
+Mana et rage en haut de l'écran et en combat, types d'attaque en couleur,
+anciens modèles complets du péon/shaman, sanglier et diablotin restaurés.
+Les décors utilisent les PNG fournis. ROSTER, capture avec suspense,
+évolutions aux niveaux 8 et 12, Lightning Bolt horizontal, passages et
+maîtres agrandis sont intégrés. Les reprises de sauvegarde des trois classes
+conservent les personnages et l'équipe.
+
+Build courant : `python3 tools/build_peon_v0213.py`. La compilation propre
+depuis les fichiers Git donne exactement la ROM testée. Voir le
+[rapport](references/generated/v0213/validation.json) et les
+[captures de la ROM finale](releases/v0.2.13/captures/).
+
+## v0.2.12 archive
+
 [ROM v0.2.12](releases/v0.2.12/peon_of_warcraft_v0_2_12.gbc) · [Téléchargement ZIP](releases/v0.2.12/peon_of_warcraft_v0_2_12.zip) · [Réparations graphiques, sources et quête tellurique](docs/ART_REPAIR_AND_EARTH_STONE_V0212.md)
 
 La v0.2.12 utilise les grandes planches de héros validées disponibles, les PNG
