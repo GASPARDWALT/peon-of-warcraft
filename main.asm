@@ -760,3 +760,8 @@ INCLUDE "engine/battle/peon_packs_v029.asm"
 INCLUDE "engine/battle/peon_ally_visuals_v029.asm"
 
 INCLUDE "engine/battle/peon_pack_transition_v029.asm"
+
+INCLUDE "engine/overworld/peon_world_renderer_native_v0215.asm"
+INCLUDE "engine/overworld/peon_large_world_v0215.asm"
+INCLUDE "engine/overworld/peon_world_allocator_v0215.asm"
+INCLUDE "gfx/world_actors_v0215/graphics.asm"

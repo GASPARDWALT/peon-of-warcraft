@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+  "baseline_rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "states_loaded": false,
+  "user_battery_opened": false,
+  "cpu_speed": "normal GBC 4MHz",
+  "candidate_evidence": "v0215/shaman_validation.json",
+  "baseline_evidence": "baseline_v0214.json",
+  "baseline_evidence_copied_from": "references/generated/world_actors_v0215/performance_a138955d/v0214/shaman_validation.json",
+  "baseline_not_reexecuted": true,
+  "comparison": {
+    "same_start_map": 14,
+    "same_start_xy": [
+      10,
+      12
+    ],
+    "same_idle_lcd_frames": 240,
+    "den_idle_update_tcycles": {
+      "candidate": 159388,
+      "baseline": 159766.0
+    },
+    "den_idle_updates_per_240_lcd_frames": {
+      "candidate": 60,
+      "baseline": 60
+    },
+    "first_four_direction_buttons": [
+      "left",
+      "right",
+      "up",
+      "down"
+    ],
+    "first_four_step_latency_lcd_frames": {
+      "candidate": [
+        49,
+        48,
+        53,
+        54
+      ],
+      "baseline": [
+        45,
+        48,
+        41,
+        41
+      ]
+    },
+    "four_step_total_latency_change_percent": 16.57
+  },
+  "limits_observed": {
+    "den_visible_oam": 39,
+    "den_maximum_objects_per_scanline": 7,
+    "lodge_visible_oam": 36,
+    "lodge_maximum_objects_per_scanline": 6,
+    "register_index_or_wram_bank_leaks": 0,
+    "idle_gdma_uploads": 0
+  },
+  "whole_body_lodge": {
+    "masters": {
+      "warrior_trainer": {
+        "actor": 3,
+        "sprite": 107,
+        "world_xy": [
+          7,
+          5
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 323
+      },
+      "enemy_warlock": {
+        "actor": 4,
+        "sprite": 108,
+        "world_xy": [
+          3,
+          7
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 267
+      },
+      "shaman_master": {
+        "actor": 2,
+        "sprite": 106,
+        "world_xy": [
+          6,
+          3
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 349
+      }
+    },
+    "native_visible_oam_objects": 36,
+    "maximum_objects_on_one_scanline": 6,
+    "complete_master_tiles_visible": 27,
+    "hero_24px": {
+      "whole_native_frame_exact": true,
+      "complete_oam_cells": 9,
+      "authored_blank_tiles_omitted": 0,
+      "exact_source_mask": 511,
+      "direction": "left",
+      "pose": 0,
+      "actual_lcd_opaque_pixels_exact": 314
+    },
+    "six_cell_hud_omitted_as_whole": true,
+    "completed_native_oam_publication_observed": true
+  },
+  "screenshots": [
+    "v0215/shaman/den_spawn_idle.png",
+    "v0215/shaman/three_masters_idle.png",
+    "v0215/shaman/lodge_after_turn.png",
+    "v0215/shaman/lodge_whole_body_scene.png"
+  ]
+}

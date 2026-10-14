@@ -1,0 +1,406 @@
+{
+  "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "user_battery_opened": false,
+  "emulator_states_loaded": false,
+  "class": "shaman",
+  "samples": {
+    "den_spawn_idle": {
+      "frames": 240,
+      "cpu_speed_register": 0,
+      "position_before": [
+        10,
+        12
+      ],
+      "position_after": [
+        10,
+        12
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            10,
+            12
+          ],
+          418660488
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 60,
+        "median": 159766.0,
+        "mean": 159974.73333333334,
+        "min": 159152,
+        "max": 170548
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 59,
+        "median": 280464,
+        "mean": 280887.25423728814,
+        "min": 270748,
+        "max": 290960
+      },
+      "sprite_updates": 60,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 34,
+      "maximum_objects_per_scanline": 6,
+      "register_state_mismatches": []
+    },
+    "short_steps": [
+      {
+        "key": "left",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          9,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 45,
+        "duration_tcycles_to_change": 3511196,
+        "update_duration_tcycles": [
+          59416,
+          59524,
+          59416,
+          159932,
+          176660,
+          159864,
+          160384,
+          159860,
+          160076,
+          159560,
+          160076,
+          170404
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "right",
+        "before": [
+          9,
+          12
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 48,
+        "duration_tcycles_to_change": 3651644,
+        "update_duration_tcycles": [
+          160376,
+          59716,
+          59716,
+          59524,
+          160108,
+          159104,
+          159608,
+          159152,
+          159608,
+          159104,
+          159456,
+          159296,
+          159752
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "up",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          10,
+          11
+        ],
+        "lcd_frames_until_map_coord_changed": 41,
+        "duration_tcycles_to_change": 3160088,
+        "update_duration_tcycles": [
+          59416,
+          59716,
+          59416,
+          159876,
+          161752,
+          158600,
+          168244,
+          98084,
+          97324,
+          97560,
+          98652,
+          99452
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "down",
+        "before": [
+          10,
+          11
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 41,
+        "duration_tcycles_to_change": 3230304,
+        "update_duration_tcycles": [
+          114548,
+          83056,
+          82292,
+          82528,
+          114224,
+          124800,
+          112864,
+          113636,
+          113492,
+          179220,
+          184540,
+          174816,
+          175056
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "left",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          9,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 48,
+        "duration_tcycles_to_change": 3651648,
+        "update_duration_tcycles": [
+          159976,
+          59524,
+          59524,
+          59416,
+          164936,
+          162060,
+          159860,
+          160376,
+          159864,
+          160384,
+          159860,
+          160376,
+          159860
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "right",
+        "before": [
+          9,
+          12
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 45,
+        "duration_tcycles_to_change": 3511196,
+        "update_duration_tcycles": [
+          59524,
+          59416,
+          59524,
+          160260,
+          165836,
+          159296,
+          159752,
+          159296,
+          159752,
+          159296,
+          159560,
+          166512
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "up",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          10,
+          11
+        ],
+        "lcd_frames_until_map_coord_changed": 44,
+        "duration_tcycles_to_change": 3370764,
+        "update_duration_tcycles": [
+          159804,
+          59716,
+          59524,
+          59524,
+          159576,
+          172688,
+          158592,
+          163828,
+          97760,
+          97516,
+          97560,
+          98460,
+          99448
+        ],
+        "register_state_mismatches": []
+      },
+      {
+        "key": "down",
+        "before": [
+          10,
+          11
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 41,
+        "duration_tcycles_to_change": 3230300,
+        "update_duration_tcycles": [
+          122008,
+          82972,
+          82508,
+          82360,
+          114032,
+          124992,
+          113056,
+          113340,
+          113296,
+          179032,
+          173744,
+          174932,
+          175360
+        ],
+        "register_state_mismatches": []
+      }
+    ],
+    "den_dense_idle": {
+      "frames": 240,
+      "cpu_speed_register": 0,
+      "position_before": [
+        10,
+        11
+      ],
+      "position_after": [
+        10,
+        11
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            10,
+            11
+          ],
+          490218736
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 79,
+        "median": 114548,
+        "mean": 114806.27848101266,
+        "min": 114032,
+        "max": 125696
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 79,
+        "median": 210668,
+        "mean": 210616.30379746837,
+        "min": 203072,
+        "max": 217948
+      },
+      "sprite_updates": 80,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 38,
+      "maximum_objects_per_scanline": 6,
+      "register_state_mismatches": []
+    },
+    "three_masters_idle": {
+      "frames": 240,
+      "cpu_speed_register": 0,
+      "position_before": [
+        5,
+        5
+      ],
+      "position_after": [
+        5,
+        5
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            5,
+            5
+          ],
+          566714476
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 79,
+        "median": 71196,
+        "mean": 71597.21518987342,
+        "min": 70984,
+        "max": 82144
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 79,
+        "median": 210672,
+        "mean": 210672,
+        "min": 203020,
+        "max": 218240
+      },
+      "sprite_updates": 80,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 37,
+      "maximum_objects_per_scanline": 5,
+      "register_state_mismatches": []
+    },
+    "lodge_after_turn": {
+      "frames": 120,
+      "cpu_speed_register": 0,
+      "position_before": [
+        5,
+        5
+      ],
+      "position_after": [
+        5,
+        5
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            5,
+            5
+          ],
+          591995116
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 39,
+        "median": 71180,
+        "mean": 71780.82051282052,
+        "min": 71140,
+        "max": 81892
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 39,
+        "median": 210672,
+        "mean": 210668,
+        "min": 203024,
+        "max": 218236
+      },
+      "sprite_updates": 40,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 37,
+      "maximum_objects_per_scanline": 5,
+      "register_state_mismatches": []
+    }
+  },
+  "status": "PASSED"
+}

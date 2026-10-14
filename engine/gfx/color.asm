@@ -1247,6 +1247,7 @@ LoadMapPals:
 	ld a, BANK(wOBPals1)
 	call FarCopyWRAM
 	farcall PeonApplyRestoredHeroWorldPaletteV0213
+	farcall PeonApplyWorldImpPaletteV0215
 	farcall PeonLoadMasterRoomPalettesV0213
 	ret
 .crystal

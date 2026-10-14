@@ -1,0 +1,153 @@
+{
+  "version": "v0.2.15",
+  "status": "PASS",
+  "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+  "sym_sha256": "c588042db9befb8ab6de93250b34a24325eefbf21d656b7e04ffc346d5fe07d4",
+  "map_sha256": "c814f242c16de2d491f6f8b67d9d3b9d962fdb5a3270b5d47cd55847a6af2eac",
+  "tests": {
+    "world_runtime": {
+      "status": "PASS",
+      "report": "references/generated/world_actors_v0215/runtime_e6be1f0a/validation.json",
+      "report_sha256": "f34ddf66adabec0a8637d3964c490e479818f946451e13ea338dec02352bb8b8"
+    },
+    "lodge_quest_and_cold_continue": {
+      "status": "PASS",
+      "report": "references/generated/world_actors_v0215/lodge_continue_e6be1f0a/validation.json",
+      "report_sha256": "de7c4ee473900e9ae7112f6503e4bb7c483b6e14e18c30931dcaa741e3e5a2fc"
+    },
+    "battle_resources_and_companion": {
+      "status": "PASS",
+      "report": "references/generated/world_actors_v0215/battle_regression_e6be1f0a/validation.json",
+      "report_sha256": "9b8406a5d6d3e224c862634601d35a898b396495b691d6887f4c84a790a843df"
+    },
+    "hardware_and_performance": {
+      "status": "PASS",
+      "report": "references/generated/world_actors_v0215/performance_e6be1f0a/validation.json",
+      "report_sha256": "a9a26b5351ebaaa00e2d635cffa78879463c670e05810e86ba70ae9ffb43bf01"
+    },
+    "fresh_source_build": {
+      "status": "PASS",
+      "report": "references/generated/v0215/fresh_build_validation.json",
+      "report_sha256": "90a7808907c5f7a02136a69a77dea42b8e628dbea1e6f3b0f4a961cf42298aa1"
+    },
+    "source_import": {
+      "status": "PASS",
+      "report": "references/generated/v0215/source_import_validation.json",
+      "report_sha256": "9e127adf3f1a11e95d6f01a3c66feda76d30bea6cd8cc26ec50314aeae659af3"
+    },
+    "ROM_header": {
+      "status": "PASS",
+      "report": "references/generated/v0215/rom_header_validation.json",
+      "report_sha256": "40352b6a55939e517f956d1e46576a931d685b821480f51fe4ee3664b727c7d7"
+    }
+  },
+  "captures": [
+    {
+      "name": "01_shaman_world_front.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/shaman/world_hero_down.png",
+      "sha256": "8b73c700bd53c5f074c97a0bc42e1c458081a80e35d5eafee716e9f1c9824c3c",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "02_shaman_world_back.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/shaman/world_hero_up.png",
+      "sha256": "54aa3418e885b7059e99f8d5aa771cba9a80a1acd4dfa126857d2e5c1219cdce",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "03_warrior_world.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/warrior/world_hero_down.png",
+      "sha256": "9cdabb5958c553da6e6178e7c5d0929b32c3af42310476fc242ef7ce6dd0e983",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "04_warlock_world.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/warlock/world_hero_down.png",
+      "sha256": "25d381941ae40b238aea12cc0bc0fc137f2784e0f35e9f160732669ac47928ec",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "05_larger_quest_NPC.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/shaman/nearby_quest_NPC_after_dialogue.png",
+      "sha256": "c56e085231d9d024ba09f521aa4f6375094bce49b439fc4d87031d7786b6b85b",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "06_crowded_scene.png",
+      "path": "references/generated/world_actors_v0215/runtime_e6be1f0a/warlock/den_crowded_priority.png",
+      "sha256": "cd4d5c5104438faede9a79a655610e4aed915688471c53f9cf22a66e7d43cbdc",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "07_three_complete_masters.png",
+      "path": "references/generated/world_actors_v0215/lodge_continue_e6be1f0a/warlock/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "fe3f47a4280b311168a8df70dad861d99b23e26475bd90395175cac645f6b36d",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "08_zone_two_sleeping_peon.png",
+      "path": "references/generated/world_actors_v0215/lodge_continue_e6be1f0a/shaman/zone_two_sleeping_peon_wakes.png",
+      "sha256": "9fcd49cdb6a487d5f62e8a2f64d98d123019c471ee252c74820561e47f71f011",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "09_cold_continue.png",
+      "path": "references/generated/world_actors_v0215/lodge_continue_e6be1f0a/warlock/training_lodge_cold_continue_native_lcd.png",
+      "sha256": "571bc6b4b73b5770c9604293d3a0976bf40cde995cc0d7ecc1986b3595c60ef2",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "10_shaman_battle_preserved.png",
+      "path": "references/generated/world_actors_v0215/battle_regression_e6be1f0a/heroes/shaman/battle_initial_live_resource.png",
+      "sha256": "6b40449184226113a450cb69889a46766f119b438f25cc6d18bb695ce790af2d",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "11_active_imp_fire.png",
+      "path": "references/generated/world_actors_v0215/battle_regression_e6be1f0a/active_imp/warlock/selected_fire_colored_type.png",
+      "sha256": "32c7e786d38939e7d06b4f0f9700f1c5ac886a75696f4dc096322ac7cfdecdb8",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    },
+    {
+      "name": "12_native_forced_roster.png",
+      "path": "references/generated/world_actors_v0215/battle_regression_e6be1f0a/active_imp/warlock/native_forced_roster_living_replacement.png",
+      "sha256": "5b1ac0ed60f22246ba7a65bc23098ed2921f3be07a30ebda30c663ecbc1c1841",
+      "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a"
+    }
+  ],
+  "world_dimensions": [
+    24,
+    24
+  ],
+  "native_movement_collision_grid_px": 16,
+  "source_pngs_preserved": 495,
+  "source_detail_redrawn": false,
+  "nearest_sampling_without_smoothing": true,
+  "runtime_scenes": 33,
+  "complete_renderer_histogram_checks": 2024,
+  "hardware_limits": {
+    "OAM_total": 40,
+    "objects_per_scanline": 10,
+    "observed_maximum": 40,
+    "observed_scanline_maximum": 9
+  },
+  "performance": {
+    "idle_updates_per_240_LCD_images": 60,
+    "idle_cadence_matches_v0214": true,
+    "four_step_LCD_images_final": 204,
+    "four_step_LCD_images_v0214": 175,
+    "four_step_measured_increase_percent": 16.57142857142857
+  },
+  "limitations": [
+    "Nearby whole bodies have priority; distant actors can be omitted in crowded scenes.",
+    "Six-cell world resource HUD can be omitted when complete bodies exhaust its OAM budget.",
+    "Kolkar and Crawler retain enlarged historical native sprites because matching canonical PNGs are absent.",
+    "Base Peon runtime verification covers the scripted LEFT opening pose; other poses are verified in compiled packets.",
+    "Physical ModRetro hardware not tested."
+  ],
+  "input_method": "ordinary emulator buttons",
+  "RAM_edits": false,
+  "emulator_states_loaded": false,
+  "user_saves_opened": false,
+  "physical_modretro_tested": false
+}

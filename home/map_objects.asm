@@ -17,34 +17,9 @@ GetSpritePalette::
 GetSpriteVTile::
 	push hl
 	push bc
-	ld hl, wUsedSprites + 2
-	ld c, SPRITE_GFX_LIST_CAPACITY - 1
-	ld b, a
-	ldh a, [hMapObjectIndex]
-	cp 0
-	jr z, .nope
-	ld a, b
-.loop
-	cp [hl]
-	jr z, .found
-	inc hl
-	inc hl
-	dec c
-	jr nz, .loop
-	ld a, [wUsedSprites + 1]
-	scf
-	jr .done
-
-.nope
-	ld a, [wUsedSprites + 1]
-	jr .done
-
-.found
-	inc hl
-	xor a
-	ld a, [hl]
-
-.done
+	ld c, a
+	farcall PeonGetSpriteVTileResultV0215
+	ld a, c
 	pop bc
 	pop hl
 	ret

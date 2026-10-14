@@ -37,24 +37,114 @@ class ResourceHUDSession(EarthSession):
     def __init__(self, rom, sym, index, output):
         self.bar_observations = []
         self.type_observations = []
+        self.world_publications = []
+        self.world_publication_serial = 0
+        self.class_selection_started = False
+        self.forced_switches = []
         super().__init__(rom, sym, index, output)
 
     def press(self, key, frames=90):
+        forced_switch_ready = False
+        if (key == 'a' and self.presentation == 'roster' and self.read('wBattleMode')[0]
+                and self.read('wPeonTeamModeV029') == [3]
+                and self.read('wBattleMonHP', 2) == [0, 0]):
+            # Native fainting can legitimately require a replacement. The
+            # older generic battle driver reads the battle cursor here;
+            # this ROSTER uses its own native cursor and refuses zero HP.
+            living = [index for index in range(self.read('wPartyCount')[0])
+                      if any(self.read(f'wPartyMon{index + 1}HP', 2))]
+            assert living, 'Forced ROSTER has no living replacement'
+            target = living[0]
+            previous = self.read('wCurBattleMon')[0]
+            for _ in range(6):
+                cursor = self.read('wPeonTeamCursorV029')[0]
+                if cursor == target:
+                    break
+                self.p.button('up' if cursor > target else 'down', delay=12)
+                self.p.tick(30, True)
+            assert self.read('wPeonTeamCursorV029') == [target]
+            self.forced_switches.append({'fainted_native_slot': previous,
+                                         'chosen_living_native_slot': target,
+                                         'actual_Dpad_and_A_only': True})
+            self.capture('native_forced_roster_living_replacement')
+            forced_switch_ready = True
+        if (key == 'a' and self.class_selection_started and not self.class_ready
+                and not self.naming):
+            # Stop intro autoplay while the native class page builds. A new
+            # confirm will be sent only after its actual input loop is ready.
+            self.p.tick(frames, True)
+            return
         # Native Start-menu input samples on an eight-frame text cadence.
         # A twelve-frame real held press reliably crosses that input window.
-        held = 12 if key in ('a', 'b') and self.presentation == 'start' and not self.read('wBattleMode')[0] else 4
-        self.p.button(key, delay=held)
-        self.p.tick(frames, True)
+        held = 12 if (forced_switch_ready or key in ('a', 'b')
+                      and self.presentation == 'start' and not self.read('wBattleMode')[0]) else 4
+        if (key in ('up', 'down', 'left', 'right')
+                and self.class_ready and not self.naming_done):
+            held = 12
+        field_input = (self.presentation == 'world' and not self.read('wBattleMode')[0]
+                       and not self.read('wScriptMode')[0]
+                       and (not self.class_ready or self.naming_done))
+        # Cold 24x24 frame streaming can miss a four-frame tap, while a warm
+        # cache can repeat a twelve-frame hold into a second grid square.
+        # Use an actual held D-pad press and release at the first observed
+        # native step; all state observations remain read-only.
+        if key in ('up', 'down', 'left', 'right') and field_input:
+            origin = self.position()
+            self.p.button_press(key)
+            elapsed = 0
+            for elapsed in range(1, 49):
+                self.p.tick(1, True)
+                if (self.position() != origin or self.read('wBattleMode')[0]
+                        or self.read('wScriptMode')[0]):
+                    break
+            self.p.button_release(key)
+            self.p.tick(max(1, frames - elapsed), True)
+        elif key in ('a', 'start') and field_input:
+            # A field conversation/Start press must also cross a cold native
+            # renderer, then release as soon as its native UI opens.
+            self.p.button_press(key)
+            elapsed = 0
+            for elapsed in range(1, 49):
+                self.p.tick(1, True)
+                if (self.read('wBattleMode')[0] or self.read('wScriptMode')[0]
+                        or self.presentation != 'world'):
+                    break
+            self.p.button_release(key)
+            self.p.tick(max(1, frames - elapsed), True)
+        else:
+            self.p.button(key, delay=held)
+            self.p.tick(frames, True)
         if not self.read('wBattleMode')[0] and self.phase in ('battle', 'battle_drawing', 'using_item'):
             self.phase, self.context = 'overworld', None
 
     def open(self):
         super().open()
+        def class_page_enter(_):
+            self.class_selection_started = True
+            for key in ('a', 'b', 'start'):
+                self.p.button_release(key)
+        self.p.hook_register(*self.sym['PeonClassSelect.release'], class_page_enter, None)
         self.p.hook_deregister(*self.sym['PeonTeamPickV029.input'])
         def roster_ready(_):
             self.presentation = 'roster'
             self.team_entries += 1
         self.p.hook_register(*self.sym['PeonTeamPickV029.input'], roster_ready, None)
+        if 'PeonInitLargeWorldSpritesV0215' in self.sym:
+            # This native hook is after all admitted bodies and the optional
+            # HUD have been constructed, before hidden-tail filling/DMA.
+            self.p.hook_register(*self.sym['_UpdateSprites.fill'], self.observe_world_publication, None)
+
+    def observe_world_publication(self, _):
+        if self.read('wBattleMode')[0] or self.read('wScriptMode')[0]:
+            return
+        used = self.read('hUsedSpriteIndex')[0]
+        assert used <= 160, ('Native world OAM overflow', used)
+        self.world_publication_serial += 1
+        self.world_publications.append({
+            'serial': self.world_publication_serial, 'position': self.position(),
+            'oam': bytes(self.read('wShadowOAM', used)), 'used': used,
+            'resource': self.metadata()})
+        self.world_publications = self.world_publications[-8:]
 
     def capture(self, label):
         self.p.screen.image.save(self.folder / (label + '.png'))
@@ -68,8 +158,23 @@ class ResourceHUDSession(EarthSession):
                 'class': self.class_index, 'level': self.read('wPartyMon1Level')[0]}
 
     def world_bar(self, label):
+        initial_publication = self.world_publication_serial
         self.p.tick(90, True)
         assert not self.read('wBattleMode')[0] and not self.read('wScriptMode')[0]
+        publication = None
+        if 'PeonInitLargeWorldSpritesV0215' in self.sym:
+            for _ in range(360):
+                if not self.read('hOAMUpdate')[0]:
+                    actual = bytes(self.p.memory[0xfe00:0xfea0])
+                    publication = next((record for record in reversed(self.world_publications)
+                        if record['serial'] > initial_publication
+                        and record['position'] == self.position()
+                        and record['resource'] == self.metadata()
+                        and actual[:record['used']] == record['oam']), None)
+                    if publication is not None:
+                        break
+                self.p.tick(1, True)
+            assert publication is not None, 'No complete native world OAM publication reached hardware'
         # Shadow OAM can be midway through InitSprites while native
         # hOAMUpdate protects DMA. Observe the completed hardware buffer.
         raw = list(self.p.memory[0xfe00:0xfe18])
@@ -94,14 +199,50 @@ class ResourceHUDSession(EarthSession):
         assert max(scanlines) <= 10
         result = value | {'filled_pixels': fill, 'gauge_objects': objects[4:6],
                           'all_six_HUD_objects_visible': True, 'native_OAM_objects': used // 4,
-                          'top_HUD_maximum_scanline_objects': max(scanlines)}
+                          'top_HUD_maximum_scanline_objects': max(scanlines),
+                          'complete_native_OAM_publication': bool(publication) if publication else None}
         self.bar_observations.append(result)
         self.capture(label)
         return result
 
+    def shaman_rear_on_lcd(self):
+        expected = (ROOT / 'gfx/shaman_proportions_v0214/back_frames.bin').read_bytes()[:576]
+        for _ in range(180):
+            if (bytes(self.p.memory[0, 0x9310:0x9550]) == expected
+                    and not self.p.memory[0xff42] and not self.p.memory[0xff43]):
+                base = 0x9c00 if self.p.memory[0xff40] & 8 else 0x9800
+                resident = all(self.p.memory[0, base + (y + 6) * 32 + x + 2] == 0x31 + x * 6 + y
+                    and self.p.memory[1, base + (y + 6) * 32 + x + 2] & 0x0f == 0
+                    for y in range(6) for x in range(6))
+                if resident:
+                    data = self.read('wBGPals2', 8)
+                    colors = [tuple(int.from_bytes(bytes(data[n:n + 2]), 'little') >> shift & 31
+                                    for shift in (0, 5, 10)) for n in range(0, 8, 2)]
+                    lcd = self.p.screen.image.convert('RGB')
+                    match = True
+                    for tile in range(36):
+                        tx, ty = divmod(tile, 6)
+                        for y in range(8):
+                            lo, hi = expected[tile * 16 + y * 2:tile * 16 + y * 2 + 2]
+                            for x in range(8):
+                                index = (lo >> (7 - x) & 1) | (hi >> (7 - x) & 1) << 1
+                                actual = tuple(channel >> 3 for channel in lcd.getpixel((16 + tx * 8 + x, 48 + ty * 8 + y)))
+                                if actual != colors[index]:
+                                    match = False
+                                    break
+                            if not match: break
+                        if not match: break
+                    if match:
+                        return {'native_bank0_576_bytes_exact': True,
+                                'displayed_36_column_major_tiles_bank0_palette0': True,
+                                'actual_48x48_RGB555_pixels_exact': 2304}
+            self.p.tick(1, True)
+        raise AssertionError('Complete native Shaman rear did not reach the actual LCD')
+
     def battle_bar(self, label):
         self.p.tick(30, True)
         assert self.read('wCurBattleMon') == [0]
+        actor = self.shaman_rear_on_lcd() if self.class_index == 0 else None
         value = self.metadata()
         fill = 48 * value['current'] // value['maximum']
         wanted = [0xb3 + min(8, max(0, fill - index * 8)) for index in range(6)]
@@ -115,7 +256,8 @@ class ResourceHUDSession(EarthSession):
         assert int.from_bytes(bytes(palettes[26:28]), 'little') == expected_ink
         self.capture(label)
         return value | {'filled_pixels': fill, 'native_tile_ids': wanted,
-                        'actual_resource_color1': palettes[26:28]}
+                        'actual_resource_color1': palettes[26:28],
+                        'complete_Shaman_rear': actor}
 
     def begin_boar(self):
         self.talk_at((10, 10), 'up', 'gornek_first_quest')
@@ -220,6 +362,7 @@ def run(rom_source, sym, index, output, imp=False):
                 assert s.metadata()['current'] > resource_before, 'Normal warrior attacks did not generate rage'
             else:
                 assert s.metadata()['current'] < resource_before, 'Normal spell did not pay real mana'
+            result['native_forced_replacements'] = s.forced_switches
             result['status'] = 'PASS'
             return result
         finally:

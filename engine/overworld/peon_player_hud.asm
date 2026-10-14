@@ -75,16 +75,16 @@ PeonDrawPlayerHUD::
 	ld a, [wStateFlags]
 	and (1 << TEXT_STATE_F) | (1 << LAST_12_SPRITE_OAM_STRUCTS_RESERVED_F)
 	jp nz, .done
-	; Crystal emits tiles for actors beyond the viewport. Release only tiles
-	; that are completely invisible, including hardware-hidden x=0 tiles.
-	; Actor structs, native sprite allocation and movement remain untouched.
-	call .CompactOffscreenObjects
+	; The scoped 24px renderer already omits every wholly hidden OAM cell.
+	; Its published allocation and cached scanline counts need no compaction.
 	; A fixed panel retains its geometry as NPCs enter/leave the viewport.
 	; Keep every world object and test each of its eight scanlines separately.
 	ldh a, [hUsedSpriteIndex]
 	cp (OAM_COUNT - PEON_HUD_OBJECTS) * OBJ_SIZE + 1
 	jr nc, .done
-	call .HasHUDScanlineBudget
+	; The scoped world renderer already counted every admitted object by row.
+	; Reuse those exact counts instead of scanning OAM again for sixteen rows.
+	farcall PeonWorldHUDHasScanlineBudgetV0215
 	jr c, .done
 	ldh a, [hUsedSpriteIndex]
 	ld l, a

@@ -1,5 +1,15 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.15](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.15/releases/v0.2.15/peon_of_warcraft_v0_2_15.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.15/releases/v0.2.15/peon_of_warcraft_v0_2_15.zip) · [Personnages du monde agrandis](docs/V0215_LARGER_WORLD_ACTORS.md)
+
+Les personnages du monde passent en **24×24**, avec les silhouettes existantes
+et les couleurs des PNG fournis. Les scènes chargées donnent priorité aux corps
+entiers du joueur et des PNJ proches. Les combats, les décors, les passages et
+les sauvegardes de la v0.2.14 sont conservés.
+Build : `python3 tools/build_peon_v0215.py`.
+
+## v0.2.14 archive
+
 [ROM v0.2.14](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.14/releases/v0.2.14/peon_of_warcraft_v0_2_14.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.14/releases/v0.2.14/peon_of_warcraft_v0_2_14.zip) · [Proportions du shaman et sols allégés](docs/V0214_SHAMAN_AND_QUIETER_GROUND.md)
 
 Le shaman retrouve un rapport tête/corps proche des autres héros, avec sa
@@ -18,7 +28,7 @@ Les décors utilisent les PNG fournis. ROSTER, capture avec suspense,
 maîtres agrandis sont intégrés. Les reprises de sauvegarde des trois classes
 conservent les personnages et l'équipe.
 
-Build courant : `python3 tools/build_peon_v0213.py`. La compilation propre
+Build de cette archive : `python3 tools/build_peon_v0213.py`. La compilation propre
 depuis les fichiers Git donne exactement la ROM testée. Voir le
 [rapport](references/generated/v0213/validation.json) et les
 [captures de la ROM finale](releases/v0.2.13/captures/).

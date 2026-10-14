@@ -22,6 +22,101 @@ SCRIPTS = ("PeonOrcHutShamanMasterScript", "PeonOrcHutWarriorMasterScript", "Peo
 
 
 class MasterSession(EarthSession):
+    def open(self):
+        super().open()
+        self.native_class_panel_seen = False
+        self.lodge_oam_generation = 0
+        self.lodge_published_generation = 0
+        self.lodge_completed_oam = None
+        if "PeonInitLargeWorldSpritesV0215" not in self.sym:
+            return
+        self.p.hook_register(*self.sym["PeonClassSelect.draw"],
+                             lambda _: setattr(self, "native_class_panel_seen", True), None)
+        def complete(_):
+            if self.map() != 22 or self.read("wBackupMapNumber") != [14]:
+                return
+            self.lodge_oam_generation += 1
+            shadow = self.read("wShadowOAM", 160)
+            # This hook is immediately before the native tail fill. Its
+            # only change is hiding unused Y cells; predict that exact tail.
+            for offset in range(self.read("hUsedSpriteIndex")[0], 160, 4):
+                shadow[offset] = 160  # OAM_YCOORD_HIDDEN, native constants/gfx_constants.asm
+            self.lodge_completed_oam = shadow
+        def published(_):
+            if (self.lodge_completed_oam is not None
+                    and self.read("hOAMUpdate") == [0]
+                    and list(self.p.memory[0xfe00:0xfea0]) == self.lodge_completed_oam):
+                self.lodge_published_generation = self.lodge_oam_generation
+        self.p.hook_register(*self.sym["_UpdateSprites.fill"], complete, None)
+        self.p.hook_register(*self.sym["VBlank_Normal.done_oam"], published, None)
+
+    def press(self, key, frames=90):
+        if ("PeonInitLargeWorldSpritesV0215" in self.sym and key == "a"
+                and self.map() == 13 and self.native_class_panel_seen
+                and not self.class_ready):
+            # The native panel can still be publishing after it is drawn;
+            # wait for its real input loop before sending another confirm.
+            self.p.tick(frames, True)
+            return
+        if ("PeonInitLargeWorldSpritesV0215" in self.sym and key == "a"
+                and self.map() == 13 and not self.native_class_panel_seen):
+            # Stop a dialogue-advance press as the actual class panel starts
+            # drawing. A later menu requires its own deliberate confirm.
+            self.p.button(key, delay=4)
+            for elapsed in range(1, frames + 1):
+                self.p.tick(1, True)
+                if self.native_class_panel_seen:
+                    self.p.button_release(key)
+                    self.p.tick(max(frames - elapsed, 1), True)
+                    return
+            return
+        if ("PeonInitLargeWorldSpritesV0215" in self.sym
+                and self.class_ready and not self.naming and self.map() == 13
+                and key in ("up", "down")):
+            old = self.read("wMenuCursorY")
+            self.p.button_press(key)
+            elapsed = 0
+            for elapsed in range(1, 33):
+                self.p.tick(1, True)
+                if self.read("wMenuCursorY") != old:
+                    break
+            self.p.button_release(key)
+            self.p.tick(max(frames - elapsed, 1), True)
+            return
+        if ("PeonInitLargeWorldSpritesV0215" in self.sym
+                and key in ("up", "down", "left", "right")
+                and self.presentation == "world"
+                and self.read("wScriptMode") == [0]):
+            # Hold until the first native movement/turn acknowledges the
+            # D-pad, then release before it can buffer another tile step.
+            # This respects a slower renderer without long held movement.
+            start = self.position()
+            facing = self.read("wObjectStructs", 14)[13]
+            self.p.button_press(key)
+            elapsed = 0
+            for elapsed in range(1, 13):
+                self.p.tick(1, True)
+                if (self.position() != start or self.read("wPlayerStepFlags")[0]
+                        or self.read("wObjectStructs", 14)[13] != facing):
+                    break
+            self.p.button_release(key)
+            self.p.tick(max(frames - elapsed, 1), True)
+            return
+        if ("PeonInitLargeWorldSpritesV0215" in self.sym
+                and key in ("a", "start", "select")
+                and self.presentation == "world"
+                and self.read("wScriptMode") == [0]):
+            self.p.button_press(key)
+            elapsed = 0
+            for elapsed in range(1, 17):
+                self.p.tick(1, True)
+                if self.read("wScriptMode") != [0] or self.presentation != "world":
+                    break
+            self.p.button_release(key)
+            self.p.tick(max(frames - elapsed, 1), True)
+            return
+        super().press(key, frames)
+
     def live_actors(self, name):
         actors = super().live_actors(name)
         records = self.read("wObjectStructs", 13 * 40)
@@ -33,6 +128,14 @@ class MasterSession(EarthSession):
         return [actor for actor in actors if actor["index"] not in follower_slots]
 
     def master_scene(self):
+        if "PeonInitLargeWorldSpritesV0215" in self.sym:
+            old = self.lodge_published_generation
+            for _ in range(120):
+                self.p.tick(1, True)
+                if self.lodge_published_generation > old:
+                    self.p.tick(2, True)  # one complete LCD scan after native DMA
+                    break
+            assert self.lodge_published_generation > old, "Native OAM publication did not finish"
         assert self.map() == 22 and self.read("wBackupMapNumber") == [14]
         records = self.read("wObjectStructs", 13 * 40)
         masters = {}
@@ -77,7 +180,45 @@ class MasterSession(EarthSession):
                 masters[role]["actual_native_lcd_opaque_pixels_exact"] = checked
         assert master_tiles == 27, ("Every complete master tile must reach native OAM", master_tiles)
         assert not any(records[i * 40] == 0x68 for i in range(13)), "Indoor follower should be hidden, not removed from party"
-        return {"masters": masters, "native_visible_oam_objects": len(visible), "maximum_objects_on_one_scanline": max(rows), "complete_master_tiles_visible": master_tiles}
+        scene = {"masters": masters, "native_visible_oam_objects": len(visible), "maximum_objects_on_one_scanline": max(rows), "complete_master_tiles_visible": master_tiles}
+        if "PeonInitLargeWorldSpritesV0215" in self.sym:
+            # The new world-only renderer puts each complete 24px actor in
+            # bank1, slot index*9, while these unchanged static masters stay
+            # in bank0. In this room35/36 nonblank body cells leave fewer
+            # than six HUD cells, so its all-or-none HUD is omitted.
+            hero = records[:40]
+            facing = hero[13] & 15
+            direction = (facing & 12) >> 2
+            pose = {1: 1, 3: 2}.get(facing & 3, 0)
+            frame = direction * 3 + pose
+            role = CLASSES[self.class_index]
+            packet = (ROOT / "gfx/world_actors_v0215" / role / "overworld.bin").read_bytes()[frame * 144:(frame + 1) * 144]
+            assert bytes(self.p.memory[1, 0x8000:0x8090]) == packet, ("Hero's whole 24px native frame differs", role, frame)
+            hero_cells = [(y, x, tile, flags) for y, x, tile, flags in visible if flags & 8 and tile < 9]
+            masks = (ROOT / "gfx/world_actors_v0215" / role / "masks.bin").read_bytes()
+            mask = int.from_bytes(masks[frame * 2:frame * 2 + 2], "little")
+            active_tiles = {tile for tile in range(9) if mask & (1 << tile)}
+            assert {tile for y, x, tile, flags in hero_cells} == active_tiles, ("Every nonblank hero cell required", active_tiles, hero_cells)
+            assert len(visible) == 27 + len(active_tiles), ("All master/hero cells, no partial HUD", len(visible), active_tiles)
+            first = next((y, x) for y, x, tile, flags in hero_cells if tile == 0)
+            view = ("front", "back", "left", "right")[direction]
+            expected = Image.open(ROOT / "references/generated/world_actors_v0215" / role / f"world_{view}_{pose}_24x24.png").convert("RGBA")
+            checked = 0
+            for py in range(24):
+                for px in range(24):
+                    pixel = expected.getpixel((px, py))
+                    if not pixel[3]:
+                        continue
+                    rgb = tuple((channel >> 3) << 3 for channel in pixel[:3])
+                    actual = lcd.getpixel((first[1] + px, first[0] + py))
+                    assert actual == rgb, ("Actual native LCD hero pixel mismatch", role, view, pose, px, py, actual, rgb)
+                    checked += 1
+            scene["hero_24px"] = {"whole_native_frame_exact": True, "complete_oam_cells": len(active_tiles),
+                "authored_blank_tiles_omitted": 9 - len(active_tiles), "exact_source_mask": mask,
+                "direction": view, "pose": pose, "actual_lcd_opaque_pixels_exact": checked}
+            scene["six_cell_hud_omitted_as_whole"] = True
+            scene["completed_native_oam_publication_observed"] = True
+        return scene
 
     def enter_lodge(self):
         self.navigate((5, 7), 22)
@@ -209,7 +350,7 @@ def main():
         assert digest == args.expected_rom_sha256
     args.output.mkdir(parents=True, exist_ok=True)
     report = {"rom_sha256": digest, "ordinary_buttons_only": True, "ram_edits": False,
-              "emulator_states_loaded": False, "user_battery_records_opened": False, "classes": {}, "status": "RUNNING"}
+              "emulator_states_loaded": False, "user_battery_records_opened": False, "classes": {}, "status": "RUNNING", "passed": False}
     symbols = {}
     for line in args.sym.read_text().splitlines():
         fields = line.split()
@@ -257,7 +398,7 @@ def main():
                     assert any(records[i * 40] == 0x68 for i in range(1, 13))
                     session.capture("cold_continue_outdoor_imp_restored")
                     restart["walking_imp_restored_outdoors_after_cold_continue"] = True
-                report["classes"][name] = {"scene": scene, "trainer_interactions": trainer,
+                report["classes"][name] = {"status": "PASS", "passed": True, "scene": scene, "trainer_interactions": trainer,
                     "sleeping_worker_zone_two": [20, 13], "native_wake_flag": True,
                     "reward_once_only": 100, "native_party_preserved": True, "cold_continue_in_lodge": restart}
             except Exception:
@@ -275,7 +416,8 @@ def main():
                 raise
             finally:
                 session.p.stop(save=False)
-    report["status"] = "PASSED"
+    report["status"] = "PASS"
+    report["passed"] = True
     (args.output / "validation.json").write_text(json.dumps(report, indent=2) + "\n")
     print(json.dumps(report, indent=2))
 

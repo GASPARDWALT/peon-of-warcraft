@@ -1,0 +1,411 @@
+{
+  "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+  "cases": {
+    "shaman": {
+      "ordinary_buttons_only": true,
+      "emulator_memory_edits": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "world_initial": {
+        "current": 72,
+        "maximum": 72,
+        "class": 0,
+        "level": 2,
+        "filled_pixels": 16,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            118,
+            6
+          ],
+          [
+            27,
+            28,
+            118,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 39,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "battle_initial": {
+        "current": 72,
+        "maximum": 72,
+        "class": 0,
+        "level": 2,
+        "filled_pixels": 48,
+        "native_tile_ids": [
+          187,
+          187,
+          187,
+          187,
+          187,
+          187
+        ],
+        "actual_resource_color1": [
+          36,
+          126
+        ],
+        "complete_Shaman_rear": {
+          "native_bank0_576_bytes_exact": true,
+          "displayed_36_column_major_tiles_bank0_palette0": true,
+          "actual_48x48_RGB555_pixels_exact": 2304
+        }
+      },
+      "type": {
+        "type": "nature",
+        "selected_native_move": 84,
+        "glyphs_match_regular_native_font_ink": true,
+        "only_unused_HP_EXP_color1_slots_changed": true,
+        "native_font0_enemy_border_EXP_and_bold_name_preserved": true
+      },
+      "battle_during_type_selection": {
+        "current": 72,
+        "maximum": 72,
+        "class": 0,
+        "level": 2,
+        "filled_pixels": 48,
+        "native_tile_ids": [
+          187,
+          187,
+          187,
+          187,
+          187,
+          187
+        ],
+        "actual_resource_color1": [
+          36,
+          126
+        ],
+        "complete_Shaman_rear": {
+          "native_bank0_576_bytes_exact": true,
+          "displayed_36_column_major_tiles_bank0_palette0": true,
+          "actual_48x48_RGB555_pixels_exact": 2304
+        }
+      },
+      "world_after_combat": {
+        "current": 27,
+        "maximum": 72,
+        "class": 0,
+        "level": 2,
+        "filled_pixels": 6,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            116,
+            6
+          ],
+          [
+            27,
+            28,
+            110,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 30,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "status": "PASS"
+    },
+    "warrior": {
+      "ordinary_buttons_only": true,
+      "emulator_memory_edits": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "world_initial": {
+        "current": 0,
+        "maximum": 100,
+        "class": 1,
+        "level": 2,
+        "filled_pixels": 0,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            101,
+            0
+          ],
+          [
+            27,
+            28,
+            101,
+            0
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 39,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "battle_initial": {
+        "current": 0,
+        "maximum": 100,
+        "class": 1,
+        "level": 2,
+        "filled_pixels": 0,
+        "native_tile_ids": [
+          179,
+          179,
+          179,
+          179,
+          179,
+          179
+        ],
+        "actual_resource_color1": [
+          191,
+          12
+        ],
+        "complete_Shaman_rear": null
+      },
+      "type": {
+        "type": "phys",
+        "selected_native_move": 1,
+        "glyphs_match_regular_native_font_ink": true,
+        "only_unused_HP_EXP_color1_slots_changed": true,
+        "native_font0_enemy_border_EXP_and_bold_name_preserved": true
+      },
+      "battle_during_type_selection": {
+        "current": 0,
+        "maximum": 100,
+        "class": 1,
+        "level": 2,
+        "filled_pixels": 0,
+        "native_tile_ids": [
+          179,
+          179,
+          179,
+          179,
+          179,
+          179
+        ],
+        "actual_resource_color1": [
+          191,
+          12
+        ],
+        "complete_Shaman_rear": null
+      },
+      "world_after_combat": {
+        "current": 21,
+        "maximum": 100,
+        "class": 1,
+        "level": 2,
+        "filled_pixels": 3,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            104,
+            0
+          ],
+          [
+            27,
+            28,
+            101,
+            0
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 29,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "status": "PASS"
+    },
+    "warlock": {
+      "ordinary_buttons_only": true,
+      "emulator_memory_edits": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "world_initial": {
+        "current": 90,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 16,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            118,
+            6
+          ],
+          [
+            27,
+            28,
+            118,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 39,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "battle_initial": {
+        "current": 90,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 48,
+        "native_tile_ids": [
+          187,
+          187,
+          187,
+          187,
+          187,
+          187
+        ],
+        "actual_resource_color1": [
+          36,
+          126
+        ],
+        "complete_Shaman_rear": null
+      },
+      "type": {
+        "type": "shadow",
+        "selected_native_move": 247,
+        "glyphs_match_regular_native_font_ink": true,
+        "only_unused_HP_EXP_color1_slots_changed": true,
+        "native_font0_enemy_border_EXP_and_bold_name_preserved": true
+      },
+      "battle_during_type_selection": {
+        "current": 90,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 48,
+        "native_tile_ids": [
+          187,
+          187,
+          187,
+          187,
+          187,
+          187
+        ],
+        "actual_resource_color1": [
+          36,
+          126
+        ],
+        "complete_Shaman_rear": null
+      },
+      "world_after_combat": {
+        "current": 65,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 11,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            118,
+            6
+          ],
+          [
+            27,
+            28,
+            113,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 39,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "status": "PASS"
+    },
+    "active_imp_fire": {
+      "ordinary_buttons_only": true,
+      "emulator_memory_edits": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "world_initial": {
+        "current": 90,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 16,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            118,
+            6
+          ],
+          [
+            27,
+            28,
+            118,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 39,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "type": {
+        "type": "fire",
+        "selected_native_move": 53,
+        "glyphs_match_regular_native_font_ink": true,
+        "only_unused_HP_EXP_color1_slots_changed": true,
+        "native_font0_enemy_border_EXP_and_bold_name_preserved": true
+      },
+      "world_after_combat": {
+        "current": 90,
+        "maximum": 90,
+        "class": 2,
+        "level": 2,
+        "filled_pixels": 16,
+        "gauge_objects": [
+          [
+            27,
+            20,
+            118,
+            6
+          ],
+          [
+            27,
+            28,
+            118,
+            6
+          ]
+        ],
+        "all_six_HUD_objects_visible": true,
+        "native_OAM_objects": 30,
+        "top_HUD_maximum_scanline_objects": 7,
+        "complete_native_OAM_publication": true
+      },
+      "active_imp_native_PP": {
+        "before": [
+          35,
+          25,
+          0,
+          0
+        ],
+        "after": [
+          32,
+          24,
+          0,
+          0
+        ]
+      },
+      "native_forced_replacements": [
+        {
+          "fainted_native_slot": 1,
+          "chosen_living_native_slot": 0,
+          "actual_Dpad_and_A_only": true
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

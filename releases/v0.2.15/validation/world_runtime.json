@@ -1,0 +1,973 @@
+{
+  "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+  "ordinary_buttons_only": true,
+  "RAM_edits": false,
+  "states_loaded": false,
+  "user_batteries_opened": false,
+  "base_peon_runtime_scope": "Scripted opening forced LEFT pose; source VRAM/OAM and actual LCD capture only, no free walking or four-direction coverage.",
+  "classes": {
+    "shaman": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 322
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 3,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 307
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "left": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 6,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 314
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 38,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 9,
+              "complete_visible_tiles": 8,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 292
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_authored_gait_poses": true,
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 36
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 40,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 225,
+            "frame": 3,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "7": {
+            "key": 64,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 35,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 225,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 322
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        10,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 656,
+      "native_current_object_context_preserved": true
+    },
+    "warrior": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 241
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 38,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 3,
+              "complete_visible_tiles": 8,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 249
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 9
+        },
+        "left": {
+          "objects": 38,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 6,
+              "complete_visible_tiles": 8,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 202
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 38,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 9,
+              "complete_visible_tiles": 8,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 201
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_authored_gait_poses": true,
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 36
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 39,
+        "maximum_scanline": 8,
+        "actors": {
+          "0": {
+            "key": 226,
+            "frame": 3,
+            "complete_visible_tiles": 8,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "7": {
+            "key": 64,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 35,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 226,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 241
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        10,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 658,
+      "native_current_object_context_preserved": true
+    },
+    "warlock": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 273
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 3,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 261
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 8
+        },
+        "left": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 6,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 205
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 9,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 202
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_authored_gait_poses": true,
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 35
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 40,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 227,
+            "frame": 3,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "2": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 104,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "8": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 40,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 227,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 273
+          },
+          "2": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 104,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "8": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        11,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 710,
+      "native_current_object_context_preserved": true
+    }
+  },
+  "status": "PASS"
+}

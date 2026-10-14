@@ -1,0 +1,567 @@
+{
+  "rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "user_battery_opened": false,
+  "emulator_states_loaded": false,
+  "class": "shaman",
+  "samples": {
+    "den_spawn_idle": {
+      "frames": 240,
+      "cpu_speed_register": 0,
+      "position_before": [
+        10,
+        12
+      ],
+      "position_after": [
+        10,
+        12
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            10,
+            12
+          ],
+          425025900
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 59,
+        "median": 159388,
+        "mean": 159410.4406779661,
+        "min": 158780,
+        "max": 159848
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 59,
+        "median": 281112,
+        "mean": 280903.3220338983,
+        "min": 270592,
+        "max": 291116
+      },
+      "sprite_updates": 60,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 39,
+      "maximum_objects_per_scanline": 7,
+      "register_state_mismatches": []
+    },
+    "short_steps": [
+      {
+        "key": "left",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          9,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 49,
+        "duration_tcycles_to_change": 3721880,
+        "update_duration_tcycles": [
+          158780,
+          143628,
+          167252,
+          143624,
+          159888,
+          160920,
+          182540,
+          159240,
+          159232,
+          159384,
+          182992,
+          159372,
+          159888
+        ],
+        "gdma_frame_uploads": 3,
+        "gdma_wait_records": [
+          {
+            "object": 0,
+            "frame": 7,
+            "elapsed_tcycles": 21788,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 6,
+            "elapsed_tcycles": 21840,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 8,
+            "elapsed_tcycles": 21448,
+            "elapsed_lcd_frames": 1
+          }
+        ],
+        "function_counts": {
+          "PeonBuildLargeWorldCandidateV0215": {
+            "0": 13,
+            "1": 13,
+            "4": 13,
+            "3": 13,
+            "6": 13,
+            "7": 13
+          },
+          "metadata_warm": {
+            "0": 10,
+            "1": 13,
+            "4": 13,
+            "3": 13,
+            "6": 13
+          },
+          "admit_nonzero": {
+            "0": 13,
+            "2": 13,
+            "1": 13,
+            "5": 13,
+            "4": 13
+          },
+          "admitted": {
+            "0": 13,
+            "2": 13,
+            "1": 13,
+            "5": 13,
+            "4": 13
+          },
+          "admit_zero": {
+            "3": 13,
+            "6": 13,
+            "7": 13
+          },
+          "metadata_cold": {
+            "0": 3
+          }
+        },
+        "register_state_mismatches": []
+      },
+      {
+        "key": "right",
+        "before": [
+          9,
+          12
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 48,
+        "duration_tcycles_to_change": 3721876,
+        "update_duration_tcycles": [
+          143332,
+          166148,
+          141996,
+          158400,
+          174976,
+          182396,
+          158112,
+          158564,
+          158116,
+          183728,
+          158908,
+          169196
+        ],
+        "gdma_frame_uploads": 3,
+        "gdma_wait_records": [
+          {
+            "object": 0,
+            "frame": 10,
+            "elapsed_tcycles": 22436,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 9,
+            "elapsed_tcycles": 22728,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 11,
+            "elapsed_tcycles": 23152,
+            "elapsed_lcd_frames": 1
+          }
+        ],
+        "function_counts": {
+          "admit_nonzero": {
+            "5": 13,
+            "1": 13,
+            "4": 13,
+            "0": 12,
+            "2": 12
+          },
+          "admitted": {
+            "5": 13,
+            "1": 13,
+            "4": 13,
+            "0": 12,
+            "2": 12
+          },
+          "PeonBuildLargeWorldCandidateV0215": {
+            "1": 13,
+            "4": 13,
+            "6": 13,
+            "3": 13,
+            "7": 13,
+            "0": 12
+          },
+          "metadata_warm": {
+            "1": 13,
+            "4": 13,
+            "6": 13,
+            "3": 13,
+            "0": 9
+          },
+          "admit_zero": {
+            "6": 13,
+            "3": 13,
+            "7": 13
+          },
+          "metadata_cold": {
+            "0": 3
+          }
+        },
+        "register_state_mismatches": []
+      },
+      {
+        "key": "up",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          10,
+          11
+        ],
+        "lcd_frames_until_map_coord_changed": 53,
+        "duration_tcycles_to_change": 4002768,
+        "update_duration_tcycles": [
+          159080,
+          142816,
+          168244,
+          143644,
+          159840,
+          161704,
+          184428,
+          219000,
+          154396,
+          155012,
+          238788,
+          161220,
+          154228
+        ],
+        "gdma_frame_uploads": 5,
+        "gdma_wait_records": [
+          {
+            "object": 0,
+            "frame": 4,
+            "elapsed_tcycles": 22452,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 3,
+            "elapsed_tcycles": 22604,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 7,
+            "frame": 9,
+            "elapsed_tcycles": 55316,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 5,
+            "elapsed_tcycles": 22184,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 3,
+            "frame": 0,
+            "elapsed_tcycles": 59192,
+            "elapsed_lcd_frames": 1
+          }
+        ],
+        "function_counts": {
+          "admit_zero": {
+            "7": 8,
+            "3": 10,
+            "6": 13,
+            "4": 3
+          },
+          "PeonBuildLargeWorldCandidateV0215": {
+            "0": 13,
+            "1": 13,
+            "4": 13,
+            "3": 13,
+            "6": 13,
+            "7": 13
+          },
+          "metadata_warm": {
+            "0": 10,
+            "1": 13,
+            "4": 13,
+            "3": 13,
+            "6": 13,
+            "7": 5
+          },
+          "admit_nonzero": {
+            "0": 13,
+            "2": 13,
+            "1": 13,
+            "5": 13,
+            "4": 10,
+            "7": 6,
+            "3": 3
+          },
+          "admitted": {
+            "0": 13,
+            "2": 13,
+            "1": 13,
+            "5": 13,
+            "4": 10,
+            "7": 4,
+            "3": 3
+          },
+          "metadata_cold": {
+            "0": 3,
+            "7": 1
+          }
+        },
+        "register_state_mismatches": []
+      },
+      {
+        "key": "down",
+        "before": [
+          10,
+          11
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_until_map_coord_changed": 54,
+        "duration_tcycles_to_change": 4072988,
+        "update_duration_tcycles": [
+          179420,
+          179068,
+          209568,
+          178904,
+          179456,
+          190568,
+          212948,
+          181468,
+          181264,
+          180152,
+          216872,
+          186444,
+          186508
+        ],
+        "gdma_frame_uploads": 3,
+        "gdma_wait_records": [
+          {
+            "object": 0,
+            "frame": 1,
+            "elapsed_tcycles": 20564,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 0,
+            "elapsed_tcycles": 20672,
+            "elapsed_lcd_frames": 1
+          },
+          {
+            "object": 0,
+            "frame": 2,
+            "elapsed_tcycles": 20032,
+            "elapsed_lcd_frames": 1
+          }
+        ],
+        "function_counts": {
+          "PeonBuildLargeWorldCandidateV0215": {
+            "0": 103,
+            "1": 13,
+            "3": 13,
+            "4": 13,
+            "7": 13,
+            "6": 13,
+            "9": 13
+          },
+          "metadata_warm": {
+            "0": 100,
+            "1": 13,
+            "3": 13,
+            "4": 13,
+            "7": 10,
+            "6": 13
+          },
+          "admit_nonzero": {
+            "0": 103,
+            "2": 103,
+            "1": 103,
+            "5": 13,
+            "3": 97,
+            "7": 10,
+            "4": 6
+          },
+          "admitted": {
+            "0": 103,
+            "2": 103,
+            "1": 103,
+            "5": 13,
+            "3": 98,
+            "7": 4,
+            "4": 6
+          },
+          "admit_zero": {
+            "4": 7,
+            "6": 13,
+            "9": 13,
+            "8": 13,
+            "3": 6,
+            "7": 3
+          },
+          "metadata_cold": {
+            "0": 3
+          }
+        },
+        "register_state_mismatches": []
+      }
+    ],
+    "three_masters_idle": {
+      "frames": 240,
+      "cpu_speed_register": 0,
+      "position_before": [
+        5,
+        5
+      ],
+      "position_after": [
+        5,
+        5
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            5,
+            5
+          ],
+          531117524
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 59,
+        "median": 140660,
+        "mean": 141242.98305084746,
+        "min": 140460,
+        "max": 158272
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 59,
+        "median": 280896,
+        "mean": 280890.3728813559,
+        "min": 269880,
+        "max": 291584
+      },
+      "sprite_updates": 60,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 36,
+      "maximum_objects_per_scanline": 6,
+      "register_state_mismatches": []
+    },
+    "lodge_after_turn": {
+      "frames": 120,
+      "cpu_speed_register": 0,
+      "position_before": [
+        5,
+        5
+      ],
+      "position_after": [
+        5,
+        5
+      ],
+      "position_changes": [
+        [
+          0,
+          [
+            5,
+            5
+          ],
+          556398168
+        ]
+      ],
+      "sprite_update_duration_tcycles": {
+        "samples": 29,
+        "median": 140660,
+        "mean": 141704.55172413794,
+        "min": 140468,
+        "max": 151504
+      },
+      "sprite_update_interval_tcycles": {
+        "samples": 29,
+        "median": 280896,
+        "mean": 280896.5517241379,
+        "min": 280564,
+        "max": 281228
+      },
+      "sprite_updates": 30,
+      "gdma_frame_uploads": 0,
+      "maximum_visible_oam": 36,
+      "maximum_objects_per_scanline": 6,
+      "register_state_mismatches": []
+    },
+    "lodge_whole_body_scene": {
+      "masters": {
+        "warrior_trainer": {
+          "actor": 3,
+          "sprite": 107,
+          "world_xy": [
+            7,
+            5
+          ],
+          "native_tile_bytes_exact": true,
+          "actual_native_lcd_opaque_pixels_exact": 323
+        },
+        "enemy_warlock": {
+          "actor": 4,
+          "sprite": 108,
+          "world_xy": [
+            3,
+            7
+          ],
+          "native_tile_bytes_exact": true,
+          "actual_native_lcd_opaque_pixels_exact": 267
+        },
+        "shaman_master": {
+          "actor": 2,
+          "sprite": 106,
+          "world_xy": [
+            6,
+            3
+          ],
+          "native_tile_bytes_exact": true,
+          "actual_native_lcd_opaque_pixels_exact": 349
+        }
+      },
+      "native_visible_oam_objects": 36,
+      "maximum_objects_on_one_scanline": 6,
+      "complete_master_tiles_visible": 27,
+      "hero_24px": {
+        "whole_native_frame_exact": true,
+        "complete_oam_cells": 9,
+        "authored_blank_tiles_omitted": 0,
+        "exact_source_mask": 511,
+        "direction": "left",
+        "pose": 0,
+        "actual_lcd_opaque_pixels_exact": 314
+      },
+      "six_cell_hud_omitted_as_whole": true,
+      "completed_native_oam_publication_observed": true
+    }
+  },
+  "status": "PASS"
+}
