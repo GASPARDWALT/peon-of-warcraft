@@ -133,7 +133,8 @@ PeonLoadSpellV1Palettes::
 	ret
 
 ; BC = native object pointer in WRAM5. Select the supplied source direction
-; once, before its first OAM frame. No mirroring, scaling or extra actor state.
+; once, before its first OAM frame. Lightning's supplied full canvases are
+; rotated into horizontal 32x16 projectiles in the v0213 graphics overlay.
 PeonStepSpellV1::
 	ld hl, BATTLEANIMSTRUCT_JUMPTABLE_INDEX
 	add hl, bc
@@ -191,6 +192,8 @@ PeonStepSpellV1::
 	ld [hl], a
 	ret
 .lightning
+	; The horizontal frame follows the caster-to-target line: two pixels
+	; across each frame and one pixel vertically every other frame.
 	ld hl, BATTLEANIMSTRUCT_VAR1
 	add hl, bc
 	ld a, [hl]

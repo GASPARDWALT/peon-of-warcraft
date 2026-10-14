@@ -1,0 +1,1038 @@
+{
+  "allocation": "Read-only simulation of current native ArrangeUsedSprites and GetUsedSprite; includes all map-object sprite IDs regardless of visibility and optional Warlock follower. USER_WORLD_4DIR has no walking upload; bank0 never receives walking uploads. Quest marker variable IDs conservatively reserve their4tile objects.",
+  "extra_bank": 1,
+  "extra_physical_range": [
+    "$8e00",
+    "$8f7f"
+  ],
+  "emote_physical_range": [
+    "$8f80",
+    "$8fff"
+  ],
+  "portrait_cache": [
+    "bank1 $9600",
+    "$968f"
+  ],
+  "font_cache": [
+    "bank1 $9690",
+    "$97ff"
+  ],
+  "decompress_available_bytes": 4096,
+  "required216_bytes": 3456,
+  "maps": [
+    {
+      "map": "PeonOpening",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_RED",
+          "type": 3,
+          "standing_length": 4,
+          "source": "PeonSleepingGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x823f"
+          ]
+        },
+        {
+          "actor": "SPRITE_YOUNGSTER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserHunterWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8240",
+            "0x833f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8340",
+            "0x843f"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "TheDen",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_1",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x823f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_2",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x8240",
+            "0x827f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_MAILBOX",
+          "type": 3,
+          "standing_length": 4,
+          "source": "PeonMailboxGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8280",
+            "0x82bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_FISHER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserQuestPeonWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x83bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_POKE_BALL",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserBoarWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x83c0",
+            "0x84bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_ELDER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserKentoWorldV0212",
+          "bank": 1,
+          "standing_range": [
+            "0x84c0",
+            "0x85bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_PAPER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserScorpidWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x85c0",
+            "0x86bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_GENTLEMAN",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcMerchantWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x86c0",
+            "0x87bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_BLACK_BELT",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserVeteranWorldV0211",
+          "bank": 0,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_WORKER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserWorkerWorldV0211",
+          "bank": 0,
+          "standing_range": [
+            "0x8100",
+            "0x81ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_BRUNO",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserWarriorMasterWorldV0212",
+          "bank": 0,
+          "standing_range": [
+            "0x8200",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_MORTY",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserWarlockMasterWorldV0212",
+          "bank": 0,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 0,
+          "standing_range": [
+            "0x8400",
+            "0x84ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "ValleyOfTrials",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_1",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x823f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_2",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x8240",
+            "0x827f"
+          ]
+        },
+        {
+          "actor": "SPRITE_FISHER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserQuestPeonWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8280",
+            "0x837f"
+          ]
+        },
+        {
+          "actor": "SPRITE_SAGE",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTrollShamanWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8380",
+            "0x847f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8480",
+            "0x857f"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "DurotarRoad",
+      "bank1_walking_highest_byte": "0x8abf",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_CRAWLER",
+          "type": 1,
+          "standing_length": 12,
+          "source": "PeonCrawlerGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82bf"
+          ],
+          "walking_range": [
+            "0x8a00",
+            "0x8abf"
+          ]
+        },
+        {
+          "actor": "SPRITE_LINK_RECEPTIONIST",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTrollGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x83bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_OFFICER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x83c0",
+            "0x84bf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_TIGER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTigerWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x84c0",
+            "0x85bf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_RAPTOR",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserRaptorWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x85c0",
+            "0x86bf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_HARPY",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserHarpyWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x86c0",
+            "0x87bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_PAPER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserScorpidWorldV0211",
+          "bank": 0,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 0,
+          "standing_range": [
+            "0x8100",
+            "0x81ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "SenjinVillage",
+      "bank1_walking_highest_byte": "0x8abf",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_ORC_GRUNT",
+          "type": 1,
+          "standing_length": 12,
+          "source": "PokefanFSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82bf"
+          ],
+          "walking_range": [
+            "0x8a00",
+            "0x8abf"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_MAILBOX",
+          "type": 3,
+          "standing_length": 4,
+          "source": "PeonMailboxGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_SAGE",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTrollShamanWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_CLERK",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTrollMerchantWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8400",
+            "0x84ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_LINK_RECEPTIONIST",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserTrollGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8500",
+            "0x85ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_EARTH_SPIRIT",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonRockOneNPCWorldV0213",
+          "bank": 1,
+          "standing_range": [
+            "0x8600",
+            "0x86ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8700",
+            "0x87ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "RazorHill",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_MAILBOX",
+          "type": 3,
+          "standing_length": 4,
+          "source": "PeonMailboxGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x823f"
+          ]
+        },
+        {
+          "actor": "SPRITE_BLACK_BELT",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserVeteranWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8240",
+            "0x833f"
+          ]
+        },
+        {
+          "actor": "SPRITE_GENTLEMAN",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcMerchantWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8340",
+            "0x843f"
+          ]
+        },
+        {
+          "actor": "SPRITE_OFFICER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8440",
+            "0x853f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8540",
+            "0x863f"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "OrgrimmarGate",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_OFFICER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "BurningBladeCavern",
+      "bank1_walking_highest_byte": "0x8abf",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_YARROG",
+          "type": 1,
+          "standing_length": 12,
+          "source": "PeonYarrogGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82bf"
+          ],
+          "walking_range": [
+            "0x8a00",
+            "0x8abf"
+          ]
+        },
+        {
+          "actor": "SPRITE_MONSTER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x83bf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_FELSTALKER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFelhunterWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x83c0",
+            "0x84bf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_CULTIST",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserCultistWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x84c0",
+            "0x85bf"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x85c0",
+            "0x86bf"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_3",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x823f"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_EARTH_SPIRIT",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonRockOneNPCWorldV0213",
+          "bank": 1,
+          "standing_range": [
+            "0x8240",
+            "0x833f"
+          ]
+        },
+        {
+          "actor": "SPRITE_MORTY",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserWarlockMasterWorldV0212",
+          "bank": 1,
+          "standing_range": [
+            "0x8340",
+            "0x843f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8440",
+            "0x853f"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "bank1_walking_highest_byte": "0x8abf",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_ORC_GRUNT",
+          "type": 1,
+          "standing_length": 12,
+          "source": "PokefanFSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82bf"
+          ],
+          "walking_range": [
+            "0x8a00",
+            "0x8abf"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_QUEST_2",
+          "type": 3,
+          "standing_length": 4,
+          "source": "runtime quest-marker4tile",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_BLACK_BELT",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserVeteranWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8400",
+            "0x84ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_SARKOTH",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserSarkothWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "PeonCaveApproach",
+      "bank1_walking_highest_byte": "0x89ff",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_MONSTER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82ff"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8300",
+            "0x83ff"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    },
+    {
+      "map": "PeonValleyExit",
+      "bank1_walking_highest_byte": "0x8b7f",
+      "allocated_sprites_including_optional_follower": [
+        {
+          "actor": "SPRITE_CHRIS",
+          "type": 0,
+          "standing_length": 16,
+          "source": "PeonSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8000",
+            "0x80ff"
+          ],
+          "walking_range": [
+            "0x8800",
+            "0x89ff"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_KOLKAR_ARCHER",
+          "type": 1,
+          "standing_length": 12,
+          "source": "CooltrainerMSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x8200",
+            "0x82bf"
+          ],
+          "walking_range": [
+            "0x8a00",
+            "0x8abf"
+          ]
+        },
+        {
+          "actor": "PEON_SPRITE_KOLKAR_RAIDER",
+          "type": 1,
+          "standing_length": 12,
+          "source": "CooltrainerFSpriteGFX",
+          "bank": 1,
+          "standing_range": [
+            "0x82c0",
+            "0x837f"
+          ],
+          "walking_range": [
+            "0x8ac0",
+            "0x8b7f"
+          ]
+        },
+        {
+          "actor": "SPRITE_OFFICER",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserOrcGuardWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8380",
+            "0x847f"
+          ]
+        },
+        {
+          "actor": "SPRITE_PEON_FRIENDLY_IMP",
+          "type": 4,
+          "standing_length": 16,
+          "source": "PeonUserFriendlyImpWorldV0211",
+          "bank": 1,
+          "standing_range": [
+            "0x8480",
+            "0x857f"
+          ]
+        }
+      ],
+      "extra_background_range_unwritten_by_actors": true
+    }
+  ]
+}

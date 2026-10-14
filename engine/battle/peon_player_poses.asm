@@ -104,6 +104,10 @@ PeonPlayerPoseVisible:
 	jr z, .actor
 	cp ONIX
 	jr z, .actor
+	cp GRAVELER
+	jr z, .actor
+	cp GOLEM
+	jr z, .actor
 	cp GEODUDE
 	jr z, .actor
 	cp MACHAMP

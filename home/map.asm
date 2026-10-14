@@ -1352,59 +1352,8 @@ ClearBGMapBuffer:: ; unreferenced
 	ret
 
 LoadTilesetGFX::
-	ld hl, wTilesetAddress
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-	ld a, [wTilesetBank]
-	ld e, a
-
-	ldh a, [rWBK]
-	push af
-	ld a, BANK(wDecompressScratch)
-	ldh [rWBK], a
-
-	ld a, e
-	ld de, wDecompressScratch
-	call FarDecompress
-
-	ld hl, wDecompressScratch
-	ld de, vTiles2
-	ld bc, $60 tiles
-	call CopyBytes
-
-	ldh a, [rVBK]
-	push af
-	ld a, BANK(vTiles5)
-	ldh [rVBK], a
-
-	ld hl, wDecompressScratch + $60 tiles
-	ld de, vTiles5
-	ld bc, $60 tiles
-	call CopyBytes
-
-	pop af
-	ldh [rVBK], a
-
-	pop af
-	ldh [rWBK], a
-
-; These tilesets support dynamic per-mapgroup roof tiles.
-	ld a, [wMapTileset]
-	cp TILESET_JOHTO
-	jr z, .load_roof
-	cp TILESET_JOHTO_MODERN
-	jr z, .load_roof
-	cp TILESET_BATTLE_TOWER_OUTSIDE
-	jr z, .load_roof
-	jr .skip_roof
-
-.load_roof
-	farcall LoadMapGroupRoof
-
-.skip_roof
+	farcall PeonLoadNativeTilesetGFXV0213
 	xor a
-	ldh [hTileAnimFrame], a
 	ret
 
 BufferScreen::

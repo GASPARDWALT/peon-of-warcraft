@@ -107,6 +107,9 @@
 	const SPRITE_PEON_MAILBOX ; 67, append-only scenery actor
 	const SPRITE_PEON_FRIENDLY_IMP ; 68, smaller companion; hostile imp is unchanged
 	const SPRITE_PEON_WORKER ; 69, append-only independent supplied worker views
+	const SPRITE_PEON_SHAMAN_MASTER_LARGE ; 6a, complete supplied24px master
+	const SPRITE_PEON_WARRIOR_MASTER_LARGE ; 6b
+	const SPRITE_PEON_WARLOCK_MASTER_LARGE ; 6c
 DEF NUM_OVERWORLD_SPRITES EQU const_value - 1
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)

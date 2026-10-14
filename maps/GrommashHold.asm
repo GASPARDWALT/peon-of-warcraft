@@ -62,7 +62,6 @@ GrommashHoldSequence:
 	giveitem ITEM_19
 	giveitem ITEM_2D
 	giveitem ITEM_32
-	giveitem ITEM_94
 	giveitem PEON_MINOR_MANA
 	writetext PeonKitText
 	sjump .Supplies
@@ -117,8 +116,9 @@ PeonThrallText:
 	line "Tauren Shaman."
 	para "<BOLD>MoCMoc ZOGZOG<REGULAR>:"
 	line "Orc Warrior."
-	para "<BOLD>XASTHUR<REGULAR>:"
-	line "Warlock Master."
+	para "<BOLD>Bismillah<REGULAR>"
+	line "<BOLD>LesTenèbres<REGULAR>"
+	cont "Warlock Master."
 	done
 PeonKentoText:
 	text "<BOLD>KENTO BRANDENHOOF<REGULAR>:"
@@ -141,8 +141,7 @@ PeonKitText:
 	text "Received CRUDE"
 	line "MACE,"
 	line "WOOD SHIELD and"
-	cont "APPRENTICE TOTEM!"
-	para "Earth Totem ready."
+	cont "LEATHER ARMOR!"
 	para "Learned"
 	line "LIGHTNING BOLT!"
 	para "Go to THE DEN."
@@ -161,7 +160,8 @@ PeonWarriorText:
 	line "what is your name?"
 	done
 PeonWarlockText:
-	text "<BOLD>XASTHUR<REGULAR>:"
+	text "<BOLD>Bismillah<REGULAR>"
+	line "<BOLD>LesTenèbres<REGULAR>"
 	para "Power has a price."
 	line "Will you pay it?"
 	para "You are now my"

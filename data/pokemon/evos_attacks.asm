@@ -840,10 +840,14 @@ MachokeEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachampEvosAttacks:
-	db 0 ; no evolution for this Durotar role
+	db 0 ; orc grunt, no species evolution
 	db 1, POUND
 	db 1, KARATE_CHOP
-	db 0 ; companion curricula are explicit
+	db 4, LEER
+	db 6, FURY_ATTACK
+	db 8, FOCUS_ENERGY
+	db 10, SLASH
+	db 0 ; native four-move replacement and PP
 
 BellsproutEvosAttacks:
 	db EVOLVE_LEVEL, 21, WEEPINBELL
@@ -915,42 +919,38 @@ TentacruelEvosAttacks:
 	db 0 ; no more level-up moves
 
 GeodudeEvosAttacks:
-	db 0 ; no evolution for this Durotar role
+	db 0 ; imp, no species evolution
 	db 1, SCRATCH
 	db 1, FLAMETHROWER
-	db 0 ; companion curricula are explicit
+	db 4, EMBER
+	db 6, SMOG
+	db 8, FIRE_PUNCH
+	db 10, AMNESIA
+	db 0 ; native four-move replacement and PP
 
 GravelerEvosAttacks:
-	db EVOLVE_TRADE, -1, GOLEM
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, DEFENSE_CURL
-	db 1, ROCK_THROW
-	db 6, DEFENSE_CURL
-	db 11, ROCK_THROW
-	db 16, MAGNITUDE
-	db 21, SELFDESTRUCT
-	db 27, HARDEN
-	db 34, ROLLOUT
-	db 41, EARTHQUAKE
-	db 48, EXPLOSION
-	db 0 ; no more level-up moves
+	db EVOLVE_LEVEL, 12, GOLEM
+	db 0
+	db 1, POUND
+	db 1, THUNDERSHOCK
+	db 4, ROCK_THROW
+	db 6, HARDEN
+	db 8, THUNDERPUNCH
+	db 10, HEADBUTT
+	db 12, ROCK_SLIDE
+	db 0
 
 GolemEvosAttacks:
-	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, DEFENSE_CURL
-	db 1, ROCK_THROW
-	db 1, MAGNITUDE
-	db 6, DEFENSE_CURL
-	db 11, ROCK_THROW
-	db 16, MAGNITUDE
-	db 21, SELFDESTRUCT
-	db 27, HARDEN
-	db 34, ROLLOUT
-	db 41, EARTHQUAKE
-	db 48, EXPLOSION
-	db 0 ; no more level-up moves
+	db 0 ; final telluric rock stage
+	db 1, POUND
+	db 1, THUNDERSHOCK
+	db 4, ROCK_THROW
+	db 6, HARDEN
+	db 8, THUNDERPUNCH
+	db 10, HEADBUTT
+	db 12, ROCK_SLIDE
+	db 15, EARTHQUAKE
+	db 0
 
 PonytaEvosAttacks:
 	db 0 ; no evolution for this Durotar role
@@ -1177,10 +1177,14 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db 0 ; no evolution for this Durotar role
+	db EVOLVE_LEVEL, 8, GRAVELER
+	db 0
 	db 1, POUND
 	db 1, THUNDERSHOCK
-	db 0 ; companion curricula are explicit
+	db 4, ROCK_THROW
+	db 6, HARDEN
+	db 8, THUNDERPUNCH
+	db 0 ; native four-move replacement and PP
 
 DrowzeeEvosAttacks:
 	db EVOLVE_LEVEL, 26, HYPNO

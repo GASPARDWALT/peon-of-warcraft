@@ -117,6 +117,7 @@ _CGB_FinishBattleScreenLayout:
 	call InitPartyMenuBGPal7
 	farcall PeonBattleTextStyleAttributes
 	farcall PeonApplyBattleUserArtV0211
+	farcall PeonDrawBattleHeroResourceBarV0213
 	ld hl, BattleObjectPals
 	ld de, wOBPals1 palette PAL_BATTLE_OB_GRAY
 	ld bc, 6 palettes

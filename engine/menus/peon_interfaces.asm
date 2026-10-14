@@ -3,9 +3,14 @@ PeonMapMenuEntry::
 	; Restoring the caller's mode lets the VBlank tileset animator run again.
 	ldh a, [hBGMapMode]
 	push af
+	; Like START, SELECT must normalize the scrolling BG ring buffer before
+	; saving a fullscreen menu. Clearing only SCX/SCY leaves its map anchor
+	; stale, so closing the panel exposes old font/menu cells during walking.
+	call ReanchorMap
 	call FadeToMenu
 	call PeonZoneMap
 	call CloseSubmenu
+	call CloseText
 	pop af
 	ldh [hBGMapMode], a
 	ret
@@ -207,7 +212,19 @@ PeonInterfaceFrame:
 	call ClearSprites
 	call ClearTilemap
 	call LoadFontsExtra
+	ld a, [wBattleMode]
+	and a
+	jr nz, .keep_battle_font
 	call LoadStandardFont
+	jr .font_ready
+.keep_battle_font
+	; The native battle menu backup still owns cached bold HUD tile IDs.
+	; Its standard font is resident; resetting the cache here would make
+	; ReturnToBattle_UseBall restore those IDs as ordinary S,T,U glyphs.
+	; Keep the cache slots and their VRAM, resetting only body text weight.
+	xor a
+	ld [wPeonTextStyle], a
+.font_ready
 	ld b, SCGB_DIPLOMA
 	call GetSGBLayout
 	call SetDefaultBGPAndOBP
@@ -524,9 +541,7 @@ PeonCharacterSheet:
 	call WaitBGMap
 	call UpdateTimePals
 	farcall PeonApplyUserProfileArtV0211
-	farcall PeonCharacterTeamInputV029
-	jp c, PeonCharacterSheet
-	ret
+	jp PeonInterfaceWait
 .DrawAction
 	and a
 	ld de, .NoAction
@@ -543,7 +558,7 @@ PeonCharacterSheet:
 .Level: db "LEVEL@"
 .HP: db "HEALTH@"
 .NoAction: db "--@"
-.Back: db "R:TEAM A/B:BACK@"
+.Back: db "A/B: BACK@"
 .Palette:
 	RGB 31,29,23, 15,22,8, 18,11,6, 0,0,0
 
@@ -839,18 +854,8 @@ PeonInventory:
 	ld de, .RecruitDenied
 	jp .reason
 .totem
-	farcall PeonTryPlaceEarthTotem
-	jr c, .totem_placed
-	ld de, .TotemAlreadySet
-	ld a, [wBattleMode]
-	and a
-	jp nz, .reason
-	ld de, .TotemBattleOnly
+	ld de, .TotemRetired
 	jp .reason
-.totem_placed
-	ld a, PEON_EARTH_TOTEM
-	ld [wCurItem], a
-	jp .used_battle_item
 .potion
 	farcall PeonTryUseMinorPotion
 	ld de, .NoHealing
@@ -986,13 +991,13 @@ PeonInventory:
 .Potion: db "RESTORES 20 HP", "<LF>", "ONE BATTLE TURN@"
 .Mana: db "RESTORES 40 MANA", "<LF>", "ONE BATTLE TURN@"
 .Water: db "RESTORES 60 MANA", "<LF>", "OUTSIDE COMBAT@"
-.Totem: db "ACT BEFORE TARGET", "<LF>", "REUSE; ONE TURN@"
+.Totem: db "OLD CLASS RELIC", "<LF>", "USE ROSTER ALLIES@"
 .QuestItem: db "QUEST PROOF", "<LF>", "KEEP FOR TURN-IN@"
 .PassiveItem: db "PASSIVE ITEM", "<LF>", "NO DIRECT USE@"
 .BrowseHelp: db "LEFT/RIGHT: ITEM@"
 .EquipHelp: db "A: EQUIP WEAPON@"
 .UseHelp: db "A: USE ITEM@"
-.TotemHelp: db "A: PLACE TOTEM@"
+.TotemHelp: db "A: DETAILS@"
 .PassiveHelp: db "NO DIRECT ACTION@"
 .NoItemsHelp: db "NO ITEMS TO USE@"
 .Back: db "B: BACK@"
@@ -1004,8 +1009,7 @@ PeonInventory:
 .FoodBattleOnly: db "REST OUT OF FIGHT@"
 .NoManaClass: db "WARRIORS USE RAGE@"
 .FullCharges: db "MANA ALREADY FULL@"
-.TotemBattleOnly: db "ONLY IN COMBAT@"
-.TotemAlreadySet: db "TOTEM ALREADY SET@"
+.TotemRetired: db "TOTEM RETIRED", "<LF>", "ALLIES IN ROSTER@"
 .Qualities:
 	dw .Gray, .White, .Green, .Blue, .Spirit
 ; $78 is the menu's native percent tile; '%' is a legacy breakable-space alias.

@@ -369,7 +369,7 @@ PeonDrawAtlasQuests::
 	call .Flag
 	ret nz
 	lb de, PEON_ATLAS_LAZY_WORLD_Y, PEON_ATLAS_LAZY_WORLD_X
-	ld b, MAP_THE_DEN
+	ld b, MAP_VALLEY_OF_TRIALS
 	jp .ObjectiveAtMap
 .CactusObjectives:
 	ld de, EVENT_PEON_CACTUS_DONE

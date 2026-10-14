@@ -1,0 +1,5185 @@
+{
+  "source_pack": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality",
+  "source_pack_manifest_sha256": "6c913814048e28e81c037e6754457d982bed4d214e34b82dee2cb3b6c7e43a86",
+  "source_pngs_unchanged": true,
+  "resampling": false,
+  "redraw": false,
+  "primitive_fallback": false,
+  "native_input": "references/generated/canonical_decor_v0213/baseline/gfx",
+  "map_input": "references/generated/canonical_decor_v0213/baseline/maps",
+  "native_outputs": "gfx/canonical_decor_v0213",
+  "provisional_maps": "references/generated/canonical_decor_v0213/maps",
+  "interiors_untouched": [
+    "GrommashHold",
+    "PeonOrcHut",
+    "PeonOrcInn",
+    "PeonTrollHut",
+    "PeonTrollInn"
+  ],
+  "native_patterns_per_map": {
+    "PeonOpening": 58,
+    "TheDen": 178,
+    "ValleyOfTrials": 106,
+    "DurotarRoad": 109,
+    "SenjinVillage": 183,
+    "RazorHill": 199,
+    "OrgrimmarGate": 172,
+    "BurningBladeCavern": 58,
+    "PeonValleyCrossroads": 47,
+    "PeonHanazuaCamp": 60,
+    "PeonSarkothBasin": 60,
+    "PeonCaveApproach": 37,
+    "PeonValleyExit": 49
+  },
+  "maps": [
+    {
+      "map": "PeonOpening",
+      "patterns": 58,
+      "pattern_budget": 216,
+      "fits": true,
+      "legacy_192_fits": true,
+      "packet_capacity": 216,
+      "metatiles": 70,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            1
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.334,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            2
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.334,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            168,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            2
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            72,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            3
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/palm_echo_01_32x48.png",
+          "source_sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            128,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            3
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 389,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 23.598,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        },
+        "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 96
+        },
+        "echo_isles/palm_echo_01_32x48.png": {
+          "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "size": [
+            32,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 389
+        }
+      },
+      "collision_cells_preserved": 192,
+      "unaffected_native_tiles_preserved": 680,
+      "approved_building_foreground_pixels_exact": 0,
+      "lossless_rgb_palette_aliases": 0,
+      "unique_2bpp_shapes": 58,
+      "unique_rgb_priority_shapes": 58,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "f300544755956bfe83f840223bd77f709bec0ddaa8a6d48b561896f2e87efa0d"
+    },
+    {
+      "map": "TheDen",
+      "patterns": 178,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 88,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            1
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 1,
+          "source_pixels_behind_preserved_building": 560,
+          "foreground_rgb_rmse": 34.78,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            1
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 154,
+          "source_pixels_behind_preserved_building": 407,
+          "foreground_rgb_rmse": 17.673,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            2
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 346,
+          "source_pixels_behind_preserved_building": 215,
+          "foreground_rgb_rmse": 18.239,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            2
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 16.523,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            168,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            2
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            200,
+            48
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            2
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 23.569,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            2
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 97,
+          "source_pixels_behind_preserved_building": 227,
+          "foreground_rgb_rmse": 24.323,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            3
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 242,
+          "source_pixels_behind_preserved_building": 82,
+          "foreground_rgb_rmse": 21.386,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 16.335,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            3
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.334,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            4
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.334,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            328,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            4
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            5
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 16.335,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            232,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            8
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            296,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            8
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.263,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 96
+        },
+        "durotar_valley/banner_horde_durotar_01_16x48.png": {
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 98
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        }
+      },
+      "collision_cells_preserved": 480,
+      "unaffected_native_tiles_preserved": 1676,
+      "approved_building_foreground_pixels_exact": 8064,
+      "facade_native_palette_priority_tiles_exact": 63,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "80a79ef73b043c386f65450ab63ba40a2b9af37d359b7d35ff53cef30916e130"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "patterns": 106,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 73,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            384,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            12,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            136,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            3
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.576,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            448,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            14,
+            3
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            4
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            4
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            4
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            352,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            11,
+            4
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            424,
+            144
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            13,
+            5
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            480,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            15,
+            5
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            480,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            15,
+            6
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            40,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            7
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.576,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            392,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            12,
+            7
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.576,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "source_sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            416,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            13,
+            7
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            480,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            15,
+            7
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            8
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            8
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            8
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            352,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            11,
+            8
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            416,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            13,
+            8
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            288
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            9
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            384,
+            288
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            12,
+            9
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            104,
+            320
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            10
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.576,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            296,
+            304
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            10
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            416,
+            320
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            13,
+            10
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            456,
+            320
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            14,
+            10
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.576,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/palisade_durotar_wall_vertical_01_32x32.png": {
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 589
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        },
+        "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 96
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/banner_horde_durotar_01_16x48.png": {
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 98
+        },
+        "durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png": {
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 589
+        }
+      },
+      "collision_cells_preserved": 768,
+      "unaffected_native_tiles_preserved": 2616,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "54700d73b9d1d34784139345ea8ec3b7bc3c01590c2c76b7422b5b194c1a22d3"
+    },
+    {
+      "map": "DurotarRoad",
+      "patterns": 109,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 73,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            264,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            1
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.406,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            2
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            168,
+            48
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            2
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            264,
+            48
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            2
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            72,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            3
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.406,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.421,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            3
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.421,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            4
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            5
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            232,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            5
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.406,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            5
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.421,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "source_sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            6
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.614,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            40,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            7
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.406,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "source_sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            7
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.614,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            8
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.421,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            296,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            8
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 117.521,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/palm_echo_01_32x48.png",
+          "source_sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            288,
+            272
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            9
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 389,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 22.452,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            320
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            10
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            352
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            11
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 17.652,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            384
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            12
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.421,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 96
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/banner_horde_durotar_01_16x48.png": {
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 98
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        },
+        "durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png": {
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 589
+        },
+        "echo_isles/palm_echo_01_32x48.png": {
+          "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "size": [
+            32,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 389
+        }
+      },
+      "collision_cells_preserved": 672,
+      "unaffected_native_tiles_preserved": 2332,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "a990c74df73a1f9a6133bc99ee97a79ef13ae106acdf67add3f197e1ba62945f"
+    },
+    {
+      "map": "SenjinVillage",
+      "patterns": 183,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 88,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "source_sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            96,
+            16
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            1
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 119,
+          "source_pixels_behind_preserved_building": 266,
+          "foreground_rgb_rmse": 30.763,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "source_sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            256,
+            16
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            1
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 119,
+          "source_pixels_behind_preserved_building": 266,
+          "foreground_rgb_rmse": 30.763,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "source_sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            32,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            3
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 385,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.018,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "source_sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            48
+          ],
+          "world_origin_pixels": [
+            32,
+            208
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            7
+          ],
+          "original_baseline_metatile": 28,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 385,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.018,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "senjin_village/palm_senjin_small_01_32x48.png": {
+          "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "size": [
+            32,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 385
+        }
+      },
+      "collision_cells_preserved": 480,
+      "unaffected_native_tiles_preserved": 1824,
+      "approved_building_foreground_pixels_exact": 11742,
+      "facade_native_palette_priority_tiles_exact": 34,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "ff4077525ce75da45a3684be4711506d16b5b254c196780662bd805cdb5cd3d2"
+    },
+    {
+      "map": "RazorHill",
+      "patterns": 199,
+      "pattern_budget": 192,
+      "fits": false,
+      "packet_capacity": 216,
+      "metatiles": 93,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 336,
+          "source_pixels_behind_preserved_building": 159,
+          "foreground_rgb_rmse": 25.367,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 6,
+          "source_pixels_behind_preserved_building": 489,
+          "foreground_rgb_rmse": 34.688,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 492,
+          "source_pixels_behind_preserved_building": 3,
+          "foreground_rgb_rmse": 25.799,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 336,
+          "source_pixels_behind_preserved_building": 159,
+          "foreground_rgb_rmse": 25.367,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 6,
+          "source_pixels_behind_preserved_building": 489,
+          "foreground_rgb_rmse": 34.688,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            1
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 492,
+          "source_pixels_behind_preserved_building": 3,
+          "foreground_rgb_rmse": 25.799,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            2
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 304,
+          "source_pixels_behind_preserved_building": 191,
+          "foreground_rgb_rmse": 26.214,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "source_sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            168,
+            48
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            2
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 81,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 22.092,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            2
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 490,
+          "source_pixels_behind_preserved_building": 5,
+          "foreground_rgb_rmse": 25.013,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            3
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 14.947,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            3
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            4
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            4
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            5
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            5
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 29,
+          "source_pixels_behind_preserved_building": 295,
+          "foreground_rgb_rmse": 25.967,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            5
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 492,
+          "source_pixels_behind_preserved_building": 3,
+          "foreground_rgb_rmse": 25.799,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            6
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 336,
+          "source_pixels_behind_preserved_building": 159,
+          "foreground_rgb_rmse": 25.367,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            6
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 490,
+          "source_pixels_behind_preserved_building": 5,
+          "foreground_rgb_rmse": 25.013,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            7
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 304,
+          "source_pixels_behind_preserved_building": 191,
+          "foreground_rgb_rmse": 26.214,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            7
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            8
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            8
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            8
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "source_sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            8
+          ],
+          "original_baseline_metatile": 30,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.837,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png": {
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 495
+        },
+        "razor_hill/banner_horde_razorhill_01_16x48.png": {
+          "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 81
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        }
+      },
+      "collision_cells_preserved": 480,
+      "unaffected_native_tiles_preserved": 1504,
+      "approved_building_foreground_pixels_exact": 16128,
+      "lossless_rgb_palette_aliases": 0,
+      "unique_2bpp_shapes": 199,
+      "unique_rgb_priority_shapes": 199,
+      "facade_native_palette_priority_tiles_exact": 99,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "fced675b07ee9aa876bd88c80d7295fae9cb8d207e84487011b247c0ade57eda"
+    },
+    {
+      "map": "OrgrimmarGate",
+      "patterns": 172,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 84,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 342,
+          "source_pixels_behind_preserved_building": 153,
+          "foreground_rgb_rmse": 25.18,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 10,
+          "source_pixels_behind_preserved_building": 485,
+          "foreground_rgb_rmse": 33.099,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 85,
+          "source_pixels_behind_preserved_building": 410,
+          "foreground_rgb_rmse": 27.25,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 491,
+          "source_pixels_behind_preserved_building": 4,
+          "foreground_rgb_rmse": 25.825,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 342,
+          "source_pixels_behind_preserved_building": 153,
+          "foreground_rgb_rmse": 25.18,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 10,
+          "source_pixels_behind_preserved_building": 485,
+          "foreground_rgb_rmse": 33.099,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 85,
+          "source_pixels_behind_preserved_building": 410,
+          "foreground_rgb_rmse": 27.25,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 382,
+          "source_pixels_behind_preserved_building": 113,
+          "foreground_rgb_rmse": 25.418,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 118,
+          "source_pixels_behind_preserved_building": 377,
+          "foreground_rgb_rmse": 28.202,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.058,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            160,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            5,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            224,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 382,
+          "source_pixels_behind_preserved_building": 113,
+          "foreground_rgb_rmse": 25.418,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            320,
+            64
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            2
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 118,
+          "source_pixels_behind_preserved_building": 377,
+          "foreground_rgb_rmse": 28.202,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            72,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            3
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.482,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "source_sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            136,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            3
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 81,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.51,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "source_sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            232,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            3
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 81,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.51,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            3
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            4
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "source_sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            4
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 495,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.695,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            328,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            10,
+            4
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.482,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            232,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            7,
+            5
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.482,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            160
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            5
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.221,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            6
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.221,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            6
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.221,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            40,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            7
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.482,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            64,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            2,
+            7
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.599,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            7
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.599,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            256,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            8,
+            7
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.221,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            288,
+            224
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            7
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.599,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "source_sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "source_rect": [
+            0,
+            0,
+            16,
+            32
+          ],
+          "world_origin_pixels": [
+            296,
+            256
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            9,
+            8
+          ],
+          "original_baseline_metatile": 13,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 96,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 25.482,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "razor_hill/palisade_razorhill_wall_vertical_01_32x32.png": {
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 495
+        },
+        "durotar_valley/cactus_durotar_tall_01_16x32.png": {
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 96
+        },
+        "razor_hill/banner_horde_razorhill_01_16x48.png": {
+          "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 81
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        }
+      },
+      "collision_cells_preserved": 480,
+      "unaffected_native_tiles_preserved": 1344,
+      "approved_building_foreground_pixels_exact": 8064,
+      "facade_native_palette_priority_tiles_exact": 125,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "a96e5b5b7ca95d02a8351dd430d0501b8330b0cb0ac69dd82066082f8f35fac0"
+    },
+    {
+      "map": "BurningBladeCavern",
+      "patterns": 58,
+      "pattern_budget": 216,
+      "fits": true,
+      "legacy_192_fits": true,
+      "packet_capacity": 216,
+      "metatiles": 69,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+          "source_sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "source_rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "world_origin_pixels": [
+            104,
+            72
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            2
+          ],
+          "original_baseline_metatile": 36,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 76,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 30.037,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            192,
+            192
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            6,
+            6
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 23.389,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/bones_durotar_skull_pile_01_16x16.png": {
+          "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "size": [
+            16,
+            16
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 76
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        }
+      },
+      "collision_cells_preserved": 400,
+      "unaffected_native_tiles_preserved": 1568,
+      "approved_building_foreground_pixels_exact": 0,
+      "lossless_rgb_palette_aliases": 0,
+      "unique_2bpp_shapes": 58,
+      "unique_rgb_priority_shapes": 58,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "9d51dae63413b36b4cf2b95c91da10fbc089277524f71c09f3e8b5835a9b24d8"
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "patterns": 47,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 69,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            1
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            104,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        },
+        "durotar_valley/banner_horde_durotar_01_16x48.png": {
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 98
+        }
+      },
+      "collision_cells_preserved": 100,
+      "unaffected_native_tiles_preserved": 364,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "1f9c50dfab1390249e441ad15f89355ca4b4335ab1f7c1f22b1111f134468be7"
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "patterns": 60,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 69,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            1
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        },
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        }
+      },
+      "collision_cells_preserved": 100,
+      "unaffected_native_tiles_preserved": 368,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "4f1e3ebd4ae309e1974fffaf21642a9bf567b1c6c4a1029833970a81f4629dbd"
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "patterns": 60,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 69,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "source_sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            1
+          ],
+          "original_baseline_metatile": 37,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 561,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 15.008,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            96,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            1
+          ],
+          "original_baseline_metatile": 3,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "source_sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            32,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            3
+          ],
+          "original_baseline_metatile": 42,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 324,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.633,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/rock_durotar_large_01_32x32.png": {
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 561
+        },
+        "durotar_valley/cactus_durotar_round_01_32x32.png": {
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 324
+        }
+      },
+      "collision_cells_preserved": 100,
+      "unaffected_native_tiles_preserved": 352,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "3f0323ea03f3bc49a9e9a45b67ad746857cf14b3ac57b1e55da00d5b790c9af2"
+    },
+    {
+      "map": "PeonCaveApproach",
+      "patterns": 37,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 68,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+          "source_sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "source_rect": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "world_origin_pixels": [
+            40,
+            104
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            3
+          ],
+          "original_baseline_metatile": 36,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 76,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 29.526,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/bones_durotar_skull_pile_01_16x16.png": {
+          "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "size": [
+            16,
+            16
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 76
+        }
+      },
+      "collision_cells_preserved": 100,
+      "unaffected_native_tiles_preserved": 384,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "5c5922c41f3116dc21329d046825432d5efe5f7f43a0d0e5229f0d765f3a19bd"
+    },
+    {
+      "map": "PeonValleyExit",
+      "patterns": 49,
+      "pattern_budget": 192,
+      "fits": true,
+      "metatiles": 69,
+      "imports": [
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            0
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            0
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            40,
+            16
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            1,
+            1
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            32
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            1
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "source_sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "source_rect": [
+            0,
+            0,
+            16,
+            48
+          ],
+          "world_origin_pixels": [
+            104,
+            80
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            3,
+            3
+          ],
+          "original_baseline_metatile": 6,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 98,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 24.959,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            96
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            3
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        },
+        {
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "source_sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "source_rect": [
+            0,
+            0,
+            32,
+            32
+          ],
+          "world_origin_pixels": [
+            128,
+            128
+          ],
+          "native_scale": 1,
+          "whole_source_canvas": true,
+          "source_pixels_changed": false,
+          "source_redrawn": false,
+          "original_anchor_block": [
+            4,
+            4
+          ],
+          "original_baseline_metatile": 33,
+          "approved_building_foreground_preserved": true,
+          "source_foreground_pixels_imported": 589,
+          "source_pixels_behind_preserved_building": 0,
+          "foreground_rgb_rmse": 21.172,
+          "transparent_silhouette_preserved": true,
+          "palette_quantization": true
+        }
+      ],
+      "native_source_manifest": {
+        "durotar_valley/palisade_durotar_wall_vertical_01_32x32.png": {
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 589
+        },
+        "durotar_valley/banner_horde_durotar_01_16x48.png": {
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "alpha_values": [
+            0,
+            255
+          ],
+          "opaque_source_pixels": 98
+        }
+      },
+      "collision_cells_preserved": 100,
+      "unaffected_native_tiles_preserved": 296,
+      "approved_building_foreground_pixels_exact": 0,
+      "facade_native_palette_priority_tiles_exact": 0,
+      "events_unchanged": true,
+      "animated_tiles_0_to_3_exact": true,
+      "palette_7_font_untouched": true,
+      "native_sha256": "233651f6aaaae3e6e0171864cdb4d94e7150907bc51e137f8dcc8977939f3c11"
+    }
+  ]
+}

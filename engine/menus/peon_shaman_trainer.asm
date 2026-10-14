@@ -26,7 +26,7 @@ PeonShamanTrainer::
 	call FadeToMenu
 	farcall PeonInterfaceFrame
 	xor a
-	ld [wMenuCursorY], a ; selected lesson 0..10
+	ld [wMenuCursorY], a ; selected lesson 0..9
 .Draw:
 	call .Frame
 	hlcoord 2, 1
@@ -78,7 +78,7 @@ PeonShamanTrainer::
 	jp .Draw
 .Down:
 	ld a, [wMenuCursorY]
-	cp 10
+	cp 9
 	jr z, .Input
 	inc a
 	ld [wMenuCursorY], a
@@ -460,14 +460,13 @@ PeonShamanTrainer::
 .LevelLabel: db "LEVEL:@"
 .WalletLabel: db "COPPER:@"
 .LessonNames:
-	dw .NameRock, .NameEarth, .NameFlame, .NameHeal, .NameShield, .NameTotem
+	dw .NameRock, .NameEarth, .NameFlame, .NameHeal, .NameShield
 	dw .NamePurge, .NameFrost, .NameFlame2, .NameWind, .NameChain
 .NameRock: db "ROCKBITER     2@"
 .NameEarth: db "EARTH SHOCK   4@"
 .NameFlame: db "FLAME SHOCK   4@"
 .NameHeal: db "HEALING WAVE  6@"
 .NameShield: db "LIGHT.SHIELD  8@"
-.NameTotem: db "STR.TOTEM    10@"
 .NamePurge: db "PURGE        12@"
 .NameFrost: db "FROST SHOCK  14@"
 .NameFlame2: db "FLAME SHK II 16@"
@@ -487,14 +486,13 @@ PeonShamanTrainer::
 .FourthSlot: db "TRAINING SLOT 4@"
 .SlotHelp: db "Choose a slot.", "<LF>", "UP/DOWN: SWITCH", "<LF>", "A: EQUIP", "<LF>", "B: CANCEL@"
 .DescriptionPointers:
-	dw .Rockbiter, .EarthShock, .FlameShock, .HealingWave, .LightningShield, .StrengthTotem
+	dw .Rockbiter, .EarthShock, .FlameShock, .HealingWave, .LightningShield
 	dw .Purge, .FrostShock, .FlameShock2, .Windfury, .ChainLightning
 .Rockbiter: db "Empowers your next", "<LF>", "physical strike.@"
 .EarthShock: db "Nature shock may", "<LF>", "interrupt the foe.@"
 .FlameShock: db "Fire scorches and", "<LF>", "burns the target.@"
 .HealingWave: db "Healing spirits", "<LF>", "restore half HP.@"
 .LightningShield: db "Lightning strikes", "<LF>", "a melee attacker.@"
-.StrengthTotem: db "An earth totem", "<LF>", "raises attack.@"
 .Purge: db "Strips the foe of", "<LF>", "stat bonuses.@"
 .FrostShock: db "Frost damage slows", "<LF>", "the target.@"
 .FlameShock2: db "Stronger fire and", "<LF>", "a lasting burn.@"
@@ -516,9 +514,6 @@ PeonShamanTrainer::
 	db 8, REFLECT, 10
 	dw EVENT_PEON_LIGHTNING_SHIELD_BOUGHT
 	bigdt 100
-	db 10, MEDITATE, 10
-	dw EVENT_PEON_STRENGTH_TOTEM_BOUGHT
-	bigdt 400
 	db 12, HAZE, 10
 	dw EVENT_PEON_PURGE_BOUGHT
 	bigdt 720

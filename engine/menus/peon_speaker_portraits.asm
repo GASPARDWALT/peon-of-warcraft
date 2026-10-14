@@ -152,6 +152,12 @@ PeonSpeakerPortraitTable:
 	dw PeonSpeakerPortraitWarrior, PeonSpeakerPaletteWarrior
 	db SPRITE_MORTY
 	dw PeonSpeakerPortraitWarlock, PeonSpeakerPaletteWarlock
+	db SPRITE_PEON_SHAMAN_MASTER_LARGE
+	dw PeonSpeakerPortraitKento, PeonSpeakerPaletteKento
+	db SPRITE_PEON_WARRIOR_MASTER_LARGE
+	dw PeonSpeakerPortraitWarrior, PeonSpeakerPaletteWarrior
+	db SPRITE_PEON_WARLOCK_MASTER_LARGE
+	dw PeonSpeakerPortraitWarlock, PeonSpeakerPaletteWarlock
 	db SPRITE_YOUNGSTER
 	dw PeonSpeakerPortraitHunter, PeonSpeakerPaletteHunter
 	db SPRITE_LINK_RECEPTIONIST

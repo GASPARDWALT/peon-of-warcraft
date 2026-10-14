@@ -1,6 +1,10 @@
 GetPokeBallWobble:
 ; Returns whether a Poke Ball will wobble in the catch animation.
 ; Whether a Pokemon is caught is determined beforehand.
+	; The second Peon quest elemental reuses its existing catch roll for
+	; cosmetic suspense. Every other ball retains Crystal's original path.
+	farcall PeonGetElementalWobbleV0213
+	ret c
 
 	push de
 

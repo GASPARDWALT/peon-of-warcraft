@@ -11,6 +11,7 @@
 	const VALLEY_CAVE_APPROACH_IMP_2
 	const VALLEY_EARTH_SAGE
 	const VALLEY_EARTH_SAGE_MARKER
+	const VALLEY_LAZY_PEON
 
 ValleyOfTrials_MapScripts:
 	def_scene_scripts
@@ -98,6 +99,10 @@ ValleyOfTrialsGuideScript:
 .Close:
 	closetext
 	end
+
+ValleyLazyPeonScript:
+	; Shared quest flags and the current speaker/emote actor remain native.
+	farsjump TheDenLazyPeonScript
 
 ; A dead boss can be reported even if the quest was accepted afterwards.
 ; A full quest pocket can recover proof here; rewards remain retryable.
@@ -598,6 +603,11 @@ ValleyOfTrials_MapEvents:
 	; Published warp index 3 now leads north to zone 3. The old cave cell is
 	; still walkable for a saved character, but it is no longer an entrance.
 	warp_event 16, 0, PEON_VALLEY_CROSSROADS, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 4, 13, THE_DEN, 1 ; full clear threshold
+	warp_event 28, 13, PEON_VALLEY_EXIT, 1 ; full clear threshold
+	warp_event 17, 0, PEON_VALLEY_CROSSROADS, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	; Sarkoth and the familiars live only in their new geographic zones.
 	def_bg_events
@@ -620,3 +630,4 @@ ValleyOfTrials_MapEvents:
 	; Off the east/west road; all four adjacent cells retain FLOOR collision.
 	object_event 12, 11, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_TREE, OBJECTTYPE_SCRIPT, 0, ValleyEarthSageScript, -1
 	object_event 12, 10, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ValleyEarthSageScript, EVENT_PEON_EARTH_STONE_DONE
+	object_event 20, 13, SPRITE_PEON_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ValleyLazyPeonScript, -1

@@ -344,6 +344,10 @@ PeonFixEnemyPicBankFromC::
 	ld a, [wCurPartySpecies]
 	cp ONIX
 	jr z, .native
+	cp GRAVELER
+	jr z, .native
+	cp GOLEM
+	jr z, .native
 	cp GEODUDE
 	jr z, .native
 	cp MACHAMP

@@ -53,7 +53,7 @@ OverworldSprites:
 	overworld_sprite PeonUserFelhunterWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 1
 	overworld_sprite PeonUserCultistWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 1
 	overworld_sprite PeonYarrogGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite PeonEarthElementalWorldV0212, 0, USER_WORLD_4DIR_SPRITE, 2
+	overworld_sprite PeonRockOneNPCWorldV0213, 0, USER_WORLD_4DIR_SPRITE, 3
 	overworld_sprite PokefanFSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN
 	overworld_sprite GrampsSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite GrannySpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
@@ -114,4 +114,7 @@ OverworldSprites:
 	overworld_sprite PeonMailboxGFX, 4, STILL_SPRITE, PAL_OW_BROWN
 	overworld_sprite PeonUserFriendlyImpWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 7
 	overworld_sprite PeonUserWorkerWorldV0211, 0, USER_WORLD_4DIR_SPRITE, 2
+	overworld_sprite PeonLargeShamanWorldV0213, 9, STATIC_MASTER_SPRITE, 7
+	overworld_sprite PeonLargeWarriorWorldV0213, 9, STATIC_MASTER_SPRITE, 4
+	overworld_sprite PeonLargeWarlockWorldV0213, 9, STATIC_MASTER_SPRITE, 1
 	assert_table_length NUM_OVERWORLD_SPRITES

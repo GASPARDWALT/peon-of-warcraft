@@ -1,0 +1,224 @@
+{
+  "product_ROM_fixture_free": true,
+  "normal": {
+    "rom_sha256": "bd99f73e3397940b67eee82f974a84eb859aa030a14ed6a4d6abcbfe6e7575a7",
+    "compiled_evolution_fixture": false,
+    "ordinary_controls_only": true,
+    "emulator_memory_writes": false,
+    "state_restores": false,
+    "user_batteries_opened": false,
+    "menus": {
+      "start_opens_roster_directly": true,
+      "hero_class_and_gear_accessible": true,
+      "native_companion_stats_and_moves_opened": true,
+      "viewing_menus_preserves_native_records_and_nicknames": true,
+      "one_native_preferred_lead_selected": true
+    },
+    "battle": {
+      "normal_enemy_defeated": true,
+      "actual_companion_attack_ids": [
+        53,
+        53,
+        53
+      ],
+      "normal_PP_records": [
+        {
+          "move": 53,
+          "before": [
+            35,
+            25,
+            0,
+            0
+          ],
+          "after": [
+            35,
+            24,
+            0,
+            0
+          ],
+          "exact_one_native_PP_spent": true
+        },
+        {
+          "move": 53,
+          "before": [
+            35,
+            24,
+            0,
+            0
+          ],
+          "after": [
+            35,
+            23,
+            0,
+            0
+          ],
+          "exact_one_native_PP_spent": true
+        },
+        {
+          "move": 53,
+          "before": [
+            35,
+            23,
+            0,
+            0
+          ],
+          "after": [
+            35,
+            22,
+            0,
+            0
+          ],
+          "exact_one_native_PP_spent": true
+        }
+      ],
+      "automatic_pet_actions": 0,
+      "persistent_totem_objects": 0
+    },
+    "nickname_preserved": true,
+    "quest_flags_unchanged_by_menu_views": true,
+    "status": "PASS"
+  },
+  "evolution": {
+    "level7_to8": {
+      "rom_sha256": "a9e4a993fd5f489c3cb3e005a71d161e9c0942b16340112e8a8911d6dbf35598",
+      "compiled_evolution_fixture": true,
+      "ordinary_controls_only": true,
+      "emulator_memory_writes": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "menus": {
+        "start_opens_roster_directly": true,
+        "hero_class_and_gear_accessible": true,
+        "native_companion_stats_and_moves_opened": true,
+        "viewing_menus_preserves_native_records_and_nicknames": true,
+        "one_native_preferred_lead_selected": true
+      },
+      "battle": {
+        "normal_enemy_defeated": true,
+        "actual_companion_attack_ids": [
+          1,
+          1
+        ],
+        "normal_PP_records": [
+          {
+            "move": 1,
+            "before": [
+              35,
+              30,
+              15,
+              15
+            ],
+            "after": [
+              34,
+              30,
+              15,
+              15
+            ],
+            "exact_one_native_PP_spent": true
+          },
+          {
+            "move": 1,
+            "before": [
+              34,
+              30,
+              15,
+              15
+            ],
+            "after": [
+              33,
+              30,
+              15,
+              15
+            ],
+            "exact_one_native_PP_spent": true
+          }
+        ],
+        "automatic_pet_actions": 0,
+        "persistent_totem_objects": 0
+      },
+      "native_evolution": {
+        "frame": 14952,
+        "old_species": 95,
+        "new_species": 75,
+        "native_level": 8
+      },
+      "native_evolution_framebuffer_samples": 178,
+      "native_four_move_learning_calls": 1,
+      "custom_DOUOLL_nickname_preserved": true,
+      "nickname_preserved": true,
+      "quest_flags_unchanged_by_menu_views": true,
+      "status": "PASS"
+    },
+    "level11_to12": {
+      "rom_sha256": "a9e4a993fd5f489c3cb3e005a71d161e9c0942b16340112e8a8911d6dbf35598",
+      "compiled_evolution_fixture": true,
+      "ordinary_controls_only": true,
+      "emulator_memory_writes": false,
+      "state_restores": false,
+      "user_batteries_opened": false,
+      "menus": {
+        "start_opens_roster_directly": true,
+        "hero_class_and_gear_accessible": true,
+        "native_companion_stats_and_moves_opened": true,
+        "viewing_menus_preserves_native_records_and_nicknames": true,
+        "one_native_preferred_lead_selected": true
+      },
+      "battle": {
+        "normal_enemy_defeated": true,
+        "actual_companion_attack_ids": [
+          106,
+          9
+        ],
+        "normal_PP_records": [
+          {
+            "move": 106,
+            "before": [
+              15,
+              15,
+              15,
+              15
+            ],
+            "after": [
+              15,
+              14,
+              15,
+              15
+            ],
+            "exact_one_native_PP_spent": true
+          },
+          {
+            "move": 9,
+            "before": [
+              15,
+              14,
+              15,
+              15
+            ],
+            "after": [
+              15,
+              14,
+              14,
+              15
+            ],
+            "exact_one_native_PP_spent": true
+          }
+        ],
+        "automatic_pet_actions": 0,
+        "persistent_totem_objects": 0
+      },
+      "native_evolution": {
+        "frame": 15244,
+        "old_species": 75,
+        "new_species": 76,
+        "native_level": 12
+      },
+      "native_evolution_framebuffer_samples": 178,
+      "native_four_move_learning_calls": 1,
+      "custom_DOUOLL_nickname_preserved": true,
+      "nickname_preserved": true,
+      "quest_flags_unchanged_by_menu_views": true,
+      "status": "PASS"
+    }
+  },
+  "status": "PASS"
+}

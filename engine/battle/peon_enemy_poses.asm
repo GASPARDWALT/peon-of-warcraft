@@ -79,7 +79,7 @@ PeonEnemyHasAttackPoses:
 	scf
 	ret
 .species
-	db RATTATA, SANDSHREW, GEODUDE, ONIX, MACHAMP, PONYTA, RAPIDASH
+	db RATTATA, SANDSHREW, GEODUDE, ONIX, GRAVELER, GOLEM, MACHAMP, PONYTA, RAPIDASH
 	db PEON_MOB_TIGER, PEON_MOB_RAPTOR, PEON_MOB_CRAWLER
 	db PEON_MOB_HARPY, PEON_MOB_FELSTALKER, PEON_MOB_CULTIST
 	db PEON_MOB_YARROG, PEON_MOB_SARKOTH, 0
@@ -159,7 +159,7 @@ PeonEnemyPoseOverflowTable:
 
 SECTION "Peon Beast Animation Overflow", ROMX
 PeonBoarOverflowTiles:
-	INCBIN "gfx/pokemon/rattata/front.animated.2bpp", 98 * 16
+	INCBIN "gfx/native_actor_restore_v0213/boar/front.animated.2bpp", 98 * 16
 PeonBoarOverflowTilesEnd:
 	assert PeonBoarOverflowTilesEnd - PeonBoarOverflowTiles <= 30 * 16
 PeonScorpidOverflowTiles:

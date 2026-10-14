@@ -239,6 +239,9 @@ gfx/pokemon/girafarig/front.animated.tilemap: gfx/pokemon/girafarig/front.2bpp g
 gfx/peon_spell_pack_v1/%.2bpp: gfx/peon_spell_pack_v1/%.png
 	$(RGBGFX) $(RGBGFXFLAGS) --colors dmg -o $@ $<
 
+gfx/peon_lightning_horizontal_v0213/%.2bpp: gfx/peon_lightning_horizontal_v0213/%.png
+	$(RGBGFX) $(RGBGFXFLAGS) --colors dmg -o $@ $<
+
 gfx/peon_player_battle/back_frames.2bpp: tools/build_peon_player_combat.py gfx/pokemon/machop/back.png gfx/pokemon/machop/normal.gbcpal
 	python3 tools/build_peon_player_combat.py
 

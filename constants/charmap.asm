@@ -175,6 +175,7 @@
 	charmap "'s",        $d4
 	charmap "'t",        $d5
 	charmap "'v",        $d6
+	charmap "è",         $d7 ; Peon French name; previously blank in English font
 
 	charmap "←",         $df
 	charmap "'",         $e0

@@ -1,0 +1,2217 @@
+{
+  "status": "RUNNING",
+  "rom_sha256": "bd99f73e3397940b67eee82f974a84eb859aa030a14ed6a4d6abcbfe6e7575a7",
+  "ordinary_controls_only": true,
+  "ram_writes": false,
+  "save_states": false,
+  "cpu_substitution": false,
+  "user_saves_opened": false,
+  "private_native_battery_provenance": {
+    "path": "/workspace/peon-of-warcraft/references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/ordinary_6cf_senjin.ram",
+    "sha256": "78ab907df2030dc30a97d6b344f42c28b6193d05c962b428cbe45f94a18c21a8",
+    "native_save_calls": 1,
+    "state_edits": false
+  },
+  "failure": "AssertionError()",
+  "crossings": [
+    {
+      "required_lane_case": false,
+      "source_map": 17,
+      "source_index": 1,
+      "lane": 0,
+      "activation_xy": [
+        10,
+        4
+      ],
+      "target_map": 16,
+      "expected_landing": [
+        12,
+        24
+      ],
+      "actual_landing": [
+        12,
+        24
+      ],
+      "ordinary_egress_xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "required_lane_case": false,
+      "source_map": 16,
+      "source_index": 3,
+      "lane": 0,
+      "activation_xy": [
+        12,
+        4
+      ],
+      "target_map": 18,
+      "expected_landing": [
+        12,
+        16
+      ],
+      "actual_landing": [
+        12,
+        16
+      ],
+      "ordinary_egress_xy": [
+        12,
+        15
+      ]
+    }
+  ],
+  "allocator_checks": [
+    {
+      "name": "private_native_cold_continue",
+      "frame": 2160,
+      "map": 17,
+      "xy": [
+        7,
+        9
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          6,
+          10
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "senjin_canonical_supplied_full_palm",
+      "frame": 2490,
+      "map": 17,
+      "xy": [
+        4,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          208,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          0,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_approach",
+      "frame": 2580,
+      "map": 17,
+      "xy": [
+        4,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          208,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          0,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_arrival",
+      "frame": 3260,
+      "map": 16,
+      "xy": [
+        12,
+        24
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 320,
+        "engine_filled_border_cells": 40,
+        "all360_visible_cells_exact": false,
+        "viewport_origin_world_tiles": [
+          16,
+          40
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_egress",
+      "frame": 4228,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          38
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "road_canonical_supplied_full_cactus",
+      "frame": 5518,
+      "map": 16,
+      "xy": [
+        8,
+        7
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          192,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          8,
+          6
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_approach",
+      "frame": 5608,
+      "map": 16,
+      "xy": [
+        8,
+        7
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          192,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          8,
+          6
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_arrival",
+      "frame": 6648,
+      "map": 18,
+      "xy": [
+        12,
+        16
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 3,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            8,
+            224,
+            36352
+          ],
+          [
+            12,
+            8,
+            234,
+            36512
+          ],
+          [
+            7,
+            9,
+            227,
+            36400
+          ],
+          [
+            12,
+            9,
+            235,
+            36528
+          ],
+          [
+            7,
+            10,
+            230,
+            36448
+          ],
+          [
+            12,
+            10,
+            236,
+            36544
+          ],
+          [
+            7,
+            11,
+            233,
+            36496
+          ],
+          [
+            12,
+            11,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 320,
+        "engine_filled_border_cells": 40,
+        "all360_visible_cells_exact": false,
+        "viewport_origin_world_tiles": [
+          16,
+          24
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_egress",
+      "frame": 6818,
+      "map": 18,
+      "xy": [
+        12,
+        15
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 17,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            10,
+            224,
+            36352
+          ],
+          [
+            12,
+            10,
+            234,
+            36512
+          ],
+          [
+            7,
+            11,
+            227,
+            36400
+          ],
+          [
+            12,
+            11,
+            235,
+            36528
+          ],
+          [
+            7,
+            12,
+            230,
+            36448
+          ],
+          [
+            12,
+            12,
+            236,
+            36544
+          ],
+          [
+            7,
+            13,
+            233,
+            36496
+          ],
+          [
+            12,
+            13,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          22
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_south_hornposts_extended_tiles",
+      "frame": 6908,
+      "map": 18,
+      "xy": [
+        12,
+        15
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 17,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            10,
+            224,
+            36352
+          ],
+          [
+            12,
+            10,
+            234,
+            36512
+          ],
+          [
+            7,
+            11,
+            227,
+            36400
+          ],
+          [
+            12,
+            11,
+            235,
+            36528
+          ],
+          [
+            7,
+            12,
+            230,
+            36448
+          ],
+          [
+            12,
+            12,
+            236,
+            36544
+          ],
+          [
+            7,
+            13,
+            233,
+            36496
+          ],
+          [
+            12,
+            13,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          22
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_central_terrain_and_facades",
+      "frame": 7318,
+      "map": 18,
+      "xy": [
+        11,
+        10
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 26,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          240,
+          160
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          14,
+          12
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_canonical_rock_and_facades",
+      "frame": 7608,
+      "map": 18,
+      "xy": [
+        12,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 29,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            0,
+            224,
+            36352
+          ],
+          [
+            12,
+            0,
+            234,
+            36512
+          ],
+          [
+            5,
+            1,
+            225,
+            36368
+          ],
+          [
+            6,
+            1,
+            226,
+            36384
+          ],
+          [
+            7,
+            1,
+            227,
+            36400
+          ],
+          [
+            12,
+            1,
+            235,
+            36528
+          ],
+          [
+            5,
+            2,
+            228,
+            36416
+          ],
+          [
+            6,
+            2,
+            229,
+            36432
+          ],
+          [
+            7,
+            2,
+            230,
+            36448
+          ],
+          [
+            12,
+            2,
+            236,
+            36544
+          ],
+          [
+            5,
+            3,
+            231,
+            36464
+          ],
+          [
+            6,
+            3,
+            232,
+            36480
+          ],
+          [
+            7,
+            3,
+            233,
+            36496
+          ],
+          [
+            12,
+            3,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          128
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_north_hornposts_extended_tiles",
+      "frame": 7818,
+      "map": 18,
+      "xy": [
+        12,
+        5
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 35,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            6,
+            224,
+            36352
+          ],
+          [
+            12,
+            6,
+            234,
+            36512
+          ],
+          [
+            5,
+            7,
+            225,
+            36368
+          ],
+          [
+            6,
+            7,
+            226,
+            36384
+          ],
+          [
+            7,
+            7,
+            227,
+            36400
+          ],
+          [
+            12,
+            7,
+            235,
+            36528
+          ],
+          [
+            5,
+            8,
+            228,
+            36416
+          ],
+          [
+            6,
+            8,
+            229,
+            36432
+          ],
+          [
+            7,
+            8,
+            230,
+            36448
+          ],
+          [
+            12,
+            8,
+            236,
+            36544
+          ],
+          [
+            5,
+            9,
+            231,
+            36464
+          ],
+          [
+            6,
+            9,
+            232,
+            36480
+          ],
+          [
+            7,
+            9,
+            233,
+            36496
+          ],
+          [
+            12,
+            9,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          80
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          2
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "private_native_cold_continue",
+      "frame": 2160,
+      "map": 17,
+      "xy": [
+        7,
+        9
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          6,
+          10
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "senjin_canonical_supplied_full_palm",
+      "frame": 2490,
+      "map": 17,
+      "xy": [
+        4,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          208,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          0,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_approach",
+      "frame": 2580,
+      "map": 17,
+      "xy": [
+        4,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          208,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          0,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_arrival",
+      "frame": 3260,
+      "map": 16,
+      "xy": [
+        12,
+        24
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 320,
+        "engine_filled_border_cells": 40,
+        "all360_visible_cells_exact": false,
+        "viewport_origin_world_tiles": [
+          16,
+          40
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_egress_guard_native_encounter",
+      "frame": 3830,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        1
+      ],
+      "battle_mode": [
+        1
+      ]
+    },
+    {
+      "name": "ordinary_senjin_road_egress_guard_native_run_no_retirement",
+      "frame": 4138,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ]
+    },
+    {
+      "name": "ordinary_senjin_road_egress",
+      "frame": 4228,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          38
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "road_canonical_supplied_full_cactus",
+      "frame": 5518,
+      "map": 16,
+      "xy": [
+        8,
+        7
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          192,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          8,
+          6
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_approach",
+      "frame": 5608,
+      "map": 16,
+      "xy": [
+        8,
+        7
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          192,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          8,
+          6
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_arrival",
+      "frame": 6648,
+      "map": 18,
+      "xy": [
+        12,
+        16
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 3,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            8,
+            224,
+            36352
+          ],
+          [
+            12,
+            8,
+            234,
+            36512
+          ],
+          [
+            7,
+            9,
+            227,
+            36400
+          ],
+          [
+            12,
+            9,
+            235,
+            36528
+          ],
+          [
+            7,
+            10,
+            230,
+            36448
+          ],
+          [
+            12,
+            10,
+            236,
+            36544
+          ],
+          [
+            7,
+            11,
+            233,
+            36496
+          ],
+          [
+            12,
+            11,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 320,
+        "engine_filled_border_cells": 40,
+        "all360_visible_cells_exact": false,
+        "viewport_origin_world_tiles": [
+          16,
+          24
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_egress",
+      "frame": 6818,
+      "map": 18,
+      "xy": [
+        12,
+        15
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 17,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            10,
+            224,
+            36352
+          ],
+          [
+            12,
+            10,
+            234,
+            36512
+          ],
+          [
+            7,
+            11,
+            227,
+            36400
+          ],
+          [
+            12,
+            11,
+            235,
+            36528
+          ],
+          [
+            7,
+            12,
+            230,
+            36448
+          ],
+          [
+            12,
+            12,
+            236,
+            36544
+          ],
+          [
+            7,
+            13,
+            233,
+            36496
+          ],
+          [
+            12,
+            13,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          22
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_south_hornposts_extended_tiles",
+      "frame": 6908,
+      "map": 18,
+      "xy": [
+        12,
+        15
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 17,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            10,
+            224,
+            36352
+          ],
+          [
+            12,
+            10,
+            234,
+            36512
+          ],
+          [
+            7,
+            11,
+            227,
+            36400
+          ],
+          [
+            12,
+            11,
+            235,
+            36528
+          ],
+          [
+            7,
+            12,
+            230,
+            36448
+          ],
+          [
+            12,
+            12,
+            236,
+            36544
+          ],
+          [
+            7,
+            13,
+            233,
+            36496
+          ],
+          [
+            12,
+            13,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          22
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_central_terrain_and_facades",
+      "frame": 7318,
+      "map": 18,
+      "xy": [
+        11,
+        10
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 26,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          240,
+          160
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          14,
+          12
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_canonical_rock_and_facades",
+      "frame": 7608,
+      "map": 18,
+      "xy": [
+        12,
+        8
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 29,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            0,
+            224,
+            36352
+          ],
+          [
+            12,
+            0,
+            234,
+            36512
+          ],
+          [
+            5,
+            1,
+            225,
+            36368
+          ],
+          [
+            6,
+            1,
+            226,
+            36384
+          ],
+          [
+            7,
+            1,
+            227,
+            36400
+          ],
+          [
+            12,
+            1,
+            235,
+            36528
+          ],
+          [
+            5,
+            2,
+            228,
+            36416
+          ],
+          [
+            6,
+            2,
+            229,
+            36432
+          ],
+          [
+            7,
+            2,
+            230,
+            36448
+          ],
+          [
+            12,
+            2,
+            236,
+            36544
+          ],
+          [
+            5,
+            3,
+            231,
+            36464
+          ],
+          [
+            6,
+            3,
+            232,
+            36480
+          ],
+          [
+            7,
+            3,
+            233,
+            36496
+          ],
+          [
+            12,
+            3,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          128
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          8
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "razor_north_hornposts_extended_tiles",
+      "frame": 7818,
+      "map": 18,
+      "xy": [
+        12,
+        5
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 35,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            6,
+            224,
+            36352
+          ],
+          [
+            12,
+            6,
+            234,
+            36512
+          ],
+          [
+            5,
+            7,
+            225,
+            36368
+          ],
+          [
+            6,
+            7,
+            226,
+            36384
+          ],
+          [
+            7,
+            7,
+            227,
+            36400
+          ],
+          [
+            12,
+            7,
+            235,
+            36528
+          ],
+          [
+            5,
+            8,
+            228,
+            36416
+          ],
+          [
+            6,
+            8,
+            229,
+            36432
+          ],
+          [
+            7,
+            8,
+            230,
+            36448
+          ],
+          [
+            12,
+            8,
+            236,
+            36544
+          ],
+          [
+            5,
+            9,
+            231,
+            36464
+          ],
+          [
+            6,
+            9,
+            232,
+            36480
+          ],
+          [
+            7,
+            9,
+            233,
+            36496
+          ],
+          [
+            12,
+            9,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          80
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      },
+      "native_visible_metatiles": {
+        "all_in_world_visible_tile_ids_exact": true,
+        "all_in_world_visible_palette_bank_priority_attributes_exact": true,
+        "compared_native_world_cells": 360,
+        "engine_filled_border_cells": 0,
+        "all360_visible_cells_exact": true,
+        "viewport_origin_world_tiles": [
+          16,
+          2
+        ],
+        "source": "gfx/zone_passages_v0213",
+        "method": "Read-only native live padded map block, frozen metatile packet and PPU comparison."
+      }
+    },
+    {
+      "name": "first_failure",
+      "frame": 7818,
+      "map": 18,
+      "xy": [
+        12,
+        5
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "frame": 1800,
+      "key": "start",
+      "frames": 90,
+      "map": 0,
+      "xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 1890,
+      "key": "a",
+      "frames": 180,
+      "map": 0,
+      "xy": [
+        0,
+        0
+      ]
+    },
+    {
+      "frame": 3340,
+      "key": "a",
+      "frames": 90,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3430,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3470,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3510,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3550,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3590,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3630,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3670,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3710,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3750,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3790,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3838,
+      "key": "right",
+      "frames": 30,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3868,
+      "key": "down",
+      "frames": 30,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3898,
+      "key": "a",
+      "frames": 30,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3928,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 3968,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 4008,
+      "key": "a",
+      "frames": 40,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "frame": 4048,
+      "key": "a",
+      "frames": 90,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ]
+    }
+  ],
+  "final_map": 18,
+  "final_xy": [
+    12,
+    5
+  ]
+}

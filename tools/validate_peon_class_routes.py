@@ -104,7 +104,7 @@ class ClassSession(TrainerSession, QuestSession):
         assert self.read('wKeyItems', self.read('wNumKeyItems')[0]) == list(KIT[self.class_index])
         assert self.item_quantity(18) == 2
         assert self.item_quantity(63) == (0 if self.class_index == 1 else 1)
-        assert self.item_quantity(148) == (1 if self.class_index == 0 else 0)
+        assert self.item_quantity(148) == 0, 'The retired persistent totem must not be in a new kit'
         assert self.initializations == 1
         chars = text_encoding()
         assert self.read('wPlayerName', 11) == [chars[x] for x in 'Péon ABCDE'] + [0x50]

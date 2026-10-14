@@ -1,16 +1,16 @@
 ; Versioned recruit/enemy packets. IDs and public PicPointers labels stay stable.
 
 SECTION "Peon Onix Native Front v029", ROMX
-OnixFrontpic: INCBIN "gfx/earth_elemental_v0212/enemy_front/front.2bpp.lz"
+OnixFrontpic: INCBIN "gfx/rock_roster_v0213/one/front/front.2bpp.lz"
 
 SECTION "Peon Onix Native Back v029", ROMX
-OnixBackpic: INCBIN "gfx/earth_elemental_v0212/ally_back/back.2bpp.lz"
+OnixBackpic: INCBIN "gfx/rock_roster_v0213/one/back/back.2bpp.lz"
 
 SECTION "Peon Geodude Native Front v029", ROMX
-GeodudeFrontpic: INCBIN "gfx/user_battle_v0211/enemies/geodude/front.2bpp.lz"
+GeodudeFrontpic: INCBIN "gfx/native_actor_restore_v0213/imp/front.animated.2bpp.lz"
 
 SECTION "Peon Geodude Native Back v029", ROMX
-GeodudeBackpic: INCBIN "gfx/peon_native_v029/geodude/back.2bpp.lz"
+GeodudeBackpic: INCBIN "gfx/native_actor_restore_v0213/imp/back.2bpp.lz"
 
 SECTION "Peon Machamp Native Front v029", ROMX
 MachampFrontpic: INCBIN "gfx/user_battle_v0211/enemies/machamp/front.2bpp.lz"

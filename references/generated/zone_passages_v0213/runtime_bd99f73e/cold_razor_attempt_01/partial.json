@@ -1,0 +1,437 @@
+{
+  "crossings": [
+    {
+      "required_lane_case": false,
+      "source_map": 17,
+      "source_index": 1,
+      "lane": 0,
+      "activation_xy": [
+        10,
+        4
+      ],
+      "target_map": 16,
+      "expected_landing": [
+        12,
+        24
+      ],
+      "actual_landing": [
+        12,
+        24
+      ],
+      "ordinary_egress_xy": [
+        12,
+        23
+      ]
+    },
+    {
+      "required_lane_case": false,
+      "source_map": 16,
+      "source_index": 3,
+      "lane": 0,
+      "activation_xy": [
+        12,
+        4
+      ],
+      "target_map": 18,
+      "expected_landing": [
+        12,
+        16
+      ],
+      "actual_landing": [
+        12,
+        16
+      ],
+      "ordinary_egress_xy": [
+        12,
+        15
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "private_native_cold_continue",
+      "frame": 2160,
+      "map": 17,
+      "xy": [
+        7,
+        9
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "senjin_canonical_supplied_palm",
+      "frame": 2250,
+      "map": 17,
+      "xy": [
+        7,
+        9
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_approach",
+      "frame": 2340,
+      "map": 17,
+      "xy": [
+        7,
+        9
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "SenjinVillage",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_arrival",
+      "frame": 2940,
+      "map": 16,
+      "xy": [
+        12,
+        24
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_senjin_road_egress",
+      "frame": 3908,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_approach",
+      "frame": 3998,
+      "map": 16,
+      "xy": [
+        12,
+        23
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "DurotarRoad",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 0,
+        "visible_extra_signed_cells": [],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_arrival",
+      "frame": 5198,
+      "map": 18,
+      "xy": [
+        12,
+        16
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 3,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            8,
+            224,
+            36352
+          ],
+          [
+            12,
+            8,
+            234,
+            36512
+          ],
+          [
+            7,
+            9,
+            227,
+            36400
+          ],
+          [
+            12,
+            9,
+            235,
+            36528
+          ],
+          [
+            7,
+            10,
+            230,
+            36448
+          ],
+          [
+            12,
+            10,
+            236,
+            36544
+          ],
+          [
+            7,
+            11,
+            233,
+            36496
+          ],
+          [
+            12,
+            11,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          0
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    },
+    {
+      "name": "ordinary_road_razor_egress",
+      "frame": 5368,
+      "map": 18,
+      "xy": [
+        12,
+        15
+      ],
+      "level": 5,
+      "hp": [
+        0,
+        17
+      ],
+      "script_mode": [
+        0
+      ],
+      "battle_mode": [
+        0
+      ],
+      "allocator": {
+        "map": "RazorHill",
+        "base192_patterns_exact": true,
+        "extra24_patterns_at_bank1_8e00_exact": true,
+        "font_portrait_region_not_used_by_extra_upload": true,
+        "all360_PPU_priority_bits_exact": true,
+        "priority_cells": 17,
+        "visible_extra_signed_cells": [
+          [
+            7,
+            10,
+            224,
+            36352
+          ],
+          [
+            12,
+            10,
+            234,
+            36512
+          ],
+          [
+            7,
+            11,
+            227,
+            36400
+          ],
+          [
+            12,
+            11,
+            235,
+            36528
+          ],
+          [
+            7,
+            12,
+            230,
+            36448
+          ],
+          [
+            12,
+            12,
+            236,
+            36544
+          ],
+          [
+            7,
+            13,
+            233,
+            36496
+          ],
+          [
+            12,
+            13,
+            237,
+            36560
+          ]
+        ],
+        "live_OAM_uses_no_extra_background_tiles": true,
+        "scroll_xy": [
+          0,
+          240
+        ],
+        "method": "Read-only VRAM/PPU/OAM inspection; no emulator input or state changes."
+      }
+    }
+  ],
+  "flees": [
+    {
+      "label": "ordinary_senjin_road_egress_guard",
+      "ordinary_run": true,
+      "flags_xp_money_unchanged": true
+    }
+  ]
+}

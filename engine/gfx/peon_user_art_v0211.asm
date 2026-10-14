@@ -26,6 +26,12 @@ PeonApplyPlayerBattleArtV0211::
 	cp ONIX
 	ld hl, .earth
 	jr z, .selected
+	cp GRAVELER
+	ld hl, .vein
+	jr z, .selected
+	cp GOLEM
+	ld hl, .element
+	jr z, .selected
 	cp GEODUDE
 	ld hl, .imp
 	jr z, .selected
@@ -72,7 +78,11 @@ PeonApplyPlayerBattleArtV0211::
 .imp
 	dba PeonUserImpAllyPalsV0211
 .earth
-	dba PeonEarthElementalAllyBackPalsV0212
+	dba PeonRockOneBackPalsV0213
+.vein
+	dba PeonRockVeinBackPalsV0213
+.element
+	dba PeonRockElementBackPalsV0213
 .grunt
 	dba PeonUserGruntAllyPalsV0211
 
@@ -131,7 +141,11 @@ PeonApplyEnemyBattleArtV0211::
 	ret
 .enemies
 	db ONIX
-	dba PeonEarthElementalEnemyMetaV0212
+	dba PeonRockOneEnemyMetaV0213
+	db GRAVELER
+	dba PeonRockVeinEnemyMetaV0213
+	db GOLEM
+	dba PeonRockElementEnemyMetaV0213
 	db RATTATA
 	dba PeonUserRattataEnemyMetaV0211
 	db SANDSHREW

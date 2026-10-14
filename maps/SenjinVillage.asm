@@ -304,6 +304,9 @@ SenjinVillage_MapEvents:
 	warp_event 5, 5, PEON_TROLL_HUT, 1 ; PEON_HUT_DOOR
 	warp_event 15, 5, PEON_TROLL_INN, 1 ; PEON_HUT_DOOR
 	warp_event 17, 9, PEON_TROLL_HUT, 1 ; PEON_HUT_DOOR
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 11, 4, DUROTAR_ROAD, 2 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	def_bg_events
 	def_object_events

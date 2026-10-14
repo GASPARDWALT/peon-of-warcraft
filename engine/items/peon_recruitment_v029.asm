@@ -1,6 +1,7 @@
 ; Reusable class relics use Crystal's base Poke Ball HP/catch-rate roll.
-; No ball sprite, Dex page, box transfer or item consumption. The earth-stone
-; quest owns its optional native nickname prompt after returning to the map.
+; No Dex page, box transfer or item consumption. The second earth-stone
+; quest elemental uses Crystal's native ball suspense and owns its optional
+; native nickname prompt after returning to the map.
 ; This module is deliberately not included until root's v028 checkpoint.
 SECTION "Peon Recruitment v029", ROMX
 
@@ -61,6 +62,10 @@ PeonTryRecruitV029::
 	ld [wMonType], a
 	predef TryAddMonToParty
 	jr nc, .miss
+	; A success cue must follow an actual native party add. The helper is
+	; scoped to the second earth-stone quest node; old relics keep their flow.
+	ld c, 1
+	farcall PeonPlayElementalCaptureV0213
 	call PeonRecalculateRecruitStatsV029
 	; Complete the native acquisition metadata before reusing those two bytes
 	; for the managed resource. Nothing writes caught data after Ensure below.
@@ -71,9 +76,7 @@ PeonTryRecruitV029::
 	push bc
 	farcall PeonAssignRoleNameV029
 	pop bc
-	push bc
-	call PeonInitializeRecruitActionsV029
-	pop bc
+	; Keep the captured native moves and remaining PP from the real enemy.
 	farcall PeonEnsureResourceForIndexV029
 	farcall PeonCommitEarthStoneCapture
 	ld a, [wEventFlags + EVENT_PEON_RECRUIT_ACCEPTED_V029 / 8]
@@ -91,6 +94,8 @@ PeonTryRecruitV029::
 	call PrintText
 	jr .attempted
 .miss
+	ld c, 0
+	farcall PeonPlayElementalCaptureV0213
 	ld a, 1
 	ld [wPeonRecruitResultV029], a
 	ld hl, .ResistedText
@@ -318,6 +323,9 @@ PeonTryRecruitV029::
 	ld [wFinalCatchRate], a
 	ld b, a
 	call Random
+	; Reuse the already drawn byte for cosmetic escape timing. This scratch
+	; is transient; new ally actions later reuse it for their native index.
+	ld [wPeonTeamScratchV029], a
 	cp b
 	jr z, .success
 	jr c, .success
@@ -333,7 +341,7 @@ PeonTryRecruitV029::
 	done
 .JoinedText:
 	text "A new ally joins"
-	line "your TEAM!"
+	line "your ROSTER!"
 	done
 .ResistedText:
 	text "The enemy resists."
@@ -365,49 +373,10 @@ PeonRecalculateRecruitStatsV029:
 	ld b, TRUE
 	predef_jump CalcMonStats
 
-; C=index. Copy only the new ally's four actions/charges. Its caught health,
-; statuses, level, DVs and experience stay in the native captured record.
+; Legacy initializer entry keeps the native captured move/PP record intact.
+; Its level curriculum is produced by FillMoves and LearnLevelMoves.
 PeonInitializeRecruitActionsV029:
-	ld a, c
-	ld [wPeonTeamScratchV029], a
-	ld hl, wPartyMon1
-	ld bc, PARTYMON_STRUCT_LENGTH
-	call AddNTimes
-	ld a, [hl]
-	ld de, .Earth
-	cp ONIX
-	jr z, .actions
-	ld de, .Grunt
-	cp MACHAMP
-	jr z, .actions
-	ld de, .Imp
-.actions
-	ld bc, MON_MOVES
-	add hl, bc
-	ld b, NUM_MOVES
-.moves
-	ld a, [de]
-	inc de
-	ld [hli], a
-	dec b
-	jr nz, .moves
-	push de
-	ld a, [wPeonTeamScratchV029]
-	ld hl, wPartyMon1PP
-	ld bc, PARTYMON_STRUCT_LENGTH
-	call AddNTimes
-	pop de
-	ld b, NUM_MOVES
-.pp
-	ld a, [de]
-	inc de
-	ld [hli], a
-	dec b
-	jr nz, .pp
 	ret
-.Earth: db POUND, THUNDERSHOCK, 0, 0, 35, 30, 0, 0
-.Grunt: db POUND, KARATE_CHOP, 0, 0, 35, 25, 0, 0
-.Imp: db SCRATCH, FLAMETHROWER, 0, 0, 35, 25, 0, 0
 
 ; Root's inventory hook uses this for class item help and for the exact
 ; eligibility check; normal kit items cannot accidentally invoke capture.
@@ -493,7 +462,7 @@ PeonPrepareRecruitQuestV029::
 	ld bc, 13
 	call CopyBytes
 	ret
-.EarthName: db "EARTH SPIRIT@", 0
+.EarthName: db "VIBRANT ROCK@", 0
 .GruntName: db "ORC GRUNT@", 0,0,0
 .DemonName: db "RED IMP@", 0,0,0,0,0
 
@@ -556,7 +525,7 @@ PeonRecruitAcceptedTextV029:
 	line "can be used again."
 	para "Find your ally at"
 	line "the valley trails."
-	para "If TEAM is full,"
+	para "If ROSTER is full,"
 	line "report Sarkoth to"
 	cont "Gornek first."
 	done
@@ -624,7 +593,7 @@ PeonEarthSpiritNodeV029::
 	closetext
 	end
 PeonEarthSpiritNodeTextV029:
-	text "An EARTH SPIRIT"
+	text "A VIBRANT ROCK"
 	line "tests your spirit."
 	para "A training pact."
 	line "No supplies drop."

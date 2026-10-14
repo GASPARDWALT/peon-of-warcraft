@@ -1,6 +1,6 @@
-; Class graphics are derived from the existing saved class flags.
-; No new sprite IDs, actor dimensions or save fields. Source import v0211
-; preserves the existing picture tile budgets and uses regional BG palettes.
+; Class graphics follow the existing saved class flags.
+; Base/Shaman restore archived complete native bodies in v0213.
+; Other classes retain current imports; actor dimensions and saves are unchanged.
 SECTION "Peon Apprentice Graphics Loaders", ROMX
 
 PeonPlayerGraphicsClass::
@@ -102,7 +102,7 @@ PeonLoadClassWorldPreview::
 	dba .WarriorPalette
 	dba .WarlockPalette
 .ShamanPalette
-	INCLUDE "gfx/approved_player_v0212/shaman/world_preview.pal"
+	INCLUDE "gfx/native_actor_restore_v0213/peon/world_preview.pal"
 .WarriorPalette
 	INCLUDE "gfx/approved_player_v0212/warrior/world_preview.pal"
 .WarlockPalette
@@ -346,15 +346,15 @@ PeonClassGetBackPoseBank0:
 ; independently encoded; the established symbol names remain caller APIs.
 SECTION "Peon Shaman Apprentice Graphics v028", ROMX
 PeonBaseWorldV0211::
-	INCBIN "gfx/approved_player_v0212/base/overworld.bin"
+	INCBIN "gfx/native_actor_restore_v0213/peon/overworld.bin"
 PeonShamanWorldV028:
-	INCBIN "gfx/approved_player_v0212/shaman/overworld.bin"
+	INCBIN "gfx/native_actor_restore_v0213/peon/overworld.bin"
 PeonShamanFrontV028:
-	INCBIN "gfx/approved_player_v0212/shaman/front/frames.2bpp"
+	INCBIN "gfx/native_actor_restore_v0213/peon/front_frames.bin"
 PeonShamanProfileV028:
-	INCBIN "gfx/approved_player_v0212/shaman/profile/frames.2bpp"
+	INCBIN "gfx/native_actor_restore_v0213/peon/portrait_frames.bin"
 PeonShamanBackV028:
-	INCBIN "gfx/approved_player_v0212/shaman/back/frames.2bpp"
+	INCBIN "gfx/native_actor_restore_v0213/peon/back_frames.bin"
 
 SECTION "Peon Warrior Apprentice Graphics v028", ROMX
 PeonWarriorWorldV028:

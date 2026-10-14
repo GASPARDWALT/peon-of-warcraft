@@ -1,9 +1,9 @@
 	db ONIX ; 095
 
-	db 42, 30, 35, 22, 38, 35 ; prototype role stats
+	db 42, 30, 35, 22, 38, 35 ; telluric roster stage
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
+	db ROCK, GROUND ; telluric rock type
 	db 180 ; catch rate
 	db 45 ; base exp
 	db NO_ITEM, NO_ITEM ; items
@@ -11,7 +11,7 @@
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch
 	db 5 ; unknown 2
-	INCBIN "gfx/peon_native_v029/onix/front.dimensions"
+	db $77 ; native 56x56 rock front picture
 	dw NULL, NULL ; unused (beta front/back pics)
 	db GROWTH_MEDIUM_FAST ; growth rate
 	dn EGG_MINERAL, EGG_MINERAL ; egg groups

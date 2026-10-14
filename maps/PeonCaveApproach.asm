@@ -30,6 +30,10 @@ PeonCaveApproach_MapEvents:
 	def_warp_events
 	warp_event 5, 9, PEON_VALLEY_CROSSROADS, 2
 	warp_event 5, 2, BURNING_BLADE_CAVERN, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 4, 9, PEON_VALLEY_CROSSROADS, 2 ; full clear threshold
+	warp_event 4, 2, BURNING_BLADE_CAVERN, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 3, 5, -1, PeonApproachImp1Script
 	coord_event 5, 5, -1, PeonApproachImp1Script

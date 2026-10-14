@@ -3,39 +3,7 @@
 ; All positions are centered full-canvas coordinates, not alpha-bounding-box crops.
 ; OBJ color0 is transparent; attributes select OBJ palettes4/5/6.
 
-DEF PeonSpellV1LightningGFXTileCount EQU 15
-PeonSpellV1LightningGFX::
-	INCBIN "gfx/peon_spell_pack_v1/lightning_bolt_tiles.2bpp.lz"
-PeonSpellV1LightningOBPalettes::
-	INCBIN "gfx/peon_spell_pack_v1/lightning_bolt_obj.gbcpal"
-	assert @ - PeonSpellV1LightningOBPalettes == 3 palettes
-DEF PeonSpellV1LightningPlayerOAMCount EQU 4
-PeonSpellV1LightningPlayerOAM::
-; player_back/lightning_bolt_player_back_16x32.png; SHA256 957724cc7a4ae2f1209c074e8b7333ca0735e741cb2e49dc13b981868e9ea2ee
-	dbsprite -1, -1, 0, 0, $00, $04
-	dbsprite 0, -1, 0, 0, $01, $06
-	dbsprite -1, 0, 0, 0, $02, $04
-	dbsprite 0, 0, 0, 0, $03, $04
-	assert @ - PeonSpellV1LightningPlayerOAM == PeonSpellV1LightningPlayerOAMCount * 4
-DEF PeonSpellV1LightningEnemyOAMCount EQU 4
-PeonSpellV1LightningEnemyOAM::
-; enemy_front/lightning_bolt_enemy_front_16x32.png; SHA256 af3a6c43453d35ef832a0238d15eb79610d2a61d57816a45cd0ce1deb2bc8107
-	dbsprite -1, -1, 0, 0, $04, $04
-	dbsprite 0, -1, 0, 0, $05, $04
-	dbsprite -1, 0, 0, 0, $06, $04
-	dbsprite 0, 0, 0, 0, $07, $06
-	assert @ - PeonSpellV1LightningEnemyOAM == PeonSpellV1LightningEnemyOAMCount * 4
-DEF PeonSpellV1LightningImpactOAMCount EQU 7
-PeonSpellV1LightningImpactOAM::
-; impacts/lightning_bolt_explosion_32x32.png; SHA256 f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8
-	dbsprite -1, -2, 0, 0, $08, $05
-	dbsprite -1, -1, 0, 0, $09, $05
-	dbsprite 0, -1, 0, 0, $0a, $04
-	dbsprite -1, 0, 0, 0, $0b, $04
-	dbsprite 0, 0, 0, 0, $0c, $04
-	dbsprite -1, 1, 0, 0, $0d, $04
-	dbsprite 0, 1, 0, 0, $0e, $04
-	assert @ - PeonSpellV1LightningImpactOAM == PeonSpellV1LightningImpactOAMCount * 4
+INCLUDE "gfx/peon_lightning_horizontal_v0213.asm"
 PeonSpellV1LightningIconGFX::
 	INCBIN "gfx/peon_spell_pack_v1/lightning_bolt_icon.2bpp"
 	assert @ - PeonSpellV1LightningIconGFX == 4 * LEN_2BPP_TILE

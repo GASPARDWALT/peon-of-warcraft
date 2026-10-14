@@ -1,4 +1,4 @@
-; Shaman chain: win first elemental, exchange its stone, bind the second.
+; Shaman chain: defeat first vibrant rock, exchange its stone, catch another.
 ; Fixed saved flags and native inventory/party/capture/naming only.
 SECTION "Peon Earth Stone Quest", ROMX
 
@@ -428,7 +428,7 @@ PeonRenameEarthStoneAlly::
 PeonEarthStoneOfferText:
 	text "Chaman mystérieux:"
 	para "Au nord, en zone 3,"
-	line "un élémentaire"
+	line "un petit cailloux"
 	cont "garde une pierre."
 	para "Vaincs-le, puis"
 	line "rapporte sa pierre"
@@ -440,7 +440,7 @@ PeonEarthStoneDirectionsText:
 	text "Monte au nord"
 	line "vers la zone 3."
 	para "Bats le premier"
-	line "élémentaire, pres"
+	line "cailloux vibrant"
 	cont "du sentier ouest."
 	para "Rapporte sa pierre"
 	line "au Chaman, zone 2"
@@ -448,7 +448,7 @@ PeonEarthStoneDirectionsText:
 	done
 
 PeonEarthStoneFirstBattleText:
-	text "Cet élémentaire"
+	text "Ce petit cailloux"
 	line "garde la pierre"
 	cont "tellurique."
 	para "Le combattre?"
@@ -476,31 +476,31 @@ PeonEarthStoneControlText:
 	text "Pierre de controle"
 	line "recu: CTRL. STONE."
 	para "Retourne en zone 3."
-	line "Un autre élément"
+	line "Un petit cailloux"
 	cont "attend a l'ouest."
 	para "Affaiblis-le, puis"
 	line "utilise cette"
 	cont "pierre dans BAGS."
-	para "Il rejoindra TEAM."
+	para "Il rejoint ROSTER."
 	line "Tu pourras lui"
 	cont "donner un nom."
 	done
 
 PeonEarthStoneSecondBattleText:
-	text "Un nouvel élément"
+	text "Un petit cailloux"
 	line "répond a l'appel."
 	para "Affaiblis-le, puis"
 	line "utilise la pierre"
 	cont "dans BAGS."
-	para "Si TEAM est plein,"
+	para "ROSTER est plein?"
 	line "rapporte Sarkoth"
 	cont "a Gornek d'abord."
 	para "Le rencontrer?"
 	done
 
 PeonEarthStoneRenameText:
-	text "L'élémentaire"
-	line "rejoint ton TEAM!"
+	text "Le petit cailloux"
+	line "rejoint ton ROSTER!"
 	para "Lui donner un nom?"
 	done
 
@@ -525,7 +525,7 @@ PeonEarthStoneBagFullText:
 
 PeonEarthStoneThanksText:
 	text "Prends soin de"
-	line "ton élémentaire,"
+	line "ton petit cailloux,"
 	cont "Chaman."
 	done
 

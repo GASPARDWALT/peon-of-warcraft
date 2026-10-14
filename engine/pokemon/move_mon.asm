@@ -205,6 +205,10 @@ endr
 	ld a, [wCurPartySpecies]
 	cp ONIX
 	jr z, .companion_dex_done
+	cp GRAVELER
+	jr z, .companion_dex_done
+	cp GOLEM
+	jr z, .companion_dex_done
 	cp GEODUDE
 	jr z, .companion_dex_done
 	cp MACHAMP

@@ -14,6 +14,12 @@ PeonLoadActiveAllyBackPoseV029::
 	cp ONIX
 	ld hl, .earth
 	jr z, .selected
+	cp GRAVELER
+	ld hl, .vein
+	jr z, .selected
+	cp GOLEM
+	ld hl, .element
+	jr z, .selected
 	cp GEODUDE
 	ld hl, .imp
 	jr z, .selected
@@ -60,7 +66,11 @@ PeonLoadActiveAllyBackPoseV029::
 	scf
 	ret
 .earth
-	dba PeonEarthAllyBackFramesV029
+	dba PeonRockOneBackFramesV0213
+.vein
+	dba PeonRockVeinBackFramesV0213
+.element
+	dba PeonRockElementBackFramesV0213
 .imp
 	dba PeonUserImpAllyTilesV0211
 .grunt
@@ -160,6 +170,10 @@ PeonDrawBattlePartySidebarV029::
 	ld a, [hl]
 	ld de, PeonEarthAllyHeadV029
 	cp ONIX
+	jr z, .head
+	cp GRAVELER
+	jr z, .head
+	cp GOLEM
 	jr z, .head
 	ld de, PeonImpAllyHeadV029
 	cp GEODUDE
@@ -305,59 +319,19 @@ PeonPartyHPBarLevelV029:
 	inc a
 	ret
 
-; Erase a previous pet as soon as it is active or fainted. Returning early
-; from the pet drawing guard alone would leave its old six cells on screen.
-; A placed Earthbind totem remains visible and owns this shared footprint.
+; Passive battle bodies and totems are retired. Clearing their old footprint
+; would erase the resource gauge and selected move cost now occupying it.
 PeonClearInactiveBattlePetV029::
-	push af
-	push bc
-	push de
-	push hl
-	ldh a, [rSVBK]
-	push af
-	ld a, 1
-	ldh [rSVBK], a
-	ld a, [wMapTileset]
-	cp TILESET_PEON
-	jr nz, .done
-	ld a, [wBattleMode]
-	and a
-	jr z, .done
-	ld a, [wPeonEarthTotemActive]
-	and a
-	jr nz, .done
-	farcall PeonImpMayAssistV029
-	jr c, .done
-	hlcoord 8, 4
-	lb bc, 3, 2
-	call ClearBox
-	hlcoord 8, 4, wAttrmap
-	ld b, 3
-.row
-	ld [hl], PAL_BATTLE_BG_PLAYER
-	inc hl
-	ld [hl], PAL_BATTLE_BG_PLAYER
-	ld de, SCREEN_WIDTH - 1
-	add hl, de
-	dec b
-	jr nz, .row
-.done
-	pop af
-	ldh [rSVBK], a
-	pop hl
-	pop de
-	pop bc
-	pop af
 	ret
 
 PeonEarthAllyBackFramesV029:
-	INCBIN "gfx/earth_elemental_v0212/ally_back/frames.2bpp"
+	INCBIN "gfx/rock_roster_v0213/one/back/frames.2bpp"
 PeonImpAllyBackFramesV029:
 	INCBIN "gfx/peon_native_v029/geodude/back_frames.bin"
 PeonGruntAllyBackFramesV029:
 	INCBIN "gfx/peon_native_v029/machamp/back_frames.bin"
 PeonEarthAllyHeadV029:
-	INCBIN "gfx/earth_elemental_v0212/head_8x8.2bpp"
+	INCBIN "gfx/rock_roster_v0213/one/head.2bpp"
 PeonImpAllyHeadV029:
 	INCBIN "gfx/peon_native_v029/geodude/head_8x8.2bpp"
 PeonGruntAllyHeadV029:

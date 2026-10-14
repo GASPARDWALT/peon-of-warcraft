@@ -56,7 +56,7 @@ def main():
     asm += ["\tdb 0"]
     # Objective coordinates are the real interactable cells, not inferred
     # concept points. A cave entrance is a truthful route marker for Yarrog.
-    coords = {"LAZY": ("TheDen", r"object_event\s+(\d+),\s*(\d+),[^\n]+TheDenLazyPeonScript"),
+    coords = {"LAZY": ("ValleyOfTrials", r"object_event\s+(\d+),\s*(\d+),[^\n]+ValleyLazyPeonScript"),
               "SARKOTH": ("ValleyOfTrials", r"object_event\s+(\d+),\s*(\d+),[^\n]+ValleySarkothScript"),
               "YARROG": ("BurningBladeCavern", r"object_event\s+(\d+),\s*(\d+),[^\n]+BurningBladeYarrogScript"),
               "CAVE_ENTRANCE": ("ValleyOfTrials", r"warp_event\s+(\d+),\s*(\d+),\s*BURNING_BLADE_CAVERN"),

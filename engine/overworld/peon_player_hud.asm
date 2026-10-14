@@ -1,9 +1,10 @@
 ; Compact live overworld portrait and life gauge. This uses no persistent RAM,
 ; changes no palettes, and retains every visible world object's data and order.
-; One fixed four-object panel is used in every world view. Its ink bounds are
-; (2,3)..(36,11), with an 8px face and a 24px live gauge: it never resizes.
+; One fixed six-object panel retains the 8px face and 24px HP strip. A real
+; 16px mana/rage strip sits immediately below; the two scanline bands stay
+; separate. No actor/body is removed to draw this panel.
 ; Extremely crowded views retain the actors and omit the HUD for that frame.
-; OBJ bank 0 $8600..$86df is below the standard font at $8800 and above every
+; OBJ bank 0 $8600..$876f is below the standard font at $8800 and above every
 ; supported Peon map's secondary standing-sprite allocation (checked by tests).
 
 SECTION "Peon Player HUD", ROMX
@@ -11,7 +12,8 @@ SECTION "Peon Player HUD", ROMX
 DEF PEON_HUD_TILE EQU $60
 DEF PEON_HUD_HEAD_TILE EQU PEON_HUD_TILE + 4
 DEF PEON_HUD_GAUGE_TILE EQU PEON_HUD_TILE + 5
-DEF PEON_HUD_OBJECTS EQU 4
+DEF PEON_HUD_MANA_GAUGE_TILE EQU PEON_HUD_TILE + 14
+DEF PEON_HUD_OBJECTS EQU 6
 
 PeonLoadPlayerHUDGFX::
 	push af
@@ -37,7 +39,7 @@ PeonLoadPlayerHUDGFX::
 	ldh [rVBK], a
 	ld de, PeonPlayerHUDGFX
 	ld hl, vTiles0 tile PEON_HUD_TILE
-	lb bc, BANK(PeonPlayerHUDGFX), 14
+	lb bc, BANK(PeonPlayerHUDGFX), 23
 	call Get2bpp
 	pop af
 	ldh [rVBK], a
@@ -96,7 +98,26 @@ PeonDrawPlayerHUD::
 	ld e, 20 ; OAM x = 12px + 8px hardware origin
 	ld b, 3
 	call .GaugeObjects
+	push hl ; next free shadow OAM survives the resource farcall
+	ld c, 16
+	farcall PeonGetHeroResourceBarFillV0213
+	pop hl
+	jr nc, .health_only
+	ld d, c
+	ld c, 6 ; existing world palette6 color2 = blue/cyan
+	ld a, b
+	cp 1 ; Warrior rage is the existing palette0 red strip
+	jr nz, .resource_palette
+	ld c, 0
+.resource_palette
+	ld e, 20
+	ld b, 2
+	call .ResourceGaugeObjects
 	ld a, PEON_HUD_OBJECTS
+	jr .raise
+.health_only
+	ld a, 4
+.raise
 	call .RaiseHUDPriority
 .done
 	pop hl
@@ -149,8 +170,9 @@ PeonDrawPlayerHUD::
 	ret
 
 .HasHUDScanlineBudget:
-	; Carry = unsafe. Four HUD objects share y3..10, so at most six world
-	; objects may touch any individual row. A union count falsely rejected
+	; Carry = unsafe. Four HP objects occupy y3..10; two resource objects
+	; occupy y11..18. At most6/8 world objects may share those respective rows.
+	; A union count falsely rejected
 	; actors on disjoint rows and caused unnecessary size/visibility changes.
 	; Most views have no top-row actors. Accept that inexpensive union case
 	; immediately; only a genuinely crowded union needs eight exact passes.
@@ -167,7 +189,7 @@ PeonDrawPlayerHUD::
 	ld a, [hl]
 	cp 12
 	jr c, .outside_union
-	cp 27
+	cp 35
 	jr nc, .outside_union
 	inc d
 .outside_union
@@ -205,7 +227,14 @@ PeonDrawPlayerHUD::
 	jr c, .not_on_row
 	jr z, .not_on_row
 	inc d
+	ld a, b
+	cp 27
 	ld a, d
+	jr c, .health_scanline
+	cp 9 ; resource row has only two HUD objects
+	jr nc, .unsafe
+	jr .not_on_row
+.health_scanline
 	cp 7
 	jr nc, .unsafe
 .not_on_row
@@ -217,7 +246,7 @@ PeonDrawPlayerHUD::
 .next_scanline
 	inc b
 	ld a, b
-	cp 27
+	cp 35
 	jr nz, .scanline
 	and a
 	ret
@@ -228,7 +257,7 @@ PeonDrawPlayerHUD::
 .RaiseHUDPriority:
 	; Rotate complete HUD objects in front of the complete world allocation.
 	; The world retains exactly the same objects and relative priority order.
-	; Stack-only scratch is 16 bytes, so no save/temporary RAM is needed.
+	; Stack-only scratch is 24 bytes, so no save/temporary RAM is needed.
 	; Save the HUD once and shift the world once, instead of rotating every
 	; object separately. The fixed panel needs at most160 OAM byte writes.
 	sla a
@@ -318,6 +347,43 @@ PeonDrawPlayerHUD::
 	ld [hli], a
 	dec b
 	jr nz, .GaugeObjects
+	ld a, l
+	ldh [hUsedSpriteIndex], a
+	ret
+
+.ResourceGaugeObjects:
+	ld a, 27 ; screen y11; no scanline overlap with the HP strip
+	ld [hli], a
+	ld a, e
+	ld [hli], a
+	add 8
+	ld e, a
+	ld a, d
+	cp 8
+	jr c, .resource_partial
+	sub 8
+	ld d, a
+	ld a, 8
+	jr .resource_tile
+.resource_partial
+	ld d, 0
+.resource_tile
+	push af
+	ld a, c
+	and a
+	jr z, .resource_red
+	pop af
+	add PEON_HUD_MANA_GAUGE_TILE
+	jr .resource_place
+.resource_red
+	pop af
+	add PEON_HUD_GAUGE_TILE
+.resource_place
+	ld [hli], a
+	ld a, c
+	ld [hli], a
+	dec b
+	jr nz, .ResourceGaugeObjects
 	ld a, l
 	ldh [hUsedSpriteIndex], a
 	ret
@@ -428,3 +494,9 @@ PeonPlayerHUDGFX:
 	INCBIN "gfx/pack/peon_player_hud.2bpp"
 PeonPlayerHUDGFXEnd:
 	assert PeonPlayerHUDGFXEnd - PeonPlayerHUDGFX == 14 tiles
+
+; Native gauge silhouettes remapped to the existing blue world palette.
+; Contiguous after the original14tiles: one23-tile native upload, no font use.
+PeonWorldManaGaugeGFXV0213:
+	INCBIN "gfx/peon_resource_hud_v0213/world_mana_gauges.2bpp"
+	assert @ - PeonWorldManaGaugeGFXV0213 == 9 tiles

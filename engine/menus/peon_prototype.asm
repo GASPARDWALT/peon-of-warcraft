@@ -246,7 +246,8 @@ PeonClassSelect:
 	hlcoord 1, 1
 	ld de, .Heading
 	call PlaceString
-	hlcoord 2, 4
+	; Nine-cell BISMILLAH must end before the preview/description at column10.
+	hlcoord 1, 4
 	ld de, .Names
 	call PlaceString
 	hlcoord 1, 15
@@ -371,10 +372,10 @@ PeonClassSelect:
 .Names:
 	db "<BOLD>KENTO<REGULAR>", "<LF>", "SHAMAN", "<LF>", "", "<LF>", "", "<LF>"
 	db "<BOLD>MoCMoc<REGULAR>", "<LF>", "WARRIOR", "<LF>", "", "<LF>", "", "<LF>"
-	db "<BOLD>XASTHUR<REGULAR>", "<LF>", "WARLOCK@"
+	db "<BOLD>BISMILLAH<REGULAR>", "<LF>", "WARLOCK@"
 .Controls: db "UP/DOWN  A: ACCEPT@"
 .Descriptions: dw .Shaman, .Warrior, .Warlock
-.Shaman: db "SHAMAN", "<LF>", "ELEMENTS", "<LF>", "MACE", "<LF>", "SHIELD", "<LF>", "TOTEM", "<LF>", "LIGHTNING", "<LF>", "BOLT@"
+.Shaman: db "SHAMAN", "<LF>", "ELEMENTS", "<LF>", "MACE", "<LF>", "SHIELD", "<LF>", "ROSTER", "<LF>", "LIGHTNING", "<LF>", "BOLT@"
 .Warrior: db "WARRIOR", "<LF>", "MELEE", "<LF>", "TWO HAND", "<LF>", "AXE", "<LF>", "HEROIC", "<LF>", "STRIKE", "<LF>", "REND@"
 .Warlock: db "WARLOCK", "<LF>", "SHADOW", "<LF>", "WAND", "<LF>", "BOLT", "<LF>", "DRAIN", "<LF>", "CORRUPT", "<LF>", "FEAR@"
 

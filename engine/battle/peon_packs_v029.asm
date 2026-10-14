@@ -398,8 +398,12 @@ PeonGetAllyBasicMoveNameV029::
 	jr .copy
 .pound
 	ld a, [wBattleMonSpecies]
-	cp ONIX
 	ld hl, .earth
+	cp ONIX
+	jr z, .copy
+	cp GRAVELER
+	jr z, .copy
+	cp GOLEM
 	jr z, .copy
 	cp GEODUDE
 	ld hl, .imp

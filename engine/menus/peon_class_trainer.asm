@@ -510,7 +510,7 @@ PeonClassTrainer::
 	pop af
 	ret
 .WarriorTitle: db "<BOLD>MoCMoc<REGULAR> - WARRIOR@"
-.WarlockTitle: db "<BOLD>XASTHUR<REGULAR> - WARLOCK@"
+.WarlockTitle: db "<BOLD>BISMILLAH<REGULAR> - DEMO@"
 .LevelLabel: db "LEVEL:@"
 .WalletLabel: db "COPPER:@"
 .Controls: db "A: TRAIN  B: BACK@"

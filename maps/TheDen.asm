@@ -210,29 +210,12 @@ TheDenBoarScript:
 
 TheDenKentoScript:
 	faceplayer
-	setlasttalked THEDEN_KENTO
+	; Retain the caller's real actor: masters now speak inside the lodge.
 	checkevent EVENT_PEON_WARRIOR
 	iftrue .WrongClass
 	checkevent EVENT_PEON_WARLOCK
 	iftrue .WrongClass
-	; Older saves have the belt totem but predate the usable battle totem.
-	; Inventory guards this non-consumable handoff without another save flag.
-	checkevent EVENT_PEON_SHAMAN
-	iffalse .Trainer
-	checkitem ITEM_94
-	iftrue .Trainer
-	giveitem ITEM_94
-	iffalse .BagFull
-	opentext
-	writetext TheDenKentoEarthTotemText
-	waitbutton
-	closetext
-	sjump .Trainer
-.BagFull:
-	opentext
-	writetext TheDenKentoTotemBagFullText
-	waitbutton
-	closetext
+	; Companions are ordinary roster combatants; ITEM_94 is no longer granted.
 .Trainer:
 	checkevent EVENT_PEON_CUTTING_TURNED_IN
 	iffalse .TrainingMenu
@@ -463,6 +446,10 @@ TheDen_MapEvents:
 	warp_event 17, 5, PEON_ORC_INN, 1 ; PEON_HUT_DOOR
 	warp_event 5, 7, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	warp_event 0, 14, PEON_SARKOTH_BASIN, 2 ; narrow western canyon, zone 5
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 20, 11, VALLEY_OF_TRIALS, 1 ; full clear threshold
+	warp_event 0, 15, PEON_SARKOTH_BASIN, 2 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 17, 15, -1, TheDenScorpidScript
 	coord_event 18, 14, -1, TheDenScorpidScript
@@ -482,18 +469,18 @@ TheDen_MapEvents:
 	object_event 10, 9, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
 	object_event 10, 8, SPRITE_PEON_QUEST_1, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenQuestScript, -1
 	object_event 18, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenBoarScript, EVENT_PEON_QUEST_DONE
-	object_event 6, 12, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
+	object_event 6, 12, SPRITE_NONE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenKentoScript, -1
 	object_event 19, 15, SPRITE_PAPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, TheDenScorpidScript, EVENT_PEON_SCORPID_DEFEATED
 	object_event 14, 9, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenDuoknaScript, -1
 	object_event 8, 15, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, -1
-	object_event 5, 16, SPRITE_PEON_WORKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
+	object_event 5, 16, SPRITE_NONE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenLazyPeonScript, -1
 	object_event 8, 14, SPRITE_PEON_QUEST_2, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TheDenForemanScript, EVENT_PEON_LAZY_DONE
 	object_event 6, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PINK, OBJECTTYPE_SCRIPT, 0, TheDenNeutralBoarScript, -1
 	; Optional neutral boar becomes Horde post; actor indices do not shift.
 	object_event 16, 6, SPRITE_PEON_MAILBOX, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, TheDenMailboxScript, -1
 	; Append-only: saved actor indices 1-11 and all original positions stay stable.
-	object_event 3, 13, SPRITE_BRUNO, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenWarriorMasterScript, -1
-	object_event 3, 16, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheDenWarlockMasterScript, -1
+	object_event 3, 13, SPRITE_NONE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenWarriorMasterScript, -1
+	object_event 3, 16, SPRITE_NONE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, TheDenWarlockMasterScript, -1
 	object_event 8, 6, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenProvisionerScript, -1
 	object_event 8, 7, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, TheDenCookScript, -1
 
@@ -608,7 +595,6 @@ TheDenCookScript:
 
 TheDenWarriorMasterScript:
 	faceplayer
-	setlasttalked THEDEN_WARRIOR_MASTER
 	checkevent EVENT_PEON_WARRIOR
 	iftrue .Trainer
 	opentext
@@ -632,7 +618,6 @@ TheDenWarriorMasterScript:
 
 TheDenWarlockMasterScript:
 	faceplayer
-	setlasttalked THEDEN_WARLOCK_MASTER
 	checkevent EVENT_PEON_WARLOCK
 	iftrue .Trainer
 	opentext
@@ -685,15 +670,17 @@ TheDenWarriorTrainingText:
 	cont "Learn your skills."
 	done
 TheDenWarlockMasterText:
-	text "<BOLD>XASTHUR<REGULAR>"
-	line "Warlock Master"
+	text "<BOLD>Bismillah<REGULAR>"
+	line "<BOLD>LesTenèbres<REGULAR>"
+	cont "Warlock Master"
 	para "<PLAYER>,"
 	line "I teach warlocks."
 	para "You chose another"
 	line "path, apprentice."
 	done
 TheDenWarlockTrainingText:
-	text "<BOLD>XASTHUR<REGULAR>"
+	text "<BOLD>Bismillah<REGULAR>"
+	line "<BOLD>LesTenèbres<REGULAR>"
 	para "<PLAYER>,"
 	line "master the shadow."
 	para "Drain life."
@@ -792,7 +779,7 @@ TheDenLazyPeonScript:
 .Wake:
 	closetext
 	playsound SFX_POUND
-	showemote EMOTE_SHOCK, THEDEN_LAZY_PEON, 12
+	showemote EMOTE_SHOCK, LAST_TALKED, 12
 	waitsfx
 	setevent EVENT_PEON_LAZY_AWAKE
 	playsound SFX_PEON_QUEST_READY
@@ -830,7 +817,9 @@ TheDenForemanOfferText:
 TheDenForemanAcceptedText:
 	text "<PLAYER>,"
 	line "find the sleeper"
-	cont "beside the camp."
+	cont "in Zone Two."
+	para "VALLEY OF TRIALS"
+	line "Past the east gate."
 	para "Give him a nudge,"
 	line "then report back."
 	done
@@ -838,7 +827,7 @@ TheDenForemanAcceptedText:
 TheDenForemanReminderText:
 	text "<PLAYER>,"
 	line "our sleeper is"
-	cont "still dreaming."
+	cont "in Zone Two."
 	para "Wake him with"
 	line "your crude mace."
 	done

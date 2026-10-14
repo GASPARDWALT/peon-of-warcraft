@@ -1,0 +1,108 @@
+{
+  "version": "v0.2.13",
+  "status": "PASS",
+  "released_ROM": "releases/v0.2.13/peon_of_warcraft_v0_2_13.gbc",
+  "released_ROM_sha256": "71e0bef22a4d1fee32af20a94fb8474db29f0d610f60a0fdfcd93c00fdab8a9a",
+  "build_report": "references/generated/v0213/build.json",
+  "fresh_index_build_report": "references/generated/v0213/fresh_build_validation.json",
+  "final_ROM_tests": [
+    "resource_hud",
+    "battle_names",
+    "masters_and_cold_continue",
+    "native_world_bindings"
+  ],
+  "candidate_test_provenance": "Other reports retain their actual candidate hashes. Their product systems were unchanged afterwards, except the separately tested room Continue allocation and battle font fixes; they are not full final-ROM reruns. Level-gate fixtures are compiled separately and absent from production.",
+  "tests": {
+    "world_lanes": {
+      "report": "references/generated/zone_passages_v0213/runtime_6cf84242/summary.json",
+      "status": "PASS",
+      "tested_rom_sha256": "6cf84242e9a518af635fe9e2138f7f60228de2d0da7b4ee12ba7511f814f88e8",
+      "report_sha256": "9241daacd0a4d4c07e75f92e55a676db02c31daa030921e3a4000e45941d209c"
+    },
+    "world_extended_vram": {
+      "report": "references/generated/zone_passages_v0213/runtime_bd99f73e/summary.json",
+      "status": "PASS",
+      "tested_rom_sha256": "bd99f73e3397940b67eee82f974a84eb859aa030a14ed6a4d6abcbfe6e7575a7",
+      "report_sha256": "27feb540c1bc46184352125aaf186925da88aea71113bc460b511a7f131e6968"
+    },
+    "roster_evolution": {
+      "report": "references/generated/roster_v0213/final_bd99f73e/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": {
+        "normal": "bd99f73e3397940b67eee82f974a84eb859aa030a14ed6a4d6abcbfe6e7575a7",
+        "fixtures": {
+          "level7_to8": "a9e4a993fd5f489c3cb3e005a71d161e9c0942b16340112e8a8911d6dbf35598",
+          "level11_to12": "a9e4a993fd5f489c3cb3e005a71d161e9c0942b16340112e8a8911d6dbf35598"
+        }
+      },
+      "report_sha256": "e8be44e7365e322a83a915eb820dc8c861b60ab87b3563714bbd030769541567"
+    },
+    "resource_hud": {
+      "report": "references/generated/resource_hud_v0213/final_71e0bef2/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "71e0bef22a4d1fee32af20a94fb8474db29f0d610f60a0fdfcd93c00fdab8a9a",
+      "report_sha256": "69e3ee98d6ea186175a54f6933a339c884cc7853cd95ba85ef74787998e35d52"
+    },
+    "horizontal_lightning": {
+      "report": "references/generated/spell_tests/lightning_horizontal_v0213/final_999cf028/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "999cf028e0f583ade3ed61b30c4a337a126b7177505628ba03ea6249f1e6668e",
+      "report_sha256": "2b0abb4774d6a1cd44c8ad6bdcc844b88107f9bfbc65cd2725c19aea7b622b5a"
+    },
+    "capture": {
+      "report": "references/generated/capture_suspense_v0213/final_999cf028/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "999cf028e0f583ade3ed61b30c4a337a126b7177505628ba03ea6249f1e6668e",
+      "report_sha256": "e70ab18b1f9691df6ce15d79016421c927974b61f217f116a2c7def5f8e6d298"
+    },
+    "zone2_tracker": {
+      "report": "references/generated/zone2_tracker_v0213/final_999cf028/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "999cf028e0f583ade3ed61b30c4a337a126b7177505628ba03ea6249f1e6668e",
+      "report_sha256": "ddb2a60acb858b2cf157a2b4acc03401c4c3e9ff7a97df6c3710a7e7acb6d7ec"
+    },
+    "battle_names": {
+      "report": "references/generated/battle_names_v0213/final_71e0bef2/validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "71e0bef22a4d1fee32af20a94fb8474db29f0d610f60a0fdfcd93c00fdab8a9a",
+      "report_sha256": "7424b33bdaa7d197ca1f7dcba59dd2176473392fa50bf668ae9f7104eff3a38d"
+    },
+    "masters_and_cold_continue": {
+      "report": "references/generated/masters_sleeping_v0213/final_71e0bef2/validation.json",
+      "status": "PASSED",
+      "tested_rom_sha256": "71e0bef22a4d1fee32af20a94fb8474db29f0d610f60a0fdfcd93c00fdab8a9a",
+      "report_sha256": "9c221c58d2ae97307226126d4cc9697e769dce0abd7338c03c42e2adf92ac684"
+    },
+    "native_world_bindings": {
+      "report": "references/generated/zone_passages_v0213/native_binding_validation.json",
+      "status": "PASS",
+      "tested_rom_sha256": "71e0bef22a4d1fee32af20a94fb8474db29f0d610f60a0fdfcd93c00fdab8a9a",
+      "report_sha256": "c8d0a21215985ee3422d047625d3c47030e11dd595e6bcbcd0eeaa3f21005560"
+    }
+  },
+  "emulator": "PyBoy 2.7",
+  "physical_modretro_tested": false,
+  "test_methods": {
+    "ordinary_buttons": true,
+    "no_emulator_memory_writes": true,
+    "no_state_restores": true,
+    "no_CPU_function_substitution": true,
+    "no_user_batteries_opened": true
+  },
+  "measured_hardware_limits": {
+    "largest_outdoor_tileset": 206,
+    "scoped_outdoor_capacity": 216,
+    "room_OAM": 37,
+    "room_max_scanline_objects": 5,
+    "native_limits": {
+      "OAM": 40,
+      "scanline": 10
+    }
+  },
+  "remaining_art_limits": [
+    "Warrior and Warlock retain existing raster conversions.",
+    "Large masters use documented nearest-sampled 24x24 imports from a raster reference.",
+    "Rock stage fronts and backs reuse each complete supplied organic source.",
+    "Not every unplaced environment-pack category is used on existing maps."
+  ]
+}

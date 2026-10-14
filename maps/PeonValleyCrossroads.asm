@@ -43,6 +43,11 @@ PeonValleyCrossroads_MapEvents:
 	warp_event 5, 9, VALLEY_OF_TRIALS, 3
 	warp_event 5, 0, PEON_CAVE_APPROACH, 1
 	warp_event 0, 4, PEON_HANAZUA_CAMP, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 4, 9, VALLEY_OF_TRIALS, 3 ; full clear threshold
+	warp_event 4, 0, PEON_CAVE_APPROACH, 1 ; full clear threshold
+	warp_event 0, 5, PEON_HANAZUA_CAMP, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	def_bg_events
 	def_object_events

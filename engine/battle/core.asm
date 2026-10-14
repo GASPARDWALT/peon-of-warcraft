@@ -4736,7 +4736,9 @@ DrawPlayerHUD:
 
 UpdatePlayerHPPal:
 	ld hl, wPlayerHPPal
-	jp UpdateHPPal
+	call UpdateHPPal
+	farcall PeonDrawBattleHeroResourceBarV0213
+	ret
 
 CheckDanger:
 	ld hl, wBattleMonHP
@@ -8415,16 +8417,9 @@ ExitBattle:
 	and $f
 	ret nz
 	call CheckPayDay
-	; The apprentice's saved character/item adapters must not pass through
-	; Crystal evolution, Pokérus or held-berry conversion after a victory.
-	; Keep the original path available to every ordinary Crystal tileset.
-	ld a, [wMapTileset]
-	cp TILESET_PEON
-	ret z
-	xor a
-	ld [wForceEvolution], a
-	predef EvolveAfterBattle
-	farcall GivePokerusAndConvertBerries
+	; Native rock evolutions are dispatched outside the near-full core bank.
+	; Fixed hero/resource adapters still avoid Pokerus/berry conversion.
+	farcall PeonHandlePostBattleEvolutionV0213
 	ret
 
 CleanUpBattleRAM:

@@ -66,6 +66,9 @@ OrgrimmarGate_MapEvents:
 	db 0, 0
 	def_warp_events
 	warp_event 12, 16, RAZOR_HILL, 2
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 13, 16, RAZOR_HILL, 2 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	def_bg_events
 	def_object_events

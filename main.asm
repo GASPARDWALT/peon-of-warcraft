@@ -737,7 +737,9 @@ INCLUDE "engine/battle/peon_level_up.asm"
 
 INCLUDE "engine/menus/peon_class_graphics.asm"
 INCLUDE "engine/gfx/peon_user_art_v0211.asm"
-INCLUDE "gfx/earth_elemental_v0212/data.asm"
+INCLUDE "gfx/rock_roster_v0213/data.asm"
+INCLUDE "engine/gfx/peon_actor_world_palettes_v0213.asm"
+INCLUDE "engine/overworld/peon_large_masters_v0213.asm"
 INCLUDE "engine/tilesets/peon_user_environment_v0211.asm"
 INCLUDE "engine/tilesets/peon_readable_interiors_v0212.asm"
 INCLUDE "engine/tilesets/peon_environment_v2.asm"
@@ -747,6 +749,10 @@ INCLUDE "engine/overworld/peon_geography_migration_v029.asm"
 INCLUDE "engine/battle/peon_resources_v029.asm"
 INCLUDE "engine/menus/peon_team_v029.asm"
 INCLUDE "engine/items/peon_recruitment_v029.asm"
+INCLUDE "engine/battle_anims/peon_recruit_capture_v0213.asm"
+IF DEF(PEON_ROSTER_TEST_FIXTURE)
+INCLUDE "engine/events/peon_roster_test_fixture_v0213.asm"
+ENDC
 INCLUDE "engine/events/peon_rest_loot_v029.asm"
 
 INCLUDE "engine/battle/peon_move_info_v029.asm"

@@ -287,7 +287,10 @@ _DoesSpriteHaveFacings::
 	pop bc
 	pop hl
 	cp STILL_SPRITE
+	jr z, .static
+	cp STATIC_MASTER_SPRITE
 	jr nz, .only_down
+.static
 	scf
 	ret
 
@@ -512,6 +515,11 @@ ArrangeUsedSprites:
 
 GetSpriteLength:
 ; Return the length of sprite type a in tiles.
+	cp STATIC_MASTER_SPRITE
+	jr nz, .ordinary
+	ld a, 9
+	ret
+.ordinary
 	cp USER_WORLD_4DIR_SPRITE
 	jr z, .UserFourDirections
 	cp PEON_SPRITE

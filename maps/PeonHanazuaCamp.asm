@@ -32,6 +32,10 @@ PeonHanazuaCamp_MapEvents:
 	def_warp_events
 	warp_event 9, 4, PEON_VALLEY_CROSSROADS, 3
 	warp_event 5, 9, PEON_SARKOTH_BASIN, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 9, 5, PEON_VALLEY_CROSSROADS, 3 ; full clear threshold
+	warp_event 4, 9, PEON_SARKOTH_BASIN, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	def_bg_events
 	def_object_events

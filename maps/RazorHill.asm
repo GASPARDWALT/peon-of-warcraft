@@ -266,6 +266,10 @@ RazorHill_MapEvents:
 	warp_event 17, 5, PEON_ORC_INN, 1 ; PEON_HUT_DOOR
 	warp_event 17, 13, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
 	warp_event 5, 15, PEON_ORC_HUT, 1 ; PEON_HUT_DOOR
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 13, 16, DUROTAR_ROAD, 3 ; full clear threshold
+	warp_event 13, 4, ORGRIMMAR_GATE, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	def_bg_events
 	def_object_events

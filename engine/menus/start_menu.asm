@@ -196,8 +196,8 @@ StartMenu::
 	dw StartMenu_Quit,     .QuitString,     .QuitDesc
 	dw StartMenu_Hearth,   .HearthString,   .HearthDesc
 
-.PokedexString:  db "CHARACTER@"
-.PartyString:    db "CHARACTER@"
+.PokedexString:  db "ROSTER@"
+.PartyString:    db "ROSTER@"
 .PackString:     db "BAGS@"
 .StatusString:   db "MAP@"
 .SaveString:     db "SAVE@"
@@ -208,10 +208,10 @@ StartMenu::
 .HearthString:   db "HEARTHSTONE@"
 
 .PokedexDesc:
-	db "Character and gear@"
+	db "Members and moves@"
 
 .PartyDesc:
-	db "Character and gear@"
+	db "Members and moves@"
 
 .PackDesc:
 	db "Supplies and loot@"
@@ -512,7 +512,7 @@ StartMenu_Pokedex:
 	jr z, .empty
 
 	call FadeToMenu
-	farcall PeonCharacterSheet
+	farcall PeonTeamFieldV029
 	call CloseSubmenu
 
 .empty
@@ -545,7 +545,7 @@ StartMenu_Pack:
 
 StartMenu_Pokemon:
 	call FadeToMenu
-	farcall PeonCharacterSheet
+	farcall PeonTeamFieldV029
 	call CloseSubmenu
 	xor a
 	ret

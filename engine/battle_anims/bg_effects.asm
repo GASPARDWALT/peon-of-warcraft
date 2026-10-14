@@ -843,6 +843,9 @@ BattleBGEffect_RunPicResizeScript:
 	dec b
 	jr nz, .row
 	pop bc
+	; The new elemental has native per-tile palettes. Resize its matching
+	; attrs with the sampled tiles; every other mon retains the original path.
+	farcall PeonCaptureResizeAttrsV0213
 	ret
 
 .Coords:

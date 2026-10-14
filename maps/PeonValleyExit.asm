@@ -35,6 +35,10 @@ PeonValleyExit_MapEvents:
 	def_warp_events
 	warp_event 0, 4, VALLEY_OF_TRIALS, 2
 	warp_event 9, 4, DUROTAR_ROAD, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 0, 5, VALLEY_OF_TRIALS, 2 ; full clear threshold
+	warp_event 9, 5, DUROTAR_ROAD, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 3, 4, -1, PeonValleyKolkarPackScriptV029
 	coord_event 4, 5, -1, PeonValleyKolkarPackScriptV029

@@ -1,11 +1,11 @@
 SECTION "User environment PeonOpening", ROMX
 PeonUserEnvPeonOpeningGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOpening.2bpp.lz"
+INCBIN "gfx/canonical_decor_v0213/PeonOpening.2bpp.lz"
 PeonUserEnvPeonOpeningMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonOpening_meta.bin"
+INCBIN "gfx/canonical_decor_v0213/PeonOpening_meta.bin"
 
 PeonUserEnvPeonOpeningColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonOpening_coll.asm"
+INCLUDE "gfx/canonical_decor_v0213/PeonOpening_coll.asm"
 
 SECTION "User environment GrommashHold", ROMX
 PeonUserEnvGrommashHoldGFX::
@@ -18,66 +18,66 @@ INCLUDE "gfx/tilesets/peon_user_environment_v0211/GrommashHold_coll.asm"
 
 SECTION "User environment TheDen", ROMX
 PeonUserEnvTheDenGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/TheDen.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/TheDen.2bpp.lz"
 PeonUserEnvTheDenMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/TheDen_meta.bin"
+INCBIN "gfx/zone_passages_v0213/TheDen_meta.bin"
 
 PeonUserEnvTheDenColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/TheDen_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/TheDen_coll.asm"
 
 SECTION "User environment ValleyOfTrials", ROMX
 PeonUserEnvValleyOfTrialsGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/ValleyOfTrials.2bpp.lz"
 PeonUserEnvValleyOfTrialsMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_meta.bin"
+INCBIN "gfx/zone_passages_v0213/ValleyOfTrials_meta.bin"
 
 PeonUserEnvValleyOfTrialsColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/ValleyOfTrials_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/ValleyOfTrials_coll.asm"
 
 SECTION "User environment DurotarRoad", ROMX
 PeonUserEnvDurotarRoadGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/DurotarRoad.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/DurotarRoad.2bpp.lz"
 PeonUserEnvDurotarRoadMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_meta.bin"
+INCBIN "gfx/zone_passages_v0213/DurotarRoad_meta.bin"
 
 PeonUserEnvDurotarRoadColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/DurotarRoad_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/DurotarRoad_coll.asm"
 
 SECTION "User environment SenjinVillage", ROMX
 PeonUserEnvSenjinVillageGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/SenjinVillage.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/SenjinVillage.2bpp.lz"
 PeonUserEnvSenjinVillageMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_meta.bin"
+INCBIN "gfx/zone_passages_v0213/SenjinVillage_meta.bin"
 
 PeonUserEnvSenjinVillageColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/SenjinVillage_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/SenjinVillage_coll.asm"
 
 SECTION "User environment RazorHill", ROMX
 PeonUserEnvRazorHillGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/RazorHill.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/RazorHill.2bpp.lz"
 PeonUserEnvRazorHillMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/RazorHill_meta.bin"
+INCBIN "gfx/zone_passages_v0213/RazorHill_meta.bin"
 
 PeonUserEnvRazorHillColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/RazorHill_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/RazorHill_coll.asm"
 
 SECTION "User environment OrgrimmarGate", ROMX
 PeonUserEnvOrgrimmarGateGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/OrgrimmarGate.2bpp.lz"
 PeonUserEnvOrgrimmarGateMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_meta.bin"
+INCBIN "gfx/zone_passages_v0213/OrgrimmarGate_meta.bin"
 
 PeonUserEnvOrgrimmarGateColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/OrgrimmarGate_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/OrgrimmarGate_coll.asm"
 
 SECTION "User environment BurningBladeCavern", ROMX
 PeonUserEnvBurningBladeCavernGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern.2bpp.lz"
+INCBIN "gfx/canonical_decor_v0213/BurningBladeCavern.2bpp.lz"
 PeonUserEnvBurningBladeCavernMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_meta.bin"
+INCBIN "gfx/canonical_decor_v0213/BurningBladeCavern_meta.bin"
 
 PeonUserEnvBurningBladeCavernColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/BurningBladeCavern_coll.asm"
+INCLUDE "gfx/canonical_decor_v0213/BurningBladeCavern_coll.asm"
 
 SECTION "User environment PeonTrollHut", ROMX
 PeonUserEnvPeonTrollHutGFX::
@@ -117,45 +117,45 @@ INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonTrollInn_coll.asm"
 
 SECTION "User environment PeonValleyCrossroads", ROMX
 PeonUserEnvPeonValleyCrossroadsGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/PeonValleyCrossroads.2bpp.lz"
 PeonUserEnvPeonValleyCrossroadsMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_meta.bin"
+INCBIN "gfx/zone_passages_v0213/PeonValleyCrossroads_meta.bin"
 
 PeonUserEnvPeonValleyCrossroadsColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonValleyCrossroads_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/PeonValleyCrossroads_coll.asm"
 
 SECTION "User environment PeonHanazuaCamp", ROMX
 PeonUserEnvPeonHanazuaCampGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/PeonHanazuaCamp.2bpp.lz"
 PeonUserEnvPeonHanazuaCampMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_meta.bin"
+INCBIN "gfx/zone_passages_v0213/PeonHanazuaCamp_meta.bin"
 
 PeonUserEnvPeonHanazuaCampColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonHanazuaCamp_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/PeonHanazuaCamp_coll.asm"
 
 SECTION "User environment PeonSarkothBasin", ROMX
 PeonUserEnvPeonSarkothBasinGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/PeonSarkothBasin.2bpp.lz"
 PeonUserEnvPeonSarkothBasinMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_meta.bin"
+INCBIN "gfx/zone_passages_v0213/PeonSarkothBasin_meta.bin"
 
 PeonUserEnvPeonSarkothBasinColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonSarkothBasin_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/PeonSarkothBasin_coll.asm"
 
 SECTION "User environment PeonCaveApproach", ROMX
 PeonUserEnvPeonCaveApproachGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/PeonCaveApproach.2bpp.lz"
 PeonUserEnvPeonCaveApproachMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_meta.bin"
+INCBIN "gfx/zone_passages_v0213/PeonCaveApproach_meta.bin"
 
 PeonUserEnvPeonCaveApproachColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonCaveApproach_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/PeonCaveApproach_coll.asm"
 
 SECTION "User environment PeonValleyExit", ROMX
 PeonUserEnvPeonValleyExitGFX::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit.2bpp.lz"
+INCBIN "gfx/zone_passages_v0213/PeonValleyExit.2bpp.lz"
 PeonUserEnvPeonValleyExitMeta::
-INCBIN "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_meta.bin"
+INCBIN "gfx/zone_passages_v0213/PeonValleyExit_meta.bin"
 
 PeonUserEnvPeonValleyExitColl::
-INCLUDE "gfx/tilesets/peon_user_environment_v0211/PeonValleyExit_coll.asm"
+INCLUDE "gfx/zone_passages_v0213/PeonValleyExit_coll.asm"

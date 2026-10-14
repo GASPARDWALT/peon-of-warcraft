@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "rom_sha256": "6cf84242e9a518af635fe9e2138f7f60228de2d0da7b4ee12ba7511f814f88e8",
+  "coverage": {
+    "five_mini_zone_pairs": true,
+    "both_activation_lanes_at_each_endpoint": true,
+    "required_crossings": 20,
+    "routing_transits": 6,
+    "all26_published_landings_and_native_floor_egress_passed": true,
+    "allocator_observations": 78,
+    "native_screenshot_frames": 81,
+    "no_battles_triggered": true,
+    "approach_route_stayed_below_imps": true
+  },
+  "validation_json": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+  "native_controls_only": true,
+  "no_ram_writes": true,
+  "no_save_states": true,
+  "no_user_saves": true,
+  "input_operations": 306,
+  "last_frame": 26075
+}

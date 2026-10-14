@@ -193,6 +193,9 @@ BurningBladeCavern_MapEvents:
 	db 0, 0
 	def_warp_events
 	warp_event 10, 16, PEON_CAVE_APPROACH, 2
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 11, 16, PEON_CAVE_APPROACH, 2 ; full cave return threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 12, 9, -1, BurningBladeStrongImpScript
 	coord_event 13, 8, -1, BurningBladeStrongImpScript

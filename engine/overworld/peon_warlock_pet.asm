@@ -90,6 +90,28 @@ PeonWarlockFollowerEnabled:
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jr nz, .no
+	; Only The Den's training lodge needs the27 master OBJ slots and its
+	; private palette7. The Imp stays in the native party and follows again
+	; outdoors; clear only the transient trail so no master inherits it.
+	ld a, [wMapGroup]
+	cp GROUP_PEON_ORC_HUT
+	jr nz, .ordinary_map
+	ld a, [wMapNumber]
+	cp MAP_PEON_ORC_HUT
+	jr nz, .ordinary_map
+	ld a, [wBackupMapGroup]
+	cp GROUP_THE_DEN
+	jr nz, .ordinary_map
+	ld a, [wBackupMapNumber]
+	cp MAP_THE_DEN
+	jr nz, .ordinary_map
+	ld a, -1
+	ld [wObjectFollow_Leader], a
+	ld [wObjectFollow_Follower], a
+	xor a
+	ld [wFollowerMovementQueueLength], a
+	ret ; carry clear: no walking follower in this one room
+.ordinary_map
 	ld a, [wPartyCount]
 	and a
 	jr z, .no

@@ -119,8 +119,10 @@ endr
 .regular
 	ld de, wAttrmap - wTilemap
 	add hl, de
-	bit 3, [hl]
-	ret z
+	; TextboxPalette may already have cleared the RAM font-bank bit while
+	; the hardware map still contains attributes from a preceding effect.
+	; Publish ordinary glyphs too: otherwise "Enemy" can read bank-1 actor
+	; graphics even though its RAM attributes correctly select bank zero.
 	push hl
 	ld de, wTilemap - wAttrmap
 	add hl, de

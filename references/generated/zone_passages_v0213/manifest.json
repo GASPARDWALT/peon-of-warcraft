@@ -1,0 +1,3757 @@
+{
+  "native_pattern_capacity": 216,
+  "partial_preview": false,
+  "cave_return_append_only_warps": 1,
+  "cave_interior_pixels_changed": false,
+  "source_posts": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+  "source_posts_sha256": "3dafb5d6d1686a2d210b3bd93105ca39f3f12a5c1309d57203aef03204060f51",
+  "source_cave": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cave_entrance_durotar_01_64x64.png",
+  "source_cave_sha256": "186db943eda85c6e4c13e8a400a85b61c120345d74fadf5bb08259892e063b38",
+  "base_packet": "gfx/canonical_decor_v0213",
+  "base_maps": "references/generated/canonical_decor_v0213/maps",
+  "source_redrawn": false,
+  "source_scale": 1,
+  "conversion": "One existing regional GBC palette per8x8 overlay tile; nearest-color quantization is separate from unchanged supplied source pixels. Unaffected native tiles are never re-quantized.",
+  "interiors_changed": false,
+  "building_facades_changed": false,
+  "preservation": "Every native tile outside recorded source-post/cave/cleared-old-world-threshold rectangles is identical, including palette and priority.",
+  "warp_indices_preserved": true,
+  "append_only_threshold_cells": true,
+  "activation_line_width_cells": 2,
+  "arrival_inward_step_is_clear_floor": true,
+  "applied": true,
+  "maps": [
+    {
+      "map": "TheDen",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 185,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 93,
+      "active_metatiles": 39,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              20,
+              8
+            ],
+            [
+              20,
+              9
+            ]
+          ],
+          "world_rect": [
+            320,
+            128,
+            328,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              20,
+              12
+            ],
+            [
+              20,
+              13
+            ]
+          ],
+          "world_rect": [
+            320,
+            192,
+            328,
+            224
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 4,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              13
+            ]
+          ],
+          "world_rect": [
+            0,
+            192,
+            8,
+            224
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 4,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              16
+            ],
+            [
+              0,
+              17
+            ]
+          ],
+          "world_rect": [
+            0,
+            256,
+            8,
+            288
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            20,
+            10
+          ],
+          "destination": "VALLEY_OF_TRIALS",
+          "destination_index": 1,
+          "cells": [
+            [
+              20,
+              10
+            ],
+            [
+              20,
+              11
+            ]
+          ],
+          "corridor_cells": [
+            [
+              20,
+              10
+            ],
+            [
+              20,
+              11
+            ],
+            [
+              21,
+              10
+            ],
+            [
+              21,
+              11
+            ]
+          ]
+        },
+        {
+          "original_index": 4,
+          "original_xy": [
+            0,
+            14
+          ],
+          "destination": "PEON_SARKOTH_BASIN",
+          "destination_index": 2,
+          "cells": [
+            [
+              0,
+              14
+            ],
+            [
+              0,
+              15
+            ]
+          ],
+          "corridor_cells": [
+            [
+              0,
+              14
+            ],
+            [
+              0,
+              15
+            ],
+            [
+              1,
+              14
+            ],
+            [
+              1,
+              15
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            20,
+            8
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            20,
+            9
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            21,
+            10
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            21,
+            11
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            20,
+            12
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            20,
+            13
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            1,
+            14
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            1,
+            15
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            20,
+            8
+          ],
+          "safe": [
+            19,
+            8
+          ]
+        },
+        {
+          "old": [
+            20,
+            9
+          ],
+          "safe": [
+            19,
+            9
+          ]
+        },
+        {
+          "old": [
+            20,
+            12
+          ],
+          "safe": [
+            21,
+            12
+          ]
+        },
+        {
+          "old": [
+            20,
+            13
+          ],
+          "safe": [
+            21,
+            12
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 1872,
+      "native_grid_tiles": 1920,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            20,
+            10
+          ],
+          "reachable_cells": 205,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              19,
+              10
+            ],
+            [
+              21,
+              10
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            0,
+            14
+          ],
+          "reachable_cells": 200,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              1,
+              14
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "55b6aa8820520ffe229d46142e4a7669d9c3503f049a9aff04c60712b424ee14",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "ValleyOfTrials",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 113,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 81,
+      "active_metatiles": 30,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              4,
+              10
+            ],
+            [
+              4,
+              11
+            ]
+          ],
+          "world_rect": [
+            64,
+            160,
+            72,
+            192
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              15
+            ]
+          ],
+          "world_rect": [
+            64,
+            224,
+            72,
+            256
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              28,
+              10
+            ],
+            [
+              28,
+              11
+            ]
+          ],
+          "world_rect": [
+            448,
+            160,
+            456,
+            192
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              28,
+              14
+            ],
+            [
+              28,
+              15
+            ]
+          ],
+          "world_rect": [
+            448,
+            224,
+            456,
+            256
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              15,
+              0
+            ],
+            [
+              15,
+              1
+            ]
+          ],
+          "world_rect": [
+            248,
+            0,
+            256,
+            32
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              18,
+              0
+            ],
+            [
+              18,
+              1
+            ]
+          ],
+          "world_rect": [
+            288,
+            0,
+            296,
+            32
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            4,
+            12
+          ],
+          "destination": "THE_DEN",
+          "destination_index": 1,
+          "cells": [
+            [
+              4,
+              12
+            ],
+            [
+              4,
+              13
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              12
+            ],
+            [
+              4,
+              13
+            ],
+            [
+              5,
+              12
+            ],
+            [
+              5,
+              13
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            28,
+            12
+          ],
+          "destination": "PEON_VALLEY_EXIT",
+          "destination_index": 1,
+          "cells": [
+            [
+              28,
+              12
+            ],
+            [
+              28,
+              13
+            ]
+          ],
+          "corridor_cells": [
+            [
+              28,
+              12
+            ],
+            [
+              28,
+              13
+            ],
+            [
+              29,
+              12
+            ],
+            [
+              29,
+              13
+            ]
+          ]
+        },
+        {
+          "original_index": 3,
+          "original_xy": [
+            16,
+            0
+          ],
+          "destination": "PEON_VALLEY_CROSSROADS",
+          "destination_index": 1,
+          "cells": [
+            [
+              16,
+              0
+            ],
+            [
+              17,
+              0
+            ]
+          ],
+          "corridor_cells": [
+            [
+              16,
+              0
+            ],
+            [
+              16,
+              1
+            ],
+            [
+              17,
+              0
+            ],
+            [
+              17,
+              1
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            16,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            17,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            10
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            4,
+            11
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            28,
+            11
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            5,
+            12
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            29,
+            12
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            13
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            29,
+            13
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            14
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            4,
+            15
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            28,
+            15
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            4,
+            10
+          ],
+          "safe": [
+            4,
+            9
+          ]
+        },
+        {
+          "old": [
+            4,
+            11
+          ],
+          "safe": [
+            3,
+            11
+          ]
+        },
+        {
+          "old": [
+            28,
+            11
+          ],
+          "safe": [
+            27,
+            12
+          ]
+        },
+        {
+          "old": [
+            4,
+            14
+          ],
+          "safe": [
+            3,
+            14
+          ]
+        },
+        {
+          "old": [
+            4,
+            15
+          ],
+          "safe": [
+            3,
+            15
+          ]
+        },
+        {
+          "old": [
+            28,
+            15
+          ],
+          "safe": [
+            27,
+            13
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 3000,
+      "native_grid_tiles": 3072,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            4,
+            12
+          ],
+          "reachable_cells": 275,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              3,
+              12
+            ],
+            [
+              5,
+              12
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            28,
+            12
+          ],
+          "reachable_cells": 277,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              27,
+              12
+            ],
+            [
+              29,
+              12
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            16,
+            0
+          ],
+          "reachable_cells": 275,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              16,
+              1
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "b601299a35c43f78e7951888c15cf10d1df7a76a34560b970eb3fc1989752d9d",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 54,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 75,
+      "active_metatiles": 14,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "world_rect": [
+            56,
+            128,
+            64,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "world_rect": [
+            96,
+            128,
+            104,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "world_rect": [
+            56,
+            0,
+            64,
+            32
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "world_rect": [
+            96,
+            0,
+            104,
+            32
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "world_rect": [
+            0,
+            32,
+            8,
+            64
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "world_rect": [
+            0,
+            96,
+            8,
+            128
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            5,
+            9
+          ],
+          "destination": "VALLEY_OF_TRIALS",
+          "destination_index": 3,
+          "cells": [
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              9
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            5,
+            0
+          ],
+          "destination": "PEON_CAVE_APPROACH",
+          "destination_index": 1,
+          "cells": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "original_index": 3,
+          "original_xy": [
+            0,
+            4
+          ],
+          "destination": "PEON_HANAZUA_CAMP",
+          "destination_index": 1,
+          "cells": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "corridor_cells": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            4,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            1,
+            4
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            1,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [],
+      "unaffected_native_tiles_exact": 328,
+      "native_grid_tiles": 400,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            5,
+            9
+          ],
+          "reachable_cells": 35,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              8
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            5,
+            0
+          ],
+          "reachable_cells": 35,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            0,
+            4
+          ],
+          "reachable_cells": 35,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              1,
+              4
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "28b303eea7e5900434c0cacf3762b4bec86e0c1e2f638455ba232be686afa40c",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 67,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 75,
+      "active_metatiles": 15,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              2
+            ],
+            [
+              9,
+              3
+            ]
+          ],
+          "world_rect": [
+            144,
+            32,
+            152,
+            64
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              6
+            ],
+            [
+              9,
+              7
+            ]
+          ],
+          "world_rect": [
+            144,
+            96,
+            152,
+            128
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "world_rect": [
+            56,
+            128,
+            64,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "world_rect": [
+            96,
+            128,
+            104,
+            160
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            9,
+            4
+          ],
+          "destination": "PEON_VALLEY_CROSSROADS",
+          "destination_index": 3,
+          "cells": [
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "corridor_cells": [
+            [
+              8,
+              4
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            5,
+            9
+          ],
+          "destination": "PEON_SARKOTH_BASIN",
+          "destination_index": 1,
+          "cells": [
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              9
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            8,
+            4
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            8,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [],
+      "unaffected_native_tiles_exact": 352,
+      "native_grid_tiles": 400,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            9,
+            4
+          ],
+          "reachable_cells": 32,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              8,
+              4
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            5,
+            9
+          ],
+          "reachable_cells": 32,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              8
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "23fedf073bac3b0a35fa5af3d9a79bbbe036e9ecd69751194704855506c0ee06",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 67,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 75,
+      "active_metatiles": 14,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              3,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "world_rect": [
+            56,
+            0,
+            64,
+            32
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              6,
+              0
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "world_rect": [
+            96,
+            0,
+            104,
+            32
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "world_rect": [
+            144,
+            64,
+            152,
+            96
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              8
+            ],
+            [
+              9,
+              9
+            ]
+          ],
+          "world_rect": [
+            144,
+            128,
+            152,
+            160
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            5,
+            0
+          ],
+          "destination": "PEON_HANAZUA_CAMP",
+          "destination_index": 2,
+          "cells": [
+            [
+              4,
+              0
+            ],
+            [
+              5,
+              0
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            9,
+            7
+          ],
+          "destination": "THE_DEN",
+          "destination_index": 4,
+          "cells": [
+            [
+              9,
+              6
+            ],
+            [
+              9,
+              7
+            ]
+          ],
+          "corridor_cells": [
+            [
+              8,
+              6
+            ],
+            [
+              8,
+              7
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              9,
+              7
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            4,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            1
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            8,
+            6
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            8,
+            7
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [],
+      "unaffected_native_tiles_exact": 352,
+      "native_grid_tiles": 400,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            5,
+            0
+          ],
+          "reachable_cells": 28,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            9,
+            7
+          ],
+          "reachable_cells": 28,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              8,
+              7
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "135d503ed5ecc42ae138c19ef460983c5d72d4d9432be5f535b4e9233b6bf1c6",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "PeonCaveApproach",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 89,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 77,
+      "active_metatiles": 14,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              3,
+              8
+            ],
+            [
+              3,
+              9
+            ]
+          ],
+          "world_rect": [
+            56,
+            128,
+            64,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              6,
+              8
+            ],
+            [
+              6,
+              9
+            ]
+          ],
+          "world_rect": [
+            96,
+            128,
+            104,
+            160
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cave_entrance_durotar_01_64x64.png",
+          "source_rect": [
+            0,
+            0,
+            64,
+            64
+          ],
+          "type": "cave entrance",
+          "source_pixels_changed": false,
+          "spike_posts": false,
+          "world_rect": [
+            48,
+            0,
+            112,
+            64
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            5,
+            9
+          ],
+          "destination": "PEON_VALLEY_CROSSROADS",
+          "destination_index": 2,
+          "cells": [
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              9
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              8
+            ],
+            [
+              4,
+              9
+            ],
+            [
+              5,
+              8
+            ],
+            [
+              5,
+              9
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            5,
+            2
+          ],
+          "destination": "BURNING_BLADE_CAVERN",
+          "destination_index": 1,
+          "cells": [
+            [
+              4,
+              2
+            ],
+            [
+              5,
+              2
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            4,
+            3
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            3
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            8
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [],
+      "unaffected_native_tiles_exact": 321,
+      "native_grid_tiles": 400,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            5,
+            9
+          ],
+          "reachable_cells": 24,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              8
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            5,
+            2
+          ],
+          "reachable_cells": 24,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              5,
+              3
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "9b5e554d7d1eb406f44b3d9800ab44e3eed522c917304c2d434c61d2d3411176",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "PeonValleyExit",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 56,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 75,
+      "active_metatiles": 14,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "world_rect": [
+            0,
+            32,
+            8,
+            64
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "world_rect": [
+            0,
+            96,
+            8,
+            128
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              2
+            ],
+            [
+              9,
+              3
+            ]
+          ],
+          "world_rect": [
+            144,
+            32,
+            152,
+            64
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              6
+            ],
+            [
+              9,
+              7
+            ]
+          ],
+          "world_rect": [
+            144,
+            96,
+            152,
+            128
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            0,
+            4
+          ],
+          "destination": "VALLEY_OF_TRIALS",
+          "destination_index": 2,
+          "cells": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "corridor_cells": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            9,
+            4
+          ],
+          "destination": "DUROTAR_ROAD",
+          "destination_index": 1,
+          "cells": [
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "corridor_cells": [
+            [
+              8,
+              4
+            ],
+            [
+              8,
+              5
+            ],
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            1,
+            4
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            8,
+            4
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            1,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            8,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [],
+      "unaffected_native_tiles_exact": 352,
+      "native_grid_tiles": 400,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            0,
+            4
+          ],
+          "reachable_cells": 26,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            9,
+            4
+          ],
+          "reachable_cells": 26,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              8,
+              4
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "e2404b996f421e888fa0ac3b648bed3fada658135177fe6b1f82655df3721c3d",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "DurotarRoad",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 116,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 81,
+      "active_metatiles": 28,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              4,
+              12
+            ],
+            [
+              4,
+              13
+            ]
+          ],
+          "world_rect": [
+            64,
+            192,
+            72,
+            224
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              4,
+              16
+            ],
+            [
+              4,
+              17
+            ]
+          ],
+          "world_rect": [
+            64,
+            256,
+            72,
+            288
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              11,
+              24
+            ],
+            [
+              11,
+              25
+            ]
+          ],
+          "world_rect": [
+            184,
+            384,
+            192,
+            416
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              14,
+              24
+            ],
+            [
+              14,
+              25
+            ]
+          ],
+          "world_rect": [
+            224,
+            384,
+            232,
+            416
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              5
+            ]
+          ],
+          "world_rect": [
+            184,
+            64,
+            192,
+            96
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 3,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              14,
+              4
+            ],
+            [
+              14,
+              5
+            ]
+          ],
+          "world_rect": [
+            224,
+            64,
+            232,
+            96
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            4,
+            14
+          ],
+          "destination": "PEON_VALLEY_EXIT",
+          "destination_index": 2,
+          "cells": [
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              15
+            ]
+          ],
+          "corridor_cells": [
+            [
+              4,
+              14
+            ],
+            [
+              4,
+              15
+            ],
+            [
+              5,
+              14
+            ],
+            [
+              5,
+              15
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            12,
+            24
+          ],
+          "destination": "SENJIN_VILLAGE",
+          "destination_index": 1,
+          "cells": [
+            [
+              12,
+              24
+            ],
+            [
+              13,
+              24
+            ]
+          ],
+          "corridor_cells": [
+            [
+              12,
+              24
+            ],
+            [
+              12,
+              25
+            ],
+            [
+              13,
+              24
+            ],
+            [
+              13,
+              25
+            ]
+          ]
+        },
+        {
+          "original_index": 3,
+          "original_xy": [
+            12,
+            4
+          ],
+          "destination": "RAZOR_HILL",
+          "destination_index": 1,
+          "cells": [
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "corridor_cells": [
+            [
+              12,
+              4
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              4
+            ],
+            [
+              13,
+              5
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            12,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            13,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            4,
+            12
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            4,
+            13
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            5,
+            14
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            15
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            11,
+            24
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            11,
+            25
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            12,
+            25
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            13,
+            25
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            4,
+            12
+          ],
+          "safe": [
+            4,
+            11
+          ]
+        },
+        {
+          "old": [
+            4,
+            13
+          ],
+          "safe": [
+            3,
+            13
+          ]
+        },
+        {
+          "old": [
+            11,
+            24
+          ],
+          "safe": [
+            10,
+            24
+          ]
+        },
+        {
+          "old": [
+            11,
+            25
+          ],
+          "safe": [
+            10,
+            25
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 2616,
+      "native_grid_tiles": 2688,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            4,
+            14
+          ],
+          "reachable_cells": 274,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              3,
+              14
+            ],
+            [
+              5,
+              14
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            12,
+            24
+          ],
+          "reachable_cells": 264,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              12,
+              23
+            ],
+            [
+              12,
+              25
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            12,
+            4
+          ],
+          "reachable_cells": 262,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "003450b86d06e384c7cbc1ed4c5665813fbccfc16e08fad275c025387b1ce638",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "SenjinVillage",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 190,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 91,
+      "active_metatiles": 37,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              9,
+              4
+            ],
+            [
+              9,
+              5
+            ]
+          ],
+          "world_rect": [
+            152,
+            64,
+            160,
+            96
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              12,
+              4
+            ],
+            [
+              12,
+              5
+            ]
+          ],
+          "world_rect": [
+            192,
+            64,
+            200,
+            96
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            10,
+            4
+          ],
+          "destination": "DUROTAR_ROAD",
+          "destination_index": 2,
+          "cells": [
+            [
+              10,
+              4
+            ],
+            [
+              11,
+              4
+            ]
+          ],
+          "corridor_cells": [
+            [
+              10,
+              4
+            ],
+            [
+              10,
+              5
+            ],
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              5
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            9,
+            4
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            12,
+            4
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            9,
+            5
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            10,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            11,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            12,
+            5
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            9,
+            4
+          ],
+          "safe": [
+            9,
+            3
+          ]
+        },
+        {
+          "old": [
+            12,
+            4
+          ],
+          "safe": [
+            12,
+            3
+          ]
+        },
+        {
+          "old": [
+            9,
+            5
+          ],
+          "safe": [
+            8,
+            5
+          ]
+        },
+        {
+          "old": [
+            12,
+            5
+          ],
+          "safe": [
+            11,
+            5
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 1896,
+      "native_grid_tiles": 1920,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            10,
+            4
+          ],
+          "reachable_cells": 204,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              10,
+              3
+            ],
+            [
+              10,
+              5
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "2b0fc5ba824c5dd49fe375852b974c2437dbd18397869d7852d319406eb34881",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "RazorHill",
+      "base_packet_pattern_capacity": 216,
+      "patterns": 206,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 99,
+      "active_metatiles": 39,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "world_rect": [
+            184,
+            256,
+            192,
+            288
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              14,
+              16
+            ],
+            [
+              14,
+              17
+            ]
+          ],
+          "world_rect": [
+            224,
+            256,
+            232,
+            288
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              11,
+              4
+            ],
+            [
+              11,
+              5
+            ]
+          ],
+          "world_rect": [
+            184,
+            64,
+            192,
+            96
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 2,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              14,
+              4
+            ],
+            [
+              14,
+              5
+            ]
+          ],
+          "world_rect": [
+            224,
+            64,
+            232,
+            96
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            12,
+            16
+          ],
+          "destination": "DUROTAR_ROAD",
+          "destination_index": 3,
+          "cells": [
+            [
+              12,
+              16
+            ],
+            [
+              13,
+              16
+            ]
+          ],
+          "corridor_cells": [
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ]
+          ]
+        },
+        {
+          "original_index": 2,
+          "original_xy": [
+            12,
+            4
+          ],
+          "destination": "ORGRIMMAR_GATE",
+          "destination_index": 1,
+          "cells": [
+            [
+              12,
+              4
+            ],
+            [
+              13,
+              4
+            ]
+          ],
+          "corridor_cells": [
+            [
+              12,
+              4
+            ],
+            [
+              12,
+              5
+            ],
+            [
+              13,
+              4
+            ],
+            [
+              13,
+              5
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            12,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            13,
+            5
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            5,
+            16
+          ],
+          "before": "WALL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            11,
+            16
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            14,
+            16
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            11,
+            17
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            12,
+            17
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            13,
+            17
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            14,
+            17
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            11,
+            16
+          ],
+          "safe": [
+            11,
+            15
+          ]
+        },
+        {
+          "old": [
+            14,
+            16
+          ],
+          "safe": [
+            14,
+            15
+          ]
+        },
+        {
+          "old": [
+            11,
+            17
+          ],
+          "safe": [
+            10,
+            17
+          ]
+        },
+        {
+          "old": [
+            14,
+            17
+          ],
+          "safe": [
+            13,
+            17
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 1872,
+      "native_grid_tiles": 1920,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            12,
+            16
+          ],
+          "reachable_cells": 151,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              17
+            ]
+          ]
+        },
+        {
+          "arrival": [
+            12,
+            4
+          ],
+          "reachable_cells": 153,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              12,
+              3
+            ],
+            [
+              12,
+              5
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "5653934df24dcb8f6f73fb653fb109d9e90c2fb71d3070d74d2353bdda534fff",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    },
+    {
+      "map": "OrgrimmarGate",
+      "base_packet_pattern_capacity": 192,
+      "patterns": 179,
+      "pattern_budget": 216,
+      "fits": true,
+      "metatiles": 87,
+      "active_metatiles": 26,
+      "imports": [
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            74,
+            128,
+            82,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "left",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              11,
+              16
+            ],
+            [
+              11,
+              17
+            ]
+          ],
+          "world_rect": [
+            184,
+            256,
+            192,
+            288
+          ],
+          "native_scale": 1
+        },
+        {
+          "asset": "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png",
+          "source_rect": [
+            110,
+            128,
+            118,
+            160
+          ],
+          "type": "complete spiked horned post",
+          "side": "right",
+          "portal_index": 1,
+          "source_pixels_changed": false,
+          "body_cells": [
+            [
+              14,
+              16
+            ],
+            [
+              14,
+              17
+            ]
+          ],
+          "world_rect": [
+            224,
+            256,
+            232,
+            288
+          ],
+          "native_scale": 1
+        }
+      ],
+      "thresholds": [
+        {
+          "original_index": 1,
+          "original_xy": [
+            12,
+            16
+          ],
+          "destination": "RAZOR_HILL",
+          "destination_index": 2,
+          "cells": [
+            [
+              12,
+              16
+            ],
+            [
+              13,
+              16
+            ]
+          ],
+          "corridor_cells": [
+            [
+              12,
+              16
+            ],
+            [
+              12,
+              17
+            ],
+            [
+              13,
+              16
+            ],
+            [
+              13,
+              17
+            ]
+          ]
+        }
+      ],
+      "collision_changes": [
+        {
+          "xy": [
+            11,
+            16
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            14,
+            16
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            11,
+            17
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        },
+        {
+          "xy": [
+            12,
+            17
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            13,
+            17
+          ],
+          "before": "WARP_PANEL",
+          "after": "FLOOR"
+        },
+        {
+          "xy": [
+            14,
+            17
+          ],
+          "before": "FLOOR",
+          "after": "WALL"
+        }
+      ],
+      "continue_relocations": [
+        {
+          "old": [
+            11,
+            16
+          ],
+          "safe": [
+            11,
+            15
+          ]
+        },
+        {
+          "old": [
+            14,
+            16
+          ],
+          "safe": [
+            14,
+            15
+          ]
+        },
+        {
+          "old": [
+            11,
+            17
+          ],
+          "safe": [
+            10,
+            17
+          ]
+        },
+        {
+          "old": [
+            14,
+            17
+          ],
+          "safe": [
+            13,
+            17
+          ]
+        }
+      ],
+      "unaffected_native_tiles_exact": 1896,
+      "native_grid_tiles": 1920,
+      "two_way_actor_aware_bfs": [
+        {
+          "arrival": [
+            12,
+            16
+          ],
+          "reachable_cells": 161,
+          "existing_npc_approaches_preserved": true,
+          "safe_arrival_steps": [
+            [
+              12,
+              15
+            ],
+            [
+              12,
+              17
+            ]
+          ]
+        }
+      ],
+      "native_sha256": "eb601ce68d763611e35a8212d4262fe2bb02db7b39c273c1eec25e81bcad0ba1",
+      "original_animated_tiles_0_to_3_preserved": true,
+      "font_ids_96_to_127_reserved": true,
+      "legacy_font_logical_ids_96_to_127_reserved": true,
+      "font_portrait_bank1_9600_to_97ff_reserved": true,
+      "extended_background_ids": [
+        224,
+        247
+      ],
+      "extended_background_requires_scoped_allocator": true
+    }
+  ]
+}

@@ -2419,10 +2419,20 @@ CheckObjectCoveredByTextbox:
 	push bc
 	call Coord2Tile
 	pop bc
-; NPCs disappear if standing on tile $60-$7f (or $e0-$ff),
-; since those IDs are for text characters and textbox frames.
+; Text characters and textbox frames hide covered NPCs. The selected native
+; Peon maps also use signed bank1 $e0..$f7 for scenery, which is not text.
 	ld a, [hl]
 	cp FIRST_REGULAR_TEXT_CHAR
+	jr c, .ok8
+	push bc
+	push de
+	push hl
+	ld d, h
+	ld e, l
+	farcall PeonIsExtendedNativeBackgroundTileV0213
+	pop hl
+	pop de
+	pop bc
 	jr nc, .nope
 .ok8
 	dec d
@@ -2943,6 +2953,19 @@ InitSprites:
 	or OAM_PRIO
 .not_in_grass
 	ldh [hCurSpriteOAMFlags], a
+	; Bit6 is an internal per-object marker, never published as OAM_YFLIP.
+	; These static masters use authored source palettes per8x8 sprite tile.
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITE_PEON_SHAMAN_MASTER_LARGE
+	jr c, .ordinary_actor
+	cp SPRITE_PEON_WARLOCK_MASTER_LARGE + 1
+	jr nc, .ordinary_actor
+	ldh a, [hCurSpriteOAMFlags]
+	set 6, a
+	ldh [hCurSpriteOAMFlags], a
+.ordinary_actor
 	ld hl, OBJECT_SPRITE_X
 	add hl, bc
 	ld a, [hl]
@@ -2976,6 +2999,20 @@ InitSprites:
 	ld hl, OBJECT_SPRITE
 	add hl, bc
 	ld a, [hl]
+	cp SPRITE_PEON_SHAMAN_MASTER_LARGE
+	jr c, .ordinary_sprite
+	cp SPRITE_PEON_WARLOCK_MASTER_LARGE + 1
+	jr nc, .ordinary_sprite
+	sub SPRITE_PEON_SHAMAN_MASTER_LARGE
+	ld hl, PeonLargeMasterFacingPointersV0213
+	push de
+	ld e, a
+	ld d, 0
+	add hl, de
+	add hl, de
+	pop de
+	jr .facing_pointer
+.ordinary_sprite
 	ld hl, PeonFacings
 	cp SPRITE_CHRIS
 	jr z, .peon_facing
@@ -3007,6 +3044,7 @@ InitSprites:
 	add hl, hl
 	pop bc
 	add hl, bc
+.facing_pointer
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -3032,6 +3070,14 @@ InitSprites:
 	ld e, [hl]
 	inc hl
 	ldh a, [hCurSpriteTile]
+	push af
+	ldh a, [hCurSpriteOAMFlags]
+	bit 6, a
+	jr z, .normal_tile_flags
+	pop af
+	jr .nope1
+.normal_tile_flags
+	pop af
 	bit ABSOLUTE_TILE_ID_F, e
 	jr z, .nope1
 	xor a
@@ -3041,6 +3087,17 @@ InitSprites:
 	ld [bc], a ; tile id
 	inc c
 	ld a, e
+	push af
+	ldh a, [hCurSpriteOAMFlags]
+	bit 6, a
+	jr z, .normal_attributes
+	pop af
+	ld a, d
+	and ~OAM_PALETTE
+	or e
+	jr .publish_attributes
+.normal_attributes
+	pop af
 	bit RELATIVE_ATTRIBUTES_F, a
 	jr z, .nope2
 	ldh a, [hCurSpriteOAMFlags]
@@ -3048,6 +3105,7 @@ InitSprites:
 .nope2
 	and OAM_PAL1 | OAM_XFLIP | OAM_YFLIP | OAM_PRIO
 	or d
+.publish_attributes
 	ld [bc], a ; attributes
 	inc c
 	ldh a, [hUsedSpriteTile]
@@ -3085,6 +3143,10 @@ endr
 	assert_table_length NUM_OBJECT_STRUCTS
 
 INCLUDE "data/sprites/peon_facings.asm"
+
+PeonLargeMasterFacingPointersV0213:
+	dw PeonLargeShamanFacingV0213, PeonLargeWarriorFacingV0213, PeonLargeWarlockFacingV0213
+INCLUDE "gfx/large_masters_v0213/facings.asm"
 
 ; Input sprite ID A. Carry + A palette means a supplied four-direction NPC.
 ; Lookup preserves object pointer, facing and OAM flags; no saved state.
@@ -3127,7 +3189,7 @@ PeonUserWorldPaletteV0211:
 	scf
 	jr .done
 .earth
-	ld a, 2
+	ld a, 3
 	scf
 .done
 	pop hl

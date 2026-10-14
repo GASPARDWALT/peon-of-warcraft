@@ -18,6 +18,10 @@ PeonSarkothBasin_MapEvents:
 	def_warp_events
 	warp_event 5, 0, PEON_HANAZUA_CAMP, 2
 	warp_event 9, 7, THE_DEN, 4
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 4, 0, PEON_HANAZUA_CAMP, 2 ; full clear threshold
+	warp_event 9, 6, THE_DEN, 4 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 4, 3, -1, PeonBasinSarkothScript
 	coord_event 5, 4, -1, PeonBasinSarkothScript

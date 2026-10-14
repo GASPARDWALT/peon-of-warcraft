@@ -83,6 +83,10 @@ PeonResourceClassForIndexInAV029:
 	ld a, [hl]
 	cp ONIX
 	jr z, .shaman
+	cp GRAVELER
+	jr z, .shaman
+	cp GOLEM
+	jr z, .shaman
 	cp GEODUDE
 	jr z, .warlock
 	cp MACHAMP
@@ -508,6 +512,8 @@ PeonActivePlayerResourceV029:
 	bit SUBSTATUS_TRANSFORMED, a
 	jr nz, .no
 	ld a, [wCurBattleMon]
+	and a
+	jr nz, .no ; companions spend their real native attack PP
 	call PeonGetResourceForIndexInAV029
 	ret nc
 	scf
@@ -719,6 +725,18 @@ PeonPrintResourceForIndexV029::
 	ld hl, .body
 	jp PeonResourceWRAM1CallV029
 .body
+	ld a, c
+	and a
+	jr z, .hero_resource
+	push de
+	call PeonResourceClassForIndexInAV029
+	pop hl
+	ret nc
+	ld de, .native_pp
+	call PlaceString
+	scf
+	ret
+.hero_resource
 	push de
 	ld a, c
 	call PeonGetResourceForIndexInAV029
@@ -760,6 +778,7 @@ PeonPrintResourceForIndexV029::
 	ret
 .mana: db "MP@"
 .rage: db "RG@"
+.native_pp: db "MOVES/PP@"
 
 ; CHARACTER always describes hero slot zero, even if an ally is active.
 PeonDrawCharacterResourceV029::
@@ -1083,6 +1102,9 @@ PeonTryUseMinorManaV029::
 	call PeonChooseResourceSupplyTargetV029
 	ret nc
 	ld a, [wPeonResourceIndexV029]
+	and a
+	ret nz
+	ld a, [wPeonResourceIndexV029]
 	ld c, a
 	ld de, PEON_RESOURCE_POTION_V029
 	jp PeonRestoreResourceForIndexV029.body
@@ -1096,6 +1118,9 @@ PeonTryDrinkWaterV029::
 	ret nz
 	call PeonChooseResourceSupplyTargetV029
 	ret nc
+	ld a, [wPeonResourceIndexV029]
+	and a
+	ret nz
 	ld a, [wPeonResourceIndexV029]
 	ld c, a
 	ld de, PEON_RESOURCE_WATER_V029
@@ -1184,4 +1209,346 @@ PeonTryRestoreTargetHPV029:
 .unused
 	pop af
 	and a
+	ret
+
+; C=bar width (16world/48battle), B=hero class, C=filled pixels on return.
+; Current/max come from the same native saved resource used to pay spells.
+; No UI-only counter, refill, schema or arithmetic scratch is introduced.
+PeonGetHeroResourceBarFillV0213::
+	ld hl, .body
+	jp PeonResourceWRAM1CallV029
+.body
+	ld a, c
+	push af
+	xor a ; fixed saved hero slot
+	call PeonGetResourceForIndexInAV029
+	jr nc, .unmanaged
+	pop af
+	call PeonResourceBarRatioV0213
+	ld c, a
+	ld a, [wPeonResourceClassV029]
+	ld b, a
+	scf
+	ret
+.unmanaged
+	pop af
+	ld b, 0
+	ld c, 0
+	and a
+	ret
+
+; A=width<=48, BC=current<=999, DE=max<=999 -> A=floor(width*current/max).
+; All products fit sixteen bits. Zero stays empty and imported overflows
+; clamp to full before multiplication; no native Multiply/Divide RAM is used.
+PeonResourceBarRatioV0213:
+	push af
+	ld a, d
+	or e
+	jr z, .zero
+	ld a, b
+	cp d
+	jr c, .below
+	jr nz, .full
+	ld a, c
+	cp e
+	jr nc, .full
+.below
+	pop af
+	push de
+	ld d, b
+	ld e, c
+	ld b, a
+	ld hl, 0
+.multiply
+	add hl, de
+	dec b
+	jr nz, .multiply
+	pop de
+	ld c, 0
+.divide
+	ld a, h
+	cp d
+	jr c, .quotient
+	jr nz, .subtract
+	ld a, l
+	cp e
+	jr c, .quotient
+.subtract
+	ld a, l
+	sub e
+	ld l, a
+	ld a, h
+	sbc d
+	ld h, a
+	inc c
+	jr .divide
+.quotient
+	ld a, c
+	ret
+.full
+	pop af
+	ret
+.zero
+	pop af
+	xor a
+	ret
+
+; Restore only unused HP color1 after native HP-palette updates. Native HP
+; gauges use color2 and black3, so their green/yellow/red behavior is intact.
+PeonRestoreBattleResourceInkV0213::
+	push af
+	push bc
+	push de
+	push hl
+	ld hl, .body
+	call PeonResourceWRAM1CallV029
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.body
+	call PeonBattleResourcePanelEligibleV0213
+	ret nc
+	ld hl, PeonBattleManaInkV0213
+	ld a, [wEventFlags + EVENT_PEON_WARRIOR / 8]
+	bit EVENT_PEON_WARRIOR % 8, a
+	jr z, .ink
+	ld hl, PeonBattleRageInkV0213
+.ink
+	push hl
+	ld de, wBGPals1 palette PAL_BATTLE_BG_PLAYER_HP color 1
+	ld bc, COLOR_SIZE
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	pop hl
+	ld de, wBGPals2 palette PAL_BATTLE_BG_PLAYER_HP color 1
+	ld bc, COLOR_SIZE
+	ld a, BANK(wBGPals2)
+	call FarCopyWRAM
+	; Both native HP: glyphs use only white0/gold1/black3. Enemy palette2
+	; retains the original gold1 in every HP state, independent of HP fill2.
+	; Route these four marker cells there before publishing resource ink.
+	hlcoord 10, 9, wAttrmap
+	ld [hl], PAL_BATTLE_BG_ENEMY_HP
+	inc hl
+	ld [hl], PAL_BATTLE_BG_ENEMY_HP
+	hlcoord 2, 2, wAttrmap
+	ld [hl], PAL_BATTLE_BG_ENEMY_HP
+	inc hl
+	ld [hl], PAL_BATTLE_BG_ENEMY_HP
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+	ret
+
+PeonBattleResourcePanelEligibleV0213:
+	ldh a, [hCGB]
+	and a
+	jr z, .no
+	ld a, [wBattleMode]
+	and a
+	jr z, .no
+	ld a, [wLinkMode]
+	and a
+	jr nz, .no
+	jp PeonResourcesEnabledV029
+.no
+	and a
+	ret
+
+; Persistent live hero panel in the empty space above the48px battle back.
+; MP/RG row4cols1..2,48pxbar row4cols3..8, current/max row5cols1..7.
+; The selected TYPE/cost can temporarily use row5 without covering the bar.
+; Native HP digits, enemyHUDborder, EXP and sidebar cells remain untouched.
+PeonDrawBattleHeroResourceBarV0213::
+	push af
+	push bc
+	push de
+	push hl
+	ld hl, .body
+	call PeonResourceWRAM1CallV029
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.body
+	call PeonBattleResourcePanelEligibleV0213
+	ret nc
+	hlcoord 1, 4
+	lb bc, 2, 9
+	call ClearBox
+	hlcoord 1, 4, wAttrmap
+	ld b, 2
+.clear_attr_row
+	push hl
+	ld c, 9
+.clear_attr
+	ld [hl], PAL_BATTLE_BG_TEXT
+	inc hl
+	dec c
+	jr nz, .clear_attr
+	pop hl
+	ld de, SCREEN_WIDTH
+	add hl, de
+	dec b
+	jr nz, .clear_attr_row
+	ld a, [wCurBattleMon]
+	and a
+	ret nz ; companions keep native PP and do not acquire a mana pool
+	ld c, 48
+	call PeonGetHeroResourceBarFillV0213
+	ret nc
+	push bc
+	ldh a, [hBGMapMode]
+	push af
+	xor a
+	ldh [hBGMapMode], a
+	ldh a, [rVBK]
+	push af
+	ld a, 1
+	ldh [rVBK], a
+	ld de, PeonBattleResourceGaugeGFXV0213
+	ld hl, vTiles4 tile $33 ; signed bank1 IDs$b3..$bb, after TYPE$ad..$b2
+	lb bc, BANK(PeonBattleResourceGaugeGFXV0213), 9
+	call Get2bpp
+	pop af
+	ldh [rVBK], a
+	pop af
+	ldh [hBGMapMode], a
+	pop bc
+	hlcoord 3, 4
+	ld d, c
+	ld b, 6
+.gauge
+	ld a, d
+	cp 8
+	jr c, .partial
+	sub 8
+	ld d, a
+	ld a, 8
+	jr .tile
+.partial
+	ld d, 0
+.tile
+	add $b3
+	ld [hli], a
+	dec b
+	jr nz, .gauge
+	hlcoord 3, 4, wAttrmap
+	ld bc, 6
+	ld a, $08 | PAL_BATTLE_BG_PLAYER_HP
+	call ByteFill
+	hlcoord 1, 4
+	ld de, .mana
+	ld a, [wPeonResourceClassV029]
+	cp PEON_RESOURCE_WARRIOR_V029
+	jr nz, .label
+	ld de, .rage
+.label
+	call PlaceString
+	hlcoord 1, 5
+	ld de, wPartyMon1CaughtData
+	lb bc, 2, 3
+	call PrintNum
+	ld [hl], '/'
+	inc hl
+	ld de, wPeonResourceMaximumV029
+	lb bc, 2, 3
+	call PrintNum
+	call PeonRestoreBattleResourceInkV0213
+	farcall ApplyAttrmap
+	ret
+.mana: db "MP@"
+.rage: db "RG@"
+
+; Selected attack cost for the hero; real remaining native PP for a companion.
+; B=1cost, B=0PP, C=value. No charges or mana are spent by this UI helper.
+PeonGetSelectedMoveDisplayValueV0213::
+	ld hl, .body
+	jp PeonResourceWRAM1CallV029
+.body
+	call PeonActivePlayerResourceV029
+	jr nc, .pp
+	ld a, [wCurPlayerMove]
+	call PeonResourceMoveCostV029
+	ld c, a
+	ld b, 1
+	ret
+.pp
+	ld a, [wMenuCursorY]
+	dec a
+	ld c, a
+	ld b, 0
+	ld hl, wBattleMonPP
+	add hl, bc
+	ld a, [hl]
+	and PP_MASK
+	ld c, a
+	ret
+
+PeonBattleManaInkV0213: RGB 4, 17, 31
+PeonBattleRageInkV0213: RGB 31, 5, 3
+PeonBattleResourceGaugeGFXV0213:
+	INCBIN "gfx/peon_resource_hud_v0213/battle_resource_gauges.2bpp"
+	assert @ - PeonBattleResourceGaugeGFXV0213 == 9 tiles
+
+
+; Called after an actual non-link WIN, once native EXP/level flags are ready.
+; Peon rocks use the unchanged native animation, stat and nickname machinery.
+; Hero/class/item/resource adapters never enter Pokemon/Pokerus conversion.
+PeonHandlePostBattleEvolutionV0213::
+	ld hl, .body
+	jp PeonResourceWRAM1CallV029
+.body
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .rocks
+	xor a
+	ld [wForceEvolution], a
+	predef EvolveAfterBattle
+	farcall GivePokerusAndConvertBerries
+	ret
+.rocks
+	ld a, [wEvolvableFlags]
+	push af ; flags are transient; preserve every other native party flag
+	ld d, a
+	ld e, 1 ; native party bit
+	ld b, 0 ; native evolution mask for the allocated rock family only
+	ld c, 0
+.member
+	ld a, [wPartyCount]
+	cp c
+	jr z, .evolve
+	push bc
+	push de
+	ld a, c
+	ld hl, wPartyMon1Species
+	call GetPartyLocation
+	ld a, [hl]
+	pop de
+	pop bc
+	cp ONIX
+	jr z, .rock_member
+	cp GRAVELER
+	jr nz, .next
+.rock_member
+	ld a, d
+	and e
+	jr z, .next
+	ld a, b
+	or e
+	ld b, a
+.next
+	sla e
+	inc c
+	jr .member
+.evolve
+	ld a, b
+	ld [wEvolvableFlags], a
+	xor a
+	ld [wForceEvolution], a
+	predef EvolveAfterBattle
+	pop af
+	ld [wEvolvableFlags], a
 	ret

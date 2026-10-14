@@ -1,0 +1,2748 @@
+{
+  "status": "PASS",
+  "runtime_rom_sha256": "6cf84242e9a518af635fe9e2138f7f60228de2d0da7b4ee12ba7511f814f88e8",
+  "required_world_connections": 12,
+  "required_endpoint_lane_crossings": 48,
+  "all48_lane_crossings_exact_landing_and_native_floor_egress": true,
+  "ordinary_controls_only": true,
+  "emulator_ram_writes": false,
+  "emulator_save_states": false,
+  "cpu_substitution": false,
+  "user_saves_opened": false,
+  "world_allocator_observations": 228,
+  "sources": [
+    {
+      "path": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+      "status": "PASS",
+      "allocator_checks": 96,
+      "native_captures": 117,
+      "transition_records": 30
+    },
+    {
+      "path": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+      "status": "PASS",
+      "allocator_checks": 78,
+      "native_captures": 81,
+      "transition_records": 26
+    },
+    {
+      "path": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+      "status": "PASS",
+      "allocator_checks": 54,
+      "native_captures": 81,
+      "transition_records": 19
+    }
+  ],
+  "cases": [
+    {
+      "source_map": 14,
+      "activation_xy": [
+        0,
+        14
+      ],
+      "target_map": 27,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "den_west_lane1_to_sarkoth",
+            "source_map": 14,
+            "source_lane": [
+              0,
+              14
+            ],
+            "source_index": 4,
+            "approach": [
+              1,
+              14
+            ],
+            "entry_button": "left",
+            "destination_map": 27,
+            "destination_xy": [
+              9,
+              7
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                9,
+                7
+              ],
+              "button": "left",
+              "to": [
+                8,
+                7
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 14,
+      "activation_xy": [
+        0,
+        15
+      ],
+      "target_map": 27,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "den_west_lane2_to_sarkoth",
+            "source_map": 14,
+            "source_lane": [
+              0,
+              15
+            ],
+            "source_index": 6,
+            "approach": [
+              1,
+              15
+            ],
+            "entry_button": "left",
+            "destination_map": 27,
+            "destination_xy": [
+              9,
+              7
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                9,
+                7
+              ],
+              "button": "left",
+              "to": [
+                8,
+                7
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 14,
+      "activation_xy": [
+        20,
+        10
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 14,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              20,
+              10
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              4,
+              12
+            ],
+            "actual_landing": [
+              4,
+              12
+            ],
+            "ordinary_egress_xy": [
+              5,
+              12
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 14,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              20,
+              10
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              4,
+              12
+            ],
+            "actual_landing": [
+              4,
+              12
+            ],
+            "ordinary_egress_xy": [
+              5,
+              12
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_den_to_valley",
+            "source_map": 14,
+            "source_lane": [
+              20,
+              10
+            ],
+            "source_index": 1,
+            "approach": [
+              19,
+              10
+            ],
+            "entry_button": "right",
+            "destination_map": 15,
+            "destination_xy": [
+              4,
+              12
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                4,
+                12
+              ],
+              "button": "left",
+              "to": [
+                3,
+                12
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "cave_route_den_to_valley",
+            "source_map": 14,
+            "source_lane": [
+              20,
+              10
+            ],
+            "source_index": 1,
+            "approach": [
+              19,
+              10
+            ],
+            "entry_button": "right",
+            "destination_map": 15,
+            "destination_xy": [
+              4,
+              12
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                4,
+                12
+              ],
+              "button": "left",
+              "to": [
+                3,
+                12
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard2_route_den_to_valley",
+            "source_map": 14,
+            "source_lane": [
+              20,
+              10
+            ],
+            "source_index": 1,
+            "approach": [
+              19,
+              10
+            ],
+            "entry_button": "right",
+            "destination_map": 15,
+            "destination_xy": [
+              4,
+              12
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                4,
+                12
+              ],
+              "button": "left",
+              "to": [
+                3,
+                12
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 14,
+      "activation_xy": [
+        20,
+        11
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 14,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              20,
+              11
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              4,
+              12
+            ],
+            "actual_landing": [
+              4,
+              12
+            ],
+            "ordinary_egress_xy": [
+              5,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        4,
+        12
+      ],
+      "target_map": 14,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 15,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              4,
+              12
+            ],
+            "target_map": 14,
+            "expected_landing": [
+              20,
+              10
+            ],
+            "actual_landing": [
+              20,
+              10
+            ],
+            "ordinary_egress_xy": [
+              19,
+              10
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 15,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              4,
+              12
+            ],
+            "target_map": 14,
+            "expected_landing": [
+              20,
+              10
+            ],
+            "actual_landing": [
+              20,
+              10
+            ],
+            "ordinary_egress_xy": [
+              19,
+              10
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_valley_to_den",
+            "source_map": 15,
+            "source_lane": [
+              4,
+              12
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              12
+            ],
+            "entry_button": "left",
+            "destination_map": 14,
+            "destination_xy": [
+              20,
+              10
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                20,
+                10
+              ],
+              "button": "left",
+              "to": [
+                19,
+                10
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard1_rest_valley_to_den",
+            "source_map": 15,
+            "source_lane": [
+              4,
+              12
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              12
+            ],
+            "entry_button": "left",
+            "destination_map": 14,
+            "destination_xy": [
+              20,
+              10
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                20,
+                10
+              ],
+              "button": "left",
+              "to": [
+                19,
+                10
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        4,
+        13
+      ],
+      "target_map": 14,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 15,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              4,
+              13
+            ],
+            "target_map": 14,
+            "expected_landing": [
+              20,
+              10
+            ],
+            "actual_landing": [
+              20,
+              10
+            ],
+            "ordinary_egress_xy": [
+              19,
+              10
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        16,
+        0
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "valley_lane1_to_crossroads",
+            "source_map": 15,
+            "source_lane": [
+              16,
+              0
+            ],
+            "source_index": 3,
+            "approach": [
+              16,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_valley_to_crossroads",
+            "source_map": 15,
+            "source_lane": [
+              16,
+              0
+            ],
+            "source_index": 3,
+            "approach": [
+              16,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "cave_route_valley_to_crossroads",
+            "source_map": 15,
+            "source_lane": [
+              16,
+              0
+            ],
+            "source_index": 3,
+            "approach": [
+              16,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard2_route_valley_to_crossroads",
+            "source_map": 15,
+            "source_lane": [
+              16,
+              0
+            ],
+            "source_index": 3,
+            "approach": [
+              16,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        17,
+        0
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "valley_lane2_to_crossroads",
+            "source_map": 15,
+            "source_lane": [
+              17,
+              0
+            ],
+            "source_index": 6,
+            "approach": [
+              17,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        28,
+        12
+      ],
+      "target_map": 29,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 15,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              28,
+              12
+            ],
+            "target_map": 29,
+            "expected_landing": [
+              0,
+              4
+            ],
+            "actual_landing": [
+              0,
+              4
+            ],
+            "ordinary_egress_xy": [
+              1,
+              4
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 15,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              28,
+              12
+            ],
+            "target_map": 29,
+            "expected_landing": [
+              0,
+              4
+            ],
+            "actual_landing": [
+              0,
+              4
+            ],
+            "ordinary_egress_xy": [
+              1,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 15,
+      "activation_xy": [
+        28,
+        13
+      ],
+      "target_map": 29,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 15,
+            "source_index": 2,
+            "lane": 1,
+            "activation_xy": [
+              28,
+              13
+            ],
+            "target_map": 29,
+            "expected_landing": [
+              0,
+              4
+            ],
+            "actual_landing": [
+              0,
+              4
+            ],
+            "ordinary_egress_xy": [
+              1,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        4,
+        14
+      ],
+      "target_map": 29,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              4,
+              14
+            ],
+            "target_map": 29,
+            "expected_landing": [
+              9,
+              4
+            ],
+            "actual_landing": [
+              9,
+              4
+            ],
+            "ordinary_egress_xy": [
+              8,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        4,
+        15
+      ],
+      "target_map": 29,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              4,
+              15
+            ],
+            "target_map": 29,
+            "expected_landing": [
+              9,
+              4
+            ],
+            "actual_landing": [
+              9,
+              4
+            ],
+            "ordinary_egress_xy": [
+              8,
+              4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        12,
+        4
+      ],
+      "target_map": 18,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 3,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              4
+            ],
+            "target_map": 18,
+            "expected_landing": [
+              12,
+              16
+            ],
+            "actual_landing": [
+              12,
+              16
+            ],
+            "ordinary_egress_xy": [
+              12,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        12,
+        24
+      ],
+      "target_map": 17,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              24
+            ],
+            "target_map": 17,
+            "expected_landing": [
+              10,
+              4
+            ],
+            "actual_landing": [
+              10,
+              4
+            ],
+            "ordinary_egress_xy": [
+              10,
+              5
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 16,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              24
+            ],
+            "target_map": 17,
+            "expected_landing": [
+              10,
+              4
+            ],
+            "actual_landing": [
+              10,
+              4
+            ],
+            "ordinary_egress_xy": [
+              10,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        13,
+        4
+      ],
+      "target_map": 18,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 3,
+            "lane": 1,
+            "activation_xy": [
+              13,
+              4
+            ],
+            "target_map": 18,
+            "expected_landing": [
+              12,
+              16
+            ],
+            "actual_landing": [
+              12,
+              16
+            ],
+            "ordinary_egress_xy": [
+              12,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 16,
+      "activation_xy": [
+        13,
+        24
+      ],
+      "target_map": 17,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 16,
+            "source_index": 2,
+            "lane": 1,
+            "activation_xy": [
+              13,
+              24
+            ],
+            "target_map": 17,
+            "expected_landing": [
+              10,
+              4
+            ],
+            "actual_landing": [
+              10,
+              4
+            ],
+            "ordinary_egress_xy": [
+              10,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 17,
+      "activation_xy": [
+        10,
+        4
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 17,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              10,
+              4
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              12,
+              24
+            ],
+            "actual_landing": [
+              12,
+              24
+            ],
+            "ordinary_egress_xy": [
+              12,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 17,
+      "activation_xy": [
+        11,
+        4
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 17,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              11,
+              4
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              12,
+              24
+            ],
+            "actual_landing": [
+              12,
+              24
+            ],
+            "ordinary_egress_xy": [
+              12,
+              23
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 18,
+      "activation_xy": [
+        12,
+        4
+      ],
+      "target_map": 19,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 18,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              4
+            ],
+            "target_map": 19,
+            "expected_landing": [
+              12,
+              16
+            ],
+            "actual_landing": [
+              12,
+              16
+            ],
+            "ordinary_egress_xy": [
+              12,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 18,
+      "activation_xy": [
+        12,
+        16
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 18,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              16
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              12,
+              4
+            ],
+            "actual_landing": [
+              12,
+              4
+            ],
+            "ordinary_egress_xy": [
+              12,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 18,
+      "activation_xy": [
+        13,
+        4
+      ],
+      "target_map": 19,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 18,
+            "source_index": 2,
+            "lane": 1,
+            "activation_xy": [
+              13,
+              4
+            ],
+            "target_map": 19,
+            "expected_landing": [
+              12,
+              16
+            ],
+            "actual_landing": [
+              12,
+              16
+            ],
+            "ordinary_egress_xy": [
+              12,
+              15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 18,
+      "activation_xy": [
+        13,
+        16
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 18,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              13,
+              16
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              12,
+              4
+            ],
+            "actual_landing": [
+              12,
+              4
+            ],
+            "ordinary_egress_xy": [
+              12,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 19,
+      "activation_xy": [
+        12,
+        16
+      ],
+      "target_map": 18,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 19,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              12,
+              16
+            ],
+            "target_map": 18,
+            "expected_landing": [
+              12,
+              4
+            ],
+            "actual_landing": [
+              12,
+              4
+            ],
+            "ordinary_egress_xy": [
+              12,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 19,
+      "activation_xy": [
+        13,
+        16
+      ],
+      "target_map": 18,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 19,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              13,
+              16
+            ],
+            "target_map": 18,
+            "expected_landing": [
+              12,
+              4
+            ],
+            "actual_landing": [
+              12,
+              4
+            ],
+            "ordinary_egress_xy": [
+              12,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 20,
+      "activation_xy": [
+        10,
+        16
+      ],
+      "target_map": 28,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "cavern_return_lane1_to_approach",
+            "source_map": 20,
+            "source_lane": [
+              10,
+              16
+            ],
+            "source_index": 1,
+            "approach": [
+              9,
+              16
+            ],
+            "entry_button": "right",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              2
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                2
+              ],
+              "button": "down",
+              "to": [
+                5,
+                3
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 20,
+      "activation_xy": [
+        11,
+        16
+      ],
+      "target_map": 28,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "cavern_return_lane2_to_approach",
+            "source_map": 20,
+            "source_lane": [
+              11,
+              16
+            ],
+            "source_index": 2,
+            "approach": [
+              11,
+              15
+            ],
+            "entry_button": "down",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              2
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                2
+              ],
+              "button": "down",
+              "to": [
+                5,
+                3
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        0,
+        4
+      ],
+      "target_map": 26,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_west_lane1_to_hanazua",
+            "source_map": 25,
+            "source_lane": [
+              0,
+              4
+            ],
+            "source_index": 3,
+            "approach": [
+              1,
+              4
+            ],
+            "entry_button": "left",
+            "destination_map": 26,
+            "destination_xy": [
+              9,
+              4
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                9,
+                4
+              ],
+              "button": "left",
+              "to": [
+                8,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_crossroads_to_hanazua",
+            "source_map": 25,
+            "source_lane": [
+              0,
+              4
+            ],
+            "source_index": 3,
+            "approach": [
+              1,
+              4
+            ],
+            "entry_button": "left",
+            "destination_map": 26,
+            "destination_xy": [
+              9,
+              4
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                9,
+                4
+              ],
+              "button": "left",
+              "to": [
+                8,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        0,
+        5
+      ],
+      "target_map": 26,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_west_lane2_to_hanazua",
+            "source_map": 25,
+            "source_lane": [
+              0,
+              5
+            ],
+            "source_index": 6,
+            "approach": [
+              1,
+              5
+            ],
+            "entry_button": "left",
+            "destination_map": 26,
+            "destination_xy": [
+              9,
+              4
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                9,
+                4
+              ],
+              "button": "left",
+              "to": [
+                8,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        4,
+        0
+      ],
+      "target_map": 28,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_north_lane2_to_approach",
+            "source_map": 25,
+            "source_lane": [
+              4,
+              0
+            ],
+            "source_index": 5,
+            "approach": [
+              4,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        4,
+        9
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_south_lane2_to_valley",
+            "source_map": 25,
+            "source_lane": [
+              4,
+              9
+            ],
+            "source_index": 4,
+            "approach": [
+              4,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 15,
+            "destination_xy": [
+              16,
+              0
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                16,
+                0
+              ],
+              "button": "down",
+              "to": [
+                16,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        5,
+        0
+      ],
+      "target_map": 28,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_north_lane1_to_approach",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              0
+            ],
+            "source_index": 2,
+            "approach": [
+              5,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "cave_route_crossroads_to_approach",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              0
+            ],
+            "source_index": 2,
+            "approach": [
+              5,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard2_route_crossroads_to_approach",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              0
+            ],
+            "source_index": 2,
+            "approach": [
+              5,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 28,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 25,
+      "activation_xy": [
+        5,
+        9
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "crossroads_south_lane1_to_valley",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 15,
+            "destination_xy": [
+              16,
+              0
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                16,
+                0
+              ],
+              "button": "down",
+              "to": [
+                16,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_crossroads_to_valley",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 15,
+            "destination_xy": [
+              16,
+              0
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                16,
+                0
+              ],
+              "button": "down",
+              "to": [
+                16,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard1_rest_crossroads_to_valley",
+            "source_map": 25,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 15,
+            "destination_xy": [
+              16,
+              0
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                16,
+                0
+              ],
+              "button": "down",
+              "to": [
+                16,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 26,
+      "activation_xy": [
+        4,
+        9
+      ],
+      "target_map": 27,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "hanazua_south_lane2_to_sarkoth",
+            "source_map": 26,
+            "source_lane": [
+              4,
+              9
+            ],
+            "source_index": 4,
+            "approach": [
+              4,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 27,
+            "destination_xy": [
+              5,
+              0
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                0
+              ],
+              "button": "down",
+              "to": [
+                5,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 26,
+      "activation_xy": [
+        5,
+        9
+      ],
+      "target_map": 27,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "hanazua_south_lane1_to_sarkoth",
+            "source_map": 26,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 2,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 27,
+            "destination_xy": [
+              5,
+              0
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                5,
+                0
+              ],
+              "button": "down",
+              "to": [
+                5,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 26,
+      "activation_xy": [
+        9,
+        4
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "hanazua_east_lane1_to_crossroads",
+            "source_map": 26,
+            "source_lane": [
+              9,
+              4
+            ],
+            "source_index": 1,
+            "approach": [
+              8,
+              4
+            ],
+            "entry_button": "right",
+            "destination_map": 25,
+            "destination_xy": [
+              0,
+              4
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                0,
+                4
+              ],
+              "button": "right",
+              "to": [
+                1,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "transit_hanazua_to_crossroads",
+            "source_map": 26,
+            "source_lane": [
+              9,
+              4
+            ],
+            "source_index": 1,
+            "approach": [
+              8,
+              4
+            ],
+            "entry_button": "right",
+            "destination_map": 25,
+            "destination_xy": [
+              0,
+              4
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                0,
+                4
+              ],
+              "button": "right",
+              "to": [
+                1,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 26,
+      "activation_xy": [
+        9,
+        5
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "hanazua_east_lane2_to_crossroads",
+            "source_map": 26,
+            "source_lane": [
+              9,
+              5
+            ],
+            "source_index": 3,
+            "approach": [
+              8,
+              5
+            ],
+            "entry_button": "right",
+            "destination_map": 25,
+            "destination_xy": [
+              0,
+              4
+            ],
+            "destination_index": 3,
+            "safe_egress": {
+              "from": [
+                0,
+                4
+              ],
+              "button": "right",
+              "to": [
+                1,
+                4
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 27,
+      "activation_xy": [
+        4,
+        0
+      ],
+      "target_map": 26,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "sarkoth_north_lane2_to_hanazua",
+            "source_map": 27,
+            "source_lane": [
+              4,
+              0
+            ],
+            "source_index": 3,
+            "approach": [
+              4,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 26,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 27,
+      "activation_xy": [
+        5,
+        0
+      ],
+      "target_map": 26,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "sarkoth_north_lane1_to_hanazua",
+            "source_map": 27,
+            "source_lane": [
+              5,
+              0
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              1
+            ],
+            "entry_button": "up",
+            "destination_map": 26,
+            "destination_xy": [
+              5,
+              9
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                9
+              ],
+              "button": "up",
+              "to": [
+                5,
+                8
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 27,
+      "activation_xy": [
+        9,
+        6
+      ],
+      "target_map": 14,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "sarkoth_east_lane2_to_den",
+            "source_map": 27,
+            "source_lane": [
+              9,
+              6
+            ],
+            "source_index": 4,
+            "approach": [
+              8,
+              6
+            ],
+            "entry_button": "right",
+            "destination_map": 14,
+            "destination_xy": [
+              0,
+              14
+            ],
+            "destination_index": 4,
+            "safe_egress": {
+              "from": [
+                0,
+                14
+              ],
+              "button": "right",
+              "to": [
+                1,
+                14
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 27,
+      "activation_xy": [
+        9,
+        7
+      ],
+      "target_map": 14,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "sarkoth_east_lane1_to_den",
+            "source_map": 27,
+            "source_lane": [
+              9,
+              7
+            ],
+            "source_index": 2,
+            "approach": [
+              8,
+              7
+            ],
+            "entry_button": "right",
+            "destination_map": 14,
+            "destination_xy": [
+              0,
+              14
+            ],
+            "destination_index": 4,
+            "safe_egress": {
+              "from": [
+                0,
+                14
+              ],
+              "button": "right",
+              "to": [
+                1,
+                14
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 28,
+      "activation_xy": [
+        4,
+        2
+      ],
+      "target_map": 20,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "approach_cave_lane2_to_cavern",
+            "source_map": 28,
+            "source_lane": [
+              4,
+              2
+            ],
+            "source_index": 4,
+            "approach": [
+              4,
+              3
+            ],
+            "entry_button": "up",
+            "destination_map": 20,
+            "destination_xy": [
+              10,
+              16
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                10,
+                16
+              ],
+              "button": "left",
+              "to": [
+                9,
+                16
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 28,
+      "activation_xy": [
+        4,
+        9
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "approach_south_lane2_to_crossroads",
+            "source_map": 28,
+            "source_lane": [
+              4,
+              9
+            ],
+            "source_index": 3,
+            "approach": [
+              4,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              0
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                0
+              ],
+              "button": "down",
+              "to": [
+                5,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 28,
+      "activation_xy": [
+        5,
+        2
+      ],
+      "target_map": 20,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "approach_cave_lane1_to_cavern",
+            "source_map": 28,
+            "source_lane": [
+              5,
+              2
+            ],
+            "source_index": 2,
+            "approach": [
+              5,
+              3
+            ],
+            "entry_button": "up",
+            "destination_map": 20,
+            "destination_xy": [
+              10,
+              16
+            ],
+            "destination_index": 1,
+            "safe_egress": {
+              "from": [
+                10,
+                16
+              ],
+              "button": "left",
+              "to": [
+                9,
+                16
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 28,
+      "activation_xy": [
+        5,
+        9
+      ],
+      "target_map": 25,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/attempt_02/validation.json",
+          "record": {
+            "label": "approach_south_lane1_to_crossroads",
+            "source_map": 28,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              0
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                0
+              ],
+              "button": "down",
+              "to": [
+                5,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/mini_zones/cave_pair_attempt_03/validation.json",
+          "record": {
+            "label": "guard1_rest_approach_to_crossroads",
+            "source_map": 28,
+            "source_lane": [
+              5,
+              9
+            ],
+            "source_index": 1,
+            "approach": [
+              5,
+              8
+            ],
+            "entry_button": "down",
+            "destination_map": 25,
+            "destination_xy": [
+              5,
+              0
+            ],
+            "destination_index": 2,
+            "safe_egress": {
+              "from": [
+                5,
+                0
+              ],
+              "button": "down",
+              "to": [
+                5,
+                1
+              ],
+              "native_collision": 0,
+              "map_unchanged": true
+            },
+            "passed": true
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 29,
+      "activation_xy": [
+        0,
+        4
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 29,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              0,
+              4
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              28,
+              12
+            ],
+            "actual_landing": [
+              28,
+              12
+            ],
+            "ordinary_egress_xy": [
+              27,
+              12
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 29,
+            "source_index": 1,
+            "lane": 0,
+            "activation_xy": [
+              0,
+              4
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              28,
+              12
+            ],
+            "actual_landing": [
+              28,
+              12
+            ],
+            "ordinary_egress_xy": [
+              27,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 29,
+      "activation_xy": [
+        0,
+        5
+      ],
+      "target_map": 15,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 29,
+            "source_index": 1,
+            "lane": 1,
+            "activation_xy": [
+              0,
+              5
+            ],
+            "target_map": 15,
+            "expected_landing": [
+              28,
+              12
+            ],
+            "actual_landing": [
+              28,
+              12
+            ],
+            "ordinary_egress_xy": [
+              27,
+              12
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 29,
+      "activation_xy": [
+        9,
+        4
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 29,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              9,
+              4
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              4,
+              14
+            ],
+            "actual_landing": [
+              4,
+              14
+            ],
+            "ordinary_egress_xy": [
+              5,
+              14
+            ]
+          }
+        },
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": false,
+            "source_map": 29,
+            "source_index": 2,
+            "lane": 0,
+            "activation_xy": [
+              9,
+              4
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              4,
+              14
+            ],
+            "actual_landing": [
+              4,
+              14
+            ],
+            "ordinary_egress_xy": [
+              5,
+              14
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "source_map": 29,
+      "activation_xy": [
+        9,
+        5
+      ],
+      "target_map": 16,
+      "evidence": [
+        {
+          "report": "references/generated/zone_passages_v0213/runtime_6cf84242/east/attempt_05/validation.json",
+          "record": {
+            "required_lane_case": true,
+            "source_map": 29,
+            "source_index": 2,
+            "lane": 1,
+            "activation_xy": [
+              9,
+              5
+            ],
+            "target_map": 16,
+            "expected_landing": [
+              4,
+              14
+            ],
+            "actual_landing": [
+              4,
+              14
+            ],
+            "ordinary_egress_xy": [
+              5,
+              14
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "cave_exception": "Canonical complete cave PNG, no hornposts. Both genuine guards won; trigger revisits do not respawn.",
+  "gameplay_failure": false,
+  "retained_harness_attempts": "All preliminary observer/path/button/border-model failures remain separately recorded. Final checks use native controls and retain their actual assertions.",
+  "limitations": [
+    "No physical Chromatic or audio check.",
+    "Cavern lane proof stays near its entrance; full cavern/Yarrog quest is outside this passage QA."
+  ]
+}

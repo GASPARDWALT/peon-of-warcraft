@@ -139,6 +139,11 @@ DurotarRoad_MapEvents:
 	warp_event 4, 14, PEON_VALLEY_EXIT, 2
 	warp_event 12, 24, SENJIN_VILLAGE, 1
 	warp_event 12, 4, RAZOR_HILL, 1
+	; BEGIN WORLD THRESHOLDS V0213
+	warp_event 4, 15, PEON_VALLEY_EXIT, 2 ; full clear threshold
+	warp_event 13, 24, SENJIN_VILLAGE, 1 ; full clear threshold
+	warp_event 13, 4, RAZOR_HILL, 1 ; full clear threshold
+	; END WORLD THRESHOLDS V0213
 	def_coord_events
 	coord_event 12, 23, -1, DurotarScorpidPackScript
 	coord_event 11, 24, -1, DurotarScorpidPackScript

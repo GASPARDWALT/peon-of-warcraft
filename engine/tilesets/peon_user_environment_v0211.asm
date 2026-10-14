@@ -95,9 +95,53 @@ INCLUDE "gfx/peon_user_environment_palettes_v0211.asm"
 ; every loop register. Bits for font IDs96..127 and animated IDs0..3 stay zero.
 PeonApplyUserEnvironmentTilePriorityV0211::
 	push bc
+	push de
 	push hl
-	ld b, a
-	ld a, [hl] ; cache logical tile from caller memory before selecting WRAM1
+	ld d, h
+	ld e, l
+	ld c, a
+	farcall PeonGetNativeEnvironmentTilePriorityV0213
+	ld a, c
+	pop hl
+	pop de
+	pop bc
+	ret
+
+	assert BANK(PeonApplyUserEnvironmentTilePriorityV0211) == BANK(_LoadOverworldAttrmapPals)
+
+
+; A is the completed palette/priority attribute and HL the logical tile.
+; Keep the signed high bit only for allocated extension IDs in bank1.
+; All legacy $80..$df tiles retain their established low-ID conversion.
+PeonResolveNativeEnvironmentTileIdV0213::
+	push af
+	bit B_OAM_BANK1, a
+	jr z, .legacy
+	ld a, [hl]
+	cp $e0
+	jr c, .legacy
+	cp $f8
+	jr nc, .legacy
+	push hl
+	farcall PeonUsesExtendedNativeEnvironmentV0213
+	pop hl
+	jr c, .done
+.legacy
+	res B_OAM_BANK1 + 4, [hl]
+.done
+	pop af
+	ret
+
+
+	assert BANK(PeonResolveNativeEnvironmentTileIdV0213) == BANK(_LoadOverworldAttrmapPals)
+
+SECTION "Peon Native Environment Extended VRAM v0213", ROMX
+
+PeonGetNativeEnvironmentTilePriorityV0213::
+	push bc
+	push hl
+	ld b, c
+	ld a, [de] ; logical tile cached before selecting WRAM1
 	ld c, a
 	ldh a, [rWBK]
 	push af
@@ -122,7 +166,8 @@ PeonApplyUserEnvironmentTilePriorityV0211::
 	jr nc, .address
 	inc h
 .address
-	ld a, [hl]
+	ld a, BANK(_LoadOverworldAttrmapPals)
+	call GetFarByte
 	ld h, a
 	ld a, c
 	and 7
@@ -145,7 +190,140 @@ PeonApplyUserEnvironmentTilePriorityV0211::
 	ld a, b
 	pop hl
 	pop bc
+	ld c, a
 	ret
-	assert BANK(PeonApplyUserEnvironmentTilePriorityV0211) == BANK(_LoadOverworldAttrmapPals)
+
+; Carry only for the thirteen 216-pattern native Peon exterior headers.
+; Preserve all loop/pointer registers and the caller's selected WRAM bank.
+; The cinematic hall, four small rooms and isolated test maps stay at192.
+PeonUsesExtendedNativeEnvironmentV0213::
+	ldh a, [hCGB]
+	and a
+	ret z
+	ldh a, [rWBK]
+	push af
+	ld a, BANK(wMapTileset)
+	ldh [rWBK], a
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .no
+	ld a, [wMapGroup]
+	cp GROUP_PEON_OPENING
+	jr nz, .no
+	ld a, [wMapNumber]
+	cp MAP_PEON_OPENING
+	jr z, .yes
+	cp MAP_THE_DEN
+	jr c, .no
+	cp MAP_BURNING_BLADE_CAVERN + 1
+	jr c, .yes
+	cp MAP_PEON_VALLEY_CROSSROADS
+	jr c, .no
+	cp MAP_PEON_VALLEY_EXIT + 1
+	jr nc, .no
+.yes
+	pop af
+	ldh [rWBK], a
+	scf
+	ret
+.no
+	pop af
+	ldh [rWBK], a
+	and a
+	ret
+
+; DE is a wTilemap cell passed through a farcall by the object/text guard.
+; Extended scenery has a high logical ID but its paired attribute usesbank1.
+; Ordinary text still suppresses covered objects; cached font/portraits use
+; $60..$7f, so their bank1 attributes cannot identify them as extra scenery.
+PeonIsExtendedNativeBackgroundTileV0213::
+	ld h, d
+	ld l, e
+	ld a, [hl]
+	cp $e0
+	jr c, .no
+	cp $f8
+	jr nc, .no
+	push de
+	push hl
+	ld de, wAttrmap - wTilemap
+	add hl, de
+	bit B_OAM_BANK1, [hl]
+	pop hl
+	pop de
+	jr z, .no
+	jp PeonUsesExtendedNativeEnvironmentV0213
+.no
+	and a
+	ret
+
+PeonLoadNativeTilesetGFXV0213::
+	ld hl, wTilesetAddress
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld a, [wTilesetBank]
+	ld e, a
+
+	ldh a, [rWBK]
+	push af
+	ld a, BANK(wDecompressScratch)
+	ldh [rWBK], a
+
+	ld a, e
+	ld de, wDecompressScratch
+	call FarDecompress
+
+	ld hl, wDecompressScratch
+	ld de, vTiles2
+	ld bc, $60 tiles
+	call CopyBytes
+
+	ldh a, [rVBK]
+	push af
+	ld a, BANK(vTiles5)
+	ldh [rVBK], a
+
+	ld hl, wDecompressScratch + $60 tiles
+	ld de, vTiles5
+	ld bc, $60 tiles
+	call CopyBytes
+
+; These thirteen map-local packets have 216 patterns. Their final 24 use
+; signed BG IDs $e0..$f7 in bank1 $8e00..$8f7f, below the emotes at $8f80.
+; NPC standing data remains at $8000..$87ff; these maps' actual walking
+; uploads end at $8b7f or earlier. Font/portrait caches at $9600 stay intact.
+	call PeonUsesExtendedNativeEnvironmentV0213
+	jr nc, .native_gfx_done
+	ld hl, wDecompressScratch + $c0 tiles
+	ld de, vTiles4 tile $60
+	ld bc, $18 tiles
+	call CopyBytes
+.native_gfx_done
+
+	pop af
+	ldh [rVBK], a
+
+	pop af
+	ldh [rWBK], a
+
+; These tilesets support dynamic per-mapgroup roof tiles.
+	ld a, [wMapTileset]
+	cp TILESET_JOHTO
+	jr z, .load_roof
+	cp TILESET_JOHTO_MODERN
+	jr z, .load_roof
+	cp TILESET_BATTLE_TOWER_OUTSIDE
+	jr z, .load_roof
+	jr .skip_roof
+
+.load_roof
+	farcall LoadMapGroupRoof
+
+.skip_roof
+	xor a
+	ldh [hTileAnimFrame], a
+	ret
+
 
 INCLUDE "gfx/peon_user_environment_v0211.asm"

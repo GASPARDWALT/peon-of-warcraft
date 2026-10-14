@@ -1,0 +1,297 @@
+{
+  "version": "v0.2.13",
+  "operation": "Archived native asset restoration; no redrawing",
+  "historical_sources": {
+    "peon_class_packets": "2755365 (v0.2.6)",
+    "boar_and_imp_pngs": "f73b2ec (v0.2.1)"
+  },
+  "restored_roles": [
+    "base Peon",
+    "Shaman",
+    "Boar",
+    "Imp"
+  ],
+  "unchanged_classes": [
+    "Warrior",
+    "Warlock"
+  ],
+  "dimensions": {
+    "world": [
+      16,
+      16
+    ],
+    "front": [
+      56,
+      56
+    ],
+    "back": [
+      48,
+      48
+    ]
+  },
+  "enemy_frames": 4,
+  "hero_frames": 3,
+  "records": [
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/overworld.bin",
+      "bytes": 768,
+      "sha256": "8815123a338e95a28a38ed86e235be9838366e9102457d8557544a4c2b11e25b",
+      "source": "gfx/peon_classes/shaman/overworld.bin",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/front_frames.bin",
+      "bytes": 2352,
+      "sha256": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+      "source": "gfx/peon_classes/shaman/front_frames.bin",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/portrait_frames.bin",
+      "bytes": 2352,
+      "sha256": "d3b7e70f58e10d2dce9649d169110ce946be7e59ed055aaa81a6ea3097c05c06",
+      "source": "gfx/peon_classes/shaman/portrait_frames.bin",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/back_frames.bin",
+      "bytes": 1728,
+      "sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+      "source": "gfx/peon_classes/shaman/back_frames.bin",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/back_palettes.bin",
+      "bytes": 16,
+      "sha256": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+      "source": null,
+      "note": "Original uniform BG0 and BG6 colors"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/back_attrs.bin",
+      "bytes": 36,
+      "sha256": "6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e",
+      "source": null,
+      "note": "Native 6x6 rear tiles all use BG0"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/front_palettes.bin",
+      "bytes": 16,
+      "sha256": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+      "source": null,
+      "note": "Original uniform BG1 and BG5 colors"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/front_attrs.bin",
+      "bytes": 49,
+      "sha256": "33f79c2780a826c3dc60819334e55ea72874bb167b111b8607fd70e876f42e0f",
+      "source": null,
+      "note": "Native 7x7 front tiles all use BG1"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/profile_palettes.bin",
+      "bytes": 32,
+      "sha256": "80bc1184e9951c3d32be1e077131cc467b7883e7fc89377a2e36cb3a422ae85f",
+      "source": null,
+      "note": "Native profile paper plus original colors for BG2/4/6/7"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/profile_attrs.bin",
+      "bytes": 49,
+      "sha256": "e3a3e78980ab3eff882f95f96a27b2e3f3c08a5628acb136d6b5fdf999f78e0b",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/world_preview.pal",
+      "bytes": 59,
+      "sha256": "efbeaa0ce21dcb8d6bdba93e7cd1d50cc89e2eb5add3322f2302615a1279c751",
+      "source": null,
+      "note": "Original native hero color order"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/peon/world_obj.pal",
+      "bytes": 59,
+      "sha256": "efbeaa0ce21dcb8d6bdba93e7cd1d50cc89e2eb5add3322f2302615a1279c751",
+      "source": null,
+      "note": "Hero OBJ2 only; root applies scoped palette hook"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/front.animated.2bpp",
+      "bytes": 1744,
+      "sha256": "7225b03306cf38d9800c7fcc7632cad4d567e47a05f647f455473d557cc36938",
+      "source": "gfx/pokemon/rattata/front.animated.2bpp",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/front.animated.2bpp.lz",
+      "bytes": 1129,
+      "sha256": "f01438c03905d17908ada069d862d3e8e741733d490d8bbd44590d76074016c8",
+      "source": "gfx/pokemon/rattata/front.animated.2bpp.lz",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/front.animated.tilemap",
+      "bytes": 196,
+      "sha256": "1e24502f307e7481ad2655c6177efa9c4ee9cff98a66217a88304dce1eacc190",
+      "source": "gfx/pokemon/rattata/front.animated.tilemap",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/anim.asm",
+      "bytes": 74,
+      "sha256": "23d08a547d000c7312ce5c7b53c5cd8895efbcf5b89e4bfdfa6df7c75c164bf7",
+      "source": "gfx/pokemon/rattata/anim.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/anim_idle.asm",
+      "bytes": 35,
+      "sha256": "eaf53c1d6a5b7c87cfb651b80d1b60c428fa47ea1616f58701946919c5d12bbe",
+      "source": "gfx/pokemon/rattata/anim_idle.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/frames.asm",
+      "bytes": 457,
+      "sha256": "f9fd6f8ffa56e3af64f4e0c031d15eb32ff95949381168f507dc649291893139",
+      "source": "gfx/pokemon/rattata/frames.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/bitmask.asm",
+      "bytes": 306,
+      "sha256": "b6dc650c7803f3bb943a2c5e8ec64baf34461d24156aa2348d60144193eb833e",
+      "source": "gfx/pokemon/rattata/bitmask.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/back.2bpp",
+      "bytes": 576,
+      "sha256": "aca462e133308e703809d117af184b54bf279933441b8281e94ca7078b6d0f60",
+      "source": "gfx/pokemon/rattata/back.2bpp",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/back.2bpp.lz",
+      "bytes": 361,
+      "sha256": "12134a6f66aae82346260b9b4f7673c79e8ac132c3e54dc8819af3ed73052c99",
+      "source": "gfx/pokemon/rattata/back.2bpp.lz",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/enemy_palettes.bin",
+      "bytes": 16,
+      "sha256": "17356c2b95db472590bcd4e33f5e472e92d6c1cec092ac192c94075d9f4a87a3",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/boar/enemy_attrs.bin",
+      "bytes": 49,
+      "sha256": "33f79c2780a826c3dc60819334e55ea72874bb167b111b8607fd70e876f42e0f",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/front.animated.2bpp",
+      "bytes": 1424,
+      "sha256": "a40a03c0b5f9fb391a31880275c09f543fb287946a63df860e47b6a9c9597edd",
+      "source": "gfx/pokemon/geodude/front.animated.2bpp",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/front.animated.2bpp.lz",
+      "bytes": 886,
+      "sha256": "7c726a82f433f9fbebbc84a0a5a668bda69194917a8c76e8fcdf6b7b772e5c1e",
+      "source": "gfx/pokemon/geodude/front.animated.2bpp.lz",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/front.animated.tilemap",
+      "bytes": 196,
+      "sha256": "dbe76c7884e000f4d240de220bbb2ab3c7d884dbac1313ef0cb23ce31f6f9b53",
+      "source": "gfx/pokemon/geodude/front.animated.tilemap",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/anim.asm",
+      "bytes": 61,
+      "sha256": "c6c13336e4bc4adbd2969d103d1a1599441e2dd6c5b9e8944c64d1841c52b786",
+      "source": "gfx/pokemon/geodude/anim.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/anim_idle.asm",
+      "bytes": 48,
+      "sha256": "30505cd78797793c56f2b779b177261e4bd5aaf8fc3642bdde386092484a7086",
+      "source": "gfx/pokemon/geodude/anim_idle.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/frames.asm",
+      "bytes": 568,
+      "sha256": "55291a56fff8f2454cd002556724e2583911828819ae0d7ddb2002828f765e28",
+      "source": "gfx/pokemon/geodude/frames.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/bitmask.asm",
+      "bytes": 204,
+      "sha256": "a7fdc653f5686f71e2bcef5751b3204a9207a09aec93a767775dba7b116310a2",
+      "source": "gfx/pokemon/geodude/bitmask.asm",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/back.2bpp",
+      "bytes": 576,
+      "sha256": "b4567148c4e1bc2a2f76bbb79424db1752e9cd318de24dc424b4c1dce5b613c4",
+      "source": "gfx/pokemon/geodude/back.2bpp",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/back.2bpp.lz",
+      "bytes": 365,
+      "sha256": "f3921be4cabe6d0edd13343126d68c860320cea9e10ebb72db4c4c57beb553df",
+      "source": "gfx/pokemon/geodude/back.2bpp.lz",
+      "note": "Byte-for-byte archived packet copy"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/enemy_palettes.bin",
+      "bytes": 16,
+      "sha256": "c1b4c1014279982f61b4dcb812950ec729072ce31df0aabe32d81525ffe6e336",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/enemy_attrs.bin",
+      "bytes": 49,
+      "sha256": "33f79c2780a826c3dc60819334e55ea72874bb167b111b8607fd70e876f42e0f",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/back_frames.bin",
+      "bytes": 1728,
+      "sha256": "358eefa0238bd48ec70c74dcc13ba84d9422f5fd701bded8d4fc0dabd571141f",
+      "source": "gfx/pokemon/geodude/back.2bpp",
+      "note": "Original complete 48x48 rear frame reused unchanged by three native pose requests"
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/back_palettes.bin",
+      "bytes": 16,
+      "sha256": "c1b4c1014279982f61b4dcb812950ec729072ce31df0aabe32d81525ffe6e336",
+      "source": null,
+      "note": null
+    },
+    {
+      "output": "gfx/native_actor_restore_v0213/imp/back_attrs.bin",
+      "bytes": 36,
+      "sha256": "6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e",
+      "source": null,
+      "note": null
+    }
+  ],
+  "native_verification": "All four enemy frames exactly match all pixels in archived PNGs; profile row/column order matches; source packet hashes pinned",
+  "runtime_verification": "Root must validate the exact assembled ROM; these are decoded native packets, not emulator screenshots"
+}

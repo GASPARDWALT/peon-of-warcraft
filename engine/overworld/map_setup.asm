@@ -94,6 +94,13 @@ LoadContinueMapObjects:
 	cp TILESET_PEON
 	ret nz
 	call .RefreshPeonTerrain
+	; Current Peon object events are reconstructed on Continue. Their
+	; OBJECT_SPRITE_TILE values must come from a rebuilt native allocation,
+	; not the empty boot-time wUsedSprites table. Sprite callbacks configure
+	; current lodge/quest templates before the subsequent object copies.
+	ld a, MAPCALLBACK_SPRITES
+	call RunMapCallback
+	farcall RefreshSprites
 	jp LoadMapObjects
 
 .RefreshPeonTerrain:

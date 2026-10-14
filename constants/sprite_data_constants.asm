@@ -13,6 +13,7 @@ DEF NUM_SPRITEDATA_FIELDS EQU _RS
 	const STANDING_SPRITE ; 2
 	const STILL_SPRITE    ; 3
 	const USER_WORLD_4DIR_SPRITE ; 4, supplied independent right view; static gait
+	const STATIC_MASTER_SPRITE ; 5, nine native24x24 tiles; sparse OAM; no walking
 ; Sort ahead of normal sprites: GetSpriteVTile assumes the player is first.
 DEF PEON_SPRITE EQU 0 ; four idle facings and two independent walking steps
 
