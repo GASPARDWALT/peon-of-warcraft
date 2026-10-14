@@ -1,0 +1,42 @@
+{
+  "version": "v0.2.14",
+  "status": "PASS",
+  "rom": "releases/v0.2.14/peon_of_warcraft_v0_2_14.gbc",
+  "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9",
+  "tests": {
+    "shaman_proportions_runtime": {
+      "report": "references/generated/shaman_proportions_v0214/runtime_4c6daec0/validation.json",
+      "status": "PASS",
+      "report_sha256": "33d34ab92806980abb5d50611fb178666ea392c0dcc0a21d505cb5f70024f69a",
+      "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9"
+    },
+    "quiet_ground_runtime": {
+      "report": "references/generated/quieter_ground_v0214/runtime_4c6daec0/validation.json",
+      "status": "PASS",
+      "report_sha256": "e6a68466a490bff8bc82acac185c92ff89c00ff1610da9818e4b6df16bb9123c",
+      "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9"
+    },
+    "quiet_ground_native_bindings": {
+      "report": "references/generated/quieter_ground_v0214/native_binding_validation.json",
+      "status": "PASS",
+      "report_sha256": "39c18150a66b4061a21ae9960246168567f2699fca9d43d2f9693afe71249733",
+      "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9"
+    },
+    "resource_HUD_and_types": {
+      "report": "references/generated/resource_hud_v0214/final_4c6daec0/validation.json",
+      "status": "PASS",
+      "report_sha256": "636f0aa746673de87cd0bf4a3ed072c58808e27d7d55ae9e2c31ddbf8e505158",
+      "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9"
+    },
+    "fresh_build": {
+      "report": "references/generated/v0214/fresh_build_validation.json",
+      "status": "PASS",
+      "report_sha256": "e969bd96138e4e443052b5b81349520db322e42b26d512115650826736b3252e",
+      "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9"
+    }
+  },
+  "physical_modretro_tested": false,
+  "scope": "Only Shaman combat/profile proportions and environmental ground texture density; previous release retained.",
+  "unchanged": "Sources, palettes, sprite world dimensions, supplied prop silhouettes, interior art, collisions, events, warps, party/save schema and battle mechanics.",
+  "artifact_build": "Fresh indexed-source build is byte-identical to ordinary-input emulator-tested candidate."
+}

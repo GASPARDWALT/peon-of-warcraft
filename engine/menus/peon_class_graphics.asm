@@ -350,11 +350,11 @@ PeonBaseWorldV0211::
 PeonShamanWorldV028:
 	INCBIN "gfx/native_actor_restore_v0213/peon/overworld.bin"
 PeonShamanFrontV028:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/front_frames.bin"
 PeonShamanProfileV028:
-	INCBIN "gfx/native_actor_restore_v0213/peon/portrait_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/portrait_frames.bin"
 PeonShamanBackV028:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/back_frames.bin"
 
 SECTION "Peon Warrior Apprentice Graphics v028", ROMX
 PeonWarriorWorldV028:

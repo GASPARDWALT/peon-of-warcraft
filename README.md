@@ -1,5 +1,14 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.14](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.14/releases/v0.2.14/peon_of_warcraft_v0_2_14.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.14/releases/v0.2.14/peon_of_warcraft_v0_2_14.zip) · [Proportions du shaman et sols allégés](docs/V0214_SHAMAN_AND_QUIETER_GROUND.md)
+
+Le shaman retrouve un rapport tête/corps proche des autres héros, avec sa
+masse et son bouclier. Les sols sont plus calmes, avec des détails par
+petites plaques. Décors fournis, piliers, chemins, bâtiments et collisions
+sont conservés. Build : `python3 tools/build_peon_v0214.py`.
+
+## v0.2.13 archive
+
 [ROM v0.2.13](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.13/releases/v0.2.13/peon_of_warcraft_v0_2_13.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.13/releases/v0.2.13/peon_of_warcraft_v0_2_13.zip) · [Sources, changements et limites](docs/V0213_NATIVE_ART_AND_ROSTER.md)
 
 Mana et rage en haut de l'écran et en combat, types d'attaque en couleur,

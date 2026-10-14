@@ -4,6 +4,7 @@
 
 - On 2026-10-14 the user explicitly rejected primitive circles, schematic cactus/palms and code-drawn decorative substitutes. NEVER propose or ship those substitutes. Use the supplied decor PNGs as the active sources; keep their complete silhouettes. If a native budget blocks an exact import, report the measured limit rather than inventing simpler art.
 - The user prefers the earliest readable Peon, Boar and Imp character models over the v0.2.12 conversions. Restoring those archived native actor assets is explicitly authorized; retain the current approved buildings, interiors and working quest/gameplay code. Do not run their old broad generators.
+- On 2026-10-14 the user requested matching Shaman head/body proportions and quieter terrain with texture only in patches. Keep those changes in derived native packets; preserve supplied props, pillars, structures, palettes, collisions and warps. Sparse ground grains must come from the supplied dirt PNG, not newly drawn shapes.
 
 - Import the user's supplied PNG sprites directly when the request is to implement them. Preserve the original files and record crop coordinates and source hashes.
 - Follow the stated layout: base Peon, Shaman, Warrior, Warlock; world front/back/left/right at 16×16, combat front at 56×56, combat back at 48×48.
@@ -19,7 +20,7 @@
 - Preserve saves, previous releases, unrelated user changes and working gameplay.
 - Check every class, direction and affected battle pose so old graphics cannot reappear during movement, attacks or native menus.
 - Before running an asset builder, inspect whether it redraws or overwrites imported art. In particular, `tools/rebuild_peon_v028.sh` regenerates prior art and must not overwrite a user-sprite import.
-- Current safe build: `python3 tools/build_peon_v0213.py`. It freezes historical generator targets and versioned native packets, and rejects an unexpected generator in the Make plan. Keep native generated packets versioned as build inputs.
+- Current safe build: `python3 tools/build_peon_v0214.py`. It freezes historical generator targets and versioned native packets, and rejects an unexpected generator in the Make plan. Keep native generated packets versioned as build inputs.
 - `references/generated/user_player_v0211` and the native `peon_sprite_redesign_v030` packets contain procedural replacement art. They are historical artifacts, never current hero fallback sources. Approved large raster masters are a separate, explicitly lossy import; do not label them recovered user-native sprites.
 - Check GBC tile/palette allocation and OAM limits before changing the rendering path. Report real hardware constraints concretely; do not use them to justify an unrelated redesign.
 - Use bounded, relevant emulator checks and report what was actually observed. A successful build or gallery pixel check does not prove in-game visual quality.

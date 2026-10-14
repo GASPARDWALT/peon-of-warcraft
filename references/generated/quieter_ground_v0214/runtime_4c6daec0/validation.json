@@ -1,0 +1,250 @@
+{
+  "result": "PASS",
+  "rom": "/tmp/peon-v0214-candidate1/peon_v0214.gbc",
+  "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9",
+  "ordinary_new_shaman_game": true,
+  "ram_writes": false,
+  "emulator_states": false,
+  "user_batteries_opened": false,
+  "world_routes": [
+    {
+      "outbound_lane": [
+        20,
+        10
+      ],
+      "zone2_arrival": [
+        4,
+        12
+      ],
+      "inbound_lane": [
+        4,
+        12
+      ],
+      "the_den_arrival": [
+        20,
+        10
+      ],
+      "two_way_warp_and_floor_egress": true
+    },
+    {
+      "outbound_lane": [
+        20,
+        11
+      ],
+      "zone2_arrival": [
+        4,
+        12
+      ],
+      "inbound_lane": [
+        4,
+        13
+      ],
+      "the_den_arrival": [
+        20,
+        10
+      ],
+      "two_way_warp_and_floor_egress": true
+    }
+  ],
+  "checks": [
+    {
+      "map": "TheDen",
+      "position": [
+        12,
+        9
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        32,
+        208
+      ],
+      "capture": "the_den_quiet_floor_and_clear_paths"
+    },
+    {
+      "map": "PeonOrcHut",
+      "position": [
+        5,
+        5
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": false,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        0,
+        192
+      ],
+      "capture": "approved_lodge_three_masters_unchanged"
+    },
+    {
+      "map": "TheDen",
+      "position": [
+        19,
+        10
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 324,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        224,
+        48
+      ],
+      "capture": "the_den_spiked_gateway_approach"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "position": [
+        5,
+        12
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        16,
+        0
+      ],
+      "capture": "zone2_gateway_lane_1_safe_arrival"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "position": [
+        8,
+        11
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        64,
+        240
+      ],
+      "capture": "zone2_south_of_cactus_questgiver"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "position": [
+        9,
+        8
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        80,
+        192
+      ],
+      "capture": "zone2_north_of_cactus_questgiver"
+    },
+    {
+      "map": "TheDen",
+      "position": [
+        19,
+        10
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 324,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        240,
+        0
+      ],
+      "capture": "the_den_gateway_lane_1_safe_return"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "position": [
+        5,
+        12
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 360,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        16,
+        0
+      ],
+      "capture": "zone2_gateway_lane_2_safe_arrival"
+    },
+    {
+      "map": "TheDen",
+      "position": [
+        19,
+        10
+      ],
+      "base_192_patterns_in_real_vram_exact": true,
+      "extended_24_patterns_in_real_vram_exact": true,
+      "visible_world_tile_ids_palette_bank_priority_exact": true,
+      "compared_in_world_ppu_cells": 324,
+      "visible_extended_cells": [],
+      "no_live_oam_background_extension_overlap": true,
+      "scroll": [
+        240,
+        0
+      ],
+      "capture": "the_den_gateway_lane_2_safe_return"
+    }
+  ],
+  "approved_lodge_and_three_full_masters": {
+    "masters": {
+      "warrior_trainer": {
+        "actor": 3,
+        "sprite": 107,
+        "world_xy": [
+          7,
+          5
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 323
+      },
+      "enemy_warlock": {
+        "actor": 4,
+        "sprite": 108,
+        "world_xy": [
+          3,
+          7
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 267
+      },
+      "shaman_master": {
+        "actor": 2,
+        "sprite": 106,
+        "world_xy": [
+          6,
+          3
+        ],
+        "native_tile_bytes_exact": true,
+        "actual_native_lcd_opaque_pixels_exact": 349
+      }
+    },
+    "native_visible_oam_objects": 37,
+    "maximum_objects_on_one_scanline": 5,
+    "complete_master_tiles_visible": 27
+  }
+}

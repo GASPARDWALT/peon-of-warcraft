@@ -1,0 +1,144 @@
+{
+  "version": "v0.2.14",
+  "source": "gfx/native_actor_restore_v0213/peon",
+  "source_hashes": {
+    "back_frames.bin": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+    "front_frames.bin": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7"
+  },
+  "requested_change": "Shaman head/body proportions aligned to other heroes; keep archived design and equipment.",
+  "dimensions": {
+    "back": [
+      48,
+      48
+    ],
+    "front": [
+      56,
+      56
+    ]
+  },
+  "nearest_only": true,
+  "original_sources_unchanged": true,
+  "palette_and_alpha_index_unchanged": true,
+  "poses": [
+    {
+      "view": "back",
+      "pose": 0,
+      "before_bbox": [
+        1,
+        4,
+        47,
+        48
+      ],
+      "after_bbox": [
+        3,
+        6,
+        45,
+        44
+      ],
+      "operation": "Head nearest 18x13 at original neck; full canvas nearest 44x44 centered in 48x48, feet at y44.",
+      "indexed_before_sha256": "2a788cd2acc9ca62824e0ebd144cc23867fbaf7163b71d3e3216b1ab409799c9",
+      "indexed_after_sha256": "8220bc88486367c59bd82d9a312d3c33a591ab3d86e6b274c60a56e33c2890bb"
+    },
+    {
+      "view": "back",
+      "pose": 1,
+      "before_bbox": [
+        2,
+        1,
+        45,
+        48
+      ],
+      "after_bbox": [
+        4,
+        1,
+        43,
+        44
+      ],
+      "operation": "Head nearest 18x13 at original neck; full canvas nearest 44x44 centered in 48x48, feet at y44. Collar seam at y20,x14:32 copies its original y19 source row only into alpha-zero cells.",
+      "indexed_before_sha256": "0cc614fe6310d90951ae965ef0be14e005b0de5bc1279bb56ea273c9a5519f1e",
+      "indexed_after_sha256": "f28274c77340fdf9950f01c79ba2efdfc3ef6e196fc027e5cb3a017a604727c2"
+    },
+    {
+      "view": "back",
+      "pose": 2,
+      "before_bbox": [
+        0,
+        4,
+        45,
+        48
+      ],
+      "after_bbox": [
+        2,
+        6,
+        43,
+        44
+      ],
+      "operation": "Head nearest 18x13 at original neck; full canvas nearest 44x44 centered in 48x48, feet at y44.",
+      "indexed_before_sha256": "8c25dcd0fb471950d96c1b6a5ad9461195c570b36668bd73ba1f4c191b260fcf",
+      "indexed_after_sha256": "4345bf9b13b7a80930769aab32219d79d177a55ccbc39d12a6e69834bd2de04e"
+    },
+    {
+      "view": "front",
+      "pose": 0,
+      "before_bbox": [
+        1,
+        7,
+        55,
+        56
+      ],
+      "after_bbox": [
+        1,
+        6,
+        55,
+        50
+      ],
+      "operation": "Head nearest 18x16 at original neck; intact body/gear translated up6, feet at y50.",
+      "indexed_before_sha256": "d4cb47950bd1b2d00772a8cb8966868b9c7971e31131981aa0c6588275503277",
+      "indexed_after_sha256": "46e97a961ace86efdf3148f303e1a3a65a2f74627633e2ff0710a430ae854b21"
+    },
+    {
+      "view": "front",
+      "pose": 1,
+      "before_bbox": [
+        1,
+        6,
+        55,
+        55
+      ],
+      "after_bbox": [
+        1,
+        5,
+        55,
+        49
+      ],
+      "operation": "Head nearest 18x16 at original neck; intact body/gear translated up6, feet at y50.",
+      "indexed_before_sha256": "3c781dc5ea401d2333f08477f802ffdff88594edf4dc3e6b54d9b6923fc42739",
+      "indexed_after_sha256": "650cb84a9ad56e08a52506ed5b8c3240b6e54c3e669b58049f6ee15fd2ac02d5"
+    },
+    {
+      "view": "front",
+      "pose": 2,
+      "before_bbox": [
+        6,
+        1,
+        50,
+        56
+      ],
+      "after_bbox": [
+        8,
+        1,
+        48,
+        50
+      ],
+      "operation": "Complete existing turned casting pose and aura nearest 50x50 centered in 56x56; no separate skull replacement.",
+      "indexed_before_sha256": "abaecd7c6714bf1215f92f1c50ef43d2e0f2d7f6318799d4328ae798030100cf",
+      "indexed_after_sha256": "8ed62cae56274461dd8feef22cae04e56c3e229e847ffceeea5d92f0dc522dd1"
+    }
+  ],
+  "outputs": {
+    "back_frames.bin": "679db15f200ac7c70d24f4bc7c6e8cd1755f3f7addd59761570eaedfe93b7502",
+    "front_frames.bin": "a079325bdcb481ab16d5dc0214fb2a3d8fcd26871003663ad1ee1555f6b55ee7",
+    "portrait_frames.bin": "ecb7d04b5302ec6feb3dee9f5a0bec7457097d849cd0b533d3f2f01987517af6"
+  },
+  "runtime_tested": false
+}

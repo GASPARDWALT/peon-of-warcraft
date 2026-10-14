@@ -21,19 +21,19 @@ PeonUserBaseProfileAttrsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/profile_attrs.bin"
 SECTION "User Shaman Battle v0211", ROMX
 PeonUserShamanBackTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/back_frames.bin"
 PeonUserShamanBackPalsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/back_palettes.bin"
 PeonUserShamanBackAttrsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/back_attrs.bin"
 PeonUserShamanFrontTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/front_frames.bin"
 PeonUserShamanFrontPalsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/front_palettes.bin"
 PeonUserShamanFrontAttrsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/front_attrs.bin"
 PeonUserShamanProfileTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/portrait_frames.bin"
+	INCBIN "gfx/shaman_proportions_v0214/portrait_frames.bin"
 PeonUserShamanProfilePalsV0211:
 	INCBIN "gfx/native_actor_restore_v0213/peon/profile_palettes.bin"
 PeonUserShamanProfileAttrsV0211:

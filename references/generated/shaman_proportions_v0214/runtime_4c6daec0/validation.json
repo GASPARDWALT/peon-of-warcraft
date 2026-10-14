@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "rom_sha256": "4c6daec032ce7b9692fe37c7e385f517a6cff6091dcb37b33ac8f337059649a9",
+  "ordinary_controls_only": true,
+  "RAM_or_ROM_writes": false,
+  "CPU_substitutions": false,
+  "state_loads": false,
+  "user_saves_opened": false,
+  "runs": {
+    "mace": {
+      "status": "PASS",
+      "native_pose_uploads": [
+        {
+          "frame": 0,
+          "move": 0,
+          "battle": true,
+          "observed_frame": 9365,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        },
+        {
+          "frame": 0,
+          "move": 0,
+          "battle": true,
+          "observed_frame": 9682,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        },
+        {
+          "frame": 1,
+          "move": 1,
+          "battle": true,
+          "observed_frame": 10061,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "62632f99cf31e127f046d8e88203e54f2c06db29468f5ad3509e8bd9f407fc95"
+        },
+        {
+          "frame": 2,
+          "move": 1,
+          "battle": true,
+          "observed_frame": 10070,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "4d5ee9807ab4a1404ce21ce1debb559d9c3470a847a558ce8e2081d12b07e57d"
+        },
+        {
+          "frame": 0,
+          "move": 1,
+          "battle": true,
+          "observed_frame": 10188,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        }
+      ],
+      "actual_actor_checks": [
+        {
+          "move": 0,
+          "pose": 0,
+          "frame": 9397,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        },
+        {
+          "move": 1,
+          "pose": 1,
+          "frame": 10062,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        },
+        {
+          "move": 1,
+          "pose": 2,
+          "frame": 10071,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        },
+        {
+          "move": 1,
+          "pose": 0,
+          "frame": 10189,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        }
+      ],
+      "native_player_animations": [
+        {
+          "frame": 10060,
+          "move": 1
+        }
+      ],
+      "roster_summary": {
+        "ordinary_START_ROSTER_SUMMARY": true,
+        "source_row_major_49_tiles_exact": true,
+        "complete_56x56_rgb555_pixels_exact": true,
+        "native_bank0_palette2": true
+      },
+      "ordinary_fresh_shaman_first_boar_encounter": true
+    },
+    "lightning": {
+      "status": "PASS",
+      "native_pose_uploads": [
+        {
+          "frame": 0,
+          "move": 0,
+          "battle": true,
+          "observed_frame": 8675,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        },
+        {
+          "frame": 0,
+          "move": 0,
+          "battle": true,
+          "observed_frame": 8992,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        },
+        {
+          "frame": 1,
+          "move": 84,
+          "battle": true,
+          "observed_frame": 9522,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "62632f99cf31e127f046d8e88203e54f2c06db29468f5ad3509e8bd9f407fc95"
+        },
+        {
+          "frame": 0,
+          "move": 84,
+          "battle": true,
+          "observed_frame": 9686,
+          "bytes": 576,
+          "vram_bank": 0,
+          "address": "$9310",
+          "source_packet_exact": true,
+          "sha256": "babe09f2bb15bb442e6c474bdce1af806cc55d1ae14aff4aa02a389ecd25cb70"
+        }
+      ],
+      "actual_actor_checks": [
+        {
+          "move": 0,
+          "pose": 0,
+          "frame": 8707,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        },
+        {
+          "move": 84,
+          "pose": 1,
+          "frame": 9523,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        },
+        {
+          "move": 84,
+          "pose": 0,
+          "frame": 9687,
+          "source_packet_exact": true,
+          "complete_48x48_rgb555_pixels_exact": true,
+          "all_36_hardware_tiles_column_major_bank0_palette0": true
+        }
+      ],
+      "native_player_animations": [
+        {
+          "frame": 9521,
+          "move": 84
+        }
+      ],
+      "roster_summary": null,
+      "ordinary_fresh_shaman_first_boar_encounter": true
+    }
+  }
+}

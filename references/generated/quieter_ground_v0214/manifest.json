@@ -1,0 +1,537 @@
+{
+  "authorized_change": "User requests less aggressive ground grain, with detail only in patches.",
+  "canonical_grain_source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png",
+  "source_sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+  "native_background_index": 1,
+  "native_regional_palettes_unchanged": true,
+  "original_texture_sources_preserved": true,
+  "derivation": [
+    {
+      "source_grain_anchors": [
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          20
+        ]
+      ],
+      "complete_source_grain_pixels": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          21
+        ]
+      ],
+      "nonbackground_pixels_per_32x32": 4,
+      "source_geometry_unchanged": true,
+      "native_shade_mapping": {
+        "base": 1,
+        "lighter_grain": 0,
+        "darker_grain": 2
+      }
+    },
+    {
+      "source_grain_anchors": [
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          11,
+          17
+        ]
+      ],
+      "complete_source_grain_pixels": [
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          18,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          18,
+          10
+        ],
+        [
+          19,
+          10
+        ],
+        [
+          20,
+          10
+        ],
+        [
+          4,
+          16
+        ],
+        [
+          5,
+          16
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          5,
+          17
+        ],
+        [
+          6,
+          17
+        ],
+        [
+          11,
+          17
+        ],
+        [
+          12,
+          17
+        ],
+        [
+          13,
+          17
+        ],
+        [
+          10,
+          18
+        ],
+        [
+          11,
+          18
+        ],
+        [
+          12,
+          18
+        ],
+        [
+          13,
+          18
+        ],
+        [
+          10,
+          19
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          4,
+          21
+        ]
+      ],
+      "nonbackground_pixels_per_32x32": 22,
+      "source_geometry_unchanged": true,
+      "native_shade_mapping": {
+        "base": 1,
+        "lighter_grain": 0,
+        "darker_grain": 2
+      }
+    }
+  ],
+  "redrawn_shapes": false,
+  "smoothing": false,
+  "interiors_changed": false,
+  "warps_and_map_scripts_unchanged": true,
+  "applied": true,
+  "maps": [
+    {
+      "map": "PeonOpening",
+      "input_packet": "gfx/canonical_decor_v0213",
+      "input_packet_sha256": "08d1fe32123cb1e4d6d0cf95f3bb65f0a76ed1c5f67207ee32d6dec1b2dc9898",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 56,
+      "metatiles": 71,
+      "sparse_detail_patch_blocks": [
+        [
+          5,
+          3
+        ]
+      ],
+      "native_pixels_changed": 9767,
+      "opaque_scenery_pixels_preserved": 1229,
+      "unchanged_native_8x8_cells": 536,
+      "native_8x8_cells": 768,
+      "collision_cells_unchanged": 192,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "dbffa3b842b6f172f2ca42364eb00e313d74fc0e369f7f5aea74e9e949bdca1d",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "be2074133a76020f460c5a5433e37bd71397bdf43418dd2bd97e20b971037226",
+      "output_map_sha256": "60ec7535e0943ecd5fcf5f3fc61c7bb7e6d5e49719846e86c5a456d7c9d2a02f"
+    },
+    {
+      "map": "TheDen",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "f20fb3c209c8f2bf39ce9f0d0a45a2cac2af810e93d7c6f47a93d3ebe120a494",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 190,
+      "metatiles": 94,
+      "sparse_detail_patch_blocks": [
+        [
+          6,
+          6
+        ]
+      ],
+      "native_pixels_changed": 19997,
+      "opaque_scenery_pixels_preserved": 12741,
+      "unchanged_native_8x8_cells": 1444,
+      "native_8x8_cells": 1920,
+      "collision_cells_unchanged": 480,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "03ebea3cfc84962554acca02dfccd41399c59defaba4deb6a3a4a94d2351ba85",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "b06c6bab76ee014c83ae3fd0b69104464ac4e16756a8d1f362d734345003d334",
+      "output_map_sha256": "a7e1959bfb08516f8415961fe36e75ceefd54b2f56c28db6674bbfadd7dc9025"
+    },
+    {
+      "map": "ValleyOfTrials",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "e21e5fa6cfe4978eda700dd4377019b8e850cf711547dd07934f1da799dc9483",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 118,
+      "metatiles": 82,
+      "sparse_detail_patch_blocks": [
+        [
+          1,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          11,
+          10
+        ]
+      ],
+      "native_pixels_changed": 33840,
+      "opaque_scenery_pixels_preserved": 12474,
+      "unchanged_native_8x8_cells": 2268,
+      "native_8x8_cells": 3072,
+      "collision_cells_unchanged": 768,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "3d735d0598c5d7813fe030f151f5f8882ef85109162b81e6697b82795ab2c3f3",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "e1a528c9c8e7ceddb4ca8db0b4d0108c76a4668496a627cc966a0894f6a25fc8",
+      "output_map_sha256": "f3c087fa2b89f875fd6c7216c50c3babb53a23f9d0cca3c3afd4490659508c3e"
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "7a92ffcec680781c7ac93d0c8bc667d329f5d9e2baeb3afb5cd2ae4d699afbd3",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 57,
+      "metatiles": 76,
+      "sparse_detail_patch_blocks": [
+        [
+          3,
+          1
+        ]
+      ],
+      "native_pixels_changed": 3205,
+      "opaque_scenery_pixels_preserved": 1958,
+      "unchanged_native_8x8_cells": 324,
+      "native_8x8_cells": 400,
+      "collision_cells_unchanged": 100,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "2094ae444782ffae4c31eb7dc80136ddd0c3a250e8cbcd3205587198a138e636",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "eeeac819276d5edb71e37c24dd73eb6ff186c7ea917b33e1a1c01256f6c1a286",
+      "output_map_sha256": "392ac8deb96839b9fa608285789f1042509926c91b75c8e02c20f8012b95ce12"
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "00e54d84a9a66359827bc230f71babe984f772a7674fbae28510ee962ff331a6",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 61,
+      "metatiles": 75,
+      "sparse_detail_patch_blocks": [],
+      "native_pixels_changed": 3204,
+      "opaque_scenery_pixels_preserved": 1909,
+      "unchanged_native_8x8_cells": 324,
+      "native_8x8_cells": 400,
+      "collision_cells_unchanged": 100,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "4946fc19234855a7fa300759738d98592eb0ba0daddcf08f8adcb5db0fecf315",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "635164fc90c6a797ba656bb1570feffce5f81e3af51214d4ef586ad76942221f",
+      "output_map_sha256": "eed3038903200d1d3ee74d049003ed5e401c3893da498431f33b759192a42fe1"
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "913088032e5c70b1b325302d758eaa2c098e6a19c4b1e010059617bab0a40b6d",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 61,
+      "metatiles": 75,
+      "sparse_detail_patch_blocks": [],
+      "native_pixels_changed": 850,
+      "opaque_scenery_pixels_preserved": 2233,
+      "unchanged_native_8x8_cells": 380,
+      "native_8x8_cells": 400,
+      "collision_cells_unchanged": 100,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "731acea9785fd60a739cf9d7a6cb76e7c2cd7f7f90e8bebb4b60dd2f7a873135",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "75cb2daee340c3d27a01cb2b96c8e84675e2c2feb1cb092ac841f9237211c254",
+      "output_map_sha256": "1a99907c5843b0393350dffde3d6e7d7d25d28ba635153e2328c18f0dd630467"
+    },
+    {
+      "map": "PeonCaveApproach",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "b00472790e40ebd2f462a59978362ca65436990b8219a7c985b73e08f369f6a6",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 88,
+      "metatiles": 77,
+      "sparse_detail_patch_blocks": [],
+      "native_pixels_changed": 2564,
+      "opaque_scenery_pixels_preserved": 3323,
+      "unchanged_native_8x8_cells": 339,
+      "native_8x8_cells": 400,
+      "collision_cells_unchanged": 100,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "1b6a0cb96ab650b2c89d6c6d5a169771e771c0b65c37e390fd9b9cd2f6c628d3",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "16845e68f771e85ac57b6c600d8bfa9db6595407b7986e2bd20de77bf873cb2a",
+      "output_map_sha256": "0c87085a6eda0d4c443e4efe55167eb76a19ac0c80c68a3479b886e9de319763"
+    },
+    {
+      "map": "PeonValleyExit",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "bc9332f7d9293ce3ed6f4047fa90bffd895b59fcafd4ed3520ea442e7f34c85a",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 57,
+      "metatiles": 75,
+      "sparse_detail_patch_blocks": [],
+      "native_pixels_changed": 2864,
+      "opaque_scenery_pixels_preserved": 3144,
+      "unchanged_native_8x8_cells": 332,
+      "native_8x8_cells": 400,
+      "collision_cells_unchanged": 100,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "9e830c43bde9f94276866cb16185a186b24851a74c0f40c7b17628624d4b0f29",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "4d8185df5f3dc3cfe8fde06b019e79799144870773d81471cc235f10848795a8",
+      "output_map_sha256": "67757781d0001286f51d50ab19d803ee64d4f569e2cbf7b74ff6ae2eb79d8981"
+    },
+    {
+      "map": "DurotarRoad",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "df4df1b425ae3936c2225a71c5751cdaae0947130a093a6d05dbe7a2174a5570",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 122,
+      "metatiles": 82,
+      "sparse_detail_patch_blocks": [
+        [
+          8,
+          7
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          9,
+          12
+        ]
+      ],
+      "native_pixels_changed": 32338,
+      "opaque_scenery_pixels_preserved": 9120,
+      "unchanged_native_8x8_cells": 1920,
+      "native_8x8_cells": 2688,
+      "collision_cells_unchanged": 672,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "3f0f9d6d3fb63adc473f6c9ecc39a89427b93b35c7cef883d22d1803b2b7bf94",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "154aa03ddeca1a104e2cb5fed304c8c957b762928e088c4e241922722224e631",
+      "output_map_sha256": "52aea8350e900d49264a38d60ce71bfa63ab720b935360da0b6a783cc1057846"
+    },
+    {
+      "map": "SenjinVillage",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "6c1eefad1ea2dc8b2224274d6785f79f40b884790a39d1a815fa3fab5050bf69",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 196,
+      "metatiles": 92,
+      "sparse_detail_patch_blocks": [
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "native_pixels_changed": 18349,
+      "opaque_scenery_pixels_preserved": 13262,
+      "unchanged_native_8x8_cells": 1484,
+      "native_8x8_cells": 1920,
+      "collision_cells_unchanged": 480,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "750aeb62b1642dc06609a8ead53c38ba9ebb6aeafc293a72477ccf2f33bc5494",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "48ebe915ee6f311cbf2e8993699f6e6f0c9603513ec58d3b31b79a076ae6c8a1",
+      "output_map_sha256": "42b959a3827e3874cf0e79ad6145cea7f12dc71fa0512b60ed041a14f9ed456c"
+    },
+    {
+      "map": "RazorHill",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "c07ad3649bc321c1e0b01d7d6e3beffd71f0d7c46ba45523965edf1bac3503d6",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 209,
+      "metatiles": 99,
+      "sparse_detail_patch_blocks": [],
+      "native_pixels_changed": 9317,
+      "opaque_scenery_pixels_preserved": 27244,
+      "unchanged_native_8x8_cells": 1698,
+      "native_8x8_cells": 1920,
+      "collision_cells_unchanged": 480,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "e23c45387340a6e863d565a220ea25f5956090062278c9cff213f9a16f94d4e1",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "2c8ec0aa103cf65bec1a898e4c4075e04813564e0b2add3c316b959273d35ba6",
+      "output_map_sha256": "24e7370f07d7bcbd12531217e6272c4be3925c82063c3546526c2ab252cd4d91"
+    },
+    {
+      "map": "OrgrimmarGate",
+      "input_packet": "gfx/zone_passages_v0213",
+      "input_packet_sha256": "0d64d24c9cc8c2796b902da3127cd37ecf6c1fbab0c7311de10630865f7c911a",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 185,
+      "metatiles": 88,
+      "sparse_detail_patch_blocks": [
+        [
+          9,
+          4
+        ],
+        [
+          1,
+          8
+        ]
+      ],
+      "native_pixels_changed": 21385,
+      "opaque_scenery_pixels_preserved": 19836,
+      "unchanged_native_8x8_cells": 1412,
+      "native_8x8_cells": 1920,
+      "collision_cells_unchanged": 480,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "c984a204c653956f4d27204bce991c50d8cb4d476d336f4c9d9a8c59fbf9b7d4",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "096a465d1b1b399c10e7cb489ed9695ffd841e454344bc2bbf6c66a585d695e1",
+      "output_map_sha256": "3446450d7a9bbdd4a71398c82c7173605007a0bcbb98878460795a9b59dd9f9e"
+    },
+    {
+      "map": "BurningBladeCavern",
+      "input_packet": "gfx/canonical_decor_v0213",
+      "input_packet_sha256": "7e46e3ae7a7897f816c353695457bf1ccfa8cfa135bc0673751cee76b1dca88e",
+      "native_pattern_capacity": 216,
+      "unique_patterns": 60,
+      "metatiles": 70,
+      "sparse_detail_patch_blocks": [
+        [
+          4,
+          3
+        ]
+      ],
+      "native_pixels_changed": 16175,
+      "opaque_scenery_pixels_preserved": 637,
+      "unchanged_native_8x8_cells": 1216,
+      "native_8x8_cells": 1600,
+      "collision_cells_unchanged": 400,
+      "per_cell_palette_and_priority_unchanged": true,
+      "native_map_source_sha256": "4b1a3dc913cc2b7b63d6a0c181189e772af5fa53cc9c92fa07da13ee3dad2740",
+      "source_pngs_unchanged": true,
+      "animated_patterns_0_to_3_unchanged": true,
+      "runtime_verified": false,
+      "preview_is_source_composition": true,
+      "native_after_sha256": "e93a6b15e443794407403ad32a9134194ce8cae6d6e38fce1d26c25153178c39",
+      "output_map_sha256": "5057d7bb2981aca20e0b85c24d069ef76df62c0b9f465c65ef4f0ec9203b0a04"
+    }
+  ]
+}
