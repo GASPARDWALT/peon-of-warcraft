@@ -1,0 +1,208 @@
+{
+  "version": "v0.2.16",
+  "status": "PASS",
+  "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc",
+  "sym_sha256": "aa730c85c7bb94d28d45103bb2fd1428e1a6777f8d61f516f3a12286bc4b2e8a",
+  "map_sha256": "1b14e67eae853ec49b13037ae1a95c797d737d16dbcf974cb19989f9173a0482",
+  "tests": {
+    "world_runtime": {
+      "status": "PASS",
+      "report": "references/generated/world_detail_v0216/runtime_3c25adf8/validation.json",
+      "report_sha256": "b0b2f23793c5b7617cedee9d60aa48fc882ff44e26af64612a52d9726598be09"
+    },
+    "battle_resources": {
+      "status": "PASS",
+      "report": "references/generated/v0216/battle_3c25adf8/validation.json",
+      "report_sha256": "3035645c81bd050f2869bda09f6e14cba26d133a68a836c2d44b0f1435f991b6"
+    },
+    "masters_and_cold_continue": {
+      "status": "PASS",
+      "report": "references/generated/v0216/lodge_3c25adf8/validation.json",
+      "report_sha256": "7f1b6802dd70ef512942c54ac633b08e0ba75c7051eb856a2aa807501ea32a8a"
+    },
+    "rock_moves_animations_and_v15_save": {
+      "status": "PASS",
+      "report": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/validation.json",
+      "report_sha256": "cd15ce0cfbfb7930b853e1d1d15e4a63de3244020ffc59c3d4c2f372ffb6e80c"
+    },
+    "fresh_source_build": {
+      "status": "PASS",
+      "report": "references/generated/v0216/fresh_build_validation.json",
+      "report_sha256": "a8acfb05ef381e60e78432ed6d88230e0485db3b93781ab07da66d943f484e68"
+    },
+    "lightning_and_ROM_header": {
+      "status": "PASS",
+      "report": "references/generated/v0216/preserved_lightning_and_header.json",
+      "report_sha256": "47f0aaa5ac85b199e6c6ed2a0e1100f3f3ab11356347dd99a687991336f7b049"
+    },
+    "world_static_import": {
+      "status": "PASS",
+      "report": "references/generated/world_detail_v0216/static_validation.json",
+      "report_sha256": "768d677f5595c65060412a67e85a666a657357a337937b78dcf970b5ad678126"
+    },
+    "combat_static_import": {
+      "status": "PASS",
+      "report": "gfx/combat_heroes_v0216/manifest.json",
+      "report_sha256": "6928ce5735bb8dd8c21394c8239a19e956b7b5d56098fbe88671beebaa69e5b8"
+    },
+    "world_provenance_metadata": {
+      "status": "PASS",
+      "report": "references/generated/world_detail_v0216/metadata_source_correction_validation.json",
+      "report_sha256": "b7b6f9756511362d32b66490a066c1c5575d5a083df6e7c400f23e009ef29497"
+    }
+  },
+  "captures": [
+    {
+      "name": "01_shaman_world.png",
+      "path": "references/generated/world_detail_v0216/runtime_3c25adf8/shaman/world_hero_down.png",
+      "sha256": "27c450dbd4bdb5f9d62424dd353a3e90af26d1e39edaa0263e928e58350e9556",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "02_warrior_world.png",
+      "path": "references/generated/world_detail_v0216/runtime_3c25adf8/warrior/world_hero_right.png",
+      "sha256": "8e27beaf102a086e57969fb40457386044b43a852aa83fa33af727f5e828da1c",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "03_warlock_world.png",
+      "path": "references/generated/world_detail_v0216/runtime_3c25adf8/warlock/world_hero_up.png",
+      "sha256": "bf455f70924fa9a97b078cab63573e6e8494cef5f4ab88fcd3a38373d0662e28",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "04_quest_NPC.png",
+      "path": "references/generated/world_detail_v0216/runtime_3c25adf8/shaman/nearby_quest_NPC_after_dialogue.png",
+      "sha256": "32464f1f4deba44545dda4e15c9fe243c5c9b442721cdb44676cd82ca839db7c",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "05_shaman_battle.png",
+      "path": "references/generated/v0216/battle_3c25adf8/heroes/shaman/battle_initial_live_resource.png",
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "06_warrior_battle.png",
+      "path": "references/generated/v0216/battle_3c25adf8/heroes/warrior/battle_initial_live_resource.png",
+      "sha256": "0668b49e28e2f3bb8c1aedd3961275687f2c0273c8cbf51dbbc468fdf4a3f530",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "07_warlock_battle.png",
+      "path": "references/generated/v0216/battle_3c25adf8/heroes/warlock/battle_initial_live_resource.png",
+      "sha256": "9d9d47bcf2379ce657df9ae430ecc4080ead04eb0ddbeaa4c6e49ac1f06a0ae5",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "08_mace_strike_zero_mana.png",
+      "path": "references/generated/v0216/battle_3c25adf8/free_basic/shaman/actual_mace_strike_costs_zero_mana.png",
+      "sha256": "7debef54c0c994846657635368984efdf208fd39997519b494d10c712dd14f14",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "09_cold_continue.png",
+      "path": "references/generated/v0216/lodge_3c25adf8/warlock/training_lodge_cold_continue_native_lcd.png",
+      "sha256": "9b33beba00ede4b55ad67096bed8c9229ad1b31156529df4de20382ce3c6c0d3",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "10_rock_strike.png",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/rock_selected_33.png",
+      "sha256": "d992e914e235835697fd99ea5a2195e932e494b9db143a4be9ae1d9f3fe2f860",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "11_earth_spray.png",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_189_1_travel.png",
+      "sha256": "c8d4cfd9dd141425a893695f264bf55ffadb0f9ea900617243dde30ac2b0f353",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "12_rock_throw.png",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_88_1_travel.png",
+      "sha256": "9f7e95a1059d8acdca3c772ba26de82f7af480855c20ecf49c0a84189ce9bbf2",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "13_v15_save_upgraded.png",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/upgrade_continue/shaman/cold_CONTINUE_rock_moves_corrected.png",
+      "sha256": "41248102291008e112cb6f84ce040d098532f7ce892d75d65eca878af51bb63f",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    }
+  ],
+  "animations": [
+    {
+      "name": "01_strike.gif",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_33_1.gif",
+      "sha256": "b85598700e6c7ac12054a62708385f66c7dc80e3a40b0ae4e3fc1efd725bd90e",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "02_mud_slap.gif",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_189_1.gif",
+      "sha256": "b3a1cc0bd3836fdb3adb4b9623b9029f5aa40316517e4156a2e3122748761fa2",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "03_rock_throw.gif",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_88_1.gif",
+      "sha256": "34387b2de7e94bd1375caa94d6a7f85a4b40da99d03b73a8232daa14ffb27cd1",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    {
+      "name": "04_enemy_rock_throw.gif",
+      "path": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/enemy_88_1.gif",
+      "sha256": "9ddf179cd9ec8e9481386039106fa08c38509e0c8f7e7a0e26e5e5220182cf28",
+      "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    }
+  ],
+  "original_character_PNGs_preserved": 495,
+  "approved_WORLD_rasters_preserved": 4,
+  "WORLD_dedicated_views_imported_directly_at_24px": true,
+  "combat_views_used_for_WORLD_import": false,
+  "native_collision_grid_px": 16,
+  "hero_battle_canvases": {
+    "back": [
+      48,
+      48
+    ],
+    "front": [
+      56,
+      56
+    ]
+  },
+  "small_rock_starters": [
+    "STRIKE",
+    "MUD-SLAP",
+    "ROCK THROW"
+  ],
+  "MACE_STRIKE_mana_cost": 0,
+  "STRIKE_mana_cost": 0,
+  "companion_uses_native_PP": true,
+  "evolutions_levels": [
+    8,
+    12
+  ],
+  "source_progression_verified_in_linked_ROM": true,
+  "world_maximum_observed": {
+    "OAM": 40,
+    "per_scanline": 9
+  },
+  "earth_animations_maximum_observed": {
+    "OAM": 23,
+    "per_scanline": 8
+  },
+  "ordinary_buttons_only": true,
+  "RAM_edits": false,
+  "user_saves_opened": false,
+  "physical_modretro_tested": false,
+  "limits": [
+    "World palette conversion is lossy; no recovered native pixel-grid claim.",
+    "World views are authored stills; base/Shaman add a one-pixel bob, Warrior/Warlock repeat the still.",
+    "Incomplete source directions retain documented provided-body fallbacks.",
+    "Crowded scenes prioritize whole nearby bodies and may omit distant actors or the optional world HUD.",
+    "Enemy Rock Throw observed; enemy Mud-Slap verified statically, not drawn by the observed RNG.",
+    "Higher-level curricula verified in linked ROM; no level-15 gameplay claim."
+  ]
+}

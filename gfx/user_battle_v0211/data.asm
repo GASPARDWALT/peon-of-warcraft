@@ -1,81 +1,82 @@
-; Legacy labels retain their loader ABI. Base/Shaman and Boar/Imp bind to
-; archived native actor packets v0213; other approved imports remain intact.
+; Legacy labels retain their loader ABI. v0216 hero packets use the original
+; dimensions, per-tile palette slots and metadata adjacency. Enemy/ally art
+; remains bound to its previously approved sources below.
 SECTION "User Base Battle v0211", ROMX
 PeonUserBaseBackTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/back/frames.bin"
 PeonUserBaseBackPalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/back/palettes.bin"
 PeonUserBaseBackAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/back/attrs.bin"
 PeonUserBaseFrontTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/front/frames.bin"
 PeonUserBaseFrontPalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/front/palettes.bin"
 PeonUserBaseFrontAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/front/attrs.bin"
 PeonUserBaseProfileTilesV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/portrait_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/profile/frames.bin"
 PeonUserBaseProfilePalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/profile_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/profile/palettes.bin"
 PeonUserBaseProfileAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/profile_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/base/profile/attrs.bin"
 SECTION "User Shaman Battle v0211", ROMX
 PeonUserShamanBackTilesV0211:
-	INCBIN "gfx/shaman_proportions_v0214/back_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/back/frames.bin"
 PeonUserShamanBackPalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/back/palettes.bin"
 PeonUserShamanBackAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/back_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/back/attrs.bin"
 PeonUserShamanFrontTilesV0211:
-	INCBIN "gfx/shaman_proportions_v0214/front_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/front/frames.bin"
 PeonUserShamanFrontPalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/front/palettes.bin"
 PeonUserShamanFrontAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/front_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/front/attrs.bin"
 PeonUserShamanProfileTilesV0211:
-	INCBIN "gfx/shaman_proportions_v0214/portrait_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/profile/frames.bin"
 PeonUserShamanProfilePalsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/profile_palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/profile/palettes.bin"
 PeonUserShamanProfileAttrsV0211:
-	INCBIN "gfx/native_actor_restore_v0213/peon/profile_attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/profile/attrs.bin"
 SECTION "User Warrior Battle v0211", ROMX
 PeonUserWarriorBackTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/back/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/back/frames.bin"
 PeonUserWarriorBackPalsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/back/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/back/palettes.bin"
 PeonUserWarriorBackAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/back/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/back/attrs.bin"
 PeonUserWarriorFrontTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/front/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/front/frames.bin"
 PeonUserWarriorFrontPalsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/front/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/front/palettes.bin"
 PeonUserWarriorFrontAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/front/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/front/attrs.bin"
 PeonUserWarriorProfileTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/profile/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/profile/frames.bin"
 PeonUserWarriorProfilePalsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/profile/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/profile/palettes.bin"
 PeonUserWarriorProfileAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warrior/profile/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warrior/profile/attrs.bin"
 SECTION "User Warlock Battle v0211", ROMX
 PeonUserWarlockBackTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/back/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/back/frames.bin"
 PeonUserWarlockBackPalsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/back/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/back/palettes.bin"
 PeonUserWarlockBackAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/back/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/back/attrs.bin"
 PeonUserWarlockFrontTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/front/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/front/frames.bin"
 PeonUserWarlockFrontPalsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/front/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/front/palettes.bin"
 PeonUserWarlockFrontAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/front/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/front/attrs.bin"
 PeonUserWarlockProfileTilesV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/profile/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/profile/frames.bin"
 PeonUserWarlockProfilePalsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/profile/palettes.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/profile/palettes.bin"
 PeonUserWarlockProfileAttrsV0211:
-	INCBIN "gfx/approved_player_v0212/warlock/profile/attrs.bin"
+	INCBIN "gfx/combat_heroes_v0216/warlock/profile/attrs.bin"
 SECTION "User rattata Colors v0211", ROMX
 PeonUserRattataEnemyMetaV0211:
 	INCBIN "gfx/native_actor_restore_v0213/boar/enemy_palettes.bin"

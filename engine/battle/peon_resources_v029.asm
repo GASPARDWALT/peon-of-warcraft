@@ -341,6 +341,9 @@ PeonEnsurePartyResourcesV029::
 	pop af
 	ret
 .body
+	; Correct only the recognizable old rock starter pair on real map /
+	; Continue setup. No move list is rebuilt and no existing PP is refilled.
+	farcall PeonMigrateRockMovesV0216
 	ld c, 0
 .loop
 	ld a, [wPartyCount]
@@ -356,6 +359,7 @@ PeonEnsurePartyResourcesV029::
 	cp PEON_RESOURCE_PARTY_CAP_V029
 	jr c, .loop
 	ret
+
 
 ; C=index. Refill mana to maximum or clear rage to zero. Used at an inn.
 PeonRefillResourceForIndexV029::
@@ -1552,3 +1556,98 @@ PeonHandlePostBattleEvolutionV0213::
 	pop af
 	ld [wEvolvableFlags], a
 	ret
+
+
+; One-time, recognizable v0213..v0215 starter correction. Called only from
+; map/Continue setup under the resource wrapper's normal WRAM1 selection.
+; No save layout/version byte changes; after conversion the guard no longer
+; matches. An edited starter pair is left alone, including all its native PP.
+SECTION "Peon Rock Starter Migration v0216", ROMX
+
+PeonMigrateRockMovesV0216::
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	ret nz
+	ld a, [wEventFlags + EVENT_PEON_SHAMAN / 8]
+	bit EVENT_PEON_SHAMAN % 8, a
+	ret z
+	ld c, 0
+.member
+	ld a, [wPartyCount]
+	cp c
+	ret z
+	ret c
+	ld a, c
+	cp PARTY_LENGTH
+	ret nc
+	push bc
+	ld hl, wPartyMon1Species
+	call GetPartyLocation
+	ld a, [hl]
+	cp ONIX
+	jr z, .rock
+	cp GRAVELER
+	jr z, .rock
+	cp GOLEM
+	jr nz, .next
+.rock
+	ld de, MON_MOVES
+	add hl, de
+	ld a, [hli]
+	cp POUND
+	jr nz, .next
+	ld a, [hl]
+	cp THUNDERSHOCK
+	jr nz, .next
+	ld [hl], MUD_SLAP
+	dec hl
+	ld [hl], TACKLE ; same native 35-PP capacity as old POUND
+	push hl
+	ld de, MON_PP - MON_MOVES + 1
+	add hl, de
+	; Preserve the old slot's PP Ups. Mud-Slap has 10 base PP, +2 per
+	; native PP Up; cap an overfull old Lightning slot without restoring PP.
+	ld a, [hl]
+	and PP_UP_MASK
+	ld b, a
+	rlca
+	rlca
+	add a
+	add 10
+	ld d, a
+	ld a, [hl]
+	and PP_MASK
+	cp d
+	jr c, .mud_pp
+	ld a, d
+.mud_pp
+	or b
+	ld [hl], a
+	pop hl
+	inc hl
+	inc hl ; third native move slot
+	ld a, [hli]
+	cp ROCK_THROW
+	jr z, .next
+	ld a, [hl]
+	cp ROCK_THROW
+	jr z, .next
+	; Existing learned/custom slots are never replaced. Add the missing
+	; starter only to an empty third/fourth slot, with its initial native PP.
+	dec hl
+	ld a, [hl]
+	and a
+	jr z, .add_throw
+	inc hl
+	ld a, [hl]
+	and a
+	jr nz, .next
+.add_throw
+	ld [hl], ROCK_THROW
+	ld de, MON_PP - MON_MOVES
+	add hl, de
+	ld [hl], 15
+.next
+	pop bc
+	inc c
+	jp .member

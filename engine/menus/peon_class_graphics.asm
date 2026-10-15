@@ -1,6 +1,6 @@
 ; Class graphics follow the existing saved class flags.
-; Base/Shaman restore archived complete native bodies in v0213.
-; Other classes retain current imports; actor dimensions and saves are unchanged.
+; v0216 maximizes the complete approved bodies inside the original48/56px
+; picture contracts. World art, actor identities and saved fields are unchanged.
 SECTION "Peon Apprentice Graphics Loaders", ROMX
 
 PeonPlayerGraphicsClass::
@@ -350,28 +350,28 @@ PeonBaseWorldV0211::
 PeonShamanWorldV028:
 	INCBIN "gfx/native_actor_restore_v0213/peon/overworld.bin"
 PeonShamanFrontV028:
-	INCBIN "gfx/shaman_proportions_v0214/front_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/front/frames.bin"
 PeonShamanProfileV028:
-	INCBIN "gfx/shaman_proportions_v0214/portrait_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/profile/frames.bin"
 PeonShamanBackV028:
-	INCBIN "gfx/shaman_proportions_v0214/back_frames.bin"
+	INCBIN "gfx/combat_heroes_v0216/shaman/back/frames.bin"
 
 SECTION "Peon Warrior Apprentice Graphics v028", ROMX
 PeonWarriorWorldV028:
 	INCBIN "gfx/approved_player_v0212/warrior/overworld.bin"
 PeonWarriorFrontV028:
-	INCBIN "gfx/approved_player_v0212/warrior/front/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/front/frames.bin"
 PeonWarriorProfileV028:
-	INCBIN "gfx/approved_player_v0212/warrior/profile/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/profile/frames.bin"
 PeonWarriorBackV028:
-	INCBIN "gfx/approved_player_v0212/warrior/back/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warrior/back/frames.bin"
 
 SECTION "Peon Warlock Apprentice Graphics v028", ROMX
 PeonWarlockWorldV028:
 	INCBIN "gfx/approved_player_v0212/warlock/overworld.bin"
 PeonWarlockFrontV028:
-	INCBIN "gfx/approved_player_v0212/warlock/front/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/front/frames.bin"
 PeonWarlockProfileV028:
-	INCBIN "gfx/approved_player_v0212/warlock/profile/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/profile/frames.bin"
 PeonWarlockBackV028:
-	INCBIN "gfx/approved_player_v0212/warlock/back/frames.2bpp"
+	INCBIN "gfx/combat_heroes_v0216/warlock/back/frames.bin"

@@ -1400,46 +1400,39 @@ BattleAnim_Acid:
 	anim_ret
 
 BattleAnim_RockThrow:
-	anim_1gfx BATTLE_ANIM_GFX_ROCKS
-	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $60, $1, $0
+	; One complete native rock leaves the caster, arcs across the field,
+	; then breaks into dirt at the opponent's feet. At most three small
+	; effects overlap; no battler-copy OAM or class weapon is involved.
+	anim_3gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_SAND, BATTLE_ANIM_GFX_HIT
+	anim_sound 0, 0, SFX_STRENGTH
+	anim_obj BATTLE_ANIM_OBJ_PEON_THROWN_ROCK_V0216, 64, 92, $10
+	anim_wait 36
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $14, $1, $0
 	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 128, 64, $40
-	anim_wait 2
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_BIG_ROCK, 120, 68, $30
-	anim_wait 2
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 152, 68, $30
-	anim_wait 2
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_BIG_ROCK, 144, 64, $40
-	anim_wait 2
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 136, 68, $30
-	anim_wait 96
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 136, 56, $0
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 124, 64, $0
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 144, 64, $0
+	anim_wait 24
 	anim_ret
 
 BattleAnim_RockSlide:
-	anim_1gfx BATTLE_ANIM_GFX_ROCKS
-	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $c0, $1, $0
+	anim_3gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_SAND, BATTLE_ANIM_GFX_HIT
+	; Separate falling waves leave room for the impact debris to settle.
 .loop
 	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 128, 64, $40
-	anim_wait 4
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_BIG_ROCK, 120, 68, $30
-	anim_wait 4
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 152, 68, $30
-	anim_wait 4
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_BIG_ROCK, 144, 64, $40
-	anim_wait 4
-	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 136, 68, $30
+	anim_obj BATTLE_ANIM_OBJ_BIG_ROCK, 120, 64, $48
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 144, 64, $48
+	anim_wait 8
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $18, $2, $0
+	anim_obj BATTLE_ANIM_OBJ_HIT_YFIX, 132, 56, $0
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 120, 64, $0
+	anim_wait 8
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 144, 64, $0
+	anim_wait 56
+	anim_loop 3, .loop
 	anim_wait 16
-	anim_loop 4, .loop
-	anim_wait 96
 	anim_ret
 
 BattleAnim_Sing:
@@ -1826,11 +1819,17 @@ BattleAnim_Constrict:
 	anim_ret
 
 BattleAnim_Earthquake:
-	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $60, $4, $10
+	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_SAND
+	; Successive ground tremors, not one long empty screen shake.
 .loop
-	anim_sound 0, 1, SFX_EMBER
-	anim_wait 24
-	anim_loop 4, .loop
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $20, $3, $0
+	anim_sound 0, 1, SFX_STRENGTH
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 116, 64, $0
+	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 128, 64, $48
+	anim_wait 10
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 144, 64, $0
+	anim_wait 54
+	anim_loop 3, .loop
 	anim_ret
 
 BattleAnim_Fissure:
@@ -3515,9 +3514,24 @@ BattleAnim_SludgeBomb:
 	anim_ret
 
 BattleAnim_MudSlap:
-	anim_1gfx BATTLE_ANIM_GFX_SAND
-	anim_obp0 $fc
-	anim_call BattleAnimSub_SandOrMud
+	anim_2gfx BATTLE_ANIM_GFX_SAND, BATTLE_ANIM_GFX_HIT
+	; Low ochre earth spray, followed by two target-side dust puffs.
+	; The native projectile objects reverse both origin and travel for
+	; an enemy caster. No lightning frames or palette slots are reused.
+.spray
+	anim_sound 6, 2, SFX_MENU
+	anim_obj BATTLE_ANIM_OBJ_PEON_MUD_V0216, 64, 96, $4
+	anim_wait 4
+	anim_obj BATTLE_ANIM_OBJ_PEON_MUD_V0216, 76, 88, $4
+	anim_wait 4
+	anim_loop 3, .spray
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $c, $1, $0
+	anim_sound 0, 1, SFX_POUND
+	anim_obj BATTLE_ANIM_OBJ_HIT_SMALL_YFIX, 132, 60, $0
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 124, 64, $0
+	anim_wait 6
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 144, 64, $0
+	anim_wait 20
 	anim_ret
 
 BattleAnim_Octazooka:
@@ -4063,22 +4077,18 @@ BattleAnim_SacredFire:
 	anim_ret
 
 BattleAnim_Magnitude:
-	anim_1gfx BATTLE_ANIM_GFX_ROCKS
+	anim_2gfx BATTLE_ANIM_GFX_ROCKS, BATTLE_ANIM_GFX_SAND
 .loop
-	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $e, $4, $0
+	; Magnitude's native parameter controls the number of rumbling waves.
+	anim_bgeffect BATTLE_BG_EFFECT_SHAKE_SCREEN_X, $12, $2, $0
 	anim_sound 0, 1, SFX_STRENGTH
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 128, 64, $40
-	anim_wait 2
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 120, 68, $30
-	anim_wait 2
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 152, 68, $30
-	anim_wait 2
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 144, 64, $40
-	anim_wait 2
-	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 136, 68, $30
-	anim_wait 2
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 116, 64, $0
+	anim_obj BATTLE_ANIM_OBJ_SMALL_ROCK, 132, 64, $48
+	anim_wait 10
+	anim_obj BATTLE_ANIM_OBJ_PEON_EARTH_DUST_V0216, 144, 64, $0
+	anim_wait 54
 	anim_jumpuntil .loop
-	anim_wait 96
+	anim_wait 16
 	anim_ret
 
 BattleAnim_Dynamicpunch:

@@ -1,5 +1,15 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.16](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.16/releases/v0.2.16/peon_of_warcraft_v0_2_16.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.16/releases/v0.2.16/peon_of_warcraft_v0_2_16.zip) · [Détails des modèles et attaques de terre](docs/V0216_WORLD_AND_EARTH_MOVES.md)
+
+Vues world réimportées directement en **24×24**, personnages principaux plus
+imposants en combat et couleurs de l'équipement mieux conservées. Le petit
+caillou commence avec **STRIKE, MUD-SLAP et ROCK THROW** ; MACE STRIKE reste
+gratuit en mana. Lightning Bolt et les évolutions aux niveaux 8 et 12 sont
+conservées. Build : `python3 tools/build_peon_v0216.py`.
+
+## v0.2.15 archive
+
 [ROM v0.2.15](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.15/releases/v0.2.15/peon_of_warcraft_v0_2_15.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.15/releases/v0.2.15/peon_of_warcraft_v0_2_15.zip) · [Personnages du monde agrandis](docs/V0215_LARGER_WORLD_ACTORS.md)
 
 Les personnages du monde passent en **24×24**, avec les silhouettes existantes

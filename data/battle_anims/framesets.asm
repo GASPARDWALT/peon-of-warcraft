@@ -201,7 +201,17 @@ BattleAnimFrameData:
 	dw .Frameset_PeonV1EarthShockEnemy
 	dw .Frameset_PeonV1EarthTotemPlayer
 	dw .Frameset_PeonV1EarthTotemEnemy
+	dw .Frameset_PeonEarthGrainsV0216
 	assert_table_length NUM_BATTLE_ANIM_FRAMESETS
+
+.Frameset_PeonEarthGrainsV0216:
+	; Three complete native SAND drawings at a constant four OAM cells.
+	; The legacy SAND sequence expands to16cells and is unsafe when its
+	; projectiles and impact dust overlap. No native graphic is redrawn.
+	oamframe BATTLE_ANIM_OAMSET_1B, 3
+	oamframe BATTLE_ANIM_OAMSET_7E, 3
+	oamframe BATTLE_ANIM_OAMSET_7F, 3
+	oamdelete
 
 .Frameset_PeonV1LightningPlayer:
 	oamframe BATTLE_ANIM_OAMSET_PEON_V1_LIGHTNING_PLAYER, 63

@@ -1,0 +1,869 @@
+{
+  "status": "PASS",
+  "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc",
+  "sym_sha256": "aa730c85c7bb94d28d45103bb2fd1428e1a6777f8d61f516f3a12286bc4b2e8a",
+  "method": "Fresh private games; real quest capture, native turns, real SAVE and cold Continue; controller only.",
+  "emulator_RAM_writes": false,
+  "ROM_patches": false,
+  "state_restores": false,
+  "CPU_substitutions": false,
+  "user_saves_opened": false,
+  "limitations": [
+    "Physical Chromatic hardware not tested.",
+    "Higher-level move progression checked in linked ROM; no claim of ordinary level-15 play."
+  ],
+  "linked_ROM_contract": {
+    "status": "PASS",
+    "curricula": {
+      "OnixEvosAttacks": {
+        "evolution_level_and_species": [
+          8,
+          75
+        ],
+        "native_level_moves": [
+          [
+            1,
+            33
+          ],
+          [
+            1,
+            189
+          ],
+          [
+            1,
+            88
+          ],
+          [
+            4,
+            106
+          ],
+          [
+            6,
+            222
+          ]
+        ]
+      },
+      "GravelerEvosAttacks": {
+        "evolution_level_and_species": [
+          12,
+          76
+        ],
+        "native_level_moves": [
+          [
+            1,
+            33
+          ],
+          [
+            1,
+            189
+          ],
+          [
+            1,
+            88
+          ],
+          [
+            4,
+            106
+          ],
+          [
+            6,
+            222
+          ],
+          [
+            10,
+            91
+          ],
+          [
+            12,
+            157
+          ]
+        ]
+      },
+      "GolemEvosAttacks": {
+        "evolution_level_and_species": null,
+        "native_level_moves": [
+          [
+            1,
+            33
+          ],
+          [
+            1,
+            189
+          ],
+          [
+            1,
+            88
+          ],
+          [
+            4,
+            106
+          ],
+          [
+            6,
+            222
+          ],
+          [
+            10,
+            91
+          ],
+          [
+            12,
+            157
+          ],
+          [
+            15,
+            89
+          ]
+        ]
+      }
+    },
+    "starting_moves": {
+      "STRIKE": {
+        "native_id": 33,
+        "power": 35,
+        "native_type": 0,
+        "PP": 35
+      },
+      "MUD-SLAP": {
+        "native_id": 189,
+        "power": 20,
+        "native_type": 4,
+        "PP": 10
+      },
+      "ROCK THROW": {
+        "native_id": 88,
+        "power": 50,
+        "native_type": 5,
+        "PP": 15
+      }
+    },
+    "basic_attack_resource_costs": {
+      "shaman": {
+        "MACE_STRIKE_mana_or_rage_cost": 0,
+        "STRIKE_mana_or_rage_cost": 0
+      },
+      "warrior": {
+        "MACE_STRIKE_mana_or_rage_cost": 0,
+        "STRIKE_mana_or_rage_cost": 0
+      },
+      "warlock": {
+        "MACE_STRIKE_mana_or_rage_cost": 0,
+        "STRIKE_mana_or_rage_cost": 0
+      }
+    },
+    "companions_use_native_PP": true,
+    "Lightning_Bolt_script_sha256": "771faa6bb1fc800e75cfdc622ae4d329ec1fe44c5d56ca1b896edb0d848bc18b"
+  },
+  "fresh_capture_native_moves": [
+    33,
+    189,
+    88,
+    0
+  ],
+  "fresh_capture_native_PP": [
+    34,
+    10,
+    14,
+    0
+  ],
+  "fresh_quest_playability": {
+    "first_quest_rock_defeated": true,
+    "actual_capture_rolls": [
+      {
+        "enemy_hp": 15,
+        "enemy_max_hp": 16,
+        "status": 0,
+        "catch_rate": 180,
+        "control_quantity": 1,
+        "party_before": 1,
+        "random_byte": 74,
+        "threshold": 67,
+        "joined": false,
+        "party_after": 1
+      },
+      {
+        "enemy_hp": 15,
+        "enemy_max_hp": 16,
+        "status": 0,
+        "catch_rate": 180,
+        "control_quantity": 1,
+        "party_before": 1,
+        "random_byte": 203,
+        "threshold": 67,
+        "joined": false,
+        "party_after": 1
+      },
+      {
+        "enemy_hp": 15,
+        "enemy_max_hp": 16,
+        "status": 0,
+        "catch_rate": 180,
+        "control_quantity": 1,
+        "party_before": 1,
+        "random_byte": 78,
+        "threshold": 67,
+        "joined": false,
+        "party_after": 1
+      },
+      {
+        "enemy_hp": 15,
+        "enemy_max_hp": 16,
+        "status": 0,
+        "catch_rate": 180,
+        "control_quantity": 1,
+        "party_before": 1,
+        "random_byte": 157,
+        "threshold": 67,
+        "joined": false,
+        "party_after": 1
+      },
+      {
+        "enemy_hp": 15,
+        "enemy_max_hp": 16,
+        "status": 0,
+        "catch_rate": 180,
+        "control_quantity": 1,
+        "party_before": 1,
+        "random_byte": 36,
+        "threshold": 67,
+        "joined": true,
+        "party_after": 2
+      }
+    ],
+    "actual_native_defeat_retries": [
+      {
+        "battle_result": 1,
+        "quest_unchanged": true,
+        "control_stone_preserved": true
+      }
+    ],
+    "no_balance_stat_changes_or_injected_items": true
+  },
+  "earth_attacks": {
+    "status": "PASS",
+    "actual_companion_move_ids": [
+      33,
+      189,
+      88
+    ],
+    "native_PP": [
+      {
+        "move": 33,
+        "before": [
+          35,
+          10,
+          15,
+          0
+        ],
+        "after": [
+          34,
+          10,
+          15,
+          0
+        ],
+        "exact_one_native_PP_spent": true
+      },
+      {
+        "move": 189,
+        "before": [
+          34,
+          10,
+          15,
+          0
+        ],
+        "after": [
+          34,
+          9,
+          15,
+          0
+        ],
+        "exact_one_native_PP_spent": true
+      },
+      {
+        "move": 88,
+        "before": [
+          34,
+          9,
+          15,
+          0
+        ],
+        "after": [
+          34,
+          9,
+          14,
+          0
+        ],
+        "exact_one_native_PP_spent": true
+      }
+    ],
+    "hero_mana_preserved": true,
+    "animations": [
+      {
+        "move": 33,
+        "enemy_caster": true,
+        "caster_species": 95,
+        "script": "BattleAnim_Tackle",
+        "start_frame": 21530,
+        "projectile_positions": [],
+        "peak_hardware_scanline_objects": 6,
+        "peak_hardware_OAM_objects": 22,
+        "native_rock_graphics_seen": false,
+        "native_sand_graphics_seen": false,
+        "end_frame": 21578,
+        "duration_frames": 48,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/enemy_33_1.gif"
+      },
+      {
+        "move": 88,
+        "enemy_caster": true,
+        "caster_species": 95,
+        "script": "BattleAnim_RockThrow",
+        "start_frame": 22331,
+        "projectile_positions": [
+          [
+            114,
+            53
+          ],
+          [
+            112,
+            54
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            108,
+            56
+          ],
+          [
+            106,
+            57
+          ],
+          [
+            104,
+            58
+          ],
+          [
+            102,
+            59
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            98,
+            61
+          ],
+          [
+            96,
+            62
+          ],
+          [
+            94,
+            63
+          ],
+          [
+            92,
+            64
+          ],
+          [
+            90,
+            65
+          ],
+          [
+            88,
+            66
+          ],
+          [
+            86,
+            67
+          ],
+          [
+            84,
+            68
+          ],
+          [
+            82,
+            69
+          ],
+          [
+            80,
+            70
+          ],
+          [
+            78,
+            71
+          ],
+          [
+            76,
+            72
+          ],
+          [
+            74,
+            73
+          ],
+          [
+            72,
+            74
+          ],
+          [
+            70,
+            75
+          ],
+          [
+            68,
+            76
+          ],
+          [
+            66,
+            77
+          ],
+          [
+            64,
+            78
+          ],
+          [
+            62,
+            79
+          ],
+          [
+            60,
+            80
+          ],
+          [
+            58,
+            81
+          ],
+          [
+            56,
+            82
+          ],
+          [
+            54,
+            83
+          ],
+          [
+            52,
+            84
+          ],
+          [
+            50,
+            85
+          ],
+          [
+            48,
+            86
+          ],
+          [
+            46,
+            87
+          ],
+          [
+            44,
+            88
+          ]
+        ],
+        "peak_hardware_scanline_objects": 5,
+        "peak_hardware_OAM_objects": 13,
+        "native_rock_graphics_seen": true,
+        "native_sand_graphics_seen": true,
+        "end_frame": 22409,
+        "duration_frames": 78,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/enemy_88_1.gif"
+      },
+      {
+        "move": 33,
+        "enemy_caster": true,
+        "caster_species": 95,
+        "script": "BattleAnim_Tackle",
+        "start_frame": 24410,
+        "projectile_positions": [],
+        "peak_hardware_scanline_objects": 6,
+        "peak_hardware_OAM_objects": 22,
+        "native_rock_graphics_seen": false,
+        "native_sand_graphics_seen": false,
+        "end_frame": 24458,
+        "duration_frames": 48,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/enemy_33_2.gif"
+      },
+      {
+        "move": 88,
+        "enemy_caster": true,
+        "caster_species": 95,
+        "script": "BattleAnim_RockThrow",
+        "start_frame": 40621,
+        "projectile_positions": [
+          [
+            114,
+            53
+          ],
+          [
+            112,
+            54
+          ],
+          [
+            110,
+            55
+          ],
+          [
+            108,
+            56
+          ],
+          [
+            106,
+            57
+          ],
+          [
+            104,
+            58
+          ],
+          [
+            102,
+            59
+          ],
+          [
+            100,
+            60
+          ],
+          [
+            98,
+            61
+          ],
+          [
+            96,
+            62
+          ],
+          [
+            94,
+            63
+          ],
+          [
+            92,
+            64
+          ],
+          [
+            90,
+            65
+          ],
+          [
+            88,
+            66
+          ],
+          [
+            86,
+            67
+          ],
+          [
+            84,
+            68
+          ],
+          [
+            82,
+            69
+          ],
+          [
+            80,
+            70
+          ],
+          [
+            78,
+            71
+          ],
+          [
+            76,
+            72
+          ],
+          [
+            74,
+            73
+          ],
+          [
+            72,
+            74
+          ],
+          [
+            70,
+            75
+          ],
+          [
+            68,
+            76
+          ],
+          [
+            66,
+            77
+          ],
+          [
+            64,
+            78
+          ],
+          [
+            62,
+            79
+          ],
+          [
+            60,
+            80
+          ],
+          [
+            58,
+            81
+          ],
+          [
+            56,
+            82
+          ],
+          [
+            54,
+            83
+          ],
+          [
+            52,
+            84
+          ],
+          [
+            50,
+            85
+          ],
+          [
+            48,
+            86
+          ],
+          [
+            46,
+            87
+          ],
+          [
+            44,
+            88
+          ]
+        ],
+        "peak_hardware_scanline_objects": 5,
+        "peak_hardware_OAM_objects": 13,
+        "native_rock_graphics_seen": true,
+        "native_sand_graphics_seen": true,
+        "end_frame": 40699,
+        "duration_frames": 78,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/enemy_88_2.gif"
+      },
+      {
+        "move": 33,
+        "enemy_caster": false,
+        "caster_species": 95,
+        "script": "BattleAnim_Tackle",
+        "start_frame": 66538,
+        "projectile_positions": [],
+        "peak_hardware_scanline_objects": 7,
+        "peak_hardware_OAM_objects": 23,
+        "native_rock_graphics_seen": false,
+        "native_sand_graphics_seen": false,
+        "end_frame": 66586,
+        "duration_frames": 48,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_33_1.gif"
+      },
+      {
+        "move": 189,
+        "enemy_caster": false,
+        "caster_species": 95,
+        "script": "BattleAnim_MudSlap",
+        "start_frame": 67554,
+        "projectile_positions": [],
+        "peak_hardware_scanline_objects": 8,
+        "peak_hardware_OAM_objects": 16,
+        "native_rock_graphics_seen": false,
+        "native_sand_graphics_seen": true,
+        "end_frame": 67618,
+        "duration_frames": 64,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_189_1.gif"
+      },
+      {
+        "move": 88,
+        "enemy_caster": false,
+        "caster_species": 95,
+        "script": "BattleAnim_RockThrow",
+        "start_frame": 68649,
+        "projectile_positions": [
+          [
+            66,
+            91
+          ],
+          [
+            68,
+            90
+          ],
+          [
+            70,
+            89
+          ],
+          [
+            72,
+            88
+          ],
+          [
+            74,
+            87
+          ],
+          [
+            76,
+            86
+          ],
+          [
+            78,
+            85
+          ],
+          [
+            80,
+            84
+          ],
+          [
+            82,
+            83
+          ],
+          [
+            84,
+            82
+          ],
+          [
+            86,
+            81
+          ],
+          [
+            88,
+            80
+          ],
+          [
+            90,
+            79
+          ],
+          [
+            92,
+            78
+          ],
+          [
+            94,
+            77
+          ],
+          [
+            96,
+            76
+          ],
+          [
+            98,
+            75
+          ],
+          [
+            100,
+            74
+          ],
+          [
+            102,
+            73
+          ],
+          [
+            104,
+            72
+          ],
+          [
+            106,
+            71
+          ],
+          [
+            108,
+            70
+          ],
+          [
+            110,
+            69
+          ],
+          [
+            112,
+            68
+          ],
+          [
+            114,
+            67
+          ],
+          [
+            116,
+            66
+          ],
+          [
+            118,
+            65
+          ],
+          [
+            120,
+            64
+          ],
+          [
+            122,
+            63
+          ],
+          [
+            124,
+            62
+          ],
+          [
+            126,
+            61
+          ],
+          [
+            128,
+            60
+          ],
+          [
+            130,
+            59
+          ],
+          [
+            132,
+            58
+          ],
+          [
+            134,
+            57
+          ],
+          [
+            136,
+            56
+          ]
+        ],
+        "peak_hardware_scanline_objects": 5,
+        "peak_hardware_OAM_objects": 13,
+        "native_rock_graphics_seen": true,
+        "native_sand_graphics_seen": true,
+        "end_frame": 68728,
+        "duration_frames": 79,
+        "status": "PASS",
+        "evidence": "references/generated/rock_earth_moves_v0216/runtime_3c25adf8/fresh_capture/shaman/animations/player_88_1.gif"
+      }
+    ]
+  },
+  "v0215_private_battery_upgrade": {
+    "status": "PASS",
+    "baseline_rom_sha256": "e6be1f0a31ce390f07d8d3a181248ac7945f2085692a3930bee3d4f54d6b8e5a",
+    "private_battery_bytes": 32768,
+    "before_moves": [
+      1,
+      84,
+      0,
+      0
+    ],
+    "after_moves": [
+      33,
+      189,
+      88,
+      0
+    ],
+    "all_other_party_stats_PP_names_levels_quests_items_money_unchanged": true,
+    "one_time_migration": true
+  }
+}

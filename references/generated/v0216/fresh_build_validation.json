@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "rom_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc",
+  "fresh_source_snapshot": "/tmp/peon-v0216-clean-3c25adf8",
+  "native_build": "python3 tools/build_peon_v0216.py",
+  "no_previous_objects_copied": true,
+  "rom_sym_map_byte_identical": true,
+  "files": {
+    "gbc": {
+      "tested_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc",
+      "fresh_sha256": "3c25adf84a9278c826f3f873560991ee6483d6bc02641782afb1e9f9810aa2dc"
+    },
+    "sym": {
+      "tested_sha256": "aa730c85c7bb94d28d45103bb2fd1428e1a6777f8d61f516f3a12286bc4b2e8a",
+      "fresh_sha256": "aa730c85c7bb94d28d45103bb2fd1428e1a6777f8d61f516f3a12286bc4b2e8a"
+    },
+    "map": {
+      "tested_sha256": "1b14e67eae853ec49b13037ae1a95c797d737d16dbcf974cb19989f9173a0482",
+      "fresh_sha256": "1b14e67eae853ec49b13037ae1a95c797d737d16dbcf974cb19989f9173a0482"
+    }
+  }
+}

@@ -1,0 +1,2339 @@
+{
+  "version": "v0.2.16",
+  "status": "PASS",
+  "operation": "Complete-body native envelope normalization; approved raster detail reimport",
+  "source_hashes": {
+    "gfx/native_actor_restore_v0213/peon/back_frames.bin": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+    "gfx/native_actor_restore_v0213/peon/front_frames.bin": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+    "gfx/shaman_proportions_v0214/back_frames.bin": "679db15f200ac7c70d24f4bc7c6e8cd1755f3f7addd59761570eaedfe93b7502",
+    "gfx/shaman_proportions_v0214/front_frames.bin": "a079325bdcb481ab16d5dc0214fb2a3d8fcd26871003663ad1ee1555f6b55ee7",
+    "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+    "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622"
+  },
+  "original_sources_unchanged": true,
+  "replacement_drawing_generated": false,
+  "native_grid_recovery_claimed": false,
+  "base_shaman": "All authored indexed native poses retained; one shared whole-body transform per view; original colors unchanged",
+  "warrior_warlock": "Original high-resolution approved crops sampled again at maximum native coverage; both existing actor palettes fitted to source colors",
+  "animations": "Base/Shaman retain three authored poses; Warrior/Warlock retain one supplied pose repeated in the three legacy slots",
+  "hardware_contract": {
+    "back": [
+      48,
+      48
+    ],
+    "front": [
+      56,
+      56
+    ],
+    "profile": [
+      56,
+      56
+    ],
+    "back_tiles": 36,
+    "front_tiles": 49,
+    "battle_hud_palettes_unchanged": [
+      2,
+      3,
+      4,
+      7
+    ]
+  },
+  "poses": [
+    {
+      "role": "base",
+      "view": "back",
+      "pose": 0,
+      "source": "gfx/native_actor_restore_v0213/peon/back_frames.bin",
+      "source_sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+      "before_bbox": [
+        1,
+        4,
+        47,
+        48
+      ],
+      "after_bbox": [
+        1,
+        3,
+        48,
+        48
+      ],
+      "shared_pose_crop": [
+        0,
+        1,
+        47,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1303,
+      "before_green_skin_pixels": 311,
+      "after_opaque_pixels": 1377,
+      "after_green_skin_pixels": 332
+    },
+    {
+      "role": "base",
+      "view": "back",
+      "pose": 1,
+      "source": "gfx/native_actor_restore_v0213/peon/back_frames.bin",
+      "source_sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+      "before_bbox": [
+        2,
+        1,
+        45,
+        48
+      ],
+      "after_bbox": [
+        2,
+        0,
+        46,
+        48
+      ],
+      "shared_pose_crop": [
+        0,
+        1,
+        47,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1195,
+      "before_green_skin_pixels": 293,
+      "after_opaque_pixels": 1269,
+      "after_green_skin_pixels": 318
+    },
+    {
+      "role": "base",
+      "view": "back",
+      "pose": 2,
+      "source": "gfx/native_actor_restore_v0213/peon/back_frames.bin",
+      "source_sha256": "f63530fec765b2cdf54d7fb3d0c86073cc6c1c4d9154385826214f8c942beb7b",
+      "before_bbox": [
+        0,
+        4,
+        45,
+        48
+      ],
+      "after_bbox": [
+        0,
+        3,
+        46,
+        48
+      ],
+      "shared_pose_crop": [
+        0,
+        1,
+        47,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          47,
+          47
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1151,
+      "before_green_skin_pixels": 281,
+      "after_opaque_pixels": 1225,
+      "after_green_skin_pixels": 297
+    },
+    {
+      "role": "base",
+      "view": "front",
+      "pose": 0,
+      "source": "gfx/native_actor_restore_v0213/peon/front_frames.bin",
+      "source_sha256": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+      "before_bbox": [
+        1,
+        7,
+        55,
+        56
+      ],
+      "after_bbox": [
+        0,
+        6,
+        55,
+        56
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          55
+        ],
+        "sampled_dimensions": [
+          55,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1676,
+      "before_green_skin_pixels": 380,
+      "after_opaque_pixels": 1764,
+      "after_green_skin_pixels": 403
+    },
+    {
+      "role": "base",
+      "view": "front",
+      "pose": 1,
+      "source": "gfx/native_actor_restore_v0213/peon/front_frames.bin",
+      "source_sha256": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+      "before_bbox": [
+        1,
+        6,
+        55,
+        55
+      ],
+      "after_bbox": [
+        0,
+        5,
+        55,
+        55
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          55
+        ],
+        "sampled_dimensions": [
+          55,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1676,
+      "before_green_skin_pixels": 380,
+      "after_opaque_pixels": 1764,
+      "after_green_skin_pixels": 402
+    },
+    {
+      "role": "base",
+      "view": "front",
+      "pose": 2,
+      "source": "gfx/native_actor_restore_v0213/peon/front_frames.bin",
+      "source_sha256": "e3a144c2f8288a8dcb2c1d0b4cb283e8936b374a1978f34752efdec22d6b1ae7",
+      "before_bbox": [
+        6,
+        1,
+        50,
+        56
+      ],
+      "after_bbox": [
+        5,
+        0,
+        50,
+        56
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          55
+        ],
+        "sampled_dimensions": [
+          55,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1189,
+      "before_green_skin_pixels": 314,
+      "after_opaque_pixels": 1254,
+      "after_green_skin_pixels": 335
+    },
+    {
+      "role": "shaman",
+      "view": "back",
+      "pose": 0,
+      "source": "gfx/shaman_proportions_v0214/back_frames.bin",
+      "source_sha256": "679db15f200ac7c70d24f4bc7c6e8cd1755f3f7addd59761570eaedfe93b7502",
+      "before_bbox": [
+        3,
+        6,
+        45,
+        44
+      ],
+      "after_bbox": [
+        1,
+        6,
+        48,
+        48
+      ],
+      "shared_pose_crop": [
+        2,
+        1,
+        45,
+        44
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          43,
+          43
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 982,
+      "before_green_skin_pixels": 193,
+      "after_opaque_pixels": 1213,
+      "after_green_skin_pixels": 238
+    },
+    {
+      "role": "shaman",
+      "view": "back",
+      "pose": 1,
+      "source": "gfx/shaman_proportions_v0214/back_frames.bin",
+      "source_sha256": "679db15f200ac7c70d24f4bc7c6e8cd1755f3f7addd59761570eaedfe93b7502",
+      "before_bbox": [
+        4,
+        1,
+        43,
+        44
+      ],
+      "after_bbox": [
+        2,
+        0,
+        46,
+        48
+      ],
+      "shared_pose_crop": [
+        2,
+        1,
+        45,
+        44
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          43,
+          43
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 893,
+      "before_green_skin_pixels": 185,
+      "after_opaque_pixels": 1104,
+      "after_green_skin_pixels": 230
+    },
+    {
+      "role": "shaman",
+      "view": "back",
+      "pose": 2,
+      "source": "gfx/shaman_proportions_v0214/back_frames.bin",
+      "source_sha256": "679db15f200ac7c70d24f4bc7c6e8cd1755f3f7addd59761570eaedfe93b7502",
+      "before_bbox": [
+        2,
+        6,
+        43,
+        44
+      ],
+      "after_bbox": [
+        0,
+        6,
+        46,
+        48
+      ],
+      "shared_pose_crop": [
+        2,
+        1,
+        45,
+        44
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          43,
+          43
+        ],
+        "sampled_dimensions": [
+          48,
+          48
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 854,
+      "before_green_skin_pixels": 172,
+      "after_opaque_pixels": 1058,
+      "after_green_skin_pixels": 203
+    },
+    {
+      "role": "shaman",
+      "view": "front",
+      "pose": 0,
+      "source": "gfx/shaman_proportions_v0214/front_frames.bin",
+      "source_sha256": "a079325bdcb481ab16d5dc0214fb2a3d8fcd26871003663ad1ee1555f6b55ee7",
+      "before_bbox": [
+        1,
+        6,
+        55,
+        50
+      ],
+      "after_bbox": [
+        0,
+        10,
+        56,
+        56
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        50
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          49
+        ],
+        "sampled_dimensions": [
+          56,
+          51
+        ],
+        "offset": [
+          0,
+          5
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1419,
+      "before_green_skin_pixels": 241,
+      "after_opaque_pixels": 1551,
+      "after_green_skin_pixels": 264
+    },
+    {
+      "role": "shaman",
+      "view": "front",
+      "pose": 1,
+      "source": "gfx/shaman_proportions_v0214/front_frames.bin",
+      "source_sha256": "a079325bdcb481ab16d5dc0214fb2a3d8fcd26871003663ad1ee1555f6b55ee7",
+      "before_bbox": [
+        1,
+        5,
+        55,
+        49
+      ],
+      "after_bbox": [
+        0,
+        9,
+        56,
+        55
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        50
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          49
+        ],
+        "sampled_dimensions": [
+          56,
+          51
+        ],
+        "offset": [
+          0,
+          5
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 1419,
+      "before_green_skin_pixels": 241,
+      "after_opaque_pixels": 1558,
+      "after_green_skin_pixels": 256
+    },
+    {
+      "role": "shaman",
+      "view": "front",
+      "pose": 2,
+      "source": "gfx/shaman_proportions_v0214/front_frames.bin",
+      "source_sha256": "a079325bdcb481ab16d5dc0214fb2a3d8fcd26871003663ad1ee1555f6b55ee7",
+      "before_bbox": [
+        8,
+        1,
+        48,
+        50
+      ],
+      "after_bbox": [
+        7,
+        5,
+        49,
+        56
+      ],
+      "shared_pose_crop": [
+        1,
+        1,
+        55,
+        50
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          54,
+          49
+        ],
+        "sampled_dimensions": [
+          56,
+          51
+        ],
+        "offset": [
+          0,
+          5
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "head_body_ratio_preserved": true,
+      "new_drawing_detail": false,
+      "before_opaque_pixels": 959,
+      "before_green_skin_pixels": 253,
+      "after_opaque_pixels": 1041,
+      "after_green_skin_pixels": 269
+    },
+    {
+      "role": "warrior",
+      "view": "back",
+      "pose": 0,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        845,
+        396,
+        1493,
+        956
+      ],
+      "before_bbox": [
+        1,
+        4,
+        47,
+        44
+      ],
+      "after_bbox": [
+        0,
+        7,
+        48,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          648,
+          560
+        ],
+        "sampled_dimensions": [
+          48,
+          41
+        ],
+        "offset": [
+          0,
+          7
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 969,
+      "before_green_skin_pixels": 201,
+      "after_opaque_pixels": 1035,
+      "after_green_skin_pixels": 287
+    },
+    {
+      "role": "warrior",
+      "view": "back",
+      "pose": 1,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        845,
+        396,
+        1493,
+        956
+      ],
+      "before_bbox": [
+        1,
+        4,
+        47,
+        44
+      ],
+      "after_bbox": [
+        0,
+        7,
+        48,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          648,
+          560
+        ],
+        "sampled_dimensions": [
+          48,
+          41
+        ],
+        "offset": [
+          0,
+          7
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 969,
+      "before_green_skin_pixels": 201,
+      "after_opaque_pixels": 1035,
+      "after_green_skin_pixels": 287
+    },
+    {
+      "role": "warrior",
+      "view": "back",
+      "pose": 2,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        845,
+        396,
+        1493,
+        956
+      ],
+      "before_bbox": [
+        1,
+        4,
+        47,
+        44
+      ],
+      "after_bbox": [
+        0,
+        7,
+        48,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          648,
+          560
+        ],
+        "sampled_dimensions": [
+          48,
+          41
+        ],
+        "offset": [
+          0,
+          7
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 969,
+      "before_green_skin_pixels": 201,
+      "after_opaque_pixels": 1035,
+      "after_green_skin_pixels": 287
+    },
+    {
+      "role": "warrior",
+      "view": "front",
+      "pose": 0,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        45,
+        376,
+        735,
+        956
+      ],
+      "before_bbox": [
+        1,
+        5,
+        55,
+        50
+      ],
+      "after_bbox": [
+        0,
+        9,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          690,
+          580
+        ],
+        "sampled_dimensions": [
+          56,
+          47
+        ],
+        "offset": [
+          0,
+          9
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1261,
+      "before_green_skin_pixels": 442,
+      "after_opaque_pixels": 1380,
+      "after_green_skin_pixels": 374
+    },
+    {
+      "role": "warrior",
+      "view": "front",
+      "pose": 1,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        45,
+        376,
+        735,
+        956
+      ],
+      "before_bbox": [
+        1,
+        5,
+        55,
+        50
+      ],
+      "after_bbox": [
+        0,
+        9,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          690,
+          580
+        ],
+        "sampled_dimensions": [
+          56,
+          47
+        ],
+        "offset": [
+          0,
+          9
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1261,
+      "before_green_skin_pixels": 442,
+      "after_opaque_pixels": 1380,
+      "after_green_skin_pixels": 374
+    },
+    {
+      "role": "warrior",
+      "view": "front",
+      "pose": 2,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png",
+      "source_sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "source_crop_bounds_exclusive": [
+        45,
+        376,
+        735,
+        956
+      ],
+      "before_bbox": [
+        1,
+        5,
+        55,
+        50
+      ],
+      "after_bbox": [
+        0,
+        9,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          690,
+          580
+        ],
+        "sampled_dimensions": [
+          56,
+          47
+        ],
+        "offset": [
+          0,
+          9
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1261,
+      "before_green_skin_pixels": 442,
+      "after_opaque_pixels": 1380,
+      "after_green_skin_pixels": 374
+    },
+    {
+      "role": "warlock",
+      "view": "back",
+      "pose": 0,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        875,
+        400,
+        1413,
+        969
+      ],
+      "before_bbox": [
+        2,
+        1,
+        45,
+        47
+      ],
+      "after_bbox": [
+        1,
+        0,
+        46,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          538,
+          569
+        ],
+        "sampled_dimensions": [
+          45,
+          48
+        ],
+        "offset": [
+          1,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1171,
+      "before_green_skin_pixels": 0,
+      "after_opaque_pixels": 1282,
+      "after_green_skin_pixels": 146
+    },
+    {
+      "role": "warlock",
+      "view": "back",
+      "pose": 1,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        875,
+        400,
+        1413,
+        969
+      ],
+      "before_bbox": [
+        2,
+        1,
+        45,
+        47
+      ],
+      "after_bbox": [
+        1,
+        0,
+        46,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          538,
+          569
+        ],
+        "sampled_dimensions": [
+          45,
+          48
+        ],
+        "offset": [
+          1,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1171,
+      "before_green_skin_pixels": 0,
+      "after_opaque_pixels": 1282,
+      "after_green_skin_pixels": 146
+    },
+    {
+      "role": "warlock",
+      "view": "back",
+      "pose": 2,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        875,
+        400,
+        1413,
+        969
+      ],
+      "before_bbox": [
+        2,
+        1,
+        45,
+        47
+      ],
+      "after_bbox": [
+        1,
+        0,
+        46,
+        48
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          538,
+          569
+        ],
+        "sampled_dimensions": [
+          45,
+          48
+        ],
+        "offset": [
+          1,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1171,
+      "before_green_skin_pixels": 0,
+      "after_opaque_pixels": 1282,
+      "after_green_skin_pixels": 146
+    },
+    {
+      "role": "warlock",
+      "view": "front",
+      "pose": 0,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        157,
+        379,
+        746,
+        969
+      ],
+      "before_bbox": [
+        1,
+        1,
+        55,
+        55
+      ],
+      "after_bbox": [
+        0,
+        0,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          589,
+          590
+        ],
+        "sampled_dimensions": [
+          56,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1776,
+      "before_green_skin_pixels": 320,
+      "after_opaque_pixels": 1905,
+      "after_green_skin_pixels": 351
+    },
+    {
+      "role": "warlock",
+      "view": "front",
+      "pose": 1,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        157,
+        379,
+        746,
+        969
+      ],
+      "before_bbox": [
+        1,
+        1,
+        55,
+        55
+      ],
+      "after_bbox": [
+        0,
+        0,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          589,
+          590
+        ],
+        "sampled_dimensions": [
+          56,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1776,
+      "before_green_skin_pixels": 320,
+      "after_opaque_pixels": 1905,
+      "after_green_skin_pixels": 351
+    },
+    {
+      "role": "warlock",
+      "view": "front",
+      "pose": 2,
+      "source": "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png",
+      "source_sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "source_crop_bounds_exclusive": [
+        157,
+        379,
+        746,
+        969
+      ],
+      "before_bbox": [
+        1,
+        1,
+        55,
+        55
+      ],
+      "after_bbox": [
+        0,
+        0,
+        56,
+        56
+      ],
+      "transform": {
+        "source_rect": [
+          0,
+          0,
+          589,
+          590
+        ],
+        "sampled_dimensions": [
+          56,
+          56
+        ],
+        "offset": [
+          0,
+          0
+        ],
+        "resampling": "nearest; complete source rectangle; no filtering"
+      },
+      "alpha_threshold": 128,
+      "source_native_pixel_grid_recovered": false,
+      "source_color_detail_requantized": true,
+      "new_drawing_detail": false,
+      "unique_authored_source_poses": 1,
+      "before_opaque_pixels": 1776,
+      "before_green_skin_pixels": 320,
+      "after_opaque_pixels": 1905,
+      "after_green_skin_pixels": 351
+    }
+  ],
+  "packets": [
+    {
+      "role": "base",
+      "view": "back",
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 576,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/base/back/frames.bin": "9a50125bd782e6a5d0e0b784fe8f0aae6d1dab8a7b3845f02c6af1aaea01d43b",
+        "gfx/combat_heroes_v0216/base/back/attrs.bin": "6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e",
+        "gfx/combat_heroes_v0216/base/back/palettes.bin": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+        "gfx/combat_heroes_v0216/base/back/pose_0.png": "4ce91b8aac98c65d397c7d96a99bde1b81b8bca1b27cd2580db59e69a82df5a4",
+        "gfx/combat_heroes_v0216/base/back/pose_1.png": "6a3185247ba0c3bf613217dbd7a85a67c6028aba38015d9a250840e3c055e099",
+        "gfx/combat_heroes_v0216/base/back/pose_2.png": "43a4817ea42259ae7341cb048805482cf3747919d9c4467cb5e7e32248c0bf12"
+      }
+    },
+    {
+      "role": "base",
+      "view": "front",
+      "slots": [
+        1,
+        5
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/base/front/frames.bin": "789eeabdf2ec98afbe8a4e36b781507d1e270696bcfac5c87d9dcc4a9dcf33df",
+        "gfx/combat_heroes_v0216/base/front/attrs.bin": "33f79c2780a826c3dc60819334e55ea72874bb167b111b8607fd70e876f42e0f",
+        "gfx/combat_heroes_v0216/base/front/palettes.bin": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+        "gfx/combat_heroes_v0216/base/front/pose_0.png": "90a5e4cee8f75ff9b560a1b559acaa96fe2ff71ce2f6e38dbabbc821fc3ac60c",
+        "gfx/combat_heroes_v0216/base/front/pose_1.png": "27080ed290a195f7aa6c16cdbf325278c9b7c83d1dba16d5b4e814d463d1606f",
+        "gfx/combat_heroes_v0216/base/front/pose_2.png": "60e5ff9aa52b7e48e8d2d65e258ffe02ce4a7945028d387f1f0d65f9ceecf039"
+      }
+    },
+    {
+      "role": "base",
+      "view": "profile",
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "row-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/base/profile/frames.bin": "879ab87951395897caa0239ba53e9a4bc0d5324cf7ca484008eed4886c5b44be",
+        "gfx/combat_heroes_v0216/base/profile/attrs.bin": "e3a3e78980ab3eff882f95f96a27b2e3f3c08a5628acb136d6b5fdf999f78e0b",
+        "gfx/combat_heroes_v0216/base/profile/palettes.bin": "80bc1184e9951c3d32be1e077131cc467b7883e7fc89377a2e36cb3a422ae85f",
+        "gfx/combat_heroes_v0216/base/profile/pose_0.png": "2b604dbdf62a6fe0c3b5d088a85b977bbc23a5ed3615da4d5571105c9c8e56ee",
+        "gfx/combat_heroes_v0216/base/profile/pose_1.png": "27e1b36cf43ce073eb54235b37c73dee3d8aead55c84ed761b37734a4608c3da",
+        "gfx/combat_heroes_v0216/base/profile/pose_2.png": "6079b34a60ec31d69251eb1ab1609ea92ceaf307b95c702e775507b5ac9c374f"
+      }
+    },
+    {
+      "role": "shaman",
+      "view": "back",
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 576,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/shaman/back/frames.bin": "32af560cc69b0d2969f38f970c9a3fe509ac7eb2c12556aa7892d10a3912bd28",
+        "gfx/combat_heroes_v0216/shaman/back/attrs.bin": "6db65fd59fd356f6729140571b5bcd6bb3b83492a16e1bf0a3884442fc3c8a0e",
+        "gfx/combat_heroes_v0216/shaman/back/palettes.bin": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+        "gfx/combat_heroes_v0216/shaman/back/pose_0.png": "4468a706910f274b59a06271ea9c3c35c5908f1ae90991127efd5cf2a2f59231",
+        "gfx/combat_heroes_v0216/shaman/back/pose_1.png": "7a801962412be10a584474933261ee1fd498733c60ebe88460804f4681b9829c",
+        "gfx/combat_heroes_v0216/shaman/back/pose_2.png": "d5d488bcec6569703602407390769f0b33df22041b235a1bd817f0b02f301cf9"
+      }
+    },
+    {
+      "role": "shaman",
+      "view": "front",
+      "slots": [
+        1,
+        5
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/shaman/front/frames.bin": "f00397020d526d8a1c212b41ca3d42f4ad571b9c41c8be3534b3fd92cd17560a",
+        "gfx/combat_heroes_v0216/shaman/front/attrs.bin": "33f79c2780a826c3dc60819334e55ea72874bb167b111b8607fd70e876f42e0f",
+        "gfx/combat_heroes_v0216/shaman/front/palettes.bin": "393bce9f7073e491297f6a0d2e9c143e58bcb93df4ea184f983cb2aa549bb394",
+        "gfx/combat_heroes_v0216/shaman/front/pose_0.png": "3940d58efd36306a58663d4d830a7f17c7403d894876f016941684e162967aff",
+        "gfx/combat_heroes_v0216/shaman/front/pose_1.png": "cda39a240bd682177237c3b21df5f8710510a04cf1378af4b6256dd49da3fbf9",
+        "gfx/combat_heroes_v0216/shaman/front/pose_2.png": "95fe69a1bc2ae61c79234b51a3f42724e4e2d5e04489f11d95e3b8569d8eea23"
+      }
+    },
+    {
+      "role": "shaman",
+      "view": "profile",
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            15,
+            22,
+            8
+          ],
+          [
+            18,
+            11,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "row-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 3,
+      "outputs": {
+        "gfx/combat_heroes_v0216/shaman/profile/frames.bin": "8c35b5c85a8a06b299a412b2062a0f67083dbd2bee08ed6e5514d71f32ac0c4f",
+        "gfx/combat_heroes_v0216/shaman/profile/attrs.bin": "e3a3e78980ab3eff882f95f96a27b2e3f3c08a5628acb136d6b5fdf999f78e0b",
+        "gfx/combat_heroes_v0216/shaman/profile/palettes.bin": "80bc1184e9951c3d32be1e077131cc467b7883e7fc89377a2e36cb3a422ae85f",
+        "gfx/combat_heroes_v0216/shaman/profile/pose_0.png": "6e5f0b96c2203465cb47e98d193cdc3f02bf165c984c2845d75305a015ba91ff",
+        "gfx/combat_heroes_v0216/shaman/profile/pose_1.png": "b5c6f755d3bf326f5e3d879e1a84908de709efbf2d9215534fa088992490828b",
+        "gfx/combat_heroes_v0216/shaman/profile/pose_2.png": "bcff09709d30fec0f091cf3ff90d40064fb6ed1d6ebc344111e979047066fbc8"
+      }
+    },
+    {
+      "role": "warrior",
+      "view": "back",
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            15,
+            20,
+            9
+          ],
+          [
+            15,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            7,
+            14,
+            6
+          ],
+          [
+            25,
+            24,
+            25
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 576,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 5,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warrior/back/frames.bin": "8c47c9e7642b88e04095f91227b7a4024e8ce4bef596273bbf52160cfd021306",
+        "gfx/combat_heroes_v0216/warrior/back/attrs.bin": "63863b1ec8bc722ccfb1c2d3d6bf7eab8efeda2e33e9438f0fb35036c5d8594d",
+        "gfx/combat_heroes_v0216/warrior/back/palettes.bin": "c92401bc42677f68af79cbfbcdfd8dfe5784aca68316a792318309641a6a1021",
+        "gfx/combat_heroes_v0216/warrior/back/pose_0.png": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9",
+        "gfx/combat_heroes_v0216/warrior/back/pose_1.png": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9",
+        "gfx/combat_heroes_v0216/warrior/back/pose_2.png": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9"
+      }
+    },
+    {
+      "role": "warrior",
+      "view": "front",
+      "slots": [
+        1,
+        5
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            16,
+            21,
+            9
+          ],
+          [
+            15,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            8,
+            14,
+            6
+          ],
+          [
+            25,
+            24,
+            25
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 5,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warrior/front/frames.bin": "f9ac747aa985c4bc7edac89140822a477ea44b7f12c89423c59df79295b4f143",
+        "gfx/combat_heroes_v0216/warrior/front/attrs.bin": "9f0db52361a5cf05c639adfcf8688eae893a53003ab6a81ec1e97cbc50565bb1",
+        "gfx/combat_heroes_v0216/warrior/front/palettes.bin": "38d407e906ce165bdbc894018ebff1661fff27ae371d3580aaf12dcd9a0cd73e",
+        "gfx/combat_heroes_v0216/warrior/front/pose_0.png": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a",
+        "gfx/combat_heroes_v0216/warrior/front/pose_1.png": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a",
+        "gfx/combat_heroes_v0216/warrior/front/pose_2.png": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a"
+      }
+    },
+    {
+      "role": "warrior",
+      "view": "profile",
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            16,
+            21,
+            9
+          ],
+          [
+            15,
+            8,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            8,
+            14,
+            6
+          ],
+          [
+            25,
+            24,
+            25
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            9,
+            15,
+            7
+          ],
+          [
+            13,
+            7,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            30,
+            30,
+            30
+          ],
+          [
+            14,
+            13,
+            14
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "row-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 9,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warrior/profile/frames.bin": "6094981ad0428161f43eca37bb51a8ddcbd7631ddaa0608a703d49144faab61a",
+        "gfx/combat_heroes_v0216/warrior/profile/attrs.bin": "0aa028c081e547cacd6d81844be74e9102a586ce569b8056ea63dc50721e831c",
+        "gfx/combat_heroes_v0216/warrior/profile/palettes.bin": "c09500b240b7a1adc40cda8ab8d47ae1887b2514fa5debf1d8f2f31a739ca7a1",
+        "gfx/combat_heroes_v0216/warrior/profile/pose_0.png": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39",
+        "gfx/combat_heroes_v0216/warrior/profile/pose_1.png": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39",
+        "gfx/combat_heroes_v0216/warrior/profile/pose_2.png": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39"
+      }
+    },
+    {
+      "role": "warlock",
+      "view": "back",
+      "slots": [
+        0,
+        6
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            18,
+            10,
+            15
+          ],
+          [
+            15,
+            20,
+            8
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            10,
+            5,
+            9
+          ],
+          [
+            15,
+            9,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        48,
+        48
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 576,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 5,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warlock/back/frames.bin": "37ff43d0ab929c3c97d12e83b1412543b880cc00cafd791671417cf32986ad67",
+        "gfx/combat_heroes_v0216/warlock/back/attrs.bin": "f84af09762be3a43587d0c94b2203e3a59b896c7410696f6c951bd14c524f60a",
+        "gfx/combat_heroes_v0216/warlock/back/palettes.bin": "f9ba3f13722cd96182e2f57253cb7a39c57761da1c9b45973677d67434f10958",
+        "gfx/combat_heroes_v0216/warlock/back/pose_0.png": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192",
+        "gfx/combat_heroes_v0216/warlock/back/pose_1.png": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192",
+        "gfx/combat_heroes_v0216/warlock/back/pose_2.png": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192"
+      }
+    },
+    {
+      "role": "warlock",
+      "view": "front",
+      "slots": [
+        1,
+        5
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            17,
+            9,
+            14
+          ],
+          [
+            15,
+            20,
+            8
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            10,
+            5,
+            9
+          ],
+          [
+            15,
+            9,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "column-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 5,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warlock/front/frames.bin": "26e496b575d3a9b2f9d520f9067aca46807977b50cd4c2ca7ee60de6eb26265e",
+        "gfx/combat_heroes_v0216/warlock/front/attrs.bin": "abcd9ad041ffd3ba4a2fb7eb29ff80d132343a48d23afb709c7d6310b727602e",
+        "gfx/combat_heroes_v0216/warlock/front/palettes.bin": "36670672b2e5b5e2e59cfe516d21d20b91f70e43c52935cc5a5b97d901f11c3c",
+        "gfx/combat_heroes_v0216/warlock/front/pose_0.png": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2",
+        "gfx/combat_heroes_v0216/warlock/front/pose_1.png": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2",
+        "gfx/combat_heroes_v0216/warlock/front/pose_2.png": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2"
+      }
+    },
+    {
+      "role": "warlock",
+      "view": "profile",
+      "slots": [
+        2,
+        4,
+        6,
+        7
+      ],
+      "palettes_rgb555": [
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            17,
+            9,
+            14
+          ],
+          [
+            15,
+            20,
+            8
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            10,
+            5,
+            9
+          ],
+          [
+            15,
+            9,
+            3
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            9,
+            5,
+            2
+          ],
+          [
+            8,
+            13,
+            6
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            31,
+            29,
+            23
+          ],
+          [
+            9,
+            5,
+            2
+          ],
+          [
+            15,
+            8,
+            12
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "palette_zero_opaque": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "native_size": [
+        56,
+        56
+      ],
+      "frames": 3,
+      "tile_order": "row-major",
+      "attr_order": "row-major; shared across all three poses",
+      "bytes_per_frame": 784,
+      "alpha_preserved": true,
+      "hardware_opaque_colors": 8,
+      "outputs": {
+        "gfx/combat_heroes_v0216/warlock/profile/frames.bin": "bca6ca8086f6896000c3ac15cc521211c8a07aaad4402e26c2b0d771e349dd9c",
+        "gfx/combat_heroes_v0216/warlock/profile/attrs.bin": "84fb2ce58480d4fa1e05b73c9f59cf64f58b5d065424d0e7008b9980619728db",
+        "gfx/combat_heroes_v0216/warlock/profile/palettes.bin": "41876e4ffbbbd07a7f42e76b4c9816532aa62890dbe21eab7b6cb62cf93cdb63",
+        "gfx/combat_heroes_v0216/warlock/profile/pose_0.png": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30",
+        "gfx/combat_heroes_v0216/warlock/profile/pose_1.png": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30",
+        "gfx/combat_heroes_v0216/warlock/profile/pose_2.png": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30"
+      }
+    }
+  ],
+  "runtime_tested": false,
+  "static_gallery": "references/generated/combat_heroes_v0216/static_before_after.png"
+}

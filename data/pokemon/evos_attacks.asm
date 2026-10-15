@@ -931,23 +931,23 @@ GeodudeEvosAttacks:
 GravelerEvosAttacks:
 	db EVOLVE_LEVEL, 12, GOLEM
 	db 0
-	db 1, POUND
-	db 1, THUNDERSHOCK
-	db 4, ROCK_THROW
-	db 6, HARDEN
-	db 8, THUNDERPUNCH
-	db 10, HEADBUTT
+	db 1, TACKLE ; STRIKE: a rock has no class weapon
+	db 1, MUD_SLAP
+	db 1, ROCK_THROW
+	db 4, HARDEN
+	db 6, MAGNITUDE
+	db 10, DIG
 	db 12, ROCK_SLIDE
 	db 0
 
 GolemEvosAttacks:
 	db 0 ; final telluric rock stage
-	db 1, POUND
-	db 1, THUNDERSHOCK
-	db 4, ROCK_THROW
-	db 6, HARDEN
-	db 8, THUNDERPUNCH
-	db 10, HEADBUTT
+	db 1, TACKLE
+	db 1, MUD_SLAP
+	db 1, ROCK_THROW
+	db 4, HARDEN
+	db 6, MAGNITUDE
+	db 10, DIG
 	db 12, ROCK_SLIDE
 	db 15, EARTHQUAKE
 	db 0
@@ -1179,11 +1179,11 @@ GengarEvosAttacks:
 OnixEvosAttacks:
 	db EVOLVE_LEVEL, 8, GRAVELER
 	db 0
-	db 1, POUND
-	db 1, THUNDERSHOCK
-	db 4, ROCK_THROW
-	db 6, HARDEN
-	db 8, THUNDERPUNCH
+	db 1, TACKLE
+	db 1, MUD_SLAP
+	db 1, ROCK_THROW
+	db 4, HARDEN
+	db 6, MAGNITUDE
 	db 0 ; native four-move replacement and PP
 
 DrowzeeEvosAttacks:
