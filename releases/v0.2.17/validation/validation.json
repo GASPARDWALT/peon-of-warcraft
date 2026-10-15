@@ -1,0 +1,181 @@
+{
+  "version": "v0.2.17",
+  "status": "PASS",
+  "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+  "sym_sha256": "ae7899a7dac54e02b5e11e3d203623181c5d9bcf4447178030866f524e366c55",
+  "map_sha256": "b2eb9d0d577b47bc257d65656ba835ea4608a9d143afbf2e84030a0325a30c89",
+  "tests": {
+    "world_directions_OAM_LCD_3classes": {
+      "status": "PASS",
+      "report": "references/generated/world_redraw_v0217/runtime_aae1404f/validation.json",
+      "report_sha256": "9ee68df0735ad52208873acaf842861b80192e6141c49e0b6c646053480dec38"
+    },
+    "merchants_4views_purchases_and_cold_continue": {
+      "status": "PASS",
+      "report": "references/generated/world_redraw_v0217/merchants_aae1404f/validation.json",
+      "report_sha256": "83c46d664c0b5b9cd2df15c541ffe4e5504459702bd210572c520af9ffcfc950"
+    },
+    "battle_mana_rage_PP_types_and_free_mace": {
+      "status": "PASS",
+      "report": "references/generated/world_redraw_v0217/resources_aae1404f/validation.json",
+      "report_sha256": "aea0f873fa569ca544d717cda9f0bc8b73467b86f9335c08ab2c6e18f94508bf"
+    },
+    "masters_sleeping_quest_and_3class_cold_continue": {
+      "status": "PASS",
+      "report": "references/generated/world_redraw_v0217/lodge_aae1404f/validation.json",
+      "report_sha256": "e37242c8635a346478730aadc86c18794a6e420588fc831e9f2cd4517c3fa607"
+    },
+    "fresh_source_build": {
+      "status": "PASS",
+      "report": "references/generated/v0217/fresh_build_validation.json",
+      "report_sha256": "7acda1352657d5e7d4a916c610f1c6df06670a5a83405212ae0932da47396905"
+    },
+    "protected_combat_maps_earth_lightning_and_header": {
+      "status": "PASS",
+      "report": "references/generated/v0217/preserved_packets_and_header.json",
+      "report_sha256": "6b711af0a6f070b1e47056a76b630044077b5af58003626c33b01c7d56dc450d"
+    },
+    "native_cell_sources_and_deterministic_import": {
+      "status": "PASS",
+      "report": "references/generated/v0217/static_native_art_validation.json",
+      "report_sha256": "0664ab4cb429844b229aa9861d3aca4c9078f998a3be403af7b13ca3d8a5466a"
+    }
+  },
+  "captures": [
+    {
+      "name": "01_shaman_world.png",
+      "path": "references/generated/world_redraw_v0217/runtime_aae1404f/shaman/world_hero_down.png",
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "02_warrior_world.png",
+      "path": "references/generated/world_redraw_v0217/runtime_aae1404f/warrior/world_hero_right.png",
+      "sha256": "e5beda4883d0d90f4cc972f5061e816e48cacced04fc50493a373f12629b39d5",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "03_warlock_world.png",
+      "path": "references/generated/world_redraw_v0217/runtime_aae1404f/warlock/world_hero_down.png",
+      "sha256": "2225788044da2c25e30a02f061004af5ac06106dc76b211be71f372b6b3c1bee",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "04_base_peon_opening.png",
+      "path": "references/generated/world_redraw_v0217/runtime_aae1404f/shaman/base_peon_actual_opening.png",
+      "sha256": "50277cdf82aad9a3adfc006a9a94d0939e5200999d00281775435d9a436e54f6",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "05_merchant_front.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_front_actual_world.png",
+      "sha256": "ca42201134866a09f92dcf8a7c198f021c205846256fedd879a0ee032362026e",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "06_merchant_back.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_back_actual_world.png",
+      "sha256": "fe35e8bc41fcf476bc8c9cd59a80a6347ed8471e09edd2da3fefb58a22d1b769",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "07_merchant_left.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_left_actual_world.png",
+      "sha256": "00546f345de9b06d1624667ebd07dbc94813b0a372e9d594008a079cd0d5b91a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "08_merchant_right.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_right_actual_world.png",
+      "sha256": "db538871092be9c2bf39dbac29d7434034625bbe8b9abcc1ff51584d93385c60",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "09_innkeeper.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/innkeeper_actual_world.png",
+      "sha256": "15a77bfd017305871c80c80cd616e242a85bfb7138786c7028baf0a2e577069d",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "10_purchase.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/water_purchase_world.png",
+      "sha256": "9f27596205d966e4a44fc38772c74a1ff1b7957eee9c5eb603bcdc58965254a0",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "11_cold_continue.png",
+      "path": "references/generated/world_redraw_v0217/merchants_aae1404f/shaman/cold_CONTINUE_TERRA_persisted.png",
+      "sha256": "4210b70cea6646699c106be591263c6af5e549de7e4eec544067cdaab8384f45",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "12_training_lodge_shaman.png",
+      "path": "references/generated/world_redraw_v0217/lodge_aae1404f/shaman/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "2d0d05478ef80717b6a7b4d3cff2a90e1adb2e8cfb5553ca965a7f5664769eea",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "13_training_lodge_warrior.png",
+      "path": "references/generated/world_redraw_v0217/lodge_aae1404f/warrior/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "39af7254c6b6329cb4ee82355a7faed3e5960192229d0b5a93181d59dee96eb8",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "14_training_lodge_warlock.png",
+      "path": "references/generated/world_redraw_v0217/lodge_aae1404f/warlock/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "10391daa114ec3a50a667a17bd9d032573ba4a2386a540f424e79534a8f72093",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "15_sleeping_peon_zone2.png",
+      "path": "references/generated/world_redraw_v0217/lodge_aae1404f/shaman/zone_two_sleeping_peon_wakes.png",
+      "sha256": "c098f2651e5897e7622685bed5e2b59fba8fc0b6debb84b43a9dd6bcea08f439",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "16_mana_world.png",
+      "path": "references/generated/world_redraw_v0217/resources_aae1404f/heroes/shaman/world_initial_live_resource.png",
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "17_mana_battle.png",
+      "path": "references/generated/world_redraw_v0217/resources_aae1404f/heroes/shaman/battle_initial_live_resource.png",
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "18_attack_type_colors.png",
+      "path": "references/generated/world_redraw_v0217/resources_aae1404f/heroes/warlock/selected_shadow_colored_type.png",
+      "sha256": "1830db49a80b508f9768181c5c681b5c0a17b0c0382f1318c4bad7a46643dd89",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    },
+    {
+      "name": "19_free_mace_strike.png",
+      "path": "references/generated/world_redraw_v0217/resources_aae1404f/free_basic/shaman/actual_mace_strike_costs_zero_mana.png",
+      "sha256": "7debef54c0c994846657635368984efdf208fd39997519b494d10c712dd14f14",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17"
+    }
+  ],
+  "physical_console_tested": false,
+  "scope": {
+    "authored_world_roles": 35,
+    "compiled_runtime_families": 30,
+    "preserved_original_PNGs": 499,
+    "cell_resolution": [
+      24,
+      24
+    ],
+    "hardware_limits": {
+      "OAM": 40,
+      "per_scanline": 10
+    },
+    "world_mana_OBJ_palette": 5,
+    "orc_face_OBJ_palette": 6,
+    "optional_HUD_omitted_in_training_lodge": true,
+    "combat_assets_retained": "v0.2.16",
+    "native_movement_and_collision_pixels": 16,
+    "save_format_unchanged": true,
+    "observed_runtime_scope": "Three classes, actual merchant four facings, shared quest actors, masters, sleeper and Imp. Other imported families receive static compiled-packet checks; not every NPC species was encountered in emulator."
+  }
+}

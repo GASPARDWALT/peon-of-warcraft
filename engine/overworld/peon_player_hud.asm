@@ -4,6 +4,8 @@
 ; 16px mana/rage strip sits immediately below; the two scanline bands stay
 ; separate. No actor/body is removed to draw this panel.
 ; Extremely crowded views retain the actors and omit the HUD for that frame.
+; The Den training lodge also omits this optional HUD: its masters require
+; OBJ5, which supplies the normal world's blue mana strip in v0217.
 ; OBJ bank 0 $8600..$876f is below the standard font at $8800 and above every
 ; supported Peon map's secondary standing-sprite allocation (checked by tests).
 
@@ -63,6 +65,21 @@ PeonDrawPlayerHUD::
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jp nz, .done
+	; Preserve the three approved master palettes instead of drawing a
+	; gold-tinted mana strip when their bodies leave enough spare OAM.
+	ld a, [wMapGroup]
+	cp GROUP_PEON_ORC_HUT
+	jr nz, .not_training_lodge
+	ld a, [wMapNumber]
+	cp MAP_PEON_ORC_HUT
+	jr nz, .not_training_lodge
+	ld a, [wBackupMapGroup]
+	cp GROUP_THE_DEN
+	jr nz, .not_training_lodge
+	ld a, [wBackupMapNumber]
+	cp MAP_THE_DEN
+	jp z, .done
+.not_training_lodge:
 	ld a, [wBattleMode]
 	and a
 	jp nz, .done
@@ -104,7 +121,7 @@ PeonDrawPlayerHUD::
 	pop hl
 	jr nc, .health_only
 	ld d, c
-	ld c, 6 ; existing world palette6 color2 = blue/cyan
+	ld c, 5 ; v0217 keeps the old blue/cyan OBJ6 colors in OBJ5
 	ld a, b
 	cp 1 ; Warrior rage is the existing palette0 red strip
 	jr nz, .resource_palette

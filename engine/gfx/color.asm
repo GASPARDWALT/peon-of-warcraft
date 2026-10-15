@@ -1197,7 +1197,7 @@ INCLUDE "data/trainers/palettes.asm"
 LoadMapPals:
 	ld a, [wMapTileset]
 	cp TILESET_PEON
-	jr nz, .crystal
+	jp nz, .crystal
 	ld hl, PeonMapBGPalettes
 	ld a, [wMapNumber]
 	cp MAP_PEON_VALLEY_CROSSROADS
@@ -1248,6 +1248,7 @@ LoadMapPals:
 	call FarCopyWRAM
 	farcall PeonApplyRestoredHeroWorldPaletteV0213
 	farcall PeonApplyWorldImpPaletteV0215
+	farcall PeonApplyReadableWorldPalettesV0217
 	farcall PeonLoadMasterRoomPalettesV0213
 	ret
 .crystal

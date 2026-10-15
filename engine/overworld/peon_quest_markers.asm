@@ -170,22 +170,11 @@ PeonApplyQuestMarkerGrayPalette::
 	ld bc, 2
 	ld a, BANK(wOBPals2)
 	call FarCopyWRAM
-	ld a, [wMapNumber]
-	; Zone 2's old imp actors are masked. Keep canonical troll OBJ6 for
-	; its new earth sage; only the cave approach still needs this red override.
-	cp MAP_PEON_CAVE_APPROACH
-	jr nz, .update
-.imp_palette
-	ld hl, .approach_imp
-	ld de, wOBPals1 palette PAL_OW_TREE
-	ld bc, 1 palettes
-	ld a, BANK(wOBPals1)
-	call FarCopyWRAM
-	ld hl, .approach_imp
-	ld de, wOBPals2 palette PAL_OW_TREE
-	ld bc, 1 palettes
-	ld a, BANK(wOBPals2)
-	call FarCopyWRAM
+	; The new face uses OBJ6 throughout the world, including the cave
+	; approach. Imps have their own OBJ7 and no longer need its red override.
+	; Reassert both buffers after a quest refresh; the active glyph's OBJ5
+	; color1 is now a pale neutral instead of the old exact RGB17 gray.
+	farcall PeonApplyReadableWorldPalettesV0217
 .update:
 	ld a, TRUE
 	ldh [hCGBPalUpdate], a
@@ -197,8 +186,6 @@ PeonApplyQuestMarkerGrayPalette::
 	ret
 .gray:
 	RGB 17, 17, 17
-.approach_imp:
-	RGB 31, 31, 31, 27, 05, 03, 31, 25, 07, 01, 01, 01
 
 ; Called by MAPCALLBACK_SPRITES before graphics are allocated. Variables FD/FE/
 ; FF always resolve to the same four-tile sprite type, so changing a quest state

@@ -25,3 +25,77 @@ PeonApplyWorldImpPaletteV0215::
 	RGB 31, 25, 7
 	RGB 27, 5, 3
 	RGB 2, 1, 1
+
+SECTION "Peon readable world faces v0217", ROMX
+PeonApplyReadableWorldPalettesV0217::
+	; Called only while loading/refreshing the PEON world presentation.
+	; OBJ6 separates ivory tusks from green skin and a dark facial outline.
+	; OBJ5 keeps the old OBJ6 blue/metal colors, including the mana strip.
+	; The Den lodge retains its own master OBJ5; its optional HUD is hidden.
+	; Its OBJ6 remains available for the hero face in every class.
+	push af
+	push bc
+	push de
+	push hl
+	ldh a, [hCGB]
+	and a
+	jr z, .done
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .done
+	ld hl, .FacePalette
+	ld de, wOBPals1 palette 6
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	; Quest markers can refresh the live world without a full map reload.
+	; Keep both native source and uploaded palette buffers consistent.
+	ld hl, .FacePalette
+	ld de, wOBPals2 palette 6
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals2)
+	call FarCopyWRAM
+	ld a, [wMapGroup]
+	cp GROUP_PEON_ORC_HUT
+	jr nz, .blue_metal
+	ld a, [wMapNumber]
+	cp MAP_PEON_ORC_HUT
+	jr nz, .blue_metal
+	ld a, [wBackupMapGroup]
+	cp GROUP_THE_DEN
+	jr nz, .blue_metal
+	ld a, [wBackupMapNumber]
+	cp MAP_THE_DEN
+	jr z, .update
+.blue_metal:
+	ld hl, .BlueMetalPalette
+	ld de, wOBPals1 palette 5
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	ld hl, .BlueMetalPalette
+	ld de, wOBPals2 palette 5
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals2)
+	call FarCopyWRAM
+.update:
+	ld a, TRUE
+	ldh [hCGBPalUpdate], a
+.done:
+	pop hl
+	pop de
+	pop bc
+	pop af
+	ret
+.BlueMetalPalette:
+	; OBJ5: the previous blue/metal OBJ6, unchanged in RGB555.
+	RGB 31, 31, 31
+	RGB 20, 19, 17
+	RGB 12, 17, 19
+	RGB 2, 2, 3
+.FacePalette:
+	; OBJ6: transparent, ivory tusks, green skin, outline.
+	RGB 31, 31, 31
+	RGB 25, 23, 17
+	RGB 15, 22, 8
+	RGB 1, 1, 1

@@ -1,5 +1,15 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.17](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.17/releases/v0.2.17/peon_of_warcraft_v0_2_17.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.17/releases/v0.2.17/peon_of_warcraft_v0_2_17.zip) · [Personnages du monde redessinés](docs/V0217_NATIVE_WORLD_CHARACTERS.md)
+
+Les personnages du monde disposent de dessins natifs **24×24** : visages,
+vêtements et accessoires sont dessinés à cette résolution. Les cinq sources
+d'art sont dans `assets/world_redraw_v0217/` ; les PNG fournis restent intacts.
+Les héros disposent de deux pas dessinés par direction. Build :
+`python3 tools/build_peon_v0217.py`.
+
+## v0.2.16 archive
+
 [ROM v0.2.16](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.16/releases/v0.2.16/peon_of_warcraft_v0_2_16.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.16/releases/v0.2.16/peon_of_warcraft_v0_2_16.zip) · [Détails des modèles et attaques de terre](docs/V0216_WORLD_AND_EARTH_MOVES.md)
 
 Vues world réimportées directement en **24×24**, personnages principaux plus

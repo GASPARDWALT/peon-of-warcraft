@@ -1,0 +1,414 @@
+{
+  "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "emulator_states_loaded": false,
+  "user_battery_records_opened": false,
+  "classes": {
+    "shaman": {
+      "status": "PASS",
+      "passed": true,
+      "scene": {
+        "masters": {
+          "warrior_trainer": {
+            "actor": 3,
+            "sprite": 107,
+            "world_xy": [
+              7,
+              5
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 323
+          },
+          "enemy_warlock": {
+            "actor": 4,
+            "sprite": 108,
+            "world_xy": [
+              3,
+              7
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 267
+          },
+          "shaman_master": {
+            "actor": 2,
+            "sprite": 106,
+            "world_xy": [
+              6,
+              3
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 349
+          }
+        },
+        "native_visible_oam_objects": 36,
+        "maximum_objects_on_one_scanline": 6,
+        "complete_master_tiles_visible": 27,
+        "hero_24px": {
+          "whole_native_frame_exact": true,
+          "complete_oam_cells": 9,
+          "authored_blank_tiles_omitted": 0,
+          "exact_source_mask": 511,
+          "direction": "back",
+          "pose": 0,
+          "actual_lcd_opaque_pixels_exact": 298,
+          "whole_canvas_origin_from_all_nonblank_cells": true,
+          "source_palette_attributes_exact": true,
+          "native_frame_sha256": "bb901eb9d67bdf84a76ae1e421146cab845c6bc2d171e6949432a331a8facfd4",
+          "source": "gfx/world_redraw_v0217/shaman"
+        },
+        "six_cell_hud_omitted_as_whole": true,
+        "completed_native_oam_publication_observed": true
+      },
+      "trainer_interactions": [
+        {
+          "matching_native_trainer_opened": true,
+          "normal_B_exit": true,
+          "real_portrait_actor": 2
+        },
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 3
+        },
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 4
+        }
+      ],
+      "sleeping_worker_zone_two": [
+        20,
+        13
+      ],
+      "native_wake_flag": true,
+      "reward_once_only": 100,
+      "native_party_preserved": true,
+      "cold_continue_in_lodge": {
+        "private_battery_bytes": 32768,
+        "party_names_moves_hp_and_flags_preserved": true,
+        "current_three_master_scene": {
+          "masters": {
+            "shaman_master": {
+              "actor": 2,
+              "sprite": 106,
+              "world_xy": [
+                6,
+                3
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 349
+            },
+            "warrior_trainer": {
+              "actor": 3,
+              "sprite": 107,
+              "world_xy": [
+                7,
+                5
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 323
+            },
+            "enemy_warlock": {
+              "actor": 4,
+              "sprite": 108,
+              "world_xy": [
+                3,
+                7
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 267
+            }
+          },
+          "native_visible_oam_objects": 36,
+          "maximum_objects_on_one_scanline": 6,
+          "complete_master_tiles_visible": 27,
+          "hero_24px": {
+            "whole_native_frame_exact": true,
+            "complete_oam_cells": 9,
+            "authored_blank_tiles_omitted": 0,
+            "exact_source_mask": 511,
+            "direction": "left",
+            "pose": 0,
+            "actual_lcd_opaque_pixels_exact": 245,
+            "whole_canvas_origin_from_all_nonblank_cells": true,
+            "source_palette_attributes_exact": true,
+            "native_frame_sha256": "a996148d4ba45a7a7cb1b967416a4bca399d25b8deb83853671f160bf8b2a82d",
+            "source": "gfx/world_redraw_v0217/shaman"
+          },
+          "six_cell_hud_omitted_as_whole": true,
+          "completed_native_oam_publication_observed": true
+        }
+      }
+    },
+    "warrior": {
+      "status": "PASS",
+      "passed": true,
+      "scene": {
+        "masters": {
+          "warrior_trainer": {
+            "actor": 3,
+            "sprite": 107,
+            "world_xy": [
+              7,
+              5
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 323
+          },
+          "enemy_warlock": {
+            "actor": 4,
+            "sprite": 108,
+            "world_xy": [
+              3,
+              7
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 267
+          },
+          "shaman_master": {
+            "actor": 2,
+            "sprite": 106,
+            "world_xy": [
+              6,
+              3
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 349
+          }
+        },
+        "native_visible_oam_objects": 36,
+        "maximum_objects_on_one_scanline": 6,
+        "complete_master_tiles_visible": 27,
+        "hero_24px": {
+          "whole_native_frame_exact": true,
+          "complete_oam_cells": 9,
+          "authored_blank_tiles_omitted": 0,
+          "exact_source_mask": 511,
+          "direction": "back",
+          "pose": 0,
+          "actual_lcd_opaque_pixels_exact": 294,
+          "whole_canvas_origin_from_all_nonblank_cells": true,
+          "source_palette_attributes_exact": true,
+          "native_frame_sha256": "651498e380b0db3b9593e050483df0cb3577541705ec159821dc6bf57c2470cc",
+          "source": "gfx/world_redraw_v0217/warrior"
+        },
+        "six_cell_hud_omitted_as_whole": true,
+        "completed_native_oam_publication_observed": true
+      },
+      "trainer_interactions": [
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 2
+        },
+        {
+          "matching_native_trainer_opened": true,
+          "normal_B_exit": true,
+          "real_portrait_actor": 3
+        },
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 4
+        }
+      ],
+      "sleeping_worker_zone_two": [
+        20,
+        13
+      ],
+      "native_wake_flag": true,
+      "reward_once_only": 100,
+      "native_party_preserved": true,
+      "cold_continue_in_lodge": {
+        "private_battery_bytes": 32768,
+        "party_names_moves_hp_and_flags_preserved": true,
+        "current_three_master_scene": {
+          "masters": {
+            "shaman_master": {
+              "actor": 2,
+              "sprite": 106,
+              "world_xy": [
+                6,
+                3
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 349
+            },
+            "warrior_trainer": {
+              "actor": 3,
+              "sprite": 107,
+              "world_xy": [
+                7,
+                5
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 323
+            },
+            "enemy_warlock": {
+              "actor": 4,
+              "sprite": 108,
+              "world_xy": [
+                3,
+                7
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 267
+            }
+          },
+          "native_visible_oam_objects": 36,
+          "maximum_objects_on_one_scanline": 6,
+          "complete_master_tiles_visible": 27,
+          "hero_24px": {
+            "whole_native_frame_exact": true,
+            "complete_oam_cells": 9,
+            "authored_blank_tiles_omitted": 0,
+            "exact_source_mask": 511,
+            "direction": "left",
+            "pose": 0,
+            "actual_lcd_opaque_pixels_exact": 243,
+            "whole_canvas_origin_from_all_nonblank_cells": true,
+            "source_palette_attributes_exact": true,
+            "native_frame_sha256": "cdbf0018d37bf51b2a9dbadd6c9e9179475b65fafe7bbc20f9b22cec402e24d4",
+            "source": "gfx/world_redraw_v0217/warrior"
+          },
+          "six_cell_hud_omitted_as_whole": true,
+          "completed_native_oam_publication_observed": true
+        }
+      }
+    },
+    "warlock": {
+      "status": "PASS",
+      "passed": true,
+      "scene": {
+        "masters": {
+          "warrior_trainer": {
+            "actor": 3,
+            "sprite": 107,
+            "world_xy": [
+              7,
+              5
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 323
+          },
+          "enemy_warlock": {
+            "actor": 4,
+            "sprite": 108,
+            "world_xy": [
+              3,
+              7
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 267
+          },
+          "shaman_master": {
+            "actor": 2,
+            "sprite": 106,
+            "world_xy": [
+              6,
+              3
+            ],
+            "native_tile_bytes_exact": true,
+            "actual_native_lcd_opaque_pixels_exact": 349
+          }
+        },
+        "native_visible_oam_objects": 36,
+        "maximum_objects_on_one_scanline": 6,
+        "complete_master_tiles_visible": 27,
+        "hero_24px": {
+          "whole_native_frame_exact": true,
+          "complete_oam_cells": 9,
+          "authored_blank_tiles_omitted": 0,
+          "exact_source_mask": 511,
+          "direction": "back",
+          "pose": 0,
+          "actual_lcd_opaque_pixels_exact": 305,
+          "whole_canvas_origin_from_all_nonblank_cells": true,
+          "source_palette_attributes_exact": true,
+          "native_frame_sha256": "9f6f0acba980bc6da75fe3166e394e68797133bcadcb23fdcdc860f3ccc619f1",
+          "source": "gfx/world_redraw_v0217/warlock"
+        },
+        "six_cell_hud_omitted_as_whole": true,
+        "completed_native_oam_publication_observed": true
+      },
+      "trainer_interactions": [
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 2
+        },
+        {
+          "other_class_refused": true,
+          "real_portrait_actor": 3
+        },
+        {
+          "matching_native_trainer_opened": true,
+          "normal_B_exit": true,
+          "real_portrait_actor": 4
+        }
+      ],
+      "sleeping_worker_zone_two": [
+        20,
+        13
+      ],
+      "native_wake_flag": true,
+      "reward_once_only": 100,
+      "native_party_preserved": true,
+      "cold_continue_in_lodge": {
+        "private_battery_bytes": 32768,
+        "party_names_moves_hp_and_flags_preserved": true,
+        "current_three_master_scene": {
+          "masters": {
+            "shaman_master": {
+              "actor": 2,
+              "sprite": 106,
+              "world_xy": [
+                6,
+                3
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 349
+            },
+            "warrior_trainer": {
+              "actor": 3,
+              "sprite": 107,
+              "world_xy": [
+                7,
+                5
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 323
+            },
+            "enemy_warlock": {
+              "actor": 4,
+              "sprite": 108,
+              "world_xy": [
+                3,
+                7
+              ],
+              "native_tile_bytes_exact": true,
+              "actual_native_lcd_opaque_pixels_exact": 267
+            }
+          },
+          "native_visible_oam_objects": 36,
+          "maximum_objects_on_one_scanline": 6,
+          "complete_master_tiles_visible": 27,
+          "hero_24px": {
+            "whole_native_frame_exact": true,
+            "complete_oam_cells": 9,
+            "authored_blank_tiles_omitted": 0,
+            "exact_source_mask": 511,
+            "direction": "left",
+            "pose": 0,
+            "actual_lcd_opaque_pixels_exact": 256,
+            "whole_canvas_origin_from_all_nonblank_cells": true,
+            "source_palette_attributes_exact": true,
+            "native_frame_sha256": "55af294e67e2eebc70b21879729c5826764857267e9b7fa1a1f73e660d16ab87",
+            "source": "gfx/world_redraw_v0217/warlock"
+          },
+          "six_cell_hud_omitted_as_whole": true,
+          "completed_native_oam_publication_observed": true
+        },
+        "walking_imp_restored_outdoors_after_cold_continue": true
+      }
+    }
+  },
+  "status": "PASS",
+  "passed": true
+}

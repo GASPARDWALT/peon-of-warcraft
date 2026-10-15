@@ -1,0 +1,1402 @@
+{
+  "version": "v0.2.17",
+  "rom": "peon_of_warcraft_v0_2_17.gbc",
+  "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+  "validation_sha256": "3ed09cfc222ee91aa94363ba50ec21c4c6fa07590777c796bc5ff3f23623de54",
+  "physical_modretro_tested": false,
+  "runtime": [
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/runtime_aae1404f/shaman/world_hero_down.png",
+      "path": "runtime/01_shaman_world.png",
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/01_shaman_world_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/runtime_aae1404f/warrior/world_hero_right.png",
+      "path": "runtime/02_warrior_world.png",
+      "sha256": "e5beda4883d0d90f4cc972f5061e816e48cacced04fc50493a373f12629b39d5",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/02_warrior_world_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/runtime_aae1404f/warlock/world_hero_down.png",
+      "path": "runtime/03_warlock_world.png",
+      "sha256": "2225788044da2c25e30a02f061004af5ac06106dc76b211be71f372b6b3c1bee",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/03_warlock_world_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/runtime_aae1404f/shaman/base_peon_actual_opening.png",
+      "path": "runtime/04_base_peon_opening.png",
+      "sha256": "50277cdf82aad9a3adfc006a9a94d0939e5200999d00281775435d9a436e54f6",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/04_base_peon_opening_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_front_actual_world.png",
+      "path": "runtime/05_merchant_front.png",
+      "sha256": "ca42201134866a09f92dcf8a7c198f021c205846256fedd879a0ee032362026e",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/05_merchant_front_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_back_actual_world.png",
+      "path": "runtime/06_merchant_back.png",
+      "sha256": "fe35e8bc41fcf476bc8c9cd59a80a6347ed8471e09edd2da3fefb58a22d1b769",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/06_merchant_back_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_left_actual_world.png",
+      "path": "runtime/07_merchant_left.png",
+      "sha256": "00546f345de9b06d1624667ebd07dbc94813b0a372e9d594008a079cd0d5b91a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/07_merchant_left_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/duokna_right_actual_world.png",
+      "path": "runtime/08_merchant_right.png",
+      "sha256": "db538871092be9c2bf39dbac29d7434034625bbe8b9abcc1ff51584d93385c60",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/08_merchant_right_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/innkeeper_actual_world.png",
+      "path": "runtime/09_innkeeper.png",
+      "sha256": "15a77bfd017305871c80c80cd616e242a85bfb7138786c7028baf0a2e577069d",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/09_innkeeper_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/water_purchase_world.png",
+      "path": "runtime/10_purchase.png",
+      "sha256": "9f27596205d966e4a44fc38772c74a1ff1b7957eee9c5eb603bcdc58965254a0",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/10_purchase_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/merchants_aae1404f/shaman/cold_CONTINUE_TERRA_persisted.png",
+      "path": "runtime/11_cold_continue.png",
+      "sha256": "4210b70cea6646699c106be591263c6af5e549de7e4eec544067cdaab8384f45",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/11_cold_continue_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/lodge_aae1404f/shaman/all_three_complete_large_masters_native_lcd.png",
+      "path": "runtime/12_training_lodge_shaman.png",
+      "sha256": "2d0d05478ef80717b6a7b4d3cff2a90e1adb2e8cfb5553ca965a7f5664769eea",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/12_training_lodge_shaman_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/lodge_aae1404f/warrior/all_three_complete_large_masters_native_lcd.png",
+      "path": "runtime/13_training_lodge_warrior.png",
+      "sha256": "39af7254c6b6329cb4ee82355a7faed3e5960192229d0b5a93181d59dee96eb8",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/13_training_lodge_warrior_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/lodge_aae1404f/warlock/all_three_complete_large_masters_native_lcd.png",
+      "path": "runtime/14_training_lodge_warlock.png",
+      "sha256": "10391daa114ec3a50a667a17bd9d032573ba4a2386a540f424e79534a8f72093",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/14_training_lodge_warlock_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/lodge_aae1404f/shaman/zone_two_sleeping_peon_wakes.png",
+      "path": "runtime/15_sleeping_peon_zone2.png",
+      "sha256": "c098f2651e5897e7622685bed5e2b59fba8fc0b6debb84b43a9dd6bcea08f439",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/15_sleeping_peon_zone2_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/resources_aae1404f/heroes/shaman/world_initial_live_resource.png",
+      "path": "runtime/16_mana_world.png",
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/16_mana_world_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/resources_aae1404f/heroes/shaman/battle_initial_live_resource.png",
+      "path": "runtime/17_mana_battle.png",
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/17_mana_battle_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/resources_aae1404f/heroes/warlock/selected_shadow_colored_type.png",
+      "path": "runtime/18_attack_type_colors.png",
+      "sha256": "1830db49a80b508f9768181c5c681b5c0a17b0c0382f1318c4bad7a46643dd89",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/18_attack_type_colors_4x.png"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217/resources_aae1404f/free_basic/shaman/actual_mace_strike_costs_zero_mana.png",
+      "path": "runtime/19_free_mace_strike.png",
+      "sha256": "7debef54c0c994846657635368984efdf208fd39997519b494d10c712dd14f14",
+      "rom_sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "nearest_4x": "runtime/19_free_mace_strike_4x.png"
+    }
+  ],
+  "runtime_animations": [],
+  "assets": {
+    "world": "assets/world/static_native_exports/",
+    "world_authoring_sources": "assets/world/native_sources/",
+    "combat": "assets/combat/static_imports/",
+    "combat_sampled_sources": "assets/combat/source_native/"
+  },
+  "files": {
+    "README.md": {
+      "sha256": "26486ecdd90250431d340787d82dc47a71643ea71028afcce39ca9a0ca08d17a",
+      "bytes": 2436
+    },
+    "assets/combat/import_report.json": {
+      "sha256": "6928ce5735bb8dd8c21394c8239a19e956b7b5d56098fbe88671beebaa69e5b8",
+      "bytes": 53667
+    },
+    "assets/combat/source_native/base/back/source_native_0.png": {
+      "sha256": "4ce91b8aac98c65d397c7d96a99bde1b81b8bca1b27cd2580db59e69a82df5a4",
+      "bytes": 1001
+    },
+    "assets/combat/source_native/base/back/source_native_1.png": {
+      "sha256": "6a3185247ba0c3bf613217dbd7a85a67c6028aba38015d9a250840e3c055e099",
+      "bytes": 967
+    },
+    "assets/combat/source_native/base/back/source_native_2.png": {
+      "sha256": "43a4817ea42259ae7341cb048805482cf3747919d9c4467cb5e7e32248c0bf12",
+      "bytes": 919
+    },
+    "assets/combat/source_native/base/front/source_native_0.png": {
+      "sha256": "90a5e4cee8f75ff9b560a1b559acaa96fe2ff71ce2f6e38dbabbc821fc3ac60c",
+      "bytes": 1331
+    },
+    "assets/combat/source_native/base/front/source_native_1.png": {
+      "sha256": "27080ed290a195f7aa6c16cdbf325278c9b7c83d1dba16d5b4e814d463d1606f",
+      "bytes": 1334
+    },
+    "assets/combat/source_native/base/front/source_native_2.png": {
+      "sha256": "60e5ff9aa52b7e48e8d2d65e258ffe02ce4a7945028d387f1f0d65f9ceecf039",
+      "bytes": 1252
+    },
+    "assets/combat/source_native/base/profile/source_native_0.png": {
+      "sha256": "90a5e4cee8f75ff9b560a1b559acaa96fe2ff71ce2f6e38dbabbc821fc3ac60c",
+      "bytes": 1331
+    },
+    "assets/combat/source_native/base/profile/source_native_1.png": {
+      "sha256": "27080ed290a195f7aa6c16cdbf325278c9b7c83d1dba16d5b4e814d463d1606f",
+      "bytes": 1334
+    },
+    "assets/combat/source_native/base/profile/source_native_2.png": {
+      "sha256": "60e5ff9aa52b7e48e8d2d65e258ffe02ce4a7945028d387f1f0d65f9ceecf039",
+      "bytes": 1252
+    },
+    "assets/combat/source_native/shaman/back/source_native_0.png": {
+      "sha256": "4468a706910f274b59a06271ea9c3c35c5908f1ae90991127efd5cf2a2f59231",
+      "bytes": 931
+    },
+    "assets/combat/source_native/shaman/back/source_native_1.png": {
+      "sha256": "7a801962412be10a584474933261ee1fd498733c60ebe88460804f4681b9829c",
+      "bytes": 863
+    },
+    "assets/combat/source_native/shaman/back/source_native_2.png": {
+      "sha256": "d5d488bcec6569703602407390769f0b33df22041b235a1bd817f0b02f301cf9",
+      "bytes": 807
+    },
+    "assets/combat/source_native/shaman/front/source_native_0.png": {
+      "sha256": "3940d58efd36306a58663d4d830a7f17c7403d894876f016941684e162967aff",
+      "bytes": 1270
+    },
+    "assets/combat/source_native/shaman/front/source_native_1.png": {
+      "sha256": "cda39a240bd682177237c3b21df5f8710510a04cf1378af4b6256dd49da3fbf9",
+      "bytes": 1276
+    },
+    "assets/combat/source_native/shaman/front/source_native_2.png": {
+      "sha256": "95fe69a1bc2ae61c79234b51a3f42724e4e2d5e04489f11d95e3b8569d8eea23",
+      "bytes": 1156
+    },
+    "assets/combat/source_native/shaman/profile/source_native_0.png": {
+      "sha256": "3940d58efd36306a58663d4d830a7f17c7403d894876f016941684e162967aff",
+      "bytes": 1270
+    },
+    "assets/combat/source_native/shaman/profile/source_native_1.png": {
+      "sha256": "cda39a240bd682177237c3b21df5f8710510a04cf1378af4b6256dd49da3fbf9",
+      "bytes": 1276
+    },
+    "assets/combat/source_native/shaman/profile/source_native_2.png": {
+      "sha256": "95fe69a1bc2ae61c79234b51a3f42724e4e2d5e04489f11d95e3b8569d8eea23",
+      "bytes": 1156
+    },
+    "assets/combat/source_native/warlock/back/source_native_0.png": {
+      "sha256": "68d93d34e19d6a43553a25b407de8035b1433e232d6621330d667dee50ef3081",
+      "bytes": 4287
+    },
+    "assets/combat/source_native/warlock/back/source_native_1.png": {
+      "sha256": "68d93d34e19d6a43553a25b407de8035b1433e232d6621330d667dee50ef3081",
+      "bytes": 4287
+    },
+    "assets/combat/source_native/warlock/back/source_native_2.png": {
+      "sha256": "68d93d34e19d6a43553a25b407de8035b1433e232d6621330d667dee50ef3081",
+      "bytes": 4287
+    },
+    "assets/combat/source_native/warlock/front/source_native_0.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warlock/front/source_native_1.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warlock/front/source_native_2.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warlock/profile/source_native_0.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warlock/profile/source_native_1.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warlock/profile/source_native_2.png": {
+      "sha256": "b6dfffac2921e2d01e7c5023b06186990424d8a223aab41c208b2f705f73c72d",
+      "bytes": 6260
+    },
+    "assets/combat/source_native/warrior/back/source_native_0.png": {
+      "sha256": "0542dd4a1894c167c5d389e880439d765edd00f5cf6f8d960dd59ede8db66410",
+      "bytes": 3550
+    },
+    "assets/combat/source_native/warrior/back/source_native_1.png": {
+      "sha256": "0542dd4a1894c167c5d389e880439d765edd00f5cf6f8d960dd59ede8db66410",
+      "bytes": 3550
+    },
+    "assets/combat/source_native/warrior/back/source_native_2.png": {
+      "sha256": "0542dd4a1894c167c5d389e880439d765edd00f5cf6f8d960dd59ede8db66410",
+      "bytes": 3550
+    },
+    "assets/combat/source_native/warrior/front/source_native_0.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/source_native/warrior/front/source_native_1.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/source_native/warrior/front/source_native_2.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/source_native/warrior/profile/source_native_0.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/source_native/warrior/profile/source_native_1.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/source_native/warrior/profile/source_native_2.png": {
+      "sha256": "6061d03dd6aebdf8fbc8cf24dd67e22f6f19e6091e9ed67e47c662025e67bd53",
+      "bytes": 4669
+    },
+    "assets/combat/static_imports/base/back/hardware_0.png": {
+      "sha256": "4ce91b8aac98c65d397c7d96a99bde1b81b8bca1b27cd2580db59e69a82df5a4",
+      "bytes": 1001
+    },
+    "assets/combat/static_imports/base/back/hardware_1.png": {
+      "sha256": "6a3185247ba0c3bf613217dbd7a85a67c6028aba38015d9a250840e3c055e099",
+      "bytes": 967
+    },
+    "assets/combat/static_imports/base/back/hardware_2.png": {
+      "sha256": "43a4817ea42259ae7341cb048805482cf3747919d9c4467cb5e7e32248c0bf12",
+      "bytes": 919
+    },
+    "assets/combat/static_imports/base/front/hardware_0.png": {
+      "sha256": "90a5e4cee8f75ff9b560a1b559acaa96fe2ff71ce2f6e38dbabbc821fc3ac60c",
+      "bytes": 1331
+    },
+    "assets/combat/static_imports/base/front/hardware_1.png": {
+      "sha256": "27080ed290a195f7aa6c16cdbf325278c9b7c83d1dba16d5b4e814d463d1606f",
+      "bytes": 1334
+    },
+    "assets/combat/static_imports/base/front/hardware_2.png": {
+      "sha256": "60e5ff9aa52b7e48e8d2d65e258ffe02ce4a7945028d387f1f0d65f9ceecf039",
+      "bytes": 1252
+    },
+    "assets/combat/static_imports/base/profile/hardware_0.png": {
+      "sha256": "2b604dbdf62a6fe0c3b5d088a85b977bbc23a5ed3615da4d5571105c9c8e56ee",
+      "bytes": 1345
+    },
+    "assets/combat/static_imports/base/profile/hardware_1.png": {
+      "sha256": "27e1b36cf43ce073eb54235b37c73dee3d8aead55c84ed761b37734a4608c3da",
+      "bytes": 1350
+    },
+    "assets/combat/static_imports/base/profile/hardware_2.png": {
+      "sha256": "6079b34a60ec31d69251eb1ab1609ea92ceaf307b95c702e775507b5ac9c374f",
+      "bytes": 1272
+    },
+    "assets/combat/static_imports/shaman/back/hardware_0.png": {
+      "sha256": "4468a706910f274b59a06271ea9c3c35c5908f1ae90991127efd5cf2a2f59231",
+      "bytes": 931
+    },
+    "assets/combat/static_imports/shaman/back/hardware_1.png": {
+      "sha256": "7a801962412be10a584474933261ee1fd498733c60ebe88460804f4681b9829c",
+      "bytes": 863
+    },
+    "assets/combat/static_imports/shaman/back/hardware_2.png": {
+      "sha256": "d5d488bcec6569703602407390769f0b33df22041b235a1bd817f0b02f301cf9",
+      "bytes": 807
+    },
+    "assets/combat/static_imports/shaman/front/hardware_0.png": {
+      "sha256": "3940d58efd36306a58663d4d830a7f17c7403d894876f016941684e162967aff",
+      "bytes": 1270
+    },
+    "assets/combat/static_imports/shaman/front/hardware_1.png": {
+      "sha256": "cda39a240bd682177237c3b21df5f8710510a04cf1378af4b6256dd49da3fbf9",
+      "bytes": 1276
+    },
+    "assets/combat/static_imports/shaman/front/hardware_2.png": {
+      "sha256": "95fe69a1bc2ae61c79234b51a3f42724e4e2d5e04489f11d95e3b8569d8eea23",
+      "bytes": 1156
+    },
+    "assets/combat/static_imports/shaman/profile/hardware_0.png": {
+      "sha256": "6e5f0b96c2203465cb47e98d193cdc3f02bf165c984c2845d75305a015ba91ff",
+      "bytes": 1303
+    },
+    "assets/combat/static_imports/shaman/profile/hardware_1.png": {
+      "sha256": "b5c6f755d3bf326f5e3d879e1a84908de709efbf2d9215534fa088992490828b",
+      "bytes": 1307
+    },
+    "assets/combat/static_imports/shaman/profile/hardware_2.png": {
+      "sha256": "bcff09709d30fec0f091cf3ff90d40064fb6ed1d6ebc344111e979047066fbc8",
+      "bytes": 1162
+    },
+    "assets/combat/static_imports/warlock/back/hardware_0.png": {
+      "sha256": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192",
+      "bytes": 1122
+    },
+    "assets/combat/static_imports/warlock/back/hardware_1.png": {
+      "sha256": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192",
+      "bytes": 1122
+    },
+    "assets/combat/static_imports/warlock/back/hardware_2.png": {
+      "sha256": "0a92411c55eb148865290360779f24886b59c79f7749f4eb4690df6f3598f192",
+      "bytes": 1122
+    },
+    "assets/combat/static_imports/warlock/front/hardware_0.png": {
+      "sha256": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2",
+      "bytes": 1393
+    },
+    "assets/combat/static_imports/warlock/front/hardware_1.png": {
+      "sha256": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2",
+      "bytes": 1393
+    },
+    "assets/combat/static_imports/warlock/front/hardware_2.png": {
+      "sha256": "28d4ee79f0d5bf7608aa30bfd18f13057b1fc0d9a8f0099e307c0e5d816f8dd2",
+      "bytes": 1393
+    },
+    "assets/combat/static_imports/warlock/profile/hardware_0.png": {
+      "sha256": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30",
+      "bytes": 1559
+    },
+    "assets/combat/static_imports/warlock/profile/hardware_1.png": {
+      "sha256": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30",
+      "bytes": 1559
+    },
+    "assets/combat/static_imports/warlock/profile/hardware_2.png": {
+      "sha256": "83f6b4c92392abea455e4f0ab2427d901e14517862837d6f7e2ff69af1dede30",
+      "bytes": 1559
+    },
+    "assets/combat/static_imports/warrior/back/hardware_0.png": {
+      "sha256": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9",
+      "bytes": 1026
+    },
+    "assets/combat/static_imports/warrior/back/hardware_1.png": {
+      "sha256": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9",
+      "bytes": 1026
+    },
+    "assets/combat/static_imports/warrior/back/hardware_2.png": {
+      "sha256": "5aa5be68d9db14bc88bafd2ceadd6456cd939732338e4d4e5ced868f308b1db9",
+      "bytes": 1026
+    },
+    "assets/combat/static_imports/warrior/front/hardware_0.png": {
+      "sha256": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a",
+      "bytes": 1305
+    },
+    "assets/combat/static_imports/warrior/front/hardware_1.png": {
+      "sha256": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a",
+      "bytes": 1305
+    },
+    "assets/combat/static_imports/warrior/front/hardware_2.png": {
+      "sha256": "96fa5522bbc14b1af04d853dcef947b7a46a744fc8706e930d369486e6eca62a",
+      "bytes": 1305
+    },
+    "assets/combat/static_imports/warrior/profile/hardware_0.png": {
+      "sha256": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39",
+      "bytes": 1471
+    },
+    "assets/combat/static_imports/warrior/profile/hardware_1.png": {
+      "sha256": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39",
+      "bytes": 1471
+    },
+    "assets/combat/static_imports/warrior/profile/hardware_2.png": {
+      "sha256": "43987dc1e61e4e8b95fa779a312d99d98872a6ac18f3cd0cb91e4c23ed03ce39",
+      "bytes": 1471
+    },
+    "assets/manifest.json": {
+      "sha256": "c04c5608bc92a5870b626b3470f3f40dd0d977d5af6e21733fa3195d88c64592",
+      "bytes": 404557
+    },
+    "assets/world/import_report.json": {
+      "sha256": "71ed6997debea1f753590484b334e8ff6d6a52078747ead7ff97af67556a8b82",
+      "bytes": 457279
+    },
+    "assets/world/native_sources/beasts.json": {
+      "sha256": "1ee2739070743fdfdf26e8e2fb57ba1b1131e775029eb1359f3595a9e418a2e7",
+      "bytes": 28431
+    },
+    "assets/world/native_sources/heroes.json": {
+      "sha256": "497c9a1c478173399581d03e6093a73bae1337052b778aa023ce2681be181f34",
+      "bytes": 56335
+    },
+    "assets/world/native_sources/monsters.json": {
+      "sha256": "ae5c678834dbe6c56765565e2fa2711c572978b83c77a02df0ac16cf76b94828",
+      "bytes": 49309
+    },
+    "assets/world/native_sources/orc_npcs.json": {
+      "sha256": "67810555b17f50fc9685b9719329c398b2a3eec994ffedc08a4087f7425c05a3",
+      "bytes": 48506
+    },
+    "assets/world/native_sources/trolls.json": {
+      "sha256": "4fd4c53efc42ca2c425e2739aff9fca12071d1b61e035fda3bd299e1a7953361",
+      "bytes": 30940
+    },
+    "assets/world/source_png_hashes.json": {
+      "sha256": "2f5fb1d0b6074c2edd8d07ee97503f4942599df70f8412ce4375e7940131ffe0",
+      "bytes": 89213
+    },
+    "assets/world/static_native_exports/base/world_back_0_24x24.png": {
+      "sha256": "13a4e08d2d41829cff5f92725474abfb0fb76119e780c3442a5bdccce838d02a",
+      "bytes": 360
+    },
+    "assets/world/static_native_exports/base/world_back_1_24x24.png": {
+      "sha256": "2517e2a92da062185436c9fe7b1227c6cb398b31ffa2760ed53b7bb72e34446b",
+      "bytes": 367
+    },
+    "assets/world/static_native_exports/base/world_back_2_24x24.png": {
+      "sha256": "75fcdce7da082f17c268ca3b58bf43eec8d6de564c24712b6a50d92c26502f46",
+      "bytes": 361
+    },
+    "assets/world/static_native_exports/base/world_front_0_24x24.png": {
+      "sha256": "355350d3a5065fca86010bed055cbbdb9ca70841030293ee2b27121b94fbcaa7",
+      "bytes": 377
+    },
+    "assets/world/static_native_exports/base/world_front_1_24x24.png": {
+      "sha256": "88366663185bb25a7299f3432922ae92ded775108a3f50557a62189bab865599",
+      "bytes": 387
+    },
+    "assets/world/static_native_exports/base/world_front_2_24x24.png": {
+      "sha256": "f10926c71c4ed9a8657e7e9adb0f8e85009cfb85dd7b1f1e153112b8882e435c",
+      "bytes": 392
+    },
+    "assets/world/static_native_exports/base/world_left_0_24x24.png": {
+      "sha256": "58502f9fb68256c3c9e8c33ce9b82f3877e62cd959021e62543c8bf711af1a80",
+      "bytes": 350
+    },
+    "assets/world/static_native_exports/base/world_left_1_24x24.png": {
+      "sha256": "38d649143a75b35a6a95630bc6639e500282cac2b63cada6aea97a1efd5abdaf",
+      "bytes": 372
+    },
+    "assets/world/static_native_exports/base/world_left_2_24x24.png": {
+      "sha256": "3f4c946a9838f0987e8515a77be3b78970642dff7e78a853e3d0a600537cd618",
+      "bytes": 348
+    },
+    "assets/world/static_native_exports/base/world_right_0_24x24.png": {
+      "sha256": "85578ab0307f295d7d06e6547e297a1d0b1a9443b9fbfe4a564eab6958150838",
+      "bytes": 344
+    },
+    "assets/world/static_native_exports/base/world_right_1_24x24.png": {
+      "sha256": "f6c6bb41a1f8e16702b9fd19da1173340085810db7597e5243eb17136118de2f",
+      "bytes": 357
+    },
+    "assets/world/static_native_exports/base/world_right_2_24x24.png": {
+      "sha256": "ea7ae73cc76f4a779532e98a5aa672ec24be662ee80455f118bf5be4704d8f02",
+      "bytes": 347
+    },
+    "assets/world/static_native_exports/beast_handler/world_back_0_24x24.png": {
+      "sha256": "d6c3b9d8a1e34022cf071c3750da4afa4e8dc4c005376789f6aed3c37bbdd346",
+      "bytes": 412
+    },
+    "assets/world/static_native_exports/beast_handler/world_front_0_24x24.png": {
+      "sha256": "335d20b72fe848b505793569a538b2ea1bc948cd553c3614d094085b273d7f12",
+      "bytes": 458
+    },
+    "assets/world/static_native_exports/beast_handler/world_left_0_24x24.png": {
+      "sha256": "7eaafd3af67c11c69c1815e631d392d0469b315b849d7d6b259b91bf03129820",
+      "bytes": 399
+    },
+    "assets/world/static_native_exports/beast_handler/world_right_0_24x24.png": {
+      "sha256": "ac7181f844fc45210c69d3441c21ab14f00fe5d242d21bf272b107c0f3d9bed1",
+      "bytes": 407
+    },
+    "assets/world/static_native_exports/boar/world_back_0_24x24.png": {
+      "sha256": "eee5a730c0bd08f3ee09f04a9b8aea348d1336128f5089f307be2b291522665d",
+      "bytes": 299
+    },
+    "assets/world/static_native_exports/boar/world_front_0_24x24.png": {
+      "sha256": "35aebe8e0b9675a3638703cebcb7ed4598463c44cb207926773dfdccc939c179",
+      "bytes": 430
+    },
+    "assets/world/static_native_exports/boar/world_left_0_24x24.png": {
+      "sha256": "bd68846c6e63d8b05c1e30efc142394fd515879bebe658580db0a1ccf25cea65",
+      "bytes": 367
+    },
+    "assets/world/static_native_exports/boar/world_right_0_24x24.png": {
+      "sha256": "bee55abd6524ac209e95561b810576da8ad23f5aa7ba0f3e2c106ffe099531e7",
+      "bytes": 380
+    },
+    "assets/world/static_native_exports/camp_guard/world_back_0_24x24.png": {
+      "sha256": "b6b8016e6f63973b39051637506d8a25ed15257344a6a108f0d15239e4da1c3f",
+      "bytes": 399
+    },
+    "assets/world/static_native_exports/camp_guard/world_front_0_24x24.png": {
+      "sha256": "4b917ff9185bb16a3262e20cae88a6e7ea6ec2520e505284d9f642b706d77b0d",
+      "bytes": 445
+    },
+    "assets/world/static_native_exports/camp_guard/world_left_0_24x24.png": {
+      "sha256": "d639abb742d3b7f5822b49363d1390a6a6529c9e70ac73be0368b09fe799ffbc",
+      "bytes": 425
+    },
+    "assets/world/static_native_exports/camp_guard/world_right_0_24x24.png": {
+      "sha256": "31413cbe500c25a5973d0f0c58b2320d96b7baf1565c42738d225c5ae857e242",
+      "bytes": 419
+    },
+    "assets/world/static_native_exports/crawler/world_back_0_24x24.png": {
+      "sha256": "6fb8c02abfb4c4faa4dac58afca2e0fbdc9c0617f6e5e3cf4a20250547f02474",
+      "bytes": 374
+    },
+    "assets/world/static_native_exports/crawler/world_front_0_24x24.png": {
+      "sha256": "66fb3a88858128c3dc9eb515279bbfdedac5caa23752075a16e122480e31aea8",
+      "bytes": 384
+    },
+    "assets/world/static_native_exports/crawler/world_left_0_24x24.png": {
+      "sha256": "a2975a4d8c7fce353c1b490598033df9268d695674c2a6a9718b1a747c738ce4",
+      "bytes": 332
+    },
+    "assets/world/static_native_exports/crawler/world_right_0_24x24.png": {
+      "sha256": "c43817e108d0b1c31e73779b8e48c47c8c0a1918c41341ec0026835c9093e26d",
+      "bytes": 337
+    },
+    "assets/world/static_native_exports/enemy_warlock/world_back_0_24x24.png": {
+      "sha256": "421e26f41b39e584ad7d7bb42f794566e3b7f434208254677fe8b4bbc4ba1ebf",
+      "bytes": 327
+    },
+    "assets/world/static_native_exports/enemy_warlock/world_front_0_24x24.png": {
+      "sha256": "667478a54c7d0462935290f0e0784b876c9b7c6d2bc3c5551cbce6c22c333d3e",
+      "bytes": 363
+    },
+    "assets/world/static_native_exports/enemy_warlock/world_left_0_24x24.png": {
+      "sha256": "4fd93158dfa186f9f3fa8087f310a3fbe52344f0c22235da6576d331978aad73",
+      "bytes": 343
+    },
+    "assets/world/static_native_exports/enemy_warlock/world_right_0_24x24.png": {
+      "sha256": "7af9b8e539ab83f351be5a0f45d2d0776b22e19b03fa197cb1aca7a38254109b",
+      "bytes": 337
+    },
+    "assets/world/static_native_exports/felhunter/world_back_0_24x24.png": {
+      "sha256": "27e187663451e5e46de499b21e7e463b12fbddad720d8018e7e36a631ece3c39",
+      "bytes": 343
+    },
+    "assets/world/static_native_exports/felhunter/world_front_0_24x24.png": {
+      "sha256": "80df24cd75dd99f984e5f7e3244857ee1d9cea5170f17c45ca9d3842bd6e4b40",
+      "bytes": 376
+    },
+    "assets/world/static_native_exports/felhunter/world_left_0_24x24.png": {
+      "sha256": "0be783d0896054923167f609408281144d5a9eacbf4098ed42f7f43b75f56f7a",
+      "bytes": 351
+    },
+    "assets/world/static_native_exports/felhunter/world_right_0_24x24.png": {
+      "sha256": "d381e8c6f35afcbbae3ab6061b3fd6a872fcbd338728325d069c020c9c989f33",
+      "bytes": 355
+    },
+    "assets/world/static_native_exports/harpy/world_back_0_24x24.png": {
+      "sha256": "f1c5747e2c02e51fc23bc5a005af55fc649d63190a45c6a34278c26da4d034b1",
+      "bytes": 404
+    },
+    "assets/world/static_native_exports/harpy/world_front_0_24x24.png": {
+      "sha256": "7f41b9adcda355c45ba73a87841f487e010268b76be31188e71d6d1f209ca19f",
+      "bytes": 461
+    },
+    "assets/world/static_native_exports/harpy/world_left_0_24x24.png": {
+      "sha256": "eb316291c34b1e11d5bad703c73c994415fe39dd6f328d4a55b8d05c11ca4712",
+      "bytes": 408
+    },
+    "assets/world/static_native_exports/harpy/world_right_0_24x24.png": {
+      "sha256": "0dd1db2f815d4dd59075a8b40939463885dd87286f02ea1cb3262ed1b5ca90d7",
+      "bytes": 403
+    },
+    "assets/world/static_native_exports/imp/world_back_0_24x24.png": {
+      "sha256": "3fabb9e501eecf2ad4c2af572c9b48df209b08dcf571200a22cdace4be199c89",
+      "bytes": 342
+    },
+    "assets/world/static_native_exports/imp/world_back_1_24x24.png": {
+      "sha256": "859d9202d65cc24a57f9971b8e5a0c7e9a582756fad88f4f2fdfc3ca16f7a7b7",
+      "bytes": 365
+    },
+    "assets/world/static_native_exports/imp/world_back_2_24x24.png": {
+      "sha256": "6ba1610725ff314ecced7ee9ba7f1068dc7087ba82f1c895156f68cea882ec9f",
+      "bytes": 360
+    },
+    "assets/world/static_native_exports/imp/world_front_0_24x24.png": {
+      "sha256": "25689256ad82d6cb638f368bdf42b4f4b516488a78979c62ff03b92b6ec5a04f",
+      "bytes": 354
+    },
+    "assets/world/static_native_exports/imp/world_front_1_24x24.png": {
+      "sha256": "39d964d2a7546428f393c3b80b147cc0295238cfcc42b46c8d62b42a6e1f1a57",
+      "bytes": 377
+    },
+    "assets/world/static_native_exports/imp/world_front_2_24x24.png": {
+      "sha256": "6db6c7149fd7d9e215315b345e0b36b39bc76fd72607655818489c76d5e0c6d1",
+      "bytes": 371
+    },
+    "assets/world/static_native_exports/imp/world_left_0_24x24.png": {
+      "sha256": "4e4cbaf8d10d130b6bd395ea386082a948f4196b415b548483a0ee133f874822",
+      "bytes": 339
+    },
+    "assets/world/static_native_exports/imp/world_left_1_24x24.png": {
+      "sha256": "7153afef4384f8e14cdf565dbec674401a636dd458e8dab76205d290c99d438e",
+      "bytes": 348
+    },
+    "assets/world/static_native_exports/imp/world_left_2_24x24.png": {
+      "sha256": "aa8b58218a0bc6ba9dbd04f27e4e875b5d1540d325cf3b2ed297482fb76757fa",
+      "bytes": 342
+    },
+    "assets/world/static_native_exports/imp/world_right_0_24x24.png": {
+      "sha256": "a80f10c860067e1440617ab0b6f7a7d6cc0b1c0b215556f6a445611620197e5a",
+      "bytes": 351
+    },
+    "assets/world/static_native_exports/imp/world_right_1_24x24.png": {
+      "sha256": "f90e91ece37610660e2669f3aa6e1919741c40cba854c19ad9ac7c5eb808d4bb",
+      "bytes": 356
+    },
+    "assets/world/static_native_exports/imp/world_right_2_24x24.png": {
+      "sha256": "6ea1111ed3a1f6a33d3d42a1d1f4d06d8ae535e2528f4c3186ca7da2530d7fb8",
+      "bytes": 356
+    },
+    "assets/world/static_native_exports/kolkar_archer/world_back_0_24x24.png": {
+      "sha256": "663feb9c209bc4fc58978713f02dbd58dbefc8b1eaf78b48e767c7d29ca32968",
+      "bytes": 422
+    },
+    "assets/world/static_native_exports/kolkar_archer/world_front_0_24x24.png": {
+      "sha256": "301535a37df0ad69bdd1a98f959054cc7d503d00194ed759b9c59fb48a9c5fad",
+      "bytes": 455
+    },
+    "assets/world/static_native_exports/kolkar_archer/world_left_0_24x24.png": {
+      "sha256": "790fb2d92509efe45e31719ca7b4463c4f1a3399ab52ba40fd2f0be82bf1280a",
+      "bytes": 426
+    },
+    "assets/world/static_native_exports/kolkar_archer/world_right_0_24x24.png": {
+      "sha256": "363c8ba744af0116950187a98aa61e57591fbdfe0cd67a5fbebaad0ca904bebd",
+      "bytes": 433
+    },
+    "assets/world/static_native_exports/kolkar_raider/world_back_0_24x24.png": {
+      "sha256": "eca9ed63351f18018d81c37a5a9be1f6454899fae19091663763309a705c41c1",
+      "bytes": 442
+    },
+    "assets/world/static_native_exports/kolkar_raider/world_front_0_24x24.png": {
+      "sha256": "c12c2abf96e39c709d1454b4567cae421b06debe5ea0fcf96cc6c9e5da346836",
+      "bytes": 454
+    },
+    "assets/world/static_native_exports/kolkar_raider/world_left_0_24x24.png": {
+      "sha256": "d2e7715834e9ae366396d53624b5d961ad0c41281db37e431edc04d9e6e80db4",
+      "bytes": 417
+    },
+    "assets/world/static_native_exports/kolkar_raider/world_right_0_24x24.png": {
+      "sha256": "3b9acaa77d8c7eb907beb4d90455163213edf7e4063beed7279d2beea6d2ee88",
+      "bytes": 423
+    },
+    "assets/world/static_native_exports/orc_guard/world_back_0_24x24.png": {
+      "sha256": "ddb0cd925648b0a7e01a647c167a10b5bc963313003229425da965dbae57dbbd",
+      "bytes": 482
+    },
+    "assets/world/static_native_exports/orc_guard/world_front_0_24x24.png": {
+      "sha256": "bf4a24beafe2a3fe43d84b6d5189ef1a48e6fb1ebe7665d9d0a2dd55e6a90703",
+      "bytes": 512
+    },
+    "assets/world/static_native_exports/orc_guard/world_left_0_24x24.png": {
+      "sha256": "ecd28e8418fbfbfd22d67c157dee63bfc4658116574579dd2ed32ef30d6dab37",
+      "bytes": 462
+    },
+    "assets/world/static_native_exports/orc_guard/world_right_0_24x24.png": {
+      "sha256": "fb70e11f50f07f909939324ce93f97aef570a0bc0e69cf55b4056a29a20c1eba",
+      "bytes": 483
+    },
+    "assets/world/static_native_exports/orc_merchant/world_back_0_24x24.png": {
+      "sha256": "ff30738289725ccc2e617cf72e762a81f8d07735e0150da2c176117260b606b7",
+      "bytes": 411
+    },
+    "assets/world/static_native_exports/orc_merchant/world_front_0_24x24.png": {
+      "sha256": "d1a01a2301df773ba2c7ae1592d26f675dfeea113a68affb014b67b431a588d6",
+      "bytes": 387
+    },
+    "assets/world/static_native_exports/orc_merchant/world_left_0_24x24.png": {
+      "sha256": "bf6717382dcd78e0525ce1b2420da9503e3601e327235505b334046aadd4530f",
+      "bytes": 376
+    },
+    "assets/world/static_native_exports/orc_merchant/world_right_0_24x24.png": {
+      "sha256": "f843b8b8e3d8e3107943e564803f2011b45056691b15a7ed18896410821cdcbd",
+      "bytes": 363
+    },
+    "assets/world/static_native_exports/panther/world_back_0_24x24.png": {
+      "sha256": "c32c00a7b9c4b0672de17790b7a1fddc6c654c6af156c0437a29166951e28351",
+      "bytes": 265
+    },
+    "assets/world/static_native_exports/panther/world_front_0_24x24.png": {
+      "sha256": "90cea067be45ff98363a6d184f70ec3d349c92d700ea2d4d889e6f870862553d",
+      "bytes": 299
+    },
+    "assets/world/static_native_exports/panther/world_left_0_24x24.png": {
+      "sha256": "2de091a9b5cd009de2870b32e4ef3221daf6ccfb14d723ece6d440b2f39d2224",
+      "bytes": 273
+    },
+    "assets/world/static_native_exports/panther/world_right_0_24x24.png": {
+      "sha256": "582c72aecfe54e62b9db3b1000bf7cc8e0955166e8c8bcfb85d83e215cdfe0bf",
+      "bytes": 266
+    },
+    "assets/world/static_native_exports/peon_worker/world_back_0_24x24.png": {
+      "sha256": "67ceaa5682ab01afb199030db1a9754aa57ee29909db6d0c8aea62c0a8a42fd7",
+      "bytes": 392
+    },
+    "assets/world/static_native_exports/peon_worker/world_front_0_24x24.png": {
+      "sha256": "4d38b8161ae743582874e4cbeed4413b56e7a854abe8657909d4a273cc907f10",
+      "bytes": 415
+    },
+    "assets/world/static_native_exports/peon_worker/world_left_0_24x24.png": {
+      "sha256": "b189ec5c891a6f36002134881bf7175b21f6aa5f443e3c7b92dafd4dfe78759a",
+      "bytes": 394
+    },
+    "assets/world/static_native_exports/peon_worker/world_right_0_24x24.png": {
+      "sha256": "574dddfac74c9bf8b5b610e65d1561966eceb669032fc0db5468f1bb119c2426",
+      "bytes": 398
+    },
+    "assets/world/static_native_exports/quest_peon/world_back_0_24x24.png": {
+      "sha256": "b0e9caa503071962ba8b765a678cdefa7c890edb5062ca42e7b2c51076339bbc",
+      "bytes": 402
+    },
+    "assets/world/static_native_exports/quest_peon/world_front_0_24x24.png": {
+      "sha256": "41b51f29a6e0de12f40c46970cbf4c885709ef17c45cc37aceca7cfd02300970",
+      "bytes": 427
+    },
+    "assets/world/static_native_exports/quest_peon/world_left_0_24x24.png": {
+      "sha256": "f860b1013b46277dd9b2658781413c02e59e8e2dcdafc70bd26178b0cd7cb1ce",
+      "bytes": 391
+    },
+    "assets/world/static_native_exports/quest_peon/world_right_0_24x24.png": {
+      "sha256": "114510d54fe413299830f6fc3a20b2a78bfb13a05c04811c5dae6c5e556205d1",
+      "bytes": 387
+    },
+    "assets/world/static_native_exports/raptor/world_back_0_24x24.png": {
+      "sha256": "e8b5101d356752a29ed179ddb1e4078b6291ffd6fe92033ce8877dafd5665c30",
+      "bytes": 342
+    },
+    "assets/world/static_native_exports/raptor/world_front_0_24x24.png": {
+      "sha256": "1afa41e5f73ff2d22d553a1c5c971271e305384d0910cb861f4e090a12377e8b",
+      "bytes": 369
+    },
+    "assets/world/static_native_exports/raptor/world_left_0_24x24.png": {
+      "sha256": "aea78aa15f09bee038d19c4f15287df8ff7944ca0433cbb3bcc7c03baa12d525",
+      "bytes": 355
+    },
+    "assets/world/static_native_exports/raptor/world_right_0_24x24.png": {
+      "sha256": "2b45fab5c2223c522dc487cec2a762cdc9873550033296feba6f0dc5bbbb5523",
+      "bytes": 359
+    },
+    "assets/world/static_native_exports/rock_one_npc/world_back_0_24x24.png": {
+      "sha256": "ddaaf6a904a641f13db4a68f6f25c1e085d50008784feac448bd61d0f30258d7",
+      "bytes": 251
+    },
+    "assets/world/static_native_exports/rock_one_npc/world_front_0_24x24.png": {
+      "sha256": "01ac7630b6facbbc70f56dbbb6015236a94b0b28c5c13ad14391c3c2e38f7356",
+      "bytes": 256
+    },
+    "assets/world/static_native_exports/rock_one_npc/world_left_0_24x24.png": {
+      "sha256": "969d691c3bfb0af0163ac5ef37fd1c50e7be205c28a6551fd68a776d2574f607",
+      "bytes": 255
+    },
+    "assets/world/static_native_exports/rock_one_npc/world_right_0_24x24.png": {
+      "sha256": "799b11ab899d8d1baf56183bd4f64fedc942550f2c1459ad42a11814bd044dc3",
+      "bytes": 262
+    },
+    "assets/world/static_native_exports/sarkoth/world_back_0_24x24.png": {
+      "sha256": "a9bdf4cebff5dcc0e3c18af702da7cb9a84d420d9d00497516ec235e0ebebd94",
+      "bytes": 464
+    },
+    "assets/world/static_native_exports/sarkoth/world_front_0_24x24.png": {
+      "sha256": "4d5d451396db108a790a2f6bbe68915785c5c1b4d7c388d5c8bbdd913e1957d8",
+      "bytes": 456
+    },
+    "assets/world/static_native_exports/sarkoth/world_left_0_24x24.png": {
+      "sha256": "6162c93e4d54ad5b253cd2ddecf5820606119c7a0fef7b7959ec49d060f597b4",
+      "bytes": 351
+    },
+    "assets/world/static_native_exports/sarkoth/world_right_0_24x24.png": {
+      "sha256": "d5a3a9373c7b2d76b55dc3e07d29eac554eacb09f28d0097bf3a599c9499860f",
+      "bytes": 363
+    },
+    "assets/world/static_native_exports/scorpid/world_back_0_24x24.png": {
+      "sha256": "13aefb0429967dd0c2fff7afaa44782dd6f2ed82b019f9b89e8916551ae40284",
+      "bytes": 407
+    },
+    "assets/world/static_native_exports/scorpid/world_front_0_24x24.png": {
+      "sha256": "88c2b781082e6eb6ab3fc69557de640abb9b203f62424c9f7d5eb3c029ef3264",
+      "bytes": 417
+    },
+    "assets/world/static_native_exports/scorpid/world_left_0_24x24.png": {
+      "sha256": "6e368405bc8cf03ae95f8d0f6256b76021efeaf17b97a7fc3c71554a9dc3df39",
+      "bytes": 367
+    },
+    "assets/world/static_native_exports/scorpid/world_right_0_24x24.png": {
+      "sha256": "c84a8479317ecb1827db281d072eda85ba551c5318893e01d369c94c3335c216",
+      "bytes": 360
+    },
+    "assets/world/static_native_exports/senjin_chief/world_back_0_24x24.png": {
+      "sha256": "d9cc22ee9f787413f2df8bfefe85dc01031f4585039f7041385b1763651e7884",
+      "bytes": 458
+    },
+    "assets/world/static_native_exports/senjin_chief/world_front_0_24x24.png": {
+      "sha256": "b952e00c73ecfb39359d02d3142354a34d121f7309776ecbb99f70f255c69ed8",
+      "bytes": 517
+    },
+    "assets/world/static_native_exports/senjin_chief/world_left_0_24x24.png": {
+      "sha256": "2bad884d66cb41b6a9a9d6fb472b98448e2ad9c5d562a9f2ade8aec6c5770854",
+      "bytes": 484
+    },
+    "assets/world/static_native_exports/senjin_chief/world_right_0_24x24.png": {
+      "sha256": "93273585f48247a12570dc55c9d82637352c091f8406d5d7c302b4364e632db9",
+      "bytes": 453
+    },
+    "assets/world/static_native_exports/senjin_troll_shaman/world_back_0_24x24.png": {
+      "sha256": "d657afaf43fbf7cabacdd420143b5754f02374258d836a34f18ca5e2d88614a9",
+      "bytes": 425
+    },
+    "assets/world/static_native_exports/senjin_troll_shaman/world_front_0_24x24.png": {
+      "sha256": "93ad3a1bc430f407be8a232d4158164d136fcf272d1f0f3b6e030677fbb28589",
+      "bytes": 452
+    },
+    "assets/world/static_native_exports/senjin_troll_shaman/world_left_0_24x24.png": {
+      "sha256": "9f48d9a436bd916150a9b0fb88e225c0e5f70c58715513d382d50bc43ed43aa9",
+      "bytes": 430
+    },
+    "assets/world/static_native_exports/senjin_troll_shaman/world_right_0_24x24.png": {
+      "sha256": "fca345388be8a90ff3a8057919fb257a7371d7ba55c6e7090afd61c23ea3426e",
+      "bytes": 432
+    },
+    "assets/world/static_native_exports/shaman/world_back_0_24x24.png": {
+      "sha256": "9626d9ce2fa088d3a974e25e5e13c4088ac230d938fe018be6de25516bb478d5",
+      "bytes": 387
+    },
+    "assets/world/static_native_exports/shaman/world_back_1_24x24.png": {
+      "sha256": "ebfff5c138bac11ca65b7bfba88d5b20c5587221bf34d19e57483821b20e6a72",
+      "bytes": 391
+    },
+    "assets/world/static_native_exports/shaman/world_back_2_24x24.png": {
+      "sha256": "5ef0857043823fd1108156862fb0cd6192060dabb695b2854406ece73a0f4b28",
+      "bytes": 390
+    },
+    "assets/world/static_native_exports/shaman/world_front_0_24x24.png": {
+      "sha256": "43be617fd28e38d977eb33a10729211a787caa100f2dd2a69977bb5893b0f9e0",
+      "bytes": 423
+    },
+    "assets/world/static_native_exports/shaman/world_front_1_24x24.png": {
+      "sha256": "05f17df99f30a4fe58196a66ef7fe9786ba8c59a6187a435eb46e030741a76f7",
+      "bytes": 432
+    },
+    "assets/world/static_native_exports/shaman/world_front_2_24x24.png": {
+      "sha256": "046c927b5a1c2bf09720bed84120a903d74d16f43c8b2e988ccac4b4939851ed",
+      "bytes": 425
+    },
+    "assets/world/static_native_exports/shaman/world_left_0_24x24.png": {
+      "sha256": "438fe25961d38f0228826b1672b857b84711f45c5c1a8b2f507230423d863363",
+      "bytes": 378
+    },
+    "assets/world/static_native_exports/shaman/world_left_1_24x24.png": {
+      "sha256": "5d835c623305239ad37738e7a27d19e0e346f879ea599ce6748e214c90b47209",
+      "bytes": 398
+    },
+    "assets/world/static_native_exports/shaman/world_left_2_24x24.png": {
+      "sha256": "a242dbafe0a16a4302395fab5b7d8a5e8a0bcfd04d057aa0cbafc14868f217e1",
+      "bytes": 376
+    },
+    "assets/world/static_native_exports/shaman/world_right_0_24x24.png": {
+      "sha256": "300ff0808f181dcd42b87752f8db23edc96e9c3cd0c834ff030f16b9cefc6b68",
+      "bytes": 400
+    },
+    "assets/world/static_native_exports/shaman/world_right_1_24x24.png": {
+      "sha256": "21f4e12c962a9d562265956920605b65aeae6e8c6b0e1a07bb868cee8e65564e",
+      "bytes": 412
+    },
+    "assets/world/static_native_exports/shaman/world_right_2_24x24.png": {
+      "sha256": "73e9fdf2eda658c16d34cca50321cc1215fc1b5e2e888c3559344d92289f8739",
+      "bytes": 403
+    },
+    "assets/world/static_native_exports/shaman_apprentice/world_back_0_24x24.png": {
+      "sha256": "d042c7c33592e6f481019f0678fff6abedd43db9a657d117b1b00a57e9d44e1f",
+      "bytes": 384
+    },
+    "assets/world/static_native_exports/shaman_apprentice/world_front_0_24x24.png": {
+      "sha256": "81e78b285f0fae4c4a96e40b81c2684482703dabeb63edf348f5692f0976e942",
+      "bytes": 457
+    },
+    "assets/world/static_native_exports/shaman_apprentice/world_left_0_24x24.png": {
+      "sha256": "2bc86d07e30a92bd234b88e56fd362ba0b11da0a1ba034629054b8bf05cc49c2",
+      "bytes": 402
+    },
+    "assets/world/static_native_exports/shaman_apprentice/world_right_0_24x24.png": {
+      "sha256": "d144701b1eb1311ccdfd9f952b01098ca46598abcaf8b5573d4618cb093cf617",
+      "bytes": 401
+    },
+    "assets/world/static_native_exports/sleeping/world_back_0_24x24.png": {
+      "sha256": "f01534558533fa742f1d7e4a59822bba5e07c2a037933fa32b5a1003979f3aed",
+      "bytes": 281
+    },
+    "assets/world/static_native_exports/sleeping/world_front_0_24x24.png": {
+      "sha256": "62c42579ffaa7636ce2baae9f65b984045bb80b1f18c235c9d7239bc9e0763a6",
+      "bytes": 291
+    },
+    "assets/world/static_native_exports/sleeping/world_left_0_24x24.png": {
+      "sha256": "1d4abc62c823391aa2e0fa2ec45e273afb5be1a6830bec02878a59b7fbc380a1",
+      "bytes": 302
+    },
+    "assets/world/static_native_exports/sleeping/world_right_0_24x24.png": {
+      "sha256": "ba6240a86803ae40fac929097072f814503e6f1bb431b68d63053db1020d8fa2",
+      "bytes": 276
+    },
+    "assets/world/static_native_exports/tiger/world_back_0_24x24.png": {
+      "sha256": "c00872f15abd1d6952cb61681df7883f93af41df89cd3e2dfd15bd26fb55dea1",
+      "bytes": 338
+    },
+    "assets/world/static_native_exports/tiger/world_front_0_24x24.png": {
+      "sha256": "8d3ab6df896e2969b08ae346dc4fcecfcaad158d88b96ae96d9fa2130c97ba24",
+      "bytes": 382
+    },
+    "assets/world/static_native_exports/tiger/world_left_0_24x24.png": {
+      "sha256": "a0c03ab8c73532962d990dadcc05daacec92c29dd6dc012f3bf0cfa4c73fa67b",
+      "bytes": 365
+    },
+    "assets/world/static_native_exports/tiger/world_right_0_24x24.png": {
+      "sha256": "fd2e5145cf08480b2cd4350dca6281280c57f5d1c54438dec908c222efb47456",
+      "bytes": 355
+    },
+    "assets/world/static_native_exports/troll_guard/world_back_0_24x24.png": {
+      "sha256": "dc71d3341cc12c7775b8f06433b0f231b008fdbbf499af9fb7679fb758c3a852",
+      "bytes": 429
+    },
+    "assets/world/static_native_exports/troll_guard/world_front_0_24x24.png": {
+      "sha256": "8bbf34fa3533b6d86fb8321c3305c0f751d84fe7f8ad8e13e747230855d56bbe",
+      "bytes": 464
+    },
+    "assets/world/static_native_exports/troll_guard/world_left_0_24x24.png": {
+      "sha256": "57c12fd492a105b0b50387c16a518e547aef6d80c7f650e77e84ebd0e1412196",
+      "bytes": 438
+    },
+    "assets/world/static_native_exports/troll_guard/world_right_0_24x24.png": {
+      "sha256": "ad066cdab8fb5abc05968418050159655c20bc1cafc1cfb3a579012372bf8535",
+      "bytes": 449
+    },
+    "assets/world/static_native_exports/troll_merchant/world_back_0_24x24.png": {
+      "sha256": "dc15a2a0c81ce97618635e28f5c0627887f8c3e31bf212b74296e80e29f0ddf9",
+      "bytes": 405
+    },
+    "assets/world/static_native_exports/troll_merchant/world_front_0_24x24.png": {
+      "sha256": "69fa8099308ef8bfc79c36a4e73f72f709587ebee4fb215824e840c499b4e3e8",
+      "bytes": 437
+    },
+    "assets/world/static_native_exports/troll_merchant/world_left_0_24x24.png": {
+      "sha256": "ad4537b5034c47791b926ffdd8e24f9d27da58d121d44056f78c611c18c4dedc",
+      "bytes": 382
+    },
+    "assets/world/static_native_exports/troll_merchant/world_right_0_24x24.png": {
+      "sha256": "05e134ac5ba01ca89f5f5c8653c14c45dcf05ade6bcd38ea554d2cc07c5bb989",
+      "bytes": 429
+    },
+    "assets/world/static_native_exports/troll_shaman/world_back_0_24x24.png": {
+      "sha256": "4a59c23ae9e5605bf7d43a75155216cb9f32a12ee3a551124ae5946f88888cdb",
+      "bytes": 419
+    },
+    "assets/world/static_native_exports/troll_shaman/world_front_0_24x24.png": {
+      "sha256": "363f82bc372256cae5cf04795c534635ce3e43b0bba30e1311cfd6fbed5a69d1",
+      "bytes": 440
+    },
+    "assets/world/static_native_exports/troll_shaman/world_left_0_24x24.png": {
+      "sha256": "9c2325d3a872f26a88d8730de0946877da0b3dffd473765a30f8d939d3a56b06",
+      "bytes": 425
+    },
+    "assets/world/static_native_exports/troll_shaman/world_right_0_24x24.png": {
+      "sha256": "59be773c00b37a8cf1bb1ff3ebe64a95a4af00e9a6b763de5c0c03a4a343bb21",
+      "bytes": 417
+    },
+    "assets/world/static_native_exports/troll_villager/world_back_0_24x24.png": {
+      "sha256": "73a5ecd256082de7204f8939a1e105741bf9fda01987613374bd8d6887f95d61",
+      "bytes": 358
+    },
+    "assets/world/static_native_exports/troll_villager/world_front_0_24x24.png": {
+      "sha256": "c32149d09f68699c6ab8dd3ca2926aae397a557c4750dd28cdc9e22ce8bd97c2",
+      "bytes": 421
+    },
+    "assets/world/static_native_exports/troll_villager/world_left_0_24x24.png": {
+      "sha256": "e8224b3aae6cff807f47a2a012154468c0b5d9bd62d5b98c24939cbc5fda1c98",
+      "bytes": 396
+    },
+    "assets/world/static_native_exports/troll_villager/world_right_0_24x24.png": {
+      "sha256": "c104864c59e3b8a091a3f159e7f97226b3d5d5d454305998c93727dd9fae79fb",
+      "bytes": 389
+    },
+    "assets/world/static_native_exports/veteran_questgiver/world_back_0_24x24.png": {
+      "sha256": "95da595434935b600d3ed7c7ec7ad7145d9eacb80027718a481489a0ed1c24b1",
+      "bytes": 479
+    },
+    "assets/world/static_native_exports/veteran_questgiver/world_front_0_24x24.png": {
+      "sha256": "60788ee8a6d095bb7f5ab0a20ef7aaf04611204b02ea9523b86f30b552095657",
+      "bytes": 531
+    },
+    "assets/world/static_native_exports/veteran_questgiver/world_left_0_24x24.png": {
+      "sha256": "a787aefbe09645b19732e8a4d879fec54f734ce90e8c469cc5fb9b343eb01e74",
+      "bytes": 483
+    },
+    "assets/world/static_native_exports/veteran_questgiver/world_right_0_24x24.png": {
+      "sha256": "6d2a3beced5fc3be2a7714205ac4c6c5a11a4431e77901169dd242252a6dc8f3",
+      "bytes": 484
+    },
+    "assets/world/static_native_exports/warlock/world_back_0_24x24.png": {
+      "sha256": "2360730c12013fe19d795e219b876b32b992dda7b876ec6ddc26b3d16b4d608f",
+      "bytes": 334
+    },
+    "assets/world/static_native_exports/warlock/world_back_1_24x24.png": {
+      "sha256": "9e27e46f52237680fd39f6e3d38b7ee55da39a0f3052003a9f8d5ff95d92c60a",
+      "bytes": 336
+    },
+    "assets/world/static_native_exports/warlock/world_back_2_24x24.png": {
+      "sha256": "a4bf9453a9c18cd093e3e006d8c4a34e934b1fb2525d1d21a186462da92ab998",
+      "bytes": 338
+    },
+    "assets/world/static_native_exports/warlock/world_front_0_24x24.png": {
+      "sha256": "e7447e027d2a71506a93cd8b5a67a5b9bd2a1a196d15dde22e5aaee439c0c9c8",
+      "bytes": 383
+    },
+    "assets/world/static_native_exports/warlock/world_front_1_24x24.png": {
+      "sha256": "0d8d7f948c5bc9543f84286081f7d2154a12a8f19bc883cff941bc0253bf14b3",
+      "bytes": 386
+    },
+    "assets/world/static_native_exports/warlock/world_front_2_24x24.png": {
+      "sha256": "f4ec5d0681247123299b292d847a5f8c305b12946a198d44f2ab63cac5c33fcf",
+      "bytes": 385
+    },
+    "assets/world/static_native_exports/warlock/world_left_0_24x24.png": {
+      "sha256": "ab5c4d7595eaf238923ec694a643d9621fb6bb81bdaced8746154f8c5ccbc69a",
+      "bytes": 336
+    },
+    "assets/world/static_native_exports/warlock/world_left_1_24x24.png": {
+      "sha256": "c2ecd7f74db1d928949ee84940cae7a6a06951f190b979891813ee75f2bb457e",
+      "bytes": 337
+    },
+    "assets/world/static_native_exports/warlock/world_left_2_24x24.png": {
+      "sha256": "62cc026ec8eb52814c1b02ea4b981de29a1f0c33247cdf0d6321cf99d8f5e0be",
+      "bytes": 334
+    },
+    "assets/world/static_native_exports/warlock/world_right_0_24x24.png": {
+      "sha256": "06a9ca0fa07b74809ee5ae7df55e4cf740adc3a39cf90da781e7c09103dbf9a1",
+      "bytes": 333
+    },
+    "assets/world/static_native_exports/warlock/world_right_1_24x24.png": {
+      "sha256": "f2bd1ddf2d6c4bce5c65cf2fb78aaad4201b14742909eb23e44601c552b594e6",
+      "bytes": 332
+    },
+    "assets/world/static_native_exports/warlock/world_right_2_24x24.png": {
+      "sha256": "bb141ba96cab68caa07cc121606e22b495ecae87c27d288e125e815381ee97f8",
+      "bytes": 335
+    },
+    "assets/world/static_native_exports/warrior/world_back_0_24x24.png": {
+      "sha256": "9396eba6ecccb12661c56facc54be113219716c688f1698e72f37270973b45fe",
+      "bytes": 400
+    },
+    "assets/world/static_native_exports/warrior/world_back_1_24x24.png": {
+      "sha256": "c19233d98121d138e393d8032c61a3a3773640f5deb35b71421e5162dd224a79",
+      "bytes": 404
+    },
+    "assets/world/static_native_exports/warrior/world_back_2_24x24.png": {
+      "sha256": "02ad437b3d4504c599c9003e3a8ac63fbb2cd7503892955ef2698d35673055af",
+      "bytes": 398
+    },
+    "assets/world/static_native_exports/warrior/world_front_0_24x24.png": {
+      "sha256": "c52e3519a920e5118805b3f81d3c540bb0738fb57b7516b8149dd9924f42398a",
+      "bytes": 414
+    },
+    "assets/world/static_native_exports/warrior/world_front_1_24x24.png": {
+      "sha256": "0f71867b606d70daebb18f6c99c03943dc202f77cc2c6c30d33e67dd8bb97d55",
+      "bytes": 425
+    },
+    "assets/world/static_native_exports/warrior/world_front_2_24x24.png": {
+      "sha256": "5da0a205898ab06493dc6cc06ad911085b9c6aaddf2225c1c2d2db243016e7f6",
+      "bytes": 422
+    },
+    "assets/world/static_native_exports/warrior/world_left_0_24x24.png": {
+      "sha256": "b70efaf8d6bb95953549e8d0fa6c6b33c4aeefe2aa91ce233ee26851707155f6",
+      "bytes": 388
+    },
+    "assets/world/static_native_exports/warrior/world_left_1_24x24.png": {
+      "sha256": "02eeab57c30ece9850a2920a575380304bb566b83d071f1a7e30b4bdddaf39b0",
+      "bytes": 403
+    },
+    "assets/world/static_native_exports/warrior/world_left_2_24x24.png": {
+      "sha256": "e3d8dff603dda057f8e1e37b991c4202143330cd289d36aaf3244164a9126b09",
+      "bytes": 386
+    },
+    "assets/world/static_native_exports/warrior/world_right_0_24x24.png": {
+      "sha256": "4d93688e9bc9f3bdbfe8e0712f54c959eb5513272a422ee28c75617326d26461",
+      "bytes": 401
+    },
+    "assets/world/static_native_exports/warrior/world_right_1_24x24.png": {
+      "sha256": "74e56afe8488b4668362f9d2ba28597ad9b00f623b9893d7c2b6bfa0336339de",
+      "bytes": 403
+    },
+    "assets/world/static_native_exports/warrior/world_right_2_24x24.png": {
+      "sha256": "29ab7875d333124681e2b3761209d3d8298f39b589975319ff61f386d3c73c46",
+      "bytes": 401
+    },
+    "assets/world/static_native_exports/warrior_trainer/world_back_0_24x24.png": {
+      "sha256": "c3faaef79324e6269468e3d997004a45a049f2f0698650cab517394ad3946969",
+      "bytes": 487
+    },
+    "assets/world/static_native_exports/warrior_trainer/world_front_0_24x24.png": {
+      "sha256": "ac96c0fd31e93bb8eb53086538c6b5d840fff4ed3d0fc978235d5790b79ad7cf",
+      "bytes": 541
+    },
+    "assets/world/static_native_exports/warrior_trainer/world_left_0_24x24.png": {
+      "sha256": "586495f7b5e49144cc1dfcb4b178bb3937df22a9c13c85df868d5d0c5d647c49",
+      "bytes": 490
+    },
+    "assets/world/static_native_exports/warrior_trainer/world_right_0_24x24.png": {
+      "sha256": "93e67a82b91230d0d8706c1206ca4484fef79816bb0671d8bda7b07099763b44",
+      "bytes": 496
+    },
+    "assets/world/static_native_exports/yarrog/world_back_0_24x24.png": {
+      "sha256": "368f8c62a74ff6eb446e4879f3c1616c0265e1a2c669820145d0127fc1fc49ed",
+      "bytes": 321
+    },
+    "assets/world/static_native_exports/yarrog/world_front_0_24x24.png": {
+      "sha256": "3c2a38873e3e9d1218c0b55d4bf20add0b54e6243b0ea7498a773d066f920ff7",
+      "bytes": 357
+    },
+    "assets/world/static_native_exports/yarrog/world_left_0_24x24.png": {
+      "sha256": "54e0c0301f7d7a01683252ade883b6f5a78f7fb162712518cc2ab4f101963f60",
+      "bytes": 348
+    },
+    "assets/world/static_native_exports/yarrog/world_right_0_24x24.png": {
+      "sha256": "af64bf4d15073188644c0b30d8dd9ed69104a8f229d0ef9e9b5bc3fb1de49dda",
+      "bytes": 343
+    },
+    "peon_of_warcraft_v0_2_17.gbc": {
+      "sha256": "aae1404f2f231d96dfa3c4391d678ce8630471909c863300e5c9bb73b0535f17",
+      "bytes": 2097152
+    },
+    "peon_of_warcraft_v0_2_17.map": {
+      "sha256": "b2eb9d0d577b47bc257d65656ba835ea4608a9d143afbf2e84030a0325a30c89",
+      "bytes": 2621180
+    },
+    "peon_of_warcraft_v0_2_17.sym": {
+      "sha256": "ae7899a7dac54e02b5e11e3d203623181c5d9bcf4447178030866f524e366c55",
+      "bytes": 1964912
+    },
+    "runtime/01_shaman_world.png": {
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "bytes": 2409
+    },
+    "runtime/01_shaman_world_4x.png": {
+      "sha256": "17210e3f965b4a12bf19e78762676ecdfdab34db055eb0a61c483a46fe66635b",
+      "bytes": 6031
+    },
+    "runtime/02_warrior_world.png": {
+      "sha256": "e5beda4883d0d90f4cc972f5061e816e48cacced04fc50493a373f12629b39d5",
+      "bytes": 2364
+    },
+    "runtime/02_warrior_world_4x.png": {
+      "sha256": "2d28e8ae359aa055689148f4b298ff91ada06e78d65f859a55462cefbb1c7773",
+      "bytes": 5979
+    },
+    "runtime/03_warlock_world.png": {
+      "sha256": "2225788044da2c25e30a02f061004af5ac06106dc76b211be71f372b6b3c1bee",
+      "bytes": 2236
+    },
+    "runtime/03_warlock_world_4x.png": {
+      "sha256": "5bbd8f975c1247b17e49f8fd8184e62ad830eb47a531d1f197e0223eea120db9",
+      "bytes": 5779
+    },
+    "runtime/04_base_peon_opening.png": {
+      "sha256": "50277cdf82aad9a3adfc006a9a94d0939e5200999d00281775435d9a436e54f6",
+      "bytes": 3310
+    },
+    "runtime/04_base_peon_opening_4x.png": {
+      "sha256": "45f1a4b8f9566f8fe8c1fa8ba03a1558271d24c4146f45acda33b57443c0a051",
+      "bytes": 7306
+    },
+    "runtime/05_merchant_front.png": {
+      "sha256": "ca42201134866a09f92dcf8a7c198f021c205846256fedd879a0ee032362026e",
+      "bytes": 3833
+    },
+    "runtime/05_merchant_front_4x.png": {
+      "sha256": "1534c4abe3ef3bfb43ef76e37bebdf2dbec17f94f1f74a7251e6d3fca8a6c57c",
+      "bytes": 8224
+    },
+    "runtime/06_merchant_back.png": {
+      "sha256": "fe35e8bc41fcf476bc8c9cd59a80a6347ed8471e09edd2da3fefb58a22d1b769",
+      "bytes": 5826
+    },
+    "runtime/06_merchant_back_4x.png": {
+      "sha256": "b49998b2f3d19cbf95df5921d09e24e7dd8105ec96d8a00ac36cc80d34f5d4aa",
+      "bytes": 11320
+    },
+    "runtime/07_merchant_left.png": {
+      "sha256": "00546f345de9b06d1624667ebd07dbc94813b0a372e9d594008a079cd0d5b91a",
+      "bytes": 4706
+    },
+    "runtime/07_merchant_left_4x.png": {
+      "sha256": "5980be245d2aca8154b0d05ce12ed878b2deb9c621e96b2726bc05426246bd92",
+      "bytes": 9707
+    },
+    "runtime/08_merchant_right.png": {
+      "sha256": "db538871092be9c2bf39dbac29d7434034625bbe8b9abcc1ff51584d93385c60",
+      "bytes": 5630
+    },
+    "runtime/08_merchant_right_4x.png": {
+      "sha256": "18bbd07ecd6c62374c625a64596bb8cdde7f336272e5c24303612f9417fea0b8",
+      "bytes": 11143
+    },
+    "runtime/09_innkeeper.png": {
+      "sha256": "15a77bfd017305871c80c80cd616e242a85bfb7138786c7028baf0a2e577069d",
+      "bytes": 6430
+    },
+    "runtime/09_innkeeper_4x.png": {
+      "sha256": "9cf9e90e16ee3acc1a3db3b1fbd4714f112261ea65fffedda27d721f59c8272b",
+      "bytes": 12898
+    },
+    "runtime/10_purchase.png": {
+      "sha256": "9f27596205d966e4a44fc38772c74a1ff1b7957eee9c5eb603bcdc58965254a0",
+      "bytes": 3824
+    },
+    "runtime/10_purchase_4x.png": {
+      "sha256": "157c9b6073c736700bf4c7f06ad7cf9ff4b2b0a89b3ca2103b3035e18006f391",
+      "bytes": 8214
+    },
+    "runtime/11_cold_continue.png": {
+      "sha256": "4210b70cea6646699c106be591263c6af5e549de7e4eec544067cdaab8384f45",
+      "bytes": 4623
+    },
+    "runtime/11_cold_continue_4x.png": {
+      "sha256": "561eeb27e6d615cdf570b132618504f17e21011409565863e6fbe09a9658b914",
+      "bytes": 9479
+    },
+    "runtime/12_training_lodge_shaman.png": {
+      "sha256": "2d0d05478ef80717b6a7b4d3cff2a90e1adb2e8cfb5553ca965a7f5664769eea",
+      "bytes": 7150
+    },
+    "runtime/12_training_lodge_shaman_4x.png": {
+      "sha256": "567e04510aabc076a1b47e8ac64a59e9ef104f4c8923a3bb354fdadc5fcef1b0",
+      "bytes": 13084
+    },
+    "runtime/13_training_lodge_warrior.png": {
+      "sha256": "39af7254c6b6329cb4ee82355a7faed3e5960192229d0b5a93181d59dee96eb8",
+      "bytes": 7154
+    },
+    "runtime/13_training_lodge_warrior_4x.png": {
+      "sha256": "1b7330e1431129cfd3bcd6ad09557625aac9ef49b4cafc45416a461843d8c953",
+      "bytes": 13113
+    },
+    "runtime/14_training_lodge_warlock.png": {
+      "sha256": "10391daa114ec3a50a667a17bd9d032573ba4a2386a540f424e79534a8f72093",
+      "bytes": 7102
+    },
+    "runtime/14_training_lodge_warlock_4x.png": {
+      "sha256": "c95d3b9bdd86bab9fb7dd9e3032f3edff9dcf393396394acf729bb7c0b0249bd",
+      "bytes": 13087
+    },
+    "runtime/15_sleeping_peon_zone2.png": {
+      "sha256": "c098f2651e5897e7622685bed5e2b59fba8fc0b6debb84b43a9dd6bcea08f439",
+      "bytes": 3491
+    },
+    "runtime/15_sleeping_peon_zone2_4x.png": {
+      "sha256": "caaef0356262afc450ffb7a4eefc904393127aef79deaa354df288f50f7413da",
+      "bytes": 8047
+    },
+    "runtime/16_mana_world.png": {
+      "sha256": "b12c3655010fa1b1ccc765544c27e1e9a26e8797e30e92467f8bb3c681416c6a",
+      "bytes": 2409
+    },
+    "runtime/16_mana_world_4x.png": {
+      "sha256": "17210e3f965b4a12bf19e78762676ecdfdab34db055eb0a61c483a46fe66635b",
+      "bytes": 6031
+    },
+    "runtime/17_mana_battle.png": {
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "bytes": 3215
+    },
+    "runtime/17_mana_battle_4x.png": {
+      "sha256": "197d74f1bf43276a8ca36a68d96c39774fc74319b3978a1b4879367393ed31fd",
+      "bytes": 6672
+    },
+    "runtime/18_attack_type_colors.png": {
+      "sha256": "1830db49a80b508f9768181c5c681b5c0a17b0c0382f1318c4bad7a46643dd89",
+      "bytes": 3553
+    },
+    "runtime/18_attack_type_colors_4x.png": {
+      "sha256": "e6a50ce78344cf26b89f71a6c87d0a945628f1d382327697d572badf79c09953",
+      "bytes": 7142
+    },
+    "runtime/19_free_mace_strike.png": {
+      "sha256": "7debef54c0c994846657635368984efdf208fd39997519b494d10c712dd14f14",
+      "bytes": 3133
+    },
+    "runtime/19_free_mace_strike_4x.png": {
+      "sha256": "ba9f139adb58579c050bbaff9b19e050654b694c18b5ec41616dc4aa46a1c14d",
+      "bytes": 6544
+    },
+    "runtime/manifest.json": {
+      "sha256": "61194aa593ef89b51c9ed0a38b1d9426a13366933e0fcd897422e3f181408685",
+      "bytes": 8372
+    },
+    "validation/battle_mana_rage_PP_types_and_free_mace.json": {
+      "sha256": "aea0f873fa569ca544d717cda9f0bc8b73467b86f9335c08ab2c6e18f94508bf",
+      "bytes": 23206
+    },
+    "validation/fresh_source_build.json": {
+      "sha256": "7acda1352657d5e7d4a916c610f1c6df06670a5a83405212ae0932da47396905",
+      "bytes": 801
+    },
+    "validation/masters_sleeping_quest_and_3class_cold_continue.json": {
+      "sha256": "e37242c8635a346478730aadc86c18794a6e420588fc831e9f2cd4517c3fa607",
+      "bytes": 12956
+    },
+    "validation/merchants_4views_purchases_and_cold_continue.json": {
+      "sha256": "83c46d664c0b5b9cd2df15c541ffe4e5504459702bd210572c520af9ffcfc950",
+      "bytes": 53730
+    },
+    "validation/native_cell_sources_and_deterministic_import.json": {
+      "sha256": "0664ab4cb429844b229aa9861d3aca4c9078f998a3be403af7b13ca3d8a5466a",
+      "bytes": 459
+    },
+    "validation/protected_combat_maps_earth_lightning_and_header.json": {
+      "sha256": "6b711af0a6f070b1e47056a76b630044077b5af58003626c33b01c7d56dc450d",
+      "bytes": 216120
+    },
+    "validation/validation.json": {
+      "sha256": "3ed09cfc222ee91aa94363ba50ec21c4c6fa07590777c796bc5ff3f23623de54",
+      "bytes": 9339
+    },
+    "validation/world_directions_OAM_LCD_3classes.json": {
+      "sha256": "9ee68df0735ad52208873acaf842861b80192e6141c49e0b6c646053480dec38",
+      "bytes": 79995
+    }
+  },
+  "zip_sha256": "7b0a63ae2373842a0eeeabcc57aec0bc3b886553340c02f64d7369e1bb2c5129",
+  "zip_bytes": 2873431,
+  "zip_crc_and_all_payload_sha256": "PASS"
+}
