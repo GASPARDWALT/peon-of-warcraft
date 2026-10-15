@@ -1,0 +1,896 @@
+{
+  "version": "v0.2.18",
+  "rom": "peon_of_warcraft_v0_2_18.gbc",
+  "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+  "sym_sha256": "4a860657485e5f47ae92c4fd5ff9c8219b49bd62685196263bffa94d57390284",
+  "map_sha256": "dc5de30674e4eea2cbf81a1d64008e6bdcc4b0c296ca850176858745a08bd809",
+  "validation_sha256": "9c5bb66ad70d06eea5f271999a3bac5019ed661b7829315c70514d00e84dd723",
+  "tests": [
+    {
+      "name": "selection_runtime",
+      "path": "validation/selection_runtime.json",
+      "sha256": "c1311b26d0ed17a97daa916ae86ed8c307154aaf7ae8b93caf6fb11b506a59c1",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425"
+    },
+    {
+      "name": "world_and_terrain_restoration",
+      "path": "validation/world_and_terrain_restoration.json",
+      "sha256": "bf846dceac576573ceb220b17d15d24ff67bf212194eae043634a3228f525169",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425"
+    },
+    {
+      "name": "preservation",
+      "path": "validation/preservation.json",
+      "sha256": "7e0230252f0f15a0db018d99a3ab623f49f580160f2684f5d251a6ec7157f98e",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425"
+    },
+    {
+      "name": "clean_build",
+      "path": "validation/clean_build.json",
+      "sha256": "b15c25b8e709602f8492e08dfa636cf61d49e9d6ac5b82b2b7aa2290076adcec",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425"
+    },
+    {
+      "name": "import_idempotence",
+      "path": "validation/import_idempotence.json",
+      "sha256": "ab9b6782ea78fd47b03b74cdecb0f4ebecbdc5552c1563bc29ce15c7f84cb595",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425"
+    }
+  ],
+  "physical_modretro_tested": false,
+  "runtime": [
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/fresh_welcome_base.png",
+      "path": "runtime/shaman_fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_fresh_welcome_base_4x.png",
+      "nearest_4x_sha256": "a59b93d020245a75d107bfd03dbcd44632fa9b9cedabddbb6ee3ff3a5af4088a"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/master_initial_shaman.png",
+      "path": "runtime/shaman_master_initial_shaman.png",
+      "sha256": "d752940630a804f6a24ea468e6512af6295209fb343a6a7c2bda42df6e4d9df4",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_master_initial_shaman_4x.png",
+      "nearest_4x_sha256": "76068b824db5b7c23c271fd872a5face3ef51ee03dffef3c79a0e5619f5df66c"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/master_warrior.png",
+      "path": "runtime/shaman_master_warrior.png",
+      "sha256": "22738b68bd88e0488e2e9855f426cfc5ad3c9b013b5bdffd32bf1ff985b03436",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_master_warrior_4x.png",
+      "nearest_4x_sha256": "f8e9cbaabaa94afd66384e1b42ddc90b8769acb9ea85e5674d56b74f8eb3f4c3"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/master_warlock.png",
+      "path": "runtime/shaman_master_warlock.png",
+      "sha256": "634c0c9e945b4044febed608277ac2f2b146754b5693bf3f400f01bc8e17e711",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_master_warlock_4x.png",
+      "nearest_4x_sha256": "a2d3e735d877d8152b9822f06f14e67024ec842af02aff77113b2441b86dfc89"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/master_B_returns_to_thrall.png",
+      "path": "runtime/shaman_master_B_returns_to_thrall.png",
+      "sha256": "5c318ca21dfe13e4fab36ad1c9ed603d760a034d11e43ef0cd281ac88779c420",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_master_B_returns_to_thrall_4x.png",
+      "nearest_4x_sha256": "78a6d32e8adc8efba40eedc5687d38c4c812eae10bddb3b133c754a2a474459f"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/cold_saved_class_welcome.png",
+      "path": "runtime/shaman_cold_saved_class_welcome.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_cold_saved_class_welcome_4x.png",
+      "nearest_4x_sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/overwrite_confirmation_no.png",
+      "path": "runtime/shaman_overwrite_confirmation_no.png",
+      "sha256": "ce23a4566715895b57e0f5cb377a40d2271097ce6d9c979ff8ab5b6a74a27b1e",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_overwrite_confirmation_no_4x.png",
+      "nearest_4x_sha256": "a6b0acfb6982b5b91c891cb0b21326528120c9bc0f4cb6d741850797c309132f"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/overwrite_no_preserves_saved_class.png",
+      "path": "runtime/shaman_overwrite_no_preserves_saved_class.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_overwrite_no_preserves_saved_class_4x.png",
+      "nearest_4x_sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/overwrite_b_Continue_reachable.png",
+      "path": "runtime/shaman_overwrite_b_Continue_reachable.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_overwrite_b_Continue_reachable_4x.png",
+      "nearest_4x_sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/cold_continue_world.png",
+      "path": "runtime/shaman_cold_continue_world.png",
+      "sha256": "ca7b0c3cba49b9e980802fe2019e9a3d671b464dafc7d9123fd039d4d6d41b9c",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_cold_continue_world_4x.png",
+      "nearest_4x_sha256": "fc5eacdaf95a7bbdda8738120183afe7056e609f8c40de1a4e8945dbde25e7fb"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/shaman/accepted_native_kit_and_restored_world.png",
+      "path": "runtime/shaman_accepted_native_kit_and_restored_world.png",
+      "sha256": "ca7b0c3cba49b9e980802fe2019e9a3d671b464dafc7d9123fd039d4d6d41b9c",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_accepted_native_kit_and_restored_world_4x.png",
+      "nearest_4x_sha256": "fc5eacdaf95a7bbdda8738120183afe7056e609f8c40de1a4e8945dbde25e7fb"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/cold_saved_class_welcome.png",
+      "path": "runtime/warrior_cold_saved_class_welcome.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_cold_saved_class_welcome_4x.png",
+      "nearest_4x_sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/overwrite_confirmation_no.png",
+      "path": "runtime/warrior_overwrite_confirmation_no.png",
+      "sha256": "d80b217eb804772a3f42ac49712d409d1ad17bfa98b99586cb1986eaf5a6147b",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_overwrite_confirmation_no_4x.png",
+      "nearest_4x_sha256": "009e5055d3726b419e78f57d06434ed7047709e39473c56e5ea4acb49ecafff4"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/overwrite_no_preserves_saved_class.png",
+      "path": "runtime/warrior_overwrite_no_preserves_saved_class.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_overwrite_no_preserves_saved_class_4x.png",
+      "nearest_4x_sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/overwrite_b_Continue_reachable.png",
+      "path": "runtime/warrior_overwrite_b_Continue_reachable.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_overwrite_b_Continue_reachable_4x.png",
+      "nearest_4x_sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/cold_continue_world.png",
+      "path": "runtime/warrior_cold_continue_world.png",
+      "sha256": "947274ea6aba3ba2a424988fcc1996501e9b0b0bbb8395b208f57c5e6725c99f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_cold_continue_world_4x.png",
+      "nearest_4x_sha256": "279a755437bb07ebbafa464bf65acb8e9506fb97f1a2d029b2e8e6150de7ff92"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warrior/accepted_native_kit_and_restored_world.png",
+      "path": "runtime/warrior_accepted_native_kit_and_restored_world.png",
+      "sha256": "947274ea6aba3ba2a424988fcc1996501e9b0b0bbb8395b208f57c5e6725c99f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_accepted_native_kit_and_restored_world_4x.png",
+      "nearest_4x_sha256": "279a755437bb07ebbafa464bf65acb8e9506fb97f1a2d029b2e8e6150de7ff92"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/cold_saved_class_welcome.png",
+      "path": "runtime/warlock_cold_saved_class_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_cold_saved_class_welcome_4x.png",
+      "nearest_4x_sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/overwrite_confirmation_no.png",
+      "path": "runtime/warlock_overwrite_confirmation_no.png",
+      "sha256": "31593131603582b52e568fdcde828a3c43e25cda061d875d68e882f21d5accbc",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_overwrite_confirmation_no_4x.png",
+      "nearest_4x_sha256": "a6f697163a4b37b7ab01c6911a5518a15823b3e91b1b7babf73d5cbfcae6429a"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/overwrite_no_preserves_saved_class.png",
+      "path": "runtime/warlock_overwrite_no_preserves_saved_class.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_overwrite_no_preserves_saved_class_4x.png",
+      "nearest_4x_sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/overwrite_b_Continue_reachable.png",
+      "path": "runtime/warlock_overwrite_b_Continue_reachable.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_overwrite_b_Continue_reachable_4x.png",
+      "nearest_4x_sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/cold_continue_world.png",
+      "path": "runtime/warlock_cold_continue_world.png",
+      "sha256": "cc8541c3d5bad89abc328d6513c7f2b988a864f3890ee15aafb9baa8766ae305",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_cold_continue_world_4x.png",
+      "nearest_4x_sha256": "7f1f6b8e71c3ad5e04208a4058ab1948ebf7b795866ed1d920559743087f0c17"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/runtime_d9841f60/warlock/accepted_native_kit_and_restored_world.png",
+      "path": "runtime/warlock_accepted_native_kit_and_restored_world.png",
+      "sha256": "932f5b30562a70fd57eadff5019a5b0f8b3e366d13304e0c105ba87a7dbe51d2",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_accepted_native_kit_and_restored_world_4x.png",
+      "nearest_4x_sha256": "e0ca751fdd801af9e8233dc606a095858723401f347a134a3fb649088a9098fd"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/shaman/den_crowded_priority.png",
+      "path": "runtime/shaman_den_crowded_priority.png",
+      "sha256": "e3fec33f908501f8248fa460e67df8af0d251ad154d36e75ab16327c60f426bd",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_den_crowded_priority_4x.png",
+      "nearest_4x_sha256": "20e1fe892c8d2bed6248b7bb958f4a1f1377e55f1aac6f7a2334c5884ee11016"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/shaman/native_gornek_quest_with_larger_actor.png",
+      "path": "runtime/shaman_native_gornek_quest_with_larger_actor.png",
+      "sha256": "2554e45f6c36cc79574e58e9920e090c168a91146d79a77e5fb786a4325bb318",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/shaman_native_gornek_quest_with_larger_actor_4x.png",
+      "nearest_4x_sha256": "931cde030401463240ca912184f5287321716aef1b6672817090d9bb05fd0f2a"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/warrior/den_crowded_priority.png",
+      "path": "runtime/warrior_den_crowded_priority.png",
+      "sha256": "d9636f6750c2e6edf81871e10c4bad627bcbc58d9c5d546027208f261d17850d",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_den_crowded_priority_4x.png",
+      "nearest_4x_sha256": "47d3dccaac536d560d11e0afc0f2cb9a7abfd3f03b48968bd2b996dea19bbedc"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/warrior/native_gornek_quest_with_larger_actor.png",
+      "path": "runtime/warrior_native_gornek_quest_with_larger_actor.png",
+      "sha256": "4130287e743a4bb4340c6e6b0580f8c68daac3131374bf7cd05a9c0d1270c271",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warrior_native_gornek_quest_with_larger_actor_4x.png",
+      "nearest_4x_sha256": "442ca1eafbf33f8118365037aa59d4a327c410f1397055b46345d1c10a880eaf"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/warlock/den_crowded_priority.png",
+      "path": "runtime/warlock_den_crowded_priority.png",
+      "sha256": "e41e115368ebf1a7963060cd1f9c2bbacb5d04fb8df10e6bc992c77770178863",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_den_crowded_priority_4x.png",
+      "nearest_4x_sha256": "393698350fc234f8cec14a507606400e13874b7fdcd53ecb307f9d2beee458ce"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/selection_v0218/world_restore_d9841f60/warlock/native_gornek_quest_with_larger_actor.png",
+      "path": "runtime/warlock_native_gornek_quest_with_larger_actor.png",
+      "sha256": "ff19b64f92a92052feb892edae8484297a6e5018ca5b0e5846690d350ddc920f",
+      "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/warlock_native_gornek_quest_with_larger_actor_4x.png",
+      "nearest_4x_sha256": "81e0eccec01d6c74ab408f1f475bf6e58211ee76b76b9a6000f5e45d447c6972"
+    }
+  ],
+  "static_primary_native_PNGs": [
+    "assets/native_selection/welcome_scenes_v0218/base/hardware.png",
+    "assets/native_selection/welcome_scenes_v0218/shaman/hardware.png",
+    "assets/native_selection/welcome_scenes_v0218/warrior/hardware.png",
+    "assets/native_selection/welcome_scenes_v0218/warlock/hardware.png",
+    "assets/native_selection/class_portraits_v0218/kento/hardware.png",
+    "assets/native_selection/class_portraits_v0218/zogzog/hardware.png",
+    "assets/native_selection/class_portraits_v0218/bismillah/hardware.png"
+  ],
+  "opaque_portrait_previews": [
+    "assets/native_selection/class_portraits_v0218/kento/hardware_bg.png",
+    "assets/native_selection/class_portraits_v0218/zogzog/hardware_bg.png",
+    "assets/native_selection/class_portraits_v0218/bismillah/hardware_bg.png"
+  ],
+  "source_provenance": "assets/source_provenance.json",
+  "files": {
+    "README.md": {
+      "sha256": "85e5db43cd2f7de4f690db0fd4dc75f4803a2cfe2cddcd77030663c9cf4398b5",
+      "bytes": 1737
+    },
+    "assets/native_selection/class_portraits_v0218/bismillah/attrs.bin": {
+      "sha256": "3829f6ba7879cce25fbd2adac11a05f1b638fa7679c197b430c5fc890583ffc5",
+      "bytes": 72
+    },
+    "assets/native_selection/class_portraits_v0218/bismillah/hardware.png": {
+      "sha256": "b0b7941c8a7d2f0b1177c2fff800f324dc33866472470486eb9f3019dcf2937b",
+      "bytes": 2144
+    },
+    "assets/native_selection/class_portraits_v0218/bismillah/hardware_bg.png": {
+      "sha256": "7bf8153726e5ff0f8eafd6e751f23b6629080f7ac867d67ad2628e7c4666ea35",
+      "bytes": 1885
+    },
+    "assets/native_selection/class_portraits_v0218/bismillah/palettes.bin": {
+      "sha256": "ad2f2f17b62d76fd6f324948c2f5585285d93dc6495cc796c9d29209e8e90d54",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0218/bismillah/portrait.2bpp": {
+      "sha256": "d3285294cd7b3b4d8f6cfe1bf1e0fae52851b1aa9673a82c6e82a633a1a17f52",
+      "bytes": 1152
+    },
+    "assets/native_selection/class_portraits_v0218/kento/attrs.bin": {
+      "sha256": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+      "bytes": 72
+    },
+    "assets/native_selection/class_portraits_v0218/kento/hardware.png": {
+      "sha256": "66d3bb09bdcf6952c674243cc1f43e1702ffb0ba82f5f3ab49d607bff22de238",
+      "bytes": 2018
+    },
+    "assets/native_selection/class_portraits_v0218/kento/hardware_bg.png": {
+      "sha256": "7b7bc92d9b2230ed90cb0f34779e3d0785e07c94ffb4ba0a1813babf8d9717b2",
+      "bytes": 1747
+    },
+    "assets/native_selection/class_portraits_v0218/kento/palettes.bin": {
+      "sha256": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0218/kento/portrait.2bpp": {
+      "sha256": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+      "bytes": 1152
+    },
+    "assets/native_selection/class_portraits_v0218/manifest.json": {
+      "sha256": "c63975b0fd89a51f77a72957ff0856e631ee1a24342275b440b1e6b0238dcfea",
+      "bytes": 92062
+    },
+    "assets/native_selection/class_portraits_v0218/zogzog/attrs.bin": {
+      "sha256": "90d0927e072e3c5084313a0a05a57165f3109e92d51575e5fc177bd9d2651a32",
+      "bytes": 72
+    },
+    "assets/native_selection/class_portraits_v0218/zogzog/hardware.png": {
+      "sha256": "91cca2e3631c78d59d9681bc46e381541757a3d5e006b95c57f65287b9e470a1",
+      "bytes": 1964
+    },
+    "assets/native_selection/class_portraits_v0218/zogzog/hardware_bg.png": {
+      "sha256": "6ed6c43e73c7df024bf5b7737d885550ff1bd363f55bb1061ef7a5fd73d6856c",
+      "bytes": 1698
+    },
+    "assets/native_selection/class_portraits_v0218/zogzog/palettes.bin": {
+      "sha256": "caea1ddb30d286c1b2643a9eb9e6f124503f9ca879dc2b9a5ea6134ea51d19e7",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0218/zogzog/portrait.2bpp": {
+      "sha256": "fc1065581a19078d3aa33dcf1fd545b266e02cffd605d955e541d43535d143db",
+      "bytes": 1152
+    },
+    "assets/native_selection/selection_labels_v0218/labels.2bpp": {
+      "sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+      "bytes": 384
+    },
+    "assets/native_selection/selection_labels_v0218/manifest.json": {
+      "sha256": "de40456627f7932095b7e54e9e21206718561d5dce2011cf22f89a2b4841927e",
+      "bytes": 458
+    },
+    "assets/native_selection/welcome_labels.json": {
+      "sha256": "de7bf63fcb4b7d252d0a957c9626d459382302624ce75a5dcfc7d10f3c38d728",
+      "bytes": 1482
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/attrs.bin": {
+      "sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/hardware.png": {
+      "sha256": "74fcd540c18c88cdc0e91d1233c12fa746053d5507a8ee148fd9fb63094deb16",
+      "bytes": 6826
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tilemap.bin": {
+      "sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tiles_bank0.2bpp": {
+      "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tiles_bank1.2bpp": {
+      "sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/manifest.json": {
+      "sha256": "a485016813aac62592fdc9c09d35f13d77eb5b620aa1570f6ca591e6fbe3cb01",
+      "bytes": 328586
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/attrs.bin": {
+      "sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/hardware.png": {
+      "sha256": "04257fbc53e4b5dcadd9298ee6bd2bac5172749a0ae21806dd0d75fb758fcd69",
+      "bytes": 7465
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tilemap.bin": {
+      "sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tiles_bank0.2bpp": {
+      "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tiles_bank1.2bpp": {
+      "sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/attrs.bin": {
+      "sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/hardware.png": {
+      "sha256": "e56d2f0d8e867e25d934d7cf76ada255b4aa84b4bf2981df31f50a9896bec8aa",
+      "bytes": 6987
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tilemap.bin": {
+      "sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tiles_bank0.2bpp": {
+      "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tiles_bank1.2bpp": {
+      "sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/attrs.bin": {
+      "sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/hardware.png": {
+      "sha256": "5a27502d3a4ae995e5a4ede8b8ae8c6d0b1534fe539e61d3c0a79033b21548b9",
+      "bytes": 7084
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tilemap.bin": {
+      "sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tiles_bank0.2bpp": {
+      "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tiles_bank1.2bpp": {
+      "sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+      "bytes": 4096
+    },
+    "assets/source_provenance.json": {
+      "sha256": "08df33505ed4c95001011b38933058da1beb4245ce6179ee41ad08cb72c908ab",
+      "bytes": 5256
+    },
+    "peon_of_warcraft_v0_2_18.gbc": {
+      "sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+      "bytes": 2097152
+    },
+    "peon_of_warcraft_v0_2_18.map": {
+      "sha256": "dc5de30674e4eea2cbf81a1d64008e6bdcc4b0c296ca850176858745a08bd809",
+      "bytes": 2627596
+    },
+    "peon_of_warcraft_v0_2_18.sym": {
+      "sha256": "4a860657485e5f47ae92c4fd5ff9c8219b49bd62685196263bffa94d57390284",
+      "bytes": 1969595
+    },
+    "runtime/manifest.json": {
+      "sha256": "d9b4174c66aa86b9db6b7af5fd10ff9f96c354410c5a6d4d8e98ba022fd44e1e",
+      "bytes": 18550
+    },
+    "runtime/shaman_accepted_native_kit_and_restored_world.png": {
+      "sha256": "ca7b0c3cba49b9e980802fe2019e9a3d671b464dafc7d9123fd039d4d6d41b9c",
+      "bytes": 2242
+    },
+    "runtime/shaman_accepted_native_kit_and_restored_world_4x.png": {
+      "sha256": "fc5eacdaf95a7bbdda8738120183afe7056e609f8c40de1a4e8945dbde25e7fb",
+      "bytes": 5440
+    },
+    "runtime/shaman_cold_continue_world.png": {
+      "sha256": "ca7b0c3cba49b9e980802fe2019e9a3d671b464dafc7d9123fd039d4d6d41b9c",
+      "bytes": 2242
+    },
+    "runtime/shaman_cold_continue_world_4x.png": {
+      "sha256": "fc5eacdaf95a7bbdda8738120183afe7056e609f8c40de1a4e8945dbde25e7fb",
+      "bytes": 5440
+    },
+    "runtime/shaman_cold_saved_class_welcome.png": {
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "bytes": 7094
+    },
+    "runtime/shaman_cold_saved_class_welcome_4x.png": {
+      "sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5",
+      "bytes": 12625
+    },
+    "runtime/shaman_den_crowded_priority.png": {
+      "sha256": "e3fec33f908501f8248fa460e67df8af0d251ad154d36e75ab16327c60f426bd",
+      "bytes": 3066
+    },
+    "runtime/shaman_den_crowded_priority_4x.png": {
+      "sha256": "20e1fe892c8d2bed6248b7bb958f4a1f1377e55f1aac6f7a2334c5884ee11016",
+      "bytes": 6993
+    },
+    "runtime/shaman_fresh_welcome_base.png": {
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "bytes": 6355
+    },
+    "runtime/shaman_fresh_welcome_base_4x.png": {
+      "sha256": "a59b93d020245a75d107bfd03dbcd44632fa9b9cedabddbb6ee3ff3a5af4088a",
+      "bytes": 11396
+    },
+    "runtime/shaman_master_B_returns_to_thrall.png": {
+      "sha256": "5c318ca21dfe13e4fab36ad1c9ed603d760a034d11e43ef0cd281ac88779c420",
+      "bytes": 3339
+    },
+    "runtime/shaman_master_B_returns_to_thrall_4x.png": {
+      "sha256": "78a6d32e8adc8efba40eedc5687d38c4c812eae10bddb3b133c754a2a474459f",
+      "bytes": 6886
+    },
+    "runtime/shaman_master_initial_shaman.png": {
+      "sha256": "d752940630a804f6a24ea468e6512af6295209fb343a6a7c2bda42df6e4d9df4",
+      "bytes": 3875
+    },
+    "runtime/shaman_master_initial_shaman_4x.png": {
+      "sha256": "76068b824db5b7c23c271fd872a5face3ef51ee03dffef3c79a0e5619f5df66c",
+      "bytes": 8130
+    },
+    "runtime/shaman_master_warlock.png": {
+      "sha256": "634c0c9e945b4044febed608277ac2f2b146754b5693bf3f400f01bc8e17e711",
+      "bytes": 4050
+    },
+    "runtime/shaman_master_warlock_4x.png": {
+      "sha256": "a2d3e735d877d8152b9822f06f14e67024ec842af02aff77113b2441b86dfc89",
+      "bytes": 8274
+    },
+    "runtime/shaman_master_warrior.png": {
+      "sha256": "22738b68bd88e0488e2e9855f426cfc5ad3c9b013b5bdffd32bf1ff985b03436",
+      "bytes": 3872
+    },
+    "runtime/shaman_master_warrior_4x.png": {
+      "sha256": "f8e9cbaabaa94afd66384e1b42ddc90b8769acb9ea85e5674d56b74f8eb3f4c3",
+      "bytes": 7923
+    },
+    "runtime/shaman_native_gornek_quest_with_larger_actor.png": {
+      "sha256": "2554e45f6c36cc79574e58e9920e090c168a91146d79a77e5fb786a4325bb318",
+      "bytes": 4539
+    },
+    "runtime/shaman_native_gornek_quest_with_larger_actor_4x.png": {
+      "sha256": "931cde030401463240ca912184f5287321716aef1b6672817090d9bb05fd0f2a",
+      "bytes": 8848
+    },
+    "runtime/shaman_overwrite_b_Continue_reachable.png": {
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "bytes": 7094
+    },
+    "runtime/shaman_overwrite_b_Continue_reachable_4x.png": {
+      "sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5",
+      "bytes": 12625
+    },
+    "runtime/shaman_overwrite_confirmation_no.png": {
+      "sha256": "ce23a4566715895b57e0f5cb377a40d2271097ce6d9c979ff8ab5b6a74a27b1e",
+      "bytes": 6505
+    },
+    "runtime/shaman_overwrite_confirmation_no_4x.png": {
+      "sha256": "a6b0acfb6982b5b91c891cb0b21326528120c9bc0f4cb6d741850797c309132f",
+      "bytes": 12330
+    },
+    "runtime/shaman_overwrite_no_preserves_saved_class.png": {
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "bytes": 7094
+    },
+    "runtime/shaman_overwrite_no_preserves_saved_class_4x.png": {
+      "sha256": "9dc6696160c2b720043902893e40bd001bae0df729c3103945d95d4c7a5455e5",
+      "bytes": 12625
+    },
+    "runtime/warlock_accepted_native_kit_and_restored_world.png": {
+      "sha256": "932f5b30562a70fd57eadff5019a5b0f8b3e366d13304e0c105ba87a7dbe51d2",
+      "bytes": 1934
+    },
+    "runtime/warlock_accepted_native_kit_and_restored_world_4x.png": {
+      "sha256": "e0ca751fdd801af9e8233dc606a095858723401f347a134a3fb649088a9098fd",
+      "bytes": 5005
+    },
+    "runtime/warlock_cold_continue_world.png": {
+      "sha256": "cc8541c3d5bad89abc328d6513c7f2b988a864f3890ee15aafb9baa8766ae305",
+      "bytes": 2080
+    },
+    "runtime/warlock_cold_continue_world_4x.png": {
+      "sha256": "7f1f6b8e71c3ad5e04208a4058ab1948ebf7b795866ed1d920559743087f0c17",
+      "bytes": 5169
+    },
+    "runtime/warlock_cold_saved_class_welcome.png": {
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "bytes": 6653
+    },
+    "runtime/warlock_cold_saved_class_welcome_4x.png": {
+      "sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3",
+      "bytes": 12000
+    },
+    "runtime/warlock_den_crowded_priority.png": {
+      "sha256": "e41e115368ebf1a7963060cd1f9c2bbacb5d04fb8df10e6bc992c77770178863",
+      "bytes": 3059
+    },
+    "runtime/warlock_den_crowded_priority_4x.png": {
+      "sha256": "393698350fc234f8cec14a507606400e13874b7fdcd53ecb307f9d2beee458ce",
+      "bytes": 7050
+    },
+    "runtime/warlock_native_gornek_quest_with_larger_actor.png": {
+      "sha256": "ff19b64f92a92052feb892edae8484297a6e5018ca5b0e5846690d350ddc920f",
+      "bytes": 4621
+    },
+    "runtime/warlock_native_gornek_quest_with_larger_actor_4x.png": {
+      "sha256": "81e0eccec01d6c74ab408f1f475bf6e58211ee76b76b9a6000f5e45d447c6972",
+      "bytes": 8888
+    },
+    "runtime/warlock_overwrite_b_Continue_reachable.png": {
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "bytes": 6653
+    },
+    "runtime/warlock_overwrite_b_Continue_reachable_4x.png": {
+      "sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3",
+      "bytes": 12000
+    },
+    "runtime/warlock_overwrite_confirmation_no.png": {
+      "sha256": "31593131603582b52e568fdcde828a3c43e25cda061d875d68e882f21d5accbc",
+      "bytes": 6067
+    },
+    "runtime/warlock_overwrite_confirmation_no_4x.png": {
+      "sha256": "a6f697163a4b37b7ab01c6911a5518a15823b3e91b1b7babf73d5cbfcae6429a",
+      "bytes": 11703
+    },
+    "runtime/warlock_overwrite_no_preserves_saved_class.png": {
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "bytes": 6653
+    },
+    "runtime/warlock_overwrite_no_preserves_saved_class_4x.png": {
+      "sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3",
+      "bytes": 12000
+    },
+    "runtime/warrior_accepted_native_kit_and_restored_world.png": {
+      "sha256": "947274ea6aba3ba2a424988fcc1996501e9b0b0bbb8395b208f57c5e6725c99f",
+      "bytes": 2214
+    },
+    "runtime/warrior_accepted_native_kit_and_restored_world_4x.png": {
+      "sha256": "279a755437bb07ebbafa464bf65acb8e9506fb97f1a2d029b2e8e6150de7ff92",
+      "bytes": 5405
+    },
+    "runtime/warrior_cold_continue_world.png": {
+      "sha256": "947274ea6aba3ba2a424988fcc1996501e9b0b0bbb8395b208f57c5e6725c99f",
+      "bytes": 2214
+    },
+    "runtime/warrior_cold_continue_world_4x.png": {
+      "sha256": "279a755437bb07ebbafa464bf65acb8e9506fb97f1a2d029b2e8e6150de7ff92",
+      "bytes": 5405
+    },
+    "runtime/warrior_cold_saved_class_welcome.png": {
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "bytes": 6630
+    },
+    "runtime/warrior_cold_saved_class_welcome_4x.png": {
+      "sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0",
+      "bytes": 11766
+    },
+    "runtime/warrior_den_crowded_priority.png": {
+      "sha256": "d9636f6750c2e6edf81871e10c4bad627bcbc58d9c5d546027208f261d17850d",
+      "bytes": 3073
+    },
+    "runtime/warrior_den_crowded_priority_4x.png": {
+      "sha256": "47d3dccaac536d560d11e0afc0f2cb9a7abfd3f03b48968bd2b996dea19bbedc",
+      "bytes": 6999
+    },
+    "runtime/warrior_native_gornek_quest_with_larger_actor.png": {
+      "sha256": "4130287e743a4bb4340c6e6b0580f8c68daac3131374bf7cd05a9c0d1270c271",
+      "bytes": 4531
+    },
+    "runtime/warrior_native_gornek_quest_with_larger_actor_4x.png": {
+      "sha256": "442ca1eafbf33f8118365037aa59d4a327c410f1397055b46345d1c10a880eaf",
+      "bytes": 8889
+    },
+    "runtime/warrior_overwrite_b_Continue_reachable.png": {
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "bytes": 6630
+    },
+    "runtime/warrior_overwrite_b_Continue_reachable_4x.png": {
+      "sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0",
+      "bytes": 11766
+    },
+    "runtime/warrior_overwrite_confirmation_no.png": {
+      "sha256": "d80b217eb804772a3f42ac49712d409d1ad17bfa98b99586cb1986eaf5a6147b",
+      "bytes": 5579
+    },
+    "runtime/warrior_overwrite_confirmation_no_4x.png": {
+      "sha256": "009e5055d3726b419e78f57d06434ed7047709e39473c56e5ea4acb49ecafff4",
+      "bytes": 10348
+    },
+    "runtime/warrior_overwrite_no_preserves_saved_class.png": {
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "bytes": 6630
+    },
+    "runtime/warrior_overwrite_no_preserves_saved_class_4x.png": {
+      "sha256": "c7c44da26520ccb09442230f56912df92de90f90f0ecb98bbe4ae88566a84fd0",
+      "bytes": 11766
+    },
+    "validation/clean_build.json": {
+      "sha256": "b15c25b8e709602f8492e08dfa636cf61d49e9d6ac5b82b2b7aa2290076adcec",
+      "bytes": 949
+    },
+    "validation/import_idempotence.json": {
+      "sha256": "ab9b6782ea78fd47b03b74cdecb0f4ebecbdc5552c1563bc29ce15c7f84cb595",
+      "bytes": 34098
+    },
+    "validation/preservation.json": {
+      "sha256": "7e0230252f0f15a0db018d99a3ab623f49f580160f2684f5d251a6ec7157f98e",
+      "bytes": 421312
+    },
+    "validation/selection_runtime.json": {
+      "sha256": "c1311b26d0ed17a97daa916ae86ed8c307154aaf7ae8b93caf6fb11b506a59c1",
+      "bytes": 112606
+    },
+    "validation/validation.json": {
+      "sha256": "9c5bb66ad70d06eea5f271999a3bac5019ed661b7829315c70514d00e84dd723",
+      "bytes": 13182
+    },
+    "validation/world_and_terrain_restoration.json": {
+      "sha256": "bf846dceac576573ceb220b17d15d24ff67bf212194eae043634a3228f525169",
+      "bytes": 93398
+    }
+  },
+  "zip_sha256": "ad995cb3bb74cd9424ba7353ecdc15bff2cc94417990cb0a812f99db8a5c15fd",
+  "zip_bytes": 2746298,
+  "zip_crc_and_all_payload_sha256": "PASS"
+}

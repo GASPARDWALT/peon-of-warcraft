@@ -1,0 +1,3384 @@
+{
+  "version": "v0.2.18",
+  "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+  "canonical_native_packets": {
+    "status": "PASS",
+    "manifest": "/workspace/peon-of-warcraft/gfx/world_redraw_v0217/manifest.json",
+    "manifest_sha256": "71ed6997debea1f753590484b334e8ff6d6a52078747ead7ff97af67556a8b82",
+    "manifest_version": "v0.2.17",
+    "graphics": "/workspace/peon-of-warcraft/gfx/world_redraw_v0217/graphics.asm",
+    "graphics_sha256": "9ab4f1b8ad12b56eed634d4c2e7ceab3cd6f70bc360b4894e0fc0646ff818ca8",
+    "packet_count": 30,
+    "packets": {
+      "PeonWorldBaseV0215": {
+        "path": "gfx/world_redraw_v0217/base/overworld.bin",
+        "sha256": "677d15edee8ea3d949fb5183b5a6d4ddb164980454040a3a357b56730c2a0033",
+        "masks_sha256": "87911f647475f2ea0fe9358aae906326f5205df50efb1a56e5a744fc2ba8f7e1",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 255,
+            "oam_cells": 8
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 255,
+            "oam_cells": 8
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 255,
+            "oam_cells": 8
+          },
+          {
+            "frame": 8,
+            "mask": 447,
+            "oam_cells": 8
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 447,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 255,
+            "oam_cells": 8
+          }
+        ]
+      },
+      "PeonWorldShamanV0215": {
+        "path": "gfx/world_redraw_v0217/shaman/overworld.bin",
+        "sha256": "b55bc2e4c5cd699ddb628b7c12eb59331759393dbdda261aec9311c276e1cb07",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldWarriorV0215": {
+        "path": "gfx/world_redraw_v0217/warrior/overworld.bin",
+        "sha256": "c0993f6a61cf99b010d354b34a0c4de2f7d8265447c91d712da463ca596f33db",
+        "masks_sha256": "c1e0c8f241841bbf390be72d072f6a46be5558ed3e7583d2dcdd18deb548b89b",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 447,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldWarlockV0215": {
+        "path": "gfx/world_redraw_v0217/warlock/overworld.bin",
+        "sha256": "ecb4a69320ca5df74826989c19c717d29f073fe0a6a26507ce5d8a88a94e9d8e",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "800e0179a5924e12eeeb07e3bee59392aee638ae6a9a6b3a54dd9ad36ec8c9a4",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldBeastHandlerV0215": {
+        "path": "gfx/world_redraw_v0217/beast_handler/overworld.bin",
+        "sha256": "92319192f596d1fab05f976fe5b8fd9781ef93b78dbd46d6617a18b8f75ae14b",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldBoarV0215": {
+        "path": "gfx/world_redraw_v0217/boar/overworld.bin",
+        "sha256": "b3708fd1bb8c4a4921855bfc9ede10ad193b41f5c0d2c7ef99043ea80ed4de8d",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldEnemyWarlockV0215": {
+        "path": "gfx/world_redraw_v0217/enemy_warlock/overworld.bin",
+        "sha256": "c0981749742eb2060aa2da27448ea02e15c50c463d9ebb879d545aefa428802e",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldFelhunterV0215": {
+        "path": "gfx/world_redraw_v0217/felhunter/overworld.bin",
+        "sha256": "be2d5762173b63dc6aeaa2bf66f1a6a62e9ace5603daa9ec6b0867089dbb45ce",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldHarpyV0215": {
+        "path": "gfx/world_redraw_v0217/harpy/overworld.bin",
+        "sha256": "b689246bd05963b7daf0dd0058787faf4fd7c6fa57f6c2177b96fc667a571ea1",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "2200ddb64aee6ae0b5685d78fe8aa222e38c61399a083d20117614f0d4b07449",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldImpV0215": {
+        "path": "gfx/world_redraw_v0217/imp/overworld.bin",
+        "sha256": "acb31dbecf6fcc5a63728c7f8806e9721e9f7f69a4fa203116354ebed5fc2a98",
+        "masks_sha256": "cd764f1122b43b1ebf368a5815b50841417069e0e6a0ab225c835e1c111bd539",
+        "attrs_sha256": "84f79b425e243f9fb65babd67aa2e4a718bd0d1c4833d1fa4b90314278d94e0e",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 251,
+            "oam_cells": 7
+          },
+          {
+            "frame": 7,
+            "mask": 251,
+            "oam_cells": 7
+          },
+          {
+            "frame": 8,
+            "mask": 251,
+            "oam_cells": 7
+          },
+          {
+            "frame": 9,
+            "mask": 446,
+            "oam_cells": 7
+          },
+          {
+            "frame": 10,
+            "mask": 446,
+            "oam_cells": 7
+          },
+          {
+            "frame": 11,
+            "mask": 446,
+            "oam_cells": 7
+          }
+        ]
+      },
+      "PeonWorldOrcGuardV0215": {
+        "path": "gfx/world_redraw_v0217/orc_guard/overworld.bin",
+        "sha256": "a3c34de6a1220da50dc5c56b2030fb7861ae8a9df0378515e1fe7d7572db8840",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "ba6c59d8bd4b9af55c37bdd4e9322b721352d2b45b464b7d38ab535252626294",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldOrcMerchantV0215": {
+        "path": "gfx/world_redraw_v0217/orc_merchant/overworld.bin",
+        "sha256": "081069b5e92e9a099e2500eb70de19fdd37f723735f5cf514ab6d1ffbfac10bb",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldPeonWorkerV0215": {
+        "path": "gfx/world_redraw_v0217/peon_worker/overworld.bin",
+        "sha256": "6d5b8ba92ceca05f326445a33e46c2e9d315cab47ce0d0e09fe76f2f5522e986",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldQuestPeonV0215": {
+        "path": "gfx/world_redraw_v0217/quest_peon/overworld.bin",
+        "sha256": "4a85a227c2f6229bb01fe9b9617eeabea8a61b340d41de388621f084830d53be",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldRaptorV0215": {
+        "path": "gfx/world_redraw_v0217/raptor/overworld.bin",
+        "sha256": "69f6c24f1369d6d43aaa4b68774ee6cfc3af4d00b61e29e1bfb431c5f58e424c",
+        "masks_sha256": "ea149826256a3d2d97e00c8ed44034cc1f4338d20324760aeaf12aaaddb9ae56",
+        "attrs_sha256": "02731695b620f5c0916b86d0b2c7a4c094d6cedd57bfa1e01a974d7f9882a942",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 1,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 2,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 3,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 4,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 5,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 6,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 7,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 8,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 9,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 10,
+            "mask": 506,
+            "oam_cells": 7
+          },
+          {
+            "frame": 11,
+            "mask": 506,
+            "oam_cells": 7
+          }
+        ]
+      },
+      "PeonWorldSarkothV0215": {
+        "path": "gfx/world_redraw_v0217/sarkoth/overworld.bin",
+        "sha256": "c25de13a5783df1b647d64953075262265b2bde58bb9aeaa38d71aeca9d0b62f",
+        "masks_sha256": "49b9b0b41ebeac7b8fcb3364ddfd4ad561ec63580f16d180041958a2c4398e73",
+        "attrs_sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 1,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 2,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 3,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 4,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 5,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 6,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 7,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 8,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 9,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 10,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 507,
+            "oam_cells": 8
+          }
+        ]
+      },
+      "PeonWorldScorpidV0215": {
+        "path": "gfx/world_redraw_v0217/scorpid/overworld.bin",
+        "sha256": "8b0178b10f960537153747846cb54ec10def34a9e1c259f114144b7c8cc91a85",
+        "masks_sha256": "49b9b0b41ebeac7b8fcb3364ddfd4ad561ec63580f16d180041958a2c4398e73",
+        "attrs_sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 1,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 2,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 3,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 4,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 5,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 6,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 7,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 8,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 9,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 10,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 507,
+            "oam_cells": 8
+          }
+        ]
+      },
+      "PeonWorldShamanApprenticeV0215": {
+        "path": "gfx/world_redraw_v0217/shaman_apprentice/overworld.bin",
+        "sha256": "d9d1f64502a27cba26a4f8f1369f762acf5f2e77fc84dc59304c2e1a528dc671",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldTigerV0215": {
+        "path": "gfx/world_redraw_v0217/tiger/overworld.bin",
+        "sha256": "b478e0d7b7516d09efee8edf5afd85732ccd835513ab41736c62a44eab02cbce",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldTrollGuardV0215": {
+        "path": "gfx/world_redraw_v0217/troll_guard/overworld.bin",
+        "sha256": "9fb7a41a683b48a45137323583507a5ac28b31e9e8198845f780f9d438111b71",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "36b9817a1fad19727fd9078ce32bc647d72bbe8051a8deaf8114517623cfa925",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldTrollMerchantV0215": {
+        "path": "gfx/world_redraw_v0217/troll_merchant/overworld.bin",
+        "sha256": "451549ea69f628a8effe9ee82b47c001fc115d750140403505c69aadcf149756",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "098920e8ff9d85b9263e175ecc3068da23a3bef1f7ebf1032d396fd20a0389c9",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldTrollShamanV0215": {
+        "path": "gfx/world_redraw_v0217/troll_shaman/overworld.bin",
+        "sha256": "d1b70c17357264aba42b14f32b405caa319af6d5d3bfbcd08c34b622c6050260",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "36b9817a1fad19727fd9078ce32bc647d72bbe8051a8deaf8114517623cfa925",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldVeteranQuestgiverV0215": {
+        "path": "gfx/world_redraw_v0217/veteran_questgiver/overworld.bin",
+        "sha256": "7b916ff2afe46acf84a448d1ce3b4c828ecff21c74eefd3a0262980949e51f32",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "ba6c59d8bd4b9af55c37bdd4e9322b721352d2b45b464b7d38ab535252626294",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldWarriorTrainerV0215": {
+        "path": "gfx/world_redraw_v0217/warrior_trainer/overworld.bin",
+        "sha256": "47253cab54bf91dee95e87546a0583ad3bd0bd15dac71f77635a274791b2e91e",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "ba6c59d8bd4b9af55c37bdd4e9322b721352d2b45b464b7d38ab535252626294",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldRockOneNpcV0215": {
+        "path": "gfx/world_redraw_v0217/rock_one_npc/overworld.bin",
+        "sha256": "538112131dd4e7d3261fdebdc43710f5221ffb6351c1ecfb6a524d0bfc3d33d9",
+        "masks_sha256": "2b902e4dff47a3e24dab86f096be9af899f70baf9e4bb5bf93e6e5aaecaa4ef4",
+        "attrs_sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 1,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 2,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 3,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 4,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 5,
+            "mask": 248,
+            "oam_cells": 5
+          },
+          {
+            "frame": 6,
+            "mask": 504,
+            "oam_cells": 6
+          },
+          {
+            "frame": 7,
+            "mask": 504,
+            "oam_cells": 6
+          },
+          {
+            "frame": 8,
+            "mask": 504,
+            "oam_cells": 6
+          },
+          {
+            "frame": 9,
+            "mask": 504,
+            "oam_cells": 6
+          },
+          {
+            "frame": 10,
+            "mask": 504,
+            "oam_cells": 6
+          },
+          {
+            "frame": 11,
+            "mask": 504,
+            "oam_cells": 6
+          }
+        ]
+      },
+      "PeonWorldSleepingV0215": {
+        "path": "gfx/world_redraw_v0217/sleeping/overworld.bin",
+        "sha256": "719bb9bd4f6f8c35a82925f4f907750dc20cff1e9e0fb6c6ae25696caa45ecfe",
+        "masks_sha256": "c7ff2113a9e8be4576f59a4796836218ec2a856412f0b50f99489745a2feaaf4",
+        "attrs_sha256": "59925f1fc81e7763805b5a20a6cbfea26860b50dd047be64dbe7693e1701f79a",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 1,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 2,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 3,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 4,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 5,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 6,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 7,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 8,
+            "mask": 59,
+            "oam_cells": 5
+          },
+          {
+            "frame": 9,
+            "mask": 62,
+            "oam_cells": 5
+          },
+          {
+            "frame": 10,
+            "mask": 62,
+            "oam_cells": 5
+          },
+          {
+            "frame": 11,
+            "mask": 62,
+            "oam_cells": 5
+          }
+        ]
+      },
+      "PeonWorldCrawlerV0215": {
+        "path": "gfx/world_redraw_v0217/crawler/overworld.bin",
+        "sha256": "11e381d34fa79f0d4b89e1c46ed8cdbe67abaceefeb0c07942219454974a27cd",
+        "masks_sha256": "9cd186e2f087ea38d6de8e8db655abf34d45e73305d58098d6b657b2489477be",
+        "attrs_sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 7,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 8,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 9,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 10,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 510,
+            "oam_cells": 8
+          }
+        ]
+      },
+      "PeonWorldYarrogV0215": {
+        "path": "gfx/world_redraw_v0217/yarrog/overworld.bin",
+        "sha256": "60fe40149783a6d275e6f0cd1b172b4c53fc451718b01e8199a6b52b3d90e39f",
+        "masks_sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+        "attrs_sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 1,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 2,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 3,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 4,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 5,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldKolkarArcherV0215": {
+        "path": "gfx/world_redraw_v0217/kolkar_archer/overworld.bin",
+        "sha256": "72d88381115528ccf84e605bdd7808c68ff9993ab33a874498aa1efbb3564038",
+        "masks_sha256": "4f44cd3a33a46138527729ab2fb30501c718ef3f2635c2d30158ea252de1c9a5",
+        "attrs_sha256": "025169ad8fe34447ab97bbd6b75f55058871f2beefa126ea1ca3585dce417263",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 1,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 2,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 3,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 4,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 5,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 6,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 7,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 8,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 9,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 10,
+            "mask": 511,
+            "oam_cells": 9
+          },
+          {
+            "frame": 11,
+            "mask": 511,
+            "oam_cells": 9
+          }
+        ]
+      },
+      "PeonWorldKolkarRaiderV0215": {
+        "path": "gfx/world_redraw_v0217/kolkar_raider/overworld.bin",
+        "sha256": "6e6ddabe2cf9307c92310959e418f794328c12209a3c613db357d12119304cee",
+        "masks_sha256": "7691b305d47d727826d505d67463cde320b24948fd78761c7997667df1a2c5f8",
+        "attrs_sha256": "29ea3968dccb632ed09c48f7c111f304aaf6ceb0119b22db55bfb708fcd0cb0b",
+        "ROM_exact": true,
+        "frames": [
+          {
+            "frame": 0,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 1,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 2,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 3,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 4,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 5,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 6,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 7,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 8,
+            "mask": 507,
+            "oam_cells": 8
+          },
+          {
+            "frame": 9,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 10,
+            "mask": 510,
+            "oam_cells": 8
+          },
+          {
+            "frame": 11,
+            "mask": 510,
+            "oam_cells": 8
+          }
+        ]
+      }
+    }
+  },
+  "art_root": "/workspace/peon-of-warcraft/references/generated/world_redraw_v0217",
+  "renderer_engine": "v0.2.15 unchanged",
+  "world_animation_scope": {
+    "heroes_and_imp": "Four authored native directions, idle and two separately drawn gait cels each.",
+    "other_families": "Four authored native directional stills repeated at three gait addresses.",
+    "native_address_coverage_is_not_distinct_art_pose_coverage": true
+  },
+  "ordinary_buttons_only": true,
+  "RAM_edits": false,
+  "states_loaded": false,
+  "user_batteries_opened": false,
+  "base_peon_runtime_scope": "Scripted opening forced LEFT pose; source VRAM/OAM and actual LCD capture only, no free walking or four-direction coverage.",
+  "classes": {
+    "shaman": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 305
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 3,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 298
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 9
+        },
+        "left": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 6,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 245
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 225,
+              "frame": 9,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 266
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_native_gait_addresses": true,
+          "animation_note": "Idle and two separately authored limb poses at the existing gait addresses; the controller walk observed all three addresses, with complete source/OAM checks.",
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 36
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 40,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 225,
+            "frame": 3,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "7": {
+            "key": 64,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 35,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 225,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 305
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        10,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 659,
+      "native_current_object_context_preserved": true,
+      "native_background_restoration": {
+        "status": "PASS",
+        "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+        "ordinary_buttons_only": true,
+        "emulator_memory_edits": false,
+        "states_loaded": false,
+        "user_batteries_opened": false,
+        "gallery_before_accept": {
+          "bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "gallery_sha256": "cf59675d392bebc298d0edd7c715041c62c44bc50c2c19c1b74721ea9217e74d",
+          "original_map_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "gallery_really_borrowed_map_graphics": true
+        },
+        "native_map_graphics_loads_after_accept": [
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "TheDen",
+            "source": "gfx/quieter_ground_v0214/TheDen.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "actual_VRAM_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "actual_VRAM_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36352,
+                "bytes": 384,
+                "source_offset": 3072,
+                "source_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "actual_VRAM_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "byte_exact": true
+              }
+            ]
+          }
+        ],
+        "native_map_loader_hook_errors": []
+      }
+    },
+    "warrior": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 296
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 3,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 294
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 9
+        },
+        "left": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 6,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 243
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 226,
+              "frame": 9,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 239
+            },
+            "1": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "4": {
+              "key": 65,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_native_gait_addresses": true,
+          "animation_note": "Idle and two separately authored limb poses at the existing gait addresses; the controller walk observed all three addresses, with complete source/OAM checks.",
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 36
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 40,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 226,
+            "frame": 3,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "7": {
+            "key": 64,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 35,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 226,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 296
+          },
+          "1": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "3": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        10,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 658,
+      "native_current_object_context_preserved": true,
+      "native_background_restoration": {
+        "status": "PASS",
+        "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+        "ordinary_buttons_only": true,
+        "emulator_memory_edits": false,
+        "states_loaded": false,
+        "user_batteries_opened": false,
+        "gallery_before_accept": {
+          "bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "gallery_sha256": "cd1f051130c59f6e78a3144393979a1e4200a4dc7b2990deda34ef1808a21bf8",
+          "original_map_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "gallery_really_borrowed_map_graphics": true
+        },
+        "native_map_graphics_loads_after_accept": [
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "TheDen",
+            "source": "gfx/quieter_ground_v0214/TheDen.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "actual_VRAM_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "actual_VRAM_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36352,
+                "bytes": 384,
+                "source_offset": 3072,
+                "source_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "actual_VRAM_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "byte_exact": true
+              }
+            ]
+          }
+        ],
+        "native_map_loader_hook_errors": []
+      }
+    },
+    "warlock": {
+      "directions": {
+        "down": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 308
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 1
+        },
+        "up": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 3,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 305
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 8
+        },
+        "left": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 6,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 256
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "right": {
+          "objects": 39,
+          "maximum_scanline": 7,
+          "actors": {
+            "0": {
+              "key": 227,
+              "frame": 9,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 259
+            },
+            "1": {
+              "key": 104,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            },
+            "2": {
+              "key": 58,
+              "frame": 0,
+              "complete_visible_tiles": 9,
+              "source_VRAM_exact": true,
+              "source_palette_attrs_exact": true,
+              "relative_OAM_template_source_exact": true,
+              "actual_LCD_source_pixels": 0
+            }
+          },
+          "direction_acknowledged_in_LCD_frames": 6
+        },
+        "walking": {
+          "observed_native_frames": [
+            6,
+            7,
+            8,
+            9
+          ],
+          "all_three_native_gait_addresses": true,
+          "animation_note": "Idle and two separately authored limb poses at the existing gait addresses; the controller walk observed all three addresses, with complete source/OAM checks.",
+          "renderer_VBlank_intervals": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            3,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "native_world_loops_during_150_LCD_frames": 36
+        }
+      },
+      "base_opening": {
+        "objects": 18,
+        "maximum_scanline": 6,
+        "actors": {
+          "0": {
+            "key": 224,
+            "frame": 6,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 39,
+            "frame": 9,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "nearby_NPC_interaction": {
+        "objects": 38,
+        "maximum_scanline": 9,
+        "actors": {
+          "0": {
+            "key": 227,
+            "frame": 3,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "2": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 104,
+            "frame": 9,
+            "complete_visible_tiles": 7,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "8": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_scene": {
+        "objects": 38,
+        "maximum_scanline": 8,
+        "actors": {
+          "0": {
+            "key": 227,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 308
+          },
+          "2": {
+            "key": 58,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "1": {
+            "key": 104,
+            "frame": 9,
+            "complete_visible_tiles": 7,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          },
+          "8": {
+            "key": 64,
+            "frame": 0,
+            "complete_visible_tiles": 9,
+            "source_VRAM_exact": true,
+            "source_palette_attrs_exact": true,
+            "relative_OAM_template_source_exact": true,
+            "actual_LCD_source_pixels": 0
+          }
+        }
+      },
+      "crowded_native_position": [
+        11,
+        11
+      ],
+      "quest_markers": {
+        "available": {
+          "source": "PeonQuestAvailableYellowGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 70
+        },
+        "active": {
+          "source": "PeonQuestActiveGrayGFX",
+          "source_VRAM_exact": true,
+          "native_event_coordinates": [
+            10,
+            8
+          ],
+          "visual_Y_shift_pixels": -8,
+          "complete_visible_tiles": 4,
+          "actual_LCD_source_pixels": 98
+        }
+      },
+      "whole_actor_scene_checks": 11,
+      "complete_renderer_histogram_checks": 712,
+      "native_current_object_context_preserved": true,
+      "native_background_restoration": {
+        "status": "PASS",
+        "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+        "ordinary_buttons_only": true,
+        "emulator_memory_edits": false,
+        "states_loaded": false,
+        "user_batteries_opened": false,
+        "gallery_before_accept": {
+          "bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "gallery_sha256": "2c42be0d51f79dde4b0f4f42738edc12eed1d10c940a9c91d08aad8934cba546",
+          "original_map_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "gallery_really_borrowed_map_graphics": true
+        },
+        "native_map_graphics_loads_after_accept": [
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "GrommashHold",
+            "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+                "byte_exact": true
+              }
+            ]
+          },
+          {
+            "map": "TheDen",
+            "source": "gfx/quieter_ground_v0214/TheDen.2bpp",
+            "ROM_compressed_source_exact": true,
+            "native_decompression_scratch_exact": true,
+            "ranges": [
+              {
+                "VRAM_bank": 0,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 0,
+                "source_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "actual_VRAM_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36864,
+                "bytes": 1536,
+                "source_offset": 1536,
+                "source_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "actual_VRAM_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+                "byte_exact": true
+              },
+              {
+                "VRAM_bank": 1,
+                "address": 36352,
+                "bytes": 384,
+                "source_offset": 3072,
+                "source_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "actual_VRAM_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+                "byte_exact": true
+              }
+            ]
+          }
+        ],
+        "native_map_loader_hook_errors": []
+      }
+    }
+  },
+  "status": "PASS"
+}

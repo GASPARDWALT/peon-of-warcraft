@@ -1,0 +1,1299 @@
+{
+  "role": "kento",
+  "name": "Kento Brandenhoof",
+  "source": "references/generated/peon_sprite_redesign_v030/selection/master_kento_portrait_64x68.png",
+  "source_sha256": "3cda83e0b4bb98272ee1f3ed274d8b092e791166b9e93e3a3205fc23babf5d3f",
+  "source_provenance": "Historical authored native pixel portrait from selection/build_selection.js; not user PNG extraction",
+  "source_dimensions": [
+    64,
+    68
+  ],
+  "source_crop": [
+    0,
+    0,
+    64,
+    68
+  ],
+  "native_dimensions": [
+    64,
+    72
+  ],
+  "padding": [
+    0,
+    0,
+    0,
+    4
+  ],
+  "source_alpha_geometry_exact": true,
+  "source_pixel_positions_exact": true,
+  "resampling": null,
+  "smoothing": false,
+  "dithering": false,
+  "new_anatomy_authored": false,
+  "exact_source_rgb555_colors_preserved": false,
+  "palette_conversion": "Lossy material-protected source palettes; per8x8 weighted assignment; source ink maps to shared dark BG0",
+  "source_opaque_colors": 20,
+  "native_palette_ids": [
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "palettes_rgb555": [
+    [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        11,
+        7,
+        4
+      ],
+      [
+        23,
+        8,
+        8
+      ],
+      [
+        30,
+        28,
+        22
+      ]
+    ],
+    [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        11,
+        7,
+        4
+      ],
+      [
+        17,
+        12,
+        7
+      ]
+    ],
+    [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        17,
+        12,
+        7
+      ],
+      [
+        26,
+        22,
+        15
+      ],
+      [
+        30,
+        28,
+        22
+      ]
+    ],
+    [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        4,
+        6,
+        9
+      ],
+      [
+        7,
+        11,
+        15
+      ],
+      [
+        13,
+        19,
+        20
+      ]
+    ],
+    [
+      [
+        3,
+        2,
+        3
+      ],
+      [
+        9,
+        4,
+        5
+      ],
+      [
+        16,
+        5,
+        7
+      ],
+      [
+        22,
+        15,
+        7
+      ]
+    ]
+  ],
+  "protected_source_material_palettes_rgb555": [
+    [
+      [
+        11,
+        7,
+        4
+      ],
+      [
+        23,
+        8,
+        8
+      ],
+      [
+        30,
+        28,
+        22
+      ]
+    ],
+    [
+      [
+        6,
+        4,
+        3
+      ],
+      [
+        11,
+        7,
+        4
+      ],
+      [
+        17,
+        12,
+        7
+      ]
+    ],
+    [
+      [
+        17,
+        12,
+        7
+      ],
+      [
+        26,
+        22,
+        15
+      ],
+      [
+        30,
+        28,
+        22
+      ]
+    ],
+    [
+      [
+        4,
+        6,
+        9
+      ],
+      [
+        7,
+        11,
+        15
+      ],
+      [
+        13,
+        19,
+        20
+      ]
+    ],
+    [
+      [
+        9,
+        4,
+        5
+      ],
+      [
+        16,
+        5,
+        7
+      ],
+      [
+        22,
+        15,
+        7
+      ]
+    ]
+  ],
+  "protected_eye_tile_policy": "Kento tiles containing source red iris pixels use palette3; source iris color is present exactly",
+  "shared_background_rgb555": [
+    3,
+    2,
+    3
+  ],
+  "palette_zero_used_for_source_transparency_and_opaque_ink": true,
+  "source_alpha_retained_separately_from_opaque_bg_indices": true,
+  "attrs_encoding": "72 palette IDs3..7 in row-major order; caller adds$08 VRAM-bank1 flag",
+  "native_tile_order": "8 columns x9 rows, row-major, 2bpp; 72tiles/1152bytes",
+  "packet_decode_exact": true,
+  "tiles": [
+    {
+      "tile": 0,
+      "xy": [
+        0,
+        0
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 16,
+      "exact_rgb555_pixels": 5,
+      "opaque_source_pixels_using_background_ink": 11
+    },
+    {
+      "tile": 1,
+      "xy": [
+        8,
+        0
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 2,
+      "xy": [
+        16,
+        0
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 1,
+      "native_opaque_colors": 1,
+      "opaque_pixels": 1,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 1
+    },
+    {
+      "tile": 3,
+      "xy": [
+        24,
+        0
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 13,
+      "exact_rgb555_pixels": 5,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 4,
+      "xy": [
+        32,
+        0
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 22,
+      "exact_rgb555_pixels": 14,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 5,
+      "xy": [
+        40,
+        0
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 3,
+      "exact_rgb555_pixels": 1,
+      "opaque_source_pixels_using_background_ink": 2
+    },
+    {
+      "tile": 6,
+      "xy": [
+        48,
+        0
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 7,
+      "xy": [
+        56,
+        0
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 16,
+      "exact_rgb555_pixels": 5,
+      "opaque_source_pixels_using_background_ink": 11
+    },
+    {
+      "tile": 8,
+      "xy": [
+        0,
+        8
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 42,
+      "exact_rgb555_pixels": 30,
+      "opaque_source_pixels_using_background_ink": 12
+    },
+    {
+      "tile": 9,
+      "xy": [
+        8,
+        8
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 17,
+      "exact_rgb555_pixels": 9,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 10,
+      "xy": [
+        16,
+        8
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 46,
+      "exact_rgb555_pixels": 36,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 11,
+      "xy": [
+        24,
+        8
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 63,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 12,
+      "xy": [
+        32,
+        8
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 63,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 13,
+      "xy": [
+        40,
+        8
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 53,
+      "exact_rgb555_pixels": 45,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 14,
+      "xy": [
+        48,
+        8
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 14,
+      "exact_rgb555_pixels": 6,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 15,
+      "xy": [
+        56,
+        8
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 46,
+      "exact_rgb555_pixels": 33,
+      "opaque_source_pixels_using_background_ink": 13
+    },
+    {
+      "tile": 16,
+      "xy": [
+        0,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 12,
+      "exact_rgb555_pixels": 7,
+      "opaque_source_pixels_using_background_ink": 5
+    },
+    {
+      "tile": 17,
+      "xy": [
+        8,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 47,
+      "opaque_source_pixels_using_background_ink": 11
+    },
+    {
+      "tile": 18,
+      "xy": [
+        16,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 6,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 27,
+      "opaque_source_pixels_using_background_ink": 30
+    },
+    {
+      "tile": 19,
+      "xy": [
+        24,
+        16
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 57,
+      "opaque_source_pixels_using_background_ink": 6
+    },
+    {
+      "tile": 20,
+      "xy": [
+        32,
+        16
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 58,
+      "opaque_source_pixels_using_background_ink": 5
+    },
+    {
+      "tile": 21,
+      "xy": [
+        40,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 19,
+      "opaque_source_pixels_using_background_ink": 25
+    },
+    {
+      "tile": 22,
+      "xy": [
+        48,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 49,
+      "opaque_source_pixels_using_background_ink": 7
+    },
+    {
+      "tile": 23,
+      "xy": [
+        56,
+        16
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 20,
+      "exact_rgb555_pixels": 11,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 24,
+      "xy": [
+        0,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 25,
+      "xy": [
+        8,
+        24
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 30,
+      "exact_rgb555_pixels": 22,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 26,
+      "xy": [
+        16,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 8,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 63,
+      "exact_rgb555_pixels": 10,
+      "opaque_source_pixels_using_background_ink": 34
+    },
+    {
+      "tile": 27,
+      "xy": [
+        24,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 7,
+      "opaque_source_pixels_using_background_ink": 20
+    },
+    {
+      "tile": 28,
+      "xy": [
+        32,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 6,
+      "opaque_source_pixels_using_background_ink": 21
+    },
+    {
+      "tile": 29,
+      "xy": [
+        40,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 8,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 4,
+      "opaque_source_pixels_using_background_ink": 34
+    },
+    {
+      "tile": 30,
+      "xy": [
+        48,
+        24
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 37,
+      "exact_rgb555_pixels": 28,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 31,
+      "xy": [
+        56,
+        24
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 32,
+      "xy": [
+        0,
+        32
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 33,
+      "xy": [
+        8,
+        32
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 15,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 7
+    },
+    {
+      "tile": 34,
+      "xy": [
+        16,
+        32
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 10,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 58,
+      "exact_rgb555_pixels": 23,
+      "opaque_source_pixels_using_background_ink": 17
+    },
+    {
+      "tile": 35,
+      "xy": [
+        24,
+        32
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 8,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 21,
+      "opaque_source_pixels_using_background_ink": 13
+    },
+    {
+      "tile": 36,
+      "xy": [
+        32,
+        32
+      ],
+      "palette_id": 5,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 20,
+      "opaque_source_pixels_using_background_ink": 13
+    },
+    {
+      "tile": 37,
+      "xy": [
+        40,
+        32
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 9,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 24,
+      "opaque_source_pixels_using_background_ink": 17
+    },
+    {
+      "tile": 38,
+      "xy": [
+        48,
+        32
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 19,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 10
+    },
+    {
+      "tile": 39,
+      "xy": [
+        56,
+        32
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 0,
+      "native_opaque_colors": 0,
+      "opaque_pixels": 0,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 40,
+      "xy": [
+        0,
+        40
+      ],
+      "palette_id": 3,
+      "source_opaque_colors": 1,
+      "native_opaque_colors": 1,
+      "opaque_pixels": 5,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 5
+    },
+    {
+      "tile": 41,
+      "xy": [
+        8,
+        40
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 1,
+      "opaque_source_pixels_using_background_ink": 11
+    },
+    {
+      "tile": 42,
+      "xy": [
+        16,
+        40
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 11,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 34,
+      "opaque_source_pixels_using_background_ink": 14
+    },
+    {
+      "tile": 43,
+      "xy": [
+        24,
+        40
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 46,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 44,
+      "xy": [
+        32,
+        40
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 6,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 43,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 45,
+      "xy": [
+        40,
+        40
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 44,
+      "opaque_source_pixels_using_background_ink": 12
+    },
+    {
+      "tile": 46,
+      "xy": [
+        48,
+        40
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 8,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 1,
+      "opaque_source_pixels_using_background_ink": 6
+    },
+    {
+      "tile": 47,
+      "xy": [
+        56,
+        40
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 23,
+      "exact_rgb555_pixels": 0,
+      "opaque_source_pixels_using_background_ink": 10
+    },
+    {
+      "tile": 48,
+      "xy": [
+        0,
+        48
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 13,
+      "exact_rgb555_pixels": 2,
+      "opaque_source_pixels_using_background_ink": 11
+    },
+    {
+      "tile": 49,
+      "xy": [
+        8,
+        48
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 61,
+      "opaque_source_pixels_using_background_ink": 3
+    },
+    {
+      "tile": 50,
+      "xy": [
+        16,
+        48
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 23,
+      "opaque_source_pixels_using_background_ink": 19
+    },
+    {
+      "tile": 51,
+      "xy": [
+        24,
+        48
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 6,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 27,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 52,
+      "xy": [
+        32,
+        48
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 19,
+      "opaque_source_pixels_using_background_ink": 10
+    },
+    {
+      "tile": 53,
+      "xy": [
+        40,
+        48
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 6,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 36,
+      "opaque_source_pixels_using_background_ink": 18
+    },
+    {
+      "tile": 54,
+      "xy": [
+        48,
+        48
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 61,
+      "opaque_source_pixels_using_background_ink": 3
+    },
+    {
+      "tile": 55,
+      "xy": [
+        56,
+        48
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 29,
+      "exact_rgb555_pixels": 21,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 56,
+      "xy": [
+        0,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 19,
+      "exact_rgb555_pixels": 10,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 57,
+      "xy": [
+        8,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 64,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 58,
+      "xy": [
+        16,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 51,
+      "opaque_source_pixels_using_background_ink": 13
+    },
+    {
+      "tile": 59,
+      "xy": [
+        24,
+        56
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 7,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 48,
+      "opaque_source_pixels_using_background_ink": 2
+    },
+    {
+      "tile": 60,
+      "xy": [
+        32,
+        56
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 55,
+      "opaque_source_pixels_using_background_ink": 1
+    },
+    {
+      "tile": 61,
+      "xy": [
+        40,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 37,
+      "opaque_source_pixels_using_background_ink": 27
+    },
+    {
+      "tile": 62,
+      "xy": [
+        48,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 64,
+      "exact_rgb555_pixels": 64,
+      "opaque_source_pixels_using_background_ink": 0
+    },
+    {
+      "tile": 63,
+      "xy": [
+        56,
+        56
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 40,
+      "exact_rgb555_pixels": 32,
+      "opaque_source_pixels_using_background_ink": 8
+    },
+    {
+      "tile": 64,
+      "xy": [
+        0,
+        64
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 2,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 13,
+      "exact_rgb555_pixels": 4,
+      "opaque_source_pixels_using_background_ink": 9
+    },
+    {
+      "tile": 65,
+      "xy": [
+        8,
+        64
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 2,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 15,
+      "opaque_source_pixels_using_background_ink": 16
+    },
+    {
+      "tile": 66,
+      "xy": [
+        16,
+        64
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 7,
+      "opaque_source_pixels_using_background_ink": 18
+    },
+    {
+      "tile": 67,
+      "xy": [
+        24,
+        64
+      ],
+      "palette_id": 7,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 15,
+      "opaque_source_pixels_using_background_ink": 14
+    },
+    {
+      "tile": 68,
+      "xy": [
+        32,
+        64
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 5,
+      "native_opaque_colors": 4,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 5,
+      "opaque_source_pixels_using_background_ink": 15
+    },
+    {
+      "tile": 69,
+      "xy": [
+        40,
+        64
+      ],
+      "palette_id": 4,
+      "source_opaque_colors": 4,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 3,
+      "opaque_source_pixels_using_background_ink": 19
+    },
+    {
+      "tile": 70,
+      "xy": [
+        48,
+        64
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 32,
+      "exact_rgb555_pixels": 16,
+      "opaque_source_pixels_using_background_ink": 16
+    },
+    {
+      "tile": 71,
+      "xy": [
+        56,
+        64
+      ],
+      "palette_id": 6,
+      "source_opaque_colors": 3,
+      "native_opaque_colors": 3,
+      "opaque_pixels": 24,
+      "exact_rgb555_pixels": 10,
+      "opaque_source_pixels_using_background_ink": 14
+    }
+  ],
+  "focus_regions": {
+    "focus_0": {
+      "box": [
+        18,
+        21,
+        46,
+        42
+      ],
+      "opaque_pixels": 588,
+      "exact_rgb555_pixels": 175,
+      "rgb555_rmse": 3.615,
+      "source_material_pixels": {
+        "ink": 129,
+        "steel": 82,
+        "leather": 204,
+        "red": 29,
+        "bone": 96,
+        "purple": 42,
+        "blue": 6
+      },
+      "native_material_pixels": {
+        "ink": 186,
+        "leather": 221,
+        "steel": 25,
+        "red": 27,
+        "bone": 88,
+        "purple": 41
+      }
+    },
+    "focus_1": {
+      "box": [
+        22,
+        24,
+        43,
+        28
+      ],
+      "opaque_pixels": 84,
+      "exact_rgb555_pixels": 13,
+      "rgb555_rmse": 3.935,
+      "source_material_pixels": {
+        "ink": 35,
+        "steel": 10,
+        "leather": 26,
+        "red": 11,
+        "bone": 2
+      },
+      "native_material_pixels": {
+        "ink": 45,
+        "leather": 26,
+        "red": 11,
+        "bone": 2
+      }
+    },
+    "focus_2": {
+      "box": [
+        0,
+        0,
+        24,
+        23
+      ],
+      "opaque_pixels": 246,
+      "exact_rgb555_pixels": 154,
+      "rgb555_rmse": 1.228,
+      "source_material_pixels": {
+        "ink": 69,
+        "bone": 98,
+        "steel": 45,
+        "leather": 34
+      },
+      "native_material_pixels": {
+        "ink": 81,
+        "bone": 98,
+        "steel": 33,
+        "leather": 34
+      }
+    },
+    "focus_3": {
+      "box": [
+        40,
+        0,
+        64,
+        23
+      ],
+      "opaque_pixels": 263,
+      "exact_rgb555_pixels": 162,
+      "rgb555_rmse": 1.581,
+      "source_material_pixels": {
+        "ink": 69,
+        "bone": 96,
+        "steel": 41,
+        "leather": 57
+      },
+      "native_material_pixels": {
+        "ink": 77,
+        "bone": 96,
+        "steel": 33,
+        "leather": 57
+      }
+    }
+  },
+  "visual_review_warnings": [],
+  "outputs": {
+    "gfx/class_portraits_v0218/kento/portrait.2bpp": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+    "gfx/class_portraits_v0218/kento/attrs.bin": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+    "gfx/class_portraits_v0218/kento/palettes.bin": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+    "gfx/class_portraits_v0218/kento/hardware.png": "66d3bb09bdcf6952c674243cc1f43e1702ffb0ba82f5f3ab49d607bff22de238"
+  },
+  "runtime_verification": "Static conversion only; exact-ROM rendering is tested separately"
+}

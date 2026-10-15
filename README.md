@@ -1,5 +1,15 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.18](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.18/releases/v0.2.18/peon_of_warcraft_v0_2_18.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.18/releases/v0.2.18/peon_of_warcraft_v0_2_18.zip) · [Accueil et sélection illustrés](docs/V0218_ILLUSTRATED_SELECTION.md)
+
+L'accueil affiche le péon à gauche et **Continuer / Créer un nouveau péon** à
+droite, sur le même paysage orange et rouge de Durotar. Après une sauvegarde,
+le portrait devient celui de la classe choisie. Le choix de classe présente
+le portrait de chaque maître dans un cadre de bois et de bronze.
+Build : `python3 tools/build_peon_v0218.py`.
+
+## v0.2.17 archive
+
 [ROM v0.2.17](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.17/releases/v0.2.17/peon_of_warcraft_v0_2_17.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.17/releases/v0.2.17/peon_of_warcraft_v0_2_17.zip) · [Personnages du monde redessinés](docs/V0217_NATIVE_WORLD_CHARACTERS.md)
 
 Les personnages du monde disposent de dessins natifs **24×24** : visages,

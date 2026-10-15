@@ -765,3 +765,8 @@ INCLUDE "engine/overworld/peon_world_renderer_native_v0215.asm"
 INCLUDE "engine/overworld/peon_large_world_v0215.asm"
 INCLUDE "engine/overworld/peon_world_allocator_v0215.asm"
 INCLUDE "gfx/world_redraw_v0217/graphics.asm"
+
+INCLUDE "engine/menus/peon_selection_screens_v0218.asm"
+INCLUDE "gfx/class_portraits_v0218/graphics.asm"
+INCLUDE "gfx/welcome_scenes_v0218/graphics.asm"
+INCLUDE "gfx/selection_labels_v0218/graphics.asm"

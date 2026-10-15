@@ -20,12 +20,14 @@ GrommashHoldSequence:
 	checkevent EVENT_PEON_SHAMAN
 	iftrue GrommashHoldAlreadyTrained
 	special PeonEyeOpening
+.ChooseMaster:
 	setlasttalked GROMMASHHOLD_THRALL
 	opentext
 	writetext PeonThrallText
 	promptbutton
 	closetext
 	special PeonClassSelect
+	iffalse .ChooseMaster
 	checkevent EVENT_PEON_WARRIOR
 	iftrue .WarriorMaster
 	checkevent EVENT_PEON_WARLOCK

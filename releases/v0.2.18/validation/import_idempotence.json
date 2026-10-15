@@ -1,0 +1,463 @@
+{
+  "version": "v0.2.18",
+  "status": "PASS",
+  "rom_sha256": "d9841f60e8660f88019ed40c927883804511632afeaf90b535c814a348168425",
+  "scope": "Static import reproducibility only; ROM/build/runtime are not executed by this check",
+  "private_tree": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+  "current_repository_gfx_mutated": false,
+  "current_repository_sources_mutated": false,
+  "generated_images_access_forbidden": true,
+  "generated_images_fallback_paths_nonexistent": true,
+  "access_guard_violations": [],
+  "executed_passes": 2,
+  "tools_executed": 6,
+  "outputs_exact_before_after": true,
+  "output_file_count": 44,
+  "output_counts_by_tree": {
+    "gfx/class_portraits_v0218": 14,
+    "gfx/welcome_scenes_v0218": 26,
+    "gfx/selection_labels_v0218": 4
+  },
+  "input_file_count": 8,
+  "source_png_count": 6,
+  "input_originals_unchanged": true,
+  "all_inputs_versioned_or_indexed": true,
+  "dependencies": {
+    "Python": "3.12.14",
+    "Pillow": "12.3.0",
+    "NumPy": "2.3.5",
+    "SciPy": "1.17.0",
+    "external_asset_network_access": false
+  },
+  "inputs": {
+    "assets/selection_v0218/base_generated_source.png": {
+      "sha256": "eac3cfe3b1d288c539da1f89a6ce7cd3a8da35bb3c0e44d61e4bcd5525e4462d",
+      "after_private_sha256": "eac3cfe3b1d288c539da1f89a6ce7cd3a8da35bb3c0e44d61e4bcd5525e4462d",
+      "after_current_sha256": "eac3cfe3b1d288c539da1f89a6ce7cd3a8da35bb3c0e44d61e4bcd5525e4462d",
+      "bytes": 1320049,
+      "versioned_or_indexed": true
+    },
+    "assets/selection_v0218/classes_generated_source.png": {
+      "sha256": "3e7c0c63114ce8ce0718dac1e38082b9fd45d4494d1394f9ba436958fab5207b",
+      "after_private_sha256": "3e7c0c63114ce8ce0718dac1e38082b9fd45d4494d1394f9ba436958fab5207b",
+      "after_current_sha256": "3e7c0c63114ce8ce0718dac1e38082b9fd45d4494d1394f9ba436958fab5207b",
+      "bytes": 1656146,
+      "versioned_or_indexed": true
+    },
+    "assets/selection_v0218/durotar_background_generated_source.png": {
+      "sha256": "1bfc4ea09365eb024bc1d2f8d98f834f13388fca97a027f6491b069243804d85",
+      "after_private_sha256": "1bfc4ea09365eb024bc1d2f8d98f834f13388fca97a027f6491b069243804d85",
+      "after_current_sha256": "1bfc4ea09365eb024bc1d2f8d98f834f13388fca97a027f6491b069243804d85",
+      "bytes": 1515330,
+      "versioned_or_indexed": true
+    },
+    "assets/selection_v0218/welcome_labels.json": {
+      "sha256": "de7bf63fcb4b7d252d0a957c9626d459382302624ce75a5dcfc7d10f3c38d728",
+      "after_private_sha256": "de7bf63fcb4b7d252d0a957c9626d459382302624ce75a5dcfc7d10f3c38d728",
+      "after_current_sha256": "de7bf63fcb4b7d252d0a957c9626d459382302624ce75a5dcfc7d10f3c38d728",
+      "bytes": 1482,
+      "versioned_or_indexed": true
+    },
+    "assets/selection_v0218/README.md": {
+      "sha256": "4a2db8d1dc5227df44d7e5ae9d344fb67945ce7bb86d2f1643a6c33751a7232b",
+      "after_private_sha256": "4a2db8d1dc5227df44d7e5ae9d344fb67945ce7bb86d2f1643a6c33751a7232b",
+      "after_current_sha256": "4a2db8d1dc5227df44d7e5ae9d344fb67945ce7bb86d2f1643a6c33751a7232b",
+      "bytes": 2247,
+      "versioned_or_indexed": true
+    },
+    "references/generated/peon_sprite_redesign_v030/selection/master_kento_portrait_64x68.png": {
+      "sha256": "3cda83e0b4bb98272ee1f3ed274d8b092e791166b9e93e3a3205fc23babf5d3f",
+      "after_private_sha256": "3cda83e0b4bb98272ee1f3ed274d8b092e791166b9e93e3a3205fc23babf5d3f",
+      "after_current_sha256": "3cda83e0b4bb98272ee1f3ed274d8b092e791166b9e93e3a3205fc23babf5d3f",
+      "bytes": 3453,
+      "versioned_or_indexed": true
+    },
+    "references/generated/peon_sprite_redesign_v030/selection/master_zogzog_portrait_64x68.png": {
+      "sha256": "360ac75d785407a2a7befd2e4e92f6b7bde6057b3db0ff71b5d14cd9e2d4e1bb",
+      "after_private_sha256": "360ac75d785407a2a7befd2e4e92f6b7bde6057b3db0ff71b5d14cd9e2d4e1bb",
+      "after_current_sha256": "360ac75d785407a2a7befd2e4e92f6b7bde6057b3db0ff71b5d14cd9e2d4e1bb",
+      "bytes": 3271,
+      "versioned_or_indexed": true
+    },
+    "references/generated/peon_sprite_redesign_v030/selection/master_xasthur_portrait_64x68.png": {
+      "sha256": "99fdca7ee482fa323e11e0bb8700d48fcbbb292e031fb4ca46f63216082c5c26",
+      "after_private_sha256": "99fdca7ee482fa323e11e0bb8700d48fcbbb292e031fb4ca46f63216082c5c26",
+      "after_current_sha256": "99fdca7ee482fa323e11e0bb8700d48fcbbb292e031fb4ca46f63216082c5c26",
+      "bytes": 3540,
+      "versioned_or_indexed": true
+    }
+  },
+  "tool_sha256": {
+    "import_peon_welcome_scenes_v0218.py": "041ecdc17dc73798069bac99011fdbd07b07a6ac943c3c651f1e4e02f4447a01",
+    "import_peon_class_portraits_v0218.py": "5d2e29a604b539e14fd31fe8209f148ca143169e3d5f1079bfe6fba241f9f701",
+    "build_peon_selection_labels_v0218.py": "1a86cfa933b42ea28792f2d716b31195ebb68459d7cd0264944893a230d2d57c"
+  },
+  "outputs": {
+    "gfx/class_portraits_v0218/bismillah/attrs.bin": {
+      "before_sha256": "3829f6ba7879cce25fbd2adac11a05f1b638fa7679c197b430c5fc890583ffc5",
+      "after_private_sha256": "3829f6ba7879cce25fbd2adac11a05f1b638fa7679c197b430c5fc890583ffc5",
+      "after_current_sha256": "3829f6ba7879cce25fbd2adac11a05f1b638fa7679c197b430c5fc890583ffc5",
+      "bytes": 72,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/bismillah/hardware.png": {
+      "before_sha256": "b0b7941c8a7d2f0b1177c2fff800f324dc33866472470486eb9f3019dcf2937b",
+      "after_private_sha256": "b0b7941c8a7d2f0b1177c2fff800f324dc33866472470486eb9f3019dcf2937b",
+      "after_current_sha256": "b0b7941c8a7d2f0b1177c2fff800f324dc33866472470486eb9f3019dcf2937b",
+      "bytes": 2144,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/bismillah/palettes.bin": {
+      "before_sha256": "ad2f2f17b62d76fd6f324948c2f5585285d93dc6495cc796c9d29209e8e90d54",
+      "after_private_sha256": "ad2f2f17b62d76fd6f324948c2f5585285d93dc6495cc796c9d29209e8e90d54",
+      "after_current_sha256": "ad2f2f17b62d76fd6f324948c2f5585285d93dc6495cc796c9d29209e8e90d54",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/bismillah/portrait.2bpp": {
+      "before_sha256": "d3285294cd7b3b4d8f6cfe1bf1e0fae52851b1aa9673a82c6e82a633a1a17f52",
+      "after_private_sha256": "d3285294cd7b3b4d8f6cfe1bf1e0fae52851b1aa9673a82c6e82a633a1a17f52",
+      "after_current_sha256": "d3285294cd7b3b4d8f6cfe1bf1e0fae52851b1aa9673a82c6e82a633a1a17f52",
+      "bytes": 1152,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/graphics.asm": {
+      "before_sha256": "ec332edfca1324af3bbd349f9109b5190e3d2d226d0573b823f264d2a86001d0",
+      "after_private_sha256": "ec332edfca1324af3bbd349f9109b5190e3d2d226d0573b823f264d2a86001d0",
+      "after_current_sha256": "ec332edfca1324af3bbd349f9109b5190e3d2d226d0573b823f264d2a86001d0",
+      "bytes": 2067,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/kento/attrs.bin": {
+      "before_sha256": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+      "after_private_sha256": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+      "after_current_sha256": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+      "bytes": 72,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/kento/hardware.png": {
+      "before_sha256": "66d3bb09bdcf6952c674243cc1f43e1702ffb0ba82f5f3ab49d607bff22de238",
+      "after_private_sha256": "66d3bb09bdcf6952c674243cc1f43e1702ffb0ba82f5f3ab49d607bff22de238",
+      "after_current_sha256": "66d3bb09bdcf6952c674243cc1f43e1702ffb0ba82f5f3ab49d607bff22de238",
+      "bytes": 2018,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/kento/palettes.bin": {
+      "before_sha256": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+      "after_private_sha256": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+      "after_current_sha256": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/kento/portrait.2bpp": {
+      "before_sha256": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+      "after_private_sha256": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+      "after_current_sha256": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+      "bytes": 1152,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/manifest.json": {
+      "before_sha256": "c63975b0fd89a51f77a72957ff0856e631ee1a24342275b440b1e6b0238dcfea",
+      "after_private_sha256": "c63975b0fd89a51f77a72957ff0856e631ee1a24342275b440b1e6b0238dcfea",
+      "after_current_sha256": "c63975b0fd89a51f77a72957ff0856e631ee1a24342275b440b1e6b0238dcfea",
+      "bytes": 92062,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/zogzog/attrs.bin": {
+      "before_sha256": "90d0927e072e3c5084313a0a05a57165f3109e92d51575e5fc177bd9d2651a32",
+      "after_private_sha256": "90d0927e072e3c5084313a0a05a57165f3109e92d51575e5fc177bd9d2651a32",
+      "after_current_sha256": "90d0927e072e3c5084313a0a05a57165f3109e92d51575e5fc177bd9d2651a32",
+      "bytes": 72,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/zogzog/hardware.png": {
+      "before_sha256": "91cca2e3631c78d59d9681bc46e381541757a3d5e006b95c57f65287b9e470a1",
+      "after_private_sha256": "91cca2e3631c78d59d9681bc46e381541757a3d5e006b95c57f65287b9e470a1",
+      "after_current_sha256": "91cca2e3631c78d59d9681bc46e381541757a3d5e006b95c57f65287b9e470a1",
+      "bytes": 1964,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/zogzog/palettes.bin": {
+      "before_sha256": "caea1ddb30d286c1b2643a9eb9e6f124503f9ca879dc2b9a5ea6134ea51d19e7",
+      "after_private_sha256": "caea1ddb30d286c1b2643a9eb9e6f124503f9ca879dc2b9a5ea6134ea51d19e7",
+      "after_current_sha256": "caea1ddb30d286c1b2643a9eb9e6f124503f9ca879dc2b9a5ea6134ea51d19e7",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/class_portraits_v0218/zogzog/portrait.2bpp": {
+      "before_sha256": "fc1065581a19078d3aa33dcf1fd545b266e02cffd605d955e541d43535d143db",
+      "after_private_sha256": "fc1065581a19078d3aa33dcf1fd545b266e02cffd605d955e541d43535d143db",
+      "after_current_sha256": "fc1065581a19078d3aa33dcf1fd545b266e02cffd605d955e541d43535d143db",
+      "bytes": 1152,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/attrs.bin": {
+      "before_sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+      "after_private_sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+      "after_current_sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/hardware.png": {
+      "before_sha256": "74fcd540c18c88cdc0e91d1233c12fa746053d5507a8ee148fd9fb63094deb16",
+      "after_private_sha256": "74fcd540c18c88cdc0e91d1233c12fa746053d5507a8ee148fd9fb63094deb16",
+      "after_current_sha256": "74fcd540c18c88cdc0e91d1233c12fa746053d5507a8ee148fd9fb63094deb16",
+      "bytes": 6826,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/palettes.bin": {
+      "before_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_private_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_current_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/tilemap.bin": {
+      "before_sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+      "after_private_sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+      "after_current_sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/tiles_bank0.2bpp": {
+      "before_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "after_private_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "after_current_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/base/tiles_bank1.2bpp": {
+      "before_sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+      "after_private_sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+      "after_current_sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+      "bytes": 4096,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/graphics.asm": {
+      "before_sha256": "85dd0db756fa0bcab4a492e54f5c139907154b13bd9a82c013a8ba9cad71e80b",
+      "after_private_sha256": "85dd0db756fa0bcab4a492e54f5c139907154b13bd9a82c013a8ba9cad71e80b",
+      "after_current_sha256": "85dd0db756fa0bcab4a492e54f5c139907154b13bd9a82c013a8ba9cad71e80b",
+      "bytes": 2686,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/manifest.json": {
+      "before_sha256": "a485016813aac62592fdc9c09d35f13d77eb5b620aa1570f6ca591e6fbe3cb01",
+      "after_private_sha256": "a485016813aac62592fdc9c09d35f13d77eb5b620aa1570f6ca591e6fbe3cb01",
+      "after_current_sha256": "a485016813aac62592fdc9c09d35f13d77eb5b620aa1570f6ca591e6fbe3cb01",
+      "bytes": 328586,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/attrs.bin": {
+      "before_sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+      "after_private_sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+      "after_current_sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/hardware.png": {
+      "before_sha256": "04257fbc53e4b5dcadd9298ee6bd2bac5172749a0ae21806dd0d75fb758fcd69",
+      "after_private_sha256": "04257fbc53e4b5dcadd9298ee6bd2bac5172749a0ae21806dd0d75fb758fcd69",
+      "after_current_sha256": "04257fbc53e4b5dcadd9298ee6bd2bac5172749a0ae21806dd0d75fb758fcd69",
+      "bytes": 7465,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/palettes.bin": {
+      "before_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_private_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_current_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/tilemap.bin": {
+      "before_sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+      "after_private_sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+      "after_current_sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/tiles_bank0.2bpp": {
+      "before_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "after_private_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "after_current_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/shaman/tiles_bank1.2bpp": {
+      "before_sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+      "after_private_sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+      "after_current_sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+      "bytes": 4096,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/attrs.bin": {
+      "before_sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+      "after_private_sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+      "after_current_sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/hardware.png": {
+      "before_sha256": "e56d2f0d8e867e25d934d7cf76ada255b4aa84b4bf2981df31f50a9896bec8aa",
+      "after_private_sha256": "e56d2f0d8e867e25d934d7cf76ada255b4aa84b4bf2981df31f50a9896bec8aa",
+      "after_current_sha256": "e56d2f0d8e867e25d934d7cf76ada255b4aa84b4bf2981df31f50a9896bec8aa",
+      "bytes": 6987,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/palettes.bin": {
+      "before_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_private_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_current_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/tilemap.bin": {
+      "before_sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+      "after_private_sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+      "after_current_sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/tiles_bank0.2bpp": {
+      "before_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "after_private_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "after_current_sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warlock/tiles_bank1.2bpp": {
+      "before_sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+      "after_private_sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+      "after_current_sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+      "bytes": 4096,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/attrs.bin": {
+      "before_sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+      "after_private_sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+      "after_current_sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/hardware.png": {
+      "before_sha256": "5a27502d3a4ae995e5a4ede8b8ae8c6d0b1534fe539e61d3c0a79033b21548b9",
+      "after_private_sha256": "5a27502d3a4ae995e5a4ede8b8ae8c6d0b1534fe539e61d3c0a79033b21548b9",
+      "after_current_sha256": "5a27502d3a4ae995e5a4ede8b8ae8c6d0b1534fe539e61d3c0a79033b21548b9",
+      "bytes": 7084,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/palettes.bin": {
+      "before_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_private_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "after_current_sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/tilemap.bin": {
+      "before_sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+      "after_private_sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+      "after_current_sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+      "bytes": 360,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/tiles_bank0.2bpp": {
+      "before_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "after_private_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "after_current_sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536,
+      "exact": true
+    },
+    "gfx/welcome_scenes_v0218/warrior/tiles_bank1.2bpp": {
+      "before_sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+      "after_private_sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+      "after_current_sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+      "bytes": 4096,
+      "exact": true
+    },
+    "gfx/selection_labels_v0218/graphics.asm": {
+      "before_sha256": "50fb0ad405b6618092737f1220ce793ce4731b5bc3181d25800ec47d27b3a794",
+      "after_private_sha256": "50fb0ad405b6618092737f1220ce793ce4731b5bc3181d25800ec47d27b3a794",
+      "after_current_sha256": "50fb0ad405b6618092737f1220ce793ce4731b5bc3181d25800ec47d27b3a794",
+      "bytes": 177,
+      "exact": true
+    },
+    "gfx/selection_labels_v0218/labels.2bpp": {
+      "before_sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+      "after_private_sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+      "after_current_sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+      "bytes": 384,
+      "exact": true
+    },
+    "gfx/selection_labels_v0218/labels.png": {
+      "before_sha256": "1f934e5a2c2388065936abc2c79d48ad0c8f09b417e82971f1e387220843a33a",
+      "after_private_sha256": "1f934e5a2c2388065936abc2c79d48ad0c8f09b417e82971f1e387220843a33a",
+      "after_current_sha256": "1f934e5a2c2388065936abc2c79d48ad0c8f09b417e82971f1e387220843a33a",
+      "bytes": 376,
+      "exact": true
+    },
+    "gfx/selection_labels_v0218/manifest.json": {
+      "before_sha256": "de40456627f7932095b7e54e9e21206718561d5dce2011cf22f89a2b4841927e",
+      "after_private_sha256": "de40456627f7932095b7e54e9e21206718561d5dce2011cf22f89a2b4841927e",
+      "after_current_sha256": "de40456627f7932095b7e54e9e21206718561d5dce2011cf22f89a2b4841927e",
+      "bytes": 458,
+      "exact": true
+    }
+  },
+  "runs": [
+    {
+      "pass": 1,
+      "tool": "tools/import_peon_welcome_scenes_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 1.267,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"shared_palettes\": [\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        13,\n        6,\n        11\n      ],\n      [\n        9,\n        16,\n        6\n      ],\n      [\n        26,\n        10,\n        4\n      ]\n    ],\n    [\n      [\n        4,\n        2,\n        3\n      ],\n      [\n        12,\n        4,\n        7\n      ],\n      [\n        18,\n        6,\n        4\n      ],\n      [\n        31,\n        15,\n        5\n      ]\n    ],\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        15,\n        8,\n        2\n      ],\n      [\n        9,\n        16,\n        6\n      ],\n      [\n        28,\n        23,\n        16\n      ]\n    ],\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        4,\n        9,\n        14\n      ],\n      [\n        19,\n        10,\n        4\n      ],\n      [\n        11,\n        18,\n        6\n      ]\n    ],\n    [\n      [\n        15,\n        5,\n        7\n      ],\n      [\n        21,\n        6,\n        7\n      ],\n      [\n        30,\n        11,\n        5\n      ],\n      [\n        31,\n        22,\n        9\n      ]\n    ]\n  ],\n  \"fit\": {\n    \"source_rgb555_colors\": 1733,\n    \"candidate_material_colors\": 45,\n    \"palette_fit_groups\": 480,\n    \"shared_tile_positions\": 320,\n    \"outside_union_background_pixels\": 12855,\n    \"outside_union_and_ui_background_identical_all_four\": true,\n    \"palette0_is_opaque\": true,\n    \"shared_scene_palettes\": true\n  },\n  \"unique_tiles\": {\n    \"base\": 238,\n    \"shaman\": 243,\n    \"warrior\": 239,\n    \"warlock\": 243\n  },\n  \"metrics\": {\n    \"base\": {\n      \"figure_rgb555_rmse\": 2.806,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 1003,\n          \"hardware\": 1040\n        },\n        \"ivory\": {\n          \"source\": 9,\n          \"hardware\": 67\n        },\n        \"steel\": {\n          \"source\": 121,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 17\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 0\n        },\n        \"warm\": {\n          \"source\": 879,\n          \"hardware\": 730\n        },\n        \"ink\": {\n          \"source\": 700,\n          \"hardware\": 858\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"shaman\": {\n      \"figure_rgb555_rmse\": 3.576,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 563,\n          \"hardware\": 755\n        },\n        \"ivory\": {\n          \"source\": 60,\n          \"hardware\": 172\n        },\n        \"steel\": {\n          \"source\": 418,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 90\n        },\n        \"blue\": {\n          \"source\": 268,\n          \"hardware\": 222\n        },\n        \"warm\": {\n          \"source\": 1144,\n          \"hardware\": 975\n        },\n        \"ink\": {\n          \"source\": 899,\n          \"hardware\": 1138\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"warrior\": {\n      \"figure_rgb555_rmse\": 3.361,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 625,\n          \"hardware\": 734\n        },\n        \"ivory\": {\n          \"source\": 7,\n          \"hardware\": 134\n        },\n        \"steel\": {\n          \"source\": 367,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 71\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 8\n        },\n        \"warm\": {\n          \"source\": 986,\n          \"hardware\": 845\n        },\n        \"ink\": {\n          \"source\": 699,\n          \"hardware\": 892\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"warlock\": {\n      \"figure_rgb555_rmse\": 3.106,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 503,\n          \"hardware\": 511\n        },\n        \"ivory\": {\n          \"source\": 5,\n          \"hardware\": 20\n        },\n        \"steel\": {\n          \"source\": 84,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 915,\n          \"hardware\": 917\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 0\n        },\n        \"warm\": {\n          \"source\": 804,\n          \"hardware\": 596\n        },\n        \"ink\": {\n          \"source\": 1013,\n          \"hardware\": 1280\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    }\n  }\n}\n",
+      "generated_images_fallback_disabled": true
+    },
+    {
+      "pass": 1,
+      "tool": "tools/import_peon_class_portraits_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 0.144,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"roles\": [\n    \"kento\",\n    \"zogzog\",\n    \"bismillah\"\n  ],\n  \"warnings\": {\n    \"kento\": [],\n    \"zogzog\": [],\n    \"bismillah\": []\n  }\n}\n",
+      "generated_images_fallback_disabled": false
+    },
+    {
+      "pass": 1,
+      "tool": "tools/build_peon_selection_labels_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 0.002,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "24 native label tiles compiled\n",
+      "generated_images_fallback_disabled": false
+    },
+    {
+      "pass": 2,
+      "tool": "tools/import_peon_welcome_scenes_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 0.993,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"shared_palettes\": [\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        13,\n        6,\n        11\n      ],\n      [\n        9,\n        16,\n        6\n      ],\n      [\n        26,\n        10,\n        4\n      ]\n    ],\n    [\n      [\n        4,\n        2,\n        3\n      ],\n      [\n        12,\n        4,\n        7\n      ],\n      [\n        18,\n        6,\n        4\n      ],\n      [\n        31,\n        15,\n        5\n      ]\n    ],\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        15,\n        8,\n        2\n      ],\n      [\n        9,\n        16,\n        6\n      ],\n      [\n        28,\n        23,\n        16\n      ]\n    ],\n    [\n      [\n        2,\n        1,\n        1\n      ],\n      [\n        4,\n        9,\n        14\n      ],\n      [\n        19,\n        10,\n        4\n      ],\n      [\n        11,\n        18,\n        6\n      ]\n    ],\n    [\n      [\n        15,\n        5,\n        7\n      ],\n      [\n        21,\n        6,\n        7\n      ],\n      [\n        30,\n        11,\n        5\n      ],\n      [\n        31,\n        22,\n        9\n      ]\n    ]\n  ],\n  \"fit\": {\n    \"source_rgb555_colors\": 1733,\n    \"candidate_material_colors\": 45,\n    \"palette_fit_groups\": 480,\n    \"shared_tile_positions\": 320,\n    \"outside_union_background_pixels\": 12855,\n    \"outside_union_and_ui_background_identical_all_four\": true,\n    \"palette0_is_opaque\": true,\n    \"shared_scene_palettes\": true\n  },\n  \"unique_tiles\": {\n    \"base\": 238,\n    \"shaman\": 243,\n    \"warrior\": 239,\n    \"warlock\": 243\n  },\n  \"metrics\": {\n    \"base\": {\n      \"figure_rgb555_rmse\": 2.806,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 1003,\n          \"hardware\": 1040\n        },\n        \"ivory\": {\n          \"source\": 9,\n          \"hardware\": 67\n        },\n        \"steel\": {\n          \"source\": 121,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 17\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 0\n        },\n        \"warm\": {\n          \"source\": 879,\n          \"hardware\": 730\n        },\n        \"ink\": {\n          \"source\": 700,\n          \"hardware\": 858\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"shaman\": {\n      \"figure_rgb555_rmse\": 3.576,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 563,\n          \"hardware\": 755\n        },\n        \"ivory\": {\n          \"source\": 60,\n          \"hardware\": 172\n        },\n        \"steel\": {\n          \"source\": 418,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 90\n        },\n        \"blue\": {\n          \"source\": 268,\n          \"hardware\": 222\n        },\n        \"warm\": {\n          \"source\": 1144,\n          \"hardware\": 975\n        },\n        \"ink\": {\n          \"source\": 899,\n          \"hardware\": 1138\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"warrior\": {\n      \"figure_rgb555_rmse\": 3.361,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 625,\n          \"hardware\": 734\n        },\n        \"ivory\": {\n          \"source\": 7,\n          \"hardware\": 134\n        },\n        \"steel\": {\n          \"source\": 367,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 0,\n          \"hardware\": 71\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 8\n        },\n        \"warm\": {\n          \"source\": 986,\n          \"hardware\": 845\n        },\n        \"ink\": {\n          \"source\": 699,\n          \"hardware\": 892\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    },\n    \"warlock\": {\n      \"figure_rgb555_rmse\": 3.106,\n      \"figure_material_pixels\": {\n        \"green\": {\n          \"source\": 503,\n          \"hardware\": 511\n        },\n        \"ivory\": {\n          \"source\": 5,\n          \"hardware\": 20\n        },\n        \"steel\": {\n          \"source\": 84,\n          \"hardware\": 0\n        },\n        \"purple\": {\n          \"source\": 915,\n          \"hardware\": 917\n        },\n        \"blue\": {\n          \"source\": 0,\n          \"hardware\": 0\n        },\n        \"warm\": {\n          \"source\": 804,\n          \"hardware\": 596\n        },\n        \"ink\": {\n          \"source\": 1013,\n          \"hardware\": 1280\n        }\n      },\n      \"source_green_to_non_green\": 0,\n      \"source_warm_to_green\": 0\n    }\n  }\n}\n",
+      "generated_images_fallback_disabled": true
+    },
+    {
+      "pass": 2,
+      "tool": "tools/import_peon_class_portraits_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 0.188,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "{\n  \"status\": \"PASS\",\n  \"roles\": [\n    \"kento\",\n    \"zogzog\",\n    \"bismillah\"\n  ],\n  \"warnings\": {\n    \"kento\": [],\n    \"zogzog\": [],\n    \"bismillah\": []\n  }\n}\n",
+      "generated_images_fallback_disabled": false
+    },
+    {
+      "pass": 2,
+      "tool": "tools/build_peon_selection_labels_v0218.py",
+      "status": "PASS",
+      "elapsed_seconds": 0.002,
+      "private_module_root": "/tmp/peon-v0218-import-idempotence-g8oi4dxv",
+      "stdout": "24 native label tiles compiled\n",
+      "generated_images_fallback_disabled": false
+    }
+  ],
+  "private_file_access_count": 242,
+  "failures": []
+}

@@ -61,90 +61,31 @@ PeonTitleScreen:
 	ret
 
 PeonCharacterSelect:
-	farcall PeonReadSavedClassPreview
 	xor a
 	ld [wMenuCursorY], a
 .draw
+	; Native confirmation menus reuse these cursor fields. Re-read verified
+	; saved metadata and normalize the two-entry cursor on every full redraw.
+	farcall PeonReadSavedClassPreview
+	ld a, [wMenuCursorY]
+	and 1
+	ld [wMenuCursorY], a
 	call ClearSprites
-	call ClearTilemap
 	call LoadFontsExtra
 	call LoadStandardFont
 	ld b, SCGB_DIPLOMA
 	call GetSGBLayout
 	call SetDefaultBGPAndOBP
-	hlcoord 0, 0
-	ld b, 16
-	ld c, 18
-	call Textbox
-	hlcoord 2, 1
-	ld de, .Heading
-	call PlaceString
-	; The single saved apprentice retains the selected class silhouette.
-	farcall PeonLoadSavedClassWorldPreview
-	hlcoord 4, 7
-	ld [hl], $60
-	inc hl
-	ld [hl], $61
-	hlcoord 4, 8
-	ld [hl], $62
-	inc hl
-	ld [hl], $63
-	hlcoord 4, 7, wAttrmap
-	ld [hl], 5
-	inc hl
-	ld [hl], 5
-	hlcoord 4, 8, wAttrmap
-	ld [hl], 5
-	inc hl
-	ld [hl], 5
-	hlcoord 2, 4
+	; Read-only class metadata chooses the correct welcome illustration.
+	ld c, 0
 	ld a, [wMenuScrollPosition]
 	and a
-	jr z, .fresh_identity
-	ld de, wPlayerName ; stored name already includes its Peon prefix
-	call PeonPlaceBoldName
-	ld hl, .Roles
+	jr z, .welcome_ready
 	ld a, [wMenuCursorX]
-	add a
-	ld e, a
-	ld d, 0
-	add hl, de
-	ld a, [hli]
-	ld d, [hl]
-	ld e, a
-	jr .draw_role
-.fresh_identity
-	ld de, .Peon
-	call PlaceString
-	ld de, .Apprentice
-.draw_role
-	hlcoord 2, 5
-	call PlaceString
-	hlcoord 10, 6
-	ld de, .Continue
-	call PlaceString
-	hlcoord 10, 9
-	ld de, .New
-	call PlaceString
-	hlcoord 2, 14
-	ld de, .OneSlot
-	call PlaceString
-	ld a, [wSaveFileExists]
-	and a
-	jr nz, .cursor
-	hlcoord 10, 7
-	ld de, .Empty
-	call PlaceString
-.cursor
-	hlcoord 9, 6
-	ld a, [wMenuCursorY]
-	and a
-	jr z, .place
-	hlcoord 9, 9
-.place
-	ld [hl], '▶'
-	call WaitBGMap2
-	call UpdateTimePals
+	inc a
+	ld c, a
+.welcome_ready
+	farcall PeonDrawWelcomeScreenV0218
 .input
 	call DelayFrame
 	call JoyTextDelay
@@ -156,7 +97,8 @@ PeonCharacterSelect:
 	ld a, [wMenuCursorY]
 	xor 1
 	ld [wMenuCursorY], a
-	jp .draw
+	farcall PeonRefreshWelcomeChoicesV0218
+	jp .input
 .accept
 	ldh a, [hJoyPressed]
 	and A_BUTTON | START
@@ -173,7 +115,7 @@ PeonCharacterSelect:
 	bit EVENT_PEON_SHAMAN % 8, a
 	jr nz, .valid
 	ld hl, .OldSaveText
-	call PrintText
+	call PeonPrintFrontendTextV0218
 	jp .draw
 .valid
 	farcall Continue
@@ -183,7 +125,7 @@ PeonCharacterSelect:
 	and a
 	jr z, .start
 	ld hl, .ReplaceText
-	call PrintText
+	call PeonPrintFrontendTextV0218
 	call YesNoBox
 	jp c, .draw
 .start
@@ -211,116 +153,49 @@ PeonCharacterSelect:
 	line "to start this build."
 	done
 
+; Frontend prompts are not speech from the last world NPC. Preserve the
+; native context while suppressing its optional map speaker portrait, whose
+; nine BG tiles overlap this temporary full-screen illustration.
+PeonPrintFrontendTextV0218:
+	push bc
+	ldh a, [hLastTalked]
+	push af
+	xor a
+	ldh [hLastTalked], a
+	call PrintText
+	pop bc
+	ld a, b
+	ldh [hLastTalked], a
+	pop bc
+	ret
+
 PeonClassSelect:
 	call LoadStandardMenuHeader
-	; Require a fresh confirm after the preceding dialogue has been dismissed.
+	; A held from the previous speech cannot choose a class accidentally.
 .release
 	call DelayFrame
 	call JoyTextDelay
 	ldh a, [hJoyDown]
-	and A_BUTTON | START
+	and A_BUTTON | START | B_BUTTON
 	jr nz, .release
-	; Keep the font/palette resident while moving between mentors.
-	; Cursor changes redraw the fixed panel without repeating tile uploads.
 	call ClearSprites
+	call LoadFontsExtra
 	call LoadStandardFont
 	ld b, SCGB_DIPLOMA
 	call GetSGBLayout
 	call SetDefaultBGPAndOBP
-	call UpdateTimePals
 	xor a
 	ld [wMenuCursorY], a
-	; Build the fixed frame and mentor names once. Styled glyphs publish
-	; their attribute directly; repainting them under Textbox's temporary
-	; palette 7 would expose a few white name cells during the raster.
-	xor a
-	ldh [hBGMapMode], a
-	hlcoord 0, 0
-	ld a, ' '
-	ld bc, SCREEN_AREA
-	call ByteFill
-	hlcoord 0, 0
-	ld b, 16
-	ld c, 18
-	call Textbox
-	hlcoord 1, 1
-	ld de, .Heading
-	call PlaceString
-	; Nine-cell BISMILLAH must end before the preview/description at column10.
-	hlcoord 1, 4
-	ld de, .Names
-	call PlaceString
-	hlcoord 1, 15
-	ld de, .Controls
-	call PlaceString
 .draw
-	; Keep the existing panel and name glyphs on screen. Only the changing
-	; description, cursor and preview are replaced before map publication.
-	xor a
-	ldh [hBGMapMode], a
-	hlcoord 10, 4
-	lb bc, 7, 9
-	call ClearBox
-	hlcoord 1, 3
-	ld [hl], ' '
-	hlcoord 1, 7
-	ld [hl], ' '
-	hlcoord 1, 11
-	ld [hl], ' '
-	ld a, [wMenuCursorY]
-	add a
-	ld e, a
-	ld d, 0
-	ld hl, .Descriptions
-	add hl, de
-	ld a, [hli]
-	ld d, [hl]
-	ld e, a
-	hlcoord 10, 4
-	call PlaceString
-	; Preview the highlighted class before its saved flag is selected.
 	ld a, [wMenuCursorY]
 	ld c, a
-	farcall PeonLoadClassWorldPreview
-	hlcoord 10, 12
-	ld [hl], $60
-	inc hl
-	ld [hl], $61
-	hlcoord 10, 13
-	ld [hl], $62
-	inc hl
-	ld [hl], $63
-	hlcoord 10, 12, wAttrmap
-	ld [hl], 5
-	inc hl
-	ld [hl], 5
-	hlcoord 10, 13, wAttrmap
-	ld [hl], 5
-	inc hl
-	ld [hl], 5
-	ld a, [wMenuCursorY]
-	add a
-	add a
-	ld bc, SCREEN_WIDTH
-	hlcoord 1, 3
-.move
-	and a
-	jr z, .cursor
-	add hl, bc
-	dec a
-	jr .move
-.cursor
-	ld [hl], '▶'
-	; Tint only the class-selection page. The player's preview keeps its
-	; independent green/leather palette, and cached bold glyphs keep bank1.
-	ld a, [wMenuCursorY]
-	ld c, a
-	farcall PeonApplyClassSelectTintV028
-	call WaitBGMap2
+	farcall PeonDrawMasterScreenV0218
 .input
 	call DelayFrame
 	call JoyTextDelay
 	ldh a, [hJoyPressed]
+	bit B_BUTTON_F, a
+	jr nz, .cancelled
 	bit D_DOWN_F, a
 	jr nz, .down
 	bit D_UP_F, a
@@ -348,9 +223,16 @@ PeonClassSelect:
 	ld b, SET_FLAG
 	call EventFlagAction
 .accepted
-	call ExitMenu
-	call UpdateSprites
-	call UpdateTimePals
+	; Full BG illustrations borrow tiles used by native map graphics.
+	; Restore both VRAM banks, font, map attributes and palettes before speech.
+	call ExitAllMenus
+	ld a, 1
+	ld [wScriptVar], a
+	ret
+.cancelled
+	call ExitAllMenus
+	xor a
+	ld [wScriptVar], a
 	ret
 .down
 	ld a, [wMenuCursorY]
