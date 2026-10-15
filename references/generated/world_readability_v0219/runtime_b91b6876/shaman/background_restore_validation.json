@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+  "ordinary_buttons_only": true,
+  "emulator_memory_edits": false,
+  "states_loaded": false,
+  "user_batteries_opened": false,
+  "gallery_before_accept": {
+    "bank": 1,
+    "address": 36864,
+    "bytes": 1536,
+    "gallery_sha256": "862ab9f4e2dc74123286cbd84f3bd46af9512dc85f7e85ae8a51e81b8fd735ee",
+    "original_map_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+    "gallery_really_borrowed_map_graphics": true
+  },
+  "native_map_graphics_loads_after_accept": [
+    {
+      "map": "GrommashHold",
+      "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+      "ROM_compressed_source_exact": true,
+      "native_decompression_scratch_exact": true,
+      "ranges": [
+        {
+          "VRAM_bank": 0,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 0,
+          "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+          "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+          "byte_exact": true
+        },
+        {
+          "VRAM_bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 1536,
+          "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "byte_exact": true
+        }
+      ]
+    },
+    {
+      "map": "GrommashHold",
+      "source": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+      "ROM_compressed_source_exact": true,
+      "native_decompression_scratch_exact": true,
+      "ranges": [
+        {
+          "VRAM_bank": 0,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 0,
+          "source_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+          "actual_VRAM_sha256": "677894c6292a8ab05c54d5d5fa1cac3b60d4bf64a79a4b777b8c35abc7b28338",
+          "byte_exact": true
+        },
+        {
+          "VRAM_bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 1536,
+          "source_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "actual_VRAM_sha256": "d7e557eec81a7374419acc0a115ca5ca76faeb86827d1055fabbafbe0b467352",
+          "byte_exact": true
+        }
+      ]
+    },
+    {
+      "map": "TheDen",
+      "source": "gfx/quieter_ground_v0214/TheDen.2bpp",
+      "ROM_compressed_source_exact": true,
+      "native_decompression_scratch_exact": true,
+      "ranges": [
+        {
+          "VRAM_bank": 0,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 0,
+          "source_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+          "actual_VRAM_sha256": "29726185b6f6cca833c8c446edfeb9d58c5d985fb925361d11e9d825bc419166",
+          "byte_exact": true
+        },
+        {
+          "VRAM_bank": 1,
+          "address": 36864,
+          "bytes": 1536,
+          "source_offset": 1536,
+          "source_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+          "actual_VRAM_sha256": "a923db523504207740485cdf52ca05c67d92b355a60cdad5aff3eb15af74fd1a",
+          "byte_exact": true
+        },
+        {
+          "VRAM_bank": 1,
+          "address": 36352,
+          "bytes": 384,
+          "source_offset": 3072,
+          "source_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+          "actual_VRAM_sha256": "a1a4f5721c1c4610af7f71078f3a68c330536d679803b0e0507ee8dc10c5dfca",
+          "byte_exact": true
+        }
+      ]
+    }
+  ],
+  "native_map_loader_hook_errors": []
+}

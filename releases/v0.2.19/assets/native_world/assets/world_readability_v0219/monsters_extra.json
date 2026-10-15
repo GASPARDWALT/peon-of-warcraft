@@ -1,0 +1,1761 @@
+{
+  "version": "v0.2.19",
+  "authoring": "Complete archived WORLD/source-tile conversion; binary source alpha, nearest native24 sampling and existing per-tile palettes; no new anatomy",
+  "roles": {
+    "enemy_warlock": {
+      "references": [
+        "references/generated/durotar_v023/enemies/concept_overworld_roster.png"
+      ],
+      "identity": "Complete old WORLD warlock: peaked purple hood, olive-green face and hands, folded cloak, red/gold burning staff, short separate feet. World illustration conversion, not a new schematic body.",
+      "palette": 1,
+      "views": {
+        "front": [
+          "............33..........",
+          ".....2.....2222.........",
+          "....22....222223........",
+          "....22...32222223.......",
+          "...2222.322222222.......",
+          "...2112.3223332223......",
+          "....11233231111323......",
+          "....333323131131223.....",
+          "....33332311111323......",
+          "....33..2331111323......",
+          "....333333333313333.....",
+          "....3332223333333223....",
+          "....3313222222323211....",
+          "....11333222232233113...",
+          "....11333222322231113...",
+          "....31333223332221313...",
+          ".....233222323222311....",
+          ".....23322233322223.....",
+          ".....23322233332223.....",
+          ".....2333333333333......",
+          ".....23.3333.3333.......",
+          ".....3..3111..33........",
+          "........3333............",
+          "........................"
+        ],
+        "back": [
+          "..........3.............",
+          ".........3223.....22....",
+          ".......3222223...222....",
+          ".......22222223..2222...",
+          "......322222223..2122...",
+          "......2222222223.1112...",
+          ".....32222222223.322....",
+          ".....32222222223.3333...",
+          ".....32222222223.333....",
+          ".....33222222233.333....",
+          "....323332223333.33.....",
+          "...3222222222322333.....",
+          "...3223223222232233.....",
+          "..332332222222322113....",
+          "..313322222222332113....",
+          "..31132222222223311.....",
+          "...1332222222223333.....",
+          "....322222222223323.....",
+          "....322222222222323.....",
+          "....322222222222323.....",
+          ".....33332223333323.....",
+          "......333222333333......",
+          ".......333.3333.........",
+          "........................"
+        ],
+        "left": [
+          "...........3333.........",
+          "....22...32222223.......",
+          "...222.32222222222......",
+          "..22222322222222223.....",
+          "..2212233322222223......",
+          "..21123.313222223.......",
+          "...213..333222223.......",
+          "...3333.1113222223......",
+          "...333..1113322233......",
+          "....33..3133223333......",
+          "....33...333322222......",
+          "....333..3333322223.....",
+          "....311333222232223.....",
+          "....1111112222322223....",
+          "....1111113233232223....",
+          "....3113333322233223....",
+          "......33.33222233223....",
+          "......33333222223222....",
+          "......32332222223222....",
+          "......323333222233223...",
+          "......333333323233323...",
+          ".......33333333333333...",
+          "...........3..33333.....",
+          "........................"
+        ],
+        "right": [
+          "........3333............",
+          "......32222223...22.....",
+          ".....22222222223.222....",
+          "....32222222222322222...",
+          ".....3222222233322122...",
+          "......322222313.32112...",
+          "......322222333..312....",
+          ".....3222223111.3333....",
+          ".....3322233111..333....",
+          ".....3333223313..33.....",
+          ".....222223333...33.....",
+          "....3222233333..333.....",
+          "....322232222333113.....",
+          "...3222232222111111.....",
+          "...3222323323111111.....",
+          "...3223322233333113.....",
+          "...32233222233.33.......",
+          "...22232222233333.......",
+          "...22232222223333.......",
+          "..322332222333333.......",
+          "..323332323333333.......",
+          "..33333333333333........",
+          "....33333..3............",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "back": [
+          1,
+          1,
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "left": [
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "right": [
+          1,
+          1,
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          7
+        ]
+      },
+      "provenance": {
+        "source_kind": "archived_complete_WORLD_raster_cels",
+        "source_views_available": [
+          "front",
+          "back",
+          "left"
+        ],
+        "right_view_policy": "Existing left WORLD cel reflected horizontally because this sheet provides three unique views; not a claimed fourth authored source",
+        "animation_policy": "Four converted stills repeated at the three existing native pose addresses; no fabricated walk anatomy",
+        "new_anatomy_authored": false,
+        "colour_conversion_lossy": true,
+        "source_grid_recovery_claimed": false,
+        "frames": {
+          "front": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              35,
+              807,
+              170,
+              959
+            ],
+            "source_alpha_bbox": [
+              52,
+              821,
+              155,
+              954
+            ],
+            "source_crop": [
+              52,
+              821,
+              155,
+              954
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              18,
+              23
+            ],
+            "native_fit_origin": [
+              3,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 282,
+            "source_RGBA_sampled_sha256": "6f1e4ee9bb0478a664ff5220678bfc709f26bea54d33039b0d6a4cb5f8dbe602",
+            "native_index_cells_sha256": "27472262e9c8a500fb8daf8bd75db5dad165bcf59e38ff007ee9a524460a5f1d",
+            "native_RGBA_sha256": "38344001111f60d02af0540d2aac16df0da9d2fb44ae50e8fa51f92f23d05316",
+            "native_palette_ids": [
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              1,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "back": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              215,
+              807,
+              333,
+              959
+            ],
+            "source_alpha_bbox": [
+              217,
+              825,
+              318,
+              950
+            ],
+            "source_crop": [
+              217,
+              825,
+              318,
+              950
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              19,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 306,
+            "source_RGBA_sampled_sha256": "0cc34505867b5650030e7c128e79c548023420b7f67030c8f7b1087190e934f2",
+            "native_index_cells_sha256": "d245b2d17ada965ee783f0dd95d9dc480e6a85f35c631fd6fa523fba21242633",
+            "native_RGBA_sha256": "9d9ab1b540a7a7064458843d6708d650f0be9b857349dc1bccc342f6508c5e1f",
+            "native_palette_ids": [
+              1,
+              1,
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "left": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              355,
+              807,
+              482,
+              959
+            ],
+            "source_alpha_bbox": [
+              377,
+              828,
+              476,
+              948
+            ],
+            "source_crop": [
+              377,
+              828,
+              476,
+              948
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              19,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 304,
+            "source_RGBA_sampled_sha256": "eb521d90b0c1eb92a8eed99e68c325dbc43053e4dc499b4eac07a5aebe3efc27",
+            "native_index_cells_sha256": "d869c5f5a2dd9408782dad84715434b81fbb621e777d6e9ce4b5da468520e87f",
+            "native_RGBA_sha256": "f8dd297b33f07ce97a27b7b56daaf658a597388a10e6a74838dd499fce14fe69",
+            "native_palette_ids": [
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              1,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "right": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              355,
+              807,
+              482,
+              959
+            ],
+            "source_alpha_bbox": [
+              377,
+              828,
+              476,
+              948
+            ],
+            "source_crop": [
+              377,
+              828,
+              476,
+              948
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              19,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": true,
+            "mirrored_from": "left",
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 304,
+            "source_RGBA_sampled_sha256": "c997372c35a84f089cda768f60dee2dc363d30c9e71f1668c3b62c8f8800b40a",
+            "native_index_cells_sha256": "43f9985b76b7e86e3c5028836ec404fa145197bae1e0c20d67820eb5ce691455",
+            "native_RGBA_sha256": "c78186eff1bb8ccb910634dfddcd9aaa14ede22b3c574d87024897924403f845",
+            "native_palette_ids": [
+              1,
+              1,
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              7
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          }
+        }
+      }
+    },
+    "harpy": {
+      "references": [
+        "references/generated/durotar_v023/enemies/concept_overworld_roster.png"
+      ],
+      "identity": "Complete old WORLD harpy: swept feather crest, beaked face, spread notched purple wings, pale chest, two clawed feet. Existing wing and face geometry retained from the archived world illustration.",
+      "palette": 1,
+      "views": {
+        "front": [
+          "...........333..........",
+          ".........332223.........",
+          "........32222223........",
+          "........32222223........",
+          ".......322122122........",
+          ".......333211122........",
+          ".....32232211223323.....",
+          "....3223321112333223....",
+          "....2222222113232222....",
+          "...322222213212322223...",
+          "...222223111112222222...",
+          "..32222233111133222223..",
+          "..2223223221123.222222..",
+          ".322232..311113.323222..",
+          ".323233.32211223.332323.",
+          ".3232...32133123...2323.",
+          ".3233....323313....3323.",
+          ".333.....333323.....333.",
+          ".3.......32332........3.",
+          "........322232..........",
+          "........3323223.........",
+          "..........323313........",
+          "...........3333.........",
+          "........................"
+        ],
+        "back": [
+          "...........3............",
+          "........3232323.........",
+          "........3222222.........",
+          ".......32222222.........",
+          ".......322222223........",
+          ".......232222223........",
+          ".......222222233........",
+          ".....32322222223.3......",
+          "....322232322233223.....",
+          "...32222223233222223....",
+          "..3222222123122222223...",
+          "..22222231111132222233..",
+          ".322222232111232222223..",
+          ".222223233212333322322..",
+          ".222223.3221223.322222..",
+          "323232..3211222..232323.",
+          "32323...3232323...32323.",
+          "3233....3233323....3323.",
+          "333......33.32......333.",
+          "........323.323.........",
+          ".......332132233........",
+          "........3323233.........",
+          "..........3.3...........",
+          "........................"
+        ],
+        "left": [
+          "....3..33...............",
+          "...322233...............",
+          "..322222222.............",
+          "..322222223.............",
+          ".3221222222.............",
+          "..233222233.............",
+          "..112222222.............",
+          ".3112222233.............",
+          ".313332222233...........",
+          "..3.22222222223.........",
+          "....3222322222233.......",
+          ".....2222322222223......",
+          ".....2221232222322233...",
+          "......33122322322233....",
+          "......322223322222223...",
+          ".......332233322232223..",
+          "........2223..3322233...",
+          "........2332....23223...",
+          ".....3223333......333...",
+          "....33133313............",
+          ".....33332223...........",
+          ".......33233............",
+          "........33..............",
+          "........................"
+        ],
+        "right": [
+          "..............33..3.....",
+          "..............332223....",
+          "............222222223...",
+          "............322222223...",
+          "............2222221223..",
+          "............332222332...",
+          "............222222211...",
+          "............3322222113..",
+          "..........332223233313..",
+          "........32222222222.3...",
+          "......3322222232223.....",
+          ".....3222222232122......",
+          "..3322222222321122......",
+          "...33222322322133.......",
+          "..322222223322213.......",
+          ".322232223332233........",
+          "..3322233..3222.........",
+          "..32232....2332.........",
+          "..333......3333223......",
+          "...........31333133.....",
+          "..........32223333......",
+          "...........33233........",
+          ".............33.........",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          1,
+          3,
+          1,
+          1,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        "back": [
+          1,
+          3,
+          1,
+          1,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        "left": [
+          1,
+          3,
+          1,
+          1,
+          3,
+          1,
+          3,
+          3,
+          1
+        ],
+        "right": [
+          1,
+          3,
+          1,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3
+        ]
+      },
+      "provenance": {
+        "source_kind": "archived_complete_WORLD_raster_cels",
+        "source_views_available": [
+          "front",
+          "back",
+          "left"
+        ],
+        "right_view_policy": "Existing left WORLD cel reflected horizontally because this sheet provides three unique views; not a claimed fourth authored source",
+        "animation_policy": "Four converted stills repeated at the three existing native pose addresses; no fabricated walk anatomy",
+        "new_anatomy_authored": false,
+        "colour_conversion_lossy": true,
+        "source_grid_recovery_claimed": false,
+        "frames": {
+          "front": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              15,
+              475,
+              180,
+              635
+            ],
+            "source_alpha_bbox": [
+              29,
+              484,
+              161,
+              623
+            ],
+            "source_crop": [
+              29,
+              484,
+              161,
+              623
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              22,
+              23
+            ],
+            "native_fit_origin": [
+              1,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 274,
+            "source_RGBA_sampled_sha256": "cfc4f69e541630ae4030ff562576525dd492aa8422525aa679178893e70725c0",
+            "native_index_cells_sha256": "66ae20e31712e0ad4c99729c322cbf445d571c53fb75352f4eb7aba897db45e8",
+            "native_RGBA_sha256": "cae692d30d366dd7cc23e77beabcac8d66e9cbd5d9b4ac05cd79d8a6d209632d",
+            "native_palette_ids": [
+              1,
+              3,
+              1,
+              1,
+              3,
+              1,
+              1,
+              3,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "protected_material_policy": "Existing OBJ3 in center-column cells protects the source pale beaked face/chest; existing OBJ1 preserves purple outer wings. This is a declared lossy palette-only conversion, not anatomy or outline authoring.",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "back": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              195,
+              475,
+              340,
+              635
+            ],
+            "source_alpha_bbox": [
+              198,
+              479,
+              334,
+              613
+            ],
+            "source_crop": [
+              198,
+              479,
+              334,
+              613
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              23,
+              23
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 279,
+            "source_RGBA_sampled_sha256": "aeec93647362274d3aada26ed1446877050e10b424559f418e1b1241298437fe",
+            "native_index_cells_sha256": "d1c081a736d74eb44421ef60fa258761ca0150ae978a4851733d7ebae365c55a",
+            "native_RGBA_sha256": "ed0d813adfb09855fe90c11dd16c11ae45003be1c602c3072e806f8ce99a24da",
+            "native_palette_ids": [
+              1,
+              3,
+              1,
+              1,
+              3,
+              1,
+              1,
+              3,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "protected_material_policy": "Existing OBJ3 in center-column cells protects the source pale beaked face/chest; existing OBJ1 preserves purple outer wings. This is a declared lossy palette-only conversion, not anatomy or outline authoring.",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "left": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              350,
+              475,
+              510,
+              635
+            ],
+            "source_alpha_bbox": [
+              380,
+              487,
+              499,
+              618
+            ],
+            "source_crop": [
+              380,
+              487,
+              499,
+              618
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              21,
+              23
+            ],
+            "native_fit_origin": [
+              1,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 228,
+            "source_RGBA_sampled_sha256": "597f35a3261f0b960a4685d7f7ebf0c78a062e77225731e28bd294bef4842d85",
+            "native_index_cells_sha256": "59203b93b09b91356cb5206d3529d8f9cb51bf0974619d3fb24df3a36dbaa297",
+            "native_RGBA_sha256": "7206af71314deccb338c6ca51d7711d030399d9996553b153bfe9133dae43b7a",
+            "native_palette_ids": [
+              1,
+              3,
+              1,
+              1,
+              3,
+              1,
+              3,
+              3,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "protected_material_policy": "Existing OBJ3 in center-column cells protects the source pale beaked face/chest; existing OBJ1 preserves purple outer wings. This is a declared lossy palette-only conversion, not anatomy or outline authoring.",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "right": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              350,
+              475,
+              510,
+              635
+            ],
+            "source_alpha_bbox": [
+              380,
+              487,
+              499,
+              618
+            ],
+            "source_crop": [
+              380,
+              487,
+              499,
+              618
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              21,
+              23
+            ],
+            "native_fit_origin": [
+              1,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": true,
+            "mirrored_from": "left",
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 228,
+            "source_RGBA_sampled_sha256": "f8a832bcf78812c9c3730188900346023ad418e54493be4888f104e6d7c8f7b7",
+            "native_index_cells_sha256": "b59af77407729a3b2951f5844defcf7731e9054cad8410550dc3cbbdb58e8d70",
+            "native_RGBA_sha256": "675fd5e91abb45f1c365c3962068c586feb88056a6e0169528143967b34c203c",
+            "native_palette_ids": [
+              1,
+              3,
+              1,
+              1,
+              3,
+              1,
+              1,
+              3,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "protected_material_policy": "Existing OBJ3 in center-column cells protects the source pale beaked face/chest; existing OBJ1 preserves purple outer wings. This is a declared lossy palette-only conversion, not anatomy or outline authoring.",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          }
+        }
+      }
+    },
+    "yarrog": {
+      "references": [
+        "references/generated/durotar_v023/enemies/concept_overworld_roster.png"
+      ],
+      "identity": "Yarrog uses the alternate old WORLD warlock family cels: same complete hooded orc caster design and burning staff. This is a family reuse, not an extracted named-Yarrog source or newly drawn boss.",
+      "palette": 1,
+      "views": {
+        "front": [
+          ".....2......33..........",
+          ".....2.....2222.........",
+          "....22...3222223........",
+          "....222..32222223.......",
+          "...2122.322222223.......",
+          "...2112.3223332223......",
+          "....21232331111323......",
+          "....33332313133122......",
+          "....33..2311111323......",
+          "....33.33311111323......",
+          "....333333313313333.....",
+          "....3322233333333223....",
+          "....3133222322323211....",
+          "....11333222332233113...",
+          "....11333223333233113...",
+          "....33333222332223113...",
+          ".....333222333222333....",
+          ".....33322233322233.....",
+          ".....33322233322223.....",
+          ".....2..3333333333......",
+          ".....3...333.313........",
+          "........3111..33........",
+          "........3333............",
+          "........................"
+        ],
+        "back": [
+          ".................2......",
+          "..........33.....22.....",
+          ".........32223..222.....",
+          "........3222223.2122....",
+          ".......32222223.2112....",
+          ".......2222222232112....",
+          ".......2222222233333....",
+          "......32222222223333....",
+          "......3222222222333.....",
+          ".......322222233.33.....",
+          "......3333332332333.....",
+          ".....32222222222211.....",
+          ".....323222222222113....",
+          "....3222222222232113....",
+          "....313222222223333.....",
+          "....313222222222333.....",
+          ".....32222222222323.....",
+          ".....32222222332323.....",
+          ".....3222223333333......",
+          ".....3333333333.........",
+          ".......33333333.........",
+          ".......3333.333.........",
+          ".......3333.............",
+          "........................"
+        ],
+        "left": [
+          "...22......3333.........",
+          "...22....32222223.......",
+          "...22...3222222223......",
+          "..22122322222222223.....",
+          "..21122333322222233.....",
+          "..21122.313222223.......",
+          "...2133.331322222.......",
+          "...3333.3113222223......",
+          "...3333.3111322223......",
+          ".....23..3132233233.....",
+          ".....23..3323322223.....",
+          ".....32..3333332223.....",
+          ".....332333222322223....",
+          ".....222313222333223....",
+          ".....3221113222332223...",
+          ".....3223333322233223...",
+          "......33.3232222332223..",
+          ".......333222222232223..",
+          ".......333332222233223..",
+          "......3333333222233223..",
+          ".......3333..333333333..",
+          "........333.....33333...",
+          "................3333....",
+          "........................"
+        ],
+        "right": [
+          ".........3333......22...",
+          ".......32222223....22...",
+          "......3222222223...22...",
+          ".....32222222222322122..",
+          ".....33222222333322112..",
+          ".......322222313.22112..",
+          ".......222223133.3312...",
+          "......3222223113.3333...",
+          "......3222231113.3333...",
+          ".....3323322313..32.....",
+          ".....3222233233..32.....",
+          ".....3222333333..23.....",
+          "....322223222333233.....",
+          "....322333222313222.....",
+          "...3222332223111223.....",
+          "...3223322233333223.....",
+          "..3222332222323.33......",
+          "..322232222222333.......",
+          "..322332222233333.......",
+          "..3223322223333333......",
+          "..333333333..3333.......",
+          "...33333.....333........",
+          "....3333................",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3,
+          1,
+          1
+        ],
+        "back": [
+          1,
+          1,
+          7,
+          1,
+          1,
+          1,
+          1,
+          1,
+          3
+        ],
+        "left": [
+          7,
+          1,
+          1,
+          3,
+          1,
+          1,
+          7,
+          1,
+          1
+        ],
+        "right": [
+          1,
+          1,
+          7,
+          1,
+          1,
+          3,
+          1,
+          1,
+          7
+        ]
+      },
+      "provenance": {
+        "source_kind": "archived_complete_WORLD_raster_cels",
+        "source_views_available": [
+          "front",
+          "back",
+          "left"
+        ],
+        "right_view_policy": "Existing left WORLD cel reflected horizontally because this sheet provides three unique views; not a claimed fourth authored source",
+        "animation_policy": "Four converted stills repeated at the three existing native pose addresses; no fabricated walk anatomy",
+        "new_anatomy_authored": false,
+        "colour_conversion_lossy": true,
+        "source_grid_recovery_claimed": false,
+        "frames": {
+          "front": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              548,
+              807,
+              682,
+              959
+            ],
+            "source_alpha_bbox": [
+              563,
+              821,
+              666,
+              954
+            ],
+            "source_crop": [
+              563,
+              821,
+              666,
+              954
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              18,
+              23
+            ],
+            "native_fit_origin": [
+              3,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 277,
+            "source_RGBA_sampled_sha256": "7e86f7f1b646a5dacd05accfaffe1730e7af1082e48034f5563bfc30564671a7",
+            "native_index_cells_sha256": "2ec9dcdfefd4f2f2e7e771f45add1155d611b16bb7179827a85581197ec11027",
+            "native_RGBA_sha256": "cced36976f1a1c2c164c19c15d545a2a72701fc7e9af9d50e1d0413121aa0ba5",
+            "native_palette_ids": [
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3,
+              1,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "back": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              700,
+              807,
+              852,
+              959
+            ],
+            "source_alpha_bbox": [
+              724,
+              825,
+              812,
+              954
+            ],
+            "source_crop": [
+              724,
+              825,
+              812,
+              954
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              16,
+              23
+            ],
+            "native_fit_origin": [
+              4,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 258,
+            "source_RGBA_sampled_sha256": "08aea0e237b2bf1d83d873cfd6987693a3b5f040fb410747c7206d16f06493db",
+            "native_index_cells_sha256": "58b59d4252209bbde1c969acac420c6996e28734232da8c616d4ce598f077d93",
+            "native_RGBA_sha256": "e2caaf6d398425ff6175274228177884c62f215918ff6b92264b5b5e0124045b",
+            "native_palette_ids": [
+              1,
+              1,
+              7,
+              1,
+              1,
+              1,
+              1,
+              1,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "left": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              864,
+              807,
+              1015,
+              959
+            ],
+            "source_alpha_bbox": [
+              889,
+              831,
+              991,
+              950
+            ],
+            "source_crop": [
+              889,
+              831,
+              991,
+              950
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              20,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 301,
+            "source_RGBA_sampled_sha256": "9f0508639522a83773e9c94aaef8cd1aa0e315be5cfbb4ed73cdcc155443cb5d",
+            "native_index_cells_sha256": "204effa7aa865aefae15860edd3ed1945728534b8170240f312798b62a340bfa",
+            "native_RGBA_sha256": "d901a20eafb9c7f2824e1099d17badd71eb7b11d1466eb11d97576a2076f9e5c",
+            "native_palette_ids": [
+              7,
+              1,
+              1,
+              3,
+              1,
+              1,
+              7,
+              1,
+              1
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "right": {
+            "source": "references/generated/durotar_v023/enemies/concept_overworld_roster.png",
+            "source_sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+            "source_dimensions": [
+              1024,
+              1536
+            ],
+            "selection_box": [
+              864,
+              807,
+              1015,
+              959
+            ],
+            "source_alpha_bbox": [
+              889,
+              831,
+              991,
+              950
+            ],
+            "source_crop": [
+              889,
+              831,
+              991,
+              950
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              20,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": true,
+            "mirrored_from": "left",
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 301,
+            "source_RGBA_sampled_sha256": "f979668d950aa3f9323d4f90cbf1549a270ac4be23d71a6808e40e02d70b17c3",
+            "native_index_cells_sha256": "a57f60f771e5014081db98f2912e7f8d3f4735a7dc25bab1f6fad5df24ef4b99",
+            "native_RGBA_sha256": "6d0b115b87f8efcc0376bf56ef7ca90561e71d1bd245695db43ef9c4007b0a16",
+            "native_palette_ids": [
+              1,
+              1,
+              7,
+              1,
+              1,
+              3,
+              1,
+              1,
+              7
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          }
+        }
+      }
+    },
+    "rock_one_npc": {
+      "references": [
+        "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png"
+      ],
+      "identity": "Supplied small Durotar rock resource retained as a small angular whole pebble; existing 16px world tile nearest-sampled to24px, without eyes, weapons, invented limbs or a replacement circle.",
+      "palette": 3,
+      "views": {
+        "front": [
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "..........222...........",
+          "..........222...........",
+          ".........322233.........",
+          ".......2223332233.......",
+          ".......2223332233.......",
+          "......222222322223......",
+          "......32222222222333....",
+          "......32222222222333....",
+          ".....22..23322222233....",
+          ".....22..23322222233....",
+          ".........2..333.........",
+          ".........3..............",
+          ".........3..............",
+          "........................",
+          "........................",
+          "........................",
+          "........................"
+        ],
+        "back": [
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "..........222...........",
+          "..........222...........",
+          ".........322233.........",
+          ".......2223332233.......",
+          ".......2223332233.......",
+          "......222222322223......",
+          "......32222222222333....",
+          "......32222222222333....",
+          ".....22..23322222233....",
+          ".....22..23322222233....",
+          ".........2..333.........",
+          ".........3..............",
+          ".........3..............",
+          "........................",
+          "........................",
+          "........................",
+          "........................"
+        ],
+        "left": [
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "..........222...........",
+          "..........222...........",
+          ".........322233.........",
+          ".......2223332233.......",
+          ".......2223332233.......",
+          "......222222322223......",
+          "......32222222222333....",
+          "......32222222222333....",
+          ".....22..23322222233....",
+          ".....22..23322222233....",
+          ".........2..333.........",
+          ".........3..............",
+          ".........3..............",
+          "........................",
+          "........................",
+          "........................",
+          "........................"
+        ],
+        "right": [
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "........................",
+          "..........222...........",
+          "..........222...........",
+          ".........322233.........",
+          ".......2223332233.......",
+          ".......2223332233.......",
+          "......222222322223......",
+          "......32222222222333....",
+          "......32222222222333....",
+          ".....22..23322222233....",
+          ".....22..23322222233....",
+          ".........2..333.........",
+          ".........3..............",
+          ".........3..............",
+          "........................",
+          "........................",
+          "........................",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "back": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "left": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "right": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      "provenance": {
+        "source_kind": "supplied_single_16x16_WORLD_tile",
+        "new_anatomy_authored": false,
+        "colour_conversion_lossy": true,
+        "direction_policy": "The source is one static resource tile with no authored rear or sides; identical whole-source tile in all four direction addresses",
+        "animation_policy": "Identical static source repeated at all native pose addresses; no invented vibration frames",
+        "source_grid_recovery_claimed": false,
+        "frames": {
+          "front": {
+            "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png",
+            "source_sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+            "source_dimensions": [
+              16,
+              16
+            ],
+            "selection_box": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "source_alpha_bbox": [
+              3,
+              5,
+              13,
+              13
+            ],
+            "source_crop": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              24,
+              24
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 104,
+            "source_RGBA_sampled_sha256": "c52222a730eb8b28ef7efdbdc95b89c20fb5c0dec9f8ca2a2f607662e82fbad4",
+            "native_index_cells_sha256": "eec5c2b7a700a0fa8eb21295a18974005df410134ae5ad6df287d74d3ad013ba",
+            "native_RGBA_sha256": "ed490d44871cac67db172e89ae57eb96dcda7f895d5b068dc30a7830a28a6b54",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "back": {
+            "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png",
+            "source_sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+            "source_dimensions": [
+              16,
+              16
+            ],
+            "selection_box": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "source_alpha_bbox": [
+              3,
+              5,
+              13,
+              13
+            ],
+            "source_crop": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              24,
+              24
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 104,
+            "source_RGBA_sampled_sha256": "c52222a730eb8b28ef7efdbdc95b89c20fb5c0dec9f8ca2a2f607662e82fbad4",
+            "native_index_cells_sha256": "eec5c2b7a700a0fa8eb21295a18974005df410134ae5ad6df287d74d3ad013ba",
+            "native_RGBA_sha256": "ed490d44871cac67db172e89ae57eb96dcda7f895d5b068dc30a7830a28a6b54",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "left": {
+            "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png",
+            "source_sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+            "source_dimensions": [
+              16,
+              16
+            ],
+            "selection_box": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "source_alpha_bbox": [
+              3,
+              5,
+              13,
+              13
+            ],
+            "source_crop": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              24,
+              24
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 104,
+            "source_RGBA_sampled_sha256": "c52222a730eb8b28ef7efdbdc95b89c20fb5c0dec9f8ca2a2f607662e82fbad4",
+            "native_index_cells_sha256": "eec5c2b7a700a0fa8eb21295a18974005df410134ae5ad6df287d74d3ad013ba",
+            "native_RGBA_sha256": "ed490d44871cac67db172e89ae57eb96dcda7f895d5b068dc30a7830a28a6b54",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          },
+          "right": {
+            "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png",
+            "source_sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+            "source_dimensions": [
+              16,
+              16
+            ],
+            "selection_box": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "source_alpha_bbox": [
+              3,
+              5,
+              13,
+              13
+            ],
+            "source_crop": [
+              0,
+              0,
+              16,
+              16
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              24,
+              24
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "sampling": "Pillow nearest; no interpolation/smoothing",
+            "source_grid_recovery_claimed": false,
+            "mirrored": false,
+            "mirrored_from": null,
+            "native_alpha_equals_sampled_source": true,
+            "source_alpha_pixels_after_sampling": 104,
+            "source_RGBA_sampled_sha256": "c52222a730eb8b28ef7efdbdc95b89c20fb5c0dec9f8ca2a2f607662e82fbad4",
+            "native_index_cells_sha256": "eec5c2b7a700a0fa8eb21295a18974005df410134ae5ad6df287d74d3ad013ba",
+            "native_RGBA_sha256": "ed490d44871cac67db172e89ae57eb96dcda7f895d5b068dc30a7830a28a6b54",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "geometry_authored": false,
+            "outline_cells_added": false,
+            "palette_conversion": "Lossy per8x8 existing OBJ palette selection; palette1 source-purple/source-green hue constraints preserve source fills; no geometry or alpha changes",
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+            "palette3_refit": "Existing OBJ3 now ivory(25,23,17)/brown(15,9,4)/ink; re-fit palette3 cells only, all other palette cells/geometry/alpha unchanged"
+          }
+        }
+      }
+    }
+  },
+  "pending_roles": {
+    "kolkar_archer": "Provided separately in assets/world_readability_v0219/kolkar.json using the explicitly approved generated source",
+    "kolkar_raider": "Provided separately in assets/world_readability_v0219/kolkar.json using the explicitly approved generated source"
+  },
+  "original_source_PNGs_modified": false
+}

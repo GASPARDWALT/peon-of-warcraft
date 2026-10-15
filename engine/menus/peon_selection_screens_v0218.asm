@@ -832,3 +832,5 @@ PeonSelectionFrameGFXV0218:
 	assert @ - PeonSelectionFrameGFXV0218 == 16 * TILE_SIZE
 
 PURGE peon_selection_cell_v0218
+
+INCLUDE "engine/menus/peon_master_gallery_v0219.asm"

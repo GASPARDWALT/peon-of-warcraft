@@ -1,0 +1,1283 @@
+{
+  "status": "PASS",
+  "scope": "Generated source-art conversion and static packet decode proof; no ROM/emulator claim",
+  "source_original_png_unmodified": {
+    "path": "assets/world_readability_v0219/originals/garrosh_world_generated.png",
+    "sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  "source_generated_authorized_not_claimed_grid_recovery": true,
+  "all_source_alpha128_pixels_inside_four_whole_component_crops": true,
+  "source_alpha128_pixels": 534383,
+  "crops": [
+    {
+      "view": "front",
+      "component_label": 1,
+      "alpha64_component_pixels": 143893,
+      "source_bbox": [
+        22,
+        130,
+        477,
+        633
+      ],
+      "alpha_to_native_threshold": 128,
+      "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+      "nearest_phase_native_px": [
+        0,
+        0
+      ],
+      "body_dimensions": [
+        22,
+        24
+      ],
+      "target_canvas": [
+        24,
+        24
+      ],
+      "target_offset": [
+        1,
+        0
+      ],
+      "opaque_bbox": [
+        1,
+        0,
+        23,
+        24
+      ]
+    },
+    {
+      "view": "back",
+      "component_label": 2,
+      "alpha64_component_pixels": 151102,
+      "source_bbox": [
+        610,
+        130,
+        1087,
+        633
+      ],
+      "alpha_to_native_threshold": 128,
+      "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+      "nearest_phase_native_px": [
+        0,
+        0
+      ],
+      "body_dimensions": [
+        23,
+        24
+      ],
+      "target_canvas": [
+        24,
+        24
+      ],
+      "target_offset": [
+        0,
+        0
+      ],
+      "opaque_bbox": [
+        0,
+        0,
+        23,
+        24
+      ]
+    },
+    {
+      "view": "left",
+      "component_label": 3,
+      "alpha64_component_pixels": 121024,
+      "source_bbox": [
+        1133,
+        130,
+        1530,
+        637
+      ],
+      "alpha_to_native_threshold": 128,
+      "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+      "nearest_phase_native_px": [
+        0,
+        0
+      ],
+      "body_dimensions": [
+        19,
+        24
+      ],
+      "target_canvas": [
+        24,
+        24
+      ],
+      "target_offset": [
+        2,
+        0
+      ],
+      "opaque_bbox": [
+        2,
+        0,
+        21,
+        24
+      ]
+    },
+    {
+      "view": "right",
+      "component_label": 4,
+      "alpha64_component_pixels": 122866,
+      "source_bbox": [
+        1719,
+        130,
+        2119,
+        637
+      ],
+      "alpha_to_native_threshold": 128,
+      "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+      "nearest_phase_native_px": [
+        0,
+        0
+      ],
+      "body_dimensions": [
+        19,
+        24
+      ],
+      "target_canvas": [
+        24,
+        24
+      ],
+      "target_offset": [
+        2,
+        0
+      ],
+      "opaque_bbox": [
+        2,
+        0,
+        21,
+        24
+      ]
+    }
+  ],
+  "normal_world_frames": [
+    {
+      "view": "front",
+      "pose": 0,
+      "status": "PASS",
+      "opaque_pixels": 321,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "front",
+      "pose": 1,
+      "status": "PASS",
+      "opaque_pixels": 321,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "front",
+      "pose": 2,
+      "status": "PASS",
+      "opaque_pixels": 321,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "back",
+      "pose": 0,
+      "status": "PASS",
+      "opaque_pixels": 339,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "back",
+      "pose": 1,
+      "status": "PASS",
+      "opaque_pixels": 339,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "back",
+      "pose": 2,
+      "status": "PASS",
+      "opaque_pixels": 339,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "left",
+      "pose": 0,
+      "status": "PASS",
+      "opaque_pixels": 270,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "left",
+      "pose": 1,
+      "status": "PASS",
+      "opaque_pixels": 270,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "left",
+      "pose": 2,
+      "status": "PASS",
+      "opaque_pixels": 270,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "right",
+      "pose": 0,
+      "status": "PASS",
+      "opaque_pixels": 272,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "right",
+      "pose": 1,
+      "status": "PASS",
+      "opaque_pixels": 272,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    },
+    {
+      "view": "right",
+      "pose": 2,
+      "status": "PASS",
+      "opaque_pixels": 272,
+      "alpha_matches_complete_nearest_source": true,
+      "pixel_decode_exact": true
+    }
+  ],
+  "lodge_static_front": {
+    "packet": "gfx/large_masters_v0219/warrior_trainer.bin",
+    "bytes": 144,
+    "sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955",
+    "indices_decode_exact": true,
+    "RGBA_decode_matches_native_preview_exact": true,
+    "alpha_same_as_complete_source_and_world_front": true,
+    "attributes": [
+      3,
+      3,
+      3,
+      4,
+      3,
+      4,
+      3,
+      3,
+      3
+    ],
+    "source_ivory_head_points": 4,
+    "native_ivory_head_points": 5,
+    "native_brown_skin_leather_pixels": 85,
+    "native_red_armor_pixels": 29,
+    "native_steel_pixels": 23,
+    "oam_rows": [
+      [
+        -8,
+        -4,
+        3,
+        0
+      ],
+      [
+        -8,
+        4,
+        3,
+        1
+      ],
+      [
+        -8,
+        12,
+        3,
+        2
+      ],
+      [
+        0,
+        -4,
+        4,
+        3
+      ],
+      [
+        0,
+        4,
+        3,
+        4
+      ],
+      [
+        0,
+        12,
+        4,
+        5
+      ],
+      [
+        8,
+        -4,
+        3,
+        6
+      ],
+      [
+        8,
+        4,
+        3,
+        7
+      ],
+      [
+        8,
+        12,
+        3,
+        8
+      ]
+    ]
+  },
+  "static_and_world_indices_may_differ_for_different_palette_pool": true,
+  "all9_oam_positions_and_tileids_preserved": true,
+  "shaman_warlock_facings_unchanged": true,
+  "Kento_and_Bismillah_palettes7_1_5_unchanged": true,
+  "v13_master_sources_untouched": {
+    "gfx/large_masters_v0213/shaman_master.bin": "eb3985f0219e623ef3a3a02086b4890c504a7dae176a848a6a523787e6af7745",
+    "gfx/large_masters_v0213/enemy_warlock.bin": "b53b37cb815cb58832cc47ae2f49961d7b044e5a887d53be61b249b2714d11fa",
+    "gfx/large_masters_v0213/facings.asm": "ec807985f627c1a50c071833570cd4292554d7adf274aab5184ac2fe128040ec",
+    "gfx/large_masters_v0213/palettes.asm": "3b17d49f6e0f433899f568702990ad302a0f34cc1f737a63840b663cf9a09ee0",
+    "gfx/large_masters_v0213/graphics.asm": "086d64d856d5e55b25ea8726c1e6abcf26893b2ebad4f90fdaed1170385c934b",
+    "gfx/large_masters_v0213/warrior_trainer.bin": "5bf371df9c58cc9cc233120643d44c3e819d38b55ba63dbd9b6bbcd95bb3bba7"
+  },
+  "13_exact_roles_unchanged": true,
+  "generated_source_conversion_is_lossy": true,
+  "source_json_sha256": "8696cf16c02447ba7f3006ed7a5e1e852ccc13fa9f566caf859643d3179c4c9a",
+  "generated_source_provenance": {
+    "source_kind": "authorized_generated_world_png_whole_figure_nearest24_palette_fit",
+    "source_generated": true,
+    "source_authorization": "Root image generation specifically authorized for Garrosh WORLD after rejection of prior derived old-warrior recolor. This is new generated art, not an extraction of original user pixels.",
+    "source_original_copy": "assets/world_readability_v0219/originals/garrosh_world_generated.png",
+    "source_original_png_sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+    "source_original_png_bytes": 756949,
+    "source_size": [
+      2172,
+      724
+    ],
+    "source_original_png_unmodified": true,
+    "source_generated_file": "exec-69a9db21-4f98-47e2-b8f7-fd8c002aced2.png",
+    "source_layout": "Four complete RGBA figures sorted by connected-component x: front, back, left, right. Quarter-width cuts are not used.",
+    "component_alpha_threshold": 64,
+    "native_opaque_alpha_threshold": 128,
+    "source_frame_recipes": [
+      {
+        "direction": "front",
+        "pose": 0,
+        "source_view_index": 0,
+        "source_crop_xyxy": [
+          22,
+          130,
+          477,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "front",
+        "pose": 1,
+        "source_view_index": 0,
+        "source_crop_xyxy": [
+          22,
+          130,
+          477,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "front",
+        "pose": 2,
+        "source_view_index": 0,
+        "source_crop_xyxy": [
+          22,
+          130,
+          477,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "back",
+        "pose": 0,
+        "source_view_index": 1,
+        "source_crop_xyxy": [
+          610,
+          130,
+          1087,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "back",
+        "pose": 1,
+        "source_view_index": 1,
+        "source_crop_xyxy": [
+          610,
+          130,
+          1087,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "back",
+        "pose": 2,
+        "source_view_index": 1,
+        "source_crop_xyxy": [
+          610,
+          130,
+          1087,
+          633
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "left",
+        "pose": 0,
+        "source_view_index": 2,
+        "source_crop_xyxy": [
+          1133,
+          130,
+          1530,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "left",
+        "pose": 1,
+        "source_view_index": 2,
+        "source_crop_xyxy": [
+          1133,
+          130,
+          1530,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "left",
+        "pose": 2,
+        "source_view_index": 2,
+        "source_crop_xyxy": [
+          1133,
+          130,
+          1530,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "right",
+        "pose": 0,
+        "source_view_index": 3,
+        "source_crop_xyxy": [
+          1719,
+          130,
+          2119,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "right",
+        "pose": 1,
+        "source_view_index": 3,
+        "source_crop_xyxy": [
+          1719,
+          130,
+          2119,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      },
+      {
+        "direction": "right",
+        "pose": 2,
+        "source_view_index": 3,
+        "source_crop_xyxy": [
+          1719,
+          130,
+          2119,
+          637
+        ],
+        "whole_cel_native_xflip": false,
+        "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+      }
+    ],
+    "view_records": [
+      {
+        "view": "front",
+        "component_label": 1,
+        "alpha64_component_pixels": 143893,
+        "source_bbox": [
+          22,
+          130,
+          477,
+          633
+        ],
+        "alpha_to_native_threshold": 128,
+        "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+        "nearest_phase_native_px": [
+          0,
+          0
+        ],
+        "body_dimensions": [
+          22,
+          24
+        ],
+        "target_canvas": [
+          24,
+          24
+        ],
+        "target_offset": [
+          1,
+          0
+        ],
+        "opaque_bbox": [
+          1,
+          0,
+          23,
+          24
+        ],
+        "palette_attributes": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          7,
+          3,
+          3,
+          3
+        ],
+        "palette_fit": [
+          {
+            "tile": 0,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 1,
+            "palette": 3,
+            "source_red_pixels": 3,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 30,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 2,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 7,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 3,
+            "palette": 5,
+            "source_red_pixels": 4,
+            "source_neutral_metal_pixels": 16,
+            "source_warm_skin_leather_pixels": 8,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 4,
+            "palette": 3,
+            "source_red_pixels": 3,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 20,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 5,
+            "palette": 7,
+            "source_red_pixels": 9,
+            "source_neutral_metal_pixels": 7,
+            "source_warm_skin_leather_pixels": 15,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 6,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 1,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 7,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 11,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 8,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 9,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          }
+        ],
+        "nearest24_opaque_pixels": 321,
+        "nearest24_rgba_sha256": "ce9eac6eecbd5665509e341221f8fa1d039deae3b84d9486f88155e28411de90",
+        "native_indices_sha256": "795fc47c8fd85c3ca845a8b00f537f2bb1e92decf7b9c64d1932082d49a7836a",
+        "alpha_preserved_after_palette_fit": true
+      },
+      {
+        "view": "back",
+        "component_label": 2,
+        "alpha64_component_pixels": 151102,
+        "source_bbox": [
+          610,
+          130,
+          1087,
+          633
+        ],
+        "alpha_to_native_threshold": 128,
+        "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+        "nearest_phase_native_px": [
+          0,
+          0
+        ],
+        "body_dimensions": [
+          23,
+          24
+        ],
+        "target_canvas": [
+          24,
+          24
+        ],
+        "target_offset": [
+          0,
+          0
+        ],
+        "opaque_bbox": [
+          0,
+          0,
+          23,
+          24
+        ],
+        "palette_attributes": [
+          3,
+          3,
+          3,
+          7,
+          3,
+          5,
+          3,
+          3,
+          3
+        ],
+        "palette_fit": [
+          {
+            "tile": 0,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 10,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 1,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 2,
+            "source_warm_skin_leather_pixels": 34,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 2,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 5,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 3,
+            "palette": 7,
+            "source_red_pixels": 7,
+            "source_neutral_metal_pixels": 9,
+            "source_warm_skin_leather_pixels": 16,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 4,
+            "palette": 3,
+            "source_red_pixels": 4,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 21,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 5,
+            "palette": 5,
+            "source_red_pixels": 1,
+            "source_neutral_metal_pixels": 13,
+            "source_warm_skin_leather_pixels": 7,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 6,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 2,
+            "source_warm_skin_leather_pixels": 6,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 7,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 2,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 8,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 1,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          }
+        ],
+        "nearest24_opaque_pixels": 339,
+        "nearest24_rgba_sha256": "9a58edc80c04a04fb00257ca94f879e6667aaaa1c426493313f04e1916ff6d8c",
+        "native_indices_sha256": "91ebcb54358f2faa1658e59466f13533e7f9de7c0adfdc95903ddbe80847afc7",
+        "alpha_preserved_after_palette_fit": true
+      },
+      {
+        "view": "left",
+        "component_label": 3,
+        "alpha64_component_pixels": 121024,
+        "source_bbox": [
+          1133,
+          130,
+          1530,
+          637
+        ],
+        "alpha_to_native_threshold": 128,
+        "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+        "nearest_phase_native_px": [
+          0,
+          0
+        ],
+        "body_dimensions": [
+          19,
+          24
+        ],
+        "target_canvas": [
+          24,
+          24
+        ],
+        "target_offset": [
+          2,
+          0
+        ],
+        "opaque_bbox": [
+          2,
+          0,
+          21,
+          24
+        ],
+        "palette_attributes": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          7,
+          3,
+          3,
+          3
+        ],
+        "palette_fit": [
+          {
+            "tile": 0,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 1,
+            "palette": 3,
+            "source_red_pixels": 4,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 30,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 2,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 2,
+            "source_warm_skin_leather_pixels": 2,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 3,
+            "palette": 5,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 13,
+            "source_warm_skin_leather_pixels": 3,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 4,
+            "palette": 3,
+            "source_red_pixels": 5,
+            "source_neutral_metal_pixels": 5,
+            "source_warm_skin_leather_pixels": 22,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 5,
+            "palette": 7,
+            "source_red_pixels": 10,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 6,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 6,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 7,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 2,
+            "source_warm_skin_leather_pixels": 8,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 8,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 3,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          }
+        ],
+        "nearest24_opaque_pixels": 270,
+        "nearest24_rgba_sha256": "5d68ef537fd57132edc4c43024eaed470c6b8e0e3198d407d71b78cc4ffcee3a",
+        "native_indices_sha256": "dfce47ad9fba8ef165278512a7a91f213a486724ea38e5e41b2581533edb1fc5",
+        "alpha_preserved_after_palette_fit": true
+      },
+      {
+        "view": "right",
+        "component_label": 4,
+        "alpha64_component_pixels": 122866,
+        "source_bbox": [
+          1719,
+          130,
+          2119,
+          637
+        ],
+        "alpha_to_native_threshold": 128,
+        "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+        "nearest_phase_native_px": [
+          0,
+          0
+        ],
+        "body_dimensions": [
+          19,
+          24
+        ],
+        "target_canvas": [
+          24,
+          24
+        ],
+        "target_offset": [
+          2,
+          0
+        ],
+        "opaque_bbox": [
+          2,
+          0,
+          21,
+          24
+        ],
+        "palette_attributes": [
+          3,
+          3,
+          3,
+          7,
+          3,
+          5,
+          3,
+          3,
+          3
+        ],
+        "palette_fit": [
+          {
+            "tile": 0,
+            "palette": 3,
+            "source_red_pixels": 1,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 6,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 1,
+            "palette": 3,
+            "source_red_pixels": 2,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 27,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 2,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 3,
+            "palette": 7,
+            "source_red_pixels": 12,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 10,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 4,
+            "palette": 3,
+            "source_red_pixels": 1,
+            "source_neutral_metal_pixels": 5,
+            "source_warm_skin_leather_pixels": 20,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 5,
+            "palette": 5,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 13,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 6,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 2,
+            "source_warm_skin_leather_pixels": 6,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 7,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 5,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 8,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          }
+        ],
+        "nearest24_opaque_pixels": 272,
+        "nearest24_rgba_sha256": "555d144c92c51684a790b742413f04b0304f75c685dde8e95a98fd6e0df02d70",
+        "native_indices_sha256": "bbe51b4e826b66d5cd53a6592d06aaf147f941c58e2b9b7a776a6c3115cf9a47",
+        "alpha_preserved_after_palette_fit": true
+      }
+    ],
+    "resampling": {
+      "filter": "NEAREST",
+      "smoothing": false,
+      "target_canvas": [
+        24,
+        24
+      ],
+      "fit": "Aspect-preserving whole component, centered horizontally, anchored to bottom; one source-to-native reduction.",
+      "source_crop_completeness": "Each whole alpha component includes head, tusks, shoulder spikes, complete hands/weapon, legs and boots. Source at/beyond a nominal sheet quarter is retained."
+    },
+    "palette_fit": "Explicitly lossy nearest-source RGB555+hue fit, with per8x8 material guards: head3 brown/ivory, outer shoulder/weapon row3/5/7 world or3/4 lodge. No anatomy was painted, moved or cropped; all nearest24 alpha pixels retained.",
+    "world_palette_contract": {
+      "source": "tools/peon_world_readability_profile_v0219.py",
+      "sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+      "allowed_palette_indices": [
+        3,
+        5,
+        7
+      ]
+    },
+    "new_pixel_anatomy_painted": false,
+    "exact_native_grid_recovery": false,
+    "supplemental_detail_generated_by_import": false,
+    "explicit_lossy_conversion": true,
+    "limitation": "Downsampling the new illustration to24px and fitting three opaque colors per8x8 tile is lossy. World palette7 represents crimson with its available red/gold pair; lodge palette4 preserves steel/red directly.",
+    "native_pose_note": "Four supplied generated stills, repeated at12 addresses; no fake walking pose or direction mirror.",
+    "lodge_static_binding": {
+      "packet": "gfx/large_masters_v0219/warrior_trainer.bin",
+      "front_source_view_index": 0,
+      "same_whole_source_crop_and_nearest24_alpha_as_world": true,
+      "same_native_indices_as_world": false,
+      "normal_attrs": [
+        3,
+        3,
+        3,
+        5,
+        3,
+        7,
+        3,
+        3,
+        3
+      ],
+      "lodge_attrs": [
+        3,
+        3,
+        3,
+        4,
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "lodge_palette3_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          25,
+          23,
+          17
+        ],
+        [
+          15,
+          9,
+          4
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "lodge_palette4_rgb555": [
+        [
+          31,
+          31,
+          31
+        ],
+        [
+          20,
+          19,
+          17
+        ],
+        [
+          27,
+          5,
+          3
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "lodge_palette_fit": [
+        {
+          "tile": 0,
+          "palette": 3,
+          "source_red_pixels": 0,
+          "source_neutral_metal_pixels": 1,
+          "source_warm_skin_leather_pixels": 0,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 1,
+          "palette": 3,
+          "source_red_pixels": 3,
+          "source_neutral_metal_pixels": 3,
+          "source_warm_skin_leather_pixels": 30,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 2,
+          "palette": 3,
+          "source_red_pixels": 0,
+          "source_neutral_metal_pixels": 1,
+          "source_warm_skin_leather_pixels": 7,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 3,
+          "palette": 4,
+          "source_red_pixels": 4,
+          "source_neutral_metal_pixels": 16,
+          "source_warm_skin_leather_pixels": 8,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 4,
+          "palette": 3,
+          "source_red_pixels": 3,
+          "source_neutral_metal_pixels": 4,
+          "source_warm_skin_leather_pixels": 20,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 5,
+          "palette": 4,
+          "source_red_pixels": 9,
+          "source_neutral_metal_pixels": 7,
+          "source_warm_skin_leather_pixels": 15,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 6,
+          "palette": 3,
+          "source_red_pixels": 0,
+          "source_neutral_metal_pixels": 0,
+          "source_warm_skin_leather_pixels": 1,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 7,
+          "palette": 3,
+          "source_red_pixels": 0,
+          "source_neutral_metal_pixels": 4,
+          "source_warm_skin_leather_pixels": 11,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        },
+        {
+          "tile": 8,
+          "palette": 3,
+          "source_red_pixels": 0,
+          "source_neutral_metal_pixels": 3,
+          "source_warm_skin_leather_pixels": 9,
+          "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+        }
+      ],
+      "lodge_front_rows": [
+        "............3333........",
+        "..........3222223.......",
+        "..........2222222.......",
+        ".........322222223......",
+        "........3223322322......",
+        ".........322322323......",
+        ".......3.32122212..3....",
+        "...33..1333132212331....",
+        "..31133223333333332221..",
+        ".313131213322222321211..",
+        ".3111322213322233122223.",
+        ".3113331332233222333113.",
+        ".311333322223132222233..",
+        "..11.33333233333232223..",
+        "..31.32223332223333222..",
+        ".....32233333133333333..",
+        "......3333321332333313..",
+        ".......233222322232223..",
+        ".......322223333223223..",
+        ".......333233.3322333...",
+        ".........3333..333......",
+        "........3333...3333.....",
+        "........1133...3311.....",
+        "........3333....333....."
+      ]
+    }
+  },
+  "asset_files": {
+    "facings.asm": {
+      "bytes": 617,
+      "sha256": "aece8b12c3fbce1c50de8d1b0734291125930c4e7e7e7f56c62ede1dd96f26ec"
+    },
+    "garrosh_back_source_nearest24.png": {
+      "bytes": 1268,
+      "sha256": "eb4acfb7a3fbd3fe5868b24724fec2d5a754c34bd79a42cdc6490d6271ee783b"
+    },
+    "garrosh_back_world_native24.png": {
+      "bytes": 482,
+      "sha256": "93cf7079039a367ee0d46153d2fdb32e59f9008d15d2bf2f5329567b7bb189b0"
+    },
+    "garrosh_front_source_nearest24.png": {
+      "bytes": 1247,
+      "sha256": "3304cbc515d846f2007fce78580e3d1bb10cdbe3a3238b74760149508399e040"
+    },
+    "garrosh_front_world_native24.png": {
+      "bytes": 506,
+      "sha256": "3979c430b3071075c5002cedbfaa5347d69ce5bce7a7a4de3bbeb8a6923e6db0"
+    },
+    "garrosh_left_source_nearest24.png": {
+      "bytes": 1074,
+      "sha256": "96aecc0f176e974975b6650cf171721c6b406a306cbd56655409a64cba90a237"
+    },
+    "garrosh_left_world_native24.png": {
+      "bytes": 457,
+      "sha256": "84b93d81f99710fff67def6b926ed2ab87d737c38db42fbbc05908f4b3b1673e"
+    },
+    "garrosh_master_native24.png": {
+      "bytes": 489,
+      "sha256": "0c1192a21ee405c41e98023beef891ea85b65923f11bcdc0e6e32aa63ae7bc5a"
+    },
+    "garrosh_master_native24_4x.png": {
+      "bytes": 819,
+      "sha256": "8ea4342625041bc6bfe1a996ad1efc2df922762b9cb10144243ae8efa959007a"
+    },
+    "garrosh_right_source_nearest24.png": {
+      "bytes": 1072,
+      "sha256": "d51b86a31e50d1161cb56ca5695f2a1798518efdb094724aede9fcaaf9d0c9b6"
+    },
+    "garrosh_right_world_native24.png": {
+      "bytes": 460,
+      "sha256": "38f4f25bda1454bff22cd5de750f19a9c8e0fd3bf3455aca9738adf5ff53c176"
+    },
+    "garrosh_world_and_lodge_review.png": {
+      "bytes": 19155,
+      "sha256": "9cf15666329cc2f6c5bc2e35e5fa23f6fe1ac8700fb55dfbd155eaa787359abb"
+    },
+    "graphics.asm": {
+      "bytes": 475,
+      "sha256": "98da797cdb5202d21e6ced919eeac2b300541ca93fd856de1c1649693a6612a0"
+    },
+    "palettes.asm": {
+      "bytes": 387,
+      "sha256": "6863808da45df59f8a7350ce479b5c72121ca13773ab810cd4035e5cfa2270c6"
+    },
+    "warrior_trainer.bin": {
+      "bytes": 144,
+      "sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955"
+    }
+  }
+}

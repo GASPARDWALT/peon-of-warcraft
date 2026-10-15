@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "validation_scope": "Static source-cel verification and generated Garrosh source-to-native-to-static-decode, not emulator or ROM validation",
+  "roles": 14,
+  "frames": 168,
+  "exact_restored_frames": 156,
+  "authorized_generated_garrosh_fit_frames": 12,
+  "13_exact_roles_unchanged": true,
+  "all_historical_source_copies_match_git": true,
+  "generated_garrosh_source_unmodified": true,
+  "generated_garrosh_native_grid_recovery_claimed": false,
+  "exact_nearest_pixel_comparison_independent_of_generator": true,
+  "engine_or_build_touched": false,
+  "checks": [
+    {
+      "role": "base",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "shaman",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "warrior",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "warlock",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "sleeping",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "orc_merchant",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "quest_peon",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "peon_worker",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "beast_handler",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "orc_guard",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "camp_guard",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "veteran_questgiver",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    },
+    {
+      "role": "shaman_apprentice",
+      "status": "PASS",
+      "protected_old_native_record_unchanged": true,
+      "all12_cels_exact_nearest_git_source_pixels": true
+    }
+  ],
+  "generated_garrosh_validation": {
+    "status": "PASS",
+    "report": "gfx/large_masters_v0219/manifest.json",
+    "static_packet_sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955",
+    "source_png_sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553"
+  },
+  "json_sha256": {
+    "heroes.json": "7b4baf0d90d6a5bdcc894d50dd395578fce1e7f462b4f31b589f18cd58f27a12",
+    "orc_npcs.json": "8696cf16c02447ba7f3006ed7a5e1e852ccc13fa9f566caf859643d3179c4c9a"
+  }
+}

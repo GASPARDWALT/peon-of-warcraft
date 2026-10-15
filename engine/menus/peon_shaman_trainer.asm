@@ -234,7 +234,11 @@ PeonShamanTrainer::
 	ld de, .ReadyText
 	jp .Message
 .Exit:
-	jp CloseSubmenu
+	; Restore the saved menu tilemap before rebuilding its bank attributes.
+	call ExitAllMenus
+	; The trainer script already closed its dialogue before opening us.
+	; Stop the full-screen VBlank writer before native scrolling resumes.
+	jp CloseText
 
 ; Fonts and frame tiles are loaded once on entry. Cursor movement and prompts
 ; only redraw the tilemap, avoiding a full font upload that drops short taps.

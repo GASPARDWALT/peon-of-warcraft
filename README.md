@@ -1,5 +1,23 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.19](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.19/releases/v0.2.19/peon_of_warcraft_v0_2_19.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.19/releases/v0.2.19/peon_of_warcraft_v0_2_19.zip) · [Silhouettes restaurées et maîtres illustrés](docs/V0219_RESTORED_WORLD_AND_MASTERS.md)
+
+Les personnages du monde retrouvent les silhouettes historiques lisibles du
+péon et des PNJ, présentées en **24 × 24**. Les créatures gardent leurs vues
+WORLD complètes ; les Kolkar utilisent la planche de centaures approuvée.
+Les trois maîtres ont des bustes illustrés **80 × 88** : Kento aux cornes
+corrigées, MoCMoc Zogzog brun et chauve inspiré de Garrosh, et Bismillah
+mort-vivant en violet. Les quatre accueils approuvés de v0.2.18 sont conservés.
+Les sources et limites de conversion sont documentées ; un agrandissement
+16→24 n'est pas présenté comme du détail nouvellement dessiné.
+
+Build : `python3 tools/build_peon_v0219.py`.
+**Compilation et tests natifs : PASS**, sur les trois classes, les sauvegardes,
+les retours d’entraînement et les modèles en jeu. La compilation propre donne
+la ROM testée à l’octet près. [Rapports et captures](references/generated/v0219/validation.json).
+
+## v0.2.18 archive
+
 [ROM v0.2.18](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.18/releases/v0.2.18/peon_of_warcraft_v0_2_18.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.18/releases/v0.2.18/peon_of_warcraft_v0_2_18.zip) · [Accueil et sélection illustrés](docs/V0218_ILLUSTRATED_SELECTION.md)
 
 L'accueil affiche le péon à gauche et **Continuer / Créer un nouveau péon** à

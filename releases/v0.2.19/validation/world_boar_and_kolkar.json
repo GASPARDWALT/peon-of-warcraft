@@ -1,0 +1,153 @@
+{
+  "version": "v0.2.19",
+  "status": "PASS",
+  "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+  "sym_sha256": "f85f959376ac5b5c8ef5a6af3320674552605ede88e5544082ecf05bbe988138",
+  "ordinary_buttons_only": true,
+  "emulator_memory_edits": false,
+  "state_restores": false,
+  "user_batteries_opened": false,
+  "captures": [
+    {
+      "name": "native_boar_world_complete.png",
+      "path": "references/generated/world_readability_v0219/creature_runtime_b91b6876/shaman/native_boar_world_complete.png",
+      "sha256": "f823fcb4ebad249644f149cad4c7327780bd838a50ada6647b884a5872e458df",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "native_kolkar_pair_world_complete.png",
+      "path": "references/generated/world_readability_v0219/creature_runtime_b91b6876/shaman/native_kolkar_pair_world_complete.png",
+      "sha256": "70922fafd556e16322de6ac7413ad29316e5d125d995ec49128acc9f6404df39",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "ordinary_west_Kolkar_RUN.png",
+      "path": "references/generated/world_readability_v0219/creature_runtime_b91b6876/shaman/ordinary_west_Kolkar_RUN.png",
+      "sha256": "aab3680880b4261ba23a12d6d72f6a2dba03a73395dac39c2c18ea9f4a28a57b",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    }
+  ],
+  "observations": {
+    "boar": {
+      "map": 14,
+      "player_position": [
+        16,
+        12
+      ],
+      "actors": {
+        "boar": {
+          "role": "boar",
+          "native_slot": 8,
+          "native_sprite": 84,
+          "frame": 9,
+          "direction": "right",
+          "world_xy": [
+            18,
+            12
+          ],
+          "whole_ROM_and_VRAM_144_bytes_exact": true,
+          "frame_sha256": "f95d70ced1b9c0e87dd7246350a3899a216c3c4e745b84d131152363cdb8b617",
+          "source_mask_exact": 506,
+          "complete_unclipped_OAM_cells": 7,
+          "all_source_palette_attributes_exact": true,
+          "actual_LCD_all_opaque_source_pixels_exact": 233,
+          "native_canvas_origin": [
+            92,
+            52
+          ],
+          "native_OAM_objects": 38,
+          "maximum_objects_per_scanline": 7,
+          "complete_native_OAM_publication": true
+        }
+      },
+      "all_actual_creature_pixels_required_no_occlusion_skips": true
+    },
+    "kolkar_pair": {
+      "map": 29,
+      "player_position": [
+        5,
+        4
+      ],
+      "actors": {
+        "kolkar_archer": {
+          "role": "kolkar_archer",
+          "native_slot": 2,
+          "native_sprite": 35,
+          "frame": 3,
+          "direction": "back",
+          "world_xy": [
+            3,
+            5
+          ],
+          "whole_ROM_and_VRAM_144_bytes_exact": true,
+          "frame_sha256": "238ebf388b8d485f0e41d2f04daeb2a8ade67a1038f1b39b660539b8b56c67c6",
+          "source_mask_exact": 511,
+          "complete_unclipped_OAM_cells": 9,
+          "all_source_palette_attributes_exact": true,
+          "actual_LCD_all_opaque_source_pixels_exact": 208,
+          "native_canvas_origin": [
+            28,
+            68
+          ],
+          "native_OAM_objects": 40,
+          "maximum_objects_per_scanline": 9,
+          "complete_native_OAM_publication": true
+        },
+        "kolkar_raider": {
+          "role": "kolkar_raider",
+          "native_slot": 3,
+          "native_sprite": 36,
+          "frame": 3,
+          "direction": "back",
+          "world_xy": [
+            7,
+            5
+          ],
+          "whole_ROM_and_VRAM_144_bytes_exact": true,
+          "frame_sha256": "2f5c713ee966ea294f40be985decc9a1e1d718ba89760a056c8e7dde78e556fe",
+          "source_mask_exact": 255,
+          "complete_unclipped_OAM_cells": 8,
+          "all_source_palette_attributes_exact": true,
+          "actual_LCD_all_opaque_source_pixels_exact": 220,
+          "native_canvas_origin": [
+            92,
+            68
+          ],
+          "native_OAM_objects": 40,
+          "maximum_objects_per_scanline": 9,
+          "complete_native_OAM_publication": true
+        }
+      },
+      "all_actual_creature_pixels_required_no_occlusion_skips": true
+    }
+  },
+  "route": {
+    "maps": [
+      14,
+      15,
+      29
+    ],
+    "mandatory_native_encounters": 1,
+    "ordinary_RUN_observations": [
+      {
+        "ordinary_native_actions": [
+          {
+            "native_action": "RUN",
+            "HP_before": 15,
+            "battle_still_active": false
+          }
+        ],
+        "native_RUN_result": 2,
+        "no_experience_or_copper_reward": true,
+        "all_event_flags_unchanged": true
+      }
+    ],
+    "no_Kolkar_retirement": true,
+    "final_native_map": 29,
+    "final_position": [
+      5,
+      4
+    ],
+    "scope": "Complete native boar and two Kolkar world bodies; eastern Durotar Road exit not tested"
+  }
+}

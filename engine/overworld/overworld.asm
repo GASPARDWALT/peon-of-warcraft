@@ -40,6 +40,7 @@ LoadWalkingSpritesGFX: ; mobile
 RefreshSprites::
 	call .Refresh
 	call LoadUsedSpritesGFX
+	farcall PeonResyncMasterTileBasesV0219
 	ret
 
 .Refresh:

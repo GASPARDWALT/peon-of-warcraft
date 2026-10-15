@@ -1,0 +1,3586 @@
+{
+  "version": "v0.2.19",
+  "baseline": "e81651eb",
+  "active_rom_assets_modified": false,
+  "source_originals_preserved": true,
+  "exact_restoration_roles": [
+    "base",
+    "shaman",
+    "warrior",
+    "warlock",
+    "sleeping",
+    "orc_merchant",
+    "quest_peon",
+    "peon_worker",
+    "beast_handler",
+    "orc_guard",
+    "camp_guard",
+    "veteran_questgiver",
+    "shaman_apprentice"
+  ],
+  "declared_derived_exception": "warrior_trainer",
+  "source_originals": {
+    "base": {
+      "path": "assets/world_readability_v0219/originals/peon_efcf4633.png",
+      "git_commit": "efcf4633",
+      "git_path": "gfx/sprites/peon.png",
+      "bytes": 1082,
+      "sha256": "5b87e2c8c2b85b8330265e3f4149bf459e32760c15f7449fc1f21e2ec7b55273",
+      "dimensions": [
+        16,
+        192
+      ],
+      "layout": "player12"
+    },
+    "shaman": {
+      "path": "assets/world_readability_v0219/originals/peon_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon.png",
+      "bytes": 1173,
+      "sha256": "26203194ceea058e254da42164e6b16531eeadd8b9afda84a3fe983d3ebbb1ab",
+      "dimensions": [
+        16,
+        192
+      ],
+      "layout": "player12"
+    },
+    "warrior": {
+      "path": "assets/world_readability_v0219/originals/peon_warrior_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_warrior.png",
+      "bytes": 1076,
+      "sha256": "f631a3d0b6ccef34abbbc38d8171a9daacaa8dcec1cbafa717037f5e46fff35e",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "warlock": {
+      "path": "assets/world_readability_v0219/originals/peon_warlock_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_warlock.png",
+      "bytes": 1049,
+      "sha256": "19d8b71e8faf7cd630497d3f9697ad0659c849847bd1edc82d60ea318b7bbe29",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "sleeping": {
+      "path": "assets/world_readability_v0219/originals/peon_sleeping_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_sleeping.png",
+      "bytes": 912,
+      "sha256": "9fe9d09245cc059b123c211c27eafc8cb95ad38eecd17938d1e70c51e943bc89",
+      "dimensions": [
+        16,
+        16
+      ],
+      "layout": "still1"
+    },
+    "gornek": {
+      "path": "assets/world_readability_v0219/originals/peon_gornek_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_gornek.png",
+      "bytes": 1069,
+      "sha256": "cc2ae1786c61236414dde10650aae245c142e1e524aa86d5ba776de0171c4e4a",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "vendor": {
+      "path": "assets/world_readability_v0219/originals/peon_orc_vendor_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_orc_vendor.png",
+      "bytes": 1073,
+      "sha256": "9b812831f4b4ca24bae7946f1dfa8a97ca73822150704ccdca2b24429b64e304",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "guard": {
+      "path": "assets/world_readability_v0219/originals/peon_orc_guard_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_orc_guard.png",
+      "bytes": 1084,
+      "sha256": "b5e3cd881d6a214f251d6d64d7217557774453c44bf6762a74934e5a0ec8a318",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "hunter": {
+      "path": "assets/world_readability_v0219/originals/peon_hunter_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_hunter.png",
+      "bytes": 1064,
+      "sha256": "1fd2303f1f7cd3a6e6b77bc2415a17a39ea487aafc9f359031c998ad0887517c",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "questgiver": {
+      "path": "assets/world_readability_v0219/originals/peon_orc_questgiver_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_orc_questgiver.png",
+      "bytes": 1079,
+      "sha256": "19952b39a907e3b9114e2d0817d2ba1926b13bdc8335246ddc8fe26c41e48c36",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "kento": {
+      "path": "assets/world_readability_v0219/originals/peon_kento_f73b2ec2.png",
+      "git_commit": "f73b2ec2",
+      "git_path": "gfx/sprites/peon_kento.png",
+      "bytes": 1098,
+      "sha256": "75c5f9843edd42d1834187849ebfa57ebf2c7b8831c6ab6c2601d04a1a61c1b9",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "innkeeper_alternative": {
+      "path": "assets/world_readability_v0219/originals/peon_innkeeper_2755365.png",
+      "git_commit": "2755365",
+      "git_path": "gfx/sprites/peon_innkeeper.png",
+      "bytes": 1136,
+      "sha256": "53e81cbe0276ab90a033b16aa85f5eda20f422f9627ebe23c65e7ba99517ad46",
+      "dimensions": [
+        16,
+        96
+      ],
+      "layout": "npc6"
+    },
+    "garrosh_world_generated": {
+      "path": "assets/world_readability_v0219/originals/garrosh_world_generated.png",
+      "sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+      "bytes": 756949,
+      "dimensions": [
+        2172,
+        724
+      ],
+      "generated_authorized_source": true,
+      "original_unmodified": true
+    }
+  },
+  "roles": {
+    "base": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "efcf4633",
+      "source_git_path": "gfx/sprites/peon.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_efcf4633.png",
+      "source_original_png_sha256": "5b87e2c8c2b85b8330265e3f4149bf459e32760c15f7449fc1f21e2ec7b55273",
+      "source_original_png_bytes": 1082,
+      "source_size": [
+        16,
+        192
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "player12",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 8,
+          "source_crop_xyxy": [
+            0,
+            128,
+            16,
+            144
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 9,
+          "source_crop_xyxy": [
+            0,
+            144,
+            16,
+            160
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 6,
+          "source_crop_xyxy": [
+            0,
+            96,
+            16,
+            112
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 10,
+          "source_crop_xyxy": [
+            0,
+            160,
+            16,
+            176
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 7,
+          "source_crop_xyxy": [
+            0,
+            112,
+            16,
+            128
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 11,
+          "source_crop_xyxy": [
+            0,
+            176,
+            16,
+            192
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Original four player facings and three poses, source phase*4+direction.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "shaman": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_f73b2ec2.png",
+      "source_original_png_sha256": "26203194ceea058e254da42164e6b16531eeadd8b9afda84a3fe983d3ebbb1ab",
+      "source_original_png_bytes": 1173,
+      "source_size": [
+        16,
+        192
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "player12",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 8,
+          "source_crop_xyxy": [
+            0,
+            128,
+            16,
+            144
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 9,
+          "source_crop_xyxy": [
+            0,
+            144,
+            16,
+            160
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 6,
+          "source_crop_xyxy": [
+            0,
+            96,
+            16,
+            112
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 10,
+          "source_crop_xyxy": [
+            0,
+            160,
+            16,
+            176
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 7,
+          "source_crop_xyxy": [
+            0,
+            112,
+            16,
+            128
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 11,
+          "source_crop_xyxy": [
+            0,
+            176,
+            16,
+            192
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Original four player facings and three poses, source phase*4+direction.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "warrior": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_warrior.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_warrior_f73b2ec2.png",
+      "source_original_png_sha256": "f631a3d0b6ccef34abbbc38d8171a9daacaa8dcec1cbafa717037f5e46fff35e",
+      "source_original_png_bytes": 1076,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "warlock": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_warlock.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_warlock_f73b2ec2.png",
+      "source_original_png_sha256": "19d8b71e8faf7cd630497d3f9697ad0659c849847bd1edc82d60ea318b7bbe29",
+      "source_original_png_bytes": 1049,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "sleeping": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_sleeping.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_sleeping_f73b2ec2.png",
+      "source_original_png_sha256": "9fe9d09245cc059b123c211c27eafc8cb95ad38eecd17938d1e70c51e943bc89",
+      "source_original_png_bytes": 912,
+      "source_size": [
+        16,
+        16
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "still1",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native non-directional sleeping still copied unchanged to all 12 direction/pose addresses; no invented waking/rear pose.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "orc_merchant": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_orc_vendor.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_orc_vendor_f73b2ec2.png",
+      "source_original_png_sha256": "9b812831f4b4ca24bae7946f1dfa8a97ca73822150704ccdca2b24429b64e304",
+      "source_original_png_bytes": 1073,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "quest_peon": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_gornek.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_gornek_f73b2ec2.png",
+      "source_original_png_sha256": "cc2ae1786c61236414dde10650aae245c142e1e524aa86d5ba776de0171c4e4a",
+      "source_original_png_bytes": 1069,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "peon_worker": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "efcf4633",
+      "source_git_path": "gfx/sprites/peon.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_efcf4633.png",
+      "source_original_png_sha256": "5b87e2c8c2b85b8330265e3f4149bf459e32760c15f7449fc1f21e2ec7b55273",
+      "source_original_png_bytes": 1082,
+      "source_size": [
+        16,
+        192
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "player12",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 8,
+          "source_crop_xyxy": [
+            0,
+            128,
+            16,
+            144
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 9,
+          "source_crop_xyxy": [
+            0,
+            144,
+            16,
+            160
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 6,
+          "source_crop_xyxy": [
+            0,
+            96,
+            16,
+            112
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 10,
+          "source_crop_xyxy": [
+            0,
+            160,
+            16,
+            176
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 7,
+          "source_crop_xyxy": [
+            0,
+            112,
+            16,
+            128
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 11,
+          "source_crop_xyxy": [
+            0,
+            176,
+            16,
+            192
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Original four player facings and three poses, source phase*4+direction.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "beast_handler": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_hunter.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_hunter_f73b2ec2.png",
+      "source_original_png_sha256": "1fd2303f1f7cd3a6e6b77bc2415a17a39ea487aafc9f359031c998ad0887517c",
+      "source_original_png_bytes": 1064,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "orc_guard": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_orc_guard.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_orc_guard_f73b2ec2.png",
+      "source_original_png_sha256": "b5e3cd881d6a214f251d6d64d7217557774453c44bf6762a74934e5a0ec8a318",
+      "source_original_png_bytes": 1084,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "camp_guard": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_orc_guard.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_orc_guard_f73b2ec2.png",
+      "source_original_png_sha256": "b5e3cd881d6a214f251d6d64d7217557774453c44bf6762a74934e5a0ec8a318",
+      "source_original_png_bytes": 1084,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "veteran_questgiver": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_orc_questgiver.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_orc_questgiver_f73b2ec2.png",
+      "source_original_png_sha256": "19952b39a907e3b9114e2d0817d2ba1926b13bdc8335246ddc8fe26c41e48c36",
+      "source_original_png_bytes": 1079,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "shaman_apprentice": {
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_git_commit": "f73b2ec2",
+      "source_git_path": "gfx/sprites/peon_kento.png",
+      "source_original_copy": "assets/world_readability_v0219/originals/peon_kento_f73b2ec2.png",
+      "source_original_png_sha256": "75c5f9843edd42d1834187849ebfa57ebf2c7b8831c6ab6c2601d04a1a61c1b9",
+      "source_original_png_bytes": 1098,
+      "source_size": [
+        16,
+        96
+      ],
+      "source_index_zero_is_obj_transparent": true,
+      "source_layout": "npc6",
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_frame_index": 0,
+          "source_crop_xyxy": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_frame_index": 3,
+          "source_crop_xyxy": [
+            0,
+            48,
+            16,
+            64
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_frame_index": 1,
+          "source_crop_xyxy": [
+            0,
+            16,
+            16,
+            32
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_frame_index": 4,
+          "source_crop_xyxy": [
+            0,
+            64,
+            16,
+            80
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": false,
+          "transform_note": "No facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_frame_index": 2,
+          "source_crop_xyxy": [
+            0,
+            32,
+            16,
+            48
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_frame_index": 5,
+          "source_crop_xyxy": [
+            0,
+            80,
+            16,
+            96
+          ],
+          "whole_cel_native_xflip": true,
+          "transform_note": "Native ordinary-NPC facing transform"
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "from": [
+          16,
+          16
+        ],
+        "to": [
+          24,
+          24
+        ],
+        "scale": [
+          1.5,
+          1.5
+        ],
+        "times": 1,
+        "smoothing": false
+      },
+      "anatomy_unchanged": true,
+      "supplemental_detail_generated": false,
+      "manual_edits": [],
+      "native_pose_note": "Native ordinary-NPC 6-cel format: front/back/left idle then walk; native X-flips for right and second front/back stride. Side walking pose repeats as the original engine does.",
+      "palette_index_mapping": "Original indexed pixel values unchanged"
+    },
+    "warrior_trainer": {
+      "source_kind": "authorized_generated_world_png_whole_figure_nearest24_palette_fit",
+      "source_generated": true,
+      "source_authorization": "Root image generation specifically authorized for Garrosh WORLD after rejection of prior derived old-warrior recolor. This is new generated art, not an extraction of original user pixels.",
+      "source_original_copy": "assets/world_readability_v0219/originals/garrosh_world_generated.png",
+      "source_original_png_sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+      "source_original_png_bytes": 756949,
+      "source_size": [
+        2172,
+        724
+      ],
+      "source_original_png_unmodified": true,
+      "source_generated_file": "exec-69a9db21-4f98-47e2-b8f7-fd8c002aced2.png",
+      "source_layout": "Four complete RGBA figures sorted by connected-component x: front, back, left, right. Quarter-width cuts are not used.",
+      "component_alpha_threshold": 64,
+      "native_opaque_alpha_threshold": 128,
+      "source_frame_recipes": [
+        {
+          "direction": "front",
+          "pose": 0,
+          "source_view_index": 0,
+          "source_crop_xyxy": [
+            22,
+            130,
+            477,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "front",
+          "pose": 1,
+          "source_view_index": 0,
+          "source_crop_xyxy": [
+            22,
+            130,
+            477,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "front",
+          "pose": 2,
+          "source_view_index": 0,
+          "source_crop_xyxy": [
+            22,
+            130,
+            477,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "back",
+          "pose": 0,
+          "source_view_index": 1,
+          "source_crop_xyxy": [
+            610,
+            130,
+            1087,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "back",
+          "pose": 1,
+          "source_view_index": 1,
+          "source_crop_xyxy": [
+            610,
+            130,
+            1087,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "back",
+          "pose": 2,
+          "source_view_index": 1,
+          "source_crop_xyxy": [
+            610,
+            130,
+            1087,
+            633
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "left",
+          "pose": 0,
+          "source_view_index": 2,
+          "source_crop_xyxy": [
+            1133,
+            130,
+            1530,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "left",
+          "pose": 1,
+          "source_view_index": 2,
+          "source_crop_xyxy": [
+            1133,
+            130,
+            1530,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "left",
+          "pose": 2,
+          "source_view_index": 2,
+          "source_crop_xyxy": [
+            1133,
+            130,
+            1530,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "right",
+          "pose": 0,
+          "source_view_index": 3,
+          "source_crop_xyxy": [
+            1719,
+            130,
+            2119,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "right",
+          "pose": 1,
+          "source_view_index": 3,
+          "source_crop_xyxy": [
+            1719,
+            130,
+            2119,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        },
+        {
+          "direction": "right",
+          "pose": 2,
+          "source_view_index": 3,
+          "source_crop_xyxy": [
+            1719,
+            130,
+            2119,
+            637
+          ],
+          "whole_cel_native_xflip": false,
+          "pose_note": "The source has four still views; this complete view repeats unchanged in all three native pose addresses. No invented gait or extra painting."
+        }
+      ],
+      "view_records": [
+        {
+          "view": "front",
+          "component_label": 1,
+          "alpha64_component_pixels": 143893,
+          "source_bbox": [
+            22,
+            130,
+            477,
+            633
+          ],
+          "alpha_to_native_threshold": 128,
+          "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+          "nearest_phase_native_px": [
+            0,
+            0
+          ],
+          "body_dimensions": [
+            22,
+            24
+          ],
+          "target_canvas": [
+            24,
+            24
+          ],
+          "target_offset": [
+            1,
+            0
+          ],
+          "opaque_bbox": [
+            1,
+            0,
+            23,
+            24
+          ],
+          "palette_attributes": [
+            3,
+            3,
+            3,
+            5,
+            3,
+            7,
+            3,
+            3,
+            3
+          ],
+          "palette_fit": [
+            {
+              "tile": 0,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 1,
+              "palette": 3,
+              "source_red_pixels": 3,
+              "source_neutral_metal_pixels": 3,
+              "source_warm_skin_leather_pixels": 30,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 2,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 7,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 3,
+              "palette": 5,
+              "source_red_pixels": 4,
+              "source_neutral_metal_pixels": 16,
+              "source_warm_skin_leather_pixels": 8,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 4,
+              "palette": 3,
+              "source_red_pixels": 3,
+              "source_neutral_metal_pixels": 4,
+              "source_warm_skin_leather_pixels": 20,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 5,
+              "palette": 7,
+              "source_red_pixels": 9,
+              "source_neutral_metal_pixels": 7,
+              "source_warm_skin_leather_pixels": 15,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 6,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 1,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 7,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 4,
+              "source_warm_skin_leather_pixels": 11,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 8,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 3,
+              "source_warm_skin_leather_pixels": 9,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            }
+          ],
+          "nearest24_opaque_pixels": 321,
+          "nearest24_rgba_sha256": "ce9eac6eecbd5665509e341221f8fa1d039deae3b84d9486f88155e28411de90",
+          "native_indices_sha256": "795fc47c8fd85c3ca845a8b00f537f2bb1e92decf7b9c64d1932082d49a7836a",
+          "alpha_preserved_after_palette_fit": true
+        },
+        {
+          "view": "back",
+          "component_label": 2,
+          "alpha64_component_pixels": 151102,
+          "source_bbox": [
+            610,
+            130,
+            1087,
+            633
+          ],
+          "alpha_to_native_threshold": 128,
+          "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+          "nearest_phase_native_px": [
+            0,
+            0
+          ],
+          "body_dimensions": [
+            23,
+            24
+          ],
+          "target_canvas": [
+            24,
+            24
+          ],
+          "target_offset": [
+            0,
+            0
+          ],
+          "opaque_bbox": [
+            0,
+            0,
+            23,
+            24
+          ],
+          "palette_attributes": [
+            3,
+            3,
+            3,
+            7,
+            3,
+            5,
+            3,
+            3,
+            3
+          ],
+          "palette_fit": [
+            {
+              "tile": 0,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 3,
+              "source_warm_skin_leather_pixels": 10,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 1,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 2,
+              "source_warm_skin_leather_pixels": 34,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 2,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 5,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 3,
+              "palette": 7,
+              "source_red_pixels": 7,
+              "source_neutral_metal_pixels": 9,
+              "source_warm_skin_leather_pixels": 16,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 4,
+              "palette": 3,
+              "source_red_pixels": 4,
+              "source_neutral_metal_pixels": 4,
+              "source_warm_skin_leather_pixels": 21,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 5,
+              "palette": 5,
+              "source_red_pixels": 1,
+              "source_neutral_metal_pixels": 13,
+              "source_warm_skin_leather_pixels": 7,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 6,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 2,
+              "source_warm_skin_leather_pixels": 6,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 7,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 2,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 8,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 1,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            }
+          ],
+          "nearest24_opaque_pixels": 339,
+          "nearest24_rgba_sha256": "9a58edc80c04a04fb00257ca94f879e6667aaaa1c426493313f04e1916ff6d8c",
+          "native_indices_sha256": "91ebcb54358f2faa1658e59466f13533e7f9de7c0adfdc95903ddbe80847afc7",
+          "alpha_preserved_after_palette_fit": true
+        },
+        {
+          "view": "left",
+          "component_label": 3,
+          "alpha64_component_pixels": 121024,
+          "source_bbox": [
+            1133,
+            130,
+            1530,
+            637
+          ],
+          "alpha_to_native_threshold": 128,
+          "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+          "nearest_phase_native_px": [
+            0,
+            0
+          ],
+          "body_dimensions": [
+            19,
+            24
+          ],
+          "target_canvas": [
+            24,
+            24
+          ],
+          "target_offset": [
+            2,
+            0
+          ],
+          "opaque_bbox": [
+            2,
+            0,
+            21,
+            24
+          ],
+          "palette_attributes": [
+            3,
+            3,
+            3,
+            5,
+            3,
+            7,
+            3,
+            3,
+            3
+          ],
+          "palette_fit": [
+            {
+              "tile": 0,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 1,
+              "palette": 3,
+              "source_red_pixels": 4,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 30,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 2,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 2,
+              "source_warm_skin_leather_pixels": 2,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 3,
+              "palette": 5,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 13,
+              "source_warm_skin_leather_pixels": 3,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 4,
+              "palette": 3,
+              "source_red_pixels": 5,
+              "source_neutral_metal_pixels": 5,
+              "source_warm_skin_leather_pixels": 22,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 5,
+              "palette": 7,
+              "source_red_pixels": 10,
+              "source_neutral_metal_pixels": 3,
+              "source_warm_skin_leather_pixels": 6,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 6,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 7,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 2,
+              "source_warm_skin_leather_pixels": 8,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 8,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 3,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            }
+          ],
+          "nearest24_opaque_pixels": 270,
+          "nearest24_rgba_sha256": "5d68ef537fd57132edc4c43024eaed470c6b8e0e3198d407d71b78cc4ffcee3a",
+          "native_indices_sha256": "dfce47ad9fba8ef165278512a7a91f213a486724ea38e5e41b2581533edb1fc5",
+          "alpha_preserved_after_palette_fit": true
+        },
+        {
+          "view": "right",
+          "component_label": 4,
+          "alpha64_component_pixels": 122866,
+          "source_bbox": [
+            1719,
+            130,
+            2119,
+            637
+          ],
+          "alpha_to_native_threshold": 128,
+          "sampling": "NEAREST, standard center phase(0,0), no smoothing or averaging",
+          "nearest_phase_native_px": [
+            0,
+            0
+          ],
+          "body_dimensions": [
+            19,
+            24
+          ],
+          "target_canvas": [
+            24,
+            24
+          ],
+          "target_offset": [
+            2,
+            0
+          ],
+          "opaque_bbox": [
+            2,
+            0,
+            21,
+            24
+          ],
+          "palette_attributes": [
+            3,
+            3,
+            3,
+            7,
+            3,
+            5,
+            3,
+            3,
+            3
+          ],
+          "palette_fit": [
+            {
+              "tile": 0,
+              "palette": 3,
+              "source_red_pixels": 1,
+              "source_neutral_metal_pixels": 3,
+              "source_warm_skin_leather_pixels": 6,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 1,
+              "palette": 3,
+              "source_red_pixels": 2,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 27,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 2,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 0,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 3,
+              "palette": 7,
+              "source_red_pixels": 12,
+              "source_neutral_metal_pixels": 4,
+              "source_warm_skin_leather_pixels": 10,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 4,
+              "palette": 3,
+              "source_red_pixels": 1,
+              "source_neutral_metal_pixels": 5,
+              "source_warm_skin_leather_pixels": 20,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 5,
+              "palette": 5,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 13,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 6,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 2,
+              "source_warm_skin_leather_pixels": 6,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 7,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 5,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            },
+            {
+              "tile": 8,
+              "palette": 3,
+              "source_red_pixels": 0,
+              "source_neutral_metal_pixels": 1,
+              "source_warm_skin_leather_pixels": 0,
+              "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+            }
+          ],
+          "nearest24_opaque_pixels": 272,
+          "nearest24_rgba_sha256": "555d144c92c51684a790b742413f04b0304f75c685dde8e95a98fd6e0df02d70",
+          "native_indices_sha256": "bbe51b4e826b66d5cd53a6592d06aaf147f941c58e2b9b7a776a6c3115cf9a47",
+          "alpha_preserved_after_palette_fit": true
+        }
+      ],
+      "resampling": {
+        "filter": "NEAREST",
+        "smoothing": false,
+        "target_canvas": [
+          24,
+          24
+        ],
+        "fit": "Aspect-preserving whole component, centered horizontally, anchored to bottom; one source-to-native reduction.",
+        "source_crop_completeness": "Each whole alpha component includes head, tusks, shoulder spikes, complete hands/weapon, legs and boots. Source at/beyond a nominal sheet quarter is retained."
+      },
+      "palette_fit": "Explicitly lossy nearest-source RGB555+hue fit, with per8x8 material guards: head3 brown/ivory, outer shoulder/weapon row3/5/7 world or3/4 lodge. No anatomy was painted, moved or cropped; all nearest24 alpha pixels retained.",
+      "world_palette_contract": {
+        "source": "tools/peon_world_readability_profile_v0219.py",
+        "sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+        "allowed_palette_indices": [
+          3,
+          5,
+          7
+        ]
+      },
+      "new_pixel_anatomy_painted": false,
+      "exact_native_grid_recovery": false,
+      "supplemental_detail_generated_by_import": false,
+      "explicit_lossy_conversion": true,
+      "limitation": "Downsampling the new illustration to24px and fitting three opaque colors per8x8 tile is lossy. World palette7 represents crimson with its available red/gold pair; lodge palette4 preserves steel/red directly.",
+      "native_pose_note": "Four supplied generated stills, repeated at12 addresses; no fake walking pose or direction mirror.",
+      "lodge_static_binding": {
+        "packet": "gfx/large_masters_v0219/warrior_trainer.bin",
+        "front_source_view_index": 0,
+        "same_whole_source_crop_and_nearest24_alpha_as_world": true,
+        "same_native_indices_as_world": false,
+        "normal_attrs": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          7,
+          3,
+          3,
+          3
+        ],
+        "lodge_attrs": [
+          3,
+          3,
+          3,
+          4,
+          3,
+          4,
+          3,
+          3,
+          3
+        ],
+        "lodge_palette3_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            25,
+            23,
+            17
+          ],
+          [
+            15,
+            9,
+            4
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "lodge_palette4_rgb555": [
+          [
+            31,
+            31,
+            31
+          ],
+          [
+            20,
+            19,
+            17
+          ],
+          [
+            27,
+            5,
+            3
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ],
+        "lodge_palette_fit": [
+          {
+            "tile": 0,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 0,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 1,
+            "palette": 3,
+            "source_red_pixels": 3,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 30,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 2,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 1,
+            "source_warm_skin_leather_pixels": 7,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 3,
+            "palette": 4,
+            "source_red_pixels": 4,
+            "source_neutral_metal_pixels": 16,
+            "source_warm_skin_leather_pixels": 8,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 4,
+            "palette": 3,
+            "source_red_pixels": 3,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 20,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 5,
+            "palette": 4,
+            "source_red_pixels": 9,
+            "source_neutral_metal_pixels": 7,
+            "source_warm_skin_leather_pixels": 15,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 6,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 0,
+            "source_warm_skin_leather_pixels": 1,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 7,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 4,
+            "source_warm_skin_leather_pixels": 11,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          },
+          {
+            "tile": 8,
+            "palette": 3,
+            "source_red_pixels": 0,
+            "source_neutral_metal_pixels": 3,
+            "source_warm_skin_leather_pixels": 9,
+            "guard": "Face and tusks use brown/ivory3; outer shoulder/weapon tiles preserve source crimson or steel; lower boots remain brown/ivory3."
+          }
+        ],
+        "lodge_front_rows": [
+          "............3333........",
+          "..........3222223.......",
+          "..........2222222.......",
+          ".........322222223......",
+          "........3223322322......",
+          ".........322322323......",
+          ".......3.32122212..3....",
+          "...33..1333132212331....",
+          "..31133223333333332221..",
+          ".313131213322222321211..",
+          ".3111322213322233122223.",
+          ".3113331332233222333113.",
+          ".311333322223132222233..",
+          "..11.33333233333232223..",
+          "..31.32223332223333222..",
+          ".....32233333133333333..",
+          "......3333321332333313..",
+          ".......233222322232223..",
+          ".......322223333223223..",
+          ".......333233.3322333...",
+          ".........3333..333......",
+          "........3333...3333.....",
+          "........1133...3311.....",
+          "........3333....333....."
+        ]
+      }
+    }
+  },
+  "lodge_static_garrosh": {
+    "source": "assets/world_readability_v0219/originals/garrosh_world_generated.png",
+    "source_sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+    "packet": "gfx/large_masters_v0219/warrior_trainer.bin",
+    "bytes": 144,
+    "sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955",
+    "complete_front_body": true,
+    "same_alpha_as_world": true,
+    "separately_fitted_lodge_palette3_4": true,
+    "unchanged_exact_roles": 13
+  },
+  "declared_generated_source_exception": "warrior_trainer"
+}

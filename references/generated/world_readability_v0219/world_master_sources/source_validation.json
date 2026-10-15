@@ -1,0 +1,147 @@
+{
+  "version": "v0.2.19",
+  "status": "PASS",
+  "scope": "Static source-art conversion only; no ROM build or emulator test performed by this subtask",
+  "source_JSON_roles": [
+    "boar",
+    "tiger",
+    "panther",
+    "raptor",
+    "felhunter",
+    "crawler",
+    "imp",
+    "scorpid",
+    "sarkoth"
+  ],
+  "source_JSON_role_count": 9,
+  "source_views": 36,
+  "logical_native_frames": 108,
+  "all_dimensions_24x24": true,
+  "all_cells_use_transparent0_and_three_opaque_indices": true,
+  "global_palette_profile": "tools/peon_world_readability_profile_v0219.py",
+  "global_palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68",
+  "source_palette3_required": [
+    [
+      31,
+      31,
+      31
+    ],
+    [
+      25,
+      23,
+      17
+    ],
+    [
+      15,
+      9,
+      4
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "encoded_frame_bytes": 144,
+  "native_2bpp_encode_decode_roundtrip_exact": true,
+  "original_source_PNGs_unchanged_vs_v17_provenance": 499,
+  "private_palette_phase_audit": "/tmp/world_master_direct_pilot_v0219/phase_tests/report.json",
+  "boar_front_source_eye_whites": [
+    {
+      "source_component": 1,
+      "feature": "eye white",
+      "source_component_bbox": [
+        33,
+        71,
+        37,
+        80
+      ],
+      "native_source_samples": 2,
+      "native_ivory_pixels": 2
+    },
+    {
+      "source_component": 2,
+      "feature": "eye white",
+      "source_component_bbox": [
+        73,
+        71,
+        78,
+        81
+      ],
+      "native_source_samples": 2,
+      "native_ivory_pixels": 2
+    },
+    {
+      "source_component": 3,
+      "feature": "pale tusk",
+      "source_component_bbox": [
+        19,
+        89,
+        33,
+        110
+      ],
+      "native_source_samples": 9,
+      "native_ivory_pixels": 9
+    },
+    {
+      "source_component": 4,
+      "feature": "pale tusk",
+      "source_component_bbox": [
+        76,
+        89,
+        89,
+        110
+      ],
+      "native_source_samples": 5,
+      "native_ivory_pixels": 5
+    }
+  ],
+  "boar_front_nearest_dimensions": [
+    20,
+    24
+  ],
+  "boar_front_nearest_phase": [
+    0,
+    0
+  ],
+  "source_JSON_SHA256": {
+    "assets/world_readability_v0219/beasts.json": "8075d2bdc07412397a7824e945d8f6e2cfc08d835bff8faf13207a8458f5594f",
+    "assets/world_readability_v0219/monsters_base.json": "25afbc27e0f1efc10459fd33d1bdbe2a4fbefc17ebf4608f52a72a30c517f822",
+    "assets/world_readability_v0219/beasts_monsters_source_provenance.json": "db73de964e64f820f43b0209383ea6010454f2a0b9adda8b84f4a47e514719ae"
+  },
+  "source_importer": "tools/import_world_master_sources_v0219.py",
+  "source_importer_sha256": "3167279a9abb046f470f1574ff42fb255263fcd0910047a2f427b33de7f8567e",
+  "repeat_import_byte_identical": true,
+  "panther_derived_palette_variant_explicitly_declared": true,
+  "panther_geometry_matches_original_tiger_source": true,
+  "source_true_step_roles": [
+    "tiger",
+    "panther",
+    "raptor",
+    "felhunter",
+    "crawler",
+    "sarkoth"
+  ],
+  "source_still_three_pose_repeat_roles": [
+    "boar",
+    "imp",
+    "scorpid"
+  ],
+  "right_views_mirrored_only_for_explicit_three_view_source_roles": [
+    "tiger",
+    "panther",
+    "raptor",
+    "felhunter",
+    "crawler",
+    "sarkoth"
+  ],
+  "new_detail_generated": false,
+  "new_anatomy_authored": false,
+  "compiled_gfx_modified_by_this_subtask": false,
+  "engine_modified_by_this_subtask": false,
+  "ROM_built_by_this_subtask": false,
+  "contacts": [
+    "references/generated/world_readability_v0219/world_master_sources/all_native_1x_4x.png",
+    "references/generated/world_readability_v0219/world_master_sources/all_source_crops.png"
+  ]
+}

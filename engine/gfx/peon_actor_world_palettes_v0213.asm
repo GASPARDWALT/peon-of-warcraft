@@ -43,6 +43,18 @@ PeonApplyReadableWorldPalettesV0217::
 	ld a, [wMapTileset]
 	cp TILESET_PEON
 	jr nz, .done
+	; v19 world fur/bone highlights: actual ivory instead of a second tan.
+	; This is OBJ3 on PEON maps only; native battle/HUD/quest colors stay put.
+	ld hl, .WarmWorldPaletteV0219
+	ld de, wOBPals1 palette 3
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals1)
+	call FarCopyWRAM
+	ld hl, .WarmWorldPaletteV0219
+	ld de, wOBPals2 palette 3
+	ld bc, 1 palettes
+	ld a, BANK(wOBPals2)
+	call FarCopyWRAM
 	ld hl, .FacePalette
 	ld de, wOBPals1 palette 6
 	ld bc, 1 palettes
@@ -98,4 +110,9 @@ PeonApplyReadableWorldPalettesV0217::
 	RGB 31, 31, 31
 	RGB 25, 23, 17
 	RGB 15, 22, 8
+	RGB 1, 1, 1
+.WarmWorldPaletteV0219:
+	RGB 31, 31, 31
+	RGB 25, 23, 17
+	RGB 15, 9, 4
 	RGB 1, 1, 1

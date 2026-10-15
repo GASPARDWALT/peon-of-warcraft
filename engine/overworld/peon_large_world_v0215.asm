@@ -1654,7 +1654,7 @@ PeonQuestMarkerOffsetV0215:
 	ld a, 8
 	ret
 
-INCLUDE "gfx/world_redraw_v0217/bindings.asm"
+INCLUDE "gfx/world_readability_v0219/bindings.asm"
 
 SECTION "Peon Large World Transient Cache v0215", WRAMX, BANK[2]
 wPeonLargeWorldCacheIDsV0215:: ds NUM_OBJECT_STRUCTS

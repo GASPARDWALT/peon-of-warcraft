@@ -1,0 +1,256 @@
+{
+  "version": "v0.2.19",
+  "status": "PASS",
+  "passed": true,
+  "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+  "sym_sha256": "f85f959376ac5b5c8ef5a6af3320674552605ede88e5544082ecf05bbe988138",
+  "map_sha256": "6141cdbd769b0f4beba20563dc8472080b7ecb32d5f92589f3d3e386b91f3500",
+  "tests": {
+    "clean_build": {
+      "status": "PASS",
+      "report": "references/generated/v0219/clean_build_validation.json",
+      "report_sha256": "415127793df8d2fa97b66a61452768e6eafe28231c95e0ee99d92028f5591395",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "preserved_sources_and_native_packets": {
+      "status": "PASS",
+      "report": "references/generated/v0219/preservation_validation.json",
+      "report_sha256": "0c96a7c801075214948782eb26874b4f5e8099706373f00eba736701e75440a9",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "selection_and_save_ui": {
+      "status": "PASS",
+      "report": "references/generated/selection_v0219/runtime_b91b6876/validation.json",
+      "report_sha256": "715f95cb9dd65d8284670bdf119abd91e2ee89d381702218b824467ab1051d92",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "world_heroes_and_crowds": {
+      "status": "PASS",
+      "report": "references/generated/world_readability_v0219/runtime_b91b6876/validation.json",
+      "report_sha256": "3f5742cdeea669813715a5bdccf1ea2d742ea57be103e2e34e6209864bc9c67a",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "masters_training_shaman": {
+      "status": "PASS",
+      "report": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/validation.json",
+      "report_sha256": "49377b2c064afae87ae128028a4f3da69cde0a22b9de18b9353fcd8d48ed25d2",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "masters_training_warrior_warlock": {
+      "status": "PASS",
+      "report": "references/generated/masters_v0219/runtime_b91b6876/other_classes/validation.json",
+      "report_sha256": "860cca2651a4716e47beeda3c51bc901f9b824239772d642fd435b4c8d3bb244",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    "world_boar_and_kolkar": {
+      "status": "PASS",
+      "report": "references/generated/world_readability_v0219/creature_runtime_b91b6876/validation.json",
+      "report_sha256": "ef12f635e97ce89fa5bbc8b68349ea98b716573d017fa68a03a69791a86dbada",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    }
+  },
+  "captures": [
+    {
+      "name": "01_shaman_master.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/shaman/master_selected_class.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "02_warrior_master.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/warrior/master_selected_class.png",
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "03_warlock_master.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/warlock/master_selected_class.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "04_welcome_base.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/shaman/fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "05_welcome_saved_shaman.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/shaman/cold_saved_class_welcome.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "06_welcome_saved_warrior.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/warrior/cold_saved_class_welcome.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "07_welcome_saved_warlock.png",
+      "path": "references/generated/selection_v0219/runtime_b91b6876/warlock/cold_saved_class_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "08_old_peon_restored_world.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/shaman/base_peon_actual_opening.png",
+      "sha256": "d05f2583026067fc10fc36c86f78a41163c3ffe801a47fb48acbc839b9c627b4",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "09_shaman_world.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/shaman/world_hero_down.png",
+      "sha256": "32fa978df35f0a33239228daef3841d91c6bba0b6fc666fe271755fcff3c5e65",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "10_warrior_world.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/warrior/world_hero_down.png",
+      "sha256": "d42520a123550e12b848b2469b9aded567e57cc7e4e6f03d37a9754d3051cec7",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "11_warlock_world.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/warlock/world_hero_down.png",
+      "sha256": "eed25c1fb4f73db0b43b8e82d7000b544ad78abf96649964a6c47714bf5510bc",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "12_gornek_quest.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/shaman/native_gornek_quest_with_larger_actor.png",
+      "sha256": "7362422f9cdc83dfc646133ff43dce40ad92d9c30bb1cf73f791e83f9fa8de4f",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "13_crowded_den.png",
+      "path": "references/generated/world_readability_v0219/runtime_b91b6876/shaman/den_crowded_priority.png",
+      "sha256": "bafeb9c3f3238eef2fa5e2baffb9e700f4458ddc3c65dc3544cde50a66752ede",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "14_shaman_lodge.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/shaman/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "e16d1b6ac7b9fd73a9dff258558b7fdf220e036ea47593255055ea1f09900367",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "15_shaman_after_training.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/shaman/master_shaman_after_training_B_field_native_lcd.png",
+      "sha256": "c954484f70a2a63da059e1723f15bf47c3353c400c24316ae8ff6adf478b2e0d",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "16_shaman_after_walking.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/shaman/all_three_masters_after_shaman_dialogue_native_lcd.png",
+      "sha256": "ccbb336119e05f5b3e5b3e3dcdba10521c1783a255772b2af6875859d86036ab",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "17_shaman_cold_continue.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/shaman/training_lodge_cold_continue_native_lcd.png",
+      "sha256": "74c21204da763062ec70be4824313a738237662843422ba70139a3bc3202925b",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "18_warrior_lodge.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warrior/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "e41d7409ba89db1f0a5cea39edc3226877d2c26d190757afb7473a2542a71abc",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "19_warrior_after_training.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warrior/master_warrior_after_training_B_field_native_lcd.png",
+      "sha256": "be3cd89933bb164e7945707e1846a849844dcf38b6a99aa9064cc66833a2b9f0",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "20_warrior_after_walking.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warrior/all_three_masters_after_warrior_dialogue_native_lcd.png",
+      "sha256": "127b627b1b0c211b32d9dbdea3c05df1c5548792c9837c208ea56f94bdb60a96",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "21_warrior_cold_continue.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warrior/training_lodge_cold_continue_native_lcd.png",
+      "sha256": "127b627b1b0c211b32d9dbdea3c05df1c5548792c9837c208ea56f94bdb60a96",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "22_warlock_lodge.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warlock/all_three_complete_large_masters_native_lcd.png",
+      "sha256": "553ad87af6c2bbf1d6c6de477854a8ec4ae2ea05e3efad10412f20240f248f0a",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "23_warlock_after_training.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warlock/master_warlock_after_training_B_field_native_lcd.png",
+      "sha256": "04ce68c2818531c918000c089fe1ae46844417ca017711823c586005b137648e",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "24_warlock_after_walking.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warlock/all_three_masters_after_warlock_dialogue_native_lcd.png",
+      "sha256": "553ad87af6c2bbf1d6c6de477854a8ec4ae2ea05e3efad10412f20240f248f0a",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "25_warlock_cold_continue.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warlock/training_lodge_cold_continue_native_lcd.png",
+      "sha256": "69bbe05f4521462d980383ed17d35f1ea78397f9c966f0b78a60693048f1b74b",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "26_warlock_follower_after_cold_continue.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/other_classes/warlock/cold_continue_outdoor_imp_restored.png",
+      "sha256": "3f4cc027ce58717c1c74c315156ed06fa9d8d7a7c6e5f801e48d8c8f92f60ba5",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "27_sleeping_peon_zone_two.png",
+      "path": "references/generated/masters_v0219/runtime_b91b6876/shaman_first/shaman/zone_two_sleeping_peon_wakes.png",
+      "sha256": "f6f69c06d51b71d0532d98aaef24ce1fed252b62342985835a55f27203d38e14",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "28_native_boar_world.png",
+      "path": "references/generated/world_readability_v0219/creature_runtime_b91b6876/shaman/native_boar_world_complete.png",
+      "sha256": "f823fcb4ebad249644f149cad4c7327780bd838a50ada6647b884a5872e458df",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    },
+    {
+      "name": "29_native_kolkar_pair_world.png",
+      "path": "references/generated/world_readability_v0219/creature_runtime_b91b6876/shaman/native_kolkar_pair_world_complete.png",
+      "sha256": "70922fafd556e16322de6ac7413ad29316e5d125d995ec49128acc9f6404df39",
+      "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527"
+    }
+  ],
+  "world_asset_contract": {
+    "manifest_sha256": "5d7cf500be19ec8f969a2e1058cecf3f7a9eb88f3103af257394339c0783667e",
+    "role_families": 39,
+    "bound_families": 30,
+    "bound_packets": 90
+  },
+  "physical_modretro_tested": false,
+  "scope": {
+    "world": "Restored archived native silhouettes and whole world-source illustrations; lossy native conversion",
+    "class_portraits": "Three complete illustrated80x88 masters in the actual ROM",
+    "welcome": "Four approved v18 welcome scenes remain byte-exact",
+    "training_return": "Static master allocation resynchronized and native field restored before scrolling",
+    "combat_and_spells": "Native source and packets unchanged",
+    "save_format": "Unchanged; native32KiB SAVE, cancellations and cold Continue verified"
+  },
+  "visual_review": {
+    "actual_LCD_1x_and_nearest4x_inspected": true,
+    "world_heroes": 3,
+    "master_portraits": 3,
+    "world_boar_and_kolkar_pair": true,
+    "static_source_previews_are_not_runtime_screens": true
+  },
+  "limits": [
+    "Three opaque OBJ colors per8x8 tile; source illustration details necessarily reduced",
+    "Some world poses repeat and historical troll families are shared; provenance records each case",
+    "Distant actors may be culled to keep complete bodies within40 OAM and10 per scanline",
+    "Physical ModRetro hardware was not available for this test"
+  ]
+}

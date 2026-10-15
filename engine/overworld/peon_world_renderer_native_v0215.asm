@@ -360,7 +360,7 @@ INCLUDE "data/sprites/peon_facings.asm"
 
 PeonLargeMasterFacingPointersV0213:
 	dw PeonLargeShamanFacingV0213, PeonLargeWarriorFacingV0213, PeonLargeWarlockFacingV0213
-INCLUDE "gfx/large_masters_v0213/facings.asm"
+INCLUDE "gfx/large_masters_v0219/facings.asm"
 
 ; Input sprite ID A. Carry + A palette means a supplied four-direction NPC.
 ; Lookup preserves object pointer, facing and OAM flags; no saved state.

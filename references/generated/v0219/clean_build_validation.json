@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "passed": true,
+  "rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+  "method": "Fresh Git index export, complete safe build, byte comparison of ROM/SYM/MAP",
+  "clean_directory": "/tmp/peon-v0219-clean-nntdtn7f",
+  "outputs": {
+    "gbc": {
+      "sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+      "bytes": 2097152,
+      "byte_identical_to_tested_artifact": true
+    },
+    "sym": {
+      "sha256": "f85f959376ac5b5c8ef5a6af3320674552605ede88e5544082ecf05bbe988138",
+      "bytes": 1971215,
+      "byte_identical_to_tested_artifact": true
+    },
+    "map": {
+      "sha256": "6141cdbd769b0f4beba20563dc8472080b7ecb32d5f92589f3d3e386b91f3500",
+      "bytes": 2629799,
+      "byte_identical_to_tested_artifact": true
+    }
+  },
+  "historical_regenerators_run": false,
+  "physical_modretro_tested": false
+}

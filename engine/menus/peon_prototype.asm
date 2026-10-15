@@ -189,7 +189,7 @@ PeonClassSelect:
 .draw
 	ld a, [wMenuCursorY]
 	ld c, a
-	farcall PeonDrawMasterScreenV0218
+	farcall PeonDrawMasterScreenV0219
 .input
 	call DelayFrame
 	call JoyTextDelay
