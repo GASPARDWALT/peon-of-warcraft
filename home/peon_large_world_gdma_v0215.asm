@@ -1,5 +1,5 @@
-; B:DE = aligned complete144-byte actor frame; HL = aligned tile destination.
-; Use Crystal's existing VBlank DMA queue: nine blocks transfer atomically
+; B:DE = aligned complete actor frame; HL = aligned tile destination; C=9/16.
+; Use Crystal's existing VBlank DMA queue: all frame blocks transfer atomically
 ; before audio, even when native music/SFX consumes the remaining blank.
 ; No new interrupt worker is added. Sprite publication remains held by the
 ; caller's hOAMUpdate until every accepted actor has a complete current frame.
@@ -42,7 +42,8 @@ PeonUploadLargeWorldFrameGDMAHomeV0215::
 	ldh [rVDMA_DEST_HIGH], a
 	ld a, l
 	ldh [rVDMA_DEST_LOW], a
-	ld a, 8 ; native length field: nine16-byte blocks
+	ld a, c ; nine or sixteen16-byte blocks, supplied by the descriptor
+	dec a
 	ldh [hDMATransfer], a
 .queued
 	ldh a, [rLCDC]

@@ -291,9 +291,10 @@ HDMATransfer_NoDI:
 	ld a, e
 	and $f0
 	ldh [rVDMA_DEST_LOW], a
-	; b = c | %10000000
-	ld a, c
+	; HDMA encodes blocks minus one. Request exactly C blocks, including
+	; at double CPU speed where the old extra block could finish early.
 	dec c
+	ld a, c
 	or $80
 	ld b, a
 	; d = $7f - c + 1
@@ -323,8 +324,13 @@ HDMATransfer_NoDI:
 	ld a, [hl]
 	dec c
 	jr nz, .loop3
-	ld hl, rVDMA_LEN
-	res 7, [hl]
+	; The exact request completes on its own. Never clear HDMA5 here: an
+	; inactive $ff would restart128-block GDMA; a read/clear/write also races
+	; the last HBlank. The reserved scanline window contains every block.
+.wait_hdma_complete
+	ldh a, [rVDMA_LEN]
+	bit 7, a
+	jr z, .wait_hdma_complete
 	ret
 
 HDMATransfer_WaitForScanline124:
@@ -348,9 +354,9 @@ _continue_HDMATransfer:
 	ld a, e
 	and $f0 ; high nybble
 	ldh [rVDMA_DEST_LOW], a
-	; e = c | %10000000
-	ld a, c
+	; E is the exact C-block request encoded as (C - 1) | $80.
 	dec c
+	ld a, c
 	or $80
 	ld e, a
 	; d = b - c + 1
@@ -387,8 +393,10 @@ _continue_HDMATransfer:
 	ld a, [hl]
 	dec c
 	jr nz, .final_ly_loop
-	ld hl, rVDMA_LEN
-	res 7, [hl]
+.wait_hdma_complete
+	ldh a, [rVDMA_LEN]
+	bit 7, a
+	jr z, .wait_hdma_complete
 	ei
 
 	ret

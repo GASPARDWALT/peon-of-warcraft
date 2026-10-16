@@ -1,0 +1,6165 @@
+{
+  "status": "PASS",
+  "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+  "method": "Emulated CPU T-cycles and actual LCD frames; inclusive profile timings overlap and include interrupts/waits",
+  "profile_boundaries": "fixed_native_labels",
+  "host_fps_measured": false,
+  "ordinary_buttons_only": true,
+  "game_RAM_or_register_edits": false,
+  "fixtures_or_emulator_states": false,
+  "user_battery_opened": false,
+  "samples": {
+    "den_spawn_idle": {
+      "elapsed_tcycles": 33707520,
+      "cpu_speed_KEY1": 128,
+      "cpu_double_speed": true,
+      "functions": {
+        "HandleMapObjects": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426296,
+            "min": 269860,
+            "median": 280896,
+            "mean": 280893.243697479,
+            "max": 291776
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "_UpdateSprites": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 14774256,
+            "min": 122224,
+            "median": 123184.0,
+            "mean": 123118.8,
+            "max": 129608
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 120,
+            "min": 1,
+            "median": 1.0,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 1036224,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 8635.2,
+            "max": 14816
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 13738032,
+            "min": 114276,
+            "median": 114426.0,
+            "mean": 114483.6,
+            "max": 114792
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426296,
+            "min": 269860,
+            "median": 280896,
+            "mean": 280893.243697479,
+            "max": 291776
+          },
+          "inclusive_share_of_sample": 0.43830741626794256
+        },
+        "InitSprites": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 12955716,
+            "min": 107140,
+            "median": 108040.0,
+            "mean": 107964.3,
+            "max": 114440
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 120,
+            "min": 1,
+            "median": 1.0,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 1036224,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 8635.2,
+            "max": 14816
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 11919492,
+            "min": 99108,
+            "median": 99324.0,
+            "mean": 99329.1,
+            "max": 99624
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426188,
+            "min": 269860,
+            "median": 280896,
+            "mean": 280892.33613445377,
+            "max": 291776
+          },
+          "inclusive_share_of_sample": 0.38435684381408064
+        },
+        "PeonDrawPlayerHUD": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 1688796,
+            "min": 14020,
+            "median": 14020.0,
+            "mean": 14073.3,
+            "max": 14212
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 1688796,
+            "min": 14020,
+            "median": 14020.0,
+            "mean": 14073.3,
+            "max": 14212
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33425912,
+            "min": 269932,
+            "median": 280896,
+            "mean": 280890.0168067227,
+            "max": 291320
+          },
+          "inclusive_share_of_sample": 0.050101461038961036
+        },
+        "PeonInitLargeWorldSpritesV0215": {
+          "calls": 121,
+          "completed_calls": 121,
+          "inclusive_tcycles": {
+            "samples": 121,
+            "sum": 13048244,
+            "min": 107012,
+            "median": 107912,
+            "mean": 107836.72727272728,
+            "max": 114312
+          },
+          "inclusive_lcd_frames": {
+            "samples": 121,
+            "sum": 121,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 121,
+            "sum": 1045024,
+            "min": 7948,
+            "median": 8800,
+            "mean": 8636.561983471074,
+            "max": 14816
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 121,
+            "sum": 12003220,
+            "min": 98980,
+            "median": 99196,
+            "mean": 99200.1652892562,
+            "max": 99496
+          },
+          "entry_interval_tcycles": {
+            "samples": 120,
+            "sum": 33426188,
+            "min": 192,
+            "median": 280888.0,
+            "mean": 278551.56666666665,
+            "max": 291776
+          },
+          "inclusive_share_of_sample": 0.3871018692564745
+        },
+        "HandleMapBackground": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426296,
+            "min": 269860,
+            "median": 280896,
+            "mean": 280893.243697479,
+            "max": 291776
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "DelayFrame": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 14062892,
+            "min": 106120,
+            "median": 117248.0,
+            "mean": 117190.76666666666,
+            "max": 127472
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 34,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.2833333333333333,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 1138080,
+            "min": 8604,
+            "median": 8936.0,
+            "mean": 9484,
+            "max": 19424
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33425912,
+            "min": 269932,
+            "median": 280896,
+            "mean": 280890.0168067227,
+            "max": 291320
+          },
+          "inclusive_share_of_sample": 0.41720340149616464
+        },
+        "VBlank": {
+          "calls": 240,
+          "completed_calls": 240,
+          "inclusive_tcycles": {
+            "samples": 240,
+            "sum": 2174304,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 9059.6,
+            "max": 19424
+          },
+          "inclusive_lcd_frames": {
+            "samples": 240,
+            "sum": 35,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.14583333333333334,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 240,
+            "sum": 2174304,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 9059.6,
+            "max": 19424
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 240,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33567068,
+            "min": 140436,
+            "median": 140448,
+            "mean": 140447.98326359832,
+            "max": 140460
+          },
+          "inclusive_share_of_sample": 0.06450501253132832
+        },
+        "_UpdateSound": {
+          "calls": 240,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33566956,
+            "min": 138976,
+            "median": 140552,
+            "mean": 140447.51464435147,
+            "max": 141148
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "GameTimer": {
+          "calls": 240,
+          "completed_calls": 240,
+          "inclusive_tcycles": {
+            "samples": 240,
+            "sum": 65504,
+            "min": 272,
+            "median": 272.0,
+            "mean": 272.93333333333334,
+            "max": 328
+          },
+          "inclusive_lcd_frames": {
+            "samples": 240,
+            "sum": 4,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.016666666666666666,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 240,
+            "sum": 65504,
+            "min": 272,
+            "median": 272.0,
+            "mean": 272.93333333333334,
+            "max": 328
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 240,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33566872,
+            "min": 129672,
+            "median": 140552,
+            "mean": 140447.16317991633,
+            "max": 151072
+          },
+          "inclusive_share_of_sample": 0.001943305232778917
+        },
+        "MobileTimer": {
+          "calls": 129,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 128,
+            "sum": 33554412,
+            "min": 254084,
+            "median": 262144.0,
+            "mean": 262143.84375,
+            "max": 270204
+          },
+          "inclusive_share_of_sample": 0.0
+        }
+      },
+      "inflight_calls_excluded": 0,
+      "hook_errors": [],
+      "label": "den_spawn_idle",
+      "lcd_frames": 240,
+      "before": [
+        10,
+        12
+      ],
+      "after": [
+        10,
+        12
+      ],
+      "sound_updates_per_lcd_frame": 1.0,
+      "game_time_frame_delta": 240,
+      "complete_GameTimer_calls": 240,
+      "each_GameTimer_increment_exactly_one_frame": true,
+      "LCD_boundary_may_precede_final_GameTimer_by_one_IRQ": false,
+      "mobile_mode_inactive": true,
+      "hardware_RTC_or_serial_link_not_tested": true,
+      "maximum_visible_oam": 39,
+      "maximum_objects_per_scanline": 8
+    },
+    "steps": [
+      {
+        "elapsed_tcycles": 3792096,
+        "cpu_speed_KEY1": 128,
+        "cpu_double_speed": true,
+        "functions": {
+          "HandleMapObjects": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3658588,
+              "min": 235396,
+              "median": 280648,
+              "mean": 281429.8461538461,
+              "max": 307536
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "_UpdateSprites": {
+            "calls": 14,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 1741292,
+              "min": 100700,
+              "median": 123176,
+              "mean": 133945.53846153847,
+              "max": 204640
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 12,
+              "min": 0,
+              "median": 1,
+              "mean": 0.9230769230769231,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 103304,
+              "min": 0,
+              "median": 8032,
+              "mean": 7946.461538461538,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 1493188,
+              "min": 100628,
+              "median": 114576,
+              "mean": 114860.61538461539,
+              "max": 128396
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3658800,
+              "min": 144880,
+              "median": 280520,
+              "mean": 281446.1538461539,
+              "max": 452536
+            },
+            "inclusive_share_of_sample": 0.4591898517337114
+          },
+          "InitSprites": {
+            "calls": 14,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 1536540,
+              "min": 99280,
+              "median": 104268,
+              "mean": 118195.38461538461,
+              "max": 189580
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 6,
+              "min": 0,
+              "median": 0,
+              "mean": 0.46153846153846156,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 53688,
+              "min": 0,
+              "median": 0,
+              "mean": 4129.846153846154,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 1338052,
+              "min": 99216,
+              "median": 99480,
+              "mean": 102927.07692307692,
+              "max": 113336
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3658800,
+              "min": 144880,
+              "median": 280520,
+              "mean": 281446.1538461539,
+              "max": 452536
+            },
+            "inclusive_share_of_sample": 0.40519543809017494
+          },
+          "PeonDrawPlayerHUD": {
+            "calls": 13,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 190908,
+              "min": 264,
+              "median": 14128,
+              "mean": 14685.23076923077,
+              "max": 22860
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 6,
+              "min": 0,
+              "median": 0,
+              "mean": 0.46153846153846156,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 49616,
+              "min": 0,
+              "median": 0,
+              "mean": 3816.6153846153848,
+              "max": 8804
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 141292,
+              "min": 264,
+              "median": 14020,
+              "mean": 10868.615384615385,
+              "max": 14248
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3351248,
+              "min": 173776,
+              "median": 279750.0,
+              "mean": 279270.6666666667,
+              "max": 462976
+            },
+            "inclusive_share_of_sample": 0.05034366218576745
+          },
+          "PeonInitLargeWorldSpritesV0215": {
+            "calls": 14,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 1534660,
+              "min": 99052,
+              "median": 104140,
+              "mean": 118050.76923076923,
+              "max": 189452
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 6,
+              "min": 0,
+              "median": 0,
+              "mean": 0.46153846153846156,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 53688,
+              "min": 0,
+              "median": 0,
+              "mean": 4129.846153846154,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 1336172,
+              "min": 99052,
+              "median": 99352,
+              "mean": 102782.46153846153,
+              "max": 113208
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3658800,
+              "min": 144880,
+              "median": 280520,
+              "mean": 281446.1538461539,
+              "max": 452536
+            },
+            "inclusive_share_of_sample": 0.40469967005054724
+          },
+          "PeonUploadLargeWorldFrameGDMAHomeV0215": {
+            "calls": 3,
+            "completed_calls": 3,
+            "inclusive_tcycles": {
+              "samples": 3,
+              "sum": 172164,
+              "min": 25872,
+              "median": 69616,
+              "mean": 57388,
+              "max": 76676
+            },
+            "inclusive_lcd_frames": {
+              "samples": 3,
+              "sum": 1,
+              "min": 0,
+              "median": 0,
+              "mean": 0.3333333333333333,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 3,
+              "sum": 26068,
+              "min": 7220,
+              "median": 7276,
+              "mean": 8689.333333333334,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 3,
+              "sum": 1296,
+              "min": 432,
+              "median": 432,
+              "mean": 432,
+              "max": 432
+            },
+            "entry_interval_tcycles": {
+              "samples": 2,
+              "sum": 2244512,
+              "min": 1077240,
+              "median": 1122256.0,
+              "mean": 1122256,
+              "max": 1167272
+            },
+            "inclusive_share_of_sample": 0.04540074934811777
+          },
+          "HandleMapBackground": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3658800,
+              "min": 144880,
+              "median": 280412,
+              "mean": 281446.1538461539,
+              "max": 452536
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "DelayFrame": {
+            "calls": 16,
+            "completed_calls": 16,
+            "inclusive_tcycles": {
+              "samples": 16,
+              "sum": 1578052,
+              "min": 17048,
+              "median": 122842.0,
+              "mean": 98628.25,
+              "max": 141208
+            },
+            "inclusive_lcd_frames": {
+              "samples": 16,
+              "sum": 9,
+              "min": 0,
+              "median": 0.5,
+              "mean": 0.5625,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 16,
+              "sum": 146136,
+              "min": 7220,
+              "median": 9196.0,
+              "mean": 9133.5,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 16,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 15,
+              "sum": 3359192,
+              "min": 17088,
+              "median": 205888,
+              "mean": 223946.13333333333,
+              "max": 521672
+            },
+            "inclusive_share_of_sample": 0.4161424183354008
+          },
+          "VBlank": {
+            "calls": 27,
+            "completed_calls": 27,
+            "inclusive_tcycles": {
+              "samples": 27,
+              "sum": 240860,
+              "min": 7220,
+              "median": 8800,
+              "mean": 8920.74074074074,
+              "max": 11572
+            },
+            "inclusive_lcd_frames": {
+              "samples": 27,
+              "sum": 9,
+              "min": 0,
+              "median": 0,
+              "mean": 0.3333333333333333,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 27,
+              "sum": 240860,
+              "min": 7220,
+              "median": 8800,
+              "mean": 8920.74074074074,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 27,
+              "sum": 0,
+              "min": 0,
+              "median": 0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 26,
+              "sum": 3651656,
+              "min": 140440,
+              "median": 140448.0,
+              "mean": 140448.3076923077,
+              "max": 140456
+            },
+            "inclusive_share_of_sample": 0.06351632448123676
+          },
+          "_UpdateSound": {
+            "calls": 27,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 26,
+              "sum": 3651656,
+              "min": 137480,
+              "median": 140556.0,
+              "mean": 140448.3076923077,
+              "max": 142732
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "GameTimer": {
+            "calls": 27,
+            "completed_calls": 27,
+            "inclusive_tcycles": {
+              "samples": 27,
+              "sum": 7400,
+              "min": 272,
+              "median": 272,
+              "mean": 274.0740740740741,
+              "max": 328
+            },
+            "inclusive_lcd_frames": {
+              "samples": 27,
+              "sum": 1,
+              "min": 0,
+              "median": 0,
+              "mean": 0.037037037037037035,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 27,
+              "sum": 7400,
+              "min": 272,
+              "median": 272,
+              "mean": 274.0740740740741,
+              "max": 328
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 27,
+              "sum": 0,
+              "min": 0,
+              "median": 0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 26,
+              "sum": 3651740,
+              "min": 137480,
+              "median": 140356.0,
+              "mean": 140451.53846153847,
+              "max": 142976
+            },
+            "inclusive_share_of_sample": 0.0019514273900238812
+          },
+          "MobileTimer": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3407872,
+              "min": 254132,
+              "median": 262144,
+              "mean": 262144,
+              "max": 270072
+            },
+            "inclusive_share_of_sample": 0.0
+          }
+        },
+        "inflight_calls_excluded": 3,
+        "hook_errors": [],
+        "key": "left",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          9,
+          12
+        ],
+        "lcd_frames_to_first_motion": 11,
+        "lcd_frames_to_first_facing_change": 5,
+        "native_direction_change_script_frames": 6,
+        "lcd_frames_to_first_camera_motion": 13,
+        "lcd_frames_to_tile_coord_change": 25,
+        "lcd_frames_to_step_flags_clear": 27,
+        "motion_changes": [
+          {
+            "lcd_frame": 1,
+            "elapsed_tcycles": 140448,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 0,
+              "object_step_duration": 0
+            }
+          },
+          {
+            "lcd_frame": 3,
+            "elapsed_tcycles": 421344,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 0,
+              "object_step_duration": 3
+            }
+          },
+          {
+            "lcd_frame": 5,
+            "elapsed_tcycles": 702244,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 9,
+              "object_step_duration": 4
+            }
+          },
+          {
+            "lcd_frame": 7,
+            "elapsed_tcycles": 983132,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 9,
+              "object_step_duration": 5
+            }
+          },
+          {
+            "lcd_frame": 9,
+            "elapsed_tcycles": 1264040,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 9,
+              "object_step_duration": 6
+            }
+          },
+          {
+            "lcd_frame": 11,
+            "elapsed_tcycles": 1544928,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 160,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                62,
+                64,
+                0,
+                0
+              ],
+              "facing": 9,
+              "object_step_duration": 7
+            }
+          },
+          {
+            "lcd_frame": 13,
+            "elapsed_tcycles": 1825820,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                254,
+                0
+              ],
+              "object_pixels_offsets": [
+                60,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 14,
+            "elapsed_tcycles": 1966280,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                252,
+                0
+              ],
+              "object_pixels_offsets": [
+                60,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 15,
+            "elapsed_tcycles": 2106716,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                252,
+                0
+              ],
+              "object_pixels_offsets": [
+                58,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 16,
+            "elapsed_tcycles": 2247176,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                250,
+                0
+              ],
+              "object_pixels_offsets": [
+                58,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 17,
+            "elapsed_tcycles": 2387620,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                250,
+                0
+              ],
+              "object_pixels_offsets": [
+                56,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 18,
+            "elapsed_tcycles": 2528072,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                248,
+                0
+              ],
+              "object_pixels_offsets": [
+                56,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 19,
+            "elapsed_tcycles": 2668508,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                248,
+                0
+              ],
+              "object_pixels_offsets": [
+                54,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 20,
+            "elapsed_tcycles": 2808956,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                246,
+                0
+              ],
+              "object_pixels_offsets": [
+                54,
+                64,
+                0,
+                0
+              ],
+              "facing": 10,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 21,
+            "elapsed_tcycles": 2949404,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                246,
+                0
+              ],
+              "object_pixels_offsets": [
+                52,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 22,
+            "elapsed_tcycles": 3089856,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                244,
+                0
+              ],
+              "object_pixels_offsets": [
+                52,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 23,
+            "elapsed_tcycles": 3230300,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                244,
+                0
+              ],
+              "object_pixels_offsets": [
+                50,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 24,
+            "elapsed_tcycles": 3370748,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                242,
+                0
+              ],
+              "object_pixels_offsets": [
+                50,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 25,
+            "elapsed_tcycles": 3511196,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                242,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 26,
+            "elapsed_tcycles": 3651656,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 27,
+            "elapsed_tcycles": 3792096,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 11,
+              "object_step_duration": 15
+            }
+          }
+        ],
+        "native_camera_updates": [
+          {
+            "lcd_frame": 13,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 14,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 16,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 18,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 20,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 22,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 24,
+            "delta": [
+              -2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 26,
+            "delta": [
+              -2,
+              0
+            ]
+          }
+        ],
+        "eight_native_2px_updates_per_16px_step": true
+      },
+      {
+        "elapsed_tcycles": 3651652,
+        "cpu_speed_KEY1": 128,
+        "cpu_double_speed": true,
+        "functions": {
+          "HandleMapObjects": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3384080,
+              "min": 231908,
+              "median": 281184.0,
+              "mean": 282006.6666666667,
+              "max": 308552
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "_UpdateSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1633200,
+              "min": 105684,
+              "median": 123486.0,
+              "mean": 136100,
+              "max": 206168
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 10,
+              "min": 0,
+              "median": 1.0,
+              "mean": 0.8333333333333334,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 96984,
+              "min": 0,
+              "median": 8402.0,
+              "mean": 8082,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1394104,
+              "min": 105612,
+              "median": 114640.0,
+              "mean": 116175.33333333333,
+              "max": 128276
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3383984,
+              "min": 144876,
+              "median": 281070.0,
+              "mean": 281998.6666666667,
+              "max": 456048
+            },
+            "inclusive_share_of_sample": 0.447249628387371
+          },
+          "InitSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1450528,
+              "min": 99284,
+              "median": 106944.0,
+              "mean": 120877.33333333333,
+              "max": 191000
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 6,
+              "min": 0,
+              "median": 0.5,
+              "mean": 0.5,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 54592,
+              "min": 0,
+              "median": 3610.0,
+              "mean": 4549.333333333333,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1253824,
+              "min": 99284,
+              "median": 101842.0,
+              "mean": 104485.33333333333,
+              "max": 118156
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3383876,
+              "min": 144876,
+              "median": 281016.0,
+              "mean": 281989.6666666667,
+              "max": 456048
+            },
+            "inclusive_share_of_sample": 0.397225146317338
+          },
+          "PeonDrawPlayerHUD": {
+            "calls": 13,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 183672,
+              "min": 264,
+              "median": 14020,
+              "mean": 14128.615384615385,
+              "max": 22856
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 4,
+              "min": 0,
+              "median": 0,
+              "mean": 0.3076923076923077,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 42392,
+              "min": 0,
+              "median": 0,
+              "mean": 3260.923076923077,
+              "max": 8800
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 141280,
+              "min": 264,
+              "median": 14020,
+              "mean": 10867.692307692309,
+              "max": 14056
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3340328,
+              "min": 171196,
+              "median": 279744.0,
+              "mean": 278360.6666666667,
+              "max": 452308
+            },
+            "inclusive_share_of_sample": 0.05029833072811977
+          },
+          "PeonInitLargeWorldSpritesV0215": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1448992,
+              "min": 99156,
+              "median": 106816.0,
+              "mean": 120749.33333333333,
+              "max": 190872
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 6,
+              "min": 0,
+              "median": 0.5,
+              "mean": 0.5,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 54592,
+              "min": 0,
+              "median": 3610.0,
+              "mean": 4549.333333333333,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1252288,
+              "min": 99156,
+              "median": 101714.0,
+              "mean": 104357.33333333333,
+              "max": 118028
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3383876,
+              "min": 144876,
+              "median": 281016.0,
+              "mean": 281989.6666666667,
+              "max": 456048
+            },
+            "inclusive_share_of_sample": 0.3968045147785167
+          },
+          "PeonUploadLargeWorldFrameGDMAHomeV0215": {
+            "calls": 3,
+            "completed_calls": 3,
+            "inclusive_tcycles": {
+              "samples": 3,
+              "sum": 171144,
+              "min": 23328,
+              "median": 69492,
+              "mean": 57048,
+              "max": 78324
+            },
+            "inclusive_lcd_frames": {
+              "samples": 3,
+              "sum": 1,
+              "min": 0,
+              "median": 0,
+              "mean": 0.3333333333333333,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 3,
+              "sum": 27628,
+              "min": 7220,
+              "median": 7220,
+              "mean": 9209.333333333334,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 3,
+              "sum": 1404,
+              "min": 432,
+              "median": 432,
+              "mean": 468,
+              "max": 540
+            },
+            "entry_interval_tcycles": {
+              "samples": 2,
+              "sum": 2244520,
+              "min": 1074772,
+              "median": 1122260.0,
+              "mean": 1122260,
+              "max": 1169748
+            },
+            "inclusive_share_of_sample": 0.04686755473960826
+          },
+          "HandleMapBackground": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3383984,
+              "min": 144768,
+              "median": 281016.0,
+              "mean": 281998.6666666667,
+              "max": 456048
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "DelayFrame": {
+            "calls": 16,
+            "completed_calls": 16,
+            "inclusive_tcycles": {
+              "samples": 16,
+              "sum": 1554296,
+              "min": 12900,
+              "median": 117376.0,
+              "mean": 97143.5,
+              "max": 139488
+            },
+            "inclusive_lcd_frames": {
+              "samples": 16,
+              "sum": 8,
+              "min": 0,
+              "median": 0.5,
+              "mean": 0.5,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 16,
+              "sum": 146864,
+              "min": 7220,
+              "median": 8966.0,
+              "mean": 9179,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 16,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 15,
+              "sum": 3348444,
+              "min": 13048,
+              "median": 204896,
+              "mean": 223229.6,
+              "max": 519180
+            },
+            "inclusive_share_of_sample": 0.42564187386968966
+          },
+          "VBlank": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 232940,
+              "min": 7220,
+              "median": 8828.0,
+              "mean": 8959.23076923077,
+              "max": 13188
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 8,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.3076923076923077,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 232940,
+              "min": 7220,
+              "median": 8828.0,
+              "mean": 8959.23076923077,
+              "max": 13188
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511220,
+              "min": 140444,
+              "median": 140448,
+              "mean": 140448.8,
+              "max": 140468
+            },
+            "inclusive_share_of_sample": 0.06379030641474051
+          },
+          "_UpdateSound": {
+            "calls": 26,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3510476,
+              "min": 137476,
+              "median": 140560,
+              "mean": 140419.04,
+              "max": 141964
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "GameTimer": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 1,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.038461538461538464,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3510560,
+              "min": 136240,
+              "median": 140560,
+              "mean": 140422.4,
+              "max": 144136
+            },
+            "inclusive_share_of_sample": 0.0019519932348427507
+          },
+          "MobileTimer": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3407872,
+              "min": 261548,
+              "median": 262144,
+              "mean": 262144,
+              "max": 262736
+            },
+            "inclusive_share_of_sample": 0.0
+          }
+        },
+        "inflight_calls_excluded": 3,
+        "hook_errors": [],
+        "key": "right",
+        "before": [
+          9,
+          12
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_to_first_motion": 10,
+        "lcd_frames_to_first_facing_change": 4,
+        "native_direction_change_script_frames": 6,
+        "lcd_frames_to_first_camera_motion": 12,
+        "lcd_frames_to_tile_coord_change": 24,
+        "lcd_frames_to_step_flags_clear": 26,
+        "motion_changes": [
+          {
+            "lcd_frame": 1,
+            "elapsed_tcycles": 140444,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 8,
+              "object_step_duration": 0
+            }
+          },
+          {
+            "lcd_frame": 2,
+            "elapsed_tcycles": 280904,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 8,
+              "object_step_duration": 3
+            }
+          },
+          {
+            "lcd_frame": 4,
+            "elapsed_tcycles": 561788,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 13,
+              "object_step_duration": 4
+            }
+          },
+          {
+            "lcd_frame": 6,
+            "elapsed_tcycles": 842684,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 13,
+              "object_step_duration": 5
+            }
+          },
+          {
+            "lcd_frame": 8,
+            "elapsed_tcycles": 1123580,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                48,
+                64,
+                0,
+                0
+              ],
+              "facing": 13,
+              "object_step_duration": 6
+            }
+          },
+          {
+            "lcd_frame": 10,
+            "elapsed_tcycles": 1404488,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 160,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                240,
+                0
+              ],
+              "object_pixels_offsets": [
+                50,
+                64,
+                0,
+                0
+              ],
+              "facing": 13,
+              "object_step_duration": 7
+            }
+          },
+          {
+            "lcd_frame": 12,
+            "elapsed_tcycles": 1685372,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                242,
+                0
+              ],
+              "object_pixels_offsets": [
+                52,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 13,
+            "elapsed_tcycles": 1825832,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                244,
+                0
+              ],
+              "object_pixels_offsets": [
+                52,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 14,
+            "elapsed_tcycles": 1966272,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                244,
+                0
+              ],
+              "object_pixels_offsets": [
+                54,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 15,
+            "elapsed_tcycles": 2106720,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                246,
+                0
+              ],
+              "object_pixels_offsets": [
+                54,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 16,
+            "elapsed_tcycles": 2247168,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                246,
+                0
+              ],
+              "object_pixels_offsets": [
+                56,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 17,
+            "elapsed_tcycles": 2387616,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                248,
+                0
+              ],
+              "object_pixels_offsets": [
+                56,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 18,
+            "elapsed_tcycles": 2528060,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                248,
+                0
+              ],
+              "object_pixels_offsets": [
+                58,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 19,
+            "elapsed_tcycles": 2668508,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                250,
+                0
+              ],
+              "object_pixels_offsets": [
+                58,
+                64,
+                0,
+                0
+              ],
+              "facing": 14,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 20,
+            "elapsed_tcycles": 2808960,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                250,
+                0
+              ],
+              "object_pixels_offsets": [
+                60,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 21,
+            "elapsed_tcycles": 2949412,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                252,
+                0
+              ],
+              "object_pixels_offsets": [
+                60,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 22,
+            "elapsed_tcycles": 3089852,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                252,
+                0
+              ],
+              "object_pixels_offsets": [
+                62,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 23,
+            "elapsed_tcycles": 3230304,
+            "state": {
+              "xy": [
+                9,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                254,
+                0
+              ],
+              "object_pixels_offsets": [
+                62,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 24,
+            "elapsed_tcycles": 3370756,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                254,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 25,
+            "elapsed_tcycles": 3511208,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 26,
+            "elapsed_tcycles": 3651652,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 15,
+              "object_step_duration": 15
+            }
+          }
+        ],
+        "native_camera_updates": [
+          {
+            "lcd_frame": 12,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 13,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 15,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 17,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 19,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 21,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 23,
+            "delta": [
+              2,
+              0
+            ]
+          },
+          {
+            "lcd_frame": 25,
+            "delta": [
+              2,
+              0
+            ]
+          }
+        ],
+        "eight_native_2px_updates_per_16px_step": true
+      },
+      {
+        "elapsed_tcycles": 3651640,
+        "cpu_speed_KEY1": 128,
+        "cpu_double_speed": true,
+        "functions": {
+          "HandleMapObjects": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3386216,
+              "min": 221380,
+              "median": 282246.0,
+              "mean": 282184.6666666667,
+              "max": 317868
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "_UpdateSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1734600,
+              "min": 100700,
+              "median": 124700.0,
+              "mean": 144550,
+              "max": 265724
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 11,
+              "min": 0,
+              "median": 1.0,
+              "mean": 0.9166666666666666,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 93296,
+              "min": 0,
+              "median": 7996.0,
+              "mean": 7774.666666666667,
+              "max": 15208
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1381896,
+              "min": 100628,
+              "median": 114552.0,
+              "mean": 115158,
+              "max": 128436
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3397120,
+              "min": 145248,
+              "median": 282032.0,
+              "mean": 283093.3333333333,
+              "max": 466952
+            },
+            "inclusive_share_of_sample": 0.4750194433186185
+          },
+          "InitSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1667904,
+              "min": 99288,
+              "median": 120996.0,
+              "mean": 138992,
+              "max": 264324
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 10,
+              "min": 0,
+              "median": 1.0,
+              "mean": 0.8333333333333334,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 85292,
+              "min": 0,
+              "median": 7988.0,
+              "mean": 7107.666666666667,
+              "max": 15208
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1323204,
+              "min": 99216,
+              "median": 111860.0,
+              "mean": 110267,
+              "max": 124852
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3397120,
+              "min": 145356,
+              "median": 281978.0,
+              "mean": 283093.3333333333,
+              "max": 466952
+            },
+            "inclusive_share_of_sample": 0.45675477319779606
+          },
+          "PeonDrawPlayerHUD": {
+            "calls": 13,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 67696,
+              "min": 264,
+              "median": 468,
+              "mean": 5207.384615384615,
+              "max": 22144
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 1,
+              "min": 0,
+              "median": 0,
+              "mean": 0.07692307692307693,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 8004,
+              "min": 0,
+              "median": 0,
+              "mean": 615.6923076923077,
+              "max": 8004
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 59692,
+              "min": 264,
+              "median": 468,
+              "mean": 4591.692307692308,
+              "max": 14140
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3382260,
+              "min": 145708,
+              "median": 281842.0,
+              "mean": 281855,
+              "max": 477652
+            },
+            "inclusive_share_of_sample": 0.01853851967882924
+          },
+          "PeonInitLargeWorldSpritesV0215": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1666152,
+              "min": 99052,
+              "median": 120814.0,
+              "mean": 138846,
+              "max": 264196
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 10,
+              "min": 0,
+              "median": 1.0,
+              "mean": 0.8333333333333334,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 85292,
+              "min": 0,
+              "median": 7988.0,
+              "mean": 7107.666666666667,
+              "max": 15208
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1321452,
+              "min": 99052,
+              "median": 111732.0,
+              "mean": 110121,
+              "max": 124724
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3397120,
+              "min": 145356,
+              "median": 281978.0,
+              "mean": 283093.3333333333,
+              "max": 466952
+            },
+            "inclusive_share_of_sample": 0.4562749887721681
+          },
+          "PeonUploadLargeWorldFrameGDMAHomeV0215": {
+            "calls": 4,
+            "completed_calls": 4,
+            "inclusive_tcycles": {
+              "samples": 4,
+              "sum": 294424,
+              "min": 12092,
+              "median": 74098.0,
+              "mean": 73606,
+              "max": 134136
+            },
+            "inclusive_lcd_frames": {
+              "samples": 4,
+              "sum": 1,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.25,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 4,
+              "sum": 33288,
+              "min": 7220,
+              "median": 7248.0,
+              "mean": 8322,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 4,
+              "sum": 1728,
+              "min": 432,
+              "median": 432.0,
+              "mean": 432,
+              "max": 432
+            },
+            "entry_interval_tcycles": {
+              "samples": 3,
+              "sum": 2244536,
+              "min": 299244,
+              "median": 763192,
+              "mean": 748178.6666666666,
+              "max": 1182100
+            },
+            "inclusive_share_of_sample": 0.08062788226659802
+          },
+          "HandleMapBackground": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3397120,
+              "min": 145248,
+              "median": 282074.0,
+              "mean": 283093.3333333333,
+              "max": 466952
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "DelayFrame": {
+            "calls": 16,
+            "completed_calls": 16,
+            "inclusive_tcycles": {
+              "samples": 16,
+              "sum": 1551308,
+              "min": 11660,
+              "median": 118880.0,
+              "mean": 96956.75,
+              "max": 139528
+            },
+            "inclusive_lcd_frames": {
+              "samples": 16,
+              "sum": 9,
+              "min": 0,
+              "median": 1.0,
+              "mean": 0.5625,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 16,
+              "sum": 145416,
+              "min": 7220,
+              "median": 9502.0,
+              "mean": 9088.5,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 16,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 15,
+              "sum": 3368756,
+              "min": 17116,
+              "median": 205340,
+              "mean": 224583.73333333334,
+              "max": 536372
+            },
+            "inclusive_share_of_sample": 0.4248250101324336
+          },
+          "VBlank": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 231644,
+              "min": 7220,
+              "median": 8732.0,
+              "mean": 8909.384615384615,
+              "max": 11572
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 10,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.38461538461538464,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 231644,
+              "min": 7220,
+              "median": 8732.0,
+              "mean": 8909.384615384615,
+              "max": 11572
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511200,
+              "min": 140436,
+              "median": 140448,
+              "mean": 140448,
+              "max": 140456
+            },
+            "inclusive_share_of_sample": 0.06343560701493028
+          },
+          "_UpdateSound": {
+            "calls": 26,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511312,
+              "min": 137136,
+              "median": 140324,
+              "mean": 140452.48,
+              "max": 142732
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "GameTimer": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511396,
+              "min": 137136,
+              "median": 140204,
+              "mean": 140455.84,
+              "max": 143316
+            },
+            "inclusive_share_of_sample": 0.0019519996494725658
+          },
+          "MobileTimer": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3407780,
+              "min": 259908,
+              "median": 262144,
+              "mean": 262136.92307692306,
+              "max": 264372
+            },
+            "inclusive_share_of_sample": 0.0
+          }
+        },
+        "inflight_calls_excluded": 3,
+        "hook_errors": [],
+        "key": "up",
+        "before": [
+          10,
+          12
+        ],
+        "after": [
+          10,
+          11
+        ],
+        "lcd_frames_to_first_motion": 10,
+        "lcd_frames_to_first_facing_change": 4,
+        "native_direction_change_script_frames": 6,
+        "lcd_frames_to_first_camera_motion": 12,
+        "lcd_frames_to_tile_coord_change": 24,
+        "lcd_frames_to_step_flags_clear": 26,
+        "motion_changes": [
+          {
+            "lcd_frame": 1,
+            "elapsed_tcycles": 140444,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 12,
+              "object_step_duration": 0
+            }
+          },
+          {
+            "lcd_frame": 2,
+            "elapsed_tcycles": 280888,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 12,
+              "object_step_duration": 3
+            }
+          },
+          {
+            "lcd_frame": 4,
+            "elapsed_tcycles": 561784,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 5,
+              "object_step_duration": 4
+            }
+          },
+          {
+            "lcd_frame": 6,
+            "elapsed_tcycles": 842684,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 5,
+              "object_step_duration": 5
+            }
+          },
+          {
+            "lcd_frame": 8,
+            "elapsed_tcycles": 1123576,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 5,
+              "object_step_duration": 6
+            }
+          },
+          {
+            "lcd_frame": 10,
+            "elapsed_tcycles": 1404472,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 160,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                62,
+                0,
+                0
+              ],
+              "facing": 5,
+              "object_step_duration": 7
+            }
+          },
+          {
+            "lcd_frame": 12,
+            "elapsed_tcycles": 1685376,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                254
+              ],
+              "object_pixels_offsets": [
+                64,
+                60,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 13,
+            "elapsed_tcycles": 1825824,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                252
+              ],
+              "object_pixels_offsets": [
+                64,
+                60,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 14,
+            "elapsed_tcycles": 1966268,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                252
+              ],
+              "object_pixels_offsets": [
+                64,
+                58,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 16,
+            "elapsed_tcycles": 2247164,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                250
+              ],
+              "object_pixels_offsets": [
+                64,
+                56,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 17,
+            "elapsed_tcycles": 2387620,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                248
+              ],
+              "object_pixels_offsets": [
+                64,
+                56,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 18,
+            "elapsed_tcycles": 2528056,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                248
+              ],
+              "object_pixels_offsets": [
+                64,
+                54,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 19,
+            "elapsed_tcycles": 2668516,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                246
+              ],
+              "object_pixels_offsets": [
+                64,
+                54,
+                0,
+                0
+              ],
+              "facing": 6,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 20,
+            "elapsed_tcycles": 2808952,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                246
+              ],
+              "object_pixels_offsets": [
+                64,
+                52,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 21,
+            "elapsed_tcycles": 2949408,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                244
+              ],
+              "object_pixels_offsets": [
+                64,
+                52,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 22,
+            "elapsed_tcycles": 3089856,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                244
+              ],
+              "object_pixels_offsets": [
+                64,
+                50,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 23,
+            "elapsed_tcycles": 3230296,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                242
+              ],
+              "object_pixels_offsets": [
+                64,
+                50,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 24,
+            "elapsed_tcycles": 3370744,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                242
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 25,
+            "elapsed_tcycles": 3511204,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 26,
+            "elapsed_tcycles": 3651640,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 7,
+              "object_step_duration": 15
+            }
+          }
+        ],
+        "native_camera_updates": [
+          {
+            "lcd_frame": 12,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 13,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 16,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 17,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 19,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 21,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 23,
+            "delta": [
+              0,
+              -2
+            ]
+          },
+          {
+            "lcd_frame": 25,
+            "delta": [
+              0,
+              -2
+            ]
+          }
+        ],
+        "eight_native_2px_updates_per_16px_step": true
+      },
+      {
+        "elapsed_tcycles": 3651652,
+        "cpu_speed_KEY1": 128,
+        "cpu_double_speed": true,
+        "functions": {
+          "HandleMapObjects": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3391080,
+              "min": 184540,
+              "median": 281824.0,
+              "mean": 282590,
+              "max": 344348
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "_UpdateSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1990612,
+              "min": 138956,
+              "median": 144682.0,
+              "mean": 165884.33333333334,
+              "max": 266184
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 13,
+              "min": 1,
+              "median": 1.0,
+              "mean": 1.0833333333333333,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 116048,
+              "min": 7220,
+              "median": 8388.0,
+              "mean": 9670.666666666666,
+              "max": 16268
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1654236,
+              "min": 130968,
+              "median": 136430.0,
+              "mean": 137853,
+              "max": 150240
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3392884,
+              "min": 170128,
+              "median": 280480.0,
+              "mean": 282740.3333333333,
+              "max": 468572
+            },
+            "inclusive_share_of_sample": 0.5451264249714923
+          },
+          "InitSprites": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1932472,
+              "min": 126976,
+              "median": 143330.0,
+              "mean": 161039.33333333334,
+              "max": 264676
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 13,
+              "min": 1,
+              "median": 1.0,
+              "mean": 1.0833333333333333,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 116048,
+              "min": 7220,
+              "median": 8388.0,
+              "mean": 9670.666666666666,
+              "max": 16268
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1596096,
+              "min": 119028,
+              "median": 134128.0,
+              "mean": 133008,
+              "max": 148828
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3392884,
+              "min": 170236,
+              "median": 280480.0,
+              "mean": 282740.3333333333,
+              "max": 468572
+            },
+            "inclusive_share_of_sample": 0.5292048639903255
+          },
+          "PeonDrawPlayerHUD": {
+            "calls": 13,
+            "completed_calls": 13,
+            "inclusive_tcycles": {
+              "samples": 13,
+              "sum": 45912,
+              "min": 264,
+              "median": 372,
+              "mean": 3531.6923076923076,
+              "max": 14128
+            },
+            "inclusive_lcd_frames": {
+              "samples": 13,
+              "sum": 0,
+              "min": 0,
+              "median": 0,
+              "mean": 0,
+              "max": 0
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 13,
+              "sum": 0,
+              "min": 0,
+              "median": 0,
+              "mean": 0,
+              "max": 0
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 13,
+              "sum": 45912,
+              "min": 264,
+              "median": 372,
+              "mean": 3531.6923076923076,
+              "max": 14128
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3337260,
+              "min": 165428,
+              "median": 280116.0,
+              "mean": 278105,
+              "max": 470676
+            },
+            "inclusive_share_of_sample": 0.012572939590081421
+          },
+          "PeonInitLargeWorldSpritesV0215": {
+            "calls": 13,
+            "completed_calls": 12,
+            "inclusive_tcycles": {
+              "samples": 12,
+              "sum": 1930720,
+              "min": 126848,
+              "median": 143148.0,
+              "mean": 160893.33333333334,
+              "max": 264548
+            },
+            "inclusive_lcd_frames": {
+              "samples": 12,
+              "sum": 13,
+              "min": 1,
+              "median": 1.0,
+              "mean": 1.0833333333333333,
+              "max": 2
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 12,
+              "sum": 116048,
+              "min": 7220,
+              "median": 8388.0,
+              "mean": 9670.666666666666,
+              "max": 16268
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 12,
+              "sum": 1594344,
+              "min": 118900,
+              "median": 134000.0,
+              "mean": 132862,
+              "max": 148700
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3392884,
+              "min": 170236,
+              "median": 280480.0,
+              "mean": 282740.3333333333,
+              "max": 468572
+            },
+            "inclusive_share_of_sample": 0.5287250811413574
+          },
+          "PeonUploadLargeWorldFrameGDMAHomeV0215": {
+            "calls": 3,
+            "completed_calls": 3,
+            "inclusive_tcycles": {
+              "samples": 3,
+              "sum": 252452,
+              "min": 64656,
+              "median": 76120,
+              "mean": 84150.66666666667,
+              "max": 111676
+            },
+            "inclusive_lcd_frames": {
+              "samples": 3,
+              "sum": 1,
+              "min": 0,
+              "median": 0,
+              "mean": 0.3333333333333333,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 3,
+              "sum": 30504,
+              "min": 7220,
+              "median": 7468,
+              "mean": 10168,
+              "max": 15816
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 3,
+              "sum": 1620,
+              "min": 432,
+              "median": 540,
+              "mean": 540,
+              "max": 648
+            },
+            "entry_interval_tcycles": {
+              "samples": 2,
+              "sum": 2244516,
+              "min": 1027256,
+              "median": 1122258.0,
+              "mean": 1122258,
+              "max": 1217260
+            },
+            "inclusive_share_of_sample": 0.06913364143133026
+          },
+          "HandleMapBackground": {
+            "calls": 13,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 12,
+              "sum": 3392992,
+              "min": 170128,
+              "median": 280480.0,
+              "mean": 282749.3333333333,
+              "max": 468572
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "DelayFrame": {
+            "calls": 14,
+            "completed_calls": 14,
+            "inclusive_tcycles": {
+              "samples": 14,
+              "sum": 1208364,
+              "min": 19028,
+              "median": 100542.0,
+              "mean": 86311.71428571429,
+              "max": 119040
+            },
+            "inclusive_lcd_frames": {
+              "samples": 14,
+              "sum": 7,
+              "min": 0,
+              "median": 0.5,
+              "mean": 0.5,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 14,
+              "sum": 131376,
+              "min": 7220,
+              "median": 9198.0,
+              "mean": 9384,
+              "max": 15816
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 14,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3350840,
+              "min": 165764,
+              "median": 210456,
+              "mean": 257756.92307692306,
+              "max": 551220
+            },
+            "inclusive_share_of_sample": 0.3309088598804048
+          },
+          "VBlank": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 234324,
+              "min": 7220,
+              "median": 8718.0,
+              "mean": 9012.461538461539,
+              "max": 15816
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 8,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.3076923076923077,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 234324,
+              "min": 7220,
+              "median": 8718.0,
+              "mean": 9012.461538461539,
+              "max": 15816
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511208,
+              "min": 140436,
+              "median": 140448,
+              "mean": 140448.32,
+              "max": 140460
+            },
+            "inclusive_share_of_sample": 0.06416931295753264
+          },
+          "_UpdateSound": {
+            "calls": 26,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511320,
+              "min": 138164,
+              "median": 140560,
+              "mean": 140452.8,
+              "max": 142280
+            },
+            "inclusive_share_of_sample": 0.0
+          },
+          "GameTimer": {
+            "calls": 26,
+            "completed_calls": 26,
+            "inclusive_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "inclusive_lcd_frames": {
+              "samples": 26,
+              "sum": 1,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0.038461538461538464,
+              "max": 1
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 26,
+              "sum": 7128,
+              "min": 272,
+              "median": 272.0,
+              "mean": 274.15384615384613,
+              "max": 328
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 26,
+              "sum": 0,
+              "min": 0,
+              "median": 0.0,
+              "mean": 0,
+              "max": 0
+            },
+            "entry_interval_tcycles": {
+              "samples": 25,
+              "sum": 3511320,
+              "min": 133236,
+              "median": 140560,
+              "mean": 140452.8,
+              "max": 146760
+            },
+            "inclusive_share_of_sample": 0.0019519932348427507
+          },
+          "MobileTimer": {
+            "calls": 14,
+            "completed_calls": 0,
+            "inclusive_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "inclusive_lcd_frames": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "VBlank_interrupt_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "outside_DelayFrame_and_VBlank_tcycles": {
+              "samples": 0,
+              "sum": 0,
+              "min": null,
+              "median": null,
+              "mean": null,
+              "max": null
+            },
+            "entry_interval_tcycles": {
+              "samples": 13,
+              "sum": 3407872,
+              "min": 260388,
+              "median": 262144,
+              "mean": 262144,
+              "max": 263900
+            },
+            "inclusive_share_of_sample": 0.0
+          }
+        },
+        "inflight_calls_excluded": 3,
+        "hook_errors": [],
+        "key": "down",
+        "before": [
+          10,
+          11
+        ],
+        "after": [
+          10,
+          12
+        ],
+        "lcd_frames_to_first_motion": 10,
+        "lcd_frames_to_first_facing_change": 4,
+        "native_direction_change_script_frames": 6,
+        "lcd_frames_to_first_camera_motion": 12,
+        "lcd_frames_to_tile_coord_change": 24,
+        "lcd_frames_to_step_flags_clear": 26,
+        "motion_changes": [
+          {
+            "lcd_frame": 1,
+            "elapsed_tcycles": 140452,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 4,
+              "object_step_duration": 0
+            }
+          },
+          {
+            "lcd_frame": 2,
+            "elapsed_tcycles": 280900,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 4,
+              "object_step_duration": 3
+            }
+          },
+          {
+            "lcd_frame": 4,
+            "elapsed_tcycles": 561792,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 1,
+              "object_step_duration": 4
+            }
+          },
+          {
+            "lcd_frame": 6,
+            "elapsed_tcycles": 842692,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 9,
+              "native_script_mode": 3,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 1,
+              "object_step_duration": 5
+            }
+          },
+          {
+            "lcd_frame": 8,
+            "elapsed_tcycles": 1123600,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                48,
+                0,
+                0
+              ],
+              "facing": 1,
+              "object_step_duration": 6
+            }
+          },
+          {
+            "lcd_frame": 10,
+            "elapsed_tcycles": 1404488,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 160,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                240
+              ],
+              "object_pixels_offsets": [
+                64,
+                50,
+                0,
+                0
+              ],
+              "facing": 1,
+              "object_step_duration": 7
+            }
+          },
+          {
+            "lcd_frame": 12,
+            "elapsed_tcycles": 1685376,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                242
+              ],
+              "object_pixels_offsets": [
+                64,
+                52,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 8
+            }
+          },
+          {
+            "lcd_frame": 14,
+            "elapsed_tcycles": 1966272,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                244
+              ],
+              "object_pixels_offsets": [
+                64,
+                54,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 15,
+            "elapsed_tcycles": 2106732,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                246
+              ],
+              "object_pixels_offsets": [
+                64,
+                54,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 9
+            }
+          },
+          {
+            "lcd_frame": 16,
+            "elapsed_tcycles": 2247180,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                246
+              ],
+              "object_pixels_offsets": [
+                64,
+                56,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 17,
+            "elapsed_tcycles": 2387628,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                248
+              ],
+              "object_pixels_offsets": [
+                64,
+                56,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 10
+            }
+          },
+          {
+            "lcd_frame": 18,
+            "elapsed_tcycles": 2528068,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                248
+              ],
+              "object_pixels_offsets": [
+                64,
+                58,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 19,
+            "elapsed_tcycles": 2668516,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                250
+              ],
+              "object_pixels_offsets": [
+                64,
+                58,
+                0,
+                0
+              ],
+              "facing": 2,
+              "object_step_duration": 11
+            }
+          },
+          {
+            "lcd_frame": 20,
+            "elapsed_tcycles": 2808964,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                250
+              ],
+              "object_pixels_offsets": [
+                64,
+                60,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 21,
+            "elapsed_tcycles": 2949412,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                252
+              ],
+              "object_pixels_offsets": [
+                64,
+                60,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 12
+            }
+          },
+          {
+            "lcd_frame": 22,
+            "elapsed_tcycles": 3089864,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                252
+              ],
+              "object_pixels_offsets": [
+                64,
+                62,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 23,
+            "elapsed_tcycles": 3230304,
+            "state": {
+              "xy": [
+                10,
+                11
+              ],
+              "step_flags": 32,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                254
+              ],
+              "object_pixels_offsets": [
+                64,
+                62,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 13
+            }
+          },
+          {
+            "lcd_frame": 24,
+            "elapsed_tcycles": 3370752,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                254
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 25,
+            "elapsed_tcycles": 3511212,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 96,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 14
+            }
+          },
+          {
+            "lcd_frame": 26,
+            "elapsed_tcycles": 3651652,
+            "state": {
+              "xy": [
+                10,
+                12
+              ],
+              "step_flags": 0,
+              "native_player_event": 0,
+              "native_script_mode": 0,
+              "camera_SCX_SCY": [
+                0,
+                0
+              ],
+              "object_pixels_offsets": [
+                64,
+                64,
+                0,
+                0
+              ],
+              "facing": 3,
+              "object_step_duration": 15
+            }
+          }
+        ],
+        "native_camera_updates": [
+          {
+            "lcd_frame": 12,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 14,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 15,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 17,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 19,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 21,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 23,
+            "delta": [
+              0,
+              2
+            ]
+          },
+          {
+            "lcd_frame": 25,
+            "delta": [
+              0,
+              2
+            ]
+          }
+        ],
+        "eight_native_2px_updates_per_16px_step": true
+      }
+    ],
+    "den_dense_idle": {
+      "elapsed_tcycles": 33707512,
+      "cpu_speed_KEY1": 128,
+      "cpu_double_speed": true,
+      "functions": {
+        "HandleMapObjects": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426396,
+            "min": 273428,
+            "median": 280880,
+            "mean": 280894.08403361344,
+            "max": 288188
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "_UpdateSprites": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 17343776,
+            "min": 144436,
+            "median": 145504,
+            "mean": 145746.01680672268,
+            "max": 156348
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1069100,
+            "min": 7948,
+            "median": 8800,
+            "mean": 8984.033613445377,
+            "max": 19536
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 16274676,
+            "min": 136488,
+            "median": 136788,
+            "mean": 136761.98319327732,
+            "max": 136896
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426396,
+            "min": 273428,
+            "median": 280880,
+            "mean": 280894.08403361344,
+            "max": 288188
+          },
+          "inclusive_share_of_sample": 0.5145374123133146
+        },
+        "InitSprites": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 17167780,
+            "min": 143012,
+            "median": 144000,
+            "mean": 144267.0588235294,
+            "max": 154948
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1069100,
+            "min": 7948,
+            "median": 8800,
+            "mean": 8984.033613445377,
+            "max": 19536
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 16098680,
+            "min": 134980,
+            "median": 135280,
+            "mean": 135283.02521008404,
+            "max": 135496
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426288,
+            "min": 273320,
+            "median": 280880,
+            "mean": 280893.17647058825,
+            "max": 288188
+          },
+          "inclusive_share_of_sample": 0.5093161429416683
+        },
+        "PeonDrawPlayerHUD": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 48276,
+            "min": 360,
+            "median": 360.0,
+            "mean": 402.3,
+            "max": 468
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 48276,
+            "min": 360,
+            "median": 360.0,
+            "mean": 402.3,
+            "max": 468
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33431520,
+            "min": 269160,
+            "median": 280964,
+            "mean": 280937.14285714284,
+            "max": 292076
+          },
+          "inclusive_share_of_sample": 0.0014322030056682913
+        },
+        "PeonInitLargeWorldSpritesV0215": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 17151684,
+            "min": 142884,
+            "median": 143872,
+            "mean": 144131.79831932773,
+            "max": 154820
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1069100,
+            "min": 7948,
+            "median": 8800,
+            "mean": 8984.033613445377,
+            "max": 19536
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 16082584,
+            "min": 134852,
+            "median": 135152,
+            "mean": 135147.76470588235,
+            "max": 135284
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426288,
+            "min": 273320,
+            "median": 280880,
+            "mean": 280893.17647058825,
+            "max": 288188
+          },
+          "inclusive_share_of_sample": 0.5088386232718689
+        },
+        "HandleMapBackground": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426396,
+            "min": 273428,
+            "median": 280880,
+            "mean": 280894.08403361344,
+            "max": 288188
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "DelayFrame": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 10911420,
+            "min": 79672,
+            "median": 91248.0,
+            "mean": 90928.5,
+            "max": 98508
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 34,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.2833333333333333,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 1092204,
+            "min": 8532,
+            "median": 8704.0,
+            "mean": 9101.7,
+            "max": 15764
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33431520,
+            "min": 269160,
+            "median": 280980,
+            "mean": 280937.14285714284,
+            "max": 292076
+          },
+          "inclusive_share_of_sample": 0.32370885160554125
+        },
+        "VBlank": {
+          "calls": 240,
+          "completed_calls": 240,
+          "inclusive_tcycles": {
+            "samples": 240,
+            "sum": 2170104,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 9042.1,
+            "max": 19536
+          },
+          "inclusive_lcd_frames": {
+            "samples": 240,
+            "sum": 37,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.15416666666666667,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 240,
+            "sum": 2170104,
+            "min": 7948,
+            "median": 8800.0,
+            "mean": 9042.1,
+            "max": 19536
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 240,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33567076,
+            "min": 140440,
+            "median": 140448,
+            "mean": 140448.01673640168,
+            "max": 140456
+          },
+          "inclusive_share_of_sample": 0.06438042653518895
+        },
+        "_UpdateSound": {
+          "calls": 240,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33567188,
+            "min": 138976,
+            "median": 140560,
+            "mean": 140448.48535564853,
+            "max": 141148
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "GameTimer": {
+          "calls": 240,
+          "completed_calls": 240,
+          "inclusive_tcycles": {
+            "samples": 240,
+            "sum": 65504,
+            "min": 272,
+            "median": 272.0,
+            "mean": 272.93333333333334,
+            "max": 328
+          },
+          "inclusive_lcd_frames": {
+            "samples": 240,
+            "sum": 6,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.025,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 240,
+            "sum": 65504,
+            "min": 272,
+            "median": 272.0,
+            "mean": 272.93333333333334,
+            "max": 328
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 240,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33566944,
+            "min": 129444,
+            "median": 140560,
+            "mean": 140447.46443514645,
+            "max": 151052
+          },
+          "inclusive_share_of_sample": 0.0019433056939948579
+        },
+        "MobileTimer": {
+          "calls": 128,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 127,
+            "sum": 33292288,
+            "min": 250092,
+            "median": 262144,
+            "mean": 262144,
+            "max": 274240
+          },
+          "inclusive_share_of_sample": 0.0
+        }
+      },
+      "inflight_calls_excluded": 3,
+      "hook_errors": [],
+      "label": "den_dense_idle",
+      "lcd_frames": 240,
+      "before": [
+        10,
+        11
+      ],
+      "after": [
+        10,
+        11
+      ],
+      "sound_updates_per_lcd_frame": 1.0,
+      "game_time_frame_delta": 240,
+      "complete_GameTimer_calls": 240,
+      "each_GameTimer_increment_exactly_one_frame": true,
+      "LCD_boundary_may_precede_final_GameTimer_by_one_IRQ": false,
+      "mobile_mode_inactive": true,
+      "hardware_RTC_or_serial_link_not_tested": true,
+      "maximum_visible_oam": 37,
+      "maximum_objects_per_scanline": 4
+    },
+    "three_masters_idle": {
+      "elapsed_tcycles": 33707520,
+      "cpu_speed_KEY1": 128,
+      "cpu_double_speed": true,
+      "functions": {
+        "HandleMapObjects": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426624,
+            "min": 273172,
+            "median": 280896,
+            "mean": 280896,
+            "max": 288536
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "_UpdateSprites": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 14373172,
+            "min": 120056,
+            "median": 120440,
+            "mean": 120782.95798319328,
+            "max": 131260
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1001740,
+            "min": 7832,
+            "median": 7988,
+            "mean": 8417.98319327731,
+            "max": 18724
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 13371432,
+            "min": 112152,
+            "median": 112452,
+            "mean": 112364.97478991597,
+            "max": 112584
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426624,
+            "min": 273172,
+            "median": 280896,
+            "mean": 280896,
+            "max": 288536
+          },
+          "inclusive_share_of_sample": 0.4264084690893901
+        },
+        "InitSprites": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 14214648,
+            "min": 118680,
+            "median": 119136,
+            "mean": 119450.82352941176,
+            "max": 129956
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1001740,
+            "min": 7832,
+            "median": 7988,
+            "mean": 8417.98319327731,
+            "max": 18724
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 13212908,
+            "min": 110848,
+            "median": 111148,
+            "mean": 111032.84033613445,
+            "max": 111280
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426624,
+            "min": 273064,
+            "median": 280896,
+            "mean": 280896,
+            "max": 288644
+          },
+          "inclusive_share_of_sample": 0.42170554226475276
+        },
+        "PeonDrawPlayerHUD": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 38052,
+            "min": 264,
+            "median": 264.0,
+            "mean": 317.1,
+            "max": 372
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 38052,
+            "min": 264,
+            "median": 264.0,
+            "mean": 317.1,
+            "max": 372
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426692,
+            "min": 269660,
+            "median": 280948,
+            "mean": 280896.5714285714,
+            "max": 291664
+          },
+          "inclusive_share_of_sample": 0.0011288875598086125
+        },
+        "PeonInitLargeWorldSpritesV0215": {
+          "calls": 120,
+          "completed_calls": 119,
+          "inclusive_tcycles": {
+            "samples": 119,
+            "sum": 14199200,
+            "min": 118552,
+            "median": 119008,
+            "mean": 119321.00840336134,
+            "max": 129828
+          },
+          "inclusive_lcd_frames": {
+            "samples": 119,
+            "sum": 119,
+            "min": 1,
+            "median": 1,
+            "mean": 1,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 119,
+            "sum": 1001740,
+            "min": 7832,
+            "median": 7988,
+            "mean": 8417.98319327731,
+            "max": 18724
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 119,
+            "sum": 13197460,
+            "min": 110720,
+            "median": 111020,
+            "mean": 110903.02521008403,
+            "max": 111152
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426624,
+            "min": 273064,
+            "median": 280896,
+            "mean": 280896,
+            "max": 288644
+          },
+          "inclusive_share_of_sample": 0.42124724690514165
+        },
+        "HandleMapBackground": {
+          "calls": 120,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426624,
+            "min": 273172,
+            "median": 280896,
+            "mean": 280896,
+            "max": 288536
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "DelayFrame": {
+          "calls": 120,
+          "completed_calls": 120,
+          "inclusive_tcycles": {
+            "samples": 120,
+            "sum": 15245688,
+            "min": 116432,
+            "median": 127376.0,
+            "mean": 127047.4,
+            "max": 134980
+          },
+          "inclusive_lcd_frames": {
+            "samples": 120,
+            "sum": 3,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0.025,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 120,
+            "sum": 1058448,
+            "min": 8532,
+            "median": 8688.0,
+            "mean": 8820.4,
+            "max": 16220
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 120,
+            "sum": 0,
+            "min": 0,
+            "median": 0.0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 119,
+            "sum": 33426692,
+            "min": 269552,
+            "median": 280948,
+            "mean": 280896.5714285714,
+            "max": 291664
+          },
+          "inclusive_share_of_sample": 0.452293375484165
+        },
+        "VBlank": {
+          "calls": 240,
+          "completed_calls": 239,
+          "inclusive_tcycles": {
+            "samples": 239,
+            "sum": 2060188,
+            "min": 7832,
+            "median": 8604,
+            "mean": 8620.033472803347,
+            "max": 18724
+          },
+          "inclusive_lcd_frames": {
+            "samples": 239,
+            "sum": 8,
+            "min": 0,
+            "median": 0,
+            "mean": 0.03347280334728033,
+            "max": 1
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 239,
+            "sum": 2060188,
+            "min": 7832,
+            "median": 8604,
+            "mean": 8620.033472803347,
+            "max": 18724
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 239,
+            "sum": 0,
+            "min": 0,
+            "median": 0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33567072,
+            "min": 140440,
+            "median": 140448,
+            "mean": 140448,
+            "max": 140456
+          },
+          "inclusive_share_of_sample": 0.06111953653072074
+        },
+        "_UpdateSound": {
+          "calls": 240,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 239,
+            "sum": 33566372,
+            "min": 139732,
+            "median": 139772,
+            "mean": 140445.07112970712,
+            "max": 141164
+          },
+          "inclusive_share_of_sample": 0.0
+        },
+        "GameTimer": {
+          "calls": 239,
+          "completed_calls": 239,
+          "inclusive_tcycles": {
+            "samples": 239,
+            "sum": 65288,
+            "min": 272,
+            "median": 272,
+            "mean": 273.1715481171548,
+            "max": 384
+          },
+          "inclusive_lcd_frames": {
+            "samples": 239,
+            "sum": 0,
+            "min": 0,
+            "median": 0,
+            "mean": 0,
+            "max": 0
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 239,
+            "sum": 65288,
+            "min": 272,
+            "median": 272,
+            "mean": 273.1715481171548,
+            "max": 384
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 239,
+            "sum": 0,
+            "min": 0,
+            "median": 0,
+            "mean": 0,
+            "max": 0
+          },
+          "entry_interval_tcycles": {
+            "samples": 238,
+            "sum": 33426624,
+            "min": 130256,
+            "median": 140448.0,
+            "mean": 140448,
+            "max": 150484
+          },
+          "inclusive_share_of_sample": 0.001936897167160325
+        },
+        "MobileTimer": {
+          "calls": 128,
+          "completed_calls": 0,
+          "inclusive_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "inclusive_lcd_frames": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "VBlank_interrupt_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "outside_DelayFrame_and_VBlank_tcycles": {
+            "samples": 0,
+            "sum": 0,
+            "min": null,
+            "median": null,
+            "mean": null,
+            "max": null
+          },
+          "entry_interval_tcycles": {
+            "samples": 127,
+            "sum": 33292216,
+            "min": 256532,
+            "median": 262144,
+            "mean": 262143.43307086613,
+            "max": 267756
+          },
+          "inclusive_share_of_sample": 0.0
+        }
+      },
+      "inflight_calls_excluded": 4,
+      "hook_errors": [],
+      "label": "three_masters_idle",
+      "lcd_frames": 240,
+      "before": [
+        5,
+        5
+      ],
+      "after": [
+        5,
+        5
+      ],
+      "sound_updates_per_lcd_frame": 1.0,
+      "game_time_frame_delta": 239,
+      "complete_GameTimer_calls": 239,
+      "each_GameTimer_increment_exactly_one_frame": true,
+      "LCD_boundary_may_precede_final_GameTimer_by_one_IRQ": true,
+      "mobile_mode_inactive": true,
+      "hardware_RTC_or_serial_link_not_tested": true,
+      "maximum_visible_oam": 40,
+      "maximum_objects_per_scanline": 7
+    }
+  },
+  "compiled_tables": {
+    "present": true,
+    "ordinary_descriptor_entries": 31,
+    "all_256_pointers_exact": true,
+    "same_renderer_rom_bank": true,
+    "walk_flags_boolean": true,
+    "enabled_sprite_ids": [
+      1,
+      5,
+      6,
+      9,
+      13,
+      35,
+      36,
+      39,
+      40,
+      44,
+      46,
+      56,
+      57,
+      58,
+      62,
+      64,
+      65,
+      67,
+      96,
+      105
+    ],
+    "retained_legacy_npc_gaits": true
+  }
+}

@@ -1,5 +1,21 @@
 # Peon of Warcraft — Durotar prototype
 
+[ROM v0.2.20](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.20/releases/v0.2.20/peon_of_warcraft_v0_2_20.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.20/releases/v0.2.20/peon_of_warcraft_v0_2_20.zip) · [Personnages détaillés et fluidité](docs/V0220_NATIVE_WORLD_AND_FLUIDITY.md)
+
+Les humanoïdes du monde utilisent une vraie grille **32 × 32**, avec de
+nouvelles silhouettes, des visages lisibles, des équipements distincts et
+deux pas dessinés par direction. Les créatures approuvées, dont le sanglier
+et les Kolkar, gardent leurs paquets natifs **24 × 24**. Le sol et les chemins
+suivent uniformément la référence ocre choisie.
+
+Le CPU CGB fonctionne en double vitesse. Dans les trois scènes mesurées,
+le monde passe de 15 à 30 mises à jour par seconde. Les captures LCD,
+les contrôles des trois classes et des sauvegardes sont réunis dans les
+[rapports v20](references/generated/v0220/validation.json).
+Build : `python3 tools/build_peon_v0220.py`.
+
+## v0.2.19 archive
+
 [ROM v0.2.19](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.19/releases/v0.2.19/peon_of_warcraft_v0_2_19.gbc) · [Téléchargement ZIP](https://raw.githubusercontent.com/GASPARDWALT/peon-of-warcraft/refs/heads/codex/peon-v0.2.19/releases/v0.2.19/peon_of_warcraft_v0_2_19.zip) · [Silhouettes restaurées et maîtres illustrés](docs/V0219_RESTORED_WORLD_AND_MASTERS.md)
 
 Les personnages du monde retrouvent les silhouettes historiques lisibles du

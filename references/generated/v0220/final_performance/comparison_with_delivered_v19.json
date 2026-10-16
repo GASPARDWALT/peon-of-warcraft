@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "method": "Compare separate read-only ordinary-input emulator reports; emulated LCD cadence, never host FPS. Fixed native profiling boundaries in both reports. Older v19 report lacks newer camera/audio observers; camera and audio assertions below apply to v20 only.",
+  "v19_rom_sha256": "b91b687630810108452f3ff69a1e6cb9e9a2439ea745386adbebe29da80a0527",
+  "v20_rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "v19_source_report_sha256": "9397a2335f8c2e3fae6c43ae5500189c748f9725b1bd3c8021474c54a6ae8977",
+  "v20_source_report_sha256": "710e2f1ea89176b09ff7608b03ffd54a99973cdba5b77531ed40bd1b1536f001",
+  "idle_samples": {
+    "den_spawn_idle": {
+      "LCD_frames_per_report": 240,
+      "v19_world_updates": 60,
+      "v20_world_updates": 120,
+      "v19_world_Hz": 15.0,
+      "v20_world_Hz": 30.0,
+      "v20_sound_updates_per_LCD_frame": 1.0,
+      "v20_clock_frames": 240,
+      "v20_every_complete_clock_IRQ_incremented_once": true,
+      "v20_OAM_max": 39,
+      "v20_scanline_max": 8
+    },
+    "den_dense_idle": {
+      "LCD_frames_per_report": 240,
+      "v19_world_updates": 60,
+      "v20_world_updates": 120,
+      "v19_world_Hz": 15.0,
+      "v20_world_Hz": 30.0,
+      "v20_sound_updates_per_LCD_frame": 1.0,
+      "v20_clock_frames": 240,
+      "v20_every_complete_clock_IRQ_incremented_once": true,
+      "v20_OAM_max": 37,
+      "v20_scanline_max": 4
+    },
+    "three_masters_idle": {
+      "LCD_frames_per_report": 240,
+      "v19_world_updates": 60,
+      "v20_world_updates": 120,
+      "v19_world_Hz": 15.0,
+      "v20_world_Hz": 30.0,
+      "v20_sound_updates_per_LCD_frame": 1.0,
+      "v20_clock_frames": 239,
+      "v20_every_complete_clock_IRQ_incremented_once": true,
+      "v20_OAM_max": 40,
+      "v20_scanline_max": 7
+    }
+  },
+  "native_steps": [
+    {
+      "direction": "left",
+      "v19_LCD_frames_until_tile_coordinate_change": 49,
+      "v20_LCD_frames_until_tile_coordinate_change": 25,
+      "v19_LCD_frames_until_first_camera_motion": 25,
+      "v20_LCD_frames_until_first_camera_motion": 13,
+      "v20_camera_updates": 8,
+      "v20_camera_update_intervals_in_LCD_frames": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "v20_native_camera_step_px": 2,
+      "v20_sound_updates": 27,
+      "v20_LCD_frames_observed": 27,
+      "v20_sound_one_update_per_LCD_frame": true
+    },
+    {
+      "direction": "right",
+      "v19_LCD_frames_until_tile_coordinate_change": 48,
+      "v20_LCD_frames_until_tile_coordinate_change": 24,
+      "v19_LCD_frames_until_first_camera_motion": 24,
+      "v20_LCD_frames_until_first_camera_motion": 12,
+      "v20_camera_updates": 8,
+      "v20_camera_update_intervals_in_LCD_frames": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "v20_native_camera_step_px": 2,
+      "v20_sound_updates": 26,
+      "v20_LCD_frames_observed": 26,
+      "v20_sound_one_update_per_LCD_frame": true
+    },
+    {
+      "direction": "up",
+      "v19_LCD_frames_until_tile_coordinate_change": 53,
+      "v20_LCD_frames_until_tile_coordinate_change": 24,
+      "v19_LCD_frames_until_first_camera_motion": 27,
+      "v20_LCD_frames_until_first_camera_motion": 12,
+      "v20_camera_updates": 8,
+      "v20_camera_update_intervals_in_LCD_frames": [
+        1,
+        3,
+        1,
+        2,
+        2,
+        2,
+        2
+      ],
+      "v20_native_camera_step_px": 2,
+      "v20_sound_updates": 26,
+      "v20_LCD_frames_observed": 26,
+      "v20_sound_one_update_per_LCD_frame": true
+    },
+    {
+      "direction": "down",
+      "v19_LCD_frames_until_tile_coordinate_change": 54,
+      "v20_LCD_frames_until_tile_coordinate_change": 24,
+      "v19_LCD_frames_until_first_camera_motion": 27,
+      "v20_LCD_frames_until_first_camera_motion": 12,
+      "v20_camera_updates": 8,
+      "v20_camera_update_intervals_in_LCD_frames": [
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "v20_native_camera_step_px": 2,
+      "v20_sound_updates": 26,
+      "v20_LCD_frames_observed": 26,
+      "v20_sound_one_update_per_LCD_frame": true
+    }
+  ],
+  "physical_hardware_tested": false,
+  "four_step_total_LCD_frames": {
+    "v19": 204,
+    "v20": 97,
+    "reduction_fraction": 0.5245098039215687
+  },
+  "camera_phase_note": "Idle logic updates are30Hz in the three samples. Walking camera intervals include1/3LCDframe phase jitter around the usual2; this report does not claim perfectly uniform30Hz walking."
+}

@@ -1,0 +1,195 @@
+{
+  "shaman": {},
+  "base": {},
+  "warrior": {
+    "left": {
+      "dx_native_pixels": -1,
+      "dy_native_pixels": 0,
+      "same_shift_all_three_poses": true,
+      "silhouette_alpha_translated_without_cropping_resizing_or_erasure": true,
+      "native_material_attributes_refit_to_shifted8x8_tiles": true,
+      "purpose": "Natural tile-grid alignment admits the entire body with the three9tile masters inside40OAM.",
+      "before_oam": 14,
+      "after_oam": [
+        13,
+        13,
+        13
+      ]
+    }
+  },
+  "warlock": {
+    "back": {
+      "dx_native_pixels": -2,
+      "dy_native_pixels": 0,
+      "same_shift_all_three_poses": true,
+      "silhouette_alpha_translated_without_cropping_resizing_or_erasure": true,
+      "native_material_attributes_refit_to_shifted8x8_tiles": true,
+      "purpose": "Natural tile-grid alignment admits the entire body with the three9tile masters inside40OAM.",
+      "before_oam": 14,
+      "after_oam": [
+        13,
+        13,
+        13
+      ]
+    },
+    "left": {
+      "dx_native_pixels": -1,
+      "dy_native_pixels": 0,
+      "same_shift_all_three_poses": true,
+      "silhouette_alpha_translated_without_cropping_resizing_or_erasure": true,
+      "native_material_attributes_refit_to_shifted8x8_tiles": true,
+      "purpose": "Natural tile-grid alignment admits the entire body with the three9tile masters inside40OAM.",
+      "before_oam": 14,
+      "after_oam": [
+        12,
+        12,
+        12
+      ]
+    },
+    "right": {
+      "prior_full32_search_minimum_oam": 14,
+      "whole_source_alternative_native_body_dimensions": [
+        26,
+        31
+      ],
+      "source_raster_resampled_directly_to31_not_from_old_native32": true,
+      "no_source_anatomy_crop_or_feature_erasure": true,
+      "native_canvas_dimensions": [
+        32,
+        32
+      ],
+      "native_offset": [
+        6,
+        0
+      ],
+      "native_x_alignment_from_centered31_fit": 3,
+      "native_y_alignment_top_pad": 0,
+      "native_empty_bottom_rows": 1,
+      "same_alignment_all_three_poses": true,
+      "face_source_ivory_landmarks_retained": [
+        {
+          "source_component_opaque_pixels": 121,
+          "source_bbox": [
+            138,
+            121,
+            148,
+            137
+          ],
+          "source_component_centroid": [
+            141.92561983471074,
+            128.1404958677686
+          ],
+          "native_cells": [
+            [
+              20,
+              12
+            ],
+            [
+              20,
+              13
+            ]
+          ],
+          "rule": "Actual source ivory component in detected green face; native footprint overlap>=20%, otherwise its supported centroid cell. Native alpha unchanged; no new source feature."
+        },
+        {
+          "source_component_opaque_pixels": 51,
+          "source_bbox": [
+            140,
+            142,
+            148,
+            151
+          ],
+          "source_component_centroid": [
+            143.5686274509804,
+            146.7450980392157
+          ],
+          "native_cells": [
+            [
+              20,
+              14
+            ]
+          ],
+          "rule": "Actual source ivory component in detected green face; native footprint overlap>=20%, otherwise its supported centroid cell. Native alpha unchanged; no new source feature."
+        }
+      ],
+      "all_three_pose_oam": [
+        13,
+        13,
+        13
+      ],
+      "foot_edit_regions": [
+        [
+          8,
+          29,
+          15,
+          31
+        ],
+        [
+          17,
+          29,
+          24,
+          31
+        ]
+      ],
+      "finite31_fit_x_alignment_search": [
+        {
+          "dx": -3,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": -2,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": -1,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": 0,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": 1,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": 2,
+          "oam_all3": [
+            14,
+            14,
+            14
+          ]
+        },
+        {
+          "dx": 3,
+          "oam_all3": [
+            13,
+            13,
+            13
+          ]
+        }
+      ]
+    }
+  },
+  "sleeping": {}
+}

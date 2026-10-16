@@ -369,6 +369,16 @@ PeonUserWorldPaletteV0211:
 	push de
 	push hl
 	ld b, a
+	; Quest markers retain their native object palette. None has an actor
+	; override; avoid two full failed actor-table scans for every marker.
+	cp SPRITE_ROCKET
+	jr z, .absent
+	cp SPRITE_ROCKET_GIRL
+	jr z, .absent
+	cp SPRITE_SCIENTIST
+	jr z, .absent
+	cp SPRITE_POKEDEX
+	jr z, .absent
 	cp SPRITE_PEON_SHAMAN_MASTER_LARGE
 	jr nc, .absent
 	cp SPRITE_POKEFAN_M

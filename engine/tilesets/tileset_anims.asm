@@ -71,15 +71,77 @@ rept 6
 	add a
 endr
 	add e
+	if !DEF(PEON_ENVIRONMENT_TEST)
+	; This executes inside VBlank. Never farcall here: ReturnFarCall uses
+	; foreground scratch (wFarCallBC), so an interrupt would corrupt BC and
+	; potentially the caller's saved stack pointer. The local guard preserves
+	; BC/DE, the ROM bank and WRAM bank without touching that shared scratch.
+	push af
+	call PeonFireUsesUniformGroundV0220
+	jr c, .uniform_ground
+	pop af
+	endc
 	add LOW(PeonEnvironmentFireFrames)
 	ld l, a
 	ld a, 0
 	adc HIGH(PeonEnvironmentFireFrames)
 	ld h, a
+	if !DEF(PEON_ENVIRONMENT_TEST)
+	jr .write
+.uniform_ground
+	pop af
+	add LOW(PeonUniformEnvironmentFireFramesV0220)
+	ld l, a
+	ld a, 0
+	adc HIGH(PeonUniformEnvironmentFireFramesV0220)
+	ld h, a
+.write
+	endc
 	ld sp, hl
 	ld h, d
 	ld l, e
 	jp WriteTile
+
+IF !DEF(PEON_ENVIRONMENT_TEST)
+; Same thirteen exterior map IDs as PeonUsesExtendedNativeEnvironmentV0213.
+; Map headers are read in WRAM1 even when the interrupt arrived in a cache
+; bank. No ROM switch, farcall, temporary global or DE/HL mutation is needed.
+PeonFireUsesUniformGroundV0220:
+	push bc
+	ldh a, [rWBK]
+	ld c, a
+	ld a, BANK(wMapTileset)
+	ldh [rWBK], a
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr nz, .no
+	ld a, [wMapGroup]
+	cp GROUP_PEON_OPENING
+	jr nz, .no
+	ld a, [wMapNumber]
+	cp MAP_PEON_OPENING
+	jr z, .yes
+	cp MAP_THE_DEN
+	jr c, .no
+	cp MAP_BURNING_BLADE_CAVERN + 1
+	jr c, .yes
+	cp MAP_PEON_VALLEY_CROSSROADS
+	jr c, .no
+	cp MAP_PEON_VALLEY_EXIT + 1
+	jr nc, .no
+.yes
+	ld a, c
+	ldh [rWBK], a
+	pop bc
+	scf
+	ret
+.no
+	ld a, c
+	ldh [rWBK], a
+	pop bc
+	and a
+	ret
+ENDC
 
 PeonEnvironmentFireFrames:
 	if DEF(PEON_ENVIRONMENT_TEST)
@@ -88,6 +150,11 @@ PeonEnvironmentFireFrames:
 	INCBIN "gfx/tilesets/peon_environment_fire.bin"
 	endc
 	assert @ - PeonEnvironmentFireFrames == 3 * 4 * TILE_SIZE
+
+PeonUniformEnvironmentFireFramesV0220::
+	INCBIN "gfx/quieter_ground_v0220/fire_frames_world.bin"
+	assert @ - PeonUniformEnvironmentFireFramesV0220 == 3 * 4 * TILE_SIZE
+	assert BANK(PeonUniformEnvironmentFireFramesV0220) == BANK(AnimatePeonEnvironmentFire)
 
 ScrollTileRightLeft:
 ; Scroll right for 4 ticks, then left for 4 ticks.

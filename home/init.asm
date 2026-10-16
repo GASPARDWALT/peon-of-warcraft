@@ -149,7 +149,9 @@ Init::
 	ldh a, [hCGB]
 	and a
 	jr z, .no_double_speed
-	call NormalSpeed
+	; CGB CPU budget only: LCD/APU clocks and VBlank-driven game timing stay
+	; native. Switch once before IE_DEFAULT and InitSound, never in a frame.
+	call DoubleSpeed
 .no_double_speed
 
 	xor a

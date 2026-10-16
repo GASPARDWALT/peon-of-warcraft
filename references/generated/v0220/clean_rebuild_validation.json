@@ -1,0 +1,30 @@
+{
+  "version": "v0.2.20",
+  "status": "PASS",
+  "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+  "map_sha256": "d45f7a2a63441fb681fc1c746ce4be5cf11efc70495a928a583ea70575e2b4af",
+  "method": "git checkout-index of the staged source tree into a clean directory, followed by python3 tools/build_peon_v0220.py",
+  "source_index_tree": "17d166fe5308e9032fecbba737ea92ee87f18c0c",
+  "command_exit_code": 0,
+  "build_log_sha256": "ee9bfb959bf6910fdd79e1eb96c81f7babd6db98d665ada9df4d573c17ac15b3",
+  "historical_generator_outputs_frozen": 207,
+  "versioned_native_packets_frozen": 1029,
+  "artifacts": {
+    "gbc": {
+      "sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "bytes": 2097152,
+      "byte_exact_to_validated_artifact": true
+    },
+    "sym": {
+      "sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+      "bytes": 1972541,
+      "byte_exact_to_validated_artifact": true
+    },
+    "map": {
+      "sha256": "d45f7a2a63441fb681fc1c746ce4be5cf11efc70495a928a583ea70575e2b4af",
+      "bytes": 2635133,
+      "byte_exact_to_validated_artifact": true
+    }
+  }
+}

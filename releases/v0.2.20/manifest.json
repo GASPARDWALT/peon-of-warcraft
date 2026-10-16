@@ -1,0 +1,2949 @@
+{
+  "version": "v0.2.20",
+  "rom": "peon_of_warcraft_v0_2_20.gbc",
+  "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+  "map_sha256": "d45f7a2a63441fb681fc1c746ce4be5cf11efc70495a928a583ea70575e2b4af",
+  "tests": [
+    {
+      "name": "world",
+      "path": "validation/world.json",
+      "sha256": "e6468068b3325811b5ffa320e72ab664f962ef109f5c0b34f9451516c9b9fc90",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "performance",
+      "path": "validation/performance.json",
+      "sha256": "710e2f1ea89176b09ff7608b03ffd54a99973cdba5b77531ed40bd1b1536f001",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "preservation",
+      "path": "validation/preservation.json",
+      "sha256": "0cbecf6291d21315dc1757369a69986e03e6df32731b6fdb834ae66eee593aed",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "selection",
+      "path": "validation/selection.json",
+      "sha256": "ee1a7c74816b1f544c87f952751839214e666964509c28bc5ab9c68208c9438a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "battle_and_long_walk",
+      "path": "validation/battle_and_long_walk.json",
+      "sha256": "a486feecf2df58337f9853374a251b98498f086866511e7df074a24aa6845f05",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "clean_rebuild",
+      "path": "validation/clean_rebuild.json",
+      "sha256": "e73970332595b2243bcbd0c9ca357e8282d964f8f3adb98bb482e1bac460dacd",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    }
+  ],
+  "runtime": [
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/shaman/world_hero_down.png",
+      "path": "runtime/01_shaman_world.png",
+      "sha256": "f3209deec4eb4c6ce8a5f3b4643679461fb75d1196a748238a85ba8523374a93",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/01_shaman_world_4x.png",
+      "nearest_4x_sha256": "f7a9b02f226404f733ac2de8d8b8fad9bc7b6eb42f2d730a61c066160c05f6bc"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/shaman/world_hero_left.png",
+      "path": "runtime/02_shaman_side.png",
+      "sha256": "d465cc4f6aefda8e21f7cf8f0e84ef709864c5096cb02064d13f4076f53ce37e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/02_shaman_side_4x.png",
+      "nearest_4x_sha256": "82d8b39245d39d3b8e044bf7c3b59b638507a796faa525613fb653084e1d0429"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/warrior/world_hero_down.png",
+      "path": "runtime/03_warrior_world.png",
+      "sha256": "4d1a82d51b80f2d73fcf165d9b6abd13427c3dd6510bad52cb57a8fc5aeb1103",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/03_warrior_world_4x.png",
+      "nearest_4x_sha256": "8abd823d71365cd1a052d6e3d8f3dbb09ee556baa8d7b1b974057b7fe9dec538"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/warlock/world_hero_down.png",
+      "path": "runtime/04_warlock_world.png",
+      "sha256": "8f0f749ccad9facce412630e45000be9367ecff7b5bde6ee3c67412d805c67f5",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/04_warlock_world_4x.png",
+      "nearest_4x_sha256": "83eb21dfb8607a57d078d082f04b6420b6e0f08d93e2c9b5a91f547082691764"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/warlock/native_available_marker_above_actor.png",
+      "path": "runtime/05_orc_quest_giver.png",
+      "sha256": "116983de5b9d28b8321efd7ace976e2a42647caab3436fce765483f0f312f7a3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/05_orc_quest_giver_4x.png",
+      "nearest_4x_sha256": "89e497c2cf97e15e4f4bdf832920de205c3ba64159ee05837bb57573ce662738"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/shaman/mixed_native_lodge_before_training.png",
+      "path": "runtime/06_shaman_masters_lodge.png",
+      "sha256": "a3524abe650f30165f0aaa5546c39c72adb94df40cb58d2128f924ee5fda8994",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/06_shaman_masters_lodge_4x.png",
+      "nearest_4x_sha256": "e7b715ba4d8ca88f614b99aaaf61155f63d147eb99e2ae5a7d268078b6d87a3d"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/warrior/mixed_native_lodge_before_training.png",
+      "path": "runtime/07_warrior_masters_lodge.png",
+      "sha256": "2b36c2b5ea4f464dc40faa059b9ac19c482aeeaa865775ec32a0f1b1f751eb41",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/07_warrior_masters_lodge_4x.png",
+      "nearest_4x_sha256": "1370574b19e2609aae7d755626cb95fc86b9ec009738efd058e14c8ed4a7ee7e"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/warlock/mixed_native_lodge_before_training.png",
+      "path": "runtime/08_warlock_masters_lodge.png",
+      "sha256": "ae10f6c25433207a472d28e1bae36ac54f8e6ffb07a63d388124fef068edda64",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/08_warlock_masters_lodge_4x.png",
+      "nearest_4x_sha256": "0978e120e93d2211a5e701ffae56d8b48df09e5a97d3deb0ec61ac2be76c22e7"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/shaman/mixed_native_cold_continue_outdoors.png",
+      "path": "runtime/09_cold_continue.png",
+      "sha256": "6910deca05e1a6d08237fb4642a9b2049e4fa54276a91728321bc065d33ae9b0",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/09_cold_continue_4x.png",
+      "nearest_4x_sha256": "2b6f76f2b49ccf4a0ae614c8cce89045f253226b6c0b7ead2ed12687356cc3d7"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/battle_clock/runtime_163fae77/shaman/03a_actual_120_tile_walk_complete.png",
+      "path": "runtime/10_long_walk_completed.png",
+      "sha256": "60491c1502989c95acd157a52472b3b85e1c51d3dee0870fcf0287c4ab8dbc8d",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/10_long_walk_completed_4x.png",
+      "nearest_4x_sha256": "94d4a26fcd55e9d956417731b48318e49cd8c24a331b7d9c2512d084d91ae75c"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/battle_clock/runtime_163fae77/shaman/04_battle_full_rear_and_mana.png",
+      "path": "runtime/11_battle_mana.png",
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/11_battle_mana_4x.png",
+      "nearest_4x_sha256": "197d74f1bf43276a8ca36a68d96c39774fc74319b3978a1b4879367393ed31fd"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/battle_clock/runtime_163fae77/shaman/05_after_free_mace_strike.png",
+      "path": "runtime/12_free_mace.png",
+      "sha256": "2cbaa2acd4b94594b274d744158bc962b83461bc51ad0228f9a11ad070b2e817",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/12_free_mace_4x.png",
+      "nearest_4x_sha256": "148c5086078aa48346047f1096e836a72e9e0051874e9aa162b559314d48c6a6"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/battle_clock/runtime_163fae77/shaman/victory_19_actual_lcd.png",
+      "path": "runtime/13_victory_names.png",
+      "sha256": "53bf3b1ae7927d24dd5c6ab3264bb757196505ba8c4907e84dcb93913835e16b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/13_victory_names_4x.png",
+      "nearest_4x_sha256": "869500db59a8ec0800c86b93f674b69a07b6e245090d061b9ac876971dc51110"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/battle_clock/runtime_163fae77/shaman/06_actual_battle_complete_world_return.png",
+      "path": "runtime/14_battle_world_return.png",
+      "sha256": "83455edcd7e1d448ad5993c2bd28b4bc21d19af3e3b205a87c61eeda26d2913c",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/14_battle_world_return_4x.png",
+      "nearest_4x_sha256": "f5023a7fe650ea73e37ba6784ec2af592c287cb539ba6a882f74498937f2cfd8"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/shaman/fresh_welcome_base.png",
+      "path": "runtime/15_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/15_welcome_base_4x.png",
+      "nearest_4x_sha256": "a59b93d020245a75d107bfd03dbcd44632fa9b9cedabddbb6ee3ff3a5af4088a"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/shaman/master_initial_shaman.png",
+      "path": "runtime/16_master_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/16_master_shaman_4x.png",
+      "nearest_4x_sha256": "815e130d51fd47fd93da73cd5fa5d77fde8f019cb678d1240762d2c450464b12"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/shaman/master_warrior.png",
+      "path": "runtime/17_master_warrior.png",
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/17_master_warrior_4x.png",
+      "nearest_4x_sha256": "86da2610939449ce0ea1cfb65f5ab7100cdd79d74b3b441a0e33442c81de287b"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/shaman/master_warlock.png",
+      "path": "runtime/18_master_warlock.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/18_master_warlock_4x.png",
+      "nearest_4x_sha256": "07a3a1a00a866d34c7d09dbd808eb48a9d70e345a234e73a9b221699e82d9660"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/shaman/master_B_returns_to_thrall.png",
+      "path": "runtime/19_selection_cancel.png",
+      "sha256": "48af6ef05ebf6003d74290d84330e67378d79797a9d30387e297a519ab202411",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/19_selection_cancel_4x.png",
+      "nearest_4x_sha256": "f2edb16a22736188988ab12683632402a870feae3346eb6da4ddea5eab55c2f3"
+    },
+    {
+      "source": "/workspace/peon-of-warcraft/references/generated/v0220/selection_verified/warlock/cold_saved_class_welcome.png",
+      "path": "runtime/20_cold_warlock_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ],
+      "opaque": true,
+      "nearest_4x": "runtime/20_cold_warlock_welcome_4x.png",
+      "nearest_4x_sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3"
+    }
+  ],
+  "world_asset_contract": {
+    "manifest_sha256": "8d1cbc7f1d7dc12fd60adbae8472880bada70d2fc1344d3f9d5bd34911680441",
+    "role_families": 39,
+    "bound_families": 30,
+    "bound_packets": 90
+  },
+  "active_world": {
+    "contract": {
+      "manifest_sha256": "8d1cbc7f1d7dc12fd60adbae8472880bada70d2fc1344d3f9d5bd34911680441",
+      "role_families": 39,
+      "bound_families": 30,
+      "bound_packets": 90
+    },
+    "files": [
+      "assets/active_world/base/attrs.bin",
+      "assets/active_world/base/masks.bin",
+      "assets/active_world/base/overworld.bin",
+      "assets/active_world/base/overworld.png",
+      "assets/active_world/beast_handler/attrs.bin",
+      "assets/active_world/beast_handler/masks.bin",
+      "assets/active_world/beast_handler/overworld.bin",
+      "assets/active_world/beast_handler/overworld.png",
+      "assets/active_world/bindings.asm",
+      "assets/active_world/boar/attrs.bin",
+      "assets/active_world/boar/masks.bin",
+      "assets/active_world/boar/overworld.bin",
+      "assets/active_world/boar/overworld.png",
+      "assets/active_world/camp_guard/attrs.bin",
+      "assets/active_world/camp_guard/masks.bin",
+      "assets/active_world/camp_guard/overworld.bin",
+      "assets/active_world/camp_guard/overworld.png",
+      "assets/active_world/crawler/attrs.bin",
+      "assets/active_world/crawler/masks.bin",
+      "assets/active_world/crawler/overworld.bin",
+      "assets/active_world/crawler/overworld.png",
+      "assets/active_world/descriptor_table.asm",
+      "assets/active_world/enemy_warlock/attrs.bin",
+      "assets/active_world/enemy_warlock/masks.bin",
+      "assets/active_world/enemy_warlock/overworld.bin",
+      "assets/active_world/enemy_warlock/overworld.png",
+      "assets/active_world/felhunter/attrs.bin",
+      "assets/active_world/felhunter/masks.bin",
+      "assets/active_world/felhunter/overworld.bin",
+      "assets/active_world/felhunter/overworld.png",
+      "assets/active_world/graphics.asm",
+      "assets/active_world/harpy/attrs.bin",
+      "assets/active_world/harpy/masks.bin",
+      "assets/active_world/harpy/overworld.bin",
+      "assets/active_world/harpy/overworld.png",
+      "assets/active_world/imp/attrs.bin",
+      "assets/active_world/imp/masks.bin",
+      "assets/active_world/imp/overworld.bin",
+      "assets/active_world/imp/overworld.png",
+      "assets/active_world/kolkar_archer/attrs.bin",
+      "assets/active_world/kolkar_archer/masks.bin",
+      "assets/active_world/kolkar_archer/overworld.bin",
+      "assets/active_world/kolkar_archer/overworld.png",
+      "assets/active_world/kolkar_raider/attrs.bin",
+      "assets/active_world/kolkar_raider/masks.bin",
+      "assets/active_world/kolkar_raider/overworld.bin",
+      "assets/active_world/kolkar_raider/overworld.png",
+      "assets/active_world/manifest.json",
+      "assets/active_world/orc_guard/attrs.bin",
+      "assets/active_world/orc_guard/masks.bin",
+      "assets/active_world/orc_guard/overworld.bin",
+      "assets/active_world/orc_guard/overworld.png",
+      "assets/active_world/orc_merchant/attrs.bin",
+      "assets/active_world/orc_merchant/masks.bin",
+      "assets/active_world/orc_merchant/overworld.bin",
+      "assets/active_world/orc_merchant/overworld.png",
+      "assets/active_world/panther/attrs.bin",
+      "assets/active_world/panther/masks.bin",
+      "assets/active_world/panther/overworld.bin",
+      "assets/active_world/panther/overworld.png",
+      "assets/active_world/peon_worker/attrs.bin",
+      "assets/active_world/peon_worker/masks.bin",
+      "assets/active_world/peon_worker/overworld.bin",
+      "assets/active_world/peon_worker/overworld.png",
+      "assets/active_world/quest_peon/attrs.bin",
+      "assets/active_world/quest_peon/masks.bin",
+      "assets/active_world/quest_peon/overworld.bin",
+      "assets/active_world/quest_peon/overworld.png",
+      "assets/active_world/raptor/attrs.bin",
+      "assets/active_world/raptor/masks.bin",
+      "assets/active_world/raptor/overworld.bin",
+      "assets/active_world/raptor/overworld.png",
+      "assets/active_world/rock_element/attrs.bin",
+      "assets/active_world/rock_element/masks.bin",
+      "assets/active_world/rock_element/overworld.bin",
+      "assets/active_world/rock_element/overworld.png",
+      "assets/active_world/rock_one/attrs.bin",
+      "assets/active_world/rock_one/masks.bin",
+      "assets/active_world/rock_one/overworld.bin",
+      "assets/active_world/rock_one/overworld.png",
+      "assets/active_world/rock_one_npc/attrs.bin",
+      "assets/active_world/rock_one_npc/masks.bin",
+      "assets/active_world/rock_one_npc/overworld.bin",
+      "assets/active_world/rock_one_npc/overworld.png",
+      "assets/active_world/rock_vein/attrs.bin",
+      "assets/active_world/rock_vein/masks.bin",
+      "assets/active_world/rock_vein/overworld.bin",
+      "assets/active_world/rock_vein/overworld.png",
+      "assets/active_world/sarkoth/attrs.bin",
+      "assets/active_world/sarkoth/masks.bin",
+      "assets/active_world/sarkoth/overworld.bin",
+      "assets/active_world/sarkoth/overworld.png",
+      "assets/active_world/scorpid/attrs.bin",
+      "assets/active_world/scorpid/masks.bin",
+      "assets/active_world/scorpid/overworld.bin",
+      "assets/active_world/scorpid/overworld.png",
+      "assets/active_world/senjin_chief/attrs.bin",
+      "assets/active_world/senjin_chief/masks.bin",
+      "assets/active_world/senjin_chief/overworld.bin",
+      "assets/active_world/senjin_chief/overworld.png",
+      "assets/active_world/senjin_troll_shaman/attrs.bin",
+      "assets/active_world/senjin_troll_shaman/masks.bin",
+      "assets/active_world/senjin_troll_shaman/overworld.bin",
+      "assets/active_world/senjin_troll_shaman/overworld.png",
+      "assets/active_world/shaman/attrs.bin",
+      "assets/active_world/shaman/masks.bin",
+      "assets/active_world/shaman/overworld.bin",
+      "assets/active_world/shaman/overworld.png",
+      "assets/active_world/shaman_apprentice/attrs.bin",
+      "assets/active_world/shaman_apprentice/masks.bin",
+      "assets/active_world/shaman_apprentice/overworld.bin",
+      "assets/active_world/shaman_apprentice/overworld.png",
+      "assets/active_world/shaman_master/attrs.bin",
+      "assets/active_world/shaman_master/masks.bin",
+      "assets/active_world/shaman_master/overworld.bin",
+      "assets/active_world/shaman_master/overworld.png",
+      "assets/active_world/sleeping/attrs.bin",
+      "assets/active_world/sleeping/masks.bin",
+      "assets/active_world/sleeping/overworld.bin",
+      "assets/active_world/sleeping/overworld.png",
+      "assets/active_world/tiger/attrs.bin",
+      "assets/active_world/tiger/masks.bin",
+      "assets/active_world/tiger/overworld.bin",
+      "assets/active_world/tiger/overworld.png",
+      "assets/active_world/troll_guard/attrs.bin",
+      "assets/active_world/troll_guard/masks.bin",
+      "assets/active_world/troll_guard/overworld.bin",
+      "assets/active_world/troll_guard/overworld.png",
+      "assets/active_world/troll_merchant/attrs.bin",
+      "assets/active_world/troll_merchant/masks.bin",
+      "assets/active_world/troll_merchant/overworld.bin",
+      "assets/active_world/troll_merchant/overworld.png",
+      "assets/active_world/troll_shaman/attrs.bin",
+      "assets/active_world/troll_shaman/masks.bin",
+      "assets/active_world/troll_shaman/overworld.bin",
+      "assets/active_world/troll_shaman/overworld.png",
+      "assets/active_world/troll_villager/attrs.bin",
+      "assets/active_world/troll_villager/masks.bin",
+      "assets/active_world/troll_villager/overworld.bin",
+      "assets/active_world/troll_villager/overworld.png",
+      "assets/active_world/veteran_questgiver/attrs.bin",
+      "assets/active_world/veteran_questgiver/masks.bin",
+      "assets/active_world/veteran_questgiver/overworld.bin",
+      "assets/active_world/veteran_questgiver/overworld.png",
+      "assets/active_world/walk_flags.asm",
+      "assets/active_world/warlock/attrs.bin",
+      "assets/active_world/warlock/masks.bin",
+      "assets/active_world/warlock/overworld.bin",
+      "assets/active_world/warlock/overworld.png",
+      "assets/active_world/warrior/attrs.bin",
+      "assets/active_world/warrior/masks.bin",
+      "assets/active_world/warrior/overworld.bin",
+      "assets/active_world/warrior/overworld.png",
+      "assets/active_world/warrior_trainer/attrs.bin",
+      "assets/active_world/warrior_trainer/masks.bin",
+      "assets/active_world/warrior_trainer/overworld.bin",
+      "assets/active_world/warrior_trainer/overworld.png",
+      "assets/active_world/yarrog/attrs.bin",
+      "assets/active_world/yarrog/masks.bin",
+      "assets/active_world/yarrog/overworld.bin",
+      "assets/active_world/yarrog/overworld.png"
+    ],
+    "sources": [
+      "assets/world_design_sources/heroes.json",
+      "assets/world_design_sources/heroes_alignment_verification.json",
+      "assets/world_design_sources/heroes_verification.json",
+      "assets/world_design_sources/orc_npcs.json",
+      "assets/world_design_sources/originals/orc_specialists_generated_source.png",
+      "assets/world_design_sources/originals/orc_townsfolk_generated_source.png",
+      "assets/world_design_sources/originals/other_heroes_design_generated.png",
+      "assets/world_design_sources/originals/shaman_design_generated.png",
+      "assets/world_design_sources/originals/troll_world_generated_4035b98d.png",
+      "assets/world_design_sources/shaman_verification.json",
+      "assets/world_design_sources/trolls.json"
+    ],
+    "source_files_rehashed_count": 683,
+    "compiled_world_proofs": [
+      {
+        "source": "/workspace/peon-of-warcraft/references/generated/world_native_v0220/runtime_163fae77/validation.json",
+        "sha256": "e6468068b3325811b5ffa320e72ab664f962ef109f5c0b34f9451516c9b9fc90",
+        "compiled_families": 30,
+        "compiled_packets": 90
+      }
+    ],
+    "native32_roles": [
+      "base",
+      "beast_handler",
+      "camp_guard",
+      "orc_guard",
+      "orc_merchant",
+      "peon_worker",
+      "quest_peon",
+      "senjin_chief",
+      "senjin_troll_shaman",
+      "shaman",
+      "shaman_apprentice",
+      "sleeping",
+      "troll_guard",
+      "troll_merchant",
+      "troll_shaman",
+      "troll_villager",
+      "veteran_questgiver",
+      "warlock",
+      "warrior"
+    ],
+    "native24_roles": [
+      "boar",
+      "crawler",
+      "enemy_warlock",
+      "felhunter",
+      "harpy",
+      "imp",
+      "kolkar_archer",
+      "kolkar_raider",
+      "panther",
+      "raptor",
+      "rock_element",
+      "rock_one",
+      "rock_one_npc",
+      "rock_vein",
+      "sarkoth",
+      "scorpid",
+      "shaman_master",
+      "tiger",
+      "warrior_trainer",
+      "yarrog"
+    ]
+  },
+  "uniform_ground_files": [
+    "assets/uniform_ground/BurningBladeCavern.2bpp",
+    "assets/uniform_ground/BurningBladeCavern.2bpp.lz",
+    "assets/uniform_ground/BurningBladeCavern.png",
+    "assets/uniform_ground/BurningBladeCavern_coll.asm",
+    "assets/uniform_ground/BurningBladeCavern_meta.bin",
+    "assets/uniform_ground/BurningBladeCavern_palmap.bin",
+    "assets/uniform_ground/BurningBladeCavern_priority.bin",
+    "assets/uniform_ground/DurotarRoad.2bpp",
+    "assets/uniform_ground/DurotarRoad.2bpp.lz",
+    "assets/uniform_ground/DurotarRoad.png",
+    "assets/uniform_ground/DurotarRoad_coll.asm",
+    "assets/uniform_ground/DurotarRoad_meta.bin",
+    "assets/uniform_ground/DurotarRoad_palmap.bin",
+    "assets/uniform_ground/DurotarRoad_priority.bin",
+    "assets/uniform_ground/OrgrimmarGate.2bpp",
+    "assets/uniform_ground/OrgrimmarGate.2bpp.lz",
+    "assets/uniform_ground/OrgrimmarGate.png",
+    "assets/uniform_ground/OrgrimmarGate_coll.asm",
+    "assets/uniform_ground/OrgrimmarGate_meta.bin",
+    "assets/uniform_ground/OrgrimmarGate_palmap.bin",
+    "assets/uniform_ground/OrgrimmarGate_priority.bin",
+    "assets/uniform_ground/PeonCaveApproach.2bpp",
+    "assets/uniform_ground/PeonCaveApproach.2bpp.lz",
+    "assets/uniform_ground/PeonCaveApproach.png",
+    "assets/uniform_ground/PeonCaveApproach_coll.asm",
+    "assets/uniform_ground/PeonCaveApproach_meta.bin",
+    "assets/uniform_ground/PeonCaveApproach_palmap.bin",
+    "assets/uniform_ground/PeonCaveApproach_priority.bin",
+    "assets/uniform_ground/PeonHanazuaCamp.2bpp",
+    "assets/uniform_ground/PeonHanazuaCamp.2bpp.lz",
+    "assets/uniform_ground/PeonHanazuaCamp.png",
+    "assets/uniform_ground/PeonHanazuaCamp_coll.asm",
+    "assets/uniform_ground/PeonHanazuaCamp_meta.bin",
+    "assets/uniform_ground/PeonHanazuaCamp_palmap.bin",
+    "assets/uniform_ground/PeonHanazuaCamp_priority.bin",
+    "assets/uniform_ground/PeonOpening.2bpp",
+    "assets/uniform_ground/PeonOpening.2bpp.lz",
+    "assets/uniform_ground/PeonOpening.png",
+    "assets/uniform_ground/PeonOpening_coll.asm",
+    "assets/uniform_ground/PeonOpening_meta.bin",
+    "assets/uniform_ground/PeonOpening_palmap.bin",
+    "assets/uniform_ground/PeonOpening_priority.bin",
+    "assets/uniform_ground/PeonSarkothBasin.2bpp",
+    "assets/uniform_ground/PeonSarkothBasin.2bpp.lz",
+    "assets/uniform_ground/PeonSarkothBasin.png",
+    "assets/uniform_ground/PeonSarkothBasin_coll.asm",
+    "assets/uniform_ground/PeonSarkothBasin_meta.bin",
+    "assets/uniform_ground/PeonSarkothBasin_palmap.bin",
+    "assets/uniform_ground/PeonSarkothBasin_priority.bin",
+    "assets/uniform_ground/PeonValleyCrossroads.2bpp",
+    "assets/uniform_ground/PeonValleyCrossroads.2bpp.lz",
+    "assets/uniform_ground/PeonValleyCrossroads.png",
+    "assets/uniform_ground/PeonValleyCrossroads_coll.asm",
+    "assets/uniform_ground/PeonValleyCrossroads_meta.bin",
+    "assets/uniform_ground/PeonValleyCrossroads_palmap.bin",
+    "assets/uniform_ground/PeonValleyCrossroads_priority.bin",
+    "assets/uniform_ground/PeonValleyExit.2bpp",
+    "assets/uniform_ground/PeonValleyExit.2bpp.lz",
+    "assets/uniform_ground/PeonValleyExit.png",
+    "assets/uniform_ground/PeonValleyExit_coll.asm",
+    "assets/uniform_ground/PeonValleyExit_meta.bin",
+    "assets/uniform_ground/PeonValleyExit_palmap.bin",
+    "assets/uniform_ground/PeonValleyExit_priority.bin",
+    "assets/uniform_ground/RazorHill.2bpp",
+    "assets/uniform_ground/RazorHill.2bpp.lz",
+    "assets/uniform_ground/RazorHill.png",
+    "assets/uniform_ground/RazorHill_coll.asm",
+    "assets/uniform_ground/RazorHill_meta.bin",
+    "assets/uniform_ground/RazorHill_palmap.bin",
+    "assets/uniform_ground/RazorHill_priority.bin",
+    "assets/uniform_ground/SenjinVillage.2bpp",
+    "assets/uniform_ground/SenjinVillage.2bpp.lz",
+    "assets/uniform_ground/SenjinVillage.png",
+    "assets/uniform_ground/SenjinVillage_coll.asm",
+    "assets/uniform_ground/SenjinVillage_meta.bin",
+    "assets/uniform_ground/SenjinVillage_palmap.bin",
+    "assets/uniform_ground/SenjinVillage_priority.bin",
+    "assets/uniform_ground/TheDen.2bpp",
+    "assets/uniform_ground/TheDen.2bpp.lz",
+    "assets/uniform_ground/TheDen.png",
+    "assets/uniform_ground/TheDen_coll.asm",
+    "assets/uniform_ground/TheDen_meta.bin",
+    "assets/uniform_ground/TheDen_palmap.bin",
+    "assets/uniform_ground/TheDen_priority.bin",
+    "assets/uniform_ground/ValleyOfTrials.2bpp",
+    "assets/uniform_ground/ValleyOfTrials.2bpp.lz",
+    "assets/uniform_ground/ValleyOfTrials.png",
+    "assets/uniform_ground/ValleyOfTrials_coll.asm",
+    "assets/uniform_ground/ValleyOfTrials_meta.bin",
+    "assets/uniform_ground/ValleyOfTrials_palmap.bin",
+    "assets/uniform_ground/ValleyOfTrials_priority.bin",
+    "assets/uniform_ground/fire_frames_world.bin",
+    "assets/uniform_ground/ground_bg3.bin",
+    "assets/uniform_ground/ground_bg3.pal"
+  ],
+  "uniform_ground_ROM_proof": {
+    "status": "PASS",
+    "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+    "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+    "map_packets": 13,
+    "compiled_packet_and_block_labels": 81,
+    "labels": [
+      "PeonUserEnvBurningBladeCavernGFX",
+      "PeonUserEnvBurningBladeCavernMeta",
+      "PeonUserEnvBurningBladeCavernPalMap",
+      "PeonUserEnvBurningBladeCavernPriority",
+      "PeonUserEnvBurningBladeCavernColl",
+      "BurningBladeCavern_Blocks",
+      "PeonUserEnvDurotarRoadGFX",
+      "PeonUserEnvDurotarRoadMeta",
+      "PeonUserEnvDurotarRoadPalMap",
+      "PeonUserEnvDurotarRoadPriority",
+      "PeonUserEnvDurotarRoadColl",
+      "DurotarRoad_Blocks",
+      "PeonUserEnvOrgrimmarGateGFX",
+      "PeonUserEnvOrgrimmarGateMeta",
+      "PeonUserEnvOrgrimmarGatePalMap",
+      "PeonUserEnvOrgrimmarGatePriority",
+      "PeonUserEnvOrgrimmarGateColl",
+      "OrgrimmarGate_Blocks",
+      "PeonUserEnvPeonCaveApproachGFX",
+      "PeonUserEnvPeonCaveApproachMeta",
+      "PeonUserEnvPeonCaveApproachPalMap",
+      "PeonUserEnvPeonCaveApproachPriority",
+      "PeonUserEnvPeonCaveApproachColl",
+      "PeonCaveApproach_Blocks",
+      "PeonUserEnvPeonHanazuaCampGFX",
+      "PeonUserEnvPeonHanazuaCampMeta",
+      "PeonUserEnvPeonHanazuaCampPalMap",
+      "PeonUserEnvPeonHanazuaCampPriority",
+      "PeonUserEnvPeonHanazuaCampColl",
+      "PeonHanazuaCamp_Blocks",
+      "PeonUserEnvPeonOpeningGFX",
+      "PeonUserEnvPeonOpeningMeta",
+      "PeonUserEnvPeonOpeningPalMap",
+      "PeonUserEnvPeonOpeningPriority",
+      "PeonUserEnvPeonOpeningColl",
+      "PeonOpening_Blocks",
+      "PeonUserEnvPeonSarkothBasinGFX",
+      "PeonUserEnvPeonSarkothBasinMeta",
+      "PeonUserEnvPeonSarkothBasinPalMap",
+      "PeonUserEnvPeonSarkothBasinPriority",
+      "PeonUserEnvPeonSarkothBasinColl",
+      "PeonSarkothBasin_Blocks",
+      "PeonUserEnvPeonValleyCrossroadsGFX",
+      "PeonUserEnvPeonValleyCrossroadsMeta",
+      "PeonUserEnvPeonValleyCrossroadsPalMap",
+      "PeonUserEnvPeonValleyCrossroadsPriority",
+      "PeonUserEnvPeonValleyCrossroadsColl",
+      "PeonValleyCrossroads_Blocks",
+      "PeonUserEnvPeonValleyExitGFX",
+      "PeonUserEnvPeonValleyExitMeta",
+      "PeonUserEnvPeonValleyExitPalMap",
+      "PeonUserEnvPeonValleyExitPriority",
+      "PeonUserEnvPeonValleyExitColl",
+      "PeonValleyExit_Blocks",
+      "PeonUserEnvRazorHillGFX",
+      "PeonUserEnvRazorHillMeta",
+      "PeonUserEnvRazorHillPalMap",
+      "PeonUserEnvRazorHillPriority",
+      "PeonUserEnvRazorHillColl",
+      "RazorHill_Blocks",
+      "PeonUserEnvSenjinVillageGFX",
+      "PeonUserEnvSenjinVillageMeta",
+      "PeonUserEnvSenjinVillagePalMap",
+      "PeonUserEnvSenjinVillagePriority",
+      "PeonUserEnvSenjinVillageColl",
+      "SenjinVillage_Blocks",
+      "PeonUserEnvTheDenGFX",
+      "PeonUserEnvTheDenMeta",
+      "PeonUserEnvTheDenPalMap",
+      "PeonUserEnvTheDenPriority",
+      "PeonUserEnvTheDenColl",
+      "TheDen_Blocks",
+      "PeonUserEnvValleyOfTrialsGFX",
+      "PeonUserEnvValleyOfTrialsMeta",
+      "PeonUserEnvValleyOfTrialsPalMap",
+      "PeonUserEnvValleyOfTrialsPriority",
+      "PeonUserEnvValleyOfTrialsColl",
+      "ValleyOfTrials_Blocks",
+      "PeonUniformEnvironmentFireFramesV0220",
+      "PeonEnvironmentFireFrames",
+      "PeonUniformGroundBG3PalettesV0220"
+    ]
+  },
+  "physical_modretro_tested": false,
+  "files": {
+    "README.md": {
+      "sha256": "03e7f24cef3c103c56a91a374f735401e7460f37781fb5b6b309e756eb3c090c",
+      "bytes": 1520
+    },
+    "assets/active_world/base/attrs.bin": {
+      "sha256": "a6f63ff214c280c41f4fb648f76d6541c8d9fcb9cfe384fddd3c171724acb780",
+      "bytes": 192
+    },
+    "assets/active_world/base/masks.bin": {
+      "sha256": "7890b146990a8e5fd2d4f0472c0813c0ab9c16fcee20ef92ff42b2b693aae169",
+      "bytes": 24
+    },
+    "assets/active_world/base/overworld.bin": {
+      "sha256": "2ceab1ce7842cad864b7c305cbb777b430b559bf6d62c164055c0ad68fe13287",
+      "bytes": 3072
+    },
+    "assets/active_world/base/overworld.png": {
+      "sha256": "0569905a2656cb046c663e1961abd76ab2f1d8b5e6eb391e6dff0582ca83f2e1",
+      "bytes": 2162
+    },
+    "assets/active_world/beast_handler/attrs.bin": {
+      "sha256": "a4ef45ebaa0852719117347a7376afd82ebb0c87a3bfcb18f606a6679ab6a97c",
+      "bytes": 192
+    },
+    "assets/active_world/beast_handler/masks.bin": {
+      "sha256": "bceac6728957f40c086a016ddbe9b69aeb50e9cb2434f1bff7b840455fcb667a",
+      "bytes": 24
+    },
+    "assets/active_world/beast_handler/overworld.bin": {
+      "sha256": "e5e5fdd5306ca7decb84af38b8ebc29403eb3fd05724e99544a95963efb9451b",
+      "bytes": 3072
+    },
+    "assets/active_world/beast_handler/overworld.png": {
+      "sha256": "9c152db22070d99eed72e8b8a509fcdfa85bd64024caca1ab4f12c059a3f8a47",
+      "bytes": 2712
+    },
+    "assets/active_world/bindings.asm": {
+      "sha256": "b39b48092258cf008a53734ed34cb05b5fd1fea1506f31ab7d9c1cecb9179ee4",
+      "bytes": 5750
+    },
+    "assets/active_world/boar/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/boar/masks.bin": {
+      "sha256": "151a1748828fbc7da3e4950782ba2ff0cba5c0cb2056a43358a6f69bb5304154",
+      "bytes": 24
+    },
+    "assets/active_world/boar/overworld.bin": {
+      "sha256": "03b27f5e0ba6d0f16b2f2973bd6cc75da3cc3261e6fd8dcdd0738775f6970ed2",
+      "bytes": 1728
+    },
+    "assets/active_world/boar/overworld.png": {
+      "sha256": "2f8b88f5e31a64b80f7776d0140e7cd825a2612ea2c107f0ccff012e71dd07ae",
+      "bytes": 1052
+    },
+    "assets/active_world/camp_guard/attrs.bin": {
+      "sha256": "78e3d4e1f8f1d737c9fc43078867a8efb57ba5cf42d859db6c6746fade86ca7a",
+      "bytes": 192
+    },
+    "assets/active_world/camp_guard/masks.bin": {
+      "sha256": "d33959ebcf7b8d1fa057d90308287b0c987f704ef67715cceac81c3ce4e0448e",
+      "bytes": 24
+    },
+    "assets/active_world/camp_guard/overworld.bin": {
+      "sha256": "fbe4b5a43369c4f3d129e277f1e551b741fa1ad46787ddbef47a6c0900889792",
+      "bytes": 3072
+    },
+    "assets/active_world/camp_guard/overworld.png": {
+      "sha256": "8876115675b801b75791e2049e3f050bc0caa41529d5aaffbdad620d8c09d57a",
+      "bytes": 3009
+    },
+    "assets/active_world/crawler/attrs.bin": {
+      "sha256": "38d371e697d46f8eba13d2958732357027f788280917e411a38cc45483282749",
+      "bytes": 108
+    },
+    "assets/active_world/crawler/masks.bin": {
+      "sha256": "848e32e17b547137b4f9f65556601a42a49dcd90946820a479a7ac24e91d7e89",
+      "bytes": 24
+    },
+    "assets/active_world/crawler/overworld.bin": {
+      "sha256": "882f431399f7b89a060bd19634708f55bbac74bc42d3f758d72a67bd7a53c5d1",
+      "bytes": 1728
+    },
+    "assets/active_world/crawler/overworld.png": {
+      "sha256": "af270780893866fef5b8c70940f99661189b4ed515152365a88bb8ed27421fed",
+      "bytes": 2102
+    },
+    "assets/active_world/descriptor_table.asm": {
+      "sha256": "1f0b7a13fed2443d340e4799a4ec748bade766201e091c8eabe0d83ccaac671b",
+      "bytes": 8327
+    },
+    "assets/active_world/enemy_warlock/attrs.bin": {
+      "sha256": "53bbe2479bb6144c714cabd31e62a66576648d4ebda1ca4ab54c913e48435074",
+      "bytes": 108
+    },
+    "assets/active_world/enemy_warlock/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/active_world/enemy_warlock/overworld.bin": {
+      "sha256": "b425dc22adde63d3755823241bbf058ba318221e03bc1f5832e7f61241eda9f3",
+      "bytes": 1728
+    },
+    "assets/active_world/enemy_warlock/overworld.png": {
+      "sha256": "7219fb8ca3f2d0e1fa083bc819c88df902fa3d42630392447854bf05e2f450c3",
+      "bytes": 1243
+    },
+    "assets/active_world/felhunter/attrs.bin": {
+      "sha256": "74377e26a1f03d25d8817f1f9ffa27128c22e82c48a558a927a47e9b6f565751",
+      "bytes": 108
+    },
+    "assets/active_world/felhunter/masks.bin": {
+      "sha256": "327957c731dce92afc885e10973980ea819aa870017a0537554ed265b52c4838",
+      "bytes": 24
+    },
+    "assets/active_world/felhunter/overworld.bin": {
+      "sha256": "d0c80b03f7fb794a1d99f1072e3929091b0eb89d59ec867979ed98f30526e59a",
+      "bytes": 1728
+    },
+    "assets/active_world/felhunter/overworld.png": {
+      "sha256": "591de35ddd887ac2eb8d28e29f00457f7aee0d2cd7290de38bb8af82cf3d0830",
+      "bytes": 2006
+    },
+    "assets/active_world/graphics.asm": {
+      "sha256": "3cf101248e7b44036f4d27e72273acaff5114e16a2646f8ebde1dea2e8ee04e2",
+      "bytes": 20597
+    },
+    "assets/active_world/harpy/attrs.bin": {
+      "sha256": "440b160387106c466b2d96d0b1b983fd7760acc852f44b12e304799284c5c7e8",
+      "bytes": 108
+    },
+    "assets/active_world/harpy/masks.bin": {
+      "sha256": "9cd186e2f087ea38d6de8e8db655abf34d45e73305d58098d6b657b2489477be",
+      "bytes": 24
+    },
+    "assets/active_world/harpy/overworld.bin": {
+      "sha256": "11459c5dc79358ed14a6a06a5f06623f0f52f0bc96c55e8686e5810b5e740170",
+      "bytes": 1728
+    },
+    "assets/active_world/harpy/overworld.png": {
+      "sha256": "a0ec1b93c8a1ca5171af466acb6c27dff63ea73389fc2b18a86aad0e0efdd01a",
+      "bytes": 1388
+    },
+    "assets/active_world/imp/attrs.bin": {
+      "sha256": "0ce1c558edb7f946b663a9f6ff26239daa84bad70d674ca5d0a61304381ee0d0",
+      "bytes": 108
+    },
+    "assets/active_world/imp/masks.bin": {
+      "sha256": "cfc47b4c8ab406ae8bc3433de653e4f27161ce13c9094efde397e047326703bd",
+      "bytes": 24
+    },
+    "assets/active_world/imp/overworld.bin": {
+      "sha256": "373009b4b39fe4de584832eb43d959b6e467febfcce5ffe27b527cf97263b1a8",
+      "bytes": 1728
+    },
+    "assets/active_world/imp/overworld.png": {
+      "sha256": "40cc0f93aae6e789c7db221f8b0d8da486b0d96dc0cf3b478096e46423e45690",
+      "bytes": 1266
+    },
+    "assets/active_world/kolkar_archer/attrs.bin": {
+      "sha256": "8fa5a5b75188f796ade258d79ce634fd7d3743b9d30efa639fb89a3e7c94ae7f",
+      "bytes": 108
+    },
+    "assets/active_world/kolkar_archer/masks.bin": {
+      "sha256": "9cd186e2f087ea38d6de8e8db655abf34d45e73305d58098d6b657b2489477be",
+      "bytes": 24
+    },
+    "assets/active_world/kolkar_archer/overworld.bin": {
+      "sha256": "a25cc265d065b3faa7def8fe9ed96114c6f7124077fa4b62d3ea526d33a2d6e0",
+      "bytes": 1728
+    },
+    "assets/active_world/kolkar_archer/overworld.png": {
+      "sha256": "0ca2f6e04f4d7ef20ad199c9cf18fb960210b1350753b72ddc15e39d17c816ba",
+      "bytes": 1356
+    },
+    "assets/active_world/kolkar_raider/attrs.bin": {
+      "sha256": "abb33c0b68b8af7643579161bfa2d5187476f9ef52ca9a02f4cc77035917e7d2",
+      "bytes": 108
+    },
+    "assets/active_world/kolkar_raider/masks.bin": {
+      "sha256": "7cd0ed479ecbc82e78a149c2fde450b62b3e88e84cc9300bd8adfa394ae70fd5",
+      "bytes": 24
+    },
+    "assets/active_world/kolkar_raider/overworld.bin": {
+      "sha256": "2f917989f9f72f347636c2dedcdfb0fa58efe1f1a026a03fbf1dd98e479d3b3e",
+      "bytes": 1728
+    },
+    "assets/active_world/kolkar_raider/overworld.png": {
+      "sha256": "537f6b3be1d7b00a35d6d746bc69a28df1f5cf42a16547c4d2abd0b490335691",
+      "bytes": 1459
+    },
+    "assets/active_world/manifest.json": {
+      "sha256": "8d1cbc7f1d7dc12fd60adbae8472880bada70d2fc1344d3f9d5bd34911680441",
+      "bytes": 2379976
+    },
+    "assets/active_world/orc_guard/attrs.bin": {
+      "sha256": "78e3d4e1f8f1d737c9fc43078867a8efb57ba5cf42d859db6c6746fade86ca7a",
+      "bytes": 192
+    },
+    "assets/active_world/orc_guard/masks.bin": {
+      "sha256": "d33959ebcf7b8d1fa057d90308287b0c987f704ef67715cceac81c3ce4e0448e",
+      "bytes": 24
+    },
+    "assets/active_world/orc_guard/overworld.bin": {
+      "sha256": "fbe4b5a43369c4f3d129e277f1e551b741fa1ad46787ddbef47a6c0900889792",
+      "bytes": 3072
+    },
+    "assets/active_world/orc_guard/overworld.png": {
+      "sha256": "8876115675b801b75791e2049e3f050bc0caa41529d5aaffbdad620d8c09d57a",
+      "bytes": 3009
+    },
+    "assets/active_world/orc_merchant/attrs.bin": {
+      "sha256": "7fabfbf58b85ccce51e21077b8b1ae8eddaa37a4cb9583950900f1e214ae5d86",
+      "bytes": 192
+    },
+    "assets/active_world/orc_merchant/masks.bin": {
+      "sha256": "cf06fd3e93828a73ddbf1cb77ef1d8190ce56482ae1e56fd20fdc51c1ad762e0",
+      "bytes": 24
+    },
+    "assets/active_world/orc_merchant/overworld.bin": {
+      "sha256": "60423c2deca50b33868cefa9950eadf21ed17272566b0f7196c29b5cc3f45e06",
+      "bytes": 3072
+    },
+    "assets/active_world/orc_merchant/overworld.png": {
+      "sha256": "0ebe33b5c759964a8af7b03f94ccac4399e502830139faba0d6da4156df295c6",
+      "bytes": 2672
+    },
+    "assets/active_world/panther/attrs.bin": {
+      "sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+      "bytes": 108
+    },
+    "assets/active_world/panther/masks.bin": {
+      "sha256": "10358ce112364f6c44ff5f8cfc2b62fd629d9c46e5bd8ade82d9682cdfeea33c",
+      "bytes": 24
+    },
+    "assets/active_world/panther/overworld.bin": {
+      "sha256": "b62484a50ea620f529c48d5c51e8d0c5b9a24e23eb5f54c010ae6602151e0fdc",
+      "bytes": 1728
+    },
+    "assets/active_world/panther/overworld.png": {
+      "sha256": "b2c93d290a9e7e34f1031cb571cce01bd17c827ea0c5ae94d82d77c9f4ffe817",
+      "bytes": 1598
+    },
+    "assets/active_world/peon_worker/attrs.bin": {
+      "sha256": "641774d98a16f3864110dd4dc9a193fd872b291e355f79748dc57be2382b2f7b",
+      "bytes": 192
+    },
+    "assets/active_world/peon_worker/masks.bin": {
+      "sha256": "7ff7a7537eac1fcebcd0d168a51cee49b02c49f4e6332f921ad3ffd023a553b6",
+      "bytes": 24
+    },
+    "assets/active_world/peon_worker/overworld.bin": {
+      "sha256": "63e2efd5d617a3d32c83d16a8f4cf999b26d6db570b134ace2ecac9cbaacadc8",
+      "bytes": 3072
+    },
+    "assets/active_world/peon_worker/overworld.png": {
+      "sha256": "26d9636519edfcab29a02132bb24efa39db4bf478e44074f845b4fff5d0cff98",
+      "bytes": 2649
+    },
+    "assets/active_world/quest_peon/attrs.bin": {
+      "sha256": "381d7cba63f8c904226b59ebebea4b2829470f9c366d192f8448d706157312af",
+      "bytes": 192
+    },
+    "assets/active_world/quest_peon/masks.bin": {
+      "sha256": "7ff7a7537eac1fcebcd0d168a51cee49b02c49f4e6332f921ad3ffd023a553b6",
+      "bytes": 24
+    },
+    "assets/active_world/quest_peon/overworld.bin": {
+      "sha256": "d15375bb91b2be07464b1bd47074b469e7bb1eeb3016a86629a6d5758fafaa13",
+      "bytes": 3072
+    },
+    "assets/active_world/quest_peon/overworld.png": {
+      "sha256": "fb96882afd3da093b00fedc1261b14eebba403baab382f2b806b4c3357bf20fc",
+      "bytes": 2537
+    },
+    "assets/active_world/raptor/attrs.bin": {
+      "sha256": "9a166ca0dd5120ca973545f42c3db8ee179d012a3b9331eeb10c64dd4d1bd892",
+      "bytes": 108
+    },
+    "assets/active_world/raptor/masks.bin": {
+      "sha256": "e92ecdf67ee02136fd29dea74beb751ccff65f7f253e347e57c87a38c5a8f851",
+      "bytes": 24
+    },
+    "assets/active_world/raptor/overworld.bin": {
+      "sha256": "29e8f8c3bc4ff169ea3cc16644d38b053a9faeda4d886c98837a1c9f2de83882",
+      "bytes": 1728
+    },
+    "assets/active_world/raptor/overworld.png": {
+      "sha256": "cd1db57ccec98af0d0bcf22b53561b5e8f742940c2840a7826cc6506124f8785",
+      "bytes": 1720
+    },
+    "assets/active_world/rock_element/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/rock_element/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/active_world/rock_element/overworld.bin": {
+      "sha256": "3f9c4a7c2ad18a4d39f806a82d7a7549d6644b3f787cc2f3ec6381a24c94a701",
+      "bytes": 1728
+    },
+    "assets/active_world/rock_element/overworld.png": {
+      "sha256": "da57628517f3ac7d3007f28836c7a56e8ac5b5a25d7722b24cc7458c494b0bd3",
+      "bytes": 586
+    },
+    "assets/active_world/rock_one/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/rock_one/masks.bin": {
+      "sha256": "ea149826256a3d2d97e00c8ed44034cc1f4338d20324760aeaf12aaaddb9ae56",
+      "bytes": 24
+    },
+    "assets/active_world/rock_one/overworld.bin": {
+      "sha256": "18fd6b3fc41af44a06b326e71fbeaf0ed4aa5783c18478410ea5537e9d6ee700",
+      "bytes": 1728
+    },
+    "assets/active_world/rock_one/overworld.png": {
+      "sha256": "45e376b42b5b05723405411824de78e80ec1378872457117358297e23c433512",
+      "bytes": 459
+    },
+    "assets/active_world/rock_one_npc/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/rock_one_npc/masks.bin": {
+      "sha256": "ea149826256a3d2d97e00c8ed44034cc1f4338d20324760aeaf12aaaddb9ae56",
+      "bytes": 24
+    },
+    "assets/active_world/rock_one_npc/overworld.bin": {
+      "sha256": "e716e0b06e09ef1ef87ba656d8244d5e8a18ebd3704eb0857ab1b258c9446aa5",
+      "bytes": 1728
+    },
+    "assets/active_world/rock_one_npc/overworld.png": {
+      "sha256": "0c410be700b1733d8e3f139ce0593d811b4cceb101a1134cf0e3c6b0250e27cb",
+      "bytes": 448
+    },
+    "assets/active_world/rock_vein/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/rock_vein/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/active_world/rock_vein/overworld.bin": {
+      "sha256": "6a05967c7d6c8a2be3ced16046cc42e0eeb6dac17d3e9ea42f6f8474aeada63e",
+      "bytes": 1728
+    },
+    "assets/active_world/rock_vein/overworld.png": {
+      "sha256": "5ce1d7067ac73a8ac962d0dcde5ffe9b0913e05f3200aa85985b4543de517e0d",
+      "bytes": 580
+    },
+    "assets/active_world/sarkoth/attrs.bin": {
+      "sha256": "84f79b425e243f9fb65babd67aa2e4a718bd0d1c4833d1fa4b90314278d94e0e",
+      "bytes": 108
+    },
+    "assets/active_world/sarkoth/masks.bin": {
+      "sha256": "bfeb5473d43643c3863807861ae1c53496a20c87781c0cc34b424a0b8c247816",
+      "bytes": 24
+    },
+    "assets/active_world/sarkoth/overworld.bin": {
+      "sha256": "5ab6d214677de33ab63ee560b0bee5b5f8d2d17f0233519e3c71ac42f3554ca7",
+      "bytes": 1728
+    },
+    "assets/active_world/sarkoth/overworld.png": {
+      "sha256": "e696b5ef569a84282c0e938b6c8ce1a934ceba8576b1c208ee24ae26d2727186",
+      "bytes": 1788
+    },
+    "assets/active_world/scorpid/attrs.bin": {
+      "sha256": "8dd0ee426966712100b7111297d746ee7b9ca20fa6a76793e48226811a147b5c",
+      "bytes": 108
+    },
+    "assets/active_world/scorpid/masks.bin": {
+      "sha256": "039975f2f9729c6f5059815934d6358f15e0043204ba0bf0d156ba361e977d27",
+      "bytes": 24
+    },
+    "assets/active_world/scorpid/overworld.bin": {
+      "sha256": "55612bc7a42c3e6157cedf673b363eedbb1c615be9fbfd908139d9c11cdb7285",
+      "bytes": 1728
+    },
+    "assets/active_world/scorpid/overworld.png": {
+      "sha256": "ea50a9a68d70a933bf2e87573aab8a7013e2ea322460d09fccc0e6523c159a12",
+      "bytes": 1067
+    },
+    "assets/active_world/senjin_chief/attrs.bin": {
+      "sha256": "03b45d319938f154bc3d9ff667788ff80ab6acac27c56297879b56a69dd00f48",
+      "bytes": 192
+    },
+    "assets/active_world/senjin_chief/masks.bin": {
+      "sha256": "13ccf88db91582ef6a2c292111f2aa6dcc45f4302817c4041c9a1df3785b119d",
+      "bytes": 24
+    },
+    "assets/active_world/senjin_chief/overworld.bin": {
+      "sha256": "a72efc75b51ebd7cd842fc71474d953044a6644387bf6237ae186a3de4f24a90",
+      "bytes": 3072
+    },
+    "assets/active_world/senjin_chief/overworld.png": {
+      "sha256": "aac772f037c439d553fc0c21ed33acbee666134edf46e2216e48971ae0cc97b3",
+      "bytes": 2966
+    },
+    "assets/active_world/senjin_troll_shaman/attrs.bin": {
+      "sha256": "5045aec28cf7b6511b41df9994a6807a2ff9d794933934830ee60a9700cb73c2",
+      "bytes": 192
+    },
+    "assets/active_world/senjin_troll_shaman/masks.bin": {
+      "sha256": "13ccf88db91582ef6a2c292111f2aa6dcc45f4302817c4041c9a1df3785b119d",
+      "bytes": 24
+    },
+    "assets/active_world/senjin_troll_shaman/overworld.bin": {
+      "sha256": "a72efc75b51ebd7cd842fc71474d953044a6644387bf6237ae186a3de4f24a90",
+      "bytes": 3072
+    },
+    "assets/active_world/senjin_troll_shaman/overworld.png": {
+      "sha256": "0241b46c02608187b92cfbeefb32f9524e53532bd667c00216a1537152bf2dcf",
+      "bytes": 2922
+    },
+    "assets/active_world/shaman/attrs.bin": {
+      "sha256": "3fc7ddacc56523d0d4e67a0568d8fd41db8f010ecdb13befdc0c64dbd9b93309",
+      "bytes": 192
+    },
+    "assets/active_world/shaman/masks.bin": {
+      "sha256": "4c2402fcf9516f90354b49c481d4ff900a1881ff1251185c022341ed0ad75edc",
+      "bytes": 24
+    },
+    "assets/active_world/shaman/overworld.bin": {
+      "sha256": "f5b8774c2e0b4b995ec495d10e1669a704a8a68fb86434942dc377deae613f80",
+      "bytes": 3072
+    },
+    "assets/active_world/shaman/overworld.png": {
+      "sha256": "d8e27af22600d6a1f5d3680debbe5acd7c83db9a17684bb30497a4398a8c5dae",
+      "bytes": 2427
+    },
+    "assets/active_world/shaman_apprentice/attrs.bin": {
+      "sha256": "d47649d2ddb56137dabb1a5c5d3e790f77b2880fc56905520d21edfbbe807d56",
+      "bytes": 192
+    },
+    "assets/active_world/shaman_apprentice/masks.bin": {
+      "sha256": "a2b0710624c8b5ef6b0308a21c2ce82c330bf5ae42097f0761513d09b3e05271",
+      "bytes": 24
+    },
+    "assets/active_world/shaman_apprentice/overworld.bin": {
+      "sha256": "835d89cb97408815c8f2176a8e38cf3a2046dbd7271ecf0b0437c3df1c47234d",
+      "bytes": 3072
+    },
+    "assets/active_world/shaman_apprentice/overworld.png": {
+      "sha256": "08d1d24949fcd1dcca72105c8ed1a5a646854804310421354b465c9e5499f1ec",
+      "bytes": 2934
+    },
+    "assets/active_world/shaman_master/attrs.bin": {
+      "sha256": "812961b3e2a6d8ce23925e80fdd88afd606750c9ce5a40349e491615177d6b05",
+      "bytes": 108
+    },
+    "assets/active_world/shaman_master/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/active_world/shaman_master/overworld.bin": {
+      "sha256": "73536ad8a7ba5ef8bbc44fd2eca732ca303eb3f9e98cea1b9b26eed95e7544e8",
+      "bytes": 1728
+    },
+    "assets/active_world/shaman_master/overworld.png": {
+      "sha256": "1d4506228849182fc8719d2d21390d18001e96c1e00c7b2a1c5b72cfd8075962",
+      "bytes": 1145
+    },
+    "assets/active_world/sleeping/attrs.bin": {
+      "sha256": "a6f63ff214c280c41f4fb648f76d6541c8d9fcb9cfe384fddd3c171724acb780",
+      "bytes": 192
+    },
+    "assets/active_world/sleeping/masks.bin": {
+      "sha256": "7890b146990a8e5fd2d4f0472c0813c0ab9c16fcee20ef92ff42b2b693aae169",
+      "bytes": 24
+    },
+    "assets/active_world/sleeping/overworld.bin": {
+      "sha256": "d211c367798bd9eb0884798bb2d3c48160b507130d9a4ed3fd1cbf0c92c27f01",
+      "bytes": 3072
+    },
+    "assets/active_world/sleeping/overworld.png": {
+      "sha256": "cc58e41b7a089d8b4c4a8bfe7250b62b98f34683a502c8887bb8f2583613921c",
+      "bytes": 2194
+    },
+    "assets/active_world/tiger/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/active_world/tiger/masks.bin": {
+      "sha256": "10358ce112364f6c44ff5f8cfc2b62fd629d9c46e5bd8ade82d9682cdfeea33c",
+      "bytes": 24
+    },
+    "assets/active_world/tiger/overworld.bin": {
+      "sha256": "9435c2c82d6da6b3d4ba27fe699408f6c712c54258f91d1534f80d1b7ad5500f",
+      "bytes": 1728
+    },
+    "assets/active_world/tiger/overworld.png": {
+      "sha256": "94030f88469d2ae5c78fccc0f8563d2dd638ba170ab7e054832be1548de37e92",
+      "bytes": 1786
+    },
+    "assets/active_world/troll_guard/attrs.bin": {
+      "sha256": "8f1628eb48b4040b54804f5af3365a7e4c1ebd7418219561ceb99ed97c0d32cc",
+      "bytes": 192
+    },
+    "assets/active_world/troll_guard/masks.bin": {
+      "sha256": "7aeb43f5cf2288f451a9df6dbde3cc7e59b94d86c8e8c1000ad115af05bf56ee",
+      "bytes": 24
+    },
+    "assets/active_world/troll_guard/overworld.bin": {
+      "sha256": "c34dc041320afa92db80164ca987f142a3829145ba63568e99faaf3a38f092f2",
+      "bytes": 3072
+    },
+    "assets/active_world/troll_guard/overworld.png": {
+      "sha256": "f1269a542d8235cbc2aa0196b52fa3f5eae8066f396565f7a6f341aa3215403c",
+      "bytes": 2655
+    },
+    "assets/active_world/troll_merchant/attrs.bin": {
+      "sha256": "672de01f7c6a99f48645bfefbb918de2b9ec8cf0fcf71f84db905b2cb63df8db",
+      "bytes": 192
+    },
+    "assets/active_world/troll_merchant/masks.bin": {
+      "sha256": "b545186c73e934b9d4400bee5b767ba0d69f33a890745ac61998d81213bbf218",
+      "bytes": 24
+    },
+    "assets/active_world/troll_merchant/overworld.bin": {
+      "sha256": "f97dbb7cd004309f94a09c04facd1c3b844d93f3f5f4f455df5fe19ba6377491",
+      "bytes": 3072
+    },
+    "assets/active_world/troll_merchant/overworld.png": {
+      "sha256": "06e24f03bda6395e5488049cf56b26a8f0174ef3b5ac5f43c4135689e94f83e4",
+      "bytes": 2227
+    },
+    "assets/active_world/troll_shaman/attrs.bin": {
+      "sha256": "532115350b9c87b663fd65a45cf32e62877b2a54fdd7acabbfb44382da373dd9",
+      "bytes": 192
+    },
+    "assets/active_world/troll_shaman/masks.bin": {
+      "sha256": "13ccf88db91582ef6a2c292111f2aa6dcc45f4302817c4041c9a1df3785b119d",
+      "bytes": 24
+    },
+    "assets/active_world/troll_shaman/overworld.bin": {
+      "sha256": "a72efc75b51ebd7cd842fc71474d953044a6644387bf6237ae186a3de4f24a90",
+      "bytes": 3072
+    },
+    "assets/active_world/troll_shaman/overworld.png": {
+      "sha256": "358db0a7463531100221164d6b8c8d5b31a059eb64d19eb2a20451528dec7b2e",
+      "bytes": 2914
+    },
+    "assets/active_world/troll_villager/attrs.bin": {
+      "sha256": "672de01f7c6a99f48645bfefbb918de2b9ec8cf0fcf71f84db905b2cb63df8db",
+      "bytes": 192
+    },
+    "assets/active_world/troll_villager/masks.bin": {
+      "sha256": "b545186c73e934b9d4400bee5b767ba0d69f33a890745ac61998d81213bbf218",
+      "bytes": 24
+    },
+    "assets/active_world/troll_villager/overworld.bin": {
+      "sha256": "f97dbb7cd004309f94a09c04facd1c3b844d93f3f5f4f455df5fe19ba6377491",
+      "bytes": 3072
+    },
+    "assets/active_world/troll_villager/overworld.png": {
+      "sha256": "06e24f03bda6395e5488049cf56b26a8f0174ef3b5ac5f43c4135689e94f83e4",
+      "bytes": 2227
+    },
+    "assets/active_world/veteran_questgiver/attrs.bin": {
+      "sha256": "456f2613497e3b53a5f8f2b61cc8f9a6d39881ab57101280de409b45fc1deaf3",
+      "bytes": 192
+    },
+    "assets/active_world/veteran_questgiver/masks.bin": {
+      "sha256": "eceb14498a586a6a9ae5a5dd80d20a736fd8d162f5a85cb466d077e84799c7c1",
+      "bytes": 24
+    },
+    "assets/active_world/veteran_questgiver/overworld.bin": {
+      "sha256": "9335340d84cca719ac2fb8c91eed91a8d27675227b830320a48fb6872dbd462b",
+      "bytes": 3072
+    },
+    "assets/active_world/veteran_questgiver/overworld.png": {
+      "sha256": "2de383e3b8f7c2327050140760eaec534f12c50f772c9defa64ac70dc8a8962b",
+      "bytes": 2816
+    },
+    "assets/active_world/walk_flags.asm": {
+      "sha256": "fc7f994b395ea0df34e15b9256c4ddd6efeb198805a38fcf0d507f6963f9e737",
+      "bytes": 1228
+    },
+    "assets/active_world/warlock/attrs.bin": {
+      "sha256": "b1f436bcf8bfa12401a781a941a29eddced15f3cf9a2c41a5577d07f6dc4c227",
+      "bytes": 192
+    },
+    "assets/active_world/warlock/masks.bin": {
+      "sha256": "4e491911081ca33150aae7f2db2c3c9cc9eeb95e97ce189f101849e911f1895d",
+      "bytes": 24
+    },
+    "assets/active_world/warlock/overworld.bin": {
+      "sha256": "5a5367116d4ded4c864b0aff632f6f9cd4f797979f2157af5e201cd5b8435a2c",
+      "bytes": 3072
+    },
+    "assets/active_world/warlock/overworld.png": {
+      "sha256": "77e7b3edffaf42cbccb14bb3eb74cc3d869a1728ad167206058cba4fbc53cc30",
+      "bytes": 2591
+    },
+    "assets/active_world/warrior/attrs.bin": {
+      "sha256": "94a189780cf2fd9acba4125d351316d612cc17a04f11cbb964c4004f80248185",
+      "bytes": 192
+    },
+    "assets/active_world/warrior/masks.bin": {
+      "sha256": "08316e8916f3309f69c0d39ca3859ba707552824ffa70f75ea6af00eb61e7cb2",
+      "bytes": 24
+    },
+    "assets/active_world/warrior/overworld.bin": {
+      "sha256": "e363345cf5f107c112afbdd588ecdf44f38f3bc952b25973a279d38048d8ee36",
+      "bytes": 3072
+    },
+    "assets/active_world/warrior/overworld.png": {
+      "sha256": "d65b402474fc9808ceac7797c28cf4179c1b5740b8940743843ef0ec4a72ae73",
+      "bytes": 2694
+    },
+    "assets/active_world/warrior_trainer/attrs.bin": {
+      "sha256": "f2ba432ef6257a96f37fc5cea2d51ecf6d986c5c23b2f41d36adcfebfb118dd4",
+      "bytes": 108
+    },
+    "assets/active_world/warrior_trainer/masks.bin": {
+      "sha256": "9d304b9a6c01459a63816ca2e3b090ee13ec91f53a14a74e389c4163fb8d6550",
+      "bytes": 24
+    },
+    "assets/active_world/warrior_trainer/overworld.bin": {
+      "sha256": "7c43329a0c782d003e1785da7193b28928cf07812a4d69211791f4073bdbcd83",
+      "bytes": 1728
+    },
+    "assets/active_world/warrior_trainer/overworld.png": {
+      "sha256": "538c0db7c63c3ce1769c0a4e8043eecdd21b8d999d68d89c4bbf78308b68c22e",
+      "bytes": 1505
+    },
+    "assets/active_world/yarrog/attrs.bin": {
+      "sha256": "01c9a7f5ca5e06aa3b0d645d86744d3107f3604e2532c2c8597f1cbae1603278",
+      "bytes": 108
+    },
+    "assets/active_world/yarrog/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/active_world/yarrog/overworld.bin": {
+      "sha256": "dcd526f4a9e2f23b0164e8a1bd3476cab28fed4cd98e9d1d9cf5588e9685e824",
+      "bytes": 1728
+    },
+    "assets/active_world/yarrog/overworld.png": {
+      "sha256": "c153c158a0695676adef7751711f7ba6d83bf216c857cd5a7b71b3238eb04514",
+      "bytes": 1264
+    },
+    "assets/active_world_source_provenance.json": {
+      "sha256": "f4366130f9e4cac2c527782e60ba8e2a33d11e8444d92b5102cc9ad30a44fa8a",
+      "bytes": 143573
+    },
+    "assets/ground_source_manifest.json": {
+      "sha256": "32fab79d84d4ca9b42599173dc34a985c4a7049d2a51b3d79d46f7215a997e5b",
+      "bytes": 182839
+    },
+    "assets/native_selection/class_portraits_v0219/bismillah/attrs.bin": {
+      "sha256": "1a504c11a7603ecdf96a2f046a2dc357a9a2b4919323d8688c620ce9bc26b835",
+      "bytes": 110
+    },
+    "assets/native_selection/class_portraits_v0219/bismillah/hardware.png": {
+      "sha256": "57b943812afe5b8dd06b52f796e18846c629f518f00ae967db1f3baf846c8906",
+      "bytes": 3830
+    },
+    "assets/native_selection/class_portraits_v0219/bismillah/hardware_bg.png": {
+      "sha256": "26852471fd7da9b43d55ee1dbb33c5365aec1cc483d10d771f1589bc5fded1e2",
+      "bytes": 3294
+    },
+    "assets/native_selection/class_portraits_v0219/bismillah/palettes.bin": {
+      "sha256": "ed8f8d1b0a3fcccd0f8f3e59ef8a6c18d4743655db906a22a347d93dc2ee5b03",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0219/bismillah/portrait.2bpp": {
+      "sha256": "8d86b99d89ce0a56adc03b7b40927e19434e99c3e3fd3f90cab5cd9a392ad924",
+      "bytes": 1760
+    },
+    "assets/native_selection/class_portraits_v0219/kento/attrs.bin": {
+      "sha256": "902a86a47e2ee0bfe0d40cf92fb46c5084f8fdce6643771bc2e46130604c4f79",
+      "bytes": 110
+    },
+    "assets/native_selection/class_portraits_v0219/kento/hardware.png": {
+      "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764",
+      "bytes": 4397
+    },
+    "assets/native_selection/class_portraits_v0219/kento/hardware_bg.png": {
+      "sha256": "7cce2e3a11053473d15ae5f2a37c35a37849d430c99b20661ee48d4368b3be30",
+      "bytes": 3942
+    },
+    "assets/native_selection/class_portraits_v0219/kento/palettes.bin": {
+      "sha256": "7f6f9e7c0f43d02d7e054c8c97fbcd0ffa0dc9abe050d59ed4b4dcb2a92f3161",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0219/kento/portrait.2bpp": {
+      "sha256": "4b523884a728c7d3153facc22835f7962945d8ef98602bed1c9e49a4afbca11a",
+      "bytes": 1760
+    },
+    "assets/native_selection/class_portraits_v0219/manifest.json": {
+      "sha256": "17c763f3b2869eacbee987012d7acbb8477c0f55f79ac2bb5a383634a9646e16",
+      "bytes": 81284
+    },
+    "assets/native_selection/class_portraits_v0219/zogzog/attrs.bin": {
+      "sha256": "b06fed023814f2186c615763965f6a2d1e7775bfbb46092b4f50b3e4510494a1",
+      "bytes": 110
+    },
+    "assets/native_selection/class_portraits_v0219/zogzog/hardware.png": {
+      "sha256": "dee3845743efa56c74a84a34f8c9685a4a957cee15876367c93b6895b06e50b3",
+      "bytes": 4313
+    },
+    "assets/native_selection/class_portraits_v0219/zogzog/hardware_bg.png": {
+      "sha256": "ac6f2676cb2f31095c8f0cfeb5defff8e029240b9526edabdb460fe60a8022e5",
+      "bytes": 3867
+    },
+    "assets/native_selection/class_portraits_v0219/zogzog/palettes.bin": {
+      "sha256": "d4837bc835fae95276e355301d831bb624bfc486a6354824b4f9e742ad014e00",
+      "bytes": 40
+    },
+    "assets/native_selection/class_portraits_v0219/zogzog/portrait.2bpp": {
+      "sha256": "4d3208423b803c31be06a835b2b53a96478efc39561d121e6fb4a2ffeb199ac2",
+      "bytes": 1760
+    },
+    "assets/native_selection/selection_labels_v0218/labels.2bpp": {
+      "sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+      "bytes": 384
+    },
+    "assets/native_selection/selection_labels_v0218/manifest.json": {
+      "sha256": "de40456627f7932095b7e54e9e21206718561d5dce2011cf22f89a2b4841927e",
+      "bytes": 458
+    },
+    "assets/native_selection/welcome_labels.json": {
+      "sha256": "de7bf63fcb4b7d252d0a957c9626d459382302624ce75a5dcfc7d10f3c38d728",
+      "bytes": 1482
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/attrs.bin": {
+      "sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/hardware.png": {
+      "sha256": "74fcd540c18c88cdc0e91d1233c12fa746053d5507a8ee148fd9fb63094deb16",
+      "bytes": 6826
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tilemap.bin": {
+      "sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tiles_bank0.2bpp": {
+      "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/base/tiles_bank1.2bpp": {
+      "sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/manifest.json": {
+      "sha256": "a485016813aac62592fdc9c09d35f13d77eb5b620aa1570f6ca591e6fbe3cb01",
+      "bytes": 328586
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/attrs.bin": {
+      "sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/hardware.png": {
+      "sha256": "04257fbc53e4b5dcadd9298ee6bd2bac5172749a0ae21806dd0d75fb758fcd69",
+      "bytes": 7465
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tilemap.bin": {
+      "sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tiles_bank0.2bpp": {
+      "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/shaman/tiles_bank1.2bpp": {
+      "sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/attrs.bin": {
+      "sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/hardware.png": {
+      "sha256": "e56d2f0d8e867e25d934d7cf76ada255b4aa84b4bf2981df31f50a9896bec8aa",
+      "bytes": 6987
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tilemap.bin": {
+      "sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tiles_bank0.2bpp": {
+      "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/warlock/tiles_bank1.2bpp": {
+      "sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+      "bytes": 4096
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/attrs.bin": {
+      "sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/hardware.png": {
+      "sha256": "5a27502d3a4ae995e5a4ede8b8ae8c6d0b1534fe539e61d3c0a79033b21548b9",
+      "bytes": 7084
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/palettes.bin": {
+      "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+      "bytes": 40
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tilemap.bin": {
+      "sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+      "bytes": 360
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tiles_bank0.2bpp": {
+      "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+      "bytes": 1536
+    },
+    "assets/native_selection/welcome_scenes_v0218/warrior/tiles_bank1.2bpp": {
+      "sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+      "bytes": 4096
+    },
+    "assets/native_world/assets/world_readability_v0219/beasts.json": {
+      "sha256": "8075d2bdc07412397a7824e945d8f6e2cfc08d835bff8faf13207a8458f5594f",
+      "bytes": 270964
+    },
+    "assets/native_world/assets/world_readability_v0219/beasts_monsters_source_provenance.json": {
+      "sha256": "db73de964e64f820f43b0209383ea6010454f2a0b9adda8b84f4a47e514719ae",
+      "bytes": 274482
+    },
+    "assets/native_world/assets/world_readability_v0219/heroes.json": {
+      "sha256": "7b4baf0d90d6a5bdcc894d50dd395578fce1e7f462b4f31b589f18cd58f27a12",
+      "bytes": 90520
+    },
+    "assets/native_world/assets/world_readability_v0219/heroes_orcs_provenance.json": {
+      "sha256": "6cffd71ab30f974f7acae51d12a3cc386c98f54116a548f05c601dfbccf69f9a",
+      "bytes": 102868
+    },
+    "assets/native_world/assets/world_readability_v0219/heroes_orcs_verification.json": {
+      "sha256": "35a488f01bb5b16ccfc646b97654cc78a2a9bcd4a57f6f2c857d6f94f31a0bf1",
+      "bytes": 3375
+    },
+    "assets/native_world/assets/world_readability_v0219/kolkar.json": {
+      "sha256": "79bb48a1fbfe5bc2e3cfc9909e3680c16ea3f30bfcde1b39fb707f3d1292a2e0",
+      "bytes": 35351
+    },
+    "assets/native_world/assets/world_readability_v0219/monsters.json": {
+      "sha256": "8f1f354ba591c8a18dd18ad5908f85dda36be8d7ff75ea5172883199b7e9a278",
+      "bytes": 208535
+    },
+    "assets/native_world/assets/world_readability_v0219/monsters_base.json": {
+      "sha256": "25afbc27e0f1efc10459fd33d1bdbe2a4fbefc17ebf4608f52a72a30c517f822",
+      "bytes": 111275
+    },
+    "assets/native_world/assets/world_readability_v0219/monsters_extra.json": {
+      "sha256": "bd3700a1e32ba0585a0178beb6964e6a0a979f420dec8f56feb570309a447835",
+      "bytes": 62548
+    },
+    "assets/native_world/assets/world_readability_v0219/orc_npcs.json": {
+      "sha256": "8696cf16c02447ba7f3006ed7a5e1e852ccc13fa9f566caf859643d3179c4c9a",
+      "bytes": 191603
+    },
+    "assets/native_world/assets/world_readability_v0219/trolls.json": {
+      "sha256": "2529f638b22a3aa9575b5945496326a011b6a8af4e8358f2023a09888a593bba",
+      "bytes": 113833
+    },
+    "assets/native_world/gfx/large_masters_v0219/facings.asm": {
+      "sha256": "aece8b12c3fbce1c50de8d1b0734291125930c4e7e7e7f56c62ede1dd96f26ec",
+      "bytes": 617
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_back_source_nearest24.png": {
+      "sha256": "eb4acfb7a3fbd3fe5868b24724fec2d5a754c34bd79a42cdc6490d6271ee783b",
+      "bytes": 1268
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_back_world_native24.png": {
+      "sha256": "93cf7079039a367ee0d46153d2fdb32e59f9008d15d2bf2f5329567b7bb189b0",
+      "bytes": 482
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_front_source_nearest24.png": {
+      "sha256": "3304cbc515d846f2007fce78580e3d1bb10cdbe3a3238b74760149508399e040",
+      "bytes": 1247
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_front_world_native24.png": {
+      "sha256": "3979c430b3071075c5002cedbfaa5347d69ce5bce7a7a4de3bbeb8a6923e6db0",
+      "bytes": 506
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_left_source_nearest24.png": {
+      "sha256": "96aecc0f176e974975b6650cf171721c6b406a306cbd56655409a64cba90a237",
+      "bytes": 1074
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_left_world_native24.png": {
+      "sha256": "84b93d81f99710fff67def6b926ed2ab87d737c38db42fbbc05908f4b3b1673e",
+      "bytes": 457
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_master_native24.png": {
+      "sha256": "0c1192a21ee405c41e98023beef891ea85b65923f11bcdc0e6e32aa63ae7bc5a",
+      "bytes": 489
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_master_native24_4x.png": {
+      "sha256": "8ea4342625041bc6bfe1a996ad1efc2df922762b9cb10144243ae8efa959007a",
+      "bytes": 819
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_right_source_nearest24.png": {
+      "sha256": "d51b86a31e50d1161cb56ca5695f2a1798518efdb094724aede9fcaaf9d0c9b6",
+      "bytes": 1072
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_right_world_native24.png": {
+      "sha256": "38f4f25bda1454bff22cd5de750f19a9c8e0fd3bf3455aca9738adf5ff53c176",
+      "bytes": 460
+    },
+    "assets/native_world/gfx/large_masters_v0219/garrosh_world_and_lodge_review.png": {
+      "sha256": "9cf15666329cc2f6c5bc2e35e5fa23f6fe1ac8700fb55dfbd155eaa787359abb",
+      "bytes": 19155
+    },
+    "assets/native_world/gfx/large_masters_v0219/graphics.asm": {
+      "sha256": "98da797cdb5202d21e6ced919eeac2b300541ca93fd856de1c1649693a6612a0",
+      "bytes": 475
+    },
+    "assets/native_world/gfx/large_masters_v0219/manifest.json": {
+      "sha256": "a1698d0bb5df460cba3863224cff49e6901c83845b9135efd36143d36f551b17",
+      "bytes": 40060
+    },
+    "assets/native_world/gfx/large_masters_v0219/palettes.asm": {
+      "sha256": "6863808da45df59f8a7350ce479b5c72121ca13773ab810cd4035e5cfa2270c6",
+      "bytes": 387
+    },
+    "assets/native_world/gfx/large_masters_v0219/warrior_trainer.bin": {
+      "sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955",
+      "bytes": 144
+    },
+    "assets/native_world/gfx/world_readability_v0219/base/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/base/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/base/overworld.bin": {
+      "sha256": "0aa50f3254406ad61eec14e0e85cc1ed417c2e699a44ece3f352db43229b7660",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/base/overworld.png": {
+      "sha256": "28b4c3a178beb8e0eaa9698a1971fac3b2abaffda8fceac1a374541b98b4f79d",
+      "bytes": 890
+    },
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.bin": {
+      "sha256": "72f70eae0821a1c280ac32abb03bfd610e6754c5853ca1102f391631590f6391",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.png": {
+      "sha256": "e12613039487db5a3a6c1fcc5e1c27f2445e8ed528693b65a8eff7c9e19be04e",
+      "bytes": 1252
+    },
+    "assets/native_world/gfx/world_readability_v0219/bindings.asm": {
+      "sha256": "f0da4225b4fba3a8b5a9abacf8dc07c89794951dc6d727189ba675f776270d6c",
+      "bytes": 5642
+    },
+    "assets/native_world/gfx/world_readability_v0219/boar/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/boar/masks.bin": {
+      "sha256": "151a1748828fbc7da3e4950782ba2ff0cba5c0cb2056a43358a6f69bb5304154",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/boar/overworld.bin": {
+      "sha256": "03b27f5e0ba6d0f16b2f2973bd6cc75da3cc3261e6fd8dcdd0738775f6970ed2",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/boar/overworld.png": {
+      "sha256": "2f8b88f5e31a64b80f7776d0140e7cd825a2612ea2c107f0ccff012e71dd07ae",
+      "bytes": 1052
+    },
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/masks.bin": {
+      "sha256": "35939a2848f2b3c76afad40c910ec65c937cf6cd450e3791e2806c87fbac8be0",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.bin": {
+      "sha256": "6696e4a160ea7d4567e8374b8aa8db948f6520e0245293eb773483ed0d26c9d7",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.png": {
+      "sha256": "26b49a288e4e9fe1c4b5101d014de48814b6afe75a31a420f5fbf79d2cb35aee",
+      "bytes": 1377
+    },
+    "assets/native_world/gfx/world_readability_v0219/crawler/attrs.bin": {
+      "sha256": "38d371e697d46f8eba13d2958732357027f788280917e411a38cc45483282749",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/crawler/masks.bin": {
+      "sha256": "848e32e17b547137b4f9f65556601a42a49dcd90946820a479a7ac24e91d7e89",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/crawler/overworld.bin": {
+      "sha256": "882f431399f7b89a060bd19634708f55bbac74bc42d3f758d72a67bd7a53c5d1",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/crawler/overworld.png": {
+      "sha256": "af270780893866fef5b8c70940f99661189b4ed515152365a88bb8ed27421fed",
+      "bytes": 2102
+    },
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/attrs.bin": {
+      "sha256": "53bbe2479bb6144c714cabd31e62a66576648d4ebda1ca4ab54c913e48435074",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.bin": {
+      "sha256": "b425dc22adde63d3755823241bbf058ba318221e03bc1f5832e7f61241eda9f3",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.png": {
+      "sha256": "7219fb8ca3f2d0e1fa083bc819c88df902fa3d42630392447854bf05e2f450c3",
+      "bytes": 1243
+    },
+    "assets/native_world/gfx/world_readability_v0219/felhunter/attrs.bin": {
+      "sha256": "74377e26a1f03d25d8817f1f9ffa27128c22e82c48a558a927a47e9b6f565751",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/felhunter/masks.bin": {
+      "sha256": "327957c731dce92afc885e10973980ea819aa870017a0537554ed265b52c4838",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.bin": {
+      "sha256": "d0c80b03f7fb794a1d99f1072e3929091b0eb89d59ec867979ed98f30526e59a",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.png": {
+      "sha256": "591de35ddd887ac2eb8d28e29f00457f7aee0d2cd7290de38bb8af82cf3d0830",
+      "bytes": 2006
+    },
+    "assets/native_world/gfx/world_readability_v0219/graphics.asm": {
+      "sha256": "bff303f1ef322544b9e0383a3ddded701b7d21caecb1c7a9ae458292f0000202",
+      "bytes": 19211
+    },
+    "assets/native_world/gfx/world_readability_v0219/harpy/attrs.bin": {
+      "sha256": "440b160387106c466b2d96d0b1b983fd7760acc852f44b12e304799284c5c7e8",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/harpy/masks.bin": {
+      "sha256": "9cd186e2f087ea38d6de8e8db655abf34d45e73305d58098d6b657b2489477be",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/harpy/overworld.bin": {
+      "sha256": "11459c5dc79358ed14a6a06a5f06623f0f52f0bc96c55e8686e5810b5e740170",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/harpy/overworld.png": {
+      "sha256": "a0ec1b93c8a1ca5171af466acb6c27dff63ea73389fc2b18a86aad0e0efdd01a",
+      "bytes": 1388
+    },
+    "assets/native_world/gfx/world_readability_v0219/imp/attrs.bin": {
+      "sha256": "0ce1c558edb7f946b663a9f6ff26239daa84bad70d674ca5d0a61304381ee0d0",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/imp/masks.bin": {
+      "sha256": "cfc47b4c8ab406ae8bc3433de653e4f27161ce13c9094efde397e047326703bd",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/imp/overworld.bin": {
+      "sha256": "373009b4b39fe4de584832eb43d959b6e467febfcce5ffe27b527cf97263b1a8",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/imp/overworld.png": {
+      "sha256": "40cc0f93aae6e789c7db221f8b0d8da486b0d96dc0cf3b478096e46423e45690",
+      "bytes": 1266
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/attrs.bin": {
+      "sha256": "8fa5a5b75188f796ade258d79ce634fd7d3743b9d30efa639fb89a3e7c94ae7f",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/masks.bin": {
+      "sha256": "9cd186e2f087ea38d6de8e8db655abf34d45e73305d58098d6b657b2489477be",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.bin": {
+      "sha256": "a25cc265d065b3faa7def8fe9ed96114c6f7124077fa4b62d3ea526d33a2d6e0",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.png": {
+      "sha256": "0ca2f6e04f4d7ef20ad199c9cf18fb960210b1350753b72ddc15e39d17c816ba",
+      "bytes": 1356
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/attrs.bin": {
+      "sha256": "abb33c0b68b8af7643579161bfa2d5187476f9ef52ca9a02f4cc77035917e7d2",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/masks.bin": {
+      "sha256": "7cd0ed479ecbc82e78a149c2fde450b62b3e88e84cc9300bd8adfa394ae70fd5",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.bin": {
+      "sha256": "2f917989f9f72f347636c2dedcdfb0fa58efe1f1a026a03fbf1dd98e479d3b3e",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.png": {
+      "sha256": "537f6b3be1d7b00a35d6d746bc69a28df1f5cf42a16547c4d2abd0b490335691",
+      "bytes": 1459
+    },
+    "assets/native_world/gfx/world_readability_v0219/manifest.json": {
+      "sha256": "5d7cf500be19ec8f969a2e1058cecf3f7a9eb88f3103af257394339c0783667e",
+      "bytes": 937189
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/masks.bin": {
+      "sha256": "35939a2848f2b3c76afad40c910ec65c937cf6cd450e3791e2806c87fbac8be0",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.bin": {
+      "sha256": "6696e4a160ea7d4567e8374b8aa8db948f6520e0245293eb773483ed0d26c9d7",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.png": {
+      "sha256": "26b49a288e4e9fe1c4b5101d014de48814b6afe75a31a420f5fbf79d2cb35aee",
+      "bytes": 1377
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.bin": {
+      "sha256": "f72ddd3dc7872ff803920428b2b2e03ce1d7651d8be9b4d39bde8e6353e61c3b",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.png": {
+      "sha256": "e0fde903ef5e9a7e1be0d9a8ea4ff086f684c70bae3528e955495f4f859702d9",
+      "bytes": 1340
+    },
+    "assets/native_world/gfx/world_readability_v0219/panther/attrs.bin": {
+      "sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/panther/masks.bin": {
+      "sha256": "10358ce112364f6c44ff5f8cfc2b62fd629d9c46e5bd8ade82d9682cdfeea33c",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/panther/overworld.bin": {
+      "sha256": "b62484a50ea620f529c48d5c51e8d0c5b9a24e23eb5f54c010ae6602151e0fdc",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/panther/overworld.png": {
+      "sha256": "b2c93d290a9e7e34f1031cb571cce01bd17c827ea0c5ae94d82d77c9f4ffe817",
+      "bytes": 1598
+    },
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.bin": {
+      "sha256": "0aa50f3254406ad61eec14e0e85cc1ed417c2e699a44ece3f352db43229b7660",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.png": {
+      "sha256": "28b4c3a178beb8e0eaa9698a1971fac3b2abaffda8fceac1a374541b98b4f79d",
+      "bytes": 890
+    },
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.bin": {
+      "sha256": "05b87abe78b22ee1b6ff9d8214a0f13c86a93c35c9131f763998c7355e7c7471",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.png": {
+      "sha256": "f8b0cacbc055922da7244d86d2e793e93f16371a9f5274373b12dfaa0f893ba7",
+      "bytes": 1348
+    },
+    "assets/native_world/gfx/world_readability_v0219/raptor/attrs.bin": {
+      "sha256": "9a166ca0dd5120ca973545f42c3db8ee179d012a3b9331eeb10c64dd4d1bd892",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/raptor/masks.bin": {
+      "sha256": "e92ecdf67ee02136fd29dea74beb751ccff65f7f253e347e57c87a38c5a8f851",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/raptor/overworld.bin": {
+      "sha256": "29e8f8c3bc4ff169ea3cc16644d38b053a9faeda4d886c98837a1c9f2de83882",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/raptor/overworld.png": {
+      "sha256": "cd1db57ccec98af0d0bcf22b53561b5e8f742940c2840a7826cc6506124f8785",
+      "bytes": 1720
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_element/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_element/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.bin": {
+      "sha256": "3f9c4a7c2ad18a4d39f806a82d7a7549d6644b3f787cc2f3ec6381a24c94a701",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.png": {
+      "sha256": "da57628517f3ac7d3007f28836c7a56e8ac5b5a25d7722b24cc7458c494b0bd3",
+      "bytes": 586
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one/masks.bin": {
+      "sha256": "ea149826256a3d2d97e00c8ed44034cc1f4338d20324760aeaf12aaaddb9ae56",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.bin": {
+      "sha256": "18fd6b3fc41af44a06b326e71fbeaf0ed4aa5783c18478410ea5537e9d6ee700",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.png": {
+      "sha256": "45e376b42b5b05723405411824de78e80ec1378872457117358297e23c433512",
+      "bytes": 459
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/masks.bin": {
+      "sha256": "ea149826256a3d2d97e00c8ed44034cc1f4338d20324760aeaf12aaaddb9ae56",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.bin": {
+      "sha256": "e716e0b06e09ef1ef87ba656d8244d5e8a18ebd3704eb0857ab1b258c9446aa5",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.png": {
+      "sha256": "0c410be700b1733d8e3f139ce0593d811b4cceb101a1134cf0e3c6b0250e27cb",
+      "bytes": 448
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.bin": {
+      "sha256": "6a05967c7d6c8a2be3ced16046cc42e0eeb6dac17d3e9ea42f6f8474aeada63e",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.png": {
+      "sha256": "5ce1d7067ac73a8ac962d0dcde5ffe9b0913e05f3200aa85985b4543de517e0d",
+      "bytes": 580
+    },
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/attrs.bin": {
+      "sha256": "84f79b425e243f9fb65babd67aa2e4a718bd0d1c4833d1fa4b90314278d94e0e",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/masks.bin": {
+      "sha256": "bfeb5473d43643c3863807861ae1c53496a20c87781c0cc34b424a0b8c247816",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.bin": {
+      "sha256": "5ab6d214677de33ab63ee560b0bee5b5f8d2d17f0233519e3c71ac42f3554ca7",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.png": {
+      "sha256": "e696b5ef569a84282c0e938b6c8ce1a934ceba8576b1c208ee24ae26d2727186",
+      "bytes": 1788
+    },
+    "assets/native_world/gfx/world_readability_v0219/scorpid/attrs.bin": {
+      "sha256": "8dd0ee426966712100b7111297d746ee7b9ca20fa6a76793e48226811a147b5c",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/scorpid/masks.bin": {
+      "sha256": "039975f2f9729c6f5059815934d6358f15e0043204ba0bf0d156ba361e977d27",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.bin": {
+      "sha256": "55612bc7a42c3e6157cedf673b363eedbb1c615be9fbfd908139d9c11cdb7285",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.png": {
+      "sha256": "ea50a9a68d70a933bf2e87573aab8a7013e2ea322460d09fccc0e6523c159a12",
+      "bytes": 1067
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/masks.bin": {
+      "sha256": "35939a2848f2b3c76afad40c910ec65c937cf6cd450e3791e2806c87fbac8be0",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.bin": {
+      "sha256": "0b33d77e48985763e0549e9a961dd4b4dc440c91d2921ded53cc1f296e3f5471",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.png": {
+      "sha256": "b74e4418f83da8e783e49bd657ba3f0405242184f6d4c98c5368973964f7af75",
+      "bytes": 1122
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/masks.bin": {
+      "sha256": "3a24ed7aeaf82eb54a43a381cf32c8a4764301c5e6dc490f2c1278152c7161b2",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.bin": {
+      "sha256": "b2b2b4ceeb8b167a6c3ff3f885cde1d0c23da0b2051419282c23f4a6cf4f543e",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.png": {
+      "sha256": "157c132eb2c9b81fdf5e976dad8fdb1d02ff606eb9d7a8ebd7808682beff7688",
+      "bytes": 1070
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman/masks.bin": {
+      "sha256": "62ba9ca65ae6af16962d26f670a350c9440ad9906f531ca1b3f98e8e32de9ef1",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman/overworld.bin": {
+      "sha256": "72fcc38853206aead2447dc8d580ed4b7308d7f44c0a79932344dc5f8648ec11",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman/overworld.png": {
+      "sha256": "8eea2d87830e32a72bf95d3d9f0789709fead8a26e7ccbddc14d635d8b6c7050",
+      "bytes": 1071
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.bin": {
+      "sha256": "f7851b3f38688428e97245fc674500271608dea01a76156e67225c303b0ace1e",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.png": {
+      "sha256": "0b5230fff7df5e5f6a68d4f0c4b5e89e80693b6f912a503b6f97af33b2a8ea16",
+      "bytes": 1458
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/attrs.bin": {
+      "sha256": "812961b3e2a6d8ce23925e80fdd88afd606750c9ce5a40349e491615177d6b05",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.bin": {
+      "sha256": "73536ad8a7ba5ef8bbc44fd2eca732ca303eb3f9e98cea1b9b26eed95e7544e8",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.png": {
+      "sha256": "1d4506228849182fc8719d2d21390d18001e96c1e00c7b2a1c5b72cfd8075962",
+      "bytes": 1145
+    },
+    "assets/native_world/gfx/world_readability_v0219/sleeping/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/sleeping/masks.bin": {
+      "sha256": "6237034adcb68bb32c0c01dda86e6a6ea04352fbf342984a07dd75d6d51e5931",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.bin": {
+      "sha256": "4a187f76b63ea845611350d1f928358773bf58b7f8c9fdee7aef2c6c26666734",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.png": {
+      "sha256": "997566e46ca9b850b78018d3e31100d16cdcc86592065cb50bf02e88fe6728da",
+      "bytes": 547
+    },
+    "assets/native_world/gfx/world_readability_v0219/tiger/attrs.bin": {
+      "sha256": "6308e583637d39ca82d93b4696c8ebd2587c89eaf8541c3f254ebf2027d99a89",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/tiger/masks.bin": {
+      "sha256": "10358ce112364f6c44ff5f8cfc2b62fd629d9c46e5bd8ade82d9682cdfeea33c",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/tiger/overworld.bin": {
+      "sha256": "9435c2c82d6da6b3d4ba27fe699408f6c712c54258f91d1534f80d1b7ad5500f",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/tiger/overworld.png": {
+      "sha256": "94030f88469d2ae5c78fccc0f8563d2dd638ba170ab7e054832be1548de37e92",
+      "bytes": 1786
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/masks.bin": {
+      "sha256": "35939a2848f2b3c76afad40c910ec65c937cf6cd450e3791e2806c87fbac8be0",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.bin": {
+      "sha256": "0b33d77e48985763e0549e9a961dd4b4dc440c91d2921ded53cc1f296e3f5471",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.png": {
+      "sha256": "b74e4418f83da8e783e49bd657ba3f0405242184f6d4c98c5368973964f7af75",
+      "bytes": 1122
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.bin": {
+      "sha256": "8f431647c855d13d029bd7e510d844b0d3c1ae853d51199e711f744952ceccb4",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.png": {
+      "sha256": "6f4db03389889383b1b4665dad3dab98d3b71aa197176925f7497cacaacfa9d8",
+      "bytes": 1183
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/masks.bin": {
+      "sha256": "3a24ed7aeaf82eb54a43a381cf32c8a4764301c5e6dc490f2c1278152c7161b2",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.bin": {
+      "sha256": "b2b2b4ceeb8b167a6c3ff3f885cde1d0c23da0b2051419282c23f4a6cf4f543e",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.png": {
+      "sha256": "157c132eb2c9b81fdf5e976dad8fdb1d02ff606eb9d7a8ebd7808682beff7688",
+      "bytes": 1070
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/attrs.bin": {
+      "sha256": "51abbf62a02f31f66cbfa60995476b553f93289870abd21419ad74ad65857252",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.bin": {
+      "sha256": "8f431647c855d13d029bd7e510d844b0d3c1ae853d51199e711f744952ceccb4",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.png": {
+      "sha256": "6f4db03389889383b1b4665dad3dab98d3b71aa197176925f7497cacaacfa9d8",
+      "bytes": 1183
+    },
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.bin": {
+      "sha256": "b4e4682f86ecf02c2a1c2ca446e97f94d108cce269e9a62c6757ad84c4ee1c90",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.png": {
+      "sha256": "19ea1288d0564f8a196e7032ef54c8a3aeddbc27794fcb881a428fbac38f5137",
+      "bytes": 1338
+    },
+    "assets/native_world/gfx/world_readability_v0219/warlock/attrs.bin": {
+      "sha256": "34db545211b85858a6c703c8a7f075b18e716a97651be6e714668feb3919f72f",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/warlock/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/warlock/overworld.bin": {
+      "sha256": "36668f3b57227297e17d8ee6b0a3ab41fe9a08219e03944a1aecbcf8b5661cfc",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/warlock/overworld.png": {
+      "sha256": "2bd0d2991aad95b965c0dab91dfffc92cc1a8f2e2d0fc70a055ac18b7073c04c",
+      "bytes": 1160
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior/attrs.bin": {
+      "sha256": "35b8cf7afb6b2652b32b329d4f6996184ab451dfc94c6b6bd66c1f59de80436b",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior/masks.bin": {
+      "sha256": "719e9f0a93205d642f5ac6a1113ceff66d3449b9bce9a7989f2c895d6a7e618b",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior/overworld.bin": {
+      "sha256": "d9cebf93f6774a6691b1385a21a565144fb6143953aeabc4d74bf421bc66205a",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior/overworld.png": {
+      "sha256": "70130b26c306838192947db572b454d411ca25e102dac10102a03dacc84ff4e6",
+      "bytes": 1287
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/attrs.bin": {
+      "sha256": "f2ba432ef6257a96f37fc5cea2d51ecf6d986c5c23b2f41d36adcfebfb118dd4",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/masks.bin": {
+      "sha256": "9d304b9a6c01459a63816ca2e3b090ee13ec91f53a14a74e389c4163fb8d6550",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.bin": {
+      "sha256": "7c43329a0c782d003e1785da7193b28928cf07812a4d69211791f4073bdbcd83",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.png": {
+      "sha256": "538c0db7c63c3ce1769c0a4e8043eecdd21b8d999d68d89c4bbf78308b68c22e",
+      "bytes": 1505
+    },
+    "assets/native_world/gfx/world_readability_v0219/yarrog/attrs.bin": {
+      "sha256": "01c9a7f5ca5e06aa3b0d645d86744d3107f3604e2532c2c8597f1cbae1603278",
+      "bytes": 108
+    },
+    "assets/native_world/gfx/world_readability_v0219/yarrog/masks.bin": {
+      "sha256": "5d7acd7b2f7181eb13f2cbe89afe0815a253326d0191ab744f9643351a879990",
+      "bytes": 24
+    },
+    "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.bin": {
+      "sha256": "dcd526f4a9e2f23b0164e8a1bd3476cab28fed4cd98e9d1d9cf5588e9685e824",
+      "bytes": 1728
+    },
+    "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.png": {
+      "sha256": "c153c158a0695676adef7751711f7ba6d83bf216c857cd5a7b71b3238eb04514",
+      "bytes": 1264
+    },
+    "assets/source_provenance.json": {
+      "sha256": "d8ad60a6117dec225a761f2b2c69e05d0a00fd0e6cc4db78048933544e0de060",
+      "bytes": 5220
+    },
+    "assets/uniform_ground/BurningBladeCavern.2bpp": {
+      "sha256": "9aaff3392a85df8a70568622e05608ad5776d37a54b0787fa2fe16b1483474e1",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/BurningBladeCavern.2bpp.lz": {
+      "sha256": "4f05b640855bfbd608c75214fcc3d11fbca5e03e16c0010837c9843726c3ce7f",
+      "bytes": 415
+    },
+    "assets/uniform_ground/BurningBladeCavern.png": {
+      "sha256": "eb0f67137518a9d0009da918403ce2de937ed2988015408c887213cda542539a",
+      "bytes": 1349
+    },
+    "assets/uniform_ground/BurningBladeCavern_coll.asm": {
+      "sha256": "5a75c780518577ccc86170af8e9925d28fb9a5b94cd7061f685f73edd826e1b1",
+      "bytes": 5354
+    },
+    "assets/uniform_ground/BurningBladeCavern_meta.bin": {
+      "sha256": "bfe33ca1ef4c42bb5b439bc46e9878c7fba371b21ea572fc725dda733a952a7f",
+      "bytes": 1120
+    },
+    "assets/uniform_ground/BurningBladeCavern_palmap.bin": {
+      "sha256": "b13477aaae91299ad70af4c6f0beb3e20e8f07c979e4fd19e54f3d9fde46fa6f",
+      "bytes": 128
+    },
+    "assets/uniform_ground/BurningBladeCavern_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/DurotarRoad.2bpp": {
+      "sha256": "1bad920d41cfd5450c53d03887e792996232b2f356a3e050c0583e1e53701168",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/DurotarRoad.2bpp.lz": {
+      "sha256": "665ae4946fb0b28d7846689ff9a96d337fe3838d035320a9000b0ce57924c385",
+      "bytes": 1056
+    },
+    "assets/uniform_ground/DurotarRoad.png": {
+      "sha256": "9ec7111ddb28100d383783d943ba52953a958c66310e34441ac88df528161862",
+      "bytes": 2004
+    },
+    "assets/uniform_ground/DurotarRoad_coll.asm": {
+      "sha256": "70fb334c3a9135915a2ccf7c09484ec9f3b7f52ec76a3c1406b8083e6cb9ea09",
+      "bytes": 6278
+    },
+    "assets/uniform_ground/DurotarRoad_meta.bin": {
+      "sha256": "0f13efc865dcb010df8e67da72b3ff24702e9634ff1b770067b6e03e4d3c5094",
+      "bytes": 1312
+    },
+    "assets/uniform_ground/DurotarRoad_palmap.bin": {
+      "sha256": "eaecca18d6ab388a1c3d9e4e3996a28988981242dd1adff0964866a292bfc989",
+      "bytes": 128
+    },
+    "assets/uniform_ground/DurotarRoad_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/OrgrimmarGate.2bpp": {
+      "sha256": "45648da6693bebdae030109d2fed42a0304c04b82f868e7db8d8a12aa3593e38",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/OrgrimmarGate.2bpp.lz": {
+      "sha256": "c39451f5d5fcc6863d71267cb167a29bd4814301e33d0ca32aa574f3e7f97701",
+      "bytes": 2122
+    },
+    "assets/uniform_ground/OrgrimmarGate.png": {
+      "sha256": "cddaa0fcefcd7403e43a0c3d246d9540d86225e7a4ca7a6001ba16a187f0b1c9",
+      "bytes": 3154
+    },
+    "assets/uniform_ground/OrgrimmarGate_coll.asm": {
+      "sha256": "a512807e256614891d91b13ae5cdbc315f7265abe72c65c9b12ca0bfea53520d",
+      "bytes": 6708
+    },
+    "assets/uniform_ground/OrgrimmarGate_meta.bin": {
+      "sha256": "db6ed3cf93a2a792d01402f0d8e95943147c95c21f9724981d5b9f3cd19c2cf8",
+      "bytes": 1408
+    },
+    "assets/uniform_ground/OrgrimmarGate_palmap.bin": {
+      "sha256": "6aa9db8b9fc889f1daeba44842867855338e73eca93506bb554943b760a61fcb",
+      "bytes": 128
+    },
+    "assets/uniform_ground/OrgrimmarGate_priority.bin": {
+      "sha256": "406e4ad3e6e8d40a7c4e7cecdc72976e729491d0b433fa4f952643aa6b180578",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonCaveApproach.2bpp": {
+      "sha256": "9182e118e233215a3fcca2c9ea3c95c78df01b14c5d9507a986559f70158f454",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonCaveApproach.2bpp.lz": {
+      "sha256": "bf48300d3d77fca2446a0a6b1fbf11455a189136ce3bf3fb9a1138a71cb3540c",
+      "bytes": 903
+    },
+    "assets/uniform_ground/PeonCaveApproach.png": {
+      "sha256": "96bf01d344b4c94f19bd982da3866d1f81d99d4fc804f3d13ed63d7069e9207a",
+      "bytes": 1844
+    },
+    "assets/uniform_ground/PeonCaveApproach_coll.asm": {
+      "sha256": "c9202343bb6fae4a674ed128c0aa3cc8975a82c7365de6ce9d8b2e4c7a2b8126",
+      "bytes": 5896
+    },
+    "assets/uniform_ground/PeonCaveApproach_meta.bin": {
+      "sha256": "69043b7eccd00fb11a15eef44ada59d627f003c77bae0e5c7e1fb9804ae2ebea",
+      "bytes": 1232
+    },
+    "assets/uniform_ground/PeonCaveApproach_palmap.bin": {
+      "sha256": "a982658adbca79667c7f563107a55bbbf53bb2d88f416b256c19542ae52ec118",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonCaveApproach_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonHanazuaCamp.2bpp": {
+      "sha256": "6563eea0b15e4fdfaa49d85f2002ab4ecf8fdd520e5d39611b13e6bc4a75f64f",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonHanazuaCamp.2bpp.lz": {
+      "sha256": "ae2ad487071c4c61bc4d577c810ec0989cf94b9be7b7d2604e57cc241aba5694",
+      "bytes": 544
+    },
+    "assets/uniform_ground/PeonHanazuaCamp.png": {
+      "sha256": "8904b22a75a31b2c535b1c25c19d4fedcf3052d03659d869939f267f7f9b058c",
+      "bytes": 1466
+    },
+    "assets/uniform_ground/PeonHanazuaCamp_coll.asm": {
+      "sha256": "ad97ef0d4fcab7a152bb363f0804a90d2a76a1e31a8af7fc862806c6fd4efbcf",
+      "bytes": 5748
+    },
+    "assets/uniform_ground/PeonHanazuaCamp_meta.bin": {
+      "sha256": "7950330f774685000d5bbd2fdc11aebba034f7a37def70fdce2b3e0ee7d606c0",
+      "bytes": 1200
+    },
+    "assets/uniform_ground/PeonHanazuaCamp_palmap.bin": {
+      "sha256": "633472f0833b53d96b914fcb801ab5cbd61e5b2ebb9bd9e34e66969b266d3709",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonHanazuaCamp_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonOpening.2bpp": {
+      "sha256": "35c1b0636786c49bd54f1669b69ffbe5c47342dec99e56bd2081225383c67d03",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonOpening.2bpp.lz": {
+      "sha256": "a16eea3fcd21647b6909a17d435fa4ea46a2a8c8d16770e672bcd1188a3c48bf",
+      "bytes": 474
+    },
+    "assets/uniform_ground/PeonOpening.png": {
+      "sha256": "750c493d1cd1cb5e294d489babcb1abd319ae47615be56c936b7f1988616f154",
+      "bytes": 1379
+    },
+    "assets/uniform_ground/PeonOpening_coll.asm": {
+      "sha256": "3daaa5b09b8cbc115f3d7187f073945c35d801c2dc55f6dde65b5088ff34cd49",
+      "bytes": 5432
+    },
+    "assets/uniform_ground/PeonOpening_meta.bin": {
+      "sha256": "f54c5f4a06673a397eab91a02f41d56cf02f3556edd5d332220b5b77636de435",
+      "bytes": 1136
+    },
+    "assets/uniform_ground/PeonOpening_palmap.bin": {
+      "sha256": "be75a5c98c7fbcb34263671f1b48e0f98271eaa4cd4e683365ab6792be31519b",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonOpening_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonSarkothBasin.2bpp": {
+      "sha256": "fa36ddf0df2f227203fe7f8145ffaf0dfcc70d9f7884171bf3c1f1674df01815",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonSarkothBasin.2bpp.lz": {
+      "sha256": "718cf94d0fba0c1ac6161da64ed0fb1a498d5d87809805e8564f6f9f553609b5",
+      "bytes": 546
+    },
+    "assets/uniform_ground/PeonSarkothBasin.png": {
+      "sha256": "117da740db4c1092cabe6bc1d450973437dbb8a213fc45eee7250db9f3e91766",
+      "bytes": 1462
+    },
+    "assets/uniform_ground/PeonSarkothBasin_coll.asm": {
+      "sha256": "6d1829f733ab8e76d9ff243f809e1804d1f093987ff901754081052622169a44",
+      "bytes": 5748
+    },
+    "assets/uniform_ground/PeonSarkothBasin_meta.bin": {
+      "sha256": "84d2fafff9aa3812642deb3ac12a889c44060f6e90564cb97356f4aef4a85330",
+      "bytes": 1200
+    },
+    "assets/uniform_ground/PeonSarkothBasin_palmap.bin": {
+      "sha256": "c84dc2bbd1b9e3db6bc1227f782533d0743eb5addde769698e91e133f7ae9a60",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonSarkothBasin_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonValleyCrossroads.2bpp": {
+      "sha256": "b452d9449a8fa318680211dd252db799be9b379dff406dfc61fd88fead620ec2",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonValleyCrossroads.2bpp.lz": {
+      "sha256": "5d988a8dadd911d84118f97edc9381cb7016a674d8ddb5f30501e562c82bccf5",
+      "bytes": 426
+    },
+    "assets/uniform_ground/PeonValleyCrossroads.png": {
+      "sha256": "41f9f4dbea4abe5563ca6b4ffda33b3cb443dd1627d47b42e49dc8a35c056fb2",
+      "bytes": 1367
+    },
+    "assets/uniform_ground/PeonValleyCrossroads_coll.asm": {
+      "sha256": "9dea1ea98f460be3aede856e59e6408d11a2a182dce6c6a9c6bb337d9120d19b",
+      "bytes": 5840
+    },
+    "assets/uniform_ground/PeonValleyCrossroads_meta.bin": {
+      "sha256": "f5e431522762bdc277eb1afcc97e9c2d4abe9a641f27b023ac1db06a62f8de30",
+      "bytes": 1216
+    },
+    "assets/uniform_ground/PeonValleyCrossroads_palmap.bin": {
+      "sha256": "3e2306baf76ef554bb7040df59826e49b1f66b415bad74a700a8a0ea9de4bba7",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonValleyCrossroads_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/PeonValleyExit.2bpp": {
+      "sha256": "da99030cf146a870130a9a1618063d5f750345027d4e5b528a496730d65fc7a6",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/PeonValleyExit.2bpp.lz": {
+      "sha256": "270a4d4e246000b745f4de29d3d4271873683b374dbc0ba34a2da8492c44fad1",
+      "bytes": 459
+    },
+    "assets/uniform_ground/PeonValleyExit.png": {
+      "sha256": "cda0b40efcb28955fe9ea944b919430664d1096a0916d6e43b251709af9aae44",
+      "bytes": 1386
+    },
+    "assets/uniform_ground/PeonValleyExit_coll.asm": {
+      "sha256": "1821e7215fa0226076c86871d206953746408cbcb3ec04de8be05976d8ba9f1d",
+      "bytes": 5748
+    },
+    "assets/uniform_ground/PeonValleyExit_meta.bin": {
+      "sha256": "969f0b640fa6cc339f453c8b0f412125491990770db6bb1ac559892982868501",
+      "bytes": 1200
+    },
+    "assets/uniform_ground/PeonValleyExit_palmap.bin": {
+      "sha256": "aa8cca46e3ed26bc05bf4d94009b3827f1ce85c30320b121733ac4cd1789c1fd",
+      "bytes": 128
+    },
+    "assets/uniform_ground/PeonValleyExit_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/RazorHill.2bpp": {
+      "sha256": "4621cdc80cfe12d285e2d66ef4100b76e3d25a93a894c71f14abadfb2cf73e7d",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/RazorHill.2bpp.lz": {
+      "sha256": "54ff8522cdedbe1b7182d7fbf78826a766d2d8077ad3bc29a723ae5362f4d197",
+      "bytes": 2516
+    },
+    "assets/uniform_ground/RazorHill.png": {
+      "sha256": "1ff62d797e0406f27a89147b6c4dc959e2e777454b6e38c33c0f1eebfc86aa07",
+      "bytes": 3744
+    },
+    "assets/uniform_ground/RazorHill_coll.asm": {
+      "sha256": "0295a370b9846de43d4707516e883bfd000f4e7bcb5ce963194916c2e7b34dad",
+      "bytes": 7564
+    },
+    "assets/uniform_ground/RazorHill_meta.bin": {
+      "sha256": "b3210da78d73cac63c9230fcb3f3230e6fc514960c83537726d6bc7a987c5ec8",
+      "bytes": 1584
+    },
+    "assets/uniform_ground/RazorHill_palmap.bin": {
+      "sha256": "9eca5d3bd3491ef0db4b77e7e05d0fd0aeece261276fd2012e33e123730941fe",
+      "bytes": 128
+    },
+    "assets/uniform_ground/RazorHill_priority.bin": {
+      "sha256": "fee8bf5da0b5437977fe9a96bd65bf674097b79ec1141e1657553c3d5b0f406c",
+      "bytes": 32
+    },
+    "assets/uniform_ground/SenjinVillage.2bpp": {
+      "sha256": "c6beb35ec6e0473bd13b2abea7733565f676eda4fe342418485ef263c8ca78f8",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/SenjinVillage.2bpp.lz": {
+      "sha256": "cdbd0a080e4298ec1be0ef1605307334c94457443e68e1af1a7b647a5173497e",
+      "bytes": 2283
+    },
+    "assets/uniform_ground/SenjinVillage.png": {
+      "sha256": "69ea1f1cb24d261d7d490dcc25303ac0df1ddf649ca804ba3ca37ade08859564",
+      "bytes": 3551
+    },
+    "assets/uniform_ground/SenjinVillage_coll.asm": {
+      "sha256": "e4f10c40c3478b6ba0098b07de834ea4bc82f0703b73c3e0e3a09430f3ca52e6",
+      "bytes": 7044
+    },
+    "assets/uniform_ground/SenjinVillage_meta.bin": {
+      "sha256": "db08fceaa481b2ac8a9a05614422fed3fc30ac89657575083b1d952d9228b006",
+      "bytes": 1472
+    },
+    "assets/uniform_ground/SenjinVillage_palmap.bin": {
+      "sha256": "b34ff2a56a164856525b3baf8538b18d9ac508c98c02c004d44097cb928a8b07",
+      "bytes": 128
+    },
+    "assets/uniform_ground/SenjinVillage_priority.bin": {
+      "sha256": "6de64a5815b36602abc4c066853268c2deb7c6989c6c8688768ace37e9523494",
+      "bytes": 32
+    },
+    "assets/uniform_ground/TheDen.2bpp": {
+      "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/TheDen.2bpp.lz": {
+      "sha256": "1f576ec5675e407392d022fbea82c545584cc74fb418e3b8ac5f7abbefbe5d69",
+      "bytes": 2200
+    },
+    "assets/uniform_ground/TheDen.png": {
+      "sha256": "9fcde45ef2f6a2fec8cf348d644fd6dd7c6f7aeccc89c3a5ab2d7782f646fd8a",
+      "bytes": 3340
+    },
+    "assets/uniform_ground/TheDen_coll.asm": {
+      "sha256": "512832025022e9473df810751b6ecb998521f4387c7b10fba26109254df986f4",
+      "bytes": 7166
+    },
+    "assets/uniform_ground/TheDen_meta.bin": {
+      "sha256": "58a04fc37ff00d6eef8ceb3eed3e67eb051acdff674f43a5440c941584a65ae0",
+      "bytes": 1504
+    },
+    "assets/uniform_ground/TheDen_palmap.bin": {
+      "sha256": "0c954039e12cba11ae240f0c737d368e466d563aa450d3e6f34f53a912a0875a",
+      "bytes": 128
+    },
+    "assets/uniform_ground/TheDen_priority.bin": {
+      "sha256": "1105b341dc5767e1786e915341d1ededad2524b6a87dc432408ffc161d16211a",
+      "bytes": 32
+    },
+    "assets/uniform_ground/ValleyOfTrials.2bpp": {
+      "sha256": "faaa3356df8fe0e7fc877aea39214314d8f00e8f58e8b541378d7c83cf3bdf47",
+      "bytes": 3456
+    },
+    "assets/uniform_ground/ValleyOfTrials.2bpp.lz": {
+      "sha256": "eb5b4a23ca76f21e69fbf3414de43d65ae2af72158be639772b6acd48b079743",
+      "bytes": 982
+    },
+    "assets/uniform_ground/ValleyOfTrials.png": {
+      "sha256": "3b2314fa74f8ee81499b8208fd244a1d9c65fb2887683a42ff1907c28d8bcb7e",
+      "bytes": 1916
+    },
+    "assets/uniform_ground/ValleyOfTrials_coll.asm": {
+      "sha256": "6bbc18f72a2bf9ddb591f868d76deb4c01fe21543de92590009beb51ef4d273c",
+      "bytes": 6278
+    },
+    "assets/uniform_ground/ValleyOfTrials_meta.bin": {
+      "sha256": "3f8862b3cce1ca49c7a452c5fd2c4c99cd5b13deef02d7d789099547ea02684e",
+      "bytes": 1312
+    },
+    "assets/uniform_ground/ValleyOfTrials_palmap.bin": {
+      "sha256": "f476bee20aacc477eb8660057c38d89e04730ec46e8dffaed1064432c00b2ae7",
+      "bytes": 128
+    },
+    "assets/uniform_ground/ValleyOfTrials_priority.bin": {
+      "sha256": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+      "bytes": 32
+    },
+    "assets/uniform_ground/fire_frames_world.bin": {
+      "sha256": "a5cb9317052bab554224e8d788b066ab66fcedeb75e5ae916ba1c9f8c61f61f7",
+      "bytes": 192
+    },
+    "assets/uniform_ground/ground_bg3.bin": {
+      "sha256": "e9118be1f0e3bbba75df7f9343500f8cde74631e29af6543d24482456c300dfb",
+      "bytes": 24
+    },
+    "assets/uniform_ground/ground_bg3.pal": {
+      "sha256": "9ebf9c92339b1b3782938e215e9824a021158b8cc997430140988dd649a145d5",
+      "bytes": 212
+    },
+    "assets/world_design_sources/heroes.json": {
+      "sha256": "faf54a63dfcbf50f5c30c675a7938be9f747c8264a1005be8fbdb20db1cfc84a",
+      "bytes": 294374
+    },
+    "assets/world_design_sources/heroes_alignment_verification.json": {
+      "sha256": "31efe6daa6a0830a65e9e35b4ce67596a5392d61c38c946d04a8e189cd32126f",
+      "bytes": 4555
+    },
+    "assets/world_design_sources/heroes_verification.json": {
+      "sha256": "e85cf6618d817a07e7de83a3e1c3e1506481ba41416861a6d172d3f47e5d160e",
+      "bytes": 18827
+    },
+    "assets/world_design_sources/orc_npcs.json": {
+      "sha256": "18d8b92f84f70763594fb8c81d8e354d5c617332a3736ecf549e7e85d9a4de31",
+      "bytes": 1354605
+    },
+    "assets/world_design_sources/originals/orc_specialists_generated_source.png": {
+      "sha256": "5914510de607fbdbd97aaa6869fb9e770e0ccb187d45f54059bd73f07e199dc2",
+      "bytes": 1576905
+    },
+    "assets/world_design_sources/originals/orc_townsfolk_generated_source.png": {
+      "sha256": "160b1a89adf36a475fa47420802183ef8d29ea9f73b957088b9504363ba8e1ad",
+      "bytes": 1349229
+    },
+    "assets/world_design_sources/originals/other_heroes_design_generated.png": {
+      "sha256": "5100ce36f814852c9784d4df164a972d11840a91f39d1d8cfd5ee99a0dfc445d",
+      "bytes": 2023878
+    },
+    "assets/world_design_sources/originals/shaman_design_generated.png": {
+      "sha256": "cf3f254a79d678d010f4ed3ad3d2f535650e1e8d17307f278a05dc54157e981f",
+      "bytes": 1007469
+    },
+    "assets/world_design_sources/originals/troll_world_generated_4035b98d.png": {
+      "sha256": "12fea2b4053bc3b3e0fc5bb500cd156d19abab64f4b90a101617d51939703d51",
+      "bytes": 2090826
+    },
+    "assets/world_design_sources/shaman_verification.json": {
+      "sha256": "b9e819194a3c2738991837954a5a4e963f90dd39496208052240b1118761529a",
+      "bytes": 5086
+    },
+    "assets/world_design_sources/trolls.json": {
+      "sha256": "df0016b23ee0f10fe11ecf62a6615bce0b3c0ee7574e260bcb12c27162bc5242",
+      "bytes": 184833
+    },
+    "assets/world_source_provenance.json": {
+      "sha256": "00bbbc1ef83afe7382f92df193b9193e4c6c3ef6af8d1bc2b9c9c2b0287583fa",
+      "bytes": 191042
+    },
+    "peon_of_warcraft_v0_2_20.gbc": {
+      "sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "bytes": 2097152
+    },
+    "peon_of_warcraft_v0_2_20.map": {
+      "sha256": "d45f7a2a63441fb681fc1c746ce4be5cf11efc70495a928a583ea70575e2b4af",
+      "bytes": 2635133
+    },
+    "peon_of_warcraft_v0_2_20.sym": {
+      "sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+      "bytes": 1972541
+    },
+    "runtime/01_shaman_world.png": {
+      "sha256": "f3209deec4eb4c6ce8a5f3b4643679461fb75d1196a748238a85ba8523374a93",
+      "bytes": 2030
+    },
+    "runtime/01_shaman_world_4x.png": {
+      "sha256": "f7a9b02f226404f733ac2de8d8b8fad9bc7b6eb42f2d730a61c066160c05f6bc",
+      "bytes": 5067
+    },
+    "runtime/02_shaman_side.png": {
+      "sha256": "d465cc4f6aefda8e21f7cf8f0e84ef709864c5096cb02064d13f4076f53ce37e",
+      "bytes": 2002
+    },
+    "runtime/02_shaman_side_4x.png": {
+      "sha256": "82d8b39245d39d3b8e044bf7c3b59b638507a796faa525613fb653084e1d0429",
+      "bytes": 5002
+    },
+    "runtime/03_warrior_world.png": {
+      "sha256": "4d1a82d51b80f2d73fcf165d9b6abd13427c3dd6510bad52cb57a8fc5aeb1103",
+      "bytes": 2358
+    },
+    "runtime/03_warrior_world_4x.png": {
+      "sha256": "8abd823d71365cd1a052d6e3d8f3dbb09ee556baa8d7b1b974057b7fe9dec538",
+      "bytes": 5542
+    },
+    "runtime/04_warlock_world.png": {
+      "sha256": "8f0f749ccad9facce412630e45000be9367ecff7b5bde6ee3c67412d805c67f5",
+      "bytes": 2426
+    },
+    "runtime/04_warlock_world_4x.png": {
+      "sha256": "83eb21dfb8607a57d078d082f04b6420b6e0f08d93e2c9b5a91f547082691764",
+      "bytes": 5573
+    },
+    "runtime/05_orc_quest_giver.png": {
+      "sha256": "116983de5b9d28b8321efd7ace976e2a42647caab3436fce765483f0f312f7a3",
+      "bytes": 3065
+    },
+    "runtime/05_orc_quest_giver_4x.png": {
+      "sha256": "89e497c2cf97e15e4f4bdf832920de205c3ba64159ee05837bb57573ce662738",
+      "bytes": 6535
+    },
+    "runtime/06_shaman_masters_lodge.png": {
+      "sha256": "a3524abe650f30165f0aaa5546c39c72adb94df40cb58d2128f924ee5fda8994",
+      "bytes": 7276
+    },
+    "runtime/06_shaman_masters_lodge_4x.png": {
+      "sha256": "e7b715ba4d8ca88f614b99aaaf61155f63d147eb99e2ae5a7d268078b6d87a3d",
+      "bytes": 13293
+    },
+    "runtime/07_warrior_masters_lodge.png": {
+      "sha256": "2b36c2b5ea4f464dc40faa059b9ac19c482aeeaa865775ec32a0f1b1f751eb41",
+      "bytes": 7301
+    },
+    "runtime/07_warrior_masters_lodge_4x.png": {
+      "sha256": "1370574b19e2609aae7d755626cb95fc86b9ec009738efd058e14c8ed4a7ee7e",
+      "bytes": 13304
+    },
+    "runtime/08_warlock_masters_lodge.png": {
+      "sha256": "ae10f6c25433207a472d28e1bae36ac54f8e6ffb07a63d388124fef068edda64",
+      "bytes": 7246
+    },
+    "runtime/08_warlock_masters_lodge_4x.png": {
+      "sha256": "0978e120e93d2211a5e701ffae56d8b48df09e5a97d3deb0ec61ac2be76c22e7",
+      "bytes": 13187
+    },
+    "runtime/09_cold_continue.png": {
+      "sha256": "6910deca05e1a6d08237fb4642a9b2049e4fa54276a91728321bc065d33ae9b0",
+      "bytes": 6682
+    },
+    "runtime/09_cold_continue_4x.png": {
+      "sha256": "2b6f76f2b49ccf4a0ae614c8cce89045f253226b6c0b7ead2ed12687356cc3d7",
+      "bytes": 12743
+    },
+    "runtime/10_long_walk_completed.png": {
+      "sha256": "60491c1502989c95acd157a52472b3b85e1c51d3dee0870fcf0287c4ab8dbc8d",
+      "bytes": 3544
+    },
+    "runtime/10_long_walk_completed_4x.png": {
+      "sha256": "94d4a26fcd55e9d956417731b48318e49cd8c24a331b7d9c2512d084d91ae75c",
+      "bytes": 7306
+    },
+    "runtime/11_battle_mana.png": {
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "bytes": 3215
+    },
+    "runtime/11_battle_mana_4x.png": {
+      "sha256": "197d74f1bf43276a8ca36a68d96c39774fc74319b3978a1b4879367393ed31fd",
+      "bytes": 6672
+    },
+    "runtime/12_free_mace.png": {
+      "sha256": "2cbaa2acd4b94594b274d744158bc962b83461bc51ad0228f9a11ad070b2e817",
+      "bytes": 3221
+    },
+    "runtime/12_free_mace_4x.png": {
+      "sha256": "148c5086078aa48346047f1096e836a72e9e0051874e9aa162b559314d48c6a6",
+      "bytes": 6678
+    },
+    "runtime/13_victory_names.png": {
+      "sha256": "53bf3b1ae7927d24dd5c6ab3264bb757196505ba8c4907e84dcb93913835e16b",
+      "bytes": 2242
+    },
+    "runtime/13_victory_names_4x.png": {
+      "sha256": "869500db59a8ec0800c86b93f674b69a07b6e245090d061b9ac876971dc51110",
+      "bytes": 5279
+    },
+    "runtime/14_battle_world_return.png": {
+      "sha256": "83455edcd7e1d448ad5993c2bd28b4bc21d19af3e3b205a87c61eeda26d2913c",
+      "bytes": 3176
+    },
+    "runtime/14_battle_world_return_4x.png": {
+      "sha256": "f5023a7fe650ea73e37ba6784ec2af592c287cb539ba6a882f74498937f2cfd8",
+      "bytes": 7406
+    },
+    "runtime/15_welcome_base.png": {
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "bytes": 6355
+    },
+    "runtime/15_welcome_base_4x.png": {
+      "sha256": "a59b93d020245a75d107bfd03dbcd44632fa9b9cedabddbb6ee3ff3a5af4088a",
+      "bytes": 11396
+    },
+    "runtime/16_master_shaman.png": {
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "bytes": 6216
+    },
+    "runtime/16_master_shaman_4x.png": {
+      "sha256": "815e130d51fd47fd93da73cd5fa5d77fde8f019cb678d1240762d2c450464b12",
+      "bytes": 11668
+    },
+    "runtime/17_master_warrior.png": {
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "bytes": 6055
+    },
+    "runtime/17_master_warrior_4x.png": {
+      "sha256": "86da2610939449ce0ea1cfb65f5ab7100cdd79d74b3b441a0e33442c81de287b",
+      "bytes": 11122
+    },
+    "runtime/18_master_warlock.png": {
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "bytes": 5323
+    },
+    "runtime/18_master_warlock_4x.png": {
+      "sha256": "07a3a1a00a866d34c7d09dbd808eb48a9d70e345a234e73a9b221699e82d9660",
+      "bytes": 10043
+    },
+    "runtime/19_selection_cancel.png": {
+      "sha256": "48af6ef05ebf6003d74290d84330e67378d79797a9d30387e297a519ab202411",
+      "bytes": 3791
+    },
+    "runtime/19_selection_cancel_4x.png": {
+      "sha256": "f2edb16a22736188988ab12683632402a870feae3346eb6da4ddea5eab55c2f3",
+      "bytes": 7448
+    },
+    "runtime/20_cold_warlock_welcome.png": {
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "bytes": 6653
+    },
+    "runtime/20_cold_warlock_welcome_4x.png": {
+      "sha256": "82ac2d35f85e94f2a79d67bf71ed04cab8ad9d15afe97ec9d0224119858897a3",
+      "bytes": 12000
+    },
+    "runtime/manifest.json": {
+      "sha256": "7f5d71f3d4e3e8b2fd838807a5685a33813e4283a440c4a4f7522120a152ed2c",
+      "bytes": 12099
+    },
+    "validation/battle_and_long_walk.json": {
+      "sha256": "a486feecf2df58337f9853374a251b98498f086866511e7df074a24aa6845f05",
+      "bytes": 38159
+    },
+    "validation/clean_rebuild.json": {
+      "sha256": "e73970332595b2243bcbd0c9ca357e8282d964f8f3adb98bb482e1bac460dacd",
+      "bytes": 1247
+    },
+    "validation/performance.json": {
+      "sha256": "710e2f1ea89176b09ff7608b03ffd54a99973cdba5b77531ed40bd1b1536f001",
+      "bytes": 164000
+    },
+    "validation/preservation.json": {
+      "sha256": "0cbecf6291d21315dc1757369a69986e03e6df32731b6fdb834ae66eee593aed",
+      "bytes": 2115002
+    },
+    "validation/selection.json": {
+      "sha256": "ee1a7c74816b1f544c87f952751839214e666964509c28bc5ab9c68208c9438a",
+      "bytes": 131025
+    },
+    "validation/validation.json": {
+      "sha256": "5ca76cdf7de1f6f9f9ed8e3f1bc55bd9add05df80727c6dc1eb874d14bdec313",
+      "bytes": 10107
+    },
+    "validation/world.json": {
+      "sha256": "e6468068b3325811b5ffa320e72ab664f962ef109f5c0b34f9451516c9b9fc90",
+      "bytes": 213776
+    }
+  },
+  "zip_sha256": "4ab48427ef2a38707f3b594291c9c8e82117f8b94a5ec0ccffb608164fdbbc7f",
+  "zip_bytes": 12127977,
+  "zip_crc_and_all_payload_sha256": "PASS"
+}

@@ -1,0 +1,806 @@
+{
+  "version": "v0.2.20",
+  "status": "PASS",
+  "approved_shaman_role_unchanged": true,
+  "native_dimensions": [
+    32,
+    32
+  ],
+  "frame_bytes": 256,
+  "mask_bytes": 2,
+  "attrs_per_frame": 16,
+  "ROM_built": false,
+  "emulator_tested": false,
+  "roles": {
+    "base": {
+      "front": [
+        {
+          "pose": 0,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 19,
+          "changed_bbox": [
+            8,
+            27,
+            15,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 22,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "back": [
+        {
+          "pose": 0,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 18,
+          "changed_bbox": [
+            8,
+            27,
+            15,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 19,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "left": [
+        {
+          "pose": 0,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 24,
+          "changed_bbox": [
+            8,
+            27,
+            16,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "right": [
+        {
+          "pose": 0,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 18,
+          "changed_bbox": [
+            7,
+            27,
+            14,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            16,
+            27,
+            23,
+            32
+          ]
+        }
+      ]
+    },
+    "shaman": {
+      "front": [
+        {
+          "pose": 0,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 24,
+          "changed_bbox": [
+            8,
+            27,
+            25,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            9,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "back": [
+        {
+          "pose": 0,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 27,
+          "changed_bbox": [
+            8,
+            27,
+            23,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 28,
+          "changed_bbox": [
+            8,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "left": [
+        {
+          "pose": 0,
+          "nonblank_mask": 61422,
+          "mask_hex": "efee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 61422,
+          "mask_hex": "efee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 28,
+          "changed_bbox": [
+            8,
+            27,
+            23,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 61422,
+          "mask_hex": "efee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 37,
+          "changed_bbox": [
+            9,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "right": [
+        {
+          "pose": 0,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 38,
+          "changed_bbox": [
+            7,
+            27,
+            24,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 31,
+          "changed_bbox": [
+            6,
+            27,
+            21,
+            32
+          ]
+        }
+      ]
+    },
+    "warrior": {
+      "front": [
+        {
+          "pose": 0,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            10,
+            27,
+            17,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 22,
+          "changed_bbox": [
+            19,
+            27,
+            26,
+            32
+          ]
+        }
+      ],
+      "back": [
+        {
+          "pose": 0,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 19,
+          "changed_bbox": [
+            7,
+            27,
+            13,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 32758,
+          "mask_hex": "7ff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 25,
+          "changed_bbox": [
+            16,
+            27,
+            23,
+            32
+          ]
+        }
+      ],
+      "left": [
+        {
+          "pose": 0,
+          "nonblank_mask": 65398,
+          "mask_hex": "ff76",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 65398,
+          "mask_hex": "ff76",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 23,
+          "changed_bbox": [
+            8,
+            27,
+            15,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 65398,
+          "mask_hex": "ff76",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 19,
+          "changed_bbox": [
+            17,
+            27,
+            23,
+            32
+          ]
+        }
+      ],
+      "right": [
+        {
+          "pose": 0,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 16,
+          "changed_bbox": [
+            6,
+            27,
+            13,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 32631,
+          "mask_hex": "7f77",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 25,
+          "changed_bbox": [
+            14,
+            27,
+            21,
+            32
+          ]
+        }
+      ]
+    },
+    "warlock": {
+      "front": [
+        {
+          "pose": 0,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 15,
+          "changed_bbox": [
+            10,
+            29,
+            17,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 61430,
+          "mask_hex": "eff6",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 13,
+          "changed_bbox": [
+            20,
+            29,
+            26,
+            32
+          ]
+        }
+      ],
+      "back": [
+        {
+          "pose": 0,
+          "nonblank_mask": 30711,
+          "mask_hex": "77f7",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 30711,
+          "mask_hex": "77f7",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 13,
+          "changed_bbox": [
+            4,
+            29,
+            10,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 30711,
+          "mask_hex": "77f7",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 15,
+          "changed_bbox": [
+            13,
+            29,
+            20,
+            32
+          ]
+        }
+      ],
+      "left": [
+        {
+          "pose": 0,
+          "nonblank_mask": 61302,
+          "mask_hex": "ef76",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 61302,
+          "mask_hex": "ef76",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 17,
+          "changed_bbox": [
+            9,
+            29,
+            16,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 61302,
+          "mask_hex": "ef76",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 13,
+          "changed_bbox": [
+            18,
+            29,
+            24,
+            32
+          ]
+        }
+      ],
+      "right": [
+        {
+          "pose": 0,
+          "nonblank_mask": 32750,
+          "mask_hex": "7fee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 32750,
+          "mask_hex": "7fee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 13,
+          "changed_bbox": [
+            8,
+            28,
+            15,
+            31
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 32750,
+          "mask_hex": "7fee",
+          "oam_entries": 13,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 15,
+          "changed_bbox": [
+            17,
+            28,
+            23,
+            31
+          ]
+        }
+      ]
+    },
+    "sleeping": {
+      "front": [
+        {
+          "pose": 0,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 18,
+          "changed_bbox": [
+            8,
+            27,
+            14,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 25,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "back": [
+        {
+          "pose": 0,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            8,
+            27,
+            15,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 65382,
+          "mask_hex": "ff66",
+          "oam_entries": 12,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 20,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "left": [
+        {
+          "pose": 0,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 24,
+          "changed_bbox": [
+            8,
+            27,
+            15,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 26238,
+          "mask_hex": "667e",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 21,
+          "changed_bbox": [
+            17,
+            27,
+            24,
+            32
+          ]
+        }
+      ],
+      "right": [
+        {
+          "pose": 0,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 0,
+          "changed_bbox": null
+        },
+        {
+          "pose": 1,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 18,
+          "changed_bbox": [
+            7,
+            27,
+            14,
+            32
+          ]
+        },
+        {
+          "pose": 2,
+          "nonblank_mask": 30311,
+          "mask_hex": "7667",
+          "oam_entries": 10,
+          "2bpp_decode_exact": true,
+          "changed_native_cells_from_still": 23,
+          "changed_bbox": [
+            16,
+            27,
+            23,
+            32
+          ]
+        }
+      ]
+    }
+  }
+}

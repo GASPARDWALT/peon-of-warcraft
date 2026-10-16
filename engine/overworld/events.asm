@@ -149,10 +149,21 @@ HandleMap:
 	ret nz
 
 	call HandleMapObjects
+	ld a, [wMapTileset]
+	cp TILESET_PEON
+	jr z, .peon_frame_budget
 	call NextOverworldFrame
 	call HandleMapBackground
 	call CheckPlayerState
 	ret
+
+.peon_frame_budget
+	; Keep native logic, event order and2px movement increments. The Peon
+	; renderer's work belongs INSIDE the existing two-VBlank frame budget,
+	; so wait only for the deadline remaining after OAM/scroll publication.
+	call HandleMapBackground
+	call CheckPlayerState
+	jp NextOverworldFrame
 
 MapEvents:
 	ld a, [wMapEventStatus]

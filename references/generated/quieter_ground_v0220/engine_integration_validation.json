@@ -1,0 +1,212 @@
+{
+  "compiled_or_runtime_checked": false,
+  "engine_source_checks": {
+    "engine/gfx/color.asm": {
+      "rest_of_LoadMapPals_and_native_palettes_source_exact": true,
+      "single_post_extra_palette_hook": true
+    },
+    "engine/tilesets/peon_uniform_ground_v0220.asm": {
+      "only_3_CGB_Peon_maps": true,
+      "only_BG3_wBGPals1_destination": true,
+      "palette_bytes": 24,
+      "saved_AF_BC_DE_HL_WRAM_source_review": true
+    },
+    "engine/tilesets/peon_user_environment_v0211.asm": {
+      "all_original_functions_and_guard_byte_exact_source": true,
+      "append_only_include": true
+    },
+    "engine/tilesets/tileset_anims.asm": {
+      "TEST_original_instructions_exact": true,
+      "legacy_shared_fire_path_exact": true,
+      "new_fire_size": 192,
+      "same_existing_13_map_guard": true
+    },
+    "gfx/peon_user_environment_palettes_v0211.asm": {
+      "all_original_labels_and_other_paths_identical": true,
+      "exact_path_substitutions": 26
+    },
+    "gfx/peon_user_environment_v0211.asm": {
+      "all_original_labels_and_other_paths_identical": true,
+      "exact_path_substitutions": 39
+    }
+  },
+  "exact_graphics_meta_collision_bindings": 39,
+  "exact_palette_priority_bindings": 26,
+  "guard_map_ids": [
+    12,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "map_packets": 13,
+  "native_label_bindings": 65,
+  "packets": [
+    {
+      "map": "PeonOpening",
+      "native_files": {
+        ".2bpp": "35c1b0636786c49bd54f1669b69ffbe5c47342dec99e56bd2081225383c67d03",
+        ".2bpp.lz": "a16eea3fcd21647b6909a17d435fa4ea46a2a8c8d16770e672bcd1188a3c48bf",
+        "_coll.asm": "3daaa5b09b8cbc115f3d7187f073945c35d801c2dc55f6dde65b5088ff34cd49",
+        "_meta.bin": "f54c5f4a06673a397eab91a02f41d56cf02f3556edd5d332220b5b77636de435",
+        "_palmap.bin": "be75a5c98c7fbcb34263671f1b48e0f98271eaa4cd4e683365ab6792be31519b",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "TheDen",
+      "native_files": {
+        ".2bpp": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74",
+        ".2bpp.lz": "1f576ec5675e407392d022fbea82c545584cc74fb418e3b8ac5f7abbefbe5d69",
+        "_coll.asm": "512832025022e9473df810751b6ecb998521f4387c7b10fba26109254df986f4",
+        "_meta.bin": "58a04fc37ff00d6eef8ceb3eed3e67eb051acdff674f43a5440c941584a65ae0",
+        "_palmap.bin": "0c954039e12cba11ae240f0c737d368e466d563aa450d3e6f34f53a912a0875a",
+        "_priority.bin": "1105b341dc5767e1786e915341d1ededad2524b6a87dc432408ffc161d16211a"
+      }
+    },
+    {
+      "map": "ValleyOfTrials",
+      "native_files": {
+        ".2bpp": "faaa3356df8fe0e7fc877aea39214314d8f00e8f58e8b541378d7c83cf3bdf47",
+        ".2bpp.lz": "eb5b4a23ca76f21e69fbf3414de43d65ae2af72158be639772b6acd48b079743",
+        "_coll.asm": "6bbc18f72a2bf9ddb591f868d76deb4c01fe21543de92590009beb51ef4d273c",
+        "_meta.bin": "3f8862b3cce1ca49c7a452c5fd2c4c99cd5b13deef02d7d789099547ea02684e",
+        "_palmap.bin": "f476bee20aacc477eb8660057c38d89e04730ec46e8dffaed1064432c00b2ae7",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "PeonValleyCrossroads",
+      "native_files": {
+        ".2bpp": "b452d9449a8fa318680211dd252db799be9b379dff406dfc61fd88fead620ec2",
+        ".2bpp.lz": "5d988a8dadd911d84118f97edc9381cb7016a674d8ddb5f30501e562c82bccf5",
+        "_coll.asm": "9dea1ea98f460be3aede856e59e6408d11a2a182dce6c6a9c6bb337d9120d19b",
+        "_meta.bin": "f5e431522762bdc277eb1afcc97e9c2d4abe9a641f27b023ac1db06a62f8de30",
+        "_palmap.bin": "3e2306baf76ef554bb7040df59826e49b1f66b415bad74a700a8a0ea9de4bba7",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "PeonHanazuaCamp",
+      "native_files": {
+        ".2bpp": "6563eea0b15e4fdfaa49d85f2002ab4ecf8fdd520e5d39611b13e6bc4a75f64f",
+        ".2bpp.lz": "ae2ad487071c4c61bc4d577c810ec0989cf94b9be7b7d2604e57cc241aba5694",
+        "_coll.asm": "ad97ef0d4fcab7a152bb363f0804a90d2a76a1e31a8af7fc862806c6fd4efbcf",
+        "_meta.bin": "7950330f774685000d5bbd2fdc11aebba034f7a37def70fdce2b3e0ee7d606c0",
+        "_palmap.bin": "633472f0833b53d96b914fcb801ab5cbd61e5b2ebb9bd9e34e66969b266d3709",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "PeonSarkothBasin",
+      "native_files": {
+        ".2bpp": "fa36ddf0df2f227203fe7f8145ffaf0dfcc70d9f7884171bf3c1f1674df01815",
+        ".2bpp.lz": "718cf94d0fba0c1ac6161da64ed0fb1a498d5d87809805e8564f6f9f553609b5",
+        "_coll.asm": "6d1829f733ab8e76d9ff243f809e1804d1f093987ff901754081052622169a44",
+        "_meta.bin": "84d2fafff9aa3812642deb3ac12a889c44060f6e90564cb97356f4aef4a85330",
+        "_palmap.bin": "c84dc2bbd1b9e3db6bc1227f782533d0743eb5addde769698e91e133f7ae9a60",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "PeonCaveApproach",
+      "native_files": {
+        ".2bpp": "9182e118e233215a3fcca2c9ea3c95c78df01b14c5d9507a986559f70158f454",
+        ".2bpp.lz": "bf48300d3d77fca2446a0a6b1fbf11455a189136ce3bf3fb9a1138a71cb3540c",
+        "_coll.asm": "c9202343bb6fae4a674ed128c0aa3cc8975a82c7365de6ce9d8b2e4c7a2b8126",
+        "_meta.bin": "69043b7eccd00fb11a15eef44ada59d627f003c77bae0e5c7e1fb9804ae2ebea",
+        "_palmap.bin": "a982658adbca79667c7f563107a55bbbf53bb2d88f416b256c19542ae52ec118",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "PeonValleyExit",
+      "native_files": {
+        ".2bpp": "da99030cf146a870130a9a1618063d5f750345027d4e5b528a496730d65fc7a6",
+        ".2bpp.lz": "270a4d4e246000b745f4de29d3d4271873683b374dbc0ba34a2da8492c44fad1",
+        "_coll.asm": "1821e7215fa0226076c86871d206953746408cbcb3ec04de8be05976d8ba9f1d",
+        "_meta.bin": "969f0b640fa6cc339f453c8b0f412125491990770db6bb1ac559892982868501",
+        "_palmap.bin": "aa8cca46e3ed26bc05bf4d94009b3827f1ce85c30320b121733ac4cd1789c1fd",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "DurotarRoad",
+      "native_files": {
+        ".2bpp": "1bad920d41cfd5450c53d03887e792996232b2f356a3e050c0583e1e53701168",
+        ".2bpp.lz": "665ae4946fb0b28d7846689ff9a96d337fe3838d035320a9000b0ce57924c385",
+        "_coll.asm": "70fb334c3a9135915a2ccf7c09484ec9f3b7f52ec76a3c1406b8083e6cb9ea09",
+        "_meta.bin": "0f13efc865dcb010df8e67da72b3ff24702e9634ff1b770067b6e03e4d3c5094",
+        "_palmap.bin": "eaecca18d6ab388a1c3d9e4e3996a28988981242dd1adff0964866a292bfc989",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    },
+    {
+      "map": "SenjinVillage",
+      "native_files": {
+        ".2bpp": "c6beb35ec6e0473bd13b2abea7733565f676eda4fe342418485ef263c8ca78f8",
+        ".2bpp.lz": "cdbd0a080e4298ec1be0ef1605307334c94457443e68e1af1a7b647a5173497e",
+        "_coll.asm": "e4f10c40c3478b6ba0098b07de834ea4bc82f0703b73c3e0e3a09430f3ca52e6",
+        "_meta.bin": "db08fceaa481b2ac8a9a05614422fed3fc30ac89657575083b1d952d9228b006",
+        "_palmap.bin": "b34ff2a56a164856525b3baf8538b18d9ac508c98c02c004d44097cb928a8b07",
+        "_priority.bin": "6de64a5815b36602abc4c066853268c2deb7c6989c6c8688768ace37e9523494"
+      }
+    },
+    {
+      "map": "RazorHill",
+      "native_files": {
+        ".2bpp": "4621cdc80cfe12d285e2d66ef4100b76e3d25a93a894c71f14abadfb2cf73e7d",
+        ".2bpp.lz": "54ff8522cdedbe1b7182d7fbf78826a766d2d8077ad3bc29a723ae5362f4d197",
+        "_coll.asm": "0295a370b9846de43d4707516e883bfd000f4e7bcb5ce963194916c2e7b34dad",
+        "_meta.bin": "b3210da78d73cac63c9230fcb3f3230e6fc514960c83537726d6bc7a987c5ec8",
+        "_palmap.bin": "9eca5d3bd3491ef0db4b77e7e05d0fd0aeece261276fd2012e33e123730941fe",
+        "_priority.bin": "fee8bf5da0b5437977fe9a96bd65bf674097b79ec1141e1657553c3d5b0f406c"
+      }
+    },
+    {
+      "map": "OrgrimmarGate",
+      "native_files": {
+        ".2bpp": "45648da6693bebdae030109d2fed42a0304c04b82f868e7db8d8a12aa3593e38",
+        ".2bpp.lz": "c39451f5d5fcc6863d71267cb167a29bd4814301e33d0ca32aa574f3e7f97701",
+        "_coll.asm": "a512807e256614891d91b13ae5cdbc315f7265abe72c65c9b12ca0bfea53520d",
+        "_meta.bin": "db6ed3cf93a2a792d01402f0d8e95943147c95c21f9724981d5b9f3cd19c2cf8",
+        "_palmap.bin": "6aa9db8b9fc889f1daeba44842867855338e73eca93506bb554943b760a61fcb",
+        "_priority.bin": "406e4ad3e6e8d40a7c4e7cecdc72976e729491d0b433fa4f952643aa6b180578"
+      }
+    },
+    {
+      "map": "BurningBladeCavern",
+      "native_files": {
+        ".2bpp": "9aaff3392a85df8a70568622e05608ad5776d37a54b0787fa2fe16b1483474e1",
+        ".2bpp.lz": "4f05b640855bfbd608c75214fcc3d11fbca5e03e16c0010837c9843726c3ce7f",
+        "_coll.asm": "5a75c780518577ccc86170af8e9925d28fb9a5b94cd7061f685f73edd826e1b1",
+        "_meta.bin": "bfe33ca1ef4c42bb5b439bc46e9878c7fba371b21ea572fc725dda733a952a7f",
+        "_palmap.bin": "b13477aaae91299ad70af4c6f0beb3e20e8f07c979e4fd19e54f3d9fde46fa6f",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      }
+    }
+  ],
+  "palette_profile_map_ids": [
+    14,
+    18,
+    19
+  ],
+  "result": "PASS",
+  "source_bindings_applied": true,
+  "source_hashes": {
+    "engine/gfx/color.asm": "278530aeb2380e4fc731ff53c9394fed4fa7c3f89a36a47afd9d1714a78091e6",
+    "engine/tilesets/peon_uniform_ground_v0220.asm": "81e56ff9cc5f4fc2f9b04666b6605ce901f501bcfdf3f6d969214740cc4a27b1",
+    "engine/tilesets/peon_user_environment_v0211.asm": "061ea1c6f10df800841be71489ac52682244e7bd79fdf320fcc7ebae62f09d2b",
+    "engine/tilesets/tileset_anims.asm": "c2d5d2a62cfbe538f848c7b72767ebda4d93b7c433fe42f18888bd20132fdf36",
+    "gfx/peon_user_environment_palettes_v0211.asm": "35f4ac353d7da119be74a07abcd62232d5bf49571fcaecc83ac7d9fc7988b1cb",
+    "gfx/peon_user_environment_v0211.asm": "2487f708851a43f67f4f671c946eaa2179c86ce7b80426c74625b122496b14c5"
+  }
+}

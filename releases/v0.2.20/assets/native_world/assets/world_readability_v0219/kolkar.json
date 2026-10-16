@@ -1,0 +1,972 @@
+{
+  "version": "v0.2.19",
+  "authoring": "Native cell records decoded from complete approved generated WORLD source: binary alpha>=128, nearest24 sampling, existing per8x8 palettes; no new anatomy during import",
+  "roles": {
+    "kolkar_archer": {
+      "references": [
+        "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png"
+      ],
+      "identity": "Explicitly user-approved generated WORLD centaur archer: human torso, chest strap, full horse body with four legs/tail, red mane, curved bow and shoulder quiver; all four actual source directions preserved.",
+      "palette": 3,
+      "views": {
+        "front": [
+          "..........333...........",
+          ".........33333..........",
+          "........3233333.........",
+          "........3123123.........",
+          ".......33311223.........",
+          ".....3.32121222.3.......",
+          ".....2..3211133.133.....",
+          ".....2...32233.3313.....",
+          "....32.32221323233......",
+          "....33.2111122133.......",
+          "....33.121233113........",
+          "....333232231212........",
+          "....3322323112213.......",
+          "....3132321112323.......",
+          "....313.2222323232......",
+          ".....33.22222223323.....",
+          ".....33.22222223323.....",
+          "......3332333232323.....",
+          "......33323.323232......",
+          "......33333.3333.3......",
+          "........323.32333.......",
+          "........233.32313.......",
+          "........33..333.........",
+          "........................"
+        ],
+        "back": [
+          ".........333............",
+          "........32223...........",
+          ".......3222233..........",
+          ".......3322333..........",
+          ".......2322333..........",
+          ".......1232121.3........",
+          ".......32323333133......",
+          "........33233.331.......",
+          "......322121233323......",
+          "......113211323333......",
+          ".....3121231223333......",
+          ".....3232233323123......",
+          "......33333323223.......",
+          "......32222233221.......",
+          "......22232223.33.......",
+          ".....322333222.33.......",
+          ".....322322333.33.......",
+          ".....32232233333........",
+          ".....32232333333........",
+          "......23.23333..........",
+          ".....3233..333..........",
+          ".....3333..333..........",
+          "......33...333..........",
+          "........................"
+        ],
+        "left": [
+          "........333.............",
+          "......333333............",
+          ".....3322233............",
+          ".....33222233...........",
+          "......132333313.........",
+          "..33.3231113121.........",
+          "..33.3211133313.........",
+          "..33..32332322..........",
+          "..32...2133333..........",
+          "...23.22221323..........",
+          "...23.23312333..........",
+          "...22.2331333.3333......",
+          "...3322121333322223.....",
+          "...322122332222222333...",
+          "...323333322222222233...",
+          "....32.322222222222333..",
+          "....32.322222232223333..",
+          ".....33.3223333222.333..",
+          ".....33.323...3322.33...",
+          ".....333323....3323.3...",
+          ".......3323....3323.....",
+          "......31323...31223.....",
+          "........33.....333......",
+          "........................"
+        ],
+        "right": [
+          ".............333........",
+          "............333333......",
+          "............3322333.....",
+          "...........3322223......",
+          ".........313333132......",
+          "........31332111323.33..",
+          ".........333331112..33..",
+          "..........22323333..33..",
+          "..........3333313...33..",
+          "..........32312213.32...",
+          "...........3311333.32...",
+          "......3333.3331333.22...",
+          ".....322223332121223....",
+          "...332222222233222223...",
+          "...332222222223333323...",
+          "..333222222222223.23....",
+          "..323333232222223323....",
+          "..32333333333323.33.....",
+          "...2.3333....323.33.....",
+          "...3.3333....323.33.....",
+          ".....3333....3233.......",
+          ".....33313....231.......",
+          "......33......33........",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          7,
+          3,
+          3,
+          7
+        ],
+        "back": [
+          3,
+          7,
+          3,
+          3,
+          3,
+          3,
+          3,
+          7,
+          3
+        ],
+        "left": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "right": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          7,
+          3,
+          3
+        ]
+      },
+      "provenance": {
+        "source_kind": "explicitly_user_approved_generated_WORLD_sheet",
+        "source_is_not_a_supplied_original_character_PNG": true,
+        "source_is_not_a_native_24px_grid": true,
+        "source_file_preserved_byte_for_byte": true,
+        "source_path": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+        "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+        "source_view_order": [
+          "front",
+          "back",
+          "left",
+          "right"
+        ],
+        "user_approval": "Root reports the user explicitly approved this new Kolkar illustration before native import",
+        "animation_policy": "Four actual source directions, each repeated at the existing three pose addresses. No invented walk frames.",
+        "conversion": "Lossy raster reduction and existing per8x8 OBJ palette fit. No claim of exact RGB/full-detail preservation or recovered native grid.",
+        "new_anatomy_authored_during_import": false,
+        "frames": {
+          "front": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              0,
+              0,
+              444,
+              444
+            ],
+            "source_crop": [
+              121,
+              66,
+              337,
+              403
+            ],
+            "source_alpha_bbox": [
+              121,
+              66,
+              337,
+              403
+            ],
+            "source_crop_size": [
+              216,
+              337
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              15,
+              23
+            ],
+            "native_fit_origin": [
+              4,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "5cfd6d4bfb0b4303313b049ed9677e9f7f6ee5327a1f6d82fa344bc6da22ea52",
+            "native_index_cells_sha256": "c2880c031117f73f0b5ca8cd83caaa24ee40eda7edc5e02c6fa902942e3c4b00",
+            "native_RGBA_sha256": "850155cd5f59e7fc3c7ee528c9661088ed16e7dddea6a28681a4c7fe54595de4",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              7,
+              3,
+              3,
+              7
+            ],
+            "protected_source_gear_tile_palettes": {},
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 229,
+            "native_binary_alpha_sha256": "f247ff869d1d3257ea3481a0f5b911cfde63ea32d29a3748397b329ef3a171be",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 4.5408,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "back": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              444,
+              0,
+              887,
+              444
+            ],
+            "source_crop": [
+              579,
+              66,
+              767,
+              403
+            ],
+            "source_alpha_bbox": [
+              579,
+              66,
+              767,
+              403
+            ],
+            "source_crop_size": [
+              188,
+              337
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              13,
+              23
+            ],
+            "native_fit_origin": [
+              5,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "74524be31648c6a464eedffa1d56e6b1411ddc41e377f1fe57d01d98ab7d7bc8",
+            "native_index_cells_sha256": "da4ec4b961f8ac82f5344c49d3fc8457e836106f7d940d0ad31197f0d680fb6c",
+            "native_RGBA_sha256": "87af78b3b499f6ffdd93d37d64a624d6383956d57859e4a5a904c3158db9381c",
+            "native_palette_ids": [
+              3,
+              7,
+              3,
+              3,
+              3,
+              3,
+              3,
+              7,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {
+              "1": 7
+            },
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 208,
+            "native_binary_alpha_sha256": "8f008d6d58c743fd3538256f8418a05423b96da1c2a84e9ece7626f94441c0ba",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 4.6733,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "left": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              887,
+              0,
+              1330,
+              444
+            ],
+            "source_crop": [
+              977,
+              75,
+              1263,
+              403
+            ],
+            "source_alpha_bbox": [
+              977,
+              75,
+              1263,
+              403
+            ],
+            "source_crop_size": [
+              286,
+              328
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              20,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "efd8f0a7edb0ae281ee8d3bb8866f31141dc6b9adcecfcd8349d461cd712fc81",
+            "native_index_cells_sha256": "737dc1efd27879260f65a1b0b79336423bf0f8be190ca8d74c99836125590f5c",
+            "native_RGBA_sha256": "0a9408c8bfa6a11319a8c8b6fbc11d3385556a492cd0e6d8585488d1d7736a84",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {},
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 255,
+            "native_binary_alpha_sha256": "e624e630b6c1b2e31802740ad12576d0015e1777384239418545bac37f618e29",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 3.5126,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "right": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              1330,
+              0,
+              1774,
+              444
+            ],
+            "source_crop": [
+              1394,
+              75,
+              1686,
+              404
+            ],
+            "source_alpha_bbox": [
+              1394,
+              75,
+              1686,
+              404
+            ],
+            "source_crop_size": [
+              292,
+              329
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              20,
+              23
+            ],
+            "native_fit_origin": [
+              2,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "adc50009caf8eb9cbcf2ba93667bf047be9231321312f8961565f9cee4bd7dc6",
+            "native_index_cells_sha256": "04b019c663c6ff76a85297bc43f762eedffa6497b9acb17e88b457473d78371e",
+            "native_RGBA_sha256": "25f3b91750c7d73c9d5a7c035ca703628e09ada30a25f5de1cab12fdf1daac19",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              3,
+              7,
+              3,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {},
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 249,
+            "native_binary_alpha_sha256": "6d29f222e12f5ef41e3dfbd5ca4f66560f6ebf3445df972fe79bfff0673b9f9c",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 3.6921,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          }
+        }
+      }
+    },
+    "kolkar_raider": {
+      "references": [
+        "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png"
+      ],
+      "identity": "Explicitly user-approved generated WORLD centaur raider: human torso, strapped chest, full horse body with four legs/tail, red mane/shoulder armor and metal axe; all four actual source directions preserved.",
+      "palette": 3,
+      "views": {
+        "front": [
+          "...........333..........",
+          "..........33333.........",
+          ".........3333323........",
+          ".........3112223........",
+          "........323212313.......",
+          "........311211123.......",
+          ".........1211121........",
+          ".....33.3223332333......",
+          "...3331323221133223.....",
+          "...3113321221211222.....",
+          "...31133221122311223....",
+          "....1333232323133133....",
+          "....3.3333231122333.....",
+          "......33332212233113....",
+          ".......3323222323223....",
+          ".......332222222333.....",
+          ".........2222222333.....",
+          ".........3233322333.....",
+          ".........3233.23333.....",
+          "..........333.333.......",
+          ".........3233.2333......",
+          ".........333332333......",
+          "..........33.333........",
+          "........................"
+        ],
+        "back": [
+          ".........333............",
+          "........32223...........",
+          ".......3322233..........",
+          ".......3332233..........",
+          ".......13322313.........",
+          ".......12223213.........",
+          ".......3332333..........",
+          ".....3331333133.23......",
+          "....3222322322231133....",
+          "....2222333311113313....",
+          "...32221323112113313....",
+          "...3223322223311331.....",
+          "....3333222233223.3.....",
+          "......33222223333.......",
+          ".....33323322232........",
+          ".....33333322233........",
+          ".....3223223333.........",
+          ".....3223223333.........",
+          "......23.33333..........",
+          "......22...333..........",
+          ".....3233..333..........",
+          ".....3333..333..........",
+          "......33...333..........",
+          "........................"
+        ],
+        "left": [
+          "........333.............",
+          "......333333............",
+          ".....33322233...........",
+          "......3221223...........",
+          "......2322133...........",
+          ".....31112133...........",
+          "......2123123...........",
+          "......3322333...........",
+          "3.313.333233333.........",
+          "31133.332333333.........",
+          "31133.333111123.........",
+          ".1333.33223223322223....",
+          ".33.33331231232222233...",
+          "..3.333323212222222233..",
+          "....3333232132222222333.",
+          ".....333223322222222333.",
+          ".....333222322232223333.",
+          "........32233333223.333.",
+          "........3323...33223.3..",
+          "........332.....3323....",
+          ".......33223....3323....",
+          ".......13233...31223....",
+          "........333.....333.....",
+          "........................"
+        ],
+        "right": [
+          ".............333........",
+          "...........333333.......",
+          "..........33222133......",
+          "..........33222123......",
+          "..........3312233.......",
+          "..........33221113......",
+          "..........33332113......",
+          "..........3333233.......",
+          ".........33333323.313.3.",
+          ".........33332123.33113.",
+          "........321111323.33113.",
+          "...32222332233223.3331..",
+          "..33222223213221333.33..",
+          ".332222222111322333.3...",
+          "3332222222311223333.....",
+          "3332222222233323333.....",
+          "3333222322232233.3......",
+          ".33.22233333223.........",
+          ".3.32233...3323.........",
+          "...3233.....3233........",
+          "...32333....3233........",
+          "...32313....32313.......",
+          "....333.....333.........",
+          "........................"
+        ]
+      },
+      "attributes": {
+        "front": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          7,
+          3,
+          3,
+          7
+        ],
+        "back": [
+          3,
+          7,
+          3,
+          7,
+          3,
+          5,
+          3,
+          7,
+          3
+        ],
+        "left": [
+          3,
+          3,
+          3,
+          5,
+          3,
+          3,
+          3,
+          3,
+          3
+        ],
+        "right": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          5,
+          3,
+          3,
+          3
+        ]
+      },
+      "provenance": {
+        "source_kind": "explicitly_user_approved_generated_WORLD_sheet",
+        "source_is_not_a_supplied_original_character_PNG": true,
+        "source_is_not_a_native_24px_grid": true,
+        "source_file_preserved_byte_for_byte": true,
+        "source_path": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+        "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+        "source_view_order": [
+          "front",
+          "back",
+          "left",
+          "right"
+        ],
+        "user_approval": "Root reports the user explicitly approved this new Kolkar illustration before native import",
+        "animation_policy": "Four actual source directions, each repeated at the existing three pose addresses. No invented walk frames.",
+        "conversion": "Lossy raster reduction and existing per8x8 OBJ palette fit. No claim of exact RGB/full-detail preservation or recovered native grid.",
+        "new_anatomy_authored_during_import": false,
+        "frames": {
+          "front": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              0,
+              444,
+              444,
+              887
+            ],
+            "source_crop": [
+              86,
+              475,
+              337,
+              813
+            ],
+            "source_alpha_bbox": [
+              86,
+              475,
+              337,
+              813
+            ],
+            "source_crop_size": [
+              251,
+              338
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              17,
+              23
+            ],
+            "native_fit_origin": [
+              3,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "d9f5344f6d21a03c02196be61ce46db432849cb93edb2864211472914e3ce29a",
+            "native_index_cells_sha256": "372db3ba488568fb3007fcf31f491f7a57bc4a19601307aac2e73af371c652d5",
+            "native_RGBA_sha256": "ff60f04c662bc3499dfe6e834b4705d0cb7ecde636c7391a761a4acf81524a67",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              5,
+              3,
+              7,
+              3,
+              3,
+              7
+            ],
+            "protected_source_gear_tile_palettes": {
+              "3": 5,
+              "5": 7
+            },
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 234,
+            "native_binary_alpha_sha256": "244b7a475bae27846fdab6b305879aee9b6d34618f9c050d950105965e279614",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 4.8431,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "back": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              444,
+              444,
+              887,
+              887
+            ],
+            "source_crop": [
+              548,
+              476,
+              798,
+              813
+            ],
+            "source_alpha_bbox": [
+              548,
+              476,
+              798,
+              813
+            ],
+            "source_crop_size": [
+              250,
+              337
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              17,
+              23
+            ],
+            "native_fit_origin": [
+              3,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "b00c48da1c8a34e2287b518a9ab5c5cb19278dc26a803dbb407a9620d69f4bfa",
+            "native_index_cells_sha256": "e54cc8b259e7d2dccdb5be3617c711b5d260a06eaa94743d942d9b8d78cc210e",
+            "native_RGBA_sha256": "f2d56267b4f53002abe0dc6b523afb0520b3f368405d6870892ce7d407452320",
+            "native_palette_ids": [
+              3,
+              7,
+              3,
+              7,
+              3,
+              5,
+              3,
+              7,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {
+              "1": 7,
+              "5": 5,
+              "3": 7
+            },
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 220,
+            "native_binary_alpha_sha256": "95b91266ee6697c5d74bd55bad3c609e7cf25ef999071aa2011fa21760d0e264",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 5.2724,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "left": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              887,
+              444,
+              1330,
+              887
+            ],
+            "source_crop": [
+              935,
+              483,
+              1263,
+              815
+            ],
+            "source_alpha_bbox": [
+              935,
+              483,
+              1263,
+              815
+            ],
+            "source_crop_size": [
+              328,
+              332
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              23,
+              23
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "e85079d0b476d5b334f4760477a6a978282ff35afbd6a15bbefe9b09adf9cae0",
+            "native_index_cells_sha256": "cf93d63682d8ce6809b46fde1f3ddb1c3b42e6af982beb946b673791b4b13a58",
+            "native_RGBA_sha256": "ecaf993b473e210f1d26548a614f6bfc1cba0f7cef813121c11db4e2f68ca64f",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              5,
+              3,
+              3,
+              3,
+              3,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {
+              "3": 5
+            },
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 261,
+            "native_binary_alpha_sha256": "c7bd865fb19a847591b8412d269dec3bf8356ea6370350d8d44b9202775954e2",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 4.2384,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          },
+          "right": {
+            "source": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+            "source_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+            "source_dimensions": [
+              1774,
+              887
+            ],
+            "selection_cell": [
+              1330,
+              444,
+              1774,
+              887
+            ],
+            "source_crop": [
+              1385,
+              483,
+              1718,
+              815
+            ],
+            "source_alpha_bbox": [
+              1385,
+              483,
+              1718,
+              815
+            ],
+            "source_crop_size": [
+              333,
+              332
+            ],
+            "complete_source_alpha_bbox_retained": true,
+            "alpha_threshold": 128,
+            "native_fit_size": [
+              23,
+              23
+            ],
+            "native_fit_origin": [
+              0,
+              0
+            ],
+            "native_canvas": [
+              24,
+              24
+            ],
+            "feet_baseline_y": 22,
+            "sampling": "Nearest sampling of the complete approved whole-body direction; no interpolation, smoothing or anatomy editing",
+            "mirrored": false,
+            "source_view_is_explicit": true,
+            "source_RGBA_sampled_sha256": "2be98f6d93f3c14e97c937bc2559d48d0b8de70e9523fbb05d9728858ba0c4cd",
+            "native_index_cells_sha256": "de38cef292af9fa7e32e6ddf155ac4e4012f4472cd9e6b788962ea028e834bc8",
+            "native_RGBA_sha256": "7b85cb4190b540f39201a67d236dfe538dcb0df6f5b83877c50b732e59e6311b",
+            "native_palette_ids": [
+              3,
+              3,
+              3,
+              3,
+              3,
+              5,
+              3,
+              3,
+              3
+            ],
+            "protected_source_gear_tile_palettes": {
+              "5": 5
+            },
+            "native_alpha_equals_sampled_source": true,
+            "native_opaque_pixels": 261,
+            "native_binary_alpha_sha256": "97ccd1c4a1a39f82822237218c807766bf49ee4cac290b3dab7c75547215f0cf",
+            "palette_material_constraints": "In OBJ3 only, existing source warm fills map to brown and source bright skin/bone to ivory, preventing shaded fills becoming extra black outline; in OBJ7, existing source red mane/shoulder/tail pixels map to red; geometry and alpha unchanged",
+            "colour_conversion_lossy": true,
+            "opaque_RGB555_RMSE": 4.2965,
+            "geometry_authored_during_import": false,
+            "outline_cells_added": false,
+            "native_grid_recovery_claimed": false,
+            "palette_profile_source": "tools/peon_world_readability_profile_v0219.py",
+            "palette_profile_sha256": "dd3f6bc3502f52a1ec7135f08dd45dc22fe675fd03204789680c78ecad2c2a68"
+          }
+        }
+      }
+    }
+  },
+  "original_source_png_sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+  "preserved_original": "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png",
+  "source_png_modified": false
+}

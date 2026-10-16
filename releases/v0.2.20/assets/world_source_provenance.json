@@ -1,0 +1,3504 @@
+{
+  "version": "v0.2.19",
+  "scope": "Static native world restoration, not ROM screenshots",
+  "contract": {
+    "manifest_sha256": "5d7cf500be19ec8f969a2e1058cecf3f7a9eb88f3103af257394339c0783667e",
+    "role_families": 39,
+    "bound_families": 30,
+    "bound_packets": 90
+  },
+  "original_sources_in_archive": false,
+  "source_files_rehashed": {
+    "references/characters/peon_world_character_sheets_split/preview_all_characters.png": {
+      "sha256": "8823d37adef91c8da98e27f383093620bae3c015b0bc37d43d6ef438a8d45a03",
+      "bytes": 234639,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/razor_hill_inn_gbc/razor_hill_inn_exterior_96x80.png": {
+      "sha256": "b9c11f8fac1500fb6890190a35a297dfda9e3bd2bde28c9b7e321f6ba6728597",
+      "bytes": 13435,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_192x160.png": {
+      "sha256": "3dafb5d6d1686a2d210b3bd93105ca39f3f12a5c1309d57203aef03204060f51",
+      "bytes": 67574,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/razor_hill_inn_gbc/razor_hill_inn_exterior_preview_4x.png": {
+      "sha256": "9ad4d418f8fe3a49dbcbd23d5508cdd03111cc36c8ac47da630576168c4c3d34",
+      "bytes": 19352,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/razor_hill_inn_gbc/razor_hill_inn_interior_preview_4x.png": {
+      "sha256": "efc88a75919350d5c3ad5de982048913d9ee7ecbcac5fe092ca67ba25b34f519",
+      "bytes": 103430,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/brazier_frame_01_16x16.png": {
+      "sha256": "df0849157f84ae81ddcac0f87a0ed83efbe77d4b4ac8a8d1433288b1025c8969",
+      "bytes": 187,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/palisade_wall_01_32x32.png": {
+      "sha256": "27508255dc8ef135c47d67d8ac82468e116beb6747d3d7fc41a9eb2179bda8c7",
+      "bytes": 178,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/cactus_round_01_32x32.png": {
+      "sha256": "efbdf5310db700e139e178cfa51d6804db32399540533e343f81b99af1122932",
+      "bytes": 289,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/bones_01_16x16.png": {
+      "sha256": "498525bc43bb16de14df6ff33b3681e04306b9822469d24c29f3605d1c05fe89",
+      "bytes": 177,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/cracked_earth_tile_32x32.png": {
+      "sha256": "091bd97c31a1fd0badbabad77d32966fc4b4a01a2f1b5dfe7c666e395f299fe1",
+      "bytes": 539,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/palisade_post_01_32x32.png": {
+      "sha256": "9a6881d9d490044a56c2cae7a7bf02da9adcf47e5fd48feee07d9f16165abb48",
+      "bytes": 157,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/small_rock_02_16x16.png": {
+      "sha256": "2d84a41374bc5770e1d6cf3b3fc9a2bf0f008de84dcd351a73146d7ba3ef1522",
+      "bytes": 179,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/cactus_tall_01_16x32.png": {
+      "sha256": "c7da28f20c3dc7616eb24d163bb0b0500d536a57b9d7213ac218b903e5ef6a12",
+      "bytes": 202,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/preview_durotar_asset_pack_v1.png": {
+      "sha256": "ed096b5da94f59ecdf6bc4f7f1fdc31a3f6532af654a91384fe0c5bdf8f808b3",
+      "bytes": 24426,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/brazier_frame_03_16x16.png": {
+      "sha256": "51c9f2f1363c9fb4cc87fcab03266644182f83352c3390ee1e5f2f1e292473c5",
+      "bytes": 200,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/small_rock_01_16x16.png": {
+      "sha256": "a8a0b3e68d0d1c4ebfe29f924f77351313f2319c862c6c98e38456d8fbd96bf1",
+      "bytes": 209,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/skull_01_16x16.png": {
+      "sha256": "70fd8d11a7202d19b57472043b2ba71a3dc60aa4509cec6d4515ffda97a89317",
+      "bytes": 169,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/horde_banner_tall_01_16x48.png": {
+      "sha256": "2dc4eb6887b897cd494a85d79d33d66e81e08cab823974cc2c6f28b3ba4018a2",
+      "bytes": 248,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/orc_inn_01_96x80.png": {
+      "sha256": "ad04b3fafb2032f2d760b19d58e3f8b5805f7cc33c1fa7731fccd00db8ab5769",
+      "bytes": 644,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/barrel_01_16x16.png": {
+      "sha256": "058bc6c2fd1abcd4b8137c2fcba564864004210c20865fd73f6c8dd83aaca21c",
+      "bytes": 165,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/crate_01_16x16.png": {
+      "sha256": "1eaa09c20a1ccc92ac70125dbbc3d65ed33d42b12a6d8b3ddb05a62844276136",
+      "bytes": 166,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/palm_tree_01_32x48.png": {
+      "sha256": "d36b863ba62ceb04f1b7a3aa45354a0f2b2d357d48fdb05e00720a36992d69c8",
+      "bytes": 433,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/orc_hut_small_01_64x64.png": {
+      "sha256": "1fd77b8209f153544c20deaa25cdbf8c09dee5480bd66dda5573c287912740d1",
+      "bytes": 556,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/horde_banner_01_16x32.png": {
+      "sha256": "eef520dde6345d6e0a51b782f492917a35c61aa090bad4b5785d1a4547c32585",
+      "bytes": 238,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/large_rock_01_32x32.png": {
+      "sha256": "16e36000a6c7e6042fbcb85e63e86884cab1809839134dac8156987650c044c7",
+      "bytes": 313,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/dirt_path_tile_32x32.png": {
+      "sha256": "d6cf14ba24128572e4301cc82722f754601daa26657f8fe5749ee45fee8919f6",
+      "bytes": 321,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/cave_entrance_01_64x64.png": {
+      "sha256": "d7cc36759e6a23199f3265fbdae24bff2698b59a82c5ac117819ce15a0a65d76",
+      "bytes": 614,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/orc_door_01_16x32.png": {
+      "sha256": "f5141a10a8f87df14be693a7272c15fa1785d9131eafaefb75d8e6e291d315b4",
+      "bytes": 157,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/brazier_frame_02_16x16.png": {
+      "sha256": "f8886b10994528a2767c44ec0b54277cf0f3f458a669c323303ce2ba008e4e70",
+      "bytes": 211,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/durotar_asset_pack_v1/sand_tile_32x32.png": {
+      "sha256": "2025dd1e1ca25e168faf9ec94958f0aed967bc2932ac14c8e8516637f37b7801",
+      "bytes": 321,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/class_masters/orc_warrior_master_reference.png": {
+      "sha256": "a931f9a12dc7fe83f997f6cef44df45d6197298765e49aaf9b7d076b9d971340",
+      "bytes": 1876823,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/class_masters/undead_warlock_master_reference.png": {
+      "sha256": "6a8ed04e0ad0034c216f286f41e7b7c2812572ef8179423023af0dab216e9203",
+      "bytes": 260865,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/class_masters/tauren_shaman_master_reference.png": {
+      "sha256": "dce6eb797bba83d3ea3bed61cfffd65ba317c8e9fc9533e4ce13f08e2e3c4bd3",
+      "bytes": 241501,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/class_masters/class_masters_crystal_style_sheet_reference.png": {
+      "sha256": "bb6cfb444a0da09d239e776d548246d680f20627dfab72fa84ab85fd3b27a8df",
+      "bytes": 2574623,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/player/peon_orc_walk_strip_reference.png": {
+      "sha256": "e47d4974a7cb1f2f2d4fff4fbf895d48cd3197b34c4296fdf110bd23609d329e",
+      "bytes": 133094,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/player/peon_orc_original_sprite_sheet_reference.png": {
+      "sha256": "1bd3a2dc3284639c42abefada2b2f5d29ad7d7a444fbb154ae3d5e45ab531c86",
+      "bytes": 1946405,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/player/602f8327-b987-4aef-8899-987bb6a101a2.png": {
+      "sha256": "6288931ccba56766fcb35a292a85b7f0d97bfd1d3325896cfd95c4028cda8633",
+      "bytes": 1851017,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/war_cry_enemy_front_32x32.png": {
+      "sha256": "bae29ffaa22722ae2b5d5335e0cb7ca0c4d72f527258d7509c1654daf1060469",
+      "bytes": 1197,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/bite_enemy_front_16x16.png": {
+      "sha256": "2c5b8f37c344163ae01743c9116c7e5efa073e8ebe51ecea191c50d450e7ea2d",
+      "bytes": 238,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/dodge_enemy_front_32x32.png": {
+      "sha256": "8dde16da861743a55a10692b42f935da4acca3fe931fcb0a510bb0b4f910038e",
+      "bytes": 833,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/wand_shot_enemy_front_16x16.png": {
+      "sha256": "8e01a65ddcf82276d05b89befcba28b927082907a552c2becaa176c28d01bddf",
+      "bytes": 184,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rockbiter_enemy_front_32x32.png": {
+      "sha256": "47a424b4f6585ce53d7c09923ad2083c52fb39ffbd172436356d3c897b2207a3",
+      "bytes": 1268,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/silence_enemy_front_32x32.png": {
+      "sha256": "741ca53496cbabedf4b2700a0ab19495f500138bf27397d7d3ba59133bbcf29f",
+      "bytes": 901,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_shock_enemy_front_32x32.png": {
+      "sha256": "1c4df849c80e0a2fe2140e6696b83302685d236c2e53d30e7a7423a51d0e7616",
+      "bytes": 1202,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/earth_totem_enemy_front_32x32.png": {
+      "sha256": "95786d97738c9a3d6f4fcd0670bc3ab615c860a1dfcea980d7f45be21bef10e7",
+      "bytes": 1159,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/poison_enemy_front_16x16.png": {
+      "sha256": "2e4ee220962a75f2075182e93d5d7ea1b5bde53f46574f0ab480e79df3810b65",
+      "bytes": 268,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/tail_swipe_enemy_front_32x32.png": {
+      "sha256": "3153bb68efdd3f740d529d73a8ca1bf95263262c6ecc9d23b0b1dc71c93f4486",
+      "bytes": 1028,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/fireball_enemy_front_16x16.png": {
+      "sha256": "895f156f3f010f28d5f48a4649b43ea9c5a73e44a1ea7388c27577cdcb1b9ab2",
+      "bytes": 231,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/immolation_enemy_front_32x32.png": {
+      "sha256": "cb0fe710a8485a9f5cfb2f98271a2088aeb73ef14ffe44d84e5ea1a82d32caa5",
+      "bytes": 1155,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/shadow_bolt_enemy_front_16x16.png": {
+      "sha256": "3e0ba2185572ca30cb377e163f732f54b1cdcf96ce3831e089ad2eb1a5336379",
+      "bytes": 271,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/charge_enemy_front_32x32.png": {
+      "sha256": "d2306dc9753fee4d2de04432dfb5424de0c8b99474557894aafa51cf8cb82ea1",
+      "bytes": 1029,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/quick_attack_enemy_front_32x32.png": {
+      "sha256": "b507a98a2dba8ccff0fa41d9601fde8770421007457f7f468dec8facdb5531d8",
+      "bytes": 512,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/rallying_cry_enemy_front_32x32.png": {
+      "sha256": "fa4e2c5342934ccf5c1c14d757fb33e8f6a4fc6d37779b1360bd94feb5bb7e89",
+      "bytes": 812,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/lightning_bolt_enemy_front_16x32.png": {
+      "sha256": "af3a6c43453d35ef832a0238d15eb79610d2a61d57816a45cd0ce1deb2bc8107",
+      "bytes": 290,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/enemy_front/demon_armor_enemy_front_32x32.png": {
+      "sha256": "cc9f6d8e1c96578473bb439187228357c6ee0d8f5cf43cf3e901f5b7791d9d51",
+      "bytes": 1123,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_shock_player_back_32x32.png": {
+      "sha256": "0415f7d4c20154b9ee7b8859b4ddcfba9d6f28ed1b727b277f53e69de67e9af0",
+      "bytes": 1220,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/bite_player_back_16x16.png": {
+      "sha256": "a1928b2d559829697a8c59a0364375e358a207bd3c705ed9985e3aacc993901a",
+      "bytes": 245,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rockbiter_player_back_32x32.png": {
+      "sha256": "cfbca19fe320b128b7b4ce8483f9737de3b194939954a6a7b90c4b6d07e06ac2",
+      "bytes": 1253,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/immolation_player_back_32x32.png": {
+      "sha256": "47eee84c5819dc1fc179c33207d64c45e353338660b2e60764c1542bc83fe2a9",
+      "bytes": 1115,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/poison_player_back_16x16.png": {
+      "sha256": "925a588fdfd3fa040c6b7f39d91ef119bda3d2ad7715a0ec8d0083cf1ab19697",
+      "bytes": 280,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/lightning_bolt_player_back_16x32.png": {
+      "sha256": "957724cc7a4ae2f1209c074e8b7333ca0735e741cb2e49dc13b981868e9ea2ee",
+      "bytes": 263,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/wand_shot_player_back_16x16.png": {
+      "sha256": "5c3fd12317208303088b56adbf966e4cc6517764d444e82bd75ac46782d8d5ae",
+      "bytes": 172,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/demon_armor_player_back_32x32.png": {
+      "sha256": "a8137ea99afe72316bebcb256c7e09308a7e4fae4ae0b2bcd57af56dad79fc49",
+      "bytes": 1135,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/rallying_cry_player_back_32x32.png": {
+      "sha256": "9276b6925291e2be4b0f0824b46557b411adc203d812935061a8c4e5f7134778",
+      "bytes": 776,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/fireball_player_back_16x16.png": {
+      "sha256": "8b67e4d8a7bdf6bb311aabcc172cf3724a774226676dcd0e4a0ef025e0a171fe",
+      "bytes": 227,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/war_cry_player_back_32x32.png": {
+      "sha256": "56d644b637806b0cb410c43bcf9de2ec3921784e1c84453ec08646dff104efce",
+      "bytes": 1140,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/earth_totem_player_back_32x32.png": {
+      "sha256": "0d6f45b79b77928f81b0f07c7a148d6328c63772c9c841ec517d02d39d7d3d1b",
+      "bytes": 1157,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/shadow_bolt_player_back_16x16.png": {
+      "sha256": "06e6c7593af8869528542d91bb4de66a8cbad1e4c56f200ba615364e9656e1cc",
+      "bytes": 264,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/quick_attack_player_back_32x32.png": {
+      "sha256": "7b0b2a092b502e628dedb79b79aa3a833956b92ec5c48f9e64bd2b075951cd80",
+      "bytes": 536,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/charge_player_back_32x32.png": {
+      "sha256": "e0d6b729383dde3956b695a1012da2e1a587a1d3e9d6ac548aefe78a86ab6685",
+      "bytes": 997,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/silence_player_back_32x32.png": {
+      "sha256": "8a95912803240b48f808510fd676984f726ccf0bcaa7f1fd2f968031e70cf4c6",
+      "bytes": 951,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/dodge_player_back_32x32.png": {
+      "sha256": "1c46bdcc28c26b0ff01eca04da91ce211856021b7b500f4a2ee65f2c29ba56e7",
+      "bytes": 783,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/player_back/tail_swipe_player_back_32x32.png": {
+      "sha256": "d91e7cf9b033f9a8df456a1ee90a47c2657fdb9f3d8f92590f7e515c520d4fd9",
+      "bytes": 1059,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/shadow_bolt_icon_16x16.png": {
+      "sha256": "30037a36d96b2d0b7e29f96378089719d39898a24a5e13f2f2b20588fd1b35d1",
+      "bytes": 230,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/lightning_bolt_icon_16x16.png": {
+      "sha256": "6c7a9c48bf9c3a8288c3c3877c0db1a185836241e67031dff1e9ab839f9131a5",
+      "bytes": 271,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/rockbiter_icon_16x16.png": {
+      "sha256": "136e258b03aa66b0dc1786b87b308ef6921e11a7abcfe868db385e9903398025",
+      "bytes": 401,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/fireball_icon_16x16.png": {
+      "sha256": "3f992ad83decb136570632329026c7e32182d6f63fa64fe47feacf1f3205a344",
+      "bytes": 210,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_shock_icon_16x16.png": {
+      "sha256": "8b2c52df4ca3de180519982f8f337375116222013089914c3288bb991ccd6700",
+      "bytes": 422,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/quick_attack_icon_16x16.png": {
+      "sha256": "9f30459eb4a93ba2cb5398f681f0506e1954baf52914ba77dfbc3d9e9c4faf39",
+      "bytes": 206,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/poison_icon_16x16.png": {
+      "sha256": "c8ba35f38e61e963c9193f15dacdb4b9ff175f117448b2e6090ac5ffb0131415",
+      "bytes": 255,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/charge_icon_16x16.png": {
+      "sha256": "2a2f81d08831322491becd1f88e0cdc931e6dab898a799635c5660b621f97e87",
+      "bytes": 294,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/wand_shot_icon_16x16.png": {
+      "sha256": "cc1dba3fca0775b79eb2dff63195ef83aa6abcf496bc92818d0cd22017f3247e",
+      "bytes": 183,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/silence_icon_16x16.png": {
+      "sha256": "5e39aaf12fe7eff053ef015e3075b247995c779fdfac698e85f6b8b4a3d89991",
+      "bytes": 322,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/bite_icon_16x16.png": {
+      "sha256": "fd9dc86d8c5c09b765598f0f5a70c89ce9a0a1c6e870371a462fe73edaa752a4",
+      "bytes": 227,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/immolation_icon_16x16.png": {
+      "sha256": "9e510f373fe7d46febd1b6f7b3a2baf894f4b721c28593a2c41885634947ca0c",
+      "bytes": 385,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/earth_totem_icon_16x16.png": {
+      "sha256": "38c4e9147967a207979b83dfc73885e6745d80935f3b56bfcfc0ea99daaedc25",
+      "bytes": 368,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/rallying_cry_icon_16x16.png": {
+      "sha256": "fd9a05fd88c736f6b4122b18800629904c61cbd54392338314dcb672f4b08874",
+      "bytes": 287,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/demon_armor_icon_16x16.png": {
+      "sha256": "c568ca026b8ba17f782bcddee39064dc88e1dbf7038f024e6f93ae05148ce40e",
+      "bytes": 339,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/war_cry_icon_16x16.png": {
+      "sha256": "80615f37f9f43ebbc2bb3c1fc75041306241c99d93ac25f4d44ba01df44e75ff",
+      "bytes": 347,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/dodge_icon_16x16.png": {
+      "sha256": "1ea961183e50967a46632308917f9a88b78988245ab0bb458978a5cb60c863ca",
+      "bytes": 330,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/icons/tail_swipe_icon_16x16.png": {
+      "sha256": "813b5d3f83d7878a1b5754e07956e4a6752bca26b6fdf40a0ee7729762a0a3de",
+      "bytes": 338,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/poison_all_assets.png": {
+      "sha256": "09e929616e18a16785bfb78f0016fbfdf4a2c3aa9f6e69db934b3bf0e1b9a8d2",
+      "bytes": 692,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/earth_shock_all_assets.png": {
+      "sha256": "66e11abfd11fdc718a0ff8decfb1dc8bb9b305d620cbe4ff39ffbe781007d6b5",
+      "bytes": 2425,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/lightning_bolt_all_assets.png": {
+      "sha256": "c183113faf39a16a5af848b11f8bba51786c4d0baa1982f073733a941dd0bf8e",
+      "bytes": 1173,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/rockbiter_all_assets.png": {
+      "sha256": "aaa90d4f78d271d9e31b7c68674d9904ed5c87ee1a019c6eafb37be9e374e2ee",
+      "bytes": 2460,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/rallying_cry_all_assets.png": {
+      "sha256": "45adb96a71a020d87c1fe9056d310936add55c0e6eff01382a0cadc2546e3e0b",
+      "bytes": 1772,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/war_cry_all_assets.png": {
+      "sha256": "eeac2df848e8ac1e47bad2d4cf11700ff5b8ed6d9fa96539c508188f1ed48afc",
+      "bytes": 2382,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/shadow_bolt_all_assets.png": {
+      "sha256": "71358e38e711532956ccb0a44f7250060e4d4b1b1304a36f3d809f5778725fd7",
+      "bytes": 990,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/silence_all_assets.png": {
+      "sha256": "ea36333526127f337200ca2e7846f77b84e3b3038000dea217d463265d668629",
+      "bytes": 2118,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/quick_attack_all_assets.png": {
+      "sha256": "f9c0dac4e9c4990ff72519e8943d44df2cee6a1a54126ae742a270f38a83f731",
+      "bytes": 1023,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/dodge_all_assets.png": {
+      "sha256": "3b236b13d4815768a0db74fc13a2624a1c8a0556b15d8015fd35d5f2994640ab",
+      "bytes": 1791,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/wand_shot_all_assets.png": {
+      "sha256": "92052bfb2b8bc1d8da50f5b4f12d4356aacea2a838f22ed0d11c59d24aa90a92",
+      "bytes": 421,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/earth_totem_all_assets.png": {
+      "sha256": "9e56c30c78025cec2c7be60d89a805e9ae5ae08d2f728cb96ff4650af328004f",
+      "bytes": 2312,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/bite_all_assets.png": {
+      "sha256": "ae412fce76dbe433501bcfd1b786bbfc2bdc2f0ae67bc84c4d598d66d94b9aa4",
+      "bytes": 462,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/charge_all_assets.png": {
+      "sha256": "7a5143620cec876bf23ed094fdf18053585a0d8902543694e17cf6ae792ebc34",
+      "bytes": 2201,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/fireball_all_assets.png": {
+      "sha256": "eae35ad95a611ff99a77e52850bc7ffbd3a07a26cc22f010d701d05d2f2267d7",
+      "bytes": 890,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/tail_swipe_all_assets.png": {
+      "sha256": "2e4a83b2d9be34cba1c853ccea0f6d0fd49949f0408fe2a742b174f3ff004542",
+      "bytes": 2294,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/demon_armor_all_assets.png": {
+      "sha256": "9b0c0a943a31fa4b8ffaf663f3ecb4c0588575f16b79bbf6230dc9b60d5c6983",
+      "bytes": 2280,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/spell_sheets/immolation_all_assets.png": {
+      "sha256": "a69a085487b07e7f877c850d287d06b62a01f179f7790d542b863c575cc4de2b",
+      "bytes": 2297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/earth_shock_source_crop.png": {
+      "sha256": "d5425655b157513c74142a3ab17d643c754f32b9b8eb54d22cadba35a01f92b3",
+      "bytes": 329979,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/rockbiter_source_crop.png": {
+      "sha256": "63f7c910ad809000b5be74d835188d7e6a91305a0b9fba2bbc57ce821e732fe1",
+      "bytes": 344613,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/bite_source_crop.png": {
+      "sha256": "6081fe03599b7124048be72035ee8c34b9b8f53924da821d83fd31d1e5ca82c8",
+      "bytes": 246920,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/war_cry_source_crop.png": {
+      "sha256": "9766c6d0ef7e331ee0e8249f4b76d5f519651b7827465d5e3b97ef09f0be276d",
+      "bytes": 385977,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/shadow_bolt_source_crop.png": {
+      "sha256": "6eaca40cce58e25438dab98d98e14568c1024c6283864a4ba39835df3a28e277",
+      "bytes": 284504,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_high_resolution_pixel_art_sprite_sheet_st.png": {
+      "sha256": "8e6fdbd07961ccae3c05d044d9c5d73c002f33ad9cc3d35f70ad3e2d01d76e7f",
+      "bytes": 1943809,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_transparent_background_sprite_sheet_pixe.png": {
+      "sha256": "5d3df6277255c87ac7ea7c6ce628c61cd1eb5efe4603f1850c3b1b3f1bad083e",
+      "bytes": 1608660,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/tail_swipe_source_crop.png": {
+      "sha256": "d35728d0397cbbdd3928ce4fdf6b3cf616c1db77bf7b70be0e7f09a508efd742",
+      "bytes": 400649,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/a_clean_pixel_art_sprite_sheet_on_a_transparent_ba.png": {
+      "sha256": "6a0a660c67933f22c33ff6555739943fcb2d07ea74890f68ae41e1bafbb316aa",
+      "bytes": 2250852,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/quick_attack_source_crop.png": {
+      "sha256": "8f3dd82690d49fdb52b7104bc8d12ec2f6eb4aa76e939e973919eeb53269568f",
+      "bytes": 314117,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/immolation_source_crop.png": {
+      "sha256": "5389d060ce19c3799300d217c5ab43fb7ee72ee64ec69d14fb4aa9d3029d4729",
+      "bytes": 307225,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/wand_shot_source_crop.png": {
+      "sha256": "3490e39b3dbc087ca5e6c215caaf32463eec0832a9f052a85385b2c8b90c9572",
+      "bytes": 221013,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/poison_source_crop.png": {
+      "sha256": "7491b8a0b1cefa98525162098bb676cd7d4a4420d95260873f89cc284b770bbc",
+      "bytes": 254894,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/charge_source_crop.png": {
+      "sha256": "0639c877a9ee18b794b24061d7649691ddd3f598da21133b8e60ec78f69ef933",
+      "bytes": 363294,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/lightning_bolt_source_crop.png": {
+      "sha256": "5dee796f1437c4b26e7572b564ee38009c9223837a906400f018ff5d3c1b425c",
+      "bytes": 265429,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/earth_totem_source_crop.png": {
+      "sha256": "14a33dda8f456e0a267f8125e64c8991210f3b509e3555176c0bca813e0c07ae",
+      "bytes": 325209,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/fireball_source_crop.png": {
+      "sha256": "183cbab4b3b707771e65cb36d136ec1468537bc75939d79631e90cfa6ef63ec2",
+      "bytes": 207120,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/demon_armor_source_crop.png": {
+      "sha256": "17708fa18f165c287d2f84c3dc26313b997425280b9873a40b3cb253b8ded03c",
+      "bytes": 297831,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/rallying_cry_source_crop.png": {
+      "sha256": "92bd3dbdc6f9747c045411217859d192f4356e7cb2b400293e4185ebb53f2fed",
+      "bytes": 375928,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/silence_source_crop.png": {
+      "sha256": "32e2dd486593bd9c0eac666b15fe8a3e2ce937a44848be0a354e6e8e034aaa3b",
+      "bytes": 286159,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/source_atlases/dodge_source_crop.png": {
+      "sha256": "1ff22d1e677fa3746cf18e8cf064074126cc9b2f939f920f0042a1dcabfa9d9b",
+      "bytes": 355684,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/previews/preview_all_spell_effects.png": {
+      "sha256": "a10a2d7315fdec5d260d100a5235fd495aa89977f30527a191834d1bbb54b786",
+      "bytes": 49439,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/shadow_bolt_explosion_32x32.png": {
+      "sha256": "a90095c4d478cc6053b9edabb9aca1813773b2982d1803475675edf79b9ad0fc",
+      "bytes": 596,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/poison_impact_16x16.png": {
+      "sha256": "c18ba02173f4f6143809be81c9b5a5391f27868a5a39681564c8dd1577703da9",
+      "bytes": 274,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/lightning_bolt_explosion_32x32.png": {
+      "sha256": "f0669942f745012845bd6bb4d252d0b830b0683fbb22c8f40ca562da46f070e8",
+      "bytes": 802,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/fireball_explosion_32x32.png": {
+      "sha256": "4f83bf43c6fed41e64d2b69844b3cd0522cb6d5d7f71f168146b2d33d4ab862c",
+      "bytes": 517,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_spell_effects_pack_v1/impacts/wand_shot_impact_16x16.png": {
+      "sha256": "cba96625d041e887938da2654f62e2881f4dc586fcc4e60961ea90887e6858e7",
+      "bytes": 180,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_front.png": {
+      "sha256": "8579fed72c3561aed7c19cab57376aeb002d3f19822df4e8d571a877c219a806",
+      "bytes": 3941,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_combat_back.png": {
+      "sha256": "92909586e573e1bfb08945339d8bfb6f867c1382fddcbf25844d82b14abddf57",
+      "bytes": 2442,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_back.png": {
+      "sha256": "276be184f7c9e83e94ba37333240c2c4a9874f2f9fe6458947433a4805420209",
+      "bytes": 527,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_front.png": {
+      "sha256": "8eaf6ef725bb251ea8e73804dd675dce23a8ecaa8c42dbcbf4615bc6aab2b9a8",
+      "bytes": 157,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_right.png": {
+      "sha256": "1a6776377101bf0bd90bf48c6968f26bcfb625f285c192e7dadb3ee4c96edeec",
+      "bytes": 530,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_sheet.png": {
+      "sha256": "85a8ad8d0802694bb0a868ffbcbcb7141a214429e4e076e04b239d5b27839112",
+      "bytes": 8095,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/enemy_warlock/enemy_warlock_world_left.png": {
+      "sha256": "ea900739a276afa4bfda8cce236e8bc4e49e382c0ec03b15ab9ec3ed1b9c1ef5",
+      "bytes": 522,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_world_back.png": {
+      "sha256": "6ed89e95ed01d7bd64d33da78790d2b17e6ca1f63c8301bd393f910da5873870",
+      "bytes": 491,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_sheet.png": {
+      "sha256": "74f450bb1eaecb6973d03613b349ac794b0bdaf7b8753c9d0c227149c5aeeba2",
+      "bytes": 7450,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_world_right.png": {
+      "sha256": "8c63e213b214cc22d1c1849d9ab6378ba6a5b7336f133fd0a39f91d6bfb64fff",
+      "bytes": 551,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_world_front.png": {
+      "sha256": "9253582e87637b3f1c137a7e656d9d64a060cd153e1d5829304021cf7f616499",
+      "bytes": 551,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_combat_back.png": {
+      "sha256": "8b36f38532b9a47f6c2a3add2815ec71e1a765d16825fd1d709f85a95fc53543",
+      "bytes": 2747,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_world_left.png": {
+      "sha256": "f17f4e694307fec1db23ec233dec0e509f4899a1a0b4149e722ca8b84d1fa215",
+      "bytes": 543,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/panther/panther_combat_front.png": {
+      "sha256": "f0792b65b2b6a105ce3a8946401236d067fe3ef1a9dd9cc9164616d9ae8232a1",
+      "bytes": 2558,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_front.png": {
+      "sha256": "b3e61ad949fcf78b23cd6df2d3ceba84df2dc0687321860a84a1f048339d785f",
+      "bytes": 2648,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_combat_back.png": {
+      "sha256": "57c383ed3300c8628fa78417e1614dcbfb05867a1025af9d218b1cac1c555ca7",
+      "bytes": 2155,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_sheet.png": {
+      "sha256": "8fcb29ee6b076de588e1f19eb405bcfacc302d5929381af21f67e73fabc29fba",
+      "bytes": 6372,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_world_left.png": {
+      "sha256": "32e0ae88f97b04448bc748acdc37896e4fdd552b88058da7db9cbc397526cb1c",
+      "bytes": 451,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_world_front.png": {
+      "sha256": "85bb4214f9a4e0b690fe0a9ffd757b554d3dbd6849816fca5cfe1d64e6b78948",
+      "bytes": 454,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_world_right.png": {
+      "sha256": "1b2ede1834f91bf7bcd1fd92b78358251ac18d515c04ddd6fa48c942bd948d25",
+      "bytes": 448,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_villager/troll_villager_world_back.png": {
+      "sha256": "2d5b2740b3a80c48d83e9f1759c99d6ac2b1007b53fd3e4c476a78bc78f5e17b",
+      "bytes": 454,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_sheet.png": {
+      "sha256": "bb9e7d305697ddb65e848a2913b87c4e5faea65325e18b2565fc6022f69f7552",
+      "bytes": 8753,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_combat_back.png": {
+      "sha256": "febc232d02cfce86e52f6c253bc8cf7da52e6ff6390c40f85cb772f5942ca623",
+      "bytes": 2869,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_combat_front.png": {
+      "sha256": "c386d7aae14d239425e014dc6a8dff07a8a9f8cf687df370e603784a2324ec3f",
+      "bytes": 4395,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_back.png": {
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "bytes": 644,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_left.png": {
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "bytes": 644,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_front.png": {
+      "sha256": "61d539ef4aebb462c0994cff6d368db3ac59793757968336efe355b01dddb0c5",
+      "bytes": 644,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_master/shaman_master_world_right.png": {
+      "sha256": "bb057702333fb8bd0f26a16b3ce5d6241f726faa8beef19b1988d53b233edc52",
+      "bytes": 635,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_world_back.png": {
+      "sha256": "d18bee8c9d4f0a0bb964aeea1673ac650199123a254804a69be6bb3b169ec9ff",
+      "bytes": 616,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_world_right.png": {
+      "sha256": "3af5a371110906766a4932598dd3ee6b6fb6aa445bd15405a1f0d32022e0c989",
+      "bytes": 597,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_combat_front.png": {
+      "sha256": "cdf4c9f29d4872f915c63eec17921bd12e8f1cd89577959ea17a1266b46423ac",
+      "bytes": 2269,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_world_front.png": {
+      "sha256": "563ada8898d61e8ffcc231991940ec098b5fe45497517f39578f350ea577b536",
+      "bytes": 573,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_world_left.png": {
+      "sha256": "91e1fa56c91d379cc575503d227715fdd00d8dbaf34b87e78fa7b586eb855f18",
+      "bytes": 600,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_combat_back.png": {
+      "sha256": "403393ba364f46c544026da6b26e5a6877838c7df69753fd83c9ea96b6c93d9f",
+      "bytes": 2401,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/raptor/raptor_sheet.png": {
+      "sha256": "05b79cd506b1132a7877a6154e973a2b75cd59badbf1bc6a5abc62ca9e0826f0",
+      "bytes": 6928,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_combat_back.png": {
+      "sha256": "746bc065fe11c22115ef121439f96cc99241fd95d277416c18a93588ada26d27",
+      "bytes": 2121,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_right.png": {
+      "sha256": "aa1d799cc3936ed71b0febc919c6e1d9f1e8179f8ff0f2d812cda7917e87d00c",
+      "bytes": 297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_combat_front.png": {
+      "sha256": "c31bf4b98c5f1e06c1c04938c0b29105fbd8beb3c669e98a5a52046afb49091b",
+      "bytes": 3086,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_left.png": {
+      "sha256": "8ce48ef6943792e72e32ac4822ca6a9a3b1edd5c6744b86eaedd52e73ccc46a5",
+      "bytes": 235,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_front.png": {
+      "sha256": "5b3465e148305a25af00dfcc03f5b5cfd296d3fe22624db4e41d86343988fea1",
+      "bytes": 508,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_world_back.png": {
+      "sha256": "978782d2e4527fa596bd677dfe080414e48cd5d6ebed6112b92aa4b672461e36",
+      "bytes": 290,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_troll_shaman/senjin_troll_shaman_sheet.png": {
+      "sha256": "04c203c09cc443bd36f4c703771df748f6ae1104db028e058591a87b32a20a1c",
+      "bytes": 6419,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_world_front.png": {
+      "sha256": "fa7ee8dd6799222010213c0b80f7ce95f7e26d7ad838a9362426bb3c24726d6b",
+      "bytes": 562,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_world_back.png": {
+      "sha256": "2cc769465635252e0cca7ba40301cb5c77fd69ae1c870ec2f3e1cb7ca21ba052",
+      "bytes": 591,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_world_left.png": {
+      "sha256": "ad285ad1646cb5d140d62cdd9b55c856ff5059c577e7e22b78a1f31b422b460a",
+      "bytes": 553,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_combat_front.png": {
+      "sha256": "82b050f072b701bb3b5304f4449a1e1017630763bf6b22f562c040a7cf006796",
+      "bytes": 3187,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_world_right.png": {
+      "sha256": "bd6e1229c9f7d9ace8a0580bf9c86dfa3f1e253ecd01bd46e9b09f9971bb3c6c",
+      "bytes": 547,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_sheet.png": {
+      "sha256": "7217550f98631b8f0718a18eff5918414ce9f9d954415d181846b4352955733e",
+      "bytes": 8571,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/harpy/harpy_combat_back.png": {
+      "sha256": "09815e77803eb93226d9e31592f1b506ffeadc91db14e35421a6f09855841ca4",
+      "bytes": 3149,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_left.png": {
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "bytes": 583,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_right.png": {
+      "sha256": "ce9fa8dd2a9b44066d149fd91bfd883ef1431da59f9daef9fc68cceab31666da",
+      "bytes": 565,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_combat_back.png": {
+      "sha256": "9cd1b618903bfc0cfb2e9269562672ef493c7b323c5f6cb0e61f5d1d0aac9369",
+      "bytes": 2896,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_back.png": {
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "bytes": 583,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_combat_front.png": {
+      "sha256": "844d6a4034f8f1ccbaedc2e04ba0befc7cbdd3e7b9a3e6c1d754d5d48ee7b06c",
+      "bytes": 1173,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_sheet.png": {
+      "sha256": "4579509221e9ea56502eea95ca802870079c6c1d930af5d971c50030f5a51977",
+      "bytes": 5226,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/camp_guard/camp_guard_world_front.png": {
+      "sha256": "0fd93cb058ddb5d41025bc6a10ab1cc478e7555ba3eace03c04571f90ba61470",
+      "bytes": 583,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_combat_front.png": {
+      "sha256": "0ba438f1d3f1bde3949f44e13dd8a9a588439e049a1ca298d52be49424303508",
+      "bytes": 3417,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_sheet.png": {
+      "sha256": "3106b98b28613923898d152718a60b7bd572ed66ab1a03bf07aa96c5f12324c1",
+      "bytes": 7949,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_front.png": {
+      "sha256": "6a1b470f835df928a1982b166f44afe858802c6ac5708dec80fb7005eff45d6a",
+      "bytes": 512,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_back.png": {
+      "sha256": "a67ff68cc453b201365365b07c5ea020308a2e05c1fa2ee23e73b0ee8c3ae218",
+      "bytes": 455,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_right.png": {
+      "sha256": "69cf466775c52bcfc36aec344b4ba5332c6a423193703eef0dcfa65cbb8b99b2",
+      "bytes": 475,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_combat_back.png": {
+      "sha256": "9674871c2300424a859cd3bea768f2c7012a51f7b28b46cc157ae6653d24961c",
+      "bytes": 2760,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/beast_handler/beast_handler_world_left.png": {
+      "sha256": "7bc4c5a0dc1875c4f13719324402ff69d37d4447e26e342de7daf7d219a486b3",
+      "bytes": 468,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_back.png": {
+      "sha256": "75e3ca65219a056f7a79639958029f96ab57c414b6f98f369d2e694e2104f171",
+      "bytes": 297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_front.png": {
+      "sha256": "bb1a96d90c38a24933d6bb26be709bc0a64877de6e85d928c775ae8f9eb94b20",
+      "bytes": 279,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_sheet.png": {
+      "sha256": "df9100280718166ab4f9d389836801d675329d6616029e00f444eaf600a27a4e",
+      "bytes": 3918,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_combat_front.png": {
+      "sha256": "a527d356c0830e6ac05301dc79a588db3bd16acb9a324d7e16a7e3c8f23a41ab",
+      "bytes": 2258,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_left.png": {
+      "sha256": "39f4c125229bf62678ea40d1a55a353a5d8d43ca87402f08494a043a0a8c0c2d",
+      "bytes": 301,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_combat_back.png": {
+      "sha256": "8885cfde38029647cd6e98d2f26dfb6275b65b897bd9b1c16b8befb7c5da0cda",
+      "bytes": 716,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/warrior_trainer/warrior_trainer_world_right.png": {
+      "sha256": "8be90f3e913547e0bd042dd87bee81e1bc4e68c8df6b68343d6789287fbafe24",
+      "bytes": 279,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_combat_back.png": {
+      "sha256": "7cd0a4b9f7c43bc830158485b6604f54c2dc13be6807181ace2388db9ca684fd",
+      "bytes": 717,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_sheet.png": {
+      "sha256": "4ceb543e3f92bb0c4e8c78de45f146c2feaa776caf5bb07b9194171bab768e27",
+      "bytes": 3638,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_right.png": {
+      "sha256": "cf5062967688fc3983232224842c735f0027b42831c113de4e2a2299002a1442",
+      "bytes": 270,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_combat_front.png": {
+      "sha256": "ff989e9a2e39d1c0af671a1e4baa1fd83fbc532bb59402fb370b55286d56e105",
+      "bytes": 1672,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_front.png": {
+      "sha256": "55b724770fb74ec31896c37edce3253139f3f6ef72cbbd9146e6cf571770a53b",
+      "bytes": 479,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_left.png": {
+      "sha256": "41d9527166ea9e0c3dcae98e11ede71398f636ab66c8fc871538f2f8c6e3f526",
+      "bytes": 460,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/senjin_chief/senjin_chief_world_back.png": {
+      "sha256": "f726c81c2a2f07a33eb53280cb2f7209a8d0dcc3f923debfeb9b5f330b0c4d68",
+      "bytes": 254,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_world_right.png": {
+      "sha256": "0a0c279f63d3302b736991edae88c5f624a8a84d5a2202570ea0db540c75f385",
+      "bytes": 534,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_sheet.png": {
+      "sha256": "59dc5c239ed9c85ef1cdd8f55280f4b4e60e2e9aef79e90ecb8ac66542c6902e",
+      "bytes": 9328,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_world_back.png": {
+      "sha256": "ef09e637fc78a3e9d5806ac5caf17daddf0d5ae130f43e9ee5f4f66ebb2fdfd0",
+      "bytes": 514,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_world_left.png": {
+      "sha256": "851cef99ea3d755617b4b582b4bba6e46769644382ee713c54aa394be048ba55",
+      "bytes": 549,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_combat_back.png": {
+      "sha256": "59af1476a83453d67e8c83f9b7778cff7526498c74f966e4cecab571a6c80894",
+      "bytes": 3297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_world_front.png": {
+      "sha256": "6fb25b262e3d724c7911caa5186b669dad62b09ecb25db4ef8db09ab9b8bf460",
+      "bytes": 523,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/felhunter/felhunter_combat_front.png": {
+      "sha256": "4c8a7edfb6edb2ee2bc2f152f42e037b31a84907304855ba2bfa5c429b83ccfc",
+      "bytes": 3834,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_back.png": {
+      "sha256": "1e91943ff65043cbeae89cd352457eb18ccb05000072eecf6d2245ac5f76017b",
+      "bytes": 489,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_combat_front.png": {
+      "sha256": "e1639b8331d37a9c06c04057bf7cd8fa2e64c9b68c83fe8f126e6fdf4e2923a3",
+      "bytes": 3168,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_front.png": {
+      "sha256": "d86c10d0049b2293949008b5e6a9be8e7b4d0e37fcf8e5ce23767707cf3ef6c3",
+      "bytes": 533,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_right.png": {
+      "sha256": "98d8b97d7cc12286f066fa61f6d7180b8bcf049a4d75741b06e58ed170241f70",
+      "bytes": 497,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_sheet.png": {
+      "sha256": "03c6a0af223a883a01c397e0c153ef46644ee8fdbc4827631c33f068e2ecfdf7",
+      "bytes": 8348,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_combat_back.png": {
+      "sha256": "9a0ac3d7c41d466741bfc4c4e66dbfa0a04adc5f5c7dcd5be2387925e9b853e5",
+      "bytes": 3071,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_shaman/troll_shaman_world_left.png": {
+      "sha256": "56b07c457c403999634577f6e8fe5c30e9f933dc4356dc0de2a8c2f36abd16bd",
+      "bytes": 514,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_world_right.png": {
+      "sha256": "140e1641232f3f93c86069c896a8300d5c4c0e2b161e0ff01563cfcf886d33e2",
+      "bytes": 576,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_combat_front.png": {
+      "sha256": "12cf13e91c6b82c0b5636b218295e9dbef63bf7efb95e1e6733d6896baaa044c",
+      "bytes": 3225,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_world_left.png": {
+      "sha256": "a904bdeb570cfb2f26f42e440c4667a8c7770a82579c02cf9484ce6eec1ac4d4",
+      "bytes": 569,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_world_back.png": {
+      "sha256": "4544d0294661f5bb19a360940faad6dc494165d7a2bf10c86ff4ff270cc17495",
+      "bytes": 552,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_combat_back.png": {
+      "sha256": "bc0ead76138c9f62a3babbfbf6eb4e9c7708753502c9d6d9b352d1dfe88d8d98",
+      "bytes": 3227,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_world_front.png": {
+      "sha256": "12c26c2504c262f284bba6062bae304a534f520969fe0786ef2c0bc22d734643",
+      "bytes": 623,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/tiger/tiger_sheet.png": {
+      "sha256": "530afd3b43c1478cffddc3837f472f1370c28f29db718dcaf9ad6ad44dfc0826",
+      "bytes": 8738,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_sheet.png": {
+      "sha256": "ddedf497abc801dd4f3d14508fbdd63570708653379e266074142794f32c1a7c",
+      "bytes": 7127,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_front.png": {
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "bytes": 561,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_right.png": {
+      "sha256": "28d8210a52a5faaf31bb38f1bd6721bd0ad1d3b1dd95ab878276c290e3c5cff7",
+      "bytes": 560,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_back.png": {
+      "sha256": "65d44f1557d9bb2b6e9d7f988820f5004b1d980322e6f05802de392a9aecb13d",
+      "bytes": 2537,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_back.png": {
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "bytes": 561,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_world_left.png": {
+      "sha256": "cbbd111e976f17a69d6ef0482a56ed1510413d2bb8cc95c0bdebca6322439543",
+      "bytes": 561,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/sarkoth/sarkoth_combat_front.png": {
+      "sha256": "ec7fcc944100d8cc2a2cc5f05fb1c6f87dbb16d6d30ed1c052c5b233821e9a50",
+      "bytes": 3326,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_combat_back.png": {
+      "sha256": "db6b066def282be5c459c524e20d8c3cfe199063ba2f8281ceeb396c46faed05",
+      "bytes": 2086,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_left.png": {
+      "sha256": "88d067fc757baa6f4a7b33167be41a8bc6cbdbfe18efb2a2a4886a514a0817d6",
+      "bytes": 449,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_combat_front.png": {
+      "sha256": "7dda15bb5cfa05ac9e134e7d377129df3eb0704f1d52a62525725613b197d7e6",
+      "bytes": 2732,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_right.png": {
+      "sha256": "64fcd0e2d8250af775cb32c0b44ac91ba8075516359e0581394522b9f45e91b0",
+      "bytes": 443,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_sheet.png": {
+      "sha256": "6fe3200354b39f2ddb9ca4073fc22fa5fb18e516fdf8697fa0524be4dab43cd0",
+      "bytes": 6375,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_back.png": {
+      "sha256": "1ab3ebebcd682fb35fbd3cced2fc9fc0a8135f035609e3dbd8236fdfb601bcd9",
+      "bytes": 482,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_guard/troll_guard_world_front.png": {
+      "sha256": "974d0d1798322daf96c437269a4131e88605a6e5e9ec7114c6d7e6527a6c8562",
+      "bytes": 449,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_combat_back.png": {
+      "sha256": "8c89768e923f55317272af3645c397d7ee165bf7e35181afb6957bc211b30a28",
+      "bytes": 2286,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_left.png": {
+      "sha256": "73bb6bcb46d61a7ee5a4790dc4762b50844f0872bdd00fc043d0469c217b538f",
+      "bytes": 455,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_right.png": {
+      "sha256": "5da7221b06a243cfeaca8ced97e5012cdd131a1011b3bea088a4257da1912435",
+      "bytes": 483,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_front.png": {
+      "sha256": "e7f57a1972ac2b75b634a2ea2bce8a3ce5b72c5e5db9970c80a96afd438d48a4",
+      "bytes": 475,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_combat_front.png": {
+      "sha256": "6d979c78e831ce8afa5efd889211f9694b98f79cfbcfc8d83018ebbae2dca621",
+      "bytes": 3668,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_sheet.png": {
+      "sha256": "79389cbc156a8b8418862016cd995a9aca943022cbf0f3cc1ca4ce69c7f1e883",
+      "bytes": 7772,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/scorpid/scorpid_world_back.png": {
+      "sha256": "41a2100e38c86bca9b3d3692c1cfc39ca0c442b0e138ca5554d094808d5491ac",
+      "bytes": 492,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_combat_front.png": {
+      "sha256": "9ea8ec5e55ab1ee27dd0ca0afa5dad11c9a495dd38606bb3310ba08bfcd91267",
+      "bytes": 1125,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_back.png": {
+      "sha256": "593ddef7438c0c84ade0fff3898cf4ad3c84b3e011801185d232c680a4b435cf",
+      "bytes": 137,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_right.png": {
+      "sha256": "679706d8a56672e480c8abcd326a0fa341ac2643f8aa0c1bd009eb23eb5f3c66",
+      "bytes": 354,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_left.png": {
+      "sha256": "630235fb8afcd2fe83883f324fb6595f0a6a546ff688bad941134af4341ffd5f",
+      "bytes": 451,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_sheet.png": {
+      "sha256": "8b6f2045ddfc9e55c39469bdbd3d71b648d318db4cef3ada8b4e015076424812",
+      "bytes": 5301,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_world_front.png": {
+      "sha256": "7481374537d4bbfe5afa8a3127cc5efa4a0271b326dba1603470c23ca5a87441",
+      "bytes": 523,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/peon_worker/peon_worker_combat_back.png": {
+      "sha256": "817beec09aae4559a66a60a42675614d3cc4110f99260d4848b6f90493112ea8",
+      "bytes": 2730,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_world_front.png": {
+      "sha256": "f28e39de5d391ecb7c560285d2707918992d07dd2944dd690b614cd0e353cc47",
+      "bytes": 435,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_world_back.png": {
+      "sha256": "431685886410ba82dc072e0628156e5ec1edea76bc3469d576918d518058d534",
+      "bytes": 438,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_sheet.png": {
+      "sha256": "6454c064f3d01f5423f49decf74e2aad824cf146c256b7febf6d7762dcb8ed65",
+      "bytes": 7209,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_combat_front.png": {
+      "sha256": "b5a42f833467185e4c74c40ddc240ef1c8442d27e84c52e34b17ce6f51f0b593",
+      "bytes": 2791,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_combat_back.png": {
+      "sha256": "4302876805d99a99cc0e80c49dba402d3546c046e3e4d54112a1146f3ab2f14a",
+      "bytes": 2750,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_world_left.png": {
+      "sha256": "34b047010a58b32aa4573d0a06e4c7300f65fccf7cf51dfddb01ee30e5118364",
+      "bytes": 453,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/troll_merchant/troll_merchant_world_right.png": {
+      "sha256": "3080a5398747eab8311928c1c77e86d8f524da81e7d8cabc4090eca9d7591d63",
+      "bytes": 496,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_front.png": {
+      "sha256": "1456c3b15dfd74ad03914a2f9e8df31596e425e5c936a276447bcf98b7a90683",
+      "bytes": 447,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_right.png": {
+      "sha256": "b8732c234091f518fb012b2440772b9a66794e2d02522d6e9493ec0778bb56a3",
+      "bytes": 437,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_back.png": {
+      "sha256": "cbc9345ba8e8c551e9df734054e6799efb9660f11b19f5752e720e974d4e1d73",
+      "bytes": 447,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_sheet.png": {
+      "sha256": "0755c0fabdcd23ef63133fc05c8d1e7b32a750b551af7b3090b8dde666f05eec",
+      "bytes": 7729,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_front.png": {
+      "sha256": "7aaaa9a6ebef0147d7b9067501e37419ede356367a1d967745e2ccb8bea0f7f0",
+      "bytes": 3366,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_combat_back.png": {
+      "sha256": "fb08c073df891ef3aff1bc3b694fab3be3eb91842221690bfceb98b4c06bb33b",
+      "bytes": 2684,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_merchant/orc_merchant_world_left.png": {
+      "sha256": "a925f8e21631745102b3a7e4cdfa8809b8bac701c70e27b0e321468a741de854",
+      "bytes": 432,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_world_front.png": {
+      "sha256": "d6e5a00988af1bc557d16d5bb29a6a08278c97f53f35ced95050533b44bfdb66",
+      "bytes": 505,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_combat_back.png": {
+      "sha256": "bbc33a179d328fbe98bcb0f856fdf9cb91bf69f27fd197f4597c6d66fbb82de5",
+      "bytes": 3210,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_combat_front.png": {
+      "sha256": "1b54f46188575e50e3359730db3083ed6c34fda1f83f7f3560f29fb3449d3cc3",
+      "bytes": 4286,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_world_left.png": {
+      "sha256": "822ab485f6a404dcfb07e7c211e775f2021061b692edc031504cffe17cf82a75",
+      "bytes": 484,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_world_right.png": {
+      "sha256": "479f23fac84493c494c684de45620e9ed4710efb50f64c2af9f6f61c54c70977",
+      "bytes": 486,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_world_back.png": {
+      "sha256": "1fd1f0c956bdef35b15d277e0417f68083bdb92453128e14cbe89124b0223f24",
+      "bytes": 457,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/boar/boar_sheet.png": {
+      "sha256": "c841fb0112f8f164f664d178c1c158114f79074dcfd2b71b857c3d800c49d567",
+      "bytes": 9444,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_world_right.png": {
+      "sha256": "41a26d1264a5dd2cee6cc51323e645ed0881635c684f13b86243ea0143ee63d7",
+      "bytes": 555,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_combat_front.png": {
+      "sha256": "e2a405ddd8c2e059026749e388d32a802cf125375e73e19e753f7bd21caee818",
+      "bytes": 3768,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_sheet.png": {
+      "sha256": "d1aa8c7dcad21cb2484989efd732f0932047e9b6b37a32901adb285f5ea88e04",
+      "bytes": 9148,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_combat_back.png": {
+      "sha256": "8a0f776188b9d8bb16c8e9d2c927fb05d84bdd978a0ad65dfa9b44a9fed7982b",
+      "bytes": 3088,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_world_front.png": {
+      "sha256": "33b1f1a09df561e6b3fe8af9bd8a89d9317c48289b3e558a29340117a95b2c14",
+      "bytes": 532,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_world_back.png": {
+      "sha256": "0c90ae72807b28c95d9c334945c1b0799e1d25dd73b9f441424115d83444d57e",
+      "bytes": 532,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/imp/imp_world_left.png": {
+      "sha256": "cca301d33752f5ad9bf48e5b92b0fd61f028e86ef096d1e168e5208c7c6cb60f",
+      "bytes": 572,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_right.png": {
+      "sha256": "bb38b748a29d7c6af211ea90b10e291dc247e56088e75bf849a980235f04f102",
+      "bytes": 252,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_sheet.png": {
+      "sha256": "553391c52ae4d63e04736b0af48a2400c2879fdea632577de49f4cf120df7be4",
+      "bytes": 5192,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_combat_front.png": {
+      "sha256": "4c538aea7d0e3b61cc3e8f6ddf89de83da795a6814a2655335f13b78db7d2e01",
+      "bytes": 3315,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_combat_back.png": {
+      "sha256": "03659850d75b64cdfa6a8378883a5cc845c32aa3e8b5a3f9592cb3ffc10fc982",
+      "bytes": 910,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_back.png": {
+      "sha256": "22494cc49939f55b8db6bb0827f9e52be90820091d340f7f1c7ba7e9dc278bc6",
+      "bytes": 266,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_front.png": {
+      "sha256": "9889b03207a91fd4fb93fef064e20ddbdf4b074298118e20cc13d8e61c8be24a",
+      "bytes": 294,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/veteran_questgiver/veteran_questgiver_world_left.png": {
+      "sha256": "7c372cc67b4d4d02fd0d1eda4990490f637d247aa5cc0143b0a2960787e147b9",
+      "bytes": 354,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_front.png": {
+      "sha256": "5d1661ba009050f1201057b82415b49832596030a12c352988f7b50b6911e31c",
+      "bytes": 415,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_back.png": {
+      "sha256": "1e518dfc72b4e9b87a1ed44ca079243f642070afcf7d82e3857af9cb84b6ee44",
+      "bytes": 2485,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_left.png": {
+      "sha256": "a46702ad6d5003aef4153d6ffb51e1586b157ad7be970a79808c23e3f94bcfa7",
+      "bytes": 478,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_combat_front.png": {
+      "sha256": "c6e64e4e95b4e422581855c49b798c62112627a2a62cffde19035f89921cd303",
+      "bytes": 3089,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_right.png": {
+      "sha256": "2ae9804788a4477db386294304c0c8d0c578c9282357f62b4f76545be5c72f1e",
+      "bytes": 442,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_world_back.png": {
+      "sha256": "ed54abc2f227f5df354677cd4032fa0d94e7178e710c2387c37392b6e2a1b976",
+      "bytes": 426,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/orc_guard/orc_guard_sheet.png": {
+      "sha256": "c7ecdae30744ad58e2004abd27891b9b274c0e32ce63591606df5b328a6a5662",
+      "bytes": 7237,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_combat_back.png": {
+      "sha256": "29b9ef1d4798981c78e7995b91d2ea1f8c2d74e68b2e454c591fd398f46f7b9a",
+      "bytes": 2695,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_right.png": {
+      "sha256": "7033be62dbd5030f9675f1a9cb30bf6efc2c06e57f3d49cf83fef2dd65ef0391",
+      "bytes": 193,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_sheet.png": {
+      "sha256": "04a61848b40441ee6d757c2327661537c3c92f31161d426a9bfd18bfeb557695",
+      "bytes": 4913,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_back.png": {
+      "sha256": "87329db2892287f4c3c844f72bd3ec4596a6bc3358358ec923a751adfcdc8395",
+      "bytes": 568,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_left.png": {
+      "sha256": "cf855b197ffb6d055491d03d317306c49b08f1fd8c677e9dbb4fe2c444ecaa94",
+      "bytes": 198,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_combat_front.png": {
+      "sha256": "3f8ed258fd3704cb4a17b117d99868138ea8fd79d961c99c2ee48cb4a01b8217",
+      "bytes": 1205,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/quest_peon/quest_peon_world_front.png": {
+      "sha256": "06ce18d23b008c497c7e614011cec4ba1c14b6d227fb7dc924c76e6ed98a89ce",
+      "bytes": 130,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_combat_front.png": {
+      "sha256": "15455d00e5939b7c49fd7320c74be81616ba3402c2041167378853a5976fd198",
+      "bytes": 1102,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_world_right.png": {
+      "sha256": "4fb3810e0f887766903190194f3f450fc0ea68bfc00e543316f9abd89875a8b9",
+      "bytes": 274,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_world_left.png": {
+      "sha256": "39a98322defc9c5302a9aefc011a106df93c091d32c208906f613a7a9343b526",
+      "bytes": 179,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_sheet.png": {
+      "sha256": "98eaa127c0c46a5cebf8a81e57f14ff915d880dc6988e46b662157648e41d75e",
+      "bytes": 5005,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_world_front.png": {
+      "sha256": "1378b5ab994dc753c0e5764ce18b2be86420444477cc463b82b9128eed266f25",
+      "bytes": 429,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_world_back.png": {
+      "sha256": "dd299309f97a610303e1480008b075a31d2248db4c181dda2d7ef5b3982d8824",
+      "bytes": 395,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_world_character_sheets_split/shaman_apprentice/shaman_apprentice_combat_back.png": {
+      "sha256": "1c4c1055d2cede317025adbdf6fe463799e8bf92d47cbb7bb01129af2fba4041",
+      "bytes": 2728,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_corner_nw_32x32.png": {
+      "sha256": "b1065d73112a31e59fce5e51b38d933adb6000f3638c59ef914e7d97f6d0e8b7",
+      "bytes": 1430,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/ground_senjin_beach_sand_04_32x32.png": {
+      "sha256": "612c8a2a5c335fbb3797993e9ddb4b027a6692fcf480f0722f2e3065ddc2cf30",
+      "bytes": 1227,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/ground_senjin_packed_sand_01_32x32.png": {
+      "sha256": "316dba873a2d0742ccca2ca166a28de70c703064dcabfe1bd60ff01105bb8bb2",
+      "bytes": 1337,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/water_senjin_shallow_frame_01_32x32.png": {
+      "sha256": "26822fff1d1a6edbdf9542b4aa2b8805ecb46621ac5ed98c3d1b06388e0e7b83",
+      "bytes": 1244,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_sand_water_bottom_32x32.png": {
+      "sha256": "e4d06f5100d9e7f99780532671260fb82f9294c67c8e34239d3b3a8546321cd1",
+      "bytes": 1251,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/canoe_senjin_01_32x32.png": {
+      "sha256": "ca30818f86e97e2c3bd569c191dfb12598c9bc9835184a2890f1c76ba807f22b",
+      "bytes": 975,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_corner_nw_32x32.png": {
+      "sha256": "8493d41b94121b98e800af8b0fd7b2747d804917be8e55d7f911105b5e430bde",
+      "bytes": 1262,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/ground_senjin_beach_sand_02_32x32.png": {
+      "sha256": "6829ff820ad51e6013c0dd5687769f2721e8e828295e835821d8818f161eac07",
+      "bytes": 1257,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_corner_ne_32x32.png": {
+      "sha256": "c7c630a5b561e56458459d8e0f653cdc9b7db0c2fb15534fdabc6dc5f0c6be7c",
+      "bytes": 1322,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/bush_senjin_tropical_01_16x16.png": {
+      "sha256": "cb446ebefbe5d098036a06713056aa97b4bc664df15eda903509283495b74d5c",
+      "bytes": 397,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/troll_totem_senjin_01_16x32.png": {
+      "sha256": "563a67356d33d58a1f4acad0d31f31891c89ef63e68d36559f4fa2db4d4472eb",
+      "bytes": 467,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_sand_water_top_32x32.png": {
+      "sha256": "967a1a52c08d071507fb0d3dcf886b9e4f498bd8a3fb02a3783c10b7eb12e1a5",
+      "bytes": 1254,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/water_senjin_shallow_frame_02_32x32.png": {
+      "sha256": "5449550e187143f7dde2f17b9f64e168f941b04cbc2ebc7d131fdbd6b3ef8bea",
+      "bytes": 1245,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_corner_ne_32x32.png": {
+      "sha256": "3f65b4d87d81ff02615f7487aa17a1a2928410a17bd512d898aef988769d578a",
+      "bytes": 1416,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_sand_water_left_32x32.png": {
+      "sha256": "9ce7201eed78d19de75a734caff292979e5f40d6b9db41f42ee74b52562f26d4",
+      "bytes": 1239,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/reeds_senjin_01_16x16.png": {
+      "sha256": "a9e50c2632d48cdf367f132e1c7369e84f16e2b989a845a6327be7c629135e05",
+      "bytes": 471,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_straight_horizontal_32x32.png": {
+      "sha256": "a03801338761a8225f5284a3cc657941d83270604a368171081570522e38592f",
+      "bytes": 1325,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_large_01_48x64.png": {
+      "sha256": "af59e5764ce153fe3ac87b0226ed6b0aaffe9cf0292dc8ed1cc7b9bea47dbc9b",
+      "bytes": 3020,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/fishing_net_senjin_01_16x16.png": {
+      "sha256": "59455840b5eb8d6351810d39990067ca4c37219d0111dd7d2e23d3e841bae32b",
+      "bytes": 442,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shells_senjin_01_16x16.png": {
+      "sha256": "b727257693cf30df7878333cb4c8bdeffa5c01fcc18def0b7ff02c5a0ddc5ec7",
+      "bytes": 392,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/ground_senjin_beach_sand_01_32x32.png": {
+      "sha256": "d150859b3fc0619d1328f3f9b6a5c50a73d60d12eaebf026ee586d1f28af7f51",
+      "bytes": 1235,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_straight_vertical_32x32.png": {
+      "sha256": "5d7a11d7bdec17555c3633ca841b099a2a92e3eb6c469bdb411b7dfdd5a741b4",
+      "bytes": 1266,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_corner_se_32x32.png": {
+      "sha256": "41444126a080570580e1371104ee7ed3df933965d78fa3bd6eaaf25efcbd3785",
+      "bytes": 1406,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/ground_senjin_beach_sand_03_32x32.png": {
+      "sha256": "f81145dd8a96eca4a056c34bf6f00f9b1cf93549ac1f7abc69e6230f5ec983bf",
+      "bytes": 1257,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/driftwood_senjin_01_16x16.png": {
+      "sha256": "3dc977cde9b7dab4b51166baf531d538c158c440577ab2e2c12691486f8392a4",
+      "bytes": 376,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/campfire_senjin_frame_01_16x16.png": {
+      "sha256": "a53d7af1063f001c0c52851bf6b633ce30201eafa0d40affc8457f575fa3461b",
+      "bytes": 425,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/water_senjin_deep_frame_01_32x32.png": {
+      "sha256": "66a4643092873a85a61e44db79fa8ff57ee5dd27db5f5e240631efcc5a648809",
+      "bytes": 1118,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_corner_se_32x32.png": {
+      "sha256": "229bdc46b6826effa03aa047629282c11050513906a03e46e92f28898d23b7b2",
+      "bytes": 1235,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/troll_hut_senjin_01_64x64.png": {
+      "sha256": "5f5b16086f5e2c9c15de9ca74250e0bbbe8a6d6573cd79e0efe5426cd4d87f78",
+      "bytes": 4369,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_sand_water_right_32x32.png": {
+      "sha256": "0625681e56fdce6323e655084cfed7601b78c80878835f4ce0c7c33cfaea66c5",
+      "bytes": 1235,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png": {
+      "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+      "bytes": 1324,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/boardwalk_senjin_corner_sw_32x32.png": {
+      "sha256": "e16d06c6a955c53762b6316bb90ce7f6dfc40ba6b8f664d5fb3554a0688e6bab",
+      "bytes": 1447,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/shore_senjin_corner_sw_32x32.png": {
+      "sha256": "9f52138f749b8ef5608f8ee7b4f32e7ac61042653900b4fa6fcf0e6474a3c59c",
+      "bytes": 1340,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/water_senjin_deep_frame_02_32x32.png": {
+      "sha256": "b065b848cd455f673664df29cec0a1168b4b00feda89824149f915f7907954e7",
+      "bytes": 1110,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/tiki_post_senjin_01_16x32.png": {
+      "sha256": "170ee44b608e2a2cfd3541c0b29498231f8b4d7c5def89f57942547b31df2b01",
+      "bytes": 397,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png": {
+      "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+      "bytes": 1310,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/grass_durotar_dry_01_16x16.png": {
+      "sha256": "42eb8d2d995ee8fa5daaf0b4a6b4ead83f394808d25c947b297dfdecf906ecf7",
+      "bytes": 279,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_sw_32x32.png": {
+      "sha256": "0e6f68d14f6854bd7c3857ce5bd19bd5cc8a3cfc88fda079c433246096f24eeb",
+      "bytes": 1171,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_01_32x32.png": {
+      "sha256": "206f80bd59b375dbbf03777ada17ec81933ecf1755cfd6e1114ebc87300a13ee",
+      "bytes": 1288,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_left_32x32.png": {
+      "sha256": "3a7ee8aa61b5fa12d875735efcd7939b708a562c0ac7eb72ea31c3604382a2a7",
+      "bytes": 1200,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cave_entrance_durotar_01_64x64.png": {
+      "sha256": "186db943eda85c6e4c13e8a400a85b61c120345d74fadf5bb08259892e063b38",
+      "bytes": 4191,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_gate_01_32x32.png": {
+      "sha256": "5dead2b7c7bcd8a868f4b9d243faa0246575738298e0b45e1aecaa54f48cd181",
+      "bytes": 1327,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png": {
+      "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+      "bytes": 396,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_crossroad_32x32.png": {
+      "sha256": "f7fb9258ff8c0e983a1aa74fbd6a370e2b9273bf9fa60a8dbe1dcbecbfd1c1b9",
+      "bytes": 1286,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_straight_vertical_32x32.png": {
+      "sha256": "b3761cdfd0be824c218b62e3a642999c5de3ce161a5f3286b9c17c79fdedeae3",
+      "bytes": 1306,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_top_32x32.png": {
+      "sha256": "a9f1ed38e5c87b1341a1657b5833f9d8e7b6ff0f90099f560897dccc39abc90b",
+      "bytes": 1265,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_04_32x32.png": {
+      "sha256": "cdf1b6e5e5e3a3f045260876bb98cf7e37446ef881317b8701e73f1eea9dbd07",
+      "bytes": 1521,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_ne_32x32.png": {
+      "sha256": "d1ccd7146a00d3983a1c4fd5042c990ac92aed53d4c058d450cf665d3df550f4",
+      "bytes": 1171,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_02_32x32.png": {
+      "sha256": "4e1c766bef7cd225fc2011215f37c339dad26d127957b2598dcae7aa5e45b67a",
+      "bytes": 1190,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_left_32x32.png": {
+      "sha256": "61757d197ed503f210ed73c264467f7f76db6105e2edcdffa76caa2ea65e98de",
+      "bytes": 1338,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png": {
+      "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+      "bytes": 1280,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_04_32x32.png": {
+      "sha256": "0fc22d9fb6c9b8c734d4f21af148135bcc04199f26acc588b46a3b8cb7debe8a",
+      "bytes": 1270,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_cracked_01_32x32.png": {
+      "sha256": "cd0e4eaa654ebefccef3f0546e512121daa3df848eff129832cd4f4680cfc2d6",
+      "bytes": 1585,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/orc_hut_durotar_01_64x64.png": {
+      "sha256": "088fa216f1293ddeb1a1452e0caa51846d0a2bb0fe307f88e6e34f8ebcaedcb0",
+      "bytes": 4154,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png": {
+      "sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+      "bytes": 1511,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/brazier_durotar_frame_01_16x16.png": {
+      "sha256": "46b9cfe8331e9664db5304a284583d82ded3878df3fcb3d4ad43f74f5788599e",
+      "bytes": 443,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png": {
+      "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+      "bytes": 474,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_straight_horizontal_32x32.png": {
+      "sha256": "34a667262ecf0e4f06c06e0279ebb06eba9be407c1b5c242c7ff686c1f7ae55c",
+      "bytes": 1287,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_se_32x32.png": {
+      "sha256": "d0055c7986a2c0f1dc80c67897905453344b76401b348ec2c152727c613c2b34",
+      "bytes": 1205,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_right_32x32.png": {
+      "sha256": "e0b60f605b85ec8f6c8c5e3bf086d56aa39e1c0445a8d7e1635b3dcb039ed63b",
+      "bytes": 1401,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png": {
+      "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+      "bytes": 955,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_top_32x32.png": {
+      "sha256": "3e8a71544723a8e7d5a18fefaf9924d198b756d61962c12db31756a10b176641",
+      "bytes": 1406,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_bottom_32x32.png": {
+      "sha256": "65b2ca36845b117cc896712a6e95497898ebc7f00c6d6bdb86644144d847c1d7",
+      "bytes": 1273,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_small_01_16x16.png": {
+      "sha256": "78e89133f5e834f4d599ac9fe2692552f389c805b0e93e2d5717b8d4b6c0751a",
+      "bytes": 248,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/path_durotar_corner_nw_32x32.png": {
+      "sha256": "56bd64867d4ef4521e547c10f2ceec9281e61adbc3b1eaa2c7ede9e431b2049a",
+      "bytes": 1175,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_02_32x32.png": {
+      "sha256": "b5241b07dadc3a16a70e1a0df3dbfb273b7125eb73da8380616fdec5f307c55b",
+      "bytes": 1525,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_valley_redsand_03_32x32.png": {
+      "sha256": "50e6ffe2dd441f90bfc37f790deb4e5a2cd3e5f81fcb528ab46f40cb5bc7e6eb",
+      "bytes": 1195,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png": {
+      "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+      "bytes": 1314,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png": {
+      "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+      "bytes": 427,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_03_32x32.png": {
+      "sha256": "40e586dfc670c494d3a30837422206ad33cce32be7fee462326f87d82beeec67",
+      "bytes": 1514,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_rock_bottom_32x32.png": {
+      "sha256": "37f828625bd3a27c0457ca8b6c8aa4241994154ff30b7a10ddf7da669e45b4ed",
+      "bytes": 1347,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/transition_durotar_dirt_redsand_right_32x32.png": {
+      "sha256": "8a980a70edefc9e59eb9cab453b5bab885cdb9f1989569b0187aa66f2525a538",
+      "bytes": 1203,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/herb_shared_peacebloom_16x16.png": {
+      "sha256": "ecc9b34ebafafb18ebe554ca992288382bc12158f9bd4687040bdb6556b648d1",
+      "bytes": 379,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/weapon_rack_shared_01_32x32.png": {
+      "sha256": "0cfd11ec849b95b598ca7121365991655a8cd866c12ba0f3906b19f56d2ae71f",
+      "bytes": 1297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/brazier_shared_frame_02_16x16.png": {
+      "sha256": "6035f07c2113e0bfeadac0c6f8f24b348a1271ee583667eb229634d0afcf6e3b",
+      "bytes": 330,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/ore_shared_silver_vein_32x32.png": {
+      "sha256": "a1d2c49e8cc23fa8d91c6c4c4b79fe5b3803656502fbfb5fc6a6992eca3abcdb",
+      "bytes": 1138,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_02_16x16.png": {
+      "sha256": "71043a162eeaf82f322b7e5a460d572467e88a9576fac6133db198ebee7341a7",
+      "bytes": 325,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/brazier_shared_frame_01_16x16.png": {
+      "sha256": "1273de9fbdfe3b06da0d489faf91dc51f6585a885529671fc33d47797cf18579",
+      "bytes": 352,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/stool_shared_wood_01_16x16.png": {
+      "sha256": "7af2a5e4a0c94c26ad2fd094cad44773780da576bcb3dab4c85a2431a5da47bb",
+      "bytes": 288,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/herb_shared_silverleaf_16x16.png": {
+      "sha256": "a47dc99fb37b981a650f1c567dda4ee29dc4e77e66ddcecde0148a272b1dbaa3",
+      "bytes": 333,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/bedroll_shared_01_32x32.png": {
+      "sha256": "8260251db0f94e0edcc8419ab98e6e7d5d8a0a731e9f61775d621f6282a41275",
+      "bytes": 1018,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/chest_shared_open_16x16.png": {
+      "sha256": "494b27de758a5b9bcb7942c7abeed3c1beebed881aa79277e1c4aae320902919",
+      "bytes": 262,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/quest_shared_supply_bag_16x16.png": {
+      "sha256": "a4edfca22ff53f31d69f636fb200e513120e363d15914d11ef1dbab9b460ab68",
+      "bytes": 307,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/resource_shared_cactus_apple_16x16.png": {
+      "sha256": "9a70283dd90dc3c58425e1d5eb5f0d7155297effba66b729626661b7916a87c8",
+      "bytes": 398,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/ore_shared_copper_vein_32x32.png": {
+      "sha256": "4d10638974902287fee5c477457af376d926bed3bf5d5b3163c33de2e22d0ec9",
+      "bytes": 1070,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/table_shared_camp_01_32x32.png": {
+      "sha256": "feebbccc98360bdaff7e11df086ba8bd7ea2abc3e12d2a46441e0e7ec216305d",
+      "bytes": 1166,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/campfire_shared_frame_01_16x16.png": {
+      "sha256": "1beb209da661dfd7c43479ba5188f8a0d48720f568da2521d5ab955e24832aec",
+      "bytes": 360,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/shared_interactables/chest_shared_closed_16x16.png": {
+      "sha256": "cb20a75f729c6792b2206bd17768358a77eddfb0bb4851cf7ea5366f20972e61",
+      "bytes": 297,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/crates_razorhill_stack_01_32x32.png": {
+      "sha256": "cc2f57783d03febbc34e7bf887087e04ea5758a0b85c55c39b3fdf3f6a984bf5",
+      "bytes": 1195,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png": {
+      "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+      "bytes": 1229,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/transition_razorhill_dirt_planks_top_32x32.png": {
+      "sha256": "87d3df2c8ca1119f49c6a8c80cd4902c95aad3c2125c1c15b56634b2d44d7e49",
+      "bytes": 1204,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/orc_inn_razorhill_01_96x80.png": {
+      "sha256": "e2d2f0cf21bb53254d3f74623c84023de4e5acda9c4c30621b69f2f37e7b548a",
+      "bytes": 9110,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/transition_razorhill_dirt_planks_right_32x32.png": {
+      "sha256": "8f996f91db7e0a18512221718596cb0e849c47b19fed3d0bf9ed024553f22b35",
+      "bytes": 1112,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_gate_01_32x32.png": {
+      "sha256": "c8cdecd6cafa6ee4dcab3cc5684772a36b8c5a0a4da8602a594396a539ae9e9a",
+      "bytes": 1198,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/transition_razorhill_dirt_planks_left_32x32.png": {
+      "sha256": "9092e61d6f8e0076348882d455e7b123eaae9773d279caeffe0b3d0e99151185",
+      "bytes": 1138,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/ground_razorhill_compact_dirt_01_32x32.png": {
+      "sha256": "69bbf1f230116f798f2e998316fc9e2163e043692390376372d0834b500716ff",
+      "bytes": 1572,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/ground_razorhill_compact_dirt_04_32x32.png": {
+      "sha256": "52c534454f5311fd4cebed5c089795fe03e3cd5cf1d4aff4afcf896bd6f17bf1",
+      "bytes": 1545,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/floor_razorhill_planks_01_32x32.png": {
+      "sha256": "a5804a52decff61b5bb39e15f3e53849ff2898fb4bc5534f94fbc1f52c9c712d",
+      "bytes": 1137,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png": {
+      "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+      "bytes": 1249,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_corner_se_01_32x32.png": {
+      "sha256": "e3cf3b5a1e2f68131934c6f04085b019b21d61bc73488c7287fc8baeda25e961",
+      "bytes": 1240,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/beast_pen_razorhill_01_64x48.png": {
+      "sha256": "ab8bb865d735b736bb75bf53cedf7d1df59df31e50cd717c2a5b1fe3d0347a82",
+      "bytes": 3003,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_corner_nw_32x32.png": {
+      "sha256": "6bfe26f60561e528faf60d3c9e3b65f604b593d1b5df5be5fce662a72c81ce81",
+      "bytes": 1321,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/sack_razorhill_cargo_01_16x16.png": {
+      "sha256": "440ad723cc8b666fff826b9ae5167d02142cf5003b837004860a1608207ee819",
+      "bytes": 379,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/ground_razorhill_compact_dirt_02_32x32.png": {
+      "sha256": "6e74927113f3d2d8c7c86e35ae49f8dbb8343d3240ab1dc8439c548bf2c81916",
+      "bytes": 1537,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_straight_vertical_32x32.png": {
+      "sha256": "3df6a65cfd78182e428524973a272f893fb287585e5eeac0dafcb8453e90525d",
+      "bytes": 1188,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_corner_se_32x32.png": {
+      "sha256": "ff94871b64465eed1792733b55c04f7813aa32fc17d2a06b37671b802d6216ea",
+      "bytes": 1318,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_corner_sw_01_32x32.png": {
+      "sha256": "4a44b342646e9e0369d44feb6796c0418628f7096a830f08ab26ac52470a8954",
+      "bytes": 1167,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png": {
+      "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+      "bytes": 427,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/ground_razorhill_compact_dirt_03_32x32.png": {
+      "sha256": "9e80d908373f17a318357deb6a047ba16933265af0270f45292d43651771d8f3",
+      "bytes": 1559,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/training_totem_razorhill_01_32x32.png": {
+      "sha256": "2c3a1dfcbd6bd899742201630d1abc0192f05e97796e16942f71d9b85d9cd6cb",
+      "bytes": 1227,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/weapon_rack_razorhill_01_32x32.png": {
+      "sha256": "ed050d01f7c202f97144b2793b396568024054dcd6a8d1df083e96ecc3f84e10",
+      "bytes": 1098,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_straight_horizontal_32x32.png": {
+      "sha256": "ecba0314f2b341d6b8eea136e13ef20cf09e9ea0e5930f0aaee2b4b8fbbd27c1",
+      "bytes": 1196,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/brazier_razorhill_frame_01_16x16.png": {
+      "sha256": "1bc6b1d1c8f7ff35a048975ea811d7629cff4e4045ef8f6663489441d17c0ee9",
+      "bytes": 405,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_corner_nw_01_32x32.png": {
+      "sha256": "432d6afb02dfc62c215f2a11654f206166a5ea221cf616ca10d562d24ac57703",
+      "bytes": 1181,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/barrel_razorhill_reinforced_01_16x16.png": {
+      "sha256": "a5e9f075a79a53b69963435985e44b8b75e069b4b61b94970967498b03af5008",
+      "bytes": 333,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/watch_post_razorhill_01_32x48.png": {
+      "sha256": "55da5da302d6b9b515a43a502088664e3a0f64bd78b32cb5cc5153a279e71980",
+      "bytes": 1408,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/transition_razorhill_dirt_planks_bottom_32x32.png": {
+      "sha256": "b93b9b4a94f3019b9edf73d81518a191021731c2533403acd7f63d1f48ff6461",
+      "bytes": 1211,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/ground_razorhill_courtyard_01_32x32.png": {
+      "sha256": "1348fe250550e165e017f1f0453b61b272f93dd344a21cfc3a0da9b411526ab2",
+      "bytes": 1335,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/orc_hut_razorhill_01_64x64.png": {
+      "sha256": "3d1a2a0265e26c0d7745ad394e0f56abc5d1306cee36e71fe44d729112459632",
+      "bytes": 3781,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_corner_ne_01_32x32.png": {
+      "sha256": "763573eb6b65a5f1303ac72ff04a99ada5b7dc9f25629bfab7ee463347bef6c8",
+      "bytes": 1225,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_corner_sw_32x32.png": {
+      "sha256": "36c5afae0e10e8c8be13fc6aed6a58c6e0cfde786e07d5e9b62918feddb0c21d",
+      "bytes": 1324,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/path_razorhill_corner_ne_32x32.png": {
+      "sha256": "6b738280d4bfc21546b3bb9e4dda0c07f18bd3c6a8343db9210c9a9cb056df8f",
+      "bytes": 1298,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_grass_03_32x32.png": {
+      "sha256": "16a6cc7ef7e03ac3c6b78fb002382f792752516d164b14cf90ac260088bbcfac",
+      "bytes": 1423,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ruin_pillar_echo_01_32x48.png": {
+      "sha256": "d4ef757936a31e09bcdf9468422eb5062887dfe64ce065d903b96667a0f61798",
+      "bytes": 1398,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_grass_04_32x32.png": {
+      "sha256": "64b044a99f3a87745e77fbe8eb8a90babeb7f39e930c0d35b73de14005da2d55",
+      "bytes": 1397,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_corner_sw_32x32.png": {
+      "sha256": "7489b5b48c5bdf07965954cc388e094fe4d8083340444fecc4d1f2cb23222148",
+      "bytes": 1249,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_sand_left_32x32.png": {
+      "sha256": "184242e957dcfbc3cf38a2f6bb3b9388bcd32aba5d5ffb1ae272dade1442e25d",
+      "bytes": 1450,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_darkearth_right_32x32.png": {
+      "sha256": "e652495a5f8e611ab9fdbda05340e62401bae5de5f89842f5f4b53e7e92eb016",
+      "bytes": 1491,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_corner_ne_32x32.png": {
+      "sha256": "1b8974d285ef7433931bc16bbb1f0f27712d502af82ab0fac622aa2dad1fffed",
+      "bytes": 1236,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_sand_right_32x32.png": {
+      "sha256": "1fbc7e25995443f0e260923c90817437d9f55aac7c7ffa987062ca51bd05221f",
+      "bytes": 1475,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_darkearth_bottom_32x32.png": {
+      "sha256": "5674d31268c54cd1dc1027951fd97b4fb1cf519821a47e9dd2bc986ce0b465be",
+      "bytes": 1528,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/water_echo_shallow_frame_02_32x32.png": {
+      "sha256": "b107468fbd76bcb1d9af2589f61fab096f41e867346633b4aa85d902b37f6f7c",
+      "bytes": 1535,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_sand_water_right_32x32.png": {
+      "sha256": "e7ba232d908c269b0998e7695289b8bb5a28da90d165b79e61a4416353eea1cf",
+      "bytes": 1493,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_sandy_right_32x32.png": {
+      "sha256": "f6923ff7e6caafcd7546185e4e620c36b86d03f315924587d4b9b4583d724b88",
+      "bytes": 1192,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/rock_echo_mossy_01_32x32.png": {
+      "sha256": "249428bfad3f1a9150420a54245e0fec497f8d55fbf97c8f757410a864816e46",
+      "bytes": 1014,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_rocky_right_32x32.png": {
+      "sha256": "0c1afab6a11c55139bc5cb39bbf8953c3367001790c0a43e4a5ce28b18f772bd",
+      "bytes": 1242,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/palm_echo_01_32x48.png": {
+      "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+      "bytes": 1263,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_sandy_bottom_32x32.png": {
+      "sha256": "b77f52841adc63eb98aacd58441955c2e12f5ab60ffdba77832af1b9ff85a109",
+      "bytes": 1262,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_rocky_bottom_32x32.png": {
+      "sha256": "f3dc3126712097fb61fd4b6b7fe70bc1392a537222841acb0ce65fabd247f6f0",
+      "bytes": 1264,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_darkearth_left_32x32.png": {
+      "sha256": "40e18581dd439bb312e48788335ae3488eeacb49c0aa76b1b6c5c0782462e5d6",
+      "bytes": 1489,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_sand_water_left_32x32.png": {
+      "sha256": "d427874943adb0872bd18e4985eca83596824c81307bd9c2fe601d7e66d337af",
+      "bytes": 1438,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/water_echo_deep_frame_02_32x32.png": {
+      "sha256": "bba2bf35aa164f474494a7d2b200a8531971d1c60b8d84642e65bcf8693ecfc7",
+      "bytes": 1422,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_grass_02_32x32.png": {
+      "sha256": "a92614f58b9cf7e782687e46a489bbb127d5a73e7a11eb26ef8b8f188c5821d0",
+      "bytes": 1443,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/fern_echo_01_16x16.png": {
+      "sha256": "89c30a750ce78b738c809863c1ca484f1952c12a108c540bb6b4edff62bc6b3d",
+      "bytes": 516,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/tree_echo_jungle_01_48x64.png": {
+      "sha256": "685c29642ae9ac68f9eab2e2712b1baecc3c4246da99bd331a3f1891a2169e23",
+      "bytes": 3048,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_straight_horizontal_32x32.png": {
+      "sha256": "4ba1b21a7bf122c6c3f6e3347cb87b95754fec99fb23cf883d8cabbce11ad278",
+      "bytes": 1525,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/troll_totem_echo_01_16x32.png": {
+      "sha256": "35d336ccb0d73572ca9b851374e51cb26d24d86f448bda8e9f9214c95b9e41a9",
+      "bytes": 422,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_darkearth_top_32x32.png": {
+      "sha256": "6ac96b5eacc4f013e9b6d98a37af4df45c9e4ca399d7868e38b59a2d9ccb2e85",
+      "bytes": 1523,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/water_echo_deep_frame_01_32x32.png": {
+      "sha256": "53094bbc093689b90d7fee8860791835ebec29d98095800cd45d5a6346a2e519",
+      "bytes": 1421,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_sand_bottom_32x32.png": {
+      "sha256": "fa653b583fa4439e319b9efe888bacbaed9afee1915d37491cd1df09a1c56f43",
+      "bytes": 1454,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_sandy_left_32x32.png": {
+      "sha256": "ac47f5089129b4abcaabe109d6cb3ee98b2a5bad3c0c533be5f37f3ea1c2f9c8",
+      "bytes": 1253,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_sand_01_32x32.png": {
+      "sha256": "9e37fa3942ca27b62ce68146f495701227b4b0ae1a7f28fcfa8517c60a23cccc",
+      "bytes": 1495,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_corner_se_32x32.png": {
+      "sha256": "1a48ff97cf5de9b9d636e624fd553a475850a91fd5c581267b42d47ddf22f72a",
+      "bytes": 1292,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_sand_water_top_32x32.png": {
+      "sha256": "0fe9952f6ae23c12729074287813c955aee833acbd58cf2047a225473214a7c3",
+      "bytes": 1471,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_corner_nw_32x32.png": {
+      "sha256": "989d91a65facbaa9da0b2b8c9eaf6f5a61ef4bc7a86419d5404cf4735a4b2a2a",
+      "bytes": 1175,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/path_echo_jungle_straight_vertical_32x32.png": {
+      "sha256": "bfe56b78dad4c74c270f5b1256717ba2fa56c41c779a376470c45eae1b528265",
+      "bytes": 1480,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/water_echo_shallow_frame_01_32x32.png": {
+      "sha256": "4cfceaa397c2780825e8efcce06633c507ffd8992595a4cb627643e678c53fdd",
+      "bytes": 1541,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_rocky_left_32x32.png": {
+      "sha256": "2814d81b9d0e509075ab2fa71d60bdf4dac384ea23d0055228ed77280419b2a7",
+      "bytes": 1259,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_darkearth_01_32x32.png": {
+      "sha256": "d54b2c5dc5bb8d28b51519c5976424b3c116c9e997ad9de19e939af5f7294cb6",
+      "bytes": 1623,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/ground_echo_grass_01_32x32.png": {
+      "sha256": "c7ff2132c387dea85cbae700d0db11e4f1723b9d8bbcf752465f0d231ea5d062",
+      "bytes": 1433,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_rocky_top_32x32.png": {
+      "sha256": "018655a55c08018f9f8d262ce1d6b0b45e32841eb8a1977308a13db4517a75bc",
+      "bytes": 1248,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/bridge_echo_rope_tusk_01_64x32.png": {
+      "sha256": "07410789a6e3e6c77dc3103fec70c7138ef9a6390545bf25197a93963a78acc6",
+      "bytes": 1847,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_sand_water_bottom_32x32.png": {
+      "sha256": "4a1aaffd05bcaadb9aca1e7b774bf27a9f2a1d061cdc61e8fe9e7c9be9472b7b",
+      "bytes": 1580,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/transition_echo_grass_sand_top_32x32.png": {
+      "sha256": "c182935a442e572453bd5dc4c05594941b1dcca07691a3901182fdda7699ea22",
+      "bytes": 1475,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/shore_echo_sandy_top_32x32.png": {
+      "sha256": "8de8c5c3cf88a30363182cd61af40bff287ba16681980d85edf9aea6401858a5",
+      "bytes": 1253,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/vine_echo_01_16x16.png": {
+      "sha256": "2012023ab2663324f33281ef7cf71880ec5e4926ce954a80db1fda518d390db7",
+      "bytes": 510,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/source_atlases/a_clean_sprite_sheet_game_asset_sheet_on_a_trans.png": {
+      "sha256": "209ccde7c958cc902c545fad8fdb5f0f92694dd3a533ab1f3e23334a9eaaca3f",
+      "bytes": 1815117,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/source_atlases/a_clean_transparent_background_sprite_sheet_tile.png": {
+      "sha256": "a105958ea85805269887d4849b3820d63a0a2b546744fa1042cf670c24afd82a",
+      "bytes": 1858095,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/source_atlases/a_clean_high_resolution_pixel_art_sprite_atlas_on.png": {
+      "sha256": "1e00277add31f21e04fae1dc1005b0735474151c176a699821598e567a5d8b08",
+      "bytes": 2175618,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/source_atlases/a_clean_white_transparent_checkered_background_spr.png": {
+      "sha256": "a6d43e1093c805b715dfa399b278c7822b82b94ae712e544e1bfb1620a3b50c1",
+      "bytes": 1242652,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/source_atlases/a_clean_graphic_sprite_sheet_tileset_image_on_a.png": {
+      "sha256": "f81cf60ebe817ec2b9ab853d7effa300cbfc36d200161eaec3b48f15f02dff27",
+      "bytes": 1792199,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_shared_interactables.png": {
+      "sha256": "b7fd749bee49641a17a66cee0276fc7d19211ea5222281ad6b9c62ceb0a55844",
+      "bytes": 18720,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_durotar_valley.png": {
+      "sha256": "f1670211fde5c62860ff195edaf0f67f14716d42e4b8f8df43604f3f64339109",
+      "bytes": 71602,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_razor_hill.png": {
+      "sha256": "3a63843acfba788ffd402af7e1cf288c5bba17320732c31a70dc3e2606466b91",
+      "bytes": 71343,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_echo_isles.png": {
+      "sha256": "ecfdf937ac3ea3cfaa6bf426600c1d619f10cbb360aaf3c516c491907ff7d4ba",
+      "bytes": 92384,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_all_environment_assets_v2.png": {
+      "sha256": "9e7dcee6471aef6da4f8e1fd8579c0d1e2f30a126916b35d516cc0be5c536f5a",
+      "bytes": 316598,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/previews/preview_senjin_village.png": {
+      "sha256": "b249906140db7224b1999408feb9f3eb73e24756913543802766df70dfb912d5",
+      "bytes": 62911,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/peon_sprite_redesign_v030/originals/peon_base_design_reference.png": {
+      "sha256": "ab2dde71d2a12778be265e55169eb9a1692a627a8771abcc7c7aa4b2da475ab1",
+      "bytes": 1617008,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/peon_sprite_redesign_v030/originals/peon_shaman_totemic_design_reference.png": {
+      "sha256": "740053366b7da897d7daef3744616e7eb060937f2f6ded06003ff31702fa6c27",
+      "bytes": 2100082,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/peon_sprite_redesign_v030/originals/peon_warrior_design_reference.png": {
+      "sha256": "bf8c362a5acfb51390378c2256dc3e58285a54ca02286112ddc9164406c32ffc",
+      "bytes": 1803841,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/peon_sprite_redesign_v030/originals/peon_warlock_design_reference.png": {
+      "sha256": "af0513b60380c38540d4fb95b398f60d4fcd2becf087bd4c8ab3d41da63f3622",
+      "bytes": 1867021,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/heroes.json": {
+      "sha256": "7b4baf0d90d6a5bdcc894d50dd395578fce1e7f462b4f31b589f18cd58f27a12",
+      "bytes": 90520,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/orc_npcs.json": {
+      "sha256": "8696cf16c02447ba7f3006ed7a5e1e852ccc13fa9f566caf859643d3179c4c9a",
+      "bytes": 191603,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/trolls.json": {
+      "sha256": "2529f638b22a3aa9575b5945496326a011b6a8af4e8358f2023a09888a593bba",
+      "bytes": 113833,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/beasts.json": {
+      "sha256": "8075d2bdc07412397a7824e945d8f6e2cfc08d835bff8faf13207a8458f5594f",
+      "bytes": 270964,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/monsters.json": {
+      "sha256": "8f1f354ba591c8a18dd18ad5908f85dda36be8d7ff75ea5172883199b7e9a278",
+      "bytes": 208535,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_efcf4633.png": {
+      "sha256": "5b87e2c8c2b85b8330265e3f4149bf459e32760c15f7449fc1f21e2ec7b55273",
+      "bytes": 1082,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_f73b2ec2.png": {
+      "sha256": "26203194ceea058e254da42164e6b16531eeadd8b9afda84a3fe983d3ebbb1ab",
+      "bytes": 1173,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_warrior_f73b2ec2.png": {
+      "sha256": "f631a3d0b6ccef34abbbc38d8171a9daacaa8dcec1cbafa717037f5e46fff35e",
+      "bytes": 1076,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_warlock_f73b2ec2.png": {
+      "sha256": "19d8b71e8faf7cd630497d3f9697ad0659c849847bd1edc82d60ea318b7bbe29",
+      "bytes": 1049,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_hunter_f73b2ec2.png": {
+      "sha256": "1fd2303f1f7cd3a6e6b77bc2415a17a39ea487aafc9f359031c998ad0887517c",
+      "bytes": 1064,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/durotar_v02/concept_overworld.png": {
+      "sha256": "a85f38d931575847d83e5009698c42c17620baca0cc6819a5a4b94073ed549e6",
+      "bytes": 1843384,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_orc_guard_f73b2ec2.png": {
+      "sha256": "b5e3cd881d6a214f251d6d64d7217557774453c44bf6762a74934e5a0ec8a318",
+      "bytes": 1084,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/durotar_v023/enemies/concept_overworld_roster.png": {
+      "sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+      "bytes": 2179901,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/durotar_v022/enemies/concept_overworld_roster.png": {
+      "sha256": "c88265d0a3758f6effb389884940a770ff5dce0c07cb3192f0d1695fad15cffc",
+      "bytes": 2179901,
+      "declared_source_SHA_rechecked": true
+    },
+    "references/generated/durotar_v02/concept_imp_and_gear.png": {
+      "sha256": "f6ee9a68fd02935c04e3e2265dc3b7a7256a9a0b45f84360a0afc348abbdf71c",
+      "bytes": 972910,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_orc_vendor_f73b2ec2.png": {
+      "sha256": "9b812831f4b4ca24bae7946f1dfa8a97ca73822150704ccdca2b24429b64e304",
+      "bytes": 1073,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_gornek_f73b2ec2.png": {
+      "sha256": "cc2ae1786c61236414dde10650aae245c142e1e524aa86d5ba776de0171c4e4a",
+      "bytes": 1069,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/sprites/peon_troll_guard.png": {
+      "sha256": "0cdbf8570b4a5d894bdcbc236ec4e03f8a9a2293e2fe2864cbc97df58a979caf",
+      "bytes": 1031,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/sprites/peon_troll_caster.png": {
+      "sha256": "4c9b9f08e0882d2a9832a9a3b668168ee723788a405238e458f4a76a84738f41",
+      "bytes": 1034,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_kento_f73b2ec2.png": {
+      "sha256": "75c5f9843edd42d1834187849ebfa57ebf2c7b8831c6ab6c2601d04a1a61c1b9",
+      "bytes": 1098,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/world_redraw_v0217/shaman_master/overworld.bin": {
+      "sha256": "73536ad8a7ba5ef8bbc44fd2eca732ca303eb3f9e98cea1b9b26eed95e7544e8",
+      "bytes": 1728,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/sprites/peon_troll_fisher.png": {
+      "sha256": "6027e7c0683be8a5e4b0f58a1c7e8f044009f127a9eb8ca173667aa8c4271dca",
+      "bytes": 1065,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_orc_questgiver_f73b2ec2.png": {
+      "sha256": "19952b39a907e3b9114e2d0817d2ba1926b13bdc8335246ddc8fe26c41e48c36",
+      "bytes": 1079,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/garrosh_world_generated.png": {
+      "sha256": "9e34308617aee36a7107f16c48016296d2212f7a2b15bd03b60325d5d703d553",
+      "bytes": 756949,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/world_redraw_v0217/rock_one/overworld.bin": {
+      "sha256": "18fd6b3fc41af44a06b326e71fbeaf0ed4aa5783c18478410ea5537e9d6ee700",
+      "bytes": 1728,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/world_redraw_v0217/rock_vein/overworld.bin": {
+      "sha256": "6a05967c7d6c8a2be3ced16046cc42e0eeb6dac17d3e9ea42f6f8474aeada63e",
+      "bytes": 1728,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/world_redraw_v0217/rock_element/overworld.bin": {
+      "sha256": "3f9c4a7c2ad18a4d39f806a82d7a7549d6644b3f787cc2f3ec6381a24c94a701",
+      "bytes": 1728,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/peon_sleeping_f73b2ec2.png": {
+      "sha256": "9fe9d09245cc059b123c211c27eafc8cb95ad38eecd17938d1e70c51e943bc89",
+      "bytes": 912,
+      "declared_source_SHA_rechecked": true
+    },
+    "assets/world_readability_v0219/originals/kolkar_world_approved_generated.png": {
+      "sha256": "de0a83ff64514730ce4b7a51a02c84bd51772d6b57d56c95ace349843a34ad31",
+      "bytes": 728463,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/shaman_master.bin": {
+      "sha256": "eb3985f0219e623ef3a3a02086b4890c504a7dae176a848a6a523787e6af7745",
+      "bytes": 144,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/enemy_warlock.bin": {
+      "sha256": "b53b37cb815cb58832cc47ae2f49961d7b044e5a887d53be61b249b2714d11fa",
+      "bytes": 144,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/facings.asm": {
+      "sha256": "ec807985f627c1a50c071833570cd4292554d7adf274aab5184ac2fe128040ec",
+      "bytes": 617,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/palettes.asm": {
+      "sha256": "3b17d49f6e0f433899f568702990ad302a0f34cc1f737a63840b663cf9a09ee0",
+      "bytes": 389,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/graphics.asm": {
+      "sha256": "086d64d856d5e55b25ea8726c1e6abcf26893b2ebad4f90fdaed1170385c934b",
+      "bytes": 466,
+      "declared_source_SHA_rechecked": true
+    },
+    "gfx/large_masters_v0213/warrior_trainer.bin": {
+      "sha256": "5bf371df9c58cc9cc233120643d44c3e819d38b55ba63dbd9b6bbcd95bb3bba7",
+      "bytes": 144,
+      "declared_source_SHA_rechecked": true
+    }
+  },
+  "source_JSONs": [
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/beasts.json",
+      "source": "assets/world_readability_v0219/beasts.json",
+      "sha256": "8075d2bdc07412397a7824e945d8f6e2cfc08d835bff8faf13207a8458f5594f",
+      "bytes": 270964
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/beasts_monsters_source_provenance.json",
+      "source": "assets/world_readability_v0219/beasts_monsters_source_provenance.json",
+      "sha256": "db73de964e64f820f43b0209383ea6010454f2a0b9adda8b84f4a47e514719ae",
+      "bytes": 274482
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/heroes.json",
+      "source": "assets/world_readability_v0219/heroes.json",
+      "sha256": "7b4baf0d90d6a5bdcc894d50dd395578fce1e7f462b4f31b589f18cd58f27a12",
+      "bytes": 90520
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/heroes_orcs_provenance.json",
+      "source": "assets/world_readability_v0219/heroes_orcs_provenance.json",
+      "sha256": "6cffd71ab30f974f7acae51d12a3cc386c98f54116a548f05c601dfbccf69f9a",
+      "bytes": 102868
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/heroes_orcs_verification.json",
+      "source": "assets/world_readability_v0219/heroes_orcs_verification.json",
+      "sha256": "35a488f01bb5b16ccfc646b97654cc78a2a9bcd4a57f6f2c857d6f94f31a0bf1",
+      "bytes": 3375
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/kolkar.json",
+      "source": "assets/world_readability_v0219/kolkar.json",
+      "sha256": "79bb48a1fbfe5bc2e3cfc9909e3680c16ea3f30bfcde1b39fb707f3d1292a2e0",
+      "bytes": 35351
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/monsters.json",
+      "source": "assets/world_readability_v0219/monsters.json",
+      "sha256": "8f1f354ba591c8a18dd18ad5908f85dda36be8d7ff75ea5172883199b7e9a278",
+      "bytes": 208535
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/monsters_base.json",
+      "source": "assets/world_readability_v0219/monsters_base.json",
+      "sha256": "25afbc27e0f1efc10459fd33d1bdbe2a4fbefc17ebf4608f52a72a30c517f822",
+      "bytes": 111275
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/monsters_extra.json",
+      "source": "assets/world_readability_v0219/monsters_extra.json",
+      "sha256": "bd3700a1e32ba0585a0178beb6964e6a0a979f420dec8f56feb570309a447835",
+      "bytes": 62548
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/orc_npcs.json",
+      "source": "assets/world_readability_v0219/orc_npcs.json",
+      "sha256": "8696cf16c02447ba7f3006ed7a5e1e852ccc13fa9f566caf859643d3179c4c9a",
+      "bytes": 191603
+    },
+    {
+      "path": "assets/native_world/assets/world_readability_v0219/trolls.json",
+      "source": "assets/world_readability_v0219/trolls.json",
+      "sha256": "2529f638b22a3aa9575b5945496326a011b6a8af4e8358f2023a09888a593bba",
+      "bytes": 113833
+    }
+  ],
+  "world_packet_files": [
+    "assets/native_world/gfx/world_readability_v0219/base/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/base/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/base/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/panther/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/panther/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/panther/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_element/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_element/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/attrs.bin"
+  ],
+  "bound_packet_files": [
+    "assets/native_world/gfx/world_readability_v0219/base/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/base/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/base/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/boar/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/crawler/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/harpy/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/imp/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/raptor/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/tiger/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warlock/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/attrs.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/masks.bin",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/attrs.bin"
+  ],
+  "world_static_PNGs": [
+    "assets/native_world/gfx/world_readability_v0219/base/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/boar/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/crawler/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/harpy/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/imp/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/panther/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/raptor/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/shaman/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/tiger/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/warlock/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/warrior/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.png",
+    "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.png"
+  ],
+  "large_master_files": [
+    "assets/native_world/gfx/large_masters_v0219/manifest.json",
+    "assets/native_world/gfx/large_masters_v0219/facings.asm",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_back_source_nearest24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_back_world_native24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_front_source_nearest24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_front_world_native24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_left_source_nearest24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_left_world_native24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_master_native24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_master_native24_4x.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_right_source_nearest24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_right_world_native24.png",
+    "assets/native_world/gfx/large_masters_v0219/garrosh_world_and_lodge_review.png",
+    "assets/native_world/gfx/large_masters_v0219/graphics.asm",
+    "assets/native_world/gfx/large_masters_v0219/palettes.asm",
+    "assets/native_world/gfx/large_masters_v0219/warrior_trainer.bin"
+  ],
+  "roles": {
+    "base": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/base/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/base/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/base/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/base/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "beast_handler": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/beast_handler/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/beast_handler/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/beast_handler/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "boar": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/boar/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/boar/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/boar/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/boar/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "camp_guard": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/camp_guard/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/camp_guard/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/camp_guard/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "crawler": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/crawler/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/crawler/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/crawler/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/crawler/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "enemy_warlock": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/enemy_warlock/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/enemy_warlock/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/enemy_warlock/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "archived_complete_WORLD_raster_cels",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "felhunter": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/felhunter/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/felhunter/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/felhunter/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "harpy": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/harpy/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/harpy/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/harpy/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/harpy/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "archived_complete_WORLD_raster_cels",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "imp": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/imp/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/imp/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/imp/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/imp/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "kolkar_archer": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/kolkar_archer/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/kolkar_archer/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/kolkar_archer/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "explicitly_user_approved_generated_WORLD_sheet",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "kolkar_raider": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/kolkar_raider/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/kolkar_raider/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/kolkar_raider/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "explicitly_user_approved_generated_WORLD_sheet",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "orc_guard": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/orc_guard/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/orc_guard/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/orc_guard/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "orc_merchant": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/orc_merchant/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/orc_merchant/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/orc_merchant/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "panther": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/panther/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/panther/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/panther/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/panther/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "peon_worker": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/peon_worker/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/peon_worker/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/peon_worker/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "quest_peon": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/quest_peon/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/quest_peon/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/quest_peon/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "raptor": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/raptor/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/raptor/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/raptor/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/raptor/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "rock_element": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_element/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_element/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/rock_element/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "retained_unbound_v0217_packet",
+      "source_note": "Not a bound runtime body; existing bytes retained"
+    },
+    "rock_one": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_one/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_one/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/rock_one/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "retained_unbound_v0217_packet",
+      "source_note": "Not a bound runtime body; existing bytes retained"
+    },
+    "rock_one_npc": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_one_npc/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_one_npc/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/rock_one_npc/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "supplied_single_16x16_WORLD_tile",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "rock_vein": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_vein/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/rock_vein/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/rock_vein/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "retained_unbound_v0217_packet",
+      "source_note": "Not a bound runtime body; existing bytes retained"
+    },
+    "sarkoth": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/sarkoth/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/sarkoth/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/sarkoth/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "scorpid": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/scorpid/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/scorpid/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/scorpid/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "senjin_chief": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/senjin_chief/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/senjin_chief/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/senjin_chief/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "senjin_troll_shaman": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/senjin_troll_shaman/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "shaman": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/shaman/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/shaman/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "shaman_apprentice": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/shaman_apprentice/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "shaman_master": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman_master/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/shaman_master/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/shaman_master/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "retained_unbound_v0217_packet",
+      "source_note": "Not a bound runtime body; existing bytes retained"
+    },
+    "sleeping": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/sleeping/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/sleeping/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/sleeping/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "tiger": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/tiger/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/tiger/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/tiger/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/tiger/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "documented_complete_source_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "troll_guard": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_guard/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_guard/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/troll_guard/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "troll_merchant": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_merchant/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_merchant/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/troll_merchant/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "troll_shaman": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_shaman/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_shaman/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/troll_shaman/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "troll_villager": {
+      "exported_in_rom": false,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_villager/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/troll_villager/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/troll_villager/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "veteran_questgiver": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/veteran_questgiver/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "warlock": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/warlock/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/warlock/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/warlock/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/warlock/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "warrior": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/warrior/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/warrior/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/warrior/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/warrior/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "exact_archived_native_shape_nearest24_restoration",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "warrior_trainer": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/warrior_trainer/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/warrior_trainer/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/warrior_trainer/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "authorized_generated_world_png_whole_figure_nearest24_palette_fit",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    },
+    "yarrog": {
+      "exported_in_rom": true,
+      "packet_paths": [
+        "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.bin",
+        "assets/native_world/gfx/world_readability_v0219/yarrog/masks.bin",
+        "assets/native_world/gfx/world_readability_v0219/yarrog/attrs.bin"
+      ],
+      "native_RGBA_strip": "assets/native_world/gfx/world_readability_v0219/yarrog/overworld.png",
+      "native_decode_and_masks_exact": true,
+      "source_kind": "archived_complete_WORLD_raster_cels",
+      "source_note": "Source restoration or lossy raster import; see role provenance"
+    }
+  },
+  "garrosh_lodge_world_verification": {
+    "whole_source_alpha_preserved_in_all12_world_frames": true,
+    "lodge_front_alpha_identical_to_world_and_complete_source": true,
+    "independent_packet_SHA_JSON_indices_and_palette_RGBA_decodes_exact": true,
+    "dedicated_Garrosh_PNG_RGB_renderer": "round(rgb555*255/31); transparent RGBA zero",
+    "world_strip_PNG_RGB_renderer": "replicated high bits; palette RGB retained under alpha0",
+    "all9_OAM_cells_and_actual_facing_ASM_exact": true,
+    "lodge_and_world_indices_identical": false,
+    "different_indices_are_declared_palette_pool_conversion": true,
+    "lodge_packet_sha256": "1b23c2580d5a11b502ad4d989cd2ab0888e90ededce4dea92836bb92e4831955",
+    "world_front_packet_sha256": "cda6040bfc83c29a385f0392866822f72f67d1ed9e7c68d4a01181306dec870a"
+  },
+  "source_files_rehashed_count": 534
+}

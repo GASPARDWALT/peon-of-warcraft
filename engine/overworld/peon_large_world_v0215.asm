@@ -1,10 +1,13 @@
-; Stream complete authored24x24 actors into nine tiles per object struct.
+; Stream complete native24/32 actors into sixteen reserved tiles per struct.
 ; Feet, movement, collision, save records, scripts and warps retain16px units.
 ; This section follows the relocated native renderer in the same ROM bank.
 
 DEF PEON_LARGE_FRAME_BYTES_V0215 EQU 9 * TILE_SIZE
+DEF PEON_WORLD_NATIVE32_FLAG_V0220 EQU 1 << 5
+DEF PEON_WORLD_SLOT_TILES_V0220 EQU 16
 DEF PEON_LARGE_BINDING_BYTES_V0215 EQU 8
-assert NUM_OBJECT_STRUCTS * 9 <= $80
+; Bank1 OBJ patterns end below the native BG extension at $8e00.
+assert NUM_OBJECT_STRUCTS * PEON_WORLD_SLOT_TILES_V0220 <= $e0
 
 ; Public farcall input isC: the native farcall macro replacesA andHL.
 ; Carry iff that sprite has a streamed body. Preserves BC/DE/HL.
@@ -43,26 +46,23 @@ PeonFindLargeWorldBindingV0215:
 	jr z, .hero
 	cp SPRITE_KRIS
 	jr z, .hero
-	ld b, a
-	cp SPRITE_PEON_SHAMAN_MASTER_LARGE
-	jr nc, .absent
-	ld hl, PeonLargeWorldBindingsV0215
-.loop
-	ld a, [hl]
-	cp $ff
-	jr z, .absent
-	cp b
-	jr z, .found
-	ld de, PEON_LARGE_BINDING_BYTES_V0215
+	; Same descriptors and absent IDs, indexed without a linear scan.
+	; The generated 256-pointer table shares this renderer's ROM bank.
+	ld l, a
+	ld h, 0
+	add hl, hl
+	ld de, PeonLargeWorldDescriptorPointersV0220
 	add hl, de
-	jr .loop
-.hero
-	ld hl, PeonLargeWorldHeroBindingsV0215
-.found
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	or h
+	ret z ; null pointer, carry clear
 	scf
 	ret
-.absent
-	and a
+.hero
+	ld hl, PeonLargeWorldHeroBindingsV0215
+	scf
 	ret
 
 ; Original HOME API returns its result inA; farcall preservesC instead.
@@ -78,11 +78,7 @@ PeonGetSpriteVTileResultV0215::
 	jr nc, .native
 	pop af
 	ldh a, [hObjectStructIndex]
-	ld b, a
-	add a
-	add a
-	add a
-	add b
+	swap a ; every struct owns sixteen tiles, including native24 actors
 	and a
 	jr .finish
 .native
@@ -382,6 +378,14 @@ PeonScoreWorldObjectsV0215:
 	xor a
 	jr .score
 .distance
+	; The optional familiar must leave capacity for nearby quest givers and
+	; their complete glyphs. Party/follower state remains untouched; draw its
+	; whole body after ordinary actors if the hardware budget still permits.
+	ld hl, OBJECT_SPRITE
+	add hl, bc
+	ld a, [hl]
+	cp SPRITE_PEON_FRIENDLY_IMP
+	jr z, .far
 	call PeonGetWorldObjectOriginV0215
 	ld a, [wPeonLargeCandidateXV0215]
 	sub 80
@@ -509,6 +513,8 @@ PeonBuildLargeWorldCandidateV0215:
 .ordinary_key
 	inc hl
 	ld a, [hli]
+	call PeonSelectWorldGridV0220
+	and OAM_PALETTE
 	or OAM_BANK1
 	ld d, a
 	ld hl, OBJECT_FLAGS2
@@ -549,21 +555,20 @@ PeonBuildLargeWorldCandidateV0215:
 	jr nz, .step_ready
 	inc d
 .step_ready
-	; Most suppliedNPCs author fourfacings and repeat allthreegaitposes.
-	; Normalize their pose to0 so nativewalktimers do not upload identical art.
-	; Hero, archived crawler/Yarrog and Kolkar retain authored native gait.
+	; The generated flag follows actual authored gait availability per sprite.
+	; Hero always retains gait. Canonical stills stay at pose0; newly authored
+	; NPC walk cels can opt in without adding comparisons to this hot path.
 	ld a, [wPeonLargeObjectIndexV0215]
 	and a
 	jr z, .pose_ready
 	ld a, [wPeonLargeCacheKeyV0215]
-	cp SPRITE_LASS
-	jr z, .pose_ready
-	cp SPRITE_ROCKER
-	jr z, .pose_ready
-	cp SPRITE_COOLTRAINER_M
-	jr z, .pose_ready
-	cp SPRITE_COOLTRAINER_F
-	jr z, .pose_ready
+	ld l, a
+	ld h, 0
+	ld bc, PeonLargeWorldWalkFlagsV0220
+	add hl, bc
+	ld a, [hl]
+	and a
+	jr nz, .pose_ready
 	ld d, 0
 .pose_ready
 	ld a, e
@@ -575,17 +580,13 @@ PeonBuildLargeWorldCandidateV0215:
 	add e
 	add d
 	ld [wPeonLargeFrameV0215], a
-	; Every emitted tile references this struct's independent nine-tile slot.
+	; Every emitted tile references this struct's independent sixteen-tile slot.
 	ld a, [wPeonLargeObjectIndexV0215]
-	ld d, a
-	add a
-	add a
-	add a
-	add d
+	swap a
 	ld [wPeonLargeTileBaseV0215], a
 	call PeonReadLargeWorldMaskV0215
 	; Whole onscreen actors cannot regain capacity by clipping individual
-	; cells. Reject these bodies before constructing nine OAM records.
+	; cells. Reject these bodies before constructing their OAM records.
 	call PeonLargeBodyHasOAMCapacityV0215
 	jr c, .capacity_ready
 	xor a
@@ -594,13 +595,40 @@ PeonBuildLargeWorldCandidateV0215:
 .capacity_ready
 	jp PeonTranslateWorldRelativeOAMV0215
 
+; The descriptor's spare bit selects native32. Source packets, masks and
+; palette attributes for the approved native24 creatures remain unchanged.
+; Preserve the descriptor pointer and all caller registers, including A.
+PeonSelectWorldGridV0220:
+	push af
+	push bc
+	ld b, 3
+	ld c, 9
+	bit 5, a
+	jr z, .ready
+	ld b, 4
+	ld c, 16
+.ready
+	ld a, b
+	ld [wPeonLargeGridWidthV0220], a
+	ld a, c
+	ld [wPeonLargeFrameTilesV0220], a
+	pop bc
+	pop af
+	ret
+
 ; Match the exact unsigned OAM visibility test, including wrapped coords.
 ; If every column or every row is wholly outside, no source metadata is needed.
 PeonLargeBodyOverlapsViewportV0215:
 	push bc
+	ld a, [wPeonLargeGridWidthV0220]
+	ld b, a
+	ld c, 4
+	cp 4
+	jr nz, .x_ready
+	ld c, 8
+.x_ready
 	ld a, [wPeonLargeCandidateXV0215]
-	sub 4
-	ld b, 3
+	sub c
 .x
 	and a
 	jr z, .next_x
@@ -614,9 +642,15 @@ PeonLargeBodyOverlapsViewportV0215:
 	and a
 	ret
 .check_y
+	ld a, [wPeonLargeGridWidthV0220]
+	ld b, a
+	ld c, 8
+	cp 4
+	jr nz, .y_ready
+	ld c, 16
+.y_ready
 	ld a, [wPeonLargeCandidateYV0215]
-	sub 8
-	ld b, 3
+	sub c
 .y
 	cp 9
 	jr c, .next_y
@@ -635,9 +669,24 @@ PeonLargeBodyOverlapsViewportV0215:
 	ret
 
 ; Carry means the body may proceed. These bounds include every canvas whose
-; nine OAM cells are eligible, even if a few edge pixels are outside the LCD.
+; complete OAM cells are eligible, even if a few edge pixels are outside the LCD.
 ; Other edge bodies retain the exact clipped admission path.
 PeonLargeBodyHasOAMCapacityV0215:
+	ld a, [wPeonLargeGridWidthV0220]
+	cp 4
+	jr nz, .native24
+	ld a, [wPeonLargeCandidateXV0215]
+	cp 9
+	jr c, .proceed
+	cp 152
+	jr nc, .proceed
+	ld a, [wPeonLargeCandidateYV0215]
+	cp 25
+	jr c, .proceed
+	cp 152
+	jr nc, .proceed
+	jr .count_cells
+.native24
 	ld a, [wPeonLargeCandidateXV0215]
 	cp 5
 	jr c, .proceed
@@ -648,6 +697,7 @@ PeonLargeBodyHasOAMCapacityV0215:
 	jr c, .proceed
 	cp 152
 	jr nc, .proceed
+.count_cells
 	push bc
 	push de
 	push hl
@@ -719,8 +769,14 @@ PeonAddLargeCandidateTileV0215:
 	and ~OAM_PALETTE
 	or e
 	ld d, a
+	ld a, [wPeonLargeGridWidthV0220]
+	cp 4
+	ld e, 6
+	jr nz, .foot_threshold
+	ld e, 12
+.foot_threshold
 	ld a, [wPeonLargeTileIndexV0215]
-	cp 6
+	cp e
 	jr c, .attributes_ready
 	ld a, [wPeonLargeInGrassV0215]
 	and a
@@ -761,11 +817,21 @@ PeonEnsureLargeWorldFrameV0215:
 	inc hl
 	ld d, [hl]
 	ld a, [wPeonLargeFrameV0215]
-	ld hl, 0
-	; frame*144 = frame*9*16, all frame sources remain16-byte aligned.
+	; Native24 frames retain144 bytes; native32 frames have256 bytes.
 	push bc
+	ld a, [wPeonLargeFrameTilesV0220]
+	cp 16
+	jr z, .offset32
+	ld a, [wPeonLargeFrameV0215]
+	ld hl, 0
 	ld bc, PEON_LARGE_FRAME_BYTES_V0215
 	call AddNTimes
+	jr .offset_ready
+.offset32
+	ld a, [wPeonLargeFrameV0215]
+	ld h, a
+	ld l, 0
+.offset_ready
 	pop bc
 	add hl, de
 	ld d, h
@@ -779,6 +845,8 @@ endr
 	ld a, h
 	add HIGH(vTiles0)
 	ld h, a
+	ld a, [wPeonLargeFrameTilesV0220]
+	ld c, a
 	call PeonUploadLargeWorldFrameGDMAHomeV0215
 	ld a, [wPeonLargeObjectIndexV0215]
 	ld e, a
@@ -848,10 +916,16 @@ PeonReadLargeWorldMaskV0215:
 	ld hl, 24
 	add hl, de
 	ld a, [wPeonLargeFrameV0215]
-	ld bc, 9
+	push af
+	ld a, [wPeonLargeFrameTilesV0220]
+	ld c, a
+	ld b, 0
+	pop af
 	call AddNTimes
 	ld de, wPeonLargeTileAttributesV0215
-	ld bc, 9
+	ld a, [wPeonLargeFrameTilesV0220]
+	ld c, a
+	ld b, 0
 	pop af
 	call FarCopyBytes
 	jp PeonStoreWorldMetadataV0215
@@ -887,7 +961,9 @@ PeonStoreWorldMetadataV0215:
 	ld d, h
 	ld e, l
 	ld hl, wPeonLargeTileAttributesV0215
-	ld bc, 9
+	ld a, [wPeonLargeFrameTilesV0220]
+	ld c, a
+	ld b, 0
 	call CopyBytes
 	; Commit metadata tags only after the matching relative template is ready.
 	call PeonBuildWorldRelativeOAMV0215
@@ -906,29 +982,21 @@ PeonStoreWorldMetadataV0215:
 
 PeonWorldMetadataAttributePointerV0215:
 	ld a, [wPeonLargeObjectIndexV0215]
-	ld d, a
-	add a
-	add a
-	add a
-	add d
+	swap a
 	ld e, a
 	ld d, 0
 	ld hl, wPeonLargeMetadataAttrsV0215
 	add hl, de
 	ret
 
-; Output HL = this object's fixed36-byte relative OAM slice.
+; Output HL = this object's fixed64-byte relative OAM slice.
 PeonWorldRelativeOAMPointerV0215:
 	ld a, [wPeonLargeObjectIndexV0215]
-	ld c, a
-	add a
-	add a
-	add a
-	add c
 	ld l, a
 	ld h, 0
-	add hl, hl
-	add hl, hl ; object index * 9 * OBJ_SIZE, at most432
+rept 6
+	add hl, hl ; object index * 16 * OBJ_SIZE, at most768
+endr
 	ld de, wPeonLargeRelativeOAMV0215
 	add hl, de
 	ret
@@ -957,7 +1025,12 @@ PeonBuildWorldRelativeOAMV0215:
 	ld a, [wPeonLargeTileIndexV0215]
 	ld e, a
 	ld d, 0
+	ld a, [wPeonLargeGridWidthV0220]
+	cp 4
+	ld hl, .Offsets32
+	jr z, .offset_table
 	ld hl, .Offsets
+.offset_table
 	add hl, de
 	add hl, de
 	ld b, [hl]
@@ -980,8 +1053,17 @@ PeonBuildWorldRelativeOAMV0215:
 	add hl, de
 	ld a, [hl]
 	ld c, a
+	ld a, [wPeonLargeFrameTilesV0220]
+	sub 3
+	ld b, a
+	; The last native32 row begins at12, rather than native24's6.
+	ld a, [wPeonLargeGridWidthV0220]
+	cp 4
+	jr nz, .foot_row_ready
+	ld b, 12
+.foot_row_ready
 	ld a, e
-	cp 6
+	cp b
 	jr c, .palette_ready
 	set 7, c
 .palette_ready
@@ -1001,7 +1083,8 @@ PeonBuildWorldRelativeOAMV0215:
 	ld hl, wPeonLargeTileIndexV0215
 	inc [hl]
 	ld a, [hl]
-	cp 9
+	ld hl, wPeonLargeFrameTilesV0220
+	cp [hl]
 	jr c, .cell
 	ld a, [wPeonLargeObjectIndexV0215]
 	ld e, a
@@ -1017,6 +1100,11 @@ PeonBuildWorldRelativeOAMV0215:
 	db -8, -4, -8, 4, -8, 12
 	db  0, -4,  0, 4,  0, 12
 	db  8, -4,  8, 4,  8, 12
+.Offsets32
+	db -16, -8, -16, 0, -16, 8, -16, 16
+	db  -8, -8,  -8, 0,  -8, 8,  -8, 16
+	db   0, -8,   0, 0,   0, 8,   0, 16
+	db   8, -8,   8, 0,   8, 8,   8, 16
 
 ; Warm frames translate a compact source template. Visibility and priority
 ; are still evaluated now, so moving into grass or across an edge stays exact.
@@ -1651,10 +1739,14 @@ PeonQuestMarkerOffsetV0215:
 	xor a
 	ret
 .marker
-	ld a, 8
+	; The native32 humanoid head extends another eight pixels upward.
+	; Keep complete quest/emote glyphs above it; event coordinates stay put.
+	ld a, 16
 	ret
 
-INCLUDE "gfx/world_readability_v0219/bindings.asm"
+INCLUDE "gfx/world_native_v0220/bindings.asm"
+INCLUDE "gfx/world_native_v0220/descriptor_table.asm"
+INCLUDE "gfx/world_native_v0220/walk_flags.asm"
 
 SECTION "Peon Large World Transient Cache v0215", WRAMX, BANK[2]
 wPeonLargeWorldCacheIDsV0215:: ds NUM_OBJECT_STRUCTS
@@ -1662,7 +1754,7 @@ wPeonLargeWorldCacheFramesV0215:: ds NUM_OBJECT_STRUCTS
 wPeonLargeMetadataIDsV0215:: ds NUM_OBJECT_STRUCTS
 wPeonLargeMetadataFramesV0215:: ds NUM_OBJECT_STRUCTS
 wPeonLargeMetadataMasksV0215:: ds NUM_OBJECT_STRUCTS * 2
-wPeonLargeMetadataAttrsV0215:: ds NUM_OBJECT_STRUCTS * 9
+wPeonLargeMetadataAttrsV0215:: ds NUM_OBJECT_STRUCTS * PEON_WORLD_SLOT_TILES_V0220
 wPeonLargeWorldScoresV0215:: ds NUM_OBJECT_STRUCTS
 wPeonLargeWorldObjectSnapshotV0215:: ds NUM_OBJECT_STRUCTS * OBJECT_LENGTH
 wPeonLargeSnapshotSourceV0215:: dw
@@ -1670,7 +1762,8 @@ wPeonLargeSnapshotDestV0215:: dw
 wPeonLargeSnapshotRemainingV0215:: db
 wPeonLargeWorldScanlinesV0215:: ds SCREEN_HEIGHT_PX
 wPeonLargeCandidateScanlinesV0215:: ds SCREEN_HEIGHT_PX
-wPeonLargeCandidateOAMV0215:: ds 9 * OBJ_SIZE
+	ALIGN 6
+wPeonLargeCandidateOAMV0215:: ds PEON_WORLD_SLOT_TILES_V0220 * OBJ_SIZE
 wPeonLargePreservedOAMV0215:: ds 9 * OBJ_SIZE
 wPeonLargeHeroClassV0215:: db
 wPeonLargeStateFlagsV0215:: db
@@ -1680,7 +1773,7 @@ wPeonLargeObjectIndexV0215:: db
 wPeonLargeCandidateXV0215:: db
 wPeonLargeCandidateYV0215:: db
 wPeonLargeCandidateAttributesV0215:: db
-wPeonLargeTileAttributesV0215:: ds 9
+wPeonLargeTileAttributesV0215:: ds PEON_WORLD_SLOT_TILES_V0220
 wPeonLargeCandidateStreamedV0215:: db
 wPeonLargeInGrassV0215:: db
 wPeonLargeCandidateBytesV0215:: db
@@ -1697,7 +1790,9 @@ wPeonLargeMaskV0215:: dw
 wPeonLargeSavedOAMBytesV0215:: db
 wPeonLargeNativeScratchOffsetV0215:: db
 wPeonLargeRelativeCountsV0215:: ds NUM_OBJECT_STRUCTS
-wPeonLargeRelativeOAMV0215:: ds NUM_OBJECT_STRUCTS * 9 * OBJ_SIZE
+wPeonLargeRelativeOAMV0215:: ds NUM_OBJECT_STRUCTS * PEON_WORLD_SLOT_TILES_V0220 * OBJ_SIZE
 wPeonLargeRelativePointerV0215:: dw
 wPeonLargeFootAttributesV0215:: db
-	assert HIGH(wPeonLargeCandidateOAMV0215) == HIGH(wPeonLargeCandidateOAMV0215 + 9 * OBJ_SIZE - 1)
+wPeonLargeGridWidthV0220:: db
+wPeonLargeFrameTilesV0220:: db
+	assert HIGH(wPeonLargeCandidateOAMV0215) == HIGH(wPeonLargeCandidateOAMV0215 + PEON_WORLD_SLOT_TILES_V0220 * OBJ_SIZE - 1)

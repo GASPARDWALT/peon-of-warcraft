@@ -1,0 +1,5899 @@
+{
+  "version": "v0.2.19",
+  "status": "PASS",
+  "passed": true,
+  "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+  "ordinary_buttons_only": true,
+  "ram_edits": false,
+  "cpu_substitution": false,
+  "emulator_states_loaded": false,
+  "user_battery_records_opened": false,
+  "physical_modretro_tested": false,
+  "classes": {
+    "shaman": {
+      "status": "PASS",
+      "fresh": {
+        "fresh_welcome": {
+          "scene": 0,
+          "role": "base",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 238,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 896,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": false,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        },
+        "empty_continue_inactive": true,
+        "portraits": [
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "bismillah",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1344,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/bismillah/hardware.png",
+              "sha256": "57b943812afe5b8dd06b52f796e18846c629f518f00ae967db1f3baf846c8906"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "zogzog",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1536,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/zogzog/hardware.png",
+              "sha256": "dee3845743efa56c74a84a34f8c9685a4a957cee15876367c93b6895b06e50b3"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "bismillah",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1344,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/bismillah/hardware.png",
+              "sha256": "57b943812afe5b8dd06b52f796e18846c629f518f00ae967db1f3baf846c8906"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          }
+        ],
+        "B_cancellation": {
+          "native_B_returned_to_thrall_actor1": true,
+          "script_var_zero": true,
+          "no_class_flags_or_name_prompt": true,
+          "terrain": {
+            "source": {
+              "path": "gfx/readable_interiors_v0212/GrommashHold.2bpp",
+              "sha256": "86c161f52489c3b55000e5319bc364e49dc1bfa445d3fcb7f20fdd5afb7f6b95"
+            },
+            "bank0_static_terrain_exact": true,
+            "native_brazier_cells_checked_against_compiled_phases": 0,
+            "bank1_9000_95ff_exact": true,
+            "bank1_8e00_8f7f_exact": false,
+            "native_loader_entry_contexts": [
+              {
+                "frame": 653,
+                "map": 12,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  6
+                ],
+                "tileset_address": [
+                  254,
+                  125
+                ]
+              },
+              {
+                "frame": 1541,
+                "map": 13,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  121
+                ],
+                "tileset_address": [
+                  248,
+                  88
+                ]
+              },
+              {
+                "frame": 3066,
+                "map": 13,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  121
+                ],
+                "tileset_address": [
+                  248,
+                  88
+                ]
+              },
+              {
+                "frame": 4071,
+                "map": 13,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  121
+                ],
+                "tileset_address": [
+                  248,
+                  88
+                ]
+              },
+              {
+                "frame": 5205,
+                "map": 13,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  121
+                ],
+                "tileset_address": [
+                  248,
+                  88
+                ]
+              },
+              {
+                "frame": 6272,
+                "map": 14,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  103
+                ],
+                "tileset_address": [
+                  67,
+                  118
+                ]
+              },
+              {
+                "frame": 9474,
+                "map": 14,
+                "VBK": 0,
+                "WBK": 1,
+                "tileset_bank": [
+                  103
+                ],
+                "tileset_address": [
+                  67,
+                  118
+                ]
+              }
+            ]
+          }
+        },
+        "A_direct_accept_once": true,
+        "actual_native_naming": true,
+        "original_class_kit_moves_PP_preserved": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3066,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4071,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 5205,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 6272,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 9474,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "exit_and_saved_welcome": {
+        "native_EXIT_without_SAVE": true,
+        "sram": {
+          "all_32768_sram_bytes_equal": true,
+          "saved_sram_outside_declared_graphics_scratch_equal": true,
+          "graphics_scratch_region": {
+            "bank": 0,
+            "address": 40960,
+            "bytes": 1536
+          },
+          "graphics_scratch_changed_offsets": []
+        },
+        "welcome": {
+          "scene": 1,
+          "role": "shaman",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 243,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 1024,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": true,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        }
+      },
+      "overwrite_protection": [
+        {
+          "native_confirmation_reached": true,
+          "choice": "no",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 1,
+            "role": "shaman",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 243,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1024,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        },
+        {
+          "native_confirmation_reached": true,
+          "choice": "b",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 1,
+            "role": "shaman",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 243,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1024,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        }
+      ],
+      "warm_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3066,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4071,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 5205,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 6272,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 9474,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "cold_welcome": {
+        "scene": 1,
+        "role": "shaman",
+        "metadata_matches_saved_class": true,
+        "referenced_scene_VRAM_tiles_exact": 243,
+        "reserved_UI_tiles_not_claimed_as_source_scene": true,
+        "actual_source_cells_exact": 147,
+        "actual_lcd_source_pixels_exact": 9408,
+        "overlay_rectangles_excluded": [
+          [
+            0,
+            0,
+            20,
+            3
+          ],
+          [
+            0,
+            17,
+            20,
+            18
+          ],
+          [
+            0,
+            0,
+            1,
+            18
+          ],
+          [
+            19,
+            0,
+            20,
+            18
+          ],
+          [
+            1,
+            3,
+            11,
+            4
+          ],
+          [
+            12,
+            2,
+            20,
+            14
+          ],
+          [
+            1,
+            16,
+            19,
+            17
+          ]
+        ],
+        "identity_glyph_lcd_pixels_exact": 1024,
+        "compact_choice_glyph_lcd_pixels_exact": 1536,
+        "name_from_verified_metadata": true,
+        "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+      },
+      "cold_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 399,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "private_battery_bytes": 32768,
+      "saved_record": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wPlayerID": [
+          38,
+          173
+        ],
+        "wPartyCount": [
+          1
+        ],
+        "wPartySpecies": [
+          66,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMon1": [
+          66,
+          0,
+          1,
+          84,
+          0,
+          0,
+          38,
+          173,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          65,
+          200,
+          35,
+          30,
+          0,
+          0,
+          70,
+          128,
+          0,
+          72,
+          2,
+          0,
+          0,
+          0,
+          14,
+          0,
+          14,
+          0,
+          7,
+          0,
+          7,
+          0,
+          6,
+          0,
+          8,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonOTs": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonNicknames": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wEventFlags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          50
+        ],
+        "wMomsMoney": [
+          0,
+          0,
+          0
+        ],
+        "wTMsHMs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wNumItems": [
+          2
+        ],
+        "wNumKeyItems": [
+          3
+        ],
+        "wNumBalls": [
+          0
+        ],
+        "wNumPCItems": [
+          0
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wBackupWarpNumber": [
+          0
+        ],
+        "wBackupMapGroup": [
+          0
+        ],
+        "wBackupMapNumber": [
+          0
+        ],
+        "wPokedexCaught": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPokedexSeen": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wItems": [
+          63,
+          1,
+          18,
+          2,
+          255
+        ],
+        "wKeyItems": [
+          25,
+          45,
+          50,
+          255
+        ],
+        "wBalls": [
+          255
+        ],
+        "wPCItems": [
+          255
+        ]
+      },
+      "counts": {
+        "reset": 1,
+        "exit": 1,
+        "new_game": 1,
+        "continue": 2,
+        "accepted": 1,
+        "cancelled": 1,
+        "master_draws": 7,
+        "welcome_draws": 5,
+        "terrain_loads": 8
+      },
+      "hook_errors": [],
+      "trace": [
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 264,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 329,
+          "ui": "welcome"
+        },
+        {
+          "frame": 630,
+          "ui": "new_start"
+        },
+        {
+          "frame": 678,
+          "ui": "world"
+        },
+        {
+          "frame": 2498,
+          "ui": "master_release"
+        },
+        {
+          "frame": 2517,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2546,
+          "ui": "master"
+        },
+        {
+          "frame": 2559,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2588,
+          "ui": "master"
+        },
+        {
+          "frame": 2658,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2687,
+          "ui": "master"
+        },
+        {
+          "frame": 2757,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2786,
+          "ui": "master"
+        },
+        {
+          "frame": 2856,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2885,
+          "ui": "master"
+        },
+        {
+          "frame": 2955,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2984,
+          "ui": "master"
+        },
+        {
+          "frame": 3054,
+          "ui": "cancelled"
+        },
+        {
+          "frame": 3998,
+          "ui": "master_release"
+        },
+        {
+          "frame": 4017,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 4046,
+          "ui": "master"
+        },
+        {
+          "frame": 4059,
+          "ui": "accepted"
+        },
+        {
+          "frame": 6299,
+          "ui": "world"
+        },
+        {
+          "frame": 6367,
+          "ui": "start"
+        },
+        {
+          "frame": 7303,
+          "ui": "world"
+        },
+        {
+          "frame": 7461,
+          "ui": "start"
+        },
+        {
+          "frame": 7810,
+          "ui": "exit_release"
+        },
+        {
+          "frame": 7889,
+          "ui": "title"
+        },
+        {
+          "frame": 8262,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 8327,
+          "ui": "welcome"
+        },
+        {
+          "frame": 8439,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 8503,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 8507,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 8647,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 8712,
+          "ui": "welcome"
+        },
+        {
+          "frame": 9024,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 9088,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 9092,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 9140,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 9205,
+          "ui": "welcome"
+        },
+        {
+          "frame": 9500,
+          "ui": "world"
+        },
+        {
+          "frame": 0,
+          "ui": "boot"
+        },
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 265,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 330,
+          "ui": "welcome"
+        },
+        {
+          "frame": 425,
+          "ui": "world"
+        }
+      ]
+    },
+    "warrior": {
+      "status": "PASS",
+      "fresh": {
+        "fresh_welcome": {
+          "scene": 0,
+          "role": "base",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 238,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 896,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": false,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        },
+        "empty_continue_inactive": true,
+        "portraits": [
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "zogzog",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1536,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/zogzog/hardware.png",
+              "sha256": "dee3845743efa56c74a84a34f8c9685a4a957cee15876367c93b6895b06e50b3"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          }
+        ],
+        "B_cancellation": null,
+        "A_direct_accept_once": true,
+        "actual_native_naming": true,
+        "original_class_kit_moves_PP_preserved": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 2670,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3851,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4774,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 7975,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "exit_and_saved_welcome": {
+        "native_EXIT_without_SAVE": true,
+        "sram": {
+          "all_32768_sram_bytes_equal": true,
+          "saved_sram_outside_declared_graphics_scratch_equal": true,
+          "graphics_scratch_region": {
+            "bank": 0,
+            "address": 40960,
+            "bytes": 1536
+          },
+          "graphics_scratch_changed_offsets": []
+        },
+        "welcome": {
+          "scene": 2,
+          "role": "warrior",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 239,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 1088,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": true,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        }
+      },
+      "overwrite_protection": [
+        {
+          "native_confirmation_reached": true,
+          "choice": "no",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 2,
+            "role": "warrior",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 239,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1088,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        },
+        {
+          "native_confirmation_reached": true,
+          "choice": "b",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 2,
+            "role": "warrior",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 239,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1088,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        }
+      ],
+      "warm_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 2670,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3851,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4774,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 7975,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "cold_welcome": {
+        "scene": 2,
+        "role": "warrior",
+        "metadata_matches_saved_class": true,
+        "referenced_scene_VRAM_tiles_exact": 239,
+        "reserved_UI_tiles_not_claimed_as_source_scene": true,
+        "actual_source_cells_exact": 147,
+        "actual_lcd_source_pixels_exact": 9408,
+        "overlay_rectangles_excluded": [
+          [
+            0,
+            0,
+            20,
+            3
+          ],
+          [
+            0,
+            17,
+            20,
+            18
+          ],
+          [
+            0,
+            0,
+            1,
+            18
+          ],
+          [
+            19,
+            0,
+            20,
+            18
+          ],
+          [
+            1,
+            3,
+            11,
+            4
+          ],
+          [
+            12,
+            2,
+            20,
+            14
+          ],
+          [
+            1,
+            16,
+            19,
+            17
+          ]
+        ],
+        "identity_glyph_lcd_pixels_exact": 1088,
+        "compact_choice_glyph_lcd_pixels_exact": 1536,
+        "name_from_verified_metadata": true,
+        "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+      },
+      "cold_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 399,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "private_battery_bytes": 32768,
+      "saved_record": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wPlayerID": [
+          38,
+          173
+        ],
+        "wPartyCount": [
+          1
+        ],
+        "wPartySpecies": [
+          66,
+          255,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMon1": [
+          66,
+          0,
+          1,
+          2,
+          0,
+          0,
+          38,
+          173,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          113,
+          131,
+          35,
+          25,
+          0,
+          0,
+          70,
+          128,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          15,
+          0,
+          15,
+          0,
+          7,
+          0,
+          7,
+          0,
+          6,
+          0,
+          7,
+          0,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonOTs": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonNicknames": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wEventFlags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          50
+        ],
+        "wMomsMoney": [
+          0,
+          0,
+          0
+        ],
+        "wTMsHMs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wNumItems": [
+          1
+        ],
+        "wNumKeyItems": [
+          2
+        ],
+        "wNumBalls": [
+          0
+        ],
+        "wNumPCItems": [
+          0
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wBackupWarpNumber": [
+          0
+        ],
+        "wBackupMapGroup": [
+          0
+        ],
+        "wBackupMapNumber": [
+          0
+        ],
+        "wPokedexCaught": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPokedexSeen": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wItems": [
+          18,
+          2,
+          255
+        ],
+        "wKeyItems": [
+          6,
+          45,
+          255
+        ],
+        "wBalls": [
+          255
+        ],
+        "wPCItems": [
+          255
+        ]
+      },
+      "counts": {
+        "reset": 1,
+        "exit": 1,
+        "new_game": 1,
+        "continue": 2,
+        "accepted": 1,
+        "cancelled": 0,
+        "master_draws": 2,
+        "welcome_draws": 5,
+        "terrain_loads": 7
+      },
+      "hook_errors": [],
+      "trace": [
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 264,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 329,
+          "ui": "welcome"
+        },
+        {
+          "frame": 630,
+          "ui": "new_start"
+        },
+        {
+          "frame": 678,
+          "ui": "world"
+        },
+        {
+          "frame": 2498,
+          "ui": "master_release"
+        },
+        {
+          "frame": 2517,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2546,
+          "ui": "master"
+        },
+        {
+          "frame": 2559,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2588,
+          "ui": "master"
+        },
+        {
+          "frame": 2658,
+          "ui": "accepted"
+        },
+        {
+          "frame": 4801,
+          "ui": "world"
+        },
+        {
+          "frame": 4869,
+          "ui": "start"
+        },
+        {
+          "frame": 5805,
+          "ui": "world"
+        },
+        {
+          "frame": 5963,
+          "ui": "start"
+        },
+        {
+          "frame": 6312,
+          "ui": "exit_release"
+        },
+        {
+          "frame": 6391,
+          "ui": "title"
+        },
+        {
+          "frame": 6764,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 6829,
+          "ui": "welcome"
+        },
+        {
+          "frame": 6941,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 7006,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 7010,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 7148,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 7213,
+          "ui": "welcome"
+        },
+        {
+          "frame": 7525,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 7589,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 7593,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 7641,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 7706,
+          "ui": "welcome"
+        },
+        {
+          "frame": 8001,
+          "ui": "world"
+        },
+        {
+          "frame": 0,
+          "ui": "boot"
+        },
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 265,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 330,
+          "ui": "welcome"
+        },
+        {
+          "frame": 425,
+          "ui": "world"
+        }
+      ]
+    },
+    "warlock": {
+      "status": "PASS",
+      "fresh": {
+        "fresh_welcome": {
+          "scene": 0,
+          "role": "base",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 238,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 896,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": false,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        },
+        "empty_continue_inactive": true,
+        "portraits": [
+          {
+            "role": "kento",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1920,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/kento/hardware.png",
+              "sha256": "80ba6976d08c5425119772ec9cc0b43d3e39db880073e7e0005728888fcd5764"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          {
+            "role": "bismillah",
+            "whole_110_tile_packet_exact": true,
+            "all_110_hardware_cells_and_attributes_exact": true,
+            "source_palette_ids": [
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "actual_lcd_pixels_exact": 7040,
+            "identity_rows_14_15_actual_lcd_pixels_exact": 1344,
+            "right_class_labels_column12_actual_lcd_pixels_exact": 1280,
+            "source": {
+              "path": "gfx/class_portraits_v0219/bismillah/hardware.png",
+              "sha256": "57b943812afe5b8dd06b52f796e18846c629f518f00ae967db1f3baf846c8906"
+            },
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          }
+        ],
+        "B_cancellation": null,
+        "A_direct_accept_once": true,
+        "actual_native_naming": true,
+        "original_class_kit_moves_PP_preserved": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 2762,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3896,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4819,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 8021,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "exit_and_saved_welcome": {
+        "native_EXIT_without_SAVE": true,
+        "sram": {
+          "all_32768_sram_bytes_equal": true,
+          "saved_sram_outside_declared_graphics_scratch_equal": true,
+          "graphics_scratch_region": {
+            "bank": 0,
+            "address": 40960,
+            "bytes": 1536
+          },
+          "graphics_scratch_changed_offsets": []
+        },
+        "welcome": {
+          "scene": 3,
+          "role": "warlock",
+          "metadata_matches_saved_class": true,
+          "referenced_scene_VRAM_tiles_exact": 243,
+          "reserved_UI_tiles_not_claimed_as_source_scene": true,
+          "actual_source_cells_exact": 147,
+          "actual_lcd_source_pixels_exact": 9408,
+          "overlay_rectangles_excluded": [
+            [
+              0,
+              0,
+              20,
+              3
+            ],
+            [
+              0,
+              17,
+              20,
+              18
+            ],
+            [
+              0,
+              0,
+              1,
+              18
+            ],
+            [
+              19,
+              0,
+              20,
+              18
+            ],
+            [
+              1,
+              3,
+              11,
+              4
+            ],
+            [
+              12,
+              2,
+              20,
+              14
+            ],
+            [
+              1,
+              16,
+              19,
+              17
+            ]
+          ],
+          "identity_glyph_lcd_pixels_exact": 1088,
+          "compact_choice_glyph_lcd_pixels_exact": 1536,
+          "name_from_verified_metadata": true,
+          "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+        }
+      },
+      "overwrite_protection": [
+        {
+          "native_confirmation_reached": true,
+          "choice": "no",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 3,
+            "role": "warlock",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 243,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1088,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        },
+        {
+          "native_confirmation_reached": true,
+          "choice": "b",
+          "new_game_not_called": true,
+          "SAVE_not_called": true,
+          "sram": {
+            "all_32768_sram_bytes_equal": true,
+            "saved_sram_outside_declared_graphics_scratch_equal": true,
+            "graphics_scratch_region": {
+              "bank": 0,
+              "address": 40960,
+              "bytes": 1536
+            },
+            "graphics_scratch_changed_offsets": []
+          },
+          "same_saved_scene": {
+            "scene": 3,
+            "role": "warlock",
+            "metadata_matches_saved_class": true,
+            "referenced_scene_VRAM_tiles_exact": 243,
+            "reserved_UI_tiles_not_claimed_as_source_scene": true,
+            "actual_source_cells_exact": 147,
+            "actual_lcd_source_pixels_exact": 9408,
+            "overlay_rectangles_excluded": [
+              [
+                0,
+                0,
+                20,
+                3
+              ],
+              [
+                0,
+                17,
+                20,
+                18
+              ],
+              [
+                0,
+                0,
+                1,
+                18
+              ],
+              [
+                19,
+                0,
+                20,
+                18
+              ],
+              [
+                1,
+                3,
+                11,
+                4
+              ],
+              [
+                12,
+                2,
+                20,
+                14
+              ],
+              [
+                1,
+                16,
+                19,
+                17
+              ]
+            ],
+            "identity_glyph_lcd_pixels_exact": 1088,
+            "compact_choice_glyph_lcd_pixels_exact": 1536,
+            "name_from_verified_metadata": true,
+            "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+          },
+          "native_UP_DOWN_reaches_both_welcome_choices": true,
+          "Continue_reachable_again": true
+        }
+      ],
+      "warm_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 653,
+              "map": 12,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                6
+              ],
+              "tileset_address": [
+                254,
+                125
+              ]
+            },
+            {
+              "frame": 1541,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 2762,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 3896,
+              "map": 13,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                121
+              ],
+              "tileset_address": [
+                248,
+                88
+              ]
+            },
+            {
+              "frame": 4819,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            },
+            {
+              "frame": 8021,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "cold_welcome": {
+        "scene": 3,
+        "role": "warlock",
+        "metadata_matches_saved_class": true,
+        "referenced_scene_VRAM_tiles_exact": 243,
+        "reserved_UI_tiles_not_claimed_as_source_scene": true,
+        "actual_source_cells_exact": 147,
+        "actual_lcd_source_pixels_exact": 9408,
+        "overlay_rectangles_excluded": [
+          [
+            0,
+            0,
+            20,
+            3
+          ],
+          [
+            0,
+            17,
+            20,
+            18
+          ],
+          [
+            0,
+            0,
+            1,
+            18
+          ],
+          [
+            19,
+            0,
+            20,
+            18
+          ],
+          [
+            1,
+            3,
+            11,
+            4
+          ],
+          [
+            12,
+            2,
+            20,
+            14
+          ],
+          [
+            1,
+            16,
+            19,
+            17
+          ]
+        ],
+        "identity_glyph_lcd_pixels_exact": 1088,
+        "compact_choice_glyph_lcd_pixels_exact": 1536,
+        "name_from_verified_metadata": true,
+        "bank0_normal_font_128_tiles_exact_to_compiled_1bpp": true
+      },
+      "cold_continue": {
+        "all_saved_identity_party_bags_events_money_location_equal": true,
+        "kit_initialized_once": true,
+        "terrain": {
+          "source": {
+            "path": "gfx/quieter_ground_v0220/TheDen.2bpp",
+            "sha256": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74"
+          },
+          "bank0_static_terrain_exact": true,
+          "native_brazier_cells_checked_against_compiled_phases": 4,
+          "bank1_9000_95ff_exact": true,
+          "bank1_8e00_8f7f_exact": true,
+          "native_loader_entry_contexts": [
+            {
+              "frame": 400,
+              "map": 14,
+              "VBK": 0,
+              "WBK": 1,
+              "tileset_bank": [
+                103
+              ],
+              "tileset_address": [
+                67,
+                118
+              ]
+            }
+          ]
+        }
+      },
+      "private_battery_bytes": 32768,
+      "saved_record": {
+        "wPlayerName": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80
+        ],
+        "wPlayerID": [
+          38,
+          173
+        ],
+        "wPartyCount": [
+          2
+        ],
+        "wPartySpecies": [
+          66,
+          74,
+          255,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMon1": [
+          66,
+          0,
+          1,
+          247,
+          0,
+          0,
+          38,
+          173,
+          0,
+          0,
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          216,
+          175,
+          35,
+          25,
+          0,
+          0,
+          70,
+          128,
+          0,
+          90,
+          2,
+          0,
+          0,
+          0,
+          15,
+          0,
+          15,
+          0,
+          7,
+          0,
+          7,
+          0,
+          6,
+          0,
+          8,
+          0,
+          7,
+          74,
+          0,
+          10,
+          53,
+          0,
+          0,
+          38,
+          173,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          199,
+          186,
+          35,
+          25,
+          0,
+          0,
+          70,
+          128,
+          0,
+          90,
+          2,
+          0,
+          0,
+          0,
+          13,
+          0,
+          13,
+          0,
+          6,
+          0,
+          6,
+          0,
+          6,
+          0,
+          7,
+          0,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonOTs": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPartyMonNicknames": [
+          143,
+          234,
+          174,
+          173,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          80,
+          136,
+          140,
+          143,
+          80,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wEventFlags": [
+          0,
+          0,
+          64,
+          4,
+          32,
+          0,
+          64,
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          8,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          128,
+          0,
+          0,
+          64,
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          144,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          192,
+          79,
+          105,
+          57,
+          225,
+          16,
+          50,
+          25,
+          162,
+          29,
+          224,
+          239,
+          255,
+          255,
+          179,
+          106,
+          189,
+          30,
+          38,
+          0,
+          128,
+          68,
+          247,
+          204,
+          10,
+          0,
+          224,
+          11,
+          0,
+          48,
+          246,
+          225,
+          0,
+          32,
+          128,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wMoney": [
+          0,
+          0,
+          50
+        ],
+        "wMomsMoney": [
+          0,
+          0,
+          0
+        ],
+        "wTMsHMs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wNumItems": [
+          2
+        ],
+        "wNumKeyItems": [
+          1
+        ],
+        "wNumBalls": [
+          0
+        ],
+        "wNumPCItems": [
+          0
+        ],
+        "wMapGroup": [
+          26,
+          14
+        ],
+        "wXCoord": [
+          10
+        ],
+        "wYCoord": [
+          12
+        ],
+        "wBackupWarpNumber": [
+          0
+        ],
+        "wBackupMapGroup": [
+          0
+        ],
+        "wBackupMapNumber": [
+          0
+        ],
+        "wPokedexCaught": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wPokedexSeen": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "wItems": [
+          63,
+          1,
+          18,
+          2,
+          255
+        ],
+        "wKeyItems": [
+          56,
+          255
+        ],
+        "wBalls": [
+          255
+        ],
+        "wPCItems": [
+          255
+        ]
+      },
+      "counts": {
+        "reset": 1,
+        "exit": 1,
+        "new_game": 1,
+        "continue": 2,
+        "accepted": 1,
+        "cancelled": 0,
+        "master_draws": 3,
+        "welcome_draws": 5,
+        "terrain_loads": 7
+      },
+      "hook_errors": [],
+      "trace": [
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 264,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 329,
+          "ui": "welcome"
+        },
+        {
+          "frame": 630,
+          "ui": "new_start"
+        },
+        {
+          "frame": 678,
+          "ui": "world"
+        },
+        {
+          "frame": 2498,
+          "ui": "master_release"
+        },
+        {
+          "frame": 2517,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2546,
+          "ui": "master"
+        },
+        {
+          "frame": 2559,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2588,
+          "ui": "master"
+        },
+        {
+          "frame": 2651,
+          "ui": "master_drawing"
+        },
+        {
+          "frame": 2680,
+          "ui": "master"
+        },
+        {
+          "frame": 2750,
+          "ui": "accepted"
+        },
+        {
+          "frame": 4847,
+          "ui": "world"
+        },
+        {
+          "frame": 4912,
+          "ui": "start"
+        },
+        {
+          "frame": 5850,
+          "ui": "world"
+        },
+        {
+          "frame": 6008,
+          "ui": "start"
+        },
+        {
+          "frame": 6357,
+          "ui": "exit_release"
+        },
+        {
+          "frame": 6436,
+          "ui": "title"
+        },
+        {
+          "frame": 6809,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 6874,
+          "ui": "welcome"
+        },
+        {
+          "frame": 6986,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 7051,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 7055,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 7193,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 7258,
+          "ui": "welcome"
+        },
+        {
+          "frame": 7570,
+          "ui": "overwrite_text"
+        },
+        {
+          "frame": 7634,
+          "ui": "overwrite_drawing"
+        },
+        {
+          "frame": 7638,
+          "ui": "overwrite"
+        },
+        {
+          "frame": 7686,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 7751,
+          "ui": "welcome"
+        },
+        {
+          "frame": 8046,
+          "ui": "world"
+        },
+        {
+          "frame": 0,
+          "ui": "boot"
+        },
+        {
+          "frame": 110,
+          "ui": "title"
+        },
+        {
+          "frame": 265,
+          "ui": "welcome_drawing"
+        },
+        {
+          "frame": 330,
+          "ui": "welcome"
+        },
+        {
+          "frame": 425,
+          "ui": "world"
+        }
+      ]
+    }
+  },
+  "captures": [
+    {
+      "name": "shaman_fresh_welcome_base.png",
+      "path": "references/generated/v0220/selection_verified/shaman/fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_initial_shaman.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_initial_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_up_wrap_warlock.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_up_wrap_warlock.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_down_wrap_shaman.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_down_wrap_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_warrior.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_warrior.png",
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_warlock.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_warlock.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_down_wrap_again.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_down_wrap_again.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_B_returns_to_thrall.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_B_returns_to_thrall.png",
+      "sha256": "48af6ef05ebf6003d74290d84330e67378d79797a9d30387e297a519ab202411",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_master_selected_class.png",
+      "path": "references/generated/v0220/selection_verified/shaman/master_selected_class.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_native_character_naming.png",
+      "path": "references/generated/v0220/selection_verified/shaman/native_character_naming.png",
+      "sha256": "a11a7e6c119ea0d7c370741b4e8b31a14fda589e70dfffdbae7b56940e06fff7",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_accepted_native_kit_and_restored_world.png",
+      "path": "references/generated/v0220/selection_verified/shaman/accepted_native_kit_and_restored_world.png",
+      "sha256": "53ee040ff9aa47003289eb4c0cd9ac0c23b94c90766c7bf99363559bb984bf4e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_native_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/shaman/native_saved_class.png",
+      "sha256": "53ee040ff9aa47003289eb4c0cd9ac0c23b94c90766c7bf99363559bb984bf4e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_exit_returned_native_title.png",
+      "path": "references/generated/v0220/selection_verified/shaman/exit_returned_native_title.png",
+      "sha256": "6647db01ae1966259474625f6cdac4dac72349a7597ca0c1aed40661d530a1e2",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/shaman/saved_class_welcome.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_confirmation_no.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_confirmation_no.png",
+      "sha256": "ce23a4566715895b57e0f5cb377a40d2271097ce6d9c979ff8ab5b6a74a27b1e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_no_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_no_preserves_saved_class.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_no_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_no_Continue_reachable.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_confirmation_b.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_confirmation_b.png",
+      "sha256": "ce23a4566715895b57e0f5cb377a40d2271097ce6d9c979ff8ab5b6a74a27b1e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_b_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_b_preserves_saved_class.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_overwrite_b_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/shaman/overwrite_b_Continue_reachable.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_warm_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/shaman/warm_continue_world.png",
+      "sha256": "53ee040ff9aa47003289eb4c0cd9ac0c23b94c90766c7bf99363559bb984bf4e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_cold_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/shaman/cold_saved_class_welcome.png",
+      "sha256": "9faab8aaff712a7ba20e21e71133a9d13595dd25cf652fafa559cc5fa853c777",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "shaman_cold_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/shaman/cold_continue_world.png",
+      "sha256": "53ee040ff9aa47003289eb4c0cd9ac0c23b94c90766c7bf99363559bb984bf4e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_fresh_welcome_base.png",
+      "path": "references/generated/v0220/selection_verified/warrior/fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_master_initial_shaman.png",
+      "path": "references/generated/v0220/selection_verified/warrior/master_initial_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_master_selected_class.png",
+      "path": "references/generated/v0220/selection_verified/warrior/master_selected_class.png",
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_native_character_naming.png",
+      "path": "references/generated/v0220/selection_verified/warrior/native_character_naming.png",
+      "sha256": "f00b94de975fa678bb385bf378502b412a8bd7149bf1655fbb525bc4f19b31a5",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_accepted_native_kit_and_restored_world.png",
+      "path": "references/generated/v0220/selection_verified/warrior/accepted_native_kit_and_restored_world.png",
+      "sha256": "ac0465d647e7b5302d6f0ac1dbab5498a14debf611c37095866ba4a6fc416b9a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_native_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warrior/native_saved_class.png",
+      "sha256": "ac0465d647e7b5302d6f0ac1dbab5498a14debf611c37095866ba4a6fc416b9a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_exit_returned_native_title.png",
+      "path": "references/generated/v0220/selection_verified/warrior/exit_returned_native_title.png",
+      "sha256": "6647db01ae1966259474625f6cdac4dac72349a7597ca0c1aed40661d530a1e2",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/warrior/saved_class_welcome.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_confirmation_no.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_confirmation_no.png",
+      "sha256": "d80b217eb804772a3f42ac49712d409d1ad17bfa98b99586cb1986eaf5a6147b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_no_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_no_preserves_saved_class.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_no_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_no_Continue_reachable.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_confirmation_b.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_confirmation_b.png",
+      "sha256": "d80b217eb804772a3f42ac49712d409d1ad17bfa98b99586cb1986eaf5a6147b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_b_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_b_preserves_saved_class.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_overwrite_b_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/warrior/overwrite_b_Continue_reachable.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_warm_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/warrior/warm_continue_world.png",
+      "sha256": "ac0465d647e7b5302d6f0ac1dbab5498a14debf611c37095866ba4a6fc416b9a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_cold_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/warrior/cold_saved_class_welcome.png",
+      "sha256": "9446c6f564af7157d0d2b9812bc18d674b484159b404af348bf2e0ca2bd01e97",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warrior_cold_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/warrior/cold_continue_world.png",
+      "sha256": "ac0465d647e7b5302d6f0ac1dbab5498a14debf611c37095866ba4a6fc416b9a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_fresh_welcome_base.png",
+      "path": "references/generated/v0220/selection_verified/warlock/fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_master_initial_shaman.png",
+      "path": "references/generated/v0220/selection_verified/warlock/master_initial_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_master_selected_class.png",
+      "path": "references/generated/v0220/selection_verified/warlock/master_selected_class.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_native_character_naming.png",
+      "path": "references/generated/v0220/selection_verified/warlock/native_character_naming.png",
+      "sha256": "a11a7e6c119ea0d7c370741b4e8b31a14fda589e70dfffdbae7b56940e06fff7",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_accepted_native_kit_and_restored_world.png",
+      "path": "references/generated/v0220/selection_verified/warlock/accepted_native_kit_and_restored_world.png",
+      "sha256": "bfee4c7fbed2350049f05896a1ef0b87be53eb3fe9a63d67b0277a944478694e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_native_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warlock/native_saved_class.png",
+      "sha256": "bfee4c7fbed2350049f05896a1ef0b87be53eb3fe9a63d67b0277a944478694e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_exit_returned_native_title.png",
+      "path": "references/generated/v0220/selection_verified/warlock/exit_returned_native_title.png",
+      "sha256": "6647db01ae1966259474625f6cdac4dac72349a7597ca0c1aed40661d530a1e2",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/warlock/saved_class_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_confirmation_no.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_confirmation_no.png",
+      "sha256": "31593131603582b52e568fdcde828a3c43e25cda061d875d68e882f21d5accbc",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_no_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_no_preserves_saved_class.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_no_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_no_Continue_reachable.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_confirmation_b.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_confirmation_b.png",
+      "sha256": "31593131603582b52e568fdcde828a3c43e25cda061d875d68e882f21d5accbc",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_b_preserves_saved_class.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_b_preserves_saved_class.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_overwrite_b_Continue_reachable.png",
+      "path": "references/generated/v0220/selection_verified/warlock/overwrite_b_Continue_reachable.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_warm_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/warlock/warm_continue_world.png",
+      "sha256": "bfee4c7fbed2350049f05896a1ef0b87be53eb3fe9a63d67b0277a944478694e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_cold_saved_class_welcome.png",
+      "path": "references/generated/v0220/selection_verified/warlock/cold_saved_class_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    {
+      "name": "warlock_cold_continue_world.png",
+      "path": "references/generated/v0220/selection_verified/warlock/cold_continue_world.png",
+      "sha256": "bfee4c7fbed2350049f05896a1ef0b87be53eb3fe9a63d67b0277a944478694e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    }
+  ],
+  "compiled_sources": {
+    "status": "PASS",
+    "payloads": {
+      "PeonWelcomeBaseSceneV0218Tiles1": {
+        "path": "gfx/welcome_scenes_v0218/base/tiles_bank1.2bpp",
+        "sha256": "8d457a4b169453ca91a6b7295dff07ec1e0fc46165bda874e25d47e2d50355e1",
+        "bank": 121,
+        "address": 16384,
+        "bytes": 4096
+      },
+      "PeonWelcomeBaseSceneV0218Tiles0": {
+        "path": "gfx/welcome_scenes_v0218/base/tiles_bank0.2bpp",
+        "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+        "bank": 121,
+        "address": 20480,
+        "bytes": 1536
+      },
+      "PeonWelcomeBaseSceneV0218Tilemap": {
+        "path": "gfx/welcome_scenes_v0218/base/tilemap.bin",
+        "sha256": "45d0c3f34a11c8fe56f00b544c001a09d502fcba67417ddda811a357fd6ba0d2",
+        "bank": 121,
+        "address": 22016,
+        "bytes": 360
+      },
+      "PeonWelcomeBaseSceneV0218Attrs": {
+        "path": "gfx/welcome_scenes_v0218/base/attrs.bin",
+        "sha256": "266775eed33a84f2a4fd9ccd26089759f6937b3037aff1c6e2bac5f24af5149e",
+        "bank": 121,
+        "address": 22376,
+        "bytes": 360
+      },
+      "PeonWelcomeBaseSceneV0218Palettes": {
+        "path": "gfx/welcome_scenes_v0218/base/palettes.bin",
+        "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+        "bank": 121,
+        "address": 22736,
+        "bytes": 40
+      },
+      "PeonWelcomeShamanSceneV0218Tiles1": {
+        "path": "gfx/welcome_scenes_v0218/shaman/tiles_bank1.2bpp",
+        "sha256": "69459bd85d2cb7134f64316948b7734afe95a2ce896fb1fa25162d6214fd6228",
+        "bank": 120,
+        "address": 20480,
+        "bytes": 4096
+      },
+      "PeonWelcomeShamanSceneV0218Tiles0": {
+        "path": "gfx/welcome_scenes_v0218/shaman/tiles_bank0.2bpp",
+        "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+        "bank": 120,
+        "address": 24576,
+        "bytes": 1536
+      },
+      "PeonWelcomeShamanSceneV0218Tilemap": {
+        "path": "gfx/welcome_scenes_v0218/shaman/tilemap.bin",
+        "sha256": "904b6de165888f7b62293406e813cf713773fc067d70d9cb0d91195c76ba2861",
+        "bank": 120,
+        "address": 26112,
+        "bytes": 360
+      },
+      "PeonWelcomeShamanSceneV0218Attrs": {
+        "path": "gfx/welcome_scenes_v0218/shaman/attrs.bin",
+        "sha256": "ae03f42a1ddfbc53e6fb612dfd53566b5a3dcbfe85dff4d782430761d928cbbd",
+        "bank": 120,
+        "address": 26472,
+        "bytes": 360
+      },
+      "PeonWelcomeShamanSceneV0218Palettes": {
+        "path": "gfx/welcome_scenes_v0218/shaman/palettes.bin",
+        "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+        "bank": 120,
+        "address": 26832,
+        "bytes": 40
+      },
+      "PeonWelcomeWarriorSceneV0218Tiles1": {
+        "path": "gfx/welcome_scenes_v0218/warrior/tiles_bank1.2bpp",
+        "sha256": "3b1d7d13c35b92d8d7c4aed08b4a40e2dd90dc32e8d9a1dba81e82f273396fb7",
+        "bank": 118,
+        "address": 22928,
+        "bytes": 4096
+      },
+      "PeonWelcomeWarriorSceneV0218Tiles0": {
+        "path": "gfx/welcome_scenes_v0218/warrior/tiles_bank0.2bpp",
+        "sha256": "80422bc3d307b4a25bdafcc84ac7fb01cb55a09810e8b0f37bb12e0edb5c48ca",
+        "bank": 118,
+        "address": 27024,
+        "bytes": 1536
+      },
+      "PeonWelcomeWarriorSceneV0218Tilemap": {
+        "path": "gfx/welcome_scenes_v0218/warrior/tilemap.bin",
+        "sha256": "d66c951d926f332dedb253e58a6d23f723e467b32041ff87afd253bbe669f0b0",
+        "bank": 118,
+        "address": 28560,
+        "bytes": 360
+      },
+      "PeonWelcomeWarriorSceneV0218Attrs": {
+        "path": "gfx/welcome_scenes_v0218/warrior/attrs.bin",
+        "sha256": "7942a7eccfd0c2238abc24ed8d6fdfac0e87d029cd4de41846326c65aa8fafb5",
+        "bank": 118,
+        "address": 28920,
+        "bytes": 360
+      },
+      "PeonWelcomeWarriorSceneV0218Palettes": {
+        "path": "gfx/welcome_scenes_v0218/warrior/palettes.bin",
+        "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+        "bank": 118,
+        "address": 29280,
+        "bytes": 40
+      },
+      "PeonWelcomeWarlockSceneV0218Tiles1": {
+        "path": "gfx/welcome_scenes_v0218/warlock/tiles_bank1.2bpp",
+        "sha256": "664ccb5481380985677591ef1d57d20d5c586ba757d44ef83a3ba5742bbf62ec",
+        "bank": 47,
+        "address": 26265,
+        "bytes": 4096
+      },
+      "PeonWelcomeWarlockSceneV0218Tiles0": {
+        "path": "gfx/welcome_scenes_v0218/warlock/tiles_bank0.2bpp",
+        "sha256": "e866ca98a6380c462120bcc985c3520b42fae4ecc607dd63cbaa984716dc8d53",
+        "bank": 47,
+        "address": 30361,
+        "bytes": 1536
+      },
+      "PeonWelcomeWarlockSceneV0218Tilemap": {
+        "path": "gfx/welcome_scenes_v0218/warlock/tilemap.bin",
+        "sha256": "498bed5ce17bea59f0e8db720c29f07d9381d2a2080133cf4ec36ce3ed4f6c61",
+        "bank": 47,
+        "address": 31897,
+        "bytes": 360
+      },
+      "PeonWelcomeWarlockSceneV0218Attrs": {
+        "path": "gfx/welcome_scenes_v0218/warlock/attrs.bin",
+        "sha256": "f3aa51aea6027c6e88e76f187ff06e649068817f026d2bd62110b54b8e1621eb",
+        "bank": 47,
+        "address": 32257,
+        "bytes": 360
+      },
+      "PeonWelcomeWarlockSceneV0218Palettes": {
+        "path": "gfx/welcome_scenes_v0218/warlock/palettes.bin",
+        "sha256": "3e1934f0209f96efdf2f2adaec2b69d02e9d1de2a1ba3c70f5bebccd4e8a94c5",
+        "bank": 47,
+        "address": 32617,
+        "bytes": 40
+      },
+      "PeonMasterKentoPortraitV0218": {
+        "path": "gfx/class_portraits_v0218/kento/portrait.2bpp",
+        "sha256": "bd9ae0ac6883a3ee49faca3c0dc76e49e2be062e18be20c8114063359632e907",
+        "bank": 44,
+        "address": 31355,
+        "bytes": 1152
+      },
+      "PeonMasterKentoPortraitV0218Attrs": {
+        "path": "gfx/class_portraits_v0218/kento/attrs.bin",
+        "sha256": "45616a36dfc3aaecf032d7b033db1e1ff75dd3dcd47b36e5cb3d28c528d458bd",
+        "bank": 44,
+        "address": 32507,
+        "bytes": 72
+      },
+      "PeonMasterKentoPortraitV0218Palettes": {
+        "path": "gfx/class_portraits_v0218/kento/palettes.bin",
+        "sha256": "4619b854b86419f713a51d8b868a394e31d7e14101f0f74865b008c20e5e9d59",
+        "bank": 44,
+        "address": 32579,
+        "bytes": 40
+      },
+      "PeonMasterZogzogPortraitV0218": {
+        "path": "gfx/class_portraits_v0218/zogzog/portrait.2bpp",
+        "sha256": "fc1065581a19078d3aa33dcf1fd545b266e02cffd605d955e541d43535d143db",
+        "bank": 37,
+        "address": 31424,
+        "bytes": 1152
+      },
+      "PeonMasterZogzogPortraitV0218Attrs": {
+        "path": "gfx/class_portraits_v0218/zogzog/attrs.bin",
+        "sha256": "90d0927e072e3c5084313a0a05a57165f3109e92d51575e5fc177bd9d2651a32",
+        "bank": 37,
+        "address": 32576,
+        "bytes": 72
+      },
+      "PeonMasterZogzogPortraitV0218Palettes": {
+        "path": "gfx/class_portraits_v0218/zogzog/palettes.bin",
+        "sha256": "caea1ddb30d286c1b2643a9eb9e6f124503f9ca879dc2b9a5ea6134ea51d19e7",
+        "bank": 37,
+        "address": 32648,
+        "bytes": 40
+      },
+      "PeonMasterBismillahPortraitV0218": {
+        "path": "gfx/class_portraits_v0218/bismillah/portrait.2bpp",
+        "sha256": "d3285294cd7b3b4d8f6cfe1bf1e0fae52851b1aa9673a82c6e82a633a1a17f52",
+        "bank": 36,
+        "address": 31293,
+        "bytes": 1152
+      },
+      "PeonMasterBismillahPortraitV0218Attrs": {
+        "path": "gfx/class_portraits_v0218/bismillah/attrs.bin",
+        "sha256": "3829f6ba7879cce25fbd2adac11a05f1b638fa7679c197b430c5fc890583ffc5",
+        "bank": 36,
+        "address": 32445,
+        "bytes": 72
+      },
+      "PeonMasterBismillahPortraitV0218Palettes": {
+        "path": "gfx/class_portraits_v0218/bismillah/palettes.bin",
+        "sha256": "ad2f2f17b62d76fd6f324948c2f5585285d93dc6495cc796c9d29209e8e90d54",
+        "bank": 36,
+        "address": 32517,
+        "bytes": 40
+      },
+      "PeonWelcomeLabelsV0218": {
+        "path": "gfx/selection_labels_v0218/labels.2bpp",
+        "sha256": "f29e17aefb493ed5a026a7070aa6a56499f68eb215ce6a459c4404bea72f0914",
+        "bank": 90,
+        "address": 32377,
+        "bytes": 384
+      },
+      "PeonMasterKentoPortraitV0219": {
+        "path": "gfx/class_portraits_v0219/kento/portrait.2bpp",
+        "sha256": "4b523884a728c7d3153facc22835f7962945d8ef98602bed1c9e49a4afbca11a",
+        "bank": 125,
+        "address": 25450,
+        "bytes": 1760
+      },
+      "PeonMasterKentoPortraitV0219Attrs": {
+        "path": "gfx/class_portraits_v0219/kento/attrs.bin",
+        "sha256": "902a86a47e2ee0bfe0d40cf92fb46c5084f8fdce6643771bc2e46130604c4f79",
+        "bank": 125,
+        "address": 27210,
+        "bytes": 110
+      },
+      "PeonMasterKentoPortraitV0219Palettes": {
+        "path": "gfx/class_portraits_v0219/kento/palettes.bin",
+        "sha256": "7f6f9e7c0f43d02d7e054c8c97fbcd0ffa0dc9abe050d59ed4b4dcb2a92f3161",
+        "bank": 125,
+        "address": 27320,
+        "bytes": 40
+      },
+      "PeonMasterZogzogPortraitV0219": {
+        "path": "gfx/class_portraits_v0219/zogzog/portrait.2bpp",
+        "sha256": "4d3208423b803c31be06a835b2b53a96478efc39561d121e6fb4a2ffeb199ac2",
+        "bank": 106,
+        "address": 30858,
+        "bytes": 1760
+      },
+      "PeonMasterZogzogPortraitV0219Attrs": {
+        "path": "gfx/class_portraits_v0219/zogzog/attrs.bin",
+        "sha256": "b06fed023814f2186c615763965f6a2d1e7775bfbb46092b4f50b3e4510494a1",
+        "bank": 106,
+        "address": 32618,
+        "bytes": 110
+      },
+      "PeonMasterZogzogPortraitV0219Palettes": {
+        "path": "gfx/class_portraits_v0219/zogzog/palettes.bin",
+        "sha256": "d4837bc835fae95276e355301d831bb624bfc486a6354824b4f9e742ad014e00",
+        "bank": 106,
+        "address": 32728,
+        "bytes": 40
+      },
+      "PeonMasterBismillahPortraitV0219": {
+        "path": "gfx/class_portraits_v0219/bismillah/portrait.2bpp",
+        "sha256": "8d86b99d89ce0a56adc03b7b40927e19434e99c3e3fd3f90cab5cd9a392ad924",
+        "bank": 54,
+        "address": 30825,
+        "bytes": 1760
+      },
+      "PeonMasterBismillahPortraitV0219Attrs": {
+        "path": "gfx/class_portraits_v0219/bismillah/attrs.bin",
+        "sha256": "1a504c11a7603ecdf96a2f046a2dc357a9a2b4919323d8688c620ce9bc26b835",
+        "bank": 54,
+        "address": 32585,
+        "bytes": 110
+      },
+      "PeonMasterBismillahPortraitV0219Palettes": {
+        "path": "gfx/class_portraits_v0219/bismillah/palettes.bin",
+        "sha256": "ed8f8d1b0a3fcccd0f8f3e59ef8a6c18d4743655db906a22a347d93dc2ee5b03",
+        "bank": 54,
+        "address": 32695,
+        "bytes": 40
+      }
+    },
+    "master_manifest": {
+      "path": "gfx/class_portraits_v0219/manifest.json",
+      "sha256": "17c763f3b2869eacbee987012d7acbb8477c0f55f79ac2bb5a383634a9646e16"
+    }
+  }
+}

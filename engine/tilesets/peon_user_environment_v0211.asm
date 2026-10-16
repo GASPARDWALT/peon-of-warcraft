@@ -327,3 +327,5 @@ PeonLoadNativeTilesetGFXV0213::
 
 
 INCLUDE "gfx/peon_user_environment_v0211.asm"
+
+INCLUDE "engine/tilesets/peon_uniform_ground_v0220.asm"

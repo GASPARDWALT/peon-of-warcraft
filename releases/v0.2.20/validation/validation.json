@@ -1,0 +1,235 @@
+{
+  "version": "v0.2.20",
+  "status": "PASS",
+  "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+  "sym_sha256": "1591a652269eb558dde898f67dbce4141f164c6ef7490ce5dd200aeb7dbf5bef",
+  "map_sha256": "d45f7a2a63441fb681fc1c746ce4be5cf11efc70495a928a583ea70575e2b4af",
+  "tests": {
+    "world": {
+      "status": "PASS",
+      "report": "references/generated/world_native_v0220/runtime_163fae77/validation.json",
+      "report_sha256": "e6468068b3325811b5ffa320e72ab664f962ef109f5c0b34f9451516c9b9fc90",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    "performance": {
+      "status": "PASS",
+      "report": "references/generated/v0220/final_performance/performance.json",
+      "report_sha256": "710e2f1ea89176b09ff7608b03ffd54a99973cdba5b77531ed40bd1b1536f001",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    "preservation": {
+      "status": "PASS",
+      "report": "references/generated/v0220/final_preservation_validation.json",
+      "report_sha256": "0cbecf6291d21315dc1757369a69986e03e6df32731b6fdb834ae66eee593aed",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    "selection": {
+      "status": "PASS",
+      "report": "references/generated/v0220/selection_verified/validation.json",
+      "report_sha256": "ee1a7c74816b1f544c87f952751839214e666964509c28bc5ab9c68208c9438a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    "battle_and_long_walk": {
+      "status": "PASS",
+      "report": "references/generated/v0220/battle_clock/runtime_163fae77/validation.json",
+      "report_sha256": "a486feecf2df58337f9853374a251b98498f086866511e7df074a24aa6845f05",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    },
+    "clean_rebuild": {
+      "status": "PASS",
+      "report": "references/generated/v0220/clean_rebuild_validation.json",
+      "report_sha256": "e73970332595b2243bcbd0c9ca357e8282d964f8f3adb98bb482e1bac460dacd",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c"
+    }
+  },
+  "world_asset_contract": {
+    "manifest_sha256": "8d1cbc7f1d7dc12fd60adbae8472880bada70d2fc1344d3f9d5bd34911680441",
+    "role_families": 39,
+    "bound_families": 30,
+    "bound_packets": 90
+  },
+  "screenshots": {
+    "01_shaman_world.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/shaman/world_hero_down.png",
+      "sha256": "f3209deec4eb4c6ce8a5f3b4643679461fb75d1196a748238a85ba8523374a93",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "02_shaman_side.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/shaman/world_hero_left.png",
+      "sha256": "d465cc4f6aefda8e21f7cf8f0e84ef709864c5096cb02064d13f4076f53ce37e",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "03_warrior_world.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/warrior/world_hero_down.png",
+      "sha256": "4d1a82d51b80f2d73fcf165d9b6abd13427c3dd6510bad52cb57a8fc5aeb1103",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "04_warlock_world.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/warlock/world_hero_down.png",
+      "sha256": "8f0f749ccad9facce412630e45000be9367ecff7b5bde6ee3c67412d805c67f5",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "05_orc_quest_giver.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/warlock/native_available_marker_above_actor.png",
+      "sha256": "116983de5b9d28b8321efd7ace976e2a42647caab3436fce765483f0f312f7a3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "06_shaman_masters_lodge.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/shaman/mixed_native_lodge_before_training.png",
+      "sha256": "a3524abe650f30165f0aaa5546c39c72adb94df40cb58d2128f924ee5fda8994",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "07_warrior_masters_lodge.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/warrior/mixed_native_lodge_before_training.png",
+      "sha256": "2b36c2b5ea4f464dc40faa059b9ac19c482aeeaa865775ec32a0f1b1f751eb41",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "08_warlock_masters_lodge.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/warlock/mixed_native_lodge_before_training.png",
+      "sha256": "ae10f6c25433207a472d28e1bae36ac54f8e6ffb07a63d388124fef068edda64",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "09_cold_continue.png": {
+      "path": "references/generated/world_native_v0220/runtime_163fae77/shaman/mixed_native_cold_continue_outdoors.png",
+      "sha256": "6910deca05e1a6d08237fb4642a9b2049e4fa54276a91728321bc065d33ae9b0",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "10_long_walk_completed.png": {
+      "path": "references/generated/v0220/battle_clock/runtime_163fae77/shaman/03a_actual_120_tile_walk_complete.png",
+      "sha256": "60491c1502989c95acd157a52472b3b85e1c51d3dee0870fcf0287c4ab8dbc8d",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "11_battle_mana.png": {
+      "path": "references/generated/v0220/battle_clock/runtime_163fae77/shaman/04_battle_full_rear_and_mana.png",
+      "sha256": "a78f00c800007ca1ae21d8b12191971f0a402e00c7d9f971ab7daaf76de66641",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "12_free_mace.png": {
+      "path": "references/generated/v0220/battle_clock/runtime_163fae77/shaman/05_after_free_mace_strike.png",
+      "sha256": "2cbaa2acd4b94594b274d744158bc962b83461bc51ad0228f9a11ad070b2e817",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "13_victory_names.png": {
+      "path": "references/generated/v0220/battle_clock/runtime_163fae77/shaman/victory_19_actual_lcd.png",
+      "sha256": "53bf3b1ae7927d24dd5c6ab3264bb757196505ba8c4907e84dcb93913835e16b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "14_battle_world_return.png": {
+      "path": "references/generated/v0220/battle_clock/runtime_163fae77/shaman/06_actual_battle_complete_world_return.png",
+      "sha256": "83455edcd7e1d448ad5993c2bd28b4bc21d19af3e3b205a87c61eeda26d2913c",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "15_welcome_base.png": {
+      "path": "references/generated/v0220/selection_verified/shaman/fresh_welcome_base.png",
+      "sha256": "c72126412ee1dc0ad9c84050d6661e87ec1a5e865789f677fec71f0f8a7cc34b",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "16_master_shaman.png": {
+      "path": "references/generated/v0220/selection_verified/shaman/master_initial_shaman.png",
+      "sha256": "ad7f7102fe1786feed41fc6dee7d5e49993f4e3d8f625203ccc1120259de1e6a",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "17_master_warrior.png": {
+      "path": "references/generated/v0220/selection_verified/shaman/master_warrior.png",
+      "sha256": "e33bf5f4fe15e18311df344164636811ad79a6a93f9a86f96f2bfe5d2e1f8cc3",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "18_master_warlock.png": {
+      "path": "references/generated/v0220/selection_verified/shaman/master_warlock.png",
+      "sha256": "98eade56628103bdb2c9b886b9ce3fe7faef405db2ff70c2deb92ec3e1482593",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "19_selection_cancel.png": {
+      "path": "references/generated/v0220/selection_verified/shaman/master_B_returns_to_thrall.png",
+      "sha256": "48af6ef05ebf6003d74290d84330e67378d79797a9d30387e297a519ab202411",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    },
+    "20_cold_warlock_welcome.png": {
+      "path": "references/generated/v0220/selection_verified/warlock/cold_saved_class_welcome.png",
+      "sha256": "2875e75a619e34715391b0e106b6763fea0d14838b54f4b50f7519c8a5b7c36f",
+      "rom_sha256": "163fae77fd496829f1367d6a8baf55b70fd4e71cc9f0368c9626ffb3a7416b1c",
+      "dimensions": [
+        160,
+        144
+      ]
+    }
+  },
+  "physical_modretro_tested": false,
+  "scope": "Exact final ROM; ordinary-controller emulator checks, source/linked-packet preservation and measured LCD-frame cadence. Static artwork previews are separate."
+}

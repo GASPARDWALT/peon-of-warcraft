@@ -1232,6 +1232,8 @@ LoadMapPals:
 	call FarCopyWRAM
 	; The isolated test owns seven BG slots; slot7 remains the standard font.
 	farcall PeonLoadMapExtraPalettesV0212
+	; Only three exterior packets borrow unused BG3 for exact prop backing.
+	farcall PeonLoadUniformGroundPaletteV0220
 	ld hl, PeonMapOBJPalettes
 	ld de, wOBPals1
 	ld bc, 8 palettes

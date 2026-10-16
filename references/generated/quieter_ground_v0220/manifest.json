@@ -1,0 +1,5781 @@
+{
+  "applied": false,
+  "engine_changes": false,
+  "existing_maps_scripts_palettes_packets_and_interior_fire_untouched": true,
+  "exterior_fire": {
+    "bytes": 192,
+    "exterior_only_binding_required": true,
+    "input": "gfx/tilesets/peon_environment_fire.bin",
+    "input_sha256": "d98cdf7473446e5e4ce61e386efd238190a7d0b0875d007cefd308c07cba2bb4",
+    "interior_original_untouched": true,
+    "output": "gfx/quieter_ground_v0220/fire_frames_world.bin",
+    "output_sha256": "a5cb9317052bab554224e8d788b066ab66fcedeb75e5ae916ba1c9f8c61f61f7",
+    "phase_reports": [
+      {
+        "opaque_source_indices_preserved": 46,
+        "phase": 0,
+        "source": "references/characters/durotar_asset_pack_v1/brazier_frame_01_16x16.png",
+        "source_sha256": "df0849157f84ae81ddcac0f87a0ed83efbe77d4b4ac8a8d1433288b1025c8969",
+        "transparent_background_indices_changed": 142
+      },
+      {
+        "opaque_source_indices_preserved": 54,
+        "phase": 1,
+        "source": "references/characters/durotar_asset_pack_v1/brazier_frame_02_16x16.png",
+        "source_sha256": "f8886b10994528a2767c44ec0b54277cf0f3f458a669c323303ce2ba008e4e70",
+        "transparent_background_indices_changed": 139
+      },
+      {
+        "opaque_source_indices_preserved": 50,
+        "phase": 2,
+        "source": "references/characters/durotar_asset_pack_v1/brazier_frame_03_16x16.png",
+        "source_sha256": "51c9f2f1363c9fb4cc87fcab03266644182f83352c3390ee1e5f2f1e292473c5",
+        "transparent_background_indices_changed": 139
+      }
+    ]
+  },
+  "extra_exterior_BG3": {
+    "binary": "gfx/quieter_ground_v0220/ground_bg3.bin",
+    "binary_sha256": "e9118be1f0e3bbba75df7f9343500f8cde74631e29af6543d24482456c300dfb",
+    "bytes": 24,
+    "maps": [
+      {
+        "byte_offset": 0,
+        "derived_from": [
+          "regional BG1 soil",
+          "regional BG5 light/brown/ink"
+        ],
+        "map": "TheDen",
+        "requires_exterior_only_palette_upload": true,
+        "rgb555": [
+          [
+            26,
+            18,
+            10
+          ],
+          [
+            29,
+            22,
+            14
+          ],
+          [
+            16,
+            11,
+            7
+          ],
+          [
+            7,
+            5,
+            4
+          ]
+        ],
+        "slot": 3
+      },
+      {
+        "byte_offset": 8,
+        "derived_from": [
+          "regional BG1 soil",
+          "regional BG5 light/brown/ink"
+        ],
+        "map": "RazorHill",
+        "requires_exterior_only_palette_upload": true,
+        "rgb555": [
+          [
+            24,
+            14,
+            8
+          ],
+          [
+            28,
+            20,
+            13
+          ],
+          [
+            16,
+            11,
+            7
+          ],
+          [
+            7,
+            5,
+            4
+          ]
+        ],
+        "slot": 3
+      },
+      {
+        "byte_offset": 16,
+        "derived_from": [
+          "regional BG1 soil",
+          "regional BG5 light/brown/ink"
+        ],
+        "map": "OrgrimmarGate",
+        "requires_exterior_only_palette_upload": true,
+        "rgb555": [
+          [
+            23,
+            13,
+            7
+          ],
+          [
+            27,
+            18,
+            11
+          ],
+          [
+            16,
+            11,
+            7
+          ],
+          [
+            7,
+            5,
+            4
+          ]
+        ],
+        "slot": 3
+      }
+    ]
+  },
+  "known_limits": [
+    "A scenery tile has four BG colors. Three maps reuse proven-unused BG3 for soil plus the exact old brown/ink/light. Remaining cells needing four opaque colors plus a fifth soil color retain the nearest existing background tone; every opaque prop color stays exact.",
+    "The separate exterior fire phase packet must be selected only on the 13 listed maps. The old shared phase packet must remain selected inside.",
+    "Native previews are decoded packet compositions; emulator checks must follow engine integration."
+  ],
+  "map_block_changes": false,
+  "maps": [
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 616,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 15861,
+          "rgb": [
+            214,
+            148,
+            82
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 2,
+          "pixels": 62,
+          "rgb": [
+            239,
+            181,
+            115
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 415,
+          "rgb": [
+            239,
+            181,
+            115
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "5cc203d10b5aba168daa98641c81f51319e64c3eda8f83511d8f552541564a9c",
+        ".2bpp.lz": "6c38d83967dfad91d93a0be547b3270d982e5ca48ccf5a6ce9b69aa1de986b7c",
+        "_coll.asm": "3daaa5b09b8cbc115f3d7187f073945c35d801c2dc55f6dde65b5088ff34cd49",
+        "_meta.bin": "ccd1779a3b7eee3a49132271656203203acaf090f0d4c43d3ff6785a99eb120b",
+        "_palmap.bin": "bf9d01ce53f4350c366b67a0d694063f3cb9fc7687cf7971c9f84629a2d96107",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonOpening",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "60ec7535e0943ecd5fcf5f3fc61c7bb7e6d5e49719846e86c5a456d7c9d2a02f",
+      "map_script_sha256_unchanged": "dbffa3b842b6f172f2ca42364eb00e313d74fc0e369f7f5aea74e9e949bdca1d",
+      "movement_cells_unchanged": 192,
+      "native_after_sha256": "ca2a66a0e4c44c95e5b8fe40a952fa05c9cb00c4ee98f0eaa225f7d3f5ef5769",
+      "native_metatiles": 71,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 1349,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            192,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            64,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            168,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            72,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 389,
+          "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/palm_echo_01_32x48.png",
+          "transparent_pixels": 1147,
+          "world_origin_pixels": [
+            128,
+            80
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "35c1b0636786c49bd54f1669b69ffbe5c47342dec99e56bd2081225383c67d03",
+        ".2bpp.lz": "a16eea3fcd21647b6909a17d435fa4ea46a2a8c8d16770e672bcd1188a3c48bf",
+        "_coll.asm": "3daaa5b09b8cbc115f3d7187f073945c35d801c2dc55f6dde65b5088ff34cd49",
+        "_meta.bin": "f54c5f4a06673a397eab91a02f41d56cf02f3556edd5d332220b5b77636de435",
+        "_palmap.bin": "be75a5c98c7fbcb34263671f1b48e0f98271eaa4cd4e683365ab6792be31519b",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 30724,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 240,
+      "path_source_grain_pixels_added": 12,
+      "path_texture_cells": 80,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        214,
+        148,
+        82
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 16988,
+      "source_opaque_pixels_preserved": 1229,
+      "unique_patterns": 49
+    },
+    {
+      "BG3_unused_in_every_input_metatile": true,
+      "BG5_to_BG3_cells": [
+        [
+          5,
+          10,
+          2
+        ],
+        [
+          22,
+          10,
+          26
+        ],
+        [
+          32,
+          10,
+          8
+        ],
+        [
+          34,
+          10,
+          22
+        ],
+        [
+          36,
+          10,
+          2
+        ],
+        [
+          39,
+          10,
+          37
+        ],
+        [
+          6,
+          11,
+          3
+        ],
+        [
+          22,
+          11,
+          35
+        ],
+        [
+          33,
+          11,
+          45
+        ],
+        [
+          36,
+          11,
+          48
+        ],
+        [
+          37,
+          11,
+          43
+        ],
+        [
+          39,
+          11,
+          52
+        ],
+        [
+          37,
+          13,
+          21
+        ],
+        [
+          38,
+          13,
+          13
+        ],
+        [
+          8,
+          14,
+          8
+        ],
+        [
+          10,
+          14,
+          22
+        ],
+        [
+          12,
+          14,
+          2
+        ],
+        [
+          13,
+          14,
+          6
+        ],
+        [
+          7,
+          15,
+          52
+        ],
+        [
+          9,
+          15,
+          45
+        ],
+        [
+          12,
+          15,
+          48
+        ],
+        [
+          39,
+          15,
+          52
+        ],
+        [
+          5,
+          17,
+          21
+        ],
+        [
+          6,
+          17,
+          13
+        ],
+        [
+          42,
+          18,
+          26
+        ],
+        [
+          7,
+          19,
+          52
+        ],
+        [
+          42,
+          19,
+          35
+        ],
+        [
+          30,
+          34,
+          26
+        ],
+        [
+          38,
+          34,
+          26
+        ],
+        [
+          30,
+          35,
+          35
+        ],
+        [
+          38,
+          35,
+          35
+        ]
+      ],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          25,
+          13,
+          0
+        ],
+        [
+          26,
+          13,
+          1
+        ],
+        [
+          25,
+          14,
+          2
+        ],
+        [
+          26,
+          14,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 1854,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 34876,
+          "rgb": [
+            214,
+            148,
+            82
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 2,
+          "pixels": 21,
+          "rgb": [
+            239,
+            181,
+            115
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 0,
+          "palette": 3,
+          "pixels": 861,
+          "rgb": [
+            214,
+            148,
+            82
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 107,
+          "rgb": [
+            239,
+            181,
+            115
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 6,
+          "pixels": 234,
+          "rgb": [
+            239,
+            181,
+            115
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "f8a49380d315194c0ee71d7fd6d3e1932dce1d0565dfad9c121406236fd04472",
+        ".2bpp.lz": "ff11c3b6f4f1b95ed189f8a3d56ede930270345c9fed1adbac6e7335dacf2ffa",
+        "_coll.asm": "512832025022e9473df810751b6ecb998521f4387c7b10fba26109254df986f4",
+        "_meta.bin": "13c07fe0514c71d50739563441f5973ffd73a28bb7c5b15fa52110982c532761",
+        "_palmap.bin": "931dffe23417a69f039cdbeafebbf2f8d911746862c8ed3d207a4d63bfb262ce",
+        "_priority.bin": "04b8217a839f1fae4f77605a8939acba182f833c2a5cf82f71db09d94d8b84e4"
+      },
+      "map": "TheDen",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "a7e1959bfb08516f8415961fe36e75ceefd54b2f56c28db6674bbfadd7dc9025",
+      "map_script_sha256_unchanged": "03ebea3cfc84962554acca02dfccd41399c59defaba4deb6a3a4a94d2351ba85",
+      "movement_cells_unchanged": 480,
+      "native_after_sha256": "97d83ab8570cd66e3a45ed5c8eb90aba6655d785103c133d1d716e406dafbc6f",
+      "native_metatiles": 94,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 5711,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            256,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            288,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            32,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            128,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            168,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            200,
+            48
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            288,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            32,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            224,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            288,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            32,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            328,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            32,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            232,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            296,
+            256
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "2e3d08db4b5a51224182698bfb78e8742f2295ca9a9ec661d02d091a5380fa74",
+        ".2bpp.lz": "1f576ec5675e407392d022fbea82c545584cc74fb418e3b8ac5f7abbefbe5d69",
+        "_coll.asm": "512832025022e9473df810751b6ecb998521f4387c7b10fba26109254df986f4",
+        "_meta.bin": "58a04fc37ff00d6eef8ceb3eed3e67eb051acdff674f43a5440c941584a65ae0",
+        "_palmap.bin": "0c954039e12cba11ae240f0c737d368e466d563aa450d3e6f34f53a912a0875a",
+        "_priority.bin": "1105b341dc5767e1786e915341d1ededad2524b6a87dc432408ffc161d16211a"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 72445,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 901,
+      "path_source_grain_pixels_added": 44,
+      "path_texture_cells": 322,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        214,
+        148,
+        82
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 38027,
+      "source_opaque_pixels_preserved": 12787,
+      "unique_patterns": 179
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          29,
+          21,
+          0
+        ],
+        [
+          30,
+          21,
+          1
+        ],
+        [
+          29,
+          22,
+          2
+        ],
+        [
+          30,
+          22,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 5924,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 60146,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 678,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "092ff3e841c384b7da92f6a819e320fdcf92c929214166e3c8b2450d97a573b7",
+        ".2bpp.lz": "c212d5ef4255ed095874d82f532732bdf095e64144dbcc250920722e3ae1e3be",
+        "_coll.asm": "6bbc18f72a2bf9ddb591f868d76deb4c01fe21543de92590009beb51ef4d273c",
+        "_meta.bin": "f1c53ac31e4b71a98db70417c5260f663fdd2d937a806abe6f9a8bc72f6b55f6",
+        "_palmap.bin": "7859ff855501f8682851e36d9ca6e52fcf7b693990a882c88566dbf81cbce270",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "ValleyOfTrials",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "f3c087fa2b89f875fd6c7216c50c3babb53a23f9d0cca3c3afd4490659508c3e",
+      "map_script_sha256_unchanged": "3d735d0598c5d7813fe030f151f5f8882ef85109162b81e6697b82795ab2c3f3",
+      "movement_cells_unchanged": 768,
+      "native_after_sha256": "b99b1ae526b4aa6d8d79c2956f922b327fcfd5d1ccaebbcffbc43e0189358be4",
+      "native_metatiles": 82,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 11145,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            384,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            96,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            136,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            160,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            192,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            448,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            160,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            192,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            224,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            352,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            424,
+            144
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            480,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            480,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            40,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            392,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            416,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            480,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            128,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            256,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            288,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            352,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            416,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            96,
+            288
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            384,
+            288
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            104,
+            320
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            296,
+            304
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            416,
+            320
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            456,
+            320
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "faaa3356df8fe0e7fc877aea39214314d8f00e8f58e8b541378d7c83cf3bdf47",
+        ".2bpp.lz": "eb5b4a23ca76f21e69fbf3414de43d65ae2af72158be639772b6acd48b079743",
+        "_coll.asm": "6bbc18f72a2bf9ddb591f868d76deb4c01fe21543de92590009beb51ef4d273c",
+        "_meta.bin": "3f8862b3cce1ca49c7a452c5fd2c4c99cd5b13deef02d7d789099547ea02684e",
+        "_palmap.bin": "f476bee20aacc477eb8660057c38d89e04730ec46e8dffaed1064432c00b2ae7",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 116933,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 825,
+      "path_source_grain_pixels_added": 48,
+      "path_texture_cells": 310,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 66886,
+      "source_opaque_pixels_preserved": 12520,
+      "unique_patterns": 105
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 443,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 5999,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 34,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "22344fa17bf51218cc44b0b297487d93e8652791f9b8fd78dbcf474ec44d9d70",
+        ".2bpp.lz": "897c8f6f2b146cb48f91429f784cb5a26387bc5958fc727e0c4b34739f6ff828",
+        "_coll.asm": "9dea1ea98f460be3aede856e59e6408d11a2a182dce6c6a9c6bb337d9120d19b",
+        "_meta.bin": "2b7848d7104ca29fac94aaf86906b407e08281c1cd1c4a73851b18f5b893d488",
+        "_palmap.bin": "814c103fef6958b11afcc7fb8b8cc92d9691a27737d680fc8a5ea2b12464ba88",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonValleyCrossroads",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "392ac8deb96839b9fa608285789f1042509926c91b75c8e02c20f8012b95ce12",
+      "map_script_sha256_unchanged": "2094ae444782ffae4c31eb7dc80136ddd0c3a250e8cbcd3205587198a138e636",
+      "movement_cells_unchanged": 100,
+      "native_after_sha256": "7fa39d6bacb63b177fa229ed344491fd85b1ee6daa763633271e21af88b956b6",
+      "native_metatiles": 76,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 1281,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            32,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            104,
+            80
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "b452d9449a8fa318680211dd252db799be9b379dff406dfc61fd88fead620ec2",
+        ".2bpp.lz": "5d988a8dadd911d84118f97edc9381cb7016a674d8ddb5f30501e562c82bccf5",
+        "_coll.asm": "9dea1ea98f460be3aede856e59e6408d11a2a182dce6c6a9c6bb337d9120d19b",
+        "_meta.bin": "f5e431522762bdc277eb1afcc97e9c2d4abe9a641f27b023ac1db06a62f8de30",
+        "_palmap.bin": "3e2306baf76ef554bb7040df59826e49b1f66b415bad74a700a8a0ea9de4bba7",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 18490,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 188,
+      "path_source_grain_pixels_added": 10,
+      "path_texture_cells": 70,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 6490,
+      "source_opaque_pixels_preserved": 1958,
+      "unique_patterns": 46
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 497,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 5482,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 34,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "9853f2050869741e438b6044ecb4fbc495e7ba7a7b0481ffdf8cdbebaecb08d5",
+        ".2bpp.lz": "acfa8ba1294bd3cff2e4f2efbc482986d61ff676793ec145f25caf37cdee1f64",
+        "_coll.asm": "ad97ef0d4fcab7a152bb363f0804a90d2a76a1e31a8af7fc862806c6fd4efbcf",
+        "_meta.bin": "e9d01ed0651d278d587a35f52510c4a41fda1cabf3058c98ee28a9ccd8d88fb4",
+        "_palmap.bin": "b652580aae8c6d6736c5e7d4668387bd197beda346298ae31376850317397a1a",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonHanazuaCamp",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "eed3038903200d1d3ee74d049003ed5e401c3893da498431f33b759192a42fe1",
+      "map_script_sha256_unchanged": "4946fc19234855a7fa300759738d98592eb0ba0daddcf08f8adcb5db0fecf315",
+      "movement_cells_unchanged": 100,
+      "native_after_sha256": "e0471cf6c061291db2e1246828c10097ad46da9ebacf2c01811853ab786229fd",
+      "native_metatiles": 75,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 925,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            96,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            96,
+            96
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "6563eea0b15e4fdfaa49d85f2002ab4ecf8fdd520e5d39611b13e6bc4a75f64f",
+        ".2bpp.lz": "ae2ad487071c4c61bc4d577c810ec0989cf94b9be7b7d2604e57cc241aba5694",
+        "_coll.asm": "ad97ef0d4fcab7a152bb363f0804a90d2a76a1e31a8af7fc862806c6fd4efbcf",
+        "_meta.bin": "7950330f774685000d5bbd2fdc11aebba034f7a37def70fdce2b3e0ee7d606c0",
+        "_palmap.bin": "633472f0833b53d96b914fcb801ab5cbd61e5b2ebb9bd9e34e66969b266d3709",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 18525,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 155,
+      "path_source_grain_pixels_added": 8,
+      "path_texture_cells": 56,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 6027,
+      "source_opaque_pixels_preserved": 1909,
+      "unique_patterns": 59
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 782,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 2283,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 68,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "a804f244aa409e8a9a3dd00d4d0c826d6fc2d3b412e4465d17006930390b456e",
+        ".2bpp.lz": "87f0eaa9e2334e6e7939309b5985b8cba271bf748345e0a2b0506a53a45d7749",
+        "_coll.asm": "6d1829f733ab8e76d9ff243f809e1804d1f093987ff901754081052622169a44",
+        "_meta.bin": "56855ab629b950e93c2a00935ebadc9f5494d622db677cab32af148e64423148",
+        "_palmap.bin": "0091e00136bd67dc92d79f8365e0eb2189f9a251b38f1425044e3d518a6253f1",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonSarkothBasin",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "1a99907c5843b0393350dffde3d6e7d7d25d28ba635153e2328c18f0dd630467",
+      "map_script_sha256_unchanged": "731acea9785fd60a739cf9d7a6cb76e7c2cd7f7f90e8bebb4b60dd2f7a873135",
+      "movement_cells_unchanged": 100,
+      "native_after_sha256": "744774b74f9fa9f8a1b0e6645d8820cf45f21f3300752bd6b95f3bbbaba31f0f",
+      "native_metatiles": 75,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 1388,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            32,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            96,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            32,
+            96
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "fa36ddf0df2f227203fe7f8145ffaf0dfcc70d9f7884171bf3c1f1674df01815",
+        ".2bpp.lz": "718cf94d0fba0c1ac6161da64ed0fb1a498d5d87809805e8564f6f9f553609b5",
+        "_coll.asm": "6d1829f733ab8e76d9ff243f809e1804d1f093987ff901754081052622169a44",
+        "_meta.bin": "84d2fafff9aa3812642deb3ac12a889c44060f6e90564cb97356f4aef4a85330",
+        "_palmap.bin": "c84dc2bbd1b9e3db6bc1227f782533d0743eb5addde769698e91e133f7ae9a60",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 21061,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 175,
+      "path_source_grain_pixels_added": 12,
+      "path_texture_cells": 74,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 3143,
+      "source_opaque_pixels_preserved": 2233,
+      "unique_patterns": 58
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          5,
+          5,
+          0
+        ],
+        [
+          14,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          6,
+          6,
+          3
+        ],
+        [
+          13,
+          6,
+          2
+        ],
+        [
+          14,
+          6,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 150,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 5862,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 49,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "b897d0dbddeee3f1840ed0d020a2e0406bdb6bea1219f5dedc329c7a57a08f27",
+        ".2bpp.lz": "d5343729af14742a94aa12ca9155fc93cb466ecbcef7998ea07951f24ff184bc",
+        "_coll.asm": "c9202343bb6fae4a674ed128c0aa3cc8975a82c7365de6ce9d8b2e4c7a2b8126",
+        "_meta.bin": "df077eaa15de08c8863ffb5d9a058bb28f525778e318a19792116cd4fb4bf45b",
+        "_palmap.bin": "3b90a68d506eca5f81cf31ba1a0a6740582663d8d1caf6e932466e1a24914401",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonCaveApproach",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "0c87085a6eda0d4c443e4efe55167eb76a19ac0c80c68a3479b886e9de319763",
+      "map_script_sha256_unchanged": "1b6a0cb96ab650b2c89d6c6d5a169771e771c0b65c37e390fd9b9cd2f6c628d3",
+      "movement_cells_unchanged": 100,
+      "native_after_sha256": "4abdab8051e33763de59f78f8e91c6dab5d541e3487b18f052fd55b63e6389bc",
+      "native_metatiles": 77,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 1676,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 76,
+          "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "size": [
+            16,
+            16
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+          "transparent_pixels": 180,
+          "world_origin_pixels": [
+            40,
+            104
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "9182e118e233215a3fcca2c9ea3c95c78df01b14c5d9507a986559f70158f454",
+        ".2bpp.lz": "bf48300d3d77fca2446a0a6b1fbf11455a189136ce3bf3fb9a1138a71cb3540c",
+        "_coll.asm": "c9202343bb6fae4a674ed128c0aa3cc8975a82c7365de6ce9d8b2e4c7a2b8126",
+        "_meta.bin": "69043b7eccd00fb11a15eef44ada59d627f003c77bae0e5c7e1fb9804ae2ebea",
+        "_palmap.bin": "a982658adbca79667c7f563107a55bbbf53bb2d88f416b256c19542ae52ec118",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 18772,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 56,
+      "path_source_grain_pixels_added": 4,
+      "path_texture_cells": 26,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 6071,
+      "source_opaque_pixels_preserved": 3403,
+      "unique_patterns": 79
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          13,
+          5,
+          0
+        ],
+        [
+          14,
+          5,
+          1
+        ],
+        [
+          13,
+          6,
+          2
+        ],
+        [
+          14,
+          6,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 0,
+          "pixels": 1356,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 7094,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 168,
+          "rgb": [
+            239,
+            165,
+            99
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "bf89068c18263f659485ce4dba9b1c0eacd21709158b61c92e020026038088b5",
+        ".2bpp.lz": "dcb2306fac5578bdbbc0204ded2d9c6c243abb5df01840d21966eb94a4f2607a",
+        "_coll.asm": "1821e7215fa0226076c86871d206953746408cbcb3ec04de8be05976d8ba9f1d",
+        "_meta.bin": "ecbc22c2d3b07c1d84ca2a222cb3541837378378a16ad2968d81e22a40e90985",
+        "_palmap.bin": "a44b64ebed91c66f7dfe0518eccfed60d64f1c7ddeca2fc3518405206d78997a",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "PeonValleyExit",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "67757781d0001286f51d50ab19d803ee64d4f569e2cbf7b74ff6ae2eb79d8981",
+      "map_script_sha256_unchanged": "9e830c43bde9f94276866cb16185a186b24851a74c0f40c7b17628624d4b0f29",
+      "movement_cells_unchanged": 100,
+      "native_after_sha256": "e076eb26196f6e7b98594832b3f1ad752d9daef55c6131ca5425fcbb06421350",
+      "native_metatiles": 75,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 3008,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            128,
+            0
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            40,
+            16
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            128,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            104,
+            80
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            128,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "ecc909b80fa955bdb4d222fc0188177c19a6018b57d433d7abdd6787ecaec8e9",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_vertical_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            128,
+            128
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "da99030cf146a870130a9a1618063d5f750345027d4e5b528a496730d65fc7a6",
+        ".2bpp.lz": "270a4d4e246000b745f4de29d3d4271873683b374dbc0ba34a2da8492c44fad1",
+        "_coll.asm": "1821e7215fa0226076c86871d206953746408cbcb3ec04de8be05976d8ba9f1d",
+        "_meta.bin": "969f0b640fa6cc339f453c8b0f412125491990770db6bb1ac559892982868501",
+        "_palmap.bin": "aa8cca46e3ed26bc05bf4d94009b3827f1ce85c30320b121733ac4cd1789c1fd",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 14012,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 108,
+      "path_source_grain_pixels_added": 6,
+      "path_texture_cells": 36,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        206,
+        123,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 8632,
+      "source_opaque_pixels_preserved": 3190,
+      "unique_patterns": 46
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          29,
+          9,
+          0
+        ],
+        [
+          30,
+          9,
+          1
+        ],
+        [
+          29,
+          10,
+          2
+        ],
+        [
+          30,
+          10,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 4084,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 54692,
+          "rgb": [
+            214,
+            165,
+            90
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 2,
+          "pixels": 199,
+          "rgb": [
+            239,
+            198,
+            132
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 695,
+          "rgb": [
+            239,
+            198,
+            132
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 6,
+          "pixels": 311,
+          "rgb": [
+            239,
+            198,
+            132
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "a83cb723c9d7644a4ac3ff1445dbd987e0bffaf6524b89c3fec9c3e98f652c38",
+        ".2bpp.lz": "cd1166b58d62ef35fbc4f59305f46236b9d3aa2fea6967eab422ef1d6389f82c",
+        "_coll.asm": "70fb334c3a9135915a2ccf7c09484ec9f3b7f52ec76a3c1406b8083e6cb9ea09",
+        "_meta.bin": "fe84ca86892d8ef13ec345c85b88455dd6b1cce33927069a1c1acd28fb95b2a1",
+        "_palmap.bin": "ffa9ff8fbfc61ee632d9b292e42e1b25a82875079c28ef3ba115a03badca6529",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "DurotarRoad",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "52aea8350e900d49264a38d60ce71bfa63ab720b935360da0b6a783cc1057846",
+      "map_script_sha256_unchanged": "3f0f9d6d3fb63adc473f6c9ecc39a89427b93b35c7cef883d22d1803b2b7bf94",
+      "movement_cells_unchanged": 672,
+      "native_after_sha256": "a047fee0b2676b0e989f1434b11458e8dbc3318ad9cfb16807b854f4391ad546",
+      "native_metatiles": 82,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 6618,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            264,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            128,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            168,
+            48
+          ]
+        },
+        {
+          "opaque_pixels": 98,
+          "sha256": "272b97c0e8e1a7295e8055a778f843bc4d7c54bcda5b5bb8791883ed8cc19ce5",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/banner_horde_durotar_01_16x48.png",
+          "transparent_pixels": 670,
+          "world_origin_pixels": [
+            264,
+            48
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            72,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            96,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            160,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            224,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            256,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            160,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            160,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            232,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            256,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            288,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            40,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 589,
+          "sha256": "747a288a67663c7da196d75e5d8fd4e6d86ee97cc9e70e62112193e5ee8cf4c6",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/palisade_durotar_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 435,
+          "world_origin_pixels": [
+            288,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            64,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            296,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 389,
+          "sha256": "5a7a8c03138807df30e3749f19e01cb199fac84eebdf39c8e5e0e7fc5df37c04",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/echo_isles/palm_echo_01_32x48.png",
+          "transparent_pixels": 1147,
+          "world_origin_pixels": [
+            288,
+            272
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            160,
+            320
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            128,
+            352
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            256,
+            384
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "1bad920d41cfd5450c53d03887e792996232b2f356a3e050c0583e1e53701168",
+        ".2bpp.lz": "665ae4946fb0b28d7846689ff9a96d337fe3838d035320a9000b0ce57924c385",
+        "_coll.asm": "70fb334c3a9135915a2ccf7c09484ec9f3b7f52ec76a3c1406b8083e6cb9ea09",
+        "_meta.bin": "0f13efc865dcb010df8e67da72b3ff24702e9634ff1b770067b6e03e4d3c5094",
+        "_palmap.bin": "eaecca18d6ab388a1c3d9e4e3996a28988981242dd1adff0964866a292bfc989",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 101902,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 756,
+      "path_source_grain_pixels_added": 44,
+      "path_texture_cells": 292,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        214,
+        165,
+        90
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 60105,
+      "source_opaque_pixels_preserved": 9358,
+      "unique_patterns": 108
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 0,
+          "pixels": 296,
+          "rgb": [
+            247,
+            222,
+            165
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 28809,
+          "rgb": [
+            222,
+            189,
+            123
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 2,
+          "pixels": 532,
+          "rgb": [
+            247,
+            222,
+            165
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 5,
+          "pixels": 296,
+          "rgb": [
+            255,
+            222,
+            156
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "c3066d6d181385ed0de1a3a9428020638b62603a647c012656fb7a70646c5be5",
+        ".2bpp.lz": "7c62b3c6ddf8a00149565a6be5cdc29ef8ab6678e109d8de48080dca2f9181bd",
+        "_coll.asm": "e4f10c40c3478b6ba0098b07de834ea4bc82f0703b73c3e0e3a09430f3ca52e6",
+        "_meta.bin": "2ffc31bab30c7d87c374c3b9a92c8dcd42c4f572f365c6bf2fd58d98a78a4c6c",
+        "_palmap.bin": "7d3dc7f025d750b8491a0b4b8d08a87276dc3cba205a73dfa7bedfda7fd93ecb",
+        "_priority.bin": "29819a6e2e1e8ed52c8dd6b7cb5ada0f9bf3be9b6716c8c1fd35620f715681af"
+      },
+      "map": "SenjinVillage",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "42b959a3827e3874cf0e79ad6145cea7f12dc71fa0512b60ed041a14f9ed456c",
+      "map_script_sha256_unchanged": "750aeb62b1642dc06609a8ead53c38ba9ebb6aeafc293a72477ccf2f33bc5494",
+      "movement_cells_unchanged": 480,
+      "native_after_sha256": "d320d104131495c01a16c7a9665cdbe18bb1f2485adf6fbaeece48e7d23a1635",
+      "native_metatiles": 92,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 2101,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 385,
+          "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "transparent_pixels": 1151,
+          "world_origin_pixels": [
+            96,
+            16
+          ]
+        },
+        {
+          "opaque_pixels": 385,
+          "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "transparent_pixels": 1151,
+          "world_origin_pixels": [
+            256,
+            16
+          ]
+        },
+        {
+          "opaque_pixels": 385,
+          "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "transparent_pixels": 1151,
+          "world_origin_pixels": [
+            32,
+            80
+          ]
+        },
+        {
+          "opaque_pixels": 385,
+          "sha256": "367553dec7d1162a269b3c0178f6dfdbe5a5bbf6313adfac11b902bf7b35289f",
+          "size": [
+            32,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/senjin_village/palm_senjin_small_01_32x48.png",
+          "transparent_pixels": 1151,
+          "world_origin_pixels": [
+            32,
+            208
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "c6beb35ec6e0473bd13b2abea7733565f676eda4fe342418485ef263c8ca78f8",
+        ".2bpp.lz": "cdbd0a080e4298ec1be0ef1605307334c94457443e68e1af1a7b647a5173497e",
+        "_coll.asm": "e4f10c40c3478b6ba0098b07de834ea4bc82f0703b73c3e0e3a09430f3ca52e6",
+        "_meta.bin": "db08fceaa481b2ac8a9a05614422fed3fc30ac89657575083b1d952d9228b006",
+        "_palmap.bin": "b34ff2a56a164856525b3baf8538b18d9ac508c98c02c004d44097cb928a8b07",
+        "_priority.bin": "6de64a5815b36602abc4c066853268c2deb7c6989c6c8688768ace37e9523494"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 87499,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 777,
+      "path_source_grain_pixels_added": 44,
+      "path_texture_cells": 283,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        222,
+        189,
+        123
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 29989,
+      "source_opaque_pixels_preserved": 13262,
+      "unique_patterns": 190
+    },
+    {
+      "BG3_unused_in_every_input_metatile": true,
+      "BG5_to_BG3_cells": [
+        [
+          4,
+          4,
+          48
+        ],
+        [
+          6,
+          4,
+          41
+        ],
+        [
+          16,
+          4,
+          48
+        ],
+        [
+          18,
+          4,
+          41
+        ],
+        [
+          20,
+          4,
+          48
+        ],
+        [
+          22,
+          4,
+          41
+        ],
+        [
+          28,
+          4,
+          48
+        ],
+        [
+          30,
+          4,
+          41
+        ],
+        [
+          40,
+          4,
+          48
+        ],
+        [
+          42,
+          4,
+          41
+        ],
+        [
+          4,
+          5,
+          16
+        ],
+        [
+          19,
+          5,
+          16
+        ],
+        [
+          20,
+          5,
+          16
+        ],
+        [
+          23,
+          5,
+          16
+        ],
+        [
+          28,
+          5,
+          16
+        ],
+        [
+          43,
+          5,
+          16
+        ],
+        [
+          4,
+          6,
+          25
+        ],
+        [
+          5,
+          6,
+          10
+        ],
+        [
+          17,
+          6,
+          11
+        ],
+        [
+          18,
+          6,
+          11
+        ],
+        [
+          19,
+          6,
+          23
+        ],
+        [
+          20,
+          6,
+          25
+        ],
+        [
+          21,
+          6,
+          11
+        ],
+        [
+          22,
+          6,
+          11
+        ],
+        [
+          23,
+          6,
+          23
+        ],
+        [
+          28,
+          6,
+          25
+        ],
+        [
+          29,
+          6,
+          10
+        ],
+        [
+          41,
+          6,
+          11
+        ],
+        [
+          42,
+          6,
+          11
+        ],
+        [
+          43,
+          6,
+          23
+        ],
+        [
+          6,
+          7,
+          2
+        ],
+        [
+          30,
+          7,
+          2
+        ],
+        [
+          4,
+          8,
+          48
+        ],
+        [
+          42,
+          8,
+          41
+        ],
+        [
+          4,
+          9,
+          16
+        ],
+        [
+          29,
+          9,
+          53
+        ],
+        [
+          30,
+          9,
+          1
+        ],
+        [
+          40,
+          9,
+          2
+        ],
+        [
+          43,
+          9,
+          16
+        ],
+        [
+          4,
+          10,
+          25
+        ],
+        [
+          5,
+          10,
+          11
+        ],
+        [
+          8,
+          10,
+          8
+        ],
+        [
+          10,
+          10,
+          22
+        ],
+        [
+          32,
+          10,
+          8
+        ],
+        [
+          34,
+          10,
+          22
+        ],
+        [
+          40,
+          10,
+          25
+        ],
+        [
+          41,
+          10,
+          11
+        ],
+        [
+          42,
+          10,
+          11
+        ],
+        [
+          43,
+          10,
+          23
+        ],
+        [
+          9,
+          11,
+          45
+        ],
+        [
+          33,
+          11,
+          45
+        ],
+        [
+          4,
+          12,
+          48
+        ],
+        [
+          6,
+          12,
+          41
+        ],
+        [
+          40,
+          12,
+          48
+        ],
+        [
+          42,
+          12,
+          41
+        ],
+        [
+          4,
+          13,
+          16
+        ],
+        [
+          7,
+          13,
+          16
+        ],
+        [
+          40,
+          13,
+          16
+        ],
+        [
+          43,
+          13,
+          16
+        ],
+        [
+          4,
+          14,
+          25
+        ],
+        [
+          5,
+          14,
+          11
+        ],
+        [
+          6,
+          14,
+          11
+        ],
+        [
+          7,
+          14,
+          23
+        ],
+        [
+          40,
+          14,
+          25
+        ],
+        [
+          41,
+          14,
+          11
+        ],
+        [
+          42,
+          14,
+          11
+        ],
+        [
+          43,
+          14,
+          23
+        ],
+        [
+          4,
+          16,
+          48
+        ],
+        [
+          6,
+          16,
+          41
+        ],
+        [
+          40,
+          16,
+          48
+        ],
+        [
+          42,
+          16,
+          41
+        ],
+        [
+          4,
+          17,
+          16
+        ],
+        [
+          7,
+          17,
+          16
+        ],
+        [
+          40,
+          17,
+          16
+        ],
+        [
+          43,
+          17,
+          16
+        ],
+        [
+          4,
+          18,
+          25
+        ],
+        [
+          5,
+          18,
+          11
+        ],
+        [
+          6,
+          18,
+          11
+        ],
+        [
+          7,
+          18,
+          23
+        ],
+        [
+          40,
+          18,
+          25
+        ],
+        [
+          41,
+          18,
+          11
+        ],
+        [
+          42,
+          18,
+          11
+        ],
+        [
+          43,
+          18,
+          23
+        ],
+        [
+          4,
+          20,
+          48
+        ],
+        [
+          6,
+          20,
+          41
+        ],
+        [
+          40,
+          20,
+          48
+        ],
+        [
+          42,
+          20,
+          41
+        ],
+        [
+          4,
+          21,
+          16
+        ],
+        [
+          7,
+          21,
+          16
+        ],
+        [
+          43,
+          21,
+          16
+        ],
+        [
+          4,
+          22,
+          25
+        ],
+        [
+          5,
+          22,
+          11
+        ],
+        [
+          6,
+          22,
+          11
+        ],
+        [
+          7,
+          22,
+          23
+        ],
+        [
+          41,
+          22,
+          11
+        ],
+        [
+          42,
+          22,
+          11
+        ],
+        [
+          43,
+          22,
+          23
+        ],
+        [
+          4,
+          24,
+          48
+        ],
+        [
+          6,
+          24,
+          41
+        ],
+        [
+          42,
+          24,
+          41
+        ],
+        [
+          4,
+          25,
+          16
+        ],
+        [
+          40,
+          25,
+          2
+        ],
+        [
+          43,
+          25,
+          16
+        ],
+        [
+          4,
+          26,
+          25
+        ],
+        [
+          5,
+          26,
+          10
+        ],
+        [
+          32,
+          26,
+          8
+        ],
+        [
+          34,
+          26,
+          22
+        ],
+        [
+          40,
+          26,
+          25
+        ],
+        [
+          41,
+          26,
+          11
+        ],
+        [
+          42,
+          26,
+          11
+        ],
+        [
+          43,
+          26,
+          23
+        ],
+        [
+          6,
+          27,
+          2
+        ],
+        [
+          33,
+          27,
+          45
+        ],
+        [
+          4,
+          28,
+          48
+        ],
+        [
+          40,
+          28,
+          48
+        ],
+        [
+          42,
+          28,
+          41
+        ],
+        [
+          4,
+          29,
+          16
+        ],
+        [
+          40,
+          29,
+          16
+        ],
+        [
+          43,
+          29,
+          16
+        ],
+        [
+          4,
+          30,
+          25
+        ],
+        [
+          5,
+          30,
+          11
+        ],
+        [
+          8,
+          30,
+          8
+        ],
+        [
+          10,
+          30,
+          22
+        ],
+        [
+          40,
+          30,
+          25
+        ],
+        [
+          41,
+          30,
+          11
+        ],
+        [
+          42,
+          30,
+          11
+        ],
+        [
+          43,
+          30,
+          23
+        ],
+        [
+          9,
+          31,
+          45
+        ],
+        [
+          4,
+          32,
+          48
+        ],
+        [
+          6,
+          32,
+          41
+        ],
+        [
+          8,
+          32,
+          48
+        ],
+        [
+          10,
+          32,
+          41
+        ],
+        [
+          36,
+          32,
+          48
+        ],
+        [
+          38,
+          32,
+          41
+        ],
+        [
+          40,
+          32,
+          48
+        ],
+        [
+          42,
+          32,
+          41
+        ],
+        [
+          4,
+          33,
+          16
+        ],
+        [
+          7,
+          33,
+          16
+        ],
+        [
+          8,
+          33,
+          16
+        ],
+        [
+          11,
+          33,
+          16
+        ],
+        [
+          36,
+          33,
+          16
+        ],
+        [
+          39,
+          33,
+          16
+        ],
+        [
+          40,
+          33,
+          16
+        ],
+        [
+          43,
+          33,
+          16
+        ],
+        [
+          4,
+          34,
+          25
+        ],
+        [
+          5,
+          34,
+          11
+        ],
+        [
+          6,
+          34,
+          11
+        ],
+        [
+          7,
+          34,
+          23
+        ],
+        [
+          8,
+          34,
+          25
+        ],
+        [
+          9,
+          34,
+          11
+        ],
+        [
+          10,
+          34,
+          11
+        ],
+        [
+          11,
+          34,
+          23
+        ],
+        [
+          36,
+          34,
+          25
+        ],
+        [
+          37,
+          34,
+          11
+        ],
+        [
+          38,
+          34,
+          11
+        ],
+        [
+          39,
+          34,
+          23
+        ],
+        [
+          40,
+          34,
+          25
+        ],
+        [
+          41,
+          34,
+          11
+        ],
+        [
+          42,
+          34,
+          11
+        ],
+        [
+          43,
+          34,
+          23
+        ]
+      ],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 2694,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 21079,
+          "rgb": [
+            198,
+            115,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 0,
+          "palette": 3,
+          "pixels": 3770,
+          "rgb": [
+            198,
+            115,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 2,
+          "palette": 5,
+          "pixels": 224,
+          "rgb": [
+            132,
+            90,
+            57
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "a6595bb7b1e27f63e505eac98df667b3a7b85ff89d59a3dd901a67b7448752f4",
+        ".2bpp.lz": "b71140fe164d61ada78d6072068f9541c52764d2dde0c1a54535ca86ae1319d8",
+        "_coll.asm": "0295a370b9846de43d4707516e883bfd000f4e7bcb5ce963194916c2e7b34dad",
+        "_meta.bin": "951df8fe14a94a3c9ee86a9b51dcd2fc4aea743cb3d96f5b8407d5313cfd1a3d",
+        "_palmap.bin": "a6dad1bbfd1dc8185580582c44c027c54bc279eba14c9b7628f22b19103a30b4",
+        "_priority.bin": "195bd386aad1af272fcb6d99b19a5f7b316dc6abb64a873ffdc326b8208eeefd"
+      },
+      "map": "RazorHill",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "24e7370f07d7bcbd12531217e6272c4be3925c82063c3546526c2ab252cd4d91",
+      "map_script_sha256_unchanged": "e23c45387340a6e863d565a220ea25f5956090062278c9cff213f9a16f94d4e1",
+      "movement_cells_unchanged": 480,
+      "native_after_sha256": "385be47152df30da22d98df87bae60e440004a66dd1629eb4c6272873c69e9bf",
+      "native_metatiles": 99,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 11012,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            64,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            128,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            160,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            224,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            256,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 81,
+          "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "transparent_pixels": 687,
+          "world_origin_pixels": [
+            168,
+            48
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            128,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            288,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            64,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            288,
+            256
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "f28ae02e11c05298cb8584f176ee01bfd232f35f870d4e6ed715ea900273151f",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_horizontal_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            256
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "4621cdc80cfe12d285e2d66ef4100b76e3d25a93a894c71f14abadfb2cf73e7d",
+        ".2bpp.lz": "54ff8522cdedbe1b7182d7fbf78826a766d2d8077ad3bc29a723ae5362f4d197",
+        "_coll.asm": "0295a370b9846de43d4707516e883bfd000f4e7bcb5ce963194916c2e7b34dad",
+        "_meta.bin": "b3210da78d73cac63c9230fcb3f3230e6fc514960c83537726d6bc7a987c5ec8",
+        "_palmap.bin": "9eca5d3bd3491ef0db4b77e7e05d0fd0aeece261276fd2012e33e123730941fe",
+        "_priority.bin": "fee8bf5da0b5437977fe9a96bd65bf674097b79ec1141e1657553c3d5b0f406c"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 73537,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 791,
+      "path_source_grain_pixels_added": 40,
+      "path_texture_cells": 290,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        198,
+        115,
+        66
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 27818,
+      "source_opaque_pixels_preserved": 27352,
+      "unique_patterns": 208
+    },
+    {
+      "BG3_unused_in_every_input_metatile": true,
+      "BG5_to_BG3_cells": [
+        [
+          4,
+          4,
+          46
+        ],
+        [
+          5,
+          4,
+          16
+        ],
+        [
+          6,
+          4,
+          23
+        ],
+        [
+          14,
+          4,
+          23
+        ],
+        [
+          16,
+          4,
+          46
+        ],
+        [
+          17,
+          4,
+          16
+        ],
+        [
+          18,
+          4,
+          23
+        ],
+        [
+          20,
+          4,
+          46
+        ],
+        [
+          21,
+          4,
+          16
+        ],
+        [
+          22,
+          4,
+          23
+        ],
+        [
+          24,
+          4,
+          46
+        ],
+        [
+          25,
+          4,
+          16
+        ],
+        [
+          26,
+          4,
+          23
+        ],
+        [
+          28,
+          4,
+          46
+        ],
+        [
+          29,
+          4,
+          16
+        ],
+        [
+          30,
+          4,
+          23
+        ],
+        [
+          32,
+          4,
+          46
+        ],
+        [
+          33,
+          4,
+          16
+        ],
+        [
+          34,
+          4,
+          23
+        ],
+        [
+          42,
+          4,
+          23
+        ],
+        [
+          4,
+          5,
+          41
+        ],
+        [
+          18,
+          5,
+          11
+        ],
+        [
+          20,
+          5,
+          41
+        ],
+        [
+          22,
+          5,
+          11
+        ],
+        [
+          24,
+          5,
+          41
+        ],
+        [
+          26,
+          5,
+          11
+        ],
+        [
+          28,
+          5,
+          41
+        ],
+        [
+          30,
+          5,
+          11
+        ],
+        [
+          32,
+          5,
+          41
+        ],
+        [
+          18,
+          6,
+          11
+        ],
+        [
+          22,
+          6,
+          11
+        ],
+        [
+          26,
+          6,
+          11
+        ],
+        [
+          30,
+          6,
+          11
+        ],
+        [
+          4,
+          7,
+          48
+        ],
+        [
+          6,
+          7,
+          3
+        ],
+        [
+          17,
+          7,
+          16
+        ],
+        [
+          18,
+          7,
+          25
+        ],
+        [
+          20,
+          7,
+          48
+        ],
+        [
+          21,
+          7,
+          16
+        ],
+        [
+          22,
+          7,
+          25
+        ],
+        [
+          24,
+          7,
+          48
+        ],
+        [
+          25,
+          7,
+          16
+        ],
+        [
+          26,
+          7,
+          25
+        ],
+        [
+          28,
+          7,
+          48
+        ],
+        [
+          29,
+          7,
+          16
+        ],
+        [
+          30,
+          7,
+          25
+        ],
+        [
+          32,
+          7,
+          48
+        ],
+        [
+          34,
+          7,
+          3
+        ],
+        [
+          4,
+          8,
+          46
+        ],
+        [
+          17,
+          8,
+          16
+        ],
+        [
+          18,
+          8,
+          23
+        ],
+        [
+          20,
+          8,
+          46
+        ],
+        [
+          21,
+          8,
+          16
+        ],
+        [
+          22,
+          8,
+          23
+        ],
+        [
+          24,
+          8,
+          46
+        ],
+        [
+          25,
+          8,
+          16
+        ],
+        [
+          26,
+          8,
+          23
+        ],
+        [
+          28,
+          8,
+          46
+        ],
+        [
+          29,
+          8,
+          16
+        ],
+        [
+          30,
+          8,
+          23
+        ],
+        [
+          32,
+          8,
+          46
+        ],
+        [
+          4,
+          9,
+          41
+        ],
+        [
+          16,
+          9,
+          22
+        ],
+        [
+          18,
+          9,
+          11
+        ],
+        [
+          20,
+          9,
+          41
+        ],
+        [
+          22,
+          9,
+          11
+        ],
+        [
+          24,
+          9,
+          41
+        ],
+        [
+          26,
+          9,
+          11
+        ],
+        [
+          28,
+          9,
+          41
+        ],
+        [
+          30,
+          9,
+          11
+        ],
+        [
+          32,
+          9,
+          41
+        ],
+        [
+          8,
+          10,
+          8
+        ],
+        [
+          10,
+          10,
+          22
+        ],
+        [
+          12,
+          10,
+          2
+        ],
+        [
+          18,
+          10,
+          11
+        ],
+        [
+          22,
+          10,
+          11
+        ],
+        [
+          26,
+          10,
+          11
+        ],
+        [
+          30,
+          10,
+          11
+        ],
+        [
+          36,
+          10,
+          8
+        ],
+        [
+          38,
+          10,
+          22
+        ],
+        [
+          40,
+          10,
+          2
+        ],
+        [
+          4,
+          11,
+          48
+        ],
+        [
+          5,
+          11,
+          16
+        ],
+        [
+          6,
+          11,
+          25
+        ],
+        [
+          9,
+          11,
+          45
+        ],
+        [
+          12,
+          11,
+          39
+        ],
+        [
+          14,
+          11,
+          25
+        ],
+        [
+          16,
+          11,
+          48
+        ],
+        [
+          17,
+          11,
+          16
+        ],
+        [
+          18,
+          11,
+          25
+        ],
+        [
+          20,
+          11,
+          48
+        ],
+        [
+          21,
+          11,
+          16
+        ],
+        [
+          22,
+          11,
+          25
+        ],
+        [
+          24,
+          11,
+          48
+        ],
+        [
+          25,
+          11,
+          16
+        ],
+        [
+          26,
+          11,
+          25
+        ],
+        [
+          28,
+          11,
+          48
+        ],
+        [
+          29,
+          11,
+          16
+        ],
+        [
+          30,
+          11,
+          25
+        ],
+        [
+          32,
+          11,
+          48
+        ],
+        [
+          33,
+          11,
+          16
+        ],
+        [
+          34,
+          11,
+          25
+        ],
+        [
+          37,
+          11,
+          45
+        ],
+        [
+          40,
+          11,
+          39
+        ],
+        [
+          42,
+          11,
+          25
+        ],
+        [
+          12,
+          12,
+          46
+        ],
+        [
+          13,
+          12,
+          16
+        ],
+        [
+          14,
+          12,
+          23
+        ],
+        [
+          32,
+          12,
+          46
+        ],
+        [
+          33,
+          12,
+          16
+        ],
+        [
+          34,
+          12,
+          23
+        ],
+        [
+          12,
+          13,
+          41
+        ],
+        [
+          14,
+          13,
+          11
+        ],
+        [
+          32,
+          13,
+          41
+        ],
+        [
+          34,
+          13,
+          11
+        ],
+        [
+          10,
+          14,
+          26
+        ],
+        [
+          14,
+          14,
+          11
+        ],
+        [
+          34,
+          14,
+          11
+        ],
+        [
+          12,
+          15,
+          48
+        ],
+        [
+          13,
+          15,
+          16
+        ],
+        [
+          14,
+          15,
+          25
+        ],
+        [
+          32,
+          15,
+          48
+        ],
+        [
+          33,
+          15,
+          16
+        ],
+        [
+          34,
+          15,
+          25
+        ],
+        [
+          12,
+          16,
+          46
+        ],
+        [
+          13,
+          16,
+          16
+        ],
+        [
+          14,
+          16,
+          23
+        ],
+        [
+          32,
+          16,
+          46
+        ],
+        [
+          33,
+          16,
+          16
+        ],
+        [
+          34,
+          16,
+          23
+        ],
+        [
+          12,
+          17,
+          41
+        ],
+        [
+          14,
+          17,
+          11
+        ],
+        [
+          32,
+          17,
+          41
+        ],
+        [
+          34,
+          17,
+          11
+        ],
+        [
+          14,
+          18,
+          11
+        ],
+        [
+          34,
+          18,
+          11
+        ],
+        [
+          42,
+          18,
+          26
+        ],
+        [
+          12,
+          19,
+          48
+        ],
+        [
+          13,
+          19,
+          16
+        ],
+        [
+          14,
+          19,
+          25
+        ],
+        [
+          32,
+          19,
+          48
+        ],
+        [
+          33,
+          19,
+          16
+        ],
+        [
+          34,
+          19,
+          25
+        ],
+        [
+          30,
+          22,
+          26
+        ],
+        [
+          9,
+          29,
+          21
+        ],
+        [
+          10,
+          29,
+          13
+        ],
+        [
+          13,
+          29,
+          21
+        ],
+        [
+          14,
+          29,
+          13
+        ],
+        [
+          37,
+          29,
+          21
+        ],
+        [
+          38,
+          29,
+          13
+        ],
+        [
+          6,
+          30,
+          26
+        ],
+        [
+          38,
+          34,
+          26
+        ]
+      ],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          29,
+          17,
+          0
+        ],
+        [
+          30,
+          17,
+          1
+        ],
+        [
+          29,
+          18,
+          2
+        ],
+        [
+          30,
+          18,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 3281,
+          "rgb": [
+            206,
+            123,
+            66
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 41914,
+          "rgb": [
+            189,
+            107,
+            57
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 0,
+          "palette": 3,
+          "pixels": 3956,
+          "rgb": [
+            189,
+            107,
+            57
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 2,
+          "palette": 5,
+          "pixels": 160,
+          "rgb": [
+            132,
+            90,
+            57
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "9c7af70b2ba347e9516f1b2cd875fb30e69e6effa4df27365564efe775d25f3b",
+        ".2bpp.lz": "b28a033bdda9b6afb72f5ca43c82d01dfadad2b17818672a4ea0f579ceccb27e",
+        "_coll.asm": "a512807e256614891d91b13ae5cdbc315f7265abe72c65c9b12ca0bfea53520d",
+        "_meta.bin": "ada4f50a185314b5e94daf4a384785f342584700fd45e8585e18452c77e1ff51",
+        "_palmap.bin": "76f44bafe63c1a0e78a19e573dfc486db80bb16169492ea78581124636e09cd2",
+        "_priority.bin": "25d24b0ae4b05eb3ba7d857d7e1153df4ce13353dcea02ce6c0415cb1eff8a0c"
+      },
+      "map": "OrgrimmarGate",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "3446450d7a9bbdd4a71398c82c7173605007a0bcbb98878460795a9b59dd9f9e",
+      "map_script_sha256_unchanged": "c984a204c653956f4d27204bce991c50d8cb4d476d336f4c9d9a8c59fbf9b7d4",
+      "movement_cells_unchanged": 480,
+      "native_after_sha256": "c09d401d3b52c230ade8354a2e5105c7f836c64f523e313e45fb65f93d921023",
+      "native_metatiles": 88,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 12913,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            64,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            96,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            128,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            160,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            192,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            224,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            256,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            288,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            32
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            32,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            96,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            128,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            160,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            192,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            224,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            256,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            320,
+            64
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            72,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            96,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 81,
+          "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "transparent_pixels": 687,
+          "world_origin_pixels": [
+            136,
+            80
+          ]
+        },
+        {
+          "opaque_pixels": 81,
+          "sha256": "779d06811c950a8b96d87568775e1990d6dca1f9a22ff1f51cd2ea5dceec14fa",
+          "size": [
+            16,
+            48
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/banner_horde_razorhill_01_16x48.png",
+          "transparent_pixels": 687,
+          "world_origin_pixels": [
+            232,
+            80
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            256,
+            96
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            96,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 495,
+          "sha256": "d318ed58f8ad889ea964c8ec81ea47e7fa63fba0db2e699de9ea7aa351ac0108",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/razor_hill/palisade_razorhill_wall_vertical_01_32x32.png",
+          "transparent_pixels": 529,
+          "world_origin_pixels": [
+            256,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            328,
+            128
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            232,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            256,
+            160
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            96,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            256,
+            192
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            40,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            64,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            96,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            256,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 324,
+          "sha256": "a0921636545c98bfb5bb8204b7b80b9ff736a7d257b4c134fabd738870a2cefc",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_round_01_32x32.png",
+          "transparent_pixels": 700,
+          "world_origin_pixels": [
+            288,
+            224
+          ]
+        },
+        {
+          "opaque_pixels": 96,
+          "sha256": "58f3cc710896674097688e5b0b1715cd48a23739dd167c5f77f10acbe491fda2",
+          "size": [
+            16,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/cactus_durotar_tall_01_16x32.png",
+          "transparent_pixels": 416,
+          "world_origin_pixels": [
+            296,
+            256
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "45648da6693bebdae030109d2fed42a0304c04b82f868e7db8d8a12aa3593e38",
+        ".2bpp.lz": "c39451f5d5fcc6863d71267cb167a29bd4814301e33d0ca32aa574f3e7f97701",
+        "_coll.asm": "a512807e256614891d91b13ae5cdbc315f7265abe72c65c9b12ca0bfea53520d",
+        "_meta.bin": "db6ed3cf93a2a792d01402f0d8e95943147c95c21f9724981d5b9f3cd19c2cf8",
+        "_palmap.bin": "6aa9db8b9fc889f1daeba44842867855338e73eca93506bb554943b760a61fcb",
+        "_priority.bin": "406e4ad3e6e8d40a7c4e7cecdc72976e729491d0b433fa4f952643aa6b180578"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 52966,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 312,
+      "path_source_grain_pixels_added": 16,
+      "path_texture_cells": 115,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        189,
+        107,
+        57
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 49397,
+      "source_opaque_pixels_preserved": 20290,
+      "unique_patterns": 171
+    },
+    {
+      "BG3_unused_in_every_input_metatile": false,
+      "BG5_to_BG3_cells": [],
+      "all_dense_patch_aliases_use_same_stencil": true,
+      "animated_cells": [
+        [
+          9,
+          25,
+          0
+        ],
+        [
+          10,
+          25,
+          1
+        ],
+        [
+          9,
+          26,
+          2
+        ],
+        [
+          10,
+          26,
+          3
+        ]
+      ],
+      "background_palette_limit": [
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 1,
+          "palette": 0,
+          "pixels": 150,
+          "rgb": [
+            90,
+            82,
+            107
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": true,
+          "index": 1,
+          "palette": 1,
+          "pixels": 26279,
+          "rgb": [
+            99,
+            90,
+            107
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 2,
+          "pixels": 37,
+          "rgb": [
+            115,
+            107,
+            123
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 5,
+          "pixels": 145,
+          "rgb": [
+            115,
+            107,
+            123
+          ]
+        },
+        {
+          "exact_regional_soil_rgb": false,
+          "index": 0,
+          "palette": 6,
+          "pixels": 90,
+          "rgb": [
+            115,
+            107,
+            123
+          ]
+        }
+      ],
+      "collision_rows_byte_exact": true,
+      "fire_phase0_matches_exterior_phase_packet": true,
+      "input_packet": "gfx/quieter_ground_v0214",
+      "input_sha256": {
+        ".2bpp": "ea2f0d1f6488f71f24ebdc18566c000361615e338a3290b8941c75c07dac5c07",
+        ".2bpp.lz": "0c9801a76a58dfa3903fd8cb869c4a3a9a4f2747b7a7772c03f2f43c86ecfc09",
+        "_coll.asm": "5a75c780518577ccc86170af8e9925d28fb9a5b94cd7061f685f73edd826e1b1",
+        "_meta.bin": "5923848b92d605be868d952185551cfe25e3cdc54df1f209dab5c25f549abc21",
+        "_palmap.bin": "4a738024aaa40529117bf5926b6fafd9b0767c2f74a59ad5d1c9a46ac61a423a",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "map": "BurningBladeCavern",
+      "map_block_ids_unchanged": true,
+      "map_blocks_sha256_unchanged": "5057d7bb2981aca20e0b85c24d069ef76df62c0b9f465c65ef4f0ec9203b0a04",
+      "map_script_sha256_unchanged": "4b1a3dc913cc2b7b63d6a0c181189e772af5fa53cc9c92fa07da13ee3dad2740",
+      "movement_cells_unchanged": 400,
+      "native_after_sha256": "374fc93624168275819d4c9a8076d55e685524e706d9a26a78c33a3c85371566",
+      "native_metatiles": 70,
+      "native_packet_round_trip_exact": true,
+      "native_pattern_capacity": 216,
+      "native_pixels_changed": 1911,
+      "native_priority_per_world_8x8_cell_exact": true,
+      "opaque_source_records": [
+        {
+          "opaque_pixels": 76,
+          "sha256": "4cac1e0b1c8d9e9635b938507238bf2b82ac27723dcc5e17c3778b8a40353274",
+          "size": [
+            16,
+            16
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/bones_durotar_skull_pile_01_16x16.png",
+          "transparent_pixels": 180,
+          "world_origin_pixels": [
+            104,
+            72
+          ]
+        },
+        {
+          "opaque_pixels": 561,
+          "sha256": "81451c2cadfb549981e47f55161ff544b8474f20323ae4cfe002d9cb021285ce",
+          "size": [
+            32,
+            32
+          ],
+          "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/rock_durotar_large_01_32x32.png",
+          "transparent_pixels": 463,
+          "world_origin_pixels": [
+            192,
+            192
+          ]
+        }
+      ],
+      "output_sha256": {
+        ".2bpp": "9aaff3392a85df8a70568622e05608ad5776d37a54b0787fa2fe16b1483474e1",
+        ".2bpp.lz": "4f05b640855bfbd608c75214fcc3d11fbca5e03e16c0010837c9843726c3ce7f",
+        "_coll.asm": "5a75c780518577ccc86170af8e9925d28fb9a5b94cd7061f685f73edd826e1b1",
+        "_meta.bin": "bfe33ca1ef4c42bb5b439bc46e9878c7fba371b21ea572fc725dda733a952a7f",
+        "_palmap.bin": "b13477aaae91299ad70af4c6f0beb3e20e8f07c979e4fd19e54f3d9fde46fa6f",
+        "_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925"
+      },
+      "outside_soil_and_path_texture_pixels_preserved": 74438,
+      "palette_slots_preserved_except_exact_RGB_BG5_to_unused_BG3": true,
+      "path_colors_index0_borders_and_dark_end_bands_exact": true,
+      "path_old_grain_pixels_removed": 340,
+      "path_source_grain_pixels_added": 20,
+      "path_texture_cells": 133,
+      "preview_is_native_packet_composition": true,
+      "regional_soil_rgb": [
+        99,
+        90,
+        107
+      ],
+      "runtime_verified": false,
+      "soil_pixels_normalized": 26755,
+      "source_opaque_pixels_preserved": 683,
+      "unique_patterns": 50
+    }
+  ],
+  "native_outputs": "gfx/quieter_ground_v0220",
+  "opaque_prop_geometry_and_native_RGB_unchanged": true,
+  "original_source_pngs_byte_exact": 499,
+  "protected_input_files_sha256": {
+    "gfx/canonical_decor_v0213/BurningBladeCavern.2bpp": "7e46e3ae7a7897f816c353695457bf1ccfa8cfa135bc0673751cee76b1dca88e",
+    "gfx/canonical_decor_v0213/BurningBladeCavern_coll.asm": "c59f47ab2d3c0de2c7d62ab5d20586d7afb81bfcf737643bd7106758f3d53323",
+    "gfx/canonical_decor_v0213/BurningBladeCavern_meta.bin": "67e92d868d7948808d5e1cd9675fd6408e2efca7b5b4fddc953cf0d45630aff2",
+    "gfx/canonical_decor_v0213/BurningBladeCavern_palmap.bin": "242edcb6907202f901385bf75faa320d6033b6b2ab88eee3197c2032001c14ff",
+    "gfx/canonical_decor_v0213/BurningBladeCavern_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/DurotarRoad.2bpp": "82f94841aef3975f61aca2eda8a6cbefc90e22761f7563dd9f6a2c1c3d0d50ad",
+    "gfx/canonical_decor_v0213/DurotarRoad_coll.asm": "9cb0aa40b35f5fbf78bb6be04f8f4cc3846bef44f593baaf2515d3efb84c67fc",
+    "gfx/canonical_decor_v0213/DurotarRoad_meta.bin": "c813d0e8d81ac654f3c846175d428d121984927039dd6254441708a8663708ad",
+    "gfx/canonical_decor_v0213/DurotarRoad_palmap.bin": "2a8f0957ba6764db55260a0a7fbf85b83fe55c6e074e77b29d8d8a7f010efbae",
+    "gfx/canonical_decor_v0213/DurotarRoad_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/OrgrimmarGate.2bpp": "ef26b6dbf8f830c32bed6102f3fc9676babf6bfc499d5eb035ea084b6b902452",
+    "gfx/canonical_decor_v0213/OrgrimmarGate_coll.asm": "6fa00a396371f90802f56605bc105695b96fc35f6ecabd78b84b9bcf9a896c68",
+    "gfx/canonical_decor_v0213/OrgrimmarGate_meta.bin": "ff29ab289aa314bd3cc66b6cb6bbe204e11f4404f44abe6adac673bfdf154d42",
+    "gfx/canonical_decor_v0213/OrgrimmarGate_palmap.bin": "2ae7a632417c91c0d1176f7565f002e04e62c79e1309b2550d7aa04ef93331b0",
+    "gfx/canonical_decor_v0213/OrgrimmarGate_priority.bin": "ad9aaad9fbf7f881cc279f777fc48d0358926b0bafde2f896bc5393aa6fca06d",
+    "gfx/canonical_decor_v0213/PeonCaveApproach.2bpp": "defcd93e410afa65b8b3b042b680c4f9499d5995fd16bc61e76ed758299f30cb",
+    "gfx/canonical_decor_v0213/PeonCaveApproach_coll.asm": "75753722346be6eba9fe8dcc5b8fd57afbe6c29dcb046787d99e401400744990",
+    "gfx/canonical_decor_v0213/PeonCaveApproach_meta.bin": "66dae65bc2dd504a5d78768ec7558fb4d23dda25d5f3312dd898bd4729759c4f",
+    "gfx/canonical_decor_v0213/PeonCaveApproach_palmap.bin": "7faae3a216f411279bf00f0c6381f8136913d17adc8f4e743f35e73905cec900",
+    "gfx/canonical_decor_v0213/PeonCaveApproach_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/PeonHanazuaCamp.2bpp": "7aea1cd040f7735a2d30d27c272fa8dbe49df7d2f1189ad1f5ed94a488c0cdb5",
+    "gfx/canonical_decor_v0213/PeonHanazuaCamp_coll.asm": "c59f47ab2d3c0de2c7d62ab5d20586d7afb81bfcf737643bd7106758f3d53323",
+    "gfx/canonical_decor_v0213/PeonHanazuaCamp_meta.bin": "317d86561448f217fcd6b285832e2eb0246481e7a5e1bff6f4e538960602ec56",
+    "gfx/canonical_decor_v0213/PeonHanazuaCamp_palmap.bin": "c157021ab33144261b69d9810c638001c11641af1ab534feb47515f0b40683af",
+    "gfx/canonical_decor_v0213/PeonHanazuaCamp_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/PeonOpening.2bpp": "08d1fe32123cb1e4d6d0cf95f3bb65f0a76ed1c5f67207ee32d6dec1b2dc9898",
+    "gfx/canonical_decor_v0213/PeonOpening_coll.asm": "2c531360f40e2a33d6b4dff0d3ffd9e596def1bbad2c2e9422bb8d9c37d4bd7e",
+    "gfx/canonical_decor_v0213/PeonOpening_meta.bin": "969e4a9f5958ba674ea930945eb5a190a2b48b62a850d05614241f928e0529af",
+    "gfx/canonical_decor_v0213/PeonOpening_palmap.bin": "8e8caa8236feef079101a1159bb33cb0c2846085764ff9d3102696e74e39ef4c",
+    "gfx/canonical_decor_v0213/PeonOpening_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/PeonSarkothBasin.2bpp": "ee0005b908207632b57fc959e24aa3246daf1b71d20d58e6479c3cd424117201",
+    "gfx/canonical_decor_v0213/PeonSarkothBasin_coll.asm": "c59f47ab2d3c0de2c7d62ab5d20586d7afb81bfcf737643bd7106758f3d53323",
+    "gfx/canonical_decor_v0213/PeonSarkothBasin_meta.bin": "989a35607fedcd4354b031ec3e73bc6c358db1ddf61ceaf35e47a4df163739d1",
+    "gfx/canonical_decor_v0213/PeonSarkothBasin_palmap.bin": "d5ac73cb0b257fbee80e8e8a307807cea00ea08e895113e151c3934ba8f01cee",
+    "gfx/canonical_decor_v0213/PeonSarkothBasin_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/PeonValleyCrossroads.2bpp": "7e55ff4e30ba8eb079e40cb68900664a148176c39e1decfa709f0307f9f7b849",
+    "gfx/canonical_decor_v0213/PeonValleyCrossroads_coll.asm": "c59f47ab2d3c0de2c7d62ab5d20586d7afb81bfcf737643bd7106758f3d53323",
+    "gfx/canonical_decor_v0213/PeonValleyCrossroads_meta.bin": "be423e6dfbe392087d196db13f1d488a39f5ab110a3db703eb371c09bee3326d",
+    "gfx/canonical_decor_v0213/PeonValleyCrossroads_palmap.bin": "e85476781465835a6c6d1c77d70b2bb387f7b4cf50632af65f6d6fed30437a20",
+    "gfx/canonical_decor_v0213/PeonValleyCrossroads_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/PeonValleyExit.2bpp": "a19a93d6c3a5d5591c32c25227c9a582d4b3df13d610ee5ca176fc940e7ea9b4",
+    "gfx/canonical_decor_v0213/PeonValleyExit_coll.asm": "c59f47ab2d3c0de2c7d62ab5d20586d7afb81bfcf737643bd7106758f3d53323",
+    "gfx/canonical_decor_v0213/PeonValleyExit_meta.bin": "395f8a7ceb6bc27e0ab21c41e414bf00d4afee4f2725a86a82fca59cbc4dba99",
+    "gfx/canonical_decor_v0213/PeonValleyExit_palmap.bin": "34f2abf8c8aec89c09f5369cceebfe8fdead2d5932ddbd2c375d161b8690d7cc",
+    "gfx/canonical_decor_v0213/PeonValleyExit_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/canonical_decor_v0213/RazorHill.2bpp": "6df02ea20772471f37cbd4a5046203b38416f8e288d462352a94419a495fe38d",
+    "gfx/canonical_decor_v0213/RazorHill_coll.asm": "16368bacbdeedc175e1a26b0e5d026f140578d04a01f85d5e762e05eb2eba804",
+    "gfx/canonical_decor_v0213/RazorHill_meta.bin": "47b877f6bbaea7ecb21269992d1163998d946ea2b2df2ad3fe7cff4165aed7af",
+    "gfx/canonical_decor_v0213/RazorHill_palmap.bin": "b7fd8b60e47dd623524f28eb0c9e948d3a3ba247d14a27dcfeab826f6972a452",
+    "gfx/canonical_decor_v0213/RazorHill_priority.bin": "da9a4350f4de9314f67051944fad9627c75763a03de1efa185bdc7f8dca8d853",
+    "gfx/canonical_decor_v0213/SenjinVillage.2bpp": "ae40fb70d94e9a9a7151554e0b32eae2e4157000c5ebeac60102126db88366fd",
+    "gfx/canonical_decor_v0213/SenjinVillage_coll.asm": "1bec7cff5f23a3d39d0721067c53281b42bb1e04ba0b386ce823a4c0d0dd75cf",
+    "gfx/canonical_decor_v0213/SenjinVillage_meta.bin": "68405d58126297cbf366a3aa2d935a2c96865defb7e64d4460b18af087b815f9",
+    "gfx/canonical_decor_v0213/SenjinVillage_palmap.bin": "3889d9db90effffd9f7df231a05b25db607097358ee6a8f2da3d23ce10af9a09",
+    "gfx/canonical_decor_v0213/SenjinVillage_priority.bin": "78da29f1eb7b72705d89819b4d95216ec550a42e3b06e76b6d8293558071ba7d",
+    "gfx/canonical_decor_v0213/TheDen.2bpp": "d75930f6ba55d9d6e88a1a8ae89be02947a6e0f46d2b71494bee3529a3ea291a",
+    "gfx/canonical_decor_v0213/TheDen_coll.asm": "a61d42c9a4210c9859b8bb45019f1abf49c3c9ea777cec6f092fbfcd03717fb1",
+    "gfx/canonical_decor_v0213/TheDen_meta.bin": "87011d9388e4ac0388d874aae5c8ece10851227bb4954ec8cc23acd3c1a81253",
+    "gfx/canonical_decor_v0213/TheDen_palmap.bin": "8fd39669d87092187fda6b7a279b3e2527ca2592b87214a205c0d2b0865d5db8",
+    "gfx/canonical_decor_v0213/TheDen_priority.bin": "0add2671f75a32811deeab8dfeff1aa51fb4bf89af4911e73117c422ef9041e1",
+    "gfx/canonical_decor_v0213/ValleyOfTrials.2bpp": "f676f289e2201618d65c77acd3e71a3911cc29b095bd183d9543f43892ff2fe3",
+    "gfx/canonical_decor_v0213/ValleyOfTrials_coll.asm": "14f6212935eae025324fca80d5c86e4e4e746b8805034c2a0b83080c8f1ca7f3",
+    "gfx/canonical_decor_v0213/ValleyOfTrials_meta.bin": "c7de3c943779ce6756ce4562654f9a477df160c60de12022dd4ba5c5d75fc572",
+    "gfx/canonical_decor_v0213/ValleyOfTrials_palmap.bin": "bc3480ceca82bab8f79d36e51f8ea457ea74590773e9a1b46680bee09c272080",
+    "gfx/canonical_decor_v0213/ValleyOfTrials_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/BurningBladeCavern.2bpp": "ea2f0d1f6488f71f24ebdc18566c000361615e338a3290b8941c75c07dac5c07",
+    "gfx/quieter_ground_v0214/BurningBladeCavern.2bpp.lz": "0c9801a76a58dfa3903fd8cb869c4a3a9a4f2747b7a7772c03f2f43c86ecfc09",
+    "gfx/quieter_ground_v0214/BurningBladeCavern_coll.asm": "5a75c780518577ccc86170af8e9925d28fb9a5b94cd7061f685f73edd826e1b1",
+    "gfx/quieter_ground_v0214/BurningBladeCavern_meta.bin": "5923848b92d605be868d952185551cfe25e3cdc54df1f209dab5c25f549abc21",
+    "gfx/quieter_ground_v0214/BurningBladeCavern_palmap.bin": "4a738024aaa40529117bf5926b6fafd9b0767c2f74a59ad5d1c9a46ac61a423a",
+    "gfx/quieter_ground_v0214/BurningBladeCavern_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/DurotarRoad.2bpp": "a83cb723c9d7644a4ac3ff1445dbd987e0bffaf6524b89c3fec9c3e98f652c38",
+    "gfx/quieter_ground_v0214/DurotarRoad.2bpp.lz": "cd1166b58d62ef35fbc4f59305f46236b9d3aa2fea6967eab422ef1d6389f82c",
+    "gfx/quieter_ground_v0214/DurotarRoad_coll.asm": "70fb334c3a9135915a2ccf7c09484ec9f3b7f52ec76a3c1406b8083e6cb9ea09",
+    "gfx/quieter_ground_v0214/DurotarRoad_meta.bin": "fe84ca86892d8ef13ec345c85b88455dd6b1cce33927069a1c1acd28fb95b2a1",
+    "gfx/quieter_ground_v0214/DurotarRoad_palmap.bin": "ffa9ff8fbfc61ee632d9b292e42e1b25a82875079c28ef3ba115a03badca6529",
+    "gfx/quieter_ground_v0214/DurotarRoad_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/OrgrimmarGate.2bpp": "9c7af70b2ba347e9516f1b2cd875fb30e69e6effa4df27365564efe775d25f3b",
+    "gfx/quieter_ground_v0214/OrgrimmarGate.2bpp.lz": "b28a033bdda9b6afb72f5ca43c82d01dfadad2b17818672a4ea0f579ceccb27e",
+    "gfx/quieter_ground_v0214/OrgrimmarGate_coll.asm": "a512807e256614891d91b13ae5cdbc315f7265abe72c65c9b12ca0bfea53520d",
+    "gfx/quieter_ground_v0214/OrgrimmarGate_meta.bin": "ada4f50a185314b5e94daf4a384785f342584700fd45e8585e18452c77e1ff51",
+    "gfx/quieter_ground_v0214/OrgrimmarGate_palmap.bin": "76f44bafe63c1a0e78a19e573dfc486db80bb16169492ea78581124636e09cd2",
+    "gfx/quieter_ground_v0214/OrgrimmarGate_priority.bin": "25d24b0ae4b05eb3ba7d857d7e1153df4ce13353dcea02ce6c0415cb1eff8a0c",
+    "gfx/quieter_ground_v0214/PeonCaveApproach.2bpp": "b897d0dbddeee3f1840ed0d020a2e0406bdb6bea1219f5dedc329c7a57a08f27",
+    "gfx/quieter_ground_v0214/PeonCaveApproach.2bpp.lz": "d5343729af14742a94aa12ca9155fc93cb466ecbcef7998ea07951f24ff184bc",
+    "gfx/quieter_ground_v0214/PeonCaveApproach_coll.asm": "c9202343bb6fae4a674ed128c0aa3cc8975a82c7365de6ce9d8b2e4c7a2b8126",
+    "gfx/quieter_ground_v0214/PeonCaveApproach_meta.bin": "df077eaa15de08c8863ffb5d9a058bb28f525778e318a19792116cd4fb4bf45b",
+    "gfx/quieter_ground_v0214/PeonCaveApproach_palmap.bin": "3b90a68d506eca5f81cf31ba1a0a6740582663d8d1caf6e932466e1a24914401",
+    "gfx/quieter_ground_v0214/PeonCaveApproach_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp.2bpp": "9853f2050869741e438b6044ecb4fbc495e7ba7a7b0481ffdf8cdbebaecb08d5",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp.2bpp.lz": "acfa8ba1294bd3cff2e4f2efbc482986d61ff676793ec145f25caf37cdee1f64",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp_coll.asm": "ad97ef0d4fcab7a152bb363f0804a90d2a76a1e31a8af7fc862806c6fd4efbcf",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp_meta.bin": "e9d01ed0651d278d587a35f52510c4a41fda1cabf3058c98ee28a9ccd8d88fb4",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp_palmap.bin": "b652580aae8c6d6736c5e7d4668387bd197beda346298ae31376850317397a1a",
+    "gfx/quieter_ground_v0214/PeonHanazuaCamp_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/PeonOpening.2bpp": "5cc203d10b5aba168daa98641c81f51319e64c3eda8f83511d8f552541564a9c",
+    "gfx/quieter_ground_v0214/PeonOpening.2bpp.lz": "6c38d83967dfad91d93a0be547b3270d982e5ca48ccf5a6ce9b69aa1de986b7c",
+    "gfx/quieter_ground_v0214/PeonOpening_coll.asm": "3daaa5b09b8cbc115f3d7187f073945c35d801c2dc55f6dde65b5088ff34cd49",
+    "gfx/quieter_ground_v0214/PeonOpening_meta.bin": "ccd1779a3b7eee3a49132271656203203acaf090f0d4c43d3ff6785a99eb120b",
+    "gfx/quieter_ground_v0214/PeonOpening_palmap.bin": "bf9d01ce53f4350c366b67a0d694063f3cb9fc7687cf7971c9f84629a2d96107",
+    "gfx/quieter_ground_v0214/PeonOpening_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin.2bpp": "a804f244aa409e8a9a3dd00d4d0c826d6fc2d3b412e4465d17006930390b456e",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin.2bpp.lz": "87f0eaa9e2334e6e7939309b5985b8cba271bf748345e0a2b0506a53a45d7749",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin_coll.asm": "6d1829f733ab8e76d9ff243f809e1804d1f093987ff901754081052622169a44",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin_meta.bin": "56855ab629b950e93c2a00935ebadc9f5494d622db677cab32af148e64423148",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin_palmap.bin": "0091e00136bd67dc92d79f8365e0eb2189f9a251b38f1425044e3d518a6253f1",
+    "gfx/quieter_ground_v0214/PeonSarkothBasin_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads.2bpp": "22344fa17bf51218cc44b0b297487d93e8652791f9b8fd78dbcf474ec44d9d70",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads.2bpp.lz": "897c8f6f2b146cb48f91429f784cb5a26387bc5958fc727e0c4b34739f6ff828",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads_coll.asm": "9dea1ea98f460be3aede856e59e6408d11a2a182dce6c6a9c6bb337d9120d19b",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads_meta.bin": "2b7848d7104ca29fac94aaf86906b407e08281c1cd1c4a73851b18f5b893d488",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads_palmap.bin": "814c103fef6958b11afcc7fb8b8cc92d9691a27737d680fc8a5ea2b12464ba88",
+    "gfx/quieter_ground_v0214/PeonValleyCrossroads_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/PeonValleyExit.2bpp": "bf89068c18263f659485ce4dba9b1c0eacd21709158b61c92e020026038088b5",
+    "gfx/quieter_ground_v0214/PeonValleyExit.2bpp.lz": "dcb2306fac5578bdbbc0204ded2d9c6c243abb5df01840d21966eb94a4f2607a",
+    "gfx/quieter_ground_v0214/PeonValleyExit_coll.asm": "1821e7215fa0226076c86871d206953746408cbcb3ec04de8be05976d8ba9f1d",
+    "gfx/quieter_ground_v0214/PeonValleyExit_meta.bin": "ecbc22c2d3b07c1d84ca2a222cb3541837378378a16ad2968d81e22a40e90985",
+    "gfx/quieter_ground_v0214/PeonValleyExit_palmap.bin": "a44b64ebed91c66f7dfe0518eccfed60d64f1c7ddeca2fc3518405206d78997a",
+    "gfx/quieter_ground_v0214/PeonValleyExit_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/quieter_ground_v0214/RazorHill.2bpp": "a6595bb7b1e27f63e505eac98df667b3a7b85ff89d59a3dd901a67b7448752f4",
+    "gfx/quieter_ground_v0214/RazorHill.2bpp.lz": "b71140fe164d61ada78d6072068f9541c52764d2dde0c1a54535ca86ae1319d8",
+    "gfx/quieter_ground_v0214/RazorHill_coll.asm": "0295a370b9846de43d4707516e883bfd000f4e7bcb5ce963194916c2e7b34dad",
+    "gfx/quieter_ground_v0214/RazorHill_meta.bin": "951df8fe14a94a3c9ee86a9b51dcd2fc4aea743cb3d96f5b8407d5313cfd1a3d",
+    "gfx/quieter_ground_v0214/RazorHill_palmap.bin": "a6dad1bbfd1dc8185580582c44c027c54bc279eba14c9b7628f22b19103a30b4",
+    "gfx/quieter_ground_v0214/RazorHill_priority.bin": "195bd386aad1af272fcb6d99b19a5f7b316dc6abb64a873ffdc326b8208eeefd",
+    "gfx/quieter_ground_v0214/SenjinVillage.2bpp": "c3066d6d181385ed0de1a3a9428020638b62603a647c012656fb7a70646c5be5",
+    "gfx/quieter_ground_v0214/SenjinVillage.2bpp.lz": "7c62b3c6ddf8a00149565a6be5cdc29ef8ab6678e109d8de48080dca2f9181bd",
+    "gfx/quieter_ground_v0214/SenjinVillage_coll.asm": "e4f10c40c3478b6ba0098b07de834ea4bc82f0703b73c3e0e3a09430f3ca52e6",
+    "gfx/quieter_ground_v0214/SenjinVillage_meta.bin": "2ffc31bab30c7d87c374c3b9a92c8dcd42c4f572f365c6bf2fd58d98a78a4c6c",
+    "gfx/quieter_ground_v0214/SenjinVillage_palmap.bin": "7d3dc7f025d750b8491a0b4b8d08a87276dc3cba205a73dfa7bedfda7fd93ecb",
+    "gfx/quieter_ground_v0214/SenjinVillage_priority.bin": "29819a6e2e1e8ed52c8dd6b7cb5ada0f9bf3be9b6716c8c1fd35620f715681af",
+    "gfx/quieter_ground_v0214/TheDen.2bpp": "f8a49380d315194c0ee71d7fd6d3e1932dce1d0565dfad9c121406236fd04472",
+    "gfx/quieter_ground_v0214/TheDen.2bpp.lz": "ff11c3b6f4f1b95ed189f8a3d56ede930270345c9fed1adbac6e7335dacf2ffa",
+    "gfx/quieter_ground_v0214/TheDen_coll.asm": "512832025022e9473df810751b6ecb998521f4387c7b10fba26109254df986f4",
+    "gfx/quieter_ground_v0214/TheDen_meta.bin": "13c07fe0514c71d50739563441f5973ffd73a28bb7c5b15fa52110982c532761",
+    "gfx/quieter_ground_v0214/TheDen_palmap.bin": "931dffe23417a69f039cdbeafebbf2f8d911746862c8ed3d207a4d63bfb262ce",
+    "gfx/quieter_ground_v0214/TheDen_priority.bin": "04b8217a839f1fae4f77605a8939acba182f833c2a5cf82f71db09d94d8b84e4",
+    "gfx/quieter_ground_v0214/ValleyOfTrials.2bpp": "092ff3e841c384b7da92f6a819e320fdcf92c929214166e3c8b2450d97a573b7",
+    "gfx/quieter_ground_v0214/ValleyOfTrials.2bpp.lz": "c212d5ef4255ed095874d82f532732bdf095e64144dbcc250920722e3ae1e3be",
+    "gfx/quieter_ground_v0214/ValleyOfTrials_coll.asm": "6bbc18f72a2bf9ddb591f868d76deb4c01fe21543de92590009beb51ef4d273c",
+    "gfx/quieter_ground_v0214/ValleyOfTrials_meta.bin": "f1c53ac31e4b71a98db70417c5260f663fdd2d937a806abe6f9a8bc72f6b55f6",
+    "gfx/quieter_ground_v0214/ValleyOfTrials_palmap.bin": "7859ff855501f8682851e36d9ca6e52fcf7b693990a882c88566dbf81cbce270",
+    "gfx/quieter_ground_v0214/ValleyOfTrials_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/tilesets/peon_bg.pal": "62bbf6a831a0face2ccbbfcd2e55edfc4c95f000e806c7f1715ae5a3cbb1c1bc",
+    "gfx/tilesets/peon_environment_fire.bin": "d98cdf7473446e5e4ce61e386efd238190a7d0b0875d007cefd308c07cba2bb4",
+    "gfx/tilesets/peon_interiors.pal": "3884860300ee66480710f074dcb321a79265fb7d1a6d550c53434b09b3dbc626",
+    "gfx/tilesets/peon_regions.pal": "4b52b3744862a09bcd444b0aa1cb06b35a346c5f41e6ca55741dab2c4c129828",
+    "gfx/zone_passages_v0213/DurotarRoad.2bpp": "df4df1b425ae3936c2225a71c5751cdaae0947130a093a6d05dbe7a2174a5570",
+    "gfx/zone_passages_v0213/DurotarRoad_coll.asm": "1433476c60001b0009d87bab47793fb2bda2dd1618a02f842a6f728aa6ac22ec",
+    "gfx/zone_passages_v0213/DurotarRoad_meta.bin": "8b03e10f9ba1ca62dd08083cc9eb7a32549e8acc51b08b344870f72ac4549782",
+    "gfx/zone_passages_v0213/DurotarRoad_palmap.bin": "8314f1f686098fea3226f5df42e73bb3be8957663cbf8035d5ac576f38476ac6",
+    "gfx/zone_passages_v0213/DurotarRoad_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/OrgrimmarGate.2bpp": "0d64d24c9cc8c2796b902da3127cd37ecf6c1fbab0c7311de10630865f7c911a",
+    "gfx/zone_passages_v0213/OrgrimmarGate_coll.asm": "bbfae63dc4bf8b558bd6d1383945160966bab9aafcc6608a6965796200b1dfcf",
+    "gfx/zone_passages_v0213/OrgrimmarGate_meta.bin": "28f7ec9cc69d26930cf4c1d78b6b3ebe5f11457f2ddaa899fbaa1547ca90c7a0",
+    "gfx/zone_passages_v0213/OrgrimmarGate_palmap.bin": "f1bd6896521678fdf6684e9b5d2e78755dc35f89631e3d9df31bd58af3d9c9b3",
+    "gfx/zone_passages_v0213/OrgrimmarGate_priority.bin": "45c000d1d0d88f49f6fff427b3fd1d471e61109784f23cd846f73e5c95c137a4",
+    "gfx/zone_passages_v0213/PeonCaveApproach.2bpp": "b00472790e40ebd2f462a59978362ca65436990b8219a7c985b73e08f369f6a6",
+    "gfx/zone_passages_v0213/PeonCaveApproach_coll.asm": "12ea849f928da31846c410e20508026997acd9c6b4ba6e06bf3e9f7049dc7d13",
+    "gfx/zone_passages_v0213/PeonCaveApproach_meta.bin": "09e5e0cac73c777c2dea41e205a202a61b2fc94480c4a8ee1e44c1bdbb8a0162",
+    "gfx/zone_passages_v0213/PeonCaveApproach_palmap.bin": "1d4d09553a72e0334de86aeb83d687ed09104aeade245434d4d621f9b5795cda",
+    "gfx/zone_passages_v0213/PeonCaveApproach_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/PeonHanazuaCamp.2bpp": "00e54d84a9a66359827bc230f71babe984f772a7674fbae28510ee962ff331a6",
+    "gfx/zone_passages_v0213/PeonHanazuaCamp_coll.asm": "aacddcfecec2e961a66cb9b53dc5b594296e7762cb6bfede702fbd79853985be",
+    "gfx/zone_passages_v0213/PeonHanazuaCamp_meta.bin": "9525b51432133927779fe137e0626f0377997620a002a6ba9f9124bfaf397617",
+    "gfx/zone_passages_v0213/PeonHanazuaCamp_palmap.bin": "50fd51cea29cdc5e342b84ccd63d0c199aa02e193fece7447ea588d05d9fae96",
+    "gfx/zone_passages_v0213/PeonHanazuaCamp_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/PeonSarkothBasin.2bpp": "913088032e5c70b1b325302d758eaa2c098e6a19c4b1e010059617bab0a40b6d",
+    "gfx/zone_passages_v0213/PeonSarkothBasin_coll.asm": "f5854b686a574ab9df21fd9f67ef2171a72f77b2698200803ef89ac7d6fe1e26",
+    "gfx/zone_passages_v0213/PeonSarkothBasin_meta.bin": "18bbb6eb8c3962026161d286b1113c12fb7782c54116aeae9da9199bccf29599",
+    "gfx/zone_passages_v0213/PeonSarkothBasin_palmap.bin": "882146e5b48c03d8768c2b1acb014ec60d35509169198573f3100ac10ec17713",
+    "gfx/zone_passages_v0213/PeonSarkothBasin_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/PeonValleyCrossroads.2bpp": "7a92ffcec680781c7ac93d0c8bc667d329f5d9e2baeb3afb5cd2ae4d699afbd3",
+    "gfx/zone_passages_v0213/PeonValleyCrossroads_coll.asm": "59de34bd1dd02b92fec481f3ae83842426687597bf2374ebfce03276831560b1",
+    "gfx/zone_passages_v0213/PeonValleyCrossroads_meta.bin": "dee2bdbe87a6b854f9c3338723d97574dedbf7c18756eb8b9cc38fcd844a636a",
+    "gfx/zone_passages_v0213/PeonValleyCrossroads_palmap.bin": "46529a4a406842dc5731ef9617dfaf0b840f463bcca4da5e80ff26b27f57109d",
+    "gfx/zone_passages_v0213/PeonValleyCrossroads_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/PeonValleyExit.2bpp": "bc9332f7d9293ce3ed6f4047fa90bffd895b59fcafd4ed3520ea442e7f34c85a",
+    "gfx/zone_passages_v0213/PeonValleyExit_coll.asm": "dfa9d85db796f5da49b72aa1595dcfdbd102e9e7e7caeca1135be7cd49e59a5a",
+    "gfx/zone_passages_v0213/PeonValleyExit_meta.bin": "8628e8c7e2451670ca410295f03a7b3a96838d9c0e90127eea69dee73d40bd03",
+    "gfx/zone_passages_v0213/PeonValleyExit_palmap.bin": "5b4dcd1adbdeb9b301c3ecba652c38bd1f441b1b70eade2b46b01a5ef10b95ca",
+    "gfx/zone_passages_v0213/PeonValleyExit_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "gfx/zone_passages_v0213/RazorHill.2bpp": "c07ad3649bc321c1e0b01d7d6e3beffd71f0d7c46ba45523965edf1bac3503d6",
+    "gfx/zone_passages_v0213/RazorHill_coll.asm": "72b5f0782d252a06253c98dc9f20a67275e3ceb7763fb7b512767130ae1ee9b1",
+    "gfx/zone_passages_v0213/RazorHill_meta.bin": "d5530c6de96ea88c711e5e444dcaecc44d2f20772e36325e34793d428ecc13f5",
+    "gfx/zone_passages_v0213/RazorHill_palmap.bin": "c3541c1b51daea9dc6278d0462394bc72e6e4ade62814fd89de64a44c38ece1d",
+    "gfx/zone_passages_v0213/RazorHill_priority.bin": "31ad6ec9879f79268b6ec3ad7d85fb2b70463b06d059d9a89c9ec1e9ddbbad4a",
+    "gfx/zone_passages_v0213/SenjinVillage.2bpp": "6c1eefad1ea2dc8b2224274d6785f79f40b884790a39d1a815fa3fab5050bf69",
+    "gfx/zone_passages_v0213/SenjinVillage_coll.asm": "e38330a41bf8e47bf1a77d927d0cd7e8fa98327221fd42458514b576a1483995",
+    "gfx/zone_passages_v0213/SenjinVillage_meta.bin": "c1377ec437d7c4b3f978696581b703a7f635d436b987767b4b1d28421823a912",
+    "gfx/zone_passages_v0213/SenjinVillage_palmap.bin": "f2af02e39ce45c186fb07e5418da99e31bdd3f5e1dd8028b98cfe24b8aaedce3",
+    "gfx/zone_passages_v0213/SenjinVillage_priority.bin": "73538568e4df57b3f64e0a9bcd69a42e6dbba9f46626dab5c4dc3f44e5ef69b6",
+    "gfx/zone_passages_v0213/TheDen.2bpp": "f20fb3c209c8f2bf39ce9f0d0a45a2cac2af810e93d7c6f47a93d3ebe120a494",
+    "gfx/zone_passages_v0213/TheDen_coll.asm": "27f5ed4a35d97471c6daf8a6875c0d57d8947daae8587c0be8506f3a23585942",
+    "gfx/zone_passages_v0213/TheDen_meta.bin": "dcc9eeb8021c4e3784cdd04c75031bc9b9df6d9c0a8df5671e8e4f6c6bdd3989",
+    "gfx/zone_passages_v0213/TheDen_palmap.bin": "f79a3136c13e080de16594f7a6a10dadc0f841b059707d726e155127fe781c6f",
+    "gfx/zone_passages_v0213/TheDen_priority.bin": "31ee80866c1687250a3e5f33e5b6ef9f5b344f09f3858625b2387a4a68f8cbd2",
+    "gfx/zone_passages_v0213/ValleyOfTrials.2bpp": "e21e5fa6cfe4978eda700dd4377019b8e850cf711547dd07934f1da799dc9483",
+    "gfx/zone_passages_v0213/ValleyOfTrials_coll.asm": "cc1d348ea276d0fb9b8d64ce85a78fd6c703f313f7a82c716274c3434e962eab",
+    "gfx/zone_passages_v0213/ValleyOfTrials_meta.bin": "5805956f22fc2c916f820e7ac3c5da6c4e8acbc4003253ccb572e71331465f4b",
+    "gfx/zone_passages_v0213/ValleyOfTrials_palmap.bin": "fcad97bb6d17ed74b6eb6ae779f7b6353afb78d034fd338617d5c9b4bf910c3c",
+    "gfx/zone_passages_v0213/ValleyOfTrials_priority.bin": "66687aadf862bd776c8fc18b8e9f8e20089714856ee233b3902a591d0d5f2925",
+    "maps/BurningBladeCavern.asm": "4b1a3dc913cc2b7b63d6a0c181189e772af5fa53cc9c92fa07da13ee3dad2740",
+    "maps/BurningBladeCavern.blk": "5057d7bb2981aca20e0b85c24d069ef76df62c0b9f465c65ef4f0ec9203b0a04",
+    "maps/DurotarRoad.asm": "3f0f9d6d3fb63adc473f6c9ecc39a89427b93b35c7cef883d22d1803b2b7bf94",
+    "maps/DurotarRoad.blk": "52aea8350e900d49264a38d60ce71bfa63ab720b935360da0b6a783cc1057846",
+    "maps/OrgrimmarGate.asm": "c984a204c653956f4d27204bce991c50d8cb4d476d336f4c9d9a8c59fbf9b7d4",
+    "maps/OrgrimmarGate.blk": "3446450d7a9bbdd4a71398c82c7173605007a0bcbb98878460795a9b59dd9f9e",
+    "maps/PeonCaveApproach.asm": "1b6a0cb96ab650b2c89d6c6d5a169771e771c0b65c37e390fd9b9cd2f6c628d3",
+    "maps/PeonCaveApproach.blk": "0c87085a6eda0d4c443e4efe55167eb76a19ac0c80c68a3479b886e9de319763",
+    "maps/PeonHanazuaCamp.asm": "4946fc19234855a7fa300759738d98592eb0ba0daddcf08f8adcb5db0fecf315",
+    "maps/PeonHanazuaCamp.blk": "eed3038903200d1d3ee74d049003ed5e401c3893da498431f33b759192a42fe1",
+    "maps/PeonOpening.asm": "dbffa3b842b6f172f2ca42364eb00e313d74fc0e369f7f5aea74e9e949bdca1d",
+    "maps/PeonOpening.blk": "60ec7535e0943ecd5fcf5f3fc61c7bb7e6d5e49719846e86c5a456d7c9d2a02f",
+    "maps/PeonSarkothBasin.asm": "731acea9785fd60a739cf9d7a6cb76e7c2cd7f7f90e8bebb4b60dd2f7a873135",
+    "maps/PeonSarkothBasin.blk": "1a99907c5843b0393350dffde3d6e7d7d25d28ba635153e2328c18f0dd630467",
+    "maps/PeonValleyCrossroads.asm": "2094ae444782ffae4c31eb7dc80136ddd0c3a250e8cbcd3205587198a138e636",
+    "maps/PeonValleyCrossroads.blk": "392ac8deb96839b9fa608285789f1042509926c91b75c8e02c20f8012b95ce12",
+    "maps/PeonValleyExit.asm": "9e830c43bde9f94276866cb16185a186b24851a74c0f40c7b17628624d4b0f29",
+    "maps/PeonValleyExit.blk": "67757781d0001286f51d50ab19d803ee64d4f569e2cbf7b74ff6ae2eb79d8981",
+    "maps/RazorHill.asm": "e23c45387340a6e863d565a220ea25f5956090062278c9cff213f9a16f94d4e1",
+    "maps/RazorHill.blk": "24e7370f07d7bcbd12531217e6272c4be3925c82063c3546526c2ab252cd4d91",
+    "maps/SenjinVillage.asm": "750aeb62b1642dc06609a8ead53c38ba9ebb6aeafc293a72477ccf2f33bc5494",
+    "maps/SenjinVillage.blk": "42b959a3827e3874cf0e79ad6145cea7f12dc71fa0512b60ed041a14f9ed456c",
+    "maps/TheDen.asm": "03ebea3cfc84962554acca02dfccd41399c59defaba4deb6a3a4a94d2351ba85",
+    "maps/TheDen.blk": "a7e1959bfb08516f8415961fe36e75ceefd54b2f56c28db6674bbfadd7dc9025",
+    "maps/ValleyOfTrials.asm": "3d735d0598c5d7813fe030f151f5f8882ef85109162b81e6697b82795ab2c3f3",
+    "maps/ValleyOfTrials.blk": "f3c087fa2b89f875fd6c7216c50c3babb53a23f9d0cca3c3afd4490659508c3e",
+    "references/generated/canonical_decor_v0213/BurningBladeCavern_preserved_facade_mask.png": "abca66d8ece33d8f74d543c258f6cf5a913968965badaa3ec13c2f0f80c7f263",
+    "references/generated/canonical_decor_v0213/DurotarRoad_preserved_facade_mask.png": "f4e1830ae92eb9bfe0e24ed58d9452a45b0294caaaea955ba9cc748817d995f9",
+    "references/generated/canonical_decor_v0213/OrgrimmarGate_preserved_facade_mask.png": "c427478c97850dc8e58ead19bacb3ba50f302853bf74bba7e18b235a0abd8f02",
+    "references/generated/canonical_decor_v0213/PeonCaveApproach_preserved_facade_mask.png": "1735ecbe1d4943c7a3af7b61eae1a7def4c957dc76af85965b6b220419e21ca8",
+    "references/generated/canonical_decor_v0213/PeonHanazuaCamp_preserved_facade_mask.png": "1735ecbe1d4943c7a3af7b61eae1a7def4c957dc76af85965b6b220419e21ca8",
+    "references/generated/canonical_decor_v0213/PeonOpening_preserved_facade_mask.png": "5d36bbf1976ff2239243c1e6ba0239fafa22fa06df62d6212eb1774bc268e08b",
+    "references/generated/canonical_decor_v0213/PeonSarkothBasin_preserved_facade_mask.png": "1735ecbe1d4943c7a3af7b61eae1a7def4c957dc76af85965b6b220419e21ca8",
+    "references/generated/canonical_decor_v0213/PeonValleyCrossroads_preserved_facade_mask.png": "1735ecbe1d4943c7a3af7b61eae1a7def4c957dc76af85965b6b220419e21ca8",
+    "references/generated/canonical_decor_v0213/PeonValleyExit_preserved_facade_mask.png": "1735ecbe1d4943c7a3af7b61eae1a7def4c957dc76af85965b6b220419e21ca8",
+    "references/generated/canonical_decor_v0213/RazorHill_preserved_facade_mask.png": "3a3eb07947a95e6eb4c6834958cc94d911ce2cebd1cadac4360a06c5d2347796",
+    "references/generated/canonical_decor_v0213/SenjinVillage_preserved_facade_mask.png": "c05a474594eea682f274409900ba45e47142dd8eb487319d370b298eb34d9924",
+    "references/generated/canonical_decor_v0213/TheDen_preserved_facade_mask.png": "1a9a7fd444dd7083cf3c4c368aed1bc2844687192c9762a2a90d096891e77903",
+    "references/generated/canonical_decor_v0213/ValleyOfTrials_preserved_facade_mask.png": "828ba04ebadf9a09ec2906351ec1e8068a4651513f81526fe605463b8bbc9c7c",
+    "references/generated/canonical_decor_v0213/manifest.json": "21eff047ff89a9a25d8a691d912afd1d95e8e6260785c70183bfd0ffff96d99b",
+    "references/generated/canonical_decor_v0213/maps/BurningBladeCavern.blk": "fc01988d328ff477b09324dc34c4acc9a06e4ad868961fd35e6f6ee1477afa7f",
+    "references/generated/canonical_decor_v0213/maps/DurotarRoad.blk": "c66d6745b72831485a4130f0f1903a5d0caddc74d957e35c3af2b11e4ae47104",
+    "references/generated/canonical_decor_v0213/maps/OrgrimmarGate.blk": "b1f19547f2d9a9c42c3c9faa61bf6ed6e5064f0e3629deea374eda97d5b12438",
+    "references/generated/canonical_decor_v0213/maps/PeonCaveApproach.blk": "507cc951bce736d6de0cea6dee0ac4e0833728852dd889e49f77478fb89f163b",
+    "references/generated/canonical_decor_v0213/maps/PeonHanazuaCamp.blk": "f11ce625fa929fca3ac65d32d0214ed1be37a892b87f359af91a907f84ebc854",
+    "references/generated/canonical_decor_v0213/maps/PeonOpening.blk": "b1978a71c128cc15896979e67b36891b1381d7475a25d3505b1118f3f52f3f70",
+    "references/generated/canonical_decor_v0213/maps/PeonSarkothBasin.blk": "e5a3958de47d7fe8420ce15c0566e27acf4a5932ded7b89b9f064b99e6b5834f",
+    "references/generated/canonical_decor_v0213/maps/PeonValleyCrossroads.blk": "ba21c4d262c2a27a493453878dfe27bf9d811c90af9406084765042d9507c83b",
+    "references/generated/canonical_decor_v0213/maps/PeonValleyExit.blk": "632ee21859e66ac9f32170c2245ba714350bcf8208ba101f78f0958725167b85",
+    "references/generated/canonical_decor_v0213/maps/RazorHill.blk": "2d3a90eee5e631f20f5f85832018f425c2ebe83df8ad6b74660f0cab48392580",
+    "references/generated/canonical_decor_v0213/maps/SenjinVillage.blk": "47ab5ebc3475900eb67a9b6e15448b3feb41e8429fbd1eb1b351bea2998df90c",
+    "references/generated/canonical_decor_v0213/maps/TheDen.blk": "b4f38fe13c363ba1a95087b36eb04b5613d8382c6f706a263e6151b413136d64",
+    "references/generated/canonical_decor_v0213/maps/ValleyOfTrials.blk": "a108b97efc5dd7829cd172f5a5cc9d1c778b30751560e788afe4fb072e6de802",
+    "references/generated/quieter_ground_v0214/baseline/maps/BurningBladeCavern.blk": "fc01988d328ff477b09324dc34c4acc9a06e4ad868961fd35e6f6ee1477afa7f",
+    "references/generated/quieter_ground_v0214/baseline/maps/DurotarRoad.blk": "8813a8ae2f6959e204c8d44ed6a255ba10f411212524bcdd1db7729e5837e75e",
+    "references/generated/quieter_ground_v0214/baseline/maps/OrgrimmarGate.blk": "bc27c99ca0e9b0c55b59450cfae4c0469ef6cced947bee9d6c7f7a7256836351",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonCaveApproach.blk": "0c87085a6eda0d4c443e4efe55167eb76a19ac0c80c68a3479b886e9de319763",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonHanazuaCamp.blk": "eed3038903200d1d3ee74d049003ed5e401c3893da498431f33b759192a42fe1",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonOpening.blk": "b1978a71c128cc15896979e67b36891b1381d7475a25d3505b1118f3f52f3f70",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonSarkothBasin.blk": "1a99907c5843b0393350dffde3d6e7d7d25d28ba635153e2328c18f0dd630467",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonValleyCrossroads.blk": "15025a89034f18b593475f365c6aa4dee513f3974e490be05e5d64b47035181e",
+    "references/generated/quieter_ground_v0214/baseline/maps/PeonValleyExit.blk": "67757781d0001286f51d50ab19d803ee64d4f569e2cbf7b74ff6ae2eb79d8981",
+    "references/generated/quieter_ground_v0214/baseline/maps/RazorHill.blk": "24e7370f07d7bcbd12531217e6272c4be3925c82063c3546526c2ab252cd4d91",
+    "references/generated/quieter_ground_v0214/baseline/maps/SenjinVillage.blk": "30e80c866bf66fad7528bfb148b3c70589c5fa727d12f8f2a537b5c2b9940f55",
+    "references/generated/quieter_ground_v0214/baseline/maps/TheDen.blk": "593f08a19ce37c41e732c7b832ebd299deb8bfe25b8ec055ec7e92e5aab078f6",
+    "references/generated/quieter_ground_v0214/baseline/maps/ValleyOfTrials.blk": "fe73478cf7c77f2aa59b26cc6a0c57b7cea7ecf8bdc3e66327b564d1c297651f",
+    "references/generated/quieter_ground_v0214/manifest.json": "00994250ae68d0f60121caef9c1ef8b175d60d876e3bec23caefbf2464f0300e",
+    "references/generated/user_environment_v0211/baseline/gfx/tilesets/peon_bg.pal": "62bbf6a831a0face2ccbbfcd2e55edfc4c95f000e806c7f1715ae5a3cbb1c1bc",
+    "references/generated/user_environment_v0211/baseline/gfx/tilesets/peon_interiors.pal": "3884860300ee66480710f074dcb321a79265fb7d1a6d550c53434b09b3dbc626",
+    "references/generated/user_environment_v0211/baseline/gfx/tilesets/peon_regions.pal": "4b52b3744862a09bcd444b0aa1cb06b35a346c5f41e6ca55741dab2c4c129828",
+    "references/generated/user_environment_v0211/baseline/maps/BurningBladeCavern.blk": "02ff709120f459a744ff6ddaee18df9640f5f57a57a6c58660f9ab0b8030e080",
+    "references/generated/user_environment_v0211/baseline/maps/DurotarRoad.blk": "0a0c0610047cb6bce1ddf6e8a45950b4a9d1004d392ad543984e75734ce92e7d",
+    "references/generated/user_environment_v0211/baseline/maps/OrgrimmarGate.blk": "f0531fb57c11bb379cb81ff204f6718132c7ec1a27158a0cd18518350ed8cb18",
+    "references/generated/user_environment_v0211/baseline/maps/PeonCaveApproach.blk": "a4ba909f4bd30e1816c0eac97fefd1249fe53f93f1c72461c82ae4d347f5934b",
+    "references/generated/user_environment_v0211/baseline/maps/PeonHanazuaCamp.blk": "8c1a19bee84f4ee9b6a140e67a15e5e5fa4ab67d2e0da69cc829f573fc473c82",
+    "references/generated/user_environment_v0211/baseline/maps/PeonOpening.blk": "35941b282c4aa57e996e83ff33871cd3a58bdd4cbce3ef5f6719dca8e5c981a3",
+    "references/generated/user_environment_v0211/baseline/maps/PeonSarkothBasin.blk": "60a0cf73b21b917a16c511dbc398becb5b371f0a6fb99e3c5da829f11b92d27e",
+    "references/generated/user_environment_v0211/baseline/maps/PeonValleyCrossroads.blk": "66c41890b7c3c9c9ac52b2aff490b5234d65a0b5b406922f8d076c547e142d52",
+    "references/generated/user_environment_v0211/baseline/maps/PeonValleyExit.blk": "188fb36acdbba761844e47d325096935fd27c1134bf25f0fe2e048f60d99ed1f",
+    "references/generated/user_environment_v0211/baseline/maps/RazorHill.blk": "ff53999d906993f368e432757ba089ddcce1c6192185c46e533249eed382fd75",
+    "references/generated/user_environment_v0211/baseline/maps/SenjinVillage.blk": "431c287d7255c761723519212189e0cccfc647885124538e7dca265f14785d06",
+    "references/generated/user_environment_v0211/baseline/maps/TheDen.blk": "d581a53457a9f72d2d7faddc9b9d5f0895a47f982fa41b0c116a355b1e6ffc05",
+    "references/generated/user_environment_v0211/baseline/maps/ValleyOfTrials.blk": "d626b0a8ab4c25f1dab124cd188eb15c6c65ae7297b2277c86f15df8a4a9fdb2",
+    "references/generated/user_environment_v0211/manifest.json": "375c1c09243f492837a03513df412fe72bc04c9900b4d331be01504c6c1569ab",
+    "references/generated/zone_passages_v0213/manifest.json": "ed42148e0887a8b27dee731172de1880471f04335cd8e1b0b1a7a0c1a778ef8c",
+    "tools/import_peon_canonical_decor_v0213.py": "5e762acfd554211b8875f827388eed7d18f4dff36b5112e5bf792a65f84ea0cd",
+    "tools/import_peon_quieter_ground_v0214.py": "49cbd9ca6e61a1af628646b90fe4ae12f1c2a8b2ea071c4d2a101c8f0185875c",
+    "tools/import_peon_user_environment_v0211.py": "9cf8a934c1c8eae2359a5ecd6a043b0bed1d3390779778a6c673682e482077a2",
+    "tools/import_peon_zone_passages_v0213.py": "9815e02abe8f28744b33654fc33660e344234d29bc3636354d5aeeadc9b9c9d7"
+  },
+  "redraw": false,
+  "resampling": false,
+  "result": "PASS",
+  "rom_build_performed": false,
+  "runtime_verified": false,
+  "source_hash_manifest": "references/generated/world_redraw_v0217/source_png_hashes.json",
+  "source_stencil": {
+    "complete_source_grain_pixels": [
+      [
+        5,
+        4
+      ],
+      [
+        6,
+        4
+      ]
+    ],
+    "dense_patch_variants": 0,
+    "detail_pixels_per_32x32": 2,
+    "flat_region_repeated_without_resampling": true,
+    "flat_source_rect": [
+      0,
+      0,
+      4,
+      4
+    ],
+    "flat_source_rgb": [
+      160,
+      64,
+      32
+    ],
+    "native_indices": {
+      "base": 1,
+      "dark_grain": 2
+    },
+    "source": "references/characters/peon_of_warcraft_environment_pack_v2_art_quality/durotar_valley/ground_durotar_dirt_01_32x32.png",
+    "source_grain_rgb": [
+      [
+        126,
+        48,
+        27
+      ],
+      [
+        126,
+        48,
+        27
+      ]
+    ],
+    "source_sha256": "14f45f3d18d25a3fed710974231cad9cf5405da69181260ef1d20d94356c2031",
+    "source_size": [
+      32,
+      32
+    ]
+  },
+  "user_choice": "plain ochre soil; no alternate dense patch variant",
+  "version": "v0.2.20"
+}

@@ -1,0 +1,201 @@
+{
+  "version": "v0.2.20",
+  "operation": "Shaman source asset and native cel verification, not ROM or emulator evidence",
+  "source_copy_sha256": "cf3f254a79d678d010f4ed3ad3d2f535650e1e8d17307f278a05dc54157e981f",
+  "source_generated_png_untouched": true,
+  "native_dimensions": [
+    32,
+    32
+  ],
+  "frames": 12,
+  "frame_bytes": 256,
+  "attributes_per_frame": 16,
+  "masks_per_frame_bytes": 2,
+  "head_hair_torso_hands_equipment_rows0_to26_protected": true,
+  "all_complete_frames13_oam": true,
+  "all_native_decode_exact": true,
+  "directions": {
+    "front": [
+      {
+        "pose": 0,
+        "nonblank_mask": 61430,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "eff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 0,
+        "changed_bbox": null,
+        "decode_exact": true
+      },
+      {
+        "pose": 1,
+        "nonblank_mask": 61430,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "eff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 24,
+        "changed_bbox": [
+          8,
+          27,
+          25,
+          32
+        ],
+        "decode_exact": true
+      },
+      {
+        "pose": 2,
+        "nonblank_mask": 61430,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "eff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 21,
+        "changed_bbox": [
+          9,
+          27,
+          24,
+          32
+        ],
+        "decode_exact": true
+      }
+    ],
+    "back": [
+      {
+        "pose": 0,
+        "nonblank_mask": 32758,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7ff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 0,
+        "changed_bbox": null,
+        "decode_exact": true
+      },
+      {
+        "pose": 1,
+        "nonblank_mask": 32758,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7ff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 27,
+        "changed_bbox": [
+          8,
+          27,
+          23,
+          32
+        ],
+        "decode_exact": true
+      },
+      {
+        "pose": 2,
+        "nonblank_mask": 32758,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7ff6",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 28,
+        "changed_bbox": [
+          8,
+          27,
+          24,
+          32
+        ],
+        "decode_exact": true
+      }
+    ],
+    "left": [
+      {
+        "pose": 0,
+        "nonblank_mask": 61422,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "efee",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 0,
+        "changed_bbox": null,
+        "decode_exact": true
+      },
+      {
+        "pose": 1,
+        "nonblank_mask": 61422,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "efee",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 28,
+        "changed_bbox": [
+          8,
+          27,
+          23,
+          32
+        ],
+        "decode_exact": true
+      },
+      {
+        "pose": 2,
+        "nonblank_mask": 61422,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "efee",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 37,
+        "changed_bbox": [
+          9,
+          27,
+          24,
+          32
+        ],
+        "decode_exact": true
+      }
+    ],
+    "right": [
+      {
+        "pose": 0,
+        "nonblank_mask": 32631,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7f77",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 0,
+        "changed_bbox": null,
+        "decode_exact": true
+      },
+      {
+        "pose": 1,
+        "nonblank_mask": 32631,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7f77",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 38,
+        "changed_bbox": [
+          7,
+          27,
+          24,
+          32
+        ],
+        "decode_exact": true
+      },
+      {
+        "pose": 2,
+        "nonblank_mask": 32631,
+        "nonblank_tiles": 13,
+        "nonblank_mask_hex": "7f77",
+        "same_upper27rows_as_still": true,
+        "head_hair_hands_equipment_preserved": true,
+        "changed_native_cells": 31,
+        "changed_bbox": [
+          6,
+          27,
+          21,
+          32
+        ],
+        "decode_exact": true
+      }
+    ]
+  },
+  "ROM_built": false,
+  "emulator_tested": false
+}
